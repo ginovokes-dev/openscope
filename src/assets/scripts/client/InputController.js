@@ -117,6 +117,7 @@ export default class InputController {
 
         // TODO: Fix this
         this._eventBus.on(EVENT.STRIP_CLICK, this.selectAircraftByCallsign);
+        this._eventBus.on(EVENT.SUBMIT_COMMAND, this.executeCommandText);
 
         return this;
     }
@@ -139,6 +140,7 @@ export default class InputController {
         this.$body.removeEventListener('contextmenu', (event) => event.preventDefault());
 
         this._eventBus.off(EVENT.STRIP_CLICK, this.selectAircraftByCallsign);
+        this._eventBus.off(EVENT.SUBMIT_COMMAND, this.executeCommandText);
 
         return this.destroy();
     }
@@ -788,6 +790,45 @@ export default class InputController {
             default:
         }
     }
+
+    /**
+     * Run command text as if the player had typed it into the command bar
+     *
+     * Used by the aircraft info panel's quick buttons, the radio panel and voice input, so every
+     * route into the simulation goes through the same parsing, validation, readbacks and scoring.
+     *
+     * @for InputController
+     * @method executeCommandText
+     * @param text {string} eg. `BAW123 fh 270 d 30`
+     * @return {object} `{ ok: boolean, error: string }`
+     */
+    executeCommandText = (text) => {
+        const userCommand = String(text || '').trim().toLowerCase();
+
+        if (userCommand === '') {
+            return { ok: false, error: 'empty command' };
+        }
+
+        let parsedCommand;
+
+        try {
+            parsedCommand = new CommandParser(userCommand).parse();
+        } catch (error) {
+            UiController.ui_log('Command not understood', true);
+
+            return { ok: false, error: String(error && error.message ? error.message : error) };
+        }
+
+        if (parsedCommand.command !== PARSED_COMMAND_NAME.TRANSMIT) {
+            this.processSystemCommand(parsedCommand);
+
+            return { ok: true };
+        }
+
+        this.processTransmitCommand(parsedCommand);
+
+        return { ok: true };
+    };
 
     /**
      * Process user command to be applied to an aircraft

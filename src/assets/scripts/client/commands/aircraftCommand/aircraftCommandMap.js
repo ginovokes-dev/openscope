@@ -64,6 +64,11 @@ export const AIRCRAFT_COMMAND_MAP = {
         functionName: 'runCross',
         isSystemCommand: false
     },
+    divert: {
+        aliases: ['divert', 'dvt'],
+        functionName: 'runDivert',
+        isSystemCommand: false
+    },
     delete: {
         aliases: ['del', 'delete', 'kill'],
         functionName: 'runDelete',
@@ -97,6 +102,11 @@ export const AIRCRAFT_COMMAND_MAP = {
     flyPresentHeading: {
         aliases: ['fph'],
         functionName: 'runFlyPresentHeading',
+        isSystemCommand: false
+    },
+    goAround: {
+        aliases: ['ga', 'goaround', 'missed'],
+        functionName: 'runGoAround',
         isSystemCommand: false
     },
     heading: {
@@ -144,6 +154,11 @@ export const AIRCRAFT_COMMAND_MAP = {
         functionName: 'runRoute',
         isSystemCommand: false
     },
+    roger: {
+        aliases: ['roger', 'rgr'],
+        functionName: 'runRoger',
+        isSystemCommand: false
+    },
     sayAltitude: {
         aliases: ['sa'],
         functionName: 'runSayAltitude',
@@ -164,9 +179,29 @@ export const AIRCRAFT_COMMAND_MAP = {
         functionName: 'runSayAssignedSpeed',
         isSystemCommand: false
     },
+    sayFuel: {
+        aliases: ['sf', 'fuel'],
+        functionName: 'runSayFuel',
+        isSystemCommand: false
+    },
     sayHeading: {
         aliases: ['sh'],
         functionName: 'runSayHeading',
+        isSystemCommand: false
+    },
+    sayInformation: {
+        aliases: ['sinfo', 'atisletter'],
+        functionName: 'runSayInformation',
+        isSystemCommand: false
+    },
+    sayIntentions: {
+        aliases: ['sint', 'intentions'],
+        functionName: 'runSayIntentions',
+        isSystemCommand: false
+    },
+    sayPersonsOnBoard: {
+        aliases: ['sob', 'souls', 'pob'],
+        functionName: 'runSayPersonsOnBoard',
         isSystemCommand: false
     },
     sayIndicatedAirspeed: {
@@ -207,6 +242,11 @@ export const AIRCRAFT_COMMAND_MAP = {
     taxi: {
         aliases: ['taxi', 'w', 'wait'],
         functionName: 'runTaxi',
+        isSystemCommand: false
+    },
+    unable: {
+        aliases: ['unable', 'deny'],
+        functionName: 'runUnable',
         isSystemCommand: false
     },
     timewarp: {

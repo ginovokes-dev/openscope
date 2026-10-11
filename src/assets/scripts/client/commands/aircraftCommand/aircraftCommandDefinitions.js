@@ -132,6 +132,34 @@ const ZERO_ARG_AIRCRAFT_COMMANDS = {
     sayRoute: {
         validate: zeroArgumentsValidator,
         parse: noop
+    },
+    goAround: {
+        validate: zeroArgumentsValidator,
+        parse: noop
+    },
+    roger: {
+        validate: zeroArgumentsValidator,
+        parse: noop
+    },
+    unable: {
+        validate: zeroArgumentsValidator,
+        parse: noop
+    },
+    sayFuel: {
+        validate: zeroArgumentsValidator,
+        parse: noop
+    },
+    sayPersonsOnBoard: {
+        validate: zeroArgumentsValidator,
+        parse: noop
+    },
+    sayIntentions: {
+        validate: zeroArgumentsValidator,
+        parse: noop
+    },
+    sayInformation: {
+        validate: zeroArgumentsValidator,
+        parse: noop
     }
 };
 
@@ -150,6 +178,10 @@ const SINGLE_ARG_AIRCRAFT_COMMANDS = {
         parse: noop
     },
     direct: {
+        validate: singleArgumentValidator,
+        parse: noop
+    },
+    divert: {
         validate: singleArgumentValidator,
         parse: noop
     },

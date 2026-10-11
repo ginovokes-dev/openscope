@@ -253,7 +253,44 @@ ava('aliases, optionalAltitudeParser and optionalAltitudeValidator used by climb
     test_aliases(t, AIRCRAFT_COMMAND_MAP, 'climbViaSid', ['climbViaSid', 'cvs']);
 });
 
-ava('make sure we test all 32 aircraft commands', t => {
+// commands added with the pilot interaction features: go-around, diversion and pilot reports
+
+const ZERO_ARGUMENT_COMMANDS = {
+    goAround: ['ga', 'goaround', 'missed'],
+    roger: ['roger', 'rgr'],
+    unable: ['unable', 'deny'],
+    sayFuel: ['sf', 'fuel'],
+    sayPersonsOnBoard: ['sob', 'souls', 'pob'],
+    sayIntentions: ['sint', 'intentions'],
+    sayInformation: ['sinfo', 'atisletter']
+};
+
+Object.keys(ZERO_ARGUMENT_COMMANDS).forEach((commandName) => {
+    ava(`aliases, noop parser and zeroArgumentsValidator used by ${commandName}`, t => {
+        const [parse, validate] = extractParseAndValidate(t, commandName);
+        t.true(parse === noopParse() && validate === zeroArgVal());
+        test_aliases(t, AIRCRAFT_COMMAND_MAP, commandName, ZERO_ARGUMENT_COMMANDS[commandName]);
+    });
+});
+
+ava('aliases, noop parser and singleArgumentValidator used by divert', t => {
+    const [parse, validate] = extractParseAndValidate(t, 'divert');
+    t.true(parse === noopParse() && validate === singleArgVal());
+    test_aliases(t, AIRCRAFT_COMMAND_MAP, 'divert', ['divert', 'dvt']);
+});
+
+ava('no alias is shared between two commands', t => {
+    const seen = {};
+
+    Object.keys(AIRCRAFT_COMMAND_MAP).forEach((commandName) => {
+        AIRCRAFT_COMMAND_MAP[commandName].aliases.forEach((alias) => {
+            t.is(seen[alias], undefined, `alias "${alias}" is used by both ${seen[alias]} and ${commandName}`);
+            seen[alias] = commandName;
+        });
+    });
+});
+
+ava('make sure we test all 40 aircraft commands', t => {
     t.true(Object.values(AIRCRAFT_COMMAND_MAP)
-        .filter(val => !val.isSystemCommand).length === 32);
+        .filter(val => !val.isSystemCommand).length === 40);
 });

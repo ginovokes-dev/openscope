@@ -1,0 +1,181 @@
+.aircraft-info {
+    position: absolute;
+    top: 128px;
+    left: 8px;
+    width: 316px;
+    max-height: ~"calc(100% - 128px - 48px)";
+    box-sizing: border-box;
+    padding: @spacing-2x;
+    overflow-y: auto;
+    color: @light-gray;
+    background-color: @dark-085;
+    border: 2px solid @blue-medium;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 1.45;
+    z-index: @airportInfo-z;
+}
+
+.aircraft-info[hidden] {
+    display: none;
+}
+
+.aircraft-info-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.aircraft-info-callsign {
+    color: @white;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.aircraft-info-spoken {
+    display: block;
+    color: @medium-light-gray;
+    font-size: 11px;
+}
+
+.aircraft-info-close {
+    padding: 0 6px;
+    color: @medium-light-gray;
+    background: transparent;
+    border: 0;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.aircraft-info-close:hover {
+    color: @white;
+}
+
+.aircraft-info-subtitle {
+    margin: 2px 0 @spacing-1x 0;
+    color: @medium-light-gray;
+}
+
+.aircraft-info-alerts:empty {
+    display: none;
+}
+
+.aircraft-info-alert {
+    margin-bottom: 4px;
+    padding: 3px 7px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.aircraft-info-alert_danger {
+    color: @dark;
+    background-color: @red;
+}
+
+.aircraft-info-alert_warn {
+    color: @dark;
+    background-color: rgba(219, 204, 0, 0.9);
+}
+
+.aircraft-info-alert_info {
+    color: @white;
+    background-color: @blue-medium;
+}
+
+.aircraft-info-section {
+    margin-top: @spacing-1x;
+    padding-top: @spacing-1x;
+    border-top: 1px solid @blue-medium;
+}
+
+.aircraft-info-section[hidden] {
+    display: none;
+}
+
+.aircraft-info-row {
+    display: flex;
+    justify-content: space-between;
+    gap: @spacing-2x;
+}
+
+.aircraft-info-row > span {
+    flex: 0 0 auto;
+    color: @medium-light-gray;
+}
+
+.aircraft-info-row > b {
+    font-weight: normal;
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+.aircraft-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px @spacing-2x;
+    margin-bottom: @spacing-1x;
+}
+
+.aircraft-info-grid span {
+    margin-right: 6px;
+    color: @medium-light-gray;
+}
+
+.aircraft-info-grid b {
+    font-weight: normal;
+    color: @white;
+}
+
+.aircraft-info-grid i {
+    display: block;
+    color: @departure-accent;
+    font-style: normal;
+}
+
+.aircraft-info-bar {
+    height: 5px;
+    margin-top: 4px;
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.aircraft-info-bar-fill {
+    height: 100%;
+    background-color: @green;
+}
+
+.aircraft-info-bar-fill[data-state="minimum"] {
+    background-color: rgba(219, 204, 0, 0.95);
+}
+
+.aircraft-info-bar-fill[data-state="emergency"] {
+    background-color: @red;
+}
+
+.aircraft-info-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: @spacing-2x;
+}
+
+.aircraft-info-button {
+    padding: 3px 8px;
+    color: @light-gray;
+    background-color: @blue-medium;
+    border: 0;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.aircraft-info-button:hover {
+    background-color: @blue-light;
+}
+
+.aircraft-info-button[hidden] {
+    display: none;
+}

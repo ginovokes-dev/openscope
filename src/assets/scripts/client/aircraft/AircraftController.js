@@ -4,6 +4,8 @@ import _get from 'lodash/get';
 import _isNil from 'lodash/isNil';
 import _without from 'lodash/without';
 import AirlineController from '../airline/AirlineController';
+import AtisController from '../atis/AtisController';
+import { resolveEmergency } from './aircraftEmergency';
 import AirportController from '../airport/AirportController';
 import ScopeModel from '../scope/ScopeModel';
 import UiController from '../ui/UiController';
@@ -572,6 +574,10 @@ export default class AircraftController {
         const isAutoTower = GameController.getGameOption(GAME_OPTION_NAMES.TOWER_CONTROLLER) === 'SYSTEM';
         const runwayCommands = initializationProps.commands;
 
+        if (isArrival) {
+            aircraftModel.atisLetterHeard = AtisController.getLetterForNewContact();
+        }
+
         // triggering event bus rather than calling locally because multiple classes
         // are listening for the event and aircraft model
         this._eventBus.trigger(EVENT.ADD_AIRCRAFT, aircraftModel);
@@ -902,6 +908,7 @@ export default class AircraftController {
             );
 
             GameController.events_recordNew(GAME_EVENTS.ARRIVAL);
+            resolveEmergency(aircraftModel);
             this.aircraft_remove(aircraftModel);
 
             return;

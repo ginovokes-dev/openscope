@@ -12,11 +12,16 @@ import {
     FLIGHT_PHASE
 } from '../constants/aircraftConstants';
 import { EVENT } from '../constants/eventNames';
+import { GAME_OPTION_NAMES } from '../constants/gameOptionConstants';
 import { radians_normalize } from '../math/circle';
 import { round } from '../math/core';
 import { AIRCRAFT_COMMAND_MAP } from '../commands/aircraftCommand/aircraftCommandMap';
 import { speech_say } from '../speech';
+import airportIndex from '../geo/AirportIndex';
+import AtisController from '../atis/AtisController';
+import { goAround, divertAircraft, findDiversionAirport } from './aircraftActions';
 import {
+    groupNumbers,
     radio_runway,
     radio_spellOut,
     radio_heading,
@@ -45,6 +50,13 @@ export default class AircraftCommander {
      */
     runCommands(aircraft, commands, isPreSpawn = false) {
         if (!aircraft.isControllable && !isPreSpawn) {
+            return true;
+        }
+
+        if (aircraft.isNordo && !isPreSpawn) {
+            // no radio: the instruction is transmitted blind and nobody answers
+            UiController.ui_log(`${aircraft.callsign} does not respond (radio failure, squawking ${aircraft.transponderCode})`, true);
+
             return true;
         }
 
@@ -786,6 +798,167 @@ export default class AircraftCommander {
         }
 
         return [result, readback];
+    }
+
+    /**
+     * Break off the approach and climb away
+     *
+     * @for AircraftCommander
+     * @method runGoAround
+     * @param aircraft {AircraftModel}
+     * @return {array} [success of operation, readback]
+     */
+    runGoAround(aircraft) {
+        return goAround(aircraft);
+    }
+
+    /**
+     * Send an aircraft to another airport
+     *
+     * @for AircraftCommander
+     * @method runDivert
+     * @param aircraft {AircraftModel}
+     * @param data {array} `[airport ICAO / IATA / name]`
+     * @return {array} [success of operation, readback]
+     */
+    runDivert(aircraft, data) {
+        const query = data[0];
+        const destination = findDiversionAirport(query);
+        const currentAirport = AirportController.airport_get();
+
+        if (!destination) {
+            const hint = airportIndex.isLoaded ? '' : ' (the world airport list has not loaded)';
+
+            return [false, `unable, we don't have an airport called ${query} in our database${hint}`];
+        }
+
+        if (destination.icao === currentAirport.icao.toUpperCase()) {
+            return [false, 'unable to divert, we are already at that airport'];
+        }
+
+        return divertAircraft(aircraft, destination, 'controller instruction');
+    }
+
+    /**
+     * Pilot reports fuel remaining
+     *
+     * @for AircraftCommander
+     * @method runSayFuel
+     * @param aircraft {AircraftModel}
+     * @return {array} [success of operation, readback]
+     */
+    runSayFuel(aircraft) {
+        const fuelUnit = GameController.game.option.getOptionByName(GAME_OPTION_NAMES.FUEL_UNITS) === 'lb' ? 'lb' : 'kg';
+        const fuel = aircraft.onboard.describe(fuelUnit);
+        const state = fuel.fuelState === 'normal' ? '' : `, ${fuel.fuelState === 'emergency' ? 'fuel emergency' : 'minimum fuel'}`;
+
+        return [true, {
+            log: `${fuel.enduranceDisplay} of fuel remaining (${fuel.fuelQuantity} ${fuel.fuelUnit})${state}`,
+            say: `${fuel.enduranceSpoken} of fuel remaining${state}`
+        }];
+    }
+
+    /**
+     * Pilot reports persons on board
+     *
+     * @for AircraftCommander
+     * @method runSayPersonsOnBoard
+     * @param aircraft {AircraftModel}
+     * @return {array} [success of operation, readback]
+     */
+    runSayPersonsOnBoard(aircraft) {
+        const { souls } = aircraft.onboard;
+
+        return [true, {
+            log: `${souls} souls on board`,
+            say: `${groupNumbers(String(souls))} souls on board`
+        }];
+    }
+
+    /**
+     * Pilot says what they intend to do
+     *
+     * @for AircraftCommander
+     * @method runSayIntentions
+     * @param aircraft {AircraftModel}
+     * @return {array} [success of operation, readback]
+     */
+    runSayIntentions(aircraft) {
+        let text = 'we intend to continue as filed';
+
+        if (aircraft.pendingRequest) {
+            ({ text } = aircraft.pendingRequest);
+        } else if (aircraft.diversion) {
+            text = `we are diverting to ${aircraft.diversion.city || aircraft.diversion.icao}`;
+        } else if (aircraft.emergency && !aircraft.emergency.resolved) {
+            text = `we are declaring ${aircraft.emergency.description} and would like to land as soon as possible`;
+        } else if (aircraft.isArrival()) {
+            const runway = aircraft.fms.arrivalRunwayModel;
+
+            text = runway ? `we expect to land on runway ${radio_runway(runway.name)}` : 'we intend to land';
+        } else if (aircraft.isDeparture()) {
+            text = aircraft.destination ?
+                `we intend to depart and fly to ${aircraft.destination} as filed` :
+                'we intend to depart as filed';
+        }
+
+        return [true, text];
+    }
+
+    /**
+     * Pilot says which ATIS information they have
+     *
+     * @for AircraftCommander
+     * @method runSayInformation
+     * @param aircraft {AircraftModel}
+     * @return {array} [success of operation, readback]
+     */
+    runSayInformation(aircraft) {
+        if (!aircraft.atisLetterHeard) {
+            return [true, 'we have not copied the ATIS'];
+        }
+
+        const current = AtisController.getCurrent();
+        const isCurrent = current && current.letter === aircraft.atisLetterHeard;
+        const letter = aircraft.atisLetterHeard.toLowerCase();
+
+        return [true, isCurrent ? `we have information ${letter}` : `we have information ${letter}, say the current information`];
+    }
+
+    /**
+     * Acknowledge a pilot's request or report
+     *
+     * @for AircraftCommander
+     * @method runRoger
+     * @param aircraft {AircraftModel}
+     * @return {array} [success of operation, readback]
+     */
+    runRoger(aircraft) {
+        const hadRequest = Boolean(aircraft.pendingRequest);
+
+        aircraft.pendingRequest = null;
+
+        if (aircraft.emergency && !aircraft.emergency.resolved) {
+            return [true, 'thank you, we will stand by for vectors'];
+        }
+
+        return [true, hadRequest ? 'thank you' : 'roger'];
+    }
+
+    /**
+     * Refuse a pilot's request
+     *
+     * @for AircraftCommander
+     * @method runUnable
+     * @param aircraft {AircraftModel}
+     * @return {array} [success of operation, readback]
+     */
+    runUnable(aircraft) {
+        const request = aircraft.pendingRequest;
+
+        aircraft.pendingRequest = null;
+
+        return [true, request ? 'roger, we will continue as planned' : 'roger'];
     }
 
     /**

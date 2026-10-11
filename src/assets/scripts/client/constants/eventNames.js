@@ -184,6 +184,8 @@ export const EVENT = {
      */
     STRIP_CLICK: 'strip-click',
 
+    SUBMIT_COMMAND: 'submit-command',
+
     /**
      * An aircraft progress strip was double clicked
      *

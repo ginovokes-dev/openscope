@@ -740,6 +740,152 @@
           "validate": "^([0-7]{4})$"
         }
       ]
+    },
+    {
+      "id": "ga",
+      "variants": [
+        {
+          "aliases": [
+            "ga",
+            "goaround"
+          ],
+          "altkeys": [
+            "go around",
+            "missed approach"
+          ],
+          "explain": "<b>g</b>o <b>a</b>round"
+        }
+      ],
+      "paramsets": []
+    },
+    {
+      "id": "divert",
+      "variants": [
+        {
+          "aliases": [
+            "divert",
+            "dvt"
+          ],
+          "altkeys": [
+            "divert to",
+            "diversion"
+          ],
+          "explain": "<b>divert</b> to another airport"
+        }
+      ],
+      "paramsets": [
+        {
+          "example": "EGCC",
+          "explain": "divert to the airport with this ICAO code",
+          "candidate": "^[a-z]{0,4}$",
+          "validate": "^[a-z]{3,4}$"
+        }
+      ]
+    },
+    {
+      "id": "sf",
+      "variants": [
+        {
+          "aliases": [
+            "sf",
+            "fuel"
+          ],
+          "altkeys": [
+            "say fuel",
+            "fuel remaining",
+            "how much fuel"
+          ],
+          "explain": "<b>s</b>ay <b>f</b>uel remaining"
+        }
+      ],
+      "paramsets": []
+    },
+    {
+      "id": "sob",
+      "variants": [
+        {
+          "aliases": [
+            "sob",
+            "souls",
+            "pob"
+          ],
+          "altkeys": [
+            "say souls on board",
+            "persons on board",
+            "how many people"
+          ],
+          "explain": "say <b>s</b>ouls <b>o</b>n <b>b</b>oard"
+        }
+      ],
+      "paramsets": []
+    },
+    {
+      "id": "sint",
+      "variants": [
+        {
+          "aliases": [
+            "sint",
+            "intentions"
+          ],
+          "altkeys": [
+            "say intentions",
+            "what do you want"
+          ],
+          "explain": "<b>s</b>ay <b>int</b>entions"
+        }
+      ],
+      "paramsets": []
+    },
+    {
+      "id": "sinfo",
+      "variants": [
+        {
+          "aliases": [
+            "sinfo",
+            "atisletter"
+          ],
+          "altkeys": [
+            "say information",
+            "which atis"
+          ],
+          "explain": "<b>s</b>ay ATIS <b>info</b>rmation letter"
+        }
+      ],
+      "paramsets": []
+    },
+    {
+      "id": "roger",
+      "variants": [
+        {
+          "aliases": [
+            "roger",
+            "rgr"
+          ],
+          "altkeys": [
+            "acknowledge",
+            "roger that"
+          ],
+          "explain": "<b>roger</b>: acknowledge a request or report"
+        }
+      ],
+      "paramsets": []
+    },
+    {
+      "id": "unable",
+      "variants": [
+        {
+          "aliases": [
+            "unable",
+            "deny"
+          ],
+          "altkeys": [
+            "request denied",
+            "negative"
+          ],
+          "explain": "<b>unable</b>: deny a pilot request"
+        }
+      ],
+      "paramsets": []
     }
   ],
   "system": [

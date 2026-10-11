@@ -13,6 +13,9 @@ import Fms from './FlightManagementSystem/Fms';
 import GameController, { GAME_EVENTS } from '../game/GameController';
 import ModeController from './ModeControl/ModeController';
 import Pilot from './Pilot/Pilot';
+import OnboardState from './OnboardState';
+import { handleFuelStateReached } from './aircraftEmergency';
+import airportIndex from '../geo/AirportIndex';
 import TimeKeeper from '../engine/TimeKeeper';
 import UiController from '../ui/UiController';
 import EventBus from '../lib/EventBus';
@@ -441,6 +444,98 @@ export default class AircraftModel {
          */
         this.isRemovable = false;
 
+        /**
+         * People and fuel on board
+         *
+         * @for AircraftModel
+         * @property onboard
+         * @type {OnboardState|null}
+         * @default null
+         */
+        this.onboard = null;
+
+        /**
+         * Active emergency or advisory declared by this aircraft (null when everything is normal)
+         *
+         * @for AircraftModel
+         * @property emergency
+         * @type {object|null}
+         * @default null
+         */
+        this.emergency = null;
+
+        /**
+         * Multipliers applied after a failure, eg. a single-engine aircraft climbs slowly and is speed limited
+         *
+         * @for AircraftModel
+         * @property performance
+         * @type {object}
+         */
+        this.performance = {
+            climb: 1,
+            descent: 1,
+            maxSpeed: Infinity
+        };
+
+        /**
+         * Whether the aircraft has lost its radio. A NORDO aircraft does not acknowledge instructions
+         * until `#nordoUntil` (simulation seconds).
+         *
+         * @for AircraftModel
+         * @property isNordo
+         * @type {boolean}
+         * @default false
+         */
+        this.isNordo = false;
+
+        /**
+         * @for AircraftModel
+         * @property nordoUntil
+         * @type {number}
+         * @default 0
+         */
+        this.nordoUntil = 0;
+
+        /**
+         * ATIS information letter this aircraft reports having
+         *
+         * @for AircraftModel
+         * @property atisLetterHeard
+         * @type {string}
+         * @default ''
+         */
+        this.atisLetterHeard = '';
+
+        /**
+         * Diversion the aircraft is flying, or null: `{ icao, name, city, bearing, reason }`
+         *
+         * @for AircraftModel
+         * @property diversion
+         * @type {object|null}
+         * @default null
+         */
+        this.diversion = null;
+
+        /**
+         * A request the pilot has made that is awaiting a controller's answer
+         *
+         * @for AircraftModel
+         * @property pendingRequest
+         * @type {object|null}
+         * @default null
+         */
+        this.pendingRequest = null;
+
+        /**
+         * Planned alternate airport (ICAO), reported in the aircraft information panel
+         *
+         * @for AircraftModel
+         * @property alternateIcao
+         * @type {string}
+         * @default ''
+         */
+        this.alternateIcao = '';
+
         // Set to true when simulating future movements of the aircraft
         // Should be checked before updating global state such as score
         // or HTML.
@@ -670,8 +765,91 @@ export default class AircraftModel {
         this.targetHeading = this.heading;
         this.target.speed = this.speed;
 
+        this.onboard = new OnboardState({
+            typeDefinition: this.model,
+            category: this.category,
+            sectorNauticalMiles: this._estimateDepartureSectorNauticalMiles(),
+            fuelProblem: data.fuelProblem || false
+        });
+        this.alternateIcao = _get(data, 'alternate', this.alternateIcao);
+
         // This assumes and arrival spawns outside the airspace
         this.isControllable = data.category === FLIGHT_CATEGORY.DEPARTURE;
+    }
+
+    /**
+     * Planned sector length, in nautical miles, used to decide how much fuel a departure carries
+     *
+     * @for AircraftModel
+     * @method _estimateDepartureSectorNauticalMiles
+     * @return {number}
+     * @private
+     */
+    _estimateDepartureSectorNauticalMiles() {
+        const DEFAULT_SECTOR_NM = 350;
+        const airport = AirportController.airport_get();
+
+        if (this.category !== FLIGHT_CATEGORY.DEPARTURE || !this.destination || !airport) {
+            return DEFAULT_SECTOR_NM;
+        }
+
+        const distance = airportIndex.distanceNm(airport.icao, this.destination);
+
+        return distance === null ? DEFAULT_SECTOR_NM : Math.max(60, distance);
+    }
+
+    /**
+     * Burn fuel for the elapsed time and react to low-fuel thresholds
+     *
+     * @for AircraftModel
+     * @method _updateOnboardState
+     * @private
+     */
+    _updateOnboardState() {
+        if (this.projected || !this.onboard || this.hit) {
+            return;
+        }
+
+        const deltaTime = TimeKeeper.getDeltaTimeForGameStateAndTimewarp();
+
+        if (deltaTime <= 0) {
+            return;
+        }
+
+        const reachedStates = this.onboard.burn(deltaTime, {
+            isOnGround: this.isOnGround(),
+            isMoving: !this.isStopped(),
+            isEngineRunning: this.flightPhase !== FLIGHT_PHASE.APRON,
+            trend: this.trend,
+            altitude: this.altitude
+        });
+
+        for (let i = 0; i < reachedStates.length; i++) {
+            handleFuelStateReached(this, reachedStates[i]);
+        }
+    }
+
+    /**
+     * End a radio failure when its time is up
+     *
+     * @for AircraftModel
+     * @method _updateRadioFailure
+     * @private
+     */
+    _updateRadioFailure() {
+        if (this.projected || !this.isNordo || TimeKeeper.accumulatedDeltaTime < this.nordoUntil) {
+            return;
+        }
+
+        this.isNordo = false;
+
+        if (this.emergency && this.emergency.key === 'RADIO_FAILURE') {
+            this.transponderCode = this.emergency.previousSquawk || this.transponderCode;
+            this.emergency.resolved = true;
+            this.emergency = null;
+        }
+
+        this.radioCall('radio restored, apologies for the silence, say again last instruction', AIRPORT_CONTROL_POSITION_NAME.APPROACH, false);
     }
 
     /**
@@ -788,6 +966,7 @@ export default class AircraftModel {
             cr_uncorr = rate * 420.7 * ((1.232 * (((518.6 - 0.00356 * altitude) / 518.6) ** 5.256)) /
                 (518.6 - 0.00356 * altitude));
             cr_current = cr_uncorr - (altitude / ceiling * cr_uncorr) + (altitude / ceiling * serviceCeilingClimbRate);
+            cr_current *= this.performance.climb;
         } else {
             // in lower stratosphere
             // re-do for lower stratosphere
@@ -1230,12 +1409,14 @@ export default class AircraftModel {
                 alt_say = `at ${radio_altitude(alt)}`;
             }
 
-            UiController.ui_log(`${AirportController.airport_get().radio.app}, ${this.callsign} with you ${alt_log}`);
+            const atisSuffix = this.isArrival() && this.atisLetterHeard ? `, information ${this.atisLetterHeard.toLowerCase()}` : '';
+
+            UiController.ui_log(`${AirportController.airport_get().radio.app}, ${this.callsign} with you ${alt_log}${atisSuffix}`);
             speech_say(
                 [
                     { type: 'text', content: `${AirportController.airport_get().radio.app}, ` },
                     { type: 'callsign', content: this },
-                    { type: 'text', content: `with you ${alt_say}` }
+                    { type: 'text', content: `with you ${alt_say}${atisSuffix}` }
                 ],
                 this.pilotVoice
             );
@@ -1744,11 +1925,13 @@ export default class AircraftModel {
      * @return {number}      permitted speed
      */
     _calculateLegalSpeed(speed) {
+        const performanceLimitedSpeed = Math.min(speed, this.performance.maxSpeed);
+
         if (this.altitude < 10000) {
-            return Math.min(speed, AIRPORT_CONSTANTS.MAX_SPEED_BELOW_10K_FEET);
+            return Math.min(performanceLimitedSpeed, AIRPORT_CONSTANTS.MAX_SPEED_BELOW_10K_FEET);
         }
 
-        return speed;
+        return performanceLimitedSpeed;
     }
 
     /**
@@ -2427,6 +2610,8 @@ export default class AircraftModel {
             descentRate = this.model.rate.descent;
         }
 
+        descentRate *= this.performance.descent;
+
         const feetPerSecond = descentRate * TIME.ONE_SECOND_IN_MINUTES;
         const feetDescended = feetPerSecond * TimeKeeper.getDeltaTimeForGameStateAndTimewarp();
 
@@ -2675,6 +2860,8 @@ export default class AircraftModel {
         this.updateTarget();
         this.updatePhysics();
         this._updateAircraftControllability();
+        this._updateOnboardState();
+        this._updateRadioFailure();
     }
 
     /**

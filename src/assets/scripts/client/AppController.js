@@ -9,6 +9,8 @@ import AirportInfoController from './info/AirportInfoController';
 import AtisController from './atis/AtisController';
 import AtisPanel from './atis/AtisPanel';
 import WeatherController from './weather/WeatherController';
+import EventDirector from './events/EventDirector';
+import AircraftInfoPanel from './ui/AircraftInfoPanel';
 import ChangelogController from './changelog/ChangelogController';
 import ContentQueue from './contentQueue/ContentQueue';
 import EventTracker from './EventTracker';
@@ -183,6 +185,7 @@ export default class AppController {
         this.scoreController = new ScoreController(this.aircraftController);
 
         SpawnScheduler.init(this.aircraftController);
+        EventDirector.init(this.aircraftController);
 
         // TEMPORARY!
         // some instances are attached to the window here as an intermediate step away from global functions.
@@ -190,12 +193,23 @@ export default class AppController {
         // explicit instance parameters easier.
         window.aircraftController = this.aircraftController;
 
+        // handles for the browser console, automated tests and scenario scripts
+        // eg. `zlsa.atc.debug.eventDirector.trigger('LOW_FUEL')`, `zlsa.atc.debug.weather.forceRegime('FOG')`
+        zlsa.atc.debug = {
+            aircraftController: this.aircraftController,
+            atis: AtisController,
+            eventDirector: EventDirector,
+            weather: WeatherController
+        };
+
         UiController.init(this.$element);
 
         this.canvasController = new CanvasController(this.$canvasesElement, this.aircraftController, this.scopeModel);
 
         this.inputController = new InputController(this.$element, this.aircraftController, this.scopeModel);
+        zlsa.atc.debug.input = this.inputController;
         this.airportInfoController = new AirportInfoController(this.$element);
+        this.aircraftInfoPanel = new AircraftInfoPanel(this.$element, this.aircraftController);
         this.atisPanel = new AtisPanel(this.$element);
         UiController.registerExtraDialog(this.atisPanel);
         this.airportGuideController = new AirportGuideViewController(this.$element, airportGuideData, initialAirportData.icao);
@@ -257,6 +271,7 @@ export default class AppController {
         this.airportInfoController.updateClock();
         WeatherController.update();
         AtisController.update();
+        EventDirector.update();
         GameController.update_pre();
         this.aircraftController.update();
     }
@@ -274,6 +289,7 @@ export default class AppController {
     updatePost() {
         this.canvasController.canvasUpdatePost();
         this.aircraftController.updateAircraftStrips();
+        this.aircraftInfoPanel.update();
     }
 
 

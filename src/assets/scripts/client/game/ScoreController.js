@@ -5,6 +5,7 @@ import { nm_ft } from '../utilities/unitConverters';
 import { AIRCRAFT_EVENT } from '../constants/eventNames';
 import { AIRPORT_CONTROL_POSITION_NAME } from '../constants/airportConstants';
 import { MCP_MODE } from '../aircraft/ModeControl/modeControlConstants';
+import { resolveEmergency } from '../aircraft/aircraftEmergency';
 
 /**
  * @class ScoreController
@@ -100,6 +101,16 @@ export default class ScoreController {
      * @param aircraftModel {AircraftModel}
      */
     _onExitAirspace(aircraftModel) {
+        resolveEmergency(aircraftModel);
+
+        if (aircraftModel.diversion) {
+            const place = aircraftModel.diversion.city || aircraftModel.diversion.icao;
+
+            aircraftModel.radioCall(`leaving your frequency on diversion to ${place}, good day`, AIRPORT_CONTROL_POSITION_NAME.APPROACH);
+
+            return;
+        }
+
         if (aircraftModel.isArrival()) {
             this._onAirspaceExitForArrival(aircraftModel);
 
