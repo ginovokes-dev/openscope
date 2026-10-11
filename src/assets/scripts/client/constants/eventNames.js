@@ -19,6 +19,28 @@ export const EVENT = {
      */
     ADD_AIRCRAFT: 'add-aircraft',
 
+    ATIS_UPDATED: 'atis-updated',
+
+    ATIS_UPDATE_DUE: 'atis-update-due',
+
+    AIRCRAFT_STATE_CHANGE: 'aircraft-state-change',
+
+    EMERGENCY_DECLARED: 'emergency-declared',
+
+    RADIO_TRANSMISSION: 'radio-transmission',
+
+    SIM_EVENT: 'sim-event',
+
+    TOGGLE_ATIS: 'toggle-atis',
+
+    TOGGLE_CONTROLS_GUIDE: 'toggle-controls-guide',
+
+    TOGGLE_RADIO: 'toggle-radio',
+
+    WEATHER_CHANGE: 'weather-change',
+
+    WEATHER_VARIABILITY_CHANGE: 'weather-variability-change',
+
     /**
      * @memberof EVENT
      * @property AIRPORT_CHANGE

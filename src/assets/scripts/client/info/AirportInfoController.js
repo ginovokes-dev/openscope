@@ -8,6 +8,9 @@ import { INVALID_NUMBER } from '../constants/globalConstants';
 import { EVENT } from '../constants/eventNames';
 import { AIRPORT_INFO_TEMPLATE } from './airportInfoTemplate';
 import { PERFORMANCE } from '../constants/aircraftConstants';
+import AtisController from '../atis/AtisController';
+import WeatherController from '../weather/WeatherController';
+import { usesImperialUnits } from '../atis/atisGenerator';
 
 /**
  * @property INFO_VIEW_SELECTORS
@@ -22,7 +25,9 @@ const INFO_VIEW_SELECTORS = {
     ALTIMETER_LABEL: '.js-airportInfo-altimeter-label',
     ALTIMETER_VALUE: '.js-airportInfo-altimeter-value',
     ELEVATION_LABEL: '.js-airportInfo-elevation-label',
-    ELEVATION_VALUE: '.js-airportInfo-elevation-value'
+    ELEVATION_VALUE: '.js-airportInfo-elevation-value',
+    ATIS_LINE: '.js-airportInfo-atis',
+    ATIS_VALUE: '.js-airportInfo-atis-value'
 };
 
 /**
@@ -155,6 +160,10 @@ export default class AirportInfoController {
         this.$clockView = this.$template.find(INFO_VIEW_SELECTORS.CLOCK_VALUE);
         this.$elevationView = this.$template.find(INFO_VIEW_SELECTORS.ELEVATION_VALUE);
         this.$windView = this.$template.find(INFO_VIEW_SELECTORS.WIND_VALUE);
+        this.$altimeterLabel = this.$template.find(INFO_VIEW_SELECTORS.ALTIMETER_LABEL);
+        this.$atisLine = this.$template.find(INFO_VIEW_SELECTORS.ATIS_LINE);
+        this.$atisView = this.$template.find(INFO_VIEW_SELECTORS.ATIS_VALUE);
+        this.atis = '';
         this.altimeter = INVALID_NUMBER;
         this.elevation = '';
         this.icao = '';
@@ -190,6 +199,9 @@ export default class AirportInfoController {
     _setupHandlers() {
         this._onAirportChangeHandler = this.onAirportChange.bind(this);
         this._onWindChangeHandler = this.onWindChange.bind(this);
+        this._onWeatherChangeHandler = this.onWeatherChange.bind(this);
+        this._onAtisUpdatedHandler = this.onAtisUpdated.bind(this);
+        this._onAtisClickHandler = () => this._eventBus.trigger(EVENT.TOGGLE_ATIS);
 
         return this;
     }
@@ -204,6 +216,10 @@ export default class AirportInfoController {
     enable() {
         this._eventBus.on(EVENT.AIRPORT_CHANGE, this._onAirportChangeHandler);
         this._eventBus.on(EVENT.WIND_CHANGE, this._onWindChangeHandler);
+        this._eventBus.on(EVENT.WEATHER_CHANGE, this._onWeatherChangeHandler);
+        this._eventBus.on(EVENT.ATIS_UPDATED, this._onAtisUpdatedHandler);
+        this._eventBus.on(EVENT.ATIS_UPDATE_DUE, this._onAtisUpdatedHandler);
+        this.$atisLine.on('click', this._onAtisClickHandler);
 
         return this;
     }
@@ -218,6 +234,10 @@ export default class AirportInfoController {
     disable() {
         this._eventBus.off(EVENT.AIRPORT_CHANGE, this._onAirportChangeHandler);
         this._eventBus.off(EVENT.WIND_CHANGE, this._onWindChangeHandler);
+        this._eventBus.off(EVENT.WEATHER_CHANGE, this._onWeatherChangeHandler);
+        this._eventBus.off(EVENT.ATIS_UPDATED, this._onAtisUpdatedHandler);
+        this._eventBus.off(EVENT.ATIS_UPDATE_DUE, this._onAtisUpdatedHandler);
+        this.$atisLine.off('click', this._onAtisClickHandler);
 
         return this;
     }
@@ -252,11 +272,19 @@ export default class AirportInfoController {
     onAirportChange() {
         const airport = AirportController.airport_get();
         const windAngle = Math.round(radiansToDegrees(airport.wind.angle));
+        const snapshot = WeatherController.getSnapshot();
 
-        this.wind = this._buildWindAndGustReadout({ speed: airport.wind.speed, angle: windAngle });
-        this.altimeter = this._generateHighAltimeterReading(airport.wind.speed);
-        this.elevation = `${airport.elevation}`;
         this.icao = airport.icao.toUpperCase();
+        this.wind = this._buildWindAndGustReadout({
+            speed: airport.wind.speed,
+            angle: windAngle,
+            gust: snapshot ? snapshot.windGust : null
+        });
+        this.altimeter = snapshot ?
+            this._buildAltimeterReading(snapshot.qnhHpa) :
+            this._generateHighAltimeterReading(airport.wind.speed);
+        this.elevation = `${airport.elevation}`;
+        this._updateAtisReadout();
 
         this._render();
     }
@@ -268,8 +296,36 @@ export default class AirportInfoController {
      * @method onWindChange
      */
     onWindChange(currentWind) {
-        this.wind = this._buildWindAndGustReadout({ speed: currentWind.speed, angle: currentWind.angle });
+        this.wind = this._buildWindAndGustReadout({
+            speed: currentWind.speed,
+            angle: currentWind.angle,
+            gust: currentWind.gust
+        });
 
+        this._render();
+    }
+
+    /**
+     * Updates the pressure setting from the simulated weather
+     *
+     * @for AirportInfoController
+     * @method onWeatherChange
+     * @param snapshot {object}
+     */
+    onWeatherChange(snapshot) {
+        this.altimeter = this._buildAltimeterReading(snapshot.qnhHpa);
+
+        this._render();
+    }
+
+    /**
+     * Shows the current ATIS information letter
+     *
+     * @for AirportInfoController
+     * @method onAtisUpdated
+     */
+    onAtisUpdated() {
+        this._updateAtisReadout();
         this._render();
     }
 
@@ -300,20 +356,49 @@ export default class AirportInfoController {
      * @private
      */
     _buildWindAndGustReadout(wind) {
-        const minGustStrength = 5;
-        const { speed } = wind;
-        const { angle } = wind;
+        const { speed, angle } = wind;
         const newAngle = leftPad((angle || 360), 3);
         const newSpeed = leftPad(speed, 2);
-        // Creates a fake "gusting" speed
-        const gustStrength = speed * Math.random();
-        const gustSpeed = leftPad(Math.round(speed + gustStrength), 2);
 
-        if (gustStrength < minGustStrength) {
+        if (!wind.gust) {
             return `${newAngle} ${newSpeed}`;
         }
 
-        return `${newAngle} ${newSpeed} G${gustSpeed}`;
+        return `${newAngle} ${newSpeed} G${leftPad(wind.gust, 2)}`;
+    }
+
+    /**
+     * Pressure setting in the units the airport's country uses: hPa QNH, or inHg altimeter in the US/Canada
+     *
+     * @for AirportInfoController
+     * @method _buildAltimeterReading
+     * @param qnhHpa {number}
+     * @returns {String}
+     * @private
+     */
+    _buildAltimeterReading(qnhHpa) {
+        if (usesImperialUnits(this.icao)) {
+            return (qnhHpa * 0.02953).toFixed(2);
+        }
+
+        return String(qnhHpa);
+    }
+
+    /**
+     * @for AirportInfoController
+     * @method _updateAtisReadout
+     * @private
+     */
+    _updateAtisReadout() {
+        const atis = AtisController.getCurrent();
+
+        if (!atis) {
+            this.atis = '';
+
+            return;
+        }
+
+        this.atis = `${atis.letter[0]} ${atis.timeZ}${AtisController.isUpdateDue() ? ' DUE' : ''}`;
     }
 
     /**
@@ -341,6 +426,9 @@ export default class AirportInfoController {
     _render() {
         this.$windView.text(`${this.icao} ${this.wind}`);
         this.$altimeterView.text(`${this.icao} ${this.altimeter}`);
+        this.$altimeterLabel.text(usesImperialUnits(this.icao) ? 'ALTIM' : 'QNH');
         this.$elevationView.text(`${this.icao} ${this.elevation}`);
+        this.$atisView.text(`${this.icao} ${this.atis}`);
+        this.$atisView.toggleClass('airportInfo-value_alert', AtisController.isUpdateDue());
     }
 }

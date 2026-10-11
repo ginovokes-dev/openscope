@@ -30,6 +30,13 @@ const UI_DIALOG_FOOTER_TEMPLATE = '<div class="dialog-footer"></div>';
 const UI_OPTION_CONTAINER_TEMPLATE = '<div class="form-element"></div>';
 
 /**
+ * @property UI_OPTION_GROUP_TEMPLATE
+ * @type {string}
+ * @final
+ */
+const UI_OPTION_GROUP_TEMPLATE = '<div class="form-group-heading"></div>';
+
+/**
  * @property UI_OPTION_LABEL_TEMPLATE
  * @type {string}
  * @final
@@ -97,11 +104,18 @@ export default class SettingsController {
         this.$dialogBody = this.$dialog.find(SELECTORS.DOM_SELECTORS.DIALOG_BODY);
         const descriptions = GameController.game.option.getDescriptions();
 
+        let currentGroup = null;
+
         _forEach(descriptions, (opt) => {
             let $container = this._buildTextInputTemplate(opt);
 
             if (opt.type === 'select') {
                 $container = this._buildSelectInputTemplate(opt);
+            }
+
+            if (opt.group && opt.group !== currentGroup) {
+                currentGroup = opt.group;
+                this.$dialogBody.append($(UI_OPTION_GROUP_TEMPLATE).text(opt.group));
             }
 
             this.$dialogBody.append($container);
@@ -151,6 +165,11 @@ export default class SettingsController {
         const selectedOption = GameController.game.option.getOptionByName(option.name);
 
         $label.text(option.description);
+
+        if (option.help) {
+            $label.attr('title', option.help);
+        }
+
         $container.append($label);
 
         // this could me done with a _map(), but verbosity here makes the code easier to read

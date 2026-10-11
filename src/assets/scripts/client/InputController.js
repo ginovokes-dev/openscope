@@ -580,6 +580,24 @@ export default class InputController {
                 this._scopeModel.increasePtlLength();
 
                 break;
+            case KEY_CODES.F3:
+            case LEGACY_KEY_CODES.F3:
+                event.preventDefault();
+                this._eventBus.trigger(EVENT.TOGGLE_ATIS);
+
+                break;
+            case KEY_CODES.F4:
+            case LEGACY_KEY_CODES.F4:
+                event.preventDefault();
+                this._eventBus.trigger(EVENT.TOGGLE_RADIO);
+
+                break;
+            case KEY_CODES.F8:
+            case LEGACY_KEY_CODES.F8:
+                event.preventDefault();
+                this._eventBus.trigger(EVENT.TOGGLE_CONTROLS_GUIDE);
+
+                break;
             case KEY_CODES.F7:
             case LEGACY_KEY_CODES.F7:
                 if (this.commandBarContext !== COMMAND_CONTEXT.SCOPE) {

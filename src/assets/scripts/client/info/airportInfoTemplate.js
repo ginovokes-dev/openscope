@@ -19,6 +19,10 @@ export const AIRPORT_INFO_TEMPLATE = '' +
 '        <div class="airportInfo-label js-airportInfo-altimeter-label">ALTIM</div>' +
 '        <div class="airportInfo-value js-airportInfo-altimeter-value"></div>' +
 '    </div>' +
+'    <div class="airportInfo-line airportInfo-line_clickable js-airportInfo-atis" title="Open the ATIS (F3)">' +
+'        <div class="airportInfo-label js-airportInfo-atis-label">ATIS</div>' +
+'        <div class="airportInfo-value js-airportInfo-atis-value"></div>' +
+'    </div>' +
 '    <div class="airportInfo-line">' +
 '        <div class="airportInfo-label js-airportInfo-elevation-label">ELEV</div>' +
 '        <div class="airportInfo-value js-airportInfo-elevation-value"></div>' +

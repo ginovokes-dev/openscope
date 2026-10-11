@@ -6,6 +6,9 @@ import AirportController from './airport/AirportController';
 import AirportGuideViewController from './airportGuide/AirportGuideViewController';
 import CanvasController from './canvas/CanvasController';
 import AirportInfoController from './info/AirportInfoController';
+import AtisController from './atis/AtisController';
+import AtisPanel from './atis/AtisPanel';
+import WeatherController from './weather/WeatherController';
 import ChangelogController from './changelog/ChangelogController';
 import ContentQueue from './contentQueue/ContentQueue';
 import EventTracker from './EventTracker';
@@ -171,6 +174,8 @@ export default class AppController {
         AirportController.init(initialAirportIcao, initialAirportData, airportLoadList);
         NavigationLibrary.init(initialAirportData);
         SpawnPatternCollection.init(initialAirportData);
+        WeatherController.init();
+        AtisController.init();
 
         this.airlineController = new AirlineController(airlineList);
         this.scopeModel = new ScopeModel();
@@ -191,6 +196,8 @@ export default class AppController {
 
         this.inputController = new InputController(this.$element, this.aircraftController, this.scopeModel);
         this.airportInfoController = new AirportInfoController(this.$element);
+        this.atisPanel = new AtisPanel(this.$element);
+        UiController.registerExtraDialog(this.atisPanel);
         this.airportGuideController = new AirportGuideViewController(this.$element, airportGuideData, initialAirportData.icao);
         this.changelogController = new ChangelogController(this.contentQueue);
 
@@ -248,6 +255,8 @@ export default class AppController {
      */
     updatePre() {
         this.airportInfoController.updateClock();
+        WeatherController.update();
+        AtisController.update();
         GameController.update_pre();
         this.aircraftController.update();
     }

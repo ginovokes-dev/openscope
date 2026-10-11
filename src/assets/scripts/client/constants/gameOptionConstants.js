@@ -20,7 +20,18 @@ export const GAME_OPTION_NAMES = {
     RANGE_RINGS: 'rangeRings',
     SOFT_CEILING: 'softCeiling',
     THEME: 'theme',
-    TOWER_CONTROLLER: 'towerController'
+    TOWER_CONTROLLER: 'towerController',
+    WEATHER_VARIABILITY: 'weatherVariability',
+    ATIS_UPDATES: 'atisUpdates',
+    FAILURE_FREQUENCY: 'failureFrequency',
+    EVENTS_FUEL: 'eventsFuel',
+    EVENTS_MEDICAL: 'eventsMedical',
+    EVENTS_TECHNICAL: 'eventsTechnical',
+    EVENTS_WEATHER: 'eventsWeather',
+    EVENTS_REQUESTS: 'eventsRequests',
+    EVENTS_TRAFFIC: 'eventsTraffic',
+    AIRCRAFT_INFO_DETAIL: 'aircraftInfoDetail',
+    FUEL_UNITS: 'fuelUnits'
 };
 
 /**
@@ -273,5 +284,136 @@ export const GAME_OPTION_VALUES = [
 
             return !Number.isNaN(output) && output > 0;
         }
+    },
+    {
+        name: GAME_OPTION_NAMES.WEATHER_VARIABILITY,
+        group: 'Weather and ATIS',
+        defaultValue: 'normal',
+        description: 'Weather changes',
+        help: 'How often and how severely wind, visibility, cloud and pressure change. Static keeps the airport file\'s wind.',
+        type: 'select',
+        onChangeEventHandler: EVENT.WEATHER_VARIABILITY_CHANGE,
+        optionList: [
+            { displayLabel: 'Static (airport file wind)', value: 'static' },
+            { displayLabel: 'Calm - slow, benign changes', value: 'calm' },
+            { displayLabel: 'Normal', value: 'normal' },
+            { displayLabel: 'Lively - fronts and showers', value: 'lively' },
+            { displayLabel: 'Severe - storms, fog, snow', value: 'severe' }
+        ]
+    },
+    {
+        name: GAME_OPTION_NAMES.ATIS_UPDATES,
+        group: 'Weather and ATIS',
+        defaultValue: 'auto',
+        description: 'ATIS updates',
+        help: 'Automatic: a new information letter is issued when conditions change. Manual: you issue each update ' +
+            'from the ATIS panel, and pilots will call with outdated information if you forget.',
+        type: 'select',
+        onChangeEventHandler: null,
+        optionList: [
+            { displayLabel: 'Automatic', value: 'auto' },
+            { displayLabel: 'Manual (I update it)', value: 'manual' }
+        ]
+    },
+    {
+        name: GAME_OPTION_NAMES.FAILURE_FREQUENCY,
+        group: 'Failures and events',
+        defaultValue: 'rare',
+        description: 'Failures and emergencies',
+        help: 'How often something goes wrong: low fuel, medical emergencies, engine and system failures, ' +
+            'go-arounds, radio failures, diversions. Rare is about one event an hour.',
+        type: 'select',
+        onChangeEventHandler: null,
+        optionList: [
+            { displayLabel: 'Off', value: 'off' },
+            { displayLabel: 'Rare (~1 per hour)', value: 'rare' },
+            { displayLabel: 'Occasional (~1 per 20 min)', value: 'occasional' },
+            { displayLabel: 'Frequent (~1 per 10 min)', value: 'frequent' },
+            { displayLabel: 'Chaos (~1 per 4 min)', value: 'chaos' }
+        ]
+    },
+    {
+        name: GAME_OPTION_NAMES.EVENTS_FUEL,
+        group: 'Failures and events',
+        defaultValue: 'on',
+        description: 'Low fuel / fuel emergencies',
+        help: 'Arrivals that declare minimum fuel or MAYDAY FUEL and need priority',
+        type: 'select',
+        onChangeEventHandler: null,
+        optionList: [{ displayLabel: 'On', value: 'on' }, { displayLabel: 'Off', value: 'off' }]
+    },
+    {
+        name: GAME_OPTION_NAMES.EVENTS_MEDICAL,
+        group: 'Failures and events',
+        defaultValue: 'on',
+        description: 'Medical and passenger emergencies',
+        help: 'Sick passengers, unruly passengers: PAN-PAN calls that request priority',
+        type: 'select',
+        onChangeEventHandler: null,
+        optionList: [{ displayLabel: 'On', value: 'on' }, { displayLabel: 'Off', value: 'off' }]
+    },
+    {
+        name: GAME_OPTION_NAMES.EVENTS_TECHNICAL,
+        group: 'Failures and events',
+        defaultValue: 'on',
+        description: 'Technical failures',
+        help: 'Engine failure, smoke, bird strike, pressurisation loss and radio failure (squawk 7600)',
+        type: 'select',
+        onChangeEventHandler: null,
+        optionList: [{ displayLabel: 'On', value: 'on' }, { displayLabel: 'Off', value: 'off' }]
+    },
+    {
+        name: GAME_OPTION_NAMES.EVENTS_WEATHER,
+        group: 'Failures and events',
+        defaultValue: 'on',
+        description: 'Weather-related events',
+        help: 'Windshear go-arounds and pilots requesting a diversion because of the weather',
+        type: 'select',
+        onChangeEventHandler: null,
+        optionList: [{ displayLabel: 'On', value: 'on' }, { displayLabel: 'Off', value: 'off' }]
+    },
+    {
+        name: GAME_OPTION_NAMES.EVENTS_REQUESTS,
+        group: 'Failures and events',
+        defaultValue: 'on',
+        description: 'Pilot requests',
+        help: 'Pilots asking for direct routings, different altitudes or a different runway',
+        type: 'select',
+        onChangeEventHandler: null,
+        optionList: [{ displayLabel: 'On', value: 'on' }, { displayLabel: 'Off', value: 'off' }]
+    },
+    {
+        name: GAME_OPTION_NAMES.EVENTS_TRAFFIC,
+        group: 'Failures and events',
+        defaultValue: 'on',
+        description: 'Operational go-arounds',
+        help: 'Arrivals that go around because of an occupied runway, an unstable approach or birds',
+        type: 'select',
+        onChangeEventHandler: null,
+        optionList: [{ displayLabel: 'On', value: 'on' }, { displayLabel: 'Off', value: 'off' }]
+    },
+    {
+        name: GAME_OPTION_NAMES.AIRCRAFT_INFO_DETAIL,
+        group: 'Aircraft information',
+        defaultValue: 'full',
+        description: 'Aircraft info panel detail',
+        help: 'Standard shows what a real controller sees (flight plan, squawk, levels). Full also shows ' +
+            'fuel and souls on board, which a real controller would have to ask the pilot for.',
+        type: 'select',
+        onChangeEventHandler: null,
+        optionList: [
+            { displayLabel: 'Full (includes fuel and souls on board)', value: 'full' },
+            { displayLabel: 'Standard (controller view)', value: 'standard' }
+        ]
+    },
+    {
+        name: GAME_OPTION_NAMES.FUEL_UNITS,
+        group: 'Aircraft information',
+        defaultValue: 'kg',
+        description: 'Fuel units',
+        help: 'Units used for fuel quantities in the aircraft info panel and pilot reports',
+        type: 'select',
+        onChangeEventHandler: null,
+        optionList: [{ displayLabel: 'Kilograms', value: 'kg' }, { displayLabel: 'Pounds', value: 'lb' }]
     }
 ];

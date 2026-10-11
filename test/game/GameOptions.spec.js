@@ -21,7 +21,18 @@ ava('sets #_options on instantiation', (t) => {
         'mouseClickDrag',
         'rangeRings',
         'measureToolPath',
-        'chatLogDuration'
+        'chatLogDuration',
+        'weatherVariability',
+        'atisUpdates',
+        'failureFrequency',
+        'eventsFuel',
+        'eventsMedical',
+        'eventsTechnical',
+        'eventsWeather',
+        'eventsRequests',
+        'eventsTraffic',
+        'aircraftInfoDetail',
+        'fuelUnits'
     ];
 
     const model = new GameOptions();

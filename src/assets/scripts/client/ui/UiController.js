@@ -50,6 +50,15 @@ class UiController {
         this.settingsController = null;
 
         /**
+         * Dialogs owned by other controllers that must close together with the built-in ones (on Escape)
+         *
+         * @property _extraDialogs
+         * @type {array<object>} objects exposing `isOpen()` and `close()`
+         * @private
+         */
+        this._extraDialogs = [];
+
+        /**
          * @for UiController
          * @property trafficRateController
          * @type {TrafficRateController}
@@ -576,6 +585,12 @@ class UiController {
      * @method closeAllDialogs
      */
     closeAllDialogs() {
+        this._extraDialogs.forEach((dialog) => {
+            if (dialog.isOpen()) {
+                dialog.close();
+            }
+        });
+
         if (this.isAirportGuideDialogOpen()) {
             this.onToggleAirportGuide();
         }
@@ -603,6 +618,17 @@ class UiController {
         if (this.videoMapController.isDialogOpen()) {
             this.onToggleVideoMap();
         }
+    }
+
+    /**
+     * Register a dialog so that it is closed along with the others (eg. by pressing Escape)
+     *
+     * @for UiController
+     * @method registerExtraDialog
+     * @param dialog {object} must provide `isOpen()` and `close()`
+     */
+    registerExtraDialog(dialog) {
+        this._extraDialogs.push(dialog);
     }
 
     /**

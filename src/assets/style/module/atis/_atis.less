@@ -1,0 +1,128 @@
+.atis-panel {
+    width: 560px;
+    background-color: @dark-085;
+}
+
+.atis-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding-bottom: @spacing-1x;
+    font-size: 15px;
+}
+
+.atis-letter {
+    color: @white;
+    letter-spacing: 1px;
+}
+
+.atis-time {
+    margin-left: @spacing-2x;
+    color: @medium-light-gray;
+}
+
+.atis-badge {
+    margin-left: @spacing-2x;
+    padding: 1px 6px;
+    color: @dark;
+    background-color: @red;
+    border-radius: 3px;
+    font-size: 11px;
+}
+
+.atis-badge[hidden] {
+    display: none;
+}
+
+.atis-text {
+    margin: 0;
+    padding: @spacing-2x;
+    max-height: 260px;
+    overflow-y: auto;
+    background-color: @dark;
+    color: @light-gray;
+    border: 2px solid @blue-medium;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    user-select: text;
+}
+
+.atis-buttons {
+    display: flex;
+    justify-content: center;
+    padding-top: @spacing-2x;
+}
+
+.atis-button {
+    margin: 0 @spacing-1x;
+    padding: 5px 14px;
+    color: @light-gray;
+    background-color: @blue-medium;
+    border: 0;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.atis-button:hover {
+    background-color: @blue-light;
+}
+
+.atis-editor {
+    margin-top: @spacing-2x;
+    padding: @spacing-2x;
+    background-color: @dark;
+    border: 2px solid @blue-medium;
+    border-radius: 10px;
+}
+
+.atis-editor[hidden] {
+    display: none;
+}
+
+.atis-note {
+    margin: 4px 0;
+    color: @medium-light-gray;
+    font-style: italic;
+}
+
+.atis-note[hidden] {
+    display: none;
+}
+
+.atis-remarks-label {
+    display: block;
+    margin-top: @spacing-1x;
+}
+
+.atis-remarks {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 4px;
+    padding: 5px;
+    color: @light-gray;
+    background-color: @dark-gray;
+    border: 0;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 12px;
+    resize: vertical;
+}
+
+.form-group-heading {
+    margin: @spacing-2x 0 @spacing-1x 0;
+    padding-bottom: 3px;
+    color: @white-05;
+    border-bottom: 1px solid @blue-medium;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.form-group-heading:first-child {
+    margin-top: 0;
+}
