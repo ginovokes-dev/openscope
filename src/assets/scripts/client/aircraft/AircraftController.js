@@ -16,6 +16,7 @@ import StripViewController from './StripView/StripViewController';
 import GameController, { GAME_EVENTS } from '../game/GameController';
 import CommandParser from '../commands/parsers/CommandParser';
 import { airlineNameAndFleetHelper } from '../airline/airlineHelpers';
+import { getLongestRunwayInMeters, isAircraftTypeSuitableForRunwayLength } from './aircraftSuitability';
 import { convertStaticPositionToDynamic } from '../base/staticPositionToDynamicPositionHelper';
 import { abs } from '../math/core';
 import { distance2d } from '../math/distance';
@@ -689,7 +690,10 @@ export default class AircraftController {
      * @private
      */
     _getRandomAircraftTypeDefinitionForAirlineId(airlineId, airlineModel) {
-        return this.aircraftTypeDefinitionCollection.getAircraftDefinitionForAirlineId(airlineId, airlineModel);
+        const longestRunwayInMeters = getLongestRunwayInMeters(AirportController.airport_get());
+        const isSuitable = (typeDefinition) => isAircraftTypeSuitableForRunwayLength(typeDefinition, longestRunwayInMeters);
+
+        return this.aircraftTypeDefinitionCollection.getAircraftDefinitionForAirlineId(airlineId, airlineModel, isSuitable);
     }
 
     /**

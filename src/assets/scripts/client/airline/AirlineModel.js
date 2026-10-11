@@ -9,6 +9,7 @@ import _without from 'lodash/without';
 import BaseModel from '../base/BaseModel';
 import { buildFlightNumber } from './buildFlightNumber';
 import { INVALID_INDEX } from '../constants/globalConstants';
+import { choose_weight } from '../utilities/generalUtilities';
 import { isEmptyOrNotObject } from '../utilities/validatorUtilities';
 import { DEFAULT_CALLSIGN_FORMAT } from '../constants/airlineConstants';
 
@@ -238,9 +239,11 @@ export default class AirlineModel extends BaseModel {
         return this.aircraftList[index];
     }
 
-    // TODO: this returns a random, and not weighted, result
     /**
      * Return a random aircraft type from within a specific fleet
+     *
+     * Entries are drawn using their weights, so an airline that flies 67 A320s and one A318 will
+     * (correctly) be seen with an A320 far more often than with the A318.
      *
      * @for AirlineModel
      * @method _getRandomAircraftTypeFromFleet
@@ -255,10 +258,23 @@ export default class AirlineModel extends BaseModel {
         }
 
         const fleet = this.fleets[fleetName];
-        const index = _random(0, fleet.length - 1);
 
-        // entries in `fleets[fleetName]` are of the shape `[TYPE, WEIGHT]` we only need the type here
-        return _head(fleet[index]);
+        // entries in `fleets[fleetName]` are of the shape `[TYPE, WEIGHT]`
+        const weightedFleet = fleet.map((entry) => [entry[0], Number(entry[1]) > 0 ? Number(entry[1]) : 1]);
+
+        return choose_weight(weightedFleet);
+    }
+
+    /**
+     * Whether this airline declares a fleet with the given name
+     *
+     * @for AirlineModel
+     * @method hasFleet
+     * @param fleetName {string}
+     * @return {boolean}
+     */
+    hasFleet(fleetName) {
+        return this._hasFleet(fleetName);
     }
 
     /**

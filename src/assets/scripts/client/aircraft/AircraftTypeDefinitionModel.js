@@ -135,6 +135,14 @@ export default class AircraftTypeDefinitionModel extends BaseModel {
          */
         this.capability = null;
 
+        /**
+         * Approximate operational profile used for passenger and fuel simulation
+         *
+         * @property profile
+         * @type {object}
+         */
+        this.profile = null;
+
         this.init(aircraftTypeDefinition);
     }
 
@@ -158,6 +166,7 @@ export default class AircraftTypeDefinitionModel extends BaseModel {
         this.runway = aircraftTypeDefinition.runway;
         this.speed = aircraftTypeDefinition.speed;
         this.capability = aircraftTypeDefinition.capability;
+        this.profile = aircraftTypeDefinition.profile || null;
 
         this.icaoWithWeightClass = this._buildTypeForStripView();
     }
