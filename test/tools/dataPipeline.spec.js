@@ -13,6 +13,7 @@ import { simBearingDistance, simOffsetToLatLon } from '../../tools/data-pipeline
 import { serializeFile } from '../../tools/data-pipeline/lib/format';
 import { mergeLoadList } from '../../tools/data-pipeline/lib/loadlist';
 import { COMMAND_WORDS, pickGateBearings } from '../../tools/data-pipeline/lib/gates';
+import { gaAirlines } from '../../tools/data-pipeline/lib/traffic';
 
 const TYPES = {
     A321: { takeoff: 2.4, landing: 1.5 },
@@ -171,4 +172,20 @@ ava('loadlist: generated entries are merged without touching hand-authored text 
 
     fs.unlinkSync(file);
     fs.rmdirSync(dir);
+});
+
+ava('traffic: light aeroplanes are not generated at large airports or slot-coordinated ones', (t) => {
+    const types = new Map([
+        ['C172', { takeoff: 0.5, landing: 0.4 }],
+        ['C208', { takeoff: 0.8, landing: 0.6 }],
+        ['C550', { takeoff: 1.1, landing: 0.9 }]
+    ]);
+    const names = (airportClass, icao) => gaAirlines('g', airportClass, 3500, 100, types, icao).map(([name]) => name);
+
+    t.true(names('small', 'EGXX').indexOf('g/c172') !== -1);
+    t.true(names('medium', 'EGXX').indexOf('g/c172') !== -1);
+    t.false(names('large', 'EGXX').indexOf('g/c172') !== -1);
+    t.false(names('hub', 'EGXX').indexOf('g/c172') !== -1);
+    t.false(names('medium', 'EGLC').indexOf('g/c172') !== -1);
+    t.true(names('large', 'EGLL').indexOf('g/c550') !== -1);
 });

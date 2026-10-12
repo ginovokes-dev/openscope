@@ -1,203 +1,100 @@
 {
-    "radio": {
-        "twr": "Lindbergh Tower",
-        "app": "SoCal Approach",
-        "dep": "SoCal Departure"
-    },
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KSAN/",
+    "info": {"country":"US","city":"San Diego","type":"large_airport","longestRunwayM":2865,"frequencies":{"atis":"134.800","twr":"118.300","gnd":"123.900"}},
+    "radio": {"twr":"San Diego Tower","app":"San Diego Approach","dep":"San Diego Departure"},
     "icao": "KSAN",
     "iata": "SAN",
-    "magnetic_north": 12.3,
-    "ctr_radius": 80,
+    "magnetic_north": 10.9,
+    "ctr_radius": 60,
     "ctr_ceiling": 10000,
     "initial_alt": 5000,
-    "position": ["N32.734", "W117.190", "5m"],
-    "rangeRings": {
-        "enabled": true,
-        "center": [32.734, -117.190],
-        "radius_nm": 5.0
-    },
+    "position": [32.733601,-117.190002,"17ft"],
+    "rangeRings": {"enabled":true,"center":[32.733601,-117.190002],"radius_nm":5},
     "has_terrain": false,
-    "wind": {
-        "angle": 300,
-        "speed": 8
-    },
+    "wind": {"angle":300,"speed":6},
     "arrivalRunway": "27",
     "departureRunway": "27",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[33.2635,-117.0687],[33.219,-116.9098],[33.1415,-116.77],[33.0361,-116.6588],[32.9102,-116.5839],[32.7722,-116.5502],[32.6316,-116.5601],[32.4979,-116.613],[32.3803,-116.7052],[32.2868,-116.8304],[32.2237,-116.9801],[32.1954,-117.1441],[32.2037,-117.3113],[32.2482,-117.4702],[32.3257,-117.61],[32.4311,-117.7212],[32.557,-117.7961],[32.695,-117.8298],[32.8356,-117.8199],[32.9693,-117.767],[33.0869,-117.6749],[33.1804,-117.5496],[33.2435,-117.3999],[33.2718,-117.2359]]}
+    ],
     "fixes": {
-        "_KSAN046060": ["N33d16.52m0", "W116d11.36m0"],
-        "_KSAN075060": ["N32d47.86m0", "W116d00.37m0"],
-        "MELDY": ["N33d05.36", "W117d41.63"],
-        "PEBLE": ["N33d10.92", "W117d50.17"],
-        "PGY":  ["N32d36.62", "W116d58.75"],
-        "BROWS": ["N32d37.87", "W116d46.20"],
-        "JLI":   ["N33d08.43", "W116d35.16"],
-        "IPL":   ["N32d44.93", "W115d30.51"],
-        "BOKNE": ["N32d58.41", "W117d21.71"],
-        "MAFAN": ["N33d04.10", "W117d25.78"],
-        "LNSAY": ["N33d08.77", "W117d29.17"],
-        "FALCC":  ["N33d15.68", "W117d34.11"],
-        "HARBR": ["N33d14.28", "W117d51.38"],
-        "LOWMA": ["N32°39'16.71", "W117°16'5.79"],
-        "PILLO": ["N32d46.22", "W116d28.11"],
-        "BARET": ["N32d46.45", "W116d40.65"],
-        "IFHEJ": ["N32d39.60", "W116d53.28"],
-        "SARGS": ["N32d46.90", "W117d23.37"],
-        "VYDDA": ["N32d40.30", "W116d56.15"]
+        "KSAN": [32.7336,-117.19],
+        "HDF": [33.7763,-117.185,"homeland"],
+        "JUTWE": [32.98343,-117.1888],
+        "JLI": [33.1405,-116.586,"julian"],
+        "SENUH": [32.88977,-116.95818],
+        "ENS": [31.7959,-116.607,"ensenada"],
+        "VIDES": [32.51222,-117.05236],
+        "IPEPU": [32.64693,-118.02311],
+        "RUMOZ": [32.70294,-117.48475],
+        "ELB": [33.676,-117.731,"el toro"],
+        "VISVU": [32.95857,-117.31915],
+        "_RWY0904DME": [32.7548,-117.27736],
+        "_RWY2704DME": [32.7129,-117.10456]
     },
     "runways": [
-        {
-            "name":        ["09", "27"],
-            "name_offset": [[0, 0], [0, 0]],
-            "end": [
-                ["N32.7371218", "W117.2043558"],
-                ["N32.7300016", "W117.1749719"]
-            ],
-            "length":      2.865,
-            "ils":         [true, false]
-        }
+        {"name":["09","27"],"end":[[32.73637,-117.20124,"14ft"],[32.73138,-117.18064,"13ft"]],"ils":[true,true]}
     ],
     "sids": {
-        "BRDR7": {
-            "icao": "BRDR7",
-            "name": "Border Seven",
-            "rwy": {
-                "9" : ["BROWS"],
-                "27": ["PGY", "BROWS"]
-            },
-            "exitPoints": {
-                "JLI": ["JLI"]
-            },
-            "draw": [["PGY","BROWS","JLI*"]]
-        },
-        "LNSAY5": {
-            "icao": "LNSAY5",
-            "name": "Lindsay Five",
-            "rwy": {
-                "9" : ["BOKNE", "MAFAN", "LNSAY"],
-                "27": ["BOKNE", "MAFAN", "LNSAY"]
-            },
-            "exitPoints": {
-                "FALCC": ["FALCC"]
-            },
-            "draw": [["BOKNE","MAFAN","FALCC*"]]
-        },
-        "PEBLE6": {
-            "icao": "PEBLE6",
-            "name": "Peble Six",
-            "rwy": {
-                "9" : ["SARGS", "MELDY"],
-                "27": ["SARGS", "MELDY"]
-            },
-            "exitPoints": {
-                "PEBLE": ["PEBLE"]
-            },
-            "draw": [["SARGS", "MELDY", "PEBLE*"]]
-        },
-        "POGGI5": {
-            "icao": "POGGI5",
-            "name": "Poggie Five",
-            "rwy": {
-                "9" : ["LOWMA", "PGY"],
-                "27": ["LOWMA", "PGY"]
-            },
-            "exitPoints": {
-                "BROWS": ["BROWS"]
-            },
-            "draw": [["LOWMA","PGY","BROWS*"]]
-        }
+        "HDF3B": {"icao":"HDF3B","name":"Homeland Three Bravo","rwy":{"KSAN09":["_RWY2704DME"],"KSAN27":["_RWY0904DME"]},"body":[],"exitPoints":{"HDF":["HDF"]},"draw":[["KSAN","HDF*"]]},
+        "JLI3A": {"icao":"JLI3A","name":"Julian Three Alpha","rwy":{"KSAN09":["_RWY2704DME"],"KSAN27":["_RWY0904DME"]},"body":[],"exitPoints":{"JLI":["JLI"]},"draw":[["KSAN","JLI*"]]},
+        "ENS1E": {"icao":"ENS1E","name":"Ensenada One Echo","rwy":{"KSAN09":["_RWY2704DME"],"KSAN27":["_RWY0904DME"]},"body":[],"exitPoints":{"ENS":["ENS"]},"draw":[["KSAN","ENS*"]]},
+        "IPEPU1F": {"icao":"IPEPU1F","name":"Ipepu One Foxtrot","rwy":{"KSAN09":["_RWY2704DME"],"KSAN27":["_RWY0904DME"]},"body":[],"exitPoints":{"IPEPU":["IPEPU"]},"draw":[["KSAN","IPEPU*"]]},
+        "ELB3F": {"icao":"ELB3F","name":"El Toro Three Foxtrot","rwy":{"KSAN09":["_RWY2704DME"],"KSAN27":["_RWY0904DME"]},"body":[],"exitPoints":{"ELB":["ELB"]},"draw":[["KSAN","ELB*"]]}
     },
-    "departures": {
-        "airlines": [
-            ["swa", 35],
-            ["aal", 12],
-            ["ual", 9],
-            ["asa", 8],
-            ["dal", 8],
-            ["airtaxi", 12],
-            ["n/lightGA", 5]
-        ],
-        "destinations": [
-            "BRDR7", "LNSAY5", "PEBLE6", "POGGI5"
-        ],
-        "type": "cyclic",
-        "offset": 0,
-        "period": 30,
-        "frequency": 18.5
-    },
-    "arrivals": [
-        {
-            "_name": "BARET FIVE",
-            "speed": 250,
-            "type": "cyclic",
-            "offset": 12,
-            "period": 23,
-            "frequency": 7.5,
-            "altitude": 10000,
-            "fixes": ["_KSAN046060", "BARET", "IFHEJ", "VYDDA"],
-            "airlines": [
-                ["swa", 35],
-                ["aal", 12],
-                ["ual", 9],
-                ["asa", 8],
-                ["dal", 8],
-                ["airtaxi", 12]
-            ]
-        },
-        {
-            "_name": "HUBRD ONE",
-            "radial": 310,
-            "heading": 140,
-            "speed": 250,
-            "type": "cyclic",
-            "offset": 10,
-            "period": 21,
-            "frequency": 5,
-            "altitude": 10000,
-            "airlines": [
-                ["swa", 35],
-                ["aal", 12],
-                ["ual", 9],
-                ["asa", 8],
-                ["dal", 8],
-                ["airtaxi", 12]
-            ]
-        },
-        {
-            "_name": "SHAMU ONE",
-            "radial": 290,
-            "heading": 115,
-            "speed": 250,
-            "type": "cyclic",
-            "offset": 15,
-            "period": 18,
-            "frequency": 2.5,
-            "altitude": 10000,
-            "airlines": [
-                ["swa", 35],
-                ["aal", 12],
-                ["ual", 9],
-                ["asa", 8],
-                ["dal", 8],
-                ["airtaxi", 12]
-            ]
-        },
-        {
-            "_name": "LYNDI FOUR",
-            "speed": 250,
-            "type": "cyclic",
-            "offset": 8,
-            "period": 15,
-            "frequency": 2.5,
-            "altitude": 10000,
-            "fixes": ["_KSAN075060", "PILLO", "VYDDA"],
-            "airlines": [
-                ["swa", 35],
-                ["aal", 12],
-                ["ual", 9],
-                ["asa", 8],
-                ["dal", 8],
-                ["airtaxi", 12]
-            ]
-        }
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KSAN","destination":"KDEN","category":"departure","route":"KSAN27.JLI3A.JLI","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["swa/b738",2],["fft/a319",1],["fft/a320",1],["swa/b733",1],["swa/b737",1],["ual/a319",1],["ual/a320",1],["ual/b738",1],["ual/b739",1],["ual/b752",1]]},
+        {"origin":"KSAN","destination":"KSFO","category":"departure","route":"KSAN27.ELB3F.ELB","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["swa/b733",2],["asa/a319",1],["asa/a320",1],["swa/b737",1],["ual/a319",1],["ual/a320",1],["ual/b737",1],["ual/b738",1],["ual/b739",1]]},
+        {"origin":"KSAN","destination":"KDFW","category":"departure","route":"KSAN27.JLI3A.JLI","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["aal/b738",2],["aal/b752",2],["aal/md82",2],["aal/md83",2],["nks/a319",1]]},
+        {"origin":"KSAN","destination":"KORD","category":"departure","route":"KSAN27.JLI3A.JLI","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["aal/b738",2],["ual/a319",1],["ual/a320",1],["ual/b737",1],["ual/b738",1],["ual/b739",1]]},
+        {"origin":"KSAN","destination":"KPHX","category":"departure","route":"KSAN27.JLI3A.JLI","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["aal/a320",2],["aal/a321",2],["swa/b733",2],["swa/b737",1]]},
+        {"origin":"KSAN","destination":"KLAS","category":"departure","route":"KSAN27.JLI3A.JLI","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["swa/b733",2],["nks/a319",1],["nks/a320",1],["swa/b737",1],["swa/b738",1]]},
+        {"origin":"KSAN","destination":"KPDX","category":"departure","route":"KSAN27.ELB3F.ELB","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["asa/b739",2],["asa/b734",1],["asa/b737",1],["asa/b738",1],["nks/a319",1]]},
+        {"origin":"KSAN","destination":"","category":"departure","route":"KSAN27.HDF3B.HDF","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["aal/b737",1],["aay/md82",1],["wja/b737",1],["wja/b738",1]]},
+        {"origin":"KSAN","destination":"","category":"departure","route":"KSAN27.JLI3A.JLI","altitude":"","speed":"","method":"random","rate":4,"airlines":[["swa/b737",12],["swa/b733",7],["swa/b738",7],["aal/a320",4],["aal/b738",4],["dal/b738",4],["dal/b739",3],["ual/b738",3],["ual/b739",3],["aal/a319",2],["aal/a321",2],["asa/b738",2]]},
+        {"origin":"KSAN","destination":"","category":"departure","route":"KSAN27.ENS1E.ENS","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["asa/b738",1],["asa/b739",1],["nks/a319",1],["voi/a319",1]]},
+        {"origin":"KSAN","destination":"","category":"departure","route":"KSAN27.IPEPU1F.IPEPU","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["asa/b738",3],["hal/a332",1]]},
+        {"origin":"KSAN","destination":"","category":"departure","route":"KSAN27.ELB3F.ELB","altitude":"","speed":"","method":"random","rate":1.01,"airlines":[["swa/b733",6],["swa/b737",4],["swa/b738",3],["asa/b739",2],["asa/b734",1],["asa/b737",1],["asa/b738",1]]},
+        {"origin":"KSAN","destination":"","category":"departure","route":"KSAN27.ELB3F.ELB","altitude":"","speed":"","method":"random","rate":0.6,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KSAN","destination":"","category":"departure","route":"KSAN27.HDF3B.HDF","altitude":"","speed":"","method":"random","rate":0.6,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KDEN","destination":"KSAN","category":"arrival","route":"JLI..SENUH..KSAN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.62,"airlines":[["swa/b738",2],["fft/a319",1],["fft/a320",1],["swa/b733",1],["swa/b737",1],["ual/a319",1],["ual/a320",1],["ual/b738",1],["ual/b739",1],["ual/b752",1]]},
+        {"origin":"KSFO","destination":"KSAN","category":"arrival","route":"ELB..VISVU..KSAN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.56,"airlines":[["swa/b733",2],["asa/a319",1],["asa/a320",1],["swa/b737",1],["ual/a319",1],["ual/a320",1],["ual/b737",1],["ual/b738",1],["ual/b739",1]]},
+        {"origin":"KDFW","destination":"KSAN","category":"arrival","route":"JLI..SENUH..KSAN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["aal/b738",2],["aal/b752",2],["aal/md82",2],["aal/md83",2],["nks/a319",1]]},
+        {"origin":"KORD","destination":"KSAN","category":"arrival","route":"JLI..SENUH..KSAN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.39,"airlines":[["aal/b738",2],["ual/a319",1],["ual/a320",1],["ual/b737",1],["ual/b738",1],["ual/b739",1]]},
+        {"origin":"KPHX","destination":"KSAN","category":"arrival","route":"JLI..SENUH..KSAN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.39,"airlines":[["aal/a320",2],["aal/a321",2],["swa/b733",2],["swa/b737",1]]},
+        {"origin":"KLAS","destination":"KSAN","category":"arrival","route":"JLI..SENUH..KSAN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["swa/b733",2],["nks/a319",1],["nks/a320",1],["swa/b737",1],["swa/b738",1]]},
+        {"origin":"KPDX","destination":"KSAN","category":"arrival","route":"ELB..VISVU..KSAN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["asa/b739",2],["asa/b734",1],["asa/b737",1],["asa/b738",1],["nks/a319",1]]},
+        {"origin":"","destination":"KSAN","category":"arrival","route":"HDF..JUTWE..KSAN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.23,"airlines":[["aal/b737",1],["aay/md82",1],["wja/b737",1],["wja/b738",1]]},
+        {"origin":"","destination":"KSAN","category":"arrival","route":"JLI..SENUH..KSAN","altitude":[6000,9000],"speed":250,"method":"random","rate":4,"airlines":[["swa/b737",12],["swa/b733",7],["swa/b738",7],["aal/a320",4],["aal/b738",4],["dal/b738",4],["dal/b739",3],["ual/b738",3],["ual/b739",3],["aal/a319",2],["aal/a321",2],["asa/b738",2]]},
+        {"origin":"","destination":"KSAN","category":"arrival","route":"ENS..VIDES..KSAN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.23,"airlines":[["asa/b738",1],["asa/b739",1],["nks/a319",1],["voi/a319",1]]},
+        {"origin":"","destination":"KSAN","category":"arrival","route":"IPEPU..RUMOZ..KSAN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.23,"airlines":[["asa/b738",3],["hal/a332",1]]},
+        {"origin":"","destination":"KSAN","category":"arrival","route":"ELB..VISVU..KSAN","altitude":[6000,9000],"speed":250,"method":"random","rate":1.01,"airlines":[["swa/b733",6],["swa/b737",4],["swa/b738",3],["asa/b739",2],["asa/b734",1],["asa/b737",1],["asa/b738",1]]},
+        {"origin":"","destination":"KSAN","category":"arrival","route":"ELB..VISVU..KSAN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.6,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"","destination":"KSAN","category":"arrival","route":"HDF..JUTWE..KSAN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.6,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [33.7763,-117.185,32.9834,-117.1888],
+            [32.9834,-117.1888,32.7336,-117.19],
+            [33.1405,-116.586,32.8898,-116.9582],
+            [32.8898,-116.9582,32.7336,-117.19],
+            [31.7959,-116.607,32.5122,-117.0524],
+            [32.5122,-117.0524,32.7336,-117.19],
+            [32.6469,-118.0231,32.7029,-117.4848],
+            [32.7029,-117.4848,32.7336,-117.19],
+            [33.676,-117.731,32.9586,-117.3192],
+            [32.9586,-117.3192,32.7336,-117.19]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [32.7364,-117.2012,32.7824,-117.3916],
+            [32.7498,-117.2997,32.769,-117.2931],
+            [32.7728,-117.3949,32.792,-117.3883],
+            [32.7314,-117.1806,32.6851,-116.9905],
+            [32.7179,-117.0823,32.6987,-117.0888],
+            [32.6947,-116.9872,32.6755,-116.9938]
+        ]}
     ]
 }

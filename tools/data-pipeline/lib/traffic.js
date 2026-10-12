@@ -36,6 +36,12 @@ const GA_TYPES = [
     ['GLF4', 0.5, 'jet'], ['GLEX', 0.5, 'jet'], ['GLF5', 0.4, 'jet']
 ];
 
+/**
+ * Airports where light aeroplanes do not operate regardless of their size class (slot-coordinated and
+ * city-centre airports: business jets and turboprops only)
+ */
+const NO_LIGHT_GA = new Set(['EGLL', 'EGKK', 'EGLC', 'EGSS', 'EGGW', 'EGCC', 'EHAM', 'LFPG', 'LFPO', 'EDDF', 'LEMD', 'LEBL', 'LIRF']);
+
 /** Relative weight of jets vs light GA by airport class. */
 const JET_FACTOR = { hub: 3.0, large: 2.2, medium: 1.2, small: 0.5 };
 
@@ -44,7 +50,8 @@ const JET_FACTOR = { hub: 3.0, large: 2.2, medium: 1.2, small: 0.5 };
  *
  * @returns {Array<[string, number]>}
  */
-function gaAirlines(gaId, airportClass, longestRunwayM, elevationFt, aircraftTypes) {
+function gaAirlines(gaId, airportClass, longestRunwayM, elevationFt, aircraftTypes, icao = '') {
+    const isLightGaExcluded = airportClass === 'hub' || airportClass === 'large' || NO_LIGHT_GA.has(String(icao).toUpperCase());
     const out = [];
 
     for (const [type, weight, kind] of GA_TYPES) {
@@ -54,12 +61,14 @@ function gaAirlines(gaId, airportClass, longestRunwayM, elevationFt, aircraftTyp
             continue;
         }
 
+        if (kind === 'light' && isLightGaExcluded) {
+            continue;
+        }
+
         let w = weight;
 
         if (kind === 'jet') {
             w *= JET_FACTOR[airportClass];
-        } else if (kind === 'light' && (airportClass === 'hub' || airportClass === 'large')) {
-            w *= 0.5;
         }
 
         out.push([`${gaId}/${type.toLowerCase()}`, Math.max(1, Math.round(w))]);

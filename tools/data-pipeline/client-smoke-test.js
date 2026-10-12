@@ -39,6 +39,8 @@ function setupClientEnvironment() {
         process.exit(2);
     }
 
+    // async functions in the client (radio, voice) compile to generators that need this runtime
+    require(require.resolve('regenerator-runtime/runtime', { paths: [REPO_ROOT] }));
     require(require.resolve('@babel/register', { paths: [REPO_ROOT] }))({
         only: [(file) => file.startsWith(`${path.join(REPO_ROOT, 'src')}${path.sep}`)],
         cache: false

@@ -1,639 +1,114 @@
 {
-    "radio": {
-        "twr": "Kolkata Tower",
-        "app": "Kolkata Approach",
-        "dep": "Kolkata Radar"
-    },
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VECC/",
+    "info": {"country":"IN","city":"Kolkata","type":"large_airport","longestRunwayM":3646,"frequencies":{"atis":"126.400","twr":"118.100","app":"127.900","gnd":"121.900"}},
+    "radio": {"twr":"Kolkata Tower","app":"Kolkata Approach","dep":"Kolkata Departure"},
     "icao": "VECC",
     "iata": "CCU",
-    "magnetic_north": 0.3,
-    "ctr_radius": 80,
-    "ctr_ceiling": 19500,
-    "initial_alt": 5500,
-    "position": ["N22d40m24.00", "E088d26m96.00", "23ft"],
-    "rangeRings": {
-        "enabled": true,
-        "center": ["N22d40m24.00", "E088d26m96.00"],
-        "radius_nm": 5.0
-    },
+    "magnetic_north": -0.3,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [22.654012,88.44765,"16ft"],
+    "rangeRings": {"enabled":true,"center":[22.654012,88.44765],"radius_nm":5},
     "has_terrain": false,
-    "wind": {
-        "angle": 190,
-        "speed": 4
-    },
-    "arrivalRunway": "19R",
-    "departureRunway": "19R",
+    "wind": {"angle":10,"speed":11},
+    "arrivalRunway": "01R",
+    "departureRunway": "01R",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
     "airspace": [
-        {
-            "floor":       0,
-            "ceiling":     21000,
-            "airspace_class":  "D",
-            "poly":
-            [
-                ["N23d08m02.40", "E086d57m51.00"],
-                ["N23d28m02.30", "E087d25m50.80"],
-                ["N23d28m02.40", "E088d14m50.40"],
-                ["N23d30m02.40", "E088d46m50.20"],
-                ["N22d35m02.70", "E088d55m50.20"],
-                ["N22d13m02.80", "E089d38m49.90"],
-                ["N21d33m03.00", "E088d56m50.20"],
-                ["N21d40m02.90", "E087d45m50.70"],
-                ["N22d33m02.60", "E088d03m50.50"],
-                ["N22d34m02.60", "E087d39m50.70"],
-                ["N23d08m02.40", "E086d57m51.00"]
-            ]
-        }
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[23.1936,88.4446],[23.1759,88.596],[23.1227,88.7373],[23.0376,88.8589],[22.9263,88.9525],[22.7964,89.0116],[22.6568,89.0323],[22.5171,89.0132],[22.3867,88.9555],[22.2745,88.8633],[22.1881,88.7426],[22.1335,88.6019],[22.1144,88.4507],[22.1321,88.2993],[22.1853,88.158],[22.2705,88.0364],[22.3818,87.9428],[22.5116,87.8837],[22.6512,87.863],[22.7909,87.8821],[22.9214,87.9398],[23.0336,88.032],[23.1199,88.1527],[23.1745,88.2934]]}
     ],
     "fixes": {
-        "_01L":    ["N22d38m24.71", "E088d26m38.37"],
-        "_19R":    ["N22d39m42.00", "E088d26m46.90"],
-        "_01R":    ["N22d38m31.91", "E088d26m46.73"],
-        "_19L":    ["N22d40m14.70", "E088d26m57.80"],
-        "CC333":  ["N22d46m14.00", "E088d19m71.00"],
-        "BAMUR":  ["N22d54m08.00", "E087d57m33.00"],
-        "CC202":  ["N22d56m50.00", "E087d16m37.00"],
-        "CC102":  ["N22d59m76.00", "E086d30m27.00"],
-        "JJS":    ["N22d48m79.00", "E086d10m43.00"],
-        "CC322":  ["N22d51m10.00", "E088d20m61.00"],
-        "BASAT":  ["N22d45m48.00", "E088d42m45.00"],
-        "CC337":  ["N22d29m51.00", "E088d52m95.00"],
-        "AVPOP":  ["N22d18m14.00", "E089d00m83.00"],
-        "BEMAK":  ["N22d55m64.00", "E088d53m93.00"],
-        "CC218":  ["N22d10m69.00", "E089d00m30.00"],
-        "CC112":  ["N21d35m40.00", "E089d59m74.00"],
-        "DOPID":  ["N20d55m05.00", "E089d12m26.00"],
-        "NOKAT":  ["N22d47m44.00", "E088d56m50.00"],
-        "SUMAG":  ["N22d35m65.00", "E088d56m43.00"],
-        "LOPEM":  ["N23d11m26.00", "E087d55m00.00"],
-        "CC104":  ["N23d48m30.00", "E086d51m93.00"],
-        "SAREK":  ["N24d08m03.00", "E086d45m85.00"],
-        "TEPAL":  ["N23d48m70.00", "E086d26m05.00"],
-        "CC303":  ["N22d53m77.00", "E088d22m13.00"],
-        "NIBLU":  ["N22d37m78.00", "E088d18m17.00"],
-        "LEGOS":  ["N21d38m05.00", "E088d05m35.00"],
-        "CC110":  ["N21d09m73.00", "E088d11m80.00"],
-        "BOKEV":  ["N20d55m05.00", "E088d15m34.00"],
-        "KAKID":  ["N20d38m39.00", "E086d59m70.00"],
-        "SURUP":  ["N20d28m24.00", "E086d28m99.00"],
-        "PITAM":  ["N23d32m94.00", "E088d18m78.00"],
-        "CC107":  ["N23d59m27.00", "E088d20m87.00"],
-        "AGODA":  ["N24d19m36.00", "E088d35m93.00"],
-        "CC106":  ["N24d02m66.00", "E087d44m63.00"],
-        "DUMKA":  ["N24d11m03.00", "E087d21m16.00"],
-        "ONOTO":  ["N24d16m43.00", "E087d57m48.00"],
-        "GUMAS":  ["N22d27m40.00", "E088d41m35.00"],
-        "CC108":  ["N21d17m16.00", "E089d15m85.00"],
-        "RIKLA":  ["N22d34m55.00", "E088d15m24.00"],
-        "CC308":  ["N22d45m39.00", "E088d13m54.00"],
-        "KAPOL":  ["N23d11m76.00", "E088d14m70.00"],
-        "CC105":  ["N23d46m02.00", "E087d26m97.00"],
-        "KESAR":  ["N22d06m08.00", "E088d15m74.00"],
-        "CC101":  ["N22d38m13.00", "E086d29m14.00"],
-        "CC201":  ["N22d49m80.00", "E087d42m49.00"],
-        "CC203":  ["N23d01m92.00", "E087d22m98.00"],
-        "CC103":  ["N23d29m17.00", "E086d34m28.00"],
-        "SEGOL":  ["N22d33m10.00", "E088d41m42.00"],
-        "CC312":  ["N22d43m83.00", "E088d52m29.00"],
-        "CC321":  ["N22d53m19.00", "E088d06m18.00"],
-        "CC316":  ["N22d58m92.00", "E088d22m59.00"],
-        "D005Y":  ["N23d05m55.00", "E088d29m15.00"],
-        "D007K":  ["N22d51m68.00", "E088d28m20.00"],
-        "CI19R":  ["N22d47m89.00", "E088d27m75.00"],
-        "FI19R":  ["N22d45m89.00", "E088d27m51.00"],
-        "D059N":  ["N22d47m81.00", "E088d39m85.00"],
-        "D045L":  ["N22d49m03.00", "E088d36m09.00"],
-        "D031L":  ["N22d50m84.00", "E088d33m59.00"],
-        "D017L":  ["N22d52m03.00", "E088d30m69.00"],
-        "CEA":    ["N22d40m55.00", "E088d26m88.00"],
-        "D007F":  ["N22d46m57.00", "E088d27m56.00"],
-        "D327O":  ["N22d53m08.00", "E088d17m89.00"],
-        "D336M":  ["N22d52m43.00", "E088d21m14.00"],
-        "D346M":  ["N22d53m17.00", "E088d23m47.00"],
-        "D357M":  ["N22d53m57.00", "E008d25m90.00"],
-        "D275O":  ["N22d41m63.00", "E088d10m70.00"],
-        "D294M":  ["N22d45m83.00", "E088d14m00.00"],
-        "D314M":  ["N22d49m58.00", "E088d16m74.00"],
-        "D334M":  ["N22d52m24.00", "E088d20m70.00"],
-        "D354M":  ["N22d53m48.00", "E088d25m41.00"],
-        "D076N":  ["N22d43m98.00", "E088d41m57.00"],
-        "D061L":  ["N22d46m36.00", "E088d38m17.00"],
-        "D046L":  ["N22d48m88.00", "E088d36m25.00"],
-        "D345R":  ["N22d57m94.00", "E088d21m61.00"],
-        "D314O":  ["N22d50m91.00", "E088d15m10.00"],
-        "D327M":  ["N22d51m45.00", "E088d19m20.00"],
-        "D341M":  ["N22d52m84.00", "E088d22m29.00"],
-        "D355M":  ["N22d53m50.00", "E088d25m65.00"],
-        "D101N":  ["N22d38m09.00", "E088d41m78.00"],
-        "D080L":  ["N22d42m63.00", "E088d39m69.00"],
-        "D059L":  ["N22d46m73.00", "E088d38m04.00"],
-        "D038L":  ["N22d50m01.00", "E088d34m90.00"],
-        "D302O":  ["N22d48m47.00", "E088d13m08.00"],
-        "D340M":  ["N22d52m77.00", "E088d22m06.00"],
-        "D353M":  ["N22d53m46.00", "E088d25m16.00"],
-        "CC210":  ["N22d19m60.00", "E088d48m55.00"],
-        "CC304":  ["N22d22m86.00", "E088d24m42.00"],
-        "DIKAK":  ["N22d49m83.00", "E088d45m01.00"],
-        "CC302":  ["N22d50m97.00", "E088d35m44.00"],
-        "TONOP":  ["N22d56m55.00", "E088d36m34.00"],
-        "DIXON":  ["N23d00m58.00", "E088d37m31.00"],
-        "CC330":  ["N22d37m36.00", "E088d34m36.00"],
-        "DINAP":  ["N22d25m28.00", "E088d31m92.00"],
-        "CC329":  ["N22d19m44.00", "E088d30m79.00"],
-        "JATEN":  ["N22d39m71.00", "E088d00m50.00"],
-        "CC319":  ["N22d33m32.00", "E088d11m36.00"],
-        "CC306":  ["N22d29m78.00", "E088d17m92.00"],
-        "CC335":  ["N22d23m94.00", "E088d16m83.00"],
-        "KEBAM":  ["N22d07m29.00", "E088d23m65.00"],
-        "KUMAD":  ["N22d17m45.00", "E088d31m96.00"],
-        "CC318":  ["N22d42m10.00", "E088d34m57.00"],
-        "LATEP":  ["N23d13m25.00", "E088d29m85.00"],
-        "CC301":  ["N23d00m71.00", "E088d29m13.00"],
-        "NOSIM":  ["N23d22m30.00", "E088d00m66.00"],
-        "CC334":  ["N24d42m44.00", "E088d09m22.00"],
-        "DU":    ["N22d44m41.00", "E088d27m45.00"],
-        "CA":    ["N22d35m02.00", "E088d26m39.00"]
+        "VECC": [22.65401,88.44765],
+        "OSUTO": [23.3593,88.48536],
+        "JUZOV": [22.90354,88.46099],
+        "JSR": [23.1769,89.1631,"jessore"],
+        "VUMUK": [22.80912,88.65988],
+        "WIWAW": [22.15153,88.98527],
+        "KOSRI": [22.47624,88.63786],
+        "ATEKI": [22.15302,87.9084],
+        "EDOWU": [22.47676,88.25687],
+        "DUGZE": [22.60821,87.68408],
+        "UZALE": [22.63781,88.1775],
+        "OKOSO": [23.12893,87.88137],
+        "OFEJE": [22.82204,88.2473],
+        "_RWY01R04DME": [22.57596,88.43857],
+        "_RWY19L04DME": [22.73725,88.4574],
+        "_RWY01L04DME": [22.57396,88.43629],
+        "_RWY19R04DME": [22.72794,88.45422]
     },
-
     "runways": [
-        {
-            "name": ["01L", "19R"],
-            "name_offset": [[0, 0], [0, 0]],
-            "end": [["N22d38m24.71", "E088d26m38.37", "19.0ft"], ["N22d39m42.00", "E088d26m46.90", "19.0ft"]],
-            "length": 3.270,
-            "ils": [false, true]
-        },
-        {
-            "name": ["01R", "19L"],
-            "name_offset": [[0, 0], [0, 0]],
-            "end": [["N22d38m31.91", "E088d26m46.73", "20.0ft"], ["N22d40m14.70", "E088d26m57.80", "19.0ft"]],
-            "length": 3.672,
-            "ils": [true, true]
-        }
+        {"name":["01R","19L"],"end":[[22.6422,88.4463,"20ft"],[22.67101,88.44966,"19ft"]],"ils":[true,true]},
+        {"name":["01L","19R"],"end":[[22.6402,88.444,"19ft"],[22.6617,88.4465,"19ft"]],"ils":[true,true]}
     ],
     "sids": {
-        "BAMUR": {
-            "icao": "BAMUR",
-            "name": "BAMUR",
-            "suffix": {"01L":"1", "01R":"2"},
-            "rwy": {
-                "01L": ["_19R", "CC333"],
-                "01R": ["_19L", "CC322"]
-            },
-            "exitPoints": {
-                "JJS": ["CC202", "CC102", "JJS"]
-            },
-            "body": ["BAMUR"],
-            "draw": [
-                ["_19R", "CC333", "BAMUR"],
-                ["_19L", "CC322", "BAMUR*"],
-                ["BAMUR", "CC202", "CC102", "JJS*"]
-            ]
-        },
-        "BASAT": {
-            "icao": "BASAT",
-            "name": "BASAT",
-            "rwy": {
-                "01L": [],
-                "01R": []
-            },
-            "exitPoints": {
-                "AVPOP": ["CC337", "AVPOP"],
-                "BEMAK": ["BEMAK"],
-                "DOPID": ["CC337", "CC218", "CC112", "DOPID"],
-                "NOKAT": ["NOKAT"],
-                "SUMAG": ["SUMAG"]
-            },
-            "body": ["BASAT"],
-            "draw": [
-                ["_19R", "BASAT"],
-                ["_19L", "BASAT*"],
-                ["BASAT", "BEMAK*"],
-                ["BASAT", "CC337", "CC218", "CC112", "DOPID*"],
-                ["BASAT", "NOKAT*"],
-                ["BASAT", "SUMAG"]
-            ]
-        },
-        "LOPEM": {
-            "icao": "LOPEM",
-            "name": "LOPEM",
-            "suffix": {"01L":"1", "01R":"2"},
-            "rwy": {
-                "01L": ["CC322"],
-                "01R": ["CC303"]
-            },
-            "exitPoints": {
-                "SAREK": ["CC104", "SAREK"],
-                "TEPAL": ["CC104", "TEPAL"]
-            },
-            "body": ["LOPEM"],
-            "draw": [
-                ["_19R", "CC322", "LOPEM"],
-                ["_19L", "CC303", "LOPEM*"],
-                ["LOPEM", "CC104", "SAREK*"],
-                ["LOPEM", "CC104", "TEPAL*"]
-            ]
-        },
-        "NIBLU": {
-            "icao": "NIBLU",
-            "name": "NIBLU",
-            "suffix": {"01L":"1", "01R":"2"},
-            "rwy": {
-                "01L": ["CC333"],
-                "01R": ["CC322"]
-            },
-            "exitPoints": {
-                "BOKEV": ["LEGOS", "CC110", "BOKEV"],
-                "KAKID": ["LEGOS", "KAKID"],
-                "SURUP": ["LEGOS", "KAKID", "SURUP"]
-            },
-            "body": ["NIBLU"],
-            "draw": [
-                ["_19R", "CC333", "NIBLU"],
-                ["_19L", "CC322", "NIBLU*"],
-                ["NIBLU", "LEGOS", "CC110", "BOKEV*"],
-                ["NIBLU", "LEGOS", "KAKID*", "SURUP*"]
-            ]
-        },
-        "PITAM": {
-            "icao": "PITAM",
-            "name": "PITAM",
-            "rwy": {
-                "01L": [],
-                "01R": []
-            },
-            "exitPoints": {
-                "AGODA": ["CC107", "AGODA"],
-                "TEPAL": ["CC106", "DUMKA"],
-                "ONOTO": ["CC107", "ONOTO"]
-            },
-            "body": ["PITAM"],
-            "draw": [
-                ["_19R", "PITAM"],
-                ["_19L", "PITAM*"],
-                ["PITAM", "CC107", "AGODA*"],
-                ["PITAM", "CC106", "DUMKA*"],
-                ["PITAM", "CC107", "ONOTO*"]
-            ]
-        },
-        "GUMAS": {
-            "icao": "GUMAS",
-            "name": "GUMAS",
-            "rwy": {
-                "19L": [],
-                "19R": []
-            },
-            "exitPoints": {
-                "AVPOP": ["AVPOP"],
-                "DOPID": ["CC108", "DOPID"]
-            },
-            "body": ["GUMAS"],
-            "draw": [
-                ["_01R", "DOPID"],
-                ["_01L", "DOPID*"],
-                ["DOPID", "AVPOP*"],
-                ["DOPID", "CC108", "DOPID*"]
-            ]
-        },
-        "KAPOL": {
-            "icao": "KAPOL",
-            "name": "KAPOL",
-            "rwy": {
-                "19L": [],
-                "19R": []
-            },
-            "exitPoints": {
-                "AGODA": ["CC107", "AGODA"],
-                "DUMKA": ["CC105", "DUMKA"],
-                "ONOTO": ["CC107", "ONOTO"],
-                "SAREK": ["CC105", "SAREK"]
-            },
-            "body": ["RIKLA", "CC308", "KAPOL"],
-            "draw": [
-                ["_01R", "KAPOL"],
-                ["_01L", "KAPOL*"],
-                ["KAPOL", "CC107", "AGODA*"],
-                ["KAPOL", "CC105", "DUMKA*"],
-                ["KAPOL", "CC107", "ONOTO*"],
-                ["KAPOL", "CC105", "SAREK*"]
-            ]
-        },
-        "KESAR": {
-            "icao": "KESAR",
-            "name": "KESAR",
-            "rwy": {
-                "19L": [],
-                "19R": []
-            },
-            "exitPoints": {
-                "BOKEV": ["LEGOS", "CC110", "BOKEV"],
-                "KAKID": ["LEGOS", "KAKID"],
-                "SURUP": ["LEGOS", "KAKID", "SURUP"]
-            },
-            "body": ["KESAR"],
-            "draw": [
-                ["_01R", "KESAR"],
-                ["_01L", "KESAR*"],
-                ["KESAR", "LEGOS", "KAKID*", "SURUP*"]
-            ]
-        },
-        "RIKLA": {
-            "icao": "RIKLA",
-            "name": "RIKLA",
-            "rwy": {
-                "19L": [],
-                "19R": []
-            },
-            "exitPoints": {
-                "JJS":    ["CC101", "JJS"],
-                "TEPAL":   ["CC201", "CC203", "CC103", "TEPAL"]
-            },
-            "body": ["RIKLA"],
-            "draw": [
-                ["_01R", "RIKLA"],
-                ["_01L", "RIKLA*"],
-                ["RIKLA", "CC101", "JJS*"],
-                ["RIKLA", "CC201", "CC203", "CC103", "TEPAL*"]
-            ]
-        },
-        "SEGOL": {
-            "icao": "SEGOL",
-            "name": "SEGOL",
-            "rwy": {
-                "19L": [],
-                "19R": []
-            },
-            "exitPoints": {
-                "BEMAK": ["CC312", "BEMAK"],
-                "NOKAT": ["CC312", "NOKAT"],
-                "SUMAG": ["SUMAG"]
-            },
-            "body": ["SEGOL"],
-            "draw": [
-                ["_01R", "SEGOL"],
-                ["_01L", "SEGOL*"],
-                ["SEGOL", "CC312", "BEMAK*"],
-                ["SEGOL", "CC312", "NOKAT*"],
-                ["SEGOL", "SUMAG*"]
-            ]
-        }
+        "OSUTO1A": {"icao":"OSUTO1A","name":"Osuto One Alpha","rwy":{"VECC01R":["_RWY19L04DME"],"VECC19L":["_RWY01R04DME"],"VECC01L":["_RWY19R04DME"],"VECC19R":["_RWY01L04DME"]},"body":[],"exitPoints":{"OSUTO":["OSUTO"]},"draw":[["VECC","OSUTO*"]]},
+        "JSR2C": {"icao":"JSR2C","name":"Jessore Two Charlie","rwy":{"VECC01R":["_RWY19L04DME"],"VECC19L":["_RWY01R04DME"],"VECC01L":["_RWY19R04DME"],"VECC19R":["_RWY01L04DME"]},"body":[],"exitPoints":{"JSR":["JSR"]},"draw":[["VECC","JSR*"]]},
+        "WIWAW1A": {"icao":"WIWAW1A","name":"Wiwaw One Alpha","rwy":{"VECC01R":["_RWY19L04DME"],"VECC19L":["_RWY01R04DME"],"VECC01L":["_RWY19R04DME"],"VECC19R":["_RWY01L04DME"]},"body":[],"exitPoints":{"WIWAW":["WIWAW"]},"draw":[["VECC","WIWAW*"]]},
+        "ATEKI2C": {"icao":"ATEKI2C","name":"Ateki Two Charlie","rwy":{"VECC01R":["_RWY19L04DME"],"VECC19L":["_RWY01R04DME"],"VECC01L":["_RWY19R04DME"],"VECC19R":["_RWY01L04DME"]},"body":[],"exitPoints":{"ATEKI":["ATEKI"]},"draw":[["VECC","ATEKI*"]]},
+        "DUGZE1B": {"icao":"DUGZE1B","name":"Dugze One Bravo","rwy":{"VECC01R":["_RWY19L04DME"],"VECC19L":["_RWY01R04DME"],"VECC01L":["_RWY19R04DME"],"VECC19R":["_RWY01L04DME"]},"body":[],"exitPoints":{"DUGZE":["DUGZE"]},"draw":[["VECC","DUGZE*"]]},
+        "OKOSO3C": {"icao":"OKOSO3C","name":"Okoso Three Charlie","rwy":{"VECC01R":["_RWY19L04DME"],"VECC19L":["_RWY01R04DME"],"VECC01L":["_RWY19R04DME"],"VECC19R":["_RWY01L04DME"]},"body":[],"exitPoints":{"OKOSO":["OKOSO"]},"draw":[["VECC","OKOSO*"]]}
     },
+    "stars": {},
     "spawnPatterns": [
-        {
-            "origin": "vecc",
-            "destination": "",
-            "category": "departure",
-            "route": "VECC.BAMUR.JJS",
-            "altitude": "",
-            "speed": "",
-            "method": "random",
-            "rate": 20,
-            "offset": 0,
-            "airlines": [
-                ["xax",  10],
-                ["aic", 190],
-                ["llr",  30],
-                ["uae",  10],
-                ["etd",  10],
-                ["gow",  40],
-                ["igo", 290],
-                ["jai", 160],
-                ["sej", 120],
-                ["ual",  20],
-                ["vti",  10],
-                ["ces",  10],
-                ["hda",  10],
-                ["slk",  10],
-                ["cpa",  20]
-            ]
-        },
-        {
-            "origin": "",
-            "destination": "vecc",
-            "category": "arrival",
-            "route":    "CC112..AVPOP..CC210..CC304",
-            "altitude":    12000,
-            "speed":    320,
-            "method":     "cyclic",
-            "rate":   4,
-            "offset":    2,
-            "airlines": [
-                ["cpa", 2],
-                ["xax", 3],
-                ["aic", 15],
-                ["llr", 5],
-                ["ual", 3],
-                ["gow", 3],
-                ["igo", 20],
-                ["jai", 10],
-                ["sej", 8],
-                ["ces", 3],
-                ["hda", 3],
-                ["slk", 3],
-                ["cpa", 5]
-            ]
-        },
-        {
-            "origin": "",
-            "destination": "vecc",
-            "category": "arrival",
-            "route":    "CC102..BAMUR..CC321..CC303..CC316",
-            "altitude":    12000,
-            "speed":    320,
-            "method":     "cyclic",
-            "rate":   4,
-            "offset":    2,
-            "airlines": [
-                ["aic", 15],
-                ["llr", 5],
-                ["ual", 5],
-                ["gow", 3],
-                ["igo", 20],
-                ["jai", 10],
-                ["sej", 8],
-                ["uae", 5],
-                ["etd", 5]
-            ]
-        },
-        {
-            "origin": "",
-            "destination": "vecc",
-            "category": "arrival",
-            "route":    "BEMAK..DIXON..CC330..DINAP..CC329",
-            "altitude":    12000,
-            "speed":    320,
-            "method":     "cyclic",
-            "rate":   4,
-            "offset":    2,
-            "airlines": [
-                ["cpa", 2],
-                ["xax", 3],
-                ["aic", 15],
-                ["llr", 5],
-                ["ual", 3],
-                ["gow", 3],
-                ["igo", 20],
-                ["jai", 10],
-                ["sej", 8],
-                ["ces", 3],
-                ["hda", 3],
-                ["slk", 3],
-                ["cpa", 5]
-            ]
-        },
-        {
-            "origin": "",
-            "destination": "vecc",
-            "category": "arrival",
-            "route":    "NOKAT..DIKAK..CC302..TONOP",
-            "altitude":    12000,
-            "speed":    320,
-            "method":     "cyclic",
-            "rate":   4,
-            "offset":    2,
-            "airlines": [
-                ["cpa", 2],
-                ["xax", 3],
-                ["aic", 15],
-                ["llr", 5],
-                ["ual", 3],
-                ["gow", 3],
-                ["igo", 20],
-                ["jai", 10],
-                ["sej", 8],
-                ["ces", 3],
-                ["hda", 3],
-                ["slk", 3],
-                ["cpa", 5]
-            ]
-        },
-        {
-            "origin": "",
-            "destination": "vecc",
-            "category": "arrival",
-            "route":    "CC101..JATEN..CC319..CC306..CC335",
-            "altitude":    12000,
-            "speed":    320,
-            "method":     "cyclic",
-            "rate":   4,
-            "offset":    2,
-            "airlines": [
-                ["aic", 15],
-                ["llr", 5],
-                ["ual", 5],
-                ["gow", 3],
-                ["igo", 20],
-                ["jai", 10],
-                ["sej", 8],
-                ["uae", 5],
-                ["etd", 5]
-            ]
-        },
-        {
-            "origin": "",
-            "destination": "vecc",
-            "category": "arrival",
-            "route":    "BOKEV..KEBAM..CC304",
-            "altitude":    12000,
-            "speed":    320,
-            "method":     "cyclic",
-            "rate":   3,
-            "offset":    2,
-            "airlines": [
-                ["aic", 15],
-                ["llr", 5],
-                ["gow", 3],
-                ["igo", 20],
-                ["jai", 10],
-                ["sej", 8]
-            ]
-        },
-        {
-            "origin": "",
-            "destination": "vecc",
-            "category": "arrival",
-            "route":    "CC108..KUMAD..CC318..CC302..TONOP",
-            "altitude":    12000,
-            "speed":    320,
-            "method":     "cyclic",
-            "rate":   3,
-            "offset":    2,
-            "airlines": [
-                ["aic", 15],
-                ["llr", 5],
-                ["gow", 3],
-                ["igo", 20],
-                ["jai", 10],
-                ["sej", 8]
-            ]
-        },
-        {
-            "origin": "",
-            "destination": "vecc",
-            "category": "arrival",
-            "route":    "PITAM..LATEP..CC301",
-            "altitude":    12000,
-            "speed":    320,
-            "method":     "cyclic",
-            "rate":   3,
-            "offset":    2,
-            "airlines": [
-                ["aic", 15],
-                ["llr", 5],
-                ["ual", 5],
-                ["gow", 3],
-                ["igo", 20],
-                ["jai", 10],
-                ["sej", 8],
-                ["uae", 5],
-                ["etd", 5],
-                ["hda", 3],
-                ["cpa", 5],
-                ["ces", 5]
-            ]
-        },
-        {
-            "origin": "",
-            "destination": "vecc",
-            "category": "arrival",
-            "route":    "CC106..NOSIM..CC321..CC334..CC319..CC306..CC335",
-            "altitude":    12000,
-            "speed":    320,
-            "method":     "cyclic",
-            "rate":   3,
-            "offset":    2,
-            "airlines": [
-                ["aic", 15],
-                ["llr", 5],
-                ["ual", 5],
-                ["gow", 3],
-                ["igo", 20],
-                ["jai", 10],
-                ["sej", 8],
-                ["uae", 5],
-                ["etd", 5],
-                ["hda", 3],
-                ["cpa", 5],
-                ["ces", 5]
-            ]
-        },
-        {
-            "origin": "",
-            "destination": "vecc",
-            "category": "arrival",
-            "route":    "DOPID..SEGOL..DINAP..CC329",
-            "altitude":    12000,
-            "speed":    320,
-            "method":     "cyclic",
-            "rate":   3,
-            "offset":    2,
-            "airlines": [
-                ["aic", 15],
-                ["llr", 5],
-                ["gow", 3],
-                ["igo", 20],
-                ["jai", 10],
-                ["sej", 8]
-            ]
-        }
+        {"origin":"VECC","destination":"VABB","category":"departure","route":"VECC01R.DUGZE1B.DUGZE","altitude":"","speed":"","method":"random","rate":0.6,"airlines":[["jai/b738",2],["aic/a319",1],["aic/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VECC","destination":"VEBD","category":"departure","route":"VECC01R.OSUTO1A.OSUTO","altitude":"","speed":"","method":"random","rate":0.6,"airlines":[["aic/a319",1],["aic/a320",1],["gow/a320",1],["igo/a320",1],["jai/b738",1],["sej/b737",1]]},
+        {"origin":"VECC","destination":"VEGT","category":"departure","route":"VECC01R.JSR2C.JSR","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["aic/a319",1],["aic/a320",1],["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VECC","destination":"VIDP","category":"departure","route":"VECC01R.OKOSO3C.OKOSO","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["aic/a321",1],["aic/b788",1],["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VECC","destination":"VGHS","category":"departure","route":"VECC01R.JSR2C.JSR","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["aic/a319",1],["bbc/b738",1],["jai/b738",1],["ubd/at72",1]]},
+        {"origin":"VECC","destination":"VOMM","category":"departure","route":"VECC01R.ATEKI2C.ATEKI","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["aic/a319",1],["aic/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VECC","destination":"","category":"departure","route":"VECC01R.OSUTO1A.OSUTO","altitude":"","speed":"","method":"random","rate":0.2,"airlines":[["drk/a319",1],["drk/at72",1],["drk/at45",1],["drk/at75",1]]},
+        {"origin":"VECC","destination":"","category":"departure","route":"VECC01R.JSR2C.JSR","altitude":"","speed":"","method":"random","rate":1.79,"airlines":[["aic/a319",6],["aic/a320",3],["igo/a320",3],["aic/at72",1],["ces/b737",1],["cpa/a320",1],["hda/a320",1],["sej/b737",1],["aic/at45",1],["aic/at75",1]]},
+        {"origin":"VECC","destination":"","category":"departure","route":"VECC01R.WIWAW1A.WIWAW","altitude":"","speed":"","method":"random","rate":1.1,"airlines":[["aic/a319",1],["aic/a320",1],["axm/a320",1],["drk/a319",1],["gow/a320",1],["igo/a320",1],["sej/b737",1],["sia/a333",1],["slk/a320",1],["tha/a333",1],["ubd/at72",1]]},
+        {"origin":"VECC","destination":"","category":"departure","route":"VECC01R.ATEKI2C.ATEKI","altitude":"","speed":"","method":"random","rate":0.7,"airlines":[["igo/a320",3],["aic/a319",2],["sej/b737",2]]},
+        {"origin":"VECC","destination":"","category":"departure","route":"VECC01R.DUGZE1B.DUGZE","altitude":"","speed":"","method":"random","rate":0.9,"airlines":[["igo/a320",5],["gow/a320",2],["qtr/a320",1],["uae/a332",1]]},
+        {"origin":"VECC","destination":"","category":"departure","route":"VECC01R.OKOSO3C.OKOSO","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["igo/a320",2],["aic/a319",1],["gow/a320",1]]},
+        {"origin":"VECC","destination":"","category":"departure","route":"VECC01R.DUGZE1B.DUGZE","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",2],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"VECC","destination":"","category":"departure","route":"VECC01R.WIWAW1A.WIWAW","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",2],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"VABB","destination":"VECC","category":"arrival","route":"DUGZE..UZALE..VECC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.6,"airlines":[["jai/b738",2],["aic/a319",1],["aic/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VEBD","destination":"VECC","category":"arrival","route":"OSUTO..JUZOV..VECC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.6,"airlines":[["aic/a319",1],["aic/a320",1],["gow/a320",1],["igo/a320",1],["jai/b738",1],["sej/b737",1]]},
+        {"origin":"VEGT","destination":"VECC","category":"arrival","route":"JSR..VUMUK..VECC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.5,"airlines":[["aic/a319",1],["aic/a320",1],["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VIDP","destination":"VECC","category":"arrival","route":"OKOSO..OFEJE..VECC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.5,"airlines":[["aic/a321",1],["aic/b788",1],["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VGHS","destination":"VECC","category":"arrival","route":"JSR..VUMUK..VECC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["aic/a319",1],["bbc/b738",1],["jai/b738",1],["ubd/at72",1]]},
+        {"origin":"VOMM","destination":"VECC","category":"arrival","route":"ATEKI..EDOWU..VECC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["aic/a319",1],["aic/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"","destination":"VECC","category":"arrival","route":"OSUTO..JUZOV..VECC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.2,"airlines":[["drk/a319",1],["drk/at72",1],["drk/at45",1],["drk/at75",1]]},
+        {"origin":"","destination":"VECC","category":"arrival","route":"JSR..VUMUK..VECC","altitude":[6000,9000],"speed":250,"method":"random","rate":1.79,"airlines":[["aic/a319",6],["aic/a320",3],["igo/a320",3],["aic/at72",1],["ces/b737",1],["cpa/a320",1],["hda/a320",1],["sej/b737",1],["aic/at45",1],["aic/at75",1]]},
+        {"origin":"","destination":"VECC","category":"arrival","route":"WIWAW..KOSRI..VECC","altitude":[6000,9000],"speed":250,"method":"random","rate":1.1,"airlines":[["aic/a319",1],["aic/a320",1],["axm/a320",1],["drk/a319",1],["gow/a320",1],["igo/a320",1],["sej/b737",1],["sia/a333",1],["slk/a320",1],["tha/a333",1],["ubd/at72",1]]},
+        {"origin":"","destination":"VECC","category":"arrival","route":"ATEKI..EDOWU..VECC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.7,"airlines":[["igo/a320",3],["aic/a319",2],["sej/b737",2]]},
+        {"origin":"","destination":"VECC","category":"arrival","route":"DUGZE..UZALE..VECC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.9,"airlines":[["igo/a320",5],["gow/a320",2],["qtr/a320",1],["uae/a332",1]]},
+        {"origin":"","destination":"VECC","category":"arrival","route":"OKOSO..OFEJE..VECC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["igo/a320",2],["aic/a319",1],["gow/a320",1]]},
+        {"origin":"","destination":"VECC","category":"arrival","route":"DUGZE..UZALE..VECC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.55,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",2],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"","destination":"VECC","category":"arrival","route":"WIWAW..KOSRI..VECC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.55,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",2],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [23.3593,88.4854,22.9035,88.461],
+            [22.9035,88.461,22.654,88.4477],
+            [23.1769,89.1631,22.8091,88.6599],
+            [22.8091,88.6599,22.654,88.4477],
+            [22.1515,88.9853,22.4762,88.6379],
+            [22.4762,88.6379,22.654,88.4477],
+            [22.153,87.9084,22.4768,88.2569],
+            [22.4768,88.2569,22.654,88.4477],
+            [22.6082,87.6841,22.6378,88.1775],
+            [22.6378,88.1775,22.654,88.4477],
+            [23.1289,87.8814,22.822,88.2473],
+            [22.822,88.2473,22.654,88.4477]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [22.6422,88.4463,22.4766,88.427],
+            [22.5583,88.4474,22.5605,88.4259],
+            [22.4755,88.4377,22.4777,88.4162],
+            [22.671,88.4497,22.8366,88.469],
+            [22.7549,88.4486,22.7527,88.4701],
+            [22.8377,88.4582,22.8355,88.4798],
+            [22.6402,88.444,22.4746,88.4247],
+            [22.5563,88.4451,22.5585,88.4236],
+            [22.4735,88.4355,22.4757,88.414],
+            [22.6617,88.4465,22.8273,88.4658],
+            [22.7456,88.4454,22.7434,88.4669],
+            [22.8284,88.455,22.8262,88.4766]
+        ]}
     ]
 }

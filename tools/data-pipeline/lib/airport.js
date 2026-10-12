@@ -347,7 +347,7 @@ function buildAirport(rec, ctx, relaxed) {
 
     // ---------------------------------------------------------------- spawn patterns
     const gaId = GA_BY_COUNTRY[rec.country] && ctx.airlineIds.has(GA_BY_COUNTRY[rec.country]) ? GA_BY_COUNTRY[rec.country] : null;
-    const gaMix = gaId ? gaAirlines(gaId, klass, longestM, elevationFt, ctx.aircraftTypes) : [];
+    const gaMix = gaId ? gaAirlines(gaId, klass, longestM, elevationFt, ctx.aircraftTypes, rec.icao) : [];
     let gaShare = gaMix.length ? params.gaShare : 0;
     const departureBase = (gate) => `${rec.icao}${primaryName}.${gate.sid}.${gate.name}`;
     const arrivalRoute = (gate) => `${gate.name}..${gate.inner.name}..${rec.icao}`;
