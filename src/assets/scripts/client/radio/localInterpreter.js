@@ -1,4 +1,6 @@
 import { normalizeTranscript } from './spokenNumbers';
+import { parseAppActions } from './appActions';
+import { repairTranscript } from './transcriptRepair';
 
 /**
  * Offline interpreter for spoken or typed instructions
@@ -268,6 +270,24 @@ export const extractCommands = (rawText, aircraft, context = {}) => {
 };
 
 /**
+ * Words the recognisers should be able to match: the telephony of every aircraft in the simulation
+ *
+ * @function telephonyWordsOf
+ * @param aircraft {array<object>}
+ * @return {array<string>}
+ */
+const telephonyWordsOf = (aircraft) => {
+    const words = new Set();
+
+    aircraft.forEach((candidate) => {
+        String(candidate.airlineCallsign || '').toLowerCase().split(/\s+/).filter(Boolean)
+            .forEach((word) => words.add(word));
+    });
+
+    return Array.from(words);
+};
+
+/**
  * Interpret a transmission without a language model
  *
  * @function interpretLocally
@@ -276,18 +296,21 @@ export const extractCommands = (rawText, aircraft, context = {}) => {
  * @param context.aircraft {array<object>} `[{ callsign, airlineId, airlineCallsign, flightNumber, altitude }]`
  * @param context.selectedCallsign {string} callsign of the aircraft selected on the scope, used when none is named
  * @param context.fixes {array<string>} fix names that exist at this airport (used to validate "direct" and "hold")
- * @param context.resolveAirport {function} optional; given words after "divert" returns an ICAO code when an airport is named ("manchester")
+ * @param context.resolveAirport {function} optional; given words returns an ICAO code when an airport is named ("manchester")
  * @param context.runways {array<string>} runway names at this airport ("09L"), used to resolve spoken runway numbers
- * @return {object} `{ transmissions, controller_note }`
+ * @return {object} `{ transmissions, appActions, controller_note, repairedText }`
  */
 export const interpretLocally = (text, context = {}) => {
     const aircraft = context.aircraft || [];
-    const normalized = normalizeTranscript(text);
+    const repairedText = repairTranscript(text, { telephonyWords: telephonyWordsOf(aircraft), fixNames: context.fixes || [] });
+    const normalized = normalizeTranscript(repairedText);
     const fixes = context.fixes && context.fixes.length > 0 ? new Set(context.fixes.map((fix) => fix.toUpperCase())) : null;
     const runways = context.runways && context.runways.length > 0 ? new Set(context.runways.map((name) => name.toUpperCase())) : null;
 
     if (!normalized) {
-        return { transmissions: [], controller_note: 'Nothing was heard.' };
+        return {
+            transmissions: [], appActions: [], controller_note: 'Nothing was heard.', repairedText
+        };
     }
 
     let mentions = findMentions(normalized, aircraft);
@@ -295,13 +318,26 @@ export const interpretLocally = (text, context = {}) => {
     // the same aircraft mentioned twice (call-up and readback) counts once, at its first mention
     mentions = mentions.filter((mention, index) => mentions.findIndex((other) => other.aircraft.callsign === mention.aircraft.callsign) === index);
 
+    const appActions = parseAppActions(normalized, { resolveAirport: context.resolveAirport, hasAircraftMention: mentions.length > 0 });
+
     if (mentions.length === 0) {
         const selected = aircraft.find((candidate) => candidate.callsign === context.selectedCallsign);
 
-        if (!selected) {
+        // with an aircraft selected, a sentence about "you" is for the pilot; anything else that is an application command is one
+        const isForPilot = /\b(?:you|your)\b/.test(normalized) || appActions.length === 0;
+
+        if (!selected || !isForPilot) {
+            if (appActions.length > 0) {
+                return {
+                    transmissions: [], appActions, controller_note: '', repairedText
+                };
+            }
+
             return {
                 transmissions: [],
-                controller_note: 'No aircraft was addressed. Start with a callsign (eg "Speedbird one two three, descend ...") or select an aircraft first.'
+                appActions: [],
+                controller_note: 'No aircraft was addressed. Start with a callsign (eg "Speedbird one two three, descend ...") or select an aircraft first.',
+                repairedText
             };
         }
 
@@ -324,5 +360,7 @@ export const interpretLocally = (text, context = {}) => {
         };
     });
 
-    return { transmissions, controller_note: '' };
+    return {
+        transmissions, appActions: [], controller_note: '', repairedText
+    };
 };

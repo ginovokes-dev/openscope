@@ -145,7 +145,7 @@ ava('sanitizeResult() keeps only real aircraft and well-formed commands', (t) =>
 });
 
 ava('sanitizeResult() copes with garbage', (t) => {
-    t.deepEqual(sanitizeResult(null, AIRCRAFT), { transmissions: [], controller_note: '' });
+    t.deepEqual(sanitizeResult(null, AIRCRAFT), { transmissions: [], app_actions: [], controller_note: '' });
     t.deepEqual(sanitizeResult({ transmissions: 'no' }, AIRCRAFT).transmissions, []);
     t.deepEqual(sanitizeResult({ transmissions: [{ callsign: 'BAW123', commands: 'nope' }] }, AIRCRAFT).transmissions[0].commands, []);
 });
@@ -163,7 +163,7 @@ ava('buildUserMessage() compacts aircraft and truncates the transcript', (t) => 
 ava('the output schema is strict', (t) => {
     t.false(OUTPUT_SCHEMA.additionalProperties);
     t.false(OUTPUT_SCHEMA.properties.transmissions.items.additionalProperties);
-    t.deepEqual(OUTPUT_SCHEMA.required, ['transmissions', 'controller_note']);
+    t.deepEqual(OUTPUT_SCHEMA.required, ['transmissions', 'app_actions', 'controller_note']);
 });
 
 // ---------------------------------------------------------------- voices
@@ -442,4 +442,31 @@ ava.serial('STT rejects an empty recording and TTS rejects empty text', async(t)
     server.close();
     t.is(stt.status, 400);
     t.is(tts.status, 502);
+});
+
+ava('sanitizeResult() keeps well-formed application actions and drops the rest', (t) => {
+    const result = sanitizeResult({
+        transmissions: [],
+        app_actions: [
+            { action: 'open', target: 'ATIS', value: '' },
+            { action: 'switch_airport', target: '', value: 'EGCC' },
+            { action: 'switch_airport', target: '', value: 'Manchester' },
+            { action: 'format_disk', target: 'c', value: '' },
+            { action: 'layer', target: 'sids; drop', value: 'hide' },
+            null
+        ],
+        controller_note: ''
+    }, AIRCRAFT);
+
+    t.deepEqual(result.app_actions, [
+        { action: 'open', target: 'atis', value: '' },
+        { action: 'switch_airport', target: '', value: 'EGCC' },
+        { action: 'layer', target: 'sidsdrop', value: 'hide' }
+    ]);
+});
+
+ava('the user message carries the repaired transcript', (t) => {
+    const message = JSON.parse(buildUserMessage({ transcript: 'the center flight level zero five zero', repairedTranscript: 'descend flight level zero five zero', aircraft: [] }));
+
+    t.is(message.repairedTranscript, 'descend flight level zero five zero');
 });

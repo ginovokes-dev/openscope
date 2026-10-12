@@ -236,6 +236,26 @@ export default class AppController {
         );
         this.proceduresPanel.setOptions(GameController.game.option);
         UiController.registerExtraDialog(this.proceduresPanel);
+
+        // screens the radio can open and close when asked in plain words ("open the ATIS", "show the settings")
+        this.radioController.setApp({
+            $element: this.$element,
+            panels: {
+                atis: this.atisPanel,
+                radio: this.radioPanel,
+                controls: this.controlsGuide,
+                procedures: this.proceduresPanel,
+                ai_settings: this.aiSettingsDialog,
+                settings: {
+                    isOpen: () => UiController.settingsController.isDialogOpen(),
+                    toggle: () => UiController.onToggleOptions()
+                },
+                airports: {
+                    isOpen: () => UiController.isAirportSelectionDialogOpen(),
+                    toggle: () => UiController.onToggleAirportList()
+                }
+            }
+        });
         zlsa.atc.debug.radio = this.radioController;
         this.airportGuideController = new AirportGuideViewController(this.$element, airportGuideData, initialAirportData.icao);
         this.changelogController = new ChangelogController(this.contentQueue);

@@ -809,7 +809,7 @@ export default class InputController {
      * @param text {string} eg. `BAW123 fh 270 d 30`
      * @return {object} `{ ok: boolean, error: string }`
      */
-    executeCommandText = (text) => {
+    executeCommandText = (text, { allowRadioFallback = false } = {}) => {
         const userCommand = String(text || '').trim().toLowerCase();
 
         if (userCommand === '') {
@@ -832,7 +832,7 @@ export default class InputController {
             return { ok: true };
         }
 
-        this.processTransmitCommand(parsedCommand);
+        this.processTransmitCommand(parsedCommand, allowRadioFallback ? userCommand : null);
 
         return { ok: true };
     };
@@ -855,7 +855,7 @@ export default class InputController {
             cmd = parser.parse();
         } catch (error) {
             // a sentence rather than a command: hand it to the radio, which understands plain English
-            if (looksLikeNaturalLanguage(userCommand)) {
+            if (looksLikeNaturalLanguage(userCommand) || this.input.callsign !== '') {
                 this.$commandInput.val('');
                 this._eventBus.trigger(EVENT.RADIO_FREE_TEXT, userCommand);
 
@@ -873,7 +873,7 @@ export default class InputController {
         this.input.history.unshift(this.input.callsign);
         this.input.history_item = null;
 
-        return this.processTransmitCommand(parsedCommand);
+        return this.processTransmitCommand(parsedCommand, userCommand);
     }
 
     /**
@@ -1009,7 +1009,7 @@ export default class InputController {
      * @param parsedCommand {ParsedCommand}
      * @return {boolean}
      */
-    processTransmitCommand(parsedCommand) {
+    processTransmitCommand(parsedCommand, originalText = null) {
         // TODO: abstract the aircraft callsign matching
         let matches = 0;
         let match = INVALID_NUMBER;
@@ -1030,6 +1030,14 @@ export default class InputController {
         }
 
         if (match === INVALID_NUMBER) {
+            // the first word was not a callsign: a sentence ("open the ATIS", "descend FL050") goes to the radio
+            if (originalText && looksLikeNaturalLanguage(originalText)) {
+                this.$commandInput.val('');
+                this._eventBus.trigger(EVENT.RADIO_FREE_TEXT, originalText);
+
+                return true;
+            }
+
             UiController.ui_log('no such aircraft, say again', true);
 
             return true;

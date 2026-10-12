@@ -26,6 +26,18 @@ export class VoiceInput {
     constructor() {
         this._session = null;
         this._listeners = [];
+        this._scorer = null;
+    }
+
+    /**
+     * Choose between the alternatives the browser's recogniser offers: `scorer(text)` returns a number, higher is better
+     *
+     * @for VoiceInput
+     * @method setScorer
+     * @param scorer {function}
+     */
+    setScorer(scorer) {
+        this._scorer = scorer;
     }
 
     /**
@@ -180,31 +192,40 @@ export class VoiceInput {
     _beginRecognition() {
         const RecognitionClass = getSpeechRecognitionClass();
         const recognition = new RecognitionClass();
-        let finalText = '';
+        const segments = [];
         let interimText = '';
         let error = null;
         const ended = new Promise((resolve) => {
             recognition.onend = resolve;
         });
+        const choose = (alternatives) => {
+            if (!this._scorer || alternatives.length < 2) {
+                return alternatives[0];
+            }
+
+            return alternatives.reduce((best, candidate) => (this._scorer(candidate) > this._scorer(best) ? candidate : best), alternatives[0]);
+        };
+        const joined = () => segments.map(choose).join(' ');
 
         recognition.lang = 'en-GB';
         recognition.continuous = true;
         recognition.interimResults = true;
-        recognition.maxAlternatives = 1;
+        recognition.maxAlternatives = 5;
         recognition.onresult = (event) => {
             interimText = '';
 
             for (let i = event.resultIndex; i < event.results.length; i++) {
-                const { transcript } = event.results[i][0];
+                const result = event.results[i];
+                const alternatives = Array.from(result).map((alternative) => alternative.transcript.trim()).filter(Boolean);
 
-                if (event.results[i].isFinal) {
-                    finalText += `${transcript} `;
-                } else {
-                    interimText += transcript;
+                if (result.isFinal) {
+                    segments.push(alternatives);
+                } else if (alternatives.length > 0) {
+                    [interimText] = alternatives;
                 }
             }
 
-            this._notify({ state: 'listening', interim: `${finalText}${interimText}`.trim() });
+            this._notify({ state: 'listening', interim: `${joined()} ${interimText}`.trim() });
         };
         recognition.onerror = (event) => {
             ({ error } = event);
@@ -222,7 +243,7 @@ export class VoiceInput {
                     throw new Error(error === 'not-allowed' ? 'Microphone access was refused.' : `Speech recognition failed (${error}).`);
                 }
 
-                return `${finalText}${interimText}`.trim();
+                return `${joined()} ${interimText}`.trim();
             },
 
             cancel: () => {
