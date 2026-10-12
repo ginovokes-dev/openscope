@@ -35,6 +35,10 @@ export const EVENT = {
 
     DRAW_PROCEDURES_CHANGE: 'draw-procedures-change',
 
+    HIGHLIGHT_PROCEDURE: 'highlight-procedure',
+
+    TOGGLE_PROCEDURES: 'toggle-procedures',
+
     TRAFFIC_LEVEL_CHANGE: 'traffic-level-change',
 
     TOGGLE_AI_SETTINGS: 'toggle-ai-settings',

@@ -5,6 +5,8 @@ import _has from 'lodash/has';
 import _inRange from 'lodash/inRange';
 import AirportController from '../airport/AirportController';
 import CanvasStageModel from './CanvasStageModel';
+import StaticPositionModel from '../base/StaticPositionModel';
+import airportIndex from '../geo/AirportIndex';
 import EventBus from '../lib/EventBus';
 import GameController from '../game/GameController';
 import MeasureTool from '../measurement/MeasureTool';
@@ -171,16 +173,25 @@ export default class CanvasController {
          * @type {boolean}
          * @default false
          */
-        this._shouldDrawSidMap = false;
+        this._shouldDrawSidMap = true;
+
+        /**
+         * Identifier of the SID or STAR picked in the procedures list, drawn emphasised
+         *
+         * @property _highlightedProcedureId
+         * @type {string|null}
+         * @default null
+         */
+        this._highlightedProcedureId = null;
 
         /**
          * Flag used to determine if the star map should be displayed
          *
          * @property _shouldDrawStarMap
          * @type {boolean}
-         * @default false
+         * @default true
          */
-        this._shouldDrawStarMap = false;
+        this._shouldDrawStarMap = true;
 
         /**
          * Flag used to determine if terrain should be displayed
@@ -245,6 +256,8 @@ export default class CanvasController {
         this._onToggleLabelsHandler = this._onToggleLabels.bind(this);
         this._onToggleRestrictedAreasHandler = this._onToggleRestrictedAreas.bind(this);
         this._onToggleSidMapHandler = this._onToggleSidMap.bind(this);
+        this._onDrawProceduresChangeHandler = this._onDrawProceduresChange.bind(this);
+        this._onHighlightProcedureHandler = this._onHighlightProcedure.bind(this);
         this._onToggleStarMapHandler = this._onToggleStarMap.bind(this);
         this._onAirportChangeHandler = this._onAirportChange.bind(this);
         this._onToggleTerrainHandler = this._onToggleTerrain.bind(this);
@@ -273,6 +286,9 @@ export default class CanvasController {
         this._eventBus.on(EVENT.TOGGLE_LABELS, this._onToggleLabelsHandler);
         this._eventBus.on(EVENT.TOGGLE_RESTRICTED_AREAS, this._onToggleRestrictedAreasHandler);
         this._eventBus.on(EVENT.TOGGLE_SID_MAP, this._onToggleSidMapHandler);
+        this._eventBus.on(EVENT.DRAW_PROCEDURES_CHANGE, this._onDrawProceduresChangeHandler);
+        this._eventBus.on(EVENT.HIGHLIGHT_PROCEDURE, this._onHighlightProcedureHandler);
+        this._eventBus.on(EVENT.ATIS_UPDATED, this._onDrawProceduresChangeHandler);
         this._eventBus.on(EVENT.TOGGLE_STAR_MAP, this._onToggleStarMapHandler);
         this._eventBus.on(EVENT.TOGGLE_TERRAIN, this._onToggleTerrainHandler);
         this._eventBus.on(EVENT.TOGGLE_VIDEO_MAP, this._onToggleVideoMapHandler);
@@ -323,10 +339,10 @@ export default class CanvasController {
         this._shouldResize = true;
         this._shouldShallowRender = true;
         this._shouldDeepRender = true;
-        this._shouldDrawFixLabels = false;
+        this._shouldDrawFixLabels = true;
         this._shouldDrawRestrictedAreas = false;
-        this._shouldDrawSidMap = false;
-        this._shouldDrawStarMap = false;
+        this._shouldDrawSidMap = true;
+        this._shouldDrawStarMap = true;
         this._shouldDrawTerrain = true;
 
         return this;
@@ -414,6 +430,7 @@ export default class CanvasController {
             this._drawVideoMap(staticCanvasCtx);
             this._drawTerrain(staticCanvasCtx);
             this._drawRestrictedAirspace(staticCanvasCtx);
+            this._drawNearbyAirports(staticCanvasCtx);
             this._drawRunways(staticCanvasCtx);
             this._drawAirportFixesAndLabels(staticCanvasCtx);
             this._drawSids(staticCanvasCtx);
@@ -524,8 +541,9 @@ export default class CanvasController {
 
         // runway body
         if (!mode) {
-            cc.strokeStyle = '#899';
-            cc.lineWidth = 2.8;
+            cc.strokeStyle = '#b8c4cc';
+            // runways stay visible when zoomed out and look like runways when zoomed in
+            cc.lineWidth = Math.max(3, Math.min(14, CanvasStageModel.scale * 0.12));
 
             cc.beginPath();
             cc.moveTo(0, 0);
@@ -546,6 +564,59 @@ export default class CanvasController {
             cc.lineTo(0, CanvasStageModel._translateKilometersToPixels(runwayModel.ils.loc_maxDist));
             cc.stroke();
         }
+
+        cc.restore();
+    }
+
+    /**
+     * Draw the other airports around this one (from the worldwide airport index) as small labelled circles
+     *
+     * POSITIONING: Before calling this method, ensure NO TRANSLATION has occurred
+     *
+     * @for CanvasController
+     * @method _drawNearbyAirports
+     * @param cc {HTMLCanvasContext}
+     * @returns undefined
+     * @private
+     */
+    _drawNearbyAirports(cc) {
+        if (!this._shouldDrawFixLabels || !airportIndex.isLoaded) {
+            return;
+        }
+
+        const airportModel = AirportController.airport_get();
+        const [latitude, longitude] = airportModel.positionModel.gps;
+        const radiusNm = airportModel.ctr_radius / 1.852 * 1.4;
+        const nearby = airportIndex.findNear(latitude, longitude, {
+            maximumDistanceNm: radiusNm,
+            excludeIcao: airportModel.icao.toUpperCase(),
+            minimumRunwayMeters: 1200,
+            requireIata: false,
+            limit: 25
+        });
+
+        if (nearby.length === 0) {
+            return;
+        }
+
+        cc.save();
+        this._ccTranslateFromCanvasOriginToAirportCenter(cc);
+        cc.strokeStyle = this.theme.SCOPE.RUNWAY_LABELS;
+        cc.fillStyle = this.theme.SCOPE.RUNWAY_LABELS;
+        cc.lineWidth = 1;
+        cc.font = '11px monoOne, monospace';
+        cc.textAlign = 'left';
+        cc.textBaseline = 'middle';
+
+        nearby.forEach((entry) => {
+            const position = new StaticPositionModel([entry.lat, entry.lon], airportModel.positionModel, airportModel.magneticNorth);
+            const [x, y] = CanvasStageModel.calculateRoundedCanvasPositionFromRelativePosition(position.relativePosition);
+
+            cc.beginPath();
+            cc.arc(x, y, 3.5, 0, tau());
+            cc.stroke();
+            cc.fillText(entry.icao, x + 7, y);
+        });
 
         cc.restore();
     }
@@ -615,6 +686,20 @@ export default class CanvasController {
         for (let i = 0; i < airportModel.runways.length; i++) {
             this._drawSingleRunway(cc, airportModel.runways[i][0], false);
         }
+
+        // the airport itself: a ring around the field and its identifier, so it is easy to find when zoomed out
+        const [centerX, centerY] = CanvasStageModel.calculateRoundedCanvasPositionFromRelativePosition(
+            airportModel.rangeRings.center.relativePosition
+        );
+
+        cc.lineWidth = 1.5;
+        cc.beginPath();
+        cc.arc(centerX, centerY, 12, 0, tau());
+        cc.stroke();
+        cc.font = 'bold 12px monoOne, monospace';
+        cc.textAlign = 'left';
+        cc.textBaseline = 'bottom';
+        cc.fillText(airportModel.icao.toUpperCase(), centerX + 16, centerY - 10);
 
         cc.restore();
     }
@@ -773,19 +858,29 @@ export default class CanvasController {
 
         const textAtFix = [];
         const sidLines = NavigationLibrary.getProcedureLines(PROCEDURE_TYPE.SID);
+        const { departureRunwayModel } = AirportController.airport_get();
+        const departureRunwayName = departureRunwayModel ? departureRunwayModel.name : '';
 
         cc.save();
         this._ccTranslateFromCanvasOriginToAirportCenter(cc);
         cc.strokeStyle = this.theme.SCOPE.SID;
         cc.fillStyle = this.theme.SCOPE.SID;
-        cc.setLineDash([1, 10]);
+        cc.lineWidth = 1.2;
+        cc.setLineDash([5, 4]);
         cc.font = 'italic 14px monoOne, monospace';
 
         for (let i = 0; i < sidLines.length; i++) {
             const sid = sidLines[i];
             let shouldDrawProcedureName = true;
+            const isHighlighted = sid.identifier === this._highlightedProcedureId;
+
+            this._setProcedureLineStyle(cc, isHighlighted, this.theme.SCOPE.SID);
 
             for (let j = 0; j < sid.lines.length; j++) {
+                if (this._isLineForOtherRunway(sid.lineRunways[j], departureRunwayName)) {
+                    continue;
+                }
+
                 this._drawPolyLineFromRelativePositions(cc, sid.lines[j]);
             }
 
@@ -824,6 +919,36 @@ export default class CanvasController {
     }
 
     /**
+     * Normal procedures are thin and dashed; the highlighted one is thick, solid and bright
+     *
+     * @for CanvasController
+     * @method _setProcedureLineStyle
+     * @param cc {HTMLCanvasContext}
+     * @param isHighlighted {boolean}
+     * @param color {string}
+     * @private
+     */
+    _setProcedureLineStyle(cc, isHighlighted, color) {
+        cc.strokeStyle = isHighlighted ? '#ffffff' : color;
+        cc.lineWidth = isHighlighted ? 3 : 1.2;
+        cc.setLineDash(isHighlighted ? [] : [5, 4]);
+    }
+
+    /**
+     * A procedure line can be tied to one runway (`@27` in the airport file); it is drawn only while that runway is in use
+     *
+     * @for CanvasController
+     * @method _isLineForOtherRunway
+     * @param lineRunway {string|null} runway the line belongs to, null when it belongs to all
+     * @param activeRunwayName {string}
+     * @return {boolean}
+     * @private
+     */
+    _isLineForOtherRunway(lineRunway, activeRunwayName) {
+        return Boolean(lineRunway) && lineRunway !== String(activeRunwayName).toUpperCase();
+    }
+
+    /**
      * Draw STAR lines and labels
      *
      * POSITIONING: Before calling this method, ensure NO TRANSLATION has occurred
@@ -840,20 +965,30 @@ export default class CanvasController {
         }
 
         const starLines = NavigationLibrary.getProcedureLines(PROCEDURE_TYPE.STAR);
+        const { arrivalRunwayModel } = AirportController.airport_get();
+        const arrivalRunwayName = arrivalRunwayModel ? arrivalRunwayModel.name : '';
         const textAtFix = [];
 
         cc.save();
         this._ccTranslateFromCanvasOriginToAirportCenter(cc);
         cc.strokeStyle = this.theme.SCOPE.STAR;
         cc.fillStyle = this.theme.SCOPE.STAR;
-        cc.setLineDash([1, 10]);
+        cc.lineWidth = 1.2;
+        cc.setLineDash([5, 4]);
         cc.font = 'italic 14px monoOne, monospace';
         cc.textAlign = 'right';
 
         for (let i = 0; i < starLines.length; i++) {
             const star = starLines[i];
+            const isHighlighted = star.identifier === this._highlightedProcedureId;
+
+            this._setProcedureLineStyle(cc, isHighlighted, this.theme.SCOPE.STAR);
 
             for (let j = 0; j < star.lines.length; j++) {
+                if (this._isLineForOtherRunway(star.lineRunways[j], arrivalRunwayName)) {
+                    continue;
+                }
+
                 this._drawPolyLineFromRelativePositions(cc, star.lines[j]);
             }
 
@@ -2594,6 +2729,34 @@ export default class CanvasController {
      */
     _onToggleRestrictedAreas() {
         this._shouldDrawRestrictedAreas = !this._shouldDrawRestrictedAreas;
+
+        this._markDeepRender();
+    }
+
+    /**
+     * A procedure was picked in the procedures list: draw it emphasised
+     *
+     * @for CanvasController
+     * @method _onHighlightProcedure
+     * @param procedureId {string|null}
+     * @private
+     */
+    _onHighlightProcedure(procedureId) {
+        this._highlightedProcedureId = procedureId || null;
+
+        this._markDeepRender();
+    }
+
+    /**
+     * The player changed "Show SIDs" or "Show STARs" in the settings or the footer
+     *
+     * @for CanvasController
+     * @method _onDrawProceduresChange
+     * @private
+     */
+    _onDrawProceduresChange() {
+        this._shouldDrawSidMap = GameController.getGameOption(GAME_OPTION_NAMES.DRAW_SIDS) !== 'no';
+        this._shouldDrawStarMap = GameController.getGameOption(GAME_OPTION_NAMES.DRAW_STARS) !== 'no';
 
         this._markDeepRender();
     }

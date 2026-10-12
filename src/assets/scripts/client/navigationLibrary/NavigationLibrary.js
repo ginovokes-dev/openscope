@@ -266,6 +266,7 @@ class NavigationLibrary {
         for (let i = 0; i < procedures.length; i++) {
             const procedure = procedures[i];
             const lines = [];
+            const lineRunways = [];
             const exits = [];
             let firstFixName = null;
             let mostRecentFixName = '';
@@ -273,9 +274,18 @@ class NavigationLibrary {
             for (let j = 0; j < procedure.draw.length; j++) {
                 const fixList = procedure.draw[j];
                 const positions = [];
+                let lineRunway = null;
 
                 for (let k = 0; k < fixList.length; k++) {
                     const fixName = fixList[k];
+
+                    // `@27` first in a line: only draw it while runway 27 is the active one
+                    if (k === 0 && fixName.charAt(0) === '@') {
+                        lineRunway = fixName.slice(1).toUpperCase();
+
+                        continue;
+                    }
+
                     mostRecentFixName = fixName;
 
                     if (fixName.indexOf('*') !== INVALID_INDEX) {
@@ -299,12 +309,14 @@ class NavigationLibrary {
 
                 if (positions.length > 1) {
                     lines.push(positions);
+                    lineRunways.push(lineRunway);
                 }
             }
 
             procedureLines.push({
                 identifier: procedure.icao,
                 lines: lines,
+                lineRunways: lineRunways,
                 firstFixName: firstFixName,
                 lastFixName: mostRecentFixName,
                 exits: exits

@@ -200,6 +200,28 @@ export default class ProcedureModel {
         return this._altitude;
     }
 
+    /**
+     * Names of the entry points (for a SID, the runways it can be flown from)
+     *
+     * @for ProcedureModel
+     * @property entryNames
+     * @type {array<string>}
+     */
+    get entryNames() {
+        return Object.keys(this._entryPoints);
+    }
+
+    /**
+     * Names of the exit points (for a SID the fix it leaves the airspace by, for a STAR the runways it serves)
+     *
+     * @for ProcedureModel
+     * @property exitNames
+     * @type {array<string>}
+     */
+    get exitNames() {
+        return Object.keys(this._exitPoints);
+    }
+
     // ------------------------------ LIFECYCLE ------------------------------
 
     /**
@@ -531,7 +553,10 @@ export default class ProcedureModel {
      */
     _getFixNamesFromDraw() {
         const drawFixNames = this._draw.reduce((fixList, lineSegment) => fixList.concat(lineSegment));
-        const drawFixNamesWithoutAsterisks = drawFixNames.map((fixName) => fixName.replace('*', ''));
+        // a leading `@27` marks a line that is only drawn while runway 27 is in use; it is not a fix
+        const drawFixNamesWithoutAsterisks = drawFixNames
+            .filter((fixName) => fixName.charAt(0) !== '@')
+            .map((fixName) => fixName.replace('*', ''));
 
         return drawFixNamesWithoutAsterisks;
     }

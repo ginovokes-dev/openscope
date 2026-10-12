@@ -347,7 +347,8 @@ function buildAirport(rec, ctx, relaxed) {
             rwy,
             body: [],
             exitPoints: { [g.name]: [g.name] },
-            draw: [[rec.icao, `${g.name}*`]]
+            // from the climb-out fix of each runway (drawn only while that runway is the departure runway)
+            draw: runwayEndNames.map((name) => [`@${name}`, climbFix[name], `${g.name}*`])
         };
     }
 
@@ -388,6 +389,7 @@ function buildAirport(rec, ctx, relaxed) {
         const star = sidName(g.name, g.spoken, version, letter);
         const rwy = {};
         const draw = [[`${g.name}*`, g.inner.name]];
+        const runwayDraw = [];
 
         for (const name of runwayEndNames) {
             const approach = approachFixes[name];
@@ -416,7 +418,7 @@ function buildAirport(rec, ctx, relaxed) {
 
             legs.push(`#${String(approach.headingMag).padStart(3, '0')}`);
             rwy[`${rec.icao}${name}`] = legs;
-            draw.push(route);
+            runwayDraw.push([`@${name}`, ...route]);
         }
 
         g.star = star.icao;
@@ -427,7 +429,8 @@ function buildAirport(rec, ctx, relaxed) {
             entryPoints: { [g.name]: [] },
             body: [g.name, [g.inner.name, 'S250-']],
             rwy,
-            draw
+            // the feeder to the inner fix always; the rest only while that runway is the arrival runway
+            draw: [...draw, ...runwayDraw]
         };
     }
 

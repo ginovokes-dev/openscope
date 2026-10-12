@@ -418,7 +418,7 @@ function checkAirport(icaoLower, d, ctx, report, isGenerated) {
         }
 
         sid.body.forEach((el) => fixReferenced(fixNameOf(el), `SID ${id}/body`));
-        sid.draw.forEach((line) => line.forEach((el) => fixReferenced(fixNameOf(el), `SID ${id}/draw`)));
+        sid.draw.forEach((line) => line.filter((el) => !String(el).startsWith('@')).forEach((el) => fixReferenced(fixNameOf(el), `SID ${id}/draw`)));
     }
 
     for (const [id, star] of Object.entries(stars)) {
@@ -453,7 +453,7 @@ function checkAirport(icaoLower, d, ctx, report, isGenerated) {
         }
 
         star.body.forEach((el) => fixReferenced(fixNameOf(el), `STAR ${id}/body`));
-        star.draw.forEach((line) => line.forEach((el) => fixReferenced(fixNameOf(el), `STAR ${id}/draw`)));
+        star.draw.forEach((line) => line.filter((el) => !String(el).startsWith('@')).forEach((el) => fixReferenced(fixNameOf(el), `STAR ${id}/draw`)));
         Object.entries(star.entryPoints).forEach(([entry, legs]) => {
             fixReferenced(entry, `STAR ${id}/entry`);
             legs.forEach((el) => fixReferenced(fixNameOf(el), `STAR ${id}/entry ${entry}`));

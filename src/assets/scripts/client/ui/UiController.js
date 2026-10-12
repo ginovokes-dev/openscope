@@ -12,6 +12,7 @@ import airportIndex from '../geo/AirportIndex';
 import { buildAirportKeywords, getCountryName, matchesAirportQuery } from '../airport/airportSearch';
 import { speech_toggle } from '../speech';
 import { EVENT } from '../constants/eventNames';
+import { GAME_OPTION_NAMES } from '../constants/gameOptionConstants';
 import { SELECTORS } from '../constants/selectors';
 import { TRACKABLE_EVENT } from '../constants/trackableEvents';
 
@@ -528,6 +529,8 @@ class UiController {
      * @method ui_init
      */
     ui_init() {
+        this._syncProcedureButtons();
+        this._eventBus.on(EVENT.DRAW_PROCEDURES_CHANGE, () => this._syncProcedureButtons());
         this.tutorialView.tutorial_init_pre();
         this.$fastForwards.prop('title', 'Set time warp to 2');
     }
@@ -954,13 +957,7 @@ class UiController {
      * @param event {jquery event}
      */
     onToggleSids(event) {
-        this.$toggleSids.toggleClass(SELECTORS.CLASSNAMES.ACTIVE);
-        EventTracker.recordEvent(
-            TRACKABLE_EVENT.OPTIONS,
-            'sids',
-            `${this.$toggleSids.hasClass(SELECTORS.CLASSNAMES.ACTIVE)}`
-        );
-        this._eventBus.trigger(EVENT.TOGGLE_SID_MAP);
+        this._toggleProcedureOption(GAME_OPTION_NAMES.DRAW_SIDS, 'sids');
     }
 
     /**
@@ -969,13 +966,36 @@ class UiController {
      * @param event {jquery event}
      */
     onToggleStars(event) {
-        this.$toggleStars.toggleClass(SELECTORS.CLASSNAMES.ACTIVE);
-        EventTracker.recordEvent(
-            TRACKABLE_EVENT.OPTIONS,
-            'stars',
-            `${this.$toggleStars.hasClass(SELECTORS.CLASSNAMES.ACTIVE)}`
-        );
-        this._eventBus.trigger(EVENT.TOGGLE_STAR_MAP);
+        this._toggleProcedureOption(GAME_OPTION_NAMES.DRAW_STARS, 'stars');
+    }
+
+    /**
+     * Flip "Show SIDs" / "Show STARs"; the radar and the footer buttons follow the option
+     *
+     * @for UiController
+     * @method _toggleProcedureOption
+     * @param optionName {string}
+     * @param trackingName {string}
+     * @private
+     */
+    _toggleProcedureOption(optionName, trackingName) {
+        const isOn = GameController.getGameOption(optionName) !== 'no';
+
+        EventTracker.recordEvent(TRACKABLE_EVENT.OPTIONS, trackingName, `${!isOn}`);
+        GameController.game.option.setOptionByName(optionName, isOn ? 'no' : 'yes');
+        this._syncProcedureButtons();
+    }
+
+    /**
+     * Footer SID and STAR buttons show whether the procedures are drawn
+     *
+     * @for UiController
+     * @method _syncProcedureButtons
+     * @private
+     */
+    _syncProcedureButtons() {
+        this.$toggleSids.toggleClass(SELECTORS.CLASSNAMES.ACTIVE, GameController.getGameOption(GAME_OPTION_NAMES.DRAW_SIDS) !== 'no');
+        this.$toggleStars.toggleClass(SELECTORS.CLASSNAMES.ACTIVE, GameController.getGameOption(GAME_OPTION_NAMES.DRAW_STARS) !== 'no');
     }
 
     /**

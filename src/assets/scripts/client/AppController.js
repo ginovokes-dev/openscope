@@ -9,6 +9,7 @@ import AirportInfoController from './info/AirportInfoController';
 import AtisController from './atis/AtisController';
 import AtisPanel from './atis/AtisPanel';
 import ControlsGuide from './ui/ControlsGuide';
+import ProceduresPanel from './ui/ProceduresPanel';
 import AiSettingsDialog from './radio/AiSettingsDialog';
 import RadioController from './radio/RadioController';
 import RadioPanel from './radio/RadioPanel';
@@ -215,6 +216,7 @@ export default class AppController {
 
         this.inputController = new InputController(this.$element, this.aircraftController, this.scopeModel);
         zlsa.atc.debug.input = this.inputController;
+        zlsa.atc.debug.canvas = this.canvasController;
         this.airportInfoController = new AirportInfoController(this.$element);
         this.aircraftInfoPanel = new AircraftInfoPanel(this.$element, this.aircraftController);
         this.atisPanel = new AtisPanel(this.$element);
@@ -227,6 +229,13 @@ export default class AppController {
         UiController.registerExtraDialog(this.aiSettingsDialog);
         this.controlsGuide = new ControlsGuide(this.$element);
         UiController.registerExtraDialog(this.controlsGuide);
+        this.proceduresPanel = new ProceduresPanel(
+            this.$element,
+            () => this.aircraftController.aircraft.list.find((aircraft) => aircraft.callsign === this.inputController.input.callsign) || null,
+            (text) => this.inputController.executeCommandText(text)
+        );
+        this.proceduresPanel.setOptions(GameController.game.option);
+        UiController.registerExtraDialog(this.proceduresPanel);
         zlsa.atc.debug.radio = this.radioController;
         this.airportGuideController = new AirportGuideViewController(this.$element, airportGuideData, initialAirportData.icao);
         this.changelogController = new ChangelogController(this.contentQueue);
