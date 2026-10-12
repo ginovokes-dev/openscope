@@ -1,0 +1,78 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EHGG/",
+    "info": {"country":"NL","city":"Groningen","type":"large_airport","longestRunwayM":2500,"frequencies":{"atis":"133.555","twr":"118.705","app":"120.305"}},
+    "radio": {"twr":"Groningen Tower","app":"Groningen Approach","dep":"Groningen Departure"},
+    "icao": "EHGG",
+    "iata": "GRQ",
+    "magnetic_north": 3.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [53.119107,6.577652,"17ft"],
+    "rangeRings": {"enabled":true,"center":[53.119107,6.577652],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":240,"speed":10},
+    "arrivalRunway": "23",
+    "departureRunway": "23",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[53.5232,6.6141],[53.5038,6.7871],[53.4581,6.9459],[53.3894,7.0796],[53.3022,7.179],[53.2026,7.2375],[53.0972,7.251],[52.9934,7.2186],[52.8981,7.1425],[52.8179,7.028],[52.7582,6.8827],[52.7231,6.7167],[52.715,6.5412],[52.7344,6.3682],[52.7801,6.2094],[52.8488,6.0757],[52.936,5.9763],[53.0357,5.9178],[53.141,5.9043],[53.2448,5.9367],[53.3401,6.0128],[53.4203,6.1273],[53.48,6.2726],[53.5151,6.4386]]}
+    ],
+    "fixes": {
+        "EHGG": [53.11911,6.57765],
+        "BET": [52.2878,7.38567,"rheine bentlage"],
+        "NAPEH": [52.94647,6.74545],
+        "RKN": [52.1332,6.76388,"rekken"],
+        "EZOHA": [52.92051,6.61516],
+        "LAWAK": [53.63868,6.34543],
+        "TICCE": [53.31215,6.49137],
+        "_RWY0504DME": [53.06984,6.47377],
+        "_RWY2304DME": [53.16613,6.67759]
+    },
+    "runways": [
+        {"name":["05","23"],"end":[[53.11108,6.5609,"13ft"],[53.12495,6.59027,"13ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "BET3E": {"icao":"BET3E","name":"Rheine Bentlage Three Echo","rwy":{"EHGG05":["_RWY2304DME"],"EHGG23":["_RWY0504DME"]},"body":[],"exitPoints":{"BET":["BET"]},"draw":[["EHGG","BET*"]]},
+        "RKN1B": {"icao":"RKN1B","name":"Rekken One Bravo","rwy":{"EHGG05":["_RWY2304DME"],"EHGG23":["_RWY0504DME"]},"body":[],"exitPoints":{"RKN":["RKN"]},"draw":[["EHGG","RKN*"]]},
+        "LAWAK3D": {"icao":"LAWAK3D","name":"Lawak Three Delta","rwy":{"EHGG05":["_RWY2304DME"],"EHGG23":["_RWY0504DME"]},"body":[],"exitPoints":{"LAWAK":["LAWAK"]},"draw":[["EHGG","LAWAK*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EHGG","destination":"LEPA","category":"departure","route":"EHGG23.RKN1B.RKN","altitude":"","speed":"","method":"random","rate":0.92,"airlines":[["ryr/b738",1],["tra/b738",1]]},
+        {"origin":"EHGG","destination":"EHBK","category":"departure","route":"EHGG23.RKN1B.RKN","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["tra/b738",1]]},
+        {"origin":"EHGG","destination":"EHEH","category":"departure","route":"EHGG23.RKN1B.RKN","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["tra/b738",1]]},
+        {"origin":"EHGG","destination":"GCLP","category":"departure","route":"EHGG23.RKN1B.RKN","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["tra/b738",1]]},
+        {"origin":"EHGG","destination":"LEGE","category":"departure","route":"EHGG23.RKN1B.RKN","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["ryr/b738",1]]},
+        {"origin":"EHGG","destination":"","category":"departure","route":"EHGG23.BET3E.BET","altitude":"","speed":"","method":"random","rate":0.92,"airlines":[["tra/b738",2]]},
+        {"origin":"EHGG","destination":"","category":"departure","route":"EHGG23.RKN1B.RKN","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["tra/b738",1]]},
+        {"origin":"EHGG","destination":"","category":"departure","route":"EHGG23.BET3E.BET","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["ph/c172",6],["ph/p28a",5],["ph/c182",3],["ph/be36",2],["ph/da42",1],["ph/tb20",1],["ph/c208",2],["ph/pc12",2],["ph/be20",1],["ph/b350",1],["ph/p180",1],["ph/c510",1],["ph/e50p",1],["ph/c550",1],["ph/e55p",1],["ph/cl30",1],["ph/c680",1],["ph/h25b",1],["ph/lj45",1],["ph/f2th",1],["ph/glf4",1],["ph/glex",1],["ph/glf5",1]]},
+        {"origin":"LEPA","destination":"EHGG","category":"arrival","route":"RKN..EZOHA..EHGG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.92,"airlines":[["ryr/b738",1],["tra/b738",1]]},
+        {"origin":"EHBK","destination":"EHGG","category":"arrival","route":"RKN..EZOHA..EHGG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.46,"airlines":[["tra/b738",1]]},
+        {"origin":"EHEH","destination":"EHGG","category":"arrival","route":"RKN..EZOHA..EHGG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.46,"airlines":[["tra/b738",1]]},
+        {"origin":"GCLP","destination":"EHGG","category":"arrival","route":"RKN..EZOHA..EHGG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.46,"airlines":[["tra/b738",1]]},
+        {"origin":"LEGE","destination":"EHGG","category":"arrival","route":"RKN..EZOHA..EHGG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.46,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"EHGG","category":"arrival","route":"BET..NAPEH..EHGG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.92,"airlines":[["tra/b738",2]]},
+        {"origin":"","destination":"EHGG","category":"arrival","route":"RKN..EZOHA..EHGG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.46,"airlines":[["tra/b738",1]]},
+        {"origin":"","destination":"EHGG","category":"arrival","route":"BET..NAPEH..EHGG","altitude":[4000,7000],"speed":250,"method":"random","rate":1.39,"airlines":[["ph/c172",6],["ph/p28a",5],["ph/c182",3],["ph/be36",2],["ph/da42",1],["ph/tb20",1],["ph/c208",2],["ph/pc12",2],["ph/be20",1],["ph/b350",1],["ph/p180",1],["ph/c510",1],["ph/e50p",1],["ph/c550",1],["ph/e55p",1],["ph/cl30",1],["ph/c680",1],["ph/h25b",1],["ph/lj45",1],["ph/f2th",1],["ph/glf4",1],["ph/glex",1],["ph/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [52.2878,7.3857,52.9465,6.7455],
+            [52.9465,6.7455,53.1191,6.5777],
+            [52.1332,6.7639,52.9205,6.6152],
+            [52.9205,6.6152,53.1191,6.5777],
+            [53.6387,6.3454,53.3121,6.4914],
+            [53.3121,6.4914,53.1191,6.5777]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [53.1111,6.5609,53.0079,6.3434],
+            [53.0517,6.4623,53.0674,6.4417],
+            [53,6.3537,53.0157,6.3331],
+            [53.125,6.5903,53.2278,6.8089],
+            [53.1843,6.6891,53.1686,6.7098],
+            [53.2356,6.7986,53.2199,6.8192]
+        ]}
+    ]
+}

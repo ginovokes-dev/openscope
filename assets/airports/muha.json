@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/MUHA/",
+    "info": {"country":"CU","city":"Havana","type":"large_airport","longestRunwayM":4004,"frequencies":{"atis":"132.500","twr":"118.100","app":"119.350","gnd":"121.900"}},
+    "radio": {"twr":"Jose Marti Tower","app":"Jose Marti Approach","dep":"Jose Marti Departure"},
+    "icao": "MUHA",
+    "iata": "HAV",
+    "magnetic_north": -5.7,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [22.989201,-82.409103,"210ft"],
+    "rangeRings": {"enabled":true,"center":[22.989201,-82.409103],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":60,"speed":10},
+    "arrivalRunway": "06",
+    "departureRunway": "06",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[23.5261,-82.4673],[23.5217,-82.3144],[23.481,-82.1679],[23.4068,-82.0379],[23.3041,-81.9331],[23.1799,-81.8608],[23.0428,-81.8259],[22.902,-81.8307],[22.7672,-81.8749],[22.6474,-81.9555],[22.551,-82.0671],[22.4844,-82.2019],[22.4523,-82.3509],[22.4567,-82.5038],[22.4974,-82.6503],[22.5716,-82.7804],[22.6743,-82.8851],[22.7985,-82.9574],[22.9356,-82.9924],[23.0764,-82.9875],[23.2113,-82.9433],[23.331,-82.8627],[23.4274,-82.7511],[23.494,-82.6163]]}
+    ],
+    "fixes": {
+        "MUHA": [22.9892,-82.4091],
+        "VUGAF": [23.6919,-82.33338],
+        "EMIDE": [23.23781,-82.38231],
+        "UJUHU": [23.45519,-81.83276],
+        "GETEW": [23.15406,-82.2052],
+        "UVA": [23.0247,-81.4536,"varder"],
+        "HOBTU": [22.99928,-82.13794],
+        "EZEPE": [22.324,-82.15169],
+        "SUGEL": [22.75386,-82.31803],
+        "KASJE": [22.77583,-83.14032],
+        "JOWUC": [22.91371,-82.6678],
+        "_RWY0604DME": [22.93954,-82.48351],
+        "_RWY2404DME": [23.03874,-82.33455]
+    },
+    "runways": [
+        {"name":["06","24"],"end":[[22.9786,-82.4249,"210ft"],[22.9997,-82.3932,"210ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "VUGAF3C": {"icao":"VUGAF3C","name":"Vugaf Three Charlie","rwy":{"MUHA06":["_RWY2404DME"],"MUHA24":["_RWY0604DME"]},"body":[],"exitPoints":{"VUGAF":["VUGAF"]},"draw":[["MUHA","VUGAF*"]]},
+        "UJUHU2C": {"icao":"UJUHU2C","name":"Ujuhu Two Charlie","rwy":{"MUHA06":["_RWY2404DME"],"MUHA24":["_RWY0604DME"]},"body":[],"exitPoints":{"UJUHU":["UJUHU"]},"draw":[["MUHA","UJUHU*"]]},
+        "UVA3E": {"icao":"UVA3E","name":"Varder Three Echo","rwy":{"MUHA06":["_RWY2404DME"],"MUHA24":["_RWY0604DME"]},"body":[],"exitPoints":{"UVA":["UVA"]},"draw":[["MUHA","UVA*"]]},
+        "EZEPE1F": {"icao":"EZEPE1F","name":"Ezepe One Foxtrot","rwy":{"MUHA06":["_RWY2404DME"],"MUHA24":["_RWY0604DME"]},"body":[],"exitPoints":{"EZEPE":["EZEPE"]},"draw":[["MUHA","EZEPE*"]]},
+        "KASJE3C": {"icao":"KASJE3C","name":"Kasje Three Charlie","rwy":{"MUHA06":["_RWY2404DME"],"MUHA24":["_RWY0604DME"]},"body":[],"exitPoints":{"KASJE":["KASJE"]},"draw":[["MUHA","KASJE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"MUHA","destination":"MMUN","category":"departure","route":"MUHA06.KASJE3C.KASJE","altitude":"","speed":"","method":"random","rate":0.66,"airlines":[["amx/b737",1],["bpa/b763",1],["cub/a319",1],["cub/a320",1]]},
+        {"origin":"MUHA","destination":"SVMI","category":"departure","route":"MUHA06.EZEPE1F.EZEPE","altitude":"","speed":"","method":"random","rate":0.66,"airlines":[["cub/a319",1],["cub/a320",1],["cub/t204",1],["vcv/e190",1]]},
+        {"origin":"MUHA","destination":"LEMD","category":"departure","route":"MUHA06.UJUHU2C.UJUHU","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["aea/a332",1],["aea/a333",1],["cub/il96",1]]},
+        {"origin":"MUHA","destination":"MMMX","category":"departure","route":"MUHA06.KASJE3C.KASJE","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["amx/b737",1],["cub/a319",1],["cub/a320",1]]},
+        {"origin":"MUHA","destination":"MPTO","category":"departure","route":"MUHA06.EZEPE1F.EZEPE","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["cmp/b738",1],["cmp/e190",1],["cub/b737",1]]},
+        {"origin":"MUHA","destination":"SKBO","category":"departure","route":"MUHA06.EZEPE1F.EZEPE","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["ava/a318",1],["ava/a319",1],["cub/a319",1]]},
+        {"origin":"MUHA","destination":"","category":"departure","route":"MUHA06.VUGAF3C.VUGAF","altitude":"","speed":"","method":"random","rate":0.16,"airlines":[["aca/e190",1]]},
+        {"origin":"MUHA","destination":"","category":"departure","route":"MUHA06.UJUHU2C.UJUHU","altitude":"","speed":"","method":"random","rate":1.65,"airlines":[["bpa/b763",2],["afl/a332",1],["afr/b77w",1],["bhs/b737",1],["cfg/b763",1],["cub/at43",1],["cub/il96",1],["vir/b744",1],["klm/a333",1],["klm/a332",1]]},
+        {"origin":"MUHA","destination":"","category":"departure","route":"MUHA06.UVA3E.UVA","altitude":"","speed":"","method":"random","rate":1.48,"airlines":[["bpa/b763",2],["cub/a320",2],["cub/il96",2],["cub/a319",1],["cub/t204",1],["dta/b772",1]]},
+        {"origin":"MUHA","destination":"","category":"departure","route":"MUHA06.EZEPE1F.EZEPE","altitude":"","speed":"","method":"random","rate":0.82,"airlines":[["bpa/b763",1],["cay/b733",1],["cub/a320",1],["cub/il96",1],["tae/e170",1]]},
+        {"origin":"MUHA","destination":"","category":"departure","route":"MUHA06.VUGAF3C.VUGAF","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["cu/c172",6],["cu/p28a",5],["cu/c182",3],["cu/be36",2],["cu/da42",1],["cu/tb20",1],["cu/c208",2],["cu/pc12",2],["cu/be20",1],["cu/b350",1],["cu/p180",1],["cu/c510",1],["cu/e50p",1],["cu/c550",2],["cu/e55p",1],["cu/cl30",1],["cu/c680",1],["cu/h25b",1],["cu/lj45",1],["cu/f2th",1],["cu/glf4",1],["cu/glex",1],["cu/glf5",1]]},
+        {"origin":"MUHA","destination":"","category":"departure","route":"MUHA06.UJUHU2C.UJUHU","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["cu/c172",6],["cu/p28a",5],["cu/c182",3],["cu/be36",2],["cu/da42",1],["cu/tb20",1],["cu/c208",2],["cu/pc12",2],["cu/be20",1],["cu/b350",1],["cu/p180",1],["cu/c510",1],["cu/e50p",1],["cu/c550",2],["cu/e55p",1],["cu/cl30",1],["cu/c680",1],["cu/h25b",1],["cu/lj45",1],["cu/f2th",1],["cu/glf4",1],["cu/glex",1],["cu/glf5",1]]},
+        {"origin":"MMUN","destination":"MUHA","category":"arrival","route":"KASJE..JOWUC..MUHA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.66,"airlines":[["amx/b737",1],["bpa/b763",1],["cub/a319",1],["cub/a320",1]]},
+        {"origin":"SVMI","destination":"MUHA","category":"arrival","route":"EZEPE..SUGEL..MUHA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.66,"airlines":[["cub/a319",1],["cub/a320",1],["cub/t204",1],["vcv/e190",1]]},
+        {"origin":"LEMD","destination":"MUHA","category":"arrival","route":"UJUHU..GETEW..MUHA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.49,"airlines":[["aea/a332",1],["aea/a333",1],["cub/il96",1]]},
+        {"origin":"MMMX","destination":"MUHA","category":"arrival","route":"KASJE..JOWUC..MUHA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.49,"airlines":[["amx/b737",1],["cub/a319",1],["cub/a320",1]]},
+        {"origin":"MPTO","destination":"MUHA","category":"arrival","route":"EZEPE..SUGEL..MUHA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.49,"airlines":[["cmp/b738",1],["cmp/e190",1],["cub/b737",1]]},
+        {"origin":"SKBO","destination":"MUHA","category":"arrival","route":"EZEPE..SUGEL..MUHA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.49,"airlines":[["ava/a318",1],["ava/a319",1],["cub/a319",1]]},
+        {"origin":"","destination":"MUHA","category":"arrival","route":"VUGAF..EMIDE..MUHA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.16,"airlines":[["aca/e190",1]]},
+        {"origin":"","destination":"MUHA","category":"arrival","route":"UJUHU..GETEW..MUHA","altitude":[6000,9000],"speed":250,"method":"random","rate":1.65,"airlines":[["bpa/b763",2],["afl/a332",1],["afr/b77w",1],["bhs/b737",1],["cfg/b763",1],["cub/at43",1],["cub/il96",1],["vir/b744",1],["klm/a333",1],["klm/a332",1]]},
+        {"origin":"","destination":"MUHA","category":"arrival","route":"UVA..HOBTU..MUHA","altitude":[6000,9000],"speed":250,"method":"random","rate":1.48,"airlines":[["bpa/b763",2],["cub/a320",2],["cub/il96",2],["cub/a319",1],["cub/t204",1],["dta/b772",1]]},
+        {"origin":"","destination":"MUHA","category":"arrival","route":"EZEPE..SUGEL..MUHA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.82,"airlines":[["bpa/b763",1],["cay/b733",1],["cub/a320",1],["cub/il96",1],["tae/e170",1]]},
+        {"origin":"","destination":"MUHA","category":"arrival","route":"VUGAF..EMIDE..MUHA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["cu/c172",6],["cu/p28a",5],["cu/c182",3],["cu/be36",2],["cu/da42",1],["cu/tb20",1],["cu/c208",2],["cu/pc12",2],["cu/be20",1],["cu/b350",1],["cu/p180",1],["cu/c510",1],["cu/e50p",1],["cu/c550",2],["cu/e55p",1],["cu/cl30",1],["cu/c680",1],["cu/h25b",1],["cu/lj45",1],["cu/f2th",1],["cu/glf4",1],["cu/glex",1],["cu/glf5",1]]},
+        {"origin":"","destination":"MUHA","category":"arrival","route":"UJUHU..GETEW..MUHA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["cu/c172",6],["cu/p28a",5],["cu/c182",3],["cu/be36",2],["cu/da42",1],["cu/tb20",1],["cu/c208",2],["cu/pc12",2],["cu/be20",1],["cu/b350",1],["cu/p180",1],["cu/c510",1],["cu/e50p",1],["cu/c550",2],["cu/e55p",1],["cu/cl30",1],["cu/c680",1],["cu/h25b",1],["cu/lj45",1],["cu/f2th",1],["cu/glf4",1],["cu/glex",1],["cu/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [23.6919,-82.3334,23.2378,-82.3823],
+            [23.2378,-82.3823,22.9892,-82.4091],
+            [23.4552,-81.8328,23.1541,-82.2052],
+            [23.1541,-82.2052,22.9892,-82.4091],
+            [23.0247,-81.4536,22.9993,-82.1379],
+            [22.9993,-82.1379,22.9892,-82.4091],
+            [22.324,-82.1517,22.7539,-82.318],
+            [22.7539,-82.318,22.9892,-82.4091],
+            [22.7758,-83.1403,22.9137,-82.6678],
+            [22.9137,-82.6678,22.9892,-82.4091]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [22.9786,-82.4249,22.8809,-82.5714],
+            [22.9217,-82.4918,22.9379,-82.5045],
+            [22.8728,-82.565,22.889,-82.5777],
+            [22.9997,-82.3932,23.0973,-82.2465],
+            [23.0566,-82.3262,23.0404,-82.3135],
+            [23.1054,-82.2529,23.0892,-82.2401]
+        ]}
+    ]
+}

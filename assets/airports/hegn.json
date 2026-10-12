@@ -1,0 +1,91 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/HEGN/",
+    "info": {"country":"EG","city":"Hurghada","type":"large_airport","longestRunwayM":4023,"frequencies":{"twr":"119.600","app":"123.400","gnd":"121.900"}},
+    "radio": {"twr":"Hurghada Tower","app":"Hurghada Approach","dep":"Hurghada Departure"},
+    "icao": "HEGN",
+    "iata": "HRG",
+    "magnetic_north": 4.5,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [27.176776,33.796692,"32ft"],
+    "rangeRings": {"enabled":true,"center":[27.176776,33.796692],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":140,"speed":11},
+    "arrivalRunway": "16L",
+    "departureRunway": "16L",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[27.7147,33.8443],[27.6854,33.9992],[27.6215,34.1402],[27.5272,34.2579],[27.4091,34.3442],[27.2751,34.3931],[27.1344,34.4014],[26.9967,34.3685],[26.8711,34.2966],[26.7665,34.1906],[26.6897,34.0578],[26.6462,33.9072],[26.6388,33.7491],[26.6681,33.5942],[26.7321,33.4531],[26.8263,33.3355],[26.9445,33.2492],[27.0784,33.2003],[27.2191,33.192],[27.3569,33.2249],[27.4824,33.2968],[27.5871,33.4028],[27.6638,33.5356],[27.7073,33.6862]]}
+    ],
+    "fixes": {
+        "HEGN": [27.17678,33.79669],
+        "SHM": [27.9981,34.4133,"sharm el sheikh"],
+        "JOPAJ": [27.38453,33.95267],
+        "VOFRI": [26.47066,33.80357],
+        "MOLME": [26.92695,33.79912],
+        "ITOHA": [27.77124,33.36826],
+        "IPUGU": [27.38709,33.64512],
+        "_RWY16L04DME": [27.25792,33.77759],
+        "_RWY34R04DME": [27.09665,33.82505],
+        "_RWY16R04DME": [27.25829,33.76729],
+        "_RWY34L04DME": [27.0946,33.81609]
+    },
+    "runways": [
+        {"name":["16L","34R"],"end":[[27.19347,33.79657,"50ft"],[27.1611,33.8061,"35ft"]],"ils":[true,true]},
+        {"name":["16R","34L"],"end":[[27.1939,33.7865,"32ft"],[27.159,33.7969,"32ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "SHM1C": {"icao":"SHM1C","name":"Sharm El Sheikh One Charlie","rwy":{"HEGN16L":["_RWY34R04DME"],"HEGN34R":["_RWY16L04DME"],"HEGN16R":["_RWY34L04DME"],"HEGN34L":["_RWY16R04DME"]},"body":[],"exitPoints":{"SHM":["SHM"]},"draw":[["HEGN","SHM*"]]},
+        "VOFRI1C": {"icao":"VOFRI1C","name":"Vofri One Charlie","rwy":{"HEGN16L":["_RWY34R04DME"],"HEGN34R":["_RWY16L04DME"],"HEGN16R":["_RWY34L04DME"],"HEGN34L":["_RWY16R04DME"]},"body":[],"exitPoints":{"VOFRI":["VOFRI"]},"draw":[["HEGN","VOFRI*"]]},
+        "ITOHA1F": {"icao":"ITOHA1F","name":"Itoha One Foxtrot","rwy":{"HEGN16L":["_RWY34R04DME"],"HEGN34R":["_RWY16L04DME"],"HEGN16R":["_RWY34L04DME"],"HEGN34L":["_RWY16R04DME"]},"body":[],"exitPoints":{"ITOHA":["ITOHA"]},"draw":[["HEGN","ITOHA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"HEGN","destination":"EGKK","category":"departure","route":"HEGN16L.ITOHA1F.ITOHA","altitude":"","speed":"","method":"random","rate":1.14,"airlines":[["ezy/a320",1],["mon/a321",1],["tcx/b752",1],["tcx/b753",1],["tom/b738",1],["tvf/b738",1],["tvf/b752",1]]},
+        {"origin":"HEGN","destination":"EDDL","category":"departure","route":"HEGN16L.ITOHA1F.ITOHA","altitude":"","speed":"","method":"random","rate":0.65,"airlines":[["ber/a332",1],["ber/b738",1],["cfg/b752",1],["hlx/b738",1]]},
+        {"origin":"HEGN","destination":"EGCC","category":"departure","route":"HEGN16L.ITOHA1F.ITOHA","altitude":"","speed":"","method":"random","rate":0.65,"airlines":[["mon/a321",1],["tcx/b763",1],["tom/b752",1],["tvf/b738",1]]},
+        {"origin":"HEGN","destination":"LTFM","category":"departure","route":"HEGN16L.ITOHA1F.ITOHA","altitude":"","speed":"","method":"random","rate":0.65,"airlines":[["msr/a320",1],["msr/b738",1],["thy/a320",1],["thy/b738",1]]},
+        {"origin":"HEGN","destination":"HECA","category":"departure","route":"HEGN16L.ITOHA1F.ITOHA","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["msr/a321",1],["msr/b735",1],["msr/e170",1]]},
+        {"origin":"HEGN","destination":"LOWS","category":"departure","route":"HEGN16L.ITOHA1F.ITOHA","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["nly/a320",1],["nly/a321",1]]},
+        {"origin":"HEGN","destination":"","category":"departure","route":"HEGN16L.SHM1C.SHM","altitude":"","speed":"","method":"random","rate":0.97,"airlines":[["tso/b738",2],["tso/b744",2],["tso/b763",1],["tso/t204",1]]},
+        {"origin":"HEGN","destination":"","category":"departure","route":"HEGN16L.ITOHA1F.ITOHA","altitude":"","speed":"","method":"random","rate":2.27,"airlines":[["ber/b738",4],["cfg/b752",3],["bhp/a320",2],["ezy/a320",1],["mon/a321",1],["msr/e170",1],["nly/a320",1],["nly/a321",1]]},
+        {"origin":"HEGN","destination":"","category":"departure","route":"HEGN16L.SHM1C.SHM","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["su/c172",6],["su/p28a",5],["su/c182",3],["su/be36",2],["su/da42",1],["su/tb20",1],["su/c208",2],["su/pc12",2],["su/be20",1],["su/b350",1],["su/p180",1],["su/c510",1],["su/e50p",1],["su/c550",2],["su/e55p",1],["su/cl30",1],["su/c680",1],["su/h25b",1],["su/lj45",1],["su/f2th",1],["su/glf4",1],["su/glex",1],["su/glf5",1]]},
+        {"origin":"HEGN","destination":"","category":"departure","route":"HEGN16L.ITOHA1F.ITOHA","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["su/c172",6],["su/p28a",5],["su/c182",3],["su/be36",2],["su/da42",1],["su/tb20",1],["su/c208",2],["su/pc12",2],["su/be20",1],["su/b350",1],["su/p180",1],["su/c510",1],["su/e50p",1],["su/c550",2],["su/e55p",1],["su/cl30",1],["su/c680",1],["su/h25b",1],["su/lj45",1],["su/f2th",1],["su/glf4",1],["su/glex",1],["su/glf5",1]]},
+        {"origin":"EGKK","destination":"HEGN","category":"arrival","route":"ITOHA..IPUGU..HEGN","altitude":[6000,9000],"speed":250,"method":"random","rate":1.14,"airlines":[["ezy/a320",1],["mon/a321",1],["tcx/b752",1],["tcx/b753",1],["tom/b738",1],["tvf/b738",1],["tvf/b752",1]]},
+        {"origin":"EDDL","destination":"HEGN","category":"arrival","route":"ITOHA..IPUGU..HEGN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.65,"airlines":[["ber/a332",1],["ber/b738",1],["cfg/b752",1],["hlx/b738",1]]},
+        {"origin":"EGCC","destination":"HEGN","category":"arrival","route":"ITOHA..IPUGU..HEGN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.65,"airlines":[["mon/a321",1],["tcx/b763",1],["tom/b752",1],["tvf/b738",1]]},
+        {"origin":"LTFM","destination":"HEGN","category":"arrival","route":"ITOHA..IPUGU..HEGN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.65,"airlines":[["msr/a320",1],["msr/b738",1],["thy/a320",1],["thy/b738",1]]},
+        {"origin":"HECA","destination":"HEGN","category":"arrival","route":"ITOHA..IPUGU..HEGN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.49,"airlines":[["msr/a321",1],["msr/b735",1],["msr/e170",1]]},
+        {"origin":"LOWS","destination":"HEGN","category":"arrival","route":"ITOHA..IPUGU..HEGN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.32,"airlines":[["nly/a320",1],["nly/a321",1]]},
+        {"origin":"","destination":"HEGN","category":"arrival","route":"SHM..JOPAJ..HEGN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.97,"airlines":[["tso/b738",2],["tso/b744",2],["tso/b763",1],["tso/t204",1]]},
+        {"origin":"","destination":"HEGN","category":"arrival","route":"ITOHA..IPUGU..HEGN","altitude":[6000,9000],"speed":250,"method":"random","rate":2.27,"airlines":[["ber/b738",4],["cfg/b752",3],["bhp/a320",2],["ezy/a320",1],["mon/a321",1],["msr/e170",1],["nly/a320",1],["nly/a321",1]]},
+        {"origin":"","destination":"HEGN","category":"arrival","route":"SHM..JOPAJ..HEGN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.49,"airlines":[["su/c172",6],["su/p28a",5],["su/c182",3],["su/be36",2],["su/da42",1],["su/tb20",1],["su/c208",2],["su/pc12",2],["su/be20",1],["su/b350",1],["su/p180",1],["su/c510",1],["su/e50p",1],["su/c550",2],["su/e55p",1],["su/cl30",1],["su/c680",1],["su/h25b",1],["su/lj45",1],["su/f2th",1],["su/glf4",1],["su/glex",1],["su/glf5",1]]},
+        {"origin":"","destination":"HEGN","category":"arrival","route":"ITOHA..IPUGU..HEGN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.49,"airlines":[["su/c172",6],["su/p28a",5],["su/c182",3],["su/be36",2],["su/da42",1],["su/tb20",1],["su/c208",2],["su/pc12",2],["su/be20",1],["su/b350",1],["su/p180",1],["su/c510",1],["su/e50p",1],["su/c550",2],["su/e55p",1],["su/cl30",1],["su/c680",1],["su/h25b",1],["su/lj45",1],["su/f2th",1],["su/glf4",1],["su/glex",1],["su/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [27.9981,34.4133,27.3845,33.9527],
+            [27.3845,33.9527,27.1768,33.7967],
+            [26.4707,33.8036,26.927,33.7991],
+            [26.927,33.7991,27.1768,33.7967],
+            [27.7712,33.3683,27.3871,33.6451],
+            [27.3871,33.6451,27.1768,33.7967]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [27.1935,33.7966,27.3546,33.7491],
+            [27.2715,33.762,27.2766,33.7837],
+            [27.3521,33.7382,27.3571,33.76],
+            [27.1611,33.8061,27,33.8534],
+            [27.0831,33.8406,27.078,33.8189],
+            [27.0025,33.8643,26.9974,33.8426],
+            [27.1939,33.7865,27.3549,33.7384],
+            [27.2718,33.7516,27.277,33.7733],
+            [27.3523,33.7275,27.3574,33.7493],
+            [27.159,33.7969,26.998,33.8448],
+            [27.0811,33.8317,27.0759,33.81],
+            [27.0006,33.8557,26.9954,33.834]
+        ]}
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGEF/",
+    "info": {"country":"GB","city":"Fair Isle","type":"small_airport","longestRunwayM":537,"approximateRunways":true},
+    "radio": {"twr":"Fair Isle Tower","app":"Fair Isle Approach","dep":"Fair Isle Radar"},
+    "icao": "EGEF",
+    "iata": "FIE",
+    "magnetic_north": -0.3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [59.534721,-1.628509,"223ft"],
+    "rangeRings": {"enabled":true,"center":[59.534721,-1.628509],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":230,"speed":7},
+    "arrivalRunway": "24",
+    "departureRunway": "24",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[59.9394,-1.6327],[59.9262,-1.426],[59.8863,-1.233],[59.8224,-1.0671],[59.7389,-0.9394],[59.6415,-0.8586],[59.5368,-0.8303],[59.432,-0.8564],[59.3342,-0.9352],[59.2501,-1.0612],[59.1853,-1.2258],[59.1444,-1.4179],[59.13,-1.6243],[59.1433,-1.8311],[59.1832,-2.024],[59.2471,-2.19],[59.3305,-2.3177],[59.4279,-2.3984],[59.5326,-2.4267],[59.6374,-2.4006],[59.7352,-2.3218],[59.8194,-2.1959],[59.8841,-2.0312],[59.9251,-1.8391]]}
+    ],
+    "fixes": {
+        "EGEF": [59.53472,-1.62851],
+        "TL": [60.1887,-1.24927,"tingwall"],
+        "UJABA": [59.72647,-1.51732],
+        "ISIZO": [59.37746,-0.61387],
+        "GAMIK": [59.47629,-1.25153],
+        "EHEDI": [59.02028,-1.93867],
+        "UJOCA": [59.34359,-1.74375],
+        "BEZIB": [59.69198,-2.64315],
+        "DUDMA": [59.59315,-2.00549],
+        "_RWY0603DME": [59.5101,-1.71966],
+        "_RWY2403DME": [59.55928,-1.53723]
+    },
+    "runways": [
+        {"name":["06","24"],"end":[[59.53359,-1.63271,"227ft"],[59.53585,-1.62431,"221ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "TL3C": {"icao":"TL3C","name":"Tingwall Three Charlie","rwy":{"EGEF06":["_RWY2403DME"],"EGEF24":["_RWY0603DME"]},"body":[],"exitPoints":{"TL":["TL"]},"draw":[["EGEF","TL*"]]},
+        "ISIZO3E": {"icao":"ISIZO3E","name":"Isizo Three Echo","rwy":{"EGEF06":["_RWY2403DME"],"EGEF24":["_RWY0603DME"]},"body":[],"exitPoints":{"ISIZO":["ISIZO"]},"draw":[["EGEF","ISIZO*"]]},
+        "EHEDI1F": {"icao":"EHEDI1F","name":"Ehedi One Foxtrot","rwy":{"EGEF06":["_RWY2403DME"],"EGEF24":["_RWY0603DME"]},"body":[],"exitPoints":{"EHEDI":["EHEDI"]},"draw":[["EGEF","EHEDI*"]]},
+        "BEZIB2D": {"icao":"BEZIB2D","name":"Bezib Two Delta","rwy":{"EGEF06":["_RWY2403DME"],"EGEF24":["_RWY0603DME"]},"body":[],"exitPoints":{"BEZIB":["BEZIB"]},"draw":[["EGEF","BEZIB*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGEF","destination":"","category":"departure","route":"EGEF24.EHEDI1F.EHEDI","altitude":"","speed":"","method":"random","rate":3,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/pc12",2],["g/be20",1]]},
+        {"origin":"","destination":"EGEF","category":"arrival","route":"EHEDI..UJOCA..EGEF","altitude":[4000,7000],"speed":250,"method":"random","rate":3,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/pc12",2],["g/be20",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [60.1887,-1.2493,59.7265,-1.5173],
+            [59.7265,-1.5173,59.5347,-1.6285],
+            [59.3775,-0.6139,59.4763,-1.2515],
+            [59.4763,-1.2515,59.5347,-1.6285],
+            [59.0203,-1.9387,59.3436,-1.7437],
+            [59.3436,-1.7437,59.5347,-1.6285],
+            [59.692,-2.6431,59.5931,-2.0055],
+            [59.5931,-2.0055,59.5347,-1.6285]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [59.5359,-1.6243,59.6137,-1.3336],
+            [59.5837,-1.4884,59.566,-1.4698],
+            [59.6226,-1.3429,59.6049,-1.3243]
+        ]}
+    ]
+}

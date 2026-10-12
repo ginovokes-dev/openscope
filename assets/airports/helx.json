@@ -1,0 +1,81 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/HELX/",
+    "info": {"country":"EG","city":"Luxor","type":"large_airport","longestRunwayM":3005,"frequencies":{"twr":"119.900","app":"124.300","gnd":"121.900"}},
+    "radio": {"twr":"Luxor Tower","app":"Luxor Approach","dep":"Luxor Departure"},
+    "icao": "HELX",
+    "iata": "LXR",
+    "magnetic_north": 4.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [25.671018,32.706446,"276ft"],
+    "rangeRings": {"enabled":true,"center":[25.671018,32.706446],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":0,"speed":9},
+    "arrivalRunway": "02",
+    "departureRunway": "02",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[26.0745,32.7409],[26.0527,32.8556],[26.0049,32.9601],[25.9344,33.0474],[25.8459,33.1114],[25.7455,33.1478],[25.64,33.1541],[25.5366,33.13],[25.4424,33.0769],[25.3637,32.9987],[25.3061,32.9005],[25.2732,32.789],[25.2675,32.672],[25.2893,32.5573],[25.3371,32.4528],[25.4077,32.3655],[25.4962,32.3015],[25.5966,32.2651],[25.7021,32.2588],[25.8054,32.2829],[25.8997,32.336],[25.9783,32.4142],[26.036,32.5124],[26.0688,32.6238]]}
+    ],
+    "fixes": {
+        "HELX": [25.67102,32.70645],
+        "BUHMI": [25.7483,33.2971],
+        "ACIRA": [25.69973,32.9259],
+        "PEJZU": [25.38034,33.20866],
+        "DAGAP": [25.56302,32.89304],
+        "IBIBI": [25.3132,32.26079],
+        "NOSET": [25.53807,32.54087],
+        "DOJEL": [26.15411,32.44388],
+        "CEVTA": [25.8505,32.60889],
+        "_RWY0204DME": [25.59698,32.67262],
+        "_RWY2004DME": [25.74522,32.74022]
+    },
+    "runways": [
+        {"name":["02","20"],"end":[[25.6586,32.7007,"294ft"],[25.6836,32.7121,"272ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "BUHMI1A": {"icao":"BUHMI1A","name":"Buhmi One Alpha","rwy":{"HELX02":["_RWY2004DME"],"HELX20":["_RWY0204DME"]},"body":[],"exitPoints":{"BUHMI":["BUHMI"]},"draw":[["HELX","BUHMI*"]]},
+        "PEJZU3E": {"icao":"PEJZU3E","name":"Pejzu Three Echo","rwy":{"HELX02":["_RWY2004DME"],"HELX20":["_RWY0204DME"]},"body":[],"exitPoints":{"PEJZU":["PEJZU"]},"draw":[["HELX","PEJZU*"]]},
+        "IBIBI2F": {"icao":"IBIBI2F","name":"Ibibi Two Foxtrot","rwy":{"HELX02":["_RWY2004DME"],"HELX20":["_RWY0204DME"]},"body":[],"exitPoints":{"IBIBI":["IBIBI"]},"draw":[["HELX","IBIBI*"]]},
+        "DOJEL3E": {"icao":"DOJEL3E","name":"Dojel Three Echo","rwy":{"HELX02":["_RWY2004DME"],"HELX20":["_RWY0204DME"]},"body":[],"exitPoints":{"DOJEL":["DOJEL"]},"draw":[["HELX","DOJEL*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"HELX","destination":"HECA","category":"departure","route":"HELX02.DOJEL3E.DOJEL","altitude":"","speed":"","method":"random","rate":1.08,"airlines":[["msr/a320",1],["msr/b738",1],["msr/e170",1]]},
+        {"origin":"HELX","destination":"OEJN","category":"departure","route":"HELX02.PEJZU3E.PEJZU","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["kne/a320",1],["msr/a320",1]]},
+        {"origin":"HELX","destination":"OKKK","category":"departure","route":"HELX02.BUHMI1A.BUHMI","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["jzr/a320",1],["msr/a320",1]]},
+        {"origin":"HELX","destination":"EGLL","category":"departure","route":"HELX02.DOJEL3E.DOJEL","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["msr/b738",1]]},
+        {"origin":"HELX","destination":"LFPG","category":"departure","route":"HELX02.DOJEL3E.DOJEL","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["msr/a320",1]]},
+        {"origin":"HELX","destination":"","category":"departure","route":"HELX02.BUHMI1A.BUHMI","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["kne/a320",1],["qtr/a320",1]]},
+        {"origin":"HELX","destination":"","category":"departure","route":"HELX02.IBIBI2F.IBIBI","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["su/c172",6],["su/p28a",5],["su/c182",3],["su/be36",2],["su/da42",1],["su/tb20",1],["su/c208",2],["su/pc12",2],["su/be20",1],["su/b350",1],["su/p180",1],["su/c510",1],["su/e50p",1],["su/c550",1],["su/e55p",1],["su/cl30",1],["su/c680",1],["su/h25b",1],["su/lj45",1],["su/f2th",1],["su/glf4",1],["su/glex",1],["su/glf5",1]]},
+        {"origin":"HECA","destination":"HELX","category":"arrival","route":"DOJEL..CEVTA..HELX","altitude":[4000,7000],"speed":250,"method":"random","rate":1.08,"airlines":[["msr/a320",1],["msr/b738",1],["msr/e170",1]]},
+        {"origin":"OEJN","destination":"HELX","category":"arrival","route":"PEJZU..DAGAP..HELX","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["kne/a320",1],["msr/a320",1]]},
+        {"origin":"OKKK","destination":"HELX","category":"arrival","route":"BUHMI..ACIRA..HELX","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["jzr/a320",1],["msr/a320",1]]},
+        {"origin":"EGLL","destination":"HELX","category":"arrival","route":"DOJEL..CEVTA..HELX","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["msr/b738",1]]},
+        {"origin":"LFPG","destination":"HELX","category":"arrival","route":"DOJEL..CEVTA..HELX","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["msr/a320",1]]},
+        {"origin":"","destination":"HELX","category":"arrival","route":"BUHMI..ACIRA..HELX","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["kne/a320",1],["qtr/a320",1]]},
+        {"origin":"","destination":"HELX","category":"arrival","route":"IBIBI..NOSET..HELX","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["su/c172",6],["su/p28a",5],["su/c182",3],["su/be36",2],["su/da42",1],["su/tb20",1],["su/c208",2],["su/pc12",2],["su/be20",1],["su/b350",1],["su/p180",1],["su/c510",1],["su/e50p",1],["su/c550",1],["su/e55p",1],["su/cl30",1],["su/c680",1],["su/h25b",1],["su/lj45",1],["su/f2th",1],["su/glf4",1],["su/glex",1],["su/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [25.7483,33.2971,25.6997,32.9259],
+            [25.6997,32.9259,25.671,32.7064],
+            [25.3803,33.2087,25.563,32.893],
+            [25.563,32.893,25.671,32.7064],
+            [25.3132,32.2608,25.5381,32.5409],
+            [25.5381,32.5409,25.671,32.7064],
+            [26.1541,32.4439,25.8505,32.6089],
+            [25.8505,32.6089,25.671,32.7064]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [25.6586,32.7007,25.5045,32.6305],
+            [25.5778,32.6758,25.5854,32.6554],
+            [25.5007,32.6408,25.5083,32.6203],
+            [25.6836,32.7121,25.8376,32.7825],
+            [25.7644,32.737,25.7568,32.7575],
+            [25.8414,32.7722,25.8338,32.7927]
+        ]}
+    ]
+}

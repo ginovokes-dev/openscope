@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/TFFR/",
+    "info": {"country":"GP","city":"Pointe-a-Pitre","type":"large_airport","longestRunwayM":3505,"frequencies":{"atis":"127.600","twr":"118.400","app":"121.300","gnd":"121.850"}},
+    "radio": {"twr":"Maryse Conde Tower","app":"Maryse Conde Approach","dep":"Maryse Conde Departure"},
+    "icao": "TFFR",
+    "iata": "PTP",
+    "magnetic_north": -15.2,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [16.265443,-61.532754,"36ft"],
+    "rangeRings": {"enabled":true,"center":[16.265443,-61.532754],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":110,"speed":8},
+    "arrivalRunway": "12",
+    "departureRunway": "12",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[16.656,-61.6433],[16.6701,-61.5342],[16.6567,-61.4251],[16.6166,-61.3232],[16.5526,-61.2357],[16.469,-61.1684],[16.3715,-61.1259],[16.2669,-61.1112],[16.1621,-61.1252],[16.0643,-61.1669],[15.9803,-61.2336],[15.9157,-61.3207],[15.8749,-61.4222],[15.8608,-61.5313],[15.8742,-61.6404],[15.9143,-61.7423],[15.9783,-61.8298],[16.0619,-61.8971],[16.1593,-61.9396],[16.264,-61.9543],[16.3688,-61.9403],[16.4666,-61.8986],[16.5506,-61.8319],[16.6152,-61.7448]]}
+    ],
+    "fixes": {
+        "TFFR": [16.26544,-61.53275],
+        "SEDRO": [16.66031,-61.1522],
+        "SULAD": [16.41215,-61.39136],
+        "DOM": [15.5509,-61.2956,"melville hall"],
+        "IRITE": [16.07501,-61.46955],
+        "MON": [16.7928,-62.1931,"geralds"],
+        "AHUVO": [16.39326,-61.69281],
+        "ANU": [17.1259,-61.8002,"v c bird"],
+        "HOCTE": [16.45696,-61.59228],
+        "_RWY1204DME": [16.28029,-61.61236],
+        "_RWY3004DME": [16.25003,-61.44988]
+    },
+    "runways": [
+        {"name":["12","30"],"end":[[16.26761,-61.54422,"5ft"],[16.26273,-61.518,"32ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "SEDRO3E": {"icao":"SEDRO3E","name":"Sedro Three Echo","rwy":{"TFFR12":["_RWY3004DME"],"TFFR30":["_RWY1204DME"]},"body":[],"exitPoints":{"SEDRO":["SEDRO"]},"draw":[["TFFR","SEDRO*"]]},
+        "DOM2F": {"icao":"DOM2F","name":"Melville Hall Two Foxtrot","rwy":{"TFFR12":["_RWY3004DME"],"TFFR30":["_RWY1204DME"]},"body":[],"exitPoints":{"DOM":["DOM"]},"draw":[["TFFR","DOM*"]]},
+        "MON3E": {"icao":"MON3E","name":"Geralds Three Echo","rwy":{"TFFR12":["_RWY3004DME"],"TFFR30":["_RWY1204DME"]},"body":[],"exitPoints":{"MON":["MON"]},"draw":[["TFFR","MON*"]]},
+        "ANU3F": {"icao":"ANU3F","name":"V C Bird Three Foxtrot","rwy":{"TFFR12":["_RWY3004DME"],"TFFR30":["_RWY1204DME"]},"body":[],"exitPoints":{"ANU":["ANU"]},"draw":[["TFFR","ANU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"TFFR","destination":"LFPO","category":"departure","route":"TFFR12.SEDRO3E.SEDRO","altitude":"","speed":"","method":"random","rate":1.31,"airlines":[["afr/b77w",1],["crl/a333",1],["crl/b744",1],["fwi/a332",1],["fwi/a333",1]]},
+        {"origin":"TFFR","destination":"TFFF","category":"departure","route":"TFFR12.DOM2F.DOM","altitude":"","speed":"","method":"random","rate":1.31,"airlines":[["afr/a320",2],["afr/at45",1],["fwi/at72",1],["crl/at72",1],["crl/at45",1],["crl/at75",1]]},
+        {"origin":"TFFR","destination":"MTPP","category":"departure","route":"TFFR12.MON3E.MON","altitude":"","speed":"","method":"random","rate":0.78,"airlines":[["afr/a320",2],["fwi/at72",1]]},
+        {"origin":"TFFR","destination":"KMIA","category":"departure","route":"TFFR12.MON3E.MON","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["aal/b738",2]]},
+        {"origin":"TFFR","destination":"MDSD","category":"departure","route":"TFFR12.MON3E.MON","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["afr/at45",1],["fwi/at72",1]]},
+        {"origin":"TFFR","destination":"","category":"departure","route":"TFFR12.DOM2F.DOM","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["lia/dh8c",1]]},
+        {"origin":"TFFR","destination":"","category":"departure","route":"TFFR12.MON3E.MON","altitude":"","speed":"","method":"random","rate":0.78,"airlines":[["aal/sf34",1],["fwi/at72",1],["sbs/sf34",1]]},
+        {"origin":"TFFR","destination":"","category":"departure","route":"TFFR12.ANU3F.ANU","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["aca/a319",1],["lia/dh8c",1]]},
+        {"origin":"LFPO","destination":"TFFR","category":"arrival","route":"SEDRO..SULAD..TFFR","altitude":[4000,7000],"speed":250,"method":"random","rate":1.31,"airlines":[["afr/b77w",1],["crl/a333",1],["crl/b744",1],["fwi/a332",1],["fwi/a333",1]]},
+        {"origin":"TFFF","destination":"TFFR","category":"arrival","route":"DOM..IRITE..TFFR","altitude":[4000,7000],"speed":250,"method":"random","rate":1.31,"airlines":[["afr/a320",2],["afr/at45",1],["fwi/at72",1],["crl/at72",1],["crl/at45",1],["crl/at75",1]]},
+        {"origin":"MTPP","destination":"TFFR","category":"arrival","route":"MON..AHUVO..TFFR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.78,"airlines":[["afr/a320",2],["fwi/at72",1]]},
+        {"origin":"KMIA","destination":"TFFR","category":"arrival","route":"MON..AHUVO..TFFR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.52,"airlines":[["aal/b738",2]]},
+        {"origin":"MDSD","destination":"TFFR","category":"arrival","route":"MON..AHUVO..TFFR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.52,"airlines":[["afr/at45",1],["fwi/at72",1]]},
+        {"origin":"","destination":"TFFR","category":"arrival","route":"DOM..IRITE..TFFR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.26,"airlines":[["lia/dh8c",1]]},
+        {"origin":"","destination":"TFFR","category":"arrival","route":"MON..AHUVO..TFFR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.78,"airlines":[["aal/sf34",1],["fwi/at72",1],["sbs/sf34",1]]},
+        {"origin":"","destination":"TFFR","category":"arrival","route":"ANU..HOCTE..TFFR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.52,"airlines":[["aca/a319",1],["lia/dh8c",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [16.6603,-61.1522,16.4122,-61.3914],
+            [16.4122,-61.3914,16.2654,-61.5328],
+            [15.5509,-61.2956,16.075,-61.4696],
+            [16.075,-61.4696,16.2654,-61.5328],
+            [16.7928,-62.1931,16.3933,-61.6928],
+            [16.3933,-61.6928,16.2654,-61.5328],
+            [17.1259,-61.8002,16.457,-61.5923],
+            [16.457,-61.5923,16.2654,-61.5328]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [16.2676,-61.5442,16.2993,-61.7146],
+            [16.2736,-61.6314,16.2933,-61.6274],
+            [16.2895,-61.7166,16.3091,-61.7126],
+            [16.2627,-61.518,16.2309,-61.3477],
+            [16.2567,-61.4309,16.237,-61.4348],
+            [16.2408,-61.3457,16.2211,-61.3497]
+        ]}
+    ]
+}

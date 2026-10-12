@@ -1,0 +1,80 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGNS/",
+    "info": {"country":"IM","city":"Castletown","type":"large_airport","longestRunwayM":2110,"frequencies":{"atis":"123.875","twr":"119.005","app":"135.905"}},
+    "radio": {"twr":"Isle Of Man Tower","app":"Isle Of Man Approach","dep":"Isle Of Man Departure"},
+    "icao": "EGNS",
+    "iata": "IOM",
+    "magnetic_north": -0.8,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [54.083081,-4.623871,"52ft"],
+    "rangeRings": {"enabled":true,"center":[54.083081,-4.623871],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":260,"speed":5},
+    "arrivalRunway": "26",
+    "departureRunway": "26",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[54.4877,-4.6335],[54.4754,-4.4546],[54.4363,-4.2873],[54.3732,-4.1429],[54.2903,-4.0313],[54.1933,-3.9601],[54.0887,-3.9341],[53.9838,-3.9551],[53.8856,-4.0217],[53.8009,-4.1293],[53.7355,-4.2706],[53.6937,-4.436],[53.6784,-4.6142],[53.6908,-4.7931],[53.7298,-4.9604],[53.793,-5.1048],[53.8759,-5.2165],[53.9729,-5.2877],[54.0774,-5.3137],[54.1824,-5.2927],[54.2805,-5.2261],[54.3652,-5.1185],[54.4307,-4.9771],[54.4725,-4.8117]]}
+    ],
+    "fixes": {
+        "EGNS": [54.08308,-4.62387],
+        "DCS": [54.7219,-3.34056,"dean cross"],
+        "EZANU": [54.2124,-4.36409],
+        "NEBIV": [53.76477,-3.88462],
+        "ERIZE": [53.96482,-4.34921],
+        "JOFPE": [53.64943,-5.1665],
+        "UPIHE": [53.92196,-4.82548],
+        "UROZO": [54.40139,-5.36312],
+        "FUZNU": [54.20135,-4.89853],
+        "_RWY0804DME": [54.06793,-4.74561],
+        "_RWY2604DME": [54.09898,-4.49838],
+        "_RWY0304DME": [54.01966,-4.68412],
+        "_RWY2104DME": [54.14615,-4.56986]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[54.08193,-4.6346,"29ft"],[54.08509,-4.60948,"32ft"]],"ils":[true,true]},
+        {"name":["03","21"],"end":[[54.07854,-4.63103,"23ft"],[54.0873,-4.62312,"52ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "DCS1F": {"icao":"DCS1F","name":"Dean Cross One Foxtrot","rwy":{"EGNS08":["_RWY2604DME"],"EGNS26":["_RWY0804DME"],"EGNS03":["_RWY2104DME"],"EGNS21":["_RWY0304DME"]},"body":[],"exitPoints":{"DCS":["DCS"]},"draw":[["EGNS","DCS*"]]},
+        "NEBIV3F": {"icao":"NEBIV3F","name":"Nebiv Three Foxtrot","rwy":{"EGNS08":["_RWY2604DME"],"EGNS26":["_RWY0804DME"],"EGNS03":["_RWY2104DME"],"EGNS21":["_RWY0304DME"]},"body":[],"exitPoints":{"NEBIV":["NEBIV"]},"draw":[["EGNS","NEBIV*"]]},
+        "JOFPE2D": {"icao":"JOFPE2D","name":"Jofpe Two Delta","rwy":{"EGNS08":["_RWY2604DME"],"EGNS26":["_RWY0804DME"],"EGNS03":["_RWY2104DME"],"EGNS21":["_RWY0304DME"]},"body":[],"exitPoints":{"JOFPE":["JOFPE"]},"draw":[["EGNS","JOFPE*"]]},
+        "UROZO3F": {"icao":"UROZO3F","name":"Urozo Three Foxtrot","rwy":{"EGNS08":["_RWY2604DME"],"EGNS26":["_RWY0804DME"],"EGNS03":["_RWY2104DME"],"EGNS21":["_RWY0304DME"]},"body":[],"exitPoints":{"UROZO":["UROZO"]},"draw":[["EGNS","UROZO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGNS","destination":"EGCC","category":"departure","route":"EGNS26.NEBIV3F.NEBIV","altitude":"","speed":"","method":"random","rate":1.09,"airlines":[["bee/dh8d",1],["bee/e75l",1]]},
+        {"origin":"EGNS","destination":"EGGP","category":"departure","route":"EGNS26.NEBIV3F.NEBIV","altitude":"","speed":"","method":"random","rate":1.09,"airlines":[["bee/dh8d",1],["ezy/a319",1]]},
+        {"origin":"EGNS","destination":"EGBB","category":"departure","route":"EGNS26.NEBIV3F.NEBIV","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["bee/dh8d",1]]},
+        {"origin":"EGNS","destination":"EGKK","category":"departure","route":"EGNS26.NEBIV3F.NEBIV","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["ezy/a319",1]]},
+        {"origin":"EGNS","destination":"","category":"departure","route":"EGNS26.DCS1F.DCS","altitude":"","speed":"","method":"random","rate":1.09,"airlines":[["m/c172",6],["m/p28a",5],["m/c182",3],["m/be36",2],["m/da42",1],["m/tb20",1],["m/c208",2],["m/pc12",2],["m/be20",1],["m/b350",1],["m/p180",1],["m/c510",1],["m/e50p",1],["m/c550",1],["m/e55p",1],["m/cl30",1],["m/c680",1],["m/h25b",1],["m/lj45",1],["m/f2th",1],["m/glf4",1],["m/glex",1],["m/glf5",1]]},
+        {"origin":"EGCC","destination":"EGNS","category":"arrival","route":"NEBIV..ERIZE..EGNS","altitude":[4000,7000],"speed":250,"method":"random","rate":1.09,"airlines":[["bee/dh8d",1],["bee/e75l",1]]},
+        {"origin":"EGGP","destination":"EGNS","category":"arrival","route":"NEBIV..ERIZE..EGNS","altitude":[4000,7000],"speed":250,"method":"random","rate":1.09,"airlines":[["bee/dh8d",1],["ezy/a319",1]]},
+        {"origin":"EGBB","destination":"EGNS","category":"arrival","route":"NEBIV..ERIZE..EGNS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.54,"airlines":[["bee/dh8d",1]]},
+        {"origin":"EGKK","destination":"EGNS","category":"arrival","route":"NEBIV..ERIZE..EGNS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.54,"airlines":[["ezy/a319",1]]},
+        {"origin":"","destination":"EGNS","category":"arrival","route":"DCS..EZANU..EGNS","altitude":[4000,7000],"speed":250,"method":"random","rate":1.09,"airlines":[["m/c172",6],["m/p28a",5],["m/c182",3],["m/be36",2],["m/da42",1],["m/tb20",1],["m/c208",2],["m/pc12",2],["m/be20",1],["m/b350",1],["m/p180",1],["m/c510",1],["m/e50p",1],["m/c550",1],["m/e55p",1],["m/cl30",1],["m/c680",1],["m/h25b",1],["m/lj45",1],["m/f2th",1],["m/glf4",1],["m/glex",1],["m/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [54.7219,-3.3406,54.2124,-4.3641],
+            [54.2124,-4.3641,54.0831,-4.6239],
+            [53.7648,-3.8846,53.9648,-4.3492],
+            [53.9648,-4.3492,54.0831,-4.6239],
+            [53.6494,-5.1665,53.922,-4.8255],
+            [53.922,-4.8255,54.0831,-4.6239],
+            [54.4014,-5.3631,54.2013,-4.8985],
+            [54.2013,-4.8985,54.0831,-4.6239]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [54.0819,-4.6346,54.0467,-4.912],
+            [54.0546,-4.7698,54.0742,-4.7769],
+            [54.037,-4.9084,54.0565,-4.9156],
+            [54.0851,-4.6095,54.1196,-4.3316],
+            [54.1122,-4.4742,54.0927,-4.467],
+            [54.1294,-4.3352,54.1099,-4.328]
+        ]}
+    ]
+}

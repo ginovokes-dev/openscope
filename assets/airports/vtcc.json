@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VTCC/",
+    "info": {"country":"TH","city":"Chiang Mai","type":"large_airport","longestRunwayM":3415,"frequencies":{"atis":"127.200","twr":"118.100","app":"129.600","gnd":"121.900"}},
+    "radio": {"twr":"Chiang Mai Tower","app":"Chiang Mai Approach","dep":"Chiang Mai Departure"},
+    "icao": "VTCC",
+    "iata": "CNX",
+    "magnetic_north": -0.9,
+    "ctr_radius": 60,
+    "ctr_ceiling": 11000,
+    "initial_alt": 6000,
+    "position": [18.7668,98.962601,"1036ft"],
+    "rangeRings": {"enabled":true,"center":[18.7668,98.962601],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":340,"speed":10},
+    "arrivalRunway": "36",
+    "departureRunway": "36",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":110,"airspace_class":"C","poly":[[19.3063,98.9536],[19.2901,99.1014],[19.2383,99.2398],[19.1543,99.3592],[19.0439,99.4516],[18.9146,99.5107],[18.7753,99.5324],[18.6353,99.5153],[18.5044,99.4606],[18.3913,99.3719],[18.3038,99.2553],[18.2479,99.1187],[18.2273,98.9716],[18.2435,98.8238],[18.2953,98.6854],[18.3793,98.566],[18.4897,98.4736],[18.619,98.4145],[18.7583,98.3928],[18.8983,98.4099],[19.0292,98.4646],[19.1423,98.5533],[19.2298,98.6699],[19.2857,98.8065]]}
+    ],
+    "fixes": {
+        "VTCC": [18.7668,98.9626],
+        "POFEC": [19.04885,99.64633],
+        "LUPDO": [18.86659,99.2045],
+        "LPN": [18.2769,99.5024,"lampang"],
+        "PUWZA": [18.59392,99.15309],
+        "JIVNO": [18.07381,99.10589],
+        "IGAHE": [18.52162,99.0133],
+        "UHABI": [18.37008,98.34563],
+        "LOMHI": [18.62644,98.74432],
+        "NIZSU": [19.38524,98.60261],
+        "EPIBA": [18.9856,98.83524],
+        "_RWY1804DME": [18.85038,98.96307],
+        "_RWY3604DME": [18.68642,98.9627]
+    },
+    "runways": [
+        {"name":["18","36"],"end":[[18.78376,98.96292,"1036ft"],[18.75304,98.96285,"1007ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "POFEC2B": {"icao":"POFEC2B","name":"Pofec Two Bravo","rwy":{"VTCC18":["_RWY3604DME"],"VTCC36":["_RWY1804DME"]},"body":[],"exitPoints":{"POFEC":["POFEC"]},"draw":[["VTCC","POFEC*"]]},
+        "LPN2E": {"icao":"LPN2E","name":"Lampang Two Echo","rwy":{"VTCC18":["_RWY3604DME"],"VTCC36":["_RWY1804DME"]},"body":[],"exitPoints":{"LPN":["LPN"]},"draw":[["VTCC","LPN*"]]},
+        "JIVNO1B": {"icao":"JIVNO1B","name":"Jivno One Bravo","rwy":{"VTCC18":["_RWY3604DME"],"VTCC36":["_RWY1804DME"]},"body":[],"exitPoints":{"JIVNO":["JIVNO"]},"draw":[["VTCC","JIVNO*"]]},
+        "UHABI2D": {"icao":"UHABI2D","name":"Uhabi Two Delta","rwy":{"VTCC18":["_RWY3604DME"],"VTCC36":["_RWY1804DME"]},"body":[],"exitPoints":{"UHABI":["UHABI"]},"draw":[["VTCC","UHABI*"]]},
+        "NIZSU1A": {"icao":"NIZSU1A","name":"Nizsu One Alpha","rwy":{"VTCC18":["_RWY3604DME"],"VTCC36":["_RWY1804DME"]},"body":[],"exitPoints":{"NIZSU":["NIZSU"]},"draw":[["VTCC","NIZSU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"VTCC","destination":"VTBS","category":"departure","route":"VTCC36.JIVNO1B.JIVNO","altitude":"","speed":"","method":"random","rate":1.64,"airlines":[["bkp/a319",1],["bkp/a320",1],["tha/a306",1],["tha/a320",1],["tha/a333",1],["tha/b734",1],["tha/b744",1],["tha/b772",1],["tha/b773",1]]},
+        {"origin":"VTCC","destination":"VHHH","category":"departure","route":"VTCC36.POFEC2B.POFEC","altitude":"","speed":"","method":"random","rate":0.73,"airlines":[["aiq/a320",1],["cpa/a320",1],["hda/a320",1],["hke/a320",1]]},
+        {"origin":"VTCC","destination":"RKSI","category":"departure","route":"VTCC36.POFEC2B.POFEC","altitude":"","speed":"","method":"random","rate":0.37,"airlines":[["jna/b738",1],["kal/b772",1]]},
+        {"origin":"VTCC","destination":"VTBD","category":"departure","route":"VTCC36.JIVNO1B.JIVNO","altitude":"","speed":"","method":"random","rate":0.37,"airlines":[["aiq/a320",1],["nok/b738",1]]},
+        {"origin":"VTCC","destination":"VTSP","category":"departure","route":"VTCC36.JIVNO1B.JIVNO","altitude":"","speed":"","method":"random","rate":0.37,"airlines":[["aiq/a320",1],["tha/a320",1]]},
+        {"origin":"VTCC","destination":"WSSS","category":"departure","route":"VTCC36.JIVNO1B.JIVNO","altitude":"","speed":"","method":"random","rate":0.37,"airlines":[["slk/a320",1],["tgw/a320",1]]},
+        {"origin":"VTCC","destination":"","category":"departure","route":"VTCC36.POFEC2B.POFEC","altitude":"","speed":"","method":"random","rate":2.01,"airlines":[["aiq/a320",2],["cca/a320",1],["cca/b738",1],["cdg/b738",1],["ces/a320",1],["ces/b737",1],["csn/b737",1],["dkh/a320",1],["lao/at72",1],["tna/a321",1]]},
+        {"origin":"VTCC","destination":"","category":"departure","route":"VTCC36.LPN2E.LPN","altitude":"","speed":"","method":"random","rate":0.18,"airlines":[["nok/b738",1]]},
+        {"origin":"VTCC","destination":"","category":"departure","route":"VTCC36.JIVNO1B.JIVNO","altitude":"","speed":"","method":"random","rate":0.73,"airlines":[["aiq/a320",2],["axm/a320",1],["bkp/a319",1]]},
+        {"origin":"VTCC","destination":"","category":"departure","route":"VTCC36.UHABI2D.UHABI","altitude":"","speed":"","method":"random","rate":0.18,"airlines":[["jab/at72",1]]},
+        {"origin":"VTCC","destination":"","category":"departure","route":"VTCC36.NIZSU1A.NIZSU","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["hs/c172",6],["hs/p28a",5],["hs/c182",3],["hs/be36",2],["hs/da42",1],["hs/tb20",1],["hs/c208",2],["hs/pc12",2],["hs/be20",1],["hs/b350",1],["hs/p180",1],["hs/c510",1],["hs/e50p",1],["hs/c550",2],["hs/e55p",1],["hs/cl30",1],["hs/c680",1],["hs/h25b",1],["hs/lj45",1],["hs/f2th",1],["hs/glf4",1],["hs/glex",1],["hs/glf5",1]]},
+        {"origin":"VTCC","destination":"","category":"departure","route":"VTCC36.UHABI2D.UHABI","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["hs/c172",6],["hs/p28a",5],["hs/c182",3],["hs/be36",2],["hs/da42",1],["hs/tb20",1],["hs/c208",2],["hs/pc12",2],["hs/be20",1],["hs/b350",1],["hs/p180",1],["hs/c510",1],["hs/e50p",1],["hs/c550",2],["hs/e55p",1],["hs/cl30",1],["hs/c680",1],["hs/h25b",1],["hs/lj45",1],["hs/f2th",1],["hs/glf4",1],["hs/glex",1],["hs/glf5",1]]},
+        {"origin":"VTBS","destination":"VTCC","category":"arrival","route":"JIVNO..IGAHE..VTCC","altitude":[7000,10000],"speed":250,"method":"random","rate":1.64,"airlines":[["bkp/a319",1],["bkp/a320",1],["tha/a306",1],["tha/a320",1],["tha/a333",1],["tha/b734",1],["tha/b744",1],["tha/b772",1],["tha/b773",1]]},
+        {"origin":"VHHH","destination":"VTCC","category":"arrival","route":"POFEC..LUPDO..VTCC","altitude":[7000,10000],"speed":250,"method":"random","rate":0.73,"airlines":[["aiq/a320",1],["cpa/a320",1],["hda/a320",1],["hke/a320",1]]},
+        {"origin":"RKSI","destination":"VTCC","category":"arrival","route":"POFEC..LUPDO..VTCC","altitude":[7000,10000],"speed":250,"method":"random","rate":0.37,"airlines":[["jna/b738",1],["kal/b772",1]]},
+        {"origin":"VTBD","destination":"VTCC","category":"arrival","route":"JIVNO..IGAHE..VTCC","altitude":[7000,10000],"speed":250,"method":"random","rate":0.37,"airlines":[["aiq/a320",1],["nok/b738",1]]},
+        {"origin":"VTSP","destination":"VTCC","category":"arrival","route":"JIVNO..IGAHE..VTCC","altitude":[7000,10000],"speed":250,"method":"random","rate":0.37,"airlines":[["aiq/a320",1],["tha/a320",1]]},
+        {"origin":"WSSS","destination":"VTCC","category":"arrival","route":"JIVNO..IGAHE..VTCC","altitude":[7000,10000],"speed":250,"method":"random","rate":0.37,"airlines":[["slk/a320",1],["tgw/a320",1]]},
+        {"origin":"","destination":"VTCC","category":"arrival","route":"POFEC..LUPDO..VTCC","altitude":[7000,10000],"speed":250,"method":"random","rate":2.01,"airlines":[["aiq/a320",2],["cca/a320",1],["cca/b738",1],["cdg/b738",1],["ces/a320",1],["ces/b737",1],["csn/b737",1],["dkh/a320",1],["lao/at72",1],["tna/a321",1]]},
+        {"origin":"","destination":"VTCC","category":"arrival","route":"LPN..PUWZA..VTCC","altitude":[7000,10000],"speed":250,"method":"random","rate":0.18,"airlines":[["nok/b738",1]]},
+        {"origin":"","destination":"VTCC","category":"arrival","route":"JIVNO..IGAHE..VTCC","altitude":[7000,10000],"speed":250,"method":"random","rate":0.73,"airlines":[["aiq/a320",2],["axm/a320",1],["bkp/a319",1]]},
+        {"origin":"","destination":"VTCC","category":"arrival","route":"UHABI..LOMHI..VTCC","altitude":[7000,10000],"speed":250,"method":"random","rate":0.18,"airlines":[["jab/at72",1]]},
+        {"origin":"","destination":"VTCC","category":"arrival","route":"NIZSU..EPIBA..VTCC","altitude":[7000,10000],"speed":250,"method":"random","rate":0.47,"airlines":[["hs/c172",6],["hs/p28a",5],["hs/c182",3],["hs/be36",2],["hs/da42",1],["hs/tb20",1],["hs/c208",2],["hs/pc12",2],["hs/be20",1],["hs/b350",1],["hs/p180",1],["hs/c510",1],["hs/e50p",1],["hs/c550",2],["hs/e55p",1],["hs/cl30",1],["hs/c680",1],["hs/h25b",1],["hs/lj45",1],["hs/f2th",1],["hs/glf4",1],["hs/glex",1],["hs/glf5",1]]},
+        {"origin":"","destination":"VTCC","category":"arrival","route":"UHABI..LOMHI..VTCC","altitude":[7000,10000],"speed":250,"method":"random","rate":0.47,"airlines":[["hs/c172",6],["hs/p28a",5],["hs/c182",3],["hs/be36",2],["hs/da42",1],["hs/tb20",1],["hs/c208",2],["hs/pc12",2],["hs/be20",1],["hs/b350",1],["hs/p180",1],["hs/c510",1],["hs/e50p",1],["hs/c550",2],["hs/e55p",1],["hs/cl30",1],["hs/c680",1],["hs/h25b",1],["hs/lj45",1],["hs/f2th",1],["hs/glf4",1],["hs/glex",1],["hs/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [19.0488,99.6463,18.8666,99.2045],
+            [18.8666,99.2045,18.7668,98.9626],
+            [18.2769,99.5024,18.5939,99.1531],
+            [18.5939,99.1531,18.7668,98.9626],
+            [18.0738,99.1059,18.5216,99.0133],
+            [18.5216,99.0133,18.7668,98.9626],
+            [18.3701,98.3456,18.6264,98.7443],
+            [18.6264,98.7443,18.7668,98.9626],
+            [19.3852,98.6026,18.9856,98.8352],
+            [18.9856,98.8352,18.7668,98.9626]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [18.7838,98.9629,18.9503,98.9633],
+            [18.8671,98.9525,18.867,98.9737],
+            [18.9503,98.9527,18.9503,98.9739],
+            [18.753,98.9629,18.5865,98.9625],
+            [18.6697,98.9732,18.6698,98.9521],
+            [18.5865,98.973,18.5865,98.9519]
+        ]}
+    ]
+}

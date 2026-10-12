@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/GMTT/",
+    "info": {"country":"MA","city":"Tangier","type":"large_airport","longestRunwayM":3500,"frequencies":{"twr":"119.500","app":"121.200"}},
+    "radio": {"twr":"Tangier Tower","app":"Tangier Approach","dep":"Tangier Departure"},
+    "icao": "GMTT",
+    "iata": "TNG",
+    "magnetic_north": -0.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [35.731741,-5.921459,"62ft"],
+    "rangeRings": {"enabled":true,"center":[35.731741,-5.921459],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":280,"speed":7},
+    "arrivalRunway": "28",
+    "departureRunway": "28",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[36.1364,-5.9223],[36.1228,-5.7933],[36.0826,-5.6729],[36.0184,-5.5696],[35.9347,-5.4901],[35.8372,-5.4401],[35.7324,-5.4229],[35.6277,-5.4397],[35.53,-5.4893],[35.4461,-5.5683],[35.3816,-5.6714],[35.341,-5.7916],[35.327,-5.9206],[35.3407,-6.0496],[35.3809,-6.17],[35.4451,-6.2734],[35.5288,-6.3528],[35.6263,-6.4028],[35.731,-6.42],[35.8358,-6.4032],[35.9335,-6.3536],[36.0174,-6.2746],[36.0819,-6.1715],[36.1225,-6.0513]]}
+    ],
+    "fixes": {
+        "GMTT": [35.73174,-5.92146],
+        "ABUCU": [36.20893,-5.61554],
+        "ODUDA": [35.90903,-5.8078],
+        "TTN": [35.595,-5.32472,"tetouan"],
+        "COSUR": [35.67744,-5.68451],
+        "FAZIW": [35.26893,-6.25924],
+        "FOWBI": [35.55979,-6.04696],
+        "AOG": [36.6421,-6.31681,"rota"],
+        "MACAN": [35.92024,-6.00332],
+        "_RWY1004DME": [35.74026,-6.02194],
+        "_RWY2804DME": [35.72346,-5.82572]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[35.7333,-5.94031,"20ft"],[35.73047,-5.90733,"62ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ABUCU1F": {"icao":"ABUCU1F","name":"Abucu One Foxtrot","rwy":{"GMTT10":["_RWY2804DME"],"GMTT28":["_RWY1004DME"]},"body":[],"exitPoints":{"ABUCU":["ABUCU"]},"draw":[["GMTT","ABUCU*"]]},
+        "TTN1C": {"icao":"TTN1C","name":"Tetouan One Charlie","rwy":{"GMTT10":["_RWY2804DME"],"GMTT28":["_RWY1004DME"]},"body":[],"exitPoints":{"TTN":["TTN"]},"draw":[["GMTT","TTN*"]]},
+        "FAZIW2B": {"icao":"FAZIW2B","name":"Faziw Two Bravo","rwy":{"GMTT10":["_RWY2804DME"],"GMTT28":["_RWY1004DME"]},"body":[],"exitPoints":{"FAZIW":["FAZIW"]},"draw":[["GMTT","FAZIW*"]]},
+        "AOG3D": {"icao":"AOG3D","name":"Rota Three Delta","rwy":{"GMTT10":["_RWY2804DME"],"GMTT28":["_RWY1004DME"]},"body":[],"exitPoints":{"AOG":["AOG"]},"draw":[["GMTT","AOG*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"GMTT","destination":"GMMN","category":"departure","route":"GMTT28.FAZIW2B.FAZIW","altitude":"","speed":"","method":"random","rate":0.78,"airlines":[["ram/at72",1],["ram/b737",1],["ram/b738",1]]},
+        {"origin":"GMTT","destination":"EBBR","category":"departure","route":"GMTT28.ABUCU1F.ABUCU","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ram/b737",1],["ram/b738",1]]},
+        {"origin":"GMTT","destination":"EHAM","category":"departure","route":"GMTT28.ABUCU1F.ABUCU","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ram/b737",1],["ram/b738",1]]},
+        {"origin":"GMTT","destination":"LEBL","category":"departure","route":"GMTT28.ABUCU1F.ABUCU","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ram/b737",1],["vlg/a320",1]]},
+        {"origin":"GMTT","destination":"LEMD","category":"departure","route":"GMTT28.ABUCU1F.ABUCU","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ram/at72",1],["ryr/b738",1]]},
+        {"origin":"GMTT","destination":"","category":"departure","route":"GMTT28.ABUCU1F.ABUCU","altitude":"","speed":"","method":"random","rate":1.55,"airlines":[["ryr/b738",3],["ram/b737",2],["ram/b738",1]]},
+        {"origin":"GMTT","destination":"","category":"departure","route":"GMTT28.AOG3D.AOG","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["tap/b190",1]]},
+        {"origin":"GMTT","destination":"","category":"departure","route":"GMTT28.ABUCU1F.ABUCU","altitude":"","speed":"","method":"random","rate":1.55,"airlines":[["cn/c172",6],["cn/p28a",5],["cn/c182",3],["cn/be36",2],["cn/da42",1],["cn/tb20",1],["cn/c208",2],["cn/pc12",2],["cn/be20",1],["cn/b350",1],["cn/p180",1],["cn/c510",1],["cn/e50p",1],["cn/c550",1],["cn/e55p",1],["cn/cl30",1],["cn/c680",1],["cn/h25b",1],["cn/lj45",1],["cn/f2th",1],["cn/glf4",1],["cn/glex",1],["cn/glf5",1]]},
+        {"origin":"GMMN","destination":"GMTT","category":"arrival","route":"FAZIW..FOWBI..GMTT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.78,"airlines":[["ram/at72",1],["ram/b737",1],["ram/b738",1]]},
+        {"origin":"EBBR","destination":"GMTT","category":"arrival","route":"ABUCU..ODUDA..GMTT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.52,"airlines":[["ram/b737",1],["ram/b738",1]]},
+        {"origin":"EHAM","destination":"GMTT","category":"arrival","route":"ABUCU..ODUDA..GMTT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.52,"airlines":[["ram/b737",1],["ram/b738",1]]},
+        {"origin":"LEBL","destination":"GMTT","category":"arrival","route":"ABUCU..ODUDA..GMTT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.52,"airlines":[["ram/b737",1],["vlg/a320",1]]},
+        {"origin":"LEMD","destination":"GMTT","category":"arrival","route":"ABUCU..ODUDA..GMTT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.52,"airlines":[["ram/at72",1],["ryr/b738",1]]},
+        {"origin":"","destination":"GMTT","category":"arrival","route":"ABUCU..ODUDA..GMTT","altitude":[4000,7000],"speed":250,"method":"random","rate":1.55,"airlines":[["ryr/b738",3],["ram/b737",2],["ram/b738",1]]},
+        {"origin":"","destination":"GMTT","category":"arrival","route":"AOG..MACAN..GMTT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.26,"airlines":[["tap/b190",1]]},
+        {"origin":"","destination":"GMTT","category":"arrival","route":"ABUCU..ODUDA..GMTT","altitude":[4000,7000],"speed":250,"method":"random","rate":1.55,"airlines":[["cn/c172",6],["cn/p28a",5],["cn/c182",3],["cn/be36",2],["cn/da42",1],["cn/tb20",1],["cn/c208",2],["cn/pc12",2],["cn/be20",1],["cn/b350",1],["cn/p180",1],["cn/c510",1],["cn/e50p",1],["cn/c550",1],["cn/e55p",1],["cn/cl30",1],["cn/c680",1],["cn/h25b",1],["cn/lj45",1],["cn/f2th",1],["cn/glf4",1],["cn/glex",1],["cn/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [36.2089,-5.6155,35.909,-5.8078],
+            [35.909,-5.8078,35.7317,-5.9215],
+            [35.595,-5.3247,35.6774,-5.6845],
+            [35.6774,-5.6845,35.7317,-5.9215],
+            [35.2689,-6.2592,35.5598,-6.047],
+            [35.5598,-6.047,35.7317,-5.9215],
+            [36.6421,-6.3168,35.9202,-6.0033],
+            [35.9202,-6.0033,35.7317,-5.9215]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [35.7333,-5.9403,35.7506,-6.1444],
+            [35.7321,-6.0436,35.7519,-6.0411],
+            [35.7407,-6.1457,35.7605,-6.1431],
+            [35.7305,-5.9073,35.7128,-5.7033],
+            [35.7316,-5.804,35.7118,-5.8066],
+            [35.7228,-5.702,35.7029,-5.7046]
+        ]}
+    ]
+}

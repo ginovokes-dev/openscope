@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/TNCC/",
+    "info": {"country":"CW","city":"Willemstad","type":"large_airport","longestRunwayM":3410,"frequencies":{"twr":"118.300","app":"119.600"}},
+    "radio": {"twr":"Hato Tower","app":"Hato Approach","dep":"Hato Departure"},
+    "icao": "TNCC",
+    "iata": "CUR",
+    "magnetic_north": -12.3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [12.1889,-68.959801,"29ft"],
+    "rangeRings": {"enabled":true,"center":[12.1889,-68.959801],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":100,"speed":9},
+    "arrivalRunway": "11",
+    "departureRunway": "11",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[12.5843,-69.048],[12.5931,-68.9403],[12.5744,-68.8339],[12.5295,-68.7361],[12.4613,-68.6536],[12.3745,-68.5919],[12.2751,-68.5553],[12.1698,-68.5462],[12.0659,-68.5654],[11.9703,-68.6114],[11.8896,-68.6812],[11.8293,-68.7699],[11.7935,-68.8716],[11.7847,-68.9793],[11.8034,-69.0857],[11.8483,-69.1835],[11.9165,-69.266],[12.0033,-69.3277],[12.1027,-69.3643],[12.208,-69.3734],[12.3119,-69.3542],[12.4075,-69.3082],[12.4882,-69.2384],[12.5485,-69.1497]]}
+    ],
+    "fixes": {
+        "TNCC": [12.1889,-68.9598],
+        "TOBUW": [12.59946,-68.6042],
+        "BOLTU": [12.34144,-68.82768],
+        "PJB": [12.1328,-68.281,"bonaire"],
+        "BEVZU": [12.17206,-68.75605],
+        "NIVIP": [11.74739,-69.27421],
+        "DIRFU": [12.02486,-69.07662],
+        "GUCPA": [12.62128,-69.28722],
+        "WOJUV": [12.34955,-69.08145],
+        "_RWY1104DME": [12.20466,-69.03424],
+        "_RWY2904DME": [12.17144,-68.87791]
+    },
+    "runways": [
+        {"name":["11","29"],"end":[[12.19052,-68.96763,"25ft"],[12.1856,-68.9445,"29ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "TOBUW1F": {"icao":"TOBUW1F","name":"Tobuw One Foxtrot","rwy":{"TNCC11":["_RWY2904DME"],"TNCC29":["_RWY1104DME"]},"body":[],"exitPoints":{"TOBUW":["TOBUW"]},"draw":[["TNCC","TOBUW*"]]},
+        "PJB2D": {"icao":"PJB2D","name":"Bonaire Two Delta","rwy":{"TNCC11":["_RWY2904DME"],"TNCC29":["_RWY1104DME"]},"body":[],"exitPoints":{"PJB":["PJB"]},"draw":[["TNCC","PJB*"]]},
+        "NIVIP3C": {"icao":"NIVIP3C","name":"Nivip Three Charlie","rwy":{"TNCC11":["_RWY2904DME"],"TNCC29":["_RWY1104DME"]},"body":[],"exitPoints":{"NIVIP":["NIVIP"]},"draw":[["TNCC","NIVIP*"]]},
+        "GUCPA2D": {"icao":"GUCPA2D","name":"Gucpa Two Delta","rwy":{"TNCC11":["_RWY2904DME"],"TNCC29":["_RWY1104DME"]},"body":[],"exitPoints":{"GUCPA":["GUCPA"]},"draw":[["TNCC","GUCPA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"TNCC","destination":"SKBO","category":"departure","route":"TNCC11.NIVIP3C.NIVIP","altitude":"","speed":"","method":"random","rate":1.16,"airlines":[["ava/a318",1],["ava/a319",1],["ava/a320",1]]},
+        {"origin":"TNCC","destination":"EHAM","category":"departure","route":"TNCC11.TOBUW1F.TOBUW","altitude":"","speed":"","method":"random","rate":0.77,"airlines":[["klm/b744",1],["tfl/b763",1]]},
+        {"origin":"TNCC","destination":"KMIA","category":"departure","route":"TNCC11.GUCPA2D.GUCPA","altitude":"","speed":"","method":"random","rate":0.77,"airlines":[["aal/b738",2]]},
+        {"origin":"TNCC","destination":"TNCB","category":"departure","route":"TNCC11.PJB2D.PJB","altitude":"","speed":"","method":"random","rate":0.77,"airlines":[["tfl/b763",1],["vsv/bn2p",1]]},
+        {"origin":"TNCC","destination":"TTPP","category":"departure","route":"TNCC11.PJB2D.PJB","altitude":"","speed":"","method":"random","rate":0.77,"airlines":[["lia/at72",1],["slm/b733",1]]},
+        {"origin":"TNCC","destination":"","category":"departure","route":"TNCC11.TOBUW1F.TOBUW","altitude":"","speed":"","method":"random","rate":0.77,"airlines":[["ber/a332",1],["klm/b744",1]]},
+        {"origin":"TNCC","destination":"","category":"departure","route":"TNCC11.NIVIP3C.NIVIP","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["cmp/e190",1]]},
+        {"origin":"TNCC","destination":"","category":"departure","route":"TNCC11.GUCPA2D.GUCPA","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["tfl/b763",1]]},
+        {"origin":"SKBO","destination":"TNCC","category":"arrival","route":"NIVIP..DIRFU..TNCC","altitude":[4000,7000],"speed":250,"method":"random","rate":1.16,"airlines":[["ava/a318",1],["ava/a319",1],["ava/a320",1]]},
+        {"origin":"EHAM","destination":"TNCC","category":"arrival","route":"TOBUW..BOLTU..TNCC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.77,"airlines":[["klm/b744",1],["tfl/b763",1]]},
+        {"origin":"KMIA","destination":"TNCC","category":"arrival","route":"GUCPA..WOJUV..TNCC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.77,"airlines":[["aal/b738",2]]},
+        {"origin":"TNCB","destination":"TNCC","category":"arrival","route":"PJB..BEVZU..TNCC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.77,"airlines":[["tfl/b763",1],["vsv/bn2p",1]]},
+        {"origin":"TTPP","destination":"TNCC","category":"arrival","route":"PJB..BEVZU..TNCC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.77,"airlines":[["lia/at72",1],["slm/b733",1]]},
+        {"origin":"","destination":"TNCC","category":"arrival","route":"TOBUW..BOLTU..TNCC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.77,"airlines":[["ber/a332",1],["klm/b744",1]]},
+        {"origin":"","destination":"TNCC","category":"arrival","route":"NIVIP..DIRFU..TNCC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.39,"airlines":[["cmp/e190",1]]},
+        {"origin":"","destination":"TNCC","category":"arrival","route":"GUCPA..WOJUV..TNCC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.39,"airlines":[["tfl/b763",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [12.5995,-68.6042,12.3414,-68.8277],
+            [12.3414,-68.8277,12.1889,-68.9598],
+            [12.1328,-68.281,12.1721,-68.7561],
+            [12.1721,-68.7561,12.1889,-68.9598],
+            [11.7474,-69.2742,12.0249,-69.0766],
+            [12.0249,-69.0766,12.1889,-68.9598],
+            [12.6213,-69.2872,12.3495,-69.0815],
+            [12.3495,-69.0815,12.1889,-68.9598]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [12.1905,-68.9676,12.2258,-69.1342],
+            [12.1984,-69.0531,12.218,-69.0487],
+            [12.2161,-69.1363,12.2356,-69.132],
+            [12.1856,-68.9445,12.1502,-68.778],
+            [12.1777,-68.8591,12.1581,-68.8634],
+            [12.1599,-68.7758,12.1404,-68.7802]
+        ]}
+    ]
+}

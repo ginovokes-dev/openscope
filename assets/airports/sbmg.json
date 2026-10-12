@@ -1,0 +1,90 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SBMG/",
+    "info": {"country":"BR","city":"Maringa","type":"medium_airport","longestRunwayM":2372,"frequencies":{"twr":"118.750"}},
+    "radio": {"twr":"Maringa Tower","app":"Maringa Approach","dep":"Maringa Departure"},
+    "icao": "SBMG",
+    "iata": "MGF",
+    "magnetic_north": -19.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 9000,
+    "initial_alt": 5000,
+    "position": [-23.47606,-52.016187,"1801ft"],
+    "rangeRings": {"enabled":true,"center":[-23.47606,-52.016187],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":100,"speed":9},
+    "arrivalRunway": "10",
+    "departureRunway": "10",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":90,"airspace_class":"D","poly":[[-23.0946,-52.1635],[-23.0726,-52.0508],[-23.0781,-51.9358],[-23.1108,-51.8262],[-23.1683,-51.7296],[-23.2468,-51.6526],[-23.341,-51.6003],[-23.4443,-51.5763],[-23.5498,-51.5824],[-23.6503,-51.618],[-23.7389,-51.6807],[-23.8096,-51.7663],[-23.8575,-51.8689],[-23.8795,-51.9816],[-23.874,-52.0966],[-23.8413,-52.2061],[-23.7838,-52.3027],[-23.7053,-52.3798],[-23.6111,-52.4321],[-23.5078,-52.456],[-23.4023,-52.45],[-23.3018,-52.4144],[-23.2132,-52.3517],[-23.1425,-52.2661]]}
+    ],
+    "fixes": {
+        "SBMG": [-23.47606,-52.01619],
+        "LON": [-23.3395,-51.1125,"londrina"],
+        "ZISCU": [-23.44357,-51.80118],
+        "UCULI": [-23.81485,-51.56063],
+        "IKONU": [-23.60193,-51.84693],
+        "RERWI": [-24.0106,-51.95035],
+        "PUFEN": [-23.67466,-51.99173],
+        "NADEG": [-23.66436,-52.56556],
+        "ABUZO": [-23.54602,-52.2203],
+        "OKUHI": [-23.03292,-52.34867],
+        "DIHOZ": [-23.31141,-52.13972],
+        "_RWY1004DME": [-23.49264,-52.1002],
+        "_RWY2804DME": [-23.46009,-51.93547]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[-23.47863,-52.02918,"1720ft"],[-23.47414,-52.00646,"1806ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "LON3D": {"icao":"LON3D","name":"Londrina Three Delta","rwy":{"SBMG10":["_RWY2804DME"],"SBMG28":["_RWY1004DME"]},"body":[],"exitPoints":{"LON":["LON"]},"draw":[["SBMG","LON*"]]},
+        "UCULI1C": {"icao":"UCULI1C","name":"Uculi One Charlie","rwy":{"SBMG10":["_RWY2804DME"],"SBMG28":["_RWY1004DME"]},"body":[],"exitPoints":{"UCULI":["UCULI"]},"draw":[["SBMG","UCULI*"]]},
+        "RERWI1A": {"icao":"RERWI1A","name":"Rerwi One Alpha","rwy":{"SBMG10":["_RWY2804DME"],"SBMG28":["_RWY1004DME"]},"body":[],"exitPoints":{"RERWI":["RERWI"]},"draw":[["SBMG","RERWI*"]]},
+        "NADEG3E": {"icao":"NADEG3E","name":"Nadeg Three Echo","rwy":{"SBMG10":["_RWY2804DME"],"SBMG28":["_RWY1004DME"]},"body":[],"exitPoints":{"NADEG":["NADEG"]},"draw":[["SBMG","NADEG*"]]},
+        "OKUHI1A": {"icao":"OKUHI1A","name":"Okuhi One Alpha","rwy":{"SBMG10":["_RWY2804DME"],"SBMG28":["_RWY1004DME"]},"body":[],"exitPoints":{"OKUHI":["OKUHI"]},"draw":[["SBMG","OKUHI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SBMG","destination":"SBCT","category":"departure","route":"SBMG10.UCULI1C.UCULI","altitude":"","speed":"","method":"random","rate":0.83,"airlines":[["azu/e190",1],["glo/b737",1],["glo/b738",1]]},
+        {"origin":"SBMG","destination":"SBKP","category":"departure","route":"SBMG10.LON3D.LON","altitude":"","speed":"","method":"random","rate":0.83,"airlines":[["azu/e190",2],["azu/at72",1]]},
+        {"origin":"SBMG","destination":"SBCG","category":"departure","route":"SBMG10.OKUHI1A.OKUHI","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["glo/b737",1],["glo/b738",1]]},
+        {"origin":"SBMG","destination":"SBGR","category":"departure","route":"SBMG10.LON3D.LON","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["glo/b737",1],["glo/b738",1]]},
+        {"origin":"SBMG","destination":"SBSP","category":"departure","route":"SBMG10.LON3D.LON","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["glo/b737",1],["glo/b738",1]]},
+        {"origin":"SBMG","destination":"","category":"departure","route":"SBMG10.LON3D.LON","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["azu/at72",1]]},
+        {"origin":"SBMG","destination":"","category":"departure","route":"SBMG10.RERWI1A.RERWI","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["azu/at72",1]]},
+        {"origin":"SBMG","destination":"","category":"departure","route":"SBMG10.OKUHI1A.OKUHI","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["azu/e190",1]]},
+        {"origin":"SBMG","destination":"","category":"departure","route":"SBMG10.NADEG3E.NADEG","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"SBCT","destination":"SBMG","category":"arrival","route":"UCULI..IKONU..SBMG","altitude":[5000,8000],"speed":250,"method":"random","rate":0.83,"airlines":[["azu/e190",1],["glo/b737",1],["glo/b738",1]]},
+        {"origin":"SBKP","destination":"SBMG","category":"arrival","route":"LON..ZISCU..SBMG","altitude":[5000,8000],"speed":250,"method":"random","rate":0.83,"airlines":[["azu/e190",2],["azu/at72",1]]},
+        {"origin":"SBCG","destination":"SBMG","category":"arrival","route":"OKUHI..DIHOZ..SBMG","altitude":[5000,8000],"speed":250,"method":"random","rate":0.55,"airlines":[["glo/b737",1],["glo/b738",1]]},
+        {"origin":"SBGR","destination":"SBMG","category":"arrival","route":"LON..ZISCU..SBMG","altitude":[5000,8000],"speed":250,"method":"random","rate":0.55,"airlines":[["glo/b737",1],["glo/b738",1]]},
+        {"origin":"SBSP","destination":"SBMG","category":"arrival","route":"LON..ZISCU..SBMG","altitude":[5000,8000],"speed":250,"method":"random","rate":0.55,"airlines":[["glo/b737",1],["glo/b738",1]]},
+        {"origin":"","destination":"SBMG","category":"arrival","route":"LON..ZISCU..SBMG","altitude":[5000,8000],"speed":250,"method":"random","rate":0.28,"airlines":[["azu/at72",1]]},
+        {"origin":"","destination":"SBMG","category":"arrival","route":"RERWI..PUFEN..SBMG","altitude":[5000,8000],"speed":250,"method":"random","rate":0.28,"airlines":[["azu/at72",1]]},
+        {"origin":"","destination":"SBMG","category":"arrival","route":"OKUHI..DIHOZ..SBMG","altitude":[5000,8000],"speed":250,"method":"random","rate":0.28,"airlines":[["azu/e190",1]]},
+        {"origin":"","destination":"SBMG","category":"arrival","route":"NADEG..ABUZO..SBMG","altitude":[5000,8000],"speed":250,"method":"random","rate":1.39,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-23.3395,-51.1125,-23.4436,-51.8012],
+            [-23.4436,-51.8012,-23.4761,-52.0162],
+            [-23.8149,-51.5606,-23.6019,-51.8469],
+            [-23.6019,-51.8469,-23.4761,-52.0162],
+            [-24.0106,-51.9503,-23.6747,-51.9917],
+            [-23.6747,-51.9917,-23.4761,-52.0162],
+            [-23.6644,-52.5656,-23.546,-52.2203],
+            [-23.546,-52.2203,-23.4761,-52.0162],
+            [-23.0329,-52.3487,-23.3114,-52.1397],
+            [-23.3114,-52.1397,-23.4761,-52.0162]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-23.4786,-52.0292,-23.5136,-52.2067],
+            [-23.5059,-52.1157,-23.4864,-52.1202],
+            [-23.5234,-52.2044,-23.5038,-52.209],
+            [-23.4741,-52.0065,-23.439,-51.829],
+            [-23.4468,-51.92,-23.4663,-51.9154],
+            [-23.4292,-51.8313,-23.4487,-51.8267]
+        ]}
+    ]
+}

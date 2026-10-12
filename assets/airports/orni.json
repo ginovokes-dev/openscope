@@ -1,0 +1,81 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ORNI/",
+    "info": {"country":"IQ","city":"Najaf","type":"large_airport","longestRunwayM":3000,"frequencies":{"atis":"123.900","twr":"119.100","gnd":"121.700"}},
+    "radio": {"twr":"Najaf Tower","app":"Najaf Approach","dep":"Najaf Departure"},
+    "icao": "ORNI",
+    "iata": "NJF",
+    "magnetic_north": 4.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [31.991116,44.405019,"103ft"],
+    "rangeRings": {"enabled":true,"center":[31.991116,44.405019],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":290,"speed":7},
+    "arrivalRunway": "28",
+    "departureRunway": "28",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[32.3946,44.4425],[32.3726,44.5643],[32.3246,44.6753],[32.2539,44.7679],[32.1653,44.8357],[32.0649,44.8742],[31.9594,44.8807],[31.856,44.8548],[31.7619,44.7983],[31.6834,44.7149],[31.6258,44.6104],[31.5932,44.492],[31.5877,44.3676],[31.6096,44.2457],[31.6576,44.1348],[31.7283,44.0422],[31.8169,43.9743],[31.9174,43.9358],[32.0229,43.9293],[32.1262,43.9552],[32.2203,44.0118],[32.2988,44.0951],[32.3564,44.1996],[32.389,44.3181]]}
+    ],
+    "fixes": {
+        "ORNI": [31.99112,44.40502],
+        "SIJVI": [32.28592,44.93556],
+        "UVABA": [32.10065,44.60213],
+        "CICAM": [31.64868,44.89418],
+        "SAPMI": [31.86389,44.58676],
+        "NEZIF": [31.54533,44.05002],
+        "WOPAN": [31.82549,44.27312],
+        "BISOV": [32.24807,43.84779],
+        "ASOCO": [32.08659,44.19799],
+        "_RWY1004DME": [32.00938,44.31277],
+        "_RWY2804DME": [31.97027,44.4958]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[31.99313,44.38896,"103ft"],[31.98657,44.41965,"103ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "SIJVI3A": {"icao":"SIJVI3A","name":"Sijvi Three Alpha","rwy":{"ORNI10":["_RWY2804DME"],"ORNI28":["_RWY1004DME"]},"body":[],"exitPoints":{"SIJVI":["SIJVI"]},"draw":[["ORNI","SIJVI*"]]},
+        "CICAM2B": {"icao":"CICAM2B","name":"Cicam Two Bravo","rwy":{"ORNI10":["_RWY2804DME"],"ORNI28":["_RWY1004DME"]},"body":[],"exitPoints":{"CICAM":["CICAM"]},"draw":[["ORNI","CICAM*"]]},
+        "NEZIF2D": {"icao":"NEZIF2D","name":"Nezif Two Delta","rwy":{"ORNI10":["_RWY2804DME"],"ORNI28":["_RWY1004DME"]},"body":[],"exitPoints":{"NEZIF":["NEZIF"]},"draw":[["ORNI","NEZIF*"]]},
+        "BISOV3C": {"icao":"BISOV3C","name":"Bisov Three Charlie","rwy":{"ORNI10":["_RWY2804DME"],"ORNI28":["_RWY1004DME"]},"body":[],"exitPoints":{"BISOV":["BISOV"]},"draw":[["ORNI","BISOV*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ORNI","destination":"OBBI","category":"departure","route":"ORNI28.CICAM2B.CICAM","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["gba/a320",1],["gba/a321",1]]},
+        {"origin":"ORNI","destination":"OIIE","category":"departure","route":"ORNI28.SIJVI3A.SIJVI","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["ira/a320",1],["irm/a310",1]]},
+        {"origin":"ORNI","destination":"OKKK","category":"departure","route":"ORNI28.CICAM2B.CICAM","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["jzr/a320",1],["kac/a320",1]]},
+        {"origin":"ORNI","destination":"LTFM","category":"departure","route":"ORNI28.BISOV3C.BISOV","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["thy/b738",1]]},
+        {"origin":"ORNI","destination":"OLBA","category":"departure","route":"ORNI28.BISOV3C.BISOV","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["mea/a321",1]]},
+        {"origin":"ORNI","destination":"","category":"departure","route":"ORNI28.CICAM2B.CICAM","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["aby/a320",1],["fdb/b738",1],["qtr/a320",1]]},
+        {"origin":"ORNI","destination":"","category":"departure","route":"ORNI28.BISOV3C.BISOV","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["yi/c172",6],["yi/p28a",5],["yi/c182",3],["yi/be36",2],["yi/da42",1],["yi/tb20",1],["yi/c208",2],["yi/pc12",2],["yi/be20",1],["yi/b350",1],["yi/p180",1],["yi/c510",1],["yi/e50p",1],["yi/c550",1],["yi/e55p",1],["yi/cl30",1],["yi/c680",1],["yi/h25b",1],["yi/lj45",1],["yi/f2th",1],["yi/glf4",1],["yi/glex",1],["yi/glf5",1]]},
+        {"origin":"OBBI","destination":"ORNI","category":"arrival","route":"CICAM..SAPMI..ORNI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.76,"airlines":[["gba/a320",1],["gba/a321",1]]},
+        {"origin":"OIIE","destination":"ORNI","category":"arrival","route":"SIJVI..UVABA..ORNI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.76,"airlines":[["ira/a320",1],["irm/a310",1]]},
+        {"origin":"OKKK","destination":"ORNI","category":"arrival","route":"CICAM..SAPMI..ORNI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.76,"airlines":[["jzr/a320",1],["kac/a320",1]]},
+        {"origin":"LTFM","destination":"ORNI","category":"arrival","route":"BISOV..ASOCO..ORNI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.38,"airlines":[["thy/b738",1]]},
+        {"origin":"OLBA","destination":"ORNI","category":"arrival","route":"BISOV..ASOCO..ORNI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.38,"airlines":[["mea/a321",1]]},
+        {"origin":"","destination":"ORNI","category":"arrival","route":"CICAM..SAPMI..ORNI","altitude":[4000,7000],"speed":250,"method":"random","rate":1.13,"airlines":[["aby/a320",1],["fdb/b738",1],["qtr/a320",1]]},
+        {"origin":"","destination":"ORNI","category":"arrival","route":"BISOV..ASOCO..ORNI","altitude":[4000,7000],"speed":250,"method":"random","rate":1.39,"airlines":[["yi/c172",6],["yi/p28a",5],["yi/c182",3],["yi/be36",2],["yi/da42",1],["yi/tb20",1],["yi/c208",2],["yi/pc12",2],["yi/be20",1],["yi/b350",1],["yi/p180",1],["yi/c510",1],["yi/e50p",1],["yi/c550",1],["yi/e55p",1],["yi/cl30",1],["yi/c680",1],["yi/h25b",1],["yi/lj45",1],["yi/f2th",1],["yi/glf4",1],["yi/glex",1],["yi/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [32.2859,44.9356,32.1006,44.6021],
+            [32.1006,44.6021,31.9911,44.405],
+            [31.6487,44.8942,31.8639,44.5868],
+            [31.8639,44.5868,31.9911,44.405],
+            [31.5453,44.05,31.8255,44.2731],
+            [31.8255,44.2731,31.9911,44.405],
+            [32.2481,43.8478,32.0866,44.198],
+            [32.0866,44.198,31.9911,44.405]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [31.9931,44.389,32.0337,44.1984],
+            [32.0037,44.2908,32.0231,44.2966],
+            [32.024,44.1956,32.0434,44.2013],
+            [31.9866,44.4196,31.9457,44.61],
+            [31.9759,44.5177,31.9565,44.512],
+            [31.9554,44.6129,31.9361,44.6071]
+        ]}
+    ]
+}

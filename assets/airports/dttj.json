@@ -1,0 +1,92 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/DTTJ/",
+    "info": {"country":"TN","city":"Mellita","type":"large_airport","longestRunwayM":3100,"frequencies":{"twr":"118.150","app":"120.300"}},
+    "radio": {"twr":"Djerba Zarzis Tower","app":"Djerba Zarzis Approach","dep":"Djerba Zarzis Departure"},
+    "icao": "DTTJ",
+    "iata": "DJE",
+    "magnetic_north": 3.1,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [33.873719,10.7773,"19ft"],
+    "rangeRings": {"enabled":true,"center":[33.873719,10.7773],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":270,"speed":6},
+    "arrivalRunway": "27",
+    "departureRunway": "27",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[34.4125,10.8124],[34.3866,10.9792],[34.3257,11.1322],[34.2341,11.261],[34.1178,11.3569],[33.985,11.4132],[33.8445,11.4263],[33.7061,11.395],[33.579,11.3217],[33.4721,11.2113],[33.3925,11.0713],[33.3457,10.9113],[33.3349,10.7422],[33.3608,10.5754],[33.4217,10.4224],[33.5134,10.2936],[33.6296,10.1977],[33.7625,10.1414],[33.9029,10.1283],[34.0414,10.1596],[34.1684,10.2329],[34.2753,10.3433],[34.3549,10.4833],[34.4017,10.6433]]}
+    ],
+    "fixes": {
+        "DTTJ": [33.87372,10.7773],
+        "ELIFU": [34.13205,11.56885],
+        "BAGPU": [33.96512,11.05735],
+        "LIHJE": [33.28067,11.23899],
+        "ADAMA": [33.6639,10.94064],
+        "DUFSI": [33.38057,10.16855],
+        "SOLGO": [33.69925,10.56193],
+        "FESAV": [34.27151,10.07458],
+        "SABUD": [34.01446,10.52868],
+        "SFX": [34.7161,10.6889,"sfax"],
+        "IJIFE": [34.12261,10.75118],
+        "_RWY0904DME": [33.87281,10.6802],
+        "_RWY2704DME": [33.87804,10.8741]
+    },
+    "runways": [
+        {"name":["09","27"],"end":[[33.875,10.7604,"9ft"],[33.8759,10.7939,"18ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ELIFU2C": {"icao":"ELIFU2C","name":"Elifu Two Charlie","rwy":{"DTTJ09":["_RWY2704DME"],"DTTJ27":["_RWY0904DME"]},"body":[],"exitPoints":{"ELIFU":["ELIFU"]},"draw":[["DTTJ","ELIFU*"]]},
+        "LIHJE3F": {"icao":"LIHJE3F","name":"Lihje Three Foxtrot","rwy":{"DTTJ09":["_RWY2704DME"],"DTTJ27":["_RWY0904DME"]},"body":[],"exitPoints":{"LIHJE":["LIHJE"]},"draw":[["DTTJ","LIHJE*"]]},
+        "DUFSI3C": {"icao":"DUFSI3C","name":"Dufsi Three Charlie","rwy":{"DTTJ09":["_RWY2704DME"],"DTTJ27":["_RWY0904DME"]},"body":[],"exitPoints":{"DUFSI":["DUFSI"]},"draw":[["DTTJ","DUFSI*"]]},
+        "FESAV3D": {"icao":"FESAV3D","name":"Fesav Three Delta","rwy":{"DTTJ09":["_RWY2704DME"],"DTTJ27":["_RWY0904DME"]},"body":[],"exitPoints":{"FESAV":["FESAV"]},"draw":[["DTTJ","FESAV*"]]},
+        "SFX2F": {"icao":"SFX2F","name":"Sfax Two Foxtrot","rwy":{"DTTJ09":["_RWY2704DME"],"DTTJ27":["_RWY0904DME"]},"body":[],"exitPoints":{"SFX":["SFX"]},"draw":[["DTTJ","SFX*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"DTTJ","destination":"LFLL","category":"departure","route":"DTTJ27.SFX2F.SFX","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["lbt/a320",1],["lbt/a321",1],["tar/a319",1],["tar/b736",1]]},
+        {"origin":"DTTJ","destination":"LFPO","category":"departure","route":"DTTJ27.SFX2F.SFX","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["aaf/a320",1],["tar/a319",1],["tar/b736",1],["tvf/b738",1]]},
+        {"origin":"DTTJ","destination":"LFRS","category":"departure","route":"DTTJ27.FESAV3D.FESAV","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["lbt/a320",1],["lbt/a321",1],["tar/a320",1],["tvf/b738",1]]},
+        {"origin":"DTTJ","destination":"EDDL","category":"departure","route":"DTTJ27.SFX2F.SFX","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["ber/a321",1],["cfg/b752",1],["tar/b736",1]]},
+        {"origin":"DTTJ","destination":"EDDM","category":"departure","route":"DTTJ27.SFX2F.SFX","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["cfg/b752",1],["lbt/a321",1],["tar/b736",1]]},
+        {"origin":"DTTJ","destination":"EDDF","category":"departure","route":"DTTJ27.SFX2F.SFX","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["cfg/b752",1],["tar/b736",1]]},
+        {"origin":"DTTJ","destination":"","category":"departure","route":"DTTJ27.FESAV3D.FESAV","altitude":"","speed":"","method":"random","rate":0.16,"airlines":[["tar/a320",1]]},
+        {"origin":"DTTJ","destination":"","category":"departure","route":"DTTJ27.SFX2F.SFX","altitude":"","speed":"","method":"random","rate":3.68,"airlines":[["tar/a319",4],["tar/a320",4],["tar/b736",4],["lbt/a320",2],["lbt/a321",2],["lgl/b737",2],["ber/b738",1],["cfg/a320",1],["lgl/b738",1],["tui/at72",1],["tvf/b738",1]]},
+        {"origin":"DTTJ","destination":"","category":"departure","route":"DTTJ27.ELIFU2C.ELIFU","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["ts/c172",6],["ts/p28a",5],["ts/c182",3],["ts/be36",2],["ts/da42",1],["ts/tb20",1],["ts/c208",2],["ts/pc12",2],["ts/be20",1],["ts/b350",1],["ts/p180",1],["ts/c510",1],["ts/e50p",1],["ts/c550",2],["ts/e55p",1],["ts/cl30",1],["ts/c680",1],["ts/h25b",1],["ts/lj45",1],["ts/f2th",1],["ts/glf4",1],["ts/glex",1],["ts/glf5",1]]},
+        {"origin":"DTTJ","destination":"","category":"departure","route":"DTTJ27.DUFSI3C.DUFSI","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["ts/c172",6],["ts/p28a",5],["ts/c182",3],["ts/be36",2],["ts/da42",1],["ts/tb20",1],["ts/c208",2],["ts/pc12",2],["ts/be20",1],["ts/b350",1],["ts/p180",1],["ts/c510",1],["ts/e50p",1],["ts/c550",2],["ts/e55p",1],["ts/cl30",1],["ts/c680",1],["ts/h25b",1],["ts/lj45",1],["ts/f2th",1],["ts/glf4",1],["ts/glex",1],["ts/glf5",1]]},
+        {"origin":"LFLL","destination":"DTTJ","category":"arrival","route":"SFX..IJIFE..DTTJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.64,"airlines":[["lbt/a320",1],["lbt/a321",1],["tar/a319",1],["tar/b736",1]]},
+        {"origin":"LFPO","destination":"DTTJ","category":"arrival","route":"SFX..IJIFE..DTTJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.64,"airlines":[["aaf/a320",1],["tar/a319",1],["tar/b736",1],["tvf/b738",1]]},
+        {"origin":"LFRS","destination":"DTTJ","category":"arrival","route":"FESAV..SABUD..DTTJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.64,"airlines":[["lbt/a320",1],["lbt/a321",1],["tar/a320",1],["tvf/b738",1]]},
+        {"origin":"EDDL","destination":"DTTJ","category":"arrival","route":"SFX..IJIFE..DTTJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.48,"airlines":[["ber/a321",1],["cfg/b752",1],["tar/b736",1]]},
+        {"origin":"EDDM","destination":"DTTJ","category":"arrival","route":"SFX..IJIFE..DTTJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.48,"airlines":[["cfg/b752",1],["lbt/a321",1],["tar/b736",1]]},
+        {"origin":"EDDF","destination":"DTTJ","category":"arrival","route":"SFX..IJIFE..DTTJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.32,"airlines":[["cfg/b752",1],["tar/b736",1]]},
+        {"origin":"","destination":"DTTJ","category":"arrival","route":"FESAV..SABUD..DTTJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.16,"airlines":[["tar/a320",1]]},
+        {"origin":"","destination":"DTTJ","category":"arrival","route":"SFX..IJIFE..DTTJ","altitude":[6000,9000],"speed":250,"method":"random","rate":3.68,"airlines":[["tar/a319",4],["tar/a320",4],["tar/b736",4],["lbt/a320",2],["lbt/a321",2],["lgl/b737",2],["ber/b738",1],["cfg/a320",1],["lgl/b738",1],["tui/at72",1],["tvf/b738",1]]},
+        {"origin":"","destination":"DTTJ","category":"arrival","route":"ELIFU..BAGPU..DTTJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.48,"airlines":[["ts/c172",6],["ts/p28a",5],["ts/c182",3],["ts/be36",2],["ts/da42",1],["ts/tb20",1],["ts/c208",2],["ts/pc12",2],["ts/be20",1],["ts/b350",1],["ts/p180",1],["ts/c510",1],["ts/e50p",1],["ts/c550",2],["ts/e55p",1],["ts/cl30",1],["ts/c680",1],["ts/h25b",1],["ts/lj45",1],["ts/f2th",1],["ts/glf4",1],["ts/glex",1],["ts/glf5",1]]},
+        {"origin":"","destination":"DTTJ","category":"arrival","route":"DUFSI..SOLGO..DTTJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.48,"airlines":[["ts/c172",6],["ts/p28a",5],["ts/c182",3],["ts/be36",2],["ts/da42",1],["ts/tb20",1],["ts/c208",2],["ts/pc12",2],["ts/be20",1],["ts/b350",1],["ts/p180",1],["ts/c510",1],["ts/e50p",1],["ts/c550",2],["ts/e55p",1],["ts/cl30",1],["ts/c680",1],["ts/h25b",1],["ts/lj45",1],["ts/f2th",1],["ts/glf4",1],["ts/glex",1],["ts/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [34.1321,11.5688,33.9651,11.0573],
+            [33.9651,11.0573,33.8737,10.7773],
+            [33.2807,11.239,33.6639,10.9406],
+            [33.6639,10.9406,33.8737,10.7773],
+            [33.3806,10.1686,33.6992,10.5619],
+            [33.6992,10.5619,33.8737,10.7773],
+            [34.2715,10.0746,34.0145,10.5287],
+            [34.0145,10.5287,33.8737,10.7773],
+            [34.7161,10.6889,34.1226,10.7512],
+            [34.1226,10.7512,33.8737,10.7773]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [33.875,10.7604,33.8694,10.5599],
+            [33.8623,10.6605,33.8822,10.6598],
+            [33.8594,10.5603,33.8794,10.5595],
+            [33.8759,10.7939,33.8812,10.9944],
+            [33.8886,10.8938,33.8686,10.8945],
+            [33.8911,10.994,33.8712,10.9948]
+        ]}
+    ]
+}

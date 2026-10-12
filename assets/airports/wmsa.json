@@ -1,0 +1,92 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/WMSA/",
+    "info": {"country":"MY","city":"Subang","type":"large_airport","longestRunwayM":3784,"frequencies":{"atis":"127.600","twr":"118.200","gnd":"121.900"}},
+    "radio": {"twr":"Kuala Lumpur Tower","app":"Kuala Lumpur Approach","dep":"Kuala Lumpur Departure"},
+    "icao": "WMSA",
+    "iata": "SZB",
+    "magnetic_north": 0,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [3.13058,101.549004,"90ft"],
+    "rangeRings": {"enabled":true,"center":[3.13058,101.549004],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":140,"speed":12},
+    "arrivalRunway": "15",
+    "departureRunway": "15",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[3.5353,101.549],[3.5215,101.6539],[3.4811,101.7517],[3.4167,101.8356],[3.3329,101.9],[3.2353,101.9405],[3.1306,101.9543],[3.0258,101.9405],[2.9282,101.9],[2.8444,101.8356],[2.7801,101.7517],[2.7397,101.6539],[2.7259,101.549],[2.7397,101.4441],[2.7801,101.3464],[2.8444,101.2624],[2.9282,101.198],[3.0258,101.1575],[3.1306,101.1437],[3.2353,101.1575],[3.3329,101.198],[3.4167,101.2624],[3.4811,101.3464],[3.5215,101.4441]]}
+    ],
+    "fixes": {
+        "WMSA": [3.13058,101.549],
+        "ZECGO": [3.52937,101.91058],
+        "NIWAV": [3.27875,101.68334],
+        "RULTI": [2.81289,101.98376],
+        "PULOT": [3.01255,101.71053],
+        "HUKUD": [2.59305,101.52791],
+        "CEVGI": [2.93087,101.54117],
+        "EDUTU": [3.02843,101.02006],
+        "KOMAK": [3.09263,101.35248],
+        "TA": [3.99667,101.02,"telok intan"],
+        "CE": [3.29508,101.452,"caledonian"],
+        "_RWY1504DME": [3.20307,101.50772],
+        "_RWY3304DME": [3.05808,101.59127]
+    },
+    "runways": [
+        {"name":["15","33"],"end":[[3.14533,101.541,"70ft"],[3.11583,101.558,"89ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ZECGO2D": {"icao":"ZECGO2D","name":"Zecgo Two Delta","rwy":{"WMSA15":["_RWY3304DME"],"WMSA33":["_RWY1504DME"]},"body":[],"exitPoints":{"ZECGO":["ZECGO"]},"draw":[["WMSA","ZECGO*"]]},
+        "RULTI1D": {"icao":"RULTI1D","name":"Rulti One Delta","rwy":{"WMSA15":["_RWY3304DME"],"WMSA33":["_RWY1504DME"]},"body":[],"exitPoints":{"RULTI":["RULTI"]},"draw":[["WMSA","RULTI*"]]},
+        "HUKUD3F": {"icao":"HUKUD3F","name":"Hukud Three Foxtrot","rwy":{"WMSA15":["_RWY3304DME"],"WMSA33":["_RWY1504DME"]},"body":[],"exitPoints":{"HUKUD":["HUKUD"]},"draw":[["WMSA","HUKUD*"]]},
+        "EDUTU3B": {"icao":"EDUTU3B","name":"Edutu Three Bravo","rwy":{"WMSA15":["_RWY3304DME"],"WMSA33":["_RWY1504DME"]},"body":[],"exitPoints":{"EDUTU":["EDUTU"]},"draw":[["WMSA","EDUTU*"]]},
+        "TA3F": {"icao":"TA3F","name":"Telok Intan Three Foxtrot","rwy":{"WMSA15":["_RWY3304DME"],"WMSA33":["_RWY1504DME"]},"body":[],"exitPoints":{"TA":["TA"]},"draw":[["WMSA","TA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"WMSA","destination":"WMKA","category":"departure","route":"WMSA15.TA3F.TA","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["ffm/at72",1],["mxd/at72",1]]},
+        {"origin":"WMSA","destination":"WMKC","category":"departure","route":"WMSA15.ZECGO2D.ZECGO","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["ffm/at72",1],["mxd/at72",1]]},
+        {"origin":"WMSA","destination":"WMKJ","category":"departure","route":"WMSA15.RULTI1D.RULTI","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["ffm/at72",1],["mxd/at72",1]]},
+        {"origin":"WMSA","destination":"WMKL","category":"departure","route":"WMSA15.TA3F.TA","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["ffm/at72",1],["mxd/at72",1]]},
+        {"origin":"WMSA","destination":"WMKN","category":"departure","route":"WMSA15.ZECGO2D.ZECGO","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["ffm/at72",1],["mxd/at72",1]]},
+        {"origin":"WMSA","destination":"","category":"departure","route":"WMSA15.ZECGO2D.ZECGO","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["ffm/at72",1]]},
+        {"origin":"WMSA","destination":"","category":"departure","route":"WMSA15.RULTI1D.RULTI","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["ffm/at72",2]]},
+        {"origin":"WMSA","destination":"","category":"departure","route":"WMSA15.HUKUD3F.HUKUD","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["ffm/at72",1]]},
+        {"origin":"WMSA","destination":"","category":"departure","route":"WMSA15.TA3F.TA","altitude":"","speed":"","method":"random","rate":0.82,"airlines":[["ffm/at72",2],["mxd/at72",1]]},
+        {"origin":"WMSA","destination":"","category":"departure","route":"WMSA15.EDUTU3B.EDUTU","altitude":"","speed":"","method":"random","rate":1.55,"airlines":[["9m/c172",6],["9m/p28a",5],["9m/c182",3],["9m/be36",2],["9m/da42",1],["9m/tb20",1],["9m/c208",2],["9m/pc12",2],["9m/be20",1],["9m/b350",1],["9m/p180",1],["9m/c510",1],["9m/e50p",1],["9m/c550",1],["9m/e55p",1],["9m/cl30",1],["9m/c680",1],["9m/h25b",1],["9m/lj45",1],["9m/f2th",1],["9m/glf4",1],["9m/glex",1],["9m/glf5",1]]},
+        {"origin":"WMKA","destination":"WMSA","category":"arrival","route":"TA..CE..WMSA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.55,"airlines":[["ffm/at72",1],["mxd/at72",1]]},
+        {"origin":"WMKC","destination":"WMSA","category":"arrival","route":"ZECGO..NIWAV..WMSA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.55,"airlines":[["ffm/at72",1],["mxd/at72",1]]},
+        {"origin":"WMKJ","destination":"WMSA","category":"arrival","route":"RULTI..PULOT..WMSA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.55,"airlines":[["ffm/at72",1],["mxd/at72",1]]},
+        {"origin":"WMKL","destination":"WMSA","category":"arrival","route":"TA..CE..WMSA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.55,"airlines":[["ffm/at72",1],["mxd/at72",1]]},
+        {"origin":"WMKN","destination":"WMSA","category":"arrival","route":"ZECGO..NIWAV..WMSA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.55,"airlines":[["ffm/at72",1],["mxd/at72",1]]},
+        {"origin":"","destination":"WMSA","category":"arrival","route":"ZECGO..NIWAV..WMSA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.27,"airlines":[["ffm/at72",1]]},
+        {"origin":"","destination":"WMSA","category":"arrival","route":"RULTI..PULOT..WMSA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.55,"airlines":[["ffm/at72",2]]},
+        {"origin":"","destination":"WMSA","category":"arrival","route":"HUKUD..CEVGI..WMSA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.27,"airlines":[["ffm/at72",1]]},
+        {"origin":"","destination":"WMSA","category":"arrival","route":"TA..CE..WMSA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.82,"airlines":[["ffm/at72",2],["mxd/at72",1]]},
+        {"origin":"","destination":"WMSA","category":"arrival","route":"EDUTU..KOMAK..WMSA","altitude":[4000,7000],"speed":250,"method":"random","rate":1.55,"airlines":[["9m/c172",6],["9m/p28a",5],["9m/c182",3],["9m/be36",2],["9m/da42",1],["9m/tb20",1],["9m/c208",2],["9m/pc12",2],["9m/be20",1],["9m/b350",1],["9m/p180",1],["9m/c510",1],["9m/e50p",1],["9m/c550",1],["9m/e55p",1],["9m/cl30",1],["9m/c680",1],["9m/h25b",1],["9m/lj45",1],["9m/f2th",1],["9m/glf4",1],["9m/glex",1],["9m/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [3.5294,101.9106,3.2787,101.6833],
+            [3.2787,101.6833,3.1306,101.549],
+            [2.8129,101.9838,3.0125,101.7105],
+            [3.0125,101.7105,3.1306,101.549],
+            [2.5931,101.5279,2.9309,101.5412],
+            [2.9309,101.5412,3.1306,101.549],
+            [3.0284,101.0201,3.0926,101.3525],
+            [3.0926,101.3525,3.1306,101.549],
+            [3.9967,101.02,3.2951,101.452],
+            [3.2951,101.452,3.1306,101.549]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [3.1453,101.541,3.2897,101.4578],
+            [3.2125,101.4907,3.2225,101.5081],
+            [3.2847,101.4491,3.2947,101.4665],
+            [3.1158,101.558,2.9715,101.6412],
+            [3.0486,101.6083,3.0387,101.5909],
+            [2.9764,101.6498,2.9665,101.6325]
+        ]}
+    ]
+}

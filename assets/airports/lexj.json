@@ -1,0 +1,98 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LEXJ/",
+    "info": {"country":"ES","city":"Santander","type":"medium_airport","longestRunwayM":2320,"frequencies":{"twr":"118.100","app":"118.375","gnd":"121.700"}},
+    "radio": {"twr":"Santander Tower","app":"Santander Approach","dep":"Santander Departure"},
+    "icao": "LEXJ",
+    "iata": "SDR",
+    "magnetic_north": 0.4,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [43.427101,-3.82001,"16ft"],
+    "rangeRings": {"enabled":true,"center":[43.427101,-3.82001],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":310,"speed":9},
+    "arrivalRunway": "29",
+    "departureRunway": "29",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[43.9667,-3.8148],[43.9473,-3.6227],[43.8925,-3.444],[43.806,-3.291],[43.6936,-3.174],[43.5631,-3.101],[43.4233,-3.077],[43.2838,-3.1037],[43.154,-3.1792],[43.0429,-3.2983],[42.9579,-3.453],[42.9049,-3.6327],[42.8875,-3.8252],[42.9069,-4.0173],[42.9617,-4.196],[43.0482,-4.349],[43.1606,-4.466],[43.2911,-4.539],[43.4309,-4.563],[43.5704,-4.5363],[43.7002,-4.4608],[43.8113,-4.3417],[43.8963,-4.187],[43.9493,-4.0073]]}
+    ],
+    "fixes": {
+        "LEXJ": [43.4271,-3.82001],
+        "UHILI": [44.13223,-3.76783],
+        "DOVAR": [43.67657,-3.80155],
+        "OKOTO": [43.92254,-3.12717],
+        "NIVPU": [43.60238,-3.57489],
+        "BLV": [43.3044,-2.93588,"bilbao"],
+        "ISEHI": [43.38021,-3.48212],
+        "VRA": [42.7319,-2.86558,"vitoria"],
+        "OPEKE": [43.25018,-3.57712],
+        "PODPE": [42.81536,-4.30569],
+        "ELAHE": [43.21067,-3.99184],
+        "_RWY1104DME": [43.4538,-3.92003],
+        "_RWY2904DME": [43.40053,-3.72098]
+    },
+    "runways": [
+        {"name":["11","29"],"end":[[43.4308,-3.83392,"11ft"],[43.4236,-3.80702,"12ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "UHILI1F": {"icao":"UHILI1F","name":"Uhili One Foxtrot","rwy":{"LEXJ11":["_RWY2904DME"],"LEXJ29":["_RWY1104DME"]},"body":[],"exitPoints":{"UHILI":["UHILI"]},"draw":[["LEXJ","UHILI*"]]},
+        "OKOTO1E": {"icao":"OKOTO1E","name":"Okoto One Echo","rwy":{"LEXJ11":["_RWY2904DME"],"LEXJ29":["_RWY1104DME"]},"body":[],"exitPoints":{"OKOTO":["OKOTO"]},"draw":[["LEXJ","OKOTO*"]]},
+        "BLV2C": {"icao":"BLV2C","name":"Bilbao Two Charlie","rwy":{"LEXJ11":["_RWY2904DME"],"LEXJ29":["_RWY1104DME"]},"body":[],"exitPoints":{"BLV":["BLV"]},"draw":[["LEXJ","BLV*"]]},
+        "VRA1D": {"icao":"VRA1D","name":"Vitoria One Delta","rwy":{"LEXJ11":["_RWY2904DME"],"LEXJ29":["_RWY1104DME"]},"body":[],"exitPoints":{"VRA":["VRA"]},"draw":[["LEXJ","VRA*"]]},
+        "PODPE1E": {"icao":"PODPE1E","name":"Podpe One Echo","rwy":{"LEXJ11":["_RWY2904DME"],"LEXJ29":["_RWY1104DME"]},"body":[],"exitPoints":{"PODPE":["PODPE"]},"draw":[["LEXJ","PODPE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LEXJ","destination":"LEBL","category":"departure","route":"LEXJ29.BLV2C.BLV","altitude":"","speed":"","method":"random","rate":0.71,"airlines":[["ryr/b738",1],["vlg/a320",1]]},
+        {"origin":"LEXJ","destination":"EBCI","category":"departure","route":"LEXJ29.OKOTO1E.OKOTO","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"LEXJ","destination":"EDFH","category":"departure","route":"LEXJ29.OKOTO1E.OKOTO","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"LEXJ","destination":"EDLV","category":"departure","route":"LEXJ29.OKOTO1E.OKOTO","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"LEXJ","destination":"EGPH","category":"departure","route":"LEXJ29.UHILI1F.UHILI","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"LEXJ","destination":"EGSS","category":"departure","route":"LEXJ29.UHILI1F.UHILI","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"LEXJ","destination":"","category":"departure","route":"LEXJ29.UHILI1F.UHILI","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"LEXJ","destination":"","category":"departure","route":"LEXJ29.OKOTO1E.OKOTO","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"LEXJ","destination":"","category":"departure","route":"LEXJ29.BLV2C.BLV","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"LEXJ","destination":"","category":"departure","route":"LEXJ29.VRA1D.VRA","altitude":"","speed":"","method":"random","rate":0.71,"airlines":[["ryr/b738",2]]},
+        {"origin":"LEXJ","destination":"","category":"departure","route":"LEXJ29.PODPE1E.PODPE","altitude":"","speed":"","method":"random","rate":2.12,"airlines":[["ryr/b738",5],["ibe/a319",1]]},
+        {"origin":"LEXJ","destination":"","category":"departure","route":"LEXJ29.BLV2C.BLV","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"LEXJ","destination":"","category":"departure","route":"LEXJ29.OKOTO1E.OKOTO","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"LEBL","destination":"LEXJ","category":"arrival","route":"BLV..ISEHI..LEXJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.71,"airlines":[["ryr/b738",1],["vlg/a320",1]]},
+        {"origin":"EBCI","destination":"LEXJ","category":"arrival","route":"OKOTO..NIVPU..LEXJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDFH","destination":"LEXJ","category":"arrival","route":"OKOTO..NIVPU..LEXJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDLV","destination":"LEXJ","category":"arrival","route":"OKOTO..NIVPU..LEXJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGPH","destination":"LEXJ","category":"arrival","route":"UHILI..DOVAR..LEXJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGSS","destination":"LEXJ","category":"arrival","route":"UHILI..DOVAR..LEXJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LEXJ","category":"arrival","route":"UHILI..DOVAR..LEXJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LEXJ","category":"arrival","route":"OKOTO..NIVPU..LEXJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LEXJ","category":"arrival","route":"BLV..ISEHI..LEXJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LEXJ","category":"arrival","route":"VRA..OPEKE..LEXJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.71,"airlines":[["ryr/b738",2]]},
+        {"origin":"","destination":"LEXJ","category":"arrival","route":"PODPE..ELAHE..LEXJ","altitude":[6000,9000],"speed":250,"method":"random","rate":2.12,"airlines":[["ryr/b738",5],["ibe/a319",1]]},
+        {"origin":"","destination":"LEXJ","category":"arrival","route":"BLV..ISEHI..LEXJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"","destination":"LEXJ","category":"arrival","route":"OKOTO..NIVPU..LEXJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [44.1322,-3.7678,43.6766,-3.8016],
+            [43.6766,-3.8016,43.4271,-3.82],
+            [43.9225,-3.1272,43.6024,-3.5749],
+            [43.6024,-3.5749,43.4271,-3.82],
+            [43.3044,-2.9359,43.3802,-3.4821],
+            [43.3802,-3.4821,43.4271,-3.82],
+            [42.7319,-2.8656,43.2502,-3.5771],
+            [43.2502,-3.5771,43.4271,-3.82],
+            [42.8154,-4.3057,43.2107,-3.9918],
+            [43.2107,-3.9918,43.4271,-3.82]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [43.4308,-3.8339,43.4882,-4.0493],
+            [43.4502,-3.9463,43.4689,-3.9368],
+            [43.4788,-4.0541,43.4976,-4.0446],
+            [43.4236,-3.807,43.3658,-3.592],
+            [43.4041,-3.6947,43.3854,-3.7042],
+            [43.3752,-3.5873,43.3564,-3.5968]
+        ]}
+    ]
+}

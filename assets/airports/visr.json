@@ -1,0 +1,76 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VISR/",
+    "info": {"country":"IN","city":"Srinagar","type":"large_airport","longestRunwayM":3685,"frequencies":{"twr":"127.900"}},
+    "radio": {"twr":"Srinagar Tower","app":"Srinagar Approach","dep":"Srinagar Departure"},
+    "icao": "VISR",
+    "iata": "SXR",
+    "magnetic_north": 2.7,
+    "ctr_radius": 45,
+    "ctr_ceiling": 13000,
+    "initial_alt": 9000,
+    "position": [33.987099,74.7742,"5429ft"],
+    "rangeRings": {"enabled":true,"center":[33.987099,74.7742],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":320,"speed":6},
+    "arrivalRunway": "31",
+    "departureRunway": "31",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":130,"airspace_class":"D","poly":[[34.3913,74.7972],[34.3726,74.9226],[34.3277,75.0379],[34.2595,75.1352],[34.1727,75.2079],[34.0733,75.2511],[33.968,75.2617],[33.8641,75.2392],[33.7685,75.1849],[33.6878,75.1027],[33.6275,74.9981],[33.5917,74.8782],[33.5829,74.7512],[33.6016,74.6258],[33.6465,74.5105],[33.7147,74.4132],[33.8015,74.3405],[33.9009,74.2973],[34.0062,74.2867],[34.1101,74.3092],[34.2057,74.3635],[34.2864,74.4457],[34.3467,74.5503],[34.3825,74.6702]]}
+    ],
+    "fixes": {
+        "VISR": [33.9871,74.7742],
+        "EJIGA": [34.02914,75.42099],
+        "AVIGO": [34.00272,75.01451],
+        "ICAJU": [33.46337,74.92231],
+        "TUJAN": [33.79251,74.82923],
+        "PIMAF": [34.30451,74.2504],
+        "MUTUV": [34.10503,74.57959],
+        "_RWY1304DME": [34.04732,74.70536],
+        "_RWY3104DME": [33.92695,74.84306]
+    },
+    "runways": [
+        {"name":["13","31"],"end":[[33.999,74.7607,"5427ft"],[33.9753,74.7878,"5495ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "EJIGA1C": {"icao":"EJIGA1C","name":"Ejiga One Charlie","rwy":{"VISR13":["_RWY3104DME"],"VISR31":["_RWY1304DME"]},"body":[],"exitPoints":{"EJIGA":["EJIGA"]},"draw":[["VISR","EJIGA*"]]},
+        "ICAJU2A": {"icao":"ICAJU2A","name":"Icaju Two Alpha","rwy":{"VISR13":["_RWY3104DME"],"VISR31":["_RWY1304DME"]},"body":[],"exitPoints":{"ICAJU":["ICAJU"]},"draw":[["VISR","ICAJU*"]]},
+        "PIMAF3B": {"icao":"PIMAF3B","name":"Pimaf Three Bravo","rwy":{"VISR13":["_RWY3104DME"],"VISR31":["_RWY1304DME"]},"body":[],"exitPoints":{"PIMAF":["PIMAF"]},"draw":[["VISR","PIMAF*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"VISR","destination":"VIDP","category":"departure","route":"VISR31.ICAJU2A.ICAJU","altitude":"","speed":"","method":"random","rate":1.64,"airlines":[["jai/b738",2],["aic/a319",1],["aic/a321",1],["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VISR","destination":"VIJU","category":"departure","route":"VISR31.ICAJU2A.ICAJU","altitude":"","speed":"","method":"random","rate":0.94,"airlines":[["aic/a320",1],["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VISR","destination":"VABB","category":"departure","route":"VISR31.ICAJU2A.ICAJU","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["gow/a320",1],["igo/a320",1]]},
+        {"origin":"VISR","destination":"VIAR","category":"departure","route":"VISR31.ICAJU2A.ICAJU","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["sej/b737",1]]},
+        {"origin":"VISR","destination":"","category":"departure","route":"VISR31.EJIGA1C.EJIGA","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["aic/a319",1]]},
+        {"origin":"VISR","destination":"","category":"departure","route":"VISR31.ICAJU2A.ICAJU","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["sej/b737",1]]},
+        {"origin":"VISR","destination":"","category":"departure","route":"VISR31.EJIGA1C.EJIGA","altitude":"","speed":"","method":"random","rate":1.25,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"VIDP","destination":"VISR","category":"arrival","route":"ICAJU..TUJAN..VISR","altitude":[9000,12000],"speed":250,"method":"random","rate":1.64,"airlines":[["jai/b738",2],["aic/a319",1],["aic/a321",1],["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VIJU","destination":"VISR","category":"arrival","route":"ICAJU..TUJAN..VISR","altitude":[9000,12000],"speed":250,"method":"random","rate":0.94,"airlines":[["aic/a320",1],["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VABB","destination":"VISR","category":"arrival","route":"ICAJU..TUJAN..VISR","altitude":[9000,12000],"speed":250,"method":"random","rate":0.47,"airlines":[["gow/a320",1],["igo/a320",1]]},
+        {"origin":"VIAR","destination":"VISR","category":"arrival","route":"ICAJU..TUJAN..VISR","altitude":[9000,12000],"speed":250,"method":"random","rate":0.23,"airlines":[["sej/b737",1]]},
+        {"origin":"","destination":"VISR","category":"arrival","route":"EJIGA..AVIGO..VISR","altitude":[9000,12000],"speed":250,"method":"random","rate":0.23,"airlines":[["aic/a319",1]]},
+        {"origin":"","destination":"VISR","category":"arrival","route":"ICAJU..TUJAN..VISR","altitude":[9000,12000],"speed":250,"method":"random","rate":0.23,"airlines":[["sej/b737",1]]},
+        {"origin":"","destination":"VISR","category":"arrival","route":"EJIGA..AVIGO..VISR","altitude":[9000,12000],"speed":250,"method":"random","rate":1.25,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [34.0291,75.421,34.0027,75.0145],
+            [34.0027,75.0145,33.9871,74.7742],
+            [33.4634,74.9223,33.7925,74.8292],
+            [33.7925,74.8292,33.9871,74.7742],
+            [34.3045,74.2504,34.105,74.5796],
+            [34.105,74.5796,33.9871,74.7742]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [33.999,74.7607,34.1198,74.6222],
+            [34.0525,74.6828,34.0663,74.7003],
+            [34.1129,74.6135,34.1266,74.631],
+            [33.9753,74.7878,33.8544,74.9258],
+            [33.9217,74.8656,33.908,74.8481],
+            [33.8613,74.9346,33.8475,74.9171]
+        ]}
+    ]
+}

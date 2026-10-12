@@ -1,0 +1,92 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/MMTJ/",
+    "info": {"country":"MX","city":"Tijuana","type":"large_airport","longestRunwayM":2960,"frequencies":{"atis":"127.900","twr":"118.100","app":"119.500"}},
+    "radio": {"twr":"Tijuana Tower","app":"Tijuana Approach","dep":"Tijuana Departure"},
+    "icao": "MMTJ",
+    "iata": "TIJ",
+    "magnetic_north": 10.8,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [32.541043,-116.969976,"489ft"],
+    "rangeRings": {"enabled":true,"center":[32.541043,-116.969976],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":250,"speed":5},
+    "arrivalRunway": "27",
+    "departureRunway": "27",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[33.0711,-116.85],[33.0268,-116.6914],[32.9495,-116.5517],[32.8443,-116.4406],[32.7185,-116.3655],[32.5806,-116.3316],[32.4399,-116.3412],[32.3062,-116.3937],[32.1885,-116.4854],[32.0948,-116.6102],[32.0315,-116.7595],[32.0029,-116.9231],[32.011,-117.0899],[32.0552,-117.2486],[32.1326,-117.3882],[32.2377,-117.4994],[32.3636,-117.5745],[32.5015,-117.6083],[32.6422,-117.5987],[32.7759,-117.5463],[32.8936,-117.4545],[32.9873,-117.3298],[33.0506,-117.1805],[33.0792,-117.0169]]}
+    ],
+    "fixes": {
+        "MMTJ": [32.54104,-116.96998],
+        "JLI": [33.1405,-116.586,"julian"],
+        "SAGAF": [32.76087,-116.82917],
+        "LOKVI": [32.50458,-116.13344],
+        "MECIT": [32.52814,-116.67401],
+        "HETEG": [32.11995,-116.29755],
+        "NUNOW": [32.39206,-116.73208],
+        "NEFOJ": [31.91868,-117.36575],
+        "CIDIC": [32.32086,-117.11],
+        "TATVA": [32.78005,-117.75819],
+        "ULOHO": [32.6256,-117.24884],
+        "_RWY0904DME": [32.55338,-117.06409],
+        "_RWY2704DME": [32.52867,-116.87694]
+    },
+    "runways": [
+        {"name":["09","27"],"end":[[32.5431,-116.986,"487ft"],[32.539,-116.955,"487ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "JLI2A": {"icao":"JLI2A","name":"Julian Two Alpha","rwy":{"MMTJ09":["_RWY2704DME"],"MMTJ27":["_RWY0904DME"]},"body":[],"exitPoints":{"JLI":["JLI"]},"draw":[["MMTJ","JLI*"]]},
+        "LOKVI1D": {"icao":"LOKVI1D","name":"Lokvi One Delta","rwy":{"MMTJ09":["_RWY2704DME"],"MMTJ27":["_RWY0904DME"]},"body":[],"exitPoints":{"LOKVI":["LOKVI"]},"draw":[["MMTJ","LOKVI*"]]},
+        "HETEG2F": {"icao":"HETEG2F","name":"Heteg Two Foxtrot","rwy":{"MMTJ09":["_RWY2704DME"],"MMTJ27":["_RWY0904DME"]},"body":[],"exitPoints":{"HETEG":["HETEG"]},"draw":[["MMTJ","HETEG*"]]},
+        "NEFOJ2E": {"icao":"NEFOJ2E","name":"Nefoj Two Echo","rwy":{"MMTJ09":["_RWY2704DME"],"MMTJ27":["_RWY0904DME"]},"body":[],"exitPoints":{"NEFOJ":["NEFOJ"]},"draw":[["MMTJ","NEFOJ*"]]},
+        "TATVA2D": {"icao":"TATVA2D","name":"Tatva Two Delta","rwy":{"MMTJ09":["_RWY2704DME"],"MMTJ27":["_RWY0904DME"]},"body":[],"exitPoints":{"TATVA":["TATVA"]},"draw":[["MMTJ","TATVA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"MMTJ","destination":"MMMX","category":"departure","route":"MMTJ27.HETEG2F.HETEG","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["amx/b737",1],["amx/b762",1],["voi/a319",1],["voi/a320",1]]},
+        {"origin":"MMTJ","destination":"MMCL","category":"departure","route":"MMTJ27.HETEG2F.HETEG","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["amx/b738",1],["voi/a319",1],["voi/a320",1]]},
+        {"origin":"MMTJ","destination":"MMGL","category":"departure","route":"MMTJ27.HETEG2F.HETEG","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["amx/b738",1],["voi/a319",1],["voi/a320",1]]},
+        {"origin":"MMTJ","destination":"MMLO","category":"departure","route":"MMTJ27.HETEG2F.HETEG","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["voi/a319",1],["voi/a320",1],["amx/e190",1],["amx/e170",1]]},
+        {"origin":"MMTJ","destination":"MMCS","category":"departure","route":"MMTJ27.LOKVI1D.LOKVI","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["voi/a319",1],["voi/a320",1]]},
+        {"origin":"MMTJ","destination":"MMMM","category":"departure","route":"MMTJ27.HETEG2F.HETEG","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["voi/a319",1],["voi/a320",1]]},
+        {"origin":"MMTJ","destination":"","category":"departure","route":"MMTJ27.LOKVI1D.LOKVI","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["voi/a319",2],["voi/a320",1]]},
+        {"origin":"MMTJ","destination":"","category":"departure","route":"MMTJ27.HETEG2F.HETEG","altitude":"","speed":"","method":"random","rate":4.14,"airlines":[["voi/a319",12],["voi/a320",12]]},
+        {"origin":"MMTJ","destination":"","category":"departure","route":"MMTJ27.HETEG2F.HETEG","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["xa/c172",6],["xa/p28a",5],["xa/c182",3],["xa/be36",2],["xa/da42",1],["xa/tb20",1],["xa/c208",2],["xa/pc12",2],["xa/be20",1],["xa/b350",1],["xa/p180",1],["xa/c510",1],["xa/e50p",1],["xa/c550",2],["xa/e55p",1],["xa/cl30",1],["xa/c680",1],["xa/h25b",1],["xa/lj45",1],["xa/f2th",1],["xa/glf4",1],["xa/glex",1],["xa/glf5",1]]},
+        {"origin":"MMTJ","destination":"","category":"departure","route":"MMTJ27.NEFOJ2E.NEFOJ","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["xa/c172",6],["xa/p28a",5],["xa/c182",3],["xa/be36",2],["xa/da42",1],["xa/tb20",1],["xa/c208",2],["xa/pc12",2],["xa/be20",1],["xa/b350",1],["xa/p180",1],["xa/c510",1],["xa/e50p",1],["xa/c550",2],["xa/e55p",1],["xa/cl30",1],["xa/c680",1],["xa/h25b",1],["xa/lj45",1],["xa/f2th",1],["xa/glf4",1],["xa/glex",1],["xa/glf5",1]]},
+        {"origin":"MMMX","destination":"MMTJ","category":"arrival","route":"HETEG..NUNOW..MMTJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.69,"airlines":[["amx/b737",1],["amx/b762",1],["voi/a319",1],["voi/a320",1]]},
+        {"origin":"MMCL","destination":"MMTJ","category":"arrival","route":"HETEG..NUNOW..MMTJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["amx/b738",1],["voi/a319",1],["voi/a320",1]]},
+        {"origin":"MMGL","destination":"MMTJ","category":"arrival","route":"HETEG..NUNOW..MMTJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["amx/b738",1],["voi/a319",1],["voi/a320",1]]},
+        {"origin":"MMLO","destination":"MMTJ","category":"arrival","route":"HETEG..NUNOW..MMTJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["voi/a319",1],["voi/a320",1],["amx/e190",1],["amx/e170",1]]},
+        {"origin":"MMCS","destination":"MMTJ","category":"arrival","route":"LOKVI..MECIT..MMTJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.35,"airlines":[["voi/a319",1],["voi/a320",1]]},
+        {"origin":"MMMM","destination":"MMTJ","category":"arrival","route":"HETEG..NUNOW..MMTJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.35,"airlines":[["voi/a319",1],["voi/a320",1]]},
+        {"origin":"","destination":"MMTJ","category":"arrival","route":"LOKVI..MECIT..MMTJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["voi/a319",2],["voi/a320",1]]},
+        {"origin":"","destination":"MMTJ","category":"arrival","route":"HETEG..NUNOW..MMTJ","altitude":[6000,9000],"speed":250,"method":"random","rate":4.14,"airlines":[["voi/a319",12],["voi/a320",12]]},
+        {"origin":"","destination":"MMTJ","category":"arrival","route":"HETEG..NUNOW..MMTJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["xa/c172",6],["xa/p28a",5],["xa/c182",3],["xa/be36",2],["xa/da42",1],["xa/tb20",1],["xa/c208",2],["xa/pc12",2],["xa/be20",1],["xa/b350",1],["xa/p180",1],["xa/c510",1],["xa/e50p",1],["xa/c550",2],["xa/e55p",1],["xa/cl30",1],["xa/c680",1],["xa/h25b",1],["xa/lj45",1],["xa/f2th",1],["xa/glf4",1],["xa/glex",1],["xa/glf5",1]]},
+        {"origin":"","destination":"MMTJ","category":"arrival","route":"NEFOJ..CIDIC..MMTJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["xa/c172",6],["xa/p28a",5],["xa/c182",3],["xa/be36",2],["xa/da42",1],["xa/tb20",1],["xa/c208",2],["xa/pc12",2],["xa/be20",1],["xa/b350",1],["xa/p180",1],["xa/c510",1],["xa/e50p",1],["xa/c550",2],["xa/e55p",1],["xa/cl30",1],["xa/c680",1],["xa/h25b",1],["xa/lj45",1],["xa/f2th",1],["xa/glf4",1],["xa/glex",1],["xa/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [33.1405,-116.586,32.7609,-116.8292],
+            [32.7609,-116.8292,32.541,-116.97],
+            [32.5046,-116.1334,32.5281,-116.674],
+            [32.5281,-116.674,32.541,-116.97],
+            [32.12,-116.2976,32.3921,-116.7321],
+            [32.3921,-116.7321,32.541,-116.97],
+            [31.9187,-117.3657,32.3209,-117.11],
+            [32.3209,-117.11,32.541,-116.97],
+            [32.7801,-117.7582,32.6256,-117.2488],
+            [32.6256,-117.2488,32.541,-116.97]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [32.5431,-116.986,32.5687,-117.1813],
+            [32.5461,-117.0854,32.5658,-117.0818],
+            [32.5588,-117.1831,32.5786,-117.1794],
+            [32.539,-116.955,32.5131,-116.7599],
+            [32.5359,-116.8556,32.5162,-116.8593],
+            [32.5229,-116.758,32.5032,-116.7617]
+        ]}
+    ]
+}

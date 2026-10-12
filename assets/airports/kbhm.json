@@ -1,0 +1,98 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KBHM/",
+    "info": {"country":"US","city":"Birmingham","type":"large_airport","longestRunwayM":3660,"frequencies":{"atis":"119.400","twr":"119.900","gnd":"121.700"}},
+    "radio": {"twr":"Birmingham Tower","app":"Birmingham Approach","dep":"Birmingham Departure"},
+    "icao": "KBHM",
+    "iata": "BHM",
+    "magnetic_north": -4,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [33.562877,-86.750712,"650ft"],
+    "rangeRings": {"enabled":true,"center":[33.562877,-86.750712],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":240,"speed":9},
+    "arrivalRunway": "24",
+    "departureRunway": "24",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[34.1012,-86.7959],[34.0926,-86.6272],[34.0479,-86.4668],[33.9701,-86.3259],[33.8646,-86.2139],[33.7386,-86.1384],[33.6005,-86.1047],[33.4599,-86.1151],[33.3263,-86.1687],[33.2089,-86.262],[33.1155,-86.3886],[33.0527,-86.5399],[33.0246,-86.7055],[33.0332,-86.8743],[33.0779,-87.0346],[33.1556,-87.1755],[33.2611,-87.2876],[33.3872,-87.363],[33.5252,-87.3967],[33.6658,-87.3864],[33.7994,-87.3327],[33.9169,-87.2394],[34.0102,-87.1128],[34.0731,-86.9615]]}
+    ],
+    "fixes": {
+        "KBHM": [33.56288,-86.75071],
+        "GAD": [33.9764,-86.0836,"gadsden"],
+        "PECSI": [33.71199,-86.51016],
+        "DER": [32.8793,-85.9613,"alexander city"],
+        "FIPAC": [33.38286,-86.54282],
+        "LDK": [33.2589,-87.5369,"crimson"],
+        "RIWEK": [33.45772,-87.02268],
+        "CPP": [34.3679,-86.8239,"cole spring"],
+        "VETRI": [33.81199,-86.77336],
+        "_RWY0604DME": [33.51691,-86.83734],
+        "_RWY2404DME": [33.60638,-86.68195],
+        "_RWY1804DME": [33.63982,-86.7472],
+        "_RWY3604DME": [33.48708,-86.7472]
+    },
+    "runways": [
+        {"name":["06","24"],"end":[[33.5548,-86.7716,"603ft"],[33.56852,-86.74776,"621ft"]],"ils":[true,true]},
+        {"name":["18","36"],"end":[[33.5732,-86.7472,"644ft"],[33.5537,-86.7472,"633ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "GAD1D": {"icao":"GAD1D","name":"Gadsden One Delta","rwy":{"KBHM06":["_RWY2404DME"],"KBHM24":["_RWY0604DME"],"KBHM18":["_RWY3604DME"],"KBHM36":["_RWY1804DME"]},"body":[],"exitPoints":{"GAD":["GAD"]},"draw":[["KBHM","GAD*"]]},
+        "DER2D": {"icao":"DER2D","name":"Alexander City Two Delta","rwy":{"KBHM06":["_RWY2404DME"],"KBHM24":["_RWY0604DME"],"KBHM18":["_RWY3604DME"],"KBHM36":["_RWY1804DME"]},"body":[],"exitPoints":{"DER":["DER"]},"draw":[["KBHM","DER*"]]},
+        "LDK1F": {"icao":"LDK1F","name":"Crimson One Foxtrot","rwy":{"KBHM06":["_RWY2404DME"],"KBHM24":["_RWY0604DME"],"KBHM18":["_RWY3604DME"],"KBHM36":["_RWY1804DME"]},"body":[],"exitPoints":{"LDK":["LDK"]},"draw":[["KBHM","LDK*"]]},
+        "CPP1F": {"icao":"CPP1F","name":"Cole Spring One Foxtrot","rwy":{"KBHM06":["_RWY2404DME"],"KBHM24":["_RWY0604DME"],"KBHM18":["_RWY3604DME"],"KBHM36":["_RWY1804DME"]},"body":[],"exitPoints":{"CPP":["CPP"]},"draw":[["KBHM","CPP*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KBHM","destination":"KCLT","category":"departure","route":"KBHM24.GAD1D.GAD","altitude":"","speed":"","method":"random","rate":0.91,"airlines":[["aal/crj7",3],["aal/crj9",1],["aal/crj2",1]]},
+        {"origin":"KBHM","destination":"KDFW","category":"departure","route":"KBHM24.LDK1F.LDK","altitude":"","speed":"","method":"random","rate":0.91,"airlines":[["aal/md82",2],["aal/md83",2]]},
+        {"origin":"KBHM","destination":"KATL","category":"departure","route":"KBHM24.GAD1D.GAD","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["dal/a320",1],["dal/md88",1]]},
+        {"origin":"KBHM","destination":"KBWI","category":"departure","route":"KBHM24.GAD1D.GAD","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["swa/b733",1],["swa/b737",1]]},
+        {"origin":"KBHM","destination":"KDAL","category":"departure","route":"KBHM24.LDK1F.LDK","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["swa/b733",1],["swa/b737",1]]},
+        {"origin":"KBHM","destination":"","category":"departure","route":"KBHM24.GAD1D.GAD","altitude":"","speed":"","method":"random","rate":0.91,"airlines":[["aal/crj7",2],["aal/crj9",2],["aal/crj2",1]]},
+        {"origin":"KBHM","destination":"","category":"departure","route":"KBHM24.DER2D.DER","altitude":"","speed":"","method":"random","rate":1.14,"airlines":[["swa/b737",2],["aal/e145",1],["bhs/b734",1],["swa/b733",1]]},
+        {"origin":"KBHM","destination":"","category":"departure","route":"KBHM24.LDK1F.LDK","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["swa/b737",2]]},
+        {"origin":"KBHM","destination":"","category":"departure","route":"KBHM24.CPP1F.CPP","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["swa/b737",1]]},
+        {"origin":"KBHM","destination":"","category":"departure","route":"KBHM24.CPP1F.CPP","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KBHM","destination":"","category":"departure","route":"KBHM24.GAD1D.GAD","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KCLT","destination":"KBHM","category":"arrival","route":"GAD..PECSI..KBHM","altitude":[6000,9000],"speed":250,"method":"random","rate":0.91,"airlines":[["aal/crj7",3],["aal/crj9",1],["aal/crj2",1]]},
+        {"origin":"KDFW","destination":"KBHM","category":"arrival","route":"LDK..RIWEK..KBHM","altitude":[6000,9000],"speed":250,"method":"random","rate":0.91,"airlines":[["aal/md82",2],["aal/md83",2]]},
+        {"origin":"KATL","destination":"KBHM","category":"arrival","route":"GAD..PECSI..KBHM","altitude":[6000,9000],"speed":250,"method":"random","rate":0.46,"airlines":[["dal/a320",1],["dal/md88",1]]},
+        {"origin":"KBWI","destination":"KBHM","category":"arrival","route":"GAD..PECSI..KBHM","altitude":[6000,9000],"speed":250,"method":"random","rate":0.46,"airlines":[["swa/b733",1],["swa/b737",1]]},
+        {"origin":"KDAL","destination":"KBHM","category":"arrival","route":"LDK..RIWEK..KBHM","altitude":[6000,9000],"speed":250,"method":"random","rate":0.46,"airlines":[["swa/b733",1],["swa/b737",1]]},
+        {"origin":"","destination":"KBHM","category":"arrival","route":"GAD..PECSI..KBHM","altitude":[6000,9000],"speed":250,"method":"random","rate":0.91,"airlines":[["aal/crj7",2],["aal/crj9",2],["aal/crj2",1]]},
+        {"origin":"","destination":"KBHM","category":"arrival","route":"DER..FIPAC..KBHM","altitude":[6000,9000],"speed":250,"method":"random","rate":1.14,"airlines":[["swa/b737",2],["aal/e145",1],["bhs/b734",1],["swa/b733",1]]},
+        {"origin":"","destination":"KBHM","category":"arrival","route":"LDK..RIWEK..KBHM","altitude":[6000,9000],"speed":250,"method":"random","rate":0.46,"airlines":[["swa/b737",2]]},
+        {"origin":"","destination":"KBHM","category":"arrival","route":"CPP..VETRI..KBHM","altitude":[6000,9000],"speed":250,"method":"random","rate":0.23,"airlines":[["swa/b737",1]]},
+        {"origin":"","destination":"KBHM","category":"arrival","route":"CPP..VETRI..KBHM","altitude":[6000,9000],"speed":250,"method":"random","rate":0.41,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"","destination":"KBHM","category":"arrival","route":"GAD..PECSI..KBHM","altitude":[6000,9000],"speed":250,"method":"random","rate":0.41,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [33.9764,-86.0836,33.712,-86.5102],
+            [33.712,-86.5102,33.5629,-86.7507],
+            [32.8793,-85.9613,33.3829,-86.5428],
+            [33.3829,-86.5428,33.5629,-86.7507],
+            [33.2589,-87.5369,33.4577,-87.0227],
+            [33.4577,-87.0227,33.5629,-86.7507],
+            [34.3679,-86.8239,33.812,-86.7734],
+            [33.812,-86.7734,33.5629,-86.7507]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [33.5548,-86.7716,33.46,-86.9358],
+            [33.4992,-86.847,33.5156,-86.8606],
+            [33.4518,-86.929,33.4682,-86.9426],
+            [33.5685,-86.7478,33.6631,-86.5831],
+            [33.6241,-86.6723,33.6076,-86.6587],
+            [33.6713,-86.59,33.6549,-86.5763],
+            [33.5732,-86.7472,33.7398,-86.7472],
+            [33.6565,-86.7592,33.6565,-86.7352],
+            [33.7398,-86.7592,33.7398,-86.7352],
+            [33.5537,-86.7472,33.3871,-86.7472],
+            [33.4704,-86.7352,33.4704,-86.7592],
+            [33.3871,-86.7352,33.3871,-86.7592]
+        ]}
+    ]
+}

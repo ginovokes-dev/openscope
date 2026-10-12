@@ -1,0 +1,94 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SKRG/",
+    "info": {"country":"CO","city":"Medellin","type":"large_airport","longestRunwayM":3458,"frequencies":{"atis":"115.100","twr":"118.600","app":"121.100","gnd":"121.650"}},
+    "radio": {"twr":"Rio Negro Tower","app":"Rio Negro Approach","dep":"Rio Negro Departure"},
+    "icao": "SKRG",
+    "iata": "MDE",
+    "magnetic_north": -7.9,
+    "ctr_radius": 60,
+    "ctr_ceiling": 16000,
+    "initial_alt": 11000,
+    "position": [6.16454,-75.4231,"6955ft"],
+    "rangeRings": {"enabled":true,"center":[6.16454,-75.4231],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":30,"speed":12},
+    "arrivalRunway": "01",
+    "departureRunway": "01",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":160,"airspace_class":"C","poly":[[6.699,-75.4977],[6.7,-75.356],[6.6645,-75.2189],[6.5949,-75.0957],[6.496,-74.9948],[6.3745,-74.9231],[6.2387,-74.8855],[6.0978,-74.8845],[5.9615,-74.9202],[5.8391,-74.9902],[5.7388,-75.0897],[5.6675,-75.2119],[5.6301,-75.3485],[5.6291,-75.4902],[5.6646,-75.6273],[5.7342,-75.7505],[5.8331,-75.8514],[5.9546,-75.9231],[6.0904,-75.9607],[6.2312,-75.9617],[6.3675,-75.926],[6.49,-75.856],[6.5903,-75.7565],[6.6616,-75.6343]]}
+    ],
+    "fixes": {
+        "SKRG": [6.16454,-75.4231],
+        "VECHO": [6.87043,-75.44237],
+        "ACOWO": [6.41428,-75.42992],
+        "OTU": [7.01986,-74.7098,"otu"],
+        "UHIKU": [6.35686,-75.26271],
+        "MQU": [5.20722,-74.9242,"mariquita"],
+        "AHEVU": [5.94272,-75.3075],
+        "JDN": [5.60417,-75.8111,"jardin"],
+        "NEZAV": [5.95875,-75.56558],
+        "FIGNA": [6.55692,-76.01361],
+        "WACRA": [6.30336,-75.63202],
+        "_RWY0104DME": [6.08265,-75.42258],
+        "_RWY1904DME": [6.24699,-75.42367]
+    },
+    "runways": [
+        {"name":["01","19"],"end":[[6.14927,-75.42302,"6967ft"],[6.18037,-75.42322,"7025ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "VECHO3C": {"icao":"VECHO3C","name":"Vecho Three Charlie","rwy":{"SKRG01":["_RWY1904DME"],"SKRG19":["_RWY0104DME"]},"body":[],"exitPoints":{"VECHO":["VECHO"]},"draw":[["SKRG","VECHO*"]]},
+        "OTU2F": {"icao":"OTU2F","name":"Otu Two Foxtrot","rwy":{"SKRG01":["_RWY1904DME"],"SKRG19":["_RWY0104DME"]},"body":[],"exitPoints":{"OTU":["OTU"]},"draw":[["SKRG","OTU*"]]},
+        "MQU2F": {"icao":"MQU2F","name":"Mariquita Two Foxtrot","rwy":{"SKRG01":["_RWY1904DME"],"SKRG19":["_RWY0104DME"]},"body":[],"exitPoints":{"MQU":["MQU"]},"draw":[["SKRG","MQU*"]]},
+        "JDN3A": {"icao":"JDN3A","name":"Jardin Three Alpha","rwy":{"SKRG01":["_RWY1904DME"],"SKRG19":["_RWY0104DME"]},"body":[],"exitPoints":{"JDN":["JDN"]},"draw":[["SKRG","JDN*"]]},
+        "FIGNA1D": {"icao":"FIGNA1D","name":"Figna One Delta","rwy":{"SKRG01":["_RWY1904DME"],"SKRG19":["_RWY0104DME"]},"body":[],"exitPoints":{"FIGNA":["FIGNA"]},"draw":[["SKRG","FIGNA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SKRG","destination":"SKBO","category":"departure","route":"SKRG01.MQU2F.MQU","altitude":"","speed":"","method":"random","rate":1.19,"airlines":[["ava/a318",1],["ava/a319",1],["ava/a320",1],["cmp/a318",1],["cmp/a319",1],["cmp/a320",1],["cmp/b737",1]]},
+        {"origin":"SKRG","destination":"KMIA","category":"departure","route":"SKRG01.VECHO3C.VECHO","altitude":"","speed":"","method":"random","rate":1.02,"airlines":[["aal/b738",2],["aal/a319",1],["aal/a320",1],["ava/a319",1],["ava/a320",1]]},
+        {"origin":"SKRG","destination":"SKCL","category":"departure","route":"SKRG01.JDN3A.JDN","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["ava/a318",1],["ava/a319",1],["ava/a320",1],["ava/at72",1]]},
+        {"origin":"SKRG","destination":"SKBQ","category":"departure","route":"SKRG01.VECHO3C.VECHO","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["ava/a318",1],["ava/a319",1],["ava/a320",1]]},
+        {"origin":"SKRG","destination":"KFLL","category":"departure","route":"SKRG01.VECHO3C.VECHO","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["jbu/a320",1],["nks/a320",1]]},
+        {"origin":"SKRG","destination":"","category":"departure","route":"SKRG01.VECHO3C.VECHO","altitude":"","speed":"","method":"random","rate":1.02,"airlines":[["ava/a318",2],["ava/a320",2],["aal/a319",1],["ava/a319",1]]},
+        {"origin":"SKRG","destination":"","category":"departure","route":"SKRG01.OTU2F.OTU","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["ava/a318",1],["ava/a320",1],["ava/a333",1],["ava/a332",1]]},
+        {"origin":"SKRG","destination":"","category":"departure","route":"SKRG01.JDN3A.JDN","altitude":"","speed":"","method":"random","rate":0.17,"airlines":[["ava/a319",1]]},
+        {"origin":"SKRG","destination":"","category":"departure","route":"SKRG01.FIGNA1D.FIGNA","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["ava/e190",1],["cmp/b737",1],["cmp/e190",1]]},
+        {"origin":"SKRG","destination":"","category":"departure","route":"SKRG01.VECHO3C.VECHO","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["hk/c172",6],["hk/p28a",5],["hk/c182",3],["hk/be36",2],["hk/da42",1],["hk/tb20",1],["hk/c208",2],["hk/pc12",2],["hk/be20",1],["hk/b350",1],["hk/p180",1],["hk/c510",1],["hk/e50p",1],["hk/c550",2],["hk/e55p",1],["hk/cl30",1],["hk/c680",1],["hk/h25b",1],["hk/lj45",1],["hk/f2th",1],["hk/glf4",1],["hk/glex",1],["hk/glf5",1]]},
+        {"origin":"SKRG","destination":"","category":"departure","route":"SKRG01.MQU2F.MQU","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["hk/c172",6],["hk/p28a",5],["hk/c182",3],["hk/be36",2],["hk/da42",1],["hk/tb20",1],["hk/c208",2],["hk/pc12",2],["hk/be20",1],["hk/b350",1],["hk/p180",1],["hk/c510",1],["hk/e50p",1],["hk/c550",2],["hk/e55p",1],["hk/cl30",1],["hk/c680",1],["hk/h25b",1],["hk/lj45",1],["hk/f2th",1],["hk/glf4",1],["hk/glex",1],["hk/glf5",1]]},
+        {"origin":"SKBO","destination":"SKRG","category":"arrival","route":"MQU..AHEVU..SKRG","altitude":[12000,15000],"speed":250,"method":"random","rate":1.19,"airlines":[["ava/a318",1],["ava/a319",1],["ava/a320",1],["cmp/a318",1],["cmp/a319",1],["cmp/a320",1],["cmp/b737",1]]},
+        {"origin":"KMIA","destination":"SKRG","category":"arrival","route":"VECHO..ACOWO..SKRG","altitude":[12000,15000],"speed":250,"method":"random","rate":1.02,"airlines":[["aal/b738",2],["aal/a319",1],["aal/a320",1],["ava/a319",1],["ava/a320",1]]},
+        {"origin":"SKCL","destination":"SKRG","category":"arrival","route":"JDN..NEZAV..SKRG","altitude":[12000,15000],"speed":250,"method":"random","rate":0.68,"airlines":[["ava/a318",1],["ava/a319",1],["ava/a320",1],["ava/at72",1]]},
+        {"origin":"SKBQ","destination":"SKRG","category":"arrival","route":"VECHO..ACOWO..SKRG","altitude":[12000,15000],"speed":250,"method":"random","rate":0.51,"airlines":[["ava/a318",1],["ava/a319",1],["ava/a320",1]]},
+        {"origin":"KFLL","destination":"SKRG","category":"arrival","route":"VECHO..ACOWO..SKRG","altitude":[12000,15000],"speed":250,"method":"random","rate":0.34,"airlines":[["jbu/a320",1],["nks/a320",1]]},
+        {"origin":"","destination":"SKRG","category":"arrival","route":"VECHO..ACOWO..SKRG","altitude":[12000,15000],"speed":250,"method":"random","rate":1.02,"airlines":[["ava/a318",2],["ava/a320",2],["aal/a319",1],["ava/a319",1]]},
+        {"origin":"","destination":"SKRG","category":"arrival","route":"OTU..UHIKU..SKRG","altitude":[12000,15000],"speed":250,"method":"random","rate":0.51,"airlines":[["ava/a318",1],["ava/a320",1],["ava/a333",1],["ava/a332",1]]},
+        {"origin":"","destination":"SKRG","category":"arrival","route":"JDN..NEZAV..SKRG","altitude":[12000,15000],"speed":250,"method":"random","rate":0.17,"airlines":[["ava/a319",1]]},
+        {"origin":"","destination":"SKRG","category":"arrival","route":"FIGNA..WACRA..SKRG","altitude":[12000,15000],"speed":250,"method":"random","rate":0.51,"airlines":[["ava/e190",1],["cmp/b737",1],["cmp/e190",1]]},
+        {"origin":"","destination":"SKRG","category":"arrival","route":"VECHO..ACOWO..SKRG","altitude":[12000,15000],"speed":250,"method":"random","rate":0.41,"airlines":[["hk/c172",6],["hk/p28a",5],["hk/c182",3],["hk/be36",2],["hk/da42",1],["hk/tb20",1],["hk/c208",2],["hk/pc12",2],["hk/be20",1],["hk/b350",1],["hk/p180",1],["hk/c510",1],["hk/e50p",1],["hk/c550",2],["hk/e55p",1],["hk/cl30",1],["hk/c680",1],["hk/h25b",1],["hk/lj45",1],["hk/f2th",1],["hk/glf4",1],["hk/glex",1],["hk/glf5",1]]},
+        {"origin":"","destination":"SKRG","category":"arrival","route":"MQU..AHEVU..SKRG","altitude":[12000,15000],"speed":250,"method":"random","rate":0.41,"airlines":[["hk/c172",6],["hk/p28a",5],["hk/c182",3],["hk/be36",2],["hk/da42",1],["hk/tb20",1],["hk/c208",2],["hk/pc12",2],["hk/be20",1],["hk/b350",1],["hk/p180",1],["hk/c510",1],["hk/e50p",1],["hk/c550",2],["hk/e55p",1],["hk/cl30",1],["hk/c680",1],["hk/h25b",1],["hk/lj45",1],["hk/f2th",1],["hk/glf4",1],["hk/glex",1],["hk/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [6.8704,-75.4424,6.4143,-75.4299],
+            [6.4143,-75.4299,6.1645,-75.4231],
+            [7.0199,-74.7098,6.3569,-75.2627],
+            [6.3569,-75.2627,6.1645,-75.4231],
+            [5.2072,-74.9242,5.9427,-75.3075],
+            [5.9427,-75.3075,6.1645,-75.4231],
+            [5.6042,-75.8111,5.9588,-75.5656],
+            [5.9588,-75.5656,6.1645,-75.4231],
+            [6.5569,-76.0136,6.3034,-75.632],
+            [6.3034,-75.632,6.1645,-75.4231]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [6.1493,-75.423,5.9827,-75.4219],
+            [6.0661,-75.4124,6.0659,-75.4325],
+            [5.9828,-75.4119,5.9827,-75.432],
+            [6.1804,-75.4232,6.3469,-75.4243],
+            [6.2636,-75.4338,6.2637,-75.4137],
+            [6.3469,-75.4344,6.347,-75.4143]
+        ]}
+    ]
+}

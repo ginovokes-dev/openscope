@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/UATE/",
+    "info": {"country":"KZ","city":"Aktau","type":"large_airport","longestRunwayM":3052,"frequencies":{"twr":"120.700"}},
+    "radio": {"twr":"Aktau Tower","app":"Aktau Approach","dep":"Aktau Departure"},
+    "icao": "UATE",
+    "iata": "SCO",
+    "magnetic_north": 7.8,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [43.860093,51.09086,"73ft"],
+    "rangeRings": {"enabled":true,"center":[43.860093,51.09086],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":290,"speed":7},
+    "arrivalRunway": "30",
+    "departureRunway": "30",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[44.3947,51.1924],[44.3575,51.3809],[44.2865,51.5495],[44.1863,51.687],[44.064,51.7837],[43.9277,51.8333],[43.7869,51.8323],[43.651,51.7807],[43.5294,51.6822],[43.4303,51.5433],[43.3605,51.3736],[43.3248,51.1847],[43.3255,50.9893],[43.3627,50.8009],[43.4337,50.6322],[43.5339,50.4948],[43.6562,50.398],[43.7925,50.3484],[43.9333,50.3494],[44.0692,50.401],[44.1908,50.4995],[44.2899,50.6384],[44.3597,50.8081],[44.3954,50.9971]]}
+    ],
+    "fixes": {
+        "UATE": [43.86009,51.09086],
+        "ULAMU": [44.52459,51.42223],
+        "HABUD": [44.09519,51.2081],
+        "IVUDI": [43.93625,52.0645],
+        "SAJCE": [43.88704,51.43533],
+        "HUJNA": [43.17252,50.86771],
+        "IDOBE": [43.61683,51.01191],
+        "SOLNE": [43.5442,50.21496],
+        "EVASE": [43.74833,50.78097],
+        "VEPTE": [44.43948,50.531],
+        "OBAFE": [44.06508,50.89278],
+        "_RWY1204DME": [43.90252,51.00034],
+        "_RWY3004DME": [43.81753,51.18355]
+    },
+    "runways": [
+        {"name":["12","30"],"end":[[43.8665,51.0781,"71ft"],[43.8536,51.1059,"53ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ULAMU3D": {"icao":"ULAMU3D","name":"Ulamu Three Delta","rwy":{"UATE12":["_RWY3004DME"],"UATE30":["_RWY1204DME"]},"body":[],"exitPoints":{"ULAMU":["ULAMU"]},"draw":[["UATE","ULAMU*"]]},
+        "IVUDI3B": {"icao":"IVUDI3B","name":"Ivudi Three Bravo","rwy":{"UATE12":["_RWY3004DME"],"UATE30":["_RWY1204DME"]},"body":[],"exitPoints":{"IVUDI":["IVUDI"]},"draw":[["UATE","IVUDI*"]]},
+        "HUJNA1F": {"icao":"HUJNA1F","name":"Hujna One Foxtrot","rwy":{"UATE12":["_RWY3004DME"],"UATE30":["_RWY1204DME"]},"body":[],"exitPoints":{"HUJNA":["HUJNA"]},"draw":[["UATE","HUJNA*"]]},
+        "SOLNE1F": {"icao":"SOLNE1F","name":"Solne One Foxtrot","rwy":{"UATE12":["_RWY3004DME"],"UATE30":["_RWY1204DME"]},"body":[],"exitPoints":{"SOLNE":["SOLNE"]},"draw":[["UATE","SOLNE*"]]},
+        "VEPTE3D": {"icao":"VEPTE3D","name":"Vepte Three Delta","rwy":{"UATE12":["_RWY3004DME"],"UATE30":["_RWY1204DME"]},"body":[],"exitPoints":{"VEPTE":["VEPTE"]},"draw":[["UATE","VEPTE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"UATE","destination":"UAAA","category":"departure","route":"UATE30.IVUDI3B.IVUDI","altitude":"","speed":"","method":"random","rate":1.02,"airlines":[["kzr/a320",1],["kzr/a321",1],["kzr/b752",1],["vsv/b735",1]]},
+        {"origin":"UATE","destination":"UBBB","category":"departure","route":"UATE30.HUJNA1F.HUJNA","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["ahy/e170",1],["ahy/e190",1],["vsv/crj7",1],["vsv/crj9",1],["vsv/crj2",1]]},
+        {"origin":"UATE","destination":"UACC","category":"departure","route":"UATE30.IVUDI3B.IVUDI","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["kzr/e190",1],["vsv/b735",1]]},
+        {"origin":"UATE","destination":"UATG","category":"departure","route":"UATE30.ULAMU3D.ULAMU","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["kzr/a320",1],["vsv/crj7",1],["vsv/crj9",1],["vsv/crj2",1]]},
+        {"origin":"UATE","destination":"UATT","category":"departure","route":"UATE30.ULAMU3D.ULAMU","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["vsv/b735",1],["vsv/crj7",1],["vsv/crj9",1],["vsv/crj2",1]]},
+        {"origin":"UATE","destination":"LTFM","category":"departure","route":"UATE30.SOLNE1F.SOLNE","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["kzr/a320",1]]},
+        {"origin":"UATE","destination":"","category":"departure","route":"UATE30.ULAMU3D.ULAMU","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["vsv/an24",1]]},
+        {"origin":"UATE","destination":"","category":"departure","route":"UATE30.IVUDI3B.IVUDI","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["vsv/an24",1],["vsv/b735",1]]},
+        {"origin":"UATE","destination":"","category":"departure","route":"UATE30.SOLNE1F.SOLNE","altitude":"","speed":"","method":"random","rate":1.27,"airlines":[["vsv/crj7",2],["vsv/crj9",2],["vsv/crj2",1]]},
+        {"origin":"UATE","destination":"","category":"departure","route":"UATE30.VEPTE3D.VEPTE","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["tso/b737",1],["vsv/b735",1],["vsv/crj7",1],["vsv/crj9",1],["vsv/crj2",1]]},
+        {"origin":"UATE","destination":"","category":"departure","route":"UATE30.HUJNA1F.HUJNA","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["up/c172",6],["up/p28a",5],["up/c182",3],["up/be36",2],["up/da42",1],["up/tb20",1],["up/c208",2],["up/pc12",2],["up/be20",1],["up/b350",1],["up/p180",1],["up/c510",1],["up/e50p",1],["up/c550",2],["up/e55p",1],["up/cl30",1],["up/c680",1],["up/h25b",1],["up/lj45",1],["up/f2th",1],["up/glf4",1],["up/glex",1],["up/glf5",1]]},
+        {"origin":"UATE","destination":"","category":"departure","route":"UATE30.ULAMU3D.ULAMU","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["up/c172",6],["up/p28a",5],["up/c182",3],["up/be36",2],["up/da42",1],["up/tb20",1],["up/c208",2],["up/pc12",2],["up/be20",1],["up/b350",1],["up/p180",1],["up/c510",1],["up/e50p",1],["up/c550",2],["up/e55p",1],["up/cl30",1],["up/c680",1],["up/h25b",1],["up/lj45",1],["up/f2th",1],["up/glf4",1],["up/glex",1],["up/glf5",1]]},
+        {"origin":"UAAA","destination":"UATE","category":"arrival","route":"IVUDI..SAJCE..UATE","altitude":[6000,9000],"speed":250,"method":"random","rate":1.02,"airlines":[["kzr/a320",1],["kzr/a321",1],["kzr/b752",1],["vsv/b735",1]]},
+        {"origin":"UBBB","destination":"UATE","category":"arrival","route":"HUJNA..IDOBE..UATE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.76,"airlines":[["ahy/e170",1],["ahy/e190",1],["vsv/crj7",1],["vsv/crj9",1],["vsv/crj2",1]]},
+        {"origin":"UACC","destination":"UATE","category":"arrival","route":"IVUDI..SAJCE..UATE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["kzr/e190",1],["vsv/b735",1]]},
+        {"origin":"UATG","destination":"UATE","category":"arrival","route":"ULAMU..HABUD..UATE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["kzr/a320",1],["vsv/crj7",1],["vsv/crj9",1],["vsv/crj2",1]]},
+        {"origin":"UATT","destination":"UATE","category":"arrival","route":"ULAMU..HABUD..UATE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["vsv/b735",1],["vsv/crj7",1],["vsv/crj9",1],["vsv/crj2",1]]},
+        {"origin":"LTFM","destination":"UATE","category":"arrival","route":"SOLNE..EVASE..UATE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.25,"airlines":[["kzr/a320",1]]},
+        {"origin":"","destination":"UATE","category":"arrival","route":"ULAMU..HABUD..UATE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.25,"airlines":[["vsv/an24",1]]},
+        {"origin":"","destination":"UATE","category":"arrival","route":"IVUDI..SAJCE..UATE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["vsv/an24",1],["vsv/b735",1]]},
+        {"origin":"","destination":"UATE","category":"arrival","route":"SOLNE..EVASE..UATE","altitude":[6000,9000],"speed":250,"method":"random","rate":1.27,"airlines":[["vsv/crj7",2],["vsv/crj9",2],["vsv/crj2",1]]},
+        {"origin":"","destination":"UATE","category":"arrival","route":"VEPTE..OBAFE..UATE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.76,"airlines":[["tso/b737",1],["vsv/b735",1],["vsv/crj7",1],["vsv/crj9",1],["vsv/crj2",1]]},
+        {"origin":"","destination":"UATE","category":"arrival","route":"HUJNA..IDOBE..UATE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["up/c172",6],["up/p28a",5],["up/c182",3],["up/be36",2],["up/da42",1],["up/tb20",1],["up/c208",2],["up/pc12",2],["up/be20",1],["up/b350",1],["up/p180",1],["up/c510",1],["up/e50p",1],["up/c550",2],["up/e55p",1],["up/cl30",1],["up/c680",1],["up/h25b",1],["up/lj45",1],["up/f2th",1],["up/glf4",1],["up/glex",1],["up/glf5",1]]},
+        {"origin":"","destination":"UATE","category":"arrival","route":"ULAMU..HABUD..UATE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["up/c172",6],["up/p28a",5],["up/c182",3],["up/be36",2],["up/da42",1],["up/tb20",1],["up/c208",2],["up/pc12",2],["up/be20",1],["up/b350",1],["up/p180",1],["up/c510",1],["up/e50p",1],["up/c550",2],["up/e55p",1],["up/cl30",1],["up/c680",1],["up/h25b",1],["up/lj45",1],["up/f2th",1],["up/glf4",1],["up/glex",1],["up/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [44.5246,51.4222,44.0952,51.2081],
+            [44.0952,51.2081,43.8601,51.0909],
+            [43.9362,52.0645,43.887,51.4353],
+            [43.887,51.4353,43.8601,51.0909],
+            [43.1725,50.8677,43.6168,51.0119],
+            [43.6168,51.0119,43.8601,51.0909],
+            [43.5442,50.215,43.7483,50.781],
+            [43.7483,50.781,43.8601,51.0909],
+            [44.4395,50.531,44.0651,50.8928],
+            [44.0651,50.8928,43.8601,51.0909]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [43.8665,51.0781,43.9564,50.8835],
+            [43.9031,50.9734,43.9199,50.9884],
+            [43.948,50.876,43.9649,50.891],
+            [43.8536,51.1059,43.7633,51.2999],
+            [43.8169,51.2104,43.8001,51.1955],
+            [43.7717,51.3073,43.7549,51.2924]
+        ]}
+    ]
+}

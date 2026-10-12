@@ -1,0 +1,88 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VOCB/",
+    "info": {"country":"IN","city":"Coimbatore","type":"large_airport","longestRunwayM":2594,"frequencies":{"atis":"128.050","twr":"118.150","app":"120.050"}},
+    "radio": {"twr":"Coimbatore Tower","app":"Coimbatore Approach","dep":"Coimbatore Departure"},
+    "icao": "VOCB",
+    "iata": "CJB",
+    "magnetic_north": -1.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 9000,
+    "initial_alt": 5000,
+    "position": [11.03,77.043404,"1324ft"],
+    "rangeRings": {"enabled":true,"center":[11.03,77.043404],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":60,"speed":12},
+    "arrivalRunway": "05",
+    "departureRunway": "05",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":90,"airspace_class":"D","poly":[[11.4346,77.0333],[11.4233,77.1404],[11.3853,77.2408],[11.3231,77.3277],[11.2408,77.3953],[11.1443,77.4389],[11.0399,77.4556],[10.9348,77.4442],[10.8363,77.4054],[10.7509,77.342],[10.6846,77.2582],[10.6418,77.1598],[10.6254,77.0535],[10.6367,76.9465],[10.6747,76.846],[10.7369,76.7591],[10.8192,76.6915],[10.9157,76.6479],[11.0201,76.6312],[11.1252,76.6427],[11.2237,76.6814],[11.3091,76.7448],[11.3754,76.8286],[11.4182,76.927]]}
+    ],
+    "fixes": {
+        "VOCB": [11.03,77.0434],
+        "ELAVO": [11.55605,77.15801],
+        "ECURE": [11.22545,77.08598],
+        "DAHBA": [11.32282,77.50315],
+        "BIRSI": [11.1388,77.21422],
+        "ZAWIG": [10.86362,77.56459],
+        "EDOLU": [10.96818,77.23705],
+        "OFIPU": [11.08411,76.49812],
+        "PUVKU": [11.0501,76.84081],
+        "JIKAT": [11.46791,76.7251],
+        "FELHA": [11.1927,76.92514],
+        "_RWY0504DME": [10.97535,76.98635],
+        "_RWY2304DME": [11.08474,77.10047]
+    },
+    "runways": [
+        {"name":["05","23"],"end":[[11.0219,77.0349,"1323ft"],[11.0382,77.0519,"1275ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ELAVO2A": {"icao":"ELAVO2A","name":"Elavo Two Alpha","rwy":{"VOCB05":["_RWY2304DME"],"VOCB23":["_RWY0504DME"]},"body":[],"exitPoints":{"ELAVO":["ELAVO"]},"draw":[["VOCB","ELAVO*"]]},
+        "DAHBA3F": {"icao":"DAHBA3F","name":"Dahba Three Foxtrot","rwy":{"VOCB05":["_RWY2304DME"],"VOCB23":["_RWY0504DME"]},"body":[],"exitPoints":{"DAHBA":["DAHBA"]},"draw":[["VOCB","DAHBA*"]]},
+        "ZAWIG1F": {"icao":"ZAWIG1F","name":"Zawig One Foxtrot","rwy":{"VOCB05":["_RWY2304DME"],"VOCB23":["_RWY0504DME"]},"body":[],"exitPoints":{"ZAWIG":["ZAWIG"]},"draw":[["VOCB","ZAWIG*"]]},
+        "OFIPU3F": {"icao":"OFIPU3F","name":"Ofipu Three Foxtrot","rwy":{"VOCB05":["_RWY2304DME"],"VOCB23":["_RWY0504DME"]},"body":[],"exitPoints":{"OFIPU":["OFIPU"]},"draw":[["VOCB","OFIPU*"]]},
+        "JIKAT3A": {"icao":"JIKAT3A","name":"Jikat Three Alpha","rwy":{"VOCB05":["_RWY2304DME"],"VOCB23":["_RWY0504DME"]},"body":[],"exitPoints":{"JIKAT":["JIKAT"]},"draw":[["VOCB","JIKAT*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"VOCB","destination":"VABB","category":"departure","route":"VOCB05.JIKAT3A.JIKAT","altitude":"","speed":"","method":"random","rate":1.08,"airlines":[["aic/a321",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VOCB","destination":"VOMM","category":"departure","route":"VOCB05.DAHBA3F.DAHBA","altitude":"","speed":"","method":"random","rate":1.08,"airlines":[["igo/a320",1],["sej/b737",1],["sej/dh8d",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"VOCB","destination":"OMSJ","category":"departure","route":"VOCB05.JIKAT3A.JIKAT","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["aby/a320",1]]},
+        {"origin":"VOCB","destination":"VIDP","category":"departure","route":"VOCB05.ELAVO2A.ELAVO","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["igo/a320",1]]},
+        {"origin":"VOCB","destination":"VOCL","category":"departure","route":"VOCB05.OFIPU3F.OFIPU","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["aic/a321",1]]},
+        {"origin":"VOCB","destination":"","category":"departure","route":"VOCB05.ELAVO2A.ELAVO","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["sej/dh8d",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"VOCB","destination":"","category":"departure","route":"VOCB05.ZAWIG1F.ZAWIG","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["slk/a320",1]]},
+        {"origin":"VOCB","destination":"","category":"departure","route":"VOCB05.ZAWIG1F.ZAWIG","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"VABB","destination":"VOCB","category":"arrival","route":"JIKAT..FELHA..VOCB","altitude":[5000,8000],"speed":250,"method":"random","rate":1.08,"airlines":[["aic/a321",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VOMM","destination":"VOCB","category":"arrival","route":"DAHBA..BIRSI..VOCB","altitude":[5000,8000],"speed":250,"method":"random","rate":1.08,"airlines":[["igo/a320",1],["sej/b737",1],["sej/dh8d",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"OMSJ","destination":"VOCB","category":"arrival","route":"JIKAT..FELHA..VOCB","altitude":[5000,8000],"speed":250,"method":"random","rate":0.36,"airlines":[["aby/a320",1]]},
+        {"origin":"VIDP","destination":"VOCB","category":"arrival","route":"ELAVO..ECURE..VOCB","altitude":[5000,8000],"speed":250,"method":"random","rate":0.36,"airlines":[["igo/a320",1]]},
+        {"origin":"VOCL","destination":"VOCB","category":"arrival","route":"OFIPU..PUVKU..VOCB","altitude":[5000,8000],"speed":250,"method":"random","rate":0.36,"airlines":[["aic/a321",1]]},
+        {"origin":"","destination":"VOCB","category":"arrival","route":"ELAVO..ECURE..VOCB","altitude":[5000,8000],"speed":250,"method":"random","rate":0.36,"airlines":[["sej/dh8d",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"","destination":"VOCB","category":"arrival","route":"ZAWIG..EDOLU..VOCB","altitude":[5000,8000],"speed":250,"method":"random","rate":0.36,"airlines":[["slk/a320",1]]},
+        {"origin":"","destination":"VOCB","category":"arrival","route":"ZAWIG..EDOLU..VOCB","altitude":[5000,8000],"speed":250,"method":"random","rate":1.32,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [11.556,77.158,11.2254,77.086],
+            [11.2254,77.086,11.03,77.0434],
+            [11.3228,77.5032,11.1388,77.2142],
+            [11.1388,77.2142,11.03,77.0434],
+            [10.8636,77.5646,10.9682,77.237],
+            [10.9682,77.237,11.03,77.0434],
+            [11.0841,76.4981,11.0501,76.8408],
+            [11.0501,76.8408,11.03,77.0434],
+            [11.4679,76.7251,11.1927,76.9251],
+            [11.1927,76.9251,11.03,77.0434]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [11.0219,77.0349,10.9055,76.9135],
+            [10.9566,76.9813,10.9709,76.9671],
+            [10.8984,76.9207,10.9127,76.9064],
+            [11.0382,77.0519,11.1545,77.1734],
+            [11.1035,77.1055,11.0892,77.1197],
+            [11.1617,77.1662,11.1474,77.1805]
+        ]}
+    ]
+}

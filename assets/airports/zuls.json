@@ -1,0 +1,99 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ZULS/",
+    "info": {"country":"CN","city":"Shannan","type":"large_airport","longestRunwayM":4000,"frequencies":{"twr":"118.250","gnd":"121.650"},"approximateRunways":true},
+    "radio": {"twr":"Lhasa Gonggar Tower","app":"Lhasa Gonggar Approach","dep":"Lhasa Gonggar Departure"},
+    "icao": "ZULS",
+    "iata": "LXA",
+    "magnetic_north": -0.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 19000,
+    "initial_alt": 15000,
+    "position": [29.298001,90.911951,"11713ft"],
+    "rangeRings": {"enabled":true,"center":[29.298001,90.911951],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":100,"speed":12},
+    "arrivalRunway": "10L",
+    "departureRunway": "10L",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":190,"airspace_class":"D","poly":[[29.7027,90.9111],[29.6891,91.0313],[29.6488,91.1433],[29.5847,91.2395],[29.501,91.3134],[29.4034,91.36],[29.2987,91.376],[29.1939,91.3604],[29.0963,91.3142],[29.0123,91.2407],[28.9479,91.1447],[28.9073,91.0328],[28.8933,90.9128],[28.9069,90.7926],[28.9472,90.6806],[29.0113,90.5844],[29.095,90.5105],[29.1926,90.4639],[29.2973,90.4479],[29.4021,90.4635],[29.4997,90.5097],[29.5837,90.5832],[29.6481,90.6792],[29.6887,90.7911]]}
+    ],
+    "fixes": {
+        "ZULS": [29.298,90.91195],
+        "DM": [29.2583,91.765,"zedang"],
+        "FODKI": [29.28735,91.14081],
+        "ELAJU": [28.77971,91.07713],
+        "UCAWE": [29.10544,90.97332],
+        "TEPKO": [29.14227,90.32152],
+        "VUGVO": [29.24014,90.69258],
+        "ACUMO": [29.81629,90.74677],
+        "NOBUW": [29.49057,90.85058],
+        "_RWY10L04DME": [29.31251,90.81636],
+        "_RWY28R04DME": [29.28344,91.00751],
+        "_RWY0904DME": [29.29782,90.81493],
+        "_RWY2704DME": [29.29814,91.00897],
+        "_RWY10R04DME": [29.29661,90.8153],
+        "_RWY28L04DME": [29.29948,91.00921]
+    },
+    "runways": [
+        {"name":["10L","28R"],"end":[[29.30109,90.89163,"11713ft"],[29.29491,90.93227,"11713ft"]],"ils":[true,true]},
+        {"name":["09","27"],"end":[[29.29797,90.89133,"11713ft"],[29.29803,90.93258,"11713ft"]],"ils":[true,true]},
+        {"name":["10R","28L"],"end":[[29.29776,90.89169,"11712ft"],[29.29837,90.93283,"11704ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "DM3D": {"icao":"DM3D","name":"Zedang Three Delta","rwy":{"ZULS10L":["_RWY28R04DME"],"ZULS28R":["_RWY10L04DME"],"ZULS09":["_RWY2704DME"],"ZULS27":["_RWY0904DME"],"ZULS10R":["_RWY28L04DME"],"ZULS28L":["_RWY10R04DME"]},"body":[],"exitPoints":{"DM":["DM"]},"draw":[["ZULS","DM*"]]},
+        "ELAJU1F": {"icao":"ELAJU1F","name":"Elaju One Foxtrot","rwy":{"ZULS10L":["_RWY28R04DME"],"ZULS28R":["_RWY10L04DME"],"ZULS09":["_RWY2704DME"],"ZULS27":["_RWY0904DME"],"ZULS10R":["_RWY28L04DME"],"ZULS28L":["_RWY10R04DME"]},"body":[],"exitPoints":{"ELAJU":["ELAJU"]},"draw":[["ZULS","ELAJU*"]]},
+        "TEPKO1B": {"icao":"TEPKO1B","name":"Tepko One Bravo","rwy":{"ZULS10L":["_RWY28R04DME"],"ZULS28R":["_RWY10L04DME"],"ZULS09":["_RWY2704DME"],"ZULS27":["_RWY0904DME"],"ZULS10R":["_RWY28L04DME"],"ZULS28L":["_RWY10R04DME"]},"body":[],"exitPoints":{"TEPKO":["TEPKO"]},"draw":[["ZULS","TEPKO*"]]},
+        "ACUMO1F": {"icao":"ACUMO1F","name":"Acumo One Foxtrot","rwy":{"ZULS10L":["_RWY28R04DME"],"ZULS28R":["_RWY10L04DME"],"ZULS09":["_RWY2704DME"],"ZULS27":["_RWY0904DME"],"ZULS10R":["_RWY28L04DME"],"ZULS28L":["_RWY10R04DME"]},"body":[],"exitPoints":{"ACUMO":["ACUMO"]},"draw":[["ZULS","ACUMO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ZULS","destination":"ZUUU","category":"departure","route":"ZULS10L.DM3D.DM","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["cca/a319",1],["ces/a319",1],["csc/a319",1],["csz/a319",1],["cca/a333",1],["csc/a333",1],["csz/a333",1],["cca/a332",1],["csc/a332",1],["csz/a332",1]]},
+        {"origin":"ZULS","destination":"ZUCK","category":"departure","route":"ZULS10L.DM3D.DM","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["cca/a319",1],["chb/a319",1],["chb/a320",1],["csc/a319",1],["csn/a319",1],["cxa/b737",1]]},
+        {"origin":"ZULS","destination":"ZLXY","category":"departure","route":"ZULS10L.DM3D.DM","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["ces/a319",1],["csc/a319",1],["csn/a319",1]]},
+        {"origin":"ZULS","destination":"VNKT","category":"departure","route":"ZULS10L.TEPKO1B.TEPKO","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["cca/a319",1],["cca/a333",1],["cca/a332",1]]},
+        {"origin":"ZULS","destination":"ZBAA","category":"departure","route":"ZULS10L.DM3D.DM","altitude":"","speed":"","method":"random","rate":0.19,"airlines":[["cca/a319",1]]},
+        {"origin":"ZULS","destination":"","category":"departure","route":"ZULS10L.DM3D.DM","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["ces/b737",2],["csc/a319",2]]},
+        {"origin":"ZULS","destination":"","category":"departure","route":"ZULS10L.TEPKO1B.TEPKO","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",1],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
+        {"origin":"ZUUU","destination":"ZULS","category":"arrival","route":"DM..FODKI..ZULS","altitude":[15000,18000],"speed":250,"method":"random","rate":1.32,"airlines":[["cca/a319",1],["ces/a319",1],["csc/a319",1],["csz/a319",1],["cca/a333",1],["csc/a333",1],["csz/a333",1],["cca/a332",1],["csc/a332",1],["csz/a332",1]]},
+        {"origin":"ZUCK","destination":"ZULS","category":"arrival","route":"DM..FODKI..ZULS","altitude":[15000,18000],"speed":250,"method":"random","rate":1.13,"airlines":[["cca/a319",1],["chb/a319",1],["chb/a320",1],["csc/a319",1],["csn/a319",1],["cxa/b737",1]]},
+        {"origin":"ZLXY","destination":"ZULS","category":"arrival","route":"DM..FODKI..ZULS","altitude":[15000,18000],"speed":250,"method":"random","rate":0.57,"airlines":[["ces/a319",1],["csc/a319",1],["csn/a319",1]]},
+        {"origin":"VNKT","destination":"ZULS","category":"arrival","route":"TEPKO..VUGVO..ZULS","altitude":[15000,18000],"speed":250,"method":"random","rate":0.38,"airlines":[["cca/a319",1],["cca/a333",1],["cca/a332",1]]},
+        {"origin":"ZBAA","destination":"ZULS","category":"arrival","route":"DM..FODKI..ZULS","altitude":[15000,18000],"speed":250,"method":"random","rate":0.19,"airlines":[["cca/a319",1]]},
+        {"origin":"","destination":"ZULS","category":"arrival","route":"DM..FODKI..ZULS","altitude":[15000,18000],"speed":250,"method":"random","rate":0.75,"airlines":[["ces/b737",2],["csc/a319",2]]},
+        {"origin":"","destination":"ZULS","category":"arrival","route":"TEPKO..VUGVO..ZULS","altitude":[15000,18000],"speed":250,"method":"random","rate":1.45,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",1],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [29.2583,91.765,29.2874,91.1408],
+            [29.2874,91.1408,29.298,90.912],
+            [28.7797,91.0771,29.1054,90.9733],
+            [29.1054,90.9733,29.298,90.912],
+            [29.1423,90.3215,29.2401,90.6926],
+            [29.2401,90.6926,29.298,90.912],
+            [29.8163,90.7468,29.4906,90.8506],
+            [29.4906,90.8506,29.298,90.912]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [29.3011,90.8916,29.3296,90.7034],
+            [29.3055,90.7956,29.3252,90.7995],
+            [29.3197,90.7015,29.3394,90.7054],
+            [29.2949,90.9323,29.2662,91.1204],
+            [29.2904,91.0283,29.2707,91.0244],
+            [29.276,91.1223,29.2563,91.1184],
+            [29.298,90.8913,29.2975,90.7003],
+            [29.2878,90.7959,29.3078,90.7958],
+            [29.2875,90.7004,29.3075,90.7003],
+            [29.298,90.9326,29.2982,91.1236],
+            [29.3082,91.028,29.2882,91.0281],
+            [29.3082,91.1235,29.2882,91.1236],
+            [29.2978,90.8917,29.2948,90.7007],
+            [29.2863,90.7964,29.3063,90.796],
+            [29.2848,90.7009,29.3048,90.7005],
+            [29.2984,90.9328,29.3011,91.1238],
+            [29.3097,91.0281,29.2898,91.0285],
+            [29.3111,91.1236,29.2911,91.124]
+        ]}
+    ]
+}

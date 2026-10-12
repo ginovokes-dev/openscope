@@ -1,0 +1,88 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SBFL/",
+    "info": {"country":"BR","city":"Florianopolis","type":"large_airport","longestRunwayM":2400,"frequencies":{"atis":"127.450","twr":"118.700","app":"119.650","gnd":"121.700"}},
+    "radio": {"twr":"Hercilio Luz Tower","app":"Hercilio Luz Approach","dep":"Hercilio Luz Departure"},
+    "icao": "SBFL",
+    "iata": "FLN",
+    "magnetic_north": -20,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-27.670279,-48.552502,"16ft"],
+    "rangeRings": {"enabled":true,"center":[-27.670279,-48.552502],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":130,"speed":5},
+    "arrivalRunway": "14",
+    "departureRunway": "14",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-27.29,-48.7088],[-27.2671,-48.5923],[-27.2717,-48.4732],[-27.3035,-48.3594],[-27.3603,-48.2588],[-27.4382,-48.1782],[-27.5319,-48.1231],[-27.635,-48.0973],[-27.7406,-48.1025],[-27.8413,-48.1384],[-27.9304,-48.2025],[-28.0018,-48.2904],[-28.0506,-48.3962],[-28.0734,-48.5127],[-28.0688,-48.6319],[-28.0371,-48.7456],[-27.9803,-48.8462],[-27.9024,-48.9268],[-27.8087,-48.9819],[-27.7056,-49.0077],[-27.6,-49.0025],[-27.4992,-48.9666],[-27.4101,-48.9025],[-27.3388,-48.8146]]}
+    ],
+    "fixes": {
+        "SBFL": [-27.67028,-48.5525],
+        "NVG": [-26.8757,-48.6528,"navegantes"],
+        "OCUTE": [-27.47165,-48.57757],
+        "ENUVU": [-27.95729,-48.03878],
+        "TUJID": [-27.77692,-48.36163],
+        "AJUKO": [-28.04337,-48.99008],
+        "TEWHI": [-27.8089,-48.71508],
+        "HOTIJ": [-27.60079,-49.15482],
+        "AJAPO": [-27.64446,-48.77629],
+        "_RWY1404DME": [-27.63106,-48.61544],
+        "_RWY3204DME": [-27.71157,-48.46612],
+        "_RWY0304DME": [-27.74048,-48.56962],
+        "_RWY2104DME": [-27.59952,-48.53623]
+    },
+    "runways": [
+        {"name":["14","32"],"end":[[-27.66572,-48.55121,"17ft"],[-27.67694,-48.5304,"17ft"]],"ils":[true,true]},
+        {"name":["03","21"],"end":[[-27.67528,-48.55417,"16ft"],[-27.66472,-48.55167,"16ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "NVG2C": {"icao":"NVG2C","name":"Navegantes Two Charlie","rwy":{"SBFL14":["_RWY3204DME"],"SBFL32":["_RWY1404DME"],"SBFL03":["_RWY2104DME"],"SBFL21":["_RWY0304DME"]},"body":[],"exitPoints":{"NVG":["NVG"]},"draw":[["SBFL","NVG*"]]},
+        "ENUVU1D": {"icao":"ENUVU1D","name":"Enuvu One Delta","rwy":{"SBFL14":["_RWY3204DME"],"SBFL32":["_RWY1404DME"],"SBFL03":["_RWY2104DME"],"SBFL21":["_RWY0304DME"]},"body":[],"exitPoints":{"ENUVU":["ENUVU"]},"draw":[["SBFL","ENUVU*"]]},
+        "AJUKO3A": {"icao":"AJUKO3A","name":"Ajuko Three Alpha","rwy":{"SBFL14":["_RWY3204DME"],"SBFL32":["_RWY1404DME"],"SBFL03":["_RWY2104DME"],"SBFL21":["_RWY0304DME"]},"body":[],"exitPoints":{"AJUKO":["AJUKO"]},"draw":[["SBFL","AJUKO*"]]},
+        "HOTIJ2A": {"icao":"HOTIJ2A","name":"Hotij Two Alpha","rwy":{"SBFL14":["_RWY3204DME"],"SBFL32":["_RWY1404DME"],"SBFL03":["_RWY2104DME"],"SBFL21":["_RWY0304DME"]},"body":[],"exitPoints":{"HOTIJ":["HOTIJ"]},"draw":[["SBFL","HOTIJ*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SBFL","destination":"SBSP","category":"departure","route":"SBFL14.NVG2C.NVG","altitude":"","speed":"","method":"random","rate":1,"airlines":[["glo/b737",1],["glo/b738",1],["one/a318",1],["one/a319",1],["tam/a319",1],["tam/a320",1]]},
+        {"origin":"SBFL","destination":"SBGR","category":"departure","route":"SBFL14.NVG2C.NVG","altitude":"","speed":"","method":"random","rate":0.83,"airlines":[["glo/b737",1],["glo/b738",1],["one/a318",1],["one/a320",1],["tam/a320",1]]},
+        {"origin":"SBFL","destination":"SBGL","category":"departure","route":"SBFL14.NVG2C.NVG","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["glo/b737",1],["glo/b738",1],["one/a318",1],["tam/a320",1]]},
+        {"origin":"SBFL","destination":"SBPA","category":"departure","route":"SBFL14.AJUKO3A.AJUKO","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["glo/b737",1],["glo/b738",1],["one/a320",1]]},
+        {"origin":"SBFL","destination":"SBBR","category":"departure","route":"SBFL14.NVG2C.NVG","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["one/a318",1],["tam/a320",1]]},
+        {"origin":"SBFL","destination":"","category":"departure","route":"SBFL14.NVG2C.NVG","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["azu/e190",2]]},
+        {"origin":"SBFL","destination":"","category":"departure","route":"SBFL14.AJUKO3A.AJUKO","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["arg/b737",1],["glo/b738",1]]},
+        {"origin":"SBFL","destination":"","category":"departure","route":"SBFL14.HOTIJ2A.HOTIJ","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["glo/b737",1],["one/a318",1]]},
+        {"origin":"SBFL","destination":"","category":"departure","route":"SBFL14.NVG2C.NVG","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"SBSP","destination":"SBFL","category":"arrival","route":"NVG..OCUTE..SBFL","altitude":[4000,7000],"speed":250,"method":"random","rate":1,"airlines":[["glo/b737",1],["glo/b738",1],["one/a318",1],["one/a319",1],["tam/a319",1],["tam/a320",1]]},
+        {"origin":"SBGR","destination":"SBFL","category":"arrival","route":"NVG..OCUTE..SBFL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.83,"airlines":[["glo/b737",1],["glo/b738",1],["one/a318",1],["one/a320",1],["tam/a320",1]]},
+        {"origin":"SBGL","destination":"SBFL","category":"arrival","route":"NVG..OCUTE..SBFL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.67,"airlines":[["glo/b737",1],["glo/b738",1],["one/a318",1],["tam/a320",1]]},
+        {"origin":"SBPA","destination":"SBFL","category":"arrival","route":"AJUKO..TEWHI..SBFL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.5,"airlines":[["glo/b737",1],["glo/b738",1],["one/a320",1]]},
+        {"origin":"SBBR","destination":"SBFL","category":"arrival","route":"NVG..OCUTE..SBFL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.33,"airlines":[["one/a318",1],["tam/a320",1]]},
+        {"origin":"","destination":"SBFL","category":"arrival","route":"NVG..OCUTE..SBFL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.33,"airlines":[["azu/e190",2]]},
+        {"origin":"","destination":"SBFL","category":"arrival","route":"AJUKO..TEWHI..SBFL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.33,"airlines":[["arg/b737",1],["glo/b738",1]]},
+        {"origin":"","destination":"SBFL","category":"arrival","route":"HOTIJ..AJAPO..SBFL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.33,"airlines":[["glo/b737",1],["one/a318",1]]},
+        {"origin":"","destination":"SBFL","category":"arrival","route":"NVG..OCUTE..SBFL","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-26.8757,-48.6528,-27.4717,-48.5776],
+            [-27.4717,-48.5776,-27.6703,-48.5525],
+            [-27.9573,-48.0388,-27.7769,-48.3616],
+            [-27.7769,-48.3616,-27.6703,-48.5525],
+            [-28.0434,-48.9901,-27.8089,-48.7151],
+            [-27.8089,-48.7151,-27.6703,-48.5525],
+            [-27.6008,-49.1548,-27.6445,-48.7763],
+            [-27.6445,-48.7763,-27.6703,-48.5525]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-27.6657,-48.5512,-27.579,-48.7117],
+            [-27.6309,-48.6374,-27.6139,-48.6256],
+            [-27.5875,-48.7176,-27.5705,-48.7058],
+            [-27.6769,-48.5304,-27.7635,-48.3696],
+            [-27.7117,-48.4442,-27.7288,-48.4559],
+            [-27.7549,-48.3638,-27.772,-48.3755]
+        ]}
+    ]
+}

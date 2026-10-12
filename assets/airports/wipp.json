@@ -1,0 +1,79 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/WIPP/",
+    "info": {"country":"ID","city":"Palembang","type":"medium_airport","longestRunwayM":2500,"frequencies":{"atis":"127.200","twr":"118.100","app":"119.200"}},
+    "radio": {"twr":"Palembang Tower","app":"Palembang Approach","dep":"Palembang Departure"},
+    "icao": "WIPP",
+    "iata": "PLM",
+    "magnetic_north": 0.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-2.897653,104.698147,"49ft"],
+    "rangeRings": {"enabled":true,"center":[-2.897653,104.698147],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":110,"speed":11},
+    "arrivalRunway": "11",
+    "departureRunway": "11",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-2.493,104.701],[-2.5075,104.8058],[-2.5486,104.9032],[-2.6135,104.9867],[-2.6978,105.0505],[-2.7956,105.0903],[-2.9005,105.1033],[-3.0051,105.0888],[-3.1024,105.0476],[-3.1858,104.9827],[-3.2495,104.8983],[-3.2893,104.8003],[-3.3023,104.6953],[-3.2878,104.5905],[-3.2467,104.4931],[-3.1818,104.4096],[-3.0975,104.3458],[-2.9997,104.306],[-2.8948,104.2929],[-2.7902,104.3075],[-2.6929,104.3486],[-2.6095,104.4136],[-2.5458,104.498],[-2.506,104.596]]}
+    ],
+    "fixes": {
+        "WIPP": [-2.89765,104.69815],
+        "WEDIC": [-2.64362,105.17293],
+        "CONET": [-2.80327,104.87455],
+        "HECPI": [-3.32333,105.02747],
+        "EMULU": [-3.05581,104.8205],
+        "WOBAC": [-3.15169,104.22336],
+        "BIZRE": [-2.99204,104.52175],
+        "ACAVU": [-2.38802,104.52574],
+        "PODWU": [-2.7083,104.63409],
+        "_RWY1104DME": [-2.86711,104.62892],
+        "_RWY2904DME": [-2.92939,104.77109]
+    },
+    "runways": [
+        {"name":["11","29"],"end":[[-2.89387,104.69,"49ft"],[-2.90263,104.71,"39ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "WEDIC3B": {"icao":"WEDIC3B","name":"Wedic Three Bravo","rwy":{"WIPP11":["_RWY2904DME"],"WIPP29":["_RWY1104DME"]},"body":[],"exitPoints":{"WEDIC":["WEDIC"]},"draw":[["WIPP","WEDIC*"]]},
+        "HECPI3A": {"icao":"HECPI3A","name":"Hecpi Three Alpha","rwy":{"WIPP11":["_RWY2904DME"],"WIPP29":["_RWY1104DME"]},"body":[],"exitPoints":{"HECPI":["HECPI"]},"draw":[["WIPP","HECPI*"]]},
+        "WOBAC1C": {"icao":"WOBAC1C","name":"Wobac One Charlie","rwy":{"WIPP11":["_RWY2904DME"],"WIPP29":["_RWY1104DME"]},"body":[],"exitPoints":{"WOBAC":["WOBAC"]},"draw":[["WIPP","WOBAC*"]]},
+        "ACAVU1D": {"icao":"ACAVU1D","name":"Acavu One Delta","rwy":{"WIPP11":["_RWY2904DME"],"WIPP29":["_RWY1104DME"]},"body":[],"exitPoints":{"ACAVU":["ACAVU"]},"draw":[["WIPP","ACAVU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"WIPP","destination":"WIII","category":"departure","route":"WIPP11.HECPI3A.HECPI","altitude":"","speed":"","method":"random","rate":1.51,"airlines":[["gia/b738",1],["lni/b738",1],["sjy/b733",1]]},
+        {"origin":"WIPP","destination":"WADD","category":"departure","route":"WIPP11.HECPI3A.HECPI","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["gia/crjx",1]]},
+        {"origin":"WIPP","destination":"WAHH","category":"departure","route":"WIPP11.HECPI3A.HECPI","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["mdl/a320",1]]},
+        {"origin":"WIPP","destination":"WMKK","category":"departure","route":"WIPP11.ACAVU1D.ACAVU","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["axm/a320",1]]},
+        {"origin":"WIPP","destination":"","category":"departure","route":"WIPP11.ACAVU1D.ACAVU","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["slk/a319",1]]},
+        {"origin":"WIPP","destination":"","category":"departure","route":"WIPP11.ACAVU1D.ACAVU","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",1],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]},
+        {"origin":"WIII","destination":"WIPP","category":"arrival","route":"HECPI..EMULU..WIPP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.51,"airlines":[["gia/b738",1],["lni/b738",1],["sjy/b733",1]]},
+        {"origin":"WADD","destination":"WIPP","category":"arrival","route":"HECPI..EMULU..WIPP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.5,"airlines":[["gia/crjx",1]]},
+        {"origin":"WAHH","destination":"WIPP","category":"arrival","route":"HECPI..EMULU..WIPP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.5,"airlines":[["mdl/a320",1]]},
+        {"origin":"WMKK","destination":"WIPP","category":"arrival","route":"ACAVU..PODWU..WIPP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.5,"airlines":[["axm/a320",1]]},
+        {"origin":"","destination":"WIPP","category":"arrival","route":"ACAVU..PODWU..WIPP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.5,"airlines":[["slk/a319",1]]},
+        {"origin":"","destination":"WIPP","category":"arrival","route":"ACAVU..PODWU..WIPP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.17,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",1],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-2.6436,105.1729,-2.8033,104.8745],
+            [-2.8033,104.8745,-2.8977,104.6981],
+            [-3.3233,105.0275,-3.0558,104.8205],
+            [-3.0558,104.8205,-2.8977,104.6981],
+            [-3.1517,104.2234,-2.992,104.5217],
+            [-2.992,104.5217,-2.8977,104.6981],
+            [-2.388,104.5257,-2.7083,104.6341],
+            [-2.7083,104.6341,-2.8977,104.6981]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-2.8939,104.69,-2.827,104.5373],
+            [-2.8696,104.6096,-2.8513,104.6177],
+            [-2.8361,104.5333,-2.8178,104.5413],
+            [-2.9026,104.71,-2.9695,104.8627],
+            [-2.9269,104.7904,-2.9452,104.7823],
+            [-2.9604,104.8667,-2.9787,104.8587]
+        ]}
+    ]
+}

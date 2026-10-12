@@ -1,0 +1,81 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/TFFF/",
+    "info": {"country":"MQ","city":"Fort-de-France","type":"large_airport","longestRunwayM":3000,"frequencies":{"atis":"127.850","twr":"118.500","app":"121.000","gnd":"121.900"}},
+    "radio": {"twr":"Fort-de-france Tower","app":"Fort-de-france Approach","dep":"Fort-de-france Departure"},
+    "icao": "TFFF",
+    "iata": "FDF",
+    "magnetic_north": -15.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [14.591,-61.003201,"16ft"],
+    "rangeRings": {"enabled":true,"center":[14.591,-61.003201],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":120,"speed":12},
+    "arrivalRunway": "10",
+    "departureRunway": "10",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[14.981,-61.115],[14.9957,-61.0069],[14.9828,-60.8985],[14.9432,-60.7973],[14.8796,-60.7101],[14.7964,-60.6429],[14.6991,-60.6002],[14.5945,-60.585],[14.4897,-60.5983],[14.3917,-60.6392],[14.3073,-60.7049],[14.2423,-60.791],[14.201,-60.8914],[14.1863,-60.9996],[14.1992,-61.1079],[14.2388,-61.2091],[14.3024,-61.2963],[14.3856,-61.3635],[14.4829,-61.4062],[14.5875,-61.4214],[14.6923,-61.4081],[14.7903,-61.3672],[14.8747,-61.3015],[14.9397,-61.2154]]}
+    ],
+    "fixes": {
+        "TFFF": [14.591,-61.0032],
+        "BUWIR": [14.99023,-60.63064],
+        "OSUZA": [14.73933,-60.86478],
+        "AKOJA": [14.1968,-60.62496],
+        "ROBMU": [14.44454,-60.86267],
+        "SLU": [14.0141,-61.0061,"vigie"],
+        "ICUZA": [14.39114,-61.00421],
+        "BONUZ": [14.89367,-61.46273],
+        "OTUSO": [14.70345,-61.17393],
+        "_RWY1004DME": [14.57683,-61.08607],
+        "_RWY2804DME": [14.60392,-60.92808]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[14.58846,-61.01829,"10ft"],[14.59231,-60.99587,"14ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "BUWIR1A": {"icao":"BUWIR1A","name":"Buwir One Alpha","rwy":{"TFFF10":["_RWY2804DME"],"TFFF28":["_RWY1004DME"]},"body":[],"exitPoints":{"BUWIR":["BUWIR"]},"draw":[["TFFF","BUWIR*"]]},
+        "AKOJA2B": {"icao":"AKOJA2B","name":"Akoja Two Bravo","rwy":{"TFFF10":["_RWY2804DME"],"TFFF28":["_RWY1004DME"]},"body":[],"exitPoints":{"AKOJA":["AKOJA"]},"draw":[["TFFF","AKOJA*"]]},
+        "SLU1C": {"icao":"SLU1C","name":"Vigie One Charlie","rwy":{"TFFF10":["_RWY2804DME"],"TFFF28":["_RWY1004DME"]},"body":[],"exitPoints":{"SLU":["SLU"]},"draw":[["TFFF","SLU*"]]},
+        "BONUZ3F": {"icao":"BONUZ3F","name":"Bonuz Three Foxtrot","rwy":{"TFFF10":["_RWY2804DME"],"TFFF28":["_RWY1004DME"]},"body":[],"exitPoints":{"BONUZ":["BONUZ"]},"draw":[["TFFF","BONUZ*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"TFFF","destination":"TFFR","category":"departure","route":"TFFF10.BONUZ3F.BONUZ","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["afr/a320",2],["afr/at45",1],["fwi/at72",1],["crl/at72",1],["crl/at45",1],["crl/at75",1]]},
+        {"origin":"TFFF","destination":"LFPO","category":"departure","route":"TFFF10.BUWIR1A.BUWIR","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["crl/a333",1],["fwi/a332",1],["fwi/a333",1]]},
+        {"origin":"TFFF","destination":"TLPC","category":"departure","route":"TFFF10.SLU1C.SLU","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["afr/at45",1],["fwi/at72",1],["lia/dh8c",1]]},
+        {"origin":"TFFF","destination":"KMIA","category":"departure","route":"TFFF10.BONUZ3F.BONUZ","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["aal/b738",2]]},
+        {"origin":"TFFF","destination":"SOCA","category":"departure","route":"TFFF10.AKOJA2B.AKOJA","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["afr/a320",2]]},
+        {"origin":"TFFF","destination":"","category":"departure","route":"TFFF10.AKOJA2B.AKOJA","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["lia/dh8c",1]]},
+        {"origin":"TFFF","destination":"","category":"departure","route":"TFFF10.BONUZ3F.BONUZ","altitude":"","speed":"","method":"random","rate":1.16,"airlines":[["aal/sf34",1],["aca/a319",1],["afr/at45",1],["sbs/sf34",1]]},
+        {"origin":"TFFR","destination":"TFFF","category":"arrival","route":"BONUZ..OTUSO..TFFF","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["afr/a320",2],["afr/at45",1],["fwi/at72",1],["crl/at72",1],["crl/at45",1],["crl/at75",1]]},
+        {"origin":"LFPO","destination":"TFFF","category":"arrival","route":"BUWIR..OSUZA..TFFF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.87,"airlines":[["crl/a333",1],["fwi/a332",1],["fwi/a333",1]]},
+        {"origin":"TLPC","destination":"TFFF","category":"arrival","route":"SLU..ICUZA..TFFF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.87,"airlines":[["afr/at45",1],["fwi/at72",1],["lia/dh8c",1]]},
+        {"origin":"KMIA","destination":"TFFF","category":"arrival","route":"BONUZ..OTUSO..TFFF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.58,"airlines":[["aal/b738",2]]},
+        {"origin":"SOCA","destination":"TFFF","category":"arrival","route":"AKOJA..ROBMU..TFFF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.58,"airlines":[["afr/a320",2]]},
+        {"origin":"","destination":"TFFF","category":"arrival","route":"AKOJA..ROBMU..TFFF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.29,"airlines":[["lia/dh8c",1]]},
+        {"origin":"","destination":"TFFF","category":"arrival","route":"BONUZ..OTUSO..TFFF","altitude":[4000,7000],"speed":250,"method":"random","rate":1.16,"airlines":[["aal/sf34",1],["aca/a319",1],["afr/at45",1],["sbs/sf34",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [14.9902,-60.6306,14.7393,-60.8648],
+            [14.7393,-60.8648,14.591,-61.0032],
+            [14.1968,-60.625,14.4445,-60.8627],
+            [14.4445,-60.8627,14.591,-61.0032],
+            [14.0141,-61.0061,14.3911,-61.0042],
+            [14.3911,-61.0042,14.591,-61.0032],
+            [14.8937,-61.4627,14.7035,-61.1739],
+            [14.7035,-61.1739,14.591,-61.0032]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [14.5885,-61.0183,14.5593,-61.1877],
+            [14.5641,-61.1012,14.5838,-61.1048],
+            [14.5495,-61.1859,14.5692,-61.1895],
+            [14.5923,-60.9959,14.6213,-60.8264],
+            [14.6167,-60.9129,14.597,-60.9093],
+            [14.6311,-60.8282,14.6115,-60.8246]
+        ]}
+    ]
+}

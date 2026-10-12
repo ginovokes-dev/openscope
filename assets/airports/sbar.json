@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SBAR/",
+    "info": {"country":"BR","city":"Aracaju","type":"medium_airport","longestRunwayM":2200,"frequencies":{"app":"120.300"}},
+    "radio": {"twr":"Aracaju Tower","app":"Aracaju Approach","dep":"Aracaju Departure"},
+    "icao": "SBAR",
+    "iata": "AJU",
+    "magnetic_north": -22.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-10.98394,-37.072873,"23ft"],
+    "rangeRings": {"enabled":true,"center":[-10.98394,-37.072873],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":140,"speed":6},
+    "arrivalRunway": "12",
+    "departureRunway": "12",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-10.6098,-37.23],[-10.5826,-37.126],[-10.5828,-37.0184],[-10.6103,-36.9144],[-10.6633,-36.8213],[-10.7381,-36.7454],[-10.8297,-36.6917],[-10.9318,-36.6641],[-11.0375,-36.6642],[-11.1395,-36.6923],[-11.2309,-36.7463],[-11.3054,-36.8225],[-11.3581,-36.9158],[-11.3853,-37.0198],[-11.3851,-37.1274],[-11.3576,-37.2313],[-11.3046,-37.3244],[-11.2297,-37.4004],[-11.1382,-37.454],[-11.0361,-37.4817],[-10.9304,-37.4815],[-10.8284,-37.4535],[-10.737,-37.3995],[-10.6624,-37.3233]]}
+    ],
+    "fixes": {
+        "SBAR": [-10.98394,-37.07287],
+        "OWUGU": [-10.5655,-36.72851],
+        "URAJI": [-10.82847,-36.94493],
+        "LOHAN": [-11.29444,-36.6254],
+        "WISOZ": [-11.0993,-36.90662],
+        "AZAZE": [-11.44224,-37.3598],
+        "FEDAT": [-11.15422,-37.17948],
+        "AFIPA": [-10.67344,-37.52035],
+        "MOTUH": [-10.86858,-37.23913],
+        "_RWY1204DME": [-10.98138,-37.14817],
+        "_RWY3004DME": [-10.98666,-36.99248]
+    },
+    "runways": [
+        {"name":["12","30"],"end":[[-10.98369,-37.08035,"22ft"],[-10.98437,-37.06031,"22ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "OWUGU2F": {"icao":"OWUGU2F","name":"Owugu Two Foxtrot","rwy":{"SBAR12":["_RWY3004DME"],"SBAR30":["_RWY1204DME"]},"body":[],"exitPoints":{"OWUGU":["OWUGU"]},"draw":[["SBAR","OWUGU*"]]},
+        "LOHAN3E": {"icao":"LOHAN3E","name":"Lohan Three Echo","rwy":{"SBAR12":["_RWY3004DME"],"SBAR30":["_RWY1204DME"]},"body":[],"exitPoints":{"LOHAN":["LOHAN"]},"draw":[["SBAR","LOHAN*"]]},
+        "AZAZE2A": {"icao":"AZAZE2A","name":"Azaze Two Alpha","rwy":{"SBAR12":["_RWY3004DME"],"SBAR30":["_RWY1204DME"]},"body":[],"exitPoints":{"AZAZE":["AZAZE"]},"draw":[["SBAR","AZAZE*"]]},
+        "AFIPA2C": {"icao":"AFIPA2C","name":"Afipa Two Charlie","rwy":{"SBAR12":["_RWY3004DME"],"SBAR30":["_RWY1204DME"]},"body":[],"exitPoints":{"AFIPA":["AFIPA"]},"draw":[["SBAR","AFIPA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SBAR","destination":"SBSV","category":"departure","route":"SBAR12.AZAZE2A.AZAZE","altitude":"","speed":"","method":"random","rate":0.92,"airlines":[["azu/at72",1],["glo/b738",1],["one/a318",1],["tam/a319",1]]},
+        {"origin":"SBAR","destination":"SBGR","category":"departure","route":"SBAR12.AZAZE2A.AZAZE","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["glo/b737",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBAR","destination":"SBMO","category":"departure","route":"SBAR12.OWUGU2F.OWUGU","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["azu/e190",2],["azu/at72",1]]},
+        {"origin":"SBAR","destination":"SBGL","category":"departure","route":"SBAR12.AZAZE2A.AZAZE","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["glo/b737",1],["glo/b738",1]]},
+        {"origin":"SBAR","destination":"SBKP","category":"departure","route":"SBAR12.AZAZE2A.AZAZE","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["azu/e190",2]]},
+        {"origin":"SBAR","destination":"","category":"departure","route":"SBAR12.OWUGU2F.OWUGU","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["azu/at72",1],["tam/a320",1]]},
+        {"origin":"SBAR","destination":"","category":"departure","route":"SBAR12.AZAZE2A.AZAZE","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["one/a318",1],["tam/a319",1]]},
+        {"origin":"SBAR","destination":"","category":"departure","route":"SBAR12.AFIPA2C.AFIPA","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"SBSV","destination":"SBAR","category":"arrival","route":"AZAZE..FEDAT..SBAR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.92,"airlines":[["azu/at72",1],["glo/b738",1],["one/a318",1],["tam/a319",1]]},
+        {"origin":"SBGR","destination":"SBAR","category":"arrival","route":"AZAZE..FEDAT..SBAR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.69,"airlines":[["glo/b737",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBMO","destination":"SBAR","category":"arrival","route":"OWUGU..URAJI..SBAR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.69,"airlines":[["azu/e190",2],["azu/at72",1]]},
+        {"origin":"SBGL","destination":"SBAR","category":"arrival","route":"AZAZE..FEDAT..SBAR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.46,"airlines":[["glo/b737",1],["glo/b738",1]]},
+        {"origin":"SBKP","destination":"SBAR","category":"arrival","route":"AZAZE..FEDAT..SBAR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.46,"airlines":[["azu/e190",2]]},
+        {"origin":"","destination":"SBAR","category":"arrival","route":"OWUGU..URAJI..SBAR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.46,"airlines":[["azu/at72",1],["tam/a320",1]]},
+        {"origin":"","destination":"SBAR","category":"arrival","route":"AZAZE..FEDAT..SBAR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.46,"airlines":[["one/a318",1],["tam/a319",1]]},
+        {"origin":"","destination":"SBAR","category":"arrival","route":"AFIPA..MOTUH..SBAR","altitude":[4000,7000],"speed":250,"method":"random","rate":1.39,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-10.5655,-36.7285,-10.8285,-36.9449],
+            [-10.8285,-36.9449,-10.9839,-37.0729],
+            [-11.2944,-36.6254,-11.0993,-36.9066],
+            [-11.0993,-36.9066,-10.9839,-37.0729],
+            [-11.4422,-37.3598,-11.1542,-37.1795],
+            [-11.1542,-37.1795,-10.9839,-37.0729],
+            [-10.6734,-37.5203,-10.8686,-37.2391],
+            [-10.8686,-37.2391,-10.9839,-37.0729]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-10.9837,-37.0803,-10.9779,-37.2499],
+            [-10.9908,-37.1655,-10.9708,-37.1648],
+            [-10.9879,-37.2503,-10.9679,-37.2496],
+            [-10.9844,-37.0603,-10.9901,-36.8907],
+            [-10.9772,-36.9752,-10.9972,-36.9759],
+            [-10.9801,-36.8904,-11.0001,-36.8911]
+        ]}
+    ]
+}

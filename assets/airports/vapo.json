@@ -1,0 +1,101 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VAPO/",
+    "info": {"country":"IN","city":"Pune","type":"large_airport","longestRunwayM":3048,"frequencies":{"twr":"123.500"}},
+    "radio": {"twr":"Pune Tower","app":"Pune Approach","dep":"Pune Departure"},
+    "icao": "VAPO",
+    "iata": "PNQ",
+    "magnetic_north": -0.2,
+    "ctr_radius": 45,
+    "ctr_ceiling": 9000,
+    "initial_alt": 5000,
+    "position": [18.5821,73.919701,"1942ft"],
+    "rangeRings": {"enabled":true,"center":[18.5821,73.919701],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":100,"speed":7},
+    "arrivalRunway": "10",
+    "departureRunway": "10",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":90,"airspace_class":"D","poly":[[18.9868,73.9182],[18.9734,74.0288],[18.9333,74.1319],[18.8693,74.2205],[18.7857,74.2887],[18.6882,74.3317],[18.5835,74.3467],[18.4787,74.3325],[18.381,74.2902],[18.2969,74.2227],[18.2323,74.1345],[18.1916,74.0316],[18.1774,73.9212],[18.1908,73.8106],[18.2309,73.7075],[18.2949,73.6189],[18.3785,73.5507],[18.476,73.5077],[18.5807,73.4928],[18.6855,73.5069],[18.7832,73.5492],[18.8673,73.6167],[18.9319,73.7049],[18.9726,73.8078]]}
+    ],
+    "fixes": {
+        "VAPO": [18.5821,73.9197],
+        "ECUCE": [19.10008,74.07284],
+        "RECOS": [18.77455,73.9766],
+        "WOFNU": [18.80553,74.43596],
+        "KEWRU": [18.66511,74.11151],
+        "CURWE": [18.31804,74.41415],
+        "AFOWI": [18.48399,74.10341],
+        "ALOLE": [18.04695,73.97745],
+        "BEZAM": [18.38327,73.94116],
+        "WIWIZ": [18.81626,73.40877],
+        "VUMAJ": [18.6691,73.72987],
+        "_RWY1004DME": [18.58726,73.83617],
+        "_RWY2804DME": [18.57701,74.00043],
+        "_RWY1404DME": [18.63033,73.86657],
+        "_RWY3204DME": [18.52854,73.97841]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[18.5829,73.9063,"1942ft"],[18.5814,73.9303,"1942ft"]],"ils":[true,true]},
+        {"name":["14","32"],"end":[[18.58419,73.91728,"1942ft"],[18.57469,73.92772,"1942ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ECUCE2D": {"icao":"ECUCE2D","name":"Ecuce Two Delta","rwy":{"VAPO10":["_RWY2804DME"],"VAPO28":["_RWY1004DME"],"VAPO14":["_RWY3204DME"],"VAPO32":["_RWY1404DME"]},"body":[],"exitPoints":{"ECUCE":["ECUCE"]},"draw":[["VAPO","ECUCE*"]]},
+        "WOFNU3F": {"icao":"WOFNU3F","name":"Wofnu Three Foxtrot","rwy":{"VAPO10":["_RWY2804DME"],"VAPO28":["_RWY1004DME"],"VAPO14":["_RWY3204DME"],"VAPO32":["_RWY1404DME"]},"body":[],"exitPoints":{"WOFNU":["WOFNU"]},"draw":[["VAPO","WOFNU*"]]},
+        "CURWE3B": {"icao":"CURWE3B","name":"Curwe Three Bravo","rwy":{"VAPO10":["_RWY2804DME"],"VAPO28":["_RWY1004DME"],"VAPO14":["_RWY3204DME"],"VAPO32":["_RWY1404DME"]},"body":[],"exitPoints":{"CURWE":["CURWE"]},"draw":[["VAPO","CURWE*"]]},
+        "ALOLE1B": {"icao":"ALOLE1B","name":"Alole One Bravo","rwy":{"VAPO10":["_RWY2804DME"],"VAPO28":["_RWY1004DME"],"VAPO14":["_RWY3204DME"],"VAPO32":["_RWY1404DME"]},"body":[],"exitPoints":{"ALOLE":["ALOLE"]},"draw":[["VAPO","ALOLE*"]]},
+        "WIWIZ1A": {"icao":"WIWIZ1A","name":"Wiwiz One Alpha","rwy":{"VAPO10":["_RWY2804DME"],"VAPO28":["_RWY1004DME"],"VAPO14":["_RWY3204DME"],"VAPO32":["_RWY1404DME"]},"body":[],"exitPoints":{"WIWIZ":["WIWIZ"]},"draw":[["VAPO","WIWIZ*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"VAPO","destination":"VIDP","category":"departure","route":"VAPO10.ECUCE2D.ECUCE","altitude":"","speed":"","method":"random","rate":1.33,"airlines":[["jai/b738",2],["aic/a320",1],["aic/a321",1],["gow/a320",1],["igo/a320",1],["jai/b737",1],["sej/b737",1]]},
+        {"origin":"VAPO","destination":"VOBL","category":"departure","route":"VAPO10.CURWE3B.CURWE","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VAPO","destination":"VOMM","category":"departure","route":"VAPO10.CURWE3B.CURWE","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VAPO","destination":"VOHS","category":"departure","route":"VAPO10.CURWE3B.CURWE","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["aic/a319",1],["igo/a320",1],["sej/dh8d",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"VAPO","destination":"OMSJ","category":"departure","route":"VAPO10.WIWIZ1A.WIWIZ","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["axb/b738",1],["sej/b737",1]]},
+        {"origin":"VAPO","destination":"","category":"departure","route":"VAPO10.ECUCE2D.ECUCE","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VAPO","destination":"","category":"departure","route":"VAPO10.WOFNU3F.WOFNU","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["igo/a320",2],["gow/a320",1]]},
+        {"origin":"VAPO","destination":"","category":"departure","route":"VAPO10.ALOLE1B.ALOLE","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["aic/a319",1],["sej/b737",1],["sej/dh8d",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"VAPO","destination":"","category":"departure","route":"VAPO10.WIWIZ1A.WIWIZ","altitude":"","speed":"","method":"random","rate":0.17,"airlines":[["jai/b738",1]]},
+        {"origin":"VAPO","destination":"","category":"departure","route":"VAPO10.ALOLE1B.ALOLE","altitude":"","speed":"","method":"random","rate":1.55,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"VIDP","destination":"VAPO","category":"arrival","route":"ECUCE..RECOS..VAPO","altitude":[5000,8000],"speed":250,"method":"random","rate":1.33,"airlines":[["jai/b738",2],["aic/a320",1],["aic/a321",1],["gow/a320",1],["igo/a320",1],["jai/b737",1],["sej/b737",1]]},
+        {"origin":"VOBL","destination":"VAPO","category":"arrival","route":"CURWE..AFOWI..VAPO","altitude":[5000,8000],"speed":250,"method":"random","rate":0.5,"airlines":[["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VOMM","destination":"VAPO","category":"arrival","route":"CURWE..AFOWI..VAPO","altitude":[5000,8000],"speed":250,"method":"random","rate":0.5,"airlines":[["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VOHS","destination":"VAPO","category":"arrival","route":"CURWE..AFOWI..VAPO","altitude":[5000,8000],"speed":250,"method":"random","rate":0.5,"airlines":[["aic/a319",1],["igo/a320",1],["sej/dh8d",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"OMSJ","destination":"VAPO","category":"arrival","route":"WIWIZ..VUMAJ..VAPO","altitude":[5000,8000],"speed":250,"method":"random","rate":0.33,"airlines":[["axb/b738",1],["sej/b737",1]]},
+        {"origin":"","destination":"VAPO","category":"arrival","route":"ECUCE..RECOS..VAPO","altitude":[5000,8000],"speed":250,"method":"random","rate":0.33,"airlines":[["igo/a320",1],["sej/b737",1]]},
+        {"origin":"","destination":"VAPO","category":"arrival","route":"WOFNU..KEWRU..VAPO","altitude":[5000,8000],"speed":250,"method":"random","rate":0.5,"airlines":[["igo/a320",2],["gow/a320",1]]},
+        {"origin":"","destination":"VAPO","category":"arrival","route":"ALOLE..BEZAM..VAPO","altitude":[5000,8000],"speed":250,"method":"random","rate":0.5,"airlines":[["aic/a319",1],["sej/b737",1],["sej/dh8d",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"","destination":"VAPO","category":"arrival","route":"WIWIZ..VUMAJ..VAPO","altitude":[5000,8000],"speed":250,"method":"random","rate":0.17,"airlines":[["jai/b738",1]]},
+        {"origin":"","destination":"VAPO","category":"arrival","route":"ALOLE..BEZAM..VAPO","altitude":[5000,8000],"speed":250,"method":"random","rate":1.55,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [19.1001,74.0728,18.7746,73.9766],
+            [18.7746,73.9766,18.5821,73.9197],
+            [18.8055,74.436,18.6651,74.1115],
+            [18.6651,74.1115,18.5821,73.9197],
+            [18.318,74.4141,18.484,74.1034],
+            [18.484,74.1034,18.5821,73.9197],
+            [18.047,73.9775,18.3833,73.9412],
+            [18.3833,73.9412,18.5821,73.9197],
+            [18.8163,73.4088,18.6691,73.7299],
+            [18.6691,73.7299,18.5821,73.9197]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [18.5829,73.9063,18.5938,73.731],
+            [18.5784,73.8179,18.5983,73.8193],
+            [18.5838,73.7303,18.6037,73.7316],
+            [18.5814,73.9303,18.5704,74.1056],
+            [18.5859,74.0187,18.5659,74.0173],
+            [18.5803,74.1063,18.5604,74.1049],
+            [18.5842,73.9173,18.6995,73.7904],
+            [18.6346,73.8466,18.6491,73.8612],
+            [18.6923,73.7831,18.7067,73.7978],
+            [18.5747,73.9277,18.4593,74.0544],
+            [18.5242,73.9984,18.5098,73.9838],
+            [18.4665,74.0617,18.4521,74.0471]
+        ]}
+    ]
+}

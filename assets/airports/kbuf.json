@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KBUF/",
+    "info": {"country":"US","city":"Buffalo","type":"large_airport","longestRunwayM":2691,"frequencies":{"atis":"135.350","twr":"120.500","gnd":"133.200"}},
+    "radio": {"twr":"Buffalo Tower","app":"Buffalo Approach","dep":"Buffalo Departure"},
+    "icao": "KBUF",
+    "iata": "BUF",
+    "magnetic_north": -10.4,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [42.940498,-78.732201,"728ft"],
+    "rangeRings": {"enabled":true,"center":[42.940498,-78.732201],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":210,"speed":7},
+    "arrivalRunway": "23",
+    "departureRunway": "23",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[43.4712,-78.8653],[43.4784,-78.6731],[43.4488,-78.4849],[43.3847,-78.3137],[43.2902,-78.1709],[43.1719,-78.0664],[43.0379,-78.0072],[42.8972,-77.9975],[42.7595,-78.0378],[42.6341,-78.1255],[42.5296,-78.2545],[42.4531,-78.416],[42.4098,-78.5991],[42.4026,-78.7913],[42.4322,-78.9795],[42.4963,-79.1508],[42.5908,-79.2935],[42.709,-79.398],[42.8431,-79.4572],[42.9838,-79.4669],[43.1215,-79.4266],[43.2469,-79.3389],[43.3514,-79.2099],[43.4279,-79.0484]]}
+    ],
+    "fixes": {
+        "KBUF": [42.9405,-78.7322],
+        "OO": [43.9209,-78.9003,"oshawa"],
+        "KIMPU": [43.18838,-78.7747],
+        "GEE": [42.8344,-77.7327,"geneseo"],
+        "ZAWRU": [42.90465,-78.39446],
+        "JHW": [42.1886,-79.1213,"jamestown"],
+        "BIPIR": [42.70687,-78.8531],
+        "ZHM": [43.1442,-79.794,"binbrook"],
+        "PUCUS": [43.00383,-79.06232],
+        "_RWY0504DME": [42.88377,-78.80384],
+        "_RWY2304DME": [42.99524,-78.65761],
+        "_RWY1404DME": [42.98609,-78.81383],
+        "_RWY3204DME": [42.89661,-78.64937]
+    },
+    "runways": [
+        {"name":["05","23"],"end":[[42.93184,-78.74086,"679ft"],[42.9472,-78.7207,"721ft"]],"ils":[true,true]},
+        {"name":["14","32"],"end":[[42.94638,-78.74074,"698ft"],[42.93638,-78.72236,"709ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "OO3D": {"icao":"OO3D","name":"Oshawa Three Delta","rwy":{"KBUF05":["_RWY2304DME"],"KBUF23":["_RWY0504DME"],"KBUF14":["_RWY3204DME"],"KBUF32":["_RWY1404DME"]},"body":[],"exitPoints":{"OO":["OO"]},"draw":[["KBUF","OO*"]]},
+        "GEE2E": {"icao":"GEE2E","name":"Geneseo Two Echo","rwy":{"KBUF05":["_RWY2304DME"],"KBUF23":["_RWY0504DME"],"KBUF14":["_RWY3204DME"],"KBUF32":["_RWY1404DME"]},"body":[],"exitPoints":{"GEE":["GEE"]},"draw":[["KBUF","GEE*"]]},
+        "JHW2A": {"icao":"JHW2A","name":"Jamestown Two Alpha","rwy":{"KBUF05":["_RWY2304DME"],"KBUF23":["_RWY0504DME"],"KBUF14":["_RWY3204DME"],"KBUF32":["_RWY1404DME"]},"body":[],"exitPoints":{"JHW":["JHW"]},"draw":[["KBUF","JHW*"]]},
+        "ZHM2D": {"icao":"ZHM2D","name":"Binbrook Two Delta","rwy":{"KBUF05":["_RWY2304DME"],"KBUF23":["_RWY0504DME"],"KBUF14":["_RWY3204DME"],"KBUF32":["_RWY1404DME"]},"body":[],"exitPoints":{"ZHM":["ZHM"]},"draw":[["KBUF","ZHM*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KBUF","destination":"KCLT","category":"departure","route":"KBUF23.JHW2A.JHW","altitude":"","speed":"","method":"random","rate":0.93,"airlines":[["aal/a319",2],["aal/a320",2],["aal/b734",1],["aal/b737",1]]},
+        {"origin":"KBUF","destination":"KDTW","category":"departure","route":"KBUF23.ZHM2D.ZHM","altitude":"","speed":"","method":"random","rate":0.78,"airlines":[["dal/a319",1],["dal/a320",1],["dal/md88",1],["dal/md90",1],["dal/e145",1],["dal/e135",1]]},
+        {"origin":"KBUF","destination":"KBWI","category":"departure","route":"KBUF23.JHW2A.JHW","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["swa/b733",2],["swa/b737",1],["swa/b738",1]]},
+        {"origin":"KBUF","destination":"KJFK","category":"departure","route":"KBUF23.GEE2E.GEE","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["dal/crj7",1],["dal/crj9",1],["jbu/a320",1],["jbu/e190",1]]},
+        {"origin":"KBUF","destination":"KMCO","category":"departure","route":"KBUF23.JHW2A.JHW","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["swa/b733",2],["jbu/a320",1],["swa/b737",1]]},
+        {"origin":"KBUF","destination":"","category":"departure","route":"KBUF23.GEE2E.GEE","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["aal/dh8c",1],["dal/crj7",1],["jbu/e190",1]]},
+        {"origin":"KBUF","destination":"","category":"departure","route":"KBUF23.JHW2A.JHW","altitude":"","speed":"","method":"random","rate":0.78,"airlines":[["swa/b737",2],["dal/md88",1],["dal/md90",1],["ual/dh8c",1]]},
+        {"origin":"KBUF","destination":"","category":"departure","route":"KBUF23.ZHM2D.ZHM","altitude":"","speed":"","method":"random","rate":1.4,"airlines":[["swa/b738",4],["swa/b737",2],["aal/crj7",1],["ual/a320",1],["ual/b738",1]]},
+        {"origin":"KBUF","destination":"","category":"departure","route":"KBUF23.OO3D.OO","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KBUF","destination":"","category":"departure","route":"KBUF23.JHW2A.JHW","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KCLT","destination":"KBUF","category":"arrival","route":"JHW..BIPIR..KBUF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.93,"airlines":[["aal/a319",2],["aal/a320",2],["aal/b734",1],["aal/b737",1]]},
+        {"origin":"KDTW","destination":"KBUF","category":"arrival","route":"ZHM..PUCUS..KBUF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.78,"airlines":[["dal/a319",1],["dal/a320",1],["dal/md88",1],["dal/md90",1],["dal/e145",1],["dal/e135",1]]},
+        {"origin":"KBWI","destination":"KBUF","category":"arrival","route":"JHW..BIPIR..KBUF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.62,"airlines":[["swa/b733",2],["swa/b737",1],["swa/b738",1]]},
+        {"origin":"KJFK","destination":"KBUF","category":"arrival","route":"GEE..ZAWRU..KBUF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.62,"airlines":[["dal/crj7",1],["dal/crj9",1],["jbu/a320",1],["jbu/e190",1]]},
+        {"origin":"KMCO","destination":"KBUF","category":"arrival","route":"JHW..BIPIR..KBUF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.62,"airlines":[["swa/b733",2],["jbu/a320",1],["swa/b737",1]]},
+        {"origin":"","destination":"KBUF","category":"arrival","route":"GEE..ZAWRU..KBUF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["aal/dh8c",1],["dal/crj7",1],["jbu/e190",1]]},
+        {"origin":"","destination":"KBUF","category":"arrival","route":"JHW..BIPIR..KBUF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.78,"airlines":[["swa/b737",2],["dal/md88",1],["dal/md90",1],["ual/dh8c",1]]},
+        {"origin":"","destination":"KBUF","category":"arrival","route":"ZHM..PUCUS..KBUF","altitude":[6000,9000],"speed":250,"method":"random","rate":1.4,"airlines":[["swa/b738",4],["swa/b737",2],["aal/crj7",1],["ual/a320",1],["ual/b738",1]]},
+        {"origin":"","destination":"KBUF","category":"arrival","route":"OO..KIMPU..KBUF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"","destination":"KBUF","category":"arrival","route":"JHW..BIPIR..KBUF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [43.9209,-78.9003,43.1884,-78.7747],
+            [43.1884,-78.7747,42.9405,-78.7322],
+            [42.8344,-77.7327,42.9046,-78.3945],
+            [42.9046,-78.3945,42.9405,-78.7322],
+            [42.1886,-79.1213,42.7069,-78.8531],
+            [42.7069,-78.8531,42.9405,-78.7322],
+            [43.1442,-79.794,43.0038,-79.0623],
+            [43.0038,-79.0623,42.9405,-78.7322]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [42.9318,-78.7409,42.8116,-78.8981],
+            [42.8648,-78.8097,42.8787,-78.8294],
+            [42.8047,-78.8883,42.8185,-78.9079],
+            [42.9472,-78.7207,43.0672,-78.5628],
+            [43.0142,-78.6517,43.0003,-78.632],
+            [43.0741,-78.5727,43.0603,-78.5529],
+            [42.9464,-78.7407,43.0456,-78.9237],
+            [42.988,-78.8403,43.004,-78.824],
+            [43.0376,-78.9318,43.0536,-78.9155],
+            [42.9364,-78.7224,42.8369,-78.5401],
+            [42.8947,-78.623,42.8786,-78.6393],
+            [42.8449,-78.5319,42.8289,-78.5482]
+        ]}
+    ]
+}

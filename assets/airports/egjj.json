@@ -1,0 +1,89 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGJJ/",
+    "info": {"country":"JE","city":"St. Peter","type":"medium_airport","longestRunwayM":1705,"frequencies":{"atis":"134.680","twr":"119.455","gnd":"121.905"}},
+    "radio": {"twr":"Jersey Tower","app":"Jersey Approach","dep":"Jersey Departure"},
+    "icao": "EGJJ",
+    "iata": "JER",
+    "magnetic_north": 0.6,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [49.207901,-2.19551,"277ft"],
+    "rangeRings": {"enabled":true,"center":[49.207901,-2.19551],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":290,"speed":5},
+    "arrivalRunway": "26",
+    "departureRunway": "26",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[49.7475,-2.1869],[49.7276,-1.9734],[49.6724,-1.7751],[49.5854,-1.6054],[49.4728,-1.4759],[49.3421,-1.3955],[49.2023,-1.3696],[49.0628,-1.4],[48.9332,-1.4846],[48.8224,-1.6176],[48.7378,-1.7901],[48.6853,-1.9901],[48.6683,-2.2042],[48.6882,-2.4176],[48.7435,-2.6159],[48.8304,-2.7856],[48.943,-2.9151],[49.0737,-2.9955],[49.2136,-3.0214],[49.353,-2.991],[49.4826,-2.9064],[49.5934,-2.7734],[49.678,-2.601],[49.7305,-2.4009]]}
+    ],
+    "fixes": {
+        "EGJJ": [49.2079,-2.19551],
+        "VOVLO": [49.91327,-2.14484],
+        "GOWTU": [49.45746,-2.17758],
+        "CAN": [49.1732,-0.45528,"caen"],
+        "JEDEM": [49.20028,-1.81328],
+        "DIN": [48.5861,-2.08233,"dinard"],
+        "IZIGA": [48.95982,-2.15035],
+        "RIZRI": [49.66891,-3.01425],
+        "COMWO": [49.371,-2.48518],
+        "_RWY0803DME": [49.20084,-2.28198],
+        "_RWY2603DME": [49.21498,-2.10902]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[49.20707,-2.2061,"270ft"],[49.2088,-2.18492,"271ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "VOVLO3E": {"icao":"VOVLO3E","name":"Vovlo Three Echo","rwy":{"EGJJ08":["_RWY2603DME"],"EGJJ26":["_RWY0803DME"]},"body":[],"exitPoints":{"VOVLO":["VOVLO"]},"draw":[["EGJJ","VOVLO*"]]},
+        "CAN2A": {"icao":"CAN2A","name":"Caen Two Alpha","rwy":{"EGJJ08":["_RWY2603DME"],"EGJJ26":["_RWY0803DME"]},"body":[],"exitPoints":{"CAN":["CAN"]},"draw":[["EGJJ","CAN*"]]},
+        "DIN2D": {"icao":"DIN2D","name":"Dinard Two Delta","rwy":{"EGJJ08":["_RWY2603DME"],"EGJJ26":["_RWY0803DME"]},"body":[],"exitPoints":{"DIN":["DIN"]},"draw":[["EGJJ","DIN*"]]},
+        "RIZRI1F": {"icao":"RIZRI1F","name":"Rizri One Foxtrot","rwy":{"EGJJ08":["_RWY2603DME"],"EGJJ26":["_RWY0803DME"]},"body":[],"exitPoints":{"RIZRI":["RIZRI"]},"draw":[["EGJJ","RIZRI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGJJ","destination":"EGJB","category":"departure","route":"EGJJ26.RIZRI1F.RIZRI","altitude":"","speed":"","method":"random","rate":0.94,"airlines":[["aur/at43",1],["aur/at72",1],["bee/dh8d",1],["ber/dh8d",1]]},
+        {"origin":"EGJJ","destination":"EGBB","category":"departure","route":"EGJJ26.VOVLO3E.VOVLO","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["bee/dh8d",1],["bee/e75l",1]]},
+        {"origin":"EGJJ","destination":"EGCC","category":"departure","route":"EGJJ26.VOVLO3E.VOVLO","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["bee/dh8d",1],["bee/e75l",1]]},
+        {"origin":"EGJJ","destination":"EGFF","category":"departure","route":"EGJJ26.VOVLO3E.VOVLO","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["bcy/f50",1],["bee/dh8d",1]]},
+        {"origin":"EGJJ","destination":"EGHI","category":"departure","route":"EGJJ26.VOVLO3E.VOVLO","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["bee/dh8d",1],["bee/e190",1]]},
+        {"origin":"EGJJ","destination":"EGKK","category":"departure","route":"EGJJ26.VOVLO3E.VOVLO","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["baw/a319",1],["ezy/a319",1]]},
+        {"origin":"EGJJ","destination":"","category":"departure","route":"EGJJ26.VOVLO3E.VOVLO","altitude":"","speed":"","method":"random","rate":2.36,"airlines":[["bee/dh8d",4],["ezy/a319",4],["aur/at72",1],["bee/e75l",1]]},
+        {"origin":"EGJJ","destination":"","category":"departure","route":"EGJJ26.CAN2A.CAN","altitude":"","speed":"","method":"random","rate":0.71,"airlines":[["ber/dh8d",3]]},
+        {"origin":"EGJJ","destination":"","category":"departure","route":"EGJJ26.RIZRI1F.RIZRI","altitude":"","speed":"","method":"random","rate":0.24,"airlines":[["bee/dh8d",1]]},
+        {"origin":"EGJJ","destination":"","category":"departure","route":"EGJJ26.DIN2D.DIN","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["zj/c172",6],["zj/p28a",5],["zj/c182",3],["zj/be36",2],["zj/da42",1],["zj/tb20",1],["zj/c208",2],["zj/pc12",2],["zj/be20",1],["zj/b350",1],["zj/p180",1],["zj/c510",1],["zj/e50p",1],["zj/c550",2],["zj/e55p",1],["zj/cl30",1],["zj/c680",1],["zj/h25b",1],["zj/lj45",1],["zj/f2th",1],["zj/glf4",1],["zj/glex",1],["zj/glf5",1]]},
+        {"origin":"EGJJ","destination":"","category":"departure","route":"EGJJ26.VOVLO3E.VOVLO","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["zj/c172",6],["zj/p28a",5],["zj/c182",3],["zj/be36",2],["zj/da42",1],["zj/tb20",1],["zj/c208",2],["zj/pc12",2],["zj/be20",1],["zj/b350",1],["zj/p180",1],["zj/c510",1],["zj/e50p",1],["zj/c550",2],["zj/e55p",1],["zj/cl30",1],["zj/c680",1],["zj/h25b",1],["zj/lj45",1],["zj/f2th",1],["zj/glf4",1],["zj/glex",1],["zj/glf5",1]]},
+        {"origin":"EGJB","destination":"EGJJ","category":"arrival","route":"RIZRI..COMWO..EGJJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.94,"airlines":[["aur/at43",1],["aur/at72",1],["bee/dh8d",1],["ber/dh8d",1]]},
+        {"origin":"EGBB","destination":"EGJJ","category":"arrival","route":"VOVLO..GOWTU..EGJJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["bee/dh8d",1],["bee/e75l",1]]},
+        {"origin":"EGCC","destination":"EGJJ","category":"arrival","route":"VOVLO..GOWTU..EGJJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["bee/dh8d",1],["bee/e75l",1]]},
+        {"origin":"EGFF","destination":"EGJJ","category":"arrival","route":"VOVLO..GOWTU..EGJJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["bcy/f50",1],["bee/dh8d",1]]},
+        {"origin":"EGHI","destination":"EGJJ","category":"arrival","route":"VOVLO..GOWTU..EGJJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["bee/dh8d",1],["bee/e190",1]]},
+        {"origin":"EGKK","destination":"EGJJ","category":"arrival","route":"VOVLO..GOWTU..EGJJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["baw/a319",1],["ezy/a319",1]]},
+        {"origin":"","destination":"EGJJ","category":"arrival","route":"VOVLO..GOWTU..EGJJ","altitude":[6000,9000],"speed":250,"method":"random","rate":2.36,"airlines":[["bee/dh8d",4],["ezy/a319",4],["aur/at72",1],["bee/e75l",1]]},
+        {"origin":"","destination":"EGJJ","category":"arrival","route":"CAN..JEDEM..EGJJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.71,"airlines":[["ber/dh8d",3]]},
+        {"origin":"","destination":"EGJJ","category":"arrival","route":"RIZRI..COMWO..EGJJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.24,"airlines":[["bee/dh8d",1]]},
+        {"origin":"","destination":"EGJJ","category":"arrival","route":"DIN..IZIGA..EGJJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["zj/c172",6],["zj/p28a",5],["zj/c182",3],["zj/be36",2],["zj/da42",1],["zj/tb20",1],["zj/c208",2],["zj/pc12",2],["zj/be20",1],["zj/b350",1],["zj/p180",1],["zj/c510",1],["zj/e50p",1],["zj/c550",2],["zj/e55p",1],["zj/cl30",1],["zj/c680",1],["zj/h25b",1],["zj/lj45",1],["zj/f2th",1],["zj/glf4",1],["zj/glex",1],["zj/glf5",1]]},
+        {"origin":"","destination":"EGJJ","category":"arrival","route":"VOVLO..GOWTU..EGJJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["zj/c172",6],["zj/p28a",5],["zj/c182",3],["zj/be36",2],["zj/da42",1],["zj/tb20",1],["zj/c208",2],["zj/pc12",2],["zj/be20",1],["zj/b350",1],["zj/p180",1],["zj/c510",1],["zj/e50p",1],["zj/c550",2],["zj/e55p",1],["zj/cl30",1],["zj/c680",1],["zj/h25b",1],["zj/lj45",1],["zj/f2th",1],["zj/glf4",1],["zj/glex",1],["zj/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [49.9133,-2.1448,49.4575,-2.1776],
+            [49.4575,-2.1776,49.2079,-2.1955],
+            [49.1732,-0.4553,49.2003,-1.8133],
+            [49.2003,-1.8133,49.2079,-2.1955],
+            [48.5861,-2.0823,48.9598,-2.1504],
+            [48.9598,-2.1504,49.2079,-2.1955],
+            [49.6689,-3.0143,49.371,-2.4852],
+            [49.371,-2.4852,49.2079,-2.1955]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [49.2071,-2.2061,49.1861,-2.4589],
+            [49.1867,-2.3307,49.2066,-2.3344],
+            [49.1762,-2.4571,49.196,-2.4608],
+            [49.2088,-2.1849,49.2292,-1.9319],
+            [49.229,-2.0603,49.2092,-2.0565],
+            [49.2391,-1.9338,49.2193,-1.93]
+        ]}
+    ]
+}

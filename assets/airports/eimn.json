@@ -1,0 +1,66 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EIMN/",
+    "info": {"country":"IE","city":"Inis Meain","type":"small_airport","longestRunwayM":546,"approximateRunways":true},
+    "radio": {"twr":"Inishmaan Tower","app":"Inishmaan Approach","dep":"Inishmaan Radar"},
+    "icao": "EIMN",
+    "iata": "IIA",
+    "magnetic_north": -2.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [53.092999,-9.56806,"15ft"],
+    "rangeRings": {"enabled":true,"center":[53.092999,-9.56806],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":130,"speed":12},
+    "arrivalRunway": "15",
+    "departureRunway": "15",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[53.4973,-9.5975],[53.4881,-9.4222],[53.452,-9.2569],[53.3914,-9.1128],[53.3104,-8.9997],[53.2147,-8.9253],[53.1107,-8.8948],[53.0054,-8.9101],[52.9061,-8.9703],[52.8196,-9.0712],[52.7517,-9.206],[52.707,-9.3654],[52.6887,-9.5387],[52.6979,-9.7139],[52.734,-9.8792],[52.7946,-10.0233],[52.8756,-10.1364],[52.9713,-10.2108],[53.0753,-10.2413],[53.1806,-10.226],[53.2799,-10.1658],[53.3664,-10.0649],[53.4343,-9.9302],[53.479,-9.7707]]}
+    ],
+    "fixes": {
+        "EIMN": [53.093,-9.56806],
+        "CON": [53.908,-8.8201,"connaught"],
+        "ZOSSA": [53.26804,-9.40742],
+        "DORVI": [52.97658,-8.6935],
+        "FIVUR": [53.04975,-9.24313],
+        "KER": [52.1822,-9.52449,"kerry"],
+        "WIWEF": [52.89322,-9.5585],
+        "KIFFA": [53.20941,-10.44262],
+        "NUTWU": [53.13625,-9.89299],
+        "_RWY1503DME": [53.1372,-9.61501],
+        "_RWY3303DME": [53.04878,-9.5212]
+    },
+    "runways": [
+        {"name":["15","33"],"end":[[53.09507,-9.57026,"15ft"],[53.09093,-9.56586,"15ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "CON3D": {"icao":"CON3D","name":"Connaught Three Delta","rwy":{"EIMN15":["_RWY3303DME"],"EIMN33":["_RWY1503DME"]},"body":[],"exitPoints":{"CON":["CON"]},"draw":[["EIMN","CON*"]]},
+        "DORVI1A": {"icao":"DORVI1A","name":"Dorvi One Alpha","rwy":{"EIMN15":["_RWY3303DME"],"EIMN33":["_RWY1503DME"]},"body":[],"exitPoints":{"DORVI":["DORVI"]},"draw":[["EIMN","DORVI*"]]},
+        "KER1F": {"icao":"KER1F","name":"Kerry One Foxtrot","rwy":{"EIMN15":["_RWY3303DME"],"EIMN33":["_RWY1503DME"]},"body":[],"exitPoints":{"KER":["KER"]},"draw":[["EIMN","KER*"]]},
+        "KIFFA3E": {"icao":"KIFFA3E","name":"Kiffa Three Echo","rwy":{"EIMN15":["_RWY3303DME"],"EIMN33":["_RWY1503DME"]},"body":[],"exitPoints":{"KIFFA":["KIFFA"]},"draw":[["EIMN","KIFFA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EIMN","destination":"","category":"departure","route":"EIMN15.KIFFA3E.KIFFA","altitude":"","speed":"","method":"random","rate":3,"airlines":[["ei/c172",6],["ei/p28a",5],["ei/c182",3],["ei/be36",2],["ei/da42",1],["ei/tb20",1],["ei/pc12",2],["ei/be20",1]]},
+        {"origin":"","destination":"EIMN","category":"arrival","route":"KIFFA..NUTWU..EIMN","altitude":[4000,7000],"speed":250,"method":"random","rate":3,"airlines":[["ei/c172",6],["ei/p28a",5],["ei/c182",3],["ei/be36",2],["ei/da42",1],["ei/tb20",1],["ei/pc12",2],["ei/be20",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [53.908,-8.8201,53.268,-9.4074],
+            [53.268,-9.4074,53.093,-9.5681],
+            [52.9766,-8.6935,53.0497,-9.2431],
+            [53.0497,-9.2431,53.093,-9.5681],
+            [52.1822,-9.5245,52.8932,-9.5585],
+            [52.8932,-9.5585,53.093,-9.5681],
+            [53.2094,-10.4426,53.1363,-9.893],
+            [53.1363,-9.893,53.093,-9.5681]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [53.0951,-9.5703,53.2354,-9.7198],
+            [53.1599,-9.659,53.1706,-9.6308],
+            [53.2301,-9.7339,53.2408,-9.7057]
+        ]}
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SBCY/",
+    "info": {"country":"BR","city":"Cuiaba","type":"large_airport","longestRunwayM":2308,"frequencies":{"twr":"118.100","app":"119.400"}},
+    "radio": {"twr":"Cuiaba Tower","app":"Cuiaba Approach","dep":"Cuiaba Departure"},
+    "icao": "SBCY",
+    "iata": "CGB",
+    "magnetic_north": -18.6,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [-15.6529,-56.116699,"617ft"],
+    "rangeRings": {"enabled":true,"center":[-15.6529,-56.116699],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":160,"speed":10},
+    "arrivalRunway": "17",
+    "departureRunway": "17",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[-15.1415,-56.2954],[-15.1144,-56.1519],[-15.124,-56.0059],[-15.1696,-55.8675],[-15.2481,-55.7461],[-15.3543,-55.65],[-15.4808,-55.5856],[-15.619,-55.5574],[-15.7596,-55.5674],[-15.8928,-55.6148],[-16.0097,-55.6964],[-16.1023,-55.8066],[-16.1643,-55.938],[-16.1914,-56.0815],[-16.1818,-56.2275],[-16.1362,-56.3659],[-16.0577,-56.4873],[-15.9515,-56.5834],[-15.825,-56.6478],[-15.6868,-56.676],[-15.5462,-56.666],[-15.413,-56.6186],[-15.2961,-56.537],[-15.2035,-56.4268]]}
+    ],
+    "fixes": {
+        "SBCY": [-15.6529,-56.1167],
+        "POTIM": [-14.94845,-56.06583],
+        "GOJRU": [-15.40367,-56.0987],
+        "AKEZA": [-16.08271,-55.53485],
+        "GISFI": [-15.80496,-55.91084],
+        "MEJJO": [-16.20535,-56.57346],
+        "TOMZE": [-15.84835,-56.2783],
+        "UNUZO": [-15.2032,-56.68211],
+        "SEZHA": [-15.4938,-56.31674],
+        "_RWY1704DME": [-15.58444,-56.15309],
+        "_RWY3504DME": [-15.72153,-56.08022]
+    },
+    "runways": [
+        {"name":["17","35"],"end":[[-15.64375,-56.12157,"617ft"],[-15.66222,-56.11175,"598ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "POTIM3B": {"icao":"POTIM3B","name":"Potim Three Bravo","rwy":{"SBCY17":["_RWY3504DME"],"SBCY35":["_RWY1704DME"]},"body":[],"exitPoints":{"POTIM":["POTIM"]},"draw":[["SBCY","POTIM*"]]},
+        "AKEZA3D": {"icao":"AKEZA3D","name":"Akeza Three Delta","rwy":{"SBCY17":["_RWY3504DME"],"SBCY35":["_RWY1704DME"]},"body":[],"exitPoints":{"AKEZA":["AKEZA"]},"draw":[["SBCY","AKEZA*"]]},
+        "MEJJO2C": {"icao":"MEJJO2C","name":"Mejjo Two Charlie","rwy":{"SBCY17":["_RWY3504DME"],"SBCY35":["_RWY1704DME"]},"body":[],"exitPoints":{"MEJJO":["MEJJO"]},"draw":[["SBCY","MEJJO*"]]},
+        "UNUZO1B": {"icao":"UNUZO1B","name":"Unuzo One Bravo","rwy":{"SBCY17":["_RWY3504DME"],"SBCY35":["_RWY1704DME"]},"body":[],"exitPoints":{"UNUZO":["UNUZO"]},"draw":[["SBCY","UNUZO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SBCY","destination":"SBGR","category":"departure","route":"SBCY17.AKEZA3D.AKEZA","altitude":"","speed":"","method":"random","rate":0.95,"airlines":[["azu/e190",2],["glo/b737",1],["glo/b738",1],["one/a318",1],["tam/a320",1]]},
+        {"origin":"SBCY","destination":"SBBR","category":"departure","route":"SBCY17.AKEZA3D.AKEZA","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["azu/e190",1],["glo/b738",1],["one/f100",1],["tam/a319",1],["tam/a320",1]]},
+        {"origin":"SBCY","destination":"SBCG","category":"departure","route":"SBCY17.AKEZA3D.AKEZA","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["azu/at72",1],["azu/e75l",1],["glo/b737",1],["glo/b738",1],["one/f100",1]]},
+        {"origin":"SBCY","destination":"SBPV","category":"departure","route":"SBCY17.UNUZO1B.UNUZO","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["azu/e190",2],["glo/b737",1],["glo/b738",1],["one/f100",1]]},
+        {"origin":"SBCY","destination":"SBSP","category":"departure","route":"SBCY17.AKEZA3D.AKEZA","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["glo/b738",1],["tam/a319",1],["tam/a320",1]]},
+        {"origin":"SBCY","destination":"SBCF","category":"departure","route":"SBCY17.AKEZA3D.AKEZA","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["azu/e190",2]]},
+        {"origin":"SBCY","destination":"","category":"departure","route":"SBCY17.POTIM3B.POTIM","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["azu/e190",2]]},
+        {"origin":"SBCY","destination":"","category":"departure","route":"SBCY17.AKEZA3D.AKEZA","altitude":"","speed":"","method":"random","rate":1.42,"airlines":[["azu/e190",6],["azu/at72",2],["glo/b738",1]]},
+        {"origin":"SBCY","destination":"","category":"departure","route":"SBCY17.UNUZO1B.UNUZO","altitude":"","speed":"","method":"random","rate":0.63,"airlines":[["azu/at72",3],["azu/e190",1]]},
+        {"origin":"SBCY","destination":"","category":"departure","route":"SBCY17.AKEZA3D.AKEZA","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",2],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"SBCY","destination":"","category":"departure","route":"SBCY17.UNUZO1B.UNUZO","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",2],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"SBGR","destination":"SBCY","category":"arrival","route":"AKEZA..GISFI..SBCY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.95,"airlines":[["azu/e190",2],["glo/b737",1],["glo/b738",1],["one/a318",1],["tam/a320",1]]},
+        {"origin":"SBBR","destination":"SBCY","category":"arrival","route":"AKEZA..GISFI..SBCY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.79,"airlines":[["azu/e190",1],["glo/b738",1],["one/f100",1],["tam/a319",1],["tam/a320",1]]},
+        {"origin":"SBCG","destination":"SBCY","category":"arrival","route":"AKEZA..GISFI..SBCY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.79,"airlines":[["azu/at72",1],["azu/e75l",1],["glo/b737",1],["glo/b738",1],["one/f100",1]]},
+        {"origin":"SBPV","destination":"SBCY","category":"arrival","route":"UNUZO..SEZHA..SBCY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.79,"airlines":[["azu/e190",2],["glo/b737",1],["glo/b738",1],["one/f100",1]]},
+        {"origin":"SBSP","destination":"SBCY","category":"arrival","route":"AKEZA..GISFI..SBCY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["glo/b738",1],["tam/a319",1],["tam/a320",1]]},
+        {"origin":"SBCF","destination":"SBCY","category":"arrival","route":"AKEZA..GISFI..SBCY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.32,"airlines":[["azu/e190",2]]},
+        {"origin":"","destination":"SBCY","category":"arrival","route":"POTIM..GOJRU..SBCY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.32,"airlines":[["azu/e190",2]]},
+        {"origin":"","destination":"SBCY","category":"arrival","route":"AKEZA..GISFI..SBCY","altitude":[6000,9000],"speed":250,"method":"random","rate":1.42,"airlines":[["azu/e190",6],["azu/at72",2],["glo/b738",1]]},
+        {"origin":"","destination":"SBCY","category":"arrival","route":"UNUZO..SEZHA..SBCY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.63,"airlines":[["azu/at72",3],["azu/e190",1]]},
+        {"origin":"","destination":"SBCY","category":"arrival","route":"AKEZA..GISFI..SBCY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.44,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",2],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"","destination":"SBCY","category":"arrival","route":"UNUZO..SEZHA..SBCY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.44,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",2],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-14.9485,-56.0658,-15.4037,-56.0987],
+            [-15.4037,-56.0987,-15.6529,-56.1167],
+            [-16.0827,-55.5348,-15.805,-55.9108],
+            [-15.805,-55.9108,-15.6529,-56.1167],
+            [-16.2053,-56.5735,-15.8484,-56.2783],
+            [-15.8484,-56.2783,-15.6529,-56.1167],
+            [-15.2032,-56.6821,-15.4938,-56.3167],
+            [-15.4938,-56.3167,-15.6529,-56.1167]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-15.6437,-56.1216,-15.4955,-56.2003],
+            [-15.5742,-56.1702,-15.5651,-56.1517],
+            [-15.5,-56.2096,-15.4909,-56.1911],
+            [-15.6622,-56.1118,-15.8105,-56.0329],
+            [-15.7318,-56.0631,-15.7409,-56.0816],
+            [-15.8059,-56.0236,-15.815,-56.0421]
+        ]}
+    ]
+}

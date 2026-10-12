@@ -1,0 +1,84 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/UKOO/",
+    "info": {"country":"UA","city":"Odesa","type":"large_airport","longestRunwayM":2800,"frequencies":{"atis":"124.800","twr":"125.500","app":"120.900","gnd":"121.800"}},
+    "radio": {"twr":"Odesa Tower","app":"Odesa Approach","dep":"Odesa Departure"},
+    "icao": "UKOO",
+    "iata": "ODS",
+    "magnetic_north": 7.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [46.427196,30.672649,"172ft"],
+    "rangeRings": {"enabled":true,"center":[46.427196,30.672649],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":320,"speed":8},
+    "arrivalRunway": "34",
+    "departureRunway": "34",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[46.8285,30.7483],[46.8014,30.8964],[46.7487,31.0293],[46.6741,31.1378],[46.5827,31.2147],[46.4807,31.2546],[46.3751,31.2549],[46.273,31.2155],[46.1814,31.1391],[46.1066,31.0309],[46.0536,30.8983],[46.0261,30.7503],[46.0259,30.597],[46.053,30.4489],[46.1057,30.316],[46.1803,30.2075],[46.2717,30.1306],[46.3737,30.0907],[46.4793,30.0904],[46.5814,30.1298],[46.673,30.2062],[46.7478,30.3144],[46.8008,30.447],[46.8283,30.595]]}
+    ],
+    "fixes": {
+        "UKOO": [46.4272,30.67265],
+        "ABUTU": [46.9441,30.88875],
+        "INETO": [46.61925,30.75294],
+        "UNETE": [46.09027,31.28105],
+        "BOCIG": [46.30201,30.89869],
+        "RELLI": [45.90977,30.45918],
+        "MOGHA": [46.23495,30.59334],
+        "GATFU": [46.81287,30.12859],
+        "BOCHE": [46.57049,30.47051],
+        "_RWY1604DME": [46.50265,30.6437],
+        "_RWY3404DME": [46.35084,30.70922]
+    },
+    "runways": [
+        {"name":["16","34"],"end":[[46.4388,30.6713,"172ft"],[46.4147,30.6817,"165ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "ABUTU2E": {"icao":"ABUTU2E","name":"Abutu Two Echo","rwy":{"UKOO16":["_RWY3404DME"],"UKOO34":["_RWY1604DME"]},"body":[],"exitPoints":{"ABUTU":["ABUTU"]},"draw":[["UKOO","ABUTU*"]]},
+        "UNETE3B": {"icao":"UNETE3B","name":"Unete Three Bravo","rwy":{"UKOO16":["_RWY3404DME"],"UKOO34":["_RWY1604DME"]},"body":[],"exitPoints":{"UNETE":["UNETE"]},"draw":[["UKOO","UNETE*"]]},
+        "RELLI2D": {"icao":"RELLI2D","name":"Relli Two Delta","rwy":{"UKOO16":["_RWY3404DME"],"UKOO34":["_RWY1604DME"]},"body":[],"exitPoints":{"RELLI":["RELLI"]},"draw":[["UKOO","RELLI*"]]},
+        "GATFU2B": {"icao":"GATFU2B","name":"Gatfu Two Bravo","rwy":{"UKOO16":["_RWY3404DME"],"UKOO34":["_RWY1604DME"]},"body":[],"exitPoints":{"GATFU":["GATFU"]},"draw":[["UKOO","GATFU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"UKOO","destination":"LTFM","category":"departure","route":"UKOO34.RELLI2D.RELLI","altitude":"","speed":"","method":"random","rate":1.42,"airlines":[["aui/a320",1],["aui/b734",1],["aui/b738",1],["lmu/a320",1],["ohy/a320",1],["thy/b738",1],["thy/b739",1]]},
+        {"origin":"UKOO","destination":"UUEE","category":"departure","route":"UKOO34.ABUTU2E.ABUTU","altitude":"","speed":"","method":"random","rate":0.81,"airlines":[["afl/a319",1],["afl/a320",1],["afl/su95",1],["lmu/a320",1]]},
+        {"origin":"UKOO","destination":"UKBB","category":"departure","route":"UKOO34.ABUTU2E.ABUTU","altitude":"","speed":"","method":"random","rate":0.61,"airlines":[["aui/b735",1],["aui/b738",1],["lmu/a320",1]]},
+        {"origin":"UKOO","destination":"EPWA","category":"departure","route":"UKOO34.GATFU2B.GATFU","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["lot/e170",1],["lot/e75l",1]]},
+        {"origin":"UKOO","destination":"LCLK","category":"departure","route":"UKOO34.RELLI2D.RELLI","altitude":"","speed":"","method":"random","rate":0.2,"airlines":[["aui/b737",1]]},
+        {"origin":"UKOO","destination":"","category":"departure","route":"UKOO34.ABUTU2E.ABUTU","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["sbi/a319",1],["tso/b737",1]]},
+        {"origin":"UKOO","destination":"","category":"departure","route":"UKOO34.UNETE3B.UNETE","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["aby/a320",1],["fdb/b738",1]]},
+        {"origin":"UKOO","destination":"","category":"departure","route":"UKOO34.RELLI2D.RELLI","altitude":"","speed":"","method":"random","rate":0.2,"airlines":[["aui/b738",1]]},
+        {"origin":"UKOO","destination":"","category":"departure","route":"UKOO34.GATFU2B.GATFU","altitude":"","speed":"","method":"random","rate":0.2,"airlines":[["aui/e190",1]]},
+        {"origin":"UKOO","destination":"","category":"departure","route":"UKOO34.ABUTU2E.ABUTU","altitude":"","speed":"","method":"random","rate":1.55,"airlines":[["ur/c172",6],["ur/p28a",5],["ur/c182",3],["ur/be36",2],["ur/da42",1],["ur/tb20",1],["ur/c208",2],["ur/pc12",2],["ur/be20",1],["ur/b350",1],["ur/p180",1],["ur/c510",1],["ur/e50p",1],["ur/c550",1],["ur/e55p",1],["ur/cl30",1],["ur/c680",1],["ur/h25b",1],["ur/lj45",1],["ur/f2th",1],["ur/glf4",1],["ur/glex",1],["ur/glf5",1]]},
+        {"origin":"LTFM","destination":"UKOO","category":"arrival","route":"RELLI..MOGHA..UKOO","altitude":[4000,7000],"speed":250,"method":"random","rate":1.42,"airlines":[["aui/a320",1],["aui/b734",1],["aui/b738",1],["lmu/a320",1],["ohy/a320",1],["thy/b738",1],["thy/b739",1]]},
+        {"origin":"UUEE","destination":"UKOO","category":"arrival","route":"ABUTU..INETO..UKOO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.81,"airlines":[["afl/a319",1],["afl/a320",1],["afl/su95",1],["lmu/a320",1]]},
+        {"origin":"UKBB","destination":"UKOO","category":"arrival","route":"ABUTU..INETO..UKOO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.61,"airlines":[["aui/b735",1],["aui/b738",1],["lmu/a320",1]]},
+        {"origin":"EPWA","destination":"UKOO","category":"arrival","route":"GATFU..BOCHE..UKOO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.41,"airlines":[["lot/e170",1],["lot/e75l",1]]},
+        {"origin":"LCLK","destination":"UKOO","category":"arrival","route":"RELLI..MOGHA..UKOO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.2,"airlines":[["aui/b737",1]]},
+        {"origin":"","destination":"UKOO","category":"arrival","route":"ABUTU..INETO..UKOO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.41,"airlines":[["sbi/a319",1],["tso/b737",1]]},
+        {"origin":"","destination":"UKOO","category":"arrival","route":"UNETE..BOCIG..UKOO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.41,"airlines":[["aby/a320",1],["fdb/b738",1]]},
+        {"origin":"","destination":"UKOO","category":"arrival","route":"RELLI..MOGHA..UKOO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.2,"airlines":[["aui/b738",1]]},
+        {"origin":"","destination":"UKOO","category":"arrival","route":"GATFU..BOCHE..UKOO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.2,"airlines":[["aui/e190",1]]},
+        {"origin":"","destination":"UKOO","category":"arrival","route":"ABUTU..INETO..UKOO","altitude":[4000,7000],"speed":250,"method":"random","rate":1.55,"airlines":[["ur/c172",6],["ur/p28a",5],["ur/c182",3],["ur/be36",2],["ur/da42",1],["ur/tb20",1],["ur/c208",2],["ur/pc12",2],["ur/be20",1],["ur/b350",1],["ur/p180",1],["ur/c510",1],["ur/e50p",1],["ur/c550",1],["ur/e55p",1],["ur/cl30",1],["ur/c680",1],["ur/h25b",1],["ur/lj45",1],["ur/f2th",1],["ur/glf4",1],["ur/glex",1],["ur/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [46.9441,30.8888,46.6192,30.7529],
+            [46.6192,30.7529,46.4272,30.6726],
+            [46.0903,31.281,46.302,30.8987],
+            [46.302,30.8987,46.4272,30.6726],
+            [45.9098,30.4592,46.235,30.5933],
+            [46.235,30.5933,46.4272,30.6726],
+            [46.8129,30.1286,46.5705,30.4705],
+            [46.5705,30.4705,46.4272,30.6726]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [46.4147,30.6817,46.255,30.7504],
+            [46.3377,30.73,46.332,30.7022],
+            [46.2579,30.7642,46.2522,30.7365]
+        ]}
+    ]
+}

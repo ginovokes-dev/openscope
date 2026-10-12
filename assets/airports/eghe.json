@@ -1,0 +1,69 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGHE/",
+    "info": {"country":"GB","city":"St. Mary's","type":"small_airport","longestRunwayM":694,"frequencies":{"twr":"123.150"}},
+    "radio": {"twr":"St Mary's Tower","app":"St Mary's Approach","dep":"St Mary's Radar"},
+    "icao": "EGHE",
+    "iata": "ISC",
+    "magnetic_north": -0.9,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [49.913375,-6.291894,"116ft"],
+    "rangeRings": {"enabled":true,"center":[49.913375,-6.291894],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":130,"speed":6},
+    "arrivalRunway": "14",
+    "departureRunway": "14",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[50.318,-6.3018],[50.3059,-6.1388],[50.267,-5.9863],[50.204,-5.8545],[50.1212,-5.7526],[50.0242,-5.6875],[49.9197,-5.6635],[49.8148,-5.6824],[49.7166,-5.7428],[49.6317,-5.8406],[49.5661,-5.9692],[49.5242,-6.1197],[49.5087,-6.282],[49.5209,-6.445],[49.5598,-6.5975],[49.6228,-6.7292],[49.7055,-6.8312],[49.8025,-6.8963],[49.907,-6.9203],[50.012,-6.9014],[50.1102,-6.841],[50.195,-6.7432],[50.2606,-6.6146],[50.3026,-6.4641]]}
+    ],
+    "fixes": {
+        "EGHE": [49.91338,-6.29189],
+        "GODOP": [50.44975,-6.22835],
+        "ZARIJ": [50.11266,-6.26828],
+        "WOCLE": [49.87246,-5.45894],
+        "RUNEW": [49.89817,-5.98242],
+        "SOFKA": [49.377,-6.35544],
+        "LIBOJ": [49.71409,-6.3155],
+        "VUGGA": [49.95429,-7.12485],
+        "MOHHO": [49.92858,-6.60137],
+        "_RWY1403DME": [49.9532,-6.34511],
+        "_RWY3203DME": [49.87327,-6.23858],
+        "_RWY0903DME": [49.91103,-6.37293],
+        "_RWY2703DME": [49.91572,-6.21092]
+    },
+    "runways": [
+        {"name":["14","32"],"end":[[49.9153,-6.29453,"104ft"],[49.9112,-6.28907,"82ft"]],"ils":[false,false]},
+        {"name":["09","27"],"end":[[49.9133,-6.29542,"103ft"],[49.9135,-6.28844,"105ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "GODOP3B": {"icao":"GODOP3B","name":"Godop Three Bravo","rwy":{"EGHE14":["_RWY3203DME"],"EGHE32":["_RWY1403DME"],"EGHE09":["_RWY2703DME"],"EGHE27":["_RWY0903DME"]},"body":[],"exitPoints":{"GODOP":["GODOP"]},"draw":[["EGHE","GODOP*"]]},
+        "WOCLE2F": {"icao":"WOCLE2F","name":"Wocle Two Foxtrot","rwy":{"EGHE14":["_RWY3203DME"],"EGHE32":["_RWY1403DME"],"EGHE09":["_RWY2703DME"],"EGHE27":["_RWY0903DME"]},"body":[],"exitPoints":{"WOCLE":["WOCLE"]},"draw":[["EGHE","WOCLE*"]]},
+        "SOFKA2D": {"icao":"SOFKA2D","name":"Sofka Two Delta","rwy":{"EGHE14":["_RWY3203DME"],"EGHE32":["_RWY1403DME"],"EGHE09":["_RWY2703DME"],"EGHE27":["_RWY0903DME"]},"body":[],"exitPoints":{"SOFKA":["SOFKA"]},"draw":[["EGHE","SOFKA*"]]},
+        "VUGGA1C": {"icao":"VUGGA1C","name":"Vugga One Charlie","rwy":{"EGHE14":["_RWY3203DME"],"EGHE32":["_RWY1403DME"],"EGHE09":["_RWY2703DME"],"EGHE27":["_RWY0903DME"]},"body":[],"exitPoints":{"VUGGA":["VUGGA"]},"draw":[["EGHE","VUGGA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGHE","destination":"","category":"departure","route":"EGHE14.SOFKA2D.SOFKA","altitude":"","speed":"","method":"random","rate":3,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1]]},
+        {"origin":"","destination":"EGHE","category":"arrival","route":"SOFKA..LIBOJ..EGHE","altitude":[4000,7000],"speed":250,"method":"random","rate":3,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [50.4498,-6.2283,50.1127,-6.2683],
+            [50.1127,-6.2683,49.9134,-6.2919],
+            [49.8725,-5.4589,49.8982,-5.9824],
+            [49.8982,-5.9824,49.9134,-6.2919],
+            [49.377,-6.3554,49.7141,-6.3155],
+            [49.7141,-6.3155,49.9134,-6.2919],
+            [49.9543,-7.1249,49.9286,-6.6014],
+            [49.9286,-6.6014,49.9134,-6.2919]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [49.9153,-6.2945,50.0416,-6.4634],
+            [49.972,-6.3907,49.985,-6.3671],
+            [50.0351,-6.4752,50.0481,-6.4516]
+        ]}
+    ]
+}

@@ -1,0 +1,92 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ORBI/",
+    "info": {"country":"IQ","city":"Baghdad","type":"large_airport","longestRunwayM":4000,"frequencies":{"atis":"127.250","twr":"118.700","app":"128.200","gnd":"121.700","dep":"131.900"}},
+    "radio": {"twr":"Baghdad Tower","app":"Baghdad Approach","dep":"Baghdad Departure"},
+    "icao": "ORBI",
+    "iata": "BGW",
+    "magnetic_north": 4.8,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [33.262501,44.2346,"114ft"],
+    "rangeRings": {"enabled":true,"center":[33.262501,44.2346],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":310,"speed":7},
+    "arrivalRunway": "33R",
+    "departureRunway": "33R",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[33.6658,44.2751],[33.6433,44.3985],[33.5948,44.5108],[33.5237,44.6043],[33.4348,44.6725],[33.3342,44.7109],[33.2286,44.7169],[33.1254,44.69],[33.0315,44.632],[32.9534,44.547],[32.8963,44.4407],[32.8642,44.3203],[32.8592,44.1941],[32.8817,44.0707],[32.9302,43.9584],[33.0013,43.8649],[33.0902,43.7967],[33.1908,43.7583],[33.2964,43.7523],[33.3996,43.7792],[33.4935,43.8372],[33.5716,43.9222],[33.6287,44.0285],[33.6608,44.1489]]}
+    ],
+    "fixes": {
+        "ORBI": [33.2625,44.2346],
+        "HOWVI": [33.67081,44.65346],
+        "AMIWA": [33.4142,44.39022],
+        "SOMOC": [32.90123,44.71127],
+        "VOKWE": [33.12828,44.4117],
+        "SEVON": [33.21526,43.59375],
+        "ELIRI": [33.24495,43.9965],
+        "IRUWA": [33.60144,43.73502],
+        "NOKID": [33.38843,44.04899],
+        "_RWY15L04DME": [33.34158,44.19152],
+        "_RWY33R04DME": [33.19481,44.29222],
+        "_RWY15R04DME": [33.32638,44.17721],
+        "_RWY33L04DME": [33.18501,44.27422]
+    },
+    "runways": [
+        {"name":["15L","33R"],"end":[[33.2838,44.2312,"113ft"],[33.2526,44.2526,"110ft"]],"ils":[true,true]},
+        {"name":["15R","33L"],"end":[[33.2686,44.2169,"114ft"],[33.2428,44.2346,"113ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "HOWVI1D": {"icao":"HOWVI1D","name":"Howvi One Delta","rwy":{"ORBI15L":["_RWY33R04DME"],"ORBI33R":["_RWY15L04DME"],"ORBI15R":["_RWY33L04DME"],"ORBI33L":["_RWY15R04DME"]},"body":[],"exitPoints":{"HOWVI":["HOWVI"]},"draw":[["ORBI","HOWVI*"]]},
+        "SOMOC2B": {"icao":"SOMOC2B","name":"Somoc Two Bravo","rwy":{"ORBI15L":["_RWY33R04DME"],"ORBI33R":["_RWY15L04DME"],"ORBI15R":["_RWY33L04DME"],"ORBI33L":["_RWY15R04DME"]},"body":[],"exitPoints":{"SOMOC":["SOMOC"]},"draw":[["ORBI","SOMOC*"]]},
+        "SEVON2D": {"icao":"SEVON2D","name":"Sevon Two Delta","rwy":{"ORBI15L":["_RWY33R04DME"],"ORBI33R":["_RWY15L04DME"],"ORBI15R":["_RWY33L04DME"],"ORBI33L":["_RWY15R04DME"]},"body":[],"exitPoints":{"SEVON":["SEVON"]},"draw":[["ORBI","SEVON*"]]},
+        "IRUWA3E": {"icao":"IRUWA3E","name":"Iruwa Three Echo","rwy":{"ORBI15L":["_RWY33R04DME"],"ORBI33R":["_RWY15L04DME"],"ORBI15R":["_RWY33L04DME"],"ORBI33L":["_RWY15R04DME"]},"body":[],"exitPoints":{"IRUWA":["IRUWA"]},"draw":[["ORBI","IRUWA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ORBI","destination":"OJAI","category":"departure","route":"ORBI33R.SEVON2D.SEVON","altitude":"","speed":"","method":"random","rate":0.93,"airlines":[["rja/a320",1],["rja/e190",1],["rja/e75l",1]]},
+        {"origin":"ORBI","destination":"OLBA","category":"departure","route":"ORBI33R.SEVON2D.SEVON","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["mea/a320",1],["mea/a321",1]]},
+        {"origin":"ORBI","destination":"OMDB","category":"departure","route":"ORBI33R.SOMOC2B.SOMOC","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["fdb/b738",1],["uae/a332",1]]},
+        {"origin":"ORBI","destination":"HECA","category":"departure","route":"ORBI33R.SEVON2D.SEVON","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["msr/a320",1]]},
+        {"origin":"ORBI","destination":"LTAC","category":"departure","route":"ORBI33R.IRUWA3E.IRUWA","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["thy/b738",1]]},
+        {"origin":"ORBI","destination":"","category":"departure","route":"ORBI33R.SOMOC2B.SOMOC","altitude":"","speed":"","method":"random","rate":1.24,"airlines":[["aby/a320",1],["etd/a320",1],["gba/a320",1],["qtr/a320",1]]},
+        {"origin":"ORBI","destination":"","category":"departure","route":"ORBI33R.IRUWA3E.IRUWA","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["thy/b738",2]]},
+        {"origin":"ORBI","destination":"","category":"departure","route":"ORBI33R.SEVON2D.SEVON","altitude":"","speed":"","method":"random","rate":1.55,"airlines":[["yi/c172",6],["yi/p28a",5],["yi/c182",3],["yi/be36",2],["yi/da42",1],["yi/tb20",1],["yi/c208",2],["yi/pc12",2],["yi/be20",1],["yi/b350",1],["yi/p180",1],["yi/c510",1],["yi/e50p",1],["yi/c550",1],["yi/e55p",1],["yi/cl30",1],["yi/c680",1],["yi/h25b",1],["yi/lj45",1],["yi/f2th",1],["yi/glf4",1],["yi/glex",1],["yi/glf5",1]]},
+        {"origin":"OJAI","destination":"ORBI","category":"arrival","route":"SEVON..ELIRI..ORBI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.93,"airlines":[["rja/a320",1],["rja/e190",1],["rja/e75l",1]]},
+        {"origin":"OLBA","destination":"ORBI","category":"arrival","route":"SEVON..ELIRI..ORBI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.62,"airlines":[["mea/a320",1],["mea/a321",1]]},
+        {"origin":"OMDB","destination":"ORBI","category":"arrival","route":"SOMOC..VOKWE..ORBI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.62,"airlines":[["fdb/b738",1],["uae/a332",1]]},
+        {"origin":"HECA","destination":"ORBI","category":"arrival","route":"SEVON..ELIRI..ORBI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.31,"airlines":[["msr/a320",1]]},
+        {"origin":"LTAC","destination":"ORBI","category":"arrival","route":"IRUWA..NOKID..ORBI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.31,"airlines":[["thy/b738",1]]},
+        {"origin":"","destination":"ORBI","category":"arrival","route":"SOMOC..VOKWE..ORBI","altitude":[4000,7000],"speed":250,"method":"random","rate":1.24,"airlines":[["aby/a320",1],["etd/a320",1],["gba/a320",1],["qtr/a320",1]]},
+        {"origin":"","destination":"ORBI","category":"arrival","route":"IRUWA..NOKID..ORBI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.62,"airlines":[["thy/b738",2]]},
+        {"origin":"","destination":"ORBI","category":"arrival","route":"SEVON..ELIRI..ORBI","altitude":[4000,7000],"speed":250,"method":"random","rate":1.55,"airlines":[["yi/c172",6],["yi/p28a",5],["yi/c182",3],["yi/be36",2],["yi/da42",1],["yi/tb20",1],["yi/c208",2],["yi/pc12",2],["yi/be20",1],["yi/b350",1],["yi/p180",1],["yi/c510",1],["yi/e50p",1],["yi/c550",1],["yi/e55p",1],["yi/cl30",1],["yi/c680",1],["yi/h25b",1],["yi/lj45",1],["yi/f2th",1],["yi/glf4",1],["yi/glex",1],["yi/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [33.6708,44.6535,33.4142,44.3902],
+            [33.4142,44.3902,33.2625,44.2346],
+            [32.9012,44.7113,33.1283,44.4117],
+            [33.1283,44.4117,33.2625,44.2346],
+            [33.2153,43.5937,33.2449,43.9965],
+            [33.2449,43.9965,33.2625,44.2346],
+            [33.6014,43.735,33.3884,44.049],
+            [33.3884,44.049,33.2625,44.2346]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [33.2838,44.2312,33.4282,44.1319],
+            [33.351,44.1712,33.361,44.192],
+            [33.4233,44.1215,33.4332,44.1423],
+            [33.2526,44.2526,33.1081,44.3516],
+            [33.1853,44.3125,33.1754,44.2918],
+            [33.1131,44.3619,33.1031,44.3412],
+            [33.2686,44.2169,33.413,44.1176],
+            [33.3358,44.1569,33.3458,44.1777],
+            [33.408,44.1072,33.418,44.128],
+            [33.2428,44.2346,33.0983,44.3336],
+            [33.1755,44.2945,33.1656,44.2738],
+            [33.1033,44.3439,33.0933,44.3232]
+        ]}
+    ]
+}

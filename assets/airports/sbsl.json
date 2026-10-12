@@ -1,0 +1,95 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SBSL/",
+    "info": {"country":"BR","city":"Sao Luis","type":"large_airport","longestRunwayM":2386,"frequencies":{"twr":"118.700","app":"119.100"},"approximateRunways":true},
+    "radio": {"twr":"Sao Luis Tower","app":"Sao Luis Approach","dep":"Sao Luis Departure"},
+    "icao": "SBSL",
+    "iata": "SLZ",
+    "magnetic_north": -20.6,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-2.586386,-44.235008,"178ft"],
+    "rangeRings": {"enabled":true,"center":[-2.586386,-44.235008],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":50,"speed":11},
+    "arrivalRunway": "06",
+    "departureRunway": "06",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-2.2076,-44.3775],[-2.1836,-44.2745],[-2.1871,-44.1688],[-2.2178,-44.0677],[-2.2737,-43.9779],[-2.3508,-43.9056],[-2.444,-43.8558],[-2.5469,-43.8318],[-2.6525,-43.8353],[-2.7536,-43.8661],[-2.8433,-43.922],[-2.9154,-43.9992],[-2.9652,-44.0925],[-2.9891,-44.1955],[-2.9856,-44.3012],[-2.9549,-44.4024],[-2.8991,-44.4921],[-2.822,-44.5644],[-2.7288,-44.6142],[-2.6259,-44.6382],[-2.5203,-44.6347],[-2.4192,-44.6039],[-2.3295,-44.548],[-2.2573,-44.4708]]}
+    ],
+    "fixes": {
+        "SBSL": [-2.58639,-44.23501],
+        "CEMAT": [-2.06416,-44.10582],
+        "FIZUL": [-2.39236,-44.18701],
+        "BAHNI": [-2.69775,-43.70819],
+        "OPAFU": [-2.62776,-44.03927],
+        "ABASU": [-3.122,-44.28496],
+        "VUFAF": [-2.78539,-44.25357],
+        "BABNI": [-2.95034,-44.63154],
+        "ZUNKI": [-2.72161,-44.38233],
+        "IHOBU": [-2.43978,-44.75311],
+        "FASLI": [-2.53191,-44.4275],
+        "_RWY0604DME": [-2.6465,-44.28374],
+        "_RWY2404DME": [-2.52627,-44.18628],
+        "_RWY0904DME": [-2.61142,-44.30387],
+        "_RWY2704DME": [-2.56135,-44.16615]
+    },
+    "runways": [
+        {"name":["06","24"],"end":[[-2.59472,-44.24177,"178ft"],[-2.57805,-44.22825,"143ft"]],"ils":[true,true]},
+        {"name":["09","27"],"end":[[-2.58864,-44.2412,"171ft"],[-2.58413,-44.22882,"131ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "CEMAT2B": {"icao":"CEMAT2B","name":"Cemat Two Bravo","rwy":{"SBSL06":["_RWY2404DME"],"SBSL24":["_RWY0604DME"],"SBSL09":["_RWY2704DME"],"SBSL27":["_RWY0904DME"]},"body":[],"exitPoints":{"CEMAT":["CEMAT"]},"draw":[["SBSL","CEMAT*"]]},
+        "BAHNI1D": {"icao":"BAHNI1D","name":"Bahni One Delta","rwy":{"SBSL06":["_RWY2404DME"],"SBSL24":["_RWY0604DME"],"SBSL09":["_RWY2704DME"],"SBSL27":["_RWY0904DME"]},"body":[],"exitPoints":{"BAHNI":["BAHNI"]},"draw":[["SBSL","BAHNI*"]]},
+        "ABASU3E": {"icao":"ABASU3E","name":"Abasu Three Echo","rwy":{"SBSL06":["_RWY2404DME"],"SBSL24":["_RWY0604DME"],"SBSL09":["_RWY2704DME"],"SBSL27":["_RWY0904DME"]},"body":[],"exitPoints":{"ABASU":["ABASU"]},"draw":[["SBSL","ABASU*"]]},
+        "BABNI1E": {"icao":"BABNI1E","name":"Babni One Echo","rwy":{"SBSL06":["_RWY2404DME"],"SBSL24":["_RWY0604DME"],"SBSL09":["_RWY2704DME"],"SBSL27":["_RWY0904DME"]},"body":[],"exitPoints":{"BABNI":["BABNI"]},"draw":[["SBSL","BABNI*"]]},
+        "IHOBU3A": {"icao":"IHOBU3A","name":"Ihobu Three Alpha","rwy":{"SBSL06":["_RWY2404DME"],"SBSL24":["_RWY0604DME"],"SBSL09":["_RWY2704DME"],"SBSL27":["_RWY0904DME"]},"body":[],"exitPoints":{"IHOBU":["IHOBU"]},"draw":[["SBSL","IHOBU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SBSL","destination":"SBBR","category":"departure","route":"SBSL06.ABASU3E.ABASU","altitude":"","speed":"","method":"random","rate":0.73,"airlines":[["glo/b738",1],["tam/a319",1],["tam/a320",1]]},
+        {"origin":"SBSL","destination":"SBFZ","category":"departure","route":"SBSL06.BAHNI1D.BAHNI","altitude":"","speed":"","method":"random","rate":0.73,"airlines":[["azu/e190",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBSL","destination":"SBIZ","category":"departure","route":"SBSL06.BABNI1E.BABNI","altitude":"","speed":"","method":"random","rate":0.73,"airlines":[["glo/b737",1],["tam/a319",1],["tam/a320",1]]},
+        {"origin":"SBSL","destination":"SBBE","category":"departure","route":"SBSL06.IHOBU3A.IHOBU","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBSL","destination":"SBGL","category":"departure","route":"SBSL06.ABASU3E.ABASU","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBSL","destination":"","category":"departure","route":"SBSL06.ABASU3E.ABASU","altitude":"","speed":"","method":"random","rate":0.98,"airlines":[["azu/e190",2],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBSL","destination":"","category":"departure","route":"SBSL06.BAHNI1D.BAHNI","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"SBBR","destination":"SBSL","category":"arrival","route":"ABASU..VUFAF..SBSL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.73,"airlines":[["glo/b738",1],["tam/a319",1],["tam/a320",1]]},
+        {"origin":"SBFZ","destination":"SBSL","category":"arrival","route":"BAHNI..OPAFU..SBSL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.73,"airlines":[["azu/e190",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBIZ","destination":"SBSL","category":"arrival","route":"BABNI..ZUNKI..SBSL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.73,"airlines":[["glo/b737",1],["tam/a319",1],["tam/a320",1]]},
+        {"origin":"SBBE","destination":"SBSL","category":"arrival","route":"IHOBU..FASLI..SBSL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.49,"airlines":[["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBGL","destination":"SBSL","category":"arrival","route":"ABASU..VUFAF..SBSL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.49,"airlines":[["glo/b738",1],["tam/a320",1]]},
+        {"origin":"","destination":"SBSL","category":"arrival","route":"ABASU..VUFAF..SBSL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.98,"airlines":[["azu/e190",2],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"","destination":"SBSL","category":"arrival","route":"BAHNI..OPAFU..SBSL","altitude":[4000,7000],"speed":250,"method":"random","rate":1.39,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-2.0642,-44.1058,-2.3924,-44.187],
+            [-2.3924,-44.187,-2.5864,-44.235],
+            [-2.6978,-43.7082,-2.6278,-44.0393],
+            [-2.6278,-44.0393,-2.5864,-44.235],
+            [-3.122,-44.285,-2.7854,-44.2536],
+            [-2.7854,-44.2536,-2.5864,-44.235],
+            [-2.9503,-44.6315,-2.7216,-44.3823],
+            [-2.7216,-44.3823,-2.5864,-44.235],
+            [-2.4398,-44.7531,-2.5319,-44.4275],
+            [-2.5319,-44.4275,-2.5864,-44.235]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-2.5947,-44.2418,-2.7242,-44.3467],
+            [-2.6657,-44.2865,-2.6532,-44.302],
+            [-2.7304,-44.3389,-2.7179,-44.3545],
+            [-2.578,-44.2282,-2.4486,-44.1233],
+            [-2.507,-44.1836,-2.5196,-44.168],
+            [-2.4423,-44.1311,-2.4549,-44.1156],
+            [-2.5886,-44.2412,-2.6456,-44.3979],
+            [-2.6265,-44.3161,-2.6077,-44.323],
+            [-2.655,-44.3945,-2.6362,-44.4013],
+            [-2.5841,-44.2288,-2.5272,-44.0722],
+            [-2.5463,-44.1539,-2.565,-44.1471],
+            [-2.5178,-44.0756,-2.5366,-44.0687]
+        ]}
+    ]
+}

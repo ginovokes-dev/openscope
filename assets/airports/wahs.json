@@ -1,0 +1,81 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/WAHS/",
+    "info": {"country":"ID","city":"Semarang","type":"large_airport","longestRunwayM":2560,"frequencies":{"atis":"126.000","twr":"122.300","app":"120.300"}},
+    "radio": {"twr":"Semarang Tower","app":"Semarang Approach","dep":"Semarang Departure"},
+    "icao": "WAHS",
+    "iata": "SRG",
+    "magnetic_north": 0.8,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-6.970732,110.373244,"10ft"],
+    "rangeRings": {"enabled":true,"center":[-6.970732,110.373244],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":120,"speed":10},
+    "arrivalRunway": "13",
+    "departureRunway": "13",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-6.5661,110.3789],[-6.5813,110.4843],[-6.6231,110.582],[-6.6886,110.6655],[-6.7733,110.7291],[-6.8715,110.7685],[-6.9764,110.7809],[-7.0809,110.7655],[-7.178,110.7234],[-7.2609,110.6575],[-7.324,110.5721],[-7.3631,110.4733],[-7.3754,110.3676],[-7.3601,110.2622],[-7.3183,110.1645],[-7.2529,110.081],[-7.1682,110.0173],[-7.07,109.978],[-6.9651,109.9656],[-6.8605,109.9809],[-6.7635,110.023],[-6.6806,110.089],[-6.6175,110.1743],[-6.5784,110.2732]]}
+    ],
+    "fixes": {
+        "WAHS": [-6.97073,110.37324],
+        "GEWJE": [-6.61807,110.78248],
+        "SAMHI": [-6.8397,110.52529],
+        "UGUPI": [-7.10447,110.89817],
+        "IHUHU": [-7.02042,110.56828],
+        "SITIR": [-7.42308,110.07994],
+        "MEMOJ": [-7.1388,110.26427],
+        "OZIZE": [-6.55187,110.03319],
+        "ZOLIH": [-6.81511,110.2469],
+        "_RWY1304DME": [-6.92454,110.31756],
+        "_RWY3104DME": [-7.02091,110.43346]
+    },
+    "runways": [
+        {"name":["13","31"],"end":[[-6.96732,110.369,"10ft"],[-6.97813,110.382,"10ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "GEWJE3B": {"icao":"GEWJE3B","name":"Gewje Three Bravo","rwy":{"WAHS13":["_RWY3104DME"],"WAHS31":["_RWY1304DME"]},"body":[],"exitPoints":{"GEWJE":["GEWJE"]},"draw":[["WAHS","GEWJE*"]]},
+        "UGUPI2A": {"icao":"UGUPI2A","name":"Ugupi Two Alpha","rwy":{"WAHS13":["_RWY3104DME"],"WAHS31":["_RWY1304DME"]},"body":[],"exitPoints":{"UGUPI":["UGUPI"]},"draw":[["WAHS","UGUPI*"]]},
+        "SITIR1F": {"icao":"SITIR1F","name":"Sitir One Foxtrot","rwy":{"WAHS13":["_RWY3104DME"],"WAHS31":["_RWY1304DME"]},"body":[],"exitPoints":{"SITIR":["SITIR"]},"draw":[["WAHS","SITIR*"]]},
+        "OZIZE2C": {"icao":"OZIZE2C","name":"Ozize Two Charlie","rwy":{"WAHS13":["_RWY3104DME"],"WAHS31":["_RWY1304DME"]},"body":[],"exitPoints":{"OZIZE":["OZIZE"]},"draw":[["WAHS","OZIZE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"WAHS","destination":"WIII","category":"departure","route":"WAHS13.OZIZE2C.OZIZE","altitude":"","speed":"","method":"random","rate":0.99,"airlines":[["gia/b738",1],["lni/b738",1],["sjy/b735",1]]},
+        {"origin":"WAHS","destination":"WSSS","category":"departure","route":"WAHS13.OZIZE2C.OZIZE","altitude":"","speed":"","method":"random","rate":0.99,"airlines":[["awq/a320",1],["gia/a319",1],["slk/a319",1]]},
+        {"origin":"WAHS","destination":"WARR","category":"departure","route":"WAHS13.UGUPI2A.UGUPI","altitude":"","speed":"","method":"random","rate":0.66,"airlines":[["gia/crjx",1],["sjy/b735",1]]},
+        {"origin":"WAHS","destination":"WADD","category":"departure","route":"WAHS13.UGUPI2A.UGUPI","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["gia/crjx",1]]},
+        {"origin":"WAHS","destination":"WALL","category":"departure","route":"WAHS13.GEWJE3B.GEWJE","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["lni/b738",1]]},
+        {"origin":"WAHS","destination":"","category":"departure","route":"WAHS13.OZIZE2C.OZIZE","altitude":"","speed":"","method":"random","rate":0.66,"airlines":[["axm/a320",1],["lni/b738",1]]},
+        {"origin":"WAHS","destination":"","category":"departure","route":"WAHS13.GEWJE3B.GEWJE","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",1],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]},
+        {"origin":"WIII","destination":"WAHS","category":"arrival","route":"OZIZE..ZOLIH..WAHS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.99,"airlines":[["gia/b738",1],["lni/b738",1],["sjy/b735",1]]},
+        {"origin":"WSSS","destination":"WAHS","category":"arrival","route":"OZIZE..ZOLIH..WAHS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.99,"airlines":[["awq/a320",1],["gia/a319",1],["slk/a319",1]]},
+        {"origin":"WARR","destination":"WAHS","category":"arrival","route":"UGUPI..IHUHU..WAHS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.66,"airlines":[["gia/crjx",1],["sjy/b735",1]]},
+        {"origin":"WADD","destination":"WAHS","category":"arrival","route":"UGUPI..IHUHU..WAHS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.33,"airlines":[["gia/crjx",1]]},
+        {"origin":"WALL","destination":"WAHS","category":"arrival","route":"GEWJE..SAMHI..WAHS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.33,"airlines":[["lni/b738",1]]},
+        {"origin":"","destination":"WAHS","category":"arrival","route":"OZIZE..ZOLIH..WAHS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.66,"airlines":[["axm/a320",1],["lni/b738",1]]},
+        {"origin":"","destination":"WAHS","category":"arrival","route":"GEWJE..SAMHI..WAHS","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",1],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-6.6181,110.7825,-6.8397,110.5253],
+            [-6.8397,110.5253,-6.9707,110.3732],
+            [-7.1045,110.8982,-7.0204,110.5683],
+            [-7.0204,110.5683,-6.9707,110.3732],
+            [-7.4231,110.0799,-7.1388,110.2643],
+            [-7.1388,110.2643,-6.9707,110.3732],
+            [-6.5519,110.0332,-6.8151,110.2469],
+            [-6.8151,110.2469,-6.9707,110.3732]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-6.9673,110.369,-6.8603,110.2404],
+            [-6.9215,110.2982,-6.9062,110.3112],
+            [-6.868,110.2339,-6.8527,110.2469],
+            [-6.9781,110.382,-7.0851,110.5107],
+            [-7.0239,110.4528,-7.0393,110.4399],
+            [-7.0774,110.5171,-7.0927,110.5042]
+        ]}
+    ]
+}

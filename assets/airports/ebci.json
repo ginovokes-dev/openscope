@@ -1,0 +1,98 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EBCI/",
+    "info": {"country":"BE","city":"Charleroi","type":"large_airport","longestRunwayM":3055,"frequencies":{"atis":"134.625","twr":"121.300","app":"133.125","gnd":"121.800"}},
+    "radio": {"twr":"Charleroi Tower","app":"Charleroi Approach","dep":"Charleroi Departure"},
+    "icao": "EBCI",
+    "iata": "CRL",
+    "magnetic_north": 2.5,
+    "ctr_radius": 75,
+    "ctr_ceiling": 12000,
+    "initial_alt": 6000,
+    "position": [50.461963,4.459562,"614ft"],
+    "rangeRings": {"enabled":true,"center":[50.461963,4.459562],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":220,"speed":10},
+    "arrivalRunway": "24",
+    "departureRunway": "24",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":120,"airspace_class":"C","poly":[[51.1358,4.5058],[51.1052,4.7782],[51.0308,5.0289],[50.9176,5.2407],[50.7734,5.3994],[50.6079,5.494],[50.4325,5.5181],[50.2591,5.4701],[50.0996,5.3532],[49.9647,5.1754],[49.8637,4.9488],[49.8035,4.6889],[49.7881,4.4133],[49.8187,4.141],[49.8931,3.8903],[50.0063,3.6784],[50.1505,3.5197],[50.316,3.4251],[50.4914,3.401],[50.6648,3.4491],[50.8244,3.566],[50.9593,3.7437],[51.0602,3.9703],[51.1205,4.2302]]}
+    ],
+    "fixes": {
+        "EBCI": [50.46196,4.45956],
+        "ONT": [51.2133,5.5575,"kleine brogel"],
+        "TEZNI": [50.66927,4.76251],
+        "LNO": [50.5858,5.71028,"olno"],
+        "IWAFO": [50.50548,4.89906],
+        "DIK": [49.8614,6.12972,"diekirch"],
+        "UZOCA": [50.32271,4.84683],
+        "REM": [49.3116,4.04536,"reims"],
+        "SAPEK": [50.18598,4.36019],
+        "MAK": [50.9647,3.49611,"mackel"],
+        "EFEDI": [50.64146,4.11558],
+        "_RWY0604DME": [50.42915,4.34735],
+        "_RWY2404DME": [50.49418,4.5712]
+    },
+    "runways": [
+        {"name":["06","24"],"end":[[50.45685,4.44249,"611ft"],[50.46656,4.47592,"583ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ONT1B": {"icao":"ONT1B","name":"Kleine Brogel One Bravo","rwy":{"EBCI06":["_RWY2404DME"],"EBCI24":["_RWY0604DME"]},"body":[],"exitPoints":{"ONT":["ONT"]},"draw":[["EBCI","ONT*"]]},
+        "LNO2E": {"icao":"LNO2E","name":"Olno Two Echo","rwy":{"EBCI06":["_RWY2404DME"],"EBCI24":["_RWY0604DME"]},"body":[],"exitPoints":{"LNO":["LNO"]},"draw":[["EBCI","LNO*"]]},
+        "DIK3C": {"icao":"DIK3C","name":"Diekirch Three Charlie","rwy":{"EBCI06":["_RWY2404DME"],"EBCI24":["_RWY0604DME"]},"body":[],"exitPoints":{"DIK":["DIK"]},"draw":[["EBCI","DIK*"]]},
+        "REM3E": {"icao":"REM3E","name":"Reims Three Echo","rwy":{"EBCI06":["_RWY2404DME"],"EBCI24":["_RWY0604DME"]},"body":[],"exitPoints":{"REM":["REM"]},"draw":[["EBCI","REM*"]]},
+        "MAK2F": {"icao":"MAK2F","name":"Mackel Two Foxtrot","rwy":{"EBCI06":["_RWY2404DME"],"EBCI24":["_RWY0604DME"]},"body":[],"exitPoints":{"MAK":["MAK"]},"draw":[["EBCI","MAK*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EBCI","destination":"LHBP","category":"departure","route":"EBCI24.DIK3C.DIK","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["ryr/b738",1],["wzz/a320",1]]},
+        {"origin":"EBCI","destination":"LTFJ","category":"departure","route":"EBCI24.DIK3C.DIK","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["pgt/a320",1],["pgt/b738",1]]},
+        {"origin":"EBCI","destination":"EGCC","category":"departure","route":"EBCI24.MAK2F.MAK","altitude":"","speed":"","method":"random","rate":0.13,"airlines":[["ryr/b738",1]]},
+        {"origin":"EBCI","destination":"EGPH","category":"departure","route":"EBCI24.MAK2F.MAK","altitude":"","speed":"","method":"random","rate":0.13,"airlines":[["ryr/b738",1]]},
+        {"origin":"EBCI","destination":"EIDW","category":"departure","route":"EBCI24.MAK2F.MAK","altitude":"","speed":"","method":"random","rate":0.13,"airlines":[["ryr/b738",1]]},
+        {"origin":"EBCI","destination":"ENRY","category":"departure","route":"EBCI24.ONT1B.ONT","altitude":"","speed":"","method":"random","rate":0.13,"airlines":[["ryr/b738",1]]},
+        {"origin":"EBCI","destination":"EPKK","category":"departure","route":"EBCI24.LNO2E.LNO","altitude":"","speed":"","method":"random","rate":0.13,"airlines":[["ryr/b738",1]]},
+        {"origin":"EBCI","destination":"","category":"departure","route":"EBCI24.ONT1B.ONT","altitude":"","speed":"","method":"random","rate":0.13,"airlines":[["ryr/b738",1]]},
+        {"origin":"EBCI","destination":"","category":"departure","route":"EBCI24.LNO2E.LNO","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ryr/b738",2],["wzz/a320",2]]},
+        {"origin":"EBCI","destination":"","category":"departure","route":"EBCI24.DIK3C.DIK","altitude":"","speed":"","method":"random","rate":4.02,"airlines":[["ryr/b738",26],["wzz/a320",5]]},
+        {"origin":"EBCI","destination":"","category":"departure","route":"EBCI24.REM3E.REM","altitude":"","speed":"","method":"random","rate":5.19,"airlines":[["ryr/b738",40]]},
+        {"origin":"EBCI","destination":"","category":"departure","route":"EBCI24.REM3E.REM","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["oo/c172",3],["oo/p28a",3],["oo/c182",2],["oo/be36",1],["oo/da42",1],["oo/tb20",1],["oo/c208",2],["oo/pc12",2],["oo/be20",1],["oo/b350",1],["oo/p180",1],["oo/c510",3],["oo/e50p",2],["oo/c550",3],["oo/e55p",2],["oo/cl30",2],["oo/c680",2],["oo/h25b",2],["oo/lj45",2],["oo/f2th",1],["oo/glf4",1],["oo/glex",1],["oo/glf5",1]]},
+        {"origin":"EBCI","destination":"","category":"departure","route":"EBCI24.LNO2E.LNO","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["oo/c172",3],["oo/p28a",3],["oo/c182",2],["oo/be36",1],["oo/da42",1],["oo/tb20",1],["oo/c208",2],["oo/pc12",2],["oo/be20",1],["oo/b350",1],["oo/p180",1],["oo/c510",3],["oo/e50p",2],["oo/c550",3],["oo/e55p",2],["oo/cl30",2],["oo/c680",2],["oo/h25b",2],["oo/lj45",2],["oo/f2th",1],["oo/glf4",1],["oo/glex",1],["oo/glf5",1]]},
+        {"origin":"LHBP","destination":"EBCI","category":"arrival","route":"DIK..UZOCA..EBCI","altitude":[8000,11000],"speed":250,"method":"random","rate":0.26,"airlines":[["ryr/b738",1],["wzz/a320",1]]},
+        {"origin":"LTFJ","destination":"EBCI","category":"arrival","route":"DIK..UZOCA..EBCI","altitude":[8000,11000],"speed":250,"method":"random","rate":0.26,"airlines":[["pgt/a320",1],["pgt/b738",1]]},
+        {"origin":"EGCC","destination":"EBCI","category":"arrival","route":"MAK..EFEDI..EBCI","altitude":[8000,11000],"speed":250,"method":"random","rate":0.13,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGPH","destination":"EBCI","category":"arrival","route":"MAK..EFEDI..EBCI","altitude":[8000,11000],"speed":250,"method":"random","rate":0.13,"airlines":[["ryr/b738",1]]},
+        {"origin":"EIDW","destination":"EBCI","category":"arrival","route":"MAK..EFEDI..EBCI","altitude":[8000,11000],"speed":250,"method":"random","rate":0.13,"airlines":[["ryr/b738",1]]},
+        {"origin":"ENRY","destination":"EBCI","category":"arrival","route":"ONT..TEZNI..EBCI","altitude":[8000,11000],"speed":250,"method":"random","rate":0.13,"airlines":[["ryr/b738",1]]},
+        {"origin":"EPKK","destination":"EBCI","category":"arrival","route":"LNO..IWAFO..EBCI","altitude":[8000,11000],"speed":250,"method":"random","rate":0.13,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"EBCI","category":"arrival","route":"ONT..TEZNI..EBCI","altitude":[8000,11000],"speed":250,"method":"random","rate":0.13,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"EBCI","category":"arrival","route":"LNO..IWAFO..EBCI","altitude":[8000,11000],"speed":250,"method":"random","rate":0.52,"airlines":[["ryr/b738",2],["wzz/a320",2]]},
+        {"origin":"","destination":"EBCI","category":"arrival","route":"DIK..UZOCA..EBCI","altitude":[8000,11000],"speed":250,"method":"random","rate":4.02,"airlines":[["ryr/b738",26],["wzz/a320",5]]},
+        {"origin":"","destination":"EBCI","category":"arrival","route":"REM..SAPEK..EBCI","altitude":[8000,11000],"speed":250,"method":"random","rate":5.19,"airlines":[["ryr/b738",40]]},
+        {"origin":"","destination":"EBCI","category":"arrival","route":"REM..SAPEK..EBCI","altitude":[8000,11000],"speed":250,"method":"random","rate":0.42,"airlines":[["oo/c172",3],["oo/p28a",3],["oo/c182",2],["oo/be36",1],["oo/da42",1],["oo/tb20",1],["oo/c208",2],["oo/pc12",2],["oo/be20",1],["oo/b350",1],["oo/p180",1],["oo/c510",3],["oo/e50p",2],["oo/c550",3],["oo/e55p",2],["oo/cl30",2],["oo/c680",2],["oo/h25b",2],["oo/lj45",2],["oo/f2th",1],["oo/glf4",1],["oo/glex",1],["oo/glf5",1]]},
+        {"origin":"","destination":"EBCI","category":"arrival","route":"LNO..IWAFO..EBCI","altitude":[8000,11000],"speed":250,"method":"random","rate":0.42,"airlines":[["oo/c172",3],["oo/p28a",3],["oo/c182",2],["oo/be36",1],["oo/da42",1],["oo/tb20",1],["oo/c208",2],["oo/pc12",2],["oo/be20",1],["oo/b350",1],["oo/p180",1],["oo/c510",3],["oo/e50p",2],["oo/c550",3],["oo/e55p",2],["oo/cl30",2],["oo/c680",2],["oo/h25b",2],["oo/lj45",2],["oo/f2th",1],["oo/glf4",1],["oo/glex",1],["oo/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [51.2133,5.5575,50.6693,4.7625],
+            [50.6693,4.7625,50.462,4.4596],
+            [50.5858,5.7103,50.5055,4.8991],
+            [50.5055,4.8991,50.462,4.4596],
+            [49.8614,6.1297,50.3227,4.8468],
+            [50.3227,4.8468,50.462,4.4596],
+            [49.3116,4.0454,50.186,4.3602],
+            [50.186,4.3602,50.462,4.4596],
+            [50.9647,3.4961,50.6415,4.1156],
+            [50.6415,4.1156,50.462,4.4596]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [50.4569,4.4425,50.3875,4.2048],
+            [50.4131,4.3301,50.4313,4.3171],
+            [50.3784,4.2114,50.3966,4.1983],
+            [50.4666,4.4759,50.5355,4.7143],
+            [50.5102,4.5885,50.492,4.6016],
+            [50.5446,4.7078,50.5264,4.7208]
+        ]}
+    ]
+}

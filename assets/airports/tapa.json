@@ -1,0 +1,87 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/TAPA/",
+    "info": {"country":"AG","city":"Osbourn","type":"large_airport","longestRunwayM":2748,"frequencies":{"atis":"114.500","twr":"118.200","app":"119.100","gnd":"121.900"}},
+    "radio": {"twr":"Antigua Tower","app":"Antigua Approach","dep":"Antigua Departure"},
+    "icao": "TAPA",
+    "iata": "ANU",
+    "magnetic_north": -15.1,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [17.1367,-61.792702,"62ft"],
+    "rangeRings": {"enabled":true,"center":[17.1367,-61.792702],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":50,"speed":5},
+    "arrivalRunway": "07",
+    "departureRunway": "07",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[17.6577,-61.9398],[17.6763,-61.7937],[17.6581,-61.6475],[17.6045,-61.5112],[17.5189,-61.3941],[17.4073,-61.3042],[17.2773,-61.2475],[17.1376,-61.228],[16.998,-61.247],[16.8677,-61.3032],[16.7558,-61.3927],[16.6699,-61.5095],[16.6157,-61.6456],[16.5971,-61.7917],[16.6153,-61.9379],[16.6689,-62.0742],[16.7545,-62.1913],[16.8661,-62.2812],[16.9961,-62.3379],[17.1358,-62.3574],[17.2754,-62.3384],[17.4057,-62.2822],[17.5176,-62.1927],[17.6035,-62.0759]]}
+    ],
+    "fixes": {
+        "TAPA": [17.1367,-61.7927],
+        "IBECU": [17.66884,-61.30695],
+        "DECSU": [17.32497,-61.62084],
+        "PPR": [16.2652,-61.5401,"pointe a pitre"],
+        "NIDUH": [16.89593,-61.72292],
+        "SKB": [17.2959,-62.7434,"bradshaw"],
+        "VALBO": [17.17982,-62.05022],
+        "NOBRI": [17.78601,-62.08315],
+        "ZABEF": [17.36642,-61.89546],
+        "_RWY0704DME": [17.09609,-61.86138],
+        "_RWY2504DME": [17.17824,-61.72239]
+    },
+    "runways": [
+        {"name":["07","25"],"end":[[17.13115,-61.8021,"58ft"],[17.1432,-61.7817,"17ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "IBECU2C": {"icao":"IBECU2C","name":"Ibecu Two Charlie","rwy":{"TAPA07":["_RWY2504DME"],"TAPA25":["_RWY0704DME"]},"body":[],"exitPoints":{"IBECU":["IBECU"]},"draw":[["TAPA","IBECU*"]]},
+        "PPR2E": {"icao":"PPR2E","name":"Pointe A Pitre Two Echo","rwy":{"TAPA07":["_RWY2504DME"],"TAPA25":["_RWY0704DME"]},"body":[],"exitPoints":{"PPR":["PPR"]},"draw":[["TAPA","PPR*"]]},
+        "SKB3E": {"icao":"SKB3E","name":"Bradshaw Three Echo","rwy":{"TAPA07":["_RWY2504DME"],"TAPA25":["_RWY0704DME"]},"body":[],"exitPoints":{"SKB":["SKB"]},"draw":[["TAPA","SKB*"]]},
+        "NOBRI3E": {"icao":"NOBRI3E","name":"Nobri Three Echo","rwy":{"TAPA07":["_RWY2504DME"],"TAPA25":["_RWY0704DME"]},"body":[],"exitPoints":{"NOBRI":["NOBRI"]},"draw":[["TAPA","NOBRI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"TAPA","destination":"TBPB","category":"departure","route":"TAPA07.PPR2E.PPR","altitude":"","speed":"","method":"random","rate":0.9,"airlines":[["bwa/b738",1],["lia/at43",1],["lia/at72",1],["lia/dh8c",1]]},
+        {"origin":"TAPA","destination":"TKPK","category":"departure","route":"TAPA07.SKB3E.SKB","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["lia/at43",1],["lia/at72",1],["lia/dh8c",1]]},
+        {"origin":"TAPA","destination":"TNCM","category":"departure","route":"TAPA07.SKB3E.SKB","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["lia/at43",1],["lia/at72",1],["lia/dh8c",1]]},
+        {"origin":"TAPA","destination":"TQPF","category":"departure","route":"TAPA07.NOBRI3E.NOBRI","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["lia/at43",1],["lia/at72",1],["lia/dh8c",1]]},
+        {"origin":"TAPA","destination":"CYYZ","category":"departure","route":"TAPA07.NOBRI3E.NOBRI","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["aca/a320",1],["wja/b737",1]]},
+        {"origin":"TAPA","destination":"KCLT","category":"departure","route":"TAPA07.NOBRI3E.NOBRI","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["aal/a319",2]]},
+        {"origin":"TAPA","destination":"","category":"departure","route":"TAPA07.IBECU2C.IBECU","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["cfg/b763",1],["vir/a333",1]]},
+        {"origin":"TAPA","destination":"","category":"departure","route":"TAPA07.PPR2E.PPR","altitude":"","speed":"","method":"random","rate":1.12,"airlines":[["lia/at72",2],["lia/dh8c",2],["vir/a333",1]]},
+        {"origin":"TAPA","destination":"","category":"departure","route":"TAPA07.SKB3E.SKB","altitude":"","speed":"","method":"random","rate":1.57,"airlines":[["aal/b738",2],["bwa/b738",1],["cfg/b763",1],["lia/at43",1],["lia/at72",1],["sib/bn2p",1]]},
+        {"origin":"TAPA","destination":"","category":"departure","route":"TAPA07.NOBRI3E.NOBRI","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["aal/b738",2],["ual/b738",1]]},
+        {"origin":"TBPB","destination":"TAPA","category":"arrival","route":"PPR..NIDUH..TAPA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.9,"airlines":[["bwa/b738",1],["lia/at43",1],["lia/at72",1],["lia/dh8c",1]]},
+        {"origin":"TKPK","destination":"TAPA","category":"arrival","route":"SKB..VALBO..TAPA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.67,"airlines":[["lia/at43",1],["lia/at72",1],["lia/dh8c",1]]},
+        {"origin":"TNCM","destination":"TAPA","category":"arrival","route":"SKB..VALBO..TAPA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.67,"airlines":[["lia/at43",1],["lia/at72",1],["lia/dh8c",1]]},
+        {"origin":"TQPF","destination":"TAPA","category":"arrival","route":"NOBRI..ZABEF..TAPA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.67,"airlines":[["lia/at43",1],["lia/at72",1],["lia/dh8c",1]]},
+        {"origin":"CYYZ","destination":"TAPA","category":"arrival","route":"NOBRI..ZABEF..TAPA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["aca/a320",1],["wja/b737",1]]},
+        {"origin":"KCLT","destination":"TAPA","category":"arrival","route":"NOBRI..ZABEF..TAPA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["aal/a319",2]]},
+        {"origin":"","destination":"TAPA","category":"arrival","route":"IBECU..DECSU..TAPA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["cfg/b763",1],["vir/a333",1]]},
+        {"origin":"","destination":"TAPA","category":"arrival","route":"PPR..NIDUH..TAPA","altitude":[6000,9000],"speed":250,"method":"random","rate":1.12,"airlines":[["lia/at72",2],["lia/dh8c",2],["vir/a333",1]]},
+        {"origin":"","destination":"TAPA","category":"arrival","route":"SKB..VALBO..TAPA","altitude":[6000,9000],"speed":250,"method":"random","rate":1.57,"airlines":[["aal/b738",2],["bwa/b738",1],["cfg/b763",1],["lia/at43",1],["lia/at72",1],["sib/bn2p",1]]},
+        {"origin":"","destination":"TAPA","category":"arrival","route":"NOBRI..ZABEF..TAPA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.67,"airlines":[["aal/b738",2],["ual/b738",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [17.6688,-61.3069,17.325,-61.6208],
+            [17.325,-61.6208,17.1367,-61.7927],
+            [16.2652,-61.5401,16.8959,-61.7229],
+            [16.8959,-61.7229,17.1367,-61.7927],
+            [17.2959,-62.7434,17.1798,-62.0502],
+            [17.1798,-62.0502,17.1367,-61.7927],
+            [17.786,-62.0831,17.3664,-61.8955],
+            [17.3664,-61.8955,17.1367,-61.7927]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [17.1311,-61.8021,17.0435,-61.9503],
+            [17.0788,-61.8707,17.0958,-61.8817],
+            [17.035,-61.9448,17.052,-61.9558],
+            [17.1432,-61.7817,17.2308,-61.6334],
+            [17.1955,-61.7131,17.1785,-61.7021],
+            [17.2393,-61.6389,17.2223,-61.6279]
+        ]}
+    ]
+}

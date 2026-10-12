@@ -1,0 +1,98 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/MROC/",
+    "info": {"country":"CR","city":"San Jose","type":"large_airport","longestRunwayM":3051,"frequencies":{"twr":"118.600","app":"120.500","gnd":"121.900"}},
+    "radio": {"twr":"Juan Santamaria Tower","app":"Juan Santamaria Approach","dep":"Juan Santamaria Departure"},
+    "icao": "MROC",
+    "iata": "SJO",
+    "magnetic_north": -2.8,
+    "ctr_radius": 60,
+    "ctr_ceiling": 13000,
+    "initial_alt": 8000,
+    "position": [9.99386,-84.208801,"3021ft"],
+    "rangeRings": {"enabled":true,"center":[9.99386,-84.208801],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":70,"speed":9},
+    "arrivalRunway": "07",
+    "departureRunway": "07",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":130,"airspace_class":"C","poly":[[10.5328,-84.2356],[10.5213,-84.093],[10.4738,-83.9584],[10.3936,-83.8408],[10.2862,-83.7482],[10.1588,-83.6871],[10.0202,-83.6615],[9.8798,-83.6733],[9.7472,-83.7215],[9.6314,-83.8029],[9.5403,-83.912],[9.4801,-84.0413],[9.4549,-84.182],[9.4665,-84.3246],[9.5139,-84.4592],[9.5941,-84.5768],[9.7016,-84.6694],[9.8289,-84.7305],[9.9675,-84.7561],[10.1079,-84.7443],[10.2405,-84.6961],[10.3563,-84.6147],[10.4474,-84.5056],[10.5076,-84.3763]]}
+    ],
+    "fixes": {
+        "MROC": [9.99386,-84.2088],
+        "MEBAK": [10.69048,-84.09139],
+        "REVOG": [10.24032,-84.16726],
+        "COL": [10.7533,-83.5833,"barra del colorado"],
+        "UPAMA": [10.18789,-84.04899],
+        "LIO": [9.96333,-83.0267,"limon"],
+        "ZUPHA": [9.98731,-83.95521],
+        "KAFOD": [9.32197,-83.98819],
+        "MESKI": [9.75615,-84.13075],
+        "CHI": [11.0383,-84.71,"los chiles"],
+        "ZEHOB": [10.21974,-84.31719],
+        "_RWY0704DME": [9.96507,-84.28503],
+        "_RWY2504DME": [10.02083,-84.13787]
+    },
+    "runways": [
+        {"name":["07","25"],"end":[[9.989,-84.2219,"2936ft"],[9.99691,-84.20101,"3045ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "MEBAK3A": {"icao":"MEBAK3A","name":"Mebak Three Alpha","rwy":{"MROC07":["_RWY2504DME"],"MROC25":["_RWY0704DME"]},"body":[],"exitPoints":{"MEBAK":["MEBAK"]},"draw":[["MROC","MEBAK*"]]},
+        "COL1E": {"icao":"COL1E","name":"Barra Del Colorado One Echo","rwy":{"MROC07":["_RWY2504DME"],"MROC25":["_RWY0704DME"]},"body":[],"exitPoints":{"COL":["COL"]},"draw":[["MROC","COL*"]]},
+        "LIO3A": {"icao":"LIO3A","name":"Limon Three Alpha","rwy":{"MROC07":["_RWY2504DME"],"MROC25":["_RWY0704DME"]},"body":[],"exitPoints":{"LIO":["LIO"]},"draw":[["MROC","LIO*"]]},
+        "KAFOD3E": {"icao":"KAFOD3E","name":"Kafod Three Echo","rwy":{"MROC07":["_RWY2504DME"],"MROC25":["_RWY0704DME"]},"body":[],"exitPoints":{"KAFOD":["KAFOD"]},"draw":[["MROC","KAFOD*"]]},
+        "CHI2A": {"icao":"CHI2A","name":"Los Chiles Two Alpha","rwy":{"MROC07":["_RWY2504DME"],"MROC25":["_RWY0704DME"]},"body":[],"exitPoints":{"CHI":["CHI"]},"draw":[["MROC","CHI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"MROC","destination":"MPTO","category":"departure","route":"MROC07.LIO3A.LIO","altitude":"","speed":"","method":"random","rate":0.7,"airlines":[["ava/a319",1],["ava/e190",1],["cmp/b737",1],["cmp/b738",1],["cmp/e190",1]]},
+        {"origin":"MROC","destination":"KMIA","category":"departure","route":"MROC07.MEBAK3A.MEBAK","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["aal/b738",2],["aal/b752",2]]},
+        {"origin":"MROC","destination":"MGGT","category":"departure","route":"MROC07.CHI2A.CHI","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["ava/a320",1],["cmp/b737",1],["cmp/b738",1],["cmp/e190",1]]},
+        {"origin":"MROC","destination":"MHTG","category":"departure","route":"MROC07.CHI2A.CHI","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["cmp/b737",1],["cmp/b738",1],["cmp/e190",1],["ava/at72",1],["ava/at45",1],["ava/at75",1]]},
+        {"origin":"MROC","destination":"MSLP","category":"departure","route":"MROC07.CHI2A.CHI","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["ava/a319",1],["ava/a320",1],["ava/a321",1],["ava/e190",1]]},
+        {"origin":"MROC","destination":"KATL","category":"departure","route":"MROC07.MEBAK3A.MEBAK","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["dal/b738",2],["dal/b752",1]]},
+        {"origin":"MROC","destination":"","category":"departure","route":"MROC07.MEBAK3A.MEBAK","altitude":"","speed":"","method":"random","rate":1.81,"airlines":[["ual/b738",3],["aal/a319",2],["aal/b738",2],["jbu/a320",2],["aca/a319",1],["ava/a319",1],["dal/b752",1],["nks/a320",1]]},
+        {"origin":"MROC","destination":"","category":"departure","route":"MROC07.COL1E.COL","altitude":"","speed":"","method":"random","rate":0.14,"airlines":[["cfg/b763",1]]},
+        {"origin":"MROC","destination":"","category":"departure","route":"MROC07.LIO3A.LIO","altitude":"","speed":"","method":"random","rate":0.14,"airlines":[["ava/a319",1]]},
+        {"origin":"MROC","destination":"","category":"departure","route":"MROC07.KAFOD3E.KAFOD","altitude":"","speed":"","method":"random","rate":0.14,"airlines":[["ava/a320",1]]},
+        {"origin":"MROC","destination":"","category":"departure","route":"MROC07.CHI2A.CHI","altitude":"","speed":"","method":"random","rate":1.67,"airlines":[["aal/b752",2],["amx/b738",1],["ava/a319",1],["cmp/b737",1],["cmp/b738",1],["cmp/e190",1],["dal/b752",1],["fft/a319",1],["lrc/c172",1],["ual/b738",1],["ava/at72",1],["ava/at45",1]]},
+        {"origin":"MROC","destination":"","category":"departure","route":"MROC07.KAFOD3E.KAFOD","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["ti/c172",6],["ti/p28a",5],["ti/c182",3],["ti/be36",2],["ti/da42",1],["ti/tb20",1],["ti/c208",2],["ti/pc12",2],["ti/be20",1],["ti/b350",1],["ti/p180",1],["ti/c510",1],["ti/e50p",1],["ti/c550",2],["ti/e55p",1],["ti/cl30",1],["ti/c680",1],["ti/h25b",1],["ti/lj45",1],["ti/f2th",1],["ti/glf4",1],["ti/glex",1],["ti/glf5",1]]},
+        {"origin":"MROC","destination":"","category":"departure","route":"MROC07.CHI2A.CHI","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["ti/c172",6],["ti/p28a",5],["ti/c182",3],["ti/be36",2],["ti/da42",1],["ti/tb20",1],["ti/c208",2],["ti/pc12",2],["ti/be20",1],["ti/b350",1],["ti/p180",1],["ti/c510",1],["ti/e50p",1],["ti/c550",2],["ti/e55p",1],["ti/cl30",1],["ti/c680",1],["ti/h25b",1],["ti/lj45",1],["ti/f2th",1],["ti/glf4",1],["ti/glex",1],["ti/glf5",1]]},
+        {"origin":"MPTO","destination":"MROC","category":"arrival","route":"LIO..ZUPHA..MROC","altitude":[9000,12000],"speed":250,"method":"random","rate":0.7,"airlines":[["ava/a319",1],["ava/e190",1],["cmp/b737",1],["cmp/b738",1],["cmp/e190",1]]},
+        {"origin":"KMIA","destination":"MROC","category":"arrival","route":"MEBAK..REVOG..MROC","altitude":[9000,12000],"speed":250,"method":"random","rate":0.56,"airlines":[["aal/b738",2],["aal/b752",2]]},
+        {"origin":"MGGT","destination":"MROC","category":"arrival","route":"CHI..ZEHOB..MROC","altitude":[9000,12000],"speed":250,"method":"random","rate":0.56,"airlines":[["ava/a320",1],["cmp/b737",1],["cmp/b738",1],["cmp/e190",1]]},
+        {"origin":"MHTG","destination":"MROC","category":"arrival","route":"CHI..ZEHOB..MROC","altitude":[9000,12000],"speed":250,"method":"random","rate":0.56,"airlines":[["cmp/b737",1],["cmp/b738",1],["cmp/e190",1],["ava/at72",1],["ava/at45",1],["ava/at75",1]]},
+        {"origin":"MSLP","destination":"MROC","category":"arrival","route":"CHI..ZEHOB..MROC","altitude":[9000,12000],"speed":250,"method":"random","rate":0.56,"airlines":[["ava/a319",1],["ava/a320",1],["ava/a321",1],["ava/e190",1]]},
+        {"origin":"KATL","destination":"MROC","category":"arrival","route":"MEBAK..REVOG..MROC","altitude":[9000,12000],"speed":250,"method":"random","rate":0.42,"airlines":[["dal/b738",2],["dal/b752",1]]},
+        {"origin":"","destination":"MROC","category":"arrival","route":"MEBAK..REVOG..MROC","altitude":[9000,12000],"speed":250,"method":"random","rate":1.81,"airlines":[["ual/b738",3],["aal/a319",2],["aal/b738",2],["jbu/a320",2],["aca/a319",1],["ava/a319",1],["dal/b752",1],["nks/a320",1]]},
+        {"origin":"","destination":"MROC","category":"arrival","route":"COL..UPAMA..MROC","altitude":[9000,12000],"speed":250,"method":"random","rate":0.14,"airlines":[["cfg/b763",1]]},
+        {"origin":"","destination":"MROC","category":"arrival","route":"LIO..ZUPHA..MROC","altitude":[9000,12000],"speed":250,"method":"random","rate":0.14,"airlines":[["ava/a319",1]]},
+        {"origin":"","destination":"MROC","category":"arrival","route":"KAFOD..MESKI..MROC","altitude":[9000,12000],"speed":250,"method":"random","rate":0.14,"airlines":[["ava/a320",1]]},
+        {"origin":"","destination":"MROC","category":"arrival","route":"CHI..ZEHOB..MROC","altitude":[9000,12000],"speed":250,"method":"random","rate":1.67,"airlines":[["aal/b752",2],["amx/b738",1],["ava/a319",1],["cmp/b737",1],["cmp/b738",1],["cmp/e190",1],["dal/b752",1],["fft/a319",1],["lrc/c172",1],["ual/b738",1],["ava/at72",1],["ava/at45",1]]},
+        {"origin":"","destination":"MROC","category":"arrival","route":"KAFOD..MESKI..MROC","altitude":[9000,12000],"speed":250,"method":"random","rate":0.49,"airlines":[["ti/c172",6],["ti/p28a",5],["ti/c182",3],["ti/be36",2],["ti/da42",1],["ti/tb20",1],["ti/c208",2],["ti/pc12",2],["ti/be20",1],["ti/b350",1],["ti/p180",1],["ti/c510",1],["ti/e50p",1],["ti/c550",2],["ti/e55p",1],["ti/cl30",1],["ti/c680",1],["ti/h25b",1],["ti/lj45",1],["ti/f2th",1],["ti/glf4",1],["ti/glex",1],["ti/glf5",1]]},
+        {"origin":"","destination":"MROC","category":"arrival","route":"CHI..ZEHOB..MROC","altitude":[9000,12000],"speed":250,"method":"random","rate":0.49,"airlines":[["ti/c172",6],["ti/p28a",5],["ti/c182",3],["ti/be36",2],["ti/da42",1],["ti/tb20",1],["ti/c208",2],["ti/pc12",2],["ti/be20",1],["ti/b350",1],["ti/p180",1],["ti/c510",1],["ti/e50p",1],["ti/c550",2],["ti/e55p",1],["ti/cl30",1],["ti/c680",1],["ti/h25b",1],["ti/lj45",1],["ti/f2th",1],["ti/glf4",1],["ti/glex",1],["ti/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [10.6905,-84.0914,10.2403,-84.1673],
+            [10.2403,-84.1673,9.9939,-84.2088],
+            [10.7533,-83.5833,10.1879,-84.049],
+            [10.1879,-84.049,9.9939,-84.2088],
+            [9.9633,-83.0267,9.9873,-83.9552],
+            [9.9873,-83.9552,9.9939,-84.2088],
+            [9.322,-83.9882,9.7561,-84.1307],
+            [9.7561,-84.1307,9.9939,-84.2088],
+            [11.0383,-84.71,10.2197,-84.3172],
+            [10.2197,-84.3172,9.9939,-84.2088]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [9.989,-84.2219,9.9292,-84.3797],
+            [9.9498,-84.2972,9.9684,-84.3045],
+            [9.9198,-84.3761,9.9385,-84.3834],
+            [9.9969,-84.201,10.0567,-84.0431],
+            [10.0361,-84.1257,10.0175,-84.1184],
+            [10.066,-84.0468,10.0473,-84.0395]
+        ]}
+    ]
+}

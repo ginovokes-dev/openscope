@@ -1,0 +1,85 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LERS/",
+    "info": {"country":"ES","city":"Reus","type":"large_airport","longestRunwayM":2455,"frequencies":{"twr":"118.150","app":"118.150","gnd":"121.700"}},
+    "radio": {"twr":"Reus Tower","app":"Reus Approach","dep":"Reus Departure"},
+    "icao": "LERS",
+    "iata": "REU",
+    "magnetic_north": 1.8,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [41.147509,1.168354,"233ft"],
+    "rangeRings": {"enabled":true,"center":[41.147509,1.168354],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":220,"speed":7},
+    "arrivalRunway": "25",
+    "departureRunway": "25",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[41.6868,1.1909],[41.6641,1.3755],[41.6061,1.546],[41.5169,1.6907],[41.4025,1.7999],[41.2707,1.866],[41.1306,1.8846],[40.9915,1.8543],[40.8632,1.7774],[40.7542,1.6589],[40.672,1.507],[40.6222,1.332],[40.6082,1.1458],[40.6309,0.9612],[40.6889,0.7908],[40.7781,0.646],[40.8925,0.5368],[41.0243,0.4707],[41.1645,0.4521],[41.3035,0.4824],[41.4319,0.5593],[41.5409,0.6778],[41.6231,0.8297],[41.6728,1.0047]]}
+    ],
+    "fixes": {
+        "LERS": [41.14751,1.16835],
+        "SLL": [41.5199,2.10975,"sabadell"],
+        "VOSEW": [41.26369,1.46207],
+        "GAWMU": [40.58639,1.73768],
+        "TALID": [40.94899,1.36978],
+        "MLA": [41.1296,0.16524,"maella"],
+        "FOBUW": [41.14159,0.83667],
+        "SEO": [42.2322,1.40352,"seo de urgel"],
+        "GOHJI": [41.39408,1.22181],
+        "_RWY0704DME": [41.121,1.07621],
+        "_RWY2504DME": [41.17588,1.26576]
+    },
+    "runways": [
+        {"name":["07","25"],"end":[[41.14494,1.15876,"231ft"],[41.152,1.18315,"234ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "SLL3B": {"icao":"SLL3B","name":"Sabadell Three Bravo","rwy":{"LERS07":["_RWY2504DME"],"LERS25":["_RWY0704DME"]},"body":[],"exitPoints":{"SLL":["SLL"]},"draw":[["LERS","SLL*"]]},
+        "GAWMU1F": {"icao":"GAWMU1F","name":"Gawmu One Foxtrot","rwy":{"LERS07":["_RWY2504DME"],"LERS25":["_RWY0704DME"]},"body":[],"exitPoints":{"GAWMU":["GAWMU"]},"draw":[["LERS","GAWMU*"]]},
+        "MLA2E": {"icao":"MLA2E","name":"Maella Two Echo","rwy":{"LERS07":["_RWY2504DME"],"LERS25":["_RWY0704DME"]},"body":[],"exitPoints":{"MLA":["MLA"]},"draw":[["LERS","MLA*"]]},
+        "SEO2D": {"icao":"SEO2D","name":"Seo De Urgel Two Delta","rwy":{"LERS07":["_RWY2504DME"],"LERS25":["_RWY0704DME"]},"body":[],"exitPoints":{"SEO":["SEO"]},"draw":[["LERS","SEO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LERS","destination":"EGCC","category":"departure","route":"LERS25.SEO2D.SEO","altitude":"","speed":"","method":"random","rate":1.22,"airlines":[["exs/b733",1],["ryr/b738",1],["tvf/b738",1],["tvf/b752",1]]},
+        {"origin":"LERS","destination":"EGGD","category":"departure","route":"LERS25.SEO2D.SEO","altitude":"","speed":"","method":"random","rate":0.61,"airlines":[["ryr/b738",1],["tvf/b752",1]]},
+        {"origin":"LERS","destination":"EGGW","category":"departure","route":"LERS25.SEO2D.SEO","altitude":"","speed":"","method":"random","rate":0.61,"airlines":[["ryr/b738",1],["tvf/b738",1]]},
+        {"origin":"LERS","destination":"EBCI","category":"departure","route":"LERS25.SEO2D.SEO","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["ryr/b738",1]]},
+        {"origin":"LERS","destination":"EDFH","category":"departure","route":"LERS25.SEO2D.SEO","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["ryr/b738",1]]},
+        {"origin":"LERS","destination":"","category":"departure","route":"LERS25.GAWMU1F.GAWMU","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["ryr/b738",1]]},
+        {"origin":"LERS","destination":"","category":"departure","route":"LERS25.SEO2D.SEO","altitude":"","speed":"","method":"random","rate":2.74,"airlines":[["ryr/b738",7],["exs/b733",2]]},
+        {"origin":"LERS","destination":"","category":"departure","route":"LERS25.GAWMU1F.GAWMU","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"LERS","destination":"","category":"departure","route":"LERS25.SLL3B.SLL","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"EGCC","destination":"LERS","category":"arrival","route":"SEO..GOHJI..LERS","altitude":[6000,9000],"speed":250,"method":"random","rate":1.22,"airlines":[["exs/b733",1],["ryr/b738",1],["tvf/b738",1],["tvf/b752",1]]},
+        {"origin":"EGGD","destination":"LERS","category":"arrival","route":"SEO..GOHJI..LERS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.61,"airlines":[["ryr/b738",1],["tvf/b752",1]]},
+        {"origin":"EGGW","destination":"LERS","category":"arrival","route":"SEO..GOHJI..LERS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.61,"airlines":[["ryr/b738",1],["tvf/b738",1]]},
+        {"origin":"EBCI","destination":"LERS","category":"arrival","route":"SEO..GOHJI..LERS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.3,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDFH","destination":"LERS","category":"arrival","route":"SEO..GOHJI..LERS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.3,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LERS","category":"arrival","route":"GAWMU..TALID..LERS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.3,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LERS","category":"arrival","route":"SEO..GOHJI..LERS","altitude":[6000,9000],"speed":250,"method":"random","rate":2.74,"airlines":[["ryr/b738",7],["exs/b733",2]]},
+        {"origin":"","destination":"LERS","category":"arrival","route":"GAWMU..TALID..LERS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"","destination":"LERS","category":"arrival","route":"SLL..VOSEW..LERS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [41.5199,2.1098,41.2637,1.4621],
+            [41.2637,1.4621,41.1475,1.1684],
+            [40.5864,1.7377,40.949,1.3698],
+            [40.949,1.3698,41.1475,1.1684],
+            [41.1296,0.1652,41.1416,0.8367],
+            [41.1416,0.8367,41.1475,1.1684],
+            [42.2322,1.4035,41.3941,1.2218],
+            [41.3941,1.2218,41.1475,1.1684]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [41.1449,1.1588,41.085,0.9525],
+            [41.1057,1.0603,41.1243,1.0508],
+            [41.0756,0.9573,41.0943,0.9478],
+            [41.152,1.1832,41.2116,1.3898],
+            [41.1912,1.2817,41.1725,1.2912],
+            [41.2209,1.385,41.2023,1.3946]
+        ]}
+    ]
+}

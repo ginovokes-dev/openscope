@@ -1,0 +1,79 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LGMK/",
+    "info": {"country":"GR","city":"Mykonos","type":"medium_airport","longestRunwayM":1907,"frequencies":{"twr":"118.750","app":"118.750"}},
+    "radio": {"twr":"Mykonos Tower","app":"Mykonos Approach","dep":"Mykonos Departure"},
+    "icao": "LGMK",
+    "iata": "JMK",
+    "magnetic_north": 5.2,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [37.435101,25.348101,"405ft"],
+    "rangeRings": {"enabled":true,"center":[37.435101,25.348101],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":340,"speed":8},
+    "arrivalRunway": "34",
+    "departureRunway": "34",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[37.8381,25.3943],[37.8149,25.5241],[37.7658,25.6419],[37.6942,25.7397],[37.6049,25.8108],[37.504,25.8503],[37.3984,25.8557],[37.2954,25.8264],[37.2018,25.7646],[37.1242,25.6743],[37.0677,25.5619],[37.0363,25.4349],[37.0321,25.3019],[37.0553,25.1721],[37.1044,25.0543],[37.1761,24.9565],[37.2654,24.8854],[37.3662,24.8459],[37.4718,24.8405],[37.5748,24.8698],[37.6684,24.9316],[37.746,25.0219],[37.8025,25.1343],[37.8339,25.2614]]}
+    ],
+    "fixes": {
+        "LGMK": [37.4351,25.3481],
+        "MES": [38.2517,25.9056,"mesta"],
+        "BEWTE": [37.61081,25.46806],
+        "WUPUJ": [37.08337,25.86069],
+        "FASIB": [37.30442,25.53855],
+        "MIL": [36.7475,24.5194,"milos"],
+        "SAKFU": [37.2907,25.17407],
+        "KRO": [37.9942,24.495,"karistos"],
+        "CUZDU": [37.56233,25.15398],
+        "_RWY1604DME": [37.50621,25.31709],
+        "_RWY3404DME": [37.36418,25.37936]
+    },
+    "runways": [
+        {"name":["16","34"],"end":[[37.4433,25.3447,"395ft"],[37.4271,25.3518,"389ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "MES2F": {"icao":"MES2F","name":"Mesta Two Foxtrot","rwy":{"LGMK16":["_RWY3404DME"],"LGMK34":["_RWY1604DME"]},"body":[],"exitPoints":{"MES":["MES"]},"draw":[["LGMK","MES*"]]},
+        "WUPUJ2D": {"icao":"WUPUJ2D","name":"Wupuj Two Delta","rwy":{"LGMK16":["_RWY3404DME"],"LGMK34":["_RWY1604DME"]},"body":[],"exitPoints":{"WUPUJ":["WUPUJ"]},"draw":[["LGMK","WUPUJ*"]]},
+        "MIL1B": {"icao":"MIL1B","name":"Milos One Bravo","rwy":{"LGMK16":["_RWY3404DME"],"LGMK34":["_RWY1604DME"]},"body":[],"exitPoints":{"MIL":["MIL"]},"draw":[["LGMK","MIL*"]]},
+        "KRO2D": {"icao":"KRO2D","name":"Karistos Two Delta","rwy":{"LGMK16":["_RWY3404DME"],"LGMK34":["_RWY1604DME"]},"body":[],"exitPoints":{"KRO":["KRO"]},"draw":[["LGMK","KRO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LGMK","destination":"LGAV","category":"departure","route":"LGMK34.KRO2D.KRO","altitude":"","speed":"","method":"random","rate":1.01,"airlines":[["aee/a320",1],["aee/dh8d",1]]},
+        {"origin":"LGMK","destination":"LIMC","category":"departure","route":"LGMK34.KRO2D.KRO","altitude":"","speed":"","method":"random","rate":1.01,"airlines":[["ezy/a319",1],["ezy/a320",1]]},
+        {"origin":"LGMK","destination":"LOWW","category":"departure","route":"LGMK34.KRO2D.KRO","altitude":"","speed":"","method":"random","rate":1.01,"airlines":[["ber/a320",1],["nly/a320",1]]},
+        {"origin":"LGMK","destination":"EDDK","category":"departure","route":"LGMK34.KRO2D.KRO","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["gwi/a319",1]]},
+        {"origin":"LGMK","destination":"EGCC","category":"departure","route":"LGMK34.KRO2D.KRO","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["ezy/a320",1]]},
+        {"origin":"LGMK","destination":"","category":"departure","route":"LGMK34.KRO2D.KRO","altitude":"","speed":"","method":"random","rate":1.51,"airlines":[["baw/a320",1],["ezy/a319",1],["ezy/a320",1]]},
+        {"origin":"LGAV","destination":"LGMK","category":"arrival","route":"KRO..CUZDU..LGMK","altitude":[4000,7000],"speed":250,"method":"random","rate":1.01,"airlines":[["aee/a320",1],["aee/dh8d",1]]},
+        {"origin":"LIMC","destination":"LGMK","category":"arrival","route":"KRO..CUZDU..LGMK","altitude":[4000,7000],"speed":250,"method":"random","rate":1.01,"airlines":[["ezy/a319",1],["ezy/a320",1]]},
+        {"origin":"LOWW","destination":"LGMK","category":"arrival","route":"KRO..CUZDU..LGMK","altitude":[4000,7000],"speed":250,"method":"random","rate":1.01,"airlines":[["ber/a320",1],["nly/a320",1]]},
+        {"origin":"EDDK","destination":"LGMK","category":"arrival","route":"KRO..CUZDU..LGMK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.5,"airlines":[["gwi/a319",1]]},
+        {"origin":"EGCC","destination":"LGMK","category":"arrival","route":"KRO..CUZDU..LGMK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.5,"airlines":[["ezy/a320",1]]},
+        {"origin":"","destination":"LGMK","category":"arrival","route":"KRO..CUZDU..LGMK","altitude":[4000,7000],"speed":250,"method":"random","rate":1.51,"airlines":[["baw/a320",1],["ezy/a319",1],["ezy/a320",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [38.2517,25.9056,37.6108,25.4681],
+            [37.6108,25.4681,37.4351,25.3481],
+            [37.0834,25.8607,37.3044,25.5385],
+            [37.3044,25.5385,37.4351,25.3481],
+            [36.7475,24.5194,37.2907,25.1741],
+            [37.2907,25.1741,37.4351,25.3481],
+            [37.9942,24.495,37.5623,25.154],
+            [37.5623,25.154,37.4351,25.3481]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [37.4433,25.3447,37.6006,25.2756],
+            [37.5187,25.2983,37.5252,25.3221],
+            [37.5973,25.2637,37.6039,25.2875],
+            [37.4271,25.3518,37.2698,25.4206],
+            [37.3517,25.3981,37.3452,25.3744],
+            [37.2731,25.4325,37.2665,25.4088]
+        ]}
+    ]
+}

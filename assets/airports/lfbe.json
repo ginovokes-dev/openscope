@@ -1,0 +1,88 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LFBE/",
+    "info": {"country":"FR","city":"Bergerac","type":"medium_airport","longestRunwayM":2205,"frequencies":{"twr":"119.800","app":"119.275"}},
+    "radio": {"twr":"Bergerac Tower","app":"Bergerac Approach","dep":"Bergerac Departure"},
+    "icao": "LFBE",
+    "iata": "EGC",
+    "magnetic_north": 1.6,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [44.825298,0.518611,"171ft"],
+    "rangeRings": {"enabled":true,"center":[44.825298,0.518611],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":280,"speed":12},
+    "arrivalRunway": "27",
+    "departureRunway": "27",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[45.2298,0.5345],[45.2131,0.6816],[45.17,0.8176],[45.1034,0.9332],[45.0178,1.0205],[44.9191,1.0737],[44.814,1.089],[44.7097,1.0654],[44.6132,1.0046],[44.5313,0.9107],[44.4693,0.79],[44.4316,0.6508],[44.4208,0.5027],[44.4375,0.3556],[44.4806,0.2196],[44.5472,0.104],[44.6328,0.0167],[44.7315,-0.0364],[44.8366,-0.0518],[44.9409,-0.0282],[45.0374,0.0326],[45.1193,0.1266],[45.1813,0.2472],[45.219,0.3864]]}
+    ],
+    "fixes": {
+        "LFBE": [44.8253,0.51861],
+        "KODUL": [45.29451,0.88955],
+        "CISIF": [44.99963,0.65643],
+        "CUNEG": [44.65099,1.23614],
+        "JEMUF": [44.76053,0.7852],
+        "AGN": [43.888,0.87286,"agen"],
+        "MOWIC": [44.63225,0.59157],
+        "BMC": [44.8269,-0.72111,"bordeaux"],
+        "RUMUB": [44.82566,0.23682],
+        "CNA": [45.6596,-0.31164,"cognac"],
+        "ETIGE": [44.98859,0.35612],
+        "_RWY0904DME": [44.83019,0.41393],
+        "_RWY2704DME": [44.81886,0.62315]
+    },
+    "runways": [
+        {"name":["09","27"],"end":[[44.82516,0.5076,"170ft"],[44.82397,0.52951,"161ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "KODUL2F": {"icao":"KODUL2F","name":"Kodul Two Foxtrot","rwy":{"LFBE09":["_RWY2704DME"],"LFBE27":["_RWY0904DME"]},"body":[],"exitPoints":{"KODUL":["KODUL"]},"draw":[["LFBE","KODUL*"]]},
+        "CUNEG2E": {"icao":"CUNEG2E","name":"Cuneg Two Echo","rwy":{"LFBE09":["_RWY2704DME"],"LFBE27":["_RWY0904DME"]},"body":[],"exitPoints":{"CUNEG":["CUNEG"]},"draw":[["LFBE","CUNEG*"]]},
+        "AGN3B": {"icao":"AGN3B","name":"Agen Three Bravo","rwy":{"LFBE09":["_RWY2704DME"],"LFBE27":["_RWY0904DME"]},"body":[],"exitPoints":{"AGN":["AGN"]},"draw":[["LFBE","AGN*"]]},
+        "BMC1F": {"icao":"BMC1F","name":"Bordeaux One Foxtrot","rwy":{"LFBE09":["_RWY2704DME"],"LFBE27":["_RWY0904DME"]},"body":[],"exitPoints":{"BMC":["BMC"]},"draw":[["LFBE","BMC*"]]},
+        "CNA3D": {"icao":"CNA3D","name":"Cognac Three Delta","rwy":{"LFBE09":["_RWY2704DME"],"LFBE27":["_RWY0904DME"]},"body":[],"exitPoints":{"CNA":["CNA"]},"draw":[["LFBE","CNA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LFBE","destination":"EHRD","category":"departure","route":"LFBE27.KODUL2F.KODUL","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["tra/b737",1],["tra/b738",1]]},
+        {"origin":"LFBE","destination":"EBCI","category":"departure","route":"LFBE27.KODUL2F.KODUL","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["ryr/b738",1]]},
+        {"origin":"LFBE","destination":"EGGD","category":"departure","route":"LFBE27.CNA3D.CNA","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["ryr/b738",1]]},
+        {"origin":"LFBE","destination":"EGGP","category":"departure","route":"LFBE27.CNA3D.CNA","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["ryr/b738",1]]},
+        {"origin":"LFBE","destination":"EGHI","category":"departure","route":"LFBE27.CNA3D.CNA","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["bee/dh8d",1]]},
+        {"origin":"LFBE","destination":"","category":"departure","route":"LFBE27.KODUL2F.KODUL","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["ryr/b738",1],["tjt/b190",1]]},
+        {"origin":"LFBE","destination":"","category":"departure","route":"LFBE27.CNA3D.CNA","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["bee/dh8d",1],["ryr/b738",1]]},
+        {"origin":"LFBE","destination":"","category":"departure","route":"LFBE27.CUNEG2E.CUNEG","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["f/c172",6],["f/p28a",5],["f/c182",3],["f/be36",2],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",1],["f/e50p",1],["f/c550",1],["f/e55p",1],["f/cl30",1],["f/c680",1],["f/h25b",1],["f/lj45",1],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]},
+        {"origin":"EHRD","destination":"LFBE","category":"arrival","route":"KODUL..CISIF..LFBE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.87,"airlines":[["tra/b737",1],["tra/b738",1]]},
+        {"origin":"EBCI","destination":"LFBE","category":"arrival","route":"KODUL..CISIF..LFBE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.43,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGGD","destination":"LFBE","category":"arrival","route":"CNA..ETIGE..LFBE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.43,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGGP","destination":"LFBE","category":"arrival","route":"CNA..ETIGE..LFBE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.43,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGHI","destination":"LFBE","category":"arrival","route":"CNA..ETIGE..LFBE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.43,"airlines":[["bee/dh8d",1]]},
+        {"origin":"","destination":"LFBE","category":"arrival","route":"KODUL..CISIF..LFBE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.87,"airlines":[["ryr/b738",1],["tjt/b190",1]]},
+        {"origin":"","destination":"LFBE","category":"arrival","route":"CNA..ETIGE..LFBE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.87,"airlines":[["bee/dh8d",1],["ryr/b738",1]]},
+        {"origin":"","destination":"LFBE","category":"arrival","route":"CUNEG..JEMUF..LFBE","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["f/c172",6],["f/p28a",5],["f/c182",3],["f/be36",2],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",1],["f/e50p",1],["f/c550",1],["f/e55p",1],["f/cl30",1],["f/c680",1],["f/h25b",1],["f/lj45",1],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [45.2945,0.8895,44.9996,0.6564],
+            [44.9996,0.6564,44.8253,0.5186],
+            [44.651,1.2361,44.7605,0.7852],
+            [44.7605,0.7852,44.8253,0.5186],
+            [43.888,0.8729,44.6322,0.5916],
+            [44.6322,0.5916,44.8253,0.5186],
+            [44.8269,-0.7211,44.8257,0.2368],
+            [44.8257,0.2368,44.8253,0.5186],
+            [45.6596,-0.3116,44.9886,0.3561],
+            [44.9886,0.3561,44.8253,0.5186]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [44.8252,0.5076,44.8376,0.2734],
+            [44.8215,0.3894,44.8414,0.3916],
+            [44.8276,0.2723,44.8476,0.2745],
+            [44.824,0.5295,44.8111,0.7636],
+            [44.8275,0.6476,44.8076,0.6455],
+            [44.821,0.7647,44.8011,0.7625]
+        ]}
+    ]
+}

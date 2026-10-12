@@ -1,0 +1,79 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/CYRT/",
+    "info": {"country":"CA","city":"Rankin Inlet","type":"medium_airport","longestRunwayM":1830},
+    "radio": {"twr":"Rankin Inlet Tower","app":"Rankin Inlet Approach","dep":"Rankin Inlet Departure"},
+    "icao": "CYRT",
+    "iata": "YRT",
+    "magnetic_north": -5.2,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [62.811401,-92.115799,"94ft"],
+    "rangeRings": {"enabled":true,"center":[62.811401,-92.115799],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":330,"speed":9},
+    "arrivalRunway": "31",
+    "departureRunway": "31",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[63.2144,-92.1961],[63.2102,-91.965],[63.1788,-91.7443],[63.1223,-91.5489],[63.0447,-91.3921],[62.9511,-91.2846],[62.8481,-91.2337],[62.7425,-91.243],[62.6417,-91.3118],[62.5524,-91.4353],[62.4807,-91.6053],[62.4316,-91.81],[62.4084,-92.0355],[62.4126,-92.2666],[62.444,-92.4873],[62.5005,-92.6827],[62.5781,-92.8395],[62.6717,-92.947],[62.7747,-92.9979],[62.8803,-92.9886],[62.9812,-92.9198],[63.0705,-92.7963],[63.1421,-92.6263],[63.1912,-92.4216]]}
+    ],
+    "fixes": {
+        "CYRT": [62.8114,-92.1158],
+        "YCS": [63.3383,-90.73,"chesterfield inlet"],
+        "LEMIW": [62.93924,-91.77957],
+        "IMUVU": [62.50061,-91.15485],
+        "FENBA": [62.69593,-91.75877],
+        "YXN": [62.2358,-92.6011,"whale cove"],
+        "AFIZU": [62.6249,-92.27304],
+        "USAKU": [63.17062,-92.99216],
+        "CACAK": [62.94486,-92.4414],
+        "_RWY1304DME": [62.85866,-92.24297],
+        "_RWY3104DME": [62.76404,-91.98909]
+    },
+    "runways": [
+        {"name":["13","31"],"end":[[62.8166,-92.1298,"85ft"],[62.8062,-92.1019,"94ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "YCS1D": {"icao":"YCS1D","name":"Chesterfield Inlet One Delta","rwy":{"CYRT13":["_RWY3104DME"],"CYRT31":["_RWY1304DME"]},"body":[],"exitPoints":{"YCS":["YCS"]},"draw":[["CYRT","YCS*"]]},
+        "IMUVU3D": {"icao":"IMUVU3D","name":"Imuvu Three Delta","rwy":{"CYRT13":["_RWY3104DME"],"CYRT31":["_RWY1304DME"]},"body":[],"exitPoints":{"IMUVU":["IMUVU"]},"draw":[["CYRT","IMUVU*"]]},
+        "YXN1A": {"icao":"YXN1A","name":"Whale Cove One Alpha","rwy":{"CYRT13":["_RWY3104DME"],"CYRT31":["_RWY1304DME"]},"body":[],"exitPoints":{"YXN":["YXN"]},"draw":[["CYRT","YXN*"]]},
+        "USAKU3D": {"icao":"USAKU3D","name":"Usaku Three Delta","rwy":{"CYRT13":["_RWY3104DME"],"CYRT31":["_RWY1304DME"]},"body":[],"exitPoints":{"USAKU":["USAKU"]},"draw":[["CYRT","USAKU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"CYRT","destination":"CYBK","category":"departure","route":"CYRT31.USAKU3D.USAKU","altitude":"","speed":"","method":"random","rate":0.7,"airlines":[["fab/at43",1]]},
+        {"origin":"CYRT","destination":"CYCS","category":"departure","route":"CYRT31.YCS1D.YCS","altitude":"","speed":"","method":"random","rate":0.7,"airlines":[["fab/at43",1]]},
+        {"origin":"CYRT","destination":"CYEK","category":"departure","route":"CYRT31.YXN1A.YXN","altitude":"","speed":"","method":"random","rate":0.7,"airlines":[["fab/at43",1]]},
+        {"origin":"CYRT","destination":"CYWG","category":"departure","route":"CYRT31.YXN1A.YXN","altitude":"","speed":"","method":"random","rate":0.7,"airlines":[["fab/at43",1]]},
+        {"origin":"CYRT","destination":"","category":"departure","route":"CYRT31.YXN1A.YXN","altitude":"","speed":"","method":"random","rate":0.7,"airlines":[["fab/at43",1]]},
+        {"origin":"CYRT","destination":"","category":"departure","route":"CYRT31.YXN1A.YXN","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["c/c172",6],["c/p28a",5],["c/c182",3],["c/be36",2],["c/da42",1],["c/tb20",1],["c/c208",2],["c/pc12",2],["c/be20",1],["c/b350",1],["c/p180",1],["c/c510",1],["c/e50p",1],["c/c550",1],["c/e55p",1],["c/cl30",1],["c/c680",1],["c/h25b",1],["c/lj45",1],["c/f2th",1],["c/glf4",1],["c/glex",1],["c/glf5",1]]},
+        {"origin":"CYBK","destination":"CYRT","category":"arrival","route":"USAKU..CACAK..CYRT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.7,"airlines":[["fab/at43",1]]},
+        {"origin":"CYCS","destination":"CYRT","category":"arrival","route":"YCS..LEMIW..CYRT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.7,"airlines":[["fab/at43",1]]},
+        {"origin":"CYEK","destination":"CYRT","category":"arrival","route":"YXN..AFIZU..CYRT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.7,"airlines":[["fab/at43",1]]},
+        {"origin":"CYWG","destination":"CYRT","category":"arrival","route":"YXN..AFIZU..CYRT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.7,"airlines":[["fab/at43",1]]},
+        {"origin":"","destination":"CYRT","category":"arrival","route":"YXN..AFIZU..CYRT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.7,"airlines":[["fab/at43",1]]},
+        {"origin":"","destination":"CYRT","category":"arrival","route":"YXN..AFIZU..CYRT","altitude":[4000,7000],"speed":250,"method":"random","rate":1.17,"airlines":[["c/c172",6],["c/p28a",5],["c/c182",3],["c/be36",2],["c/da42",1],["c/tb20",1],["c/c208",2],["c/pc12",2],["c/be20",1],["c/b350",1],["c/p180",1],["c/c510",1],["c/e50p",1],["c/c550",1],["c/e55p",1],["c/cl30",1],["c/c680",1],["c/h25b",1],["c/lj45",1],["c/f2th",1],["c/glf4",1],["c/glex",1],["c/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [63.3383,-90.73,62.9392,-91.7796],
+            [62.9392,-91.7796,62.8114,-92.1158],
+            [62.5006,-91.1549,62.6959,-91.7588],
+            [62.6959,-91.7588,62.8114,-92.1158],
+            [62.2358,-92.6011,62.6249,-92.273],
+            [62.6249,-92.273,62.8114,-92.1158],
+            [63.1706,-92.9922,62.9449,-92.4414],
+            [62.9449,-92.4414,62.8114,-92.1158]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [62.8166,-92.1298,62.9216,-92.4133],
+            [62.8614,-92.2852,62.8769,-92.2575],
+            [62.9138,-92.4272,62.9293,-92.3995],
+            [62.8062,-92.1019,62.7006,-91.8205],
+            [62.7612,-91.9471,62.7457,-91.9747],
+            [62.7084,-91.8067,62.6929,-91.8343]
+        ]}
+    ]
+}

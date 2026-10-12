@@ -1,0 +1,89 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VOTV/",
+    "info": {"country":"IN","city":"Thiruvananthapuram","type":"large_airport","longestRunwayM":3407,"frequencies":{"atis":"126.600","twr":"118.100","app":"119.600"}},
+    "radio": {"twr":"Thiruvananthapuram Tower","app":"Thiruvananthapuram Approach","dep":"Thiruvananthapuram Departure"},
+    "icao": "VOTV",
+    "iata": "TRV",
+    "magnetic_north": -1.8,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [8.481889,76.920029,"15ft"],
+    "rangeRings": {"enabled":true,"center":[8.481889,76.920029],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":120,"speed":9},
+    "arrivalRunway": "14",
+    "departureRunway": "14",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[9.0212,76.9029],[9.0072,77.0446],[8.9574,77.1778],[8.8752,77.2935],[8.7662,77.3837],[8.6378,77.4423],[8.4988,77.4653],[8.3587,77.4512],[8.2269,77.4008],[8.1125,77.3177],[8.0233,77.2075],[7.9653,77.0777],[7.9426,76.9372],[7.9566,76.7954],[8.0063,76.6622],[8.0885,76.5466],[8.1975,76.4564],[8.3259,76.3978],[8.4649,76.3747],[8.6051,76.3889],[8.7369,76.4392],[8.8513,76.5223],[8.9405,76.6325],[8.9985,76.7623]]}
+    ],
+    "fixes": {
+        "VOTV": [8.48189,76.92003],
+        "CIKEC": [9.12511,77.21464],
+        "PASCO": [8.70946,77.02426],
+        "CUZIC": [8.27387,77.6023],
+        "LIKPU": [8.40829,77.16141],
+        "VAZTO": [7.92814,76.477],
+        "IKAWO": [8.28597,76.76329],
+        "SITVU": [8.93662,76.37381],
+        "ZEROS": [8.64277,76.72678],
+        "_RWY1404DME": [8.53848,76.86521],
+        "_RWY3204DME": [8.42415,76.97664]
+    },
+    "runways": [
+        {"name":["14","32"],"end":[[8.49052,76.91196,"14ft"],[8.47212,76.9299,"14ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "CIKEC3C": {"icao":"CIKEC3C","name":"Cikec Three Charlie","rwy":{"VOTV14":["_RWY3204DME"],"VOTV32":["_RWY1404DME"]},"body":[],"exitPoints":{"CIKEC":["CIKEC"]},"draw":[["VOTV","CIKEC*"]]},
+        "CUZIC2B": {"icao":"CUZIC2B","name":"Cuzic Two Bravo","rwy":{"VOTV14":["_RWY3204DME"],"VOTV32":["_RWY1404DME"]},"body":[],"exitPoints":{"CUZIC":["CUZIC"]},"draw":[["VOTV","CUZIC*"]]},
+        "VAZTO3A": {"icao":"VAZTO3A","name":"Vazto Three Alpha","rwy":{"VOTV14":["_RWY3204DME"],"VOTV32":["_RWY1404DME"]},"body":[],"exitPoints":{"VAZTO":["VAZTO"]},"draw":[["VOTV","VAZTO*"]]},
+        "SITVU2B": {"icao":"SITVU2B","name":"Sitvu Two Bravo","rwy":{"VOTV14":["_RWY3204DME"],"VOTV32":["_RWY1404DME"]},"body":[],"exitPoints":{"SITVU":["SITVU"]},"draw":[["VOTV","SITVU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"VOTV","destination":"VABB","category":"departure","route":"VOTV14.SITVU2B.SITVU","altitude":"","speed":"","method":"random","rate":0.86,"airlines":[["aic/a319",1],["axb/b738",1],["igo/a320",1],["jai/b738",1],["sej/b737",1]]},
+        {"origin":"VOTV","destination":"VOMM","category":"departure","route":"VOTV14.CIKEC3C.CIKEC","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["aic/a320",1],["axb/b738",1],["igo/a320",1],["sej/dh8d",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"VOTV","destination":"OMDB","category":"departure","route":"VOTV14.SITVU2B.SITVU","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["axb/b738",1],["igo/a320",1],["uae/a332",1]]},
+        {"origin":"VOTV","destination":"OMSJ","category":"departure","route":"VOTV14.SITVU2B.SITVU","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["aby/a320",1],["aic/a320",1],["axb/b738",1]]},
+        {"origin":"VOTV","destination":"OOMS","category":"departure","route":"VOTV14.SITVU2B.SITVU","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["axb/b738",1],["jai/b738",1],["oma/b738",1]]},
+        {"origin":"VOTV","destination":"","category":"departure","route":"VOTV14.CIKEC3C.CIKEC","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["aic/a320",1],["igo/a320",1]]},
+        {"origin":"VOTV","destination":"","category":"departure","route":"VOTV14.CUZIC2B.CUZIC","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["alk/a320",1],["slk/a319",1],["slk/a320",1],["tgw/a320",1]]},
+        {"origin":"VOTV","destination":"","category":"departure","route":"VOTV14.VAZTO3A.VAZTO","altitude":"","speed":"","method":"random","rate":0.17,"airlines":[["aic/a320",1]]},
+        {"origin":"VOTV","destination":"","category":"departure","route":"VOTV14.SITVU2B.SITVU","altitude":"","speed":"","method":"random","rate":1.9,"airlines":[["axb/b738",2],["aic/a321",1],["aic/b77w",1],["etd/a320",1],["gba/a321",1],["igo/a320",1],["jai/b738",1],["kac/a306",1],["kac/a310",1],["qtr/a321",1]]},
+        {"origin":"VOTV","destination":"","category":"departure","route":"VOTV14.CIKEC3C.CIKEC","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",2],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"VOTV","destination":"","category":"departure","route":"VOTV14.SITVU2B.SITVU","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",2],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"VABB","destination":"VOTV","category":"arrival","route":"SITVU..ZEROS..VOTV","altitude":[6000,9000],"speed":250,"method":"random","rate":0.86,"airlines":[["aic/a319",1],["axb/b738",1],["igo/a320",1],["jai/b738",1],["sej/b737",1]]},
+        {"origin":"VOMM","destination":"VOTV","category":"arrival","route":"CIKEC..PASCO..VOTV","altitude":[6000,9000],"speed":250,"method":"random","rate":0.69,"airlines":[["aic/a320",1],["axb/b738",1],["igo/a320",1],["sej/dh8d",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"OMDB","destination":"VOTV","category":"arrival","route":"SITVU..ZEROS..VOTV","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["axb/b738",1],["igo/a320",1],["uae/a332",1]]},
+        {"origin":"OMSJ","destination":"VOTV","category":"arrival","route":"SITVU..ZEROS..VOTV","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["aby/a320",1],["aic/a320",1],["axb/b738",1]]},
+        {"origin":"OOMS","destination":"VOTV","category":"arrival","route":"SITVU..ZEROS..VOTV","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["axb/b738",1],["jai/b738",1],["oma/b738",1]]},
+        {"origin":"","destination":"VOTV","category":"arrival","route":"CIKEC..PASCO..VOTV","altitude":[6000,9000],"speed":250,"method":"random","rate":0.35,"airlines":[["aic/a320",1],["igo/a320",1]]},
+        {"origin":"","destination":"VOTV","category":"arrival","route":"CUZIC..LIKPU..VOTV","altitude":[6000,9000],"speed":250,"method":"random","rate":0.69,"airlines":[["alk/a320",1],["slk/a319",1],["slk/a320",1],["tgw/a320",1]]},
+        {"origin":"","destination":"VOTV","category":"arrival","route":"VAZTO..IKAWO..VOTV","altitude":[6000,9000],"speed":250,"method":"random","rate":0.17,"airlines":[["aic/a320",1]]},
+        {"origin":"","destination":"VOTV","category":"arrival","route":"SITVU..ZEROS..VOTV","altitude":[6000,9000],"speed":250,"method":"random","rate":1.9,"airlines":[["axb/b738",2],["aic/a321",1],["aic/b77w",1],["etd/a320",1],["gba/a321",1],["igo/a320",1],["jai/b738",1],["kac/a306",1],["kac/a310",1],["qtr/a321",1]]},
+        {"origin":"","destination":"VOTV","category":"arrival","route":"CIKEC..PASCO..VOTV","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",2],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"","destination":"VOTV","category":"arrival","route":"SITVU..ZEROS..VOTV","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",2],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [9.1251,77.2146,8.7095,77.0243],
+            [8.7095,77.0243,8.4819,76.92],
+            [8.2739,77.6023,8.4083,77.1614],
+            [8.4083,77.1614,8.4819,76.92],
+            [7.9281,76.477,8.286,76.7633],
+            [8.286,76.7633,8.4819,76.92],
+            [8.9366,76.3738,8.6428,76.7268],
+            [8.6428,76.7268,8.4819,76.92]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [8.4905,76.912,8.6104,76.7951],
+            [8.5435,76.8462,8.5574,76.8608],
+            [8.6035,76.7878,8.6173,76.8023],
+            [8.4721,76.9299,8.3522,77.0467],
+            [8.4191,76.9956,8.4052,76.981],
+            [8.3591,77.054,8.3453,77.0395]
+        ]}
+    ]
+}

@@ -1,0 +1,87 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/MMPR/",
+    "info": {"country":"MX","city":"Puerto Vallarta","type":"large_airport","longestRunwayM":3123,"frequencies":{"atis":"127.500","twr":"118.500","app":"121.300"}},
+    "radio": {"twr":"Puerto Vallarta Tower","app":"Puerto Vallarta Approach","dep":"Puerto Vallarta Departure"},
+    "icao": "MMPR",
+    "iata": "PVR",
+    "magnetic_north": 6.2,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [20.679913,-105.254391,"23ft"],
+    "rangeRings": {"enabled":true,"center":[20.679913,-105.254391],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":60,"speed":12},
+    "arrivalRunway": "04",
+    "departureRunway": "04",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[21.2163,-105.1921],[21.183,-105.0458],[21.1153,-104.9138],[21.018,-104.8049],[20.8977,-104.7267],[20.7625,-104.6844],[20.6216,-104.681],[20.4848,-104.7167],[20.3612,-104.789],[20.2594,-104.893],[20.1862,-105.0216],[20.1467,-105.1662],[20.1435,-105.3167],[20.1768,-105.463],[20.2445,-105.595],[20.3418,-105.7039],[20.4622,-105.7821],[20.5974,-105.8244],[20.7382,-105.8278],[20.875,-105.7921],[20.9986,-105.7198],[21.1004,-105.6158],[21.1736,-105.4871],[21.2132,-105.3426]]}
+    ],
+    "fixes": {
+        "MMPR": [20.67991,-105.25439],
+        "TNY": [21.4265,-104.837,"tepic"],
+        "DUNIJ": [20.90129,-105.13063],
+        "IHIMU": [20.54499,-104.51352],
+        "UCEDU": [20.63218,-104.99227],
+        "IPELE": [20.09709,-105.68054],
+        "MOSOT": [20.47371,-105.40516],
+        "ANITE": [21.27702,-105.65732],
+        "TABNE": [20.89117,-105.39695],
+        "_RWY0404DME": [20.62517,-105.31718],
+        "_RWY2204DME": [20.73491,-105.19078]
+    },
+    "runways": [
+        {"name":["04","22"],"end":[[20.6705,-105.265,"23ft"],[20.6896,-105.243,"23ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "TNY2A": {"icao":"TNY2A","name":"Tepic Two Alpha","rwy":{"MMPR04":["_RWY2204DME"],"MMPR22":["_RWY0404DME"]},"body":[],"exitPoints":{"TNY":["TNY"]},"draw":[["MMPR","TNY*"]]},
+        "IHIMU1A": {"icao":"IHIMU1A","name":"Ihimu One Alpha","rwy":{"MMPR04":["_RWY2204DME"],"MMPR22":["_RWY0404DME"]},"body":[],"exitPoints":{"IHIMU":["IHIMU"]},"draw":[["MMPR","IHIMU*"]]},
+        "IPELE1E": {"icao":"IPELE1E","name":"Ipele One Echo","rwy":{"MMPR04":["_RWY2204DME"],"MMPR22":["_RWY0404DME"]},"body":[],"exitPoints":{"IPELE":["IPELE"]},"draw":[["MMPR","IPELE*"]]},
+        "ANITE3B": {"icao":"ANITE3B","name":"Anite Three Bravo","rwy":{"MMPR04":["_RWY2204DME"],"MMPR22":["_RWY0404DME"]},"body":[],"exitPoints":{"ANITE":["ANITE"]},"draw":[["MMPR","ANITE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"MMPR","destination":"KPHX","category":"departure","route":"MMPR04.ANITE3B.ANITE","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["aal/a319",2],["aal/a320",2],["aal/a321",2]]},
+        {"origin":"MMPR","destination":"MMMX","category":"departure","route":"MMPR04.IHIMU1A.IHIMU","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["amx/b737",1],["amx/b738",1],["voi/a319",1],["voi/a320",1],["amx/e145",1],["amx/e190",1],["amx/e170",1],["amx/e135",1]]},
+        {"origin":"MMPR","destination":"KLAX","category":"departure","route":"MMPR04.ANITE3B.ANITE","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["asa/b738",1],["asa/b739",1],["dal/a320",1],["dal/b738",1],["ual/b738",1]]},
+        {"origin":"MMPR","destination":"KDFW","category":"departure","route":"MMPR04.TNY2A.TNY","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["aal/md82",2],["aal/md83",2]]},
+        {"origin":"MMPR","destination":"KORD","category":"departure","route":"MMPR04.TNY2A.TNY","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["aal/md83",1],["fft/a320",1],["ual/a320",1],["ual/b739",1]]},
+        {"origin":"MMPR","destination":"KSFO","category":"departure","route":"MMPR04.ANITE3B.ANITE","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["asa/b739",2],["asa/a320",1],["ual/a320",1]]},
+        {"origin":"MMPR","destination":"","category":"departure","route":"MMPR04.TNY2A.TNY","altitude":"","speed":"","method":"random","rate":1.01,"airlines":[["ual/b738",3],["fft/a319",2],["dal/b752",1],["voi/a320",1]]},
+        {"origin":"MMPR","destination":"","category":"departure","route":"MMPR04.ANITE3B.ANITE","altitude":"","speed":"","method":"random","rate":1.16,"airlines":[["aca/a319",2],["wja/b737",2],["asa/b739",1],["voi/a319",1],["wja/b738",1],["tsc/a333",1],["tsc/a332",1]]},
+        {"origin":"MMPR","destination":"","category":"departure","route":"MMPR04.IPELE1E.IPELE","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["xa/c172",6],["xa/p28a",5],["xa/c182",3],["xa/be36",2],["xa/da42",1],["xa/tb20",1],["xa/c208",2],["xa/pc12",2],["xa/be20",1],["xa/b350",1],["xa/p180",1],["xa/c510",1],["xa/e50p",1],["xa/c550",2],["xa/e55p",1],["xa/cl30",1],["xa/c680",1],["xa/h25b",1],["xa/lj45",1],["xa/f2th",1],["xa/glf4",1],["xa/glex",1],["xa/glf5",1]]},
+        {"origin":"MMPR","destination":"","category":"departure","route":"MMPR04.IHIMU1A.IHIMU","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["xa/c172",6],["xa/p28a",5],["xa/c182",3],["xa/be36",2],["xa/da42",1],["xa/tb20",1],["xa/c208",2],["xa/pc12",2],["xa/be20",1],["xa/b350",1],["xa/p180",1],["xa/c510",1],["xa/e50p",1],["xa/c550",2],["xa/e55p",1],["xa/cl30",1],["xa/c680",1],["xa/h25b",1],["xa/lj45",1],["xa/f2th",1],["xa/glf4",1],["xa/glex",1],["xa/glf5",1]]},
+        {"origin":"KPHX","destination":"MMPR","category":"arrival","route":"ANITE..TABNE..MMPR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.87,"airlines":[["aal/a319",2],["aal/a320",2],["aal/a321",2]]},
+        {"origin":"MMMX","destination":"MMPR","category":"arrival","route":"IHIMU..UCEDU..MMPR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.87,"airlines":[["amx/b737",1],["amx/b738",1],["voi/a319",1],["voi/a320",1],["amx/e145",1],["amx/e190",1],["amx/e170",1],["amx/e135",1]]},
+        {"origin":"KLAX","destination":"MMPR","category":"arrival","route":"ANITE..TABNE..MMPR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.72,"airlines":[["asa/b738",1],["asa/b739",1],["dal/a320",1],["dal/b738",1],["ual/b738",1]]},
+        {"origin":"KDFW","destination":"MMPR","category":"arrival","route":"TNY..DUNIJ..MMPR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.58,"airlines":[["aal/md82",2],["aal/md83",2]]},
+        {"origin":"KORD","destination":"MMPR","category":"arrival","route":"TNY..DUNIJ..MMPR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.58,"airlines":[["aal/md83",1],["fft/a320",1],["ual/a320",1],["ual/b739",1]]},
+        {"origin":"KSFO","destination":"MMPR","category":"arrival","route":"ANITE..TABNE..MMPR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.58,"airlines":[["asa/b739",2],["asa/a320",1],["ual/a320",1]]},
+        {"origin":"","destination":"MMPR","category":"arrival","route":"TNY..DUNIJ..MMPR","altitude":[6000,9000],"speed":250,"method":"random","rate":1.01,"airlines":[["ual/b738",3],["fft/a319",2],["dal/b752",1],["voi/a320",1]]},
+        {"origin":"","destination":"MMPR","category":"arrival","route":"ANITE..TABNE..MMPR","altitude":[6000,9000],"speed":250,"method":"random","rate":1.16,"airlines":[["aca/a319",2],["wja/b737",2],["asa/b739",1],["voi/a319",1],["wja/b738",1],["tsc/a333",1],["tsc/a332",1]]},
+        {"origin":"","destination":"MMPR","category":"arrival","route":"IPELE..MOSOT..MMPR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["xa/c172",6],["xa/p28a",5],["xa/c182",3],["xa/be36",2],["xa/da42",1],["xa/tb20",1],["xa/c208",2],["xa/pc12",2],["xa/be20",1],["xa/b350",1],["xa/p180",1],["xa/c510",1],["xa/e50p",1],["xa/c550",2],["xa/e55p",1],["xa/cl30",1],["xa/c680",1],["xa/h25b",1],["xa/lj45",1],["xa/f2th",1],["xa/glf4",1],["xa/glex",1],["xa/glf5",1]]},
+        {"origin":"","destination":"MMPR","category":"arrival","route":"IHIMU..UCEDU..MMPR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["xa/c172",6],["xa/p28a",5],["xa/c182",3],["xa/be36",2],["xa/da42",1],["xa/tb20",1],["xa/c208",2],["xa/pc12",2],["xa/be20",1],["xa/b350",1],["xa/p180",1],["xa/c510",1],["xa/e50p",1],["xa/c550",2],["xa/e55p",1],["xa/cl30",1],["xa/c680",1],["xa/h25b",1],["xa/lj45",1],["xa/f2th",1],["xa/glf4",1],["xa/glex",1],["xa/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [21.4265,-104.837,20.9013,-105.1306],
+            [20.9013,-105.1306,20.6799,-105.2544],
+            [20.545,-104.5135,20.6322,-104.9923],
+            [20.6322,-104.9923,20.6799,-105.2544],
+            [20.0971,-105.6805,20.4737,-105.4052],
+            [20.4737,-105.4052,20.6799,-105.2544],
+            [21.277,-105.6573,20.8912,-105.3969],
+            [20.8912,-105.3969,20.6799,-105.2544]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [20.6705,-105.265,20.5572,-105.3954],
+            [20.6065,-105.323,20.6212,-105.3375],
+            [20.5498,-105.3881,20.5645,-105.4026],
+            [20.6896,-105.243,20.8028,-105.1124],
+            [20.7536,-105.185,20.7389,-105.1705],
+            [20.8102,-105.1197,20.7955,-105.1051]
+        ]}
+    ]
+}

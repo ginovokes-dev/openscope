@@ -1,0 +1,100 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EPGD/",
+    "info": {"country":"PL","city":"Gdansk","type":"large_airport","longestRunwayM":2800,"frequencies":{"atis":"129.625","twr":"118.100","app":"127.275"}},
+    "radio": {"twr":"Gdansk Tower","app":"Gdansk Approach","dep":"Gdansk Departure"},
+    "icao": "EPGD",
+    "iata": "GDN",
+    "magnetic_north": 6.7,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [54.377602,18.4662,"489ft"],
+    "rangeRings": {"enabled":true,"center":[54.377602,18.4662],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":260,"speed":9},
+    "arrivalRunway": "29",
+    "departureRunway": "29",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[54.9135,18.5743],[54.879,18.8087],[54.8102,19.0199],[54.712,19.1932],[54.591,19.3171],[54.4555,19.3829],[54.3146,19.3863],[54.1781,19.327],[54.0551,19.209],[53.9541,19.0404],[53.882,18.8326],[53.8437,18.5999],[53.8417,18.3581],[53.8762,18.1237],[53.945,17.9125],[54.0432,17.7392],[54.1642,17.6153],[54.2997,17.5495],[54.4406,17.5461],[54.5771,17.6054],[54.7001,17.7234],[54.8011,17.892],[54.8732,18.0998],[54.9115,18.3325]]}
+    ],
+    "fixes": {
+        "EPGD": [54.3776,18.4662],
+        "ZEZAN": [55.03078,18.92691],
+        "OPITI": [54.60869,18.6292],
+        "GRU": [53.5212,18.7813,"grudziadz"],
+        "EFUGA": [54.13332,18.55608],
+        "IKABA": [53.80677,17.7525],
+        "TOMDA": [54.17564,18.2137],
+        "TRB": [54.2106,17.0733,"treblo"],
+        "IDURU": [54.32723,18.04607],
+        "FUWVO": [54.90728,17.66442],
+        "BIGKO": [54.565,18.18253],
+        "_RWY1104DME": [54.40703,18.3466],
+        "_RWY2904DME": [54.34527,18.59694]
+    },
+    "runways": [
+        {"name":["11","29"],"end":[[54.3811,18.452,"450ft"],[54.3713,18.4917,"489ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ZEZAN1D": {"icao":"ZEZAN1D","name":"Zezan One Delta","rwy":{"EPGD11":["_RWY2904DME"],"EPGD29":["_RWY1104DME"]},"body":[],"exitPoints":{"ZEZAN":["ZEZAN"]},"draw":[["EPGD","ZEZAN*"]]},
+        "GRU3D": {"icao":"GRU3D","name":"Grudziadz Three Delta","rwy":{"EPGD11":["_RWY2904DME"],"EPGD29":["_RWY1104DME"]},"body":[],"exitPoints":{"GRU":["GRU"]},"draw":[["EPGD","GRU*"]]},
+        "IKABA1C": {"icao":"IKABA1C","name":"Ikaba One Charlie","rwy":{"EPGD11":["_RWY2904DME"],"EPGD29":["_RWY1104DME"]},"body":[],"exitPoints":{"IKABA":["IKABA"]},"draw":[["EPGD","IKABA*"]]},
+        "TRB3A": {"icao":"TRB3A","name":"Treblo Three Alpha","rwy":{"EPGD11":["_RWY2904DME"],"EPGD29":["_RWY1104DME"]},"body":[],"exitPoints":{"TRB":["TRB"]},"draw":[["EPGD","TRB*"]]},
+        "FUWVO1A": {"icao":"FUWVO1A","name":"Fuwvo One Alpha","rwy":{"EPGD11":["_RWY2904DME"],"EPGD29":["_RWY1104DME"]},"body":[],"exitPoints":{"FUWVO":["FUWVO"]},"draw":[["EPGD","FUWVO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EPGD","destination":"ENGM","category":"departure","route":"EPGD29.FUWVO1A.FUWVO","altitude":"","speed":"","method":"random","rate":0.78,"airlines":[["sas/b737",2],["nax/b733",1],["nax/b738",1],["sas/b738",1]]},
+        {"origin":"EPGD","destination":"EDDF","category":"departure","route":"EPGD29.TRB3A.TRB","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["dlh/a320",2],["dlh/a319",1],["dlh/a321",1]]},
+        {"origin":"EPGD","destination":"EKCH","category":"departure","route":"EPGD29.FUWVO1A.FUWVO","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["sas/a319",1],["sas/crj2",1],["sas/crj9",1]]},
+        {"origin":"EPGD","destination":"EPWA","category":"departure","route":"EPGD29.GRU3D.GRU","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["lot/dh8d",1],["lot/e190",1],["lot/e75l",1]]},
+        {"origin":"EPGD","destination":"EBBR","category":"departure","route":"EPGD29.TRB3A.TRB","altitude":"","speed":"","method":"random","rate":0.16,"airlines":[["elo/dh8d",1]]},
+        {"origin":"EPGD","destination":"EDDK","category":"departure","route":"EPGD29.TRB3A.TRB","altitude":"","speed":"","method":"random","rate":0.16,"airlines":[["wzz/a320",1]]},
+        {"origin":"EPGD","destination":"EDDM","category":"departure","route":"EPGD29.IKABA1C.IKABA","altitude":"","speed":"","method":"random","rate":0.16,"airlines":[["dlh/e190",1]]},
+        {"origin":"EPGD","destination":"","category":"departure","route":"EPGD29.ZEZAN1D.ZEZAN","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["elo/dh8d",1],["wzz/a320",1]]},
+        {"origin":"EPGD","destination":"","category":"departure","route":"EPGD29.GRU3D.GRU","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["elo/dh8d",2],["ryr/b738",1]]},
+        {"origin":"EPGD","destination":"","category":"departure","route":"EPGD29.IKABA1C.IKABA","altitude":"","speed":"","method":"random","rate":0.93,"airlines":[["wzz/a320",3],["elo/dh8d",2],["ryr/b738",1]]},
+        {"origin":"EPGD","destination":"","category":"departure","route":"EPGD29.TRB3A.TRB","altitude":"","speed":"","method":"random","rate":2.49,"airlines":[["ryr/b738",8],["wzz/a320",7],["elo/dh8d",1]]},
+        {"origin":"EPGD","destination":"","category":"departure","route":"EPGD29.FUWVO1A.FUWVO","altitude":"","speed":"","method":"random","rate":1.71,"airlines":[["wzz/a320",10],["ryr/b738",1]]},
+        {"origin":"EPGD","destination":"","category":"departure","route":"EPGD29.TRB3A.TRB","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["sp/c172",6],["sp/p28a",5],["sp/c182",3],["sp/be36",2],["sp/da42",1],["sp/tb20",1],["sp/c208",2],["sp/pc12",2],["sp/be20",1],["sp/b350",1],["sp/p180",1],["sp/c510",1],["sp/e50p",1],["sp/c550",2],["sp/e55p",1],["sp/cl30",1],["sp/c680",1],["sp/h25b",1],["sp/lj45",1],["sp/f2th",1],["sp/glf4",1],["sp/glex",1],["sp/glf5",1]]},
+        {"origin":"EPGD","destination":"","category":"departure","route":"EPGD29.FUWVO1A.FUWVO","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["sp/c172",6],["sp/p28a",5],["sp/c182",3],["sp/be36",2],["sp/da42",1],["sp/tb20",1],["sp/c208",2],["sp/pc12",2],["sp/be20",1],["sp/b350",1],["sp/p180",1],["sp/c510",1],["sp/e50p",1],["sp/c550",2],["sp/e55p",1],["sp/cl30",1],["sp/c680",1],["sp/h25b",1],["sp/lj45",1],["sp/f2th",1],["sp/glf4",1],["sp/glex",1],["sp/glf5",1]]},
+        {"origin":"ENGM","destination":"EPGD","category":"arrival","route":"FUWVO..BIGKO..EPGD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.78,"airlines":[["sas/b737",2],["nax/b733",1],["nax/b738",1],["sas/b738",1]]},
+        {"origin":"EDDF","destination":"EPGD","category":"arrival","route":"TRB..IDURU..EPGD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.62,"airlines":[["dlh/a320",2],["dlh/a319",1],["dlh/a321",1]]},
+        {"origin":"EKCH","destination":"EPGD","category":"arrival","route":"FUWVO..BIGKO..EPGD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["sas/a319",1],["sas/crj2",1],["sas/crj9",1]]},
+        {"origin":"EPWA","destination":"EPGD","category":"arrival","route":"GRU..EFUGA..EPGD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["lot/dh8d",1],["lot/e190",1],["lot/e75l",1]]},
+        {"origin":"EBBR","destination":"EPGD","category":"arrival","route":"TRB..IDURU..EPGD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.16,"airlines":[["elo/dh8d",1]]},
+        {"origin":"EDDK","destination":"EPGD","category":"arrival","route":"TRB..IDURU..EPGD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.16,"airlines":[["wzz/a320",1]]},
+        {"origin":"EDDM","destination":"EPGD","category":"arrival","route":"IKABA..TOMDA..EPGD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.16,"airlines":[["dlh/e190",1]]},
+        {"origin":"","destination":"EPGD","category":"arrival","route":"ZEZAN..OPITI..EPGD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.31,"airlines":[["elo/dh8d",1],["wzz/a320",1]]},
+        {"origin":"","destination":"EPGD","category":"arrival","route":"GRU..EFUGA..EPGD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["elo/dh8d",2],["ryr/b738",1]]},
+        {"origin":"","destination":"EPGD","category":"arrival","route":"IKABA..TOMDA..EPGD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.93,"airlines":[["wzz/a320",3],["elo/dh8d",2],["ryr/b738",1]]},
+        {"origin":"","destination":"EPGD","category":"arrival","route":"TRB..IDURU..EPGD","altitude":[6000,9000],"speed":250,"method":"random","rate":2.49,"airlines":[["ryr/b738",8],["wzz/a320",7],["elo/dh8d",1]]},
+        {"origin":"","destination":"EPGD","category":"arrival","route":"FUWVO..BIGKO..EPGD","altitude":[6000,9000],"speed":250,"method":"random","rate":1.71,"airlines":[["wzz/a320",10],["ryr/b738",1]]},
+        {"origin":"","destination":"EPGD","category":"arrival","route":"TRB..IDURU..EPGD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.59,"airlines":[["sp/c172",6],["sp/p28a",5],["sp/c182",3],["sp/be36",2],["sp/da42",1],["sp/tb20",1],["sp/c208",2],["sp/pc12",2],["sp/be20",1],["sp/b350",1],["sp/p180",1],["sp/c510",1],["sp/e50p",1],["sp/c550",2],["sp/e55p",1],["sp/cl30",1],["sp/c680",1],["sp/h25b",1],["sp/lj45",1],["sp/f2th",1],["sp/glf4",1],["sp/glex",1],["sp/glf5",1]]},
+        {"origin":"","destination":"EPGD","category":"arrival","route":"FUWVO..BIGKO..EPGD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.59,"airlines":[["sp/c172",6],["sp/p28a",5],["sp/c182",3],["sp/be36",2],["sp/da42",1],["sp/tb20",1],["sp/c208",2],["sp/pc12",2],["sp/be20",1],["sp/b350",1],["sp/p180",1],["sp/c510",1],["sp/e50p",1],["sp/c550",2],["sp/e55p",1],["sp/cl30",1],["sp/c680",1],["sp/h25b",1],["sp/lj45",1],["sp/f2th",1],["sp/glf4",1],["sp/glex",1],["sp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [55.0308,18.9269,54.6087,18.6292],
+            [54.6087,18.6292,54.3776,18.4662],
+            [53.5212,18.7813,54.1333,18.5561],
+            [54.1333,18.5561,54.3776,18.4662],
+            [53.8068,17.7525,54.1756,18.2137],
+            [54.1756,18.2137,54.3776,18.4662],
+            [54.2106,17.0733,54.3272,18.0461],
+            [54.3272,18.0461,54.3776,18.4662],
+            [54.9073,17.6644,54.565,18.1825],
+            [54.565,18.1825,54.3776,18.4662]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [54.3811,18.452,54.4458,18.1882],
+            [54.4043,18.3135,54.4227,18.3269],
+            [54.4366,18.1815,54.455,18.1949],
+            [54.3713,18.4917,54.3061,18.7546],
+            [54.348,18.6299,54.3296,18.6166],
+            [54.3153,18.7612,54.2969,18.7479]
+        ]}
+    ]
+}

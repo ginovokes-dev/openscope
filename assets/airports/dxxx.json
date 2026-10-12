@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/DXXX/",
+    "info": {"country":"TG","city":"Lome","type":"large_airport","longestRunwayM":3010,"frequencies":{"twr":"120.700"}},
+    "radio": {"twr":"LomeTokoin Tower","app":"LomeTokoin Approach","dep":"LomeTokoin Departure"},
+    "icao": "DXXX",
+    "iata": "LFW",
+    "magnetic_north": -1.9,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [6.16561,1.25451,"72ft"],
+    "rangeRings": {"enabled":true,"center":[6.16561,1.25451],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":40,"speed":12},
+    "arrivalRunway": "04",
+    "departureRunway": "04",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[6.5701,1.241],[6.5598,1.3468],[6.5226,1.4462],[6.4611,1.5326],[6.3795,1.6001],[6.2833,1.644],[6.179,1.6613],[6.0739,1.651],[5.975,1.6136],[5.8891,1.5517],[5.822,1.4696],[5.7784,1.3728],[5.7611,1.268],[5.7714,1.1623],[5.8086,1.0628],[5.8701,0.9764],[5.9518,0.9089],[6.048,0.865],[6.1522,0.8477],[6.2573,0.8581],[6.3562,0.8954],[6.4421,0.9573],[6.5092,1.0394],[6.5528,1.1362]]}
+    ],
+    "fixes": {
+        "DXXX": [6.16561,1.25451],
+        "UDEKA": [6.25262,1.78845],
+        "GECIZ": [6.19794,1.45289],
+        "WASUV": [5.63933,1.36656],
+        "CAGTO": [5.97008,1.29614],
+        "POWOR": [6.03006,0.7309],
+        "VISUR": [6.11525,1.05997],
+        "EJUPO": [6.69606,1.16456],
+        "IKAGU": [6.36269,1.22109],
+        "_RWY0404DME": [6.10292,1.20407],
+        "_RWY2204DME": [6.22855,1.30423]
+    },
+    "runways": [
+        {"name":["04","22"],"end":[[6.15513,1.24569,"61ft"],[6.17634,1.2626,"63ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "UDEKA3D": {"icao":"UDEKA3D","name":"Udeka Three Delta","rwy":{"DXXX04":["_RWY2204DME"],"DXXX22":["_RWY0404DME"]},"body":[],"exitPoints":{"UDEKA":["UDEKA"]},"draw":[["DXXX","UDEKA*"]]},
+        "WASUV2C": {"icao":"WASUV2C","name":"Wasuv Two Charlie","rwy":{"DXXX04":["_RWY2204DME"],"DXXX22":["_RWY0404DME"]},"body":[],"exitPoints":{"WASUV":["WASUV"]},"draw":[["DXXX","WASUV*"]]},
+        "POWOR1C": {"icao":"POWOR1C","name":"Powor One Charlie","rwy":{"DXXX04":["_RWY2204DME"],"DXXX22":["_RWY0404DME"]},"body":[],"exitPoints":{"POWOR":["POWOR"]},"draw":[["DXXX","POWOR*"]]},
+        "EJUPO3C": {"icao":"EJUPO3C","name":"Ejupo Three Charlie","rwy":{"DXXX04":["_RWY2204DME"],"DXXX22":["_RWY0404DME"]},"body":[],"exitPoints":{"EJUPO":["EJUPO"]},"draw":[["DXXX","EJUPO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"DXXX","destination":"DFFD","category":"departure","route":"DXXX04.EJUPO3C.EJUPO","altitude":"","speed":"","method":"random","rate":0.89,"airlines":[["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"DXXX","destination":"DIAP","category":"departure","route":"DXXX04.POWOR1C.POWOR","altitude":"","speed":"","method":"random","rate":0.89,"airlines":[["dat/a333",1],["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]},
+        {"origin":"DXXX","destination":"EBBR","category":"departure","route":"DXXX04.EJUPO3C.EJUPO","altitude":"","speed":"","method":"random","rate":0.89,"airlines":[["dat/a332",1],["dat/a333",1]]},
+        {"origin":"DXXX","destination":"GMMN","category":"departure","route":"DXXX04.EJUPO3C.EJUPO","altitude":"","speed":"","method":"random","rate":0.89,"airlines":[["ram/b737",1],["ram/b738",1]]},
+        {"origin":"DXXX","destination":"DBBB","category":"departure","route":"DXXX04.UDEKA3D.UDEKA","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["vbw/md87",1]]},
+        {"origin":"DXXX","destination":"","category":"departure","route":"DXXX04.UDEKA3D.UDEKA","altitude":"","speed":"","method":"random","rate":0.89,"airlines":[["eth/b737",2]]},
+        {"origin":"DXXX","destination":"","category":"departure","route":"DXXX04.POWOR1C.POWOR","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["ram/b738",1]]},
+        {"origin":"DXXX","destination":"","category":"departure","route":"DXXX04.EJUPO3C.EJUPO","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["afr/a343",1]]},
+        {"origin":"DFFD","destination":"DXXX","category":"arrival","route":"EJUPO..IKAGU..DXXX","altitude":[4000,7000],"speed":250,"method":"random","rate":0.89,"airlines":[["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"DIAP","destination":"DXXX","category":"arrival","route":"POWOR..VISUR..DXXX","altitude":[4000,7000],"speed":250,"method":"random","rate":0.89,"airlines":[["dat/a333",1],["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]},
+        {"origin":"EBBR","destination":"DXXX","category":"arrival","route":"EJUPO..IKAGU..DXXX","altitude":[4000,7000],"speed":250,"method":"random","rate":0.89,"airlines":[["dat/a332",1],["dat/a333",1]]},
+        {"origin":"GMMN","destination":"DXXX","category":"arrival","route":"EJUPO..IKAGU..DXXX","altitude":[4000,7000],"speed":250,"method":"random","rate":0.89,"airlines":[["ram/b737",1],["ram/b738",1]]},
+        {"origin":"DBBB","destination":"DXXX","category":"arrival","route":"UDEKA..GECIZ..DXXX","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["vbw/md87",1]]},
+        {"origin":"","destination":"DXXX","category":"arrival","route":"UDEKA..GECIZ..DXXX","altitude":[4000,7000],"speed":250,"method":"random","rate":0.89,"airlines":[["eth/b737",2]]},
+        {"origin":"","destination":"DXXX","category":"arrival","route":"POWOR..VISUR..DXXX","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["ram/b738",1]]},
+        {"origin":"","destination":"DXXX","category":"arrival","route":"EJUPO..IKAGU..DXXX","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["afr/a343",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [6.2526,1.7885,6.1979,1.4529],
+            [6.1979,1.4529,6.1656,1.2545],
+            [5.6393,1.3666,5.9701,1.2961],
+            [5.9701,1.2961,6.1656,1.2545],
+            [6.0301,0.7309,6.1152,1.06],
+            [6.1152,1.06,6.1656,1.2545],
+            [6.6961,1.1646,6.3627,1.2211],
+            [6.3627,1.2211,6.1656,1.2545]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [6.1551,1.2457,6.0246,1.1417],
+            [6.0837,1.2015,6.0961,1.1858],
+            [6.0184,1.1495,6.0308,1.1338],
+            [6.1763,1.2626,6.3069,1.3667],
+            [6.2478,1.3068,6.2354,1.3225],
+            [6.3131,1.3588,6.3006,1.3746]
+        ]}
+    ]
+}

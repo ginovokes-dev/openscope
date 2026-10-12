@@ -1,0 +1,103 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KRNO/",
+    "info": {"country":"US","city":"Reno","type":"large_airport","longestRunwayM":3358,"frequencies":{"atis":"135.800","twr":"118.700","gnd":"121.900"}},
+    "radio": {"twr":"Reno Tower","app":"Reno Approach","dep":"Reno Departure"},
+    "icao": "KRNO",
+    "iata": "RNO",
+    "magnetic_north": 12.8,
+    "ctr_radius": 45,
+    "ctr_ceiling": 12000,
+    "initial_alt": 8000,
+    "position": [39.4991,-119.767998,"4415ft"],
+    "rangeRings": {"enabled":true,"center":[39.4991,-119.767998],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":180,"speed":11},
+    "arrivalRunway": "17R",
+    "departureRunway": "17R",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":120,"airspace_class":"D","poly":[[39.8937,-119.6518],[39.8571,-119.5234],[39.796,-119.4117],[39.7148,-119.3242],[39.6188,-119.267],[39.5146,-119.2439],[39.4094,-119.2566],[39.3104,-119.3041],[39.2241,-119.3832],[39.1567,-119.4885],[39.1125,-119.6129],[39.0947,-119.7479],[39.1045,-119.8842],[39.1411,-120.0126],[39.2022,-120.1243],[39.2834,-120.2118],[39.3794,-120.269],[39.4836,-120.2921],[39.5888,-120.2794],[39.6878,-120.2319],[39.7741,-120.1528],[39.8415,-120.0475],[39.8857,-119.9231],[39.9035,-119.7881]]}
+    ],
+    "fixes": {
+        "KRNO": [39.4991,-119.768],
+        "HZN": [39.5164,-118.998,"hazen"],
+        "DIRDE": [39.50492,-119.50909],
+        "PICEK": [39.14092,-119.24787],
+        "ONELO": [39.36602,-119.57475],
+        "SWR": [39.1803,-120.27,"squaw valley"],
+        "FOJTU": [39.37209,-119.96799],
+        "AHC": [40.2679,-120.152,"amedee"],
+        "NADAZ": [39.68559,-119.86115],
+        "_RWY17R04DME": [39.57769,-119.769],
+        "_RWY35L04DME": [39.41698,-119.769],
+        "_RWY17L04DME": [39.58042,-119.767],
+        "_RWY35R04DME": [39.42248,-119.767],
+        "_RWY0804DME": [39.49665,-119.86533],
+        "_RWY2604DME": [39.49579,-119.67067]
+    },
+    "runways": [
+        {"name":["17R","35L"],"end":[[39.51106,-119.769,"4415ft"],[39.4836,-119.769,"4410ft"]],"ils":[true,true]},
+        {"name":["17L","35R"],"end":[[39.5138,-119.767,"4415ft"],[39.4891,-119.767,"4408ft"]],"ils":[true,true]},
+        {"name":["08","26"],"end":[[39.4963,-119.779,"4409ft"],[39.4962,-119.757,"4400ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "HZN3D": {"icao":"HZN3D","name":"Hazen Three Delta","rwy":{"KRNO17R":["_RWY35L04DME"],"KRNO35L":["_RWY17R04DME"],"KRNO17L":["_RWY35R04DME"],"KRNO35R":["_RWY17L04DME"],"KRNO08":["_RWY2604DME"],"KRNO26":["_RWY0804DME"]},"body":[],"exitPoints":{"HZN":["HZN"]},"draw":[["KRNO","HZN*"]]},
+        "PICEK1D": {"icao":"PICEK1D","name":"Picek One Delta","rwy":{"KRNO17R":["_RWY35L04DME"],"KRNO35L":["_RWY17R04DME"],"KRNO17L":["_RWY35R04DME"],"KRNO35R":["_RWY17L04DME"],"KRNO08":["_RWY2604DME"],"KRNO26":["_RWY0804DME"]},"body":[],"exitPoints":{"PICEK":["PICEK"]},"draw":[["KRNO","PICEK*"]]},
+        "SWR2F": {"icao":"SWR2F","name":"Squaw Valley Two Foxtrot","rwy":{"KRNO17R":["_RWY35L04DME"],"KRNO35L":["_RWY17R04DME"],"KRNO17L":["_RWY35R04DME"],"KRNO35R":["_RWY17L04DME"],"KRNO08":["_RWY2604DME"],"KRNO26":["_RWY0804DME"]},"body":[],"exitPoints":{"SWR":["SWR"]},"draw":[["KRNO","SWR*"]]},
+        "AHC3B": {"icao":"AHC3B","name":"Amedee Three Bravo","rwy":{"KRNO17R":["_RWY35L04DME"],"KRNO35L":["_RWY17R04DME"],"KRNO17L":["_RWY35R04DME"],"KRNO35R":["_RWY17L04DME"],"KRNO08":["_RWY2604DME"],"KRNO26":["_RWY0804DME"]},"body":[],"exitPoints":{"AHC":["AHC"]},"draw":[["KRNO","AHC*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KRNO","destination":"KPHX","category":"departure","route":"KRNO17R.PICEK1D.PICEK","altitude":"","speed":"","method":"random","rate":1.07,"airlines":[["aal/a319",2],["aal/a320",2],["swa/b737",1],["swa/b738",1]]},
+        {"origin":"KRNO","destination":"KDFW","category":"departure","route":"KRNO17R.HZN3D.HZN","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["aal/b738",2],["aal/md83",2]]},
+        {"origin":"KRNO","destination":"KLAS","category":"departure","route":"KRNO17R.PICEK1D.PICEK","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["swa/b738",2],["aay/md82",1],["swa/b737",1]]},
+        {"origin":"KRNO","destination":"KDEN","category":"departure","route":"KRNO17R.HZN3D.HZN","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["swa/b737",1],["swa/b738",1],["ual/a320",1]]},
+        {"origin":"KRNO","destination":"KLAX","category":"departure","route":"KRNO17R.PICEK1D.PICEK","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["swa/b737",1],["swa/b738",1]]},
+        {"origin":"KRNO","destination":"","category":"departure","route":"KRNO17R.HZN3D.HZN","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["aal/b738",2],["dal/b738",1],["swa/b737",1]]},
+        {"origin":"KRNO","destination":"","category":"departure","route":"KRNO17R.PICEK1D.PICEK","altitude":"","speed":"","method":"random","rate":0.18,"airlines":[["swa/b737",1]]},
+        {"origin":"KRNO","destination":"","category":"departure","route":"KRNO17R.AHC3B.AHC","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["swa/b737",2]]},
+        {"origin":"KRNO","destination":"","category":"departure","route":"KRNO17R.AHC3B.AHC","altitude":"","speed":"","method":"random","rate":1.55,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KPHX","destination":"KRNO","category":"arrival","route":"PICEK..ONELO..KRNO","altitude":[8000,11000],"speed":250,"method":"random","rate":1.07,"airlines":[["aal/a319",2],["aal/a320",2],["swa/b737",1],["swa/b738",1]]},
+        {"origin":"KDFW","destination":"KRNO","category":"arrival","route":"HZN..DIRDE..KRNO","altitude":[8000,11000],"speed":250,"method":"random","rate":0.72,"airlines":[["aal/b738",2],["aal/md83",2]]},
+        {"origin":"KLAS","destination":"KRNO","category":"arrival","route":"PICEK..ONELO..KRNO","altitude":[8000,11000],"speed":250,"method":"random","rate":0.72,"airlines":[["swa/b738",2],["aay/md82",1],["swa/b737",1]]},
+        {"origin":"KDEN","destination":"KRNO","category":"arrival","route":"HZN..DIRDE..KRNO","altitude":[8000,11000],"speed":250,"method":"random","rate":0.54,"airlines":[["swa/b737",1],["swa/b738",1],["ual/a320",1]]},
+        {"origin":"KLAX","destination":"KRNO","category":"arrival","route":"PICEK..ONELO..KRNO","altitude":[8000,11000],"speed":250,"method":"random","rate":0.36,"airlines":[["swa/b737",1],["swa/b738",1]]},
+        {"origin":"","destination":"KRNO","category":"arrival","route":"HZN..DIRDE..KRNO","altitude":[8000,11000],"speed":250,"method":"random","rate":0.72,"airlines":[["aal/b738",2],["dal/b738",1],["swa/b737",1]]},
+        {"origin":"","destination":"KRNO","category":"arrival","route":"PICEK..ONELO..KRNO","altitude":[8000,11000],"speed":250,"method":"random","rate":0.18,"airlines":[["swa/b737",1]]},
+        {"origin":"","destination":"KRNO","category":"arrival","route":"AHC..NADAZ..KRNO","altitude":[8000,11000],"speed":250,"method":"random","rate":0.36,"airlines":[["swa/b737",2]]},
+        {"origin":"","destination":"KRNO","category":"arrival","route":"AHC..NADAZ..KRNO","altitude":[8000,11000],"speed":250,"method":"random","rate":1.55,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [39.5164,-118.998,39.5049,-119.5091],
+            [39.5049,-119.5091,39.4991,-119.768],
+            [39.1409,-119.2479,39.366,-119.5747],
+            [39.366,-119.5747,39.4991,-119.768],
+            [39.1803,-120.27,39.3721,-119.968],
+            [39.3721,-119.968,39.4991,-119.768],
+            [40.2679,-120.152,39.6856,-119.8611],
+            [39.6856,-119.8611,39.4991,-119.768]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [39.5111,-119.769,39.6776,-119.769],
+            [39.5943,-119.782,39.5943,-119.756],
+            [39.6776,-119.782,39.6776,-119.756],
+            [39.4836,-119.769,39.317,-119.769],
+            [39.4003,-119.7561,39.4003,-119.7819],
+            [39.317,-119.7561,39.317,-119.7819],
+            [39.5138,-119.767,39.6804,-119.767],
+            [39.5971,-119.78,39.5971,-119.754],
+            [39.6804,-119.78,39.6804,-119.754],
+            [39.4891,-119.767,39.3225,-119.767],
+            [39.4058,-119.7541,39.4058,-119.7799],
+            [39.3225,-119.7541,39.3225,-119.7799],
+            [39.4963,-119.779,39.4971,-119.9948],
+            [39.4867,-119.887,39.5067,-119.8868],
+            [39.4871,-119.9949,39.507,-119.9948],
+            [39.4962,-119.757,39.4951,-119.5412],
+            [39.5057,-119.649,39.4857,-119.6492],
+            [39.505,-119.5411,39.4851,-119.5412]
+        ]}
+    ]
+}

@@ -1,0 +1,91 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SBFZ/",
+    "info": {"country":"BR","city":"Fortaleza","type":"large_airport","longestRunwayM":2755,"frequencies":{"atis":"127.700","twr":"129.000","app":"133.000","gnd":"121.950"}},
+    "radio": {"twr":"Pinto Martins Tower","app":"Pinto Martins Approach","dep":"Pinto Martins Departure"},
+    "icao": "SBFZ",
+    "iata": "FOR",
+    "magnetic_north": -20.3,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [-3.775833,-38.532222,"83ft"],
+    "rangeRings": {"enabled":true,"center":[-3.775833,-38.532222],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":110,"speed":8},
+    "arrivalRunway": "13",
+    "departureRunway": "13",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[-3.2698,-38.7198],[-3.2385,-38.5822],[-3.244,-38.4411],[-3.2856,-38.3063],[-3.3607,-38.1868],[-3.464,-38.0909],[-3.5886,-38.025],[-3.726,-37.9938],[-3.8667,-37.9992],[-4.0013,-38.0409],[-4.1205,-38.1162],[-4.2162,-38.2197],[-4.2819,-38.3446],[-4.3131,-38.4823],[-4.3077,-38.6233],[-4.2661,-38.7582],[-4.191,-38.8776],[-4.0876,-38.9736],[-3.963,-39.0394],[-3.8257,-39.0707],[-3.6849,-39.0653],[-3.5504,-39.0235],[-3.4312,-38.9483],[-3.3355,-38.8447]]}
+    ],
+    "fixes": {
+        "SBFZ": [-3.77583,-38.53222],
+        "AFATA": [-3.19166,-38.13463],
+        "KUZBA": [-3.56916,-38.39156],
+        "OWOJE": [-4.24784,-38.00586],
+        "OZORU": [-3.94283,-38.346],
+        "PITUB": [-4.42944,-38.80008],
+        "VUWPO": [-4.00708,-38.62699],
+        "URT": [-3.5855,-39.4267,"uruburetama"],
+        "NEHVE": [-3.72373,-38.77709],
+        "_RWY1304DME": [-3.75574,-38.60941],
+        "_RWY3104DME": [-3.79669,-38.45647]
+    },
+    "runways": [
+        {"name":["13","31"],"end":[[-3.77301,-38.54492,"82ft"],[-3.77943,-38.52095,"71ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "AFATA1D": {"icao":"AFATA1D","name":"Afata One Delta","rwy":{"SBFZ13":["_RWY3104DME"],"SBFZ31":["_RWY1304DME"]},"body":[],"exitPoints":{"AFATA":["AFATA"]},"draw":[["SBFZ","AFATA*"]]},
+        "OWOJE3C": {"icao":"OWOJE3C","name":"Owoje Three Charlie","rwy":{"SBFZ13":["_RWY3104DME"],"SBFZ31":["_RWY1304DME"]},"body":[],"exitPoints":{"OWOJE":["OWOJE"]},"draw":[["SBFZ","OWOJE*"]]},
+        "PITUB2D": {"icao":"PITUB2D","name":"Pitub Two Delta","rwy":{"SBFZ13":["_RWY3104DME"],"SBFZ31":["_RWY1304DME"]},"body":[],"exitPoints":{"PITUB":["PITUB"]},"draw":[["SBFZ","PITUB*"]]},
+        "URT1E": {"icao":"URT1E","name":"Uruburetama One Echo","rwy":{"SBFZ13":["_RWY3104DME"],"SBFZ31":["_RWY1304DME"]},"body":[],"exitPoints":{"URT":["URT"]},"draw":[["SBFZ","URT*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SBFZ","destination":"SBGR","category":"departure","route":"SBFZ13.PITUB2D.PITUB","altitude":"","speed":"","method":"random","rate":0.83,"airlines":[["glo/b737",1],["glo/b738",1],["one/a318",1],["one/a320",1],["tam/a320",1],["tam/a321",1]]},
+        {"origin":"SBFZ","destination":"SBBR","category":"departure","route":"SBFZ13.PITUB2D.PITUB","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["glo/b737",1],["glo/b738",1],["one/a320",1],["tam/a319",1],["tam/a321",1]]},
+        {"origin":"SBFZ","destination":"SBGL","category":"departure","route":"SBFZ13.PITUB2D.PITUB","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["glo/b737",1],["glo/b738",1],["one/a318",1],["tam/a320",1],["tam/a321",1]]},
+        {"origin":"SBFZ","destination":"SBBE","category":"departure","route":"SBFZ13.URT1E.URT","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["azu/e190",1],["glo/b737",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBFZ","destination":"SBRF","category":"departure","route":"SBFZ13.OWOJE3C.OWOJE","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["azu/e190",1],["glo/b737",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBFZ","destination":"SBSG","category":"departure","route":"SBFZ13.OWOJE3C.OWOJE","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["azu/e190",1],["glo/b737",1],["glo/b738",1],["tam/a321",1]]},
+        {"origin":"SBFZ","destination":"","category":"departure","route":"SBFZ13.AFATA1D.AFATA","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["aey/b763",1],["tap/a332",1],["tcv/b752",1]]},
+        {"origin":"SBFZ","destination":"","category":"departure","route":"SBFZ13.OWOJE3C.OWOJE","altitude":"","speed":"","method":"random","rate":0.14,"airlines":[["azu/at72",1]]},
+        {"origin":"SBFZ","destination":"","category":"departure","route":"SBFZ13.PITUB2D.PITUB","altitude":"","speed":"","method":"random","rate":0.96,"airlines":[["azu/e190",3],["glo/b738",2],["one/a318",1],["tam/a320",1]]},
+        {"origin":"SBFZ","destination":"","category":"departure","route":"SBFZ13.URT1E.URT","altitude":"","speed":"","method":"random","rate":1.24,"airlines":[["tam/a320",3],["azu/e190",2],["glo/b738",2],["azu/at72",1],["tam/a319",1]]},
+        {"origin":"SBFZ","destination":"","category":"departure","route":"SBFZ13.OWOJE3C.OWOJE","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",2],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"SBFZ","destination":"","category":"departure","route":"SBFZ13.AFATA1D.AFATA","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",2],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"SBGR","destination":"SBFZ","category":"arrival","route":"PITUB..VUWPO..SBFZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.83,"airlines":[["glo/b737",1],["glo/b738",1],["one/a318",1],["one/a320",1],["tam/a320",1],["tam/a321",1]]},
+        {"origin":"SBBR","destination":"SBFZ","category":"arrival","route":"PITUB..VUWPO..SBFZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.69,"airlines":[["glo/b737",1],["glo/b738",1],["one/a320",1],["tam/a319",1],["tam/a321",1]]},
+        {"origin":"SBGL","destination":"SBFZ","category":"arrival","route":"PITUB..VUWPO..SBFZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.69,"airlines":[["glo/b737",1],["glo/b738",1],["one/a318",1],["tam/a320",1],["tam/a321",1]]},
+        {"origin":"SBBE","destination":"SBFZ","category":"arrival","route":"URT..NEHVE..SBFZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.55,"airlines":[["azu/e190",1],["glo/b737",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBRF","destination":"SBFZ","category":"arrival","route":"OWOJE..OZORU..SBFZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.55,"airlines":[["azu/e190",1],["glo/b737",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBSG","destination":"SBFZ","category":"arrival","route":"OWOJE..OZORU..SBFZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.55,"airlines":[["azu/e190",1],["glo/b737",1],["glo/b738",1],["tam/a321",1]]},
+        {"origin":"","destination":"SBFZ","category":"arrival","route":"AFATA..KUZBA..SBFZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.41,"airlines":[["aey/b763",1],["tap/a332",1],["tcv/b752",1]]},
+        {"origin":"","destination":"SBFZ","category":"arrival","route":"OWOJE..OZORU..SBFZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.14,"airlines":[["azu/at72",1]]},
+        {"origin":"","destination":"SBFZ","category":"arrival","route":"PITUB..VUWPO..SBFZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.96,"airlines":[["azu/e190",3],["glo/b738",2],["one/a318",1],["tam/a320",1]]},
+        {"origin":"","destination":"SBFZ","category":"arrival","route":"URT..NEHVE..SBFZ","altitude":[6000,9000],"speed":250,"method":"random","rate":1.24,"airlines":[["tam/a320",3],["azu/e190",2],["glo/b738",2],["azu/at72",1],["tam/a319",1]]},
+        {"origin":"","destination":"SBFZ","category":"arrival","route":"OWOJE..OZORU..SBFZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",2],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"","destination":"SBFZ","category":"arrival","route":"AFATA..KUZBA..SBFZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",2],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-3.1917,-38.1346,-3.5692,-38.3916],
+            [-3.5692,-38.3916,-3.7758,-38.5322],
+            [-4.2478,-38.0059,-3.9428,-38.346],
+            [-3.9428,-38.346,-3.7758,-38.5322],
+            [-4.4294,-38.8001,-4.0071,-38.627],
+            [-4.0071,-38.627,-3.7758,-38.5322],
+            [-3.5855,-39.4267,-3.7237,-38.7771],
+            [-3.7237,-38.7771,-3.7758,-38.5322]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-3.773,-38.5449,-3.7298,-38.7061],
+            [-3.7611,-38.6281,-3.7418,-38.6229],
+            [-3.7395,-38.7087,-3.7202,-38.7035],
+            [-3.7794,-38.521,-3.8226,-38.3597],
+            [-3.7914,-38.4377,-3.8107,-38.4429],
+            [-3.8129,-38.3571,-3.8322,-38.3623]
+        ]}
+    ]
+}

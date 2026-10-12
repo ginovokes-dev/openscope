@@ -1,0 +1,78 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/WBGG/",
+    "info": {"country":"MY","city":"Kuching","type":"large_airport","longestRunwayM":3780,"frequencies":{"atis":"128.400","twr":"118.100","app":"120.200","gnd":"121.900"}},
+    "radio": {"twr":"Kuching Tower","app":"Kuching Approach","dep":"Kuching Departure"},
+    "icao": "WBGG",
+    "iata": "KCH",
+    "magnetic_north": 0.2,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [1.487364,110.352859,"89ft"],
+    "rangeRings": {"enabled":true,"center":[1.487364,110.352859],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":60,"speed":6},
+    "arrivalRunway": "07",
+    "departureRunway": "07",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[1.8921,110.3543],[1.8779,110.459],[1.8371,110.5565],[1.7725,110.6401],[1.6885,110.7042],[1.5907,110.7443],[1.486,110.7577],[1.3813,110.7435],[1.2838,110.7027],[1.2002,110.6381],[1.1362,110.554],[1.0961,110.4563],[1.0827,110.3514],[1.0968,110.2467],[1.1376,110.1492],[1.2022,110.0656],[1.2862,110.0016],[1.384,109.9615],[1.4888,109.948],[1.5935,109.9622],[1.6909,110.003],[1.7745,110.0676],[1.8385,110.1517],[1.8786,110.2494]]}
+    ],
+    "fixes": {
+        "WBGG": [1.48736,110.35286],
+        "MELIP": [1.77767,110.80589],
+        "ZOFDU": [1.59522,110.52118],
+        "TILMO": [0.96066,110.46225],
+        "DAVIP": [1.29167,110.3935],
+        "SASOW": [1.57339,109.82167],
+        "VINAN": [1.51933,110.1555],
+        "_RWY0704DME": [1.4564,110.27498],
+        "_RWY2504DME": [1.51784,110.42962]
+    },
+    "runways": [
+        {"name":["07","25"],"end":[[1.48101,110.33691,"88ft"],[1.49324,110.36768,"75ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "MELIP1E": {"icao":"MELIP1E","name":"Melip One Echo","rwy":{"WBGG07":["_RWY2504DME"],"WBGG25":["_RWY0704DME"]},"body":[],"exitPoints":{"MELIP":["MELIP"]},"draw":[["WBGG","MELIP*"]]},
+        "TILMO2F": {"icao":"TILMO2F","name":"Tilmo Two Foxtrot","rwy":{"WBGG07":["_RWY2504DME"],"WBGG25":["_RWY0704DME"]},"body":[],"exitPoints":{"TILMO":["TILMO"]},"draw":[["WBGG","TILMO*"]]},
+        "SASOW1A": {"icao":"SASOW1A","name":"Sasow One Alpha","rwy":{"WBGG07":["_RWY2504DME"],"WBGG25":["_RWY0704DME"]},"body":[],"exitPoints":{"SASOW":["SASOW"]},"draw":[["WBGG","SASOW*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"WBGG","destination":"WMKK","category":"departure","route":"WBGG07.SASOW1A.SASOW","altitude":"","speed":"","method":"random","rate":0.89,"airlines":[["axm/a320",1],["mas/b734",1],["mas/b738",1],["mxd/b739",1]]},
+        {"origin":"WBGG","destination":"WSSS","category":"departure","route":"WBGG07.SASOW1A.SASOW","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["axm/a320",1],["mas/b738",1],["slk/a319",1]]},
+        {"origin":"WBGG","destination":"WBGB","category":"departure","route":"WBGG07.MELIP1E.MELIP","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["axm/a320",1],["mas/b738",1]]},
+        {"origin":"WBGG","destination":"WBGR","category":"departure","route":"WBGG07.MELIP1E.MELIP","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["axm/a320",1],["mas/b738",1]]},
+        {"origin":"WBGG","destination":"WBGS","category":"departure","route":"WBGG07.MELIP1E.MELIP","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["axm/a320",1],["mas/b738",1]]},
+        {"origin":"WBGG","destination":"","category":"departure","route":"WBGG07.MELIP1E.MELIP","altitude":"","speed":"","method":"random","rate":0.89,"airlines":[["axm/a320",1],["mas/at72",1],["mas/b738",1],["rba/at72",1]]},
+        {"origin":"WBGG","destination":"","category":"departure","route":"WBGG07.SASOW1A.SASOW","altitude":"","speed":"","method":"random","rate":0.89,"airlines":[["axm/a320",4]]},
+        {"origin":"WBGG","destination":"","category":"departure","route":"WBGG07.TILMO2F.TILMO","altitude":"","speed":"","method":"random","rate":1.55,"airlines":[["9m/c172",6],["9m/p28a",5],["9m/c182",3],["9m/be36",2],["9m/da42",1],["9m/tb20",1],["9m/c208",2],["9m/pc12",2],["9m/be20",1],["9m/b350",1],["9m/p180",1],["9m/c510",1],["9m/e50p",1],["9m/c550",1],["9m/e55p",1],["9m/cl30",1],["9m/c680",1],["9m/h25b",1],["9m/lj45",1],["9m/f2th",1],["9m/glf4",1],["9m/glex",1],["9m/glf5",1]]},
+        {"origin":"WMKK","destination":"WBGG","category":"arrival","route":"SASOW..VINAN..WBGG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.89,"airlines":[["axm/a320",1],["mas/b734",1],["mas/b738",1],["mxd/b739",1]]},
+        {"origin":"WSSS","destination":"WBGG","category":"arrival","route":"SASOW..VINAN..WBGG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.67,"airlines":[["axm/a320",1],["mas/b738",1],["slk/a319",1]]},
+        {"origin":"WBGB","destination":"WBGG","category":"arrival","route":"MELIP..ZOFDU..WBGG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["axm/a320",1],["mas/b738",1]]},
+        {"origin":"WBGR","destination":"WBGG","category":"arrival","route":"MELIP..ZOFDU..WBGG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["axm/a320",1],["mas/b738",1]]},
+        {"origin":"WBGS","destination":"WBGG","category":"arrival","route":"MELIP..ZOFDU..WBGG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["axm/a320",1],["mas/b738",1]]},
+        {"origin":"","destination":"WBGG","category":"arrival","route":"MELIP..ZOFDU..WBGG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.89,"airlines":[["axm/a320",1],["mas/at72",1],["mas/b738",1],["rba/at72",1]]},
+        {"origin":"","destination":"WBGG","category":"arrival","route":"SASOW..VINAN..WBGG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.89,"airlines":[["axm/a320",4]]},
+        {"origin":"","destination":"WBGG","category":"arrival","route":"TILMO..DAVIP..WBGG","altitude":[4000,7000],"speed":250,"method":"random","rate":1.55,"airlines":[["9m/c172",6],["9m/p28a",5],["9m/c182",3],["9m/be36",2],["9m/da42",1],["9m/tb20",1],["9m/c208",2],["9m/pc12",2],["9m/be20",1],["9m/b350",1],["9m/p180",1],["9m/c510",1],["9m/e50p",1],["9m/c550",1],["9m/e55p",1],["9m/cl30",1],["9m/c680",1],["9m/h25b",1],["9m/lj45",1],["9m/f2th",1],["9m/glf4",1],["9m/glex",1],["9m/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [1.7777,110.8059,1.5952,110.5212],
+            [1.5952,110.5212,1.4874,110.3529],
+            [0.9607,110.4622,1.2917,110.3935],
+            [1.2917,110.3935,1.4874,110.3529],
+            [1.5734,109.8217,1.5193,110.1555],
+            [1.5193,110.1555,1.4874,110.3529]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [1.481,110.3369,1.4195,110.1821],
+            [1.441,110.2632,1.4595,110.2558],
+            [1.4102,110.1858,1.4288,110.1784],
+            [1.4932,110.3677,1.5548,110.5225],
+            [1.5333,110.4414,1.5147,110.4488],
+            [1.564,110.5188,1.5455,110.5262]
+        ]}
+    ]
+}

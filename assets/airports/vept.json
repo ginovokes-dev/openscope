@@ -1,0 +1,79 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VEPT/",
+    "info": {"country":"IN","city":"Patna","type":"medium_airport","longestRunwayM":1954,"frequencies":{"twr":"118.300"}},
+    "radio": {"twr":"Patina Tower","app":"Patina Approach","dep":"Patina Departure"},
+    "icao": "VEPT",
+    "iata": "PAT",
+    "magnetic_north": 0.2,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [25.591299,85.087997,"170ft"],
+    "rangeRings": {"enabled":true,"center":[25.591299,85.087997],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":40,"speed":7},
+    "arrivalRunway": "07",
+    "departureRunway": "07",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[25.996,85.0896],[25.9818,85.2056],[25.9411,85.3137],[25.8765,85.4064],[25.7924,85.4774],[25.6947,85.5218],[25.5899,85.5367],[25.4852,85.521],[25.3877,85.4758],[25.3041,85.4042],[25.2401,85.311],[25.2,85.2026],[25.1866,85.0864],[25.2008,84.9703],[25.2415,84.8623],[25.3061,84.7696],[25.3902,84.6986],[25.4879,84.6542],[25.5927,84.6393],[25.6974,84.655],[25.7949,84.7002],[25.8785,84.7718],[25.9425,84.865],[25.9826,84.9734]]}
+    ],
+    "fixes": {
+        "VEPT": [25.5913,85.088],
+        "JIGNU": [26.04452,85.40929],
+        "AKESE": [25.75969,85.20737],
+        "UCOCE": [25.22394,85.52371],
+        "JOJKA": [25.45481,85.24988],
+        "BOBOV": [25.34315,84.5588],
+        "UPIGO": [25.4991,84.89138],
+        "BOLUS": [25.79382,84.53543],
+        "DUMZU": [25.66654,84.8827],
+        "_RWY0704DME": [25.56437,85.01289],
+        "_RWY2504DME": [25.61879,85.1644]
+    },
+    "runways": [
+        {"name":["07","25"],"end":[[25.58903,85.0815,"169ft"],[25.59415,85.09576,"169ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "JIGNU3D": {"icao":"JIGNU3D","name":"Jignu Three Delta","rwy":{"VEPT07":["_RWY2504DME"],"VEPT25":["_RWY0704DME"]},"body":[],"exitPoints":{"JIGNU":["JIGNU"]},"draw":[["VEPT","JIGNU*"]]},
+        "UCOCE3F": {"icao":"UCOCE3F","name":"Ucoce Three Foxtrot","rwy":{"VEPT07":["_RWY2504DME"],"VEPT25":["_RWY0704DME"]},"body":[],"exitPoints":{"UCOCE":["UCOCE"]},"draw":[["VEPT","UCOCE*"]]},
+        "BOBOV1B": {"icao":"BOBOV1B","name":"Bobov One Bravo","rwy":{"VEPT07":["_RWY2504DME"],"VEPT25":["_RWY0704DME"]},"body":[],"exitPoints":{"BOBOV":["BOBOV"]},"draw":[["VEPT","BOBOV*"]]},
+        "BOLUS1D": {"icao":"BOLUS1D","name":"Bolus One Delta","rwy":{"VEPT07":["_RWY2504DME"],"VEPT25":["_RWY0704DME"]},"body":[],"exitPoints":{"BOLUS":["BOLUS"]},"draw":[["VEPT","BOLUS*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"VEPT","destination":"VIDP","category":"departure","route":"VEPT07.BOLUS1D.BOLUS","altitude":"","speed":"","method":"random","rate":1.06,"airlines":[["aic/a319",1],["gow/a320",1],["igo/a320",1]]},
+        {"origin":"VEPT","destination":"VABB","category":"departure","route":"VEPT07.BOBOV1B.BOBOV","altitude":"","speed":"","method":"random","rate":0.7,"airlines":[["gow/a320",1],["igo/a320",1]]},
+        {"origin":"VEPT","destination":"VECC","category":"departure","route":"VEPT07.UCOCE3F.UCOCE","altitude":"","speed":"","method":"random","rate":0.7,"airlines":[["gow/a320",1],["igo/a320",1]]},
+        {"origin":"VEPT","destination":"VERC","category":"departure","route":"VEPT07.UCOCE3F.UCOCE","altitude":"","speed":"","method":"random","rate":0.7,"airlines":[["gow/a320",1],["igo/a320",1]]},
+        {"origin":"VEPT","destination":"","category":"departure","route":"VEPT07.BOLUS1D.BOLUS","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["igo/a320",1]]},
+        {"origin":"VEPT","destination":"","category":"departure","route":"VEPT07.JIGNU3D.JIGNU","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"VIDP","destination":"VEPT","category":"arrival","route":"BOLUS..DUMZU..VEPT","altitude":[4000,7000],"speed":250,"method":"random","rate":1.06,"airlines":[["aic/a319",1],["gow/a320",1],["igo/a320",1]]},
+        {"origin":"VABB","destination":"VEPT","category":"arrival","route":"BOBOV..UPIGO..VEPT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.7,"airlines":[["gow/a320",1],["igo/a320",1]]},
+        {"origin":"VECC","destination":"VEPT","category":"arrival","route":"UCOCE..JOJKA..VEPT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.7,"airlines":[["gow/a320",1],["igo/a320",1]]},
+        {"origin":"VERC","destination":"VEPT","category":"arrival","route":"UCOCE..JOJKA..VEPT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.7,"airlines":[["gow/a320",1],["igo/a320",1]]},
+        {"origin":"","destination":"VEPT","category":"arrival","route":"BOLUS..DUMZU..VEPT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.35,"airlines":[["igo/a320",1]]},
+        {"origin":"","destination":"VEPT","category":"arrival","route":"JIGNU..AKESE..VEPT","altitude":[4000,7000],"speed":250,"method":"random","rate":1.17,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [26.0445,85.4093,25.7597,85.2074],
+            [25.7597,85.2074,25.5913,85.088],
+            [25.2239,85.5237,25.4548,85.2499],
+            [25.4548,85.2499,25.5913,85.088],
+            [25.3431,84.5588,25.4991,84.8914],
+            [25.4991,84.8914,25.5913,85.088],
+            [25.7938,84.5354,25.6665,84.8827],
+            [25.6665,84.8827,25.5913,85.088]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [25.589,85.0815,25.5273,84.91],
+            [25.5489,84.9998,25.5675,84.9916],
+            [25.518,84.9141,25.5366,84.9059],
+            [25.5942,85.0958,25.6557,85.2674],
+            [25.6342,85.1775,25.6157,85.1857],
+            [25.665,85.2633,25.6464,85.2715]
+        ]}
+    ]
+}

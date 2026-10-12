@@ -1,0 +1,93 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VDPP/",
+    "info": {"country":"KH","city":"Phnom Penh","type":"large_airport","longestRunwayM":3027,"frequencies":{"atis":"127.250","twr":"118.000","app":"123.800"}},
+    "radio": {"twr":"Phnom Penh Tower","app":"Phnom Penh Approach","dep":"Phnom Penh Departure"},
+    "icao": "VDPP",
+    "iata": "PNH",
+    "magnetic_north": -0.6,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [11.547155,104.844699,"40ft"],
+    "rangeRings": {"enabled":true,"center":[11.547155,104.844699],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":60,"speed":8},
+    "arrivalRunway": "05",
+    "departureRunway": "05",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[12.0867,104.8389],[12.0698,104.9817],[12.0173,105.1151],[11.9327,105.23],[11.8218,105.3187],[11.6923,105.3752],[11.5528,105.3954],[11.413,105.3781],[11.2823,105.3245],[11.1696,105.2382],[11.0827,105.125],[11.0274,104.9928],[11.0076,104.8505],[11.0245,104.7077],[11.0771,104.5743],[11.1616,104.4594],[11.2725,104.3707],[11.402,104.3142],[11.5415,104.294],[11.6813,104.3113],[11.812,104.3649],[11.9247,104.4512],[12.0116,104.5643],[12.0669,104.6966]]}
+    ],
+    "fixes": {
+        "VDPP": [11.54716,104.8447],
+        "RAVPU": [12.10979,105.28022],
+        "ILUCU": [11.74621,104.99879],
+        "ZUKKU": [11.28084,105.51221],
+        "BIGIS": [11.45294,105.08086],
+        "PIKIW": [10.85514,104.70125],
+        "EMOFO": [11.30232,104.79395],
+        "MEKHO": [11.89111,104.21524],
+        "ULAFA": [11.66884,104.622],
+        "KCW": [12.241,104.563,"kampong chhnang"],
+        "MARHU": [11.7793,104.75045],
+        "_RWY0504DME": [11.49084,104.78507],
+        "_RWY2304DME": [11.60131,104.90195]
+    },
+    "runways": [
+        {"name":["05","23"],"end":[[11.5371,104.834,"40ft"],[11.55506,104.85301,"37ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "RAVPU1E": {"icao":"RAVPU1E","name":"Ravpu One Echo","rwy":{"VDPP05":["_RWY2304DME"],"VDPP23":["_RWY0504DME"]},"body":[],"exitPoints":{"RAVPU":["RAVPU"]},"draw":[["VDPP","RAVPU*"]]},
+        "ZUKKU2D": {"icao":"ZUKKU2D","name":"Zukku Two Delta","rwy":{"VDPP05":["_RWY2304DME"],"VDPP23":["_RWY0504DME"]},"body":[],"exitPoints":{"ZUKKU":["ZUKKU"]},"draw":[["VDPP","ZUKKU*"]]},
+        "PIKIW1C": {"icao":"PIKIW1C","name":"Pikiw One Charlie","rwy":{"VDPP05":["_RWY2304DME"],"VDPP23":["_RWY0504DME"]},"body":[],"exitPoints":{"PIKIW":["PIKIW"]},"draw":[["VDPP","PIKIW*"]]},
+        "MEKHO2D": {"icao":"MEKHO2D","name":"Mekho Two Delta","rwy":{"VDPP05":["_RWY2304DME"],"VDPP23":["_RWY0504DME"]},"body":[],"exitPoints":{"MEKHO":["MEKHO"]},"draw":[["VDPP","MEKHO*"]]},
+        "KCW1B": {"icao":"KCW1B","name":"Kampong Chhnang One Bravo","rwy":{"VDPP05":["_RWY2304DME"],"VDPP23":["_RWY0504DME"]},"body":[],"exitPoints":{"KCW":["KCW"]},"draw":[["VDPP","KCW*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"VDPP","destination":"RKSI","category":"departure","route":"VDPP05.RAVPU1E.RAVPU","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["aar/a321",1],["kal/b738",1],["kal/b739",1]]},
+        {"origin":"VDPP","destination":"VTBS","category":"departure","route":"VDPP05.MEKHO2D.MEKHO","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["bkp/a319",1],["hvn/a321",1],["tha/a320",1]]},
+        {"origin":"VDPP","destination":"WSSS","category":"departure","route":"VDPP05.PIKIW1C.PIKIW","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["jsa/a320",1],["slk/a320",1],["tgw/a320",1]]},
+        {"origin":"VDPP","destination":"RCTP","category":"departure","route":"VDPP05.RAVPU1E.RAVPU","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["cal/b738",1],["eva/md90",1]]},
+        {"origin":"VDPP","destination":"VHHH","category":"departure","route":"VDPP05.RAVPU1E.RAVPU","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["hda/a320",1],["hda/a333",1]]},
+        {"origin":"VDPP","destination":"","category":"departure","route":"VDPP05.RAVPU1E.RAVPU","altitude":"","speed":"","method":"random","rate":0.97,"airlines":[["ces/a320",1],["ces/b737",1],["csn/a319",1],["csn/a321",1]]},
+        {"origin":"VDPP","destination":"","category":"departure","route":"VDPP05.ZUKKU2D.ZUKKU","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["hvn/a321",1],["qtr/a332",1]]},
+        {"origin":"VDPP","destination":"","category":"departure","route":"VDPP05.PIKIW1C.PIKIW","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["axm/a320",1],["mas/b738",1]]},
+        {"origin":"VDPP","destination":"","category":"departure","route":"VDPP05.MEKHO2D.MEKHO","altitude":"","speed":"","method":"random","rate":0.24,"airlines":[["aiq/a320",1]]},
+        {"origin":"VDPP","destination":"","category":"departure","route":"VDPP05.KCW1B.KCW","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["hvn/a321",2]]},
+        {"origin":"VDPP","destination":"","category":"departure","route":"VDPP05.MEKHO2D.MEKHO","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["xu/c172",6],["xu/p28a",5],["xu/c182",3],["xu/be36",2],["xu/da42",1],["xu/tb20",1],["xu/c208",2],["xu/pc12",2],["xu/be20",1],["xu/b350",1],["xu/p180",1],["xu/c510",1],["xu/e50p",1],["xu/c550",2],["xu/e55p",1],["xu/cl30",1],["xu/c680",1],["xu/h25b",1],["xu/lj45",1],["xu/f2th",1],["xu/glf4",1],["xu/glex",1],["xu/glf5",1]]},
+        {"origin":"VDPP","destination":"","category":"departure","route":"VDPP05.ZUKKU2D.ZUKKU","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["xu/c172",6],["xu/p28a",5],["xu/c182",3],["xu/be36",2],["xu/da42",1],["xu/tb20",1],["xu/c208",2],["xu/pc12",2],["xu/be20",1],["xu/b350",1],["xu/p180",1],["xu/c510",1],["xu/e50p",1],["xu/c550",2],["xu/e55p",1],["xu/cl30",1],["xu/c680",1],["xu/h25b",1],["xu/lj45",1],["xu/f2th",1],["xu/glf4",1],["xu/glex",1],["xu/glf5",1]]},
+        {"origin":"RKSI","destination":"VDPP","category":"arrival","route":"RAVPU..ILUCU..VDPP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.72,"airlines":[["aar/a321",1],["kal/b738",1],["kal/b739",1]]},
+        {"origin":"VTBS","destination":"VDPP","category":"arrival","route":"MEKHO..ULAFA..VDPP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.72,"airlines":[["bkp/a319",1],["hvn/a321",1],["tha/a320",1]]},
+        {"origin":"WSSS","destination":"VDPP","category":"arrival","route":"PIKIW..EMOFO..VDPP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.72,"airlines":[["jsa/a320",1],["slk/a320",1],["tgw/a320",1]]},
+        {"origin":"RCTP","destination":"VDPP","category":"arrival","route":"RAVPU..ILUCU..VDPP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.48,"airlines":[["cal/b738",1],["eva/md90",1]]},
+        {"origin":"VHHH","destination":"VDPP","category":"arrival","route":"RAVPU..ILUCU..VDPP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.48,"airlines":[["hda/a320",1],["hda/a333",1]]},
+        {"origin":"","destination":"VDPP","category":"arrival","route":"RAVPU..ILUCU..VDPP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.97,"airlines":[["ces/a320",1],["ces/b737",1],["csn/a319",1],["csn/a321",1]]},
+        {"origin":"","destination":"VDPP","category":"arrival","route":"ZUKKU..BIGIS..VDPP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.48,"airlines":[["hvn/a321",1],["qtr/a332",1]]},
+        {"origin":"","destination":"VDPP","category":"arrival","route":"PIKIW..EMOFO..VDPP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.48,"airlines":[["axm/a320",1],["mas/b738",1]]},
+        {"origin":"","destination":"VDPP","category":"arrival","route":"MEKHO..ULAFA..VDPP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.24,"airlines":[["aiq/a320",1]]},
+        {"origin":"","destination":"VDPP","category":"arrival","route":"KCW..MARHU..VDPP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.48,"airlines":[["hvn/a321",2]]},
+        {"origin":"","destination":"VDPP","category":"arrival","route":"MEKHO..ULAFA..VDPP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["xu/c172",6],["xu/p28a",5],["xu/c182",3],["xu/be36",2],["xu/da42",1],["xu/tb20",1],["xu/c208",2],["xu/pc12",2],["xu/be20",1],["xu/b350",1],["xu/p180",1],["xu/c510",1],["xu/e50p",1],["xu/c550",2],["xu/e55p",1],["xu/cl30",1],["xu/c680",1],["xu/h25b",1],["xu/lj45",1],["xu/f2th",1],["xu/glf4",1],["xu/glex",1],["xu/glf5",1]]},
+        {"origin":"","destination":"VDPP","category":"arrival","route":"ZUKKU..BIGIS..VDPP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["xu/c172",6],["xu/p28a",5],["xu/c182",3],["xu/be36",2],["xu/da42",1],["xu/tb20",1],["xu/c208",2],["xu/pc12",2],["xu/be20",1],["xu/b350",1],["xu/p180",1],["xu/c510",1],["xu/e50p",1],["xu/c550",2],["xu/e55p",1],["xu/cl30",1],["xu/c680",1],["xu/h25b",1],["xu/lj45",1],["xu/f2th",1],["xu/glf4",1],["xu/glex",1],["xu/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [12.1098,105.2802,11.7462,104.9988],
+            [11.7462,104.9988,11.5472,104.8447],
+            [11.2808,105.5122,11.4529,105.0809],
+            [11.4529,105.0809,11.5472,104.8447],
+            [10.8551,104.7012,11.3023,104.7939],
+            [11.3023,104.7939,11.5472,104.8447],
+            [11.8911,104.2152,11.6688,104.622],
+            [11.6688,104.622,11.5472,104.8447],
+            [12.241,104.563,11.7793,104.7505],
+            [11.7793,104.7505,11.5472,104.8447]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [11.5371,104.834,11.4214,104.7117],
+            [11.4721,104.7799,11.4865,104.7658],
+            [11.4142,104.7188,11.4286,104.7046]
+        ]}
+    ]
+}

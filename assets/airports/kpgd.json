@@ -1,0 +1,91 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KPGD/",
+    "info": {"country":"US","city":"Punta Gorda","type":"medium_airport","longestRunwayM":2192},
+    "radio": {"twr":"Punta Gorda Tower","app":"Punta Gorda Approach","dep":"Punta Gorda Departure"},
+    "icao": "KPGD",
+    "iata": "PGD",
+    "magnetic_north": -6.4,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [26.9202,-81.990501,"26ft"],
+    "rangeRings": {"enabled":true,"center":[26.9202,-81.990501],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":60,"speed":11},
+    "arrivalRunway": "04",
+    "departureRunway": "04",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[27.4564,-82.058],[27.4537,-81.9],[27.4147,-81.7482],[27.3419,-81.6129],[27.2404,-81.5034],[27.1171,-81.4271],[26.9803,-81.3891],[26.8395,-81.3921],[26.7042,-81.4359],[26.5836,-81.5175],[26.4859,-81.6314],[26.4178,-81.7697],[26.384,-81.923],[26.3867,-82.081],[26.4257,-82.2328],[26.4985,-82.3681],[26.6,-82.4776],[26.7233,-82.5539],[26.8601,-82.5919],[27.0009,-82.5889],[27.1362,-82.5451],[27.2568,-82.4635],[27.3545,-82.3496],[27.4226,-82.2113]]}
+    ],
+    "fixes": {
+        "KPGD": [26.9202,-81.9905],
+        "PHK": [26.7827,-80.6914,"pahokee"],
+        "WAREB": [26.89075,-81.71226],
+        "CYY": [26.1534,-81.7781,"cypress"],
+        "IJAWA": [26.67766,-81.92332],
+        "EGIKE": [26.76297,-82.76259],
+        "FETBA": [26.86457,-82.26366],
+        "LAL": [27.9862,-82.0139,"lakeland"],
+        "HENAN": [27.16998,-81.99598],
+        "_RWY0404DME": [26.85312,-82.02758],
+        "_RWY2204DME": [26.98577,-81.94518],
+        "_RWY1504DME": [26.98099,-82.03705],
+        "_RWY3304DME": [26.855,-81.95379],
+        "_RWY0904DME": [26.92256,-82.07011],
+        "_RWY2704DME": [26.9246,-81.91258]
+    },
+    "runways": [
+        {"name":["04","22"],"end":[[26.9114,-81.9914,"23ft"],[26.9275,-81.9814,"26ft"]],"ils":[true,true]},
+        {"name":["15","33"],"end":[[26.9236,-81.9991,"18ft"],[26.9124,-81.9917,"25ft"]],"ils":[false,false]},
+        {"name":["09","27"],"end":[[26.92355,-81.9954,"20ft"],[26.92365,-81.9873,"25ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "PHK1B": {"icao":"PHK1B","name":"Pahokee One Bravo","rwy":{"KPGD04":["_RWY2204DME"],"KPGD22":["_RWY0404DME"],"KPGD15":["_RWY3304DME"],"KPGD33":["_RWY1504DME"],"KPGD09":["_RWY2704DME"],"KPGD27":["_RWY0904DME"]},"body":[],"exitPoints":{"PHK":["PHK"]},"draw":[["KPGD","PHK*"]]},
+        "CYY2F": {"icao":"CYY2F","name":"Cypress Two Foxtrot","rwy":{"KPGD04":["_RWY2204DME"],"KPGD22":["_RWY0404DME"],"KPGD15":["_RWY3304DME"],"KPGD33":["_RWY1504DME"],"KPGD09":["_RWY2704DME"],"KPGD27":["_RWY0904DME"]},"body":[],"exitPoints":{"CYY":["CYY"]},"draw":[["KPGD","CYY*"]]},
+        "EGIKE2C": {"icao":"EGIKE2C","name":"Egike Two Charlie","rwy":{"KPGD04":["_RWY2204DME"],"KPGD22":["_RWY0404DME"],"KPGD15":["_RWY3304DME"],"KPGD33":["_RWY1504DME"],"KPGD09":["_RWY2704DME"],"KPGD27":["_RWY0904DME"]},"body":[],"exitPoints":{"EGIKE":["EGIKE"]},"draw":[["KPGD","EGIKE*"]]},
+        "LAL2B": {"icao":"LAL2B","name":"Lakeland Two Bravo","rwy":{"KPGD04":["_RWY2204DME"],"KPGD22":["_RWY0404DME"],"KPGD15":["_RWY3304DME"],"KPGD33":["_RWY1504DME"],"KPGD09":["_RWY2704DME"],"KPGD27":["_RWY0904DME"]},"body":[],"exitPoints":{"LAL":["LAL"]},"draw":[["KPGD","LAL*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KPGD","destination":"KABE","category":"departure","route":"KPGD04.LAL2B.LAL","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["aay/md82",1]]},
+        {"origin":"KPGD","destination":"KAVL","category":"departure","route":"KPGD04.LAL2B.LAL","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["aay/md82",1]]},
+        {"origin":"KPGD","destination":"KCID","category":"departure","route":"KPGD04.LAL2B.LAL","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["aay/md82",1]]},
+        {"origin":"KPGD","destination":"KCVG","category":"departure","route":"KPGD04.LAL2B.LAL","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["aay/md82",1]]},
+        {"origin":"KPGD","destination":"KDSM","category":"departure","route":"KPGD04.LAL2B.LAL","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["aay/md82",1]]},
+        {"origin":"KPGD","destination":"KFWA","category":"departure","route":"KPGD04.LAL2B.LAL","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["aay/md82",1]]},
+        {"origin":"KPGD","destination":"","category":"departure","route":"KPGD04.LAL2B.LAL","altitude":"","speed":"","method":"random","rate":4.32,"airlines":[["aay/md82",12]]},
+        {"origin":"KPGD","destination":"","category":"departure","route":"KPGD04.LAL2B.LAL","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KPGD","destination":"","category":"departure","route":"KPGD04.PHK1B.PHK","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KABE","destination":"KPGD","category":"arrival","route":"LAL..HENAN..KPGD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.36,"airlines":[["aay/md82",1]]},
+        {"origin":"KAVL","destination":"KPGD","category":"arrival","route":"LAL..HENAN..KPGD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.36,"airlines":[["aay/md82",1]]},
+        {"origin":"KCID","destination":"KPGD","category":"arrival","route":"LAL..HENAN..KPGD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.36,"airlines":[["aay/md82",1]]},
+        {"origin":"KCVG","destination":"KPGD","category":"arrival","route":"LAL..HENAN..KPGD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.36,"airlines":[["aay/md82",1]]},
+        {"origin":"KDSM","destination":"KPGD","category":"arrival","route":"LAL..HENAN..KPGD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.36,"airlines":[["aay/md82",1]]},
+        {"origin":"KFWA","destination":"KPGD","category":"arrival","route":"LAL..HENAN..KPGD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.36,"airlines":[["aay/md82",1]]},
+        {"origin":"","destination":"KPGD","category":"arrival","route":"LAL..HENAN..KPGD","altitude":[6000,9000],"speed":250,"method":"random","rate":4.32,"airlines":[["aay/md82",12]]},
+        {"origin":"","destination":"KPGD","category":"arrival","route":"LAL..HENAN..KPGD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.44,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"","destination":"KPGD","category":"arrival","route":"PHK..WAREB..KPGD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.44,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [26.7827,-80.6914,26.8908,-81.7123],
+            [26.8908,-81.7123,26.9202,-81.9905],
+            [26.1534,-81.7781,26.6777,-81.9233],
+            [26.6777,-81.9233,26.9202,-81.9905],
+            [26.763,-82.7626,26.8646,-82.2637],
+            [26.8646,-82.2637,26.9202,-81.9905],
+            [27.9862,-82.0139,27.17,-81.996],
+            [27.17,-81.996,26.9202,-81.9905]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [26.9114,-81.9914,26.7657,-82.0818],
+            [26.8337,-82.0268,26.8434,-82.0464],
+            [26.7608,-82.072,26.7705,-82.0916],
+            [26.9275,-81.9814,27.0732,-81.8908],
+            [27.0052,-81.9459,26.9955,-81.9263],
+            [27.078,-81.9006,27.0683,-81.881]
+        ]}
+    ]
+}

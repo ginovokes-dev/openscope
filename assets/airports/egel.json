@@ -1,0 +1,66 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGEL/",
+    "info": {"country":"GB","city":"Coll Island","type":"small_airport","longestRunwayM":500,"approximateRunways":true},
+    "radio": {"twr":"Coll Tower","app":"Coll Approach","dep":"Coll Radar"},
+    "icao": "EGEL",
+    "iata": "COL",
+    "magnetic_north": -2,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [56.601898,-6.61778,"21ft"],
+    "rangeRings": {"enabled":true,"center":[56.601898,-6.61778],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":190,"speed":9},
+    "arrivalRunway": "20",
+    "departureRunway": "20",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[57.0063,-6.6434],[56.9962,-6.4524],[56.9592,-6.2726],[56.8979,-6.1164],[56.8164,-5.9943],[56.7202,-5.9147],[56.616,-5.883],[56.5109,-5.9014],[56.4119,-5.9686],[56.3259,-6.0801],[56.2587,-6.2282],[56.2149,-6.4028],[56.1974,-6.5921],[56.2076,-6.7832],[56.2446,-6.9629],[56.3059,-7.1192],[56.3874,-7.2413],[56.4836,-7.3209],[56.5878,-7.3525],[56.6929,-7.3341],[56.7919,-7.2669],[56.8779,-7.1555],[56.9451,-7.0074],[56.9889,-6.8327]]}
+    ],
+    "fixes": {
+        "EGEL": [56.6019,-6.61778],
+        "HOVUM": [56.80342,-5.71168],
+        "NOWWU": [56.67677,-6.28113],
+        "LAY": [55.6829,-6.24948,"islay"],
+        "OCAFI": [56.40673,-6.53956],
+        "KAPIS": [56.40037,-7.52388],
+        "IRAKI": [56.52702,-6.95443],
+        "BEN": [57.4779,-7.3653,"benbecula"],
+        "LAKEG": [56.7828,-6.77215],
+        "_RWY0203DME": [56.55383,-6.6548],
+        "_RWY2003DME": [56.64996,-6.58067]
+    },
+    "runways": [
+        {"name":["02","20"],"end":[[56.59983,-6.61937,"20ft"],[56.60397,-6.61618,"20ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "HOVUM3F": {"icao":"HOVUM3F","name":"Hovum Three Foxtrot","rwy":{"EGEL02":["_RWY2003DME"],"EGEL20":["_RWY0203DME"]},"body":[],"exitPoints":{"HOVUM":["HOVUM"]},"draw":[["EGEL","HOVUM*"]]},
+        "LAY2C": {"icao":"LAY2C","name":"Islay Two Charlie","rwy":{"EGEL02":["_RWY2003DME"],"EGEL20":["_RWY0203DME"]},"body":[],"exitPoints":{"LAY":["LAY"]},"draw":[["EGEL","LAY*"]]},
+        "KAPIS2E": {"icao":"KAPIS2E","name":"Kapis Two Echo","rwy":{"EGEL02":["_RWY2003DME"],"EGEL20":["_RWY0203DME"]},"body":[],"exitPoints":{"KAPIS":["KAPIS"]},"draw":[["EGEL","KAPIS*"]]},
+        "BEN2B": {"icao":"BEN2B","name":"Benbecula Two Bravo","rwy":{"EGEL02":["_RWY2003DME"],"EGEL20":["_RWY0203DME"]},"body":[],"exitPoints":{"BEN":["BEN"]},"draw":[["EGEL","BEN*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGEL","destination":"","category":"departure","route":"EGEL20.LAY2C.LAY","altitude":"","speed":"","method":"random","rate":3,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/be20",1]]},
+        {"origin":"","destination":"EGEL","category":"arrival","route":"LAY..OCAFI..EGEL","altitude":[4000,7000],"speed":250,"method":"random","rate":3,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/be20",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [56.8034,-5.7117,56.6768,-6.2811],
+            [56.6768,-6.2811,56.6019,-6.6178],
+            [55.6829,-6.2495,56.4067,-6.5396],
+            [56.4067,-6.5396,56.6019,-6.6178],
+            [56.4004,-7.5239,56.527,-6.9544],
+            [56.527,-6.9544,56.6019,-6.6178],
+            [57.4779,-7.3653,56.7828,-6.7721],
+            [56.7828,-6.7721,56.6019,-6.6178]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [56.604,-6.6162,56.7572,-6.4975],
+            [56.6845,-6.5737,56.6767,-6.5402],
+            [56.7611,-6.5143,56.7533,-6.4807]
+        ]}
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LGSA/",
+    "info": {"country":"GR","city":"Souda","type":"large_airport","longestRunwayM":3347,"frequencies":{"twr":"121.100","app":"118.125","gnd":"121.700"}},
+    "radio": {"twr":"Chania Tower","app":"Chania Approach","dep":"Chania Departure"},
+    "icao": "LGSA",
+    "iata": "CHQ",
+    "magnetic_north": 4.9,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [35.531207,24.150673,"490ft"],
+    "rangeRings": {"enabled":true,"center":[35.531207,24.150673],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":310,"speed":5},
+    "arrivalRunway": "29",
+    "departureRunway": "29",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[36.0688,24.2073],[36.0386,24.3764],[35.9738,24.53],[35.8788,24.6579],[35.7601,24.7511],[35.6258,24.8035],[35.4851,24.8113],[35.3475,24.7741],[35.2225,24.6945],[35.1185,24.5778],[35.0426,24.4319],[35,24.267],[34.9936,24.094],[35.0238,23.925],[35.0887,23.7713],[35.1836,23.6435],[35.3023,23.5502],[35.4366,23.4979],[35.5773,23.49],[35.7149,23.5272],[35.8399,23.6069],[35.944,23.7236],[36.0198,23.8694],[36.0624,24.0344]]}
+    ],
+    "fixes": {
+        "LGSA": [35.53121,24.15067],
+        "IRA": [35.3408,25.1853,"iraklion"],
+        "EWEVA": [35.4761,24.45011],
+        "HIBUZ": [34.93206,23.69144],
+        "BEKUT": [35.31923,23.9882],
+        "RESRE": [36.13977,23.71053],
+        "CUGKU": [35.74651,23.99495],
+        "_RWY1104DME": [35.56144,24.05778],
+        "_RWY2904DME": [35.50172,24.24457]
+    },
+    "runways": [
+        {"name":["11","29"],"end":[[35.5371,24.134,"428ft"],[35.5261,24.1684,"490ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "IRA3C": {"icao":"IRA3C","name":"Iraklion Three Charlie","rwy":{"LGSA11":["_RWY2904DME"],"LGSA29":["_RWY1104DME"]},"body":[],"exitPoints":{"IRA":["IRA"]},"draw":[["LGSA","IRA*"]]},
+        "HIBUZ3C": {"icao":"HIBUZ3C","name":"Hibuz Three Charlie","rwy":{"LGSA11":["_RWY2904DME"],"LGSA29":["_RWY1104DME"]},"body":[],"exitPoints":{"HIBUZ":["HIBUZ"]},"draw":[["LGSA","HIBUZ*"]]},
+        "RESRE2B": {"icao":"RESRE2B","name":"Resre Two Bravo","rwy":{"LGSA11":["_RWY2904DME"],"LGSA29":["_RWY1104DME"]},"body":[],"exitPoints":{"RESRE":["RESRE"]},"draw":[["LGSA","RESRE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LGSA","destination":"LGAV","category":"departure","route":"LGSA29.RESRE2B.RESRE","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["aee/a320",1],["aee/dh8d",1],["ryr/b738",1]]},
+        {"origin":"LGSA","destination":"EGKK","category":"departure","route":"LGSA29.RESRE2B.RESRE","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["ezy/a320",1],["tvf/b738",1]]},
+        {"origin":"LGSA","destination":"ENGM","category":"departure","route":"LGSA29.RESRE2B.RESRE","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["nax/b733",1],["sas/b738",1]]},
+        {"origin":"LGSA","destination":"LGTS","category":"departure","route":"LGSA29.RESRE2B.RESRE","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["aee/a320",1],["ryr/b738",1]]},
+        {"origin":"LGSA","destination":"LOWW","category":"departure","route":"LGSA29.RESRE2B.RESRE","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["ber/a320",1],["nly/a320",1]]},
+        {"origin":"LGSA","destination":"EBCI","category":"departure","route":"LGSA29.RESRE2B.RESRE","altitude":"","speed":"","method":"random","rate":0.21,"airlines":[["ryr/b738",1]]},
+        {"origin":"LGSA","destination":"","category":"departure","route":"LGSA29.IRA3C.IRA","altitude":"","speed":"","method":"random","rate":0.21,"airlines":[["ryr/b738",1]]},
+        {"origin":"LGSA","destination":"","category":"departure","route":"LGSA29.RESRE2B.RESRE","altitude":"","speed":"","method":"random","rate":6.63,"airlines":[["ryr/b738",22],["nax/b738",4],["cfg/a320",2],["tra/b738",2],["cfg/b752",1]]},
+        {"origin":"LGAV","destination":"LGSA","category":"arrival","route":"RESRE..CUGKU..LGSA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.64,"airlines":[["aee/a320",1],["aee/dh8d",1],["ryr/b738",1]]},
+        {"origin":"EGKK","destination":"LGSA","category":"arrival","route":"RESRE..CUGKU..LGSA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["ezy/a320",1],["tvf/b738",1]]},
+        {"origin":"ENGM","destination":"LGSA","category":"arrival","route":"RESRE..CUGKU..LGSA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["nax/b733",1],["sas/b738",1]]},
+        {"origin":"LGTS","destination":"LGSA","category":"arrival","route":"RESRE..CUGKU..LGSA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["aee/a320",1],["ryr/b738",1]]},
+        {"origin":"LOWW","destination":"LGSA","category":"arrival","route":"RESRE..CUGKU..LGSA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["ber/a320",1],["nly/a320",1]]},
+        {"origin":"EBCI","destination":"LGSA","category":"arrival","route":"RESRE..CUGKU..LGSA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.21,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LGSA","category":"arrival","route":"IRA..EWEVA..LGSA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.21,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LGSA","category":"arrival","route":"RESRE..CUGKU..LGSA","altitude":[6000,9000],"speed":250,"method":"random","rate":6.63,"airlines":[["ryr/b738",22],["nax/b738",4],["cfg/a320",2],["tra/b738",2],["cfg/b752",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [35.3408,25.1853,35.4761,24.4501],
+            [35.4761,24.4501,35.5312,24.1507],
+            [34.9321,23.6914,35.3192,23.9882],
+            [35.3192,23.9882,35.5312,24.1507],
+            [36.1398,23.7105,35.7465,23.995],
+            [35.7465,23.995,35.5312,24.1507]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [35.5371,24.134,35.5978,23.9433],
+            [35.5582,24.0342,35.5768,24.0432],
+            [35.5885,23.9389,35.6071,23.9478],
+            [35.5261,24.1684,35.4651,24.3587],
+            [35.5049,24.2681,35.4863,24.2591],
+            [35.4744,24.3632,35.4558,24.3543]
+        ]}
+    ]
+}

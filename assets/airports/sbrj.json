@@ -1,0 +1,75 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SBRJ/",
+    "info": {"country":"BR","city":"Rio de Janeiro","type":"large_airport","longestRunwayM":1323,"frequencies":{"atis":"132.650","twr":"118.700","app":"119.350","gnd":"121.700"}},
+    "radio": {"twr":"Santos Dumont Tower","app":"Santos Dumont Approach","dep":"Santos Dumont Departure"},
+    "icao": "SBRJ",
+    "iata": "SDU",
+    "magnetic_north": -23,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-22.910397,-43.16282,"11ft"],
+    "rangeRings": {"enabled":true,"center":[-22.910397,-43.16282],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":40,"speed":9},
+    "arrivalRunway": "02R",
+    "departureRunway": "02R",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-22.5379,-43.3345],[-22.5096,-43.224],[-22.5087,-43.1093],[-22.5352,-42.9982],[-22.5872,-42.8984],[-22.6612,-42.8166],[-22.7523,-42.7584],[-22.8541,-42.7277],[-22.9597,-42.7267],[-23.062,-42.7555],[-23.1539,-42.8119],[-23.2293,-42.8923],[-23.2829,-42.9912],[-23.3112,-43.1017],[-23.3121,-43.2164],[-23.2856,-43.3274],[-23.2336,-43.4272],[-23.1596,-43.509],[-23.0685,-43.5672],[-22.9667,-43.5979],[-22.8611,-43.5989],[-22.7588,-43.5702],[-22.6668,-43.5137],[-22.5915,-43.4333]]}
+    ],
+    "fixes": {
+        "SBRJ": [-22.9104,-43.16282],
+        "ELEME": [-22.40023,-43.34803],
+        "LELNE": [-22.72085,-43.23163],
+        "ADA": [-22.8128,-42.0953,"aldeia"],
+        "HUBOC": [-22.89066,-42.9469],
+        "VOMFE": [-23.42057,-42.97761],
+        "MEZEV": [-23.09995,-43.09401],
+        "SCR": [-22.9496,-43.7277,"santa cruz"],
+        "GUPAT": [-22.92541,-43.37919],
+        "_RWY02R03DME": [-22.96625,-43.15894],
+        "_RWY20L03DME": [-22.85486,-43.16689],
+        "_RWY02L03DME": [-22.96575,-43.16083],
+        "_RWY20R03DME": [-22.85481,-43.16639]
+    },
+    "runways": [
+        {"name":["02R","20L"],"end":[[-22.91639,-43.1625,"9ft"],[-22.90472,-43.16333,"10ft"]],"ils":[false,false]},
+        {"name":["02L","20R"],"end":[[-22.91583,-43.16333,"9ft"],[-22.90472,-43.16389,"9ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "ELEME1D": {"icao":"ELEME1D","name":"Eleme One Delta","rwy":{"SBRJ02R":["_RWY20L03DME"],"SBRJ20L":["_RWY02R03DME"],"SBRJ02L":["_RWY20R03DME"],"SBRJ20R":["_RWY02L03DME"]},"body":[],"exitPoints":{"ELEME":["ELEME"]},"draw":[["SBRJ","ELEME*"]]},
+        "ADA3D": {"icao":"ADA3D","name":"Aldeia Three Delta","rwy":{"SBRJ02R":["_RWY20L03DME"],"SBRJ20L":["_RWY02R03DME"],"SBRJ02L":["_RWY20R03DME"],"SBRJ20R":["_RWY02L03DME"]},"body":[],"exitPoints":{"ADA":["ADA"]},"draw":[["SBRJ","ADA*"]]},
+        "VOMFE1A": {"icao":"VOMFE1A","name":"Vomfe One Alpha","rwy":{"SBRJ02R":["_RWY20L03DME"],"SBRJ20L":["_RWY02R03DME"],"SBRJ02L":["_RWY20R03DME"],"SBRJ20R":["_RWY02L03DME"]},"body":[],"exitPoints":{"VOMFE":["VOMFE"]},"draw":[["SBRJ","VOMFE*"]]},
+        "SCR3C": {"icao":"SCR3C","name":"Santa Cruz Three Charlie","rwy":{"SBRJ02R":["_RWY20L03DME"],"SBRJ20L":["_RWY02R03DME"],"SBRJ02L":["_RWY20R03DME"],"SBRJ20R":["_RWY02L03DME"]},"body":[],"exitPoints":{"SCR":["SCR"]},"draw":[["SBRJ","SCR*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SBRJ","destination":"SBCP","category":"departure","route":"SBRJ02R.ADA3D.ADA","altitude":"","speed":"","method":"random","rate":0.99,"airlines":[["azu/at72",1]]},
+        {"origin":"SBRJ","destination":"SBME","category":"departure","route":"SBRJ02R.ADA3D.ADA","altitude":"","speed":"","method":"random","rate":0.99,"airlines":[["azu/at43",1]]},
+        {"origin":"SBRJ","destination":"SBSJ","category":"departure","route":"SBRJ02R.SCR3C.SCR","altitude":"","speed":"","method":"random","rate":0.99,"airlines":[["azu/at72",1]]},
+        {"origin":"SBRJ","destination":"","category":"departure","route":"SBRJ02R.SCR3C.SCR","altitude":"","speed":"","method":"random","rate":0.99,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/c680",1],["pp/lj45",1]]},
+        {"origin":"SBCP","destination":"SBRJ","category":"arrival","route":"ADA..HUBOC..SBRJ","altitude":[4000,7000],"speed":250,"method":"random","rate":0.99,"airlines":[["azu/at72",1]]},
+        {"origin":"SBME","destination":"SBRJ","category":"arrival","route":"ADA..HUBOC..SBRJ","altitude":[4000,7000],"speed":250,"method":"random","rate":0.99,"airlines":[["azu/at43",1]]},
+        {"origin":"SBSJ","destination":"SBRJ","category":"arrival","route":"SCR..GUPAT..SBRJ","altitude":[4000,7000],"speed":250,"method":"random","rate":0.99,"airlines":[["azu/at72",1]]},
+        {"origin":"","destination":"SBRJ","category":"arrival","route":"SCR..GUPAT..SBRJ","altitude":[4000,7000],"speed":250,"method":"random","rate":0.99,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/c680",1],["pp/lj45",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-22.4002,-43.348,-22.7208,-43.2316],
+            [-22.7208,-43.2316,-22.9104,-43.1628],
+            [-22.8128,-42.0953,-22.8907,-42.9469],
+            [-22.8907,-42.9469,-22.9104,-43.1628],
+            [-23.4206,-42.9776,-23.0999,-43.094],
+            [-23.0999,-43.094,-22.9104,-43.1628],
+            [-22.9496,-43.7277,-22.9254,-43.3792],
+            [-22.9254,-43.3792,-22.9104,-43.1628]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-22.9164,-43.1625,-23.0826,-43.1506],
+            [-22.9988,-43.1457,-23.0001,-43.1674],
+            [-23.0819,-43.1398,-23.0832,-43.1615]
+        ]}
+    ]
+}

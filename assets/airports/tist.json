@@ -1,0 +1,89 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/TIST/",
+    "info": {"country":"VI","city":"Charlotte Amalie","type":"large_airport","longestRunwayM":2134,"frequencies":{"atis":"124.000","twr":"118.100","app":"118.800","gnd":"121.900","dep":"118.800"}},
+    "radio": {"twr":"St Thomas Tower","app":"St Thomas Approach","dep":"St Thomas Departure"},
+    "icao": "TIST",
+    "iata": "STT",
+    "magnetic_north": -14.1,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [18.337091,-64.977251,"23ft"],
+    "rangeRings": {"enabled":true,"center":[18.337091,-64.977251],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":110,"speed":12},
+    "arrivalRunway": "10",
+    "departureRunway": "10",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[18.8604,-65.1157],[18.8766,-64.9683],[18.856,-64.8215],[18.8001,-64.6853],[18.7126,-64.569],[18.5995,-64.4805],[18.4685,-64.4259],[18.3286,-64.4089],[18.1893,-64.4305],[18.06,-64.4895],[17.9496,-64.5817],[17.8656,-64.7008],[17.8138,-64.8388],[17.7976,-64.9862],[17.8181,-65.133],[17.8741,-65.2692],[17.9616,-65.3855],[18.0747,-65.474],[18.2056,-65.5286],[18.3456,-65.5456],[18.4849,-65.524],[18.6142,-65.465],[18.7246,-65.3728],[18.8086,-65.2537]]}
+    ],
+    "fixes": {
+        "TIST": [18.33709,-64.97725],
+        "WIKOM": [18.31507,-64.23369],
+        "UTOBE": [18.3293,-64.71418],
+        "COY": [17.7344,-64.7007,"st croix"],
+        "VARPA": [18.10804,-64.87215],
+        "SJU": [18.4463,-65.9895,"san juan"],
+        "NUTUR": [18.36531,-65.23876],
+        "ONULE": [18.96379,-65.32007],
+        "EZIJI": [18.55881,-65.09854],
+        "_RWY1004DME": [18.3341,-65.05352],
+        "_RWY2804DME": [18.34021,-64.89981]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[18.3369,-64.9834,"23ft"],[18.33744,-64.96994,"11ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "WIKOM1B": {"icao":"WIKOM1B","name":"Wikom One Bravo","rwy":{"TIST10":["_RWY2804DME"],"TIST28":["_RWY1004DME"]},"body":[],"exitPoints":{"WIKOM":["WIKOM"]},"draw":[["TIST","WIKOM*"]]},
+        "COY1B": {"icao":"COY1B","name":"St Croix One Bravo","rwy":{"TIST10":["_RWY2804DME"],"TIST28":["_RWY1004DME"]},"body":[],"exitPoints":{"COY":["COY"]},"draw":[["TIST","COY*"]]},
+        "SJU1C": {"icao":"SJU1C","name":"San Juan One Charlie","rwy":{"TIST10":["_RWY2804DME"],"TIST28":["_RWY1004DME"]},"body":[],"exitPoints":{"SJU":["SJU"]},"draw":[["TIST","SJU*"]]},
+        "ONULE2A": {"icao":"ONULE2A","name":"Onule Two Alpha","rwy":{"TIST10":["_RWY2804DME"],"TIST28":["_RWY1004DME"]},"body":[],"exitPoints":{"ONULE":["ONULE"]},"draw":[["TIST","ONULE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"TIST","destination":"TJSJ","category":"departure","route":"TIST10.SJU1C.SJU","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["jbu/e190",1],["kap/c172",1],["sbs/dhc6",1],["sbs/sf34",1]]},
+        {"origin":"TIST","destination":"KCLT","category":"departure","route":"TIST10.ONULE2A.ONULE","altitude":"","speed":"","method":"random","rate":0.63,"airlines":[["aal/b752",2],["aal/b763",1]]},
+        {"origin":"TIST","destination":"KJFK","category":"departure","route":"TIST10.ONULE2A.ONULE","altitude":"","speed":"","method":"random","rate":0.63,"airlines":[["aal/b752",2],["dal/b752",1]]},
+        {"origin":"TIST","destination":"TNCM","category":"departure","route":"TIST10.WIKOM1B.WIKOM","altitude":"","speed":"","method":"random","rate":0.63,"airlines":[["lia/at43",1],["lia/at72",1],["lia/dh8c",1]]},
+        {"origin":"TIST","destination":"TQPF","category":"departure","route":"TIST10.WIKOM1B.WIKOM","altitude":"","speed":"","method":"random","rate":0.63,"airlines":[["lia/at43",1],["lia/at72",1],["lia/dh8c",1]]},
+        {"origin":"TIST","destination":"","category":"departure","route":"TIST10.WIKOM1B.WIKOM","altitude":"","speed":"","method":"random","rate":0.21,"airlines":[["kap/c172",1]]},
+        {"origin":"TIST","destination":"","category":"departure","route":"TIST10.COY1B.COY","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["kap/c172",1],["sbs/dhc6",1]]},
+        {"origin":"TIST","destination":"","category":"departure","route":"TIST10.SJU1C.SJU","altitude":"","speed":"","method":"random","rate":0.63,"airlines":[["aal/b752",2],["nks/a319",1]]},
+        {"origin":"TIST","destination":"","category":"departure","route":"TIST10.ONULE2A.ONULE","altitude":"","speed":"","method":"random","rate":1.47,"airlines":[["ual/b737",3],["aal/b752",2],["dal/b752",1],["jbu/a320",1]]},
+        {"origin":"TIST","destination":"","category":"departure","route":"TIST10.ONULE2A.ONULE","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"TIST","destination":"","category":"departure","route":"TIST10.COY1B.COY","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"TJSJ","destination":"TIST","category":"arrival","route":"SJU..NUTUR..TIST","altitude":[6000,9000],"speed":250,"method":"random","rate":0.84,"airlines":[["jbu/e190",1],["kap/c172",1],["sbs/dhc6",1],["sbs/sf34",1]]},
+        {"origin":"KCLT","destination":"TIST","category":"arrival","route":"ONULE..EZIJI..TIST","altitude":[6000,9000],"speed":250,"method":"random","rate":0.63,"airlines":[["aal/b752",2],["aal/b763",1]]},
+        {"origin":"KJFK","destination":"TIST","category":"arrival","route":"ONULE..EZIJI..TIST","altitude":[6000,9000],"speed":250,"method":"random","rate":0.63,"airlines":[["aal/b752",2],["dal/b752",1]]},
+        {"origin":"TNCM","destination":"TIST","category":"arrival","route":"WIKOM..UTOBE..TIST","altitude":[6000,9000],"speed":250,"method":"random","rate":0.63,"airlines":[["lia/at43",1],["lia/at72",1],["lia/dh8c",1]]},
+        {"origin":"TQPF","destination":"TIST","category":"arrival","route":"WIKOM..UTOBE..TIST","altitude":[6000,9000],"speed":250,"method":"random","rate":0.63,"airlines":[["lia/at43",1],["lia/at72",1],["lia/dh8c",1]]},
+        {"origin":"","destination":"TIST","category":"arrival","route":"WIKOM..UTOBE..TIST","altitude":[6000,9000],"speed":250,"method":"random","rate":0.21,"airlines":[["kap/c172",1]]},
+        {"origin":"","destination":"TIST","category":"arrival","route":"COY..VARPA..TIST","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["kap/c172",1],["sbs/dhc6",1]]},
+        {"origin":"","destination":"TIST","category":"arrival","route":"SJU..NUTUR..TIST","altitude":[6000,9000],"speed":250,"method":"random","rate":0.63,"airlines":[["aal/b752",2],["nks/a319",1]]},
+        {"origin":"","destination":"TIST","category":"arrival","route":"ONULE..EZIJI..TIST","altitude":[6000,9000],"speed":250,"method":"random","rate":1.47,"airlines":[["ual/b737",3],["aal/b752",2],["dal/b752",1],["jbu/a320",1]]},
+        {"origin":"","destination":"TIST","category":"arrival","route":"ONULE..EZIJI..TIST","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"","destination":"TIST","category":"arrival","route":"COY..VARPA..TIST","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [18.3151,-64.2337,18.3293,-64.7142],
+            [18.3293,-64.7142,18.3371,-64.9773],
+            [17.7344,-64.7007,18.108,-64.8721],
+            [18.108,-64.8721,18.3371,-64.9773],
+            [18.4463,-65.9895,18.3653,-65.2388],
+            [18.3653,-65.2388,18.3371,-64.9773],
+            [18.9638,-65.3201,18.5588,-65.0985],
+            [18.5588,-65.0985,18.3371,-64.9773]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [18.3369,-64.9834,18.3298,-65.1587],
+            [18.3234,-65.0706,18.3434,-65.0715],
+            [18.3199,-65.1583,18.3398,-65.1591],
+            [18.3374,-64.9699,18.3443,-64.7946],
+            [18.3509,-64.8827,18.3309,-64.8818],
+            [18.3543,-64.7951,18.3343,-64.7942]
+        ]}
+    ]
+}

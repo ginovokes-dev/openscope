@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VYYY/",
+    "info": {"country":"MM","city":"Yangon","type":"large_airport","longestRunwayM":3414,"frequencies":{"atis":"128.400","twr":"118.100","app":"119.700","gnd":"121.900"}},
+    "radio": {"twr":"Yangon Tower","app":"Yangon Approach","dep":"Yangon Departure"},
+    "icao": "VYYY",
+    "iata": "RGN",
+    "magnetic_north": -0.7,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [16.907301,96.133202,"109ft"],
+    "rangeRings": {"enabled":true,"center":[16.907301,96.133202],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":40,"speed":12},
+    "arrivalRunway": "03",
+    "departureRunway": "03",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[17.4469,96.1263],[17.4302,96.2725],[17.3779,96.4092],[17.2935,96.5271],[17.1828,96.6181],[17.0533,96.6761],[16.9139,96.6971],[16.774,96.6797],[16.6432,96.625],[16.5304,96.5368],[16.4433,96.4211],[16.3878,96.2858],[16.3677,96.1401],[16.3844,95.9939],[16.4367,95.8572],[16.5211,95.7393],[16.6318,95.6483],[16.7613,95.5903],[16.9007,95.5693],[17.0406,95.5867],[17.1714,95.6414],[17.2842,95.7296],[17.3713,95.8453],[17.4268,95.9806]]}
+    ],
+    "fixes": {
+        "VYYY": [16.9073,96.1332],
+        "UKIBU": [17.61345,96.13387],
+        "SOKEB": [17.15713,96.13344],
+        "LUMIL": [17.2813,96.75924],
+        "RASUP": [17.03962,96.35469],
+        "CEREV": [16.51546,96.7472],
+        "VIGSO": [16.76867,96.35043],
+        "NADOB": [16.25143,96.40671],
+        "RICFA": [16.67526,96.22997],
+        "NEKBE": [17.34178,95.55139],
+        "AJOWI": [17.06102,95.92736],
+        "_RWY0304DME": [16.8421,96.08903],
+        "_RWY2104DME": [16.97186,96.17697]
+    },
+    "runways": [
+        {"name":["03","21"],"end":[[16.898,96.1269,"109ft"],[16.91597,96.13908,"65ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "UKIBU3B": {"icao":"UKIBU3B","name":"Ukibu Three Bravo","rwy":{"VYYY03":["_RWY2104DME"],"VYYY21":["_RWY0304DME"]},"body":[],"exitPoints":{"UKIBU":["UKIBU"]},"draw":[["VYYY","UKIBU*"]]},
+        "LUMIL1B": {"icao":"LUMIL1B","name":"Lumil One Bravo","rwy":{"VYYY03":["_RWY2104DME"],"VYYY21":["_RWY0304DME"]},"body":[],"exitPoints":{"LUMIL":["LUMIL"]},"draw":[["VYYY","LUMIL*"]]},
+        "CEREV1C": {"icao":"CEREV1C","name":"Cerev One Charlie","rwy":{"VYYY03":["_RWY2104DME"],"VYYY21":["_RWY0304DME"]},"body":[],"exitPoints":{"CEREV":["CEREV"]},"draw":[["VYYY","CEREV*"]]},
+        "NADOB3C": {"icao":"NADOB3C","name":"Nadob Three Charlie","rwy":{"VYYY03":["_RWY2104DME"],"VYYY21":["_RWY0304DME"]},"body":[],"exitPoints":{"NADOB":["NADOB"]},"draw":[["VYYY","NADOB*"]]},
+        "NEKBE1A": {"icao":"NEKBE1A","name":"Nekbe One Alpha","rwy":{"VYYY03":["_RWY2104DME"],"VYYY21":["_RWY0304DME"]},"body":[],"exitPoints":{"NEKBE":["NEKBE"]},"draw":[["VYYY","NEKBE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"VYYY","destination":"VTBS","category":"departure","route":"VYYY03.CEREV1C.CEREV","altitude":"","speed":"","method":"random","rate":0.94,"airlines":[["tha/a333",2],["bkp/a320",1],["bkp/at72",1],["tha/a306",1],["tha/a332",1]]},
+        {"origin":"VYYY","destination":"WSSS","category":"departure","route":"VYYY03.NADOB3C.NADOB","altitude":"","speed":"","method":"random","rate":0.94,"airlines":[["jsa/a320",1],["sia/a333",1],["slk/a319",1],["slk/a320",1],["tgw/a320",1]]},
+        {"origin":"VYYY","destination":"WMKK","category":"departure","route":"VYYY03.NADOB3C.NADOB","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["axm/a320",1],["mas/a319",1],["mas/b738",1]]},
+        {"origin":"VYYY","destination":"RKSI","category":"departure","route":"VYYY03.LUMIL1B.LUMIL","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["aar/b763",1],["kal/b738",1]]},
+        {"origin":"VYYY","destination":"VTBD","category":"departure","route":"VYYY03.CEREV1C.CEREV","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["aiq/a320",1],["nok/b738",1]]},
+        {"origin":"VYYY","destination":"ZPPP","category":"departure","route":"VYYY03.LUMIL1B.LUMIL","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["cca/a319",1],["ces/b737",1]]},
+        {"origin":"VYYY","destination":"","category":"departure","route":"VYYY03.UKIBU3B.UKIBU","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["jab/at72",4]]},
+        {"origin":"VYYY","destination":"","category":"departure","route":"VYYY03.LUMIL1B.LUMIL","altitude":"","speed":"","method":"random","rate":1.88,"airlines":[["jab/at72",3],["ana/b763",1],["cal/b738",1],["cca/b738",1],["ces/b737",1],["csn/a319",1],["hda/a321",1],["hvn/a321",1]]},
+        {"origin":"VYYY","destination":"","category":"departure","route":"VYYY03.CEREV1C.CEREV","altitude":"","speed":"","method":"random","rate":0.19,"airlines":[["hvn/a321",1]]},
+        {"origin":"VYYY","destination":"","category":"departure","route":"VYYY03.NEKBE1A.NEKBE","altitude":"","speed":"","method":"random","rate":0.94,"airlines":[["jab/at72",2],["aic/a320",1],["bbc/b738",1],["qtr/a319",1]]},
+        {"origin":"VYYY","destination":"","category":"departure","route":"VYYY03.NADOB3C.NADOB","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["xy/c172",6],["xy/p28a",5],["xy/c182",3],["xy/be36",2],["xy/da42",1],["xy/tb20",1],["xy/c208",2],["xy/pc12",2],["xy/be20",1],["xy/b350",1],["xy/p180",1],["xy/c510",1],["xy/e50p",1],["xy/c550",2],["xy/e55p",1],["xy/cl30",1],["xy/c680",1],["xy/h25b",1],["xy/lj45",1],["xy/f2th",1],["xy/glf4",1],["xy/glex",1],["xy/glf5",1]]},
+        {"origin":"VYYY","destination":"","category":"departure","route":"VYYY03.UKIBU3B.UKIBU","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["xy/c172",6],["xy/p28a",5],["xy/c182",3],["xy/be36",2],["xy/da42",1],["xy/tb20",1],["xy/c208",2],["xy/pc12",2],["xy/be20",1],["xy/b350",1],["xy/p180",1],["xy/c510",1],["xy/e50p",1],["xy/c550",2],["xy/e55p",1],["xy/cl30",1],["xy/c680",1],["xy/h25b",1],["xy/lj45",1],["xy/f2th",1],["xy/glf4",1],["xy/glex",1],["xy/glf5",1]]},
+        {"origin":"VTBS","destination":"VYYY","category":"arrival","route":"CEREV..VIGSO..VYYY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.94,"airlines":[["tha/a333",2],["bkp/a320",1],["bkp/at72",1],["tha/a306",1],["tha/a332",1]]},
+        {"origin":"WSSS","destination":"VYYY","category":"arrival","route":"NADOB..RICFA..VYYY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.94,"airlines":[["jsa/a320",1],["sia/a333",1],["slk/a319",1],["slk/a320",1],["tgw/a320",1]]},
+        {"origin":"WMKK","destination":"VYYY","category":"arrival","route":"NADOB..RICFA..VYYY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.56,"airlines":[["axm/a320",1],["mas/a319",1],["mas/b738",1]]},
+        {"origin":"RKSI","destination":"VYYY","category":"arrival","route":"LUMIL..RASUP..VYYY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.38,"airlines":[["aar/b763",1],["kal/b738",1]]},
+        {"origin":"VTBD","destination":"VYYY","category":"arrival","route":"CEREV..VIGSO..VYYY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.38,"airlines":[["aiq/a320",1],["nok/b738",1]]},
+        {"origin":"ZPPP","destination":"VYYY","category":"arrival","route":"LUMIL..RASUP..VYYY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.38,"airlines":[["cca/a319",1],["ces/b737",1]]},
+        {"origin":"","destination":"VYYY","category":"arrival","route":"UKIBU..SOKEB..VYYY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.75,"airlines":[["jab/at72",4]]},
+        {"origin":"","destination":"VYYY","category":"arrival","route":"LUMIL..RASUP..VYYY","altitude":[6000,9000],"speed":250,"method":"random","rate":1.88,"airlines":[["jab/at72",3],["ana/b763",1],["cal/b738",1],["cca/b738",1],["ces/b737",1],["csn/a319",1],["hda/a321",1],["hvn/a321",1]]},
+        {"origin":"","destination":"VYYY","category":"arrival","route":"CEREV..VIGSO..VYYY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.19,"airlines":[["hvn/a321",1]]},
+        {"origin":"","destination":"VYYY","category":"arrival","route":"NEKBE..AJOWI..VYYY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.94,"airlines":[["jab/at72",2],["aic/a320",1],["bbc/b738",1],["qtr/a319",1]]},
+        {"origin":"","destination":"VYYY","category":"arrival","route":"NADOB..RICFA..VYYY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.5,"airlines":[["xy/c172",6],["xy/p28a",5],["xy/c182",3],["xy/be36",2],["xy/da42",1],["xy/tb20",1],["xy/c208",2],["xy/pc12",2],["xy/be20",1],["xy/b350",1],["xy/p180",1],["xy/c510",1],["xy/e50p",1],["xy/c550",2],["xy/e55p",1],["xy/cl30",1],["xy/c680",1],["xy/h25b",1],["xy/lj45",1],["xy/f2th",1],["xy/glf4",1],["xy/glex",1],["xy/glf5",1]]},
+        {"origin":"","destination":"VYYY","category":"arrival","route":"UKIBU..SOKEB..VYYY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.5,"airlines":[["xy/c172",6],["xy/p28a",5],["xy/c182",3],["xy/be36",2],["xy/da42",1],["xy/tb20",1],["xy/c208",2],["xy/pc12",2],["xy/be20",1],["xy/b350",1],["xy/p180",1],["xy/c510",1],["xy/e50p",1],["xy/c550",2],["xy/e55p",1],["xy/cl30",1],["xy/c680",1],["xy/h25b",1],["xy/lj45",1],["xy/f2th",1],["xy/glf4",1],["xy/glex",1],["xy/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [17.6134,96.1339,17.1571,96.1334],
+            [17.1571,96.1334,16.9073,96.1332],
+            [17.2813,96.7592,17.0396,96.3547],
+            [17.0396,96.3547,16.9073,96.1332],
+            [16.5155,96.7472,16.7687,96.3504],
+            [16.7687,96.3504,16.9073,96.1332],
+            [16.2514,96.4067,16.6753,96.23],
+            [16.6753,96.23,16.9073,96.1332],
+            [17.3418,95.5514,17.061,95.9274],
+            [17.061,95.9274,16.9073,96.1332]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [16.898,96.1269,16.7582,96.0323],
+            [16.8227,96.0883,16.8336,96.0708],
+            [16.7528,96.041,16.7637,96.0235],
+            [16.916,96.1391,17.0557,96.2338],
+            [16.9913,96.1777,16.9804,96.1952],
+            [17.0611,96.2251,17.0503,96.2426]
+        ]}
+    ]
+}

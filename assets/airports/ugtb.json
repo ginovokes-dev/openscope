@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/UGTB/",
+    "info": {"country":"GE","city":"Tbilisi","type":"large_airport","longestRunwayM":3000,"frequencies":{"atis":"132.800","twr":"128.000","app":"127.200","gnd":"119.000"}},
+    "radio": {"twr":"Tbilisi Tower","app":"Tbilisi Approach","dep":"Tbilisi Departure"},
+    "icao": "UGTB",
+    "iata": "TBS",
+    "magnetic_north": 7,
+    "ctr_radius": 60,
+    "ctr_ceiling": 11000,
+    "initial_alt": 6000,
+    "position": [41.669201,44.9547,"1624ft"],
+    "rangeRings": {"enabled":true,"center":[41.669201,44.9547],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":290,"speed":8},
+    "arrivalRunway": "31L",
+    "departureRunway": "31L",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":110,"airspace_class":"C","poly":[[42.2048,45.0427],[42.1695,45.2253],[42.1001,45.3894],[42.0014,45.5239],[41.88,45.6196],[41.7443,45.67],[41.6034,45.6717],[41.4671,45.6245],[41.3445,45.5316],[41.244,45.3994],[41.1725,45.2369],[41.1349,45.0552],[41.1336,44.8667],[41.1689,44.6841],[41.2383,44.52],[41.337,44.3855],[41.4584,44.2898],[41.5941,44.2394],[41.735,44.2377],[41.8713,44.2849],[41.9939,44.3778],[42.0944,44.51],[42.1659,44.6725],[42.2035,44.8542]]}
+    ],
+    "fixes": {
+        "UGTB": [41.6692,44.9547],
+        "LAJIC": [41.91721,45.83979],
+        "VARZI": [41.75695,45.26784],
+        "LUWET": [41.06356,45.44078],
+        "IMUDE": [41.45493,45.12667],
+        "ST": [41.0361,44.3562,"stepanavan"],
+        "PATES": [41.46512,44.76178],
+        "OZ": [42.0167,44.1322,"gori"],
+        "OFIJU": [41.79219,44.66359],
+        "EGIZI": [42.29616,44.51975],
+        "POCEC": [41.89102,44.80082],
+        "_RWY13R04DME": [41.72619,44.87878],
+        "_RWY31L04DME": [41.60977,45.02612]
+    },
+    "runways": [
+        {"name":["13R","31L"],"end":[[41.6778,44.9401,"1624ft"],[41.6582,44.9649,"1558ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "LAJIC3A": {"icao":"LAJIC3A","name":"Lajic Three Alpha","rwy":{"UGTB13R":["_RWY31L04DME"],"UGTB31L":["_RWY13R04DME"]},"body":[],"exitPoints":{"LAJIC":["LAJIC"]},"draw":[["UGTB","LAJIC*"]]},
+        "LUWET1B": {"icao":"LUWET1B","name":"Luwet One Bravo","rwy":{"UGTB13R":["_RWY31L04DME"],"UGTB31L":["_RWY13R04DME"]},"body":[],"exitPoints":{"LUWET":["LUWET"]},"draw":[["UGTB","LUWET*"]]},
+        "ST1A": {"icao":"ST1A","name":"Stepanavan One Alpha","rwy":{"UGTB13R":["_RWY31L04DME"],"UGTB31L":["_RWY13R04DME"]},"body":[],"exitPoints":{"ST":["ST"]},"draw":[["UGTB","ST*"]]},
+        "OZ2B": {"icao":"OZ2B","name":"Gori Two Bravo","rwy":{"UGTB13R":["_RWY31L04DME"],"UGTB31L":["_RWY13R04DME"]},"body":[],"exitPoints":{"OZ":["OZ"]},"draw":[["UGTB","OZ*"]]},
+        "EGIZI1E": {"icao":"EGIZI1E","name":"Egizi One Echo","rwy":{"UGTB13R":["_RWY31L04DME"],"UGTB31L":["_RWY13R04DME"]},"body":[],"exitPoints":{"EGIZI":["EGIZI"]},"draw":[["UGTB","EGIZI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"UGTB","destination":"LTFM","category":"departure","route":"UGTB31L.OZ2B.OZ","altitude":"","speed":"","method":"random","rate":0.96,"airlines":[["kkk/a320",1],["thy/a319",1],["thy/a320",1],["thy/b737",1],["thy/b738",1]]},
+        {"origin":"UGTB","destination":"UKBB","category":"departure","route":"UGTB31L.EGIZI1E.EGIZI","altitude":"","speed":"","method":"random","rate":0.77,"airlines":[["aui/b737",2],["aui/b734",1],["aui/b735",1]]},
+        {"origin":"UGTB","destination":"EVRA","category":"departure","route":"UGTB31L.EGIZI1E.EGIZI","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["bti/b733",1],["bti/b735",1],["tgz/b733",1]]},
+        {"origin":"UGTB","destination":"LLBG","category":"departure","route":"UGTB31L.ST1A.ST","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["aiz/e190",1],["isr/a320",1],["tgz/b737",1]]},
+        {"origin":"UGTB","destination":"UBBB","category":"departure","route":"UGTB31L.LAJIC3A.LAJIC","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["ahy/e170",1],["ahy/e190",1],["qtr/a320",1]]},
+        {"origin":"UGTB","destination":"LTFJ","category":"departure","route":"UGTB31L.OZ2B.OZ","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["pgt/b738",1],["thy/b738",1]]},
+        {"origin":"UGTB","destination":"","category":"departure","route":"UGTB31L.LAJIC3A.LAJIC","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["csn/b737",1],["kzr/e190",1],["vsv/crj7",1],["vsv/crj9",1],["vsv/crj2",1]]},
+        {"origin":"UGTB","destination":"","category":"departure","route":"UGTB31L.LUWET1B.LUWET","altitude":"","speed":"","method":"random","rate":0.19,"airlines":[["fdb/b738",1]]},
+        {"origin":"UGTB","destination":"","category":"departure","route":"UGTB31L.OZ2B.OZ","altitude":"","speed":"","method":"random","rate":1.73,"airlines":[["tgz/b735",3],["aee/a320",1],["aza/e190",1],["dlh/a319",1],["lot/e190",1],["tgz/crj7",1],["tgz/crj9",1],["tgz/crj2",1]]},
+        {"origin":"UGTB","destination":"","category":"departure","route":"UGTB31L.EGIZI1E.EGIZI","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["bru/b735",1],["sbi/a320",1],["tgz/b737",1]]},
+        {"origin":"UGTB","destination":"","category":"departure","route":"UGTB31L.EGIZI1E.EGIZI","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["4l/c172",6],["4l/p28a",5],["4l/c182",3],["4l/be36",2],["4l/da42",1],["4l/tb20",1],["4l/c208",2],["4l/pc12",2],["4l/be20",1],["4l/b350",1],["4l/p180",1],["4l/c510",1],["4l/e50p",1],["4l/c550",2],["4l/e55p",1],["4l/cl30",1],["4l/c680",1],["4l/h25b",1],["4l/lj45",1],["4l/f2th",1],["4l/glf4",1],["4l/glex",1],["4l/glf5",1]]},
+        {"origin":"UGTB","destination":"","category":"departure","route":"UGTB31L.LAJIC3A.LAJIC","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["4l/c172",6],["4l/p28a",5],["4l/c182",3],["4l/be36",2],["4l/da42",1],["4l/tb20",1],["4l/c208",2],["4l/pc12",2],["4l/be20",1],["4l/b350",1],["4l/p180",1],["4l/c510",1],["4l/e50p",1],["4l/c550",2],["4l/e55p",1],["4l/cl30",1],["4l/c680",1],["4l/h25b",1],["4l/lj45",1],["4l/f2th",1],["4l/glf4",1],["4l/glex",1],["4l/glf5",1]]},
+        {"origin":"LTFM","destination":"UGTB","category":"arrival","route":"OZ..OFIJU..UGTB","altitude":[7000,10000],"speed":250,"method":"random","rate":0.96,"airlines":[["kkk/a320",1],["thy/a319",1],["thy/a320",1],["thy/b737",1],["thy/b738",1]]},
+        {"origin":"UKBB","destination":"UGTB","category":"arrival","route":"EGIZI..POCEC..UGTB","altitude":[7000,10000],"speed":250,"method":"random","rate":0.77,"airlines":[["aui/b737",2],["aui/b734",1],["aui/b735",1]]},
+        {"origin":"EVRA","destination":"UGTB","category":"arrival","route":"EGIZI..POCEC..UGTB","altitude":[7000,10000],"speed":250,"method":"random","rate":0.58,"airlines":[["bti/b733",1],["bti/b735",1],["tgz/b733",1]]},
+        {"origin":"LLBG","destination":"UGTB","category":"arrival","route":"ST..PATES..UGTB","altitude":[7000,10000],"speed":250,"method":"random","rate":0.58,"airlines":[["aiz/e190",1],["isr/a320",1],["tgz/b737",1]]},
+        {"origin":"UBBB","destination":"UGTB","category":"arrival","route":"LAJIC..VARZI..UGTB","altitude":[7000,10000],"speed":250,"method":"random","rate":0.58,"airlines":[["ahy/e170",1],["ahy/e190",1],["qtr/a320",1]]},
+        {"origin":"LTFJ","destination":"UGTB","category":"arrival","route":"OZ..OFIJU..UGTB","altitude":[7000,10000],"speed":250,"method":"random","rate":0.39,"airlines":[["pgt/b738",1],["thy/b738",1]]},
+        {"origin":"","destination":"UGTB","category":"arrival","route":"LAJIC..VARZI..UGTB","altitude":[7000,10000],"speed":250,"method":"random","rate":0.58,"airlines":[["csn/b737",1],["kzr/e190",1],["vsv/crj7",1],["vsv/crj9",1],["vsv/crj2",1]]},
+        {"origin":"","destination":"UGTB","category":"arrival","route":"LUWET..IMUDE..UGTB","altitude":[7000,10000],"speed":250,"method":"random","rate":0.19,"airlines":[["fdb/b738",1]]},
+        {"origin":"","destination":"UGTB","category":"arrival","route":"OZ..OFIJU..UGTB","altitude":[7000,10000],"speed":250,"method":"random","rate":1.73,"airlines":[["tgz/b735",3],["aee/a320",1],["aza/e190",1],["dlh/a319",1],["lot/e190",1],["tgz/crj7",1],["tgz/crj9",1],["tgz/crj2",1]]},
+        {"origin":"","destination":"UGTB","category":"arrival","route":"EGIZI..POCEC..UGTB","altitude":[7000,10000],"speed":250,"method":"random","rate":0.58,"airlines":[["bru/b735",1],["sbi/a320",1],["tgz/b737",1]]},
+        {"origin":"","destination":"UGTB","category":"arrival","route":"EGIZI..POCEC..UGTB","altitude":[7000,10000],"speed":250,"method":"random","rate":0.47,"airlines":[["4l/c172",6],["4l/p28a",5],["4l/c182",3],["4l/be36",2],["4l/da42",1],["4l/tb20",1],["4l/c208",2],["4l/pc12",2],["4l/be20",1],["4l/b350",1],["4l/p180",1],["4l/c510",1],["4l/e50p",1],["4l/c550",2],["4l/e55p",1],["4l/cl30",1],["4l/c680",1],["4l/h25b",1],["4l/lj45",1],["4l/f2th",1],["4l/glf4",1],["4l/glex",1],["4l/glf5",1]]},
+        {"origin":"","destination":"UGTB","category":"arrival","route":"LAJIC..VARZI..UGTB","altitude":[7000,10000],"speed":250,"method":"random","rate":0.47,"airlines":[["4l/c172",6],["4l/p28a",5],["4l/c182",3],["4l/be36",2],["4l/da42",1],["4l/tb20",1],["4l/c208",2],["4l/pc12",2],["4l/be20",1],["4l/b350",1],["4l/p180",1],["4l/c510",1],["4l/e50p",1],["4l/c550",2],["4l/e55p",1],["4l/cl30",1],["4l/c680",1],["4l/h25b",1],["4l/lj45",1],["4l/f2th",1],["4l/glf4",1],["4l/glex",1],["4l/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [41.9172,45.8398,41.7569,45.2678],
+            [41.7569,45.2678,41.6692,44.9547],
+            [41.0636,45.4408,41.4549,45.1267],
+            [41.4549,45.1267,41.6692,44.9547],
+            [41.0361,44.3562,41.4651,44.7618],
+            [41.4651,44.7618,41.6692,44.9547],
+            [42.0167,44.1322,41.7922,44.6636],
+            [41.7922,44.6636,41.6692,44.9547],
+            [42.2962,44.5198,41.891,44.8008],
+            [41.891,44.8008,41.6692,44.9547]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [41.6778,44.9401,41.7987,44.7866],
+            [41.7314,44.8537,41.7452,44.8732],
+            [41.7919,44.7769,41.8056,44.7964],
+            [41.6582,44.9649,41.5371,45.1178],
+            [41.6045,45.0511,41.5908,45.0317],
+            [41.5439,45.1275,41.5302,45.1081]
+        ]}
+    ]
+}

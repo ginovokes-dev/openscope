@@ -1,0 +1,87 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KPSP/",
+    "info": {"country":"US","city":"Palm Springs","type":"large_airport","longestRunwayM":3050,"frequencies":{"atis":"118.250","twr":"119.700","gnd":"121.900"}},
+    "radio": {"twr":"Palm Springs Tower","app":"Palm Springs Approach","dep":"Palm Springs Departure"},
+    "icao": "KPSP",
+    "iata": "PSP",
+    "magnetic_north": 11,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [33.8297,-116.507004,"477ft"],
+    "rangeRings": {"enabled":true,"center":[33.8297,-116.507004],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":310,"speed":9},
+    "arrivalRunway": "31L",
+    "departureRunway": "31L",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[34.227,-116.414],[34.1934,-116.2934],[34.1351,-116.1874],[34.056,-116.1031],[33.9615,-116.0464],[33.8579,-116.021],[33.7525,-116.0288],[33.6523,-116.0691],[33.5642,-116.1393],[33.4942,-116.2346],[33.4471,-116.3484],[33.426,-116.473],[33.4324,-116.6],[33.466,-116.7206],[33.5243,-116.8266],[33.6034,-116.9109],[33.6979,-116.9676],[33.8015,-116.993],[33.9069,-116.9852],[34.0071,-116.9449],[34.0952,-116.8747],[34.1652,-116.7794],[34.2123,-116.6656],[34.2334,-116.541]]}
+    ],
+    "fixes": {
+        "KPSP": [33.8297,-116.507],
+        "TNP": [34.1122,-115.77,"twentynine palms"],
+        "GOKTA": [33.91344,-116.28854],
+        "JLI": [33.1405,-116.586,"julian"],
+        "DOFWO": [33.63073,-116.52981],
+        "HEC": [34.797,-116.463,"hector"],
+        "ARUVA": [34.02942,-116.49792],
+        "_RWY13R04DME": [33.88763,-116.55929],
+        "_RWY31L04DME": [33.76836,-116.45312],
+        "_RWY13L04DME": [33.88873,-116.5574],
+        "_RWY31R04DME": [33.77067,-116.4523]
+    },
+    "runways": [
+        {"name":["13R","31L"],"end":[[33.83407,-116.51157,"451ft"],[33.82194,-116.50077,"405ft"]],"ils":[true,true]},
+        {"name":["13L","31R"],"end":[[33.83517,-116.50968,"449ft"],[33.82425,-116.49996,"407ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "TNP1A": {"icao":"TNP1A","name":"Twentynine Palms One Alpha","rwy":{"KPSP13R":["_RWY31L04DME"],"KPSP31L":["_RWY13R04DME"],"KPSP13L":["_RWY31R04DME"],"KPSP31R":["_RWY13L04DME"]},"body":[],"exitPoints":{"TNP":["TNP"]},"draw":[["KPSP","TNP*"]]},
+        "JLI1C": {"icao":"JLI1C","name":"Julian One Charlie","rwy":{"KPSP13R":["_RWY31L04DME"],"KPSP31L":["_RWY13R04DME"],"KPSP13L":["_RWY31R04DME"],"KPSP31R":["_RWY13L04DME"]},"body":[],"exitPoints":{"JLI":["JLI"]},"draw":[["KPSP","JLI*"]]},
+        "HEC1E": {"icao":"HEC1E","name":"Hector One Echo","rwy":{"KPSP13R":["_RWY31L04DME"],"KPSP31L":["_RWY13R04DME"],"KPSP13L":["_RWY31R04DME"],"KPSP31R":["_RWY13L04DME"]},"body":[],"exitPoints":{"HEC":["HEC"]},"draw":[["KPSP","HEC*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KPSP","destination":"KDFW","category":"departure","route":"KPSP31L.TNP1A.TNP","altitude":"","speed":"","method":"random","rate":0.81,"airlines":[["aal/md82",2],["aal/md83",2]]},
+        {"origin":"KPSP","destination":"KSEA","category":"departure","route":"KPSP31L.HEC1E.HEC","altitude":"","speed":"","method":"random","rate":0.81,"airlines":[["asa/b734",1],["asa/b737",1],["asa/b738",1],["asa/b739",1]]},
+        {"origin":"KPSP","destination":"KPDX","category":"departure","route":"KPSP31L.HEC1E.HEC","altitude":"","speed":"","method":"random","rate":0.61,"airlines":[["asa/b734",1],["asa/b737",1],["asa/b739",1]]},
+        {"origin":"KPSP","destination":"CYYC","category":"departure","route":"KPSP31L.HEC1E.HEC","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["wja/b737",1],["wja/b738",1]]},
+        {"origin":"KPSP","destination":"KDEN","category":"departure","route":"KPSP31L.TNP1A.TNP","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["fft/a319",1],["ual/a319",1]]},
+        {"origin":"KPSP","destination":"","category":"departure","route":"KPSP31L.TNP1A.TNP","altitude":"","speed":"","method":"random","rate":0.81,"airlines":[["aal/md83",2],["dal/a320",1],["scx/b737",1]]},
+        {"origin":"KPSP","destination":"","category":"departure","route":"KPSP31L.HEC1E.HEC","altitude":"","speed":"","method":"random","rate":0.81,"airlines":[["wja/b737",2],["aay/md82",1],["asa/b734",1]]},
+        {"origin":"KPSP","destination":"","category":"departure","route":"KPSP31L.TNP1A.TNP","altitude":"","speed":"","method":"random","rate":1.55,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KDFW","destination":"KPSP","category":"arrival","route":"TNP..GOKTA..KPSP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.81,"airlines":[["aal/md82",2],["aal/md83",2]]},
+        {"origin":"KSEA","destination":"KPSP","category":"arrival","route":"HEC..ARUVA..KPSP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.81,"airlines":[["asa/b734",1],["asa/b737",1],["asa/b738",1],["asa/b739",1]]},
+        {"origin":"KPDX","destination":"KPSP","category":"arrival","route":"HEC..ARUVA..KPSP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.61,"airlines":[["asa/b734",1],["asa/b737",1],["asa/b739",1]]},
+        {"origin":"CYYC","destination":"KPSP","category":"arrival","route":"HEC..ARUVA..KPSP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.41,"airlines":[["wja/b737",1],["wja/b738",1]]},
+        {"origin":"KDEN","destination":"KPSP","category":"arrival","route":"TNP..GOKTA..KPSP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.41,"airlines":[["fft/a319",1],["ual/a319",1]]},
+        {"origin":"","destination":"KPSP","category":"arrival","route":"TNP..GOKTA..KPSP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.81,"airlines":[["aal/md83",2],["dal/a320",1],["scx/b737",1]]},
+        {"origin":"","destination":"KPSP","category":"arrival","route":"HEC..ARUVA..KPSP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.81,"airlines":[["wja/b737",2],["aay/md82",1],["asa/b734",1]]},
+        {"origin":"","destination":"KPSP","category":"arrival","route":"TNP..GOKTA..KPSP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.55,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [34.1122,-115.77,33.9134,-116.2885],
+            [33.9134,-116.2885,33.8297,-116.507],
+            [33.1405,-116.586,33.6307,-116.5298],
+            [33.6307,-116.5298,33.8297,-116.507],
+            [34.797,-116.463,34.0294,-116.4979],
+            [34.0294,-116.4979,33.8297,-116.507]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [33.8341,-116.5116,33.9679,-116.631],
+            [33.8951,-116.5809,33.907,-116.5615],
+            [33.962,-116.6407,33.9739,-116.6213],
+            [33.8219,-116.5008,33.688,-116.3818],
+            [33.7609,-116.4315,33.749,-116.4509],
+            [33.6939,-116.3721,33.682,-116.3914],
+            [33.8352,-116.5097,33.969,-116.6291],
+            [33.8962,-116.579,33.9081,-116.5597],
+            [33.9631,-116.6388,33.975,-116.6194],
+            [33.8242,-116.5,33.6903,-116.3809],
+            [33.7632,-116.4307,33.7513,-116.4501],
+            [33.6962,-116.3713,33.6843,-116.3906]
+        ]}
+    ]
+}

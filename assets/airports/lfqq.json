@@ -1,0 +1,101 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LFQQ/",
+    "info": {"country":"FR","city":"Lesquin","type":"large_airport","longestRunwayM":2839,"frequencies":{"atis":"119.325","twr":"118.550","app":"120.275","gnd":"121.850"}},
+    "radio": {"twr":"Lille Tower","app":"Lille Approach","dep":"Lille Departure"},
+    "icao": "LFQQ",
+    "iata": "LIL",
+    "magnetic_north": 2.1,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [50.566564,3.102429,"157ft"],
+    "rangeRings": {"enabled":true,"center":[50.566564,3.102429],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":240,"speed":8},
+    "arrivalRunway": "26",
+    "departureRunway": "26",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[51.1058,3.1336],[51.0823,3.3522],[51.0237,3.5539],[50.9339,3.7247],[50.8191,3.8532],[50.687,3.9305],[50.5468,3.9514],[50.4079,3.9144],[50.2798,3.8221],[50.1713,3.6807],[50.0897,3.4999],[50.0406,3.2921],[50.0273,3.0713],[50.0508,2.8526],[50.1095,2.651],[50.1993,2.4801],[50.3141,2.3517],[50.4461,2.2744],[50.5863,2.2535],[50.7252,2.2905],[50.8533,2.3828],[50.9618,2.5241],[51.0434,2.7049],[51.0925,2.9128]]}
+    ],
+    "fixes": {
+        "LFQQ": [50.56656,3.10243],
+        "AFI": [50.9078,4.13889,"affligem"],
+        "LACAW": [50.68153,3.45163],
+        "UZUVA": [49.96913,3.69509],
+        "KEFKE": [50.35519,3.31211],
+        "MTD": [49.5526,2.48947,"montdidier"],
+        "AWURE": [50.33334,2.96144],
+        "BNE": [50.6248,1.90711,"boulogne-sur-mer"],
+        "TOKHU": [50.58567,2.71026],
+        "ONO": [51.2175,2.99639,"oostende"],
+        "TISUF": [50.81507,3.06195],
+        "_RWY0804DME": [50.54823,2.98072],
+        "_RWY2604DME": [50.58253,3.22073],
+        "_RWY0104DME": [50.49567,3.05879],
+        "_RWY1904DME": [50.63822,3.11789]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[50.5629,3.08301,"157ft"],[50.56795,3.11837,"132ft"]],"ils":[true,true]},
+        {"name":["01","19"],"end":[[50.5601,3.08546,"148ft"],[50.5738,3.09114,"153ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "AFI2E": {"icao":"AFI2E","name":"Affligem Two Echo","rwy":{"LFQQ08":["_RWY2604DME"],"LFQQ26":["_RWY0804DME"],"LFQQ01":["_RWY1904DME"],"LFQQ19":["_RWY0104DME"]},"body":[],"exitPoints":{"AFI":["AFI"]},"draw":[["LFQQ","AFI*"]]},
+        "UZUVA3B": {"icao":"UZUVA3B","name":"Uzuva Three Bravo","rwy":{"LFQQ08":["_RWY2604DME"],"LFQQ26":["_RWY0804DME"],"LFQQ01":["_RWY1904DME"],"LFQQ19":["_RWY0104DME"]},"body":[],"exitPoints":{"UZUVA":["UZUVA"]},"draw":[["LFQQ","UZUVA*"]]},
+        "MTD3F": {"icao":"MTD3F","name":"Montdidier Three Foxtrot","rwy":{"LFQQ08":["_RWY2604DME"],"LFQQ26":["_RWY0804DME"],"LFQQ01":["_RWY1904DME"],"LFQQ19":["_RWY0104DME"]},"body":[],"exitPoints":{"MTD":["MTD"]},"draw":[["LFQQ","MTD*"]]},
+        "BNE3B": {"icao":"BNE3B","name":"Boulogne-sur-mer Three Bravo","rwy":{"LFQQ08":["_RWY2604DME"],"LFQQ26":["_RWY0804DME"],"LFQQ01":["_RWY1904DME"],"LFQQ19":["_RWY0104DME"]},"body":[],"exitPoints":{"BNE":["BNE"]},"draw":[["LFQQ","BNE*"]]},
+        "ONO1D": {"icao":"ONO1D","name":"Oostende One Delta","rwy":{"LFQQ08":["_RWY2604DME"],"LFQQ26":["_RWY0804DME"],"LFQQ01":["_RWY1904DME"],"LFQQ19":["_RWY0104DME"]},"body":[],"exitPoints":{"ONO":["ONO"]},"draw":[["LFQQ","ONO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LFQQ","destination":"LFBD","category":"departure","route":"LFQQ26.MTD3F.MTD","altitude":"","speed":"","method":"random","rate":0.71,"airlines":[["ezy/a319",1],["hop/crj7",1],["hop/e170",1],["hop/e190",1]]},
+        {"origin":"LFQQ","destination":"LFMN","category":"departure","route":"LFQQ26.UZUVA3B.UZUVA","altitude":"","speed":"","method":"random","rate":0.71,"airlines":[["afr/a319",1],["afr/a320",1],["ezy/a319",1],["ezy/a320",1]]},
+        {"origin":"LFQQ","destination":"DAAG","category":"departure","route":"LFQQ26.MTD3F.MTD","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["aaf/a320",1],["dah/b736",1],["dah/b738",1]]},
+        {"origin":"LFQQ","destination":"DAOO","category":"departure","route":"LFQQ26.MTD3F.MTD","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["aaf/a320",1],["dah/b736",1]]},
+        {"origin":"LFQQ","destination":"DTTJ","category":"departure","route":"LFQQ26.UZUVA3B.UZUVA","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["lbt/a321",1],["tvf/b738",1]]},
+        {"origin":"LFQQ","destination":"LEBL","category":"departure","route":"LFQQ26.MTD3F.MTD","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["ibe/a320",1],["vlg/a320",1]]},
+        {"origin":"LFQQ","destination":"","category":"departure","route":"LFQQ26.UZUVA3B.UZUVA","altitude":"","speed":"","method":"random","rate":2.31,"airlines":[["hop/e145",2],["voe/b712",2],["afr/a319",1],["ezy/a319",1],["ezy/a320",1],["hop/crjx",1],["hop/e170",1],["ryr/b738",1],["tvf/b738",1],["hop/crj7",1],["hop/crj9",1],["hop/crj2",1]]},
+        {"origin":"LFQQ","destination":"","category":"departure","route":"LFQQ26.MTD3F.MTD","altitude":"","speed":"","method":"random","rate":1.6,"airlines":[["tvf/b738",3],["hop/e145",2],["hop/e170",2],["ezy/a319",1],["ryr/b738",1]]},
+        {"origin":"LFQQ","destination":"","category":"departure","route":"LFQQ26.UZUVA3B.UZUVA","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["f/c172",6],["f/p28a",5],["f/c182",3],["f/be36",2],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",1],["f/e50p",1],["f/c550",2],["f/e55p",1],["f/cl30",1],["f/c680",1],["f/h25b",1],["f/lj45",1],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]},
+        {"origin":"LFQQ","destination":"","category":"departure","route":"LFQQ26.BNE3B.BNE","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["f/c172",6],["f/p28a",5],["f/c182",3],["f/be36",2],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",1],["f/e50p",1],["f/c550",2],["f/e55p",1],["f/cl30",1],["f/c680",1],["f/h25b",1],["f/lj45",1],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]},
+        {"origin":"LFBD","destination":"LFQQ","category":"arrival","route":"MTD..AWURE..LFQQ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.71,"airlines":[["ezy/a319",1],["hop/crj7",1],["hop/e170",1],["hop/e190",1]]},
+        {"origin":"LFMN","destination":"LFQQ","category":"arrival","route":"UZUVA..KEFKE..LFQQ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.71,"airlines":[["afr/a319",1],["afr/a320",1],["ezy/a319",1],["ezy/a320",1]]},
+        {"origin":"DAAG","destination":"LFQQ","category":"arrival","route":"MTD..AWURE..LFQQ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.53,"airlines":[["aaf/a320",1],["dah/b736",1],["dah/b738",1]]},
+        {"origin":"DAOO","destination":"LFQQ","category":"arrival","route":"MTD..AWURE..LFQQ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.36,"airlines":[["aaf/a320",1],["dah/b736",1]]},
+        {"origin":"DTTJ","destination":"LFQQ","category":"arrival","route":"UZUVA..KEFKE..LFQQ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.36,"airlines":[["lbt/a321",1],["tvf/b738",1]]},
+        {"origin":"LEBL","destination":"LFQQ","category":"arrival","route":"MTD..AWURE..LFQQ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.36,"airlines":[["ibe/a320",1],["vlg/a320",1]]},
+        {"origin":"","destination":"LFQQ","category":"arrival","route":"UZUVA..KEFKE..LFQQ","altitude":[6000,9000],"speed":250,"method":"random","rate":2.31,"airlines":[["hop/e145",2],["voe/b712",2],["afr/a319",1],["ezy/a319",1],["ezy/a320",1],["hop/crjx",1],["hop/e170",1],["ryr/b738",1],["tvf/b738",1],["hop/crj7",1],["hop/crj9",1],["hop/crj2",1]]},
+        {"origin":"","destination":"LFQQ","category":"arrival","route":"MTD..AWURE..LFQQ","altitude":[6000,9000],"speed":250,"method":"random","rate":1.6,"airlines":[["tvf/b738",3],["hop/e145",2],["hop/e170",2],["ezy/a319",1],["ryr/b738",1]]},
+        {"origin":"","destination":"LFQQ","category":"arrival","route":"UZUVA..KEFKE..LFQQ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["f/c172",6],["f/p28a",5],["f/c182",3],["f/be36",2],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",1],["f/e50p",1],["f/c550",2],["f/e55p",1],["f/cl30",1],["f/c680",1],["f/h25b",1],["f/lj45",1],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]},
+        {"origin":"","destination":"LFQQ","category":"arrival","route":"BNE..TOKHU..LFQQ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["f/c172",6],["f/p28a",5],["f/c182",3],["f/be36",2],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",1],["f/e50p",1],["f/c550",2],["f/e55p",1],["f/cl30",1],["f/c680",1],["f/h25b",1],["f/lj45",1],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [50.9078,4.1389,50.6815,3.4516],
+            [50.6815,3.4516,50.5666,3.1024],
+            [49.9691,3.6951,50.3552,3.3121],
+            [50.3552,3.3121,50.5666,3.1024],
+            [49.5526,2.4895,50.3333,2.9614],
+            [50.3333,2.9614,50.5666,3.1024],
+            [50.6248,1.9071,50.5857,2.7103],
+            [50.5857,2.7103,50.5666,3.1024],
+            [51.2175,2.9964,50.8151,3.0619],
+            [50.8151,3.0619,50.5666,3.1024]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [50.5629,3.083,50.5261,2.8274],
+            [50.5348,2.9586,50.5543,2.9517],
+            [50.5163,2.8309,50.5358,2.824],
+            [50.5679,3.1184,50.6042,3.3744],
+            [50.5959,3.2429,50.5764,3.2498],
+            [50.614,3.3709,50.5945,3.3778],
+            [50.5601,3.0855,50.399,3.0189],
+            [50.477,3.0673,50.4821,3.0369],
+            [50.3965,3.0341,50.4016,3.0038],
+            [50.5738,3.0911,50.7348,3.1582],
+            [50.6569,3.1093,50.6518,3.1398],
+            [50.7374,3.1429,50.7323,3.1734]
+        ]}
+    ]
+}

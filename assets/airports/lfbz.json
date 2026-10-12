@@ -1,0 +1,87 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LFBZ/",
+    "info": {"country":"FR","city":"Biarritz","type":"medium_airport","longestRunwayM":2250,"frequencies":{"atis":"128.225","twr":"118.700","app":"125.600","gnd":"121.950"}},
+    "radio": {"twr":"Biarritz Tower","app":"Biarritz Approach","dep":"Biarritz Departure"},
+    "icao": "LFBZ",
+    "iata": "BIQ",
+    "magnetic_north": 1.1,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [43.468372,-1.523223,"245ft"],
+    "rangeRings": {"enabled":true,"center":[43.468372,-1.523223],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":290,"speed":12},
+    "arrivalRunway": "27",
+    "departureRunway": "27",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[44.0079,-1.5089],[43.9868,-1.317],[43.9304,-1.1392],[43.8425,-0.9875],[43.7291,-0.8723],[43.598,-0.8015],[43.458,-0.7799],[43.3187,-0.8089],[43.1897,-0.8866],[43.0796,-1.0077],[42.996,-1.1639],[42.9446,-1.3446],[42.9289,-1.5375],[42.9499,-1.7294],[43.0063,-1.9073],[43.0942,-2.0589],[43.2076,-2.1741],[43.3387,-2.2449],[43.4787,-2.2666],[43.618,-2.2376],[43.7471,-2.1599],[43.8572,-2.0388],[43.9408,-1.8825],[43.9922,-1.7018]]}
+    ],
+    "fixes": {
+        "LFBZ": [43.46837,-1.52322],
+        "CAA": [44.5513,-1.11997,"cazaux"],
+        "ODAWA": [43.70955,-1.43341],
+        "TAN": [43.4667,-0.01842,"lahitte"],
+        "IVAJA": [43.46799,-1.17899],
+        "LPA": [42.4605,-2.32691,"logrono"],
+        "ZERWO": [43.25214,-1.69565],
+        "DEWAM": [44.14796,-1.78756],
+        "DUSLA": [43.70881,-1.61675],
+        "_RWY0904DME": [43.4672,-1.62654],
+        "_RWY2704DME": [43.46945,-1.41763]
+    },
+    "runways": [
+        {"name":["09","27"],"end":[[43.46823,-1.53475,"242ft"],[43.4685,-1.50942,"219ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "CAA3B": {"icao":"CAA3B","name":"Cazaux Three Bravo","rwy":{"LFBZ09":["_RWY2704DME"],"LFBZ27":["_RWY0904DME"]},"body":[],"exitPoints":{"CAA":["CAA"]},"draw":[["LFBZ","CAA*"]]},
+        "TAN1A": {"icao":"TAN1A","name":"Lahitte One Alpha","rwy":{"LFBZ09":["_RWY2704DME"],"LFBZ27":["_RWY0904DME"]},"body":[],"exitPoints":{"TAN":["TAN"]},"draw":[["LFBZ","TAN*"]]},
+        "LPA1F": {"icao":"LPA1F","name":"Logrono One Foxtrot","rwy":{"LFBZ09":["_RWY2704DME"],"LFBZ27":["_RWY0904DME"]},"body":[],"exitPoints":{"LPA":["LPA"]},"draw":[["LFBZ","LPA*"]]},
+        "DEWAM1A": {"icao":"DEWAM1A","name":"Dewam One Alpha","rwy":{"LFBZ09":["_RWY2704DME"],"LFBZ27":["_RWY0904DME"]},"body":[],"exitPoints":{"DEWAM":["DEWAM"]},"draw":[["LFBZ","DEWAM*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LFBZ","destination":"LFPO","category":"departure","route":"LFBZ27.CAA3B.CAA","altitude":"","speed":"","method":"random","rate":1.29,"airlines":[["afr/a319",1],["afr/a320",1],["afr/a321",1],["afr/crjx",1]]},
+        {"origin":"LFBZ","destination":"LFLL","category":"departure","route":"LFBZ27.TAN1A.TAN","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["hop/crj7",1],["hop/e145",1]]},
+        {"origin":"LFBZ","destination":"LFML","category":"departure","route":"LFBZ27.TAN1A.TAN","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["afr/a319",1],["afr/a320",1]]},
+        {"origin":"LFBZ","destination":"EBCI","category":"departure","route":"LFBZ27.CAA3B.CAA","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["ryr/b738",1]]},
+        {"origin":"LFBZ","destination":"EGSS","category":"departure","route":"LFBZ27.CAA3B.CAA","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["ryr/b738",1]]},
+        {"origin":"LFBZ","destination":"","category":"departure","route":"LFBZ27.CAA3B.CAA","altitude":"","speed":"","method":"random","rate":1.61,"airlines":[["ezy/a319",1],["hop/e145",1],["ryr/b738",1],["sas/crj9",1],["voe/b712",1]]},
+        {"origin":"LFBZ","destination":"","category":"departure","route":"LFBZ27.TAN1A.TAN","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["hop/crj7",2]]},
+        {"origin":"LFBZ","destination":"","category":"departure","route":"LFBZ27.DEWAM1A.DEWAM","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["ryr/b738",1]]},
+        {"origin":"LFBZ","destination":"","category":"departure","route":"LFBZ27.CAA3B.CAA","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["f/c172",6],["f/p28a",5],["f/c182",3],["f/be36",2],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",1],["f/e50p",1],["f/c550",2],["f/e55p",1],["f/cl30",1],["f/c680",1],["f/h25b",1],["f/lj45",1],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]},
+        {"origin":"LFBZ","destination":"","category":"departure","route":"LFBZ27.LPA1F.LPA","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["f/c172",6],["f/p28a",5],["f/c182",3],["f/be36",2],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",1],["f/e50p",1],["f/c550",2],["f/e55p",1],["f/cl30",1],["f/c680",1],["f/h25b",1],["f/lj45",1],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]},
+        {"origin":"LFPO","destination":"LFBZ","category":"arrival","route":"CAA..ODAWA..LFBZ","altitude":[6000,9000],"speed":250,"method":"random","rate":1.29,"airlines":[["afr/a319",1],["afr/a320",1],["afr/a321",1],["afr/crjx",1]]},
+        {"origin":"LFLL","destination":"LFBZ","category":"arrival","route":"TAN..IVAJA..LFBZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.64,"airlines":[["hop/crj7",1],["hop/e145",1]]},
+        {"origin":"LFML","destination":"LFBZ","category":"arrival","route":"TAN..IVAJA..LFBZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.64,"airlines":[["afr/a319",1],["afr/a320",1]]},
+        {"origin":"EBCI","destination":"LFBZ","category":"arrival","route":"CAA..ODAWA..LFBZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.32,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGSS","destination":"LFBZ","category":"arrival","route":"CAA..ODAWA..LFBZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.32,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LFBZ","category":"arrival","route":"CAA..ODAWA..LFBZ","altitude":[6000,9000],"speed":250,"method":"random","rate":1.61,"airlines":[["ezy/a319",1],["hop/e145",1],["ryr/b738",1],["sas/crj9",1],["voe/b712",1]]},
+        {"origin":"","destination":"LFBZ","category":"arrival","route":"TAN..IVAJA..LFBZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.64,"airlines":[["hop/crj7",2]]},
+        {"origin":"","destination":"LFBZ","category":"arrival","route":"DEWAM..DUSLA..LFBZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.32,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LFBZ","category":"arrival","route":"CAA..ODAWA..LFBZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["f/c172",6],["f/p28a",5],["f/c182",3],["f/be36",2],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",1],["f/e50p",1],["f/c550",2],["f/e55p",1],["f/cl30",1],["f/c680",1],["f/h25b",1],["f/lj45",1],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]},
+        {"origin":"","destination":"LFBZ","category":"arrival","route":"LPA..ZERWO..LFBZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["f/c172",6],["f/p28a",5],["f/c182",3],["f/be36",2],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",1],["f/e50p",1],["f/c550",2],["f/e55p",1],["f/cl30",1],["f/c680",1],["f/h25b",1],["f/lj45",1],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [44.5513,-1.12,43.7096,-1.4334],
+            [43.7096,-1.4334,43.4684,-1.5232],
+            [43.4667,-0.0184,43.468,-1.179],
+            [43.468,-1.179,43.4684,-1.5232],
+            [42.4605,-2.3269,43.2521,-1.6956],
+            [43.2521,-1.6956,43.4684,-1.5232],
+            [44.148,-1.7876,43.7088,-1.6167],
+            [43.7088,-1.6167,43.4684,-1.5232]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [43.4682,-1.5348,43.4655,-1.7642],
+            [43.4569,-1.6493,43.4769,-1.6497],
+            [43.4555,-1.764,43.4755,-1.7644],
+            [43.4685,-1.5094,43.4707,-1.2799],
+            [43.4797,-1.3949,43.4597,-1.3945],
+            [43.4807,-1.2801,43.4608,-1.2797]
+        ]}
+    ]
+}

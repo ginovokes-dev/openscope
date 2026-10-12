@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/FMMI/",
+    "info": {"country":"MG","city":"Antananarivo","type":"large_airport","longestRunwayM":3100,"frequencies":{"twr":"120.100"}},
+    "radio": {"twr":"Ivato Tower","app":"Ivato Approach","dep":"Ivato Departure"},
+    "icao": "FMMI",
+    "iata": "TNR",
+    "magnetic_north": -15.9,
+    "ctr_radius": 60,
+    "ctr_ceiling": 14000,
+    "initial_alt": 9000,
+    "position": [-18.7969,47.478802,"4198ft"],
+    "rangeRings": {"enabled":true,"center":[-18.7969,47.478802],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":110,"speed":9},
+    "arrivalRunway": "11",
+    "departureRunway": "11",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":140,"airspace_class":"C","poly":[[-18.278,47.3226],[-18.2574,47.4698],[-18.2736,47.6177],[-18.3254,47.756],[-18.4094,47.8755],[-18.5198,47.9679],[-18.6491,48.027],[-18.7884,48.0487],[-18.9284,48.0316],[-19.0593,47.9768],[-19.1724,47.8881],[-19.2599,47.7715],[-19.3158,47.635],[-19.3364,47.4878],[-19.3202,47.3399],[-19.2684,47.2016],[-19.1844,47.0821],[-19.074,46.9897],[-18.9447,46.9306],[-18.8054,46.9089],[-18.6654,46.926],[-18.5345,46.9808],[-18.4214,47.0695],[-18.3339,47.1861]]}
+    ],
+    "fixes": {
+        "FMMI": [-18.7969,47.4788],
+        "WIZRI": [-18.17202,47.82622],
+        "MAGIS": [-18.57582,47.60172],
+        "TE": [-18.9534,48.2255,"moramanga"],
+        "ZOSJA": [-18.8509,47.73647],
+        "MIPDO": [-19.50102,47.42226],
+        "JOSOP": [-19.04601,47.4588],
+        "ZEBPA": [-19.21606,46.8785],
+        "JUDUK": [-18.9452,47.26642],
+        "PIZNA": [-18.15884,47.15922],
+        "OKERU": [-18.57116,47.36574],
+        "_RWY1104DME": [-18.78447,47.39478],
+        "_RWY2904DME": [-18.8094,47.56283]
+    },
+    "runways": [
+        {"name":["11","29"],"end":[[-18.7948,47.4643,"4197ft"],[-18.7991,47.4933,"4117ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "WIZRI2D": {"icao":"WIZRI2D","name":"Wizri Two Delta","rwy":{"FMMI11":["_RWY2904DME"],"FMMI29":["_RWY1104DME"]},"body":[],"exitPoints":{"WIZRI":["WIZRI"]},"draw":[["FMMI","WIZRI*"]]},
+        "TE2D": {"icao":"TE2D","name":"Moramanga Two Delta","rwy":{"FMMI11":["_RWY2904DME"],"FMMI29":["_RWY1104DME"]},"body":[],"exitPoints":{"TE":["TE"]},"draw":[["FMMI","TE*"]]},
+        "MIPDO3B": {"icao":"MIPDO3B","name":"Mipdo Three Bravo","rwy":{"FMMI11":["_RWY2904DME"],"FMMI29":["_RWY1104DME"]},"body":[],"exitPoints":{"MIPDO":["MIPDO"]},"draw":[["FMMI","MIPDO*"]]},
+        "ZEBPA1F": {"icao":"ZEBPA1F","name":"Zebpa One Foxtrot","rwy":{"FMMI11":["_RWY2904DME"],"FMMI29":["_RWY1104DME"]},"body":[],"exitPoints":{"ZEBPA":["ZEBPA"]},"draw":[["FMMI","ZEBPA*"]]},
+        "PIZNA3F": {"icao":"PIZNA3F","name":"Pizna Three Foxtrot","rwy":{"FMMI11":["_RWY2904DME"],"FMMI29":["_RWY1104DME"]},"body":[],"exitPoints":{"PIZNA":["PIZNA"]},"draw":[["FMMI","PIZNA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"FMMI","destination":"FMCZ","category":"departure","route":"FMMI11.PIZNA3F.PIZNA","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["mdg/at72",1],["mdg/b733",1],["crl/a333",1],["crl/a332",1]]},
+        {"origin":"FMMI","destination":"FMEE","category":"departure","route":"FMMI11.TE2D.TE","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["mdg/b733",1],["reu/at72",1],["reu/b738",1]]},
+        {"origin":"FMMI","destination":"FMMT","category":"departure","route":"FMMI11.TE2D.TE","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["mdg/at45",1],["mdg/at72",1],["mdg/dhc6",1]]},
+        {"origin":"FMMI","destination":"FIMP","category":"departure","route":"FMMI11.TE2D.TE","altitude":"","speed":"","method":"random","rate":0.37,"airlines":[["mau/a319",1],["mdg/b733",1]]},
+        {"origin":"FMMI","destination":"FMCH","category":"departure","route":"FMMI11.PIZNA3F.PIZNA","altitude":"","speed":"","method":"random","rate":0.37,"airlines":[["mdg/at72",1],["mdg/b733",1]]},
+        {"origin":"FMMI","destination":"FMMS","category":"departure","route":"FMMI11.WIZRI2D.WIZRI","altitude":"","speed":"","method":"random","rate":0.37,"airlines":[["mdg/at45",1],["mdg/at72",1]]},
+        {"origin":"FMMI","destination":"","category":"departure","route":"FMMI11.WIZRI2D.WIZRI","altitude":"","speed":"","method":"random","rate":1.48,"airlines":[["mdg/at72",3],["mdg/b733",3],["mdg/at45",2]]},
+        {"origin":"FMMI","destination":"","category":"departure","route":"FMMI11.MIPDO3B.MIPDO","altitude":"","speed":"","method":"random","rate":0.37,"airlines":[["mdg/at72",1],["mdg/b733",1]]},
+        {"origin":"FMMI","destination":"","category":"departure","route":"FMMI11.ZEBPA1F.ZEBPA","altitude":"","speed":"","method":"random","rate":0.93,"airlines":[["mdg/at72",2],["mdg/b733",2],["mdg/dhc6",1]]},
+        {"origin":"FMMI","destination":"","category":"departure","route":"FMMI11.PIZNA3F.PIZNA","altitude":"","speed":"","method":"random","rate":0.93,"airlines":[["kqa/b738",1],["kqa/e190",1],["mdg/at45",1],["mdg/at72",1],["crl/a333",1],["crl/a332",1]]},
+        {"origin":"FMMI","destination":"","category":"departure","route":"FMMI11.WIZRI2D.WIZRI","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["5r/c172",6],["5r/p28a",5],["5r/c182",3],["5r/be36",2],["5r/da42",1],["5r/tb20",1],["5r/c208",2],["5r/pc12",2],["5r/be20",1],["5r/b350",1],["5r/p180",1],["5r/c510",1],["5r/e50p",1],["5r/c550",2],["5r/e55p",1],["5r/cl30",1],["5r/c680",1],["5r/h25b",1],["5r/lj45",1],["5r/f2th",1],["5r/glf4",1],["5r/glex",1],["5r/glf5",1]]},
+        {"origin":"FMMI","destination":"","category":"departure","route":"FMMI11.MIPDO3B.MIPDO","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["5r/c172",6],["5r/p28a",5],["5r/c182",3],["5r/be36",2],["5r/da42",1],["5r/tb20",1],["5r/c208",2],["5r/pc12",2],["5r/be20",1],["5r/b350",1],["5r/p180",1],["5r/c510",1],["5r/e50p",1],["5r/c550",2],["5r/e55p",1],["5r/cl30",1],["5r/c680",1],["5r/h25b",1],["5r/lj45",1],["5r/f2th",1],["5r/glf4",1],["5r/glex",1],["5r/glf5",1]]},
+        {"origin":"FMCZ","destination":"FMMI","category":"arrival","route":"PIZNA..OKERU..FMMI","altitude":[10000,13000],"speed":250,"method":"random","rate":0.56,"airlines":[["mdg/at72",1],["mdg/b733",1],["crl/a333",1],["crl/a332",1]]},
+        {"origin":"FMEE","destination":"FMMI","category":"arrival","route":"TE..ZOSJA..FMMI","altitude":[10000,13000],"speed":250,"method":"random","rate":0.56,"airlines":[["mdg/b733",1],["reu/at72",1],["reu/b738",1]]},
+        {"origin":"FMMT","destination":"FMMI","category":"arrival","route":"TE..ZOSJA..FMMI","altitude":[10000,13000],"speed":250,"method":"random","rate":0.56,"airlines":[["mdg/at45",1],["mdg/at72",1],["mdg/dhc6",1]]},
+        {"origin":"FIMP","destination":"FMMI","category":"arrival","route":"TE..ZOSJA..FMMI","altitude":[10000,13000],"speed":250,"method":"random","rate":0.37,"airlines":[["mau/a319",1],["mdg/b733",1]]},
+        {"origin":"FMCH","destination":"FMMI","category":"arrival","route":"PIZNA..OKERU..FMMI","altitude":[10000,13000],"speed":250,"method":"random","rate":0.37,"airlines":[["mdg/at72",1],["mdg/b733",1]]},
+        {"origin":"FMMS","destination":"FMMI","category":"arrival","route":"WIZRI..MAGIS..FMMI","altitude":[10000,13000],"speed":250,"method":"random","rate":0.37,"airlines":[["mdg/at45",1],["mdg/at72",1]]},
+        {"origin":"","destination":"FMMI","category":"arrival","route":"WIZRI..MAGIS..FMMI","altitude":[10000,13000],"speed":250,"method":"random","rate":1.48,"airlines":[["mdg/at72",3],["mdg/b733",3],["mdg/at45",2]]},
+        {"origin":"","destination":"FMMI","category":"arrival","route":"MIPDO..JOSOP..FMMI","altitude":[10000,13000],"speed":250,"method":"random","rate":0.37,"airlines":[["mdg/at72",1],["mdg/b733",1]]},
+        {"origin":"","destination":"FMMI","category":"arrival","route":"ZEBPA..JUDUK..FMMI","altitude":[10000,13000],"speed":250,"method":"random","rate":0.93,"airlines":[["mdg/at72",2],["mdg/b733",2],["mdg/dhc6",1]]},
+        {"origin":"","destination":"FMMI","category":"arrival","route":"PIZNA..OKERU..FMMI","altitude":[10000,13000],"speed":250,"method":"random","rate":0.93,"airlines":[["kqa/b738",1],["kqa/e190",1],["mdg/at45",1],["mdg/at72",1],["crl/a333",1],["crl/a332",1]]},
+        {"origin":"","destination":"FMMI","category":"arrival","route":"WIZRI..MAGIS..FMMI","altitude":[10000,13000],"speed":250,"method":"random","rate":0.44,"airlines":[["5r/c172",6],["5r/p28a",5],["5r/c182",3],["5r/be36",2],["5r/da42",1],["5r/tb20",1],["5r/c208",2],["5r/pc12",2],["5r/be20",1],["5r/b350",1],["5r/p180",1],["5r/c510",1],["5r/e50p",1],["5r/c550",2],["5r/e55p",1],["5r/cl30",1],["5r/c680",1],["5r/h25b",1],["5r/lj45",1],["5r/f2th",1],["5r/glf4",1],["5r/glex",1],["5r/glf5",1]]},
+        {"origin":"","destination":"FMMI","category":"arrival","route":"MIPDO..JOSOP..FMMI","altitude":[10000,13000],"speed":250,"method":"random","rate":0.44,"airlines":[["5r/c172",6],["5r/p28a",5],["5r/c182",3],["5r/be36",2],["5r/da42",1],["5r/tb20",1],["5r/c208",2],["5r/pc12",2],["5r/be20",1],["5r/b350",1],["5r/p180",1],["5r/c510",1],["5r/e50p",1],["5r/c550",2],["5r/e55p",1],["5r/cl30",1],["5r/c680",1],["5r/h25b",1],["5r/lj45",1],["5r/f2th",1],["5r/glf4",1],["5r/glex",1],["5r/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-18.172,47.8262,-18.5758,47.6017],
+            [-18.5758,47.6017,-18.7969,47.4788],
+            [-18.9534,48.2255,-18.8509,47.7365],
+            [-18.8509,47.7365,-18.7969,47.4788],
+            [-19.501,47.4223,-19.046,47.4588],
+            [-19.046,47.4588,-18.7969,47.4788],
+            [-19.2161,46.8785,-18.9452,47.2664],
+            [-18.9452,47.2664,-18.7969,47.4788],
+            [-18.1588,47.1592,-18.5712,47.3657],
+            [-18.5712,47.3657,-18.7969,47.4788]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-18.7948,47.4643,-18.7689,47.2905],
+            [-18.7918,47.3758,-18.772,47.379],
+            [-18.7788,47.2889,-18.7591,47.2921],
+            [-18.7991,47.4933,-18.8248,47.6671],
+            [-18.8021,47.5819,-18.8218,47.5786],
+            [-18.8149,47.6688,-18.8347,47.6655]
+        ]}
+    ]
+}

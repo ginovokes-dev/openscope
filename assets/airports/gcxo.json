@@ -1,0 +1,89 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/GCXO/",
+    "info": {"country":"ES","city":"Tenerife","type":"large_airport","longestRunwayM":3171,"frequencies":{"atis":"118.575","twr":"118.700","app":"124.800","gnd":"121.700"}},
+    "radio": {"twr":"Tenerife Tower","app":"Tenerife Approach","dep":"Tenerife Departure"},
+    "icao": "GCXO",
+    "iata": "TFN",
+    "magnetic_north": -3.6,
+    "ctr_radius": 60,
+    "ctr_ceiling": 12000,
+    "initial_alt": 7000,
+    "position": [28.482752,-16.341707,"2076ft"],
+    "rangeRings": {"enabled":true,"center":[28.482752,-16.341707],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":110,"speed":7},
+    "arrivalRunway": "12",
+    "departureRunway": "12",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":120,"airspace_class":"C","poly":[[29.0213,-16.3803],[29.0117,-16.2204],[28.9661,-16.0687],[28.8875,-15.9357],[28.7814,-15.8304],[28.6549,-15.7599],[28.5166,-15.729],[28.3761,-15.7399],[28.2428,-15.7918],[28.1259,-15.8812],[28.0333,-16.002],[27.9713,-16.1459],[27.9442,-16.3032],[27.9538,-16.463],[27.9994,-16.6147],[28.078,-16.7477],[28.1841,-16.853],[28.3106,-16.9235],[28.4489,-16.9544],[28.5894,-16.9435],[28.7227,-16.8916],[28.8396,-16.8022],[28.9322,-16.6814],[28.9942,-16.5375]]}
+    ],
+    "fixes": {
+        "GCXO": [28.48275,-16.34171],
+        "KOMOZ": [29.01484,-15.81352],
+        "JIFLU": [28.671,-16.15484],
+        "GDV": [28.0771,-15.429,"gran canaria"],
+        "UVIHO": [28.37002,-16.08806],
+        "AVUHO": [27.7789,-16.40646],
+        "KUFME": [28.23373,-16.36462],
+        "LGM": [28.0287,-17.2149,"la gomera"],
+        "NUSJA": [28.35555,-16.58634],
+        "_RWY1204DME": [28.51125,-16.42785],
+        "_RWY3004DME": [28.45416,-16.25569]
+    },
+    "runways": [
+        {"name":["12","30"],"end":[[28.48776,-16.35691,"2062ft"],[28.4777,-16.32659,"2007ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "KOMOZ2F": {"icao":"KOMOZ2F","name":"Komoz Two Foxtrot","rwy":{"GCXO12":["_RWY3004DME"],"GCXO30":["_RWY1204DME"]},"body":[],"exitPoints":{"KOMOZ":["KOMOZ"]},"draw":[["GCXO","KOMOZ*"]]},
+        "GDV2B": {"icao":"GDV2B","name":"Gran Canaria Two Bravo","rwy":{"GCXO12":["_RWY3004DME"],"GCXO30":["_RWY1204DME"]},"body":[],"exitPoints":{"GDV":["GDV"]},"draw":[["GCXO","GDV*"]]},
+        "AVUHO3A": {"icao":"AVUHO3A","name":"Avuho Three Alpha","rwy":{"GCXO12":["_RWY3004DME"],"GCXO30":["_RWY1204DME"]},"body":[],"exitPoints":{"AVUHO":["AVUHO"]},"draw":[["GCXO","AVUHO*"]]},
+        "LGM2A": {"icao":"LGM2A","name":"La Gomera Two Alpha","rwy":{"GCXO12":["_RWY3004DME"],"GCXO30":["_RWY1204DME"]},"body":[],"exitPoints":{"LGM":["LGM"]},"draw":[["GCXO","LGM*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"GCXO","destination":"LEMD","category":"departure","route":"GCXO12.KOMOZ2F.KOMOZ","altitude":"","speed":"","method":"random","rate":0.99,"airlines":[["aea/a332",1],["aea/b738",1],["csa/b738",1],["ryr/b738",1]]},
+        {"origin":"GCXO","destination":"GCLP","category":"departure","route":"GCXO12.GDV2B.GDV","altitude":"","speed":"","method":"random","rate":0.74,"airlines":[["ibb/at72",1],["ibb/crj9",1],["ram/at72",1]]},
+        {"origin":"GCXO","destination":"LEBL","category":"departure","route":"GCXO12.KOMOZ2F.KOMOZ","altitude":"","speed":"","method":"random","rate":0.74,"airlines":[["aea/b738",1],["ryr/b738",1],["vlg/a320",1]]},
+        {"origin":"GCXO","destination":"LEBB","category":"departure","route":"GCXO12.KOMOZ2F.KOMOZ","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["aea/b738",1],["vlg/a320",1]]},
+        {"origin":"GCXO","destination":"LEMG","category":"departure","route":"GCXO12.KOMOZ2F.KOMOZ","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["aea/b738",1],["vlg/a320",1]]},
+        {"origin":"GCXO","destination":"","category":"departure","route":"GCXO12.KOMOZ2F.KOMOZ","altitude":"","speed":"","method":"random","rate":1.24,"airlines":[["aea/b738",1],["ibb/at72",1],["ibe/a321",1],["ram/at72",1],["vlg/a320",1]]},
+        {"origin":"GCXO","destination":"","category":"departure","route":"GCXO12.GDV2B.GDV","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["ibb/at72",1]]},
+        {"origin":"GCXO","destination":"","category":"departure","route":"GCXO12.AVUHO3A.AVUHO","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["ibb/crj9",1]]},
+        {"origin":"GCXO","destination":"","category":"departure","route":"GCXO12.LGM2A.LGM","altitude":"","speed":"","method":"random","rate":0.74,"airlines":[["ibb/at72",2],["bbr/b763",1]]},
+        {"origin":"GCXO","destination":"","category":"departure","route":"GCXO12.AVUHO3A.AVUHO","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"GCXO","destination":"","category":"departure","route":"GCXO12.GDV2B.GDV","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"LEMD","destination":"GCXO","category":"arrival","route":"KOMOZ..JIFLU..GCXO","altitude":[8000,11000],"speed":250,"method":"random","rate":0.99,"airlines":[["aea/a332",1],["aea/b738",1],["csa/b738",1],["ryr/b738",1]]},
+        {"origin":"GCLP","destination":"GCXO","category":"arrival","route":"GDV..UVIHO..GCXO","altitude":[8000,11000],"speed":250,"method":"random","rate":0.74,"airlines":[["ibb/at72",1],["ibb/crj9",1],["ram/at72",1]]},
+        {"origin":"LEBL","destination":"GCXO","category":"arrival","route":"KOMOZ..JIFLU..GCXO","altitude":[8000,11000],"speed":250,"method":"random","rate":0.74,"airlines":[["aea/b738",1],["ryr/b738",1],["vlg/a320",1]]},
+        {"origin":"LEBB","destination":"GCXO","category":"arrival","route":"KOMOZ..JIFLU..GCXO","altitude":[8000,11000],"speed":250,"method":"random","rate":0.5,"airlines":[["aea/b738",1],["vlg/a320",1]]},
+        {"origin":"LEMG","destination":"GCXO","category":"arrival","route":"KOMOZ..JIFLU..GCXO","altitude":[8000,11000],"speed":250,"method":"random","rate":0.5,"airlines":[["aea/b738",1],["vlg/a320",1]]},
+        {"origin":"","destination":"GCXO","category":"arrival","route":"KOMOZ..JIFLU..GCXO","altitude":[8000,11000],"speed":250,"method":"random","rate":1.24,"airlines":[["aea/b738",1],["ibb/at72",1],["ibe/a321",1],["ram/at72",1],["vlg/a320",1]]},
+        {"origin":"","destination":"GCXO","category":"arrival","route":"GDV..UVIHO..GCXO","altitude":[8000,11000],"speed":250,"method":"random","rate":0.25,"airlines":[["ibb/at72",1]]},
+        {"origin":"","destination":"GCXO","category":"arrival","route":"AVUHO..KUFME..GCXO","altitude":[8000,11000],"speed":250,"method":"random","rate":0.25,"airlines":[["ibb/crj9",1]]},
+        {"origin":"","destination":"GCXO","category":"arrival","route":"LGM..NUSJA..GCXO","altitude":[8000,11000],"speed":250,"method":"random","rate":0.74,"airlines":[["ibb/at72",2],["bbr/b763",1]]},
+        {"origin":"","destination":"GCXO","category":"arrival","route":"AVUHO..KUFME..GCXO","altitude":[8000,11000],"speed":250,"method":"random","rate":0.41,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"","destination":"GCXO","category":"arrival","route":"GDV..UVIHO..GCXO","altitude":[8000,11000],"speed":250,"method":"random","rate":0.41,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [29.0148,-15.8135,28.671,-16.1548],
+            [28.671,-16.1548,28.4828,-16.3417],
+            [28.0771,-15.429,28.37,-16.0881],
+            [28.37,-16.0881,28.4828,-16.3417],
+            [27.7789,-16.4065,28.2337,-16.3646],
+            [28.2337,-16.3646,28.4828,-16.3417],
+            [28.0287,-17.2149,28.3555,-16.5863],
+            [28.3555,-16.5863,28.4828,-16.3417]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [28.4878,-16.3569,28.5464,-16.5343],
+            [28.5078,-16.4496,28.5265,-16.4416],
+            [28.5371,-16.5383,28.5558,-16.5303],
+            [28.4777,-16.3266,28.4188,-16.1494],
+            [28.4576,-16.234,28.4389,-16.242],
+            [28.4281,-16.1454,28.4094,-16.1534]
+        ]}
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGEY/",
+    "info": {"country":"GB","city":"Colonsay","type":"small_airport","longestRunwayM":501,"approximateRunways":true},
+    "radio": {"twr":"Colonsay Tower","app":"Colonsay Approach","dep":"Colonsay Radar"},
+    "icao": "EGEY",
+    "iata": "CSA",
+    "magnetic_north": -1.7,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [56.057499,-6.24306,"44ft"],
+    "rangeRings": {"enabled":true,"center":[56.057499,-6.24306],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":290,"speed":6},
+    "arrivalRunway": "29",
+    "departureRunway": "29",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[56.462,-6.2646],[56.4513,-6.0763],[56.4138,-5.8994],[56.352,-5.746],[56.2702,-5.6264],[56.1738,-5.5488],[56.0695,-5.5186],[55.9644,-5.5377],[55.8656,-5.6049],[55.78,-5.7156],[55.7132,-5.8622],[55.6699,-6.0348],[55.653,-6.2216],[55.6637,-6.4098],[55.7012,-6.5867],[55.763,-6.7401],[55.8448,-6.8597],[55.9412,-6.9373],[56.0455,-6.9675],[56.1506,-6.9484],[56.2494,-6.8812],[56.335,-6.7705],[56.4018,-6.6239],[56.4451,-6.4513]]}
+    ],
+    "fixes": {
+        "EGEY": [56.0575,-6.24306],
+        "FEKBI": [56.32646,-5.4087],
+        "UBOJU": [56.15743,-5.93306],
+        "MAC": [55.43,-5.65028,"machrihanish"],
+        "ROZOK": [55.88072,-6.07606],
+        "VUSEF": [55.78854,-7.07742],
+        "TINDA": [55.95757,-6.55306],
+        "TIR": [56.4932,-6.87556,"tiree"],
+        "NUNUH": [56.21276,-6.46846],
+        "_RWY1103DME": [56.07099,-6.33342],
+        "_RWY2903DME": [56.04395,-6.15276]
+    },
+    "runways": [
+        {"name":["11","29"],"end":[[56.05808,-6.24696,"37ft"],[56.05692,-6.23916,"44ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "FEKBI3B": {"icao":"FEKBI3B","name":"Fekbi Three Bravo","rwy":{"EGEY11":["_RWY2903DME"],"EGEY29":["_RWY1103DME"]},"body":[],"exitPoints":{"FEKBI":["FEKBI"]},"draw":[["EGEY","FEKBI*"]]},
+        "MAC1F": {"icao":"MAC1F","name":"Machrihanish One Foxtrot","rwy":{"EGEY11":["_RWY2903DME"],"EGEY29":["_RWY1103DME"]},"body":[],"exitPoints":{"MAC":["MAC"]},"draw":[["EGEY","MAC*"]]},
+        "VUSEF2E": {"icao":"VUSEF2E","name":"Vusef Two Echo","rwy":{"EGEY11":["_RWY2903DME"],"EGEY29":["_RWY1103DME"]},"body":[],"exitPoints":{"VUSEF":["VUSEF"]},"draw":[["EGEY","VUSEF*"]]},
+        "TIR1D": {"icao":"TIR1D","name":"Tiree One Delta","rwy":{"EGEY11":["_RWY2903DME"],"EGEY29":["_RWY1103DME"]},"body":[],"exitPoints":{"TIR":["TIR"]},"draw":[["EGEY","TIR*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGEY","destination":"","category":"departure","route":"EGEY29.VUSEF2E.VUSEF","altitude":"","speed":"","method":"random","rate":3,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/be20",1]]},
+        {"origin":"","destination":"EGEY","category":"arrival","route":"VUSEF..TINDA..EGEY","altitude":[4000,7000],"speed":250,"method":"random","rate":3,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/be20",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [56.3265,-5.4087,56.1574,-5.9331],
+            [56.1574,-5.9331,56.0575,-6.2431],
+            [55.43,-5.6503,55.8807,-6.0761],
+            [55.8807,-6.0761,56.0575,-6.2431],
+            [55.7885,-7.0774,55.9576,-6.5531],
+            [55.9576,-6.5531,56.0575,-6.2431],
+            [56.4932,-6.8756,56.2128,-6.4685],
+            [56.2128,-6.4685,56.0575,-6.2431]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [56.0569,-6.2392,56.0135,-5.9514],
+            [56.0449,-6.0906,56.0256,-6.0998],
+            [56.0231,-5.9467,56.0038,-5.956]
+        ]}
+    ]
+}

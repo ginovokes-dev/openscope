@@ -1,0 +1,78 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/OEAB/",
+    "info": {"country":"SA","city":"Abha","type":"large_airport","longestRunwayM":3364,"frequencies":{"twr":"118.100","app":"124.500","gnd":"121.700"}},
+    "radio": {"twr":"Abha Tower","app":"Abha Approach","dep":"Abha Departure"},
+    "icao": "OEAB",
+    "iata": "AHB",
+    "magnetic_north": 2.8,
+    "ctr_radius": 45,
+    "ctr_ceiling": 14000,
+    "initial_alt": 10000,
+    "position": [18.2404,42.656601,"6858ft"],
+    "rangeRings": {"enabled":true,"center":[18.2404,42.656601],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":120,"speed":12},
+    "arrivalRunway": "13",
+    "departureRunway": "13",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":140,"airspace_class":"D","poly":[[18.6446,42.6774],[18.6257,42.7869],[18.5806,42.8874],[18.5122,42.9723],[18.4254,43.0356],[18.3259,43.0731],[18.2206,43.0822],[18.1167,43.0623],[18.0212,43.0148],[17.9406,42.9428],[17.8805,42.8514],[17.8448,42.7466],[17.8362,42.6358],[17.8551,42.5263],[17.9002,42.4258],[17.9686,42.3409],[18.0554,42.2776],[18.1549,42.2401],[18.2602,42.231],[18.3641,42.2509],[18.4596,42.2984],[18.5402,42.3704],[18.6003,42.4618],[18.636,42.5666]]}
+    ],
+    "fixes": {
+        "OEAB": [18.2404,42.6566],
+        "ODUJE": [18.58226,43.09392],
+        "DUZWI": [18.36742,42.81908],
+        "DUSED": [17.70749,42.57934],
+        "KIMAD": [18.0424,42.62789],
+        "BIKEZ": [18.6818,42.33285],
+        "ITERE": [18.4044,42.53631],
+        "_RWY1304DME": [18.29195,42.58988],
+        "_RWY3104DME": [18.18873,42.72338]
+    },
+    "runways": [
+        {"name":["13","31"],"end":[[18.2499,42.6443,"6832ft"],[18.2308,42.669,"6858ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ODUJE3E": {"icao":"ODUJE3E","name":"Oduje Three Echo","rwy":{"OEAB13":["_RWY3104DME"],"OEAB31":["_RWY1304DME"]},"body":[],"exitPoints":{"ODUJE":["ODUJE"]},"draw":[["OEAB","ODUJE*"]]},
+        "DUSED1D": {"icao":"DUSED1D","name":"Dused One Delta","rwy":{"OEAB13":["_RWY3104DME"],"OEAB31":["_RWY1304DME"]},"body":[],"exitPoints":{"DUSED":["DUSED"]},"draw":[["OEAB","DUSED*"]]},
+        "BIKEZ1F": {"icao":"BIKEZ1F","name":"Bikez One Foxtrot","rwy":{"OEAB13":["_RWY3104DME"],"OEAB31":["_RWY1304DME"]},"body":[],"exitPoints":{"BIKEZ":["BIKEZ"]},"draw":[["OEAB","BIKEZ*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"OEAB","destination":"HECA","category":"departure","route":"OEAB13.BIKEZ1F.BIKEZ","altitude":"","speed":"","method":"random","rate":1.36,"airlines":[["lmu/a320",1],["msr/a320",1],["msr/e170",1],["sva/a320",1],["sva/a321",1]]},
+        {"origin":"OEAB","destination":"OEJN","category":"departure","route":"OEAB13.BIKEZ1F.BIKEZ","altitude":"","speed":"","method":"random","rate":0.81,"airlines":[["kne/a320",1],["sva/a320",1],["sva/a321",1]]},
+        {"origin":"OEAB","destination":"OERK","category":"departure","route":"OEAB13.ODUJE3E.ODUJE","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["kne/a320",1],["sva/a320",1]]},
+        {"origin":"OEAB","destination":"OEDF","category":"departure","route":"OEAB13.ODUJE3E.ODUJE","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["sva/a320",1]]},
+        {"origin":"OEAB","destination":"OEMA","category":"departure","route":"OEAB13.BIKEZ1F.BIKEZ","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["sva/e170",1]]},
+        {"origin":"OEAB","destination":"","category":"departure","route":"OEAB13.ODUJE3E.ODUJE","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["aby/a320",1],["fdb/b738",1]]},
+        {"origin":"OEAB","destination":"","category":"departure","route":"OEAB13.BIKEZ1F.BIKEZ","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["sva/a320",2]]},
+        {"origin":"OEAB","destination":"","category":"departure","route":"OEAB13.BIKEZ1F.BIKEZ","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["hz/c172",6],["hz/p28a",5],["hz/c182",3],["hz/be36",2],["hz/da42",1],["hz/tb20",1],["hz/c208",2],["hz/pc12",2],["hz/be20",1],["hz/b350",1],["hz/p180",1],["hz/c510",1],["hz/e50p",1],["hz/c550",1],["hz/e55p",1],["hz/cl30",1],["hz/c680",1],["hz/h25b",1],["hz/lj45",1],["hz/f2th",1],["hz/glf4",1],["hz/glex",1],["hz/glf5",1]]},
+        {"origin":"HECA","destination":"OEAB","category":"arrival","route":"BIKEZ..ITERE..OEAB","altitude":[10000,13000],"speed":250,"method":"random","rate":1.36,"airlines":[["lmu/a320",1],["msr/a320",1],["msr/e170",1],["sva/a320",1],["sva/a321",1]]},
+        {"origin":"OEJN","destination":"OEAB","category":"arrival","route":"BIKEZ..ITERE..OEAB","altitude":[10000,13000],"speed":250,"method":"random","rate":0.81,"airlines":[["kne/a320",1],["sva/a320",1],["sva/a321",1]]},
+        {"origin":"OERK","destination":"OEAB","category":"arrival","route":"ODUJE..DUZWI..OEAB","altitude":[10000,13000],"speed":250,"method":"random","rate":0.54,"airlines":[["kne/a320",1],["sva/a320",1]]},
+        {"origin":"OEDF","destination":"OEAB","category":"arrival","route":"ODUJE..DUZWI..OEAB","altitude":[10000,13000],"speed":250,"method":"random","rate":0.27,"airlines":[["sva/a320",1]]},
+        {"origin":"OEMA","destination":"OEAB","category":"arrival","route":"BIKEZ..ITERE..OEAB","altitude":[10000,13000],"speed":250,"method":"random","rate":0.27,"airlines":[["sva/e170",1]]},
+        {"origin":"","destination":"OEAB","category":"arrival","route":"ODUJE..DUZWI..OEAB","altitude":[10000,13000],"speed":250,"method":"random","rate":0.54,"airlines":[["aby/a320",1],["fdb/b738",1]]},
+        {"origin":"","destination":"OEAB","category":"arrival","route":"BIKEZ..ITERE..OEAB","altitude":[10000,13000],"speed":250,"method":"random","rate":0.54,"airlines":[["sva/a320",2]]},
+        {"origin":"","destination":"OEAB","category":"arrival","route":"BIKEZ..ITERE..OEAB","altitude":[10000,13000],"speed":250,"method":"random","rate":1.45,"airlines":[["hz/c172",6],["hz/p28a",5],["hz/c182",3],["hz/be36",2],["hz/da42",1],["hz/tb20",1],["hz/c208",2],["hz/pc12",2],["hz/be20",1],["hz/b350",1],["hz/p180",1],["hz/c510",1],["hz/e50p",1],["hz/c550",1],["hz/e55p",1],["hz/cl30",1],["hz/c680",1],["hz/h25b",1],["hz/lj45",1],["hz/f2th",1],["hz/glf4",1],["hz/glex",1],["hz/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [18.5823,43.0939,18.3674,42.8191],
+            [18.3674,42.8191,18.2404,42.6566],
+            [17.7075,42.5793,18.0424,42.6279],
+            [18.0424,42.6279,18.2404,42.6566],
+            [18.6818,42.3328,18.4044,42.5363],
+            [18.4044,42.5363,18.2404,42.6566]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [18.2499,42.6443,18.355,42.5082],
+            [18.2947,42.5696,18.3102,42.5829],
+            [18.3473,42.5016,18.3628,42.5149],
+            [18.2308,42.669,18.1256,42.8049],
+            [18.186,42.7436,18.1705,42.7303],
+            [18.1334,42.8115,18.1179,42.7983]
+        ]}
+    ]
+}

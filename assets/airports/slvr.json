@@ -1,0 +1,90 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SLVR/",
+    "info": {"country":"BO","city":"Santa Cruz","type":"large_airport","longestRunwayM":3504,"frequencies":{"twr":"118.600","app":"119.700","gnd":"121.900"}},
+    "radio": {"twr":"Viru Viru Tower","app":"Viru Viru Approach","dep":"Viru Viru Departure"},
+    "icao": "SLVR",
+    "iata": "VVI",
+    "magnetic_north": -13.6,
+    "ctr_radius": 45,
+    "ctr_ceiling": 9000,
+    "initial_alt": 5000,
+    "position": [-17.6448,-63.135399,"1224ft"],
+    "rangeRings": {"enabled":true,"center":[-17.6448,-63.135399],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":180,"speed":11},
+    "arrivalRunway": "16",
+    "departureRunway": "16",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":90,"airspace_class":"D","poly":[[-17.2515,-63.2353],[-17.2402,-63.125],[-17.2566,-63.0155],[-17.2994,-62.9141],[-17.3657,-62.8279],[-17.4511,-62.7625],[-17.5496,-62.7226],[-17.6547,-62.7109],[-17.7591,-62.728],[-17.8556,-62.7729],[-17.9379,-62.8425],[-18.0001,-62.9321],[-18.0381,-63.0355],[-18.0494,-63.1458],[-18.033,-63.2553],[-17.9902,-63.3567],[-17.9239,-63.4429],[-17.8385,-63.5083],[-17.74,-63.5482],[-17.6349,-63.5599],[-17.5305,-63.5428],[-17.434,-63.4979],[-17.3517,-63.4283],[-17.2895,-63.3387]]}
+    ],
+    "fixes": {
+        "SLVR": [-17.6448,-63.1354],
+        "GIPSE": [-17.24323,-62.75979],
+        "ZARRI": [-17.4956,-62.99584],
+        "FAMRO": [-17.85628,-62.61635],
+        "NUHAD": [-17.72337,-62.94255],
+        "LIFIF": [-18.13982,-62.91446],
+        "MINME": [-17.82872,-63.05331],
+        "GOTVA": [-17.49135,-63.67644],
+        "ANUFA": [-17.58779,-63.33642],
+        "GOSOK": [-17.16492,-63.39048],
+        "DODIH": [-17.4665,-63.23017],
+        "_RWY1604DME": [-17.57547,-63.18212],
+        "_RWY3404DME": [-17.71402,-63.08855]
+    },
+    "runways": [
+        {"name":["16","34"],"end":[[-17.6315,-63.1443,"1218ft"],[-17.658,-63.1264,"1224ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "GIPSE2F": {"icao":"GIPSE2F","name":"Gipse Two Foxtrot","rwy":{"SLVR16":["_RWY3404DME"],"SLVR34":["_RWY1604DME"]},"body":[],"exitPoints":{"GIPSE":["GIPSE"]},"draw":[["SLVR","GIPSE*"]]},
+        "FAMRO3C": {"icao":"FAMRO3C","name":"Famro Three Charlie","rwy":{"SLVR16":["_RWY3404DME"],"SLVR34":["_RWY1604DME"]},"body":[],"exitPoints":{"FAMRO":["FAMRO"]},"draw":[["SLVR","FAMRO*"]]},
+        "LIFIF2A": {"icao":"LIFIF2A","name":"Lifif Two Alpha","rwy":{"SLVR16":["_RWY3404DME"],"SLVR34":["_RWY1604DME"]},"body":[],"exitPoints":{"LIFIF":["LIFIF"]},"draw":[["SLVR","LIFIF*"]]},
+        "GOTVA3B": {"icao":"GOTVA3B","name":"Gotva Three Bravo","rwy":{"SLVR16":["_RWY3404DME"],"SLVR34":["_RWY1604DME"]},"body":[],"exitPoints":{"GOTVA":["GOTVA"]},"draw":[["SLVR","GOTVA*"]]},
+        "GOSOK2E": {"icao":"GOSOK2E","name":"Gosok Two Echo","rwy":{"SLVR16":["_RWY3404DME"],"SLVR34":["_RWY1604DME"]},"body":[],"exitPoints":{"GOSOK":["GOSOK"]},"draw":[["SLVR","GOSOK*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SLVR","destination":"SLLP","category":"departure","route":"SLVR16.GOTVA3B.GOTVA","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["aal/b752",2],["lan/a319",1]]},
+        {"origin":"SLVR","destination":"SPJC","category":"departure","route":"SLVR16.GOTVA3B.GOTVA","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["amx/a319",1],["ava/a319",1],["lan/a319",1]]},
+        {"origin":"SLVR","destination":"KMIA","category":"departure","route":"SLVR16.GOSOK2E.GOSOK","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["aal/b752",2]]},
+        {"origin":"SLVR","destination":"MPTO","category":"departure","route":"SLVR16.GOSOK2E.GOSOK","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["cmp/b737",1],["cmp/b738",1]]},
+        {"origin":"SLVR","destination":"LEMD","category":"departure","route":"SLVR16.GIPSE2F.GIPSE","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["aea/a332",1]]},
+        {"origin":"SLVR","destination":"","category":"departure","route":"SLVR16.FAMRO3C.FAMRO","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["glo/b738",1]]},
+        {"origin":"SLVR","destination":"","category":"departure","route":"SLVR16.LIFIF2A.LIFIF","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["arg/b737",1],["lap/a320",1]]},
+        {"origin":"SLVR","destination":"","category":"departure","route":"SLVR16.GOTVA3B.GOTVA","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["lan/a320",1]]},
+        {"origin":"SLVR","destination":"","category":"departure","route":"SLVR16.FAMRO3C.FAMRO","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["cp/c172",6],["cp/p28a",5],["cp/c182",3],["cp/be36",2],["cp/da42",1],["cp/tb20",1],["cp/c208",2],["cp/pc12",2],["cp/be20",1],["cp/b350",1],["cp/p180",1],["cp/c510",1],["cp/e50p",1],["cp/c550",1],["cp/e55p",1],["cp/cl30",1],["cp/c680",1],["cp/h25b",1],["cp/lj45",1],["cp/f2th",1],["cp/glf4",1],["cp/glex",1],["cp/glf5",1]]},
+        {"origin":"SLLP","destination":"SLVR","category":"arrival","route":"GOTVA..ANUFA..SLVR","altitude":[5000,8000],"speed":250,"method":"random","rate":0.87,"airlines":[["aal/b752",2],["lan/a319",1]]},
+        {"origin":"SPJC","destination":"SLVR","category":"arrival","route":"GOTVA..ANUFA..SLVR","altitude":[5000,8000],"speed":250,"method":"random","rate":0.87,"airlines":[["amx/a319",1],["ava/a319",1],["lan/a319",1]]},
+        {"origin":"KMIA","destination":"SLVR","category":"arrival","route":"GOSOK..DODIH..SLVR","altitude":[5000,8000],"speed":250,"method":"random","rate":0.58,"airlines":[["aal/b752",2]]},
+        {"origin":"MPTO","destination":"SLVR","category":"arrival","route":"GOSOK..DODIH..SLVR","altitude":[5000,8000],"speed":250,"method":"random","rate":0.58,"airlines":[["cmp/b737",1],["cmp/b738",1]]},
+        {"origin":"LEMD","destination":"SLVR","category":"arrival","route":"GIPSE..ZARRI..SLVR","altitude":[5000,8000],"speed":250,"method":"random","rate":0.29,"airlines":[["aea/a332",1]]},
+        {"origin":"","destination":"SLVR","category":"arrival","route":"FAMRO..NUHAD..SLVR","altitude":[5000,8000],"speed":250,"method":"random","rate":0.29,"airlines":[["glo/b738",1]]},
+        {"origin":"","destination":"SLVR","category":"arrival","route":"LIFIF..MINME..SLVR","altitude":[5000,8000],"speed":250,"method":"random","rate":0.58,"airlines":[["arg/b737",1],["lap/a320",1]]},
+        {"origin":"","destination":"SLVR","category":"arrival","route":"GOTVA..ANUFA..SLVR","altitude":[5000,8000],"speed":250,"method":"random","rate":0.29,"airlines":[["lan/a320",1]]},
+        {"origin":"","destination":"SLVR","category":"arrival","route":"FAMRO..NUHAD..SLVR","altitude":[5000,8000],"speed":250,"method":"random","rate":1.45,"airlines":[["cp/c172",6],["cp/p28a",5],["cp/c182",3],["cp/be36",2],["cp/da42",1],["cp/tb20",1],["cp/c208",2],["cp/pc12",2],["cp/be20",1],["cp/b350",1],["cp/p180",1],["cp/c510",1],["cp/e50p",1],["cp/c550",1],["cp/e55p",1],["cp/cl30",1],["cp/c680",1],["cp/h25b",1],["cp/lj45",1],["cp/f2th",1],["cp/glf4",1],["cp/glex",1],["cp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-17.2432,-62.7598,-17.4956,-62.9958],
+            [-17.4956,-62.9958,-17.6448,-63.1354],
+            [-17.8563,-62.6164,-17.7234,-62.9426],
+            [-17.7234,-62.9426,-17.6448,-63.1354],
+            [-18.1398,-62.9145,-17.8287,-63.0533],
+            [-17.8287,-63.0533,-17.6448,-63.1354],
+            [-17.4914,-63.6764,-17.5878,-63.3364],
+            [-17.5878,-63.3364,-17.6448,-63.1354],
+            [-17.1649,-63.3905,-17.4665,-63.2302],
+            [-17.4665,-63.2302,-17.6448,-63.1354]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-17.6315,-63.1443,-17.4914,-63.2388],
+            [-17.5669,-63.2004,-17.5561,-63.1828],
+            [-17.4968,-63.2476,-17.486,-63.23],
+            [-17.658,-63.1264,-17.798,-63.0317],
+            [-17.7226,-63.0703,-17.7334,-63.0879],
+            [-17.7926,-63.0229,-17.8034,-63.0406]
+        ]}
+    ]
+}

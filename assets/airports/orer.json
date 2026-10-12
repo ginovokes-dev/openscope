@@ -1,0 +1,94 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ORER/",
+    "info": {"country":"IQ","city":"Arbil","type":"large_airport","longestRunwayM":4811,"frequencies":{"twr":"128.800","app":"129.750"}},
+    "radio": {"twr":"Erbil Tower","app":"Erbil Approach","dep":"Erbil Departure"},
+    "icao": "ORER",
+    "iata": "EBL",
+    "magnetic_north": 5.5,
+    "ctr_radius": 60,
+    "ctr_ceiling": 11000,
+    "initial_alt": 6000,
+    "position": [36.236047,43.946615,"1341ft"],
+    "rangeRings": {"enabled":true,"center":[36.236047,43.946615],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":160,"speed":10},
+    "arrivalRunway": "18",
+    "departureRunway": "18",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":110,"airspace_class":"C","poly":[[36.7732,44.0107],[36.7415,44.1809],[36.6753,44.3351],[36.5793,44.4628],[36.4598,44.5554],[36.3251,44.6064],[36.1843,44.6125],[36.0471,44.5732],[35.9227,44.4912],[35.8197,44.3721],[35.745,44.224],[35.7039,44.057],[35.6989,43.8825],[35.7306,43.7123],[35.7968,43.5581],[35.8928,43.4304],[36.0123,43.3379],[36.147,43.2868],[36.2878,43.2807],[36.425,43.32],[36.5494,43.402],[36.6524,43.5211],[36.7271,43.6692],[36.7682,43.8362]]}
+    ],
+    "fixes": {
+        "ORER": [36.23605,43.94662],
+        "UTIMU": [36.89755,44.25297],
+        "UDAFA": [36.47008,44.055],
+        "ZIZBA": [36.16385,44.8175],
+        "JAPEB": [36.21051,44.25473],
+        "ECITE": [35.70663,44.52596],
+        "ICEWU": [36.04874,44.15158],
+        "UWIZA": [35.9301,43.15758],
+        "KOVVU": [36.12781,43.66746],
+        "EVADA": [36.64207,43.23033],
+        "EBUFO": [36.3797,43.6932],
+        "_RWY1804DME": [36.32636,43.94735],
+        "_RWY3604DME": [36.14985,43.94599]
+    },
+    "runways": [
+        {"name":["18","36"],"end":[[36.25974,43.94684,"1341ft"],[36.21647,43.9465,"1341ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "UTIMU3E": {"icao":"UTIMU3E","name":"Utimu Three Echo","rwy":{"ORER18":["_RWY3604DME"],"ORER36":["_RWY1804DME"]},"body":[],"exitPoints":{"UTIMU":["UTIMU"]},"draw":[["ORER","UTIMU*"]]},
+        "ZIZBA3E": {"icao":"ZIZBA3E","name":"Zizba Three Echo","rwy":{"ORER18":["_RWY3604DME"],"ORER36":["_RWY1804DME"]},"body":[],"exitPoints":{"ZIZBA":["ZIZBA"]},"draw":[["ORER","ZIZBA*"]]},
+        "ECITE3E": {"icao":"ECITE3E","name":"Ecite Three Echo","rwy":{"ORER18":["_RWY3604DME"],"ORER36":["_RWY1804DME"]},"body":[],"exitPoints":{"ECITE":["ECITE"]},"draw":[["ORER","ECITE*"]]},
+        "UWIZA3F": {"icao":"UWIZA3F","name":"Uwiza Three Foxtrot","rwy":{"ORER18":["_RWY3604DME"],"ORER36":["_RWY1804DME"]},"body":[],"exitPoints":{"UWIZA":["UWIZA"]},"draw":[["ORER","UWIZA*"]]},
+        "EVADA3D": {"icao":"EVADA3D","name":"Evada Three Delta","rwy":{"ORER18":["_RWY3604DME"],"ORER36":["_RWY1804DME"]},"body":[],"exitPoints":{"EVADA":["EVADA"]},"draw":[["ORER","EVADA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ORER","destination":"OJAI","category":"departure","route":"ORER18.UWIZA3F.UWIZA","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["rja/a319",1],["rja/e190",1],["rja/e75l",1]]},
+        {"origin":"ORER","destination":"HECA","category":"departure","route":"ORER18.UWIZA3F.UWIZA","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["msr/a320",1],["msr/a321",1]]},
+        {"origin":"ORER","destination":"LTAC","category":"departure","route":"ORER18.EVADA3D.EVADA","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["kkk/a320",1],["pgt/b738",1]]},
+        {"origin":"ORER","destination":"LTFM","category":"departure","route":"ORER18.EVADA3D.EVADA","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["kkk/a320",1],["thy/a321",1]]},
+        {"origin":"ORER","destination":"OLBA","category":"departure","route":"ORER18.UWIZA3F.UWIZA","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["mea/a320",1],["mea/a321",1]]},
+        {"origin":"ORER","destination":"OMDB","category":"departure","route":"ORER18.ECITE3E.ECITE","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["fdb/b738",1],["uae/a332",1]]},
+        {"origin":"ORER","destination":"","category":"departure","route":"ORER18.ZIZBA3E.ZIZBA","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["irm/a310",1]]},
+        {"origin":"ORER","destination":"","category":"departure","route":"ORER18.ECITE3E.ECITE","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["aby/a320",1],["etd/a320",1],["qtr/a320",1]]},
+        {"origin":"ORER","destination":"","category":"departure","route":"ORER18.EVADA3D.EVADA","altitude":"","speed":"","method":"random","rate":1.85,"airlines":[["gmi/b737",3],["dlh/a319",1],["kkk/a320",1],["thy/b738",1],["tra/b738",1]]},
+        {"origin":"ORER","destination":"","category":"departure","route":"ORER18.EVADA3D.EVADA","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["yi/c172",6],["yi/p28a",5],["yi/c182",3],["yi/be36",2],["yi/da42",1],["yi/tb20",1],["yi/c208",2],["yi/pc12",2],["yi/be20",1],["yi/b350",1],["yi/p180",1],["yi/c510",1],["yi/e50p",1],["yi/c550",2],["yi/e55p",1],["yi/cl30",1],["yi/c680",1],["yi/h25b",1],["yi/lj45",1],["yi/f2th",1],["yi/glf4",1],["yi/glex",1],["yi/glf5",1]]},
+        {"origin":"ORER","destination":"","category":"departure","route":"ORER18.UTIMU3E.UTIMU","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["yi/c172",6],["yi/p28a",5],["yi/c182",3],["yi/be36",2],["yi/da42",1],["yi/tb20",1],["yi/c208",2],["yi/pc12",2],["yi/be20",1],["yi/b350",1],["yi/p180",1],["yi/c510",1],["yi/e50p",1],["yi/c550",2],["yi/e55p",1],["yi/cl30",1],["yi/c680",1],["yi/h25b",1],["yi/lj45",1],["yi/f2th",1],["yi/glf4",1],["yi/glex",1],["yi/glf5",1]]},
+        {"origin":"OJAI","destination":"ORER","category":"arrival","route":"UWIZA..KOVVU..ORER","altitude":[7000,10000],"speed":250,"method":"random","rate":0.79,"airlines":[["rja/a319",1],["rja/e190",1],["rja/e75l",1]]},
+        {"origin":"HECA","destination":"ORER","category":"arrival","route":"UWIZA..KOVVU..ORER","altitude":[7000,10000],"speed":250,"method":"random","rate":0.53,"airlines":[["msr/a320",1],["msr/a321",1]]},
+        {"origin":"LTAC","destination":"ORER","category":"arrival","route":"EVADA..EBUFO..ORER","altitude":[7000,10000],"speed":250,"method":"random","rate":0.53,"airlines":[["kkk/a320",1],["pgt/b738",1]]},
+        {"origin":"LTFM","destination":"ORER","category":"arrival","route":"EVADA..EBUFO..ORER","altitude":[7000,10000],"speed":250,"method":"random","rate":0.53,"airlines":[["kkk/a320",1],["thy/a321",1]]},
+        {"origin":"OLBA","destination":"ORER","category":"arrival","route":"UWIZA..KOVVU..ORER","altitude":[7000,10000],"speed":250,"method":"random","rate":0.53,"airlines":[["mea/a320",1],["mea/a321",1]]},
+        {"origin":"OMDB","destination":"ORER","category":"arrival","route":"ECITE..ICEWU..ORER","altitude":[7000,10000],"speed":250,"method":"random","rate":0.53,"airlines":[["fdb/b738",1],["uae/a332",1]]},
+        {"origin":"","destination":"ORER","category":"arrival","route":"ZIZBA..JAPEB..ORER","altitude":[7000,10000],"speed":250,"method":"random","rate":0.26,"airlines":[["irm/a310",1]]},
+        {"origin":"","destination":"ORER","category":"arrival","route":"ECITE..ICEWU..ORER","altitude":[7000,10000],"speed":250,"method":"random","rate":0.79,"airlines":[["aby/a320",1],["etd/a320",1],["qtr/a320",1]]},
+        {"origin":"","destination":"ORER","category":"arrival","route":"EVADA..EBUFO..ORER","altitude":[7000,10000],"speed":250,"method":"random","rate":1.85,"airlines":[["gmi/b737",3],["dlh/a319",1],["kkk/a320",1],["thy/b738",1],["tra/b738",1]]},
+        {"origin":"","destination":"ORER","category":"arrival","route":"EVADA..EBUFO..ORER","altitude":[7000,10000],"speed":250,"method":"random","rate":0.43,"airlines":[["yi/c172",6],["yi/p28a",5],["yi/c182",3],["yi/be36",2],["yi/da42",1],["yi/tb20",1],["yi/c208",2],["yi/pc12",2],["yi/be20",1],["yi/b350",1],["yi/p180",1],["yi/c510",1],["yi/e50p",1],["yi/c550",2],["yi/e55p",1],["yi/cl30",1],["yi/c680",1],["yi/h25b",1],["yi/lj45",1],["yi/f2th",1],["yi/glf4",1],["yi/glex",1],["yi/glf5",1]]},
+        {"origin":"","destination":"ORER","category":"arrival","route":"UTIMU..UDAFA..ORER","altitude":[7000,10000],"speed":250,"method":"random","rate":0.43,"airlines":[["yi/c172",6],["yi/p28a",5],["yi/c182",3],["yi/be36",2],["yi/da42",1],["yi/tb20",1],["yi/c208",2],["yi/pc12",2],["yi/be20",1],["yi/b350",1],["yi/p180",1],["yi/c510",1],["yi/e50p",1],["yi/c550",2],["yi/e55p",1],["yi/cl30",1],["yi/c680",1],["yi/h25b",1],["yi/lj45",1],["yi/f2th",1],["yi/glf4",1],["yi/glex",1],["yi/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [36.8975,44.253,36.4701,44.055],
+            [36.4701,44.055,36.236,43.9466],
+            [36.1639,44.8175,36.2105,44.2547],
+            [36.2105,44.2547,36.236,43.9466],
+            [35.7066,44.526,36.0487,44.1516],
+            [36.0487,44.1516,36.236,43.9466],
+            [35.9301,43.1576,36.1278,43.6675],
+            [36.1278,43.6675,36.236,43.9466],
+            [36.6421,43.2303,36.3797,43.6932],
+            [36.3797,43.6932,36.236,43.9466]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [36.2597,43.9468,36.4263,43.9481],
+            [36.3431,43.9351,36.343,43.9599],
+            [36.4264,43.9357,36.4262,43.9606],
+            [36.2165,43.9465,36.0499,43.9452],
+            [36.1331,43.9582,36.1333,43.9335],
+            [36.0499,43.9576,36.05,43.9329]
+        ]}
+    ]
+}

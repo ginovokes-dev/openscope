@@ -1,0 +1,94 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/MGGT/",
+    "info": {"country":"GT","city":"Guatemala City","type":"large_airport","longestRunwayM":2994,"frequencies":{"atis":"126.500","twr":"118.100","app":"119.300","gnd":"121.900"}},
+    "radio": {"twr":"La Aurora Tower","app":"La Aurora Approach","dep":"La Aurora Departure"},
+    "icao": "MGGT",
+    "iata": "GUA",
+    "magnetic_north": 0.2,
+    "ctr_radius": 60,
+    "ctr_ceiling": 14000,
+    "initial_alt": 9000,
+    "position": [14.582896,-90.527515,"4952ft"],
+    "rangeRings": {"enabled":true,"center":[14.582896,-90.527515],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":40,"speed":6},
+    "arrivalRunway": "02",
+    "departureRunway": "02",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":140,"airspace_class":"C","poly":[[15.1225,-90.5256],[15.1036,-90.3813],[15.0493,-90.2471],[14.9631,-90.1319],[14.8511,-90.0437],[14.7207,-89.9885],[14.581,-89.97],[14.4414,-89.9895],[14.3115,-90.0456],[14.2,-90.1346],[14.1147,-90.2504],[14.0612,-90.3851],[14.0433,-90.5295],[14.0622,-90.6737],[14.1165,-90.808],[14.2027,-90.9231],[14.3147,-91.0113],[14.4451,-91.0666],[14.5848,-91.0851],[14.7244,-91.0656],[14.8543,-91.0094],[14.9658,-90.9204],[15.0511,-90.8046],[15.1046,-90.6699]]}
+    ],
+    "fixes": {
+        "MGGT": [14.5829,-90.52751],
+        "DUFEB": [15.19795,-90.16905],
+        "BUTSE": [14.8005,-90.40069],
+        "BAMEN": [14.81757,-89.83933],
+        "UMIKU": [14.66592,-90.28404],
+        "ENAHO": [14.20228,-89.91293],
+        "GODEM": [14.44824,-90.31008],
+        "SJO": [13.935,-90.8517,"san jose"],
+        "ANEZU": [14.35804,-90.64002],
+        "WAVMU": [15.26115,-90.73055],
+        "LIBMA": [14.82286,-90.59935],
+        "_RWY0204DME": [14.50681,-90.55213],
+        "_RWY2004DME": [14.6578,-90.50337]
+    },
+    "runways": [
+        {"name":["02","20"],"end":[[14.5704,-90.5316,"4884ft"],[14.59421,-90.52391,"4952ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "DUFEB3C": {"icao":"DUFEB3C","name":"Dufeb Three Charlie","rwy":{"MGGT02":["_RWY2004DME"],"MGGT20":["_RWY0204DME"]},"body":[],"exitPoints":{"DUFEB":["DUFEB"]},"draw":[["MGGT","DUFEB*"]]},
+        "BAMEN3B": {"icao":"BAMEN3B","name":"Bamen Three Bravo","rwy":{"MGGT02":["_RWY2004DME"],"MGGT20":["_RWY0204DME"]},"body":[],"exitPoints":{"BAMEN":["BAMEN"]},"draw":[["MGGT","BAMEN*"]]},
+        "ENAHO3D": {"icao":"ENAHO3D","name":"Enaho Three Delta","rwy":{"MGGT02":["_RWY2004DME"],"MGGT20":["_RWY0204DME"]},"body":[],"exitPoints":{"ENAHO":["ENAHO"]},"draw":[["MGGT","ENAHO*"]]},
+        "SJO2F": {"icao":"SJO2F","name":"San Jose Two Foxtrot","rwy":{"MGGT02":["_RWY2004DME"],"MGGT20":["_RWY0204DME"]},"body":[],"exitPoints":{"SJO":["SJO"]},"draw":[["MGGT","SJO*"]]},
+        "WAVMU3E": {"icao":"WAVMU3E","name":"Wavmu Three Echo","rwy":{"MGGT02":["_RWY2004DME"],"MGGT20":["_RWY0204DME"]},"body":[],"exitPoints":{"WAVMU":["WAVMU"]},"draw":[["MGGT","WAVMU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"MGGT","destination":"KMIA","category":"departure","route":"MGGT02.DUFEB3C.DUFEB","altitude":"","speed":"","method":"random","rate":0.83,"airlines":[["aal/b738",2],["aal/e190",1],["ava/e190",1]]},
+        {"origin":"MGGT","destination":"MROC","category":"departure","route":"MGGT02.ENAHO3D.ENAHO","altitude":"","speed":"","method":"random","rate":0.83,"airlines":[["ava/a320",1],["cmp/b737",1],["cmp/b738",1],["cmp/e190",1]]},
+        {"origin":"MGGT","destination":"MSLP","category":"departure","route":"MGGT02.ENAHO3D.ENAHO","altitude":"","speed":"","method":"random","rate":0.83,"airlines":[["ava/a319",1],["ava/a320",1],["ava/a321",1],["ava/e190",1]]},
+        {"origin":"MGGT","destination":"KLAX","category":"departure","route":"MGGT02.WAVMU3E.WAVMU","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["aal/a320",1],["ava/a320",1],["dal/b752",1]]},
+        {"origin":"MGGT","destination":"MPTO","category":"departure","route":"MGGT02.ENAHO3D.ENAHO","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["cmp/b737",1],["cmp/b738",1],["cmp/e190",1]]},
+        {"origin":"MGGT","destination":"","category":"departure","route":"MGGT02.DUFEB3C.DUFEB","altitude":"","speed":"","method":"random","rate":1.04,"airlines":[["dal/b752",2],["ual/b738",2],["nks/a319",1]]},
+        {"origin":"MGGT","destination":"","category":"departure","route":"MGGT02.BAMEN3B.BAMEN","altitude":"","speed":"","method":"random","rate":0.21,"airlines":[["ava/at72",1],["ava/at45",1],["ava/at75",1]]},
+        {"origin":"MGGT","destination":"","category":"departure","route":"MGGT02.ENAHO3D.ENAHO","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["ava/a318",1],["cmp/e190",1],["ava/at72",1],["ava/at45",1],["ava/at75",1]]},
+        {"origin":"MGGT","destination":"","category":"departure","route":"MGGT02.WAVMU3E.WAVMU","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["aal/b738",2],["ual/b738",1]]},
+        {"origin":"MGGT","destination":"","category":"departure","route":"MGGT02.BAMEN3B.BAMEN","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["tg/c172",6],["tg/p28a",5],["tg/c182",3],["tg/be36",2],["tg/da42",1],["tg/tb20",1],["tg/c208",2],["tg/pc12",2],["tg/be20",1],["tg/b350",1],["tg/p180",1],["tg/c510",1],["tg/e50p",1],["tg/c550",2],["tg/e55p",1],["tg/cl30",1],["tg/c680",1],["tg/h25b",1],["tg/lj45",1],["tg/f2th",1],["tg/glf4",1],["tg/glex",1],["tg/glf5",1]]},
+        {"origin":"MGGT","destination":"","category":"departure","route":"MGGT02.SJO2F.SJO","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["tg/c172",6],["tg/p28a",5],["tg/c182",3],["tg/be36",2],["tg/da42",1],["tg/tb20",1],["tg/c208",2],["tg/pc12",2],["tg/be20",1],["tg/b350",1],["tg/p180",1],["tg/c510",1],["tg/e50p",1],["tg/c550",2],["tg/e55p",1],["tg/cl30",1],["tg/c680",1],["tg/h25b",1],["tg/lj45",1],["tg/f2th",1],["tg/glf4",1],["tg/glex",1],["tg/glf5",1]]},
+        {"origin":"KMIA","destination":"MGGT","category":"arrival","route":"DUFEB..BUTSE..MGGT","altitude":[10000,13000],"speed":250,"method":"random","rate":0.83,"airlines":[["aal/b738",2],["aal/e190",1],["ava/e190",1]]},
+        {"origin":"MROC","destination":"MGGT","category":"arrival","route":"ENAHO..GODEM..MGGT","altitude":[10000,13000],"speed":250,"method":"random","rate":0.83,"airlines":[["ava/a320",1],["cmp/b737",1],["cmp/b738",1],["cmp/e190",1]]},
+        {"origin":"MSLP","destination":"MGGT","category":"arrival","route":"ENAHO..GODEM..MGGT","altitude":[10000,13000],"speed":250,"method":"random","rate":0.83,"airlines":[["ava/a319",1],["ava/a320",1],["ava/a321",1],["ava/e190",1]]},
+        {"origin":"KLAX","destination":"MGGT","category":"arrival","route":"WAVMU..LIBMA..MGGT","altitude":[10000,13000],"speed":250,"method":"random","rate":0.62,"airlines":[["aal/a320",1],["ava/a320",1],["dal/b752",1]]},
+        {"origin":"MPTO","destination":"MGGT","category":"arrival","route":"ENAHO..GODEM..MGGT","altitude":[10000,13000],"speed":250,"method":"random","rate":0.62,"airlines":[["cmp/b737",1],["cmp/b738",1],["cmp/e190",1]]},
+        {"origin":"","destination":"MGGT","category":"arrival","route":"DUFEB..BUTSE..MGGT","altitude":[10000,13000],"speed":250,"method":"random","rate":1.04,"airlines":[["dal/b752",2],["ual/b738",2],["nks/a319",1]]},
+        {"origin":"","destination":"MGGT","category":"arrival","route":"BAMEN..UMIKU..MGGT","altitude":[10000,13000],"speed":250,"method":"random","rate":0.21,"airlines":[["ava/at72",1],["ava/at45",1],["ava/at75",1]]},
+        {"origin":"","destination":"MGGT","category":"arrival","route":"ENAHO..GODEM..MGGT","altitude":[10000,13000],"speed":250,"method":"random","rate":0.62,"airlines":[["ava/a318",1],["cmp/e190",1],["ava/at72",1],["ava/at45",1],["ava/at75",1]]},
+        {"origin":"","destination":"MGGT","category":"arrival","route":"WAVMU..LIBMA..MGGT","altitude":[10000,13000],"speed":250,"method":"random","rate":0.62,"airlines":[["aal/b738",2],["ual/b738",1]]},
+        {"origin":"","destination":"MGGT","category":"arrival","route":"BAMEN..UMIKU..MGGT","altitude":[10000,13000],"speed":250,"method":"random","rate":0.42,"airlines":[["tg/c172",6],["tg/p28a",5],["tg/c182",3],["tg/be36",2],["tg/da42",1],["tg/tb20",1],["tg/c208",2],["tg/pc12",2],["tg/be20",1],["tg/b350",1],["tg/p180",1],["tg/c510",1],["tg/e50p",1],["tg/c550",2],["tg/e55p",1],["tg/cl30",1],["tg/c680",1],["tg/h25b",1],["tg/lj45",1],["tg/f2th",1],["tg/glf4",1],["tg/glex",1],["tg/glf5",1]]},
+        {"origin":"","destination":"MGGT","category":"arrival","route":"SJO..ANEZU..MGGT","altitude":[10000,13000],"speed":250,"method":"random","rate":0.42,"airlines":[["tg/c172",6],["tg/p28a",5],["tg/c182",3],["tg/be36",2],["tg/da42",1],["tg/tb20",1],["tg/c208",2],["tg/pc12",2],["tg/be20",1],["tg/b350",1],["tg/p180",1],["tg/c510",1],["tg/e50p",1],["tg/c550",2],["tg/e55p",1],["tg/cl30",1],["tg/c680",1],["tg/h25b",1],["tg/lj45",1],["tg/f2th",1],["tg/glf4",1],["tg/glex",1],["tg/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [15.1979,-90.169,14.8005,-90.4007],
+            [14.8005,-90.4007,14.5829,-90.5275],
+            [14.8176,-89.8393,14.6659,-90.284],
+            [14.6659,-90.284,14.5829,-90.5275],
+            [14.2023,-89.9129,14.4482,-90.3101],
+            [14.4482,-90.3101,14.5829,-90.5275],
+            [13.935,-90.8517,14.358,-90.64],
+            [14.358,-90.64,14.5829,-90.5275],
+            [15.2612,-90.7305,14.8229,-90.5993],
+            [14.8229,-90.5993,14.5829,-90.5275]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [14.5704,-90.5316,14.4114,-90.5829],
+            [14.4879,-90.5474,14.4939,-90.5671],
+            [14.4084,-90.5731,14.4144,-90.5928],
+            [14.5942,-90.5239,14.7532,-90.4725],
+            [14.6767,-90.5081,14.6707,-90.4884],
+            [14.7562,-90.4824,14.7502,-90.4627]
+        ]}
+    ]
+}

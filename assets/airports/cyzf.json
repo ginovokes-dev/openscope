@@ -1,0 +1,90 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/CYZF/",
+    "info": {"country":"CA","city":"Yellowknife","type":"medium_airport","longestRunwayM":2286,"frequencies":{"atis":"128.400","twr":"118.500","gnd":"121.900"}},
+    "radio": {"twr":"Yellowknife Tower","app":"Yellowknife Approach","dep":"Yellowknife Departure"},
+    "icao": "CYZF",
+    "iata": "YZF",
+    "magnetic_north": 15.6,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [62.462799,-114.440002,"675ft"],
+    "rangeRings": {"enabled":true,"center":[62.462799,-114.440002],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":330,"speed":9},
+    "arrivalRunway": "34",
+    "departureRunway": "34",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[62.8526,-114.2046],[62.8111,-113.9944],[62.7459,-113.8146],[62.6615,-113.6774],[62.5634,-113.5922],[62.4586,-113.5647],[62.354,-113.5969],[62.2568,-113.6866],[62.1737,-113.8276],[62.1102,-114.0103],[62.0708,-114.2223],[62.0581,-114.4492],[62.073,-114.6754],[62.1145,-114.8856],[62.1796,-115.0654],[62.2641,-115.2026],[62.3622,-115.2878],[62.467,-115.3153],[62.5716,-115.2831],[62.6688,-115.1935],[62.7519,-115.0525],[62.8154,-114.8697],[62.8548,-114.6577],[62.8675,-114.4308]]}
+    ],
+    "fixes": {
+        "CYZF": [62.4628,-114.44],
+        "ECAFA": [62.89956,-113.76074],
+        "KADOG": [62.62507,-114.18763],
+        "MOTUK": [62.57336,-113.30129],
+        "IWATE": [62.50388,-114.01693],
+        "JITEF": [61.92778,-114.56101],
+        "NAGCE": [62.26402,-114.48496],
+        "MITUG": [62.40733,-115.59735],
+        "LOWED": [62.44219,-114.87],
+        "_RWY1604DME": [62.53967,-114.4538],
+        "_RWY3404DME": [62.38633,-114.43126],
+        "_RWY1004DME": [62.50097,-114.58213],
+        "_RWY2804DME": [62.43551,-114.29816]
+    },
+    "runways": [
+        {"name":["16","34"],"end":[[62.4732,-114.444,"674ft"],[62.4528,-114.441,"658ft"]],"ils":[true,true]},
+        {"name":["10","28"],"end":[[62.4713,-114.453,"672ft"],[62.4653,-114.427,"675ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "ECAFA1F": {"icao":"ECAFA1F","name":"Ecafa One Foxtrot","rwy":{"CYZF16":["_RWY3404DME"],"CYZF34":["_RWY1604DME"],"CYZF10":["_RWY2804DME"],"CYZF28":["_RWY1004DME"]},"body":[],"exitPoints":{"ECAFA":["ECAFA"]},"draw":[["CYZF","ECAFA*"]]},
+        "MOTUK3A": {"icao":"MOTUK3A","name":"Motuk Three Alpha","rwy":{"CYZF16":["_RWY3404DME"],"CYZF34":["_RWY1604DME"],"CYZF10":["_RWY2804DME"],"CYZF28":["_RWY1004DME"]},"body":[],"exitPoints":{"MOTUK":["MOTUK"]},"draw":[["CYZF","MOTUK*"]]},
+        "JITEF2C": {"icao":"JITEF2C","name":"Jitef Two Charlie","rwy":{"CYZF16":["_RWY3404DME"],"CYZF34":["_RWY1604DME"],"CYZF10":["_RWY2804DME"],"CYZF28":["_RWY1004DME"]},"body":[],"exitPoints":{"JITEF":["JITEF"]},"draw":[["CYZF","JITEF*"]]},
+        "MITUG1D": {"icao":"MITUG1D","name":"Mitug One Delta","rwy":{"CYZF16":["_RWY3404DME"],"CYZF34":["_RWY1604DME"],"CYZF10":["_RWY2804DME"],"CYZF28":["_RWY1004DME"]},"body":[],"exitPoints":{"MITUG":["MITUG"]},"draw":[["CYZF","MITUG*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"CYZF","destination":"CYEG","category":"departure","route":"CYZF34.JITEF2C.JITEF","altitude":"","speed":"","method":"random","rate":0.96,"airlines":[["fab/b732",1],["fab/b737",1],["mpe/b732",1],["mpe/b733",1],["wja/b736",1],["wja/b737",1]]},
+        {"origin":"CYZF","destination":"CYCB","category":"departure","route":"CYZF34.ECAFA1F.ECAFA","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["fab/at72",1],["fab/b732",1],["mpe/b732",1],["mpe/dh8d",1],["mpe/dh8b",1],["mpe/dh8c",1]]},
+        {"origin":"CYZF","destination":"CYCO","category":"departure","route":"CYZF34.ECAFA1F.ECAFA","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["fab/at72",1],["mpe/b732",1],["mpe/dh8d",1],["mpe/dh8b",1],["mpe/dh8c",1]]},
+        {"origin":"CYZF","destination":"CYHK","category":"departure","route":"CYZF34.ECAFA1F.ECAFA","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["fab/at43",1],["fab/at72",1],["mpe/dh8d",1],["mpe/dh8b",1],["mpe/dh8c",1]]},
+        {"origin":"CYZF","destination":"CYVQ","category":"departure","route":"CYZF34.MITUG1D.MITUG","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["fab/b732",1],["mpe/b732",1],["mpe/b733",1]]},
+        {"origin":"CYZF","destination":"","category":"departure","route":"CYZF34.ECAFA1F.ECAFA","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["fab/at72",1],["mpe/dh8d",1],["mpe/dh8b",1],["mpe/dh8c",1]]},
+        {"origin":"CYZF","destination":"","category":"departure","route":"CYZF34.MOTUK3A.MOTUK","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["ant/b737",1],["fab/b732",1],["mpe/b732",1]]},
+        {"origin":"CYZF","destination":"","category":"departure","route":"CYZF34.JITEF2C.JITEF","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["fab/at43",1],["fab/at72",1],["plr/js31",1]]},
+        {"origin":"CYZF","destination":"","category":"departure","route":"CYZF34.MITUG1D.MITUG","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["ant/b737",1],["fab/at43",1],["fab/at72",1]]},
+        {"origin":"CYZF","destination":"","category":"departure","route":"CYZF34.MOTUK3A.MOTUK","altitude":"","speed":"","method":"random","rate":1.6,"airlines":[["c/c172",6],["c/p28a",5],["c/c182",3],["c/be36",2],["c/da42",1],["c/tb20",1],["c/c208",2],["c/pc12",2],["c/be20",1],["c/b350",1],["c/p180",1],["c/c510",1],["c/e50p",1],["c/c550",1],["c/e55p",1],["c/cl30",1],["c/c680",1],["c/h25b",1],["c/lj45",1],["c/f2th",1],["c/glf4",1],["c/glex",1],["c/glf5",1]]},
+        {"origin":"CYEG","destination":"CYZF","category":"arrival","route":"JITEF..NAGCE..CYZF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.96,"airlines":[["fab/b732",1],["fab/b737",1],["mpe/b732",1],["mpe/b733",1],["wja/b736",1],["wja/b737",1]]},
+        {"origin":"CYCB","destination":"CYZF","category":"arrival","route":"ECAFA..KADOG..CYZF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.64,"airlines":[["fab/at72",1],["fab/b732",1],["mpe/b732",1],["mpe/dh8d",1],["mpe/dh8b",1],["mpe/dh8c",1]]},
+        {"origin":"CYCO","destination":"CYZF","category":"arrival","route":"ECAFA..KADOG..CYZF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["fab/at72",1],["mpe/b732",1],["mpe/dh8d",1],["mpe/dh8b",1],["mpe/dh8c",1]]},
+        {"origin":"CYHK","destination":"CYZF","category":"arrival","route":"ECAFA..KADOG..CYZF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["fab/at43",1],["fab/at72",1],["mpe/dh8d",1],["mpe/dh8b",1],["mpe/dh8c",1]]},
+        {"origin":"CYVQ","destination":"CYZF","category":"arrival","route":"MITUG..LOWED..CYZF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["fab/b732",1],["mpe/b732",1],["mpe/b733",1]]},
+        {"origin":"","destination":"CYZF","category":"arrival","route":"ECAFA..KADOG..CYZF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.32,"airlines":[["fab/at72",1],["mpe/dh8d",1],["mpe/dh8b",1],["mpe/dh8c",1]]},
+        {"origin":"","destination":"CYZF","category":"arrival","route":"MOTUK..IWATE..CYZF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["ant/b737",1],["fab/b732",1],["mpe/b732",1]]},
+        {"origin":"","destination":"CYZF","category":"arrival","route":"JITEF..NAGCE..CYZF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["fab/at43",1],["fab/at72",1],["plr/js31",1]]},
+        {"origin":"","destination":"CYZF","category":"arrival","route":"MITUG..LOWED..CYZF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["ant/b737",1],["fab/at43",1],["fab/at72",1]]},
+        {"origin":"","destination":"CYZF","category":"arrival","route":"MOTUK..IWATE..CYZF","altitude":[4000,7000],"speed":250,"method":"random","rate":1.6,"airlines":[["c/c172",6],["c/p28a",5],["c/c182",3],["c/be36",2],["c/da42",1],["c/tb20",1],["c/c208",2],["c/pc12",2],["c/be20",1],["c/b350",1],["c/p180",1],["c/c510",1],["c/e50p",1],["c/c550",1],["c/e55p",1],["c/cl30",1],["c/c680",1],["c/h25b",1],["c/lj45",1],["c/f2th",1],["c/glf4",1],["c/glex",1],["c/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [62.8996,-113.7607,62.6251,-114.1876],
+            [62.6251,-114.1876,62.4628,-114.44],
+            [62.5734,-113.3013,62.5039,-114.0169],
+            [62.5039,-114.0169,62.4628,-114.44],
+            [61.9278,-114.561,62.264,-114.485],
+            [62.264,-114.485,62.4628,-114.44],
+            [62.4073,-115.5974,62.4422,-114.87],
+            [62.4422,-114.87,62.4628,-114.44]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [62.4732,-114.444,62.6394,-114.4686],
+            [62.5556,-114.4779,62.557,-114.4346],
+            [62.6387,-114.4903,62.64,-114.4469],
+            [62.4528,-114.441,62.2866,-114.4167],
+            [62.3704,-114.4073,62.369,-114.4503],
+            [62.2873,-114.3953,62.2859,-114.4382]
+        ]}
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LFRB/",
+    "info": {"country":"FR","city":"Brest","type":"large_airport","longestRunwayM":3100,"frequencies":{"atis":"129.350","twr":"120.100","app":"122.400"}},
+    "radio": {"twr":"Brest Tower","app":"Brest Approach","dep":"Brest Departure"},
+    "icao": "LFRB",
+    "iata": "BES",
+    "magnetic_north": -0.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [48.447899,-4.41854,"325ft"],
+    "rangeRings": {"enabled":true,"center":[48.447899,-4.41854],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":250,"speed":6},
+    "arrivalRunway": "25L",
+    "departureRunway": "25L",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[48.8526,-4.4196],[48.839,-4.2617],[48.7987,-4.1144],[48.7346,-3.9879],[48.6509,-3.8907],[48.5533,-3.8295],[48.4486,-3.8084],[48.3438,-3.8289],[48.2462,-3.8896],[48.1622,-3.9864],[48.0978,-4.1126],[48.0572,-4.2596],[48.0432,-4.4175],[48.0568,-4.5754],[48.0971,-4.7227],[48.1612,-4.8492],[48.2449,-4.9464],[48.3425,-5.0076],[48.4472,-5.0287],[48.552,-5.0081],[48.6496,-4.9475],[48.7336,-4.8507],[48.798,-4.7245],[48.8386,-4.5775]]}
+    ],
+    "fixes": {
+        "LFRB": [48.4479,-4.41854],
+        "MLX": [48.6467,-3.76269,"morlaix"],
+        "COPUS": [48.53097,-4.14448],
+        "ARE": [48.3326,-3.60247,"monts d arree"],
+        "HUKET": [48.40626,-4.12383],
+        "GOMCA": [48.33422,-5.21123],
+        "FULCI": [48.40566,-4.71305],
+        "_RWY07R04DME": [48.422,-4.53344],
+        "_RWY25L04DME": [48.47276,-4.30736]
+    },
+    "runways": [
+        {"name":["07R","25L"],"end":[[48.4434,-4.43835,"289ft"],[48.45144,-4.40254,"312ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "MLX2C": {"icao":"MLX2C","name":"Morlaix Two Charlie","rwy":{"LFRB07R":["_RWY25L04DME"],"LFRB25L":["_RWY07R04DME"]},"body":[],"exitPoints":{"MLX":["MLX"]},"draw":[["LFRB","MLX*"]]},
+        "ARE3E": {"icao":"ARE3E","name":"Monts D Arree Three Echo","rwy":{"LFRB07R":["_RWY25L04DME"],"LFRB25L":["_RWY07R04DME"]},"body":[],"exitPoints":{"ARE":["ARE"]},"draw":[["LFRB","ARE*"]]},
+        "GOMCA2C": {"icao":"GOMCA2C","name":"Gomca Two Charlie","rwy":{"LFRB07R":["_RWY25L04DME"],"LFRB25L":["_RWY07R04DME"]},"body":[],"exitPoints":{"GOMCA":["GOMCA"]},"draw":[["LFRB","GOMCA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LFRB","destination":"LFLL","category":"departure","route":"LFRB25L.ARE3E.ARE","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["ezy/a319",1],["hop/crj7",1],["hop/crjx",1],["hop/e145",1]]},
+        {"origin":"LFRB","destination":"LFML","category":"departure","route":"LFRB25L.ARE3E.ARE","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["afr/a319",1],["ryr/b738",1]]},
+        {"origin":"LFRB","destination":"LFPG","category":"departure","route":"LFRB25L.MLX2C.MLX","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["afr/a318",1],["afr/a321",1]]},
+        {"origin":"LFRB","destination":"LFPO","category":"departure","route":"LFRB25L.ARE3E.ARE","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["afr/a319",1],["afr/crjx",1]]},
+        {"origin":"LFRB","destination":"EGHI","category":"departure","route":"LFRB25L.MLX2C.MLX","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["bee/dh8d",1]]},
+        {"origin":"LFRB","destination":"","category":"departure","route":"LFRB25L.MLX2C.MLX","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["bcy/f50",1]]},
+        {"origin":"LFRB","destination":"","category":"departure","route":"LFRB25L.ARE3E.ARE","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["voe/b712",2],["hop/crj7",1],["vlg/a320",1]]},
+        {"origin":"LFRB","destination":"","category":"departure","route":"LFRB25L.ARE3E.ARE","altitude":"","speed":"","method":"random","rate":1.5,"airlines":[["f/c172",6],["f/p28a",5],["f/c182",3],["f/be36",2],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",1],["f/e50p",1],["f/c550",1],["f/e55p",1],["f/cl30",1],["f/c680",1],["f/h25b",1],["f/lj45",1],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]},
+        {"origin":"LFLL","destination":"LFRB","category":"arrival","route":"ARE..HUKET..LFRB","altitude":[4000,7000],"speed":250,"method":"random","rate":1.13,"airlines":[["ezy/a319",1],["hop/crj7",1],["hop/crjx",1],["hop/e145",1]]},
+        {"origin":"LFML","destination":"LFRB","category":"arrival","route":"ARE..HUKET..LFRB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.56,"airlines":[["afr/a319",1],["ryr/b738",1]]},
+        {"origin":"LFPG","destination":"LFRB","category":"arrival","route":"MLX..COPUS..LFRB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.56,"airlines":[["afr/a318",1],["afr/a321",1]]},
+        {"origin":"LFPO","destination":"LFRB","category":"arrival","route":"ARE..HUKET..LFRB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.56,"airlines":[["afr/a319",1],["afr/crjx",1]]},
+        {"origin":"EGHI","destination":"LFRB","category":"arrival","route":"MLX..COPUS..LFRB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["bee/dh8d",1]]},
+        {"origin":"","destination":"LFRB","category":"arrival","route":"MLX..COPUS..LFRB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["bcy/f50",1]]},
+        {"origin":"","destination":"LFRB","category":"arrival","route":"ARE..HUKET..LFRB","altitude":[4000,7000],"speed":250,"method":"random","rate":1.13,"airlines":[["voe/b712",2],["hop/crj7",1],["vlg/a320",1]]},
+        {"origin":"","destination":"LFRB","category":"arrival","route":"ARE..HUKET..LFRB","altitude":[4000,7000],"speed":250,"method":"random","rate":1.5,"airlines":[["f/c172",6],["f/p28a",5],["f/c182",3],["f/be36",2],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",1],["f/e50p",1],["f/c550",1],["f/e55p",1],["f/cl30",1],["f/c680",1],["f/h25b",1],["f/lj45",1],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [48.6467,-3.7627,48.531,-4.1445],
+            [48.531,-4.1445,48.4479,-4.4185],
+            [48.3326,-3.6025,48.4063,-4.1238],
+            [48.4063,-4.1238,48.4479,-4.4185],
+            [48.3342,-5.2112,48.4057,-4.7131],
+            [48.4057,-4.7131,48.4479,-4.4185]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [48.4434,-4.4383,48.3897,-4.6759],
+            [48.4072,-4.5524,48.4261,-4.562],
+            [48.3803,-4.6711,48.3992,-4.6807],
+            [48.4514,-4.4025,48.5046,-4.1644],
+            [48.4875,-4.2884,48.4686,-4.2787],
+            [48.5141,-4.1693,48.4951,-4.1596]
+        ]}
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ZYCC/",
+    "info": {"country":"CN","city":"Changchun","type":"large_airport","longestRunwayM":3200,"frequencies":{"atis":"126.250","twr":"118.450","app":"119.450"}},
+    "radio": {"twr":"Changchun Tower","app":"Changchun Approach","dep":"Changchun Departure"},
+    "icao": "ZYCC",
+    "iata": "CGQ",
+    "magnetic_north": -10.7,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [43.996201,125.684998,"706ft"],
+    "rangeRings": {"enabled":true,"center":[43.996201,125.684998],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":240,"speed":10},
+    "arrivalRunway": "24",
+    "departureRunway": "24",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[44.5264,125.5457],[44.5343,125.7412],[44.5055,125.9329],[44.442,126.1077],[44.3481,126.2537],[44.2302,126.3609],[44.0964,126.422],[43.9557,126.433],[43.8179,126.3929],[43.6921,126.3046],[43.5871,126.1741],[43.51,126.0103],[43.466,125.8243],[43.4581,125.6288],[43.4869,125.4371],[43.5504,125.2623],[43.6443,125.1163],[43.7622,125.0091],[43.896,124.948],[44.0367,124.937],[44.1745,124.9771],[44.3003,125.0654],[44.4053,125.1959],[44.4824,125.3597]]}
+    ],
+    "fixes": {
+        "ZYCC": [43.9962,125.685],
+        "KUVTU": [44.70233,125.6925],
+        "UKIHA": [44.24603,125.68765],
+        "ZIZEG": [43.69632,126.57369],
+        "TAHWU": [43.89011,125.99941],
+        "UBOBO": [43.36022,125.25841],
+        "VIGRO": [43.7712,125.53407],
+        "JIDPA": [43.70614,124.79004],
+        "SOSHA": [43.89358,125.36837],
+        "_RWY0604DME": [43.94301,125.60024],
+        "_RWY2404DME": [44.04935,125.76988]
+    },
+    "runways": [
+        {"name":["06","24"],"end":[[43.9868,125.67,"705ft"],[44.0056,125.7,"646ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "KUVTU3A": {"icao":"KUVTU3A","name":"Kuvtu Three Alpha","rwy":{"ZYCC06":["_RWY2404DME"],"ZYCC24":["_RWY0604DME"]},"body":[],"exitPoints":{"KUVTU":["KUVTU"]},"draw":[["ZYCC","KUVTU*"]]},
+        "ZIZEG2E": {"icao":"ZIZEG2E","name":"Zizeg Two Echo","rwy":{"ZYCC06":["_RWY2404DME"],"ZYCC24":["_RWY0604DME"]},"body":[],"exitPoints":{"ZIZEG":["ZIZEG"]},"draw":[["ZYCC","ZIZEG*"]]},
+        "UBOBO3E": {"icao":"UBOBO3E","name":"Ubobo Three Echo","rwy":{"ZYCC06":["_RWY2404DME"],"ZYCC24":["_RWY0604DME"]},"body":[],"exitPoints":{"UBOBO":["UBOBO"]},"draw":[["ZYCC","UBOBO*"]]},
+        "JIDPA1F": {"icao":"JIDPA1F","name":"Jidpa One Foxtrot","rwy":{"ZYCC06":["_RWY2404DME"],"ZYCC24":["_RWY0604DME"]},"body":[],"exitPoints":{"JIDPA":["JIDPA"]},"draw":[["ZYCC","JIDPA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ZYCC","destination":"ZBAA","category":"departure","route":"ZYCC24.JIDPA1F.JIDPA","altitude":"","speed":"","method":"random","rate":0.93,"airlines":[["cca/a320",1],["cca/a321",1],["cca/b738",1],["ces/a320",1],["chh/b738",1],["csn/a319",1],["csn/a320",1],["csn/a321",1],["cca/a333",1],["cca/a332",1]]},
+        {"origin":"ZYCC","destination":"ZSNJ","category":"departure","route":"ZYCC24.UBOBO3E.UBOBO","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["cca/a320",1],["csc/a320",1],["csn/a319",1],["csz/a320",1],["csz/b738",1],["cxa/b737",1]]},
+        {"origin":"ZYCC","destination":"ZSPD","category":"departure","route":"ZYCC24.UBOBO3E.UBOBO","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["ces/a320",1],["csh/b738",1],["csn/a319",1],["csn/a320",1],["csn/a321",1],["dkh/a320",1]]},
+        {"origin":"ZYCC","destination":"ZSQD","category":"departure","route":"ZYCC24.UBOBO3E.UBOBO","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["cca/a319",1],["cdg/b738",1],["csn/a320",1],["csn/a321",1],["csn/b738",1],["cxa/b737",1]]},
+        {"origin":"ZYCC","destination":"ZGGG","category":"departure","route":"ZYCC24.UBOBO3E.UBOBO","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["csn/a319",1],["csn/a320",1],["csn/a321",1],["csz/b738",1]]},
+        {"origin":"ZYCC","destination":"ZSHC","category":"departure","route":"ZYCC24.UBOBO3E.UBOBO","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["csn/a319",1],["csn/a320",1],["csn/a321",1],["cxa/b737",1]]},
+        {"origin":"ZYCC","destination":"","category":"departure","route":"ZYCC24.ZIZEG2E.ZIZEG","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["csn/a321",2],["csn/a319",1],["csn/a320",1]]},
+        {"origin":"ZYCC","destination":"","category":"departure","route":"ZYCC24.UBOBO3E.UBOBO","altitude":"","speed":"","method":"random","rate":2.06,"airlines":[["csn/a320",5],["csn/a321",2],["csz/a320",2],["csz/b738",2],["aar/a321",1],["aar/b763",1],["cca/a320",1],["cdg/b738",1],["cdg/crj2",1],["csc/a321",1],["csn/a319",1],["cxa/b737",1]]},
+        {"origin":"ZYCC","destination":"","category":"departure","route":"ZYCC24.JIDPA1F.JIDPA","altitude":"","speed":"","method":"random","rate":1.34,"airlines":[["csn/a319",2],["csn/a320",2],["cca/a321",1],["cca/b737",1],["ces/a320",1],["chh/b738",1],["csc/a319",1],["csc/a320",1],["csc/a321",1],["csn/a321",1],["csn/b738",1]]},
+        {"origin":"ZYCC","destination":"","category":"departure","route":"ZYCC24.UBOBO3E.UBOBO","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
+        {"origin":"ZYCC","destination":"","category":"departure","route":"ZYCC24.ZIZEG2E.ZIZEG","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
+        {"origin":"ZBAA","destination":"ZYCC","category":"arrival","route":"JIDPA..SOSHA..ZYCC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.93,"airlines":[["cca/a320",1],["cca/a321",1],["cca/b738",1],["ces/a320",1],["chh/b738",1],["csn/a319",1],["csn/a320",1],["csn/a321",1],["cca/a333",1],["cca/a332",1]]},
+        {"origin":"ZSNJ","destination":"ZYCC","category":"arrival","route":"UBOBO..VIGRO..ZYCC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.62,"airlines":[["cca/a320",1],["csc/a320",1],["csn/a319",1],["csz/a320",1],["csz/b738",1],["cxa/b737",1]]},
+        {"origin":"ZSPD","destination":"ZYCC","category":"arrival","route":"UBOBO..VIGRO..ZYCC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.62,"airlines":[["ces/a320",1],["csh/b738",1],["csn/a319",1],["csn/a320",1],["csn/a321",1],["dkh/a320",1]]},
+        {"origin":"ZSQD","destination":"ZYCC","category":"arrival","route":"UBOBO..VIGRO..ZYCC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.62,"airlines":[["cca/a319",1],["cdg/b738",1],["csn/a320",1],["csn/a321",1],["csn/b738",1],["cxa/b737",1]]},
+        {"origin":"ZGGG","destination":"ZYCC","category":"arrival","route":"UBOBO..VIGRO..ZYCC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.41,"airlines":[["csn/a319",1],["csn/a320",1],["csn/a321",1],["csz/b738",1]]},
+        {"origin":"ZSHC","destination":"ZYCC","category":"arrival","route":"UBOBO..VIGRO..ZYCC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.41,"airlines":[["csn/a319",1],["csn/a320",1],["csn/a321",1],["cxa/b737",1]]},
+        {"origin":"","destination":"ZYCC","category":"arrival","route":"ZIZEG..TAHWU..ZYCC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.41,"airlines":[["csn/a321",2],["csn/a319",1],["csn/a320",1]]},
+        {"origin":"","destination":"ZYCC","category":"arrival","route":"UBOBO..VIGRO..ZYCC","altitude":[6000,9000],"speed":250,"method":"random","rate":2.06,"airlines":[["csn/a320",5],["csn/a321",2],["csz/a320",2],["csz/b738",2],["aar/a321",1],["aar/b763",1],["cca/a320",1],["cdg/b738",1],["cdg/crj2",1],["csc/a321",1],["csn/a319",1],["cxa/b737",1]]},
+        {"origin":"","destination":"ZYCC","category":"arrival","route":"JIDPA..SOSHA..ZYCC","altitude":[6000,9000],"speed":250,"method":"random","rate":1.34,"airlines":[["csn/a319",2],["csn/a320",2],["cca/a321",1],["cca/b737",1],["ces/a320",1],["chh/b738",1],["csc/a319",1],["csc/a320",1],["csc/a321",1],["csn/a321",1],["csn/b738",1]]},
+        {"origin":"","destination":"ZYCC","category":"arrival","route":"UBOBO..VIGRO..ZYCC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
+        {"origin":"","destination":"ZYCC","category":"arrival","route":"ZIZEG..TAHWU..ZYCC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [44.7023,125.6925,44.246,125.6877],
+            [44.246,125.6877,43.9962,125.685],
+            [43.6963,126.5737,43.8901,125.9994],
+            [43.8901,125.9994,43.9962,125.685],
+            [43.3602,125.2584,43.7712,125.5341],
+            [43.7712,125.5341,43.9962,125.685],
+            [43.7061,124.79,43.8936,125.3684],
+            [43.8936,125.3684,43.9962,125.685]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [43.9868,125.67,43.8772,125.4958],
+            [43.9245,125.5919,43.9396,125.5737],
+            [43.8697,125.5049,43.8848,125.4867],
+            [44.0056,125.7,44.1149,125.8749],
+            [44.0678,125.7782,44.0527,125.7965],
+            [44.1224,125.8657,44.1074,125.884]
+        ]}
+    ]
+}

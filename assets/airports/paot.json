@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/PAOT/",
+    "info": {"country":"US","city":"Kotzebue","type":"medium_airport","longestRunwayM":1920,"frequencies":{"atis":"135.450"}},
+    "radio": {"twr":"Ralph Wien Tower","app":"Ralph Wien Approach","dep":"Ralph Wien Departure"},
+    "icao": "PAOT",
+    "iata": "OTZ",
+    "magnetic_north": 8.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [66.884697,-162.598999,"14ft"],
+    "rangeRings": {"enabled":true,"center":[66.884697,-162.598999],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":290,"speed":10},
+    "arrivalRunway": "27",
+    "departureRunway": "27",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[67.2851,-162.4484],[67.2561,-162.1896],[67.2019,-161.9587],[67.126,-161.7714],[67.0337,-161.6405],[66.9312,-161.575],[66.8256,-161.5792],[66.724,-161.6529],[66.6333,-161.7911],[66.5598,-161.9844],[66.5084,-162.2195],[66.4827,-162.4805],[66.4843,-162.7496],[66.5133,-163.0084],[66.5675,-163.2393],[66.6434,-163.4266],[66.7357,-163.5575],[66.8382,-163.623],[66.9438,-163.6188],[67.0454,-163.5451],[67.1361,-163.4069],[67.2096,-163.2136],[67.261,-162.9785],[67.2867,-162.7175]]}
+    ],
+    "fixes": {
+        "PAOT": [66.8847,-162.599],
+        "IWORO": [66.88868,-161.22878],
+        "FAJBU": [66.88618,-162.08991],
+        "EBALU": [66.43542,-161.84541],
+        "TUTEM": [66.71777,-162.31901],
+        "AFULO": [66.56542,-163.7018],
+        "IWINE": [66.76607,-163.00873],
+        "OQK": [67.5719,-162.974,"noatak"],
+        "VUKBE": [67.08013,-162.70564],
+        "_RWY0904DME": [66.90259,-162.77541],
+        "_RWY2704DME": [66.87273,-162.40158]
+    },
+    "runways": [
+        {"name":["09","27"],"end":[[66.8894,-162.60899,"13ft"],[66.8861,-162.56779,"14ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "IWORO2B": {"icao":"IWORO2B","name":"Iworo Two Bravo","rwy":{"PAOT09":["_RWY2704DME"],"PAOT27":["_RWY0904DME"]},"body":[],"exitPoints":{"IWORO":["IWORO"]},"draw":[["PAOT","IWORO*"]]},
+        "EBALU1C": {"icao":"EBALU1C","name":"Ebalu One Charlie","rwy":{"PAOT09":["_RWY2704DME"],"PAOT27":["_RWY0904DME"]},"body":[],"exitPoints":{"EBALU":["EBALU"]},"draw":[["PAOT","EBALU*"]]},
+        "AFULO2D": {"icao":"AFULO2D","name":"Afulo Two Delta","rwy":{"PAOT09":["_RWY2704DME"],"PAOT27":["_RWY0904DME"]},"body":[],"exitPoints":{"AFULO":["AFULO"]},"draw":[["PAOT","AFULO*"]]},
+        "OQK3D": {"icao":"OQK3D","name":"Noatak Three Delta","rwy":{"PAOT09":["_RWY2704DME"],"PAOT27":["_RWY0904DME"]},"body":[],"exitPoints":{"OQK":["OQK"]},"draw":[["PAOT","OQK*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"PAOT","destination":"PABL","category":"departure","route":"PAOT27.EBALU1C.EBALU","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["brg/c208",1]]},
+        {"origin":"PAOT","destination":"PADE","category":"departure","route":"PAOT27.EBALU1C.EBALU","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["brg/c208",1]]},
+        {"origin":"PAOT","destination":"PAFM","category":"departure","route":"PAOT27.IWORO2B.IWORO","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["brg/c208",1]]},
+        {"origin":"PAOT","destination":"PAGH","category":"departure","route":"PAOT27.IWORO2B.IWORO","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["brg/c208",1]]},
+        {"origin":"PAOT","destination":"PAIK","category":"departure","route":"PAOT27.IWORO2B.IWORO","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["brg/c208",1]]},
+        {"origin":"PAOT","destination":"","category":"departure","route":"PAOT27.IWORO2B.IWORO","altitude":"","speed":"","method":"random","rate":1.2,"airlines":[["brg/c208",3]]},
+        {"origin":"PAOT","destination":"","category":"departure","route":"PAOT27.OQK3D.OQK","altitude":"","speed":"","method":"random","rate":1.6,"airlines":[["brg/c208",4]]},
+        {"origin":"PAOT","destination":"","category":"departure","route":"PAOT27.EBALU1C.EBALU","altitude":"","speed":"","method":"random","rate":1.6,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"PABL","destination":"PAOT","category":"arrival","route":"EBALU..TUTEM..PAOT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["brg/c208",1]]},
+        {"origin":"PADE","destination":"PAOT","category":"arrival","route":"EBALU..TUTEM..PAOT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["brg/c208",1]]},
+        {"origin":"PAFM","destination":"PAOT","category":"arrival","route":"IWORO..FAJBU..PAOT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["brg/c208",1]]},
+        {"origin":"PAGH","destination":"PAOT","category":"arrival","route":"IWORO..FAJBU..PAOT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["brg/c208",1]]},
+        {"origin":"PAIK","destination":"PAOT","category":"arrival","route":"IWORO..FAJBU..PAOT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["brg/c208",1]]},
+        {"origin":"","destination":"PAOT","category":"arrival","route":"IWORO..FAJBU..PAOT","altitude":[4000,7000],"speed":250,"method":"random","rate":1.2,"airlines":[["brg/c208",3]]},
+        {"origin":"","destination":"PAOT","category":"arrival","route":"OQK..VUKBE..PAOT","altitude":[4000,7000],"speed":250,"method":"random","rate":1.6,"airlines":[["brg/c208",4]]},
+        {"origin":"","destination":"PAOT","category":"arrival","route":"EBALU..TUTEM..PAOT","altitude":[4000,7000],"speed":250,"method":"random","rate":1.6,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [66.8887,-161.2288,66.8862,-162.0899],
+            [66.8862,-162.0899,66.8847,-162.599],
+            [66.4354,-161.8454,66.7178,-162.319],
+            [66.7178,-162.319,66.8847,-162.599],
+            [66.5654,-163.7018,66.7661,-163.0087],
+            [66.7661,-163.0087,66.8847,-162.599],
+            [67.5719,-162.974,67.0801,-162.7056],
+            [67.0801,-162.7056,66.8847,-162.599]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [66.8894,-162.609,66.9221,-163.0254],
+            [66.8961,-162.8221,66.9157,-162.812],
+            [66.9123,-163.0304,66.9319,-163.0203],
+            [66.8861,-162.5678,66.8523,-162.1526],
+            [66.8792,-162.355,66.8596,-162.3651],
+            [66.8621,-162.1475,66.8426,-162.1577]
+        ]}
+    ]
+}

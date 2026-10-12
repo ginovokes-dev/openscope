@@ -1,0 +1,91 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EPPO/",
+    "info": {"country":"PL","city":"Poznan","type":"large_airport","longestRunwayM":2504,"frequencies":{"atis":"124.705","twr":"119.980","app":"123.040","gnd":"124.140"}},
+    "radio": {"twr":"Poznan Tower","app":"Poznan Approach","dep":"Poznan Departure"},
+    "icao": "EPPO",
+    "iata": "POZ",
+    "magnetic_north": 6,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [52.421598,16.823359,"308ft"],
+    "rangeRings": {"enabled":true,"center":[52.421598,16.823359],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":260,"speed":6},
+    "arrivalRunway": "28",
+    "departureRunway": "28",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[52.9582,16.9158],[52.9254,17.1404],[52.8581,17.3434],[52.7612,17.511],[52.6411,17.6317],[52.506,17.6973],[52.3652,17.7033],[52.2282,17.6494],[52.1044,17.5392],[52.0023,17.3802],[51.9287,17.1832],[51.8886,16.9618],[51.885,16.7309],[51.9178,16.5063],[51.9851,16.3033],[52.082,16.1357],[52.2021,16.0151],[52.3372,15.9495],[52.478,15.9434],[52.615,15.9973],[52.7388,16.1075],[52.8409,16.2665],[52.9145,16.4635],[52.9545,16.6849]]}
+    ],
+    "fixes": {
+        "EPPO": [52.4216,16.82336],
+        "JULRU": [52.37082,17.97827],
+        "OWOMA": [52.40363,17.23196],
+        "BBM": [52.1404,15.7962,"babimost"],
+        "KENEN": [52.31928,16.44963],
+        "NILCU": [52.45264,15.66657],
+        "KIBAF": [52.43258,16.41409],
+        "DRE": [52.8363,15.8414,"drezdenko"],
+        "ZOHIR": [52.56383,16.48657],
+        "_RWY1004DME": [52.44484,16.70183],
+        "_RWY2804DME": [52.39817,16.94516]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[52.4249,16.8061,"309ft"],[52.4182,16.841,"289ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "JULRU1A": {"icao":"JULRU1A","name":"Julru One Alpha","rwy":{"EPPO10":["_RWY2804DME"],"EPPO28":["_RWY1004DME"]},"body":[],"exitPoints":{"JULRU":["JULRU"]},"draw":[["EPPO","JULRU*"]]},
+        "BBM1E": {"icao":"BBM1E","name":"Babimost One Echo","rwy":{"EPPO10":["_RWY2804DME"],"EPPO28":["_RWY1004DME"]},"body":[],"exitPoints":{"BBM":["BBM"]},"draw":[["EPPO","BBM*"]]},
+        "NILCU3F": {"icao":"NILCU3F","name":"Nilcu Three Foxtrot","rwy":{"EPPO10":["_RWY2804DME"],"EPPO28":["_RWY1004DME"]},"body":[],"exitPoints":{"NILCU":["NILCU"]},"draw":[["EPPO","NILCU*"]]},
+        "DRE2D": {"icao":"DRE2D","name":"Drezdenko Two Delta","rwy":{"EPPO10":["_RWY2804DME"],"EPPO28":["_RWY1004DME"]},"body":[],"exitPoints":{"DRE":["DRE"]},"draw":[["EPPO","DRE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EPPO","destination":"EDDM","category":"departure","route":"EPPO28.BBM1E.BBM","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["dlh/crj7",1],["dlh/crj9",1]]},
+        {"origin":"EPPO","destination":"EDDF","category":"departure","route":"EPPO28.BBM1E.BBM","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["dlh/crj7",1]]},
+        {"origin":"EPPO","destination":"EDDL","category":"departure","route":"EPPO28.NILCU3F.NILCU","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["gwi/crj7",1],["gwi/crj9",1],["gwi/crj2",1]]},
+        {"origin":"EPPO","destination":"EGGD","category":"departure","route":"EPPO28.NILCU3F.NILCU","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["ryr/b738",1]]},
+        {"origin":"EPPO","destination":"EGGP","category":"departure","route":"EPPO28.NILCU3F.NILCU","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["ryr/b738",1]]},
+        {"origin":"EPPO","destination":"EGGW","category":"departure","route":"EPPO28.NILCU3F.NILCU","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["wzz/a320",1]]},
+        {"origin":"EPPO","destination":"","category":"departure","route":"EPPO28.JULRU1A.JULRU","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["lot/dh8d",1]]},
+        {"origin":"EPPO","destination":"","category":"departure","route":"EPPO28.BBM1E.BBM","altitude":"","speed":"","method":"random","rate":1.37,"airlines":[["ryr/b738",2],["wzz/a320",2]]},
+        {"origin":"EPPO","destination":"","category":"departure","route":"EPPO28.NILCU3F.NILCU","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["ryr/b738",2]]},
+        {"origin":"EPPO","destination":"","category":"departure","route":"EPPO28.DRE2D.DRE","altitude":"","speed":"","method":"random","rate":1.71,"airlines":[["ryr/b738",2],["wzz/a320",2],["sas/crj2",1]]},
+        {"origin":"EPPO","destination":"","category":"departure","route":"EPPO28.DRE2D.DRE","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["sp/c172",6],["sp/p28a",5],["sp/c182",3],["sp/be36",2],["sp/da42",1],["sp/tb20",1],["sp/c208",2],["sp/pc12",2],["sp/be20",1],["sp/b350",1],["sp/p180",1],["sp/c510",1],["sp/e50p",1],["sp/c550",2],["sp/e55p",1],["sp/cl30",1],["sp/c680",1],["sp/h25b",1],["sp/lj45",1],["sp/f2th",1],["sp/glf4",1],["sp/glex",1],["sp/glf5",1]]},
+        {"origin":"EPPO","destination":"","category":"departure","route":"EPPO28.JULRU1A.JULRU","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["sp/c172",6],["sp/p28a",5],["sp/c182",3],["sp/be36",2],["sp/da42",1],["sp/tb20",1],["sp/c208",2],["sp/pc12",2],["sp/be20",1],["sp/b350",1],["sp/p180",1],["sp/c510",1],["sp/e50p",1],["sp/c550",2],["sp/e55p",1],["sp/cl30",1],["sp/c680",1],["sp/h25b",1],["sp/lj45",1],["sp/f2th",1],["sp/glf4",1],["sp/glex",1],["sp/glf5",1]]},
+        {"origin":"EDDM","destination":"EPPO","category":"arrival","route":"BBM..KENEN..EPPO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["dlh/crj7",1],["dlh/crj9",1]]},
+        {"origin":"EDDF","destination":"EPPO","category":"arrival","route":"BBM..KENEN..EPPO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["dlh/crj7",1]]},
+        {"origin":"EDDL","destination":"EPPO","category":"arrival","route":"NILCU..KIBAF..EPPO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["gwi/crj7",1],["gwi/crj9",1],["gwi/crj2",1]]},
+        {"origin":"EGGD","destination":"EPPO","category":"arrival","route":"NILCU..KIBAF..EPPO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGGP","destination":"EPPO","category":"arrival","route":"NILCU..KIBAF..EPPO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGGW","destination":"EPPO","category":"arrival","route":"NILCU..KIBAF..EPPO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["wzz/a320",1]]},
+        {"origin":"","destination":"EPPO","category":"arrival","route":"JULRU..OWOMA..EPPO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["lot/dh8d",1]]},
+        {"origin":"","destination":"EPPO","category":"arrival","route":"BBM..KENEN..EPPO","altitude":[6000,9000],"speed":250,"method":"random","rate":1.37,"airlines":[["ryr/b738",2],["wzz/a320",2]]},
+        {"origin":"","destination":"EPPO","category":"arrival","route":"NILCU..KIBAF..EPPO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["ryr/b738",2]]},
+        {"origin":"","destination":"EPPO","category":"arrival","route":"DRE..ZOHIR..EPPO","altitude":[6000,9000],"speed":250,"method":"random","rate":1.71,"airlines":[["ryr/b738",2],["wzz/a320",2],["sas/crj2",1]]},
+        {"origin":"","destination":"EPPO","category":"arrival","route":"DRE..ZOHIR..EPPO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.44,"airlines":[["sp/c172",6],["sp/p28a",5],["sp/c182",3],["sp/be36",2],["sp/da42",1],["sp/tb20",1],["sp/c208",2],["sp/pc12",2],["sp/be20",1],["sp/b350",1],["sp/p180",1],["sp/c510",1],["sp/e50p",1],["sp/c550",2],["sp/e55p",1],["sp/cl30",1],["sp/c680",1],["sp/h25b",1],["sp/lj45",1],["sp/f2th",1],["sp/glf4",1],["sp/glex",1],["sp/glf5",1]]},
+        {"origin":"","destination":"EPPO","category":"arrival","route":"JULRU..OWOMA..EPPO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.44,"airlines":[["sp/c172",6],["sp/p28a",5],["sp/c182",3],["sp/be36",2],["sp/da42",1],["sp/tb20",1],["sp/c208",2],["sp/pc12",2],["sp/be20",1],["sp/b350",1],["sp/p180",1],["sp/c510",1],["sp/e50p",1],["sp/c550",2],["sp/e55p",1],["sp/cl30",1],["sp/c680",1],["sp/h25b",1],["sp/lj45",1],["sp/f2th",1],["sp/glf4",1],["sp/glex",1],["sp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [52.3708,17.9783,52.4036,17.232],
+            [52.4036,17.232,52.4216,16.8234],
+            [52.1404,15.7962,52.3193,16.4496],
+            [52.3193,16.4496,52.4216,16.8234],
+            [52.4526,15.6666,52.4326,16.4141],
+            [52.4326,16.4141,52.4216,16.8234],
+            [52.8363,15.8414,52.5638,16.4866],
+            [52.5638,16.4866,52.4216,16.8234]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [52.4249,16.8061,52.4746,16.5453],
+            [52.4403,16.6708,52.4593,16.6807],
+            [52.465,16.5403,52.4841,16.5502],
+            [52.4182,16.841,52.3679,17.1012],
+            [52.4027,16.9761,52.3836,16.9663],
+            [52.3775,17.1061,52.3584,17.0963]
+        ]}
+    ]
+}

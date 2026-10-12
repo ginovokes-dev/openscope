@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ZPLJ/",
+    "info": {"country":"CN","city":"Lijiang","type":"large_airport","longestRunwayM":3011},
+    "radio": {"twr":"Lijiang Tower","app":"Lijiang Approach","dep":"Lijiang Departure"},
+    "icao": "ZPLJ",
+    "iata": "LJG",
+    "magnetic_north": -1.4,
+    "ctr_radius": 60,
+    "ctr_ceiling": 17000,
+    "initial_alt": 12000,
+    "position": [26.677483,100.244944,"7359ft"],
+    "rangeRings": {"enabled":true,"center":[26.677483,100.244944],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":0,"speed":5},
+    "arrivalRunway": "02",
+    "departureRunway": "02",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":170,"airspace_class":"C","poly":[[27.2169,100.2302],[27.2019,100.3869],[27.1512,100.534],[27.0682,100.6614],[26.9586,100.7604],[26.8298,100.8243],[26.6907,100.8486],[26.5506,100.8319],[26.4192,100.7751],[26.3054,100.6823],[26.2169,100.5596],[26.1598,100.4154],[26.1381,100.2597],[26.153,100.1029],[26.2037,99.9559],[26.2867,99.8285],[26.3963,99.7295],[26.5251,99.6656],[26.6643,99.6412],[26.8044,99.658],[26.9358,99.7148],[27.0496,99.8076],[27.1381,99.9303],[27.1951,100.0744]]}
+    ],
+    "fixes": {
+        "ZPLJ": [26.67748,100.24494],
+        "AKURO": [27.15483,100.8273],
+        "WEJMI": [26.84637,100.45098],
+        "ARUCA": [26.39773,100.97056],
+        "AGECO": [26.57851,100.50166],
+        "UJISU": [25.97701,100.34494],
+        "DASAS": [26.42966,100.28032],
+        "EWOJO": [26.15855,99.70899],
+        "UZUGU": [26.49389,100.05532],
+        "IFUWI": [27.17755,99.68697],
+        "WOGVE": [26.8544,100.04754],
+        "_RWY0204DME": [26.60039,100.21861],
+        "_RWY2004DME": [26.75375,100.27092]
+    },
+    "runways": [
+        {"name":["02","20"],"end":[[26.66412,100.24033,"7329ft"],[26.69002,100.24917,"7329ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "AKURO1E": {"icao":"AKURO1E","name":"Akuro One Echo","rwy":{"ZPLJ02":["_RWY2004DME"],"ZPLJ20":["_RWY0204DME"]},"body":[],"exitPoints":{"AKURO":["AKURO"]},"draw":[["ZPLJ","AKURO*"]]},
+        "ARUCA2E": {"icao":"ARUCA2E","name":"Aruca Two Echo","rwy":{"ZPLJ02":["_RWY2004DME"],"ZPLJ20":["_RWY0204DME"]},"body":[],"exitPoints":{"ARUCA":["ARUCA"]},"draw":[["ZPLJ","ARUCA*"]]},
+        "UJISU3C": {"icao":"UJISU3C","name":"Ujisu Three Charlie","rwy":{"ZPLJ02":["_RWY2004DME"],"ZPLJ20":["_RWY0204DME"]},"body":[],"exitPoints":{"UJISU":["UJISU"]},"draw":[["ZPLJ","UJISU*"]]},
+        "EWOJO2B": {"icao":"EWOJO2B","name":"Ewojo Two Bravo","rwy":{"ZPLJ02":["_RWY2004DME"],"ZPLJ20":["_RWY0204DME"]},"body":[],"exitPoints":{"EWOJO":["EWOJO"]},"draw":[["ZPLJ","EWOJO*"]]},
+        "IFUWI3E": {"icao":"IFUWI3E","name":"Ifuwi Three Echo","rwy":{"ZPLJ02":["_RWY2004DME"],"ZPLJ20":["_RWY0204DME"]},"body":[],"exitPoints":{"IFUWI":["IFUWI"]},"draw":[["ZPLJ","IFUWI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ZPLJ","destination":"ZPPP","category":"departure","route":"ZPLJ02.ARUCA2E.ARUCA","altitude":"","speed":"","method":"random","rate":1.22,"airlines":[["csn/b737",2],["ces/b733",1],["ces/b737",1],["csn/a320",1],["csn/b733",1]]},
+        {"origin":"ZPLJ","destination":"ZUCK","category":"departure","route":"ZPLJ02.AKURO1E.AKURO","altitude":"","speed":"","method":"random","rate":1.01,"airlines":[["cca/b737",1],["chb/a319",1],["chb/a320",1],["csc/a319",1],["cxa/b737",1]]},
+        {"origin":"ZPLJ","destination":"ZBAA","category":"departure","route":"ZPLJ02.AKURO1E.AKURO","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["cca/a320",1],["ces/b737",1]]},
+        {"origin":"ZPLJ","destination":"ZGGG","category":"departure","route":"ZPLJ02.ARUCA2E.ARUCA","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["ces/b733",1],["ces/b737",1]]},
+        {"origin":"ZPLJ","destination":"ZLXY","category":"departure","route":"ZPLJ02.AKURO1E.AKURO","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["ces/a319",1],["csz/b738",1]]},
+        {"origin":"ZPLJ","destination":"ZSHC","category":"departure","route":"ZPLJ02.AKURO1E.AKURO","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["cca/a319",1],["cxa/b737",1]]},
+        {"origin":"ZPLJ","destination":"","category":"departure","route":"ZPLJ02.AKURO1E.AKURO","altitude":"","speed":"","method":"random","rate":1.42,"airlines":[["csc/a319",2],["dkh/a320",2],["aar/a320",1],["cca/a320",1],["ces/b737",1]]},
+        {"origin":"ZPLJ","destination":"","category":"departure","route":"ZPLJ02.ARUCA2E.ARUCA","altitude":"","speed":"","method":"random","rate":0.61,"airlines":[["ces/b737",1],["csn/a319",1],["mda/b738",1]]},
+        {"origin":"ZPLJ","destination":"","category":"departure","route":"ZPLJ02.UJISU3C.UJISU","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["ces/b737",1],["tgw/a320",1]]},
+        {"origin":"ZPLJ","destination":"","category":"departure","route":"ZPLJ02.EWOJO2B.EWOJO","altitude":"","speed":"","method":"random","rate":0.2,"airlines":[["ces/b733",1]]},
+        {"origin":"ZPLJ","destination":"","category":"departure","route":"ZPLJ02.AKURO1E.AKURO","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
+        {"origin":"ZPLJ","destination":"","category":"departure","route":"ZPLJ02.UJISU3C.UJISU","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
+        {"origin":"ZPPP","destination":"ZPLJ","category":"arrival","route":"ARUCA..AGECO..ZPLJ","altitude":[13000,16000],"speed":250,"method":"random","rate":1.22,"airlines":[["csn/b737",2],["ces/b733",1],["ces/b737",1],["csn/a320",1],["csn/b733",1]]},
+        {"origin":"ZUCK","destination":"ZPLJ","category":"arrival","route":"AKURO..WEJMI..ZPLJ","altitude":[13000,16000],"speed":250,"method":"random","rate":1.01,"airlines":[["cca/b737",1],["chb/a319",1],["chb/a320",1],["csc/a319",1],["cxa/b737",1]]},
+        {"origin":"ZBAA","destination":"ZPLJ","category":"arrival","route":"AKURO..WEJMI..ZPLJ","altitude":[13000,16000],"speed":250,"method":"random","rate":0.41,"airlines":[["cca/a320",1],["ces/b737",1]]},
+        {"origin":"ZGGG","destination":"ZPLJ","category":"arrival","route":"ARUCA..AGECO..ZPLJ","altitude":[13000,16000],"speed":250,"method":"random","rate":0.41,"airlines":[["ces/b733",1],["ces/b737",1]]},
+        {"origin":"ZLXY","destination":"ZPLJ","category":"arrival","route":"AKURO..WEJMI..ZPLJ","altitude":[13000,16000],"speed":250,"method":"random","rate":0.41,"airlines":[["ces/a319",1],["csz/b738",1]]},
+        {"origin":"ZSHC","destination":"ZPLJ","category":"arrival","route":"AKURO..WEJMI..ZPLJ","altitude":[13000,16000],"speed":250,"method":"random","rate":0.41,"airlines":[["cca/a319",1],["cxa/b737",1]]},
+        {"origin":"","destination":"ZPLJ","category":"arrival","route":"AKURO..WEJMI..ZPLJ","altitude":[13000,16000],"speed":250,"method":"random","rate":1.42,"airlines":[["csc/a319",2],["dkh/a320",2],["aar/a320",1],["cca/a320",1],["ces/b737",1]]},
+        {"origin":"","destination":"ZPLJ","category":"arrival","route":"ARUCA..AGECO..ZPLJ","altitude":[13000,16000],"speed":250,"method":"random","rate":0.61,"airlines":[["ces/b737",1],["csn/a319",1],["mda/b738",1]]},
+        {"origin":"","destination":"ZPLJ","category":"arrival","route":"UJISU..DASAS..ZPLJ","altitude":[13000,16000],"speed":250,"method":"random","rate":0.41,"airlines":[["ces/b737",1],["tgw/a320",1]]},
+        {"origin":"","destination":"ZPLJ","category":"arrival","route":"EWOJO..UZUGU..ZPLJ","altitude":[13000,16000],"speed":250,"method":"random","rate":0.2,"airlines":[["ces/b733",1]]},
+        {"origin":"","destination":"ZPLJ","category":"arrival","route":"AKURO..WEJMI..ZPLJ","altitude":[13000,16000],"speed":250,"method":"random","rate":0.44,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
+        {"origin":"","destination":"ZPLJ","category":"arrival","route":"UJISU..DASAS..ZPLJ","altitude":[13000,16000],"speed":250,"method":"random","rate":0.44,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [27.1548,100.8273,26.8464,100.451],
+            [26.8464,100.451,26.6775,100.2449],
+            [26.3977,100.9706,26.5785,100.5017],
+            [26.5785,100.5017,26.6775,100.2449],
+            [25.977,100.3449,26.4297,100.2803],
+            [26.4297,100.2803,26.6775,100.2449],
+            [26.1585,99.709,26.4939,100.0553],
+            [26.4939,100.0553,26.6775,100.2449],
+            [27.1775,99.687,26.8544,100.0475],
+            [26.8544,100.0475,26.6775,100.2449]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [26.6641,100.2403,26.5048,100.1861],
+            [26.5815,100.2239,26.5874,100.2025],
+            [26.5019,100.1968,26.5077,100.1754],
+            [26.69,100.2492,26.8493,100.3036],
+            [26.7726,100.2657,26.7668,100.2871],
+            [26.8522,100.2929,26.8464,100.3143]
+        ]}
+    ]
+}

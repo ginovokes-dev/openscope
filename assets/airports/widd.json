@@ -1,0 +1,92 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/WIDD/",
+    "info": {"country":"ID","city":"Batam","type":"large_airport","longestRunwayM":4030,"frequencies":{"atis":"126.250","twr":"118.300","app":"130.200","gnd":"121.750"}},
+    "radio": {"twr":"Hang Nadim Tower","app":"Hang Nadim Approach","dep":"Hang Nadim Departure"},
+    "icao": "WIDD",
+    "iata": "BTH",
+    "magnetic_north": 0.2,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [1.12103,104.119003,"126ft"],
+    "rangeRings": {"enabled":true,"center":[1.12103,104.119003],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":60,"speed":9},
+    "arrivalRunway": "04",
+    "departureRunway": "04",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[1.6606,104.1209],[1.6417,104.2605],[1.5874,104.3905],[1.5012,104.502],[1.3892,104.5873],[1.2589,104.6408],[1.1191,104.6587],[0.9796,104.6398],[0.8496,104.5854],[0.7382,104.4993],[0.6528,104.3872],[0.5993,104.2569],[0.5814,104.1171],[0.6003,103.9775],[0.6547,103.8475],[0.7408,103.7361],[0.8529,103.6507],[0.9832,103.5972],[1.1229,103.5793],[1.2625,103.5982],[1.3925,103.6526],[1.5039,103.7387],[1.5893,103.8508],[1.6427,103.9811]]}
+    ],
+    "fixes": {
+        "WIDD": [1.12103,104.119],
+        "FOHAV": [1.76071,104.41816],
+        "DUSHU": [1.34734,104.22484],
+        "GOSOM": [0.97378,104.80976],
+        "HUPUB": [1.06894,104.36339],
+        "UWIFU": [0.45101,104.34201],
+        "UCECO": [0.88398,104.1979],
+        "TG": [1.04945,103.385,"tanjung balai"],
+        "IBADO": [1.09678,103.8703],
+        "VJR": [1.72986,103.622,"johor bahru"],
+        "BED": [1.31626,103.964,"bedok"],
+        "_RWY0404DME": [1.05752,104.06289],
+        "_RWY2204DME": [1.18454,104.17511]
+    },
+    "runways": [
+        {"name":["04","22"],"end":[[1.10745,104.107,"125ft"],[1.13461,104.131,"69ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "FOHAV2F": {"icao":"FOHAV2F","name":"Fohav Two Foxtrot","rwy":{"WIDD04":["_RWY2204DME"],"WIDD22":["_RWY0404DME"]},"body":[],"exitPoints":{"FOHAV":["FOHAV"]},"draw":[["WIDD","FOHAV*"]]},
+        "GOSOM1D": {"icao":"GOSOM1D","name":"Gosom One Delta","rwy":{"WIDD04":["_RWY2204DME"],"WIDD22":["_RWY0404DME"]},"body":[],"exitPoints":{"GOSOM":["GOSOM"]},"draw":[["WIDD","GOSOM*"]]},
+        "UWIFU1E": {"icao":"UWIFU1E","name":"Uwifu One Echo","rwy":{"WIDD04":["_RWY2204DME"],"WIDD22":["_RWY0404DME"]},"body":[],"exitPoints":{"UWIFU":["UWIFU"]},"draw":[["WIDD","UWIFU*"]]},
+        "TG1A": {"icao":"TG1A","name":"Tanjung Balai One Alpha","rwy":{"WIDD04":["_RWY2204DME"],"WIDD22":["_RWY0404DME"]},"body":[],"exitPoints":{"TG":["TG"]},"draw":[["WIDD","TG*"]]},
+        "VJR2E": {"icao":"VJR2E","name":"Johor Bahru Two Echo","rwy":{"WIDD04":["_RWY2204DME"],"WIDD22":["_RWY0404DME"]},"body":[],"exitPoints":{"VJR":["VJR"]},"draw":[["WIDD","VJR*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"WIDD","destination":"WIII","category":"departure","route":"WIDD04.UWIFU1E.UWIFU","altitude":"","speed":"","method":"random","rate":0.89,"airlines":[["gia/b738",1],["lni/b739",1],["sjy/b733",1]]},
+        {"origin":"WIDD","destination":"WIBB","category":"departure","route":"WIDD04.TG1A.TG","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["lni/b738",1],["lni/b739",1]]},
+        {"origin":"WIDD","destination":"WIEE","category":"departure","route":"WIDD04.TG1A.TG","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["lni/b734",1],["lni/b738",1]]},
+        {"origin":"WIDD","destination":"WIJJ","category":"departure","route":"WIDD04.UWIFU1E.UWIFU","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["lni/b739",1],["sjy/b735",1]]},
+        {"origin":"WIDD","destination":"WILL","category":"departure","route":"WIDD04.UWIFU1E.UWIFU","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["gia/crjx",1],["lni/b738",1]]},
+        {"origin":"WIDD","destination":"","category":"departure","route":"WIDD04.GOSOM1D.GOSOM","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["lni/b738",2]]},
+        {"origin":"WIDD","destination":"","category":"departure","route":"WIDD04.UWIFU1E.UWIFU","altitude":"","speed":"","method":"random","rate":1.78,"airlines":[["lni/b738",3],["lni/b739",3]]},
+        {"origin":"WIDD","destination":"","category":"departure","route":"WIDD04.VJR2E.VJR","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["ffm/at72",1]]},
+        {"origin":"WIDD","destination":"","category":"departure","route":"WIDD04.GOSOM1D.GOSOM","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",2],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]},
+        {"origin":"WIDD","destination":"","category":"departure","route":"WIDD04.FOHAV2F.FOHAV","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",2],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]},
+        {"origin":"WIII","destination":"WIDD","category":"arrival","route":"UWIFU..UCECO..WIDD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.89,"airlines":[["gia/b738",1],["lni/b739",1],["sjy/b733",1]]},
+        {"origin":"WIBB","destination":"WIDD","category":"arrival","route":"TG..IBADO..WIDD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.59,"airlines":[["lni/b738",1],["lni/b739",1]]},
+        {"origin":"WIEE","destination":"WIDD","category":"arrival","route":"TG..IBADO..WIDD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.59,"airlines":[["lni/b734",1],["lni/b738",1]]},
+        {"origin":"WIJJ","destination":"WIDD","category":"arrival","route":"UWIFU..UCECO..WIDD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.59,"airlines":[["lni/b739",1],["sjy/b735",1]]},
+        {"origin":"WILL","destination":"WIDD","category":"arrival","route":"UWIFU..UCECO..WIDD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.59,"airlines":[["gia/crjx",1],["lni/b738",1]]},
+        {"origin":"","destination":"WIDD","category":"arrival","route":"GOSOM..HUPUB..WIDD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.59,"airlines":[["lni/b738",2]]},
+        {"origin":"","destination":"WIDD","category":"arrival","route":"UWIFU..UCECO..WIDD","altitude":[6000,9000],"speed":250,"method":"random","rate":1.78,"airlines":[["lni/b738",3],["lni/b739",3]]},
+        {"origin":"","destination":"WIDD","category":"arrival","route":"VJR..BED..WIDD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.3,"airlines":[["ffm/at72",1]]},
+        {"origin":"","destination":"WIDD","category":"arrival","route":"GOSOM..HUPUB..WIDD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.41,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",2],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]},
+        {"origin":"","destination":"WIDD","category":"arrival","route":"FOHAV..DUSHU..WIDD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.41,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",2],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [1.7607,104.4182,1.3473,104.2248],
+            [1.3473,104.2248,1.121,104.119],
+            [0.9738,104.8098,1.0689,104.3634],
+            [1.0689,104.3634,1.121,104.119],
+            [0.451,104.342,0.884,104.1979],
+            [0.884,104.1979,1.121,104.119],
+            [1.0495,103.385,1.0968,103.8703],
+            [1.0968,103.8703,1.121,104.119],
+            [1.7299,103.622,1.3163,103.964],
+            [1.3163,103.964,1.121,104.119]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [1.1075,104.107,0.9826,103.9967],
+            [1.0384,104.0594,1.0516,104.0444],
+            [0.976,104.0042,0.9892,103.9892],
+            [1.1346,104.131,1.2594,104.2413],
+            [1.2036,104.1786,1.1904,104.1936],
+            [1.2661,104.2338,1.2528,104.2488]
+        ]}
+    ]
+}

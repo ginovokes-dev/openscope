@@ -1,0 +1,79 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LGSR/",
+    "info": {"country":"GR","city":"Santorini Island","type":"large_airport","longestRunwayM":2197,"frequencies":{"twr":"118.050","app":"118.050"}},
+    "radio": {"twr":"Santorini Tower","app":"Santorini Approach","dep":"Santorini Departure"},
+    "icao": "LGSR",
+    "iata": "JTR",
+    "magnetic_north": 5.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [36.400045,25.478638,"127ft"],
+    "rangeRings": {"enabled":true,"center":[36.400045,25.478638],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":330,"speed":11},
+    "arrivalRunway": "33",
+    "departureRunway": "33",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[36.8031,25.5233],[36.7801,25.6514],[36.7311,25.7677],[36.6596,25.8644],[36.5704,25.9347],[36.4696,25.9739],[36.3641,25.9794],[36.261,25.9508],[36.1673,25.89],[36.0896,25.8012],[36.033,25.6903],[36.0014,25.5651],[35.997,25.4339],[36.02,25.3058],[36.0689,25.1895],[36.1405,25.0929],[36.2297,25.0226],[36.3305,24.9833],[36.436,24.9778],[36.5391,25.0065],[36.6327,25.0673],[36.7105,25.1561],[36.7671,25.2669],[36.7987,25.3922]]}
+    ],
+    "fixes": {
+        "LGSR": [36.40005,25.47864],
+        "KHZ": [36.7454,26.3753,"astypalaia"],
+        "HOBIG": [36.48632,25.70263],
+        "ZIWAG": [35.97055,25.88106],
+        "IWALE": [36.24047,25.62815],
+        "GAGRI": [36.07614,24.94504],
+        "JOVIM": [36.2797,25.28038],
+        "PAO": [37.0126,25.1289,"paros"],
+        "TUBFO": [36.58165,25.37495],
+        "_RWY1504DME": [36.47051,25.44613],
+        "_RWY3304DME": [36.32778,25.51232]
+    },
+    "runways": [
+        {"name":["15","33"],"end":[[36.4081,25.4751,"123ft"],[36.3902,25.4834,"53ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "KHZ3B": {"icao":"KHZ3B","name":"Astypalaia Three Bravo","rwy":{"LGSR15":["_RWY3304DME"],"LGSR33":["_RWY1504DME"]},"body":[],"exitPoints":{"KHZ":["KHZ"]},"draw":[["LGSR","KHZ*"]]},
+        "ZIWAG2D": {"icao":"ZIWAG2D","name":"Ziwag Two Delta","rwy":{"LGSR15":["_RWY3304DME"],"LGSR33":["_RWY1504DME"]},"body":[],"exitPoints":{"ZIWAG":["ZIWAG"]},"draw":[["LGSR","ZIWAG*"]]},
+        "GAGRI2A": {"icao":"GAGRI2A","name":"Gagri Two Alpha","rwy":{"LGSR15":["_RWY3304DME"],"LGSR33":["_RWY1504DME"]},"body":[],"exitPoints":{"GAGRI":["GAGRI"]},"draw":[["LGSR","GAGRI*"]]},
+        "PAO2B": {"icao":"PAO2B","name":"Paros Two Bravo","rwy":{"LGSR15":["_RWY3304DME"],"LGSR33":["_RWY1504DME"]},"body":[],"exitPoints":{"PAO":["PAO"]},"draw":[["LGSR","PAO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LGSR","destination":"LOWW","category":"departure","route":"LGSR33.PAO2B.PAO","altitude":"","speed":"","method":"random","rate":1.72,"airlines":[["ber/a320",1],["ber/a321",1],["ber/e190",1],["nly/a320",1],["nly/a321",1],["nly/e190",1]]},
+        {"origin":"LGSR","destination":"LGAV","category":"departure","route":"LGSR33.PAO2B.PAO","altitude":"","speed":"","method":"random","rate":1.14,"airlines":[["aee/a319",1],["aee/a320",1],["aee/a321",1],["aee/dh8d",1]]},
+        {"origin":"LGSR","destination":"EGKK","category":"departure","route":"LGSR33.PAO2B.PAO","altitude":"","speed":"","method":"random","rate":0.86,"airlines":[["ezy/a320",1],["nax/b738",1],["tvf/b752",1]]},
+        {"origin":"LGSR","destination":"EGCC","category":"departure","route":"LGSR33.PAO2B.PAO","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["ezy/a320",1],["tvf/b752",1]]},
+        {"origin":"LGSR","destination":"EDDK","category":"departure","route":"LGSR33.PAO2B.PAO","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["gwi/a319",1]]},
+        {"origin":"LGSR","destination":"","category":"departure","route":"LGSR33.PAO2B.PAO","altitude":"","speed":"","method":"random","rate":1.43,"airlines":[["tra/b738",3],["baw/a320",1],["voe/b712",1]]},
+        {"origin":"LOWW","destination":"LGSR","category":"arrival","route":"PAO..TUBFO..LGSR","altitude":[4000,7000],"speed":250,"method":"random","rate":1.72,"airlines":[["ber/a320",1],["ber/a321",1],["ber/e190",1],["nly/a320",1],["nly/a321",1],["nly/e190",1]]},
+        {"origin":"LGAV","destination":"LGSR","category":"arrival","route":"PAO..TUBFO..LGSR","altitude":[4000,7000],"speed":250,"method":"random","rate":1.14,"airlines":[["aee/a319",1],["aee/a320",1],["aee/a321",1],["aee/dh8d",1]]},
+        {"origin":"EGKK","destination":"LGSR","category":"arrival","route":"PAO..TUBFO..LGSR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.86,"airlines":[["ezy/a320",1],["nax/b738",1],["tvf/b752",1]]},
+        {"origin":"EGCC","destination":"LGSR","category":"arrival","route":"PAO..TUBFO..LGSR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.57,"airlines":[["ezy/a320",1],["tvf/b752",1]]},
+        {"origin":"EDDK","destination":"LGSR","category":"arrival","route":"PAO..TUBFO..LGSR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.29,"airlines":[["gwi/a319",1]]},
+        {"origin":"","destination":"LGSR","category":"arrival","route":"PAO..TUBFO..LGSR","altitude":[4000,7000],"speed":250,"method":"random","rate":1.43,"airlines":[["tra/b738",3],["baw/a320",1],["voe/b712",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [36.7454,26.3753,36.4863,25.7026],
+            [36.4863,25.7026,36.4,25.4786],
+            [35.9706,25.8811,36.2405,25.6282],
+            [36.2405,25.6282,36.4,25.4786],
+            [36.0761,24.945,36.2797,25.2804],
+            [36.2797,25.2804,36.4,25.4786],
+            [37.0126,25.1289,36.5817,25.375],
+            [36.5817,25.375,36.4,25.4786]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [36.4081,25.4751,36.5641,25.4026],
+            [36.4826,25.4272,36.4896,25.4505],
+            [36.5606,25.3909,36.5676,25.4142],
+            [36.3902,25.4834,36.2341,25.5556],
+            [36.3157,25.5312,36.3087,25.5079],
+            [36.2376,25.5672,36.2306,25.544]
+        ]}
+    ]
+}

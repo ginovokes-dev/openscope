@@ -1,0 +1,85 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/UWUU/",
+    "info": {"country":"RU","city":"Ufa","type":"large_airport","longestRunwayM":3761,"frequencies":{"atis":"124.800","twr":"120.900","gnd":"119.000"}},
+    "radio": {"twr":"Ufa Tower","app":"Ufa Approach","dep":"Ufa Departure"},
+    "icao": "UWUU",
+    "iata": "UFA",
+    "magnetic_north": 13.8,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [54.557499,55.874401,"449ft"],
+    "rangeRings": {"enabled":true,"center":[54.557499,55.874401],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":340,"speed":12},
+    "arrivalRunway": "32L",
+    "departureRunway": "32L",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[54.9505,56.0409],[54.9121,56.2106],[54.8496,56.3574],[54.7671,56.4713],[54.6704,56.5446],[54.566,56.5721],[54.461,56.5521],[54.3625,56.486],[54.2774,56.3781],[54.2113,56.2359],[54.1689,56.0691],[54.1529,55.889],[54.1645,55.7079],[54.2029,55.5382],[54.2654,55.3914],[54.3479,55.2775],[54.4446,55.2042],[54.549,55.1767],[54.654,55.1967],[54.7525,55.2628],[54.8376,55.3707],[54.9037,55.5129],[54.9461,55.6797],[54.9621,55.8598]]}
+    ],
+    "fixes": {
+        "UWUU": [54.5575,55.8744],
+        "MI": [55.0667,57.0667,"mikhaylovka"],
+        "HUBCO": [54.67602,56.15192],
+        "DX": [54.3,56.7833,"maksim gorky"],
+        "JOCJU": [54.46976,56.18408],
+        "LP": [53.9667,54.7833,"shafranovo"],
+        "TOWAK": [54.42109,55.62249],
+        "VORTA": [54.7073,54.98343],
+        "ISEVA": [54.61315,55.54337],
+        "_RWY14R04DME": [54.63133,55.7932],
+        "_RWY32L04DME": [54.48554,55.93369]
+    },
+    "runways": [
+        {"name":["14R","32L"],"end":[[54.57319,55.84935,"370ft"],[54.54371,55.87774,"448ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "MI3A": {"icao":"MI3A","name":"Mikhaylovka Three Alpha","rwy":{"UWUU14R":["_RWY32L04DME"],"UWUU32L":["_RWY14R04DME"]},"body":[],"exitPoints":{"MI":["MI"]},"draw":[["UWUU","MI*"]]},
+        "DX1E": {"icao":"DX1E","name":"Maksim Gorky One Echo","rwy":{"UWUU14R":["_RWY32L04DME"],"UWUU32L":["_RWY14R04DME"]},"body":[],"exitPoints":{"DX":["DX"]},"draw":[["UWUU","DX*"]]},
+        "LP2C": {"icao":"LP2C","name":"Shafranovo Two Charlie","rwy":{"UWUU14R":["_RWY32L04DME"],"UWUU32L":["_RWY14R04DME"]},"body":[],"exitPoints":{"LP":["LP"]},"draw":[["UWUU","LP*"]]},
+        "VORTA3D": {"icao":"VORTA3D","name":"Vorta Three Delta","rwy":{"UWUU14R":["_RWY32L04DME"],"UWUU32L":["_RWY14R04DME"]},"body":[],"exitPoints":{"VORTA":["VORTA"]},"draw":[["UWUU","VORTA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"UWUU","destination":"UUDD","category":"departure","route":"UWUU32L.VORTA3D.VORTA","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["sbi/a319",1],["svr/a320",1],["tso/b735",1]]},
+        {"origin":"UWUU","destination":"LKPR","category":"departure","route":"UWUU32L.VORTA3D.VORTA","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["csa/a319",1],["csa/a320",1]]},
+        {"origin":"UWUU","destination":"ULLI","category":"departure","route":"UWUU32L.VORTA3D.VORTA","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["afl/a148",1],["afl/a319",1]]},
+        {"origin":"UWUU","destination":"UUEE","category":"departure","route":"UWUU32L.VORTA3D.VORTA","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["afl/a319",1],["afl/a320",1]]},
+        {"origin":"UWUU","destination":"LTFM","category":"departure","route":"UWUU32L.LP2C.LP","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["thy/a319",1]]},
+        {"origin":"UWUU","destination":"","category":"departure","route":"UWUU32L.MI3A.MI","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["gzp/t154",1]]},
+        {"origin":"UWUU","destination":"","category":"departure","route":"UWUU32L.DX1E.DX","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["svr/a320",2],["uzb/a320",1]]},
+        {"origin":"UWUU","destination":"","category":"departure","route":"UWUU32L.LP2C.LP","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["aby/a320",1],["fdb/b738",1]]},
+        {"origin":"UWUU","destination":"","category":"departure","route":"UWUU32L.LP2C.LP","altitude":"","speed":"","method":"random","rate":1.55,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",1],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]},
+        {"origin":"UUDD","destination":"UWUU","category":"arrival","route":"VORTA..ISEVA..UWUU","altitude":[4000,7000],"speed":250,"method":"random","rate":0.87,"airlines":[["sbi/a319",1],["svr/a320",1],["tso/b735",1]]},
+        {"origin":"LKPR","destination":"UWUU","category":"arrival","route":"VORTA..ISEVA..UWUU","altitude":[4000,7000],"speed":250,"method":"random","rate":0.58,"airlines":[["csa/a319",1],["csa/a320",1]]},
+        {"origin":"ULLI","destination":"UWUU","category":"arrival","route":"VORTA..ISEVA..UWUU","altitude":[4000,7000],"speed":250,"method":"random","rate":0.58,"airlines":[["afl/a148",1],["afl/a319",1]]},
+        {"origin":"UUEE","destination":"UWUU","category":"arrival","route":"VORTA..ISEVA..UWUU","altitude":[4000,7000],"speed":250,"method":"random","rate":0.58,"airlines":[["afl/a319",1],["afl/a320",1]]},
+        {"origin":"LTFM","destination":"UWUU","category":"arrival","route":"LP..TOWAK..UWUU","altitude":[4000,7000],"speed":250,"method":"random","rate":0.29,"airlines":[["thy/a319",1]]},
+        {"origin":"","destination":"UWUU","category":"arrival","route":"MI..HUBCO..UWUU","altitude":[4000,7000],"speed":250,"method":"random","rate":0.29,"airlines":[["gzp/t154",1]]},
+        {"origin":"","destination":"UWUU","category":"arrival","route":"DX..JOCJU..UWUU","altitude":[4000,7000],"speed":250,"method":"random","rate":0.87,"airlines":[["svr/a320",2],["uzb/a320",1]]},
+        {"origin":"","destination":"UWUU","category":"arrival","route":"LP..TOWAK..UWUU","altitude":[4000,7000],"speed":250,"method":"random","rate":0.58,"airlines":[["aby/a320",1],["fdb/b738",1]]},
+        {"origin":"","destination":"UWUU","category":"arrival","route":"LP..TOWAK..UWUU","altitude":[4000,7000],"speed":250,"method":"random","rate":1.55,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",1],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [55.0667,57.0667,54.676,56.1519],
+            [54.676,56.1519,54.5575,55.8744],
+            [54.3,56.7833,54.4698,56.1841],
+            [54.4698,56.1841,54.5575,55.8744],
+            [53.9667,54.7833,54.4211,55.6225],
+            [54.4211,55.6225,54.5575,55.8744],
+            [54.7073,54.9834,54.6132,55.5434],
+            [54.6132,55.5434,54.5575,55.8744]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [54.5732,55.8493,54.7185,55.7087],
+            [54.641,55.7641,54.6507,55.7942],
+            [54.7136,55.6936,54.7234,55.7238],
+            [54.5437,55.8777,54.3982,56.0173],
+            [54.4759,55.9627,54.4661,55.9326],
+            [54.4031,56.0323,54.3934,56.0023]
+        ]}
+    ]
+}

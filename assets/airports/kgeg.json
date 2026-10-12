@@ -1,0 +1,99 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KGEG/",
+    "info": {"country":"US","city":"Spokane","type":"large_airport","longestRunwayM":3353,"frequencies":{"atis":"124.325","twr":"118.300","gnd":"121.900"}},
+    "radio": {"twr":"Spokane Tower","app":"Spokane Approach","dep":"Spokane Departure"},
+    "icao": "KGEG",
+    "iata": "GEG",
+    "magnetic_north": 13.9,
+    "ctr_radius": 45,
+    "ctr_ceiling": 10000,
+    "initial_alt": 6000,
+    "position": [47.6199,-117.533997,"2376ft"],
+    "rangeRings": {"enabled":true,"center":[47.6199,-117.533997],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":190,"speed":10},
+    "arrivalRunway": "21",
+    "departureRunway": "21",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"D","poly":[[48.0127,-117.3898],[47.9742,-117.2438],[47.9115,-117.1177],[47.8289,-117.0199],[47.7321,-116.9571],[47.6277,-116.9337],[47.5227,-116.9512],[47.4243,-117.0084],[47.3393,-117.1014],[47.2734,-117.2239],[47.2311,-117.3675],[47.2153,-117.5225],[47.2271,-117.6782],[47.2656,-117.8242],[47.3283,-117.9503],[47.4109,-118.0481],[47.5077,-118.1108],[47.6121,-118.1343],[47.7171,-118.1168],[47.8155,-118.0596],[47.9005,-117.9666],[47.9664,-117.8441],[48.0087,-117.7005],[48.0245,-117.5455]]}
+    ],
+    "fixes": {
+        "KGEG": [47.6199,-117.534],
+        "COE": [47.7737,-116.821,"coeur d alene"],
+        "SFF": [47.6862,-117.312,"felts"],
+        "PUW": [46.6743,-117.224,"pullman"],
+        "VEJDE": [47.42474,-117.47002],
+        "SOLGI": [47.11709,-117.81767],
+        "NIJUD": [47.43309,-117.63939],
+        "JOPIP": [47.6078,-118.33187],
+        "AKINA": [47.61541,-117.83044],
+        "POLID": [48.15782,-117.54108],
+        "UCOVE": [47.81976,-117.53663],
+        "_RWY0304DME": [47.56707,-117.61426],
+        "_RWY2104DME": [47.67799,-117.44759],
+        "_RWY0804DME": [47.61755,-117.65183],
+        "_RWY2604DME": [47.61616,-117.42117]
+    },
+    "runways": [
+        {"name":["03","21"],"end":[[47.6139,-117.544,"2385ft"],[47.6312,-117.518,"2322ft"]],"ils":[true,true]},
+        {"name":["08","26"],"end":[[47.617,-117.553,"2376ft"],[47.6168,-117.52,"2372ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "COE2B": {"icao":"COE2B","name":"Coeur D Alene Two Bravo","rwy":{"KGEG03":["_RWY2104DME"],"KGEG21":["_RWY0304DME"],"KGEG08":["_RWY2604DME"],"KGEG26":["_RWY0804DME"]},"body":[],"exitPoints":{"COE":["COE"]},"draw":[["KGEG","COE*"]]},
+        "PUW2A": {"icao":"PUW2A","name":"Pullman Two Alpha","rwy":{"KGEG03":["_RWY2104DME"],"KGEG21":["_RWY0304DME"],"KGEG08":["_RWY2604DME"],"KGEG26":["_RWY0804DME"]},"body":[],"exitPoints":{"PUW":["PUW"]},"draw":[["KGEG","PUW*"]]},
+        "SOLGI1F": {"icao":"SOLGI1F","name":"Solgi One Foxtrot","rwy":{"KGEG03":["_RWY2104DME"],"KGEG21":["_RWY0304DME"],"KGEG08":["_RWY2604DME"],"KGEG26":["_RWY0804DME"]},"body":[],"exitPoints":{"SOLGI":["SOLGI"]},"draw":[["KGEG","SOLGI*"]]},
+        "JOPIP2B": {"icao":"JOPIP2B","name":"Jopip Two Bravo","rwy":{"KGEG03":["_RWY2104DME"],"KGEG21":["_RWY0304DME"],"KGEG08":["_RWY2604DME"],"KGEG26":["_RWY0804DME"]},"body":[],"exitPoints":{"JOPIP":["JOPIP"]},"draw":[["KGEG","JOPIP*"]]},
+        "POLID1B": {"icao":"POLID1B","name":"Polid One Bravo","rwy":{"KGEG03":["_RWY2104DME"],"KGEG21":["_RWY0304DME"],"KGEG08":["_RWY2604DME"],"KGEG26":["_RWY0804DME"]},"body":[],"exitPoints":{"POLID":["POLID"]},"draw":[["KGEG","POLID*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KGEG","destination":"KDEN","category":"departure","route":"KGEG21.PUW2A.PUW","altitude":"","speed":"","method":"random","rate":1.19,"airlines":[["fft/a319",1],["swa/b737",1],["ual/b738",1],["ual/b739",1]]},
+        {"origin":"KGEG","destination":"KPHX","category":"departure","route":"KGEG21.PUW2A.PUW","altitude":"","speed":"","method":"random","rate":0.89,"airlines":[["aal/a319",2],["swa/b737",1]]},
+        {"origin":"KGEG","destination":"KSLC","category":"departure","route":"KGEG21.PUW2A.PUW","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["dal/a319",1],["dal/a320",1]]},
+        {"origin":"KGEG","destination":"KBOI","category":"departure","route":"KGEG21.PUW2A.PUW","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["swa/b737",1]]},
+        {"origin":"KGEG","destination":"KLAS","category":"departure","route":"KGEG21.PUW2A.PUW","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["swa/b737",1]]},
+        {"origin":"KGEG","destination":"","category":"departure","route":"KGEG21.COE2B.COE","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["dal/a320",1]]},
+        {"origin":"KGEG","destination":"","category":"departure","route":"KGEG21.SOLGI1F.SOLGI","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["swa/b737",1]]},
+        {"origin":"KGEG","destination":"","category":"departure","route":"KGEG21.JOPIP2B.JOPIP","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["asa/b734",1]]},
+        {"origin":"KGEG","destination":"","category":"departure","route":"KGEG21.JOPIP2B.JOPIP","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KDEN","destination":"KGEG","category":"arrival","route":"PUW..VEJDE..KGEG","altitude":[6000,9000],"speed":250,"method":"random","rate":1.19,"airlines":[["fft/a319",1],["swa/b737",1],["ual/b738",1],["ual/b739",1]]},
+        {"origin":"KPHX","destination":"KGEG","category":"arrival","route":"PUW..VEJDE..KGEG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.89,"airlines":[["aal/a319",2],["swa/b737",1]]},
+        {"origin":"KSLC","destination":"KGEG","category":"arrival","route":"PUW..VEJDE..KGEG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.59,"airlines":[["dal/a319",1],["dal/a320",1]]},
+        {"origin":"KBOI","destination":"KGEG","category":"arrival","route":"PUW..VEJDE..KGEG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.3,"airlines":[["swa/b737",1]]},
+        {"origin":"KLAS","destination":"KGEG","category":"arrival","route":"PUW..VEJDE..KGEG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.3,"airlines":[["swa/b737",1]]},
+        {"origin":"","destination":"KGEG","category":"arrival","route":"COE..SFF..KGEG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.3,"airlines":[["dal/a320",1]]},
+        {"origin":"","destination":"KGEG","category":"arrival","route":"SOLGI..NIJUD..KGEG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.3,"airlines":[["swa/b737",1]]},
+        {"origin":"","destination":"KGEG","category":"arrival","route":"JOPIP..AKINA..KGEG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.3,"airlines":[["asa/b734",1]]},
+        {"origin":"","destination":"KGEG","category":"arrival","route":"JOPIP..AKINA..KGEG","altitude":[6000,9000],"speed":250,"method":"random","rate":1.39,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [47.7737,-116.821,47.6862,-117.312],
+            [47.6862,-117.312,47.6199,-117.534],
+            [46.6743,-117.224,47.4247,-117.47],
+            [47.4247,-117.47,47.6199,-117.534],
+            [47.1171,-117.8177,47.4331,-117.6394],
+            [47.4331,-117.6394,47.6199,-117.534],
+            [47.6078,-118.3319,47.6154,-117.8304],
+            [47.6154,-117.8304,47.6199,-117.534],
+            [48.1578,-117.5411,47.8198,-117.5366],
+            [47.8198,-117.5366,47.6199,-117.534]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [47.6139,-117.544,47.4967,-117.7194],
+            [47.5482,-117.6214,47.5625,-117.6422],
+            [47.4896,-117.709,47.5038,-117.7298],
+            [47.6312,-117.518,47.7481,-117.3417],
+            [47.6968,-117.4404,47.6826,-117.4195],
+            [47.7552,-117.3522,47.741,-117.3313],
+            [47.617,-117.553,47.6182,-117.8001],
+            [47.6077,-117.6767,47.6277,-117.6764],
+            [47.6082,-117.8002,47.6282,-117.7999],
+            [47.6168,-117.52,47.615,-117.2729],
+            [47.626,-117.3963,47.606,-117.3966],
+            [47.625,-117.2728,47.6051,-117.2731]
+        ]}
+    ]
+}

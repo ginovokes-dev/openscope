@@ -1,0 +1,98 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGPD/",
+    "info": {"country":"GB","city":"Aberdeen","type":"large_airport","longestRunwayM":1953,"frequencies":{"atis":"121.855","twr":"118.100","app":"119.055","gnd":"121.705"}},
+    "radio": {"twr":"Aberdeen Tower","app":"Aberdeen Approach","dep":"Aberdeen Radar"},
+    "icao": "EGPD",
+    "iata": "ABZ",
+    "magnetic_north": -0.2,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [57.2019,-2.19778,"215ft"],
+    "rangeRings": {"enabled":true,"center":[57.2019,-2.19778],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":330,"speed":7},
+    "arrivalRunway": "34",
+    "departureRunway": "34",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[57.7415,-2.2013],[57.7236,-1.9433],[57.6701,-1.7027],[57.5848,-1.4959],[57.4733,-1.3368],[57.3434,-1.2365],[57.2038,-1.2016],[57.0641,-1.2347],[56.9337,-1.3334],[56.8217,-1.4909],[56.7355,-1.6967],[56.6812,-1.9366],[56.6623,-2.1943],[56.6802,-2.4522],[56.7337,-2.6928],[56.819,-2.8997],[56.9305,-3.0587],[57.0604,-3.1591],[57.2,-3.1939],[57.3397,-3.1609],[57.4701,-3.0622],[57.5821,-2.9046],[57.6683,-2.6989],[57.7226,-2.459]]}
+    ],
+    "fixes": {
+        "EGPD": [57.2019,-2.19778],
+        "PUBAH": [57.56509,-1.0798],
+        "LODTU": [57.33039,-1.80224],
+        "GAKUF": [56.50714,-1.96466],
+        "EFEVU": [56.9561,-2.1153],
+        "PTH": [56.4425,-3.36861,"perth"],
+        "VAVAH": [57.01014,-2.49342],
+        "INS": [57.5426,-4.04154,"inverness"],
+        "WUTAT": [57.28256,-2.63429],
+        "INAGU": [57.86381,-2.65196],
+        "TETHI": [57.43608,-2.35847],
+        "_RWY1604DME": [57.27132,-2.24928],
+        "_RWY3404DME": [57.13246,-2.14646]
+    },
+    "runways": [
+        {"name":["16","34"],"end":[[57.2095,-2.20341,"203ft"],[57.1943,-2.19216,"215ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "PUBAH1A": {"icao":"PUBAH1A","name":"Pubah One Alpha","rwy":{"EGPD16":["_RWY3404DME"],"EGPD34":["_RWY1604DME"]},"body":[],"exitPoints":{"PUBAH":["PUBAH"]},"draw":[["EGPD","PUBAH*"]]},
+        "GAKUF2B": {"icao":"GAKUF2B","name":"Gakuf Two Bravo","rwy":{"EGPD16":["_RWY3404DME"],"EGPD34":["_RWY1604DME"]},"body":[],"exitPoints":{"GAKUF":["GAKUF"]},"draw":[["EGPD","GAKUF*"]]},
+        "PTH2D": {"icao":"PTH2D","name":"Perth Two Delta","rwy":{"EGPD16":["_RWY3404DME"],"EGPD34":["_RWY1604DME"]},"body":[],"exitPoints":{"PTH":["PTH"]},"draw":[["EGPD","PTH*"]]},
+        "INS3F": {"icao":"INS3F","name":"Inverness Three Foxtrot","rwy":{"EGPD16":["_RWY3404DME"],"EGPD34":["_RWY1604DME"]},"body":[],"exitPoints":{"INS":["INS"]},"draw":[["EGPD","INS*"]]},
+        "INAGU1D": {"icao":"INAGU1D","name":"Inagu One Delta","rwy":{"EGPD16":["_RWY3404DME"],"EGPD34":["_RWY1604DME"]},"body":[],"exitPoints":{"INAGU":["INAGU"]},"draw":[["EGPD","INAGU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGPD","destination":"ENZV","category":"departure","route":"EGPD34.PUBAH1A.PUBAH","altitude":"","speed":"","method":"random","rate":0.91,"airlines":[["eze/e135",1],["eze/js41",1],["sas/b736",1],["sas/b737",1],["wif/dh8d",1]]},
+        {"origin":"EGPD","destination":"EGNT","category":"departure","route":"EGPD34.GAKUF2B.GAKUF","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["eze/e145",1],["eze/js41",1],["eze/sb20",1]]},
+        {"origin":"EGPD","destination":"EHAM","category":"departure","route":"EGPD34.GAKUF2B.GAKUF","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["klm/b737",1],["klm/f70",1],["klm/e190",1],["klm/e170",1]]},
+        {"origin":"EGPD","destination":"EGBB","category":"departure","route":"EGPD34.GAKUF2B.GAKUF","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["bee/dh8d",1],["bee/e75l",1]]},
+        {"origin":"EGPD","destination":"EGCC","category":"departure","route":"EGPD34.GAKUF2B.GAKUF","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["bee/dh8d",1],["bee/e75l",1]]},
+        {"origin":"EGPD","destination":"EGGW","category":"departure","route":"EGPD34.GAKUF2B.GAKUF","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["ezy/a319",1],["ezy/a320",1]]},
+        {"origin":"EGPD","destination":"","category":"departure","route":"EGPD34.PUBAH1A.PUBAH","altitude":"","speed":"","method":"random","rate":1.09,"airlines":[["sas/b736",1],["sas/b737",1],["sas/crj2",1],["sas/crj9",1],["wif/dh8c",1],["wif/dh8d",1]]},
+        {"origin":"EGPD","destination":"","category":"departure","route":"EGPD34.GAKUF2B.GAKUF","altitude":"","speed":"","method":"random","rate":2,"airlines":[["eze/js41",4],["eze/sb20",3],["afr/e170",1],["baw/a319",1],["baw/a320",1],["ezy/a319",1]]},
+        {"origin":"EGPD","destination":"","category":"departure","route":"EGPD34.PTH2D.PTH","altitude":"","speed":"","method":"random","rate":0.18,"airlines":[["bee/dh8d",1]]},
+        {"origin":"EGPD","destination":"","category":"departure","route":"EGPD34.INS3F.INS","altitude":"","speed":"","method":"random","rate":0.18,"airlines":[["eze/js41",1]]},
+        {"origin":"EGPD","destination":"","category":"departure","route":"EGPD34.INAGU1D.INAGU","altitude":"","speed":"","method":"random","rate":0.18,"airlines":[["eze/js41",1]]},
+        {"origin":"EGPD","destination":"","category":"departure","route":"EGPD34.GAKUF2B.GAKUF","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",2],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]},
+        {"origin":"EGPD","destination":"","category":"departure","route":"EGPD34.INS3F.INS","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",2],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]},
+        {"origin":"ENZV","destination":"EGPD","category":"arrival","route":"PUBAH..LODTU..EGPD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.91,"airlines":[["eze/e135",1],["eze/js41",1],["sas/b736",1],["sas/b737",1],["wif/dh8d",1]]},
+        {"origin":"EGNT","destination":"EGPD","category":"arrival","route":"GAKUF..EFEVU..EGPD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.54,"airlines":[["eze/e145",1],["eze/js41",1],["eze/sb20",1]]},
+        {"origin":"EHAM","destination":"EGPD","category":"arrival","route":"GAKUF..EFEVU..EGPD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.54,"airlines":[["klm/b737",1],["klm/f70",1],["klm/e190",1],["klm/e170",1]]},
+        {"origin":"EGBB","destination":"EGPD","category":"arrival","route":"GAKUF..EFEVU..EGPD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.36,"airlines":[["bee/dh8d",1],["bee/e75l",1]]},
+        {"origin":"EGCC","destination":"EGPD","category":"arrival","route":"GAKUF..EFEVU..EGPD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.36,"airlines":[["bee/dh8d",1],["bee/e75l",1]]},
+        {"origin":"EGGW","destination":"EGPD","category":"arrival","route":"GAKUF..EFEVU..EGPD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.36,"airlines":[["ezy/a319",1],["ezy/a320",1]]},
+        {"origin":"","destination":"EGPD","category":"arrival","route":"PUBAH..LODTU..EGPD","altitude":[6000,9000],"speed":250,"method":"random","rate":1.09,"airlines":[["sas/b736",1],["sas/b737",1],["sas/crj2",1],["sas/crj9",1],["wif/dh8c",1],["wif/dh8d",1]]},
+        {"origin":"","destination":"EGPD","category":"arrival","route":"GAKUF..EFEVU..EGPD","altitude":[6000,9000],"speed":250,"method":"random","rate":2,"airlines":[["eze/js41",4],["eze/sb20",3],["afr/e170",1],["baw/a319",1],["baw/a320",1],["ezy/a319",1]]},
+        {"origin":"","destination":"EGPD","category":"arrival","route":"PTH..VAVAH..EGPD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.18,"airlines":[["bee/dh8d",1]]},
+        {"origin":"","destination":"EGPD","category":"arrival","route":"INS..WUTAT..EGPD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.18,"airlines":[["eze/js41",1]]},
+        {"origin":"","destination":"EGPD","category":"arrival","route":"INAGU..TETHI..EGPD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.18,"airlines":[["eze/js41",1]]},
+        {"origin":"","destination":"EGPD","category":"arrival","route":"GAKUF..EFEVU..EGPD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.46,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",2],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]},
+        {"origin":"","destination":"EGPD","category":"arrival","route":"INS..WUTAT..EGPD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.46,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",2],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [57.5651,-1.0798,57.3304,-1.8022],
+            [57.3304,-1.8022,57.2019,-2.1978],
+            [56.5071,-1.9647,56.9561,-2.1153],
+            [56.9561,-2.1153,57.2019,-2.1978],
+            [56.4425,-3.3686,57.0101,-2.4934],
+            [57.0101,-2.4934,57.2019,-2.1978],
+            [57.5426,-4.0415,57.2826,-2.6343],
+            [57.2826,-2.6343,57.2019,-2.1978],
+            [57.8638,-2.652,57.4361,-2.3585],
+            [57.4361,-2.3585,57.2019,-2.1978]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [57.2095,-2.2034,57.364,-2.3184],
+            [57.2831,-2.2779,57.2905,-2.2436],
+            [57.3603,-2.3356,57.3677,-2.3012],
+            [57.1943,-2.1922,57.0397,-2.0782],
+            [57.1207,-2.118,57.1133,-2.1521],
+            [57.0434,-2.0611,57.0359,-2.0952]
+        ]}
+    ]
+}

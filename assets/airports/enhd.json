@@ -1,0 +1,90 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ENHD/",
+    "info": {"country":"NO","city":"Karmoy","type":"medium_airport","longestRunwayM":2120,"frequencies":{"atis":"118.175","twr":"120.500"}},
+    "radio": {"twr":"Karmoy Tower","app":"Karmoy Approach","dep":"Karmoy Departure"},
+    "icao": "ENHD",
+    "iata": "HAU",
+    "magnetic_north": 2.6,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [59.345299,5.20836,"86ft"],
+    "rangeRings": {"enabled":true,"center":[59.345299,5.20836],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":330,"speed":11},
+    "arrivalRunway": "31",
+    "departureRunway": "31",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[59.7496,5.2444],[59.7311,5.4484],[59.6862,5.636],[59.6182,5.7945],[59.5315,5.913],[59.4322,5.9836],[59.3269,6.0013],[59.2229,5.9649],[59.1273,5.877],[59.0465,5.7436],[58.986,5.5736],[58.95,5.3788],[58.941,5.1724],[58.9595,4.9684],[59.0044,4.7807],[59.0724,4.6222],[59.1591,4.5037],[59.2584,4.4331],[59.3637,4.4154],[59.4677,4.4518],[59.5633,4.5397],[59.6441,4.6731],[59.7046,4.8431],[59.7406,5.0379]]}
+    ],
+    "fixes": {
+        "ENHD": [59.3453,5.20836],
+        "GAGOC": [59.51596,6.20892],
+        "MIKZI": [59.4087,5.58011],
+        "CEVTI": [59.08667,6.13348],
+        "UWITE": [59.24921,5.55208],
+        "ZOL": [58.8751,5.64015,"sola"],
+        "BAKGE": [59.16429,5.37458],
+        "IPIPA": [58.84908,4.80099],
+        "VUTUZ": [59.16093,5.057],
+        "FLS": [60.3113,5.21219,"flesland"],
+        "TAGLU": [59.54516,5.20915],
+        "_RWY1304DME": [59.39688,5.10475],
+        "_RWY3104DME": [59.29116,5.3167]
+    },
+    "runways": [
+        {"name":["13","31"],"end":[[59.35032,5.1983,"61ft"],[59.33778,5.22344,"86ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "GAGOC2B": {"icao":"GAGOC2B","name":"Gagoc Two Bravo","rwy":{"ENHD13":["_RWY3104DME"],"ENHD31":["_RWY1304DME"]},"body":[],"exitPoints":{"GAGOC":["GAGOC"]},"draw":[["ENHD","GAGOC*"]]},
+        "CEVTI3E": {"icao":"CEVTI3E","name":"Cevti Three Echo","rwy":{"ENHD13":["_RWY3104DME"],"ENHD31":["_RWY1304DME"]},"body":[],"exitPoints":{"CEVTI":["CEVTI"]},"draw":[["ENHD","CEVTI*"]]},
+        "ZOL3A": {"icao":"ZOL3A","name":"Sola Three Alpha","rwy":{"ENHD13":["_RWY3104DME"],"ENHD31":["_RWY1304DME"]},"body":[],"exitPoints":{"ZOL":["ZOL"]},"draw":[["ENHD","ZOL*"]]},
+        "IPIPA3F": {"icao":"IPIPA3F","name":"Ipipa Three Foxtrot","rwy":{"ENHD13":["_RWY3104DME"],"ENHD31":["_RWY1304DME"]},"body":[],"exitPoints":{"IPIPA":["IPIPA"]},"draw":[["ENHD","IPIPA*"]]},
+        "FLS1F": {"icao":"FLS1F","name":"Flesland One Foxtrot","rwy":{"ENHD13":["_RWY3104DME"],"ENHD31":["_RWY1304DME"]},"body":[],"exitPoints":{"FLS":["FLS"]},"draw":[["ENHD","FLS*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ENHD","destination":"ENGM","category":"departure","route":"ENHD31.GAGOC2B.GAGOC","altitude":"","speed":"","method":"random","rate":1.69,"airlines":[["sas/b737",2],["sas/b738",2],["nax/b738",1],["sas/b736",1]]},
+        {"origin":"ENHD","destination":"ENBR","category":"departure","route":"ENHD31.FLS1F.FLS","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["wif/dh8c",1],["wif/dh8d",1]]},
+        {"origin":"ENHD","destination":"EDDW","category":"departure","route":"ENHD31.ZOL3A.ZOL","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["ryr/b738",1]]},
+        {"origin":"ENHD","destination":"EGSS","category":"departure","route":"ENHD31.IPIPA3F.IPIPA","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["ryr/b738",1]]},
+        {"origin":"ENHD","destination":"EKCH","category":"departure","route":"ENHD31.CEVTI3E.CEVTI","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["wif/dh8d",1]]},
+        {"origin":"ENHD","destination":"","category":"departure","route":"ENHD31.CEVTI3E.CEVTI","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["wzz/a320",1]]},
+        {"origin":"ENHD","destination":"","category":"departure","route":"ENHD31.ZOL3A.ZOL","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["ryr/b738",2]]},
+        {"origin":"ENHD","destination":"","category":"departure","route":"ENHD31.IPIPA3F.IPIPA","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["ryr/b738",2]]},
+        {"origin":"ENHD","destination":"","category":"departure","route":"ENHD31.GAGOC2B.GAGOC","altitude":"","speed":"","method":"random","rate":1.5,"airlines":[["ln/c172",6],["ln/p28a",5],["ln/c182",3],["ln/be36",2],["ln/da42",1],["ln/tb20",1],["ln/c208",2],["ln/pc12",2],["ln/be20",1],["ln/b350",1],["ln/p180",1],["ln/c510",1],["ln/e50p",1],["ln/c550",1],["ln/e55p",1],["ln/cl30",1],["ln/c680",1],["ln/h25b",1],["ln/lj45",1],["ln/f2th",1],["ln/glf4",1],["ln/glex",1],["ln/glf5",1]]},
+        {"origin":"ENGM","destination":"ENHD","category":"arrival","route":"GAGOC..MIKZI..ENHD","altitude":[4000,7000],"speed":250,"method":"random","rate":1.69,"airlines":[["sas/b737",2],["sas/b738",2],["nax/b738",1],["sas/b736",1]]},
+        {"origin":"ENBR","destination":"ENHD","category":"arrival","route":"FLS..TAGLU..ENHD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.56,"airlines":[["wif/dh8c",1],["wif/dh8d",1]]},
+        {"origin":"EDDW","destination":"ENHD","category":"arrival","route":"ZOL..BAKGE..ENHD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGSS","destination":"ENHD","category":"arrival","route":"IPIPA..VUTUZ..ENHD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["ryr/b738",1]]},
+        {"origin":"EKCH","destination":"ENHD","category":"arrival","route":"CEVTI..UWITE..ENHD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["wif/dh8d",1]]},
+        {"origin":"","destination":"ENHD","category":"arrival","route":"CEVTI..UWITE..ENHD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["wzz/a320",1]]},
+        {"origin":"","destination":"ENHD","category":"arrival","route":"ZOL..BAKGE..ENHD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.56,"airlines":[["ryr/b738",2]]},
+        {"origin":"","destination":"ENHD","category":"arrival","route":"IPIPA..VUTUZ..ENHD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.56,"airlines":[["ryr/b738",2]]},
+        {"origin":"","destination":"ENHD","category":"arrival","route":"GAGOC..MIKZI..ENHD","altitude":[4000,7000],"speed":250,"method":"random","rate":1.5,"airlines":[["ln/c172",6],["ln/p28a",5],["ln/c182",3],["ln/be36",2],["ln/da42",1],["ln/tb20",1],["ln/c208",2],["ln/pc12",2],["ln/be20",1],["ln/b350",1],["ln/p180",1],["ln/c510",1],["ln/e50p",1],["ln/c550",1],["ln/e55p",1],["ln/cl30",1],["ln/c680",1],["ln/h25b",1],["ln/lj45",1],["ln/f2th",1],["ln/glf4",1],["ln/glex",1],["ln/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [59.516,6.2089,59.4087,5.5801],
+            [59.4087,5.5801,59.3453,5.2084],
+            [59.0867,6.1335,59.2492,5.5521],
+            [59.2492,5.5521,59.3453,5.2084],
+            [58.8751,5.6402,59.1643,5.3746],
+            [59.1643,5.3746,59.3453,5.2084],
+            [58.8491,4.801,59.1609,5.057],
+            [59.1609,5.057,59.3453,5.2084],
+            [60.3113,5.2122,59.5452,5.2092],
+            [59.5452,5.2092,59.3453,5.2084]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [59.3503,5.1983,59.4666,4.9639],
+            [59.4014,5.0676,59.4156,5.0951],
+            [59.4594,4.9502,59.4737,4.9777],
+            [59.3378,5.2234,59.2211,5.4561],
+            [59.2866,5.3537,59.2723,5.3263],
+            [59.2282,5.4698,59.214,5.4425]
+        ]}
+    ]
+}

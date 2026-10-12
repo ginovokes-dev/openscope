@@ -1,0 +1,86 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/GCTS/",
+    "info": {"country":"ES","city":"Tenerife","type":"large_airport","longestRunwayM":3200,"frequencies":{"atis":"118.675","twr":"119.000","app":"120.300","gnd":"121.900"}},
+    "radio": {"twr":"Tenerife Tower","app":"Tenerife Approach","dep":"Tenerife Departure"},
+    "icao": "GCTS",
+    "iata": "TFS",
+    "magnetic_north": -3.7,
+    "ctr_radius": 75,
+    "ctr_ceiling": 12000,
+    "initial_alt": 6000,
+    "position": [28.0445,-16.5725,"209ft"],
+    "rangeRings": {"enabled":true,"center":[28.0445,-16.5725],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":50,"speed":5},
+    "arrivalRunway": "07",
+    "departureRunway": "07",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":120,"airspace_class":"C","poly":[[28.7176,-16.6218],[28.7059,-16.4228],[28.6492,-16.2339],[28.5512,-16.0681],[28.4187,-15.9367],[28.2608,-15.8486],[28.088,-15.8099],[27.9123,-15.8231],[27.7457,-15.8874],[27.5993,-15.9984],[27.4834,-16.1485],[27.4056,-16.3275],[27.3714,-16.5232],[27.3831,-16.7222],[27.4398,-16.9111],[27.5378,-17.0769],[27.6703,-17.2083],[27.8282,-17.2964],[28.001,-17.3351],[28.1767,-17.3219],[28.3433,-17.2576],[28.4897,-17.1466],[28.6056,-16.9965],[28.6834,-16.8175]]}
+    ],
+    "fixes": {
+        "GCTS": [28.0445,-16.5725],
+        "OLOWI": [28.81501,-16.10422],
+        "OROFI": [28.29401,-16.42086],
+        "GDV": [28.0771,-15.429,"gran canaria"],
+        "VOSBU": [28.05364,-16.25186],
+        "HIE": [27.8162,-17.8864,"hierro"],
+        "SORTI": [27.98981,-16.88727],
+        "_RWY0704DME": [28.01483,-16.65784],
+        "_RWY2504DME": [28.07404,-16.48702]
+    },
+    "runways": [
+        {"name":["07","25"],"end":[[28.0392,-16.5876,"188ft"],[28.0497,-16.5573,"209ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "OLOWI3B": {"icao":"OLOWI3B","name":"Olowi Three Bravo","rwy":{"GCTS07":["_RWY2504DME"],"GCTS25":["_RWY0704DME"]},"body":[],"exitPoints":{"OLOWI":["OLOWI"]},"draw":[["GCTS","OLOWI*"]]},
+        "GDV1D": {"icao":"GDV1D","name":"Gran Canaria One Delta","rwy":{"GCTS07":["_RWY2504DME"],"GCTS25":["_RWY0704DME"]},"body":[],"exitPoints":{"GDV":["GDV"]},"draw":[["GCTS","GDV*"]]},
+        "HIE2C": {"icao":"HIE2C","name":"Hierro Two Charlie","rwy":{"GCTS07":["_RWY2504DME"],"GCTS25":["_RWY0704DME"]},"body":[],"exitPoints":{"HIE":["HIE"]},"draw":[["GCTS","HIE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"GCTS","destination":"EGCC","category":"departure","route":"GCTS07.OLOWI3B.OLOWI","altitude":"","speed":"","method":"random","rate":0.8,"airlines":[["cfg/b752",1],["exs/b738",1],["exs/b752",1],["ezy/a320",1],["mon/a320",1],["mon/a321",1],["mon/a332",1],["ryr/b738",1],["tcx/a321",1],["tcx/b753",1],["tom/b738",1],["tom/b752",1]]},
+        {"origin":"GCTS","destination":"EGKK","category":"departure","route":"GCTS07.OLOWI3B.OLOWI","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["baw/a320",1],["ezy/a320",1],["mon/a321",1],["mon/a332",1],["mon/b752",1],["nax/b738",1],["tcx/b752",1],["tom/b738",1],["tom/b752",1],["tvf/b738",1],["tvf/b752",1]]},
+        {"origin":"GCTS","destination":"EGBB","category":"departure","route":"GCTS07.OLOWI3B.OLOWI","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["mon/a320",1],["mon/a321",1],["ryr/b738",1],["tcx/a321",1],["tcx/b752",1],["tom/b752",1],["tvf/b738",1],["tvf/b752",1]]},
+        {"origin":"GCTS","destination":"EGGD","category":"departure","route":"GCTS07.OLOWI3B.OLOWI","altitude":"","speed":"","method":"random","rate":0.37,"airlines":[["ezy/a319",1],["ezy/a320",1],["ryr/b738",1],["tcx/a320",1],["tom/b752",1],["tvf/b752",1]]},
+        {"origin":"GCTS","destination":"EGNX","category":"departure","route":"GCTS07.OLOWI3B.OLOWI","altitude":"","speed":"","method":"random","rate":0.37,"airlines":[["exs/b738",1],["mon/a321",1],["ryr/b738",1],["tcx/a321",1],["tom/b738",1],["tvf/b738",1]]},
+        {"origin":"GCTS","destination":"EDDL","category":"departure","route":"GCTS07.OLOWI3B.OLOWI","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["ber/a321",1],["ber/a332",1],["ber/b738",1],["cfg/b752",1],["hlx/b738",1]]},
+        {"origin":"GCTS","destination":"EDDM","category":"departure","route":"GCTS07.OLOWI3B.OLOWI","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["ber/b738",1],["cfg/a320",1],["cfg/b752",1],["hlx/b738",1],["nax/b738",1]]},
+        {"origin":"GCTS","destination":"","category":"departure","route":"GCTS07.OLOWI3B.OLOWI","altitude":"","speed":"","method":"random","rate":7.37,"airlines":[["ryr/b738",31],["hlx/b738",7],["tvf/b738",7],["ber/a320",6],["ezy/a320",5],["ber/b738",4],["nax/b738",4],["aea/b738",3],["cfg/a320",3],["exs/b738",3],["iss/a320",3],["nly/a320",3]]},
+        {"origin":"GCTS","destination":"","category":"departure","route":"GCTS07.GDV1D.GDV","altitude":"","speed":"","method":"random","rate":0.19,"airlines":[["ibb/at72",1],["iss/a320",1],["tra/b738",1]]},
+        {"origin":"GCTS","destination":"","category":"departure","route":"GCTS07.HIE2C.HIE","altitude":"","speed":"","method":"random","rate":0.06,"airlines":[["ibb/at72",1]]},
+        {"origin":"GCTS","destination":"","category":"departure","route":"GCTS07.GDV1D.GDV","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["ec/c172",3],["ec/p28a",3],["ec/c182",2],["ec/be36",1],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",3],["ec/e50p",2],["ec/c550",3],["ec/e55p",2],["ec/cl30",2],["ec/c680",2],["ec/h25b",2],["ec/lj45",2],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"GCTS","destination":"","category":"departure","route":"GCTS07.HIE2C.HIE","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["ec/c172",3],["ec/p28a",3],["ec/c182",2],["ec/be36",1],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",3],["ec/e50p",2],["ec/c550",3],["ec/e55p",2],["ec/cl30",2],["ec/c680",2],["ec/h25b",2],["ec/lj45",2],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"EGCC","destination":"GCTS","category":"arrival","route":"OLOWI..OROFI..GCTS","altitude":[8000,11000],"speed":250,"method":"random","rate":0.8,"airlines":[["cfg/b752",1],["exs/b738",1],["exs/b752",1],["ezy/a320",1],["mon/a320",1],["mon/a321",1],["mon/a332",1],["ryr/b738",1],["tcx/a321",1],["tcx/b753",1],["tom/b738",1],["tom/b752",1]]},
+        {"origin":"EGKK","destination":"GCTS","category":"arrival","route":"OLOWI..OROFI..GCTS","altitude":[8000,11000],"speed":250,"method":"random","rate":0.68,"airlines":[["baw/a320",1],["ezy/a320",1],["mon/a321",1],["mon/a332",1],["mon/b752",1],["nax/b738",1],["tcx/b752",1],["tom/b738",1],["tom/b752",1],["tvf/b738",1],["tvf/b752",1]]},
+        {"origin":"EGBB","destination":"GCTS","category":"arrival","route":"OLOWI..OROFI..GCTS","altitude":[8000,11000],"speed":250,"method":"random","rate":0.5,"airlines":[["mon/a320",1],["mon/a321",1],["ryr/b738",1],["tcx/a321",1],["tcx/b752",1],["tom/b752",1],["tvf/b738",1],["tvf/b752",1]]},
+        {"origin":"EGGD","destination":"GCTS","category":"arrival","route":"OLOWI..OROFI..GCTS","altitude":[8000,11000],"speed":250,"method":"random","rate":0.37,"airlines":[["ezy/a319",1],["ezy/a320",1],["ryr/b738",1],["tcx/a320",1],["tom/b752",1],["tvf/b752",1]]},
+        {"origin":"EGNX","destination":"GCTS","category":"arrival","route":"OLOWI..OROFI..GCTS","altitude":[8000,11000],"speed":250,"method":"random","rate":0.37,"airlines":[["exs/b738",1],["mon/a321",1],["ryr/b738",1],["tcx/a321",1],["tom/b738",1],["tvf/b738",1]]},
+        {"origin":"EDDL","destination":"GCTS","category":"arrival","route":"OLOWI..OROFI..GCTS","altitude":[8000,11000],"speed":250,"method":"random","rate":0.31,"airlines":[["ber/a321",1],["ber/a332",1],["ber/b738",1],["cfg/b752",1],["hlx/b738",1]]},
+        {"origin":"EDDM","destination":"GCTS","category":"arrival","route":"OLOWI..OROFI..GCTS","altitude":[8000,11000],"speed":250,"method":"random","rate":0.31,"airlines":[["ber/b738",1],["cfg/a320",1],["cfg/b752",1],["hlx/b738",1],["nax/b738",1]]},
+        {"origin":"","destination":"GCTS","category":"arrival","route":"OLOWI..OROFI..GCTS","altitude":[8000,11000],"speed":250,"method":"random","rate":7.37,"airlines":[["ryr/b738",31],["hlx/b738",7],["tvf/b738",7],["ber/a320",6],["ezy/a320",5],["ber/b738",4],["nax/b738",4],["aea/b738",3],["cfg/a320",3],["exs/b738",3],["iss/a320",3],["nly/a320",3]]},
+        {"origin":"","destination":"GCTS","category":"arrival","route":"GDV..VOSBU..GCTS","altitude":[8000,11000],"speed":250,"method":"random","rate":0.19,"airlines":[["ibb/at72",1],["iss/a320",1],["tra/b738",1]]},
+        {"origin":"","destination":"GCTS","category":"arrival","route":"HIE..SORTI..GCTS","altitude":[8000,11000],"speed":250,"method":"random","rate":0.06,"airlines":[["ibb/at72",1]]},
+        {"origin":"","destination":"GCTS","category":"arrival","route":"GDV..VOSBU..GCTS","altitude":[8000,11000],"speed":250,"method":"random","rate":0.41,"airlines":[["ec/c172",3],["ec/p28a",3],["ec/c182",2],["ec/be36",1],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",3],["ec/e50p",2],["ec/c550",3],["ec/e55p",2],["ec/cl30",2],["ec/c680",2],["ec/h25b",2],["ec/lj45",2],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"","destination":"GCTS","category":"arrival","route":"HIE..SORTI..GCTS","altitude":[8000,11000],"speed":250,"method":"random","rate":0.41,"airlines":[["ec/c172",3],["ec/p28a",3],["ec/c182",2],["ec/be36",1],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",3],["ec/e50p",2],["ec/c550",3],["ec/e55p",2],["ec/cl30",2],["ec/c680",2],["ec/h25b",2],["ec/lj45",2],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [28.815,-16.1042,28.294,-16.4209],
+            [28.294,-16.4209,28.0445,-16.5725],
+            [28.0771,-15.429,28.0536,-16.2519],
+            [28.0536,-16.2519,28.0445,-16.5725],
+            [27.8162,-17.8864,27.9898,-16.8873],
+            [27.9898,-16.8873,28.0445,-16.5725]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [28.0392,-16.5876,27.9782,-16.7631],
+            [27.9994,-16.6713,28.018,-16.6795],
+            [27.9689,-16.759,27.9875,-16.7673],
+            [28.0497,-16.5573,28.1105,-16.3815],
+            [28.0894,-16.4736,28.0708,-16.4653],
+            [28.1198,-16.3857,28.1012,-16.3774]
+        ]}
+    ]
+}

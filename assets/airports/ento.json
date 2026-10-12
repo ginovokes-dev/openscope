@@ -1,0 +1,94 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ENTO/",
+    "info": {"country":"NO","city":"Sandefjord","type":"large_airport","longestRunwayM":2809,"frequencies":{"atis":"119.075","twr":"118.650","gnd":"126.175"}},
+    "radio": {"twr":"Sandefjord Tower","app":"Sandefjord Approach","dep":"Sandefjord Departure"},
+    "icao": "ENTO",
+    "iata": "TRF",
+    "magnetic_north": 4.7,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [59.186699,10.2586,"286ft"],
+    "rangeRings": {"enabled":true,"center":[59.186699,10.2586],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":160,"speed":11},
+    "arrivalRunway": "17",
+    "departureRunway": "17",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[59.7245,10.3449],[59.6947,10.6137],[59.6303,10.8583],[59.5357,11.062],[59.4173,11.211],[59.2832,11.295],[59.1425,11.3085],[59.0048,11.2503],[58.8795,11.1246],[58.7752,10.9399],[58.6989,10.7088],[58.6558,10.4469],[58.6489,10.1723],[58.6787,9.9035],[58.7431,9.6589],[58.8377,9.4552],[58.9561,9.3062],[59.0902,9.2222],[59.2309,9.2087],[59.3686,9.2669],[59.4939,9.3926],[59.5982,9.5773],[59.6745,9.8084],[59.7176,10.0703]]}
+    ],
+    "fixes": {
+        "ENTO": [59.1867,10.2586],
+        "PULOG": [59.17809,11.63704],
+        "UCAMU": [59.18365,10.74629],
+        "EHUFU": [58.60088,11.02833],
+        "IVIWE": [58.97944,10.53093],
+        "KEFIP": [58.57516,9.56933],
+        "UDONE": [58.97034,10.01474],
+        "NTD": [59.5871,9.14421,"notodden"],
+        "LIFNE": [59.33017,9.85931],
+        "TRF": [59.9292,10.2693,"tyrifjord"],
+        "ABASO": [59.43652,10.2622],
+        "_RWY1704DME": [59.2622,10.25688],
+        "_RWY3504DME": [59.11048,10.26036]
+    },
+    "runways": [
+        {"name":["17","35"],"end":[[59.19558,10.25841,"282ft"],[59.1771,10.25883,"255ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "PULOG3A": {"icao":"PULOG3A","name":"Pulog Three Alpha","rwy":{"ENTO17":["_RWY3504DME"],"ENTO35":["_RWY1704DME"]},"body":[],"exitPoints":{"PULOG":["PULOG"]},"draw":[["ENTO","PULOG*"]]},
+        "EHUFU2A": {"icao":"EHUFU2A","name":"Ehufu Two Alpha","rwy":{"ENTO17":["_RWY3504DME"],"ENTO35":["_RWY1704DME"]},"body":[],"exitPoints":{"EHUFU":["EHUFU"]},"draw":[["ENTO","EHUFU*"]]},
+        "KEFIP2C": {"icao":"KEFIP2C","name":"Kefip Two Charlie","rwy":{"ENTO17":["_RWY3504DME"],"ENTO35":["_RWY1704DME"]},"body":[],"exitPoints":{"KEFIP":["KEFIP"]},"draw":[["ENTO","KEFIP*"]]},
+        "NTD2D": {"icao":"NTD2D","name":"Notodden Two Delta","rwy":{"ENTO17":["_RWY3504DME"],"ENTO35":["_RWY1704DME"]},"body":[],"exitPoints":{"NTD":["NTD"]},"draw":[["ENTO","NTD*"]]},
+        "TRF2F": {"icao":"TRF2F","name":"Tyrifjord Two Foxtrot","rwy":{"ENTO17":["_RWY3504DME"],"ENTO35":["_RWY1704DME"]},"body":[],"exitPoints":{"TRF":["TRF"]},"draw":[["ENTO","TRF*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ENTO","destination":"ENBR","category":"departure","route":"ENTO17.NTD2D.NTD","altitude":"","speed":"","method":"random","rate":0.65,"airlines":[["nax/b738",1],["wif/dh8c",1],["wif/dh8d",1]]},
+        {"origin":"ENTO","destination":"ENVA","category":"departure","route":"ENTO17.TRF2F.TRF","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["nax/b738",1],["wif/dh8d",1]]},
+        {"origin":"ENTO","destination":"ENZV","category":"departure","route":"ENTO17.NTD2D.NTD","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["wif/dh8c",1],["wif/dh8d",1]]},
+        {"origin":"ENTO","destination":"LEAL","category":"departure","route":"ENTO17.KEFIP2C.KEFIP","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["nax/b738",1],["ryr/b738",1]]},
+        {"origin":"ENTO","destination":"LEMG","category":"departure","route":"ENTO17.KEFIP2C.KEFIP","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["nax/b738",1],["ryr/b738",1]]},
+        {"origin":"ENTO","destination":"EGGP","category":"departure","route":"ENTO17.KEFIP2C.KEFIP","altitude":"","speed":"","method":"random","rate":0.22,"airlines":[["ryr/b738",1]]},
+        {"origin":"ENTO","destination":"","category":"departure","route":"ENTO17.PULOG3A.PULOG","altitude":"","speed":"","method":"random","rate":0.65,"airlines":[["wzz/a320",2],["ntj/sf34",1]]},
+        {"origin":"ENTO","destination":"","category":"departure","route":"ENTO17.EHUFU2A.EHUFU","altitude":"","speed":"","method":"random","rate":2.6,"airlines":[["wzz/a320",9],["nax/b738",2],["wif/dh8d",1]]},
+        {"origin":"ENTO","destination":"","category":"departure","route":"ENTO17.KEFIP2C.KEFIP","altitude":"","speed":"","method":"random","rate":1.74,"airlines":[["nax/b738",5],["ryr/b738",3]]},
+        {"origin":"ENTO","destination":"","category":"departure","route":"ENTO17.TRF2F.TRF","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ln/c172",6],["ln/p28a",5],["ln/c182",3],["ln/be36",2],["ln/da42",1],["ln/tb20",1],["ln/c208",2],["ln/pc12",2],["ln/be20",1],["ln/b350",1],["ln/p180",1],["ln/c510",1],["ln/e50p",1],["ln/c550",2],["ln/e55p",1],["ln/cl30",1],["ln/c680",1],["ln/h25b",1],["ln/lj45",1],["ln/f2th",1],["ln/glf4",1],["ln/glex",1],["ln/glf5",1]]},
+        {"origin":"ENTO","destination":"","category":"departure","route":"ENTO17.EHUFU2A.EHUFU","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ln/c172",6],["ln/p28a",5],["ln/c182",3],["ln/be36",2],["ln/da42",1],["ln/tb20",1],["ln/c208",2],["ln/pc12",2],["ln/be20",1],["ln/b350",1],["ln/p180",1],["ln/c510",1],["ln/e50p",1],["ln/c550",2],["ln/e55p",1],["ln/cl30",1],["ln/c680",1],["ln/h25b",1],["ln/lj45",1],["ln/f2th",1],["ln/glf4",1],["ln/glex",1],["ln/glf5",1]]},
+        {"origin":"ENBR","destination":"ENTO","category":"arrival","route":"NTD..LIFNE..ENTO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.65,"airlines":[["nax/b738",1],["wif/dh8c",1],["wif/dh8d",1]]},
+        {"origin":"ENVA","destination":"ENTO","category":"arrival","route":"TRF..ABASO..ENTO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["nax/b738",1],["wif/dh8d",1]]},
+        {"origin":"ENZV","destination":"ENTO","category":"arrival","route":"NTD..LIFNE..ENTO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["wif/dh8c",1],["wif/dh8d",1]]},
+        {"origin":"LEAL","destination":"ENTO","category":"arrival","route":"KEFIP..UDONE..ENTO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["nax/b738",1],["ryr/b738",1]]},
+        {"origin":"LEMG","destination":"ENTO","category":"arrival","route":"KEFIP..UDONE..ENTO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["nax/b738",1],["ryr/b738",1]]},
+        {"origin":"EGGP","destination":"ENTO","category":"arrival","route":"KEFIP..UDONE..ENTO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.22,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"ENTO","category":"arrival","route":"PULOG..UCAMU..ENTO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.65,"airlines":[["wzz/a320",2],["ntj/sf34",1]]},
+        {"origin":"","destination":"ENTO","category":"arrival","route":"EHUFU..IVIWE..ENTO","altitude":[6000,9000],"speed":250,"method":"random","rate":2.6,"airlines":[["wzz/a320",9],["nax/b738",2],["wif/dh8d",1]]},
+        {"origin":"","destination":"ENTO","category":"arrival","route":"KEFIP..UDONE..ENTO","altitude":[6000,9000],"speed":250,"method":"random","rate":1.74,"airlines":[["nax/b738",5],["ryr/b738",3]]},
+        {"origin":"","destination":"ENTO","category":"arrival","route":"TRF..ABASO..ENTO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["ln/c172",6],["ln/p28a",5],["ln/c182",3],["ln/be36",2],["ln/da42",1],["ln/tb20",1],["ln/c208",2],["ln/pc12",2],["ln/be20",1],["ln/b350",1],["ln/p180",1],["ln/c510",1],["ln/e50p",1],["ln/c550",2],["ln/e55p",1],["ln/cl30",1],["ln/c680",1],["ln/h25b",1],["ln/lj45",1],["ln/f2th",1],["ln/glf4",1],["ln/glex",1],["ln/glf5",1]]},
+        {"origin":"","destination":"ENTO","category":"arrival","route":"EHUFU..IVIWE..ENTO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["ln/c172",6],["ln/p28a",5],["ln/c182",3],["ln/be36",2],["ln/da42",1],["ln/tb20",1],["ln/c208",2],["ln/pc12",2],["ln/be20",1],["ln/b350",1],["ln/p180",1],["ln/c510",1],["ln/e50p",1],["ln/c550",2],["ln/e55p",1],["ln/cl30",1],["ln/c680",1],["ln/h25b",1],["ln/lj45",1],["ln/f2th",1],["ln/glf4",1],["ln/glex",1],["ln/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [59.1781,11.637,59.1837,10.7463],
+            [59.1837,10.7463,59.1867,10.2586],
+            [58.6009,11.0283,58.9794,10.5309],
+            [58.9794,10.5309,59.1867,10.2586],
+            [58.5752,9.5693,58.9703,10.0147],
+            [58.9703,10.0147,59.1867,10.2586],
+            [59.5871,9.1442,59.3302,9.8593],
+            [59.3302,9.8593,59.1867,10.2586],
+            [59.9292,10.2693,59.4365,10.2622],
+            [59.4365,10.2622,59.1867,10.2586]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [59.1956,10.2584,59.3621,10.2546],
+            [59.2787,10.2369,59.279,10.2761],
+            [59.362,10.235,59.3622,10.2742],
+            [59.1771,10.2588,59.0106,10.2626],
+            [59.0939,10.2802,59.0937,10.2413],
+            [59.0107,10.282,59.0104,10.2432]
+        ]}
+    ]
+}

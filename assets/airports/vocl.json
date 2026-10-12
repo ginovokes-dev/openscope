@@ -1,0 +1,89 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VOCL/",
+    "info": {"country":"IN","city":"Calicut","type":"large_airport","longestRunwayM":2867,"frequencies":{"atis":"127.000","twr":"122.950"}},
+    "radio": {"twr":"Calicut Tower","app":"Calicut Approach","dep":"Calicut Departure"},
+    "icao": "VOCL",
+    "iata": "CCJ",
+    "magnetic_north": -1.4,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [11.135996,75.955152,"342ft"],
+    "rangeRings": {"enabled":true,"center":[11.135996,75.955152],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":130,"speed":12},
+    "arrivalRunway": "10",
+    "departureRunway": "10",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[11.6754,75.9417],[11.6605,76.0845],[11.6097,76.2184],[11.5268,76.3344],[11.4171,76.4246],[11.2883,76.4827],[11.1492,76.5049],[11.0091,76.4897],[10.8777,76.438],[10.7639,76.3534],[10.6754,76.2417],[10.6184,76.1104],[10.5966,75.9686],[10.6115,75.8258],[10.6622,75.6919],[10.7452,75.5759],[10.8549,75.4857],[10.9836,75.4276],[11.1228,75.4054],[11.2629,75.4206],[11.3943,75.4723],[11.5081,75.5569],[11.5966,75.6686],[11.6536,75.7999]]}
+    ],
+    "fixes": {
+        "VOCL": [11.136,75.95515],
+        "NIJIL": [11.56652,76.52562],
+        "TELBU": [11.28831,76.15698],
+        "CCB": [11.0338,77.0481,"coimbatore"],
+        "GAZER": [11.11229,76.20863],
+        "CIA": [10.1505,76.3726,"cochin intl"],
+        "NOPEL": [10.9053,76.05287],
+        "GEWFI": [11.54962,75.37184],
+        "PAZIW": [11.28234,75.74878],
+        "_RWY1004DME": [11.15195,75.87573],
+        "_RWY2804DME": [11.12174,76.03486]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[11.1393,75.9424,"312ft"],[11.1344,75.9682,"325ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "NIJIL2A": {"icao":"NIJIL2A","name":"Nijil Two Alpha","rwy":{"VOCL10":["_RWY2804DME"],"VOCL28":["_RWY1004DME"]},"body":[],"exitPoints":{"NIJIL":["NIJIL"]},"draw":[["VOCL","NIJIL*"]]},
+        "CCB3A": {"icao":"CCB3A","name":"Coimbatore Three Alpha","rwy":{"VOCL10":["_RWY2804DME"],"VOCL28":["_RWY1004DME"]},"body":[],"exitPoints":{"CCB":["CCB"]},"draw":[["VOCL","CCB*"]]},
+        "CIA2A": {"icao":"CIA2A","name":"Cochin Intl Two Alpha","rwy":{"VOCL10":["_RWY2804DME"],"VOCL28":["_RWY1004DME"]},"body":[],"exitPoints":{"CIA":["CIA"]},"draw":[["VOCL","CIA*"]]},
+        "GEWFI2F": {"icao":"GEWFI2F","name":"Gewfi Two Foxtrot","rwy":{"VOCL10":["_RWY2804DME"],"VOCL28":["_RWY1004DME"]},"body":[],"exitPoints":{"GEWFI":["GEWFI"]},"draw":[["VOCL","GEWFI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"VOCL","destination":"OMAA","category":"departure","route":"VOCL10.GEWFI2F.GEWFI","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["axb/b738",1],["etd/a320",1],["jai/a320",1]]},
+        {"origin":"VOCL","destination":"OMDB","category":"departure","route":"VOCL10.GEWFI2F.GEWFI","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["aic/a321",1],["axb/b738",1],["uae/a332",1]]},
+        {"origin":"VOCL","destination":"OMSJ","category":"departure","route":"VOCL10.GEWFI2F.GEWFI","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["aby/a320",1],["aic/a321",1],["axb/b738",1]]},
+        {"origin":"VOCL","destination":"OTHH","category":"departure","route":"VOCL10.GEWFI2F.GEWFI","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["axb/b738",1],["qtr/a320",1],["qtr/a321",1]]},
+        {"origin":"VOCL","destination":"OOMS","category":"departure","route":"VOCL10.GEWFI2F.GEWFI","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["axb/b738",1],["oma/b738",1]]},
+        {"origin":"VOCL","destination":"","category":"departure","route":"VOCL10.NIJIL2A.NIJIL","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["sej/dh8d",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"VOCL","destination":"","category":"departure","route":"VOCL10.CCB3A.CCB","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["aic/a321",1]]},
+        {"origin":"VOCL","destination":"","category":"departure","route":"VOCL10.CIA2A.CIA","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["axb/b738",1]]},
+        {"origin":"VOCL","destination":"","category":"departure","route":"VOCL10.GEWFI2F.GEWFI","altitude":"","speed":"","method":"random","rate":1.74,"airlines":[["axb/b738",7]]},
+        {"origin":"VOCL","destination":"","category":"departure","route":"VOCL10.CIA2A.CIA","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",2],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"VOCL","destination":"","category":"departure","route":"VOCL10.NIJIL2A.NIJIL","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",2],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"OMAA","destination":"VOCL","category":"arrival","route":"GEWFI..PAZIW..VOCL","altitude":[6000,9000],"speed":250,"method":"random","rate":0.75,"airlines":[["axb/b738",1],["etd/a320",1],["jai/a320",1]]},
+        {"origin":"OMDB","destination":"VOCL","category":"arrival","route":"GEWFI..PAZIW..VOCL","altitude":[6000,9000],"speed":250,"method":"random","rate":0.75,"airlines":[["aic/a321",1],["axb/b738",1],["uae/a332",1]]},
+        {"origin":"OMSJ","destination":"VOCL","category":"arrival","route":"GEWFI..PAZIW..VOCL","altitude":[6000,9000],"speed":250,"method":"random","rate":0.75,"airlines":[["aby/a320",1],["aic/a321",1],["axb/b738",1]]},
+        {"origin":"OTHH","destination":"VOCL","category":"arrival","route":"GEWFI..PAZIW..VOCL","altitude":[6000,9000],"speed":250,"method":"random","rate":0.75,"airlines":[["axb/b738",1],["qtr/a320",1],["qtr/a321",1]]},
+        {"origin":"OOMS","destination":"VOCL","category":"arrival","route":"GEWFI..PAZIW..VOCL","altitude":[6000,9000],"speed":250,"method":"random","rate":0.5,"airlines":[["axb/b738",1],["oma/b738",1]]},
+        {"origin":"","destination":"VOCL","category":"arrival","route":"NIJIL..TELBU..VOCL","altitude":[6000,9000],"speed":250,"method":"random","rate":0.5,"airlines":[["sej/dh8d",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"","destination":"VOCL","category":"arrival","route":"CCB..GAZER..VOCL","altitude":[6000,9000],"speed":250,"method":"random","rate":0.25,"airlines":[["aic/a321",1]]},
+        {"origin":"","destination":"VOCL","category":"arrival","route":"CIA..NOPEL..VOCL","altitude":[6000,9000],"speed":250,"method":"random","rate":0.25,"airlines":[["axb/b738",1]]},
+        {"origin":"","destination":"VOCL","category":"arrival","route":"GEWFI..PAZIW..VOCL","altitude":[6000,9000],"speed":250,"method":"random","rate":1.74,"airlines":[["axb/b738",7]]},
+        {"origin":"","destination":"VOCL","category":"arrival","route":"CIA..NOPEL..VOCL","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",2],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"","destination":"VOCL","category":"arrival","route":"NIJIL..TELBU..VOCL","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",2],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [11.5665,76.5256,11.2883,76.157],
+            [11.2883,76.157,11.136,75.9552],
+            [11.0338,77.0481,11.1123,76.2086],
+            [11.1123,76.2086,11.136,75.9552],
+            [10.1505,76.3726,10.9053,76.0529],
+            [10.9053,76.0529,11.136,75.9552],
+            [11.5496,75.3718,11.2823,75.7488],
+            [11.2823,75.7488,11.136,75.9552]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [11.1393,75.9424,11.1709,75.7757],
+            [11.1453,75.8571,11.1649,75.861],
+            [11.1611,75.7738,11.1807,75.7777],
+            [11.1344,75.9682,11.1027,76.1348],
+            [11.1284,76.0535,11.1088,76.0496],
+            [11.1125,76.1368,11.0929,76.1329]
+        ]}
+    ]
+}

@@ -1,0 +1,92 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/OPQT/",
+    "info": {"country":"PK","city":"Quetta","type":"large_airport","longestRunwayM":3660,"frequencies":{"twr":"118.050","gnd":"121.800"}},
+    "radio": {"twr":"Quetta Tower","app":"Quetta Approach","dep":"Quetta Departure"},
+    "icao": "OPQT",
+    "iata": "UET",
+    "magnetic_north": 2.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 13000,
+    "initial_alt": 9000,
+    "position": [30.2514,66.937798,"5267ft"],
+    "rangeRings": {"enabled":true,"center":[30.2514,66.937798],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":300,"speed":10},
+    "arrivalRunway": "31R",
+    "departureRunway": "31R",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":130,"airspace_class":"D","poly":[[30.6557,66.9582],[30.6374,67.0787],[30.5927,67.1895],[30.5248,67.2832],[30.4383,67.3534],[30.339,67.3952],[30.2337,67.4058],[30.1297,67.3846],[30.034,67.3329],[29.953,67.2543],[29.8924,67.1541],[29.8563,67.0392],[29.8471,66.9174],[29.8654,66.7969],[29.9101,66.6861],[29.978,66.5924],[30.0645,66.5222],[30.1638,66.4804],[30.2691,66.4698],[30.3731,66.491],[30.4688,66.5427],[30.5498,66.6213],[30.6104,66.7215],[30.6465,66.8364]]}
+    ],
+    "fixes": {
+        "OPQT": [30.2514,66.9378],
+        "ASALU": [30.4787,67.50222],
+        "EWELA": [30.33585,67.1475],
+        "IGIVU": [29.71385,66.96138],
+        "IGELU": [30.05168,66.94656],
+        "MIHIW": [29.83859,66.53852],
+        "MIPRI": [30.09802,66.78945],
+        "TEMAM": [30.64092,66.5083],
+        "SELJA": [30.39612,66.77822],
+        "_RWY13L04DME": [30.31246,66.87253],
+        "_RWY31R04DME": [30.19182,67.0048],
+        "_RWY13R04DME": [30.31086,66.87061],
+        "_RWY31L04DME": [30.19052,67.00312]
+    },
+    "runways": [
+        {"name":["13L","31R"],"end":[[30.2641,66.9256,"5194ft"],[30.2402,66.9518,"5267ft"]],"ils":[true,true]},
+        {"name":["13R","31L"],"end":[[30.2626,66.9238,"5267ft"],[30.2388,66.95,"5267ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ASALU2D": {"icao":"ASALU2D","name":"Asalu Two Delta","rwy":{"OPQT13L":["_RWY31R04DME"],"OPQT31R":["_RWY13L04DME"],"OPQT13R":["_RWY31L04DME"],"OPQT31L":["_RWY13R04DME"]},"body":[],"exitPoints":{"ASALU":["ASALU"]},"draw":[["OPQT","ASALU*"]]},
+        "IGIVU2C": {"icao":"IGIVU2C","name":"Igivu Two Charlie","rwy":{"OPQT13L":["_RWY31R04DME"],"OPQT31R":["_RWY13L04DME"],"OPQT13R":["_RWY31L04DME"],"OPQT31L":["_RWY13R04DME"]},"body":[],"exitPoints":{"IGIVU":["IGIVU"]},"draw":[["OPQT","IGIVU*"]]},
+        "MIHIW1C": {"icao":"MIHIW1C","name":"Mihiw One Charlie","rwy":{"OPQT13L":["_RWY31R04DME"],"OPQT31R":["_RWY13L04DME"],"OPQT13R":["_RWY31L04DME"],"OPQT31L":["_RWY13R04DME"]},"body":[],"exitPoints":{"MIHIW":["MIHIW"]},"draw":[["OPQT","MIHIW*"]]},
+        "TEMAM1C": {"icao":"TEMAM1C","name":"Temam One Charlie","rwy":{"OPQT13L":["_RWY31R04DME"],"OPQT31R":["_RWY13L04DME"],"OPQT13R":["_RWY31L04DME"],"OPQT31L":["_RWY13R04DME"]},"body":[],"exitPoints":{"TEMAM":["TEMAM"]},"draw":[["OPQT","TEMAM*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"OPQT","destination":"OPKC","category":"departure","route":"OPQT31R.IGIVU2C.IGIVU","altitude":"","speed":"","method":"random","rate":1.04,"airlines":[["pia/a310",1],["sai/b734",1],["pia/at72",1],["pia/at45",1],["pia/at75",1]]},
+        {"origin":"OPQT","destination":"OPIS","category":"departure","route":"OPQT31R.ASALU2D.ASALU","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["pia/a310",1],["sai/b734",1]]},
+        {"origin":"OPQT","destination":"OPLA","category":"departure","route":"OPQT31R.ASALU2D.ASALU","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["pia/b737",1],["sai/b734",1]]},
+        {"origin":"OPQT","destination":"OIMM","category":"departure","route":"OPQT31R.TEMAM1C.TEMAM","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["pia/b737",1]]},
+        {"origin":"OPQT","destination":"OMSJ","category":"departure","route":"OPQT31R.MIHIW1C.MIHIW","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["pia/b737",1]]},
+        {"origin":"OPQT","destination":"","category":"departure","route":"OPQT31R.ASALU2D.ASALU","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["pia/at72",1],["pia/at45",1],["pia/at75",1]]},
+        {"origin":"OPQT","destination":"","category":"departure","route":"OPQT31R.MIHIW1C.MIHIW","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["pia/at72",1],["pia/at45",1],["pia/at75",1]]},
+        {"origin":"OPQT","destination":"","category":"departure","route":"OPQT31R.IGIVU2C.IGIVU","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["ap/c172",6],["ap/p28a",5],["ap/c182",3],["ap/be36",2],["ap/da42",1],["ap/tb20",1],["ap/c208",2],["ap/pc12",2],["ap/be20",1],["ap/b350",1],["ap/p180",1],["ap/c510",1],["ap/e50p",1],["ap/c550",1],["ap/e55p",1],["ap/cl30",1],["ap/c680",1],["ap/h25b",1],["ap/lj45",1],["ap/f2th",1],["ap/glf4",1],["ap/glex",1],["ap/glf5",1]]},
+        {"origin":"OPKC","destination":"OPQT","category":"arrival","route":"IGIVU..IGELU..OPQT","altitude":[9000,12000],"speed":250,"method":"random","rate":1.04,"airlines":[["pia/a310",1],["sai/b734",1],["pia/at72",1],["pia/at45",1],["pia/at75",1]]},
+        {"origin":"OPIS","destination":"OPQT","category":"arrival","route":"ASALU..EWELA..OPQT","altitude":[9000,12000],"speed":250,"method":"random","rate":0.69,"airlines":[["pia/a310",1],["sai/b734",1]]},
+        {"origin":"OPLA","destination":"OPQT","category":"arrival","route":"ASALU..EWELA..OPQT","altitude":[9000,12000],"speed":250,"method":"random","rate":0.69,"airlines":[["pia/b737",1],["sai/b734",1]]},
+        {"origin":"OIMM","destination":"OPQT","category":"arrival","route":"TEMAM..SELJA..OPQT","altitude":[9000,12000],"speed":250,"method":"random","rate":0.35,"airlines":[["pia/b737",1]]},
+        {"origin":"OMSJ","destination":"OPQT","category":"arrival","route":"MIHIW..MIPRI..OPQT","altitude":[9000,12000],"speed":250,"method":"random","rate":0.35,"airlines":[["pia/b737",1]]},
+        {"origin":"","destination":"OPQT","category":"arrival","route":"ASALU..EWELA..OPQT","altitude":[9000,12000],"speed":250,"method":"random","rate":0.69,"airlines":[["pia/at72",1],["pia/at45",1],["pia/at75",1]]},
+        {"origin":"","destination":"OPQT","category":"arrival","route":"MIHIW..MIPRI..OPQT","altitude":[9000,12000],"speed":250,"method":"random","rate":0.35,"airlines":[["pia/at72",1],["pia/at45",1],["pia/at75",1]]},
+        {"origin":"","destination":"OPQT","category":"arrival","route":"IGIVU..IGELU..OPQT","altitude":[9000,12000],"speed":250,"method":"random","rate":1.39,"airlines":[["ap/c172",6],["ap/p28a",5],["ap/c182",3],["ap/be36",2],["ap/da42",1],["ap/tb20",1],["ap/c208",2],["ap/pc12",2],["ap/be20",1],["ap/b350",1],["ap/p180",1],["ap/c510",1],["ap/e50p",1],["ap/c550",1],["ap/e55p",1],["ap/cl30",1],["ap/c680",1],["ap/h25b",1],["ap/lj45",1],["ap/f2th",1],["ap/glf4",1],["ap/glex",1],["ap/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [30.4787,67.5022,30.3359,67.1475],
+            [30.3359,67.1475,30.2514,66.9378],
+            [29.7138,66.9614,30.0517,66.9466],
+            [30.0517,66.9466,30.2514,66.9378],
+            [29.8386,66.5385,30.098,66.7894],
+            [30.098,66.7894,30.2514,66.9378],
+            [30.6409,66.5083,30.3961,66.7782],
+            [30.3961,66.7782,30.2514,66.9378]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [30.2641,66.9256,30.385,66.7928],
+            [30.3177,66.8508,30.3314,66.8677],
+            [30.3781,66.7844,30.3918,66.8012],
+            [30.2402,66.9518,30.1192,67.0842],
+            [30.1866,67.0264,30.1728,67.0097],
+            [30.1261,67.0926,30.1123,67.0758],
+            [30.2626,66.9238,30.3832,66.7907],
+            [30.316,66.8489,30.3298,66.8657],
+            [30.3763,66.7823,30.3901,66.7991],
+            [30.2388,66.95,30.118,67.0827],
+            [30.1853,67.0248,30.1716,67.008],
+            [30.1249,67.0911,30.1112,67.0743]
+        ]}
+    ]
+}

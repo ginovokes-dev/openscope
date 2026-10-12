@@ -1,0 +1,94 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/AGGH/",
+    "info": {"country":"SB","city":"Honiara","type":"large_airport","longestRunwayM":2244},
+    "radio": {"twr":"Honiara Tower","app":"Honiara Approach","dep":"Honiara Departure"},
+    "icao": "AGGH",
+    "iata": "HIR",
+    "magnetic_north": 8.7,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [-9.428,160.054993,"28ft"],
+    "rangeRings": {"enabled":true,"center":[-9.428,160.054993],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":50,"speed":10},
+    "arrivalRunway": "06",
+    "departureRunway": "06",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[-8.8946,160.1377],[-8.9339,160.2749],[-9.0069,160.397],[-9.1086,160.4958],[-9.232,160.5646],[-9.3688,160.5987],[-9.5096,160.5957],[-9.6449,160.5558],[-9.7654,160.4819],[-9.8629,160.3788],[-9.9307,160.2537],[-9.9643,160.115],[-9.9614,159.9723],[-9.9221,159.8351],[-9.8491,159.713],[-9.7474,159.6142],[-9.624,159.5454],[-9.4872,159.5113],[-9.3464,159.5143],[-9.2111,159.5541],[-9.0906,159.6281],[-8.9931,159.7312],[-8.9253,159.8563],[-8.8917,159.995]]}
+    ],
+    "fixes": {
+        "AGGH": [-9.428,160.05499],
+        "CAGEL": [-9.07104,160.67262],
+        "HAFMA": [-9.30171,160.27351],
+        "APIZA": [-9.72025,160.70663],
+        "JULGA": [-9.5314,160.28554],
+        "EDEMA": [-10.12574,159.94487],
+        "KUSAG": [-9.67486,160.01603],
+        "MAPRA": [-9.10096,159.42057],
+        "PUDAC": [-9.31229,159.83054],
+        "ROMBE": [-8.76327,159.81344],
+        "IHULU": [-9.19282,159.96953],
+        "_RWY0604DME": [-9.45643,159.98227],
+        "_RWY2404DME": [-9.39956,160.12671]
+    },
+    "runways": [
+        {"name":["06","24"],"end":[[-9.43174,160.045,"28ft"],[-9.42426,160.064,"14ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "CAGEL3F": {"icao":"CAGEL3F","name":"Cagel Three Foxtrot","rwy":{"AGGH06":["_RWY2404DME"],"AGGH24":["_RWY0604DME"]},"body":[],"exitPoints":{"CAGEL":["CAGEL"]},"draw":[["AGGH","CAGEL*"]]},
+        "APIZA3B": {"icao":"APIZA3B","name":"Apiza Three Bravo","rwy":{"AGGH06":["_RWY2404DME"],"AGGH24":["_RWY0604DME"]},"body":[],"exitPoints":{"APIZA":["APIZA"]},"draw":[["AGGH","APIZA*"]]},
+        "EDEMA1F": {"icao":"EDEMA1F","name":"Edema One Foxtrot","rwy":{"AGGH06":["_RWY2404DME"],"AGGH24":["_RWY0604DME"]},"body":[],"exitPoints":{"EDEMA":["EDEMA"]},"draw":[["AGGH","EDEMA*"]]},
+        "MAPRA1D": {"icao":"MAPRA1D","name":"Mapra One Delta","rwy":{"AGGH06":["_RWY2404DME"],"AGGH24":["_RWY0604DME"]},"body":[],"exitPoints":{"MAPRA":["MAPRA"]},"draw":[["AGGH","MAPRA*"]]},
+        "ROMBE2B": {"icao":"ROMBE2B","name":"Rombe Two Bravo","rwy":{"AGGH06":["_RWY2404DME"],"AGGH24":["_RWY0604DME"]},"body":[],"exitPoints":{"ROMBE":["ROMBE"]},"draw":[["AGGH","ROMBE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"AGGH","destination":"AGGM","category":"departure","route":"AGGH06.MAPRA1D.MAPRA","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["sol/dhc6",1],["sol/dh8d",1],["sol/dh8b",1],["sol/dh8c",1]]},
+        {"origin":"AGGH","destination":"AGGN","category":"departure","route":"AGGH06.MAPRA1D.MAPRA","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["sol/dhc6",1],["sol/dh8d",1],["sol/dh8b",1],["sol/dh8c",1]]},
+        {"origin":"AGGH","destination":"AGGV","category":"departure","route":"AGGH06.ROMBE2B.ROMBE","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["sol/bn2p",1],["sol/dhc6",1]]},
+        {"origin":"AGGH","destination":"AYPY","category":"departure","route":"AGGH06.MAPRA1D.MAPRA","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["ang/b737",1],["ang/dh8d",1]]},
+        {"origin":"AGGH","destination":"NFFN","category":"departure","route":"AGGH06.APIZA3B.APIZA","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["ang/b737",1],["sol/f100",1]]},
+        {"origin":"AGGH","destination":"NVVV","category":"departure","route":"AGGH06.APIZA3B.APIZA","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["fji/b737",1],["sol/a320",1]]},
+        {"origin":"AGGH","destination":"","category":"departure","route":"AGGH06.CAGEL3F.CAGEL","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["sol/bn2p",1]]},
+        {"origin":"AGGH","destination":"","category":"departure","route":"AGGH06.APIZA3B.APIZA","altitude":"","speed":"","method":"random","rate":1.47,"airlines":[["sol/dhc6",2],["sol/dh8d",1],["sol/bn2p",1],["sol/dh8b",1],["sol/dh8c",1]]},
+        {"origin":"AGGH","destination":"","category":"departure","route":"AGGH06.EDEMA1F.EDEMA","altitude":"","speed":"","method":"random","rate":0.88,"airlines":[["sol/dhc6",2],["sol/a320",1]]},
+        {"origin":"AGGH","destination":"","category":"departure","route":"AGGH06.MAPRA1D.MAPRA","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["sol/dhc6",3],["sol/bn2p",1]]},
+        {"origin":"AGGH","destination":"","category":"departure","route":"AGGH06.ROMBE2B.ROMBE","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["sol/dhc6",1]]},
+        {"origin":"AGGM","destination":"AGGH","category":"arrival","route":"MAPRA..PUDAC..AGGH","altitude":[6000,9000],"speed":250,"method":"random","rate":0.59,"airlines":[["sol/dhc6",1],["sol/dh8d",1],["sol/dh8b",1],["sol/dh8c",1]]},
+        {"origin":"AGGN","destination":"AGGH","category":"arrival","route":"MAPRA..PUDAC..AGGH","altitude":[6000,9000],"speed":250,"method":"random","rate":0.59,"airlines":[["sol/dhc6",1],["sol/dh8d",1],["sol/dh8b",1],["sol/dh8c",1]]},
+        {"origin":"AGGV","destination":"AGGH","category":"arrival","route":"ROMBE..IHULU..AGGH","altitude":[6000,9000],"speed":250,"method":"random","rate":0.59,"airlines":[["sol/bn2p",1],["sol/dhc6",1]]},
+        {"origin":"AYPY","destination":"AGGH","category":"arrival","route":"MAPRA..PUDAC..AGGH","altitude":[6000,9000],"speed":250,"method":"random","rate":0.59,"airlines":[["ang/b737",1],["ang/dh8d",1]]},
+        {"origin":"NFFN","destination":"AGGH","category":"arrival","route":"APIZA..JULGA..AGGH","altitude":[6000,9000],"speed":250,"method":"random","rate":0.59,"airlines":[["ang/b737",1],["sol/f100",1]]},
+        {"origin":"NVVV","destination":"AGGH","category":"arrival","route":"APIZA..JULGA..AGGH","altitude":[6000,9000],"speed":250,"method":"random","rate":0.59,"airlines":[["fji/b737",1],["sol/a320",1]]},
+        {"origin":"","destination":"AGGH","category":"arrival","route":"CAGEL..HAFMA..AGGH","altitude":[6000,9000],"speed":250,"method":"random","rate":0.29,"airlines":[["sol/bn2p",1]]},
+        {"origin":"","destination":"AGGH","category":"arrival","route":"APIZA..JULGA..AGGH","altitude":[6000,9000],"speed":250,"method":"random","rate":1.47,"airlines":[["sol/dhc6",2],["sol/dh8d",1],["sol/bn2p",1],["sol/dh8b",1],["sol/dh8c",1]]},
+        {"origin":"","destination":"AGGH","category":"arrival","route":"EDEMA..KUSAG..AGGH","altitude":[6000,9000],"speed":250,"method":"random","rate":0.88,"airlines":[["sol/dhc6",2],["sol/a320",1]]},
+        {"origin":"","destination":"AGGH","category":"arrival","route":"MAPRA..PUDAC..AGGH","altitude":[6000,9000],"speed":250,"method":"random","rate":1.17,"airlines":[["sol/dhc6",3],["sol/bn2p",1]]},
+        {"origin":"","destination":"AGGH","category":"arrival","route":"ROMBE..IHULU..AGGH","altitude":[6000,9000],"speed":250,"method":"random","rate":0.29,"airlines":[["sol/dhc6",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-9.071,160.6726,-9.3017,160.2735],
+            [-9.3017,160.2735,-9.428,160.055],
+            [-9.7202,160.7066,-9.5314,160.2855],
+            [-9.5314,160.2855,-9.428,160.055],
+            [-10.1257,159.9449,-9.6749,160.016],
+            [-9.6749,160.016,-9.428,160.055],
+            [-9.101,159.4206,-9.3123,159.8305],
+            [-9.3123,159.8305,-9.428,160.055],
+            [-8.7633,159.8134,-9.1928,159.9695],
+            [-9.1928,159.9695,-9.428,160.055]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-9.4317,160.045,-9.4934,159.8882],
+            [-9.4719,159.9703,-9.4533,159.9628],
+            [-9.5027,159.8919,-9.4842,159.8844],
+            [-9.4243,160.064,-9.3625,160.2208],
+            [-9.3841,160.1386,-9.4027,160.1461],
+            [-9.3532,160.217,-9.3718,160.2245]
+        ]}
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/NVSS/",
+    "info": {"country":"VU","city":"Luganville","type":"medium_airport","longestRunwayM":1988},
+    "radio": {"twr":"Santo Pekoa Tower","app":"Santo Pekoa Approach","dep":"Santo Pekoa Departure"},
+    "icao": "NVSS",
+    "iata": "SON",
+    "magnetic_north": 11.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-15.505,167.220001,"184ft"],
+    "rangeRings": {"enabled":true,"center":[-15.505,167.220001],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":130,"speed":6},
+    "arrivalRunway": "12",
+    "departureRunway": "12",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-15.1079,167.3009],[-15.1416,167.4048],[-15.2,167.4961],[-15.2793,167.5686],[-15.3739,167.6173],[-15.4775,167.639],[-15.5829,167.6321],[-15.683,167.5972],[-15.771,167.5365],[-15.8409,167.4542],[-15.8879,167.356],[-15.9088,167.2486],[-15.9021,167.1391],[-15.8684,167.0352],[-15.81,166.9439],[-15.7307,166.8714],[-15.6361,166.8227],[-15.5325,166.801],[-15.4271,166.8079],[-15.327,166.8428],[-15.239,166.9035],[-15.1691,166.9858],[-15.1221,167.084],[-15.1012,167.1914]]}
+    ],
+    "fixes": {
+        "NVSS": [-15.505,167.22],
+        "UNIDO": [-14.98086,167.34561],
+        "SIDUK": [-15.31026,167.26667],
+        "HAVDI": [-15.36535,167.75912],
+        "ULOVA": [-15.45312,167.4203],
+        "BEWTE": [-16.00663,167.42161],
+        "VUFPI": [-15.69138,167.29491],
+        "FENFA": [-15.54331,166.66316],
+        "PADZU": [-15.51923,167.01311],
+        "_RWY1204DME": [-15.45685,167.1598],
+        "_RWY3004DME": [-15.55314,167.28022]
+    },
+    "runways": [
+        {"name":["12","30"],"end":[[-15.4994,167.213,"184ft"],[-15.5106,167.22701,"113ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "UNIDO3F": {"icao":"UNIDO3F","name":"Unido Three Foxtrot","rwy":{"NVSS12":["_RWY3004DME"],"NVSS30":["_RWY1204DME"]},"body":[],"exitPoints":{"UNIDO":["UNIDO"]},"draw":[["NVSS","UNIDO*"]]},
+        "HAVDI3A": {"icao":"HAVDI3A","name":"Havdi Three Alpha","rwy":{"NVSS12":["_RWY3004DME"],"NVSS30":["_RWY1204DME"]},"body":[],"exitPoints":{"HAVDI":["HAVDI"]},"draw":[["NVSS","HAVDI*"]]},
+        "BEWTE1B": {"icao":"BEWTE1B","name":"Bewte One Bravo","rwy":{"NVSS12":["_RWY3004DME"],"NVSS30":["_RWY1204DME"]},"body":[],"exitPoints":{"BEWTE":["BEWTE"]},"draw":[["NVSS","BEWTE*"]]},
+        "FENFA1C": {"icao":"FENFA1C","name":"Fenfa One Charlie","rwy":{"NVSS12":["_RWY3004DME"],"NVSS30":["_RWY1204DME"]},"body":[],"exitPoints":{"FENFA":["FENFA"]},"draw":[["NVSS","FENFA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"NVSS","destination":"NVSG","category":"departure","route":"NVSS12.HAVDI3A.HAVDI","altitude":"","speed":"","method":"random","rate":0.89,"airlines":[["avn/bn2p",1],["avn/dhc6",1]]},
+        {"origin":"NVSS","destination":"NVSO","category":"departure","route":"NVSS12.HAVDI3A.HAVDI","altitude":"","speed":"","method":"random","rate":0.89,"airlines":[["avn/bn2p",1],["avn/dhc6",1]]},
+        {"origin":"NVSS","destination":"NVSP","category":"departure","route":"NVSS12.BEWTE1B.BEWTE","altitude":"","speed":"","method":"random","rate":0.89,"airlines":[["avn/bn2p",1],["avn/dhc6",1]]},
+        {"origin":"NVSS","destination":"NVVV","category":"departure","route":"NVSS12.BEWTE1B.BEWTE","altitude":"","speed":"","method":"random","rate":0.89,"airlines":[["avn/dhc6",1],["avn/at72",1],["avn/at45",1],["avn/at75",1]]},
+        {"origin":"NVSS","destination":"NVSC","category":"departure","route":"NVSS12.UNIDO3F.UNIDO","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["avn/dhc6",1]]},
+        {"origin":"NVSS","destination":"","category":"departure","route":"NVSS12.UNIDO3F.UNIDO","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["avn/dhc6",1]]},
+        {"origin":"NVSS","destination":"","category":"departure","route":"NVSS12.HAVDI3A.HAVDI","altitude":"","speed":"","method":"random","rate":1.33,"airlines":[["avn/dhc6",3]]},
+        {"origin":"NVSG","destination":"NVSS","category":"arrival","route":"HAVDI..ULOVA..NVSS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.89,"airlines":[["avn/bn2p",1],["avn/dhc6",1]]},
+        {"origin":"NVSO","destination":"NVSS","category":"arrival","route":"HAVDI..ULOVA..NVSS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.89,"airlines":[["avn/bn2p",1],["avn/dhc6",1]]},
+        {"origin":"NVSP","destination":"NVSS","category":"arrival","route":"BEWTE..VUFPI..NVSS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.89,"airlines":[["avn/bn2p",1],["avn/dhc6",1]]},
+        {"origin":"NVVV","destination":"NVSS","category":"arrival","route":"BEWTE..VUFPI..NVSS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.89,"airlines":[["avn/dhc6",1],["avn/at72",1],["avn/at45",1],["avn/at75",1]]},
+        {"origin":"NVSC","destination":"NVSS","category":"arrival","route":"UNIDO..SIDUK..NVSS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["avn/dhc6",1]]},
+        {"origin":"","destination":"NVSS","category":"arrival","route":"UNIDO..SIDUK..NVSS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["avn/dhc6",1]]},
+        {"origin":"","destination":"NVSS","category":"arrival","route":"HAVDI..ULOVA..NVSS","altitude":[4000,7000],"speed":250,"method":"random","rate":1.33,"airlines":[["avn/dhc6",3]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-14.9809,167.3456,-15.3103,167.2667],
+            [-15.3103,167.2667,-15.505,167.22],
+            [-15.3654,167.7591,-15.4531,167.4203],
+            [-15.4531,167.4203,-15.505,167.22],
+            [-16.0066,167.4216,-15.6914,167.2949],
+            [-15.6914,167.2949,-15.505,167.22],
+            [-15.5433,166.6632,-15.5192,167.0131],
+            [-15.5192,167.0131,-15.505,167.22]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-15.4994,167.213,-15.393,167.0801],
+            [-15.4539,167.1399,-15.4385,167.1531],
+            [-15.4007,167.0734,-15.3853,167.0867],
+            [-15.5106,167.227,-15.6169,167.3601],
+            [-15.5561,167.3002,-15.5715,167.2869],
+            [-15.6092,167.3667,-15.6246,167.3535]
+        ]}
+    ]
+}

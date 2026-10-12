@@ -1,0 +1,88 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/CYQT/",
+    "info": {"country":"CA","city":"Thunder Bay","type":"medium_airport","longestRunwayM":2233,"frequencies":{"atis":"128.800","twr":"118.100","gnd":"121.900"}},
+    "radio": {"twr":"Thunder Bay Tower","app":"Thunder Bay Approach","dep":"Thunder Bay Departure"},
+    "icao": "CYQT",
+    "iata": "YQT",
+    "magnetic_north": -3.7,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [48.371899,-89.323898,"653ft"],
+    "rangeRings": {"enabled":true,"center":[48.371899,-89.323898],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":280,"speed":5},
+    "arrivalRunway": "25",
+    "departureRunway": "25",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[48.7758,-89.3632],[48.7687,-89.2045],[48.7347,-89.054],[48.6759,-88.9218],[48.5964,-88.8171],[48.5016,-88.7468],[48.398,-88.716],[48.2926,-88.7265],[48.1926,-88.7777],[48.1048,-88.8662],[48.0352,-88.9859],[47.9886,-89.1286],[47.968,-89.2846],[47.975,-89.4433],[48.0091,-89.5938],[48.0679,-89.726],[48.1474,-89.8307],[48.2421,-89.9009],[48.3458,-89.9318],[48.4512,-89.9213],[48.5512,-89.87],[48.639,-89.7816],[48.7086,-89.6619],[48.7552,-89.5192]]}
+    ],
+    "fixes": {
+        "CYQT": [48.3719,-89.3239],
+        "EKETO": [48.5162,-88.54378],
+        "KOCOM": [48.42551,-89.03406],
+        "ZOMAR": [48.13128,-88.59963],
+        "DANIW": [48.2825,-89.05481],
+        "CKC": [47.8401,-90.3856,"cook county"],
+        "BULRE": [48.25157,-89.56413],
+        "HIWLA": [48.64749,-90.01935],
+        "UZEHU": [48.47429,-89.58228],
+        "_RWY0704DME": [48.34781,-89.42829],
+        "_RWY2504DME": [48.39901,-89.21071],
+        "_RWY1204DME": [48.40969,-89.42357],
+        "_RWY3004DME": [48.33225,-89.23416]
+    },
+    "runways": [
+        {"name":["07","25"],"end":[[48.3701,-89.3338,"653ft"],[48.3768,-89.3053,"635ft"]],"ils":[true,true]},
+        {"name":["12","30"],"end":[[48.3748,-89.3381,"652ft"],[48.3672,-89.3195,"642ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "EKETO1D": {"icao":"EKETO1D","name":"Eketo One Delta","rwy":{"CYQT07":["_RWY2504DME"],"CYQT25":["_RWY0704DME"],"CYQT12":["_RWY3004DME"],"CYQT30":["_RWY1204DME"]},"body":[],"exitPoints":{"EKETO":["EKETO"]},"draw":[["CYQT","EKETO*"]]},
+        "ZOMAR3E": {"icao":"ZOMAR3E","name":"Zomar Three Echo","rwy":{"CYQT07":["_RWY2504DME"],"CYQT25":["_RWY0704DME"],"CYQT12":["_RWY3004DME"],"CYQT30":["_RWY1204DME"]},"body":[],"exitPoints":{"ZOMAR":["ZOMAR"]},"draw":[["CYQT","ZOMAR*"]]},
+        "CKC2A": {"icao":"CKC2A","name":"Cook County Two Alpha","rwy":{"CYQT07":["_RWY2504DME"],"CYQT25":["_RWY0704DME"],"CYQT12":["_RWY3004DME"],"CYQT30":["_RWY1204DME"]},"body":[],"exitPoints":{"CKC":["CKC"]},"draw":[["CYQT","CKC*"]]},
+        "HIWLA3E": {"icao":"HIWLA3E","name":"Hiwla Three Echo","rwy":{"CYQT07":["_RWY2504DME"],"CYQT25":["_RWY0704DME"],"CYQT12":["_RWY3004DME"],"CYQT30":["_RWY1204DME"]},"body":[],"exitPoints":{"HIWLA":["HIWLA"]},"draw":[["CYQT","HIWLA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"CYQT","destination":"CYWG","category":"departure","route":"CYQT25.HIWLA3E.HIWLA","altitude":"","speed":"","method":"random","rate":1.04,"airlines":[["bls/sw4",1],["wja/b736",1],["wja/b737",1]]},
+        {"origin":"CYQT","destination":"CYYZ","category":"departure","route":"CYQT25.ZOMAR3E.ZOMAR","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["wja/b736",1],["wja/b737",1]]},
+        {"origin":"CYQT","destination":"CYAG","category":"departure","route":"CYQT25.HIWLA3E.HIWLA","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["bls/sw4",1]]},
+        {"origin":"CYQT","destination":"CYAM","category":"departure","route":"CYQT25.ZOMAR3E.ZOMAR","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["bls/sw4",1]]},
+        {"origin":"CYQT","destination":"CYHD","category":"departure","route":"CYQT25.HIWLA3E.HIWLA","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["bls/sw4",1]]},
+        {"origin":"CYQT","destination":"","category":"departure","route":"CYQT25.EKETO1D.EKETO","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["bls/sw4",2]]},
+        {"origin":"CYQT","destination":"","category":"departure","route":"CYQT25.ZOMAR3E.ZOMAR","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["bls/sw4",1],["poe/dh8d",1]]},
+        {"origin":"CYQT","destination":"","category":"departure","route":"CYQT25.HIWLA3E.HIWLA","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["bls/sw4",1]]},
+        {"origin":"CYQT","destination":"","category":"departure","route":"CYQT25.CKC2A.CKC","altitude":"","speed":"","method":"random","rate":1.5,"airlines":[["c/c172",6],["c/p28a",5],["c/c182",3],["c/be36",2],["c/da42",1],["c/tb20",1],["c/c208",2],["c/pc12",2],["c/be20",1],["c/b350",1],["c/p180",1],["c/c510",1],["c/e50p",1],["c/c550",1],["c/e55p",1],["c/cl30",1],["c/c680",1],["c/h25b",1],["c/lj45",1],["c/f2th",1],["c/glf4",1],["c/glex",1],["c/glf5",1]]},
+        {"origin":"CYWG","destination":"CYQT","category":"arrival","route":"HIWLA..UZEHU..CYQT","altitude":[4000,7000],"speed":250,"method":"random","rate":1.04,"airlines":[["bls/sw4",1],["wja/b736",1],["wja/b737",1]]},
+        {"origin":"CYYZ","destination":"CYQT","category":"arrival","route":"ZOMAR..DANIW..CYQT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.69,"airlines":[["wja/b736",1],["wja/b737",1]]},
+        {"origin":"CYAG","destination":"CYQT","category":"arrival","route":"HIWLA..UZEHU..CYQT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.35,"airlines":[["bls/sw4",1]]},
+        {"origin":"CYAM","destination":"CYQT","category":"arrival","route":"ZOMAR..DANIW..CYQT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.35,"airlines":[["bls/sw4",1]]},
+        {"origin":"CYHD","destination":"CYQT","category":"arrival","route":"HIWLA..UZEHU..CYQT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.35,"airlines":[["bls/sw4",1]]},
+        {"origin":"","destination":"CYQT","category":"arrival","route":"EKETO..KOCOM..CYQT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.69,"airlines":[["bls/sw4",2]]},
+        {"origin":"","destination":"CYQT","category":"arrival","route":"ZOMAR..DANIW..CYQT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.69,"airlines":[["bls/sw4",1],["poe/dh8d",1]]},
+        {"origin":"","destination":"CYQT","category":"arrival","route":"HIWLA..UZEHU..CYQT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.35,"airlines":[["bls/sw4",1]]},
+        {"origin":"","destination":"CYQT","category":"arrival","route":"CKC..BULRE..CYQT","altitude":[4000,7000],"speed":250,"method":"random","rate":1.5,"airlines":[["c/c172",6],["c/p28a",5],["c/c182",3],["c/be36",2],["c/da42",1],["c/tb20",1],["c/c208",2],["c/pc12",2],["c/be20",1],["c/b350",1],["c/p180",1],["c/c510",1],["c/e50p",1],["c/c550",1],["c/e55p",1],["c/cl30",1],["c/c680",1],["c/h25b",1],["c/lj45",1],["c/f2th",1],["c/glf4",1],["c/glex",1],["c/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [48.5162,-88.5438,48.4255,-89.0341],
+            [48.4255,-89.0341,48.3719,-89.3239],
+            [48.1313,-88.5996,48.2825,-89.0548],
+            [48.2825,-89.0548,48.3719,-89.3239],
+            [47.8401,-90.3856,48.2516,-89.5641],
+            [48.2516,-89.5641,48.3719,-89.3239],
+            [48.6475,-90.0193,48.4743,-89.5823],
+            [48.4743,-89.5823,48.3719,-89.3239]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [48.3701,-89.3338,48.3142,-89.5699],
+            [48.3328,-89.4469,48.3517,-89.4569],
+            [48.3048,-89.5649,48.3237,-89.5749],
+            [48.3768,-89.3053,48.4322,-89.0687],
+            [48.414,-89.1921,48.3951,-89.182],
+            [48.4416,-89.0737,48.4228,-89.0637]
+        ]}
+    ]
+}

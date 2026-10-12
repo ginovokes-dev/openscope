@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EDSB/",
+    "info": {"country":"DE","city":"Rheinmunster","type":"large_airport","longestRunwayM":2994,"frequencies":{"atis":"121.280","twr":"134.105","app":"119.450","gnd":"121.830"}},
+    "radio": {"twr":"Karlsruhe Baden-Baden Tower","app":"Karlsruhe Baden-Baden Approach","dep":"Karlsruhe Baden-Baden Departure"},
+    "icao": "EDSB",
+    "iata": "FKB",
+    "magnetic_north": 3.5,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [48.7794,8.0805,"408ft"],
+    "rangeRings": {"enabled":true,"center":[48.7794,8.0805],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":180,"speed":6},
+    "arrivalRunway": "21",
+    "departureRunway": "21",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[49.318,8.1305],[49.2911,8.3403],[49.2294,8.5325],[49.1369,8.6938],[49.0202,8.8133],[48.887,8.8829],[48.7465,8.8978],[48.6082,8.857],[48.4816,8.7633],[48.3753,8.6231],[48.2965,8.4459],[48.2506,8.2438],[48.2408,8.0305],[48.2677,7.8207],[48.3294,7.6285],[48.4219,7.4672],[48.5386,7.3477],[48.6718,7.2781],[48.8123,7.2632],[48.9506,7.304],[49.0772,7.3977],[49.1835,7.5379],[49.2623,7.7151],[49.3082,7.9172]]}
+    ],
+    "fixes": {
+        "EDSB": [48.7794,8.0805],
+        "HDM": [49.5656,8.46381,"coleman"],
+        "WECIJ": [49.01726,8.19647],
+        "LBU": [48.913,9.34023,"luburg"],
+        "UHUJA": [48.8191,8.45481],
+        "MEG": [48.0544,9.36755,"mengen"],
+        "CEPUW": [48.61706,8.36868],
+        "DVI": [47.9607,8.52271,"donaueschingen"],
+        "VIPWI": [48.54403,8.20763],
+        "ARAKE": [48.20849,7.44984],
+        "HIWIC": [48.57741,7.85738],
+        "_RWY0304DME": [48.71316,8.01848],
+        "_RWY2104DME": [48.84552,8.14267]
+    },
+    "runways": [
+        {"name":["03","21"],"end":[[48.76983,8.07158,"405ft"],[48.78886,8.08944,"405ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "HDM3C": {"icao":"HDM3C","name":"Coleman Three Charlie","rwy":{"EDSB03":["_RWY2104DME"],"EDSB21":["_RWY0304DME"]},"body":[],"exitPoints":{"HDM":["HDM"]},"draw":[["EDSB","HDM*"]]},
+        "LBU2C": {"icao":"LBU2C","name":"Luburg Two Charlie","rwy":{"EDSB03":["_RWY2104DME"],"EDSB21":["_RWY0304DME"]},"body":[],"exitPoints":{"LBU":["LBU"]},"draw":[["EDSB","LBU*"]]},
+        "MEG1C": {"icao":"MEG1C","name":"Mengen One Charlie","rwy":{"EDSB03":["_RWY2104DME"],"EDSB21":["_RWY0304DME"]},"body":[],"exitPoints":{"MEG":["MEG"]},"draw":[["EDSB","MEG*"]]},
+        "DVI2A": {"icao":"DVI2A","name":"Donaueschingen Two Alpha","rwy":{"EDSB03":["_RWY2104DME"],"EDSB21":["_RWY0304DME"]},"body":[],"exitPoints":{"DVI":["DVI"]},"draw":[["EDSB","DVI*"]]},
+        "ARAKE2D": {"icao":"ARAKE2D","name":"Arake Two Delta","rwy":{"EDSB03":["_RWY2104DME"],"EDSB21":["_RWY0304DME"]},"body":[],"exitPoints":{"ARAKE":["ARAKE"]},"draw":[["EDSB","ARAKE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EDSB","destination":"LEPA","category":"departure","route":"EDSB21.ARAKE2D.ARAKE","altitude":"","speed":"","method":"random","rate":1.27,"airlines":[["ber/a320",1],["ber/a321",1],["ber/b737",1],["ryr/b738",1]]},
+        {"origin":"EDSB","destination":"EDDH","category":"departure","route":"EDSB21.HDM3C.HDM","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["gwi/crj7",1],["gwi/crj9",1],["gwi/crj2",1]]},
+        {"origin":"EDSB","destination":"EGSS","category":"departure","route":"EDSB21.HDM3C.HDM","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDSB","destination":"GCLP","category":"departure","route":"EDSB21.ARAKE2D.ARAKE","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDSB","destination":"GCRR","category":"departure","route":"EDSB21.ARAKE2D.ARAKE","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDSB","destination":"GCTS","category":"departure","route":"EDSB21.ARAKE2D.ARAKE","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDSB","destination":"","category":"departure","route":"EDSB21.LBU2C.LBU","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["gmi/b737",1]]},
+        {"origin":"EDSB","destination":"","category":"departure","route":"EDSB21.MEG1C.MEG","altitude":"","speed":"","method":"random","rate":0.95,"airlines":[["ryr/b738",3]]},
+        {"origin":"EDSB","destination":"","category":"departure","route":"EDSB21.DVI2A.DVI","altitude":"","speed":"","method":"random","rate":0.95,"airlines":[["ryr/b738",3]]},
+        {"origin":"EDSB","destination":"","category":"departure","route":"EDSB21.ARAKE2D.ARAKE","altitude":"","speed":"","method":"random","rate":1.27,"airlines":[["ryr/b738",4]]},
+        {"origin":"EDSB","destination":"","category":"departure","route":"EDSB21.HDM3C.HDM","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["d/c172",6],["d/p28a",5],["d/c182",3],["d/be36",2],["d/da42",1],["d/tb20",1],["d/c208",2],["d/pc12",2],["d/be20",1],["d/b350",1],["d/p180",1],["d/c510",1],["d/e50p",1],["d/c550",2],["d/e55p",1],["d/cl30",1],["d/c680",1],["d/h25b",1],["d/lj45",1],["d/f2th",1],["d/glf4",1],["d/glex",1],["d/glf5",1]]},
+        {"origin":"EDSB","destination":"","category":"departure","route":"EDSB21.MEG1C.MEG","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["d/c172",6],["d/p28a",5],["d/c182",3],["d/be36",2],["d/da42",1],["d/tb20",1],["d/c208",2],["d/pc12",2],["d/be20",1],["d/b350",1],["d/p180",1],["d/c510",1],["d/e50p",1],["d/c550",2],["d/e55p",1],["d/cl30",1],["d/c680",1],["d/h25b",1],["d/lj45",1],["d/f2th",1],["d/glf4",1],["d/glex",1],["d/glf5",1]]},
+        {"origin":"LEPA","destination":"EDSB","category":"arrival","route":"ARAKE..HIWIC..EDSB","altitude":[6000,9000],"speed":250,"method":"random","rate":1.27,"airlines":[["ber/a320",1],["ber/a321",1],["ber/b737",1],["ryr/b738",1]]},
+        {"origin":"EDDH","destination":"EDSB","category":"arrival","route":"HDM..WECIJ..EDSB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.32,"airlines":[["gwi/crj7",1],["gwi/crj9",1],["gwi/crj2",1]]},
+        {"origin":"EGSS","destination":"EDSB","category":"arrival","route":"HDM..WECIJ..EDSB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.32,"airlines":[["ryr/b738",1]]},
+        {"origin":"GCLP","destination":"EDSB","category":"arrival","route":"ARAKE..HIWIC..EDSB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.32,"airlines":[["ryr/b738",1]]},
+        {"origin":"GCRR","destination":"EDSB","category":"arrival","route":"ARAKE..HIWIC..EDSB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.32,"airlines":[["ryr/b738",1]]},
+        {"origin":"GCTS","destination":"EDSB","category":"arrival","route":"ARAKE..HIWIC..EDSB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.32,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"EDSB","category":"arrival","route":"LBU..UHUJA..EDSB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.32,"airlines":[["gmi/b737",1]]},
+        {"origin":"","destination":"EDSB","category":"arrival","route":"MEG..CEPUW..EDSB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.95,"airlines":[["ryr/b738",3]]},
+        {"origin":"","destination":"EDSB","category":"arrival","route":"DVI..VIPWI..EDSB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.95,"airlines":[["ryr/b738",3]]},
+        {"origin":"","destination":"EDSB","category":"arrival","route":"ARAKE..HIWIC..EDSB","altitude":[6000,9000],"speed":250,"method":"random","rate":1.27,"airlines":[["ryr/b738",4]]},
+        {"origin":"","destination":"EDSB","category":"arrival","route":"HDM..WECIJ..EDSB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["d/c172",6],["d/p28a",5],["d/c182",3],["d/be36",2],["d/da42",1],["d/tb20",1],["d/c208",2],["d/pc12",2],["d/be20",1],["d/b350",1],["d/p180",1],["d/c510",1],["d/e50p",1],["d/c550",2],["d/e55p",1],["d/cl30",1],["d/c680",1],["d/h25b",1],["d/lj45",1],["d/f2th",1],["d/glf4",1],["d/glex",1],["d/glf5",1]]},
+        {"origin":"","destination":"EDSB","category":"arrival","route":"MEG..CEPUW..EDSB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["d/c172",6],["d/p28a",5],["d/c182",3],["d/be36",2],["d/da42",1],["d/tb20",1],["d/c208",2],["d/pc12",2],["d/be20",1],["d/b350",1],["d/p180",1],["d/c510",1],["d/e50p",1],["d/c550",2],["d/e55p",1],["d/cl30",1],["d/c680",1],["d/h25b",1],["d/lj45",1],["d/f2th",1],["d/glf4",1],["d/glex",1],["d/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [49.5656,8.4638,49.0173,8.1965],
+            [49.0173,8.1965,48.7794,8.0805],
+            [48.913,9.3402,48.8191,8.4548],
+            [48.8191,8.4548,48.7794,8.0805],
+            [48.0544,9.3675,48.6171,8.3687],
+            [48.6171,8.3687,48.7794,8.0805],
+            [47.9607,8.5227,48.544,8.2076],
+            [48.544,8.2076,48.7794,8.0805],
+            [48.2085,7.4498,48.5774,7.8574],
+            [48.5774,7.8574,48.7794,8.0805]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [48.7698,8.0716,48.6281,7.9391],
+            [48.6937,8.0181,48.7042,7.9923],
+            [48.6228,7.9519,48.6333,7.9262],
+            [48.7889,8.0894,48.9305,8.2228],
+            [48.8649,8.1431,48.8544,8.1689],
+            [48.9357,8.2098,48.9252,8.2357]
+        ]}
+    ]
+}

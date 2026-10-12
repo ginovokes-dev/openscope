@@ -1,0 +1,85 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/HTZA/",
+    "info": {"country":"TZ","city":"Zanzibar","type":"large_airport","longestRunwayM":3022,"frequencies":{"atis":"126.400","twr":"121.200","app":"121.200","gnd":"121.700"}},
+    "radio": {"twr":"Zanzibar Tower","app":"Zanzibar Approach","dep":"Zanzibar Departure"},
+    "icao": "HTZA",
+    "iata": "ZNZ",
+    "magnetic_north": -2.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-6.22202,39.224899,"54ft"],
+    "rangeRings": {"enabled":true,"center":[-6.22202,39.224899],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":190,"speed":12},
+    "arrivalRunway": "18",
+    "departureRunway": "18",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-5.8177,39.2079],[-5.8271,39.3137],[-5.8634,39.4135],[-5.9241,39.5005],[-6.0052,39.5686],[-6.101,39.6134],[-6.2051,39.6316],[-6.3103,39.6222],[-6.4095,39.5857],[-6.4959,39.5246],[-6.5637,39.443],[-6.6082,39.3466],[-6.6264,39.2419],[-6.617,39.1361],[-6.5807,39.0363],[-6.5199,38.9493],[-6.4389,38.8812],[-6.343,38.8364],[-6.239,38.8182],[-6.1337,38.8276],[-6.0345,38.8641],[-5.9481,38.9252],[-5.8803,39.0068],[-5.8358,39.1032]]}
+    ],
+    "fixes": {
+        "HTZA": [-6.22202,39.2249],
+        "ZUGTE": [-5.71203,39.39706],
+        "LOSID": [-6.03254,39.28886],
+        "EFIKE": [-6.3538,39.74954],
+        "NIKCU": [-6.27098,39.41982],
+        "DV": [-6.88865,39.1927,"dar es salaam"],
+        "CACIB": [-6.42166,39.21526],
+        "FICGO": [-5.77282,38.92717],
+        "UZICA": [-6.05513,39.11428],
+        "_RWY1804DME": [-6.14468,39.2172],
+        "_RWY3604DME": [-6.29937,39.23261]
+    },
+    "runways": [
+        {"name":["18","36"],"end":[[-6.21098,39.2238,"54ft"],[-6.23307,39.226,"51ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ZUGTE3C": {"icao":"ZUGTE3C","name":"Zugte Three Charlie","rwy":{"HTZA18":["_RWY3604DME"],"HTZA36":["_RWY1804DME"]},"body":[],"exitPoints":{"ZUGTE":["ZUGTE"]},"draw":[["HTZA","ZUGTE*"]]},
+        "EFIKE1B": {"icao":"EFIKE1B","name":"Efike One Bravo","rwy":{"HTZA18":["_RWY3604DME"],"HTZA36":["_RWY1804DME"]},"body":[],"exitPoints":{"EFIKE":["EFIKE"]},"draw":[["HTZA","EFIKE*"]]},
+        "DV3F": {"icao":"DV3F","name":"Dar Es Salaam Three Foxtrot","rwy":{"HTZA18":["_RWY3604DME"],"HTZA36":["_RWY1804DME"]},"body":[],"exitPoints":{"DV":["DV"]},"draw":[["HTZA","DV*"]]},
+        "FICGO3C": {"icao":"FICGO3C","name":"Ficgo Three Charlie","rwy":{"HTZA18":["_RWY3604DME"],"HTZA36":["_RWY1804DME"]},"body":[],"exitPoints":{"FICGO":["FICGO"]},"draw":[["HTZA","FICGO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"HTZA","destination":"HTDA","category":"departure","route":"HTZA18.DV3F.DV","altitude":"","speed":"","method":"random","rate":1.08,"airlines":[["eth/b737",1],["oma/b738",1],["prf/at43",1],["prf/at72",1]]},
+        {"origin":"HTZA","destination":"HTKJ","category":"departure","route":"HTZA18.FICGO3C.FICGO","altitude":"","speed":"","method":"random","rate":0.81,"airlines":[["eth/b763",1],["prf/at43",1],["prf/at72",1]]},
+        {"origin":"HTZA","destination":"HKMO","category":"departure","route":"HTZA18.ZUGTE3C.ZUGTE","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["cfg/b763",1],["ffv/crj7",1],["ffv/crj9",1],["ffv/crj2",1]]},
+        {"origin":"HTZA","destination":"HTAR","category":"departure","route":"HTZA18.FICGO3C.FICGO","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["prf/at43",1],["prf/at72",1]]},
+        {"origin":"HTZA","destination":"EDDF","category":"departure","route":"HTZA18.FICGO3C.FICGO","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["cfg/b763",1]]},
+        {"origin":"HTZA","destination":"","category":"departure","route":"HTZA18.ZUGTE3C.ZUGTE","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["eth/b737",1],["oma/b738",1]]},
+        {"origin":"HTZA","destination":"","category":"departure","route":"HTZA18.DV3F.DV","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["mno/b738",1]]},
+        {"origin":"HTZA","destination":"","category":"departure","route":"HTZA18.FICGO3C.FICGO","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["prf/at72",1]]},
+        {"origin":"HTZA","destination":"","category":"departure","route":"HTZA18.EFIKE1B.EFIKE","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["5h/c172",6],["5h/p28a",5],["5h/c182",3],["5h/be36",2],["5h/da42",1],["5h/tb20",1],["5h/c208",2],["5h/pc12",2],["5h/be20",1],["5h/b350",1],["5h/p180",1],["5h/c510",1],["5h/e50p",1],["5h/c550",1],["5h/e55p",1],["5h/cl30",1],["5h/c680",1],["5h/h25b",1],["5h/lj45",1],["5h/f2th",1],["5h/glf4",1],["5h/glex",1],["5h/glf5",1]]},
+        {"origin":"HTDA","destination":"HTZA","category":"arrival","route":"DV..CACIB..HTZA","altitude":[4000,7000],"speed":250,"method":"random","rate":1.08,"airlines":[["eth/b737",1],["oma/b738",1],["prf/at43",1],["prf/at72",1]]},
+        {"origin":"HTKJ","destination":"HTZA","category":"arrival","route":"FICGO..UZICA..HTZA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.81,"airlines":[["eth/b763",1],["prf/at43",1],["prf/at72",1]]},
+        {"origin":"HKMO","destination":"HTZA","category":"arrival","route":"ZUGTE..LOSID..HTZA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.54,"airlines":[["cfg/b763",1],["ffv/crj7",1],["ffv/crj9",1],["ffv/crj2",1]]},
+        {"origin":"HTAR","destination":"HTZA","category":"arrival","route":"FICGO..UZICA..HTZA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.54,"airlines":[["prf/at43",1],["prf/at72",1]]},
+        {"origin":"EDDF","destination":"HTZA","category":"arrival","route":"FICGO..UZICA..HTZA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.27,"airlines":[["cfg/b763",1]]},
+        {"origin":"","destination":"HTZA","category":"arrival","route":"ZUGTE..LOSID..HTZA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.54,"airlines":[["eth/b737",1],["oma/b738",1]]},
+        {"origin":"","destination":"HTZA","category":"arrival","route":"DV..CACIB..HTZA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.27,"airlines":[["mno/b738",1]]},
+        {"origin":"","destination":"HTZA","category":"arrival","route":"FICGO..UZICA..HTZA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.27,"airlines":[["prf/at72",1]]},
+        {"origin":"","destination":"HTZA","category":"arrival","route":"EFIKE..NIKCU..HTZA","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["5h/c172",6],["5h/p28a",5],["5h/c182",3],["5h/be36",2],["5h/da42",1],["5h/tb20",1],["5h/c208",2],["5h/pc12",2],["5h/be20",1],["5h/b350",1],["5h/p180",1],["5h/c510",1],["5h/e50p",1],["5h/c550",1],["5h/e55p",1],["5h/cl30",1],["5h/c680",1],["5h/h25b",1],["5h/lj45",1],["5h/f2th",1],["5h/glf4",1],["5h/glex",1],["5h/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-5.712,39.3971,-6.0325,39.2889],
+            [-6.0325,39.2889,-6.222,39.2249],
+            [-6.3538,39.7495,-6.271,39.4198],
+            [-6.271,39.4198,-6.222,39.2249],
+            [-6.8886,39.1927,-6.4217,39.2153],
+            [-6.4217,39.2153,-6.222,39.2249],
+            [-5.7728,38.9272,-6.0551,39.1143],
+            [-6.0551,39.1143,-6.222,39.2249]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-6.211,39.2238,-6.0452,39.2073],
+            [-6.1291,39.2055,-6.1271,39.2255],
+            [-6.0462,39.1973,-6.0443,39.2173],
+            [-6.2331,39.226,-6.3988,39.2425],
+            [-6.315,39.2443,-6.3169,39.2243],
+            [-6.3978,39.2525,-6.3998,39.2325]
+        ]}
+    ]
+}

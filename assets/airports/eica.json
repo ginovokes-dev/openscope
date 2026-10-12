@@ -1,0 +1,66 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EICA/",
+    "info": {"country":"IE","city":"Inverin","type":"small_airport","longestRunwayM":600,"approximateRunways":true},
+    "radio": {"twr":"Connemara Tower","app":"Connemara Approach","dep":"Connemara Radar"},
+    "icao": "EICA",
+    "iata": "NNR",
+    "magnetic_north": -2.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [53.230301,-9.46778,"70ft"],
+    "rangeRings": {"enabled":true,"center":[53.230301,-9.46778],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":220,"speed":5},
+    "arrivalRunway": "23",
+    "departureRunway": "23",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[53.6346,-9.4973],[53.6254,-9.3215],[53.5893,-9.1556],[53.5287,-9.011],[53.4477,-8.8976],[53.352,-8.823],[53.248,-8.7924],[53.1427,-8.8077],[53.0434,-8.8681],[52.9569,-8.9693],[52.889,-9.1045],[52.8443,-9.2645],[52.826,-9.4383],[52.8352,-9.6141],[52.8713,-9.78],[52.9319,-9.9245],[53.0129,-10.038],[53.1086,-10.1126],[53.2126,-10.1432],[53.3179,-10.1278],[53.4172,-10.0675],[53.5037,-9.9662],[53.5716,-9.831],[53.6163,-9.6711]]}
+    ],
+    "fixes": {
+        "EICA": [53.2303,-9.46778],
+        "CON": [53.908,-8.8201,"connaught"],
+        "ULAMA": [53.40378,-9.30198],
+        "NAWOD": [53.20684,-8.56997],
+        "KOTDU": [53.22158,-9.13421],
+        "FOY": [52.5663,-9.19541,"foynes"],
+        "PIMAB": [53.0362,-9.38816],
+        "LUKVA": [53.25377,-10.36559],
+        "FECID": [53.23902,-9.80135],
+        "_RWY0503DME": [53.19471,-9.53259],
+        "_RWY2303DME": [53.26586,-9.40286]
+    },
+    "runways": [
+        {"name":["05","23"],"end":[[53.22848,-9.4711,"70ft"],[53.23212,-9.46446,"70ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "CON1D": {"icao":"CON1D","name":"Connaught One Delta","rwy":{"EICA05":["_RWY2303DME"],"EICA23":["_RWY0503DME"]},"body":[],"exitPoints":{"CON":["CON"]},"draw":[["EICA","CON*"]]},
+        "NAWOD1A": {"icao":"NAWOD1A","name":"Nawod One Alpha","rwy":{"EICA05":["_RWY2303DME"],"EICA23":["_RWY0503DME"]},"body":[],"exitPoints":{"NAWOD":["NAWOD"]},"draw":[["EICA","NAWOD*"]]},
+        "FOY3C": {"icao":"FOY3C","name":"Foynes Three Charlie","rwy":{"EICA05":["_RWY2303DME"],"EICA23":["_RWY0503DME"]},"body":[],"exitPoints":{"FOY":["FOY"]},"draw":[["EICA","FOY*"]]},
+        "LUKVA2B": {"icao":"LUKVA2B","name":"Lukva Two Bravo","rwy":{"EICA05":["_RWY2303DME"],"EICA23":["_RWY0503DME"]},"body":[],"exitPoints":{"LUKVA":["LUKVA"]},"draw":[["EICA","LUKVA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EICA","destination":"","category":"departure","route":"EICA23.CON1D.CON","altitude":"","speed":"","method":"random","rate":3,"airlines":[["ei/c172",6],["ei/p28a",5],["ei/c182",3],["ei/be36",2],["ei/da42",1],["ei/tb20",1],["ei/pc12",2],["ei/be20",1]]},
+        {"origin":"","destination":"EICA","category":"arrival","route":"CON..ULAMA..EICA","altitude":[4000,7000],"speed":250,"method":"random","rate":3,"airlines":[["ei/c172",6],["ei/p28a",5],["ei/c182",3],["ei/be36",2],["ei/da42",1],["ei/tb20",1],["ei/pc12",2],["ei/be20",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [53.908,-8.8201,53.4038,-9.302],
+            [53.4038,-9.302,53.2303,-9.4678],
+            [53.2068,-8.57,53.2216,-9.1342],
+            [53.2216,-9.1342,53.2303,-9.4678],
+            [52.5663,-9.1954,53.0362,-9.3882],
+            [53.0362,-9.3882,53.2303,-9.4678],
+            [53.2538,-10.3656,53.239,-9.8014],
+            [53.239,-9.8014,53.2303,-9.4678]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [53.2321,-9.4645,53.3445,-9.2588],
+            [53.2957,-9.373,53.281,-9.3505],
+            [53.3518,-9.2701,53.3371,-9.2475]
+        ]}
+    ]
+}

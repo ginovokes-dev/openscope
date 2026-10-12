@@ -1,0 +1,81 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/GMME/",
+    "info": {"country":"MA","city":"Rabat","type":"large_airport","longestRunwayM":3501,"frequencies":{"twr":"118.300","app":"118.900"}},
+    "radio": {"twr":"Rabat Tower","app":"Rabat Approach","dep":"Rabat Departure"},
+    "icao": "GMME",
+    "iata": "RBA",
+    "magnetic_north": -0.3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [34.051498,-6.75152,"276ft"],
+    "rangeRings": {"enabled":true,"center":[34.051498,-6.75152],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":200,"speed":11},
+    "arrivalRunway": "21",
+    "departureRunway": "21",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[34.4562,-6.7541],[34.4429,-6.6276],[34.403,-6.5095],[34.3392,-6.4079],[34.2557,-6.3298],[34.1583,-6.2804],[34.0536,-6.2631],[33.9488,-6.2791],[33.851,-6.3272],[33.7668,-6.4043],[33.7021,-6.5051],[33.6611,-6.6226],[33.6468,-6.749],[33.66,-6.8755],[33.7,-6.9935],[33.7638,-7.0951],[33.8473,-7.1732],[33.9447,-7.2227],[34.0494,-7.24],[34.1542,-7.224],[34.252,-7.1758],[34.3362,-7.0987],[34.4009,-6.998],[34.4418,-6.8804]]}
+    ],
+    "fixes": {
+        "GMME": [34.0515,-6.75152],
+        "EMIZE": [34.53863,-6.47607],
+        "CNL": [34.2872,-6.62056,"kenitra"],
+        "RESNO": [33.73952,-6.2226],
+        "OCERO": [33.93558,-6.55501],
+        "BNS": [33.6418,-7.208,"ben slimane"],
+        "MOCIH": [33.90464,-6.91515],
+        "AVIRE": [34.36348,-7.28044],
+        "WOVED": [34.16741,-6.94803],
+        "_RWY0304DME": [33.98106,-6.80312],
+        "_RWY2104DME": [34.12182,-6.69985]
+    },
+    "runways": [
+        {"name":["03","21"],"end":[[34.038,-6.76139,"265ft"],[34.0649,-6.74165,"238ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "EMIZE2B": {"icao":"EMIZE2B","name":"Emize Two Bravo","rwy":{"GMME03":["_RWY2104DME"],"GMME21":["_RWY0304DME"]},"body":[],"exitPoints":{"EMIZE":["EMIZE"]},"draw":[["GMME","EMIZE*"]]},
+        "RESNO2C": {"icao":"RESNO2C","name":"Resno Two Charlie","rwy":{"GMME03":["_RWY2104DME"],"GMME21":["_RWY0304DME"]},"body":[],"exitPoints":{"RESNO":["RESNO"]},"draw":[["GMME","RESNO*"]]},
+        "BNS2D": {"icao":"BNS2D","name":"Ben Slimane Two Delta","rwy":{"GMME03":["_RWY2104DME"],"GMME21":["_RWY0304DME"]},"body":[],"exitPoints":{"BNS":["BNS"]},"draw":[["GMME","BNS*"]]},
+        "AVIRE2A": {"icao":"AVIRE2A","name":"Avire Two Alpha","rwy":{"GMME03":["_RWY2104DME"],"GMME21":["_RWY0304DME"]},"body":[],"exitPoints":{"AVIRE":["AVIRE"]},"draw":[["GMME","AVIRE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"GMME","destination":"LFPG","category":"departure","route":"GMME21.EMIZE2B.EMIZE","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["afr/a319",1],["afr/a320",1]]},
+        {"origin":"GMME","destination":"LFPO","category":"departure","route":"GMME21.EMIZE2B.EMIZE","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["ram/b738",1],["vlg/a320",1]]},
+        {"origin":"GMME","destination":"EBCI","category":"departure","route":"GMME21.EMIZE2B.EMIZE","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["ryr/b738",1]]},
+        {"origin":"GMME","destination":"EGSS","category":"departure","route":"GMME21.EMIZE2B.EMIZE","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["ryr/b738",1]]},
+        {"origin":"GMME","destination":"GMMN","category":"departure","route":"GMME21.BNS2D.BNS","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["ram/at72",1]]},
+        {"origin":"GMME","destination":"","category":"departure","route":"GMME21.EMIZE2B.EMIZE","altitude":"","speed":"","method":"random","rate":1.58,"airlines":[["ryr/b738",4]]},
+        {"origin":"GMME","destination":"","category":"departure","route":"GMME21.EMIZE2B.EMIZE","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["cn/c172",6],["cn/p28a",5],["cn/c182",3],["cn/be36",2],["cn/da42",1],["cn/tb20",1],["cn/c208",2],["cn/pc12",2],["cn/be20",1],["cn/b350",1],["cn/p180",1],["cn/c510",1],["cn/e50p",1],["cn/c550",1],["cn/e55p",1],["cn/cl30",1],["cn/c680",1],["cn/h25b",1],["cn/lj45",1],["cn/f2th",1],["cn/glf4",1],["cn/glex",1],["cn/glf5",1]]},
+        {"origin":"LFPG","destination":"GMME","category":"arrival","route":"EMIZE..CNL..GMME","altitude":[4000,7000],"speed":250,"method":"random","rate":0.79,"airlines":[["afr/a319",1],["afr/a320",1]]},
+        {"origin":"LFPO","destination":"GMME","category":"arrival","route":"EMIZE..CNL..GMME","altitude":[4000,7000],"speed":250,"method":"random","rate":0.79,"airlines":[["ram/b738",1],["vlg/a320",1]]},
+        {"origin":"EBCI","destination":"GMME","category":"arrival","route":"EMIZE..CNL..GMME","altitude":[4000,7000],"speed":250,"method":"random","rate":0.39,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGSS","destination":"GMME","category":"arrival","route":"EMIZE..CNL..GMME","altitude":[4000,7000],"speed":250,"method":"random","rate":0.39,"airlines":[["ryr/b738",1]]},
+        {"origin":"GMMN","destination":"GMME","category":"arrival","route":"BNS..MOCIH..GMME","altitude":[4000,7000],"speed":250,"method":"random","rate":0.39,"airlines":[["ram/at72",1]]},
+        {"origin":"","destination":"GMME","category":"arrival","route":"EMIZE..CNL..GMME","altitude":[4000,7000],"speed":250,"method":"random","rate":1.58,"airlines":[["ryr/b738",4]]},
+        {"origin":"","destination":"GMME","category":"arrival","route":"EMIZE..CNL..GMME","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["cn/c172",6],["cn/p28a",5],["cn/c182",3],["cn/be36",2],["cn/da42",1],["cn/tb20",1],["cn/c208",2],["cn/pc12",2],["cn/be20",1],["cn/b350",1],["cn/p180",1],["cn/c510",1],["cn/e50p",1],["cn/c550",1],["cn/e55p",1],["cn/cl30",1],["cn/c680",1],["cn/h25b",1],["cn/lj45",1],["cn/f2th",1],["cn/glf4",1],["cn/glex",1],["cn/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [34.5386,-6.4761,34.2872,-6.6206],
+            [34.2872,-6.6206,34.0515,-6.7515],
+            [33.7395,-6.2226,33.9356,-6.555],
+            [33.9356,-6.555,34.0515,-6.7515],
+            [33.6418,-7.208,33.9046,-6.9151],
+            [33.9046,-6.9151,34.0515,-6.7515],
+            [34.3635,-7.2804,34.1674,-6.948],
+            [34.1674,-6.948,34.0515,-6.7515]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [34.038,-6.7614,33.8956,-6.8656],
+            [33.9616,-6.8032,33.972,-6.8238],
+            [33.8904,-6.8553,33.9008,-6.8759],
+            [34.0649,-6.7416,34.2072,-6.637],
+            [34.1412,-6.6997,34.1309,-6.6791],
+            [34.2124,-6.6474,34.202,-6.6267]
+        ]}
+    ]
+}

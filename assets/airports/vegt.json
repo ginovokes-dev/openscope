@@ -1,0 +1,87 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VEGT/",
+    "info": {"country":"IN","city":"Guwahati","type":"large_airport","longestRunwayM":2748,"frequencies":{"atis":"126.600","twr":"118.750","app":"123.300","gnd":"121.900"}},
+    "radio": {"twr":"Guwahati Tower","app":"Guwahati Approach","dep":"Guwahati Departure"},
+    "icao": "VEGT",
+    "iata": "GAU",
+    "magnetic_north": -0.3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [26.106654,91.585226,"162ft"],
+    "rangeRings": {"enabled":true,"center":[26.106654,91.585226],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":20,"speed":10},
+    "arrivalRunway": "02",
+    "departureRunway": "02",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[26.5113,91.5829],[26.4981,91.6996],[26.4582,91.8085],[26.3943,91.9022],[26.3108,91.9743],[26.2134,92.0199],[26.1088,92.0359],[26.004,92.0211],[25.9061,91.9767],[25.822,91.9056],[25.7572,91.8126],[25.7163,91.7041],[25.702,91.5876],[25.7152,91.4709],[25.7551,91.3619],[25.819,91.2682],[25.9025,91.1961],[25.9999,91.1505],[26.1045,91.1346],[26.2093,91.1493],[26.3072,91.1938],[26.3913,91.2649],[26.4561,91.3578],[26.497,91.4663]]}
+    ],
+    "fixes": {
+        "VEGT": [26.10665,91.58523],
+        "ILIBE": [26.33379,92.12826],
+        "HAKAW": [26.19105,91.78698],
+        "BPN": [25.7065,91.9787,"barapani"],
+        "OJAJE": [25.95683,91.73254],
+        "RICCE": [25.7109,91.17948],
+        "ROCAL": [25.95961,91.43447],
+        "RIDHA": [26.2721,91.01521],
+        "MULHI": [26.16813,91.37344],
+        "_RWY0204DME": [26.03322,91.55202],
+        "_RWY2004DME": [26.17897,91.61981]
+    },
+    "runways": [
+        {"name":["02","20"],"end":[[26.0947,91.5806,"162ft"],[26.1175,91.5912,"162ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ILIBE3A": {"icao":"ILIBE3A","name":"Ilibe Three Alpha","rwy":{"VEGT02":["_RWY2004DME"],"VEGT20":["_RWY0204DME"]},"body":[],"exitPoints":{"ILIBE":["ILIBE"]},"draw":[["VEGT","ILIBE*"]]},
+        "BPN1A": {"icao":"BPN1A","name":"Barapani One Alpha","rwy":{"VEGT02":["_RWY2004DME"],"VEGT20":["_RWY0204DME"]},"body":[],"exitPoints":{"BPN":["BPN"]},"draw":[["VEGT","BPN*"]]},
+        "RICCE1A": {"icao":"RICCE1A","name":"Ricce One Alpha","rwy":{"VEGT02":["_RWY2004DME"],"VEGT20":["_RWY0204DME"]},"body":[],"exitPoints":{"RICCE":["RICCE"]},"draw":[["VEGT","RICCE*"]]},
+        "RIDHA3E": {"icao":"RIDHA3E","name":"Ridha Three Echo","rwy":{"VEGT02":["_RWY2004DME"],"VEGT20":["_RWY0204DME"]},"body":[],"exitPoints":{"RIDHA":["RIDHA"]},"draw":[["VEGT","RIDHA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"VEGT","destination":"VECC","category":"departure","route":"VEGT02.RICCE1A.RICCE","altitude":"","speed":"","method":"random","rate":1.11,"airlines":[["aic/a319",1],["aic/a320",1],["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VEGT","destination":"VIDP","category":"departure","route":"VEGT02.RIDHA3E.RIDHA","altitude":"","speed":"","method":"random","rate":0.89,"airlines":[["aic/a320",1],["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VEGT","destination":"VEAT","category":"departure","route":"VEGT02.RICCE1A.RICCE","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VEGT","destination":"VEBD","category":"departure","route":"VEGT02.RIDHA3E.RIDHA","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VEGT","destination":"VEIM","category":"departure","route":"VEGT02.BPN1A.BPN","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["aic/a320",1],["igo/a320",1]]},
+        {"origin":"VEGT","destination":"","category":"departure","route":"VEGT02.ILIBE3A.ILIBE","altitude":"","speed":"","method":"random","rate":0.22,"airlines":[["igo/a320",1]]},
+        {"origin":"VEGT","destination":"","category":"departure","route":"VEGT02.BPN1A.BPN","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["drk/a319",1],["aic/at72",1],["aic/at45",1],["aic/at75",1]]},
+        {"origin":"VEGT","destination":"","category":"departure","route":"VEGT02.RICCE1A.RICCE","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["igo/a320",2]]},
+        {"origin":"VEGT","destination":"","category":"departure","route":"VEGT02.RIDHA3E.RIDHA","altitude":"","speed":"","method":"random","rate":0.22,"airlines":[["drk/a319",1]]},
+        {"origin":"VEGT","destination":"","category":"departure","route":"VEGT02.BPN1A.BPN","altitude":"","speed":"","method":"random","rate":1.55,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"VECC","destination":"VEGT","category":"arrival","route":"RICCE..ROCAL..VEGT","altitude":[4000,7000],"speed":250,"method":"random","rate":1.11,"airlines":[["aic/a319",1],["aic/a320",1],["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VIDP","destination":"VEGT","category":"arrival","route":"RIDHA..MULHI..VEGT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.89,"airlines":[["aic/a320",1],["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VEAT","destination":"VEGT","category":"arrival","route":"RICCE..ROCAL..VEGT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VEBD","destination":"VEGT","category":"arrival","route":"RIDHA..MULHI..VEGT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VEIM","destination":"VEGT","category":"arrival","route":"BPN..OJAJE..VEGT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["aic/a320",1],["igo/a320",1]]},
+        {"origin":"","destination":"VEGT","category":"arrival","route":"ILIBE..HAKAW..VEGT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.22,"airlines":[["igo/a320",1]]},
+        {"origin":"","destination":"VEGT","category":"arrival","route":"BPN..OJAJE..VEGT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["drk/a319",1],["aic/at72",1],["aic/at45",1],["aic/at75",1]]},
+        {"origin":"","destination":"VEGT","category":"arrival","route":"RICCE..ROCAL..VEGT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["igo/a320",2]]},
+        {"origin":"","destination":"VEGT","category":"arrival","route":"RIDHA..MULHI..VEGT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.22,"airlines":[["drk/a319",1]]},
+        {"origin":"","destination":"VEGT","category":"arrival","route":"BPN..OJAJE..VEGT","altitude":[4000,7000],"speed":250,"method":"random","rate":1.55,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [26.3338,92.1283,26.191,91.787],
+            [26.191,91.787,26.1067,91.5852],
+            [25.7065,91.9787,25.9568,91.7325],
+            [25.9568,91.7325,26.1067,91.5852],
+            [25.7109,91.1795,25.9596,91.4345],
+            [25.9596,91.4345,26.1067,91.5852],
+            [26.2721,91.0152,26.1681,91.3734],
+            [26.1681,91.3734,26.1067,91.5852]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [26.0947,91.5806,25.941,91.5092],
+            [26.014,91.5551,26.0217,91.5346],
+            [25.9371,91.5195,25.9448,91.499],
+            [26.1175,91.5912,26.2712,91.6628],
+            [26.1982,91.6167,26.1905,91.6372],
+            [26.275,91.6525,26.2673,91.6731]
+        ]}
+    ]
+}

@@ -1,0 +1,88 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SBCG/",
+    "info": {"country":"BR","city":"Campo Grande","type":"medium_airport","longestRunwayM":2605,"frequencies":{"twr":"118.100","app":"120.200","gnd":"121.900"}},
+    "radio": {"twr":"Campo Grande Tower","app":"Campo Grande Approach","dep":"Campo Grande Departure"},
+    "icao": "SBCG",
+    "iata": "CGR",
+    "magnetic_north": -18.7,
+    "ctr_radius": 45,
+    "ctr_ceiling": 9000,
+    "initial_alt": 5000,
+    "position": [-20.469998,-54.673988,"1833ft"],
+    "rangeRings": {"enabled":true,"center":[-20.469998,-54.673988],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":40,"speed":10},
+    "arrivalRunway": "06",
+    "departureRunway": "06",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":90,"airspace_class":"D","poly":[[-20.0867,-54.8125],[-20.0661,-54.7019],[-20.0731,-54.5893],[-20.1072,-54.4826],[-20.166,-54.3889],[-20.2455,-54.3146],[-20.3402,-54.2648],[-20.4439,-54.2429],[-20.5493,-54.2504],[-20.6493,-54.2867],[-20.7371,-54.3495],[-20.8067,-54.4343],[-20.8533,-54.5355],[-20.8738,-54.6461],[-20.8668,-54.7586],[-20.8328,-54.8654],[-20.774,-54.9591],[-20.6945,-55.0334],[-20.5997,-55.0832],[-20.4961,-55.1051],[-20.3907,-55.0976],[-20.2907,-55.0612],[-20.2029,-54.9985],[-20.1333,-54.9137]]}
+    ],
+    "fixes": {
+        "SBCG": [-20.47,-54.67399],
+        "ASEMA": [-19.95322,-54.83344],
+        "NUJUB": [-20.27799,-54.73323],
+        "PUDAS": [-20.16493,-54.20105],
+        "REVEL": [-20.35665,-54.49827],
+        "RIB": [-20.4672,-53.7505,"ribas"],
+        "GEWTA": [-20.46935,-54.46065],
+        "AVURU": [-20.96084,-54.90895],
+        "WAZAK": [-20.65236,-54.76129],
+        "JUDOG": [-20.22739,-55.18647],
+        "DILMO": [-20.37986,-54.8644],
+        "_RWY0604DME": [-20.52809,-54.73003],
+        "_RWY2404DME": [-20.41184,-54.61792]
+    },
+    "runways": [
+        {"name":["06","24"],"end":[[-20.47866,-54.68233,"1818ft"],[-20.46128,-54.66557,"1818ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ASEMA2E": {"icao":"ASEMA2E","name":"Asema Two Echo","rwy":{"SBCG06":["_RWY2404DME"],"SBCG24":["_RWY0604DME"]},"body":[],"exitPoints":{"ASEMA":["ASEMA"]},"draw":[["SBCG","ASEMA*"]]},
+        "PUDAS3D": {"icao":"PUDAS3D","name":"Pudas Three Delta","rwy":{"SBCG06":["_RWY2404DME"],"SBCG24":["_RWY0604DME"]},"body":[],"exitPoints":{"PUDAS":["PUDAS"]},"draw":[["SBCG","PUDAS*"]]},
+        "RIB2F": {"icao":"RIB2F","name":"Ribas Two Foxtrot","rwy":{"SBCG06":["_RWY2404DME"],"SBCG24":["_RWY0604DME"]},"body":[],"exitPoints":{"RIB":["RIB"]},"draw":[["SBCG","RIB*"]]},
+        "AVURU1A": {"icao":"AVURU1A","name":"Avuru One Alpha","rwy":{"SBCG06":["_RWY2404DME"],"SBCG24":["_RWY0604DME"]},"body":[],"exitPoints":{"AVURU":["AVURU"]},"draw":[["SBCG","AVURU*"]]},
+        "JUDOG2C": {"icao":"JUDOG2C","name":"Judog Two Charlie","rwy":{"SBCG06":["_RWY2404DME"],"SBCG24":["_RWY0604DME"]},"body":[],"exitPoints":{"JUDOG":["JUDOG"]},"draw":[["SBCG","JUDOG*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SBCG","destination":"SBCY","category":"departure","route":"SBCG06.ASEMA2E.ASEMA","altitude":"","speed":"","method":"random","rate":0.99,"airlines":[["azu/at72",1],["azu/e75l",1],["glo/b737",1],["glo/b738",1],["one/f100",1]]},
+        {"origin":"SBCG","destination":"SBBR","category":"departure","route":"SBCG06.PUDAS3D.PUDAS","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["glo/b738",1],["one/a318",1],["tam/a320",1]]},
+        {"origin":"SBCG","destination":"SBGR","category":"departure","route":"SBCG06.RIB2F.RIB","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["azu/e190",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBCG","destination":"SBKP","category":"departure","route":"SBCG06.RIB2F.RIB","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["azu/e190",2],["azu/e75l",1]]},
+        {"origin":"SBCG","destination":"SBSP","category":"departure","route":"SBCG06.RIB2F.RIB","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["glo/b737",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBCG","destination":"","category":"departure","route":"SBCG06.RIB2F.RIB","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["glo/b738",2],["glo/b737",1],["one/f100",1]]},
+        {"origin":"SBCG","destination":"","category":"departure","route":"SBCG06.JUDOG2C.JUDOG","altitude":"","speed":"","method":"random","rate":0.2,"airlines":[["azu/at72",1]]},
+        {"origin":"SBCG","destination":"","category":"departure","route":"SBCG06.ASEMA2E.ASEMA","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"SBCY","destination":"SBCG","category":"arrival","route":"ASEMA..NUJUB..SBCG","altitude":[5000,8000],"speed":250,"method":"random","rate":0.99,"airlines":[["azu/at72",1],["azu/e75l",1],["glo/b737",1],["glo/b738",1],["one/f100",1]]},
+        {"origin":"SBBR","destination":"SBCG","category":"arrival","route":"PUDAS..REVEL..SBCG","altitude":[5000,8000],"speed":250,"method":"random","rate":0.59,"airlines":[["glo/b738",1],["one/a318",1],["tam/a320",1]]},
+        {"origin":"SBGR","destination":"SBCG","category":"arrival","route":"RIB..GEWTA..SBCG","altitude":[5000,8000],"speed":250,"method":"random","rate":0.59,"airlines":[["azu/e190",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBKP","destination":"SBCG","category":"arrival","route":"RIB..GEWTA..SBCG","altitude":[5000,8000],"speed":250,"method":"random","rate":0.59,"airlines":[["azu/e190",2],["azu/e75l",1]]},
+        {"origin":"SBSP","destination":"SBCG","category":"arrival","route":"RIB..GEWTA..SBCG","altitude":[5000,8000],"speed":250,"method":"random","rate":0.59,"airlines":[["glo/b737",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"","destination":"SBCG","category":"arrival","route":"RIB..GEWTA..SBCG","altitude":[5000,8000],"speed":250,"method":"random","rate":0.79,"airlines":[["glo/b738",2],["glo/b737",1],["one/f100",1]]},
+        {"origin":"","destination":"SBCG","category":"arrival","route":"JUDOG..DILMO..SBCG","altitude":[5000,8000],"speed":250,"method":"random","rate":0.2,"airlines":[["azu/at72",1]]},
+        {"origin":"","destination":"SBCG","category":"arrival","route":"ASEMA..NUJUB..SBCG","altitude":[5000,8000],"speed":250,"method":"random","rate":1.45,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-19.9532,-54.8334,-20.278,-54.7332],
+            [-20.278,-54.7332,-20.47,-54.674],
+            [-20.1649,-54.2011,-20.3567,-54.4983],
+            [-20.3567,-54.4983,-20.47,-54.674],
+            [-20.4672,-53.7505,-20.4694,-54.4607],
+            [-20.4694,-54.4607,-20.47,-54.674],
+            [-20.9608,-54.909,-20.6524,-54.7613],
+            [-20.6524,-54.7613,-20.47,-54.674],
+            [-20.2274,-55.1865,-20.3799,-54.8644],
+            [-20.3799,-54.8644,-20.47,-54.674]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-20.4787,-54.6823,-20.6022,-54.8016],
+            [-20.5471,-54.734,-20.5337,-54.7499],
+            [-20.6089,-54.7937,-20.5955,-54.8095],
+            [-20.4613,-54.6656,-20.3377,-54.5465],
+            [-20.3928,-54.6139,-20.4062,-54.5981],
+            [-20.331,-54.5544,-20.3444,-54.5386]
+        ]}
+    ]
+}

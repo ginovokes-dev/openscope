@@ -40,6 +40,20 @@
           "description": "(Optional) Prevents airport from being listed within the game",
           "type": "boolean"
         },
+        "iata": {
+          "description": "(Optional) IATA airport code in uppercase; may be an empty string when the airport has none",
+          "type": "string",
+          "pattern": "^[A-Z]{0,3}$"
+        },
+        "country": {
+          "description": "(Optional) ISO 3166-1 alpha-2 country code of the airport in uppercase",
+          "type": "string",
+          "pattern": "^[A-Z]{2}$"
+        },
+        "generated": {
+          "description": "(Optional) True for airports produced by tools/data-pipeline (OurAirports + OpenFlights data) rather than hand-authored from official charts",
+          "type": "boolean"
+        },
         "_comment": {
           "$ref": "#comment"
         }

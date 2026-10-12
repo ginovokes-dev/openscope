@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/MMHO/",
+    "info": {"country":"MX","city":"Hermosillo","type":"large_airport","longestRunwayM":2368,"frequencies":{"atis":"127.700","twr":"118.700","app":"121.400"}},
+    "radio": {"twr":"Hermosillo Tower","app":"Hermosillo Approach","dep":"Hermosillo Departure"},
+    "icao": "MMHO",
+    "iata": "HMO",
+    "magnetic_north": 8.8,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [29.092811,-111.053015,"627ft"],
+    "rangeRings": {"enabled":true,"center":[29.092811,-111.053015],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":70,"speed":5},
+    "arrivalRunway": "05",
+    "departureRunway": "05",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[29.4927,-110.9822],[29.4631,-110.8661],[29.4082,-110.7628],[29.3318,-110.6793],[29.2392,-110.6212],[29.1365,-110.5926],[29.0309,-110.5953],[28.9295,-110.6293],[28.8392,-110.6921],[28.7662,-110.7795],[28.7155,-110.8855],[28.6905,-111.003],[28.6929,-111.1239],[28.7225,-111.2399],[28.7774,-111.3432],[28.8538,-111.4267],[28.9465,-111.4848],[29.0491,-111.5134],[29.1547,-111.5107],[29.2561,-111.4768],[29.3464,-111.4139],[29.4194,-111.3265],[29.4701,-111.2205],[29.4951,-111.103]]}
+    ],
+    "fixes": {
+        "MMHO": [29.09281,-111.05301],
+        "BEFDE": [28.70808,-110.62275],
+        "CITRI": [28.94987,-110.89315],
+        "ZADVI": [28.6908,-111.46207],
+        "VOWVU": [28.94345,-111.20499],
+        "VUVGE": [29.42122,-111.54059],
+        "AFILE": [29.21483,-111.23417],
+        "OKENI": [29.62195,-111.16392],
+        "TEWUN": [29.28941,-111.09422],
+        "_RWY0504DME": [29.05419,-111.12868],
+        "_RWY2304DME": [29.13258,-110.97627]
+    },
+    "runways": [
+        {"name":["05","23"],"end":[[29.088,-111.063,"626ft"],[29.0988,-111.042,"626ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "BEFDE1A": {"icao":"BEFDE1A","name":"Befde One Alpha","rwy":{"MMHO05":["_RWY2304DME"],"MMHO23":["_RWY0504DME"]},"body":[],"exitPoints":{"BEFDE":["BEFDE"]},"draw":[["MMHO","BEFDE*"]]},
+        "ZADVI3F": {"icao":"ZADVI3F","name":"Zadvi Three Foxtrot","rwy":{"MMHO05":["_RWY2304DME"],"MMHO23":["_RWY0504DME"]},"body":[],"exitPoints":{"ZADVI":["ZADVI"]},"draw":[["MMHO","ZADVI*"]]},
+        "VUVGE1D": {"icao":"VUVGE1D","name":"Vuvge One Delta","rwy":{"MMHO05":["_RWY2304DME"],"MMHO23":["_RWY0504DME"]},"body":[],"exitPoints":{"VUVGE":["VUVGE"]},"draw":[["MMHO","VUVGE*"]]},
+        "OKENI2A": {"icao":"OKENI2A","name":"Okeni Two Alpha","rwy":{"MMHO05":["_RWY2304DME"],"MMHO23":["_RWY0504DME"]},"body":[],"exitPoints":{"OKENI":["OKENI"]},"draw":[["MMHO","OKENI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"MMHO","destination":"MMMX","category":"departure","route":"MMHO05.BEFDE1A.BEFDE","altitude":"","speed":"","method":"random","rate":1.08,"airlines":[["amx/b737",1],["dal/e145",1],["voi/a319",1]]},
+        {"origin":"MMHO","destination":"KPHX","category":"departure","route":"MMHO05.OKENI2A.OKENI","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["dal/e145",1],["amx/e145",1],["amx/e135",1]]},
+        {"origin":"MMHO","destination":"MMGL","category":"departure","route":"MMHO05.BEFDE1A.BEFDE","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["voi/a319",1],["voi/a320",1]]},
+        {"origin":"MMHO","destination":"KLAX","category":"departure","route":"MMHO05.VUVGE1D.VUVGE","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["dal/e145",1]]},
+        {"origin":"MMHO","destination":"MMCL","category":"departure","route":"MMHO05.BEFDE1A.BEFDE","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["dal/e145",1]]},
+        {"origin":"MMHO","destination":"","category":"departure","route":"MMHO05.BEFDE1A.BEFDE","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["voi/a320",1]]},
+        {"origin":"MMHO","destination":"","category":"departure","route":"MMHO05.VUVGE1D.VUVGE","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["voi/a319",1]]},
+        {"origin":"MMHO","destination":"","category":"departure","route":"MMHO05.BEFDE1A.BEFDE","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["xa/c172",6],["xa/p28a",5],["xa/c182",3],["xa/be36",2],["xa/da42",1],["xa/tb20",1],["xa/c208",2],["xa/pc12",2],["xa/be20",1],["xa/b350",1],["xa/p180",1],["xa/c510",1],["xa/e50p",1],["xa/c550",1],["xa/e55p",1],["xa/cl30",1],["xa/c680",1],["xa/h25b",1],["xa/lj45",1],["xa/f2th",1],["xa/glf4",1],["xa/glex",1],["xa/glf5",1]]},
+        {"origin":"MMMX","destination":"MMHO","category":"arrival","route":"BEFDE..CITRI..MMHO","altitude":[4000,7000],"speed":250,"method":"random","rate":1.08,"airlines":[["amx/b737",1],["dal/e145",1],["voi/a319",1]]},
+        {"origin":"KPHX","destination":"MMHO","category":"arrival","route":"OKENI..TEWUN..MMHO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["dal/e145",1],["amx/e145",1],["amx/e135",1]]},
+        {"origin":"MMGL","destination":"MMHO","category":"arrival","route":"BEFDE..CITRI..MMHO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["voi/a319",1],["voi/a320",1]]},
+        {"origin":"KLAX","destination":"MMHO","category":"arrival","route":"VUVGE..AFILE..MMHO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["dal/e145",1]]},
+        {"origin":"MMCL","destination":"MMHO","category":"arrival","route":"BEFDE..CITRI..MMHO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["dal/e145",1]]},
+        {"origin":"","destination":"MMHO","category":"arrival","route":"BEFDE..CITRI..MMHO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["voi/a320",1]]},
+        {"origin":"","destination":"MMHO","category":"arrival","route":"VUVGE..AFILE..MMHO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["voi/a319",1]]},
+        {"origin":"","destination":"MMHO","category":"arrival","route":"BEFDE..CITRI..MMHO","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["xa/c172",6],["xa/p28a",5],["xa/c182",3],["xa/be36",2],["xa/da42",1],["xa/tb20",1],["xa/c208",2],["xa/pc12",2],["xa/be20",1],["xa/b350",1],["xa/p180",1],["xa/c510",1],["xa/e50p",1],["xa/c550",1],["xa/e55p",1],["xa/cl30",1],["xa/c680",1],["xa/h25b",1],["xa/lj45",1],["xa/f2th",1],["xa/glf4",1],["xa/glex",1],["xa/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [28.7081,-110.6227,28.9499,-110.8932],
+            [28.9499,-110.8932,29.0928,-111.053],
+            [28.6908,-111.4621,28.9434,-111.205],
+            [28.9434,-111.205,29.0928,-111.053],
+            [29.4212,-111.5406,29.2148,-111.2342],
+            [29.2148,-111.2342,29.0928,-111.053],
+            [29.6219,-111.1639,29.2894,-111.0942],
+            [29.2894,-111.0942,29.0928,-111.053]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [29.088,-111.063,29.0034,-111.2271],
+            [29.0371,-111.1393,29.0543,-111.1509],
+            [28.9948,-111.2213,29.012,-111.2329],
+            [29.0988,-111.042,29.1832,-110.8776],
+            [29.1496,-110.9656,29.1324,-110.954],
+            [29.1918,-110.8834,29.1746,-110.8718]
+        ]}
+    ]
+}

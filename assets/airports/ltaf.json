@@ -1,0 +1,87 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LTAF/",
+    "info": {"country":"TR","city":"Seyhan","type":"small_airport","longestRunwayM":2750,"frequencies":{"atis":"119.225","twr":"121.100","app":"126.500","gnd":"121.900"}},
+    "radio": {"twr":"Adana Sakirpasa Tower","app":"Adana Sakirpasa Approach","dep":"Adana Sakirpasa Departure"},
+    "icao": "LTAF",
+    "iata": "ADA",
+    "magnetic_north": 5.7,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [36.982201,35.280399,"65ft"],
+    "rangeRings": {"enabled":true,"center":[36.982201,35.280399],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":200,"speed":6},
+    "arrivalRunway": "23",
+    "departureRunway": "23",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[37.3849,35.3307],[37.3608,35.4595],[37.3108,35.576],[37.2385,35.6724],[37.1487,35.7421],[37.0476,35.7804],[36.942,35.7845],[36.8392,35.7543],[36.746,35.6918],[36.669,35.6013],[36.6134,35.4889],[36.5828,35.3623],[36.5795,35.2301],[36.6036,35.1013],[36.6536,34.9848],[36.7259,34.8884],[36.8157,34.8187],[36.9168,34.7804],[37.0224,34.7763],[37.1253,34.8065],[37.2184,34.869],[37.2954,34.9595],[37.351,35.0719],[37.3816,35.1985]]}
+    ],
+    "fixes": {
+        "LTAF": [36.9822,35.2804],
+        "TEFWU": [37.39588,35.71087],
+        "OVIMO": [37.1359,35.44034],
+        "UFENA": [37.03869,35.95009],
+        "RUKCI": [37.00319,35.52922],
+        "LUHES": [36.45903,35.43709],
+        "UMEZI": [36.78782,35.33862],
+        "ILUCI": [36.56182,34.86022],
+        "IPOTI": [36.82601,35.12429],
+        "VAVFO": [37.29056,34.72861],
+        "FAHMI": [37.09677,35.07539],
+        "_RWY0504DME": [36.93508,35.20107],
+        "_RWY2304DME": [37.02918,35.35981]
+    },
+    "runways": [
+        {"name":["05","23"],"end":[[36.9748,35.268,"54ft"],[36.9895,35.2928,"65ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "TEFWU1B": {"icao":"TEFWU1B","name":"Tefwu One Bravo","rwy":{"LTAF05":["_RWY2304DME"],"LTAF23":["_RWY0504DME"]},"body":[],"exitPoints":{"TEFWU":["TEFWU"]},"draw":[["LTAF","TEFWU*"]]},
+        "UFENA1B": {"icao":"UFENA1B","name":"Ufena One Bravo","rwy":{"LTAF05":["_RWY2304DME"],"LTAF23":["_RWY0504DME"]},"body":[],"exitPoints":{"UFENA":["UFENA"]},"draw":[["LTAF","UFENA*"]]},
+        "LUHES3B": {"icao":"LUHES3B","name":"Luhes Three Bravo","rwy":{"LTAF05":["_RWY2304DME"],"LTAF23":["_RWY0504DME"]},"body":[],"exitPoints":{"LUHES":["LUHES"]},"draw":[["LTAF","LUHES*"]]},
+        "ILUCI1E": {"icao":"ILUCI1E","name":"Iluci One Echo","rwy":{"LTAF05":["_RWY2304DME"],"LTAF23":["_RWY0504DME"]},"body":[],"exitPoints":{"ILUCI":["ILUCI"]},"draw":[["LTAF","ILUCI*"]]},
+        "VAVFO2C": {"icao":"VAVFO2C","name":"Vavfo Two Charlie","rwy":{"LTAF05":["_RWY2304DME"],"LTAF23":["_RWY0504DME"]},"body":[],"exitPoints":{"VAVFO":["VAVFO"]},"draw":[["LTAF","VAVFO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LTAF","destination":"LTFM","category":"departure","route":"LTAF23.VAVFO2C.VAVFO","altitude":"","speed":"","method":"random","rate":1.6,"airlines":[["kkk/a320",1],["ohy/a320",1],["thy/a319",1],["thy/a320",1],["thy/a321",1],["thy/b737",1],["thy/b738",1]]},
+        {"origin":"LTAF","destination":"LCEN","category":"departure","route":"LTAF23.ILUCI1E.ILUCI","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["kkk/a320",1],["pgt/b738",1]]},
+        {"origin":"LTAF","destination":"LTAI","category":"departure","route":"LTAF23.VAVFO2C.VAVFO","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["pgt/b738",1],["sxs/b738",1]]},
+        {"origin":"LTAF","destination":"LTBJ","category":"departure","route":"LTAF23.VAVFO2C.VAVFO","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["pgt/b738",1],["sxs/b738",1]]},
+        {"origin":"LTAF","destination":"LTFJ","category":"departure","route":"LTAF23.VAVFO2C.VAVFO","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["pgt/a320",1],["pgt/b738",1]]},
+        {"origin":"LTAF","destination":"","category":"departure","route":"LTAF23.TEFWU1B.TEFWU","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["pgt/b738",1]]},
+        {"origin":"LTAF","destination":"","category":"departure","route":"LTAF23.UFENA1B.UFENA","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["kkk/a320",1],["pgt/b738",1]]},
+        {"origin":"LTAF","destination":"","category":"departure","route":"LTAF23.LUHES3B.LUHES","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["kne/a320",1]]},
+        {"origin":"LTAF","destination":"","category":"departure","route":"LTAF23.UFENA1B.UFENA","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["tc/c172",6],["tc/p28a",5],["tc/c182",3],["tc/be36",2],["tc/da42",1],["tc/tb20",1],["tc/c208",2],["tc/pc12",2],["tc/be20",1],["tc/b350",1],["tc/p180",1],["tc/c510",1],["tc/e50p",1],["tc/c550",1],["tc/e55p",1],["tc/cl30",1],["tc/c680",1],["tc/h25b",1],["tc/lj45",1],["tc/f2th",1],["tc/glf4",1],["tc/glex",1],["tc/glf5",1]]},
+        {"origin":"LTFM","destination":"LTAF","category":"arrival","route":"VAVFO..FAHMI..LTAF","altitude":[4000,7000],"speed":250,"method":"random","rate":1.6,"airlines":[["kkk/a320",1],["ohy/a320",1],["thy/a319",1],["thy/a320",1],["thy/a321",1],["thy/b737",1],["thy/b738",1]]},
+        {"origin":"LCEN","destination":"LTAF","category":"arrival","route":"ILUCI..IPOTI..LTAF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.46,"airlines":[["kkk/a320",1],["pgt/b738",1]]},
+        {"origin":"LTAI","destination":"LTAF","category":"arrival","route":"VAVFO..FAHMI..LTAF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.46,"airlines":[["pgt/b738",1],["sxs/b738",1]]},
+        {"origin":"LTBJ","destination":"LTAF","category":"arrival","route":"VAVFO..FAHMI..LTAF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.46,"airlines":[["pgt/b738",1],["sxs/b738",1]]},
+        {"origin":"LTFJ","destination":"LTAF","category":"arrival","route":"VAVFO..FAHMI..LTAF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.46,"airlines":[["pgt/a320",1],["pgt/b738",1]]},
+        {"origin":"","destination":"LTAF","category":"arrival","route":"TEFWU..OVIMO..LTAF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.23,"airlines":[["pgt/b738",1]]},
+        {"origin":"","destination":"LTAF","category":"arrival","route":"UFENA..RUKCI..LTAF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.46,"airlines":[["kkk/a320",1],["pgt/b738",1]]},
+        {"origin":"","destination":"LTAF","category":"arrival","route":"LUHES..UMEZI..LTAF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.23,"airlines":[["kne/a320",1]]},
+        {"origin":"","destination":"LTAF","category":"arrival","route":"UFENA..RUKCI..LTAF","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["tc/c172",6],["tc/p28a",5],["tc/c182",3],["tc/be36",2],["tc/da42",1],["tc/tb20",1],["tc/c208",2],["tc/pc12",2],["tc/be20",1],["tc/b350",1],["tc/p180",1],["tc/c510",1],["tc/e50p",1],["tc/c550",1],["tc/e55p",1],["tc/cl30",1],["tc/c680",1],["tc/h25b",1],["tc/lj45",1],["tc/f2th",1],["tc/glf4",1],["tc/glex",1],["tc/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [37.3959,35.7109,37.1359,35.4403],
+            [37.1359,35.4403,36.9822,35.2804],
+            [37.0387,35.9501,37.0032,35.5292],
+            [37.0032,35.5292,36.9822,35.2804],
+            [36.459,35.4371,36.7878,35.3386],
+            [36.7878,35.3386,36.9822,35.2804],
+            [36.5618,34.8602,36.826,35.1243],
+            [36.826,35.1243,36.9822,35.2804],
+            [37.2906,34.7286,37.0968,35.0754],
+            [37.0968,35.0754,36.9822,35.2804]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [36.9895,35.2928,37.0886,35.4605],
+            [37.0471,35.3691,37.0311,35.384],
+            [37.0967,35.453,37.0806,35.4679]
+        ]}
+    ]
+}

@@ -1,0 +1,99 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KONT/",
+    "info": {"country":"US","city":"Ontario","type":"large_airport","longestRunwayM":3718,"frequencies":{"atis":"124.250","twr":"120.600","gnd":"121.900"}},
+    "radio": {"twr":"Ontario Tower","app":"Ontario Approach","dep":"Ontario Departure"},
+    "icao": "KONT",
+    "iata": "ONT",
+    "magnetic_north": 11.3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [34.056,-117.600998,"944ft"],
+    "rangeRings": {"enabled":true,"center":[34.056,-117.600998],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":270,"speed":10},
+    "arrivalRunway": "26R",
+    "departureRunway": "26R",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[34.4528,-117.5053],[34.4188,-117.3846],[34.36,-117.2786],[34.2805,-117.1946],[34.1858,-117.1383],[34.0821,-117.1135],[33.9767,-117.122],[33.8767,-117.1631],[33.7889,-117.234],[33.7193,-117.33],[33.6727,-117.4444],[33.6521,-117.5695],[33.6592,-117.6967],[33.6932,-117.8174],[33.752,-117.9234],[33.8315,-118.0074],[33.9262,-118.0637],[34.0299,-118.0885],[34.1353,-118.08],[34.2353,-118.0389],[34.3231,-117.968],[34.3927,-117.872],[34.4393,-117.7576],[34.4599,-117.6325]]}
+    ],
+    "fixes": {
+        "KONT": [34.056,-117.601],
+        "MEFAV": [34.42866,-117.13274],
+        "TASOR": [34.19446,-117.42702],
+        "PSP": [33.87,-116.43,"palm springs"],
+        "BAGEW": [34.01837,-117.36407],
+        "UNIFI": [33.68714,-117.12837],
+        "RAL": [33.952,-117.449,"riverside"],
+        "SXC": [33.3751,-118.42,"santa catalina"],
+        "JINAH": [33.91443,-117.77128],
+        "PMD": [34.6314,-118.064,"palmdale"],
+        "ROHVI": [34.2223,-117.73481],
+        "_RWY08L04DME": [34.05687,-117.70011],
+        "_RWY26R04DME": [34.05688,-117.50259],
+        "_RWY08R04DME": [34.05496,-117.69641],
+        "_RWY26L04DME": [34.05498,-117.50259]
+    },
+    "runways": [
+        {"name":["08L","26R"],"end":[[34.0569,-117.6197,"943ft"],[34.0569,-117.583,"930ft"]],"ils":[true,true]},
+        {"name":["08R","26L"],"end":[[34.055,-117.616,"935ft"],[34.055,-117.583,"924ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "MEFAV1E": {"icao":"MEFAV1E","name":"Mefav One Echo","rwy":{"KONT08L":["_RWY26R04DME"],"KONT26R":["_RWY08L04DME"],"KONT08R":["_RWY26L04DME"],"KONT26L":["_RWY08R04DME"]},"body":[],"exitPoints":{"MEFAV":["MEFAV"]},"draw":[["KONT","MEFAV*"]]},
+        "PSP2C": {"icao":"PSP2C","name":"Palm Springs Two Charlie","rwy":{"KONT08L":["_RWY26R04DME"],"KONT26R":["_RWY08L04DME"],"KONT08R":["_RWY26L04DME"],"KONT26L":["_RWY08R04DME"]},"body":[],"exitPoints":{"PSP":["PSP"]},"draw":[["KONT","PSP*"]]},
+        "UNIFI3E": {"icao":"UNIFI3E","name":"Unifi Three Echo","rwy":{"KONT08L":["_RWY26R04DME"],"KONT26R":["_RWY08L04DME"],"KONT08R":["_RWY26L04DME"],"KONT26L":["_RWY08R04DME"]},"body":[],"exitPoints":{"UNIFI":["UNIFI"]},"draw":[["KONT","UNIFI*"]]},
+        "SXC3F": {"icao":"SXC3F","name":"Santa Catalina Three Foxtrot","rwy":{"KONT08L":["_RWY26R04DME"],"KONT26R":["_RWY08L04DME"],"KONT08R":["_RWY26L04DME"],"KONT26L":["_RWY08R04DME"]},"body":[],"exitPoints":{"SXC":["SXC"]},"draw":[["KONT","SXC*"]]},
+        "PMD3E": {"icao":"PMD3E","name":"Palmdale Three Echo","rwy":{"KONT08L":["_RWY26R04DME"],"KONT26R":["_RWY08L04DME"],"KONT08R":["_RWY26L04DME"],"KONT26L":["_RWY08R04DME"]},"body":[],"exitPoints":{"PMD":["PMD"]},"draw":[["KONT","PMD*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KONT","destination":"KPHX","category":"departure","route":"KONT26R.PSP2C.PSP","altitude":"","speed":"","method":"random","rate":0.93,"airlines":[["aal/a319",2],["aal/a320",2],["swa/b733",1],["swa/b737",1],["swa/b738",1]]},
+        {"origin":"KONT","destination":"KDFW","category":"departure","route":"KONT26R.PSP2C.PSP","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["aal/md82",2],["aal/md83",2]]},
+        {"origin":"KONT","destination":"KLAS","category":"departure","route":"KONT26R.MEFAV1E.MEFAV","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["swa/b738",2],["swa/b733",1],["swa/b737",1]]},
+        {"origin":"KONT","destination":"KOAK","category":"departure","route":"KONT26R.PMD3E.PMD","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["swa/b733",2],["swa/b737",1],["swa/b738",1]]},
+        {"origin":"KONT","destination":"KSMF","category":"departure","route":"KONT26R.PMD3E.PMD","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["swa/b733",2],["swa/b737",1],["swa/b738",1]]},
+        {"origin":"KONT","destination":"","category":"departure","route":"KONT26R.MEFAV1E.MEFAV","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["swa/b737",2],["dal/a319",1],["swa/b733",1],["swa/b738",1]]},
+        {"origin":"KONT","destination":"","category":"departure","route":"KONT26R.UNIFI3E.UNIFI","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["amx/b738",1],["voi/a319",1]]},
+        {"origin":"KONT","destination":"","category":"departure","route":"KONT26R.PMD3E.PMD","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["swa/b733",2],["asa/b734",1],["asa/b738",1],["swa/b737",1]]},
+        {"origin":"KONT","destination":"","category":"departure","route":"KONT26R.MEFAV1E.MEFAV","altitude":"","speed":"","method":"random","rate":1.55,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KPHX","destination":"KONT","category":"arrival","route":"PSP..BAGEW..KONT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.93,"airlines":[["aal/a319",2],["aal/a320",2],["swa/b733",1],["swa/b737",1],["swa/b738",1]]},
+        {"origin":"KDFW","destination":"KONT","category":"arrival","route":"PSP..BAGEW..KONT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.53,"airlines":[["aal/md82",2],["aal/md83",2]]},
+        {"origin":"KLAS","destination":"KONT","category":"arrival","route":"MEFAV..TASOR..KONT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.53,"airlines":[["swa/b738",2],["swa/b733",1],["swa/b737",1]]},
+        {"origin":"KOAK","destination":"KONT","category":"arrival","route":"PMD..ROHVI..KONT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.53,"airlines":[["swa/b733",2],["swa/b737",1],["swa/b738",1]]},
+        {"origin":"KSMF","destination":"KONT","category":"arrival","route":"PMD..ROHVI..KONT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.53,"airlines":[["swa/b733",2],["swa/b737",1],["swa/b738",1]]},
+        {"origin":"","destination":"KONT","category":"arrival","route":"MEFAV..TASOR..KONT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.67,"airlines":[["swa/b737",2],["dal/a319",1],["swa/b733",1],["swa/b738",1]]},
+        {"origin":"","destination":"KONT","category":"arrival","route":"UNIFI..RAL..KONT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.27,"airlines":[["amx/b738",1],["voi/a319",1]]},
+        {"origin":"","destination":"KONT","category":"arrival","route":"PMD..ROHVI..KONT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.67,"airlines":[["swa/b733",2],["asa/b734",1],["asa/b738",1],["swa/b737",1]]},
+        {"origin":"","destination":"KONT","category":"arrival","route":"MEFAV..TASOR..KONT","altitude":[4000,7000],"speed":250,"method":"random","rate":1.55,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [34.4287,-117.1327,34.1945,-117.427],
+            [34.1945,-117.427,34.056,-117.601],
+            [33.87,-116.43,34.0184,-117.3641],
+            [34.0184,-117.3641,34.056,-117.601],
+            [33.6871,-117.1284,33.952,-117.449],
+            [33.952,-117.449,34.056,-117.601],
+            [33.3751,-118.42,33.9144,-117.7713],
+            [33.9144,-117.7713,34.056,-117.601],
+            [34.6314,-118.064,34.2223,-117.7348],
+            [34.2223,-117.7348,34.056,-117.601]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [34.0569,-117.6197,34.0567,-117.8207],
+            [34.0469,-117.7202,34.0668,-117.7202],
+            [34.0467,-117.8207,34.0667,-117.8207],
+            [34.0569,-117.583,34.0568,-117.382],
+            [34.0669,-117.4825,34.0469,-117.4825],
+            [34.0668,-117.382,34.0468,-117.382],
+            [34.055,-117.616,34.0548,-117.817],
+            [34.045,-117.7165,34.0649,-117.7165],
+            [34.0448,-117.817,34.0648,-117.817],
+            [34.055,-117.583,34.0549,-117.382],
+            [34.065,-117.4825,34.045,-117.4825],
+            [34.0649,-117.382,34.0449,-117.382]
+        ]}
+    ]
+}

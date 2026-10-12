@@ -1,0 +1,77 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LFMK/",
+    "info": {"country":"FR","city":"Carcassonne","type":"medium_airport","longestRunwayM":2050,"frequencies":{"atis":"120.025","twr":"121.000","app":"123.850"}},
+    "radio": {"twr":"Carcassonne Tower","app":"Carcassonne Approach","dep":"Carcassonne Departure"},
+    "icao": "LFMK",
+    "iata": "CCF",
+    "magnetic_north": 2,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [43.216,2.30632,"433ft"],
+    "rangeRings": {"enabled":true,"center":[43.216,2.30632],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":290,"speed":6},
+    "arrivalRunway": "27",
+    "departureRunway": "27",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[43.6204,2.3257],[43.603,2.4687],[43.5592,2.6006],[43.492,2.7124],[43.406,2.7966],[43.307,2.8474],[43.2019,2.8613],[43.0977,2.8374],[43.0015,2.7772],[42.92,2.685],[42.8587,2.567],[42.8217,2.4312],[42.8116,2.2869],[42.829,2.144],[42.8728,2.0121],[42.94,1.9002],[43.026,1.816],[43.125,1.7652],[43.2301,1.7514],[43.3343,1.7753],[43.4305,1.8354],[43.512,1.9276],[43.5733,2.0456],[43.6103,2.1814]]}
+    ],
+    "fixes": {
+        "LFMK": [43.216,2.30632],
+        "NIVRO": [43.55053,2.88437],
+        "SOGSE": [43.34029,2.52109],
+        "PPG": [42.7505,2.86714,"perpignan"],
+        "NUMAN": [43.06581,2.48726],
+        "JOZDO": [42.88147,1.72827],
+        "TUDOJ": [43.09171,2.09155],
+        "GAI": [43.9541,1.82417,"gaillac"],
+        "ZOHEB": [43.39646,2.18844],
+        "_RWY0904DME": [43.22456,2.20356],
+        "_RWY2704DME": [43.20752,2.40719]
+    },
+    "runways": [
+        {"name":["09","27"],"end":[[43.217,2.2944,"433ft"],[43.21516,2.31638,"404ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "NIVRO3D": {"icao":"NIVRO3D","name":"Nivro Three Delta","rwy":{"LFMK09":["_RWY2704DME"],"LFMK27":["_RWY0904DME"]},"body":[],"exitPoints":{"NIVRO":["NIVRO"]},"draw":[["LFMK","NIVRO*"]]},
+        "PPG2D": {"icao":"PPG2D","name":"Perpignan Two Delta","rwy":{"LFMK09":["_RWY2704DME"],"LFMK27":["_RWY0904DME"]},"body":[],"exitPoints":{"PPG":["PPG"]},"draw":[["LFMK","PPG*"]]},
+        "JOZDO1C": {"icao":"JOZDO1C","name":"Jozdo One Charlie","rwy":{"LFMK09":["_RWY2704DME"],"LFMK27":["_RWY0904DME"]},"body":[],"exitPoints":{"JOZDO":["JOZDO"]},"draw":[["LFMK","JOZDO*"]]},
+        "GAI1C": {"icao":"GAI1C","name":"Gaillac One Charlie","rwy":{"LFMK09":["_RWY2704DME"],"LFMK27":["_RWY0904DME"]},"body":[],"exitPoints":{"GAI":["GAI"]},"draw":[["LFMK","GAI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LFMK","destination":"","category":"departure","route":"LFMK27.NIVRO3D.NIVRO","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["afr/a319",30],["ezy/a319",28],["afr/a320",27],["voe/b712",24],["hop/crj7",23],["hop/e145",17],["hop/at45",14],["ezy/a320",11],["hop/e170",11],["hop/crjx",10],["afr/crjx",9],["ccm/a320",8]]},
+        {"origin":"LFMK","destination":"","category":"departure","route":"LFMK27.PPG2D.PPG","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["afr/a319",30],["ezy/a319",28],["afr/a320",27],["voe/b712",24],["hop/crj7",23],["hop/e145",17],["hop/at45",14],["ezy/a320",11],["hop/e170",11],["hop/crjx",10],["afr/crjx",9],["ccm/a320",8]]},
+        {"origin":"LFMK","destination":"","category":"departure","route":"LFMK27.JOZDO1C.JOZDO","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["afr/a319",30],["ezy/a319",28],["afr/a320",27],["voe/b712",24],["hop/crj7",23],["hop/e145",17],["hop/at45",14],["ezy/a320",11],["hop/e170",11],["hop/crjx",10],["afr/crjx",9],["ccm/a320",8]]},
+        {"origin":"LFMK","destination":"","category":"departure","route":"LFMK27.GAI1C.GAI","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["afr/a319",30],["ezy/a319",28],["afr/a320",27],["voe/b712",24],["hop/crj7",23],["hop/e145",17],["hop/at45",14],["ezy/a320",11],["hop/e170",11],["hop/crjx",10],["afr/crjx",9],["ccm/a320",8]]},
+        {"origin":"LFMK","destination":"","category":"departure","route":"LFMK27.NIVRO3D.NIVRO","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["f/c172",6],["f/p28a",5],["f/c182",3],["f/be36",2],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",1],["f/e50p",1],["f/c550",1],["f/e55p",1],["f/cl30",1],["f/c680",1],["f/h25b",1],["f/lj45",1],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]},
+        {"origin":"","destination":"LFMK","category":"arrival","route":"NIVRO..SOGSE..LFMK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["afr/a319",30],["ezy/a319",28],["afr/a320",27],["voe/b712",24],["hop/crj7",23],["hop/e145",17],["hop/at45",14],["ezy/a320",11],["hop/e170",11],["hop/crjx",10],["afr/crjx",9],["ccm/a320",8]]},
+        {"origin":"","destination":"LFMK","category":"arrival","route":"PPG..NUMAN..LFMK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["afr/a319",30],["ezy/a319",28],["afr/a320",27],["voe/b712",24],["hop/crj7",23],["hop/e145",17],["hop/at45",14],["ezy/a320",11],["hop/e170",11],["hop/crjx",10],["afr/crjx",9],["ccm/a320",8]]},
+        {"origin":"","destination":"LFMK","category":"arrival","route":"JOZDO..TUDOJ..LFMK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["afr/a319",30],["ezy/a319",28],["afr/a320",27],["voe/b712",24],["hop/crj7",23],["hop/e145",17],["hop/at45",14],["ezy/a320",11],["hop/e170",11],["hop/crjx",10],["afr/crjx",9],["ccm/a320",8]]},
+        {"origin":"","destination":"LFMK","category":"arrival","route":"GAI..ZOHEB..LFMK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["afr/a319",30],["ezy/a319",28],["afr/a320",27],["voe/b712",24],["hop/crj7",23],["hop/e145",17],["hop/at45",14],["ezy/a320",11],["hop/e170",11],["hop/crjx",10],["afr/crjx",9],["ccm/a320",8]]},
+        {"origin":"","destination":"LFMK","category":"arrival","route":"NIVRO..SOGSE..LFMK","altitude":[4000,7000],"speed":250,"method":"random","rate":1.13,"airlines":[["f/c172",6],["f/p28a",5],["f/c182",3],["f/be36",2],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",1],["f/e50p",1],["f/c550",1],["f/e55p",1],["f/cl30",1],["f/c680",1],["f/h25b",1],["f/lj45",1],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [43.5505,2.8844,43.3403,2.5211],
+            [43.3403,2.5211,43.216,2.3063],
+            [42.7505,2.8671,43.0658,2.4873],
+            [43.0658,2.4873,43.216,2.3063],
+            [42.8815,1.7283,43.0917,2.0916],
+            [43.0917,2.0916,43.216,2.3063],
+            [43.9541,1.8242,43.3965,2.1884],
+            [43.3965,2.1884,43.216,2.3063]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [43.217,2.2944,43.2358,2.0673],
+            [43.2165,2.1793,43.2364,2.1824],
+            [43.2258,2.0657,43.2457,2.0688],
+            [43.2152,2.3164,43.1959,2.5434],
+            [43.2155,2.4314,43.1957,2.4283],
+            [43.2059,2.5449,43.186,2.5418]
+        ]}
+    ]
+}

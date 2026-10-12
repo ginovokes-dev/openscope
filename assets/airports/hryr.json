@@ -1,0 +1,98 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/HRYR/",
+    "info": {"country":"RW","city":"Kigali","type":"large_airport","longestRunwayM":3509,"frequencies":{"atis":"128.700","twr":"118.300","app":"124.300","gnd":"121.700"}},
+    "radio": {"twr":"Kigali Tower","app":"Kigali Approach","dep":"Kigali Departure"},
+    "icao": "HRYR",
+    "iata": "KGL",
+    "magnetic_north": 1.2,
+    "ctr_radius": 60,
+    "ctr_ceiling": 14000,
+    "initial_alt": 9000,
+    "position": [-1.96863,30.1395,"4859ft"],
+    "rangeRings": {"enabled":true,"center":[-1.96863,30.1395],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":70,"speed":5},
+    "arrivalRunway": "10",
+    "departureRunway": "10",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":140,"airspace_class":"C","poly":[[-1.4292,30.1508],[-1.4505,30.2901],[-1.5071,30.4192],[-1.5952,30.5292],[-1.7087,30.6126],[-1.8399,30.6638],[-1.9799,30.6793],[-2.1192,30.658],[-2.2482,30.6013],[-2.3581,30.5132],[-2.4415,30.3996],[-2.4926,30.2683],[-2.5081,30.1282],[-2.4868,29.9889],[-2.4302,29.8598],[-2.3421,29.7498],[-2.2286,29.6664],[-2.0973,29.6152],[-1.9573,29.5997],[-1.8181,29.621],[-1.6891,29.6777],[-1.5792,29.7658],[-1.4958,29.8794],[-1.4446,30.0107]]}
+    ],
+    "fixes": {
+        "HRYR": [-1.96863,30.1395],
+        "ROCWE": [-1.46376,30.6335],
+        "OWAPA": [-1.79001,30.31427],
+        "NAGEB": [-2.01135,30.84477],
+        "AREGO": [-1.98374,30.38902],
+        "RG": [-2.91651,29.5187,"rwegura"],
+        "ITATI": [-2.17766,30.0026],
+        "GOM": [-1.68585,29.2333,"goma"],
+        "KAVSI": [-1.89417,29.90088],
+        "KS": [-1.28544,29.7173,"kisoro"],
+        "MUKOS": [-1.75607,30.00814],
+        "_RWY1004DME": [-1.95439,30.05824],
+        "_RWY2804DME": [-1.98252,30.21876]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[-1.9659,30.1239,"4881ft"],[-1.97102,30.1531,"4877ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ROCWE2E": {"icao":"ROCWE2E","name":"Rocwe Two Echo","rwy":{"HRYR10":["_RWY2804DME"],"HRYR28":["_RWY1004DME"]},"body":[],"exitPoints":{"ROCWE":["ROCWE"]},"draw":[["HRYR","ROCWE*"]]},
+        "NAGEB1F": {"icao":"NAGEB1F","name":"Nageb One Foxtrot","rwy":{"HRYR10":["_RWY2804DME"],"HRYR28":["_RWY1004DME"]},"body":[],"exitPoints":{"NAGEB":["NAGEB"]},"draw":[["HRYR","NAGEB*"]]},
+        "RG1D": {"icao":"RG1D","name":"Rwegura One Delta","rwy":{"HRYR10":["_RWY2804DME"],"HRYR28":["_RWY1004DME"]},"body":[],"exitPoints":{"RG":["RG"]},"draw":[["HRYR","RG*"]]},
+        "GOM2F": {"icao":"GOM2F","name":"Goma Two Foxtrot","rwy":{"HRYR10":["_RWY2804DME"],"HRYR28":["_RWY1004DME"]},"body":[],"exitPoints":{"GOM":["GOM"]},"draw":[["HRYR","GOM*"]]},
+        "KS2E": {"icao":"KS2E","name":"Kisoro Two Echo","rwy":{"HRYR10":["_RWY2804DME"],"HRYR28":["_RWY1004DME"]},"body":[],"exitPoints":{"KS":["KS"]},"draw":[["HRYR","KS*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"HRYR","destination":"HUEN","category":"departure","route":"HRYR10.ROCWE2E.ROCWE","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["dat/a332",1],["eth/b737",1],["qtr/a320",1],["rwd/b738",1],["rwd/dh8d",1],["thy/b739",1],["klm/a333",1],["klm/a332",1],["rwd/crj7",1],["rwd/crj9",1],["rwd/crj2",1]]},
+        {"origin":"HRYR","destination":"HKJK","category":"departure","route":"HRYR10.NAGEB1F.NAGEB","altitude":"","speed":"","method":"random","rate":0.73,"airlines":[["dat/a332",1],["kqa/e170",1],["kqa/e190",1],["rwd/crj7",1],["rwd/crj9",1],["rwd/crj2",1]]},
+        {"origin":"HRYR","destination":"HBBA","category":"departure","route":"HRYR10.RG1D.RG","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["eth/b738",1],["kqa/e170",1],["rwd/dh8d",1]]},
+        {"origin":"HRYR","destination":"DNMM","category":"departure","route":"HRYR10.GOM2F.GOM","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["rwd/b737",1],["rwd/b738",1]]},
+        {"origin":"HRYR","destination":"EBBR","category":"departure","route":"HRYR10.KS2E.KS","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["dat/a332",1],["rwd/a332",1]]},
+        {"origin":"HRYR","destination":"FAOR","category":"departure","route":"HRYR10.RG1D.RG","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["rwd/b737",1],["saa/b737",1]]},
+        {"origin":"HRYR","destination":"","category":"departure","route":"HRYR10.ROCWE2E.ROCWE","altitude":"","speed":"","method":"random","rate":0.73,"airlines":[["eth/b737",1],["eth/b738",1],["rwd/b738",1],["rwd/crj7",1],["rwd/crj9",1],["rwd/crj2",1]]},
+        {"origin":"HRYR","destination":"","category":"departure","route":"HRYR10.NAGEB1F.NAGEB","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["rwd/b738",1],["rwd/crj7",1],["rwd/crj9",1],["rwd/crj2",1]]},
+        {"origin":"HRYR","destination":"","category":"departure","route":"HRYR10.RG1D.RG","altitude":"","speed":"","method":"random","rate":0.18,"airlines":[["rwd/dh8d",1]]},
+        {"origin":"HRYR","destination":"","category":"departure","route":"HRYR10.GOM2F.GOM","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["rwd/b737",2],["rwd/b738",1]]},
+        {"origin":"HRYR","destination":"","category":"departure","route":"HRYR10.KS2E.KS","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["rwd/b739",1],["thy/b739",1],["klm/a333",1],["klm/a332",1]]},
+        {"origin":"HRYR","destination":"","category":"departure","route":"HRYR10.KS2E.KS","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["9xr/c172",6],["9xr/p28a",5],["9xr/c182",3],["9xr/be36",2],["9xr/da42",1],["9xr/tb20",1],["9xr/c208",2],["9xr/pc12",2],["9xr/be20",1],["9xr/b350",1],["9xr/p180",1],["9xr/c510",1],["9xr/e50p",1],["9xr/c550",2],["9xr/e55p",1],["9xr/cl30",1],["9xr/c680",1],["9xr/h25b",1],["9xr/lj45",1],["9xr/f2th",1],["9xr/glf4",1],["9xr/glex",1],["9xr/glf5",1]]},
+        {"origin":"HRYR","destination":"","category":"departure","route":"HRYR10.NAGEB1F.NAGEB","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["9xr/c172",6],["9xr/p28a",5],["9xr/c182",3],["9xr/be36",2],["9xr/da42",1],["9xr/tb20",1],["9xr/c208",2],["9xr/pc12",2],["9xr/be20",1],["9xr/b350",1],["9xr/p180",1],["9xr/c510",1],["9xr/e50p",1],["9xr/c550",2],["9xr/e55p",1],["9xr/cl30",1],["9xr/c680",1],["9xr/h25b",1],["9xr/lj45",1],["9xr/f2th",1],["9xr/glf4",1],["9xr/glex",1],["9xr/glf5",1]]},
+        {"origin":"HUEN","destination":"HRYR","category":"arrival","route":"ROCWE..OWAPA..HRYR","altitude":[10000,13000],"speed":250,"method":"random","rate":1.45,"airlines":[["dat/a332",1],["eth/b737",1],["qtr/a320",1],["rwd/b738",1],["rwd/dh8d",1],["thy/b739",1],["klm/a333",1],["klm/a332",1],["rwd/crj7",1],["rwd/crj9",1],["rwd/crj2",1]]},
+        {"origin":"HKJK","destination":"HRYR","category":"arrival","route":"NAGEB..AREGO..HRYR","altitude":[10000,13000],"speed":250,"method":"random","rate":0.73,"airlines":[["dat/a332",1],["kqa/e170",1],["kqa/e190",1],["rwd/crj7",1],["rwd/crj9",1],["rwd/crj2",1]]},
+        {"origin":"HBBA","destination":"HRYR","category":"arrival","route":"RG..ITATI..HRYR","altitude":[10000,13000],"speed":250,"method":"random","rate":0.55,"airlines":[["eth/b738",1],["kqa/e170",1],["rwd/dh8d",1]]},
+        {"origin":"DNMM","destination":"HRYR","category":"arrival","route":"GOM..KAVSI..HRYR","altitude":[10000,13000],"speed":250,"method":"random","rate":0.36,"airlines":[["rwd/b737",1],["rwd/b738",1]]},
+        {"origin":"EBBR","destination":"HRYR","category":"arrival","route":"KS..MUKOS..HRYR","altitude":[10000,13000],"speed":250,"method":"random","rate":0.36,"airlines":[["dat/a332",1],["rwd/a332",1]]},
+        {"origin":"FAOR","destination":"HRYR","category":"arrival","route":"RG..ITATI..HRYR","altitude":[10000,13000],"speed":250,"method":"random","rate":0.36,"airlines":[["rwd/b737",1],["saa/b737",1]]},
+        {"origin":"","destination":"HRYR","category":"arrival","route":"ROCWE..OWAPA..HRYR","altitude":[10000,13000],"speed":250,"method":"random","rate":0.73,"airlines":[["eth/b737",1],["eth/b738",1],["rwd/b738",1],["rwd/crj7",1],["rwd/crj9",1],["rwd/crj2",1]]},
+        {"origin":"","destination":"HRYR","category":"arrival","route":"NAGEB..AREGO..HRYR","altitude":[10000,13000],"speed":250,"method":"random","rate":0.55,"airlines":[["rwd/b738",1],["rwd/crj7",1],["rwd/crj9",1],["rwd/crj2",1]]},
+        {"origin":"","destination":"HRYR","category":"arrival","route":"RG..ITATI..HRYR","altitude":[10000,13000],"speed":250,"method":"random","rate":0.18,"airlines":[["rwd/dh8d",1]]},
+        {"origin":"","destination":"HRYR","category":"arrival","route":"GOM..KAVSI..HRYR","altitude":[10000,13000],"speed":250,"method":"random","rate":0.55,"airlines":[["rwd/b737",2],["rwd/b738",1]]},
+        {"origin":"","destination":"HRYR","category":"arrival","route":"KS..MUKOS..HRYR","altitude":[10000,13000],"speed":250,"method":"random","rate":0.55,"airlines":[["rwd/b739",1],["thy/b739",1],["klm/a333",1],["klm/a332",1]]},
+        {"origin":"","destination":"HRYR","category":"arrival","route":"KS..MUKOS..HRYR","altitude":[10000,13000],"speed":250,"method":"random","rate":0.43,"airlines":[["9xr/c172",6],["9xr/p28a",5],["9xr/c182",3],["9xr/be36",2],["9xr/da42",1],["9xr/tb20",1],["9xr/c208",2],["9xr/pc12",2],["9xr/be20",1],["9xr/b350",1],["9xr/p180",1],["9xr/c510",1],["9xr/e50p",1],["9xr/c550",2],["9xr/e55p",1],["9xr/cl30",1],["9xr/c680",1],["9xr/h25b",1],["9xr/lj45",1],["9xr/f2th",1],["9xr/glf4",1],["9xr/glex",1],["9xr/glf5",1]]},
+        {"origin":"","destination":"HRYR","category":"arrival","route":"NAGEB..AREGO..HRYR","altitude":[10000,13000],"speed":250,"method":"random","rate":0.43,"airlines":[["9xr/c172",6],["9xr/p28a",5],["9xr/c182",3],["9xr/be36",2],["9xr/da42",1],["9xr/tb20",1],["9xr/c208",2],["9xr/pc12",2],["9xr/be20",1],["9xr/b350",1],["9xr/p180",1],["9xr/c510",1],["9xr/e50p",1],["9xr/c550",2],["9xr/e55p",1],["9xr/cl30",1],["9xr/c680",1],["9xr/h25b",1],["9xr/lj45",1],["9xr/f2th",1],["9xr/glf4",1],["9xr/glex",1],["9xr/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-1.4638,30.6335,-1.79,30.3143],
+            [-1.79,30.3143,-1.9686,30.1395],
+            [-2.0113,30.8448,-1.9837,30.389],
+            [-1.9837,30.389,-1.9686,30.1395],
+            [-2.9165,29.5187,-2.1777,30.0026],
+            [-2.1777,30.0026,-1.9686,30.1395],
+            [-1.6859,29.2333,-1.8942,29.9009],
+            [-1.8942,29.9009,-1.9686,30.1395],
+            [-1.2854,29.7173,-1.7561,30.0081],
+            [-1.7561,30.0081,-1.9686,30.1395]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-1.9659,30.1239,-1.9371,29.9598],
+            [-1.9614,30.0401,-1.9417,30.0436],
+            [-1.947,29.958,-1.9273,29.9615],
+            [-1.971,30.1531,-1.9998,30.3172],
+            [-1.9756,30.2369,-1.9952,30.2334],
+            [-1.9899,30.319,-2.0096,30.3155]
+        ]}
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LGKO/",
+    "info": {"country":"GR","city":"Kos Island","type":"large_airport","longestRunwayM":2410,"frequencies":{"atis":"126.950","twr":"121.050","app":"119.950"}},
+    "radio": {"twr":"Kos Ippokratis Tower","app":"Kos Ippokratis Approach","dep":"Kos Ippokratis Departure"},
+    "icao": "LGKO",
+    "iata": "KGS",
+    "magnetic_north": 5.3,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [36.794523,27.09115,"412ft"],
+    "rangeRings": {"enabled":true,"center":[36.794523,27.09115],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":330,"speed":10},
+    "arrivalRunway": "32",
+    "departureRunway": "32",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[37.3318,27.1534],[37.3006,27.3249],[37.2349,27.4805],[37.1392,27.6096],[37.02,27.7033],[36.8854,27.7553],[36.7447,27.7621],[36.6073,27.7231],[36.4827,27.6411],[36.3794,27.5216],[36.3043,27.3727],[36.2626,27.2047],[36.2572,27.0289],[36.2884,26.8574],[36.3541,26.7018],[36.4498,26.5727],[36.569,26.479],[36.7036,26.427],[36.8444,26.4202],[36.9817,26.4592],[37.1063,26.5412],[37.2097,26.6607],[37.2847,26.8096],[37.3264,26.9776]]}
+    ],
+    "fixes": {
+        "LGKO": [36.79452,27.09115],
+        "GML": [37.2761,27.5511,"kiyikislacik"],
+        "BUTAL": [36.99297,27.28068],
+        "PAR": [36.4001,28.0653,"paradisi"],
+        "FEDON": [36.68179,27.36957],
+        "TIFAT": [36.24686,26.53448],
+        "MATFA": [36.60076,26.8942],
+        "IKA": [37.6829,26.3456,"ikaria"],
+        "UPAPE": [37.00188,26.91713],
+        "_RWY1404DME": [36.86015,27.0396],
+        "_RWY3204DME": [36.72863,27.14183]
+    },
+    "runways": [
+        {"name":["14","32"],"end":[[36.8036,27.0836,"412ft"],[36.7852,27.0979,"373ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "GML3D": {"icao":"GML3D","name":"Kiyikislacik Three Delta","rwy":{"LGKO14":["_RWY3204DME"],"LGKO32":["_RWY1404DME"]},"body":[],"exitPoints":{"GML":["GML"]},"draw":[["LGKO","GML*"]]},
+        "PAR1C": {"icao":"PAR1C","name":"Paradisi One Charlie","rwy":{"LGKO14":["_RWY3204DME"],"LGKO32":["_RWY1404DME"]},"body":[],"exitPoints":{"PAR":["PAR"]},"draw":[["LGKO","PAR*"]]},
+        "TIFAT1D": {"icao":"TIFAT1D","name":"Tifat One Delta","rwy":{"LGKO14":["_RWY3204DME"],"LGKO32":["_RWY1404DME"]},"body":[],"exitPoints":{"TIFAT":["TIFAT"]},"draw":[["LGKO","TIFAT*"]]},
+        "IKA3A": {"icao":"IKA3A","name":"Ikaria Three Alpha","rwy":{"LGKO14":["_RWY3204DME"],"LGKO32":["_RWY1404DME"]},"body":[],"exitPoints":{"IKA":["IKA"]},"draw":[["LGKO","IKA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LGKO","destination":"EDDL","category":"departure","route":"LGKO32.IKA3A.IKA","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["ber/a321",1],["ber/b738",1],["cfg/a320",1],["cfg/b738",1],["hlx/b738",1]]},
+        {"origin":"LGKO","destination":"EDDK","category":"departure","route":"LGKO32.IKA3A.IKA","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["ber/b737",1],["ber/b738",1],["gwi/a319",1],["hlx/b738",1]]},
+        {"origin":"LGKO","destination":"EGKK","category":"departure","route":"LGKO32.IKA3A.IKA","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["ezy/a319",1],["ezy/a320",1],["tvf/b738",1],["tvf/b752",1]]},
+        {"origin":"LGKO","destination":"EDDF","category":"departure","route":"LGKO32.IKA3A.IKA","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["cfg/a320",1],["cfg/b738",1],["hlx/b738",1]]},
+        {"origin":"LGKO","destination":"EDDM","category":"departure","route":"LGKO32.IKA3A.IKA","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["ber/b738",1],["cfg/a320",1],["hlx/b738",1]]},
+        {"origin":"LGKO","destination":"EDDH","category":"departure","route":"LGKO32.IKA3A.IKA","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["ber/b738",1],["cfg/a320",1]]},
+        {"origin":"LGKO","destination":"","category":"departure","route":"LGKO32.GML3D.GML","altitude":"","speed":"","method":"random","rate":0.17,"airlines":[["aee/a320",1]]},
+        {"origin":"LGKO","destination":"","category":"departure","route":"LGKO32.PAR1C.PAR","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["aee/dh8d",1],["oal/dh8d",1],["aee/dh8b",1],["aee/dh8c",1],["oal/dh8b",1],["oal/dh8c",1]]},
+        {"origin":"LGKO","destination":"","category":"departure","route":"LGKO32.IKA3A.IKA","altitude":"","speed":"","method":"random","rate":4.39,"airlines":[["ryr/b738",7],["cfg/a320",3],["hlx/b738",3],["ber/b738",2],["tvf/b738",2],["aee/dh8d",2],["aee/a320",1],["exs/b738",1],["exs/b752",1],["ezy/a320",1],["lgl/b737",1],["tra/b738",1]]},
+        {"origin":"EDDL","destination":"LGKO","category":"arrival","route":"IKA..UPAPE..LGKO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.84,"airlines":[["ber/a321",1],["ber/b738",1],["cfg/a320",1],["cfg/b738",1],["hlx/b738",1]]},
+        {"origin":"EDDK","destination":"LGKO","category":"arrival","route":"IKA..UPAPE..LGKO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.67,"airlines":[["ber/b737",1],["ber/b738",1],["gwi/a319",1],["hlx/b738",1]]},
+        {"origin":"EGKK","destination":"LGKO","category":"arrival","route":"IKA..UPAPE..LGKO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.67,"airlines":[["ezy/a319",1],["ezy/a320",1],["tvf/b738",1],["tvf/b752",1]]},
+        {"origin":"EDDF","destination":"LGKO","category":"arrival","route":"IKA..UPAPE..LGKO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["cfg/a320",1],["cfg/b738",1],["hlx/b738",1]]},
+        {"origin":"EDDM","destination":"LGKO","category":"arrival","route":"IKA..UPAPE..LGKO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["ber/b738",1],["cfg/a320",1],["hlx/b738",1]]},
+        {"origin":"EDDH","destination":"LGKO","category":"arrival","route":"IKA..UPAPE..LGKO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["ber/b738",1],["cfg/a320",1]]},
+        {"origin":"","destination":"LGKO","category":"arrival","route":"GML..BUTAL..LGKO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.17,"airlines":[["aee/a320",1]]},
+        {"origin":"","destination":"LGKO","category":"arrival","route":"PAR..FEDON..LGKO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["aee/dh8d",1],["oal/dh8d",1],["aee/dh8b",1],["aee/dh8c",1],["oal/dh8b",1],["oal/dh8c",1]]},
+        {"origin":"","destination":"LGKO","category":"arrival","route":"IKA..UPAPE..LGKO","altitude":[6000,9000],"speed":250,"method":"random","rate":4.39,"airlines":[["ryr/b738",7],["cfg/a320",3],["hlx/b738",3],["ber/b738",2],["tvf/b738",2],["aee/dh8d",2],["aee/a320",1],["exs/b738",1],["exs/b752",1],["ezy/a320",1],["lgl/b737",1],["tra/b738",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [37.2761,27.5511,36.993,27.2807],
+            [36.993,27.2807,36.7945,27.0912],
+            [36.4001,28.0653,36.6818,27.3696],
+            [36.6818,27.3696,36.7945,27.0912],
+            [36.2469,26.5345,36.6008,26.8942],
+            [36.6008,26.8942,36.7945,27.0912],
+            [37.6829,26.3456,37.0019,26.9171],
+            [37.0019,26.9171,36.7945,27.0912]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [36.8036,27.0836,36.945,26.9735],
+            [36.869,27.018,36.8796,27.0392],
+            [36.9397,26.9629,36.9502,26.9841],
+            [36.7852,27.0979,36.6437,27.2076],
+            [36.7198,27.1634,36.7092,27.1422],
+            [36.649,27.2182,36.6385,27.197]
+        ]}
+    ]
+}

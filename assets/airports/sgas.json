@@ -1,0 +1,85 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SGAS/",
+    "info": {"country":"PY","city":"Asuncion","type":"large_airport","longestRunwayM":3359,"frequencies":{"twr":"118.100","app":"119.700","gnd":"121.900"}},
+    "radio": {"twr":"Silvio Pettirossi Tower","app":"Silvio Pettirossi Approach","dep":"Silvio Pettirossi Departure"},
+    "icao": "SGAS",
+    "iata": "ASU",
+    "magnetic_north": -15.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-25.240156,-57.519227,"292ft"],
+    "rangeRings": {"enabled":true,"center":[-25.240156,-57.519227],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":10,"speed":10},
+    "arrivalRunway": "02",
+    "departureRunway": "02",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-24.8502,-57.6388],[-24.8355,-57.5231],[-24.8484,-57.4072],[-24.8879,-57.2989],[-24.9515,-57.2056],[-25.0348,-57.1337],[-25.132,-57.0881],[-25.2366,-57.0718],[-25.3415,-57.0861],[-25.4394,-57.1298],[-25.5238,-57.2001],[-25.5889,-57.2921],[-25.6301,-57.3997],[-25.6448,-57.5153],[-25.632,-57.6312],[-25.5924,-57.7395],[-25.5288,-57.8328],[-25.4456,-57.9047],[-25.3483,-57.9504],[-25.2437,-57.9666],[-25.1388,-57.9524],[-25.0409,-57.9086],[-24.9565,-57.8383],[-24.8915,-57.7463]]}
+    ],
+    "fixes": {
+        "SGAS": [-25.24016,-57.51923],
+        "CUNCA": [-25.20863,-56.92553],
+        "CAWEV": [-25.22844,-57.29865],
+        "EKITO": [-25.77618,-57.56934],
+        "ANEBA": [-25.43931,-57.53785],
+        "GECEV": [-25.57356,-57.98595],
+        "KALEB": [-25.36403,-57.69263],
+        "CIFSU": [-24.78056,-57.82829],
+        "KUZAV": [-25.0694,-57.63406],
+        "_RWY0204DME": [-25.31965,-57.53859],
+        "_RWY2004DME": [-25.16005,-57.49963]
+    },
+    "runways": [
+        {"name":["02","20"],"end":[[-25.2546,-57.5227,"292ft"],[-25.2251,-57.5155,"249ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "CUNCA1A": {"icao":"CUNCA1A","name":"Cunca One Alpha","rwy":{"SGAS02":["_RWY2004DME"],"SGAS20":["_RWY0204DME"]},"body":[],"exitPoints":{"CUNCA":["CUNCA"]},"draw":[["SGAS","CUNCA*"]]},
+        "EKITO1D": {"icao":"EKITO1D","name":"Ekito One Delta","rwy":{"SGAS02":["_RWY2004DME"],"SGAS20":["_RWY0204DME"]},"body":[],"exitPoints":{"EKITO":["EKITO"]},"draw":[["SGAS","EKITO*"]]},
+        "GECEV1B": {"icao":"GECEV1B","name":"Gecev One Bravo","rwy":{"SGAS02":["_RWY2004DME"],"SGAS20":["_RWY0204DME"]},"body":[],"exitPoints":{"GECEV":["GECEV"]},"draw":[["SGAS","GECEV*"]]},
+        "CIFSU2F": {"icao":"CIFSU2F","name":"Cifsu Two Foxtrot","rwy":{"SGAS02":["_RWY2004DME"],"SGAS20":["_RWY0204DME"]},"body":[],"exitPoints":{"CIFSU":["CIFSU"]},"draw":[["SGAS","CIFSU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SGAS","destination":"SBGR","category":"departure","route":"SGAS02.CUNCA1A.CUNCA","altitude":"","speed":"","method":"random","rate":1.08,"airlines":[["glo/b737",1],["glo/b738",1],["lap/a320",1],["tam/a320",1]]},
+        {"origin":"SGAS","destination":"SAEZ","category":"departure","route":"SGAS02.EKITO1D.EKITO","altitude":"","speed":"","method":"random","rate":0.81,"airlines":[["arg/b737",1],["lap/a320",1],["tam/a320",1]]},
+        {"origin":"SGAS","destination":"KMIA","category":"departure","route":"SGAS02.CIFSU2F.CIFSU","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["aal/b752",2]]},
+        {"origin":"SGAS","destination":"MPTO","category":"departure","route":"SGAS02.CIFSU2F.CIFSU","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["cmp/b737",1],["cmp/b738",1]]},
+        {"origin":"SGAS","destination":"SABE","category":"departure","route":"SGAS02.EKITO1D.EKITO","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["arg/b737",1]]},
+        {"origin":"SGAS","destination":"","category":"departure","route":"SGAS02.CUNCA1A.CUNCA","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["lap/a320",1]]},
+        {"origin":"SGAS","destination":"","category":"departure","route":"SGAS02.GECEV1B.GECEV","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["lap/a320",1]]},
+        {"origin":"SGAS","destination":"","category":"departure","route":"SGAS02.CIFSU2F.CIFSU","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["ava/e190",1],["lap/a320",1]]},
+        {"origin":"SGAS","destination":"","category":"departure","route":"SGAS02.EKITO1D.EKITO","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["zp/c172",6],["zp/p28a",5],["zp/c182",3],["zp/be36",2],["zp/da42",1],["zp/tb20",1],["zp/c208",2],["zp/pc12",2],["zp/be20",1],["zp/b350",1],["zp/p180",1],["zp/c510",1],["zp/e50p",1],["zp/c550",1],["zp/e55p",1],["zp/cl30",1],["zp/c680",1],["zp/h25b",1],["zp/lj45",1],["zp/f2th",1],["zp/glf4",1],["zp/glex",1],["zp/glf5",1]]},
+        {"origin":"SBGR","destination":"SGAS","category":"arrival","route":"CUNCA..CAWEV..SGAS","altitude":[4000,7000],"speed":250,"method":"random","rate":1.08,"airlines":[["glo/b737",1],["glo/b738",1],["lap/a320",1],["tam/a320",1]]},
+        {"origin":"SAEZ","destination":"SGAS","category":"arrival","route":"EKITO..ANEBA..SGAS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.81,"airlines":[["arg/b737",1],["lap/a320",1],["tam/a320",1]]},
+        {"origin":"KMIA","destination":"SGAS","category":"arrival","route":"CIFSU..KUZAV..SGAS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.54,"airlines":[["aal/b752",2]]},
+        {"origin":"MPTO","destination":"SGAS","category":"arrival","route":"CIFSU..KUZAV..SGAS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.54,"airlines":[["cmp/b737",1],["cmp/b738",1]]},
+        {"origin":"SABE","destination":"SGAS","category":"arrival","route":"EKITO..ANEBA..SGAS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.27,"airlines":[["arg/b737",1]]},
+        {"origin":"","destination":"SGAS","category":"arrival","route":"CUNCA..CAWEV..SGAS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.27,"airlines":[["lap/a320",1]]},
+        {"origin":"","destination":"SGAS","category":"arrival","route":"GECEV..KALEB..SGAS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.27,"airlines":[["lap/a320",1]]},
+        {"origin":"","destination":"SGAS","category":"arrival","route":"CIFSU..KUZAV..SGAS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.54,"airlines":[["ava/e190",1],["lap/a320",1]]},
+        {"origin":"","destination":"SGAS","category":"arrival","route":"EKITO..ANEBA..SGAS","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["zp/c172",6],["zp/p28a",5],["zp/c182",3],["zp/be36",2],["zp/da42",1],["zp/tb20",1],["zp/c208",2],["zp/pc12",2],["zp/be20",1],["zp/b350",1],["zp/p180",1],["zp/c510",1],["zp/e50p",1],["zp/c550",1],["zp/e55p",1],["zp/cl30",1],["zp/c680",1],["zp/h25b",1],["zp/lj45",1],["zp/f2th",1],["zp/glf4",1],["zp/glex",1],["zp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-25.2086,-56.9255,-25.2284,-57.2986],
+            [-25.2284,-57.2986,-25.2402,-57.5192],
+            [-25.7762,-57.5693,-25.4393,-57.5378],
+            [-25.4393,-57.5378,-25.2402,-57.5192],
+            [-25.5736,-57.9859,-25.364,-57.6926],
+            [-25.364,-57.6926,-25.2402,-57.5192],
+            [-24.7806,-57.8283,-25.0694,-57.6341],
+            [-25.0694,-57.6341,-25.2402,-57.5192]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-25.2546,-57.5227,-25.4172,-57.5625],
+            [-25.3381,-57.5318,-25.3338,-57.5534],
+            [-25.4194,-57.5517,-25.4151,-57.5733],
+            [-25.2251,-57.5155,-25.0625,-57.4758],
+            [-25.1416,-57.5064,-25.1459,-57.4849],
+            [-25.0603,-57.4866,-25.0646,-57.4651]
+        ]}
+    ]
+}

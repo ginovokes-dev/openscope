@@ -1,0 +1,90 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGMC/",
+    "info": {"country":"GB","city":"Southend-on-Sea","type":"medium_airport","longestRunwayM":1856,"frequencies":{"atis":"121.800","twr":"127.725","app":"130.775"}},
+    "radio": {"twr":"Southend Tower","app":"Southend Approach","dep":"Southend Radar"},
+    "icao": "EGMC",
+    "iata": "SEN",
+    "magnetic_north": 1.3,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [51.570562,0.693627,"49ft"],
+    "rangeRings": {"enabled":true,"center":[51.570562,0.693627],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":250,"speed":6},
+    "arrivalRunway": "23",
+    "departureRunway": "23",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[52.11,0.7133],[52.0885,0.9373],[52.0316,1.1446],[51.9434,1.3213],[51.8297,1.4551],[51.6984,1.5371],[51.5583,1.5615],[51.4191,1.5269],[51.2902,1.4354],[51.1805,1.2934],[51.0973,1.1105],[51.0463,0.8992],[51.0311,0.6739],[51.0527,0.45],[51.1095,0.2426],[51.1978,0.066],[51.3114,-0.0679],[51.4428,-0.1498],[51.5828,-0.1743],[51.722,-0.1396],[51.8509,-0.0482],[51.9607,0.0938],[52.0439,0.2767],[52.0948,0.488]]}
+    ],
+    "fixes": {
+        "EGMC": [51.57056,0.69363],
+        "IPEWE": [51.6899,1.81339],
+        "KOLUB": [51.61278,1.08979],
+        "ING": [50.8832,1.74181,"saint-inglevert"],
+        "AFUFE": [51.38924,0.97013],
+        "LYX": [50.9722,0.95529,"lydd"],
+        "LEVFU": [51.32948,0.79905],
+        "LON": [51.4872,-0.46667,"london"],
+        "IJEFE": [51.54188,0.29434],
+        "CAM": [52.2108,0.18279,"cambridge"],
+        "ADIWE": [51.79438,0.51505],
+        "_RWY0504DME": [51.5291,0.60147],
+        "_RWY2304DME": [51.61379,0.79028]
+    },
+    "runways": [
+        {"name":["05","23"],"end":[[51.56812,0.68831,"49ft"],[51.57483,0.70328,"37ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "IPEWE2E": {"icao":"IPEWE2E","name":"Ipewe Two Echo","rwy":{"EGMC05":["_RWY2304DME"],"EGMC23":["_RWY0504DME"]},"body":[],"exitPoints":{"IPEWE":["IPEWE"]},"draw":[["EGMC","IPEWE*"]]},
+        "ING1F": {"icao":"ING1F","name":"Saint-inglevert One Foxtrot","rwy":{"EGMC05":["_RWY2304DME"],"EGMC23":["_RWY0504DME"]},"body":[],"exitPoints":{"ING":["ING"]},"draw":[["EGMC","ING*"]]},
+        "LYX1E": {"icao":"LYX1E","name":"Lydd One Echo","rwy":{"EGMC05":["_RWY2304DME"],"EGMC23":["_RWY0504DME"]},"body":[],"exitPoints":{"LYX":["LYX"]},"draw":[["EGMC","LYX*"]]},
+        "LON1F": {"icao":"LON1F","name":"London One Foxtrot","rwy":{"EGMC05":["_RWY2304DME"],"EGMC23":["_RWY0504DME"]},"body":[],"exitPoints":{"LON":["LON"]},"draw":[["EGMC","LON*"]]},
+        "CAM2D": {"icao":"CAM2D","name":"Cambridge Two Delta","rwy":{"EGMC05":["_RWY2304DME"],"EGMC23":["_RWY0504DME"]},"body":[],"exitPoints":{"CAM":["CAM"]},"draw":[["EGMC","CAM*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGMC","destination":"EDDB","category":"departure","route":"EGMC23.IPEWE2E.IPEWE","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["ezy/a319",1]]},
+        {"origin":"EGMC","destination":"EGJJ","category":"departure","route":"EGMC23.LON1F.LON","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["ezy/a319",1]]},
+        {"origin":"EGMC","destination":"EGPH","category":"departure","route":"EGMC23.CAM2D.CAM","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["ezy/a319",1]]},
+        {"origin":"EGMC","destination":"EHAM","category":"departure","route":"EGMC23.IPEWE2E.IPEWE","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["ezy/a319",1]]},
+        {"origin":"EGMC","destination":"EPKK","category":"departure","route":"EGMC23.IPEWE2E.IPEWE","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["ezy/a319",1]]},
+        {"origin":"EGMC","destination":"","category":"departure","route":"EGMC23.ING1F.ING","altitude":"","speed":"","method":"random","rate":0.89,"airlines":[["ezy/a319",2]]},
+        {"origin":"EGMC","destination":"","category":"departure","route":"EGMC23.LYX1E.LYX","altitude":"","speed":"","method":"random","rate":2.67,"airlines":[["ezy/a319",6]]},
+        {"origin":"EGMC","destination":"","category":"departure","route":"EGMC23.IPEWE2E.IPEWE","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",2],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]},
+        {"origin":"EGMC","destination":"","category":"departure","route":"EGMC23.ING1F.ING","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",2],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]},
+        {"origin":"EDDB","destination":"EGMC","category":"arrival","route":"IPEWE..KOLUB..EGMC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["ezy/a319",1]]},
+        {"origin":"EGJJ","destination":"EGMC","category":"arrival","route":"LON..IJEFE..EGMC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["ezy/a319",1]]},
+        {"origin":"EGPH","destination":"EGMC","category":"arrival","route":"CAM..ADIWE..EGMC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["ezy/a319",1]]},
+        {"origin":"EHAM","destination":"EGMC","category":"arrival","route":"IPEWE..KOLUB..EGMC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["ezy/a319",1]]},
+        {"origin":"EPKK","destination":"EGMC","category":"arrival","route":"IPEWE..KOLUB..EGMC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["ezy/a319",1]]},
+        {"origin":"","destination":"EGMC","category":"arrival","route":"ING..AFUFE..EGMC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.89,"airlines":[["ezy/a319",2]]},
+        {"origin":"","destination":"EGMC","category":"arrival","route":"LYX..LEVFU..EGMC","altitude":[6000,9000],"speed":250,"method":"random","rate":2.67,"airlines":[["ezy/a319",6]]},
+        {"origin":"","destination":"EGMC","category":"arrival","route":"IPEWE..KOLUB..EGMC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",2],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]},
+        {"origin":"","destination":"EGMC","category":"arrival","route":"ING..AFUFE..EGMC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",2],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [51.6899,1.8134,51.6128,1.0898],
+            [51.6128,1.0898,51.5706,0.6936],
+            [50.8832,1.7418,51.3892,0.9701],
+            [51.3892,0.9701,51.5706,0.6936],
+            [50.9722,0.9553,51.3295,0.7991],
+            [51.3295,0.7991,51.5706,0.6936],
+            [51.4872,-0.4667,51.5419,0.2943],
+            [51.5419,0.2943,51.5706,0.6936],
+            [52.2108,0.1828,51.7944,0.515],
+            [51.7944,0.515,51.5706,0.6936]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [51.5681,0.6883,51.4704,0.4715],
+            [51.5112,0.5892,51.5274,0.5704],
+            [51.4623,0.4809,51.4785,0.4621],
+            [51.5748,0.7033,51.6721,0.9211],
+            [51.6316,0.8026,51.6154,0.8215],
+            [51.6802,0.9116,51.664,0.9305]
+        ]}
+    ]
+}

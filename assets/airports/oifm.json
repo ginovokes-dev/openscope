@@ -1,0 +1,101 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/OIFM/",
+    "info": {"country":"IR","city":"Isfahan","type":"large_airport","longestRunwayM":4397,"frequencies":{"atis":"128.250","twr":"118.300","app":"121.600","gnd":"121.900"}},
+    "radio": {"twr":"Isfahan Tower","app":"Isfahan Approach","dep":"Isfahan Departure"},
+    "icao": "OIFM",
+    "iata": "IFN",
+    "magnetic_north": 4.2,
+    "ctr_radius": 60,
+    "ctr_ceiling": 15000,
+    "initial_alt": 10000,
+    "position": [32.755142,51.883877,"5059ft"],
+    "rangeRings": {"enabled":true,"center":[32.755142,51.883877],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":280,"speed":6},
+    "arrivalRunway": "25R",
+    "departureRunway": "25R",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":150,"airspace_class":"C","poly":[[33.2933,51.9309],[33.2647,52.0949],[33.2014,52.2445],[33.1077,52.3696],[32.99,52.4615],[32.8563,52.5141],[32.7156,52.5238],[32.5777,52.4898],[32.4518,52.4145],[32.3467,52.3031],[32.2693,52.1631],[32.2251,52.0041],[32.217,51.8369],[32.2456,51.6729],[32.3089,51.5232],[32.4026,51.3982],[32.5203,51.3062],[32.654,51.2536],[32.7947,51.244],[32.9326,51.2779],[33.0584,51.3532],[33.1636,51.4646],[33.2409,51.6046],[33.2852,51.7637]]}
+    ],
+    "fixes": {
+        "OIFM": [32.75514,51.88388],
+        "UVINU": [33.11579,52.60577],
+        "FIHIP": [32.88274,52.13928],
+        "SEKUV": [32.10512,52.21194],
+        "ADOWU": [32.52517,51.99994],
+        "SKD": [32.2798,50.8549,"shahre kord"],
+        "AZUJA": [32.63486,51.6235],
+        "PEBAZ": [33.12384,51.16776],
+        "EBOJA": [32.88559,51.63052],
+        "VARUV": [33.45268,51.75312],
+        "OPOHO": [33.00193,51.83762],
+        "_RWY07L04DME": [32.73466,51.76037],
+        "_RWY25R04DME": [32.771,51.96116],
+        "_RWY07R04DME": [32.73063,51.76148],
+        "_RWY25L04DME": [32.76702,51.96215]
+    },
+    "runways": [
+        {"name":["07L","25R"],"end":[[32.7487,51.8378,"5057ft"],[32.757,51.8837,"5044ft"]],"ils":[true,true]},
+        {"name":["07R","25L"],"end":[[32.7447,51.8389,"5059ft"],[32.753,51.8847,"5041ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "UVINU3D": {"icao":"UVINU3D","name":"Uvinu Three Delta","rwy":{"OIFM07L":["_RWY25R04DME"],"OIFM25R":["_RWY07L04DME"],"OIFM07R":["_RWY25L04DME"],"OIFM25L":["_RWY07R04DME"]},"body":[],"exitPoints":{"UVINU":["UVINU"]},"draw":[["OIFM","UVINU*"]]},
+        "SEKUV1B": {"icao":"SEKUV1B","name":"Sekuv One Bravo","rwy":{"OIFM07L":["_RWY25R04DME"],"OIFM25R":["_RWY07L04DME"],"OIFM07R":["_RWY25L04DME"],"OIFM25L":["_RWY07R04DME"]},"body":[],"exitPoints":{"SEKUV":["SEKUV"]},"draw":[["OIFM","SEKUV*"]]},
+        "SKD2C": {"icao":"SKD2C","name":"Shahre Kord Two Charlie","rwy":{"OIFM07L":["_RWY25R04DME"],"OIFM25R":["_RWY07L04DME"],"OIFM07R":["_RWY25L04DME"],"OIFM25L":["_RWY07R04DME"]},"body":[],"exitPoints":{"SKD":["SKD"]},"draw":[["OIFM","SKD*"]]},
+        "PEBAZ1D": {"icao":"PEBAZ1D","name":"Pebaz One Delta","rwy":{"OIFM07L":["_RWY25R04DME"],"OIFM25R":["_RWY07L04DME"],"OIFM07R":["_RWY25L04DME"],"OIFM25L":["_RWY07R04DME"]},"body":[],"exitPoints":{"PEBAZ":["PEBAZ"]},"draw":[["OIFM","PEBAZ*"]]},
+        "VARUV3A": {"icao":"VARUV3A","name":"Varuv Three Alpha","rwy":{"OIFM07L":["_RWY25R04DME"],"OIFM25R":["_RWY07L04DME"],"OIFM07R":["_RWY25L04DME"],"OIFM25L":["_RWY07R04DME"]},"body":[],"exitPoints":{"VARUV":["VARUV"]},"draw":[["OIFM","VARUV*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"OIFM","destination":"OIII","category":"departure","route":"OIFM25R.VARUV3A.VARUV","altitude":"","speed":"","method":"random","rate":0.98,"airlines":[["ira/a30b",1],["ira/a320",1],["ira/f100",1],["ira/md82",1],["irc/f100",1]]},
+        {"origin":"OIFM","destination":"OIMM","category":"departure","route":"OIFM25R.UVINU3D.UVINU","altitude":"","speed":"","method":"random","rate":0.98,"airlines":[["ira/a30b",1],["ira/a320",1],["ira/f100",1],["ira/md82",1],["irc/f100",1]]},
+        {"origin":"OIFM","destination":"OIBK","category":"departure","route":"OIFM25R.SEKUV1B.SEKUV","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["ira/a320",1],["ira/f100",1],["irk/md82",1]]},
+        {"origin":"OIFM","destination":"OIKB","category":"departure","route":"OIFM25R.SEKUV1B.SEKUV","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["ira/f100",1],["ira/md82",1],["irc/f100",1]]},
+        {"origin":"OIFM","destination":"OEMA","category":"departure","route":"OIFM25R.SKD2C.SKD","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["sva/a306",1],["sva/b744",1]]},
+        {"origin":"OIFM","destination":"","category":"departure","route":"OIFM25R.SEKUV1B.SEKUV","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["ira/f100",2],["ira/a320",1],["irc/f100",1]]},
+        {"origin":"OIFM","destination":"","category":"departure","route":"OIFM25R.SKD2C.SKD","altitude":"","speed":"","method":"random","rate":1.38,"airlines":[["ira/f100",2],["ira/a320",1],["ira/md82",1],["irk/md82",1],["irk/t134",1],["sva/a306",1]]},
+        {"origin":"OIFM","destination":"","category":"departure","route":"OIFM25R.PEBAZ1D.PEBAZ","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["ira/f100",1],["thy/b738",1]]},
+        {"origin":"OIFM","destination":"","category":"departure","route":"OIFM25R.SKD2C.SKD","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["ep/c172",6],["ep/p28a",5],["ep/c182",3],["ep/be36",2],["ep/da42",1],["ep/tb20",1],["ep/c208",2],["ep/pc12",2],["ep/be20",1],["ep/b350",1],["ep/p180",1],["ep/c510",1],["ep/e50p",1],["ep/c550",2],["ep/e55p",1],["ep/cl30",1],["ep/c680",1],["ep/h25b",1],["ep/lj45",1],["ep/f2th",1],["ep/glf4",1],["ep/glex",1],["ep/glf5",1]]},
+        {"origin":"OIFM","destination":"","category":"departure","route":"OIFM25R.UVINU3D.UVINU","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["ep/c172",6],["ep/p28a",5],["ep/c182",3],["ep/be36",2],["ep/da42",1],["ep/tb20",1],["ep/c208",2],["ep/pc12",2],["ep/be20",1],["ep/b350",1],["ep/p180",1],["ep/c510",1],["ep/e50p",1],["ep/c550",2],["ep/e55p",1],["ep/cl30",1],["ep/c680",1],["ep/h25b",1],["ep/lj45",1],["ep/f2th",1],["ep/glf4",1],["ep/glex",1],["ep/glf5",1]]},
+        {"origin":"OIII","destination":"OIFM","category":"arrival","route":"VARUV..OPOHO..OIFM","altitude":[11000,14000],"speed":250,"method":"random","rate":0.98,"airlines":[["ira/a30b",1],["ira/a320",1],["ira/f100",1],["ira/md82",1],["irc/f100",1]]},
+        {"origin":"OIMM","destination":"OIFM","category":"arrival","route":"UVINU..FIHIP..OIFM","altitude":[11000,14000],"speed":250,"method":"random","rate":0.98,"airlines":[["ira/a30b",1],["ira/a320",1],["ira/f100",1],["ira/md82",1],["irc/f100",1]]},
+        {"origin":"OIBK","destination":"OIFM","category":"arrival","route":"SEKUV..ADOWU..OIFM","altitude":[11000,14000],"speed":250,"method":"random","rate":0.59,"airlines":[["ira/a320",1],["ira/f100",1],["irk/md82",1]]},
+        {"origin":"OIKB","destination":"OIFM","category":"arrival","route":"SEKUV..ADOWU..OIFM","altitude":[11000,14000],"speed":250,"method":"random","rate":0.59,"airlines":[["ira/f100",1],["ira/md82",1],["irc/f100",1]]},
+        {"origin":"OEMA","destination":"OIFM","category":"arrival","route":"SKD..AZUJA..OIFM","altitude":[11000,14000],"speed":250,"method":"random","rate":0.39,"airlines":[["sva/a306",1],["sva/b744",1]]},
+        {"origin":"","destination":"OIFM","category":"arrival","route":"SEKUV..ADOWU..OIFM","altitude":[11000,14000],"speed":250,"method":"random","rate":0.79,"airlines":[["ira/f100",2],["ira/a320",1],["irc/f100",1]]},
+        {"origin":"","destination":"OIFM","category":"arrival","route":"SKD..AZUJA..OIFM","altitude":[11000,14000],"speed":250,"method":"random","rate":1.38,"airlines":[["ira/f100",2],["ira/a320",1],["ira/md82",1],["irk/md82",1],["irk/t134",1],["sva/a306",1]]},
+        {"origin":"","destination":"OIFM","category":"arrival","route":"PEBAZ..EBOJA..OIFM","altitude":[11000,14000],"speed":250,"method":"random","rate":0.39,"airlines":[["ira/f100",1],["thy/b738",1]]},
+        {"origin":"","destination":"OIFM","category":"arrival","route":"SKD..AZUJA..OIFM","altitude":[11000,14000],"speed":250,"method":"random","rate":0.42,"airlines":[["ep/c172",6],["ep/p28a",5],["ep/c182",3],["ep/be36",2],["ep/da42",1],["ep/tb20",1],["ep/c208",2],["ep/pc12",2],["ep/be20",1],["ep/b350",1],["ep/p180",1],["ep/c510",1],["ep/e50p",1],["ep/c550",2],["ep/e55p",1],["ep/cl30",1],["ep/c680",1],["ep/h25b",1],["ep/lj45",1],["ep/f2th",1],["ep/glf4",1],["ep/glex",1],["ep/glf5",1]]},
+        {"origin":"","destination":"OIFM","category":"arrival","route":"UVINU..FIHIP..OIFM","altitude":[11000,14000],"speed":250,"method":"random","rate":0.42,"airlines":[["ep/c172",6],["ep/p28a",5],["ep/c182",3],["ep/be36",2],["ep/da42",1],["ep/tb20",1],["ep/c208",2],["ep/pc12",2],["ep/be20",1],["ep/b350",1],["ep/p180",1],["ep/c510",1],["ep/e50p",1],["ep/c550",2],["ep/e55p",1],["ep/cl30",1],["ep/c680",1],["ep/h25b",1],["ep/lj45",1],["ep/f2th",1],["ep/glf4",1],["ep/glex",1],["ep/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [33.1158,52.6058,32.8827,52.1393],
+            [32.8827,52.1393,32.7551,51.8839],
+            [32.1051,52.2119,32.5252,51.9999],
+            [32.5252,51.9999,32.7551,51.8839],
+            [32.2798,50.8549,32.6349,51.6235],
+            [32.6349,51.6235,32.7551,51.8839],
+            [33.1238,51.1678,32.8856,51.6305],
+            [32.8856,51.6305,32.7551,51.8839],
+            [33.4527,51.7531,33.0019,51.8376],
+            [33.0019,51.8376,32.7551,51.8839]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [32.7487,51.8378,32.7135,51.6443],
+            [32.7214,51.7435,32.7409,51.7385],
+            [32.7037,51.6468,32.7233,51.6418],
+            [32.757,51.8837,32.7919,52.0774],
+            [32.7843,51.978,32.7647,51.983],
+            [32.8017,52.0749,32.7821,52.0799],
+            [32.7447,51.8389,32.7094,51.6454],
+            [32.7173,51.7446,32.7369,51.7396],
+            [32.6997,51.6479,32.7192,51.6429],
+            [32.753,51.8847,32.788,52.0784],
+            [32.7803,51.979,32.7607,51.984],
+            [32.7977,52.0759,32.7782,52.0809]
+        ]}
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SBRF/",
+    "info": {"country":"BR","city":"Recife","type":"large_airport","longestRunwayM":3007,"frequencies":{"atis":"127.650","twr":"122.800","app":"119.100","gnd":"121.850"},"approximateRunways":true},
+    "radio": {"twr":"Recife Tower","app":"Recife Approach","dep":"Recife Departure"},
+    "icao": "SBRF",
+    "iata": "REC",
+    "magnetic_north": -21.1,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [-8.12747,-34.922961,"33ft"],
+    "rangeRings": {"enabled":true,"center":[-8.12747,-34.922961],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":350,"speed":7},
+    "arrivalRunway": "36",
+    "departureRunway": "36",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[-7.6241,-35.1192],[-7.5909,-34.9809],[-7.5944,-34.8386],[-7.6341,-34.7021],[-7.7075,-34.5807],[-7.8095,-34.4826],[-7.9332,-34.4144],[-8.0701,-34.381],[-8.211,-34.3845],[-8.3461,-34.4246],[-8.4663,-34.4988],[-8.5635,-34.6018],[-8.6309,-34.7267],[-8.664,-34.865],[-8.6606,-35.0073],[-8.6208,-35.1438],[-8.5474,-35.2652],[-8.4454,-35.3634],[-8.3217,-35.4315],[-8.1848,-35.4649],[-8.044,-35.4615],[-7.9089,-35.4213],[-7.7886,-35.3472],[-7.6915,-35.2441]]}
+    ],
+    "fixes": {
+        "SBRF": [-8.12747,-34.92296],
+        "WOMWI": [-7.50524,-34.5857],
+        "ELEPA": [-7.90733,-34.80364],
+        "FIPUK": [-8.51712,-34.32807],
+        "IPAZE": [-8.26533,-34.71249],
+        "ENUWE": [-8.67808,-35.36957],
+        "DEDCU": [-8.32227,-35.08097],
+        "LOKMA": [-7.82887,-35.56936],
+        "TIFAW": [-8.02183,-35.15165],
+        "_RWY1804DME": [-8.05125,-34.94797],
+        "_RWY3604DME": [-8.20369,-34.89794]
+    },
+    "runways": [
+        {"name":["18","36"],"end":[[-8.11461,-34.92718,"23ft"],[-8.14033,-34.91874,"32ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "WOMWI1B": {"icao":"WOMWI1B","name":"Womwi One Bravo","rwy":{"SBRF18":["_RWY3604DME"],"SBRF36":["_RWY1804DME"]},"body":[],"exitPoints":{"WOMWI":["WOMWI"]},"draw":[["SBRF","WOMWI*"]]},
+        "FIPUK2B": {"icao":"FIPUK2B","name":"Fipuk Two Bravo","rwy":{"SBRF18":["_RWY3604DME"],"SBRF36":["_RWY1804DME"]},"body":[],"exitPoints":{"FIPUK":["FIPUK"]},"draw":[["SBRF","FIPUK*"]]},
+        "ENUWE3F": {"icao":"ENUWE3F","name":"Enuwe Three Foxtrot","rwy":{"SBRF18":["_RWY3604DME"],"SBRF36":["_RWY1804DME"]},"body":[],"exitPoints":{"ENUWE":["ENUWE"]},"draw":[["SBRF","ENUWE*"]]},
+        "LOKMA3C": {"icao":"LOKMA3C","name":"Lokma Three Charlie","rwy":{"SBRF18":["_RWY3604DME"],"SBRF36":["_RWY1804DME"]},"body":[],"exitPoints":{"LOKMA":["LOKMA"]},"draw":[["SBRF","LOKMA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SBRF","destination":"SBGR","category":"departure","route":"SBRF36.ENUWE3F.ENUWE","altitude":"","speed":"","method":"random","rate":1.01,"airlines":[["azu/e190",1],["glo/b737",1],["glo/b738",1],["one/a318",1],["one/a320",1],["tam/a320",1],["tam/a321",1]]},
+        {"origin":"SBRF","destination":"SBSV","category":"departure","route":"SBRF36.ENUWE3F.ENUWE","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["azu/e190",1],["glo/b737",1],["glo/b738",1],["one/a320",1],["tam/a320",1]]},
+        {"origin":"SBRF","destination":"SBBR","category":"departure","route":"SBRF36.ENUWE3F.ENUWE","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["glo/b738",1],["one/a318",1],["tam/a320",1],["tam/a321",1]]},
+        {"origin":"SBRF","destination":"SBFZ","category":"departure","route":"SBRF36.LOKMA3C.LOKMA","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["azu/e190",1],["glo/b737",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBRF","destination":"KMIA","category":"departure","route":"SBRF36.LOKMA3C.LOKMA","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["aal/b752",2],["tam/b752",1]]},
+        {"origin":"SBRF","destination":"SBCF","category":"departure","route":"SBRF36.ENUWE3F.ENUWE","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["azu/e190",2],["glo/b738",1]]},
+        {"origin":"SBRF","destination":"","category":"departure","route":"SBRF36.WOMWI1B.WOMWI","altitude":"","speed":"","method":"random","rate":0.86,"airlines":[["azu/e190",2],["azu/at72",1],["cfg/b763",1],["glo/b737",1],["tap/a332",1]]},
+        {"origin":"SBRF","destination":"","category":"departure","route":"SBRF36.ENUWE3F.ENUWE","altitude":"","speed":"","method":"random","rate":1.01,"airlines":[["azu/at72",2],["tam/a320",2],["azu/e190",1],["glo/b738",1],["one/a318",1]]},
+        {"origin":"SBRF","destination":"","category":"departure","route":"SBRF36.LOKMA3C.LOKMA","altitude":"","speed":"","method":"random","rate":0.86,"airlines":[["azu/e190",1],["cmp/b737",1],["cmp/b738",1],["glo/b737",1],["glo/b738",1],["one/a320",1]]},
+        {"origin":"SBRF","destination":"","category":"departure","route":"SBRF36.LOKMA3C.LOKMA","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",2],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"SBRF","destination":"","category":"departure","route":"SBRF36.FIPUK2B.FIPUK","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",2],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"SBGR","destination":"SBRF","category":"arrival","route":"ENUWE..DEDCU..SBRF","altitude":[6000,9000],"speed":250,"method":"random","rate":1.01,"airlines":[["azu/e190",1],["glo/b737",1],["glo/b738",1],["one/a318",1],["one/a320",1],["tam/a320",1],["tam/a321",1]]},
+        {"origin":"SBSV","destination":"SBRF","category":"arrival","route":"ENUWE..DEDCU..SBRF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.72,"airlines":[["azu/e190",1],["glo/b737",1],["glo/b738",1],["one/a320",1],["tam/a320",1]]},
+        {"origin":"SBBR","destination":"SBRF","category":"arrival","route":"ENUWE..DEDCU..SBRF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.58,"airlines":[["glo/b738",1],["one/a318",1],["tam/a320",1],["tam/a321",1]]},
+        {"origin":"SBFZ","destination":"SBRF","category":"arrival","route":"LOKMA..TIFAW..SBRF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.58,"airlines":[["azu/e190",1],["glo/b737",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"KMIA","destination":"SBRF","category":"arrival","route":"LOKMA..TIFAW..SBRF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["aal/b752",2],["tam/b752",1]]},
+        {"origin":"SBCF","destination":"SBRF","category":"arrival","route":"ENUWE..DEDCU..SBRF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["azu/e190",2],["glo/b738",1]]},
+        {"origin":"","destination":"SBRF","category":"arrival","route":"WOMWI..ELEPA..SBRF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.86,"airlines":[["azu/e190",2],["azu/at72",1],["cfg/b763",1],["glo/b737",1],["tap/a332",1]]},
+        {"origin":"","destination":"SBRF","category":"arrival","route":"ENUWE..DEDCU..SBRF","altitude":[6000,9000],"speed":250,"method":"random","rate":1.01,"airlines":[["azu/at72",2],["tam/a320",2],["azu/e190",1],["glo/b738",1],["one/a318",1]]},
+        {"origin":"","destination":"SBRF","category":"arrival","route":"LOKMA..TIFAW..SBRF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.86,"airlines":[["azu/e190",1],["cmp/b737",1],["cmp/b738",1],["glo/b737",1],["glo/b738",1],["one/a320",1]]},
+        {"origin":"","destination":"SBRF","category":"arrival","route":"LOKMA..TIFAW..SBRF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.44,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",2],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"","destination":"SBRF","category":"arrival","route":"FIPUK..IPAZE..SBRF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.44,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",2],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-7.5052,-34.5857,-7.9073,-34.8036],
+            [-7.9073,-34.8036,-8.1275,-34.923],
+            [-8.5171,-34.3281,-8.2653,-34.7125],
+            [-8.2653,-34.7125,-8.1275,-34.923],
+            [-8.6781,-35.3696,-8.3223,-35.081],
+            [-8.3223,-35.081,-8.1275,-34.923],
+            [-7.8289,-35.5694,-8.0218,-35.1517],
+            [-8.0218,-35.1517,-8.1275,-34.923]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-8.1146,-34.9272,-7.9562,-34.9791],
+            [-8.0385,-34.9628,-8.0323,-34.9436],
+            [-7.9593,-34.9887,-7.9531,-34.9696],
+            [-8.1403,-34.9187,-8.2987,-34.8667],
+            [-8.2164,-34.8831,-8.2226,-34.9023],
+            [-8.2956,-34.8571,-8.3018,-34.8763]
+        ]}
+    ]
+}

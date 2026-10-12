@@ -1,0 +1,92 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/GVNP/",
+    "info": {"country":"CV","city":"Praia","type":"large_airport","longestRunwayM":2100,"frequencies":{"twr":"118.200","app":"118.200"}},
+    "radio": {"twr":"Nelson Mandela Tower","app":"Nelson Mandela Approach","dep":"Nelson Mandela Departure"},
+    "icao": "GVNP",
+    "iata": "RAI",
+    "magnetic_north": -8.4,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [14.941126,-23.484728,"230ft"],
+    "rangeRings": {"enabled":true,"center":[14.941126,-23.484728],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":40,"speed":10},
+    "arrivalRunway": "03",
+    "departureRunway": "03",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[15.4749,-23.5663],[15.4771,-23.4205],[15.4428,-23.2791],[15.3743,-23.1518],[15.2763,-23.0471],[15.1554,-22.9722],[15.02,-22.9322],[14.8791,-22.93],[14.7425,-22.9655],[14.6194,-23.0364],[14.5183,-23.1378],[14.4459,-23.2629],[14.4073,-23.4031],[14.4051,-23.5489],[14.4394,-23.6903],[14.5079,-23.8177],[14.606,-23.9224],[14.7268,-23.9973],[14.8623,-24.0372],[15.0031,-24.0395],[15.1398,-24.004],[15.2628,-23.9331],[15.364,-23.8316],[15.4363,-23.7065]]}
+    ],
+    "fixes": {
+        "GVNP": [14.94113,-23.48473],
+        "WILUN": [15.58031,-23.17408],
+        "ZODOM": [15.16727,-23.37482],
+        "TAHRE": [14.75673,-22.77923],
+        "CERGE": [14.87589,-23.23513],
+        "KUPAN": [14.39779,-23.95154],
+        "GITNI": [14.7489,-23.64988],
+        "OVOPI": [14.90156,-24.21444],
+        "MITAJ": [14.92713,-23.7429],
+        "TUJUK": [15.46895,-23.97023],
+        "SORDA": [15.12787,-23.6565],
+        "_RWY0304DME": [14.87221,-23.51331],
+        "_RWY2104DME": [15.01171,-23.45538]
+    },
+    "runways": [
+        {"name":["03","21"],"end":[[14.93404,-23.48764,"312ft"],[14.94988,-23.48107,"324ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "WILUN3D": {"icao":"WILUN3D","name":"Wilun Three Delta","rwy":{"GVNP03":["_RWY2104DME"],"GVNP21":["_RWY0304DME"]},"body":[],"exitPoints":{"WILUN":["WILUN"]},"draw":[["GVNP","WILUN*"]]},
+        "TAHRE2D": {"icao":"TAHRE2D","name":"Tahre Two Delta","rwy":{"GVNP03":["_RWY2104DME"],"GVNP21":["_RWY0304DME"]},"body":[],"exitPoints":{"TAHRE":["TAHRE"]},"draw":[["GVNP","TAHRE*"]]},
+        "KUPAN3C": {"icao":"KUPAN3C","name":"Kupan Three Charlie","rwy":{"GVNP03":["_RWY2104DME"],"GVNP21":["_RWY0304DME"]},"body":[],"exitPoints":{"KUPAN":["KUPAN"]},"draw":[["GVNP","KUPAN*"]]},
+        "OVOPI1E": {"icao":"OVOPI1E","name":"Ovopi One Echo","rwy":{"GVNP03":["_RWY2104DME"],"GVNP21":["_RWY0304DME"]},"body":[],"exitPoints":{"OVOPI":["OVOPI"]},"draw":[["GVNP","OVOPI*"]]},
+        "TUJUK1E": {"icao":"TUJUK1E","name":"Tujuk One Echo","rwy":{"GVNP03":["_RWY2104DME"],"GVNP21":["_RWY0304DME"]},"body":[],"exitPoints":{"TUJUK":["TUJUK"]},"draw":[["GVNP","TUJUK*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"GVNP","destination":"GVAC","category":"departure","route":"GVNP03.WILUN3D.WILUN","altitude":"","speed":"","method":"random","rate":1.01,"airlines":[["tcv/at72",1],["tcv/b738",1],["tcv/b752",1]]},
+        {"origin":"GVNP","destination":"GGOV","category":"departure","route":"GVNP03.TAHRE2D.TAHRE","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["ram/b737",1],["ram/b738",1]]},
+        {"origin":"GVNP","destination":"GMMN","category":"departure","route":"GVNP03.WILUN3D.WILUN","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["ram/b737",1],["ram/b738",1]]},
+        {"origin":"GVNP","destination":"GVSV","category":"departure","route":"GVNP03.TUJUK1E.TUJUK","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["tcv/at72",1],["tcv/b738",1]]},
+        {"origin":"GVNP","destination":"LPPT","category":"departure","route":"GVNP03.WILUN3D.WILUN","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["tap/a320",1],["tcv/b738",1]]},
+        {"origin":"GVNP","destination":"","category":"departure","route":"GVNP03.WILUN3D.WILUN","altitude":"","speed":"","method":"random","rate":1.01,"airlines":[["tcv/at72",2],["tcv/b752",1]]},
+        {"origin":"GVNP","destination":"","category":"departure","route":"GVNP03.TAHRE2D.TAHRE","altitude":"","speed":"","method":"random","rate":1.01,"airlines":[["dta/b737",1],["ram/b738",1],["tcv/at72",1]]},
+        {"origin":"GVNP","destination":"","category":"departure","route":"GVNP03.KUPAN3C.KUPAN","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["tcv/b752",1]]},
+        {"origin":"GVNP","destination":"","category":"departure","route":"GVNP03.OVOPI1E.OVOPI","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["tcv/at72",1]]},
+        {"origin":"GVNP","destination":"","category":"departure","route":"GVNP03.TUJUK1E.TUJUK","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["tcv/b752",1]]},
+        {"origin":"GVAC","destination":"GVNP","category":"arrival","route":"WILUN..ZODOM..GVNP","altitude":[6000,9000],"speed":250,"method":"random","rate":1.01,"airlines":[["tcv/at72",1],["tcv/b738",1],["tcv/b752",1]]},
+        {"origin":"GGOV","destination":"GVNP","category":"arrival","route":"TAHRE..CERGE..GVNP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["ram/b737",1],["ram/b738",1]]},
+        {"origin":"GMMN","destination":"GVNP","category":"arrival","route":"WILUN..ZODOM..GVNP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["ram/b737",1],["ram/b738",1]]},
+        {"origin":"GVSV","destination":"GVNP","category":"arrival","route":"TUJUK..SORDA..GVNP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["tcv/at72",1],["tcv/b738",1]]},
+        {"origin":"LPPT","destination":"GVNP","category":"arrival","route":"WILUN..ZODOM..GVNP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["tap/a320",1],["tcv/b738",1]]},
+        {"origin":"","destination":"GVNP","category":"arrival","route":"WILUN..ZODOM..GVNP","altitude":[6000,9000],"speed":250,"method":"random","rate":1.01,"airlines":[["tcv/at72",2],["tcv/b752",1]]},
+        {"origin":"","destination":"GVNP","category":"arrival","route":"TAHRE..CERGE..GVNP","altitude":[6000,9000],"speed":250,"method":"random","rate":1.01,"airlines":[["dta/b737",1],["ram/b738",1],["tcv/at72",1]]},
+        {"origin":"","destination":"GVNP","category":"arrival","route":"KUPAN..GITNI..GVNP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["tcv/b752",1]]},
+        {"origin":"","destination":"GVNP","category":"arrival","route":"OVOPI..MITAJ..GVNP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["tcv/at72",1]]},
+        {"origin":"","destination":"GVNP","category":"arrival","route":"TUJUK..SORDA..GVNP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["tcv/b752",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [15.5803,-23.1741,15.1673,-23.3748],
+            [15.1673,-23.3748,14.9411,-23.4847],
+            [14.7567,-22.7792,14.8759,-23.2351],
+            [14.8759,-23.2351,14.9411,-23.4847],
+            [14.3978,-23.9515,14.7489,-23.6499],
+            [14.7489,-23.6499,14.9411,-23.4847],
+            [14.9016,-24.2144,14.9271,-23.7429],
+            [14.9271,-23.7429,14.9411,-23.4847],
+            [15.4689,-23.9702,15.1279,-23.6565],
+            [15.1279,-23.6565,14.9411,-23.4847]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [14.934,-23.4876,14.7795,-23.5518],
+            [14.853,-23.5101,14.8605,-23.5293],
+            [14.7757,-23.5422,14.7832,-23.5614],
+            [14.9499,-23.4811,15.1044,-23.4168],
+            [15.0309,-23.4586,15.0234,-23.4394],
+            [15.1082,-23.4264,15.1007,-23.4072]
+        ]}
+    ]
+}

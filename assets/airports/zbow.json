@@ -1,0 +1,92 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ZBOW/",
+    "info": {"country":"CN","city":"Baotou","type":"large_airport","longestRunwayM":2800,"approximateRunways":true},
+    "radio": {"twr":"Baotou Tower","app":"Baotou Approach","dep":"Baotou Departure"},
+    "icao": "ZBOW",
+    "iata": "BAV",
+    "magnetic_north": -5.6,
+    "ctr_radius": 60,
+    "ctr_ceiling": 13000,
+    "initial_alt": 8000,
+    "position": [40.560001,109.997002,"3321ft"],
+    "rangeRings": {"enabled":true,"center":[40.560001,109.997002],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":330,"speed":5},
+    "arrivalRunway": "31",
+    "departureRunway": "31",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":130,"airspace_class":"C","poly":[[41.097,109.9277],[41.0923,110.113],[41.0514,110.2904],[40.977,110.4478],[40.8741,110.5745],[40.7499,110.6618],[40.6127,110.7039],[40.4719,110.6977],[40.3371,110.6438],[40.2175,110.5458],[40.1213,110.4105],[40.0549,110.2469],[40.023,110.0663],[40.0277,109.881],[40.0686,109.7036],[40.143,109.5462],[40.2459,109.4195],[40.3701,109.3322],[40.5073,109.2901],[40.6481,109.2963],[40.7829,109.3502],[40.9025,109.4482],[40.9987,109.5836],[41.0651,109.7471]]}
+    ],
+    "fixes": {
+        "ZBOW": [40.56,109.997],
+        "VOMNO": [41.26426,110.06485],
+        "GONWO": [40.80917,110.02101],
+        "UJEWE": [40.68846,110.91097],
+        "DIPOR": [40.60545,110.32036],
+        "UDUHA": [40.07891,110.67739],
+        "OPOZO": [40.38979,110.23772],
+        "MOFEV": [39.93664,109.56032],
+        "DOJEH": [40.33946,109.8425],
+        "ERODE": [40.7882,109.1174],
+        "IBUHI": [40.64074,109.6858],
+        "_RWY1304DME": [40.61089,109.91707],
+        "_RWY3104DME": [40.50907,110.07683]
+    },
+    "runways": [
+        {"name":["13","31"],"end":[[40.56809,109.98431,"3321ft"],[40.55191,110.0097,"3321ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "VOMNO1B": {"icao":"VOMNO1B","name":"Vomno One Bravo","rwy":{"ZBOW13":["_RWY3104DME"],"ZBOW31":["_RWY1304DME"]},"body":[],"exitPoints":{"VOMNO":["VOMNO"]},"draw":[["ZBOW","VOMNO*"]]},
+        "UJEWE2C": {"icao":"UJEWE2C","name":"Ujewe Two Charlie","rwy":{"ZBOW13":["_RWY3104DME"],"ZBOW31":["_RWY1304DME"]},"body":[],"exitPoints":{"UJEWE":["UJEWE"]},"draw":[["ZBOW","UJEWE*"]]},
+        "UDUHA3E": {"icao":"UDUHA3E","name":"Uduha Three Echo","rwy":{"ZBOW13":["_RWY3104DME"],"ZBOW31":["_RWY1304DME"]},"body":[],"exitPoints":{"UDUHA":["UDUHA"]},"draw":[["ZBOW","UDUHA*"]]},
+        "MOFEV3B": {"icao":"MOFEV3B","name":"Mofev Three Bravo","rwy":{"ZBOW13":["_RWY3104DME"],"ZBOW31":["_RWY1304DME"]},"body":[],"exitPoints":{"MOFEV":["MOFEV"]},"draw":[["ZBOW","MOFEV*"]]},
+        "ERODE1C": {"icao":"ERODE1C","name":"Erode One Charlie","rwy":{"ZBOW13":["_RWY3104DME"],"ZBOW31":["_RWY1304DME"]},"body":[],"exitPoints":{"ERODE":["ERODE"]},"draw":[["ZBOW","ERODE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ZBOW","destination":"ZBAA","category":"departure","route":"ZBOW31.UJEWE2C.UJEWE","altitude":"","speed":"","method":"random","rate":0.89,"airlines":[["cca/b737",1],["cca/b738",1],["chh/b738",1]]},
+        {"origin":"ZBOW","destination":"ZYTX","category":"departure","route":"ZBOW31.UJEWE2C.UJEWE","altitude":"","speed":"","method":"random","rate":0.89,"airlines":[["csn/a319",1],["csn/a320",1],["csn/a321",1]]},
+        {"origin":"ZBOW","destination":"ZSSS","category":"departure","route":"ZBOW31.UDUHA3E.UDUHA","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["csh/b737",1],["csh/b738",1]]},
+        {"origin":"ZBOW","destination":"ZWWW","category":"departure","route":"ZBOW31.ERODE1C.ERODE","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["csn/a319",1],["csn/a320",1]]},
+        {"origin":"ZBOW","destination":"ZBSJ","category":"departure","route":"ZBOW31.UDUHA3E.UDUHA","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["csn/a320",1]]},
+        {"origin":"ZBOW","destination":"","category":"departure","route":"ZBOW31.UJEWE2C.UJEWE","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["cdg/crj7",1]]},
+        {"origin":"ZBOW","destination":"","category":"departure","route":"ZBOW31.UDUHA3E.UDUHA","altitude":"","speed":"","method":"random","rate":2.08,"airlines":[["csn/b738",2],["cdg/crj7",1],["ces/a320",1],["csn/a320",1],["csz/a320",1],["dkh/a320",1]]},
+        {"origin":"ZBOW","destination":"","category":"departure","route":"ZBOW31.MOFEV3B.MOFEV","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["csn/a321",1]]},
+        {"origin":"ZBOW","destination":"","category":"departure","route":"ZBOW31.VOMNO1B.VOMNO","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
+        {"origin":"ZBOW","destination":"","category":"departure","route":"ZBOW31.MOFEV3B.MOFEV","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
+        {"origin":"ZBAA","destination":"ZBOW","category":"arrival","route":"UJEWE..DIPOR..ZBOW","altitude":[9000,12000],"speed":250,"method":"random","rate":0.89,"airlines":[["cca/b737",1],["cca/b738",1],["chh/b738",1]]},
+        {"origin":"ZYTX","destination":"ZBOW","category":"arrival","route":"UJEWE..DIPOR..ZBOW","altitude":[9000,12000],"speed":250,"method":"random","rate":0.89,"airlines":[["csn/a319",1],["csn/a320",1],["csn/a321",1]]},
+        {"origin":"ZSSS","destination":"ZBOW","category":"arrival","route":"UDUHA..OPOZO..ZBOW","altitude":[9000,12000],"speed":250,"method":"random","rate":0.59,"airlines":[["csh/b737",1],["csh/b738",1]]},
+        {"origin":"ZWWW","destination":"ZBOW","category":"arrival","route":"ERODE..IBUHI..ZBOW","altitude":[9000,12000],"speed":250,"method":"random","rate":0.59,"airlines":[["csn/a319",1],["csn/a320",1]]},
+        {"origin":"ZBSJ","destination":"ZBOW","category":"arrival","route":"UDUHA..OPOZO..ZBOW","altitude":[9000,12000],"speed":250,"method":"random","rate":0.3,"airlines":[["csn/a320",1]]},
+        {"origin":"","destination":"ZBOW","category":"arrival","route":"UJEWE..DIPOR..ZBOW","altitude":[9000,12000],"speed":250,"method":"random","rate":0.3,"airlines":[["cdg/crj7",1]]},
+        {"origin":"","destination":"ZBOW","category":"arrival","route":"UDUHA..OPOZO..ZBOW","altitude":[9000,12000],"speed":250,"method":"random","rate":2.08,"airlines":[["csn/b738",2],["cdg/crj7",1],["ces/a320",1],["csn/a320",1],["csz/a320",1],["dkh/a320",1]]},
+        {"origin":"","destination":"ZBOW","category":"arrival","route":"MOFEV..DOJEH..ZBOW","altitude":[9000,12000],"speed":250,"method":"random","rate":0.3,"airlines":[["csn/a321",1]]},
+        {"origin":"","destination":"ZBOW","category":"arrival","route":"VOMNO..GONWO..ZBOW","altitude":[9000,12000],"speed":250,"method":"random","rate":0.41,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
+        {"origin":"","destination":"ZBOW","category":"arrival","route":"MOFEV..DOJEH..ZBOW","altitude":[9000,12000],"speed":250,"method":"random","rate":0.41,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [41.2643,110.0649,40.8092,110.021],
+            [40.8092,110.021,40.56,109.997],
+            [40.6885,110.911,40.6055,110.3204],
+            [40.6055,110.3204,40.56,109.997],
+            [40.0789,110.6774,40.3898,110.2377],
+            [40.3898,110.2377,40.56,109.997],
+            [39.9366,109.5603,40.3395,109.8425],
+            [40.3395,109.8425,40.56,109.997],
+            [40.7882,109.1174,40.6407,109.6858],
+            [40.6407,109.6858,40.56,109.997]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [40.5681,109.9843,40.675,109.8161],
+            [40.6139,109.8918,40.6292,109.9087],
+            [40.6674,109.8076,40.6827,109.8245],
+            [40.5519,110.0097,40.4447,110.1774],
+            [40.506,110.102,40.4907,110.0852],
+            [40.4524,110.1858,40.4371,110.1689]
+        ]}
+    ]
+}

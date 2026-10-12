@@ -1,0 +1,89 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/MKJP/",
+    "info": {"country":"JM","city":"Kingston","type":"large_airport","longestRunwayM":2717,"frequencies":{"atis":"127.700","twr":"118.650","app":"120.600","gnd":"121.700"}},
+    "radio": {"twr":"Norman Manley Tower","app":"Norman Manley Approach","dep":"Norman Manley Departure"},
+    "icao": "MKJP",
+    "iata": "KIN",
+    "magnetic_north": -8.4,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [17.935699,-76.787498,"10ft"],
+    "rangeRings": {"enabled":true,"center":[17.935699,-76.787498],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":140,"speed":9},
+    "arrivalRunway": "12",
+    "departureRunway": "12",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[18.4695,-76.8704],[18.4717,-76.7223],[18.4374,-76.5787],[18.3689,-76.4493],[18.2709,-76.343],[18.15,-76.267],[18.0145,-76.2264],[17.8737,-76.2241],[17.7371,-76.2602],[17.614,-76.3322],[17.5128,-76.4352],[17.4405,-76.5623],[17.4019,-76.7046],[17.3997,-76.8527],[17.434,-76.9963],[17.5025,-77.1257],[17.6005,-77.232],[17.7214,-77.308],[17.8569,-77.3486],[17.9977,-77.3509],[18.1343,-77.3148],[18.2574,-77.2428],[18.3586,-77.1398],[18.4309,-77.0127]]}
+    ],
+    "fixes": {
+        "MKJP": [17.9357,-76.7875],
+        "UNEVU": [17.82491,-76.05447],
+        "LIKWO": [17.8965,-76.52816],
+        "FUJUV": [17.25765,-76.99478],
+        "SOWIN": [17.69581,-76.86083],
+        "OMULA": [18.22282,-77.46559],
+        "MOCIH": [18.03728,-77.02741],
+        "WOPBE": [18.61611,-76.98604],
+        "BISPE": [18.17643,-76.85774],
+        "_RWY1204DME": [17.96536,-76.86439],
+        "_RWY3004DME": [17.90602,-76.71084]
+    },
+    "runways": [
+        {"name":["12","30"],"end":[[17.9403,-76.7995,"8ft"],[17.9311,-76.7757,"17ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "UNEVU3D": {"icao":"UNEVU3D","name":"Unevu Three Delta","rwy":{"MKJP12":["_RWY3004DME"],"MKJP30":["_RWY1204DME"]},"body":[],"exitPoints":{"UNEVU":["UNEVU"]},"draw":[["MKJP","UNEVU*"]]},
+        "FUJUV2F": {"icao":"FUJUV2F","name":"Fujuv Two Foxtrot","rwy":{"MKJP12":["_RWY3004DME"],"MKJP30":["_RWY1204DME"]},"body":[],"exitPoints":{"FUJUV":["FUJUV"]},"draw":[["MKJP","FUJUV*"]]},
+        "OMULA3A": {"icao":"OMULA3A","name":"Omula Three Alpha","rwy":{"MKJP12":["_RWY3004DME"],"MKJP30":["_RWY1204DME"]},"body":[],"exitPoints":{"OMULA":["OMULA"]},"draw":[["MKJP","OMULA*"]]},
+        "WOPBE3B": {"icao":"WOPBE3B","name":"Wopbe Three Bravo","rwy":{"MKJP12":["_RWY3004DME"],"MKJP30":["_RWY1204DME"]},"body":[],"exitPoints":{"WOPBE":["WOPBE"]},"draw":[["MKJP","WOPBE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"MKJP","destination":"CYYZ","category":"departure","route":"MKJP12.WOPBE3B.WOPBE","altitude":"","speed":"","method":"random","rate":0.85,"airlines":[["aca/a319",1],["bwa/b738",1],["wja/b738",1]]},
+        {"origin":"MKJP","destination":"KFLL","category":"departure","route":"MKJP12.WOPBE3B.WOPBE","altitude":"","speed":"","method":"random","rate":0.85,"airlines":[["bwa/b738",1],["jbu/e190",1],["nks/a319",1]]},
+        {"origin":"MKJP","destination":"KJFK","category":"departure","route":"MKJP12.WOPBE3B.WOPBE","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["bwa/b738",1],["jbu/a320",1]]},
+        {"origin":"MKJP","destination":"KMIA","category":"departure","route":"MKJP12.WOPBE3B.WOPBE","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["aal/b738",2]]},
+        {"origin":"MKJP","destination":"MKJS","category":"departure","route":"MKJP12.OMULA3A.OMULA","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["bwa/b738",1],["cay/b733",1]]},
+        {"origin":"MKJP","destination":"","category":"departure","route":"MKJP12.UNEVU3D.UNEVU","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["bwa/b738",4]]},
+        {"origin":"MKJP","destination":"","category":"departure","route":"MKJP12.FUJUV2F.FUJUV","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["cmp/e190",1]]},
+        {"origin":"MKJP","destination":"","category":"departure","route":"MKJP12.OMULA3A.OMULA","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["cay/b733",1]]},
+        {"origin":"MKJP","destination":"","category":"departure","route":"MKJP12.WOPBE3B.WOPBE","altitude":"","speed":"","method":"random","rate":0.85,"airlines":[["bwa/b738",2],["dal/a319",1]]},
+        {"origin":"MKJP","destination":"","category":"departure","route":"MKJP12.WOPBE3B.WOPBE","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["6y/c172",6],["6y/p28a",5],["6y/c182",3],["6y/be36",2],["6y/da42",1],["6y/tb20",1],["6y/c208",2],["6y/pc12",2],["6y/be20",1],["6y/b350",1],["6y/p180",1],["6y/c510",1],["6y/e50p",1],["6y/c550",2],["6y/e55p",1],["6y/cl30",1],["6y/c680",1],["6y/h25b",1],["6y/lj45",1],["6y/f2th",1],["6y/glf4",1],["6y/glex",1],["6y/glf5",1]]},
+        {"origin":"MKJP","destination":"","category":"departure","route":"MKJP12.UNEVU3D.UNEVU","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["6y/c172",6],["6y/p28a",5],["6y/c182",3],["6y/be36",2],["6y/da42",1],["6y/tb20",1],["6y/c208",2],["6y/pc12",2],["6y/be20",1],["6y/b350",1],["6y/p180",1],["6y/c510",1],["6y/e50p",1],["6y/c550",2],["6y/e55p",1],["6y/cl30",1],["6y/c680",1],["6y/h25b",1],["6y/lj45",1],["6y/f2th",1],["6y/glf4",1],["6y/glex",1],["6y/glf5",1]]},
+        {"origin":"CYYZ","destination":"MKJP","category":"arrival","route":"WOPBE..BISPE..MKJP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.85,"airlines":[["aca/a319",1],["bwa/b738",1],["wja/b738",1]]},
+        {"origin":"KFLL","destination":"MKJP","category":"arrival","route":"WOPBE..BISPE..MKJP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.85,"airlines":[["bwa/b738",1],["jbu/e190",1],["nks/a319",1]]},
+        {"origin":"KJFK","destination":"MKJP","category":"arrival","route":"WOPBE..BISPE..MKJP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.57,"airlines":[["bwa/b738",1],["jbu/a320",1]]},
+        {"origin":"KMIA","destination":"MKJP","category":"arrival","route":"WOPBE..BISPE..MKJP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.57,"airlines":[["aal/b738",2]]},
+        {"origin":"MKJS","destination":"MKJP","category":"arrival","route":"OMULA..MOCIH..MKJP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.57,"airlines":[["bwa/b738",1],["cay/b733",1]]},
+        {"origin":"","destination":"MKJP","category":"arrival","route":"UNEVU..LIKWO..MKJP","altitude":[6000,9000],"speed":250,"method":"random","rate":1.13,"airlines":[["bwa/b738",4]]},
+        {"origin":"","destination":"MKJP","category":"arrival","route":"FUJUV..SOWIN..MKJP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.28,"airlines":[["cmp/e190",1]]},
+        {"origin":"","destination":"MKJP","category":"arrival","route":"OMULA..MOCIH..MKJP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.28,"airlines":[["cay/b733",1]]},
+        {"origin":"","destination":"MKJP","category":"arrival","route":"WOPBE..BISPE..MKJP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.85,"airlines":[["bwa/b738",2],["dal/a319",1]]},
+        {"origin":"","destination":"MKJP","category":"arrival","route":"WOPBE..BISPE..MKJP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.41,"airlines":[["6y/c172",6],["6y/p28a",5],["6y/c182",3],["6y/be36",2],["6y/da42",1],["6y/tb20",1],["6y/c208",2],["6y/pc12",2],["6y/be20",1],["6y/b350",1],["6y/p180",1],["6y/c510",1],["6y/e50p",1],["6y/c550",2],["6y/e55p",1],["6y/cl30",1],["6y/c680",1],["6y/h25b",1],["6y/lj45",1],["6y/f2th",1],["6y/glf4",1],["6y/glex",1],["6y/glf5",1]]},
+        {"origin":"","destination":"MKJP","category":"arrival","route":"UNEVU..LIKWO..MKJP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.41,"airlines":[["6y/c172",6],["6y/p28a",5],["6y/c182",3],["6y/be36",2],["6y/da42",1],["6y/tb20",1],["6y/c208",2],["6y/pc12",2],["6y/be20",1],["6y/b350",1],["6y/p180",1],["6y/c510",1],["6y/e50p",1],["6y/c550",2],["6y/e55p",1],["6y/cl30",1],["6y/c680",1],["6y/h25b",1],["6y/lj45",1],["6y/f2th",1],["6y/glf4",1],["6y/glex",1],["6y/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [17.8249,-76.0545,17.8965,-76.5282],
+            [17.8965,-76.5282,17.9357,-76.7875],
+            [17.2576,-76.9948,17.6958,-76.8608],
+            [17.6958,-76.8608,17.9357,-76.7875],
+            [18.2228,-77.4656,18.0373,-77.0274],
+            [18.0373,-77.0274,17.9357,-76.7875],
+            [18.6161,-76.986,18.1764,-76.8577],
+            [18.1764,-76.8577,17.9357,-76.7875]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [17.9403,-76.7995,18.0029,-76.9618],
+            [17.9624,-76.8846,17.9809,-76.8767],
+            [17.9937,-76.9657,18.0122,-76.9578],
+            [17.9311,-76.7757,17.8683,-76.6136],
+            [17.909,-76.6907,17.8905,-76.6986],
+            [17.8776,-76.6096,17.8591,-76.6175]
+        ]}
+    ]
+}

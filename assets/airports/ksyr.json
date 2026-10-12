@@ -1,0 +1,101 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KSYR/",
+    "info": {"country":"US","city":"Syracuse","type":"large_airport","longestRunwayM":2747,"frequencies":{"atis":"132.050","twr":"120.300","gnd":"121.700"}},
+    "radio": {"twr":"Syracuse Tower","app":"Syracuse Approach","dep":"Syracuse Departure"},
+    "icao": "KSYR",
+    "iata": "SYR",
+    "magnetic_north": -11.9,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [43.111198,-76.1063,"421ft"],
+    "rangeRings": {"enabled":true,"center":[43.111198,-76.1063],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":260,"speed":7},
+    "arrivalRunway": "28",
+    "departureRunway": "28",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[43.5072,-76.2206],[43.5153,-76.0763],[43.4959,-75.9341],[43.4502,-75.8036],[43.3815,-75.6937],[43.2943,-75.6119],[43.1946,-75.5639],[43.0893,-75.5528],[42.9855,-75.5794],[42.8902,-75.6419],[42.81,-75.7361],[42.7503,-75.8555],[42.7152,-75.992],[42.7071,-76.1363],[42.7265,-76.2785],[42.7722,-76.409],[42.8409,-76.5189],[42.9281,-76.6007],[43.0277,-76.6487],[43.1331,-76.6598],[43.2369,-76.6332],[43.3322,-76.5707],[43.4124,-76.4765],[43.4721,-76.3571]]}
+    ],
+    "fixes": {
+        "KSYR": [43.1112,-76.1063],
+        "ART": [43.952,-76.0646,"watertown"],
+        "EJIKU": [43.31093,-76.09639],
+        "UCA": [43.0265,-75.1645,"utica"],
+        "FACZO": [43.08676,-75.83458],
+        "RKA": [42.4663,-75.2392,"rockdale"],
+        "ALUTI": [42.96856,-75.91452],
+        "ITH": [42.495,-76.4597,"ithaca"],
+        "AFORO": [42.92684,-76.21203],
+        "PYA": [42.644,-77.0561,"penn yan"],
+        "JEHAG": [42.99952,-76.33335],
+        "_RWY1004DME": [43.10518,-76.21736],
+        "_RWY2804DME": [43.11225,-76.00133],
+        "_RWY1504DME": [43.16739,-76.1786],
+        "_RWY3304DME": [43.06077,-76.02691]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[43.1082,-76.1262,"419ft"],[43.1093,-76.0925,"400ft"]],"ils":[true,true]},
+        {"name":["15","33"],"end":[[43.1212,-76.1128,"416ft"],[43.107,-76.0926,"402ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ART3E": {"icao":"ART3E","name":"Watertown Three Echo","rwy":{"KSYR10":["_RWY2804DME"],"KSYR28":["_RWY1004DME"],"KSYR15":["_RWY3304DME"],"KSYR33":["_RWY1504DME"]},"body":[],"exitPoints":{"ART":["ART"]},"draw":[["KSYR","ART*"]]},
+        "UCA3A": {"icao":"UCA3A","name":"Utica Three Alpha","rwy":{"KSYR10":["_RWY2804DME"],"KSYR28":["_RWY1004DME"],"KSYR15":["_RWY3304DME"],"KSYR33":["_RWY1504DME"]},"body":[],"exitPoints":{"UCA":["UCA"]},"draw":[["KSYR","UCA*"]]},
+        "RKA2A": {"icao":"RKA2A","name":"Rockdale Two Alpha","rwy":{"KSYR10":["_RWY2804DME"],"KSYR28":["_RWY1004DME"],"KSYR15":["_RWY3304DME"],"KSYR33":["_RWY1504DME"]},"body":[],"exitPoints":{"RKA":["RKA"]},"draw":[["KSYR","RKA*"]]},
+        "ITH2D": {"icao":"ITH2D","name":"Ithaca Two Delta","rwy":{"KSYR10":["_RWY2804DME"],"KSYR28":["_RWY1004DME"],"KSYR15":["_RWY3304DME"],"KSYR33":["_RWY1504DME"]},"body":[],"exitPoints":{"ITH":["ITH"]},"draw":[["KSYR","ITH*"]]},
+        "PYA2B": {"icao":"PYA2B","name":"Penn Yan Two Bravo","rwy":{"KSYR10":["_RWY2804DME"],"KSYR28":["_RWY1004DME"],"KSYR15":["_RWY3304DME"],"KSYR33":["_RWY1504DME"]},"body":[],"exitPoints":{"PYA":["PYA"]},"draw":[["KSYR","PYA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KSYR","destination":"KCLT","category":"departure","route":"KSYR28.ITH2D.ITH","altitude":"","speed":"","method":"random","rate":1.23,"airlines":[["aal/a319",2],["aal/a320",2],["aal/crj9",1]]},
+        {"origin":"KSYR","destination":"KATL","category":"departure","route":"KSYR28.ITH2D.ITH","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["dal/md88",1],["flg/crj9",1]]},
+        {"origin":"KSYR","destination":"KJFK","category":"departure","route":"KSYR28.RKA2A.RKA","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["jbu/e190",1],["dal/e145",1],["dal/e135",1]]},
+        {"origin":"KSYR","destination":"KMCO","category":"departure","route":"KSYR28.ITH2D.ITH","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["jbu/a320",1],["jbu/e190",1]]},
+        {"origin":"KSYR","destination":"KORD","category":"departure","route":"KSYR28.PYA2B.PYA","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["aal/crj7",1],["aal/e145",1]]},
+        {"origin":"KSYR","destination":"","category":"departure","route":"KSYR28.UCA3A.UCA","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["aal/dh8c",1]]},
+        {"origin":"KSYR","destination":"","category":"departure","route":"KSYR28.RKA2A.RKA","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["aal/dh8c",1],["dal/crj7",1]]},
+        {"origin":"KSYR","destination":"","category":"departure","route":"KSYR28.ITH2D.ITH","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["aay/a320",1]]},
+        {"origin":"KSYR","destination":"","category":"departure","route":"KSYR28.PYA2B.PYA","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["ual/dh8c",1],["dal/e145",1],["dal/e135",1]]},
+        {"origin":"KSYR","destination":"","category":"departure","route":"KSYR28.ART3E.ART","altitude":"","speed":"","method":"random","rate":1.55,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KCLT","destination":"KSYR","category":"arrival","route":"ITH..AFORO..KSYR","altitude":[4000,7000],"speed":250,"method":"random","rate":1.23,"airlines":[["aal/a319",2],["aal/a320",2],["aal/crj9",1]]},
+        {"origin":"KATL","destination":"KSYR","category":"arrival","route":"ITH..AFORO..KSYR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.49,"airlines":[["dal/md88",1],["flg/crj9",1]]},
+        {"origin":"KJFK","destination":"KSYR","category":"arrival","route":"RKA..ALUTI..KSYR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.49,"airlines":[["jbu/e190",1],["dal/e145",1],["dal/e135",1]]},
+        {"origin":"KMCO","destination":"KSYR","category":"arrival","route":"ITH..AFORO..KSYR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.49,"airlines":[["jbu/a320",1],["jbu/e190",1]]},
+        {"origin":"KORD","destination":"KSYR","category":"arrival","route":"PYA..JEHAG..KSYR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.49,"airlines":[["aal/crj7",1],["aal/e145",1]]},
+        {"origin":"","destination":"KSYR","category":"arrival","route":"UCA..FACZO..KSYR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.25,"airlines":[["aal/dh8c",1]]},
+        {"origin":"","destination":"KSYR","category":"arrival","route":"RKA..ALUTI..KSYR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.49,"airlines":[["aal/dh8c",1],["dal/crj7",1]]},
+        {"origin":"","destination":"KSYR","category":"arrival","route":"ITH..AFORO..KSYR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.25,"airlines":[["aay/a320",1]]},
+        {"origin":"","destination":"KSYR","category":"arrival","route":"PYA..JEHAG..KSYR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.49,"airlines":[["ual/dh8c",1],["dal/e145",1],["dal/e135",1]]},
+        {"origin":"","destination":"KSYR","category":"arrival","route":"ART..EJIKU..KSYR","altitude":[4000,7000],"speed":250,"method":"random","rate":1.55,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [43.952,-76.0646,43.3109,-76.0964],
+            [43.3109,-76.0964,43.1112,-76.1063],
+            [43.0265,-75.1645,43.0868,-75.8346],
+            [43.0868,-75.8346,43.1112,-76.1063],
+            [42.4663,-75.2392,42.9686,-75.9145],
+            [42.9686,-75.9145,43.1112,-76.1063],
+            [42.495,-76.4597,42.9268,-76.212],
+            [42.9268,-76.212,43.1112,-76.1063],
+            [42.644,-77.0561,42.9995,-76.3333],
+            [42.9995,-76.3333,43.1112,-76.1063]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [43.1082,-76.1262,43.1005,-76.3541],
+            [43.0944,-76.2395,43.1144,-76.2408],
+            [43.0905,-76.3535,43.1105,-76.3547],
+            [43.1093,-76.0925,43.1165,-75.8646],
+            [43.123,-75.9792,43.103,-75.9779],
+            [43.1265,-75.8652,43.1066,-75.8639],
+            [43.1212,-76.1128,43.2366,-76.2775],
+            [43.1717,-76.2046,43.1861,-76.1856],
+            [43.2294,-76.287,43.2438,-76.268],
+            [43.107,-76.0926,42.9914,-75.9286],
+            [43.0564,-76.001,43.042,-76.02],
+            [42.9986,-75.9191,42.9842,-75.938]
+        ]}
+    ]
+}

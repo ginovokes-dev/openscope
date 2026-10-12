@@ -1,0 +1,78 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/PHKO/",
+    "info": {"country":"US","city":"Kailua-Kona","type":"large_airport","longestRunwayM":3373,"frequencies":{"atis":"127.400","twr":"120.300"}},
+    "radio": {"twr":"Kona Tower","app":"Kona Approach","dep":"Kona Departure"},
+    "icao": "PHKO",
+    "iata": "KOA",
+    "magnetic_north": 9.3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [19.738783,-156.045603,"47ft"],
+    "rangeRings": {"enabled":true,"center":[19.738783,-156.045603],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":330,"speed":6},
+    "arrivalRunway": "35",
+    "departureRunway": "35",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[20.1382,-155.9761],[20.1076,-155.8687],[20.052,-155.7733],[19.9749,-155.6964],[19.8818,-155.6434],[19.779,-155.6178],[19.6734,-155.6213],[19.5722,-155.6537],[19.4825,-155.7129],[19.4101,-155.7947],[19.3602,-155.8936],[19.3361,-156.0029],[19.3394,-156.1151],[19.3699,-156.2225],[19.4256,-156.3179],[19.5026,-156.3948],[19.5957,-156.4478],[19.6986,-156.4734],[19.8042,-156.4699],[19.9053,-156.4375],[19.9951,-156.3783],[20.0674,-156.2965],[20.1174,-156.1976],[20.1415,-156.0883]]}
+    ],
+    "fixes": {
+        "PHKO": [19.73878,-156.0456],
+        "EGENO": [20.07434,-155.59891],
+        "TOJGO": [19.86346,-155.87964],
+        "SOFIK": [19.20111,-156.0637],
+        "DANVE": [19.53902,-156.05233],
+        "ZIWAS": [20.10029,-156.46883],
+        "JEZIB": [19.8731,-156.20285],
+        "_RWY1704DME": [19.82023,-156.03743],
+        "_RWY3504DME": [19.65737,-156.05356]
+    },
+    "runways": [
+        {"name":["17","35"],"end":[[19.7539,-156.04401,"47ft"],[19.7237,-156.047,"37ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "EGENO1A": {"icao":"EGENO1A","name":"Egeno One Alpha","rwy":{"PHKO17":["_RWY3504DME"],"PHKO35":["_RWY1704DME"]},"body":[],"exitPoints":{"EGENO":["EGENO"]},"draw":[["PHKO","EGENO*"]]},
+        "SOFIK3D": {"icao":"SOFIK3D","name":"Sofik Three Delta","rwy":{"PHKO17":["_RWY3504DME"],"PHKO35":["_RWY1704DME"]},"body":[],"exitPoints":{"SOFIK":["SOFIK"]},"draw":[["PHKO","SOFIK*"]]},
+        "ZIWAS3A": {"icao":"ZIWAS3A","name":"Ziwas Three Alpha","rwy":{"PHKO17":["_RWY3504DME"],"PHKO35":["_RWY1704DME"]},"body":[],"exitPoints":{"ZIWAS":["ZIWAS"]},"draw":[["PHKO","ZIWAS*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"PHKO","destination":"KLAX","category":"departure","route":"PHKO35.EGENO1A.EGENO","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["aal/b752",2],["dal/b752",1],["ual/b753",1]]},
+        {"origin":"PHKO","destination":"KSFO","category":"departure","route":"PHKO35.EGENO1A.EGENO","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["ual/b738",1],["ual/b739",1],["ual/b753",1]]},
+        {"origin":"PHKO","destination":"KPHX","category":"departure","route":"PHKO35.EGENO1A.EGENO","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["aal/b752",2]]},
+        {"origin":"PHKO","destination":"CYVR","category":"departure","route":"PHKO35.EGENO1A.EGENO","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["wja/b738",1]]},
+        {"origin":"PHKO","destination":"KDEN","category":"departure","route":"PHKO35.EGENO1A.EGENO","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["ual/b752",1]]},
+        {"origin":"PHKO","destination":"","category":"departure","route":"PHKO35.EGENO1A.EGENO","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["asa/b738",3]]},
+        {"origin":"PHKO","destination":"","category":"departure","route":"PHKO35.ZIWAS3A.ZIWAS","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["hal/b712",2]]},
+        {"origin":"PHKO","destination":"","category":"departure","route":"PHKO35.SOFIK3D.SOFIK","altitude":"","speed":"","method":"random","rate":1.5,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KLAX","destination":"PHKO","category":"arrival","route":"EGENO..TOJGO..PHKO","altitude":[4000,7000],"speed":250,"method":"random","rate":1.13,"airlines":[["aal/b752",2],["dal/b752",1],["ual/b753",1]]},
+        {"origin":"KSFO","destination":"PHKO","category":"arrival","route":"EGENO..TOJGO..PHKO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["ual/b738",1],["ual/b739",1],["ual/b753",1]]},
+        {"origin":"KPHX","destination":"PHKO","category":"arrival","route":"EGENO..TOJGO..PHKO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.56,"airlines":[["aal/b752",2]]},
+        {"origin":"CYVR","destination":"PHKO","category":"arrival","route":"EGENO..TOJGO..PHKO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["wja/b738",1]]},
+        {"origin":"KDEN","destination":"PHKO","category":"arrival","route":"EGENO..TOJGO..PHKO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["ual/b752",1]]},
+        {"origin":"","destination":"PHKO","category":"arrival","route":"EGENO..TOJGO..PHKO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["asa/b738",3]]},
+        {"origin":"","destination":"PHKO","category":"arrival","route":"ZIWAS..JEZIB..PHKO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.56,"airlines":[["hal/b712",2]]},
+        {"origin":"","destination":"PHKO","category":"arrival","route":"SOFIK..DANVE..PHKO","altitude":[4000,7000],"speed":250,"method":"random","rate":1.5,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [20.0743,-155.5989,19.8635,-155.8796],
+            [19.8635,-155.8796,19.7388,-156.0456],
+            [19.2011,-156.0637,19.539,-156.0523],
+            [19.539,-156.0523,19.7388,-156.0456],
+            [20.1003,-156.4688,19.8731,-156.2028],
+            [19.8731,-156.2028,19.7388,-156.0456]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [19.7539,-156.044,19.9197,-156.0276],
+            [19.8377,-156.0464,19.8359,-156.0252],
+            [19.9207,-156.0381,19.9188,-156.017],
+            [19.7237,-156.047,19.5579,-156.0634],
+            [19.6399,-156.0446,19.6417,-156.0658],
+            [19.5569,-156.0528,19.5588,-156.074]
+        ]}
+    ]
+}

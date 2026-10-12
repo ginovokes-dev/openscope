@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LIPQ/",
+    "info": {"country":"IT","city":"Ronchi dei Legionari","type":"large_airport","longestRunwayM":3000,"frequencies":{"twr":"130.200","app":"119.175"}},
+    "radio": {"twr":"Trieste Tower","app":"Trieste Approach","dep":"Trieste Departure"},
+    "icao": "LIPQ",
+    "iata": "TRS",
+    "magnetic_north": 4.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [45.827862,13.466672,"39ft"],
+    "rangeRings": {"enabled":true,"center":[45.827862,13.466672],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":280,"speed":9},
+    "arrivalRunway": "27",
+    "departureRunway": "27",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[46.2313,13.5122],[46.2093,13.6605],[46.1614,13.7956],[46.0907,13.9083],[46.0021,13.9909],[45.9016,14.0377],[45.7961,14.0457],[45.6928,14.0141],[45.5986,13.9453],[45.5201,13.8439],[45.4626,13.7167],[45.4299,13.5725],[45.4244,13.4211],[45.4464,13.2728],[45.4943,13.1377],[45.565,13.025],[45.6536,12.9425],[45.7541,12.8956],[45.8596,12.8877],[45.963,12.9192],[46.0571,12.988],[46.1356,13.0895],[46.1931,13.2166],[46.2258,13.3608]]}
+    ],
+    "fixes": {
+        "LIPQ": [45.82786,13.46667],
+        "DOL": [46.0841,14.7786,"dolsko"],
+        "BIWEV": [45.8818,13.74285],
+        "VRS": [45.2102,13.649,"vrsar"],
+        "VIMLI": [45.6321,13.52446],
+        "TES": [45.5192,12.3682,"tessera"],
+        "ZOPOZ": [45.75311,13.20066],
+        "EBOHA": [46.14942,12.84779],
+        "PANAM": [45.94733,13.23673],
+        "_RWY0904DME": [45.82842,13.35437],
+        "_RWY2704DME": [45.82729,13.58161]
+    },
+    "runways": [
+        {"name":["09","27"],"end":[[45.82799,13.44998,"37ft"],[45.8278,13.486,"36ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "DOL2F": {"icao":"DOL2F","name":"Dolsko Two Foxtrot","rwy":{"LIPQ09":["_RWY2704DME"],"LIPQ27":["_RWY0904DME"]},"body":[],"exitPoints":{"DOL":["DOL"]},"draw":[["LIPQ","DOL*"]]},
+        "VRS1E": {"icao":"VRS1E","name":"Vrsar One Echo","rwy":{"LIPQ09":["_RWY2704DME"],"LIPQ27":["_RWY0904DME"]},"body":[],"exitPoints":{"VRS":["VRS"]},"draw":[["LIPQ","VRS*"]]},
+        "TES3C": {"icao":"TES3C","name":"Tessera Three Charlie","rwy":{"LIPQ09":["_RWY2704DME"],"LIPQ27":["_RWY0904DME"]},"body":[],"exitPoints":{"TES":["TES"]},"draw":[["LIPQ","TES*"]]},
+        "EBOHA2D": {"icao":"EBOHA2D","name":"Eboha Two Delta","rwy":{"LIPQ09":["_RWY2704DME"],"LIPQ27":["_RWY0904DME"]},"body":[],"exitPoints":{"EBOHA":["EBOHA"]},"draw":[["LIPQ","EBOHA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LIPQ","destination":"LIRF","category":"departure","route":"LIPQ27.VRS1E.VRS","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["aza/a320",2],["aza/a319",1],["aza/e75l",1]]},
+        {"origin":"LIPQ","destination":"EBCI","category":"departure","route":"LIPQ27.EBOHA2D.EBOHA","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["ryr/b738",1]]},
+        {"origin":"LIPQ","destination":"EGSS","category":"departure","route":"LIPQ27.EBOHA2D.EBOHA","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["ryr/b738",1]]},
+        {"origin":"LIPQ","destination":"LEVC","category":"departure","route":"LIPQ27.TES3C.TES","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["ryr/b738",1]]},
+        {"origin":"LIPQ","destination":"LFOB","category":"departure","route":"LIPQ27.EBOHA2D.EBOHA","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["ryr/b738",1]]},
+        {"origin":"LIPQ","destination":"","category":"departure","route":"LIPQ27.VRS1E.VRS","altitude":"","speed":"","method":"random","rate":1.08,"airlines":[["ryr/b738",2],["aza/e75l",1]]},
+        {"origin":"LIPQ","destination":"","category":"departure","route":"LIPQ27.TES3C.TES","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["ryr/b738",1]]},
+        {"origin":"LIPQ","destination":"","category":"departure","route":"LIPQ27.TES3C.TES","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",1],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"LIRF","destination":"LIPQ","category":"arrival","route":"VRS..VIMLI..LIPQ","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["aza/a320",2],["aza/a319",1],["aza/e75l",1]]},
+        {"origin":"EBCI","destination":"LIPQ","category":"arrival","route":"EBOHA..PANAM..LIPQ","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGSS","destination":"LIPQ","category":"arrival","route":"EBOHA..PANAM..LIPQ","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["ryr/b738",1]]},
+        {"origin":"LEVC","destination":"LIPQ","category":"arrival","route":"TES..ZOPOZ..LIPQ","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["ryr/b738",1]]},
+        {"origin":"LFOB","destination":"LIPQ","category":"arrival","route":"EBOHA..PANAM..LIPQ","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LIPQ","category":"arrival","route":"VRS..VIMLI..LIPQ","altitude":[4000,7000],"speed":250,"method":"random","rate":1.08,"airlines":[["ryr/b738",2],["aza/e75l",1]]},
+        {"origin":"","destination":"LIPQ","category":"arrival","route":"TES..ZOPOZ..LIPQ","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LIPQ","category":"arrival","route":"TES..ZOPOZ..LIPQ","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",1],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [46.0841,14.7786,45.8818,13.7429],
+            [45.8818,13.7429,45.8279,13.4667],
+            [45.2102,13.649,45.6321,13.5245],
+            [45.6321,13.5245,45.8279,13.4667],
+            [45.5192,12.3682,45.7531,13.2007],
+            [45.7531,13.2007,45.8279,13.4667],
+            [46.1494,12.8478,45.9473,13.2367],
+            [45.9473,13.2367,45.8279,13.4667]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [45.828,13.45,45.8289,13.211],
+            [45.8185,13.3304,45.8385,13.3306],
+            [45.8189,13.2109,45.8389,13.2111],
+            [45.8278,13.486,45.8264,13.725],
+            [45.8371,13.6056,45.8172,13.6054],
+            [45.8364,13.7251,45.8164,13.7249]
+        ]}
+    ]
+}

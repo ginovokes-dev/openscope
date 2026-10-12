@@ -1,0 +1,77 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SBIL/",
+    "info": {"country":"BR","city":"Ilheus","type":"medium_airport","longestRunwayM":1577,"frequencies":{"app":"120.100"},"approximateRunways":true},
+    "radio": {"twr":"Ilheus Tower","app":"Ilheus Approach","dep":"Ilheus Departure"},
+    "icao": "SBIL",
+    "iata": "IOS",
+    "magnetic_north": -23.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-14.815929,-39.033458,"15ft"],
+    "rangeRings": {"enabled":true,"center":[-14.815929,-39.033458],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":120,"speed":11},
+    "arrivalRunway": "11",
+    "departureRunway": "11",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-14.4445,-39.1997],[-14.4156,-39.0946],[-14.4139,-38.9853],[-14.4397,-38.8794],[-14.491,-38.7839],[-14.5646,-38.7054],[-14.6552,-38.6493],[-14.7568,-38.6193],[-14.8624,-38.6176],[-14.9649,-38.6442],[-15.0572,-38.6974],[-15.1331,-38.7734],[-15.1873,-38.8672],[-15.2163,-38.9723],[-15.2179,-39.0816],[-15.1922,-39.1876],[-15.1408,-39.283],[-15.0673,-39.3615],[-14.9767,-39.4176],[-14.875,-39.4476],[-14.7694,-39.4493],[-14.667,-39.4227],[-14.5746,-39.3695],[-14.4988,-39.2935]]}
+    ],
+    "fixes": {
+        "SBIL": [-14.81593,-39.03346],
+        "PATFE": [-14.31037,-38.84332],
+        "ULEKO": [-14.62809,-38.96281],
+        "JINGA": [-15.04992,-38.53242],
+        "OLENU": [-14.90287,-38.8473],
+        "AVISE": [-15.27417,-39.32492],
+        "OCUJA": [-14.98618,-39.14175],
+        "WAZPI": [-14.89237,-39.58425],
+        "UWIRU": [-14.84433,-39.2381],
+        "_RWY1103DME": [-14.8193,-39.09237],
+        "_RWY2903DME": [-14.81254,-38.97454]
+    },
+    "runways": [
+        {"name":["11","29"],"end":[[-14.81635,-39.04078,"15ft"],[-14.81551,-39.02614,"15ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "PATFE1C": {"icao":"PATFE1C","name":"Patfe One Charlie","rwy":{"SBIL11":["_RWY2903DME"],"SBIL29":["_RWY1103DME"]},"body":[],"exitPoints":{"PATFE":["PATFE"]},"draw":[["SBIL","PATFE*"]]},
+        "JINGA2B": {"icao":"JINGA2B","name":"Jinga Two Bravo","rwy":{"SBIL11":["_RWY2903DME"],"SBIL29":["_RWY1103DME"]},"body":[],"exitPoints":{"JINGA":["JINGA"]},"draw":[["SBIL","JINGA*"]]},
+        "AVISE1C": {"icao":"AVISE1C","name":"Avise One Charlie","rwy":{"SBIL11":["_RWY2903DME"],"SBIL29":["_RWY1103DME"]},"body":[],"exitPoints":{"AVISE":["AVISE"]},"draw":[["SBIL","AVISE*"]]},
+        "WAZPI3F": {"icao":"WAZPI3F","name":"Wazpi Three Foxtrot","rwy":{"SBIL11":["_RWY2903DME"],"SBIL29":["_RWY1103DME"]},"body":[],"exitPoints":{"WAZPI":["WAZPI"]},"draw":[["SBIL","WAZPI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SBIL","destination":"SBSV","category":"departure","route":"SBIL11.PATFE1C.PATFE","altitude":"","speed":"","method":"random","rate":1.31,"airlines":[["azu/at72",1],["one/f100",1]]},
+        {"origin":"SBIL","destination":"SBBR","category":"departure","route":"SBIL11.WAZPI3F.WAZPI","altitude":"","speed":"","method":"random","rate":0.65,"airlines":[["one/f100",1]]},
+        {"origin":"SBIL","destination":"SBRJ","category":"departure","route":"SBIL11.AVISE1C.AVISE","altitude":"","speed":"","method":"random","rate":0.65,"airlines":[["tam/a319",1]]},
+        {"origin":"SBIL","destination":"SBSP","category":"departure","route":"SBIL11.AVISE1C.AVISE","altitude":"","speed":"","method":"random","rate":0.65,"airlines":[["tam/a319",1]]},
+        {"origin":"SBIL","destination":"","category":"departure","route":"SBIL11.AVISE1C.AVISE","altitude":"","speed":"","method":"random","rate":1.09,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"SBSV","destination":"SBIL","category":"arrival","route":"PATFE..ULEKO..SBIL","altitude":[4000,7000],"speed":250,"method":"random","rate":1.31,"airlines":[["azu/at72",1],["one/f100",1]]},
+        {"origin":"SBBR","destination":"SBIL","category":"arrival","route":"WAZPI..UWIRU..SBIL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.65,"airlines":[["one/f100",1]]},
+        {"origin":"SBRJ","destination":"SBIL","category":"arrival","route":"AVISE..OCUJA..SBIL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.65,"airlines":[["tam/a319",1]]},
+        {"origin":"SBSP","destination":"SBIL","category":"arrival","route":"AVISE..OCUJA..SBIL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.65,"airlines":[["tam/a319",1]]},
+        {"origin":"","destination":"SBIL","category":"arrival","route":"AVISE..OCUJA..SBIL","altitude":[4000,7000],"speed":250,"method":"random","rate":1.09,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-14.3104,-38.8433,-14.6281,-38.9628],
+            [-14.6281,-38.9628,-14.8159,-39.0335],
+            [-15.0499,-38.5324,-14.9029,-38.8473],
+            [-14.9029,-38.8473,-14.8159,-39.0335],
+            [-15.2742,-39.3249,-14.9862,-39.1417],
+            [-14.9862,-39.1417,-14.8159,-39.0335],
+            [-14.8924,-39.5842,-14.8443,-39.2381],
+            [-14.8443,-39.2381,-14.8159,-39.0335]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-14.8163,-39.0408,-14.8262,-39.2128],
+            [-14.8312,-39.1262,-14.8113,-39.1274],
+            [-14.8361,-39.2122,-14.8162,-39.2134],
+            [-14.8155,-39.0261,-14.8056,-38.8542],
+            [-14.8006,-38.9408,-14.8205,-38.9395],
+            [-14.7956,-38.8548,-14.8155,-38.8536]
+        ]}
+    ]
+}

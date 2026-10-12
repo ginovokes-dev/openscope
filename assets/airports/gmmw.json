@@ -1,0 +1,76 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/GMMW/",
+    "info": {"country":"MA","city":"Al Aaroui","type":"large_airport","longestRunwayM":3000,"frequencies":{"twr":"118.650"}},
+    "radio": {"twr":"Al Aaroui Tower","app":"Al Aaroui Approach","dep":"Al Aaroui Departure"},
+    "icao": "GMMW",
+    "iata": "NDR",
+    "magnetic_north": 0.7,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [34.9888,-3.02821,"574ft"],
+    "rangeRings": {"enabled":true,"center":[34.9888,-3.02821],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":250,"speed":5},
+    "arrivalRunway": "26",
+    "departureRunway": "26",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[35.3935,-3.0222],[35.3784,-2.8945],[35.3368,-2.776],[35.2714,-2.6747],[35.1869,-2.5974],[35.0888,-2.5495],[34.9839,-2.5343],[34.8793,-2.5527],[34.7822,-2.6035],[34.6992,-2.6832],[34.6359,-2.7865],[34.5966,-2.9062],[34.5841,-3.0342],[34.5992,-3.1619],[34.6408,-3.2804],[34.7062,-3.3817],[34.7907,-3.459],[34.8888,-3.5069],[34.9937,-3.5221],[35.0983,-3.5038],[35.1954,-3.453],[35.2784,-3.3732],[35.3417,-3.27],[35.381,-3.1502]]}
+    ],
+    "fixes": {
+        "GMMW": [34.9888,-3.02821],
+        "TAMOM": [35.48595,-2.77741],
+        "BAMEP": [35.17351,-2.93503],
+        "UPUHA": [34.60676,-2.56595],
+        "RULIL": [34.84686,-2.85646],
+        "AJOTE": [34.78768,-3.6372],
+        "UBADE": [34.91407,-3.25447],
+        "_RWY0804DME": [34.97211,-3.1238],
+        "_RWY2604DME": [35.00544,-2.93258]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[34.986,-3.04428,"594ft"],[34.9916,-3.01213,"570ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "TAMOM1D": {"icao":"TAMOM1D","name":"Tamom One Delta","rwy":{"GMMW08":["_RWY2604DME"],"GMMW26":["_RWY0804DME"]},"body":[],"exitPoints":{"TAMOM":["TAMOM"]},"draw":[["GMMW","TAMOM*"]]},
+        "UPUHA3C": {"icao":"UPUHA3C","name":"Upuha Three Charlie","rwy":{"GMMW08":["_RWY2604DME"],"GMMW26":["_RWY0804DME"]},"body":[],"exitPoints":{"UPUHA":["UPUHA"]},"draw":[["GMMW","UPUHA*"]]},
+        "AJOTE1D": {"icao":"AJOTE1D","name":"Ajote One Delta","rwy":{"GMMW08":["_RWY2604DME"],"GMMW26":["_RWY0804DME"]},"body":[],"exitPoints":{"AJOTE":["AJOTE"]},"draw":[["GMMW","AJOTE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"GMMW","destination":"GMMN","category":"departure","route":"GMMW26.AJOTE1D.AJOTE","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["ram/at72",1],["ram/b738",1]]},
+        {"origin":"GMMW","destination":"LEBL","category":"departure","route":"GMMW26.TAMOM1D.TAMOM","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["ryr/b738",1],["vlg/a320",1]]},
+        {"origin":"GMMW","destination":"EBBR","category":"departure","route":"GMMW26.TAMOM1D.TAMOM","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["ram/b738",1]]},
+        {"origin":"GMMW","destination":"EBCI","category":"departure","route":"GMMW26.TAMOM1D.TAMOM","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["ryr/b738",1]]},
+        {"origin":"GMMW","destination":"EDDF","category":"departure","route":"GMMW26.TAMOM1D.TAMOM","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["ram/b738",1]]},
+        {"origin":"GMMW","destination":"","category":"departure","route":"GMMW26.TAMOM1D.TAMOM","altitude":"","speed":"","method":"random","rate":1.88,"airlines":[["ryr/b738",3],["gwi/a319",1],["ram/b738",1]]},
+        {"origin":"GMMW","destination":"","category":"departure","route":"GMMW26.UPUHA3C.UPUHA","altitude":"","speed":"","method":"random","rate":1.5,"airlines":[["cn/c172",6],["cn/p28a",5],["cn/c182",3],["cn/be36",2],["cn/da42",1],["cn/tb20",1],["cn/c208",2],["cn/pc12",2],["cn/be20",1],["cn/b350",1],["cn/p180",1],["cn/c510",1],["cn/e50p",1],["cn/c550",1],["cn/e55p",1],["cn/cl30",1],["cn/c680",1],["cn/h25b",1],["cn/lj45",1],["cn/f2th",1],["cn/glf4",1],["cn/glex",1],["cn/glf5",1]]},
+        {"origin":"GMMN","destination":"GMMW","category":"arrival","route":"AJOTE..UBADE..GMMW","altitude":[4000,7000],"speed":250,"method":"random","rate":0.75,"airlines":[["ram/at72",1],["ram/b738",1]]},
+        {"origin":"LEBL","destination":"GMMW","category":"arrival","route":"TAMOM..BAMEP..GMMW","altitude":[4000,7000],"speed":250,"method":"random","rate":0.75,"airlines":[["ryr/b738",1],["vlg/a320",1]]},
+        {"origin":"EBBR","destination":"GMMW","category":"arrival","route":"TAMOM..BAMEP..GMMW","altitude":[4000,7000],"speed":250,"method":"random","rate":0.38,"airlines":[["ram/b738",1]]},
+        {"origin":"EBCI","destination":"GMMW","category":"arrival","route":"TAMOM..BAMEP..GMMW","altitude":[4000,7000],"speed":250,"method":"random","rate":0.38,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDDF","destination":"GMMW","category":"arrival","route":"TAMOM..BAMEP..GMMW","altitude":[4000,7000],"speed":250,"method":"random","rate":0.38,"airlines":[["ram/b738",1]]},
+        {"origin":"","destination":"GMMW","category":"arrival","route":"TAMOM..BAMEP..GMMW","altitude":[4000,7000],"speed":250,"method":"random","rate":1.88,"airlines":[["ryr/b738",3],["gwi/a319",1],["ram/b738",1]]},
+        {"origin":"","destination":"GMMW","category":"arrival","route":"UPUHA..RULIL..GMMW","altitude":[4000,7000],"speed":250,"method":"random","rate":1.5,"airlines":[["cn/c172",6],["cn/p28a",5],["cn/c182",3],["cn/be36",2],["cn/da42",1],["cn/tb20",1],["cn/c208",2],["cn/pc12",2],["cn/be20",1],["cn/b350",1],["cn/p180",1],["cn/c510",1],["cn/e50p",1],["cn/c550",1],["cn/e55p",1],["cn/cl30",1],["cn/c680",1],["cn/h25b",1],["cn/lj45",1],["cn/f2th",1],["cn/glf4",1],["cn/glex",1],["cn/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [35.486,-2.7774,35.1735,-2.935],
+            [35.1735,-2.935,34.9888,-3.0282],
+            [34.6068,-2.5659,34.8469,-2.8565],
+            [34.8469,-2.8565,34.9888,-3.0282],
+            [34.7877,-3.6372,34.9141,-3.2545],
+            [34.9141,-3.2545,34.9888,-3.0282]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [34.986,-3.0443,34.9512,-3.243],
+            [34.9589,-3.1411,34.9784,-3.1462],
+            [34.9414,-3.2405,34.9609,-3.2456],
+            [34.9916,-3.0121,35.0261,-2.8132],
+            [35.0187,-2.9152,34.9991,-2.9101],
+            [35.0359,-2.8157,35.0163,-2.8107]
+        ]}
+    ]
+}

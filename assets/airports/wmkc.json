@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/WMKC/",
+    "info": {"country":"MY","city":"Kota Baharu","type":"medium_airport","longestRunwayM":2400,"frequencies":{"twr":"122.500","gnd":"121.600"}},
+    "radio": {"twr":"Kota Bahru Tower","app":"Kota Bahru Approach","dep":"Kota Bahru Departure"},
+    "icao": "WMKC",
+    "iata": "KBR",
+    "magnetic_north": -0.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [6.16685,102.292999,"16ft"],
+    "rangeRings": {"enabled":true,"center":[6.16685,102.292999],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":80,"speed":10},
+    "arrivalRunway": "10",
+    "departureRunway": "10",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[6.5715,102.2923],[6.5579,102.3977],[6.5177,102.4959],[6.4535,102.5803],[6.3698,102.6452],[6.2723,102.686],[6.1676,102.7],[6.0628,102.6864],[5.9651,102.6459],[5.8812,102.5813],[5.8167,102.4971],[5.7761,102.399],[5.7622,102.2937],[5.7758,102.1883],[5.816,102.0901],[5.8802,102.0057],[5.9639,101.9408],[6.0614,101.9],[6.1661,101.8859],[6.2709,101.8996],[6.3686,101.9401],[6.4525,102.0047],[6.517,102.0889],[6.5576,102.187]]}
+    ],
+    "fixes": {
+        "WMKC": [6.16685,102.293],
+        "RISBU": [6.16453,102.83406],
+        "VUMBO": [6.16599,102.49403],
+        "OFEJI": [5.62999,102.32731],
+        "TETLE": [5.96739,102.30575],
+        "NENUV": [5.95365,101.79624],
+        "EBIFI": [6.08764,102.10843],
+        "ARECU": [6.69389,102.18466],
+        "ODIWI": [6.36267,102.25275],
+        "_RWY1004DME": [6.18005,102.21941],
+        "_RWY2804DME": [6.1535,102.3674]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[6.16823,102.28535,"15ft"],[6.16534,102.30146,"14ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "RISBU1D": {"icao":"RISBU1D","name":"Risbu One Delta","rwy":{"WMKC10":["_RWY2804DME"],"WMKC28":["_RWY1004DME"]},"body":[],"exitPoints":{"RISBU":["RISBU"]},"draw":[["WMKC","RISBU*"]]},
+        "OFEJI2A": {"icao":"OFEJI2A","name":"Ofeji Two Alpha","rwy":{"WMKC10":["_RWY2804DME"],"WMKC28":["_RWY1004DME"]},"body":[],"exitPoints":{"OFEJI":["OFEJI"]},"draw":[["WMKC","OFEJI*"]]},
+        "NENUV2B": {"icao":"NENUV2B","name":"Nenuv Two Bravo","rwy":{"WMKC10":["_RWY2804DME"],"WMKC28":["_RWY1004DME"]},"body":[],"exitPoints":{"NENUV":["NENUV"]},"draw":[["WMKC","NENUV*"]]},
+        "ARECU1F": {"icao":"ARECU1F","name":"Arecu One Foxtrot","rwy":{"WMKC10":["_RWY2804DME"],"WMKC28":["_RWY1004DME"]},"body":[],"exitPoints":{"ARECU":["ARECU"]},"draw":[["WMKC","ARECU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"WMKC","destination":"WMKJ","category":"departure","route":"WMKC10.OFEJI2A.OFEJI","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["axm/a320",1],["ffm/at72",1]]},
+        {"origin":"WMKC","destination":"WMKK","category":"departure","route":"WMKC10.OFEJI2A.OFEJI","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["axm/a320",1],["mas/b738",1]]},
+        {"origin":"WMKC","destination":"WMKP","category":"departure","route":"WMKC10.NENUV2B.NENUV","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["ffm/at72",1],["mxd/at72",1]]},
+        {"origin":"WMKC","destination":"WMSA","category":"departure","route":"WMKC10.OFEJI2A.OFEJI","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["ffm/at72",1],["mxd/at72",1]]},
+        {"origin":"WMKC","destination":"WBGG","category":"departure","route":"WMKC10.RISBU1D.RISBU","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["axm/a320",1]]},
+        {"origin":"WMKC","destination":"","category":"departure","route":"WMKC10.RISBU1D.RISBU","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["axm/a320",1]]},
+        {"origin":"WMKC","destination":"","category":"departure","route":"WMKC10.OFEJI2A.OFEJI","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["axm/a320",1]]},
+        {"origin":"WMKC","destination":"","category":"departure","route":"WMKC10.NENUV2B.NENUV","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["9m/c172",6],["9m/p28a",5],["9m/c182",3],["9m/be36",2],["9m/da42",1],["9m/tb20",1],["9m/c208",2],["9m/pc12",2],["9m/be20",1],["9m/b350",1],["9m/p180",1],["9m/c510",1],["9m/e50p",1],["9m/c550",1],["9m/e55p",1],["9m/cl30",1],["9m/c680",1],["9m/h25b",1],["9m/lj45",1],["9m/f2th",1],["9m/glf4",1],["9m/glex",1],["9m/glf5",1]]},
+        {"origin":"WMKJ","destination":"WMKC","category":"arrival","route":"OFEJI..TETLE..WMKC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["axm/a320",1],["ffm/at72",1]]},
+        {"origin":"WMKK","destination":"WMKC","category":"arrival","route":"OFEJI..TETLE..WMKC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["axm/a320",1],["mas/b738",1]]},
+        {"origin":"WMKP","destination":"WMKC","category":"arrival","route":"NENUV..EBIFI..WMKC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["ffm/at72",1],["mxd/at72",1]]},
+        {"origin":"WMSA","destination":"WMKC","category":"arrival","route":"OFEJI..TETLE..WMKC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["ffm/at72",1],["mxd/at72",1]]},
+        {"origin":"WBGG","destination":"WMKC","category":"arrival","route":"RISBU..VUMBO..WMKC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["axm/a320",1]]},
+        {"origin":"","destination":"WMKC","category":"arrival","route":"RISBU..VUMBO..WMKC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["axm/a320",1]]},
+        {"origin":"","destination":"WMKC","category":"arrival","route":"OFEJI..TETLE..WMKC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["axm/a320",1]]},
+        {"origin":"","destination":"WMKC","category":"arrival","route":"NENUV..EBIFI..WMKC","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["9m/c172",6],["9m/p28a",5],["9m/c182",3],["9m/be36",2],["9m/da42",1],["9m/tb20",1],["9m/c208",2],["9m/pc12",2],["9m/be20",1],["9m/b350",1],["9m/p180",1],["9m/c510",1],["9m/e50p",1],["9m/c550",1],["9m/e55p",1],["9m/cl30",1],["9m/c680",1],["9m/h25b",1],["9m/lj45",1],["9m/f2th",1],["9m/glf4",1],["9m/glex",1],["9m/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [6.1645,102.8341,6.166,102.494],
+            [6.166,102.494,6.1669,102.293],
+            [5.63,102.3273,5.9674,102.3057],
+            [5.9674,102.3057,6.1669,102.293],
+            [5.9537,101.7962,6.0876,102.1084],
+            [6.0876,102.1084,6.1669,102.293],
+            [6.6939,102.1847,6.3627,102.2527],
+            [6.3627,102.2527,6.1669,102.293]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [6.1682,102.2854,6.1978,102.1205],
+            [6.1732,102.2011,6.1928,102.2047],
+            [6.1879,102.1187,6.2076,102.1223],
+            [6.1653,102.3015,6.1357,102.4663],
+            [6.1604,102.3857,6.1407,102.3821],
+            [6.1456,102.4681,6.1259,102.4645]
+        ]}
+    ]
+}

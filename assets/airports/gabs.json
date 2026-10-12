@@ -1,0 +1,81 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/GABS/",
+    "info": {"country":"ML","city":"Bamako","type":"large_airport","longestRunwayM":3200,"frequencies":{"twr":"118.300"}},
+    "radio": {"twr":"Modibo Keita Tower","app":"Modibo Keita Approach","dep":"Modibo Keita Departure"},
+    "icao": "GABS",
+    "iata": "BKO",
+    "magnetic_north": -3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 9000,
+    "initial_alt": 5000,
+    "position": [12.5335,-7.94994,"1247ft"],
+    "rangeRings": {"enabled":true,"center":[12.5335,-7.94994],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":60,"speed":9},
+    "arrivalRunway": "06",
+    "departureRunway": "06",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":90,"airspace_class":"D","poly":[[12.9376,-7.9716],[12.9294,-7.8637],[12.8941,-7.7617],[12.8342,-7.6725],[12.7539,-7.6022],[12.6586,-7.5557],[12.5547,-7.5359],[12.4494,-7.5444],[12.3498,-7.5806],[12.2627,-7.6419],[12.1941,-7.7241],[12.1486,-7.8218],[12.1294,-7.9282],[12.1376,-8.0361],[12.1729,-8.1382],[12.2328,-8.2273],[12.3131,-8.2976],[12.4084,-8.3442],[12.5123,-8.3639],[12.6176,-8.3555],[12.7172,-8.3193],[12.8043,-8.258],[12.8729,-8.1757],[12.9184,-8.0781]]}
+    ],
+    "fixes": {
+        "GABS": [12.5335,-7.94994],
+        "BEDUJ": [13.06673,-7.8772],
+        "NOZUM": [12.73162,-7.92292],
+        "DONIP": [12.49259,-7.40047],
+        "PISAD": [12.5183,-7.74579],
+        "ROBEC": [12.06301,-7.68277],
+        "WOPTU": [12.3587,-7.85068],
+        "GUPGI": [12.66829,-8.48343],
+        "JICBO": [12.58358,-8.14815],
+        "_RWY0604DME": [12.48992,-8.01718],
+        "_RWY2404DME": [12.57717,-7.88269]
+    },
+    "runways": [
+        {"name":["06","24"],"end":[[12.5268,-7.96035,"1187ft"],[12.5403,-7.93954,"1244ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "BEDUJ2F": {"icao":"BEDUJ2F","name":"Beduj Two Foxtrot","rwy":{"GABS06":["_RWY2404DME"],"GABS24":["_RWY0604DME"]},"body":[],"exitPoints":{"BEDUJ":["BEDUJ"]},"draw":[["GABS","BEDUJ*"]]},
+        "DONIP1F": {"icao":"DONIP1F","name":"Donip One Foxtrot","rwy":{"GABS06":["_RWY2404DME"],"GABS24":["_RWY0604DME"]},"body":[],"exitPoints":{"DONIP":["DONIP"]},"draw":[["GABS","DONIP*"]]},
+        "ROBEC3E": {"icao":"ROBEC3E","name":"Robec Three Echo","rwy":{"GABS06":["_RWY2404DME"],"GABS24":["_RWY0604DME"]},"body":[],"exitPoints":{"ROBEC":["ROBEC"]},"draw":[["GABS","ROBEC*"]]},
+        "GUPGI2E": {"icao":"GUPGI2E","name":"Gupgi Two Echo","rwy":{"GABS06":["_RWY2404DME"],"GABS24":["_RWY0604DME"]},"body":[],"exitPoints":{"GUPGI":["GUPGI"]},"draw":[["GABS","GUPGI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"GABS","destination":"GOOY","category":"departure","route":"GABS06.GUPGI2E.GUPGI","altitude":"","speed":"","method":"random","rate":1.24,"airlines":[["eth/b763",1],["kqa/b737",1],["vbw/md87",1]]},
+        {"origin":"GABS","destination":"DFFD","category":"departure","route":"GABS06.DONIP1F.DONIP","altitude":"","speed":"","method":"random","rate":0.83,"airlines":[["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"GABS","destination":"LPPT","category":"departure","route":"GABS06.BEDUJ2F.BEDUJ","altitude":"","speed":"","method":"random","rate":0.83,"airlines":[["tap/a319",1],["tap/a320",1]]},
+        {"origin":"GABS","destination":"DAAG","category":"departure","route":"GABS06.BEDUJ2F.BEDUJ","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["dah/b738",1]]},
+        {"origin":"GABS","destination":"DIAP","category":"departure","route":"GABS06.ROBEC3E.ROBEC","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["vbw/md87",1]]},
+        {"origin":"GABS","destination":"","category":"departure","route":"GABS06.BEDUJ2F.BEDUJ","altitude":"","speed":"","method":"random","rate":1.66,"airlines":[["aaf/a320",1],["afr/a343",1],["ram/b738",1],["tar/a320",1]]},
+        {"origin":"GABS","destination":"","category":"departure","route":"GABS06.DONIP1F.DONIP","altitude":"","speed":"","method":"random","rate":0.83,"airlines":[["eth/b763",1],["kqa/b737",1]]},
+        {"origin":"GOOY","destination":"GABS","category":"arrival","route":"GUPGI..JICBO..GABS","altitude":[5000,8000],"speed":250,"method":"random","rate":1.24,"airlines":[["eth/b763",1],["kqa/b737",1],["vbw/md87",1]]},
+        {"origin":"DFFD","destination":"GABS","category":"arrival","route":"DONIP..PISAD..GABS","altitude":[5000,8000],"speed":250,"method":"random","rate":0.83,"airlines":[["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"LPPT","destination":"GABS","category":"arrival","route":"BEDUJ..NOZUM..GABS","altitude":[5000,8000],"speed":250,"method":"random","rate":0.83,"airlines":[["tap/a319",1],["tap/a320",1]]},
+        {"origin":"DAAG","destination":"GABS","category":"arrival","route":"BEDUJ..NOZUM..GABS","altitude":[5000,8000],"speed":250,"method":"random","rate":0.41,"airlines":[["dah/b738",1]]},
+        {"origin":"DIAP","destination":"GABS","category":"arrival","route":"ROBEC..WOPTU..GABS","altitude":[5000,8000],"speed":250,"method":"random","rate":0.41,"airlines":[["vbw/md87",1]]},
+        {"origin":"","destination":"GABS","category":"arrival","route":"BEDUJ..NOZUM..GABS","altitude":[5000,8000],"speed":250,"method":"random","rate":1.66,"airlines":[["aaf/a320",1],["afr/a343",1],["ram/b738",1],["tar/a320",1]]},
+        {"origin":"","destination":"GABS","category":"arrival","route":"DONIP..PISAD..GABS","altitude":[5000,8000],"speed":250,"method":"random","rate":0.83,"airlines":[["eth/b763",1],["kqa/b737",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [13.0667,-7.8772,12.7316,-7.9229],
+            [12.7316,-7.9229,12.5335,-7.9499],
+            [12.4926,-7.4005,12.5183,-7.7458],
+            [12.5183,-7.7458,12.5335,-7.9499],
+            [12.063,-7.6828,12.3587,-7.8507],
+            [12.3587,-7.8507,12.5335,-7.9499],
+            [12.6683,-8.4834,12.5836,-8.1482],
+            [12.5836,-8.1482,12.5335,-7.9499]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [12.5268,-7.9603,12.4346,-8.1024],
+            [12.4724,-8.0257,12.489,-8.0371],
+            [12.4262,-8.0967,12.4429,-8.1081],
+            [12.5403,-7.9395,12.6325,-7.7974],
+            [12.5947,-7.8741,12.5781,-7.8628],
+            [12.6408,-7.8031,12.6241,-7.7917]
+        ]}
+    ]
+}

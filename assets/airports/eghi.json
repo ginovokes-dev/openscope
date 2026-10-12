@@ -1,0 +1,94 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGHI/",
+    "info": {"country":"GB","city":"Southampton","type":"medium_airport","longestRunwayM":1887,"frequencies":{"atis":"130.880","twr":"118.205","app":"120.230"}},
+    "radio": {"twr":"Southampton Tower","app":"Southampton Approach","dep":"Southampton Radar"},
+    "icao": "EGHI",
+    "iata": "SOU",
+    "magnetic_north": 0.7,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [50.950298,-1.3568,"44ft"],
+    "rangeRings": {"enabled":true,"center":[50.950298,-1.3568],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":220,"speed":6},
+    "arrivalRunway": "20",
+    "departureRunway": "20",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[51.4899,-1.3463],[51.4698,-1.125],[51.4143,-0.9195],[51.3272,-0.7438],[51.2144,-0.6099],[51.0836,-0.5268],[50.9437,-0.5004],[50.8043,-0.5323],[50.6748,-0.6203],[50.5641,-0.7586],[50.4797,-0.9376],[50.4274,-1.1452],[50.4107,-1.3673],[50.4308,-1.5886],[50.4863,-1.7941],[50.5734,-1.9698],[50.6862,-2.1037],[50.817,-2.1868],[50.9569,-2.2132],[51.0963,-2.1813],[51.2258,-2.0933],[51.3365,-1.955],[51.4209,-1.776],[51.4732,-1.5684]]}
+    ],
+    "fixes": {
+        "EGHI": [50.9503,-1.3568],
+        "OCK": [51.305,-0.44722,"ockham"],
+        "DUJBI": [51.08179,-1.01961],
+        "JUVBU": [50.45273,-0.56144],
+        "SIRER": [50.77426,-1.07541],
+        "NULSI": [50.25106,-1.51322],
+        "OPAKI": [50.70291,-1.41214],
+        "BRI": [51.3814,-2.71754,"bristol"],
+        "DUHIL": [51.06254,-1.71108],
+        "BZ": [51.7492,-1.60162,"brize norton"],
+        "URUJI": [51.1956,-1.43197],
+        "_RWY0204DME": [50.88076,-1.39553],
+        "_RWY2004DME": [51.01868,-1.31863]
+    },
+    "runways": [
+        {"name":["02","20"],"end":[[50.94362,-1.36053,"31ft"],[50.95583,-1.35373,"44ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "OCK2C": {"icao":"OCK2C","name":"Ockham Two Charlie","rwy":{"EGHI02":["_RWY2004DME"],"EGHI20":["_RWY0204DME"]},"body":[],"exitPoints":{"OCK":["OCK"]},"draw":[["EGHI","OCK*"]]},
+        "JUVBU2D": {"icao":"JUVBU2D","name":"Juvbu Two Delta","rwy":{"EGHI02":["_RWY2004DME"],"EGHI20":["_RWY0204DME"]},"body":[],"exitPoints":{"JUVBU":["JUVBU"]},"draw":[["EGHI","JUVBU*"]]},
+        "NULSI1D": {"icao":"NULSI1D","name":"Nulsi One Delta","rwy":{"EGHI02":["_RWY2004DME"],"EGHI20":["_RWY0204DME"]},"body":[],"exitPoints":{"NULSI":["NULSI"]},"draw":[["EGHI","NULSI*"]]},
+        "BRI3A": {"icao":"BRI3A","name":"Bristol Three Alpha","rwy":{"EGHI02":["_RWY2004DME"],"EGHI20":["_RWY0204DME"]},"body":[],"exitPoints":{"BRI":["BRI"]},"draw":[["EGHI","BRI*"]]},
+        "BZ2D": {"icao":"BZ2D","name":"Brize Norton Two Delta","rwy":{"EGHI02":["_RWY2004DME"],"EGHI20":["_RWY0204DME"]},"body":[],"exitPoints":{"BZ":["BZ"]},"draw":[["EGHI","BZ*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGHI","destination":"EGJJ","category":"departure","route":"EGHI20.NULSI1D.NULSI","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["bee/dh8d",1],["bee/e190",1]]},
+        {"origin":"EGHI","destination":"EHAM","category":"departure","route":"EGHI20.OCK2C.OCK","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["bee/dh8d",1],["bee/e75l",1]]},
+        {"origin":"EGHI","destination":"EIDW","category":"departure","route":"EGHI20.BRI3A.BRI","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["bee/dh8d",1],["bee/e190",1]]},
+        {"origin":"EGHI","destination":"EGAC","category":"departure","route":"EGHI20.BZ2D.BZ","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["bee/dh8d",1]]},
+        {"origin":"EGHI","destination":"EGCC","category":"departure","route":"EGHI20.BZ2D.BZ","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["bee/dh8d",1]]},
+        {"origin":"EGHI","destination":"EGJB","category":"departure","route":"EGHI20.NULSI1D.NULSI","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["bee/dh8d",1]]},
+        {"origin":"EGHI","destination":"","category":"departure","route":"EGHI20.JUVBU2D.JUVBU","altitude":"","speed":"","method":"random","rate":0.83,"airlines":[["bee/dh8d",2],["bee/e190",1]]},
+        {"origin":"EGHI","destination":"","category":"departure","route":"EGHI20.NULSI1D.NULSI","altitude":"","speed":"","method":"random","rate":2.5,"airlines":[["bee/dh8d",5],["bee/e190",4]]},
+        {"origin":"EGHI","destination":"","category":"departure","route":"EGHI20.BZ2D.BZ","altitude":"","speed":"","method":"random","rate":1.11,"airlines":[["bee/dh8d",3],["eze/js41",1]]},
+        {"origin":"EGHI","destination":"","category":"departure","route":"EGHI20.OCK2C.OCK","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",2],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]},
+        {"origin":"EGHI","destination":"","category":"departure","route":"EGHI20.NULSI1D.NULSI","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",2],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]},
+        {"origin":"EGJJ","destination":"EGHI","category":"arrival","route":"NULSI..OPAKI..EGHI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.55,"airlines":[["bee/dh8d",1],["bee/e190",1]]},
+        {"origin":"EHAM","destination":"EGHI","category":"arrival","route":"OCK..DUJBI..EGHI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.55,"airlines":[["bee/dh8d",1],["bee/e75l",1]]},
+        {"origin":"EIDW","destination":"EGHI","category":"arrival","route":"BRI..DUHIL..EGHI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.55,"airlines":[["bee/dh8d",1],["bee/e190",1]]},
+        {"origin":"EGAC","destination":"EGHI","category":"arrival","route":"BZ..URUJI..EGHI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.28,"airlines":[["bee/dh8d",1]]},
+        {"origin":"EGCC","destination":"EGHI","category":"arrival","route":"BZ..URUJI..EGHI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.28,"airlines":[["bee/dh8d",1]]},
+        {"origin":"EGJB","destination":"EGHI","category":"arrival","route":"NULSI..OPAKI..EGHI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.28,"airlines":[["bee/dh8d",1]]},
+        {"origin":"","destination":"EGHI","category":"arrival","route":"JUVBU..SIRER..EGHI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.83,"airlines":[["bee/dh8d",2],["bee/e190",1]]},
+        {"origin":"","destination":"EGHI","category":"arrival","route":"NULSI..OPAKI..EGHI","altitude":[6000,9000],"speed":250,"method":"random","rate":2.5,"airlines":[["bee/dh8d",5],["bee/e190",4]]},
+        {"origin":"","destination":"EGHI","category":"arrival","route":"BZ..URUJI..EGHI","altitude":[6000,9000],"speed":250,"method":"random","rate":1.11,"airlines":[["bee/dh8d",3],["eze/js41",1]]},
+        {"origin":"","destination":"EGHI","category":"arrival","route":"OCK..DUJBI..EGHI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",2],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]},
+        {"origin":"","destination":"EGHI","category":"arrival","route":"NULSI..OPAKI..EGHI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",2],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [51.305,-0.4472,51.0818,-1.0196],
+            [51.0818,-1.0196,50.9503,-1.3568],
+            [50.4527,-0.5614,50.7743,-1.0754],
+            [50.7743,-1.0754,50.9503,-1.3568],
+            [50.2511,-1.5132,50.7029,-1.4121],
+            [50.7029,-1.4121,50.9503,-1.3568],
+            [51.3814,-2.7175,51.0625,-1.7111],
+            [51.0625,-1.7111,50.9503,-1.3568],
+            [51.7492,-1.6016,51.1956,-1.432],
+            [51.1956,-1.432,50.9503,-1.3568]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [50.9436,-1.3605,50.7864,-1.4478],
+            [50.8617,-1.3893,50.8684,-1.4192],
+            [50.7831,-1.4329,50.7898,-1.4628],
+            [50.9558,-1.3537,51.1129,-1.2658],
+            [51.0377,-1.3248,51.0311,-1.2949],
+            [51.1162,-1.2808,51.1096,-1.2508]
+        ]}
+    ]
+}

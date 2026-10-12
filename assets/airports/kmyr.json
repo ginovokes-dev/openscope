@@ -1,0 +1,94 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KMYR/",
+    "info": {"country":"US","city":"Myrtle Beach","type":"large_airport","longestRunwayM":2897,"frequencies":{"atis":"123.925","twr":"128.450","gnd":"120.300"}},
+    "radio": {"twr":"Myrtle Beach Tower","app":"Myrtle Beach Approach","dep":"Myrtle Beach Departure"},
+    "icao": "KMYR",
+    "iata": "MYR",
+    "magnetic_north": -9,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [33.679699,-78.928299,"25ft"],
+    "rangeRings": {"enabled":true,"center":[33.679699,-78.928299],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":160,"speed":8},
+    "arrivalRunway": "18",
+    "departureRunway": "18",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[34.2126,-79.0297],[34.2163,-78.8605],[34.1835,-78.6959],[34.1162,-78.5472],[34.0193,-78.4244],[33.8992,-78.3359],[33.7641,-78.2879],[33.6233,-78.2834],[33.4863,-78.3229],[33.3625,-78.4037],[33.2604,-78.5202],[33.1868,-78.6646],[33.1467,-78.8269],[33.1431,-78.9961],[33.1759,-79.1607],[33.2432,-79.3094],[33.3401,-79.4322],[33.4602,-79.5207],[33.5953,-79.5687],[33.7361,-79.5732],[33.8731,-79.5337],[33.9969,-79.4529],[34.099,-79.3364],[34.1726,-79.192]]}
+    ],
+    "fixes": {
+        "KMYR": [33.6797,-78.9283],
+        "TGQ": [34.5286,-78.5159,"elizabethtown"],
+        "BIMCE": [33.91132,-78.81578],
+        "UVUJO": [33.4764,-78.11565],
+        "CINUD": [33.60777,-78.64079],
+        "ZADLI": [32.98087,-79.05016],
+        "SIZEJ": [33.43246,-78.97141],
+        "CKI": [33.7178,-79.855,"kingstree"],
+        "VEHNE": [33.69203,-79.22816],
+        "FLO": [34.2329,-79.6571,"florence"],
+        "HYW": [33.8233,-79.1282,"horry"],
+        "_RWY1804DME": [33.75771,-78.94789],
+        "_RWY3604DME": [33.60179,-78.90874]
+    },
+    "runways": [
+        {"name":["18","36"],"end":[[33.6925,-78.9315,"22ft"],[33.667,-78.9251,"21ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "TGQ1C": {"icao":"TGQ1C","name":"Elizabethtown One Charlie","rwy":{"KMYR18":["_RWY3604DME"],"KMYR36":["_RWY1804DME"]},"body":[],"exitPoints":{"TGQ":["TGQ"]},"draw":[["KMYR","TGQ*"]]},
+        "UVUJO3F": {"icao":"UVUJO3F","name":"Uvujo Three Foxtrot","rwy":{"KMYR18":["_RWY3604DME"],"KMYR36":["_RWY1804DME"]},"body":[],"exitPoints":{"UVUJO":["UVUJO"]},"draw":[["KMYR","UVUJO*"]]},
+        "ZADLI2B": {"icao":"ZADLI2B","name":"Zadli Two Bravo","rwy":{"KMYR18":["_RWY3604DME"],"KMYR36":["_RWY1804DME"]},"body":[],"exitPoints":{"ZADLI":["ZADLI"]},"draw":[["KMYR","ZADLI*"]]},
+        "CKI1F": {"icao":"CKI1F","name":"Kingstree One Foxtrot","rwy":{"KMYR18":["_RWY3604DME"],"KMYR36":["_RWY1804DME"]},"body":[],"exitPoints":{"CKI":["CKI"]},"draw":[["KMYR","CKI*"]]},
+        "FLO3B": {"icao":"FLO3B","name":"Florence Three Bravo","rwy":{"KMYR18":["_RWY3604DME"],"KMYR36":["_RWY1804DME"]},"body":[],"exitPoints":{"FLO":["FLO"]},"draw":[["KMYR","FLO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KMYR","destination":"KCLT","category":"departure","route":"KMYR18.FLO3B.FLO","altitude":"","speed":"","method":"random","rate":1.14,"airlines":[["aal/crj7",2],["aal/crj9",1],["aal/dh8d",1],["aal/crj2",1],["aal/dh8b",1],["aal/dh8c",1]]},
+        {"origin":"KMYR","destination":"KATL","category":"departure","route":"KMYR18.CKI1F.CKI","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["dal/a319",1],["dal/b712",1],["dal/md88",1]]},
+        {"origin":"KMYR","destination":"KBOS","category":"departure","route":"KMYR18.TGQ1C.TGQ","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["nks/a319",1],["nks/a320",1]]},
+        {"origin":"KMYR","destination":"KFLL","category":"departure","route":"KMYR18.ZADLI2B.ZADLI","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["nks/a319",1],["nks/a320",1]]},
+        {"origin":"KMYR","destination":"KPHL","category":"departure","route":"KMYR18.TGQ1C.TGQ","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["nks/a320",1],["aal/crj7",1],["aal/crj9",1],["aal/crj2",1]]},
+        {"origin":"KMYR","destination":"CYTZ","category":"departure","route":"KMYR18.TGQ1C.TGQ","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["poe/dh8d",1]]},
+        {"origin":"KMYR","destination":"","category":"departure","route":"KMYR18.TGQ1C.TGQ","altitude":"","speed":"","method":"random","rate":2.05,"airlines":[["nks/a320",6],["aay/md82",2],["wja/b737",1]]},
+        {"origin":"KMYR","destination":"","category":"departure","route":"KMYR18.CKI1F.CKI","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["nks/a319",1]]},
+        {"origin":"KMYR","destination":"","category":"departure","route":"KMYR18.FLO3B.FLO","altitude":"","speed":"","method":"random","rate":1.14,"airlines":[["aay/md82",2],["nks/a320",2],["nks/a319",1]]},
+        {"origin":"KMYR","destination":"","category":"departure","route":"KMYR18.CKI1F.CKI","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KMYR","destination":"","category":"departure","route":"KMYR18.FLO3B.FLO","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KCLT","destination":"KMYR","category":"arrival","route":"FLO..HYW..KMYR","altitude":[6000,9000],"speed":250,"method":"random","rate":1.14,"airlines":[["aal/crj7",2],["aal/crj9",1],["aal/dh8d",1],["aal/crj2",1],["aal/dh8b",1],["aal/dh8c",1]]},
+        {"origin":"KATL","destination":"KMYR","category":"arrival","route":"CKI..VEHNE..KMYR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["dal/a319",1],["dal/b712",1],["dal/md88",1]]},
+        {"origin":"KBOS","destination":"KMYR","category":"arrival","route":"TGQ..BIMCE..KMYR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.46,"airlines":[["nks/a319",1],["nks/a320",1]]},
+        {"origin":"KFLL","destination":"KMYR","category":"arrival","route":"ZADLI..SIZEJ..KMYR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.46,"airlines":[["nks/a319",1],["nks/a320",1]]},
+        {"origin":"KPHL","destination":"KMYR","category":"arrival","route":"TGQ..BIMCE..KMYR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.46,"airlines":[["nks/a320",1],["aal/crj7",1],["aal/crj9",1],["aal/crj2",1]]},
+        {"origin":"CYTZ","destination":"KMYR","category":"arrival","route":"TGQ..BIMCE..KMYR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.23,"airlines":[["poe/dh8d",1]]},
+        {"origin":"","destination":"KMYR","category":"arrival","route":"TGQ..BIMCE..KMYR","altitude":[6000,9000],"speed":250,"method":"random","rate":2.05,"airlines":[["nks/a320",6],["aay/md82",2],["wja/b737",1]]},
+        {"origin":"","destination":"KMYR","category":"arrival","route":"CKI..VEHNE..KMYR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.23,"airlines":[["nks/a319",1]]},
+        {"origin":"","destination":"KMYR","category":"arrival","route":"FLO..HYW..KMYR","altitude":[6000,9000],"speed":250,"method":"random","rate":1.14,"airlines":[["aay/md82",2],["nks/a320",2],["nks/a319",1]]},
+        {"origin":"","destination":"KMYR","category":"arrival","route":"CKI..VEHNE..KMYR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"","destination":"KMYR","category":"arrival","route":"FLO..HYW..KMYR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [34.5286,-78.5159,33.9113,-78.8158],
+            [33.9113,-78.8158,33.6797,-78.9283],
+            [33.4764,-78.1156,33.6078,-78.6408],
+            [33.6078,-78.6408,33.6797,-78.9283],
+            [32.9809,-79.0502,33.4325,-78.9714],
+            [33.4325,-78.9714,33.6797,-78.9283],
+            [33.7178,-79.855,33.692,-79.2282],
+            [33.692,-79.2282,33.6797,-78.9283],
+            [34.2329,-79.6571,33.8233,-79.1282],
+            [33.8233,-79.1282,33.6797,-78.9283]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [33.6925,-78.9315,33.8555,-78.9725],
+            [33.772,-78.9638,33.7761,-78.9402],
+            [33.8535,-78.9843,33.8576,-78.9607],
+            [33.667,-78.9251,33.504,-78.8843],
+            [33.5875,-78.8929,33.5834,-78.9164],
+            [33.506,-78.8725,33.5019,-78.896]
+        ]}
+    ]
+}

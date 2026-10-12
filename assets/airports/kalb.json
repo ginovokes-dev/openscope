@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KALB/",
+    "info": {"country":"US","city":"Albany","type":"large_airport","longestRunwayM":2591,"frequencies":{"atis":"120.450","twr":"119.500","gnd":"121.700"}},
+    "radio": {"twr":"Albany Tower","app":"Albany Approach","dep":"Albany Departure"},
+    "icao": "KALB",
+    "iata": "ALB",
+    "magnetic_north": -13,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [42.748299,-73.801697,"285ft"],
+    "rangeRings": {"enabled":true,"center":[42.748299,-73.801697],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":200,"speed":7},
+    "arrivalRunway": "19",
+    "departureRunway": "19",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[43.2741,-73.967],[43.2876,-73.7761],[43.2643,-73.5869],[43.2059,-73.4123],[43.1163,-73.2643],[43.0016,-73.1529],[42.8697,-73.0857],[42.7295,-73.0673],[42.5905,-73.099],[42.4624,-73.1786],[42.3537,-73.3006],[42.2719,-73.4567],[42.2225,-73.6364],[42.209,-73.8273],[42.2323,-74.0165],[42.2907,-74.1911],[42.3803,-74.3391],[42.495,-74.4505],[42.6269,-74.5177],[42.7671,-74.536],[42.9061,-74.5044],[43.0342,-74.4248],[43.1429,-74.3028],[43.2247,-74.1467]]}
+    ],
+    "fixes": {
+        "KALB": [42.7483,-73.8017],
+        "ORE": [42.5686,-72.2861,"orange"],
+        "ARETO": [42.70848,-73.46584],
+        "DNY": [42.1783,-74.9569,"de lancey"],
+        "BOZNI": [42.60896,-74.08408],
+        "UCA": [43.0265,-75.1645,"utica"],
+        "ROJVU": [42.81521,-74.12948],
+        "BOFUB": [43.38851,-74.20745],
+        "VASPU": [42.9748,-73.94525],
+        "_RWY0104DME": [42.67061,-73.80159],
+        "_RWY1904DME": [42.82349,-73.80781],
+        "_RWY1004DME": [42.74712,-73.90278],
+        "_RWY2804DME": [42.75171,-73.6991]
+    },
+    "runways": [
+        {"name":["01","19"],"end":[[42.7372,-73.8043,"285ft"],[42.7569,-73.8051,"279ft"]],"ils":[true,true]},
+        {"name":["10","28"],"end":[[42.7492,-73.8121,"277ft"],[42.7497,-73.78978,"278ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ORE1F": {"icao":"ORE1F","name":"Orange One Foxtrot","rwy":{"KALB01":["_RWY1904DME"],"KALB19":["_RWY0104DME"],"KALB10":["_RWY2804DME"],"KALB28":["_RWY1004DME"]},"body":[],"exitPoints":{"ORE":["ORE"]},"draw":[["KALB","ORE*"]]},
+        "DNY2A": {"icao":"DNY2A","name":"De Lancey Two Alpha","rwy":{"KALB01":["_RWY1904DME"],"KALB19":["_RWY0104DME"],"KALB10":["_RWY2804DME"],"KALB28":["_RWY1004DME"]},"body":[],"exitPoints":{"DNY":["DNY"]},"draw":[["KALB","DNY*"]]},
+        "UCA1F": {"icao":"UCA1F","name":"Utica One Foxtrot","rwy":{"KALB01":["_RWY1904DME"],"KALB19":["_RWY0104DME"],"KALB10":["_RWY2804DME"],"KALB28":["_RWY1004DME"]},"body":[],"exitPoints":{"UCA":["UCA"]},"draw":[["KALB","UCA*"]]},
+        "BOFUB1B": {"icao":"BOFUB1B","name":"Bofub One Bravo","rwy":{"KALB01":["_RWY1904DME"],"KALB19":["_RWY0104DME"],"KALB10":["_RWY2804DME"],"KALB28":["_RWY1004DME"]},"body":[],"exitPoints":{"BOFUB":["BOFUB"]},"draw":[["KALB","BOFUB*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KALB","destination":"KORD","category":"departure","route":"KALB19.UCA1F.UCA","altitude":"","speed":"","method":"random","rate":0.99,"airlines":[["ual/a319",1],["ual/b737",1],["ual/b738",1]]},
+        {"origin":"KALB","destination":"KCLT","category":"departure","route":"KALB19.DNY2A.DNY","altitude":"","speed":"","method":"random","rate":0.66,"airlines":[["aal/a319",2]]},
+        {"origin":"KALB","destination":"KMDW","category":"departure","route":"KALB19.UCA1F.UCA","altitude":"","speed":"","method":"random","rate":0.66,"airlines":[["swa/b737",1],["swa/b738",1]]},
+        {"origin":"KALB","destination":"KATL","category":"departure","route":"KALB19.DNY2A.DNY","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["dal/md88",1]]},
+        {"origin":"KALB","destination":"KBOS","category":"departure","route":"KALB19.ORE1F.ORE","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["kap/c172",1]]},
+        {"origin":"KALB","destination":"","category":"departure","route":"KALB19.DNY2A.DNY","altitude":"","speed":"","method":"random","rate":1.98,"airlines":[["swa/b737",4],["aal/dh8c",1],["aal/crj7",1],["aal/crj9",1],["aal/crj2",1]]},
+        {"origin":"KALB","destination":"","category":"departure","route":"KALB19.UCA1F.UCA","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["swa/b737",1]]},
+        {"origin":"KALB","destination":"","category":"departure","route":"KALB19.BOFUB1B.BOFUB","altitude":"","speed":"","method":"random","rate":0.66,"airlines":[["kap/c172",2]]},
+        {"origin":"KALB","destination":"","category":"departure","route":"KALB19.DNY2A.DNY","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KALB","destination":"","category":"departure","route":"KALB19.ORE1F.ORE","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KORD","destination":"KALB","category":"arrival","route":"UCA..ROJVU..KALB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.99,"airlines":[["ual/a319",1],["ual/b737",1],["ual/b738",1]]},
+        {"origin":"KCLT","destination":"KALB","category":"arrival","route":"DNY..BOZNI..KALB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.66,"airlines":[["aal/a319",2]]},
+        {"origin":"KMDW","destination":"KALB","category":"arrival","route":"UCA..ROJVU..KALB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.66,"airlines":[["swa/b737",1],["swa/b738",1]]},
+        {"origin":"KATL","destination":"KALB","category":"arrival","route":"DNY..BOZNI..KALB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.33,"airlines":[["dal/md88",1]]},
+        {"origin":"KBOS","destination":"KALB","category":"arrival","route":"ORE..ARETO..KALB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.33,"airlines":[["kap/c172",1]]},
+        {"origin":"","destination":"KALB","category":"arrival","route":"DNY..BOZNI..KALB","altitude":[6000,9000],"speed":250,"method":"random","rate":1.98,"airlines":[["swa/b737",4],["aal/dh8c",1],["aal/crj7",1],["aal/crj9",1],["aal/crj2",1]]},
+        {"origin":"","destination":"KALB","category":"arrival","route":"UCA..ROJVU..KALB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.33,"airlines":[["swa/b737",1]]},
+        {"origin":"","destination":"KALB","category":"arrival","route":"BOFUB..VASPU..KALB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.66,"airlines":[["kap/c172",2]]},
+        {"origin":"","destination":"KALB","category":"arrival","route":"DNY..BOZNI..KALB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.41,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"","destination":"KALB","category":"arrival","route":"ORE..ARETO..KALB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.41,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [42.5686,-72.2861,42.7085,-73.4658],
+            [42.7085,-73.4658,42.7483,-73.8017],
+            [42.1783,-74.9569,42.609,-74.0841],
+            [42.609,-74.0841,42.7483,-73.8017],
+            [43.0265,-75.1645,42.8152,-74.1295],
+            [42.8152,-74.1295,42.7483,-73.8017],
+            [43.3885,-74.2074,42.9748,-73.9452],
+            [42.9748,-73.9452,42.7483,-73.8017]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [42.7372,-73.8043,42.5707,-73.7975],
+            [42.6543,-73.7873,42.6537,-73.8145],
+            [42.571,-73.784,42.5704,-73.8111],
+            [42.7569,-73.8051,42.9234,-73.8119],
+            [42.8398,-73.8221,42.8404,-73.7949],
+            [42.9231,-73.8255,42.9237,-73.7982],
+            [42.7492,-73.8121,42.7439,-74.0388],
+            [42.7366,-73.925,42.7566,-73.9259],
+            [42.7339,-74.0384,42.7539,-74.0392],
+            [42.7497,-73.7898,42.7546,-73.5631],
+            [42.7622,-73.6768,42.7422,-73.676],
+            [42.7646,-73.5635,42.7446,-73.5626]
+        ]}
+    ]
+}

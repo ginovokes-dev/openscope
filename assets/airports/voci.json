@@ -1,0 +1,98 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VOCI/",
+    "info": {"country":"IN","city":"Kochi","type":"large_airport","longestRunwayM":3400,"frequencies":{"atis":"126.200","twr":"118.800","app":"119.750","gnd":"121.750"}},
+    "radio": {"twr":"Cochin Tower","app":"Cochin Approach","dep":"Cochin Departure"},
+    "icao": "VOCI",
+    "iata": "COK",
+    "magnetic_north": -1.5,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [10.151047,76.400838,"30ft"],
+    "rangeRings": {"enabled":true,"center":[10.151047,76.400838],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":70,"speed":8},
+    "arrivalRunway": "09",
+    "departureRunway": "09",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[10.6905,76.3865],[10.6757,76.5288],[10.6253,76.6624],[10.5425,76.7782],[10.433,76.8682],[10.3043,76.9264],[10.1652,76.9488],[10.0251,76.9339],[9.8936,76.8826],[9.7796,76.7985],[9.691,76.6873],[9.6337,76.5565],[9.6116,76.4152],[9.6264,76.2729],[9.6768,76.1393],[9.7596,76.0235],[9.8691,75.9334],[9.9978,75.8752],[10.1369,75.8529],[10.277,75.8678],[10.4085,75.9191],[10.5225,76.0032],[10.6111,76.1144],[10.6684,76.2451]]}
+    ],
+    "fixes": {
+        "VOCI": [10.15105,76.40084],
+        "CCB": [11.0338,77.0481,"coimbatore"],
+        "ECIVA": [10.35362,76.54938],
+        "ASEPI": [9.88389,77.06489],
+        "DIRIJ": [10.05653,76.63578],
+        "ADUCI": [9.47614,76.61185],
+        "ZEROM": [9.91227,76.47549],
+        "UTUFU": [9.51501,76.0892],
+        "CCN": [9.94468,76.2729,"cochin"],
+        "CLC": [11.1351,75.9548,"calicut"],
+        "PITHU": [10.3792,76.29742],
+        "_RWY0904DME": [10.14877,76.31877],
+        "_RWY2704DME": [10.15521,76.48503]
+    },
+    "runways": [
+        {"name":["09","27"],"end":[[10.1514,76.3864,"28ft"],[10.1526,76.4174,"30ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "CCB1C": {"icao":"CCB1C","name":"Coimbatore One Charlie","rwy":{"VOCI09":["_RWY2704DME"],"VOCI27":["_RWY0904DME"]},"body":[],"exitPoints":{"CCB":["CCB"]},"draw":[["VOCI","CCB*"]]},
+        "ASEPI2C": {"icao":"ASEPI2C","name":"Asepi Two Charlie","rwy":{"VOCI09":["_RWY2704DME"],"VOCI27":["_RWY0904DME"]},"body":[],"exitPoints":{"ASEPI":["ASEPI"]},"draw":[["VOCI","ASEPI*"]]},
+        "ADUCI3E": {"icao":"ADUCI3E","name":"Aduci Three Echo","rwy":{"VOCI09":["_RWY2704DME"],"VOCI27":["_RWY0904DME"]},"body":[],"exitPoints":{"ADUCI":["ADUCI"]},"draw":[["VOCI","ADUCI*"]]},
+        "UTUFU3D": {"icao":"UTUFU3D","name":"Utufu Three Delta","rwy":{"VOCI09":["_RWY2704DME"],"VOCI27":["_RWY0904DME"]},"body":[],"exitPoints":{"UTUFU":["UTUFU"]},"draw":[["VOCI","UTUFU*"]]},
+        "CLC2F": {"icao":"CLC2F","name":"Calicut Two Foxtrot","rwy":{"VOCI09":["_RWY2704DME"],"VOCI27":["_RWY0904DME"]},"body":[],"exitPoints":{"CLC":["CLC"]},"draw":[["VOCI","CLC*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"VOCI","destination":"OMDB","category":"departure","route":"VOCI09.CLC2F.CLC","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["axb/b738",1],["igo/a320",1],["sej/b737",1],["uae/a332",1],["uae/b772",1],["uae/b773",1]]},
+        {"origin":"VOCI","destination":"VABB","category":"departure","route":"VOCI09.CLC2F.CLC","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["aic/a319",1],["axb/b738",1],["gow/a320",1],["igo/a320",1],["jai/b738",1],["sej/b737",1]]},
+        {"origin":"VOCI","destination":"OMAA","category":"departure","route":"VOCI09.CLC2F.CLC","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["axb/b738",1],["aza/a320",1],["etd/a320",1],["jai/b738",1]]},
+        {"origin":"VOCI","destination":"OMSJ","category":"departure","route":"VOCI09.CLC2F.CLC","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["aby/a320",1],["aic/a320",1],["axb/b738",1],["jai/b738",1]]},
+        {"origin":"VOCI","destination":"WSSS","category":"departure","route":"VOCI09.ASEPI2C.ASEPI","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["slk/a319",1],["slk/a320",1],["slk/b738",1],["tgw/a319",1]]},
+        {"origin":"VOCI","destination":"VOMM","category":"departure","route":"VOCI09.CCB1C.CCB","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["aic/a319",1],["igo/a320",1],["sej/b737",1],["sej/dh8d",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"VOCI","destination":"","category":"departure","route":"VOCI09.CCB1C.CCB","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["igo/a320",2],["sej/b737",2],["sej/dh8d",1],["aic/at72",1],["aic/at45",1],["aic/at75",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"VOCI","destination":"","category":"departure","route":"VOCI09.ASEPI2C.ASEPI","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["alk/a320",1],["alk/a321",1],["axm/a320",1],["mas/b738",1],["mxd/b739",1]]},
+        {"origin":"VOCI","destination":"","category":"departure","route":"VOCI09.ADUCI3E.ADUCI","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["aic/a321",1],["axb/b738",1],["igo/a320",1]]},
+        {"origin":"VOCI","destination":"","category":"departure","route":"VOCI09.UTUFU3D.UTUFU","altitude":"","speed":"","method":"random","rate":0.11,"airlines":[["sej/dh8d",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"VOCI","destination":"","category":"departure","route":"VOCI09.CLC2F.CLC","altitude":"","speed":"","method":"random","rate":2.05,"airlines":[["jai/b738",3],["axb/b738",2],["sva/a333",2],["aic/a320",1],["aic/a321",1],["aic/b744",1],["gba/a321",1],["igo/a320",1],["kac/a306",1],["oma/b738",1],["qtr/a333",1],["qtr/a346",1]]},
+        {"origin":"VOCI","destination":"","category":"departure","route":"VOCI09.ADUCI3E.ADUCI","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",2],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"VOCI","destination":"","category":"departure","route":"VOCI09.UTUFU3D.UTUFU","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",2],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"OMDB","destination":"VOCI","category":"arrival","route":"CLC..PITHU..VOCI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["axb/b738",1],["igo/a320",1],["sej/b737",1],["uae/a332",1],["uae/b772",1],["uae/b773",1]]},
+        {"origin":"VABB","destination":"VOCI","category":"arrival","route":"CLC..PITHU..VOCI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["aic/a319",1],["axb/b738",1],["gow/a320",1],["igo/a320",1],["jai/b738",1],["sej/b737",1]]},
+        {"origin":"OMAA","destination":"VOCI","category":"arrival","route":"CLC..PITHU..VOCI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["axb/b738",1],["aza/a320",1],["etd/a320",1],["jai/b738",1]]},
+        {"origin":"OMSJ","destination":"VOCI","category":"arrival","route":"CLC..PITHU..VOCI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["aby/a320",1],["aic/a320",1],["axb/b738",1],["jai/b738",1]]},
+        {"origin":"WSSS","destination":"VOCI","category":"arrival","route":"ASEPI..DIRIJ..VOCI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["slk/a319",1],["slk/a320",1],["slk/b738",1],["tgw/a319",1]]},
+        {"origin":"VOMM","destination":"VOCI","category":"arrival","route":"CCB..ECIVA..VOCI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["aic/a319",1],["igo/a320",1],["sej/b737",1],["sej/dh8d",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"","destination":"VOCI","category":"arrival","route":"CCB..ECIVA..VOCI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["igo/a320",2],["sej/b737",2],["sej/dh8d",1],["aic/at72",1],["aic/at45",1],["aic/at75",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"","destination":"VOCI","category":"arrival","route":"ASEPI..DIRIJ..VOCI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.57,"airlines":[["alk/a320",1],["alk/a321",1],["axm/a320",1],["mas/b738",1],["mxd/b739",1]]},
+        {"origin":"","destination":"VOCI","category":"arrival","route":"ADUCI..ZEROM..VOCI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["aic/a321",1],["axb/b738",1],["igo/a320",1]]},
+        {"origin":"","destination":"VOCI","category":"arrival","route":"UTUFU..CCN..VOCI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.11,"airlines":[["sej/dh8d",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"","destination":"VOCI","category":"arrival","route":"CLC..PITHU..VOCI","altitude":[6000,9000],"speed":250,"method":"random","rate":2.05,"airlines":[["jai/b738",3],["axb/b738",2],["sva/a333",2],["aic/a320",1],["aic/a321",1],["aic/b744",1],["gba/a321",1],["igo/a320",1],["kac/a306",1],["oma/b738",1],["qtr/a333",1],["qtr/a346",1]]},
+        {"origin":"","destination":"VOCI","category":"arrival","route":"ADUCI..ZEROM..VOCI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",2],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"","destination":"VOCI","category":"arrival","route":"UTUFU..CCN..VOCI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",2],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [11.0338,77.0481,10.3536,76.5494],
+            [10.3536,76.5494,10.151,76.4008],
+            [9.8839,77.0649,10.0565,76.6358],
+            [10.0565,76.6358,10.151,76.4008],
+            [9.4761,76.6119,9.9123,76.4755],
+            [9.9123,76.4755,10.151,76.4008],
+            [9.515,76.0892,9.9447,76.2729],
+            [9.9447,76.2729,10.151,76.4008],
+            [11.1351,75.9548,10.3792,76.2974],
+            [10.3792,76.2974,10.151,76.4008]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [10.1514,76.3864,10.1448,76.2173],
+            [10.1381,76.3023,10.1581,76.3015],
+            [10.1348,76.2177,10.1548,76.2169],
+            [10.1526,76.4174,10.1591,76.5865],
+            [10.1659,76.5015,10.1459,76.5023],
+            [10.1691,76.5861,10.1491,76.5869]
+        ]}
+    ]
+}

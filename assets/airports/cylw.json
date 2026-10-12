@@ -1,0 +1,85 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/CYLW/",
+    "info": {"country":"CA","city":"Kelowna","type":"large_airport","longestRunwayM":2713,"frequencies":{"atis":"127.500","twr":"119.600","gnd":"121.700"}},
+    "radio": {"twr":"Kelowna Tower","app":"Kelowna Approach","dep":"Kelowna Departure"},
+    "icao": "CYLW",
+    "iata": "YLW",
+    "magnetic_north": 14.9,
+    "ctr_radius": 45,
+    "ctr_ceiling": 9000,
+    "initial_alt": 5000,
+    "position": [49.9561,-119.377998,"1421ft"],
+    "rangeRings": {"enabled":true,"center":[49.9561,-119.377998],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":150,"speed":8},
+    "arrivalRunway": "16",
+    "departureRunway": "16",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":90,"airspace_class":"D","poly":[[50.3472,-119.2163],[50.3069,-119.0644],[50.2428,-118.934],[50.1591,-118.8338],[50.0615,-118.7707],[49.9568,-118.749],[49.852,-118.7701],[49.7544,-118.8327],[49.6704,-118.9324],[49.606,-119.0625],[49.5654,-119.2141],[49.5514,-119.3769],[49.565,-119.5397],[49.6053,-119.6916],[49.6694,-119.822],[49.7531,-119.9222],[49.8507,-119.9853],[49.9554,-120.007],[50.0602,-119.9859],[50.1578,-119.9233],[50.2418,-119.8236],[50.3062,-119.6935],[50.3468,-119.5419],[50.3608,-119.3791]]}
+    ],
+    "fixes": {
+        "CYLW": [49.9561,-119.378],
+        "LULIZ": [50.02905,-118.5496],
+        "MACMU": [49.98321,-119.07022],
+        "VOLVE": [49.43284,-119.18398],
+        "UMEHO": [49.76169,-119.30591],
+        "YDC": [49.3817,-120.374,"princeton"],
+        "REBEP": [49.82269,-119.60932],
+        "YKA": [50.6836,-120.335,"kamloops"],
+        "DEWEM": [50.10866,-119.57869],
+        "_RWY1604DME": [50.02914,-119.38851],
+        "_RWY3404DME": [49.88098,-119.36619]
+    },
+    "runways": [
+        {"name":["16","34"],"end":[[49.96283,-119.3785,"1421ft"],[49.94729,-119.37616,"1370ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "LULIZ3B": {"icao":"LULIZ3B","name":"Luliz Three Bravo","rwy":{"CYLW16":["_RWY3404DME"],"CYLW34":["_RWY1604DME"]},"body":[],"exitPoints":{"LULIZ":["LULIZ"]},"draw":[["CYLW","LULIZ*"]]},
+        "VOLVE1C": {"icao":"VOLVE1C","name":"Volve One Charlie","rwy":{"CYLW16":["_RWY3404DME"],"CYLW34":["_RWY1604DME"]},"body":[],"exitPoints":{"VOLVE":["VOLVE"]},"draw":[["CYLW","VOLVE*"]]},
+        "YDC1B": {"icao":"YDC1B","name":"Princeton One Bravo","rwy":{"CYLW16":["_RWY3404DME"],"CYLW34":["_RWY1604DME"]},"body":[],"exitPoints":{"YDC":["YDC"]},"draw":[["CYLW","YDC*"]]},
+        "YKA1A": {"icao":"YKA1A","name":"Kamloops One Alpha","rwy":{"CYLW16":["_RWY3404DME"],"CYLW34":["_RWY1604DME"]},"body":[],"exitPoints":{"YKA":["YKA"]},"draw":[["CYLW","YKA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"CYLW","destination":"CYVR","category":"departure","route":"CYLW16.YDC1B.YDC","altitude":"","speed":"","method":"random","rate":0.96,"airlines":[["ant/b737",1],["wja/b737",1],["wja/dh8d",1]]},
+        {"origin":"CYLW","destination":"CYYC","category":"departure","route":"CYLW16.LULIZ3B.LULIZ","altitude":"","speed":"","method":"random","rate":0.96,"airlines":[["wja/b736",1],["wja/b737",1],["wja/dh8d",1]]},
+        {"origin":"CYLW","destination":"CYYZ","category":"departure","route":"CYLW16.LULIZ3B.LULIZ","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["wja/b736",1],["wja/b737",1]]},
+        {"origin":"CYLW","destination":"CYEG","category":"departure","route":"CYLW16.LULIZ3B.LULIZ","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["wja/b737",1]]},
+        {"origin":"CYLW","destination":"CYQF","category":"departure","route":"CYLW16.LULIZ3B.LULIZ","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["plr/js31",1]]},
+        {"origin":"CYLW","destination":"","category":"departure","route":"CYLW16.LULIZ3B.LULIZ","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["pco/b190",1]]},
+        {"origin":"CYLW","destination":"","category":"departure","route":"CYLW16.YDC1B.YDC","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["wja/dh8d",1]]},
+        {"origin":"CYLW","destination":"","category":"departure","route":"CYLW16.YKA1A.YKA","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["ant/b737",1]]},
+        {"origin":"CYLW","destination":"","category":"departure","route":"CYLW16.YKA1A.YKA","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["c/c172",6],["c/p28a",5],["c/c182",3],["c/be36",2],["c/da42",1],["c/tb20",1],["c/c208",2],["c/pc12",2],["c/be20",1],["c/b350",1],["c/p180",1],["c/c510",1],["c/e50p",1],["c/c550",1],["c/e55p",1],["c/cl30",1],["c/c680",1],["c/h25b",1],["c/lj45",1],["c/f2th",1],["c/glf4",1],["c/glex",1],["c/glf5",1]]},
+        {"origin":"CYVR","destination":"CYLW","category":"arrival","route":"YDC..REBEP..CYLW","altitude":[5000,8000],"speed":250,"method":"random","rate":0.96,"airlines":[["ant/b737",1],["wja/b737",1],["wja/dh8d",1]]},
+        {"origin":"CYYC","destination":"CYLW","category":"arrival","route":"LULIZ..MACMU..CYLW","altitude":[5000,8000],"speed":250,"method":"random","rate":0.96,"airlines":[["wja/b736",1],["wja/b737",1],["wja/dh8d",1]]},
+        {"origin":"CYYZ","destination":"CYLW","category":"arrival","route":"LULIZ..MACMU..CYLW","altitude":[5000,8000],"speed":250,"method":"random","rate":0.64,"airlines":[["wja/b736",1],["wja/b737",1]]},
+        {"origin":"CYEG","destination":"CYLW","category":"arrival","route":"LULIZ..MACMU..CYLW","altitude":[5000,8000],"speed":250,"method":"random","rate":0.32,"airlines":[["wja/b737",1]]},
+        {"origin":"CYQF","destination":"CYLW","category":"arrival","route":"LULIZ..MACMU..CYLW","altitude":[5000,8000],"speed":250,"method":"random","rate":0.32,"airlines":[["plr/js31",1]]},
+        {"origin":"","destination":"CYLW","category":"arrival","route":"LULIZ..MACMU..CYLW","altitude":[5000,8000],"speed":250,"method":"random","rate":0.32,"airlines":[["pco/b190",1]]},
+        {"origin":"","destination":"CYLW","category":"arrival","route":"YDC..REBEP..CYLW","altitude":[5000,8000],"speed":250,"method":"random","rate":0.32,"airlines":[["wja/dh8d",1]]},
+        {"origin":"","destination":"CYLW","category":"arrival","route":"YKA..DEWEM..CYLW","altitude":[5000,8000],"speed":250,"method":"random","rate":0.32,"airlines":[["ant/b737",1]]},
+        {"origin":"","destination":"CYLW","category":"arrival","route":"YKA..DEWEM..CYLW","altitude":[5000,8000],"speed":250,"method":"random","rate":1.39,"airlines":[["c/c172",6],["c/p28a",5],["c/c182",3],["c/be36",2],["c/da42",1],["c/tb20",1],["c/c208",2],["c/pc12",2],["c/be20",1],["c/b350",1],["c/p180",1],["c/c510",1],["c/e50p",1],["c/c550",1],["c/e55p",1],["c/cl30",1],["c/c680",1],["c/h25b",1],["c/lj45",1],["c/f2th",1],["c/glf4",1],["c/glex",1],["c/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [50.0291,-118.5496,49.9832,-119.0702],
+            [49.9832,-119.0702,49.9561,-119.378],
+            [49.4328,-119.184,49.7617,-119.3059],
+            [49.7617,-119.3059,49.9561,-119.378],
+            [49.3817,-120.374,49.8227,-119.6093],
+            [49.8227,-119.6093,49.9561,-119.378],
+            [50.6836,-120.335,50.1087,-119.5787],
+            [50.1087,-119.5787,49.9561,-119.378]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [49.9628,-119.3785,50.1286,-119.4036],
+            [50.0447,-119.4065,50.0467,-119.3755],
+            [50.1276,-119.4191,50.1296,-119.3881],
+            [49.9473,-119.3762,49.7815,-119.3513],
+            [49.8654,-119.3483,49.8634,-119.3791],
+            [49.7825,-119.3359,49.7805,-119.3667]
+        ]}
+    ]
+}

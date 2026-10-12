@@ -1,0 +1,86 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/AYMH/",
+    "info": {"country":"PG","city":"Mount Hagen","type":"medium_airport","longestRunwayM":2197,"frequencies":{"atis":"128.400","twr":"120.500"}},
+    "radio": {"twr":"Mount Hagen Tower","app":"Mount Hagen Approach","dep":"Mount Hagen Departure"},
+    "icao": "AYMH",
+    "iata": "HGU",
+    "magnetic_north": 4.3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 13000,
+    "initial_alt": 9000,
+    "position": [-5.828212,144.299412,"5388ft"],
+    "rangeRings": {"enabled":true,"center":[-5.828212,144.299412],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":120,"speed":10},
+    "arrivalRunway": "12",
+    "departureRunway": "12",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":130,"airspace_class":"D","poly":[[-5.4247,144.3299],[-5.4463,144.4339],[-5.4939,144.5287],[-5.5643,144.6078],[-5.6527,144.666],[-5.7531,144.6991],[-5.8586,144.7051],[-5.962,144.6833],[-6.0563,144.6355],[-6.135,144.5647],[-6.1929,144.4758],[-6.2259,144.3749],[-6.2318,144.2689],[-6.2102,144.165],[-6.1625,144.0702],[-6.0921,143.991],[-6.0037,143.9329],[-5.9034,143.8997],[-5.7979,143.8938],[-5.6945,143.9155],[-5.6002,143.9634],[-5.5214,144.0341],[-5.4636,144.123],[-5.4306,144.2239]]}
+    ],
+    "fixes": {
+        "AYMH": [-5.82821,144.29941],
+        "PINVO": [-5.96597,144.82211],
+        "WOVUG": [-5.87939,144.49362],
+        "MUNIL": [-6.36614,144.29672],
+        "AFADO": [-6.02807,144.29841],
+        "TIHIR": [-5.96077,143.77535],
+        "KARGA": [-5.87746,144.1047],
+        "ZETSO": [-5.31026,144.1534],
+        "PUDMO": [-5.63577,144.24516],
+        "_RWY1204DME": [-5.7893,144.23369],
+        "_RWY3004DME": [-5.86844,144.36532],
+        "_RWY0804DME": [-5.83323,144.22686],
+        "_RWY2604DME": [-5.81999,144.36913]
+    },
+    "runways": [
+        {"name":["12","30"],"end":[[-5.82376,144.291,"5363ft"],[-5.83398,144.308,"5363ft"]],"ils":[true,true]},
+        {"name":["08","26"],"end":[[-5.82703,144.29354,"5363ft"],[-5.8262,144.30245,"5363ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "PINVO1F": {"icao":"PINVO1F","name":"Pinvo One Foxtrot","rwy":{"AYMH12":["_RWY3004DME"],"AYMH30":["_RWY1204DME"],"AYMH08":["_RWY2604DME"],"AYMH26":["_RWY0804DME"]},"body":[],"exitPoints":{"PINVO":["PINVO"]},"draw":[["AYMH","PINVO*"]]},
+        "MUNIL2F": {"icao":"MUNIL2F","name":"Munil Two Foxtrot","rwy":{"AYMH12":["_RWY3004DME"],"AYMH30":["_RWY1204DME"],"AYMH08":["_RWY2604DME"],"AYMH26":["_RWY0804DME"]},"body":[],"exitPoints":{"MUNIL":["MUNIL"]},"draw":[["AYMH","MUNIL*"]]},
+        "TIHIR1F": {"icao":"TIHIR1F","name":"Tihir One Foxtrot","rwy":{"AYMH12":["_RWY3004DME"],"AYMH30":["_RWY1204DME"],"AYMH08":["_RWY2604DME"],"AYMH26":["_RWY0804DME"]},"body":[],"exitPoints":{"TIHIR":["TIHIR"]},"draw":[["AYMH","TIHIR*"]]},
+        "ZETSO3E": {"icao":"ZETSO3E","name":"Zetso Three Echo","rwy":{"AYMH12":["_RWY3004DME"],"AYMH30":["_RWY1204DME"],"AYMH08":["_RWY2604DME"],"AYMH26":["_RWY0804DME"]},"body":[],"exitPoints":{"ZETSO":["ZETSO"]},"draw":[["AYMH","ZETSO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"AYMH","destination":"AYMR","category":"departure","route":"AYMH12.TIHIR1F.TIHIR","altitude":"","speed":"","method":"random","rate":0.93,"airlines":[["ang/dh8c",1],["tok/dhc6",1],["tok/dh8d",1],["tok/dh8b",1],["tok/dh8c",1]]},
+        {"origin":"AYMH","destination":"AYGA","category":"departure","route":"AYMH12.PINVO1F.PINVO","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["tok/dhc6",1],["tok/dh8d",1],["tok/dh8b",1],["tok/dh8c",1]]},
+        {"origin":"AYMH","destination":"AYPY","category":"departure","route":"AYMH12.PINVO1F.PINVO","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["ang/f100",1],["tok/dh8d",1],["tok/dh8b",1],["tok/dh8c",1]]},
+        {"origin":"AYMH","destination":"AYWK","category":"departure","route":"AYMH12.ZETSO3E.ZETSO","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["ang/f100",1],["tok/dh8d",1],["tok/dh8b",1],["tok/dh8c",1]]},
+        {"origin":"AYMH","destination":"AYKI","category":"departure","route":"AYMH12.TIHIR1F.TIHIR","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["tok/dh8d",1],["tok/dh8b",1],["tok/dh8c",1]]},
+        {"origin":"AYMH","destination":"","category":"departure","route":"AYMH12.PINVO1F.PINVO","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["tok/dh8d",1],["tok/dh8b",1],["tok/dh8c",1]]},
+        {"origin":"AYMH","destination":"","category":"departure","route":"AYMH12.TIHIR1F.TIHIR","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["tok/dh8d",1],["tok/dh8b",1],["tok/dh8c",1]]},
+        {"origin":"AYMH","destination":"","category":"departure","route":"AYMH12.TIHIR1F.TIHIR","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["p2/c172",6],["p2/p28a",5],["p2/c182",3],["p2/be36",2],["p2/da42",1],["p2/tb20",1],["p2/c208",2],["p2/pc12",2],["p2/be20",1],["p2/b350",1],["p2/p180",1],["p2/c510",1],["p2/e50p",1],["p2/c550",1],["p2/e55p",1],["p2/cl30",1],["p2/c680",1],["p2/h25b",1],["p2/lj45",1],["p2/f2th",1],["p2/glf4",1],["p2/glex",1],["p2/glf5",1]]},
+        {"origin":"AYMR","destination":"AYMH","category":"arrival","route":"TIHIR..KARGA..AYMH","altitude":[9000,12000],"speed":250,"method":"random","rate":0.93,"airlines":[["ang/dh8c",1],["tok/dhc6",1],["tok/dh8d",1],["tok/dh8b",1],["tok/dh8c",1]]},
+        {"origin":"AYGA","destination":"AYMH","category":"arrival","route":"PINVO..WOVUG..AYMH","altitude":[9000,12000],"speed":250,"method":"random","rate":0.62,"airlines":[["tok/dhc6",1],["tok/dh8d",1],["tok/dh8b",1],["tok/dh8c",1]]},
+        {"origin":"AYPY","destination":"AYMH","category":"arrival","route":"PINVO..WOVUG..AYMH","altitude":[9000,12000],"speed":250,"method":"random","rate":0.62,"airlines":[["ang/f100",1],["tok/dh8d",1],["tok/dh8b",1],["tok/dh8c",1]]},
+        {"origin":"AYWK","destination":"AYMH","category":"arrival","route":"ZETSO..PUDMO..AYMH","altitude":[9000,12000],"speed":250,"method":"random","rate":0.62,"airlines":[["ang/f100",1],["tok/dh8d",1],["tok/dh8b",1],["tok/dh8c",1]]},
+        {"origin":"AYKI","destination":"AYMH","category":"arrival","route":"TIHIR..KARGA..AYMH","altitude":[9000,12000],"speed":250,"method":"random","rate":0.31,"airlines":[["tok/dh8d",1],["tok/dh8b",1],["tok/dh8c",1]]},
+        {"origin":"","destination":"AYMH","category":"arrival","route":"PINVO..WOVUG..AYMH","altitude":[9000,12000],"speed":250,"method":"random","rate":0.62,"airlines":[["tok/dh8d",1],["tok/dh8b",1],["tok/dh8c",1]]},
+        {"origin":"","destination":"AYMH","category":"arrival","route":"TIHIR..KARGA..AYMH","altitude":[9000,12000],"speed":250,"method":"random","rate":0.62,"airlines":[["tok/dh8d",1],["tok/dh8b",1],["tok/dh8c",1]]},
+        {"origin":"","destination":"AYMH","category":"arrival","route":"TIHIR..KARGA..AYMH","altitude":[9000,12000],"speed":250,"method":"random","rate":1.45,"airlines":[["p2/c172",6],["p2/p28a",5],["p2/c182",3],["p2/be36",2],["p2/da42",1],["p2/tb20",1],["p2/c208",2],["p2/pc12",2],["p2/be20",1],["p2/b350",1],["p2/p180",1],["p2/c510",1],["p2/e50p",1],["p2/c550",1],["p2/e55p",1],["p2/cl30",1],["p2/c680",1],["p2/h25b",1],["p2/lj45",1],["p2/f2th",1],["p2/glf4",1],["p2/glex",1],["p2/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-5.966,144.8221,-5.8794,144.4936],
+            [-5.8794,144.4936,-5.8282,144.2994],
+            [-6.3661,144.2967,-6.0281,144.2984],
+            [-6.0281,144.2984,-5.8282,144.2994],
+            [-5.9608,143.7754,-5.8775,144.1047],
+            [-5.8775,144.1047,-5.8282,144.2994],
+            [-5.3103,144.1534,-5.6358,144.2452],
+            [-5.6358,144.2452,-5.8282,144.2994]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-5.8238,144.291,-5.7376,144.1477],
+            [-5.7892,144.2142,-5.7721,144.2246],
+            [-5.7461,144.1425,-5.729,144.1529],
+            [-5.834,144.308,-5.9201,144.4513],
+            [-5.8685,144.3848,-5.8856,144.3745],
+            [-5.9116,144.4565,-5.9287,144.4461]
+        ]}
+    ]
+}

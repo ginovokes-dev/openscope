@@ -1,0 +1,85 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LFKC/",
+    "info": {"country":"FR","city":"Calvi","type":"medium_airport","longestRunwayM":2313,"frequencies":{"atis":"131.175","twr":"120.800","gnd":"121.700"}},
+    "radio": {"twr":"Calvi Tower","app":"Calvi Approach","dep":"Calvi Departure"},
+    "icao": "LFKC",
+    "iata": "CLY",
+    "magnetic_north": 3.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [42.530422,8.792984,"209ft"],
+    "rangeRings": {"enabled":true,"center":[42.530422,8.792984],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":340,"speed":6},
+    "arrivalRunway": "36",
+    "departureRunway": "36",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[42.9344,8.8256],[42.9144,8.9663],[42.8683,9.0953],[42.7991,9.2037],[42.7116,9.284],[42.6118,9.3309],[42.5064,9.3412],[42.4027,9.3141],[42.3076,9.2515],[42.2278,9.1576],[42.1686,9.0389],[42.134,8.9034],[42.1264,8.7604],[42.1464,8.6196],[42.1926,8.4907],[42.2617,8.3823],[42.3492,8.3019],[42.449,8.255],[42.5544,8.2448],[42.6582,8.2719],[42.7532,8.3345],[42.8331,8.4284],[42.8923,8.5471],[42.9269,8.6826]]}
+    ],
+    "fixes": {
+        "LFKC": [42.53042,8.79298],
+        "CERIL": [43.00558,9.13521],
+        "DANIF": [42.70696,8.92013],
+        "AJO": [41.7705,8.77467,"ajaccio"],
+        "DUHUS": [42.33059,8.78817],
+        "TUZOG": [42.72239,8.11106],
+        "EGAJE": [42.60175,8.53962],
+        "EDEKA": [43.03662,8.54595],
+        "TUVOM": [42.7185,8.7012],
+        "_RWY1804DME": [42.60771,8.79158],
+        "_RWY3604DME": [42.45549,8.79464]
+    },
+    "runways": [
+        {"name":["18","36"],"end":[[42.5411,8.79292,"63ft"],[42.5221,8.7933,"198ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "CERIL2F": {"icao":"CERIL2F","name":"Ceril Two Foxtrot","rwy":{"LFKC18":["_RWY3604DME"],"LFKC36":["_RWY1804DME"]},"body":[],"exitPoints":{"CERIL":["CERIL"]},"draw":[["LFKC","CERIL*"]]},
+        "AJO1E": {"icao":"AJO1E","name":"Ajaccio One Echo","rwy":{"LFKC18":["_RWY3604DME"],"LFKC36":["_RWY1804DME"]},"body":[],"exitPoints":{"AJO":["AJO"]},"draw":[["LFKC","AJO*"]]},
+        "TUZOG3F": {"icao":"TUZOG3F","name":"Tuzog Three Foxtrot","rwy":{"LFKC18":["_RWY3604DME"],"LFKC36":["_RWY1804DME"]},"body":[],"exitPoints":{"TUZOG":["TUZOG"]},"draw":[["LFKC","TUZOG*"]]},
+        "EDEKA1C": {"icao":"EDEKA1C","name":"Edeka One Charlie","rwy":{"LFKC18":["_RWY3604DME"],"LFKC36":["_RWY1804DME"]},"body":[],"exitPoints":{"EDEKA":["EDEKA"]},"draw":[["LFKC","EDEKA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LFKC","destination":"LFPO","category":"departure","route":"LFKC36.EDEKA1C.EDEKA","altitude":"","speed":"","method":"random","rate":0.74,"airlines":[["afr/a319",1],["afr/a320",1],["ccm/a319",1]]},
+        {"origin":"LFKC","destination":"EDDK","category":"departure","route":"LFKC36.EDEKA1C.EDEKA","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["ber/b737",1],["gwi/a319",1]]},
+        {"origin":"LFKC","destination":"EDJA","category":"departure","route":"LFKC36.CERIL2F.CERIL","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["ber/a320",1],["nly/a320",1]]},
+        {"origin":"LFKC","destination":"LFML","category":"departure","route":"LFKC36.TUZOG3F.TUZOG","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["aza/at72",1],["ccm/at72",1]]},
+        {"origin":"LFKC","destination":"LFMN","category":"departure","route":"LFKC36.TUZOG3F.TUZOG","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["aza/at72",1],["ccm/at72",1]]},
+        {"origin":"LFKC","destination":"","category":"departure","route":"LFKC36.CERIL2F.CERIL","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["ber/a320",1],["nly/a320",1]]},
+        {"origin":"LFKC","destination":"","category":"departure","route":"LFKC36.TUZOG3F.TUZOG","altitude":"","speed":"","method":"random","rate":0.74,"airlines":[["voe/b712",2],["hop/e170",1]]},
+        {"origin":"LFKC","destination":"","category":"departure","route":"LFKC36.EDEKA1C.EDEKA","altitude":"","speed":"","method":"random","rate":0.74,"airlines":[["afr/a320",1],["ber/b737",1],["lgl/dh8d",1]]},
+        {"origin":"LFKC","destination":"","category":"departure","route":"LFKC36.EDEKA1C.EDEKA","altitude":"","speed":"","method":"random","rate":1.55,"airlines":[["f/c172",6],["f/p28a",5],["f/c182",3],["f/be36",2],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",1],["f/e50p",1],["f/c550",1],["f/e55p",1],["f/cl30",1],["f/c680",1],["f/h25b",1],["f/lj45",1],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]},
+        {"origin":"LFPO","destination":"LFKC","category":"arrival","route":"EDEKA..TUVOM..LFKC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.74,"airlines":[["afr/a319",1],["afr/a320",1],["ccm/a319",1]]},
+        {"origin":"EDDK","destination":"LFKC","category":"arrival","route":"EDEKA..TUVOM..LFKC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.49,"airlines":[["ber/b737",1],["gwi/a319",1]]},
+        {"origin":"EDJA","destination":"LFKC","category":"arrival","route":"CERIL..DANIF..LFKC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.49,"airlines":[["ber/a320",1],["nly/a320",1]]},
+        {"origin":"LFML","destination":"LFKC","category":"arrival","route":"TUZOG..EGAJE..LFKC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.49,"airlines":[["aza/at72",1],["ccm/at72",1]]},
+        {"origin":"LFMN","destination":"LFKC","category":"arrival","route":"TUZOG..EGAJE..LFKC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.49,"airlines":[["aza/at72",1],["ccm/at72",1]]},
+        {"origin":"","destination":"LFKC","category":"arrival","route":"CERIL..DANIF..LFKC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.49,"airlines":[["ber/a320",1],["nly/a320",1]]},
+        {"origin":"","destination":"LFKC","category":"arrival","route":"TUZOG..EGAJE..LFKC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.74,"airlines":[["voe/b712",2],["hop/e170",1]]},
+        {"origin":"","destination":"LFKC","category":"arrival","route":"EDEKA..TUVOM..LFKC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.74,"airlines":[["afr/a320",1],["ber/b737",1],["lgl/dh8d",1]]},
+        {"origin":"","destination":"LFKC","category":"arrival","route":"EDEKA..TUVOM..LFKC","altitude":[4000,7000],"speed":250,"method":"random","rate":1.55,"airlines":[["f/c172",6],["f/p28a",5],["f/c182",3],["f/be36",2],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",1],["f/e50p",1],["f/c550",1],["f/e55p",1],["f/cl30",1],["f/c680",1],["f/h25b",1],["f/lj45",1],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [43.0056,9.1352,42.707,8.9201],
+            [42.707,8.9201,42.5304,8.793],
+            [41.7705,8.7747,42.3306,8.7882],
+            [42.3306,8.7882,42.5304,8.793],
+            [42.7224,8.1111,42.6017,8.5396],
+            [42.6017,8.5396,42.5304,8.793],
+            [43.0366,8.546,42.7185,8.7012],
+            [42.7185,8.7012,42.5304,8.793]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [42.5411,8.7929,42.7076,8.7896],
+            [42.6242,8.7777,42.6245,8.8048],
+            [42.7075,8.776,42.7078,8.8032],
+            [42.5221,8.7933,42.3556,8.7967],
+            [42.439,8.8085,42.4387,8.7814],
+            [42.3557,8.8102,42.3554,8.7831]
+        ]}
+    ]
+}

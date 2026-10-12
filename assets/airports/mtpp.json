@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/MTPP/",
+    "info": {"country":"HT","city":"Port-au-Prince","type":"large_airport","longestRunwayM":3040,"frequencies":{"atis":"132.075","twr":"118.300"}},
+    "radio": {"twr":"Toussaint Louverture Tower","app":"Toussaint Louverture Approach","dep":"Toussaint Louverture Departure"},
+    "icao": "MTPP",
+    "iata": "PAP",
+    "magnetic_north": -10.9,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [18.580023,-72.292596,"122ft"],
+    "rangeRings": {"enabled":true,"center":[18.580023,-72.292596],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":80,"speed":6},
+    "arrivalRunway": "10",
+    "departureRunway": "10",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[18.9774,-72.3733],[18.9837,-72.2621],[18.9624,-72.1529],[18.9151,-72.0532],[18.845,-71.9699],[18.7568,-71.9085],[18.6565,-71.8734],[18.5511,-71.8667],[18.4476,-71.8892],[18.3531,-71.9391],[18.2741,-72.0131],[18.216,-72.1061],[18.1826,-72.2119],[18.1764,-72.3231],[18.1976,-72.4323],[18.2449,-72.532],[18.3151,-72.6153],[18.4033,-72.6767],[18.5035,-72.7118],[18.609,-72.7185],[18.7124,-72.696],[18.8069,-72.6461],[18.8859,-72.5721],[18.9441,-72.4791]]}
+    ],
+    "fixes": {
+        "MTPP": [18.58002,-72.2926],
+        "RAWHI": [18.96645,-71.89778],
+        "AVEMO": [18.72359,-72.14591],
+        "TOCIM": [18.50403,-71.73077],
+        "NELPU": [18.55179,-72.08386],
+        "JALUJ": [18.14943,-72.63276],
+        "LATEG": [18.42004,-72.41898],
+        "JEBBU": [18.97973,-72.67241],
+        "ZEDGU": [18.72853,-72.43371],
+        "_RWY1004DME": [18.57562,-72.37708],
+        "_RWY2804DME": [18.58446,-72.20802]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[18.5793,-72.3069,"79ft"],[18.5808,-72.2782,"122ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "RAWHI2E": {"icao":"RAWHI2E","name":"Rawhi Two Echo","rwy":{"MTPP10":["_RWY2804DME"],"MTPP28":["_RWY1004DME"]},"body":[],"exitPoints":{"RAWHI":["RAWHI"]},"draw":[["MTPP","RAWHI*"]]},
+        "TOCIM3C": {"icao":"TOCIM3C","name":"Tocim Three Charlie","rwy":{"MTPP10":["_RWY2804DME"],"MTPP28":["_RWY1004DME"]},"body":[],"exitPoints":{"TOCIM":["TOCIM"]},"draw":[["MTPP","TOCIM*"]]},
+        "JALUJ1B": {"icao":"JALUJ1B","name":"Jaluj One Bravo","rwy":{"MTPP10":["_RWY2804DME"],"MTPP28":["_RWY1004DME"]},"body":[],"exitPoints":{"JALUJ":["JALUJ"]},"draw":[["MTPP","JALUJ*"]]},
+        "JEBBU1F": {"icao":"JEBBU1F","name":"Jebbu One Foxtrot","rwy":{"MTPP10":["_RWY2804DME"],"MTPP28":["_RWY1004DME"]},"body":[],"exitPoints":{"JEBBU":["JEBBU"]},"draw":[["MTPP","JEBBU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"MTPP","destination":"KMIA","category":"departure","route":"MTPP10.JEBBU1F.JEBBU","altitude":"","speed":"","method":"random","rate":2.22,"airlines":[["aal/b738",2],["aal/b752",2],["aal/b763",2],["afr/a320",2],["dal/a320",2]]},
+        {"origin":"MTPP","destination":"KFLL","category":"departure","route":"MTPP10.JEBBU1F.JEBBU","altitude":"","speed":"","method":"random","rate":0.89,"airlines":[["aal/b738",2],["jbu/a320",1],["nks/a319",1]]},
+        {"origin":"MTPP","destination":"KJFK","category":"departure","route":"MTPP10.JEBBU1F.JEBBU","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["aal/b763",1],["dal/b738",1],["jbu/a320",1]]},
+        {"origin":"MTPP","destination":"TFFR","category":"departure","route":"MTPP10.TOCIM3C.TOCIM","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["afr/a320",2],["fwi/at72",1]]},
+        {"origin":"MTPP","destination":"MPTO","category":"departure","route":"MTPP10.JALUJ1B.JALUJ","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["cmp/b737",1],["cmp/b738",1]]},
+        {"origin":"MTPP","destination":"","category":"departure","route":"MTPP10.RAWHI2E.RAWHI","altitude":"","speed":"","method":"random","rate":0.22,"airlines":[["fwi/a333",1]]},
+        {"origin":"MTPP","destination":"","category":"departure","route":"MTPP10.TOCIM3C.TOCIM","altitude":"","speed":"","method":"random","rate":0.22,"airlines":[["fwi/a333",1]]},
+        {"origin":"MTPP","destination":"","category":"departure","route":"MTPP10.JEBBU1F.JEBBU","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["aca/b763",1],["dal/a320",1]]},
+        {"origin":"KMIA","destination":"MTPP","category":"arrival","route":"JEBBU..ZEDGU..MTPP","altitude":[4000,7000],"speed":250,"method":"random","rate":2.22,"airlines":[["aal/b738",2],["aal/b752",2],["aal/b763",2],["afr/a320",2],["dal/a320",2]]},
+        {"origin":"KFLL","destination":"MTPP","category":"arrival","route":"JEBBU..ZEDGU..MTPP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.89,"airlines":[["aal/b738",2],["jbu/a320",1],["nks/a319",1]]},
+        {"origin":"KJFK","destination":"MTPP","category":"arrival","route":"JEBBU..ZEDGU..MTPP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.67,"airlines":[["aal/b763",1],["dal/b738",1],["jbu/a320",1]]},
+        {"origin":"TFFR","destination":"MTPP","category":"arrival","route":"TOCIM..NELPU..MTPP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.67,"airlines":[["afr/a320",2],["fwi/at72",1]]},
+        {"origin":"MPTO","destination":"MTPP","category":"arrival","route":"JALUJ..LATEG..MTPP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["cmp/b737",1],["cmp/b738",1]]},
+        {"origin":"","destination":"MTPP","category":"arrival","route":"RAWHI..AVEMO..MTPP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.22,"airlines":[["fwi/a333",1]]},
+        {"origin":"","destination":"MTPP","category":"arrival","route":"TOCIM..NELPU..MTPP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.22,"airlines":[["fwi/a333",1]]},
+        {"origin":"","destination":"MTPP","category":"arrival","route":"JEBBU..ZEDGU..MTPP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["aca/b763",1],["dal/a320",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [18.9664,-71.8978,18.7236,-72.1459],
+            [18.7236,-72.1459,18.58,-72.2926],
+            [18.504,-71.7308,18.5518,-72.0839],
+            [18.5518,-72.0839,18.58,-72.2926],
+            [18.1494,-72.6328,18.42,-72.419],
+            [18.42,-72.419,18.58,-72.2926],
+            [18.9797,-72.6724,18.7285,-72.4337],
+            [18.7285,-72.4337,18.58,-72.2926]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [18.5793,-72.3069,18.57,-72.4823],
+            [18.5647,-72.394,18.5847,-72.3952],
+            [18.5601,-72.4818,18.58,-72.4829],
+            [18.5808,-72.2782,18.5899,-72.1027],
+            [18.5953,-72.1911,18.5754,-72.1899],
+            [18.5999,-72.1033,18.5799,-72.1022]
+        ]}
+    ]
+}

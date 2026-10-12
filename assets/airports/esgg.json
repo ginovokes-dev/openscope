@@ -1,0 +1,91 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ESGG/",
+    "info": {"country":"SE","city":"Goteborg","type":"large_airport","longestRunwayM":3299,"frequencies":{"atis":"118.375","twr":"118.600"}},
+    "radio": {"twr":"Goteborg Tower","app":"Goteborg Approach","dep":"Goteborg Departure"},
+    "icao": "ESGG",
+    "iata": "GOT",
+    "magnetic_north": 5.3,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [57.6628,12.2798,"506ft"],
+    "rangeRings": {"enabled":true,"center":[57.6628,12.2798],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":200,"speed":7},
+    "arrivalRunway": "21",
+    "departureRunway": "21",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[58.2001,12.373],[58.1689,12.6298],[58.1032,12.8627],[58.0075,13.0559],[57.8883,13.1963],[57.7537,13.2741],[57.613,13.2843],[57.4756,13.2259],[57.351,13.1031],[57.2476,12.9242],[57.1726,12.7013],[57.1309,12.4498],[57.1255,12.1866],[57.1567,11.9298],[57.2224,11.6969],[57.3181,11.5037],[57.4373,11.3633],[57.5719,11.2855],[57.7126,11.2753],[57.85,11.3337],[57.9746,11.4565],[58.078,11.6354],[58.153,11.8583],[58.1947,12.1098]]}
+    ],
+    "fixes": {
+        "ESGG": [57.6628,12.2798],
+        "JON": [57.7604,14.0654,"jonkoping"],
+        "MIGTA": [57.6882,12.74444],
+        "IWEGU": [57.20269,13.28124],
+        "UZEZE": [57.50001,12.6341],
+        "TURKU": [57.04316,11.64667],
+        "ABIPA": [57.44357,12.0558],
+        "TOFUG": [58.3508,11.98242],
+        "IKASU": [57.90621,12.17459],
+        "_RWY0304DME": [57.58958,12.21333],
+        "_RWY2104DME": [57.736,12.34649]
+    },
+    "runways": [
+        {"name":["03","21"],"end":[[57.6495,12.2677,"478ft"],[57.6761,12.2919,"506ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "JON3A": {"icao":"JON3A","name":"Jonkoping Three Alpha","rwy":{"ESGG03":["_RWY2104DME"],"ESGG21":["_RWY0304DME"]},"body":[],"exitPoints":{"JON":["JON"]},"draw":[["ESGG","JON*"]]},
+        "IWEGU3B": {"icao":"IWEGU3B","name":"Iwegu Three Bravo","rwy":{"ESGG03":["_RWY2104DME"],"ESGG21":["_RWY0304DME"]},"body":[],"exitPoints":{"IWEGU":["IWEGU"]},"draw":[["ESGG","IWEGU*"]]},
+        "TURKU1B": {"icao":"TURKU1B","name":"Turku One Bravo","rwy":{"ESGG03":["_RWY2104DME"],"ESGG21":["_RWY0304DME"]},"body":[],"exitPoints":{"TURKU":["TURKU"]},"draw":[["ESGG","TURKU*"]]},
+        "TOFUG2F": {"icao":"TOFUG2F","name":"Tofug Two Foxtrot","rwy":{"ESGG03":["_RWY2104DME"],"ESGG21":["_RWY0304DME"]},"body":[],"exitPoints":{"TOFUG":["TOFUG"]},"draw":[["ESGG","TOFUG*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ESGG","destination":"ESSA","category":"departure","route":"ESGG21.JON3A.JON","altitude":"","speed":"","method":"random","rate":1.01,"airlines":[["sas/b737",2],["lbt/a320",1],["nax/b738",1],["sas/b712",1],["sas/b736",1],["sas/b738",1]]},
+        {"origin":"ESGG","destination":"EGLL","category":"departure","route":"ESGG21.TURKU1B.TURKU","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["baw/a319",1],["baw/a320",1],["baw/a321",1],["sas/b736",1],["sas/b737",1],["sas/b738",1]]},
+        {"origin":"ESGG","destination":"EDDF","category":"departure","route":"ESGG21.TURKU1B.TURKU","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["dlh/a319",1],["dlh/a320",1],["dlh/a321",1],["dlh/b733",1]]},
+        {"origin":"ESGG","destination":"EKCH","category":"departure","route":"ESGG21.TURKU1B.TURKU","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["sas/a319",1],["sas/a320",1],["sas/a321",1],["sas/crj9",1]]},
+        {"origin":"ESGG","destination":"EBBR","category":"departure","route":"ESGG21.TURKU1B.TURKU","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["dat/a319",1],["dat/dh8d",1],["dat/rj1h",1]]},
+        {"origin":"ESGG","destination":"LTFM","category":"departure","route":"ESGG21.IWEGU3B.IWEGU","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["sas/b739",1],["thy/b738",1],["thy/b739",1]]},
+        {"origin":"ESGG","destination":"","category":"departure","route":"ESGG21.JON3A.JON","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["bti/dh8d",1],["fin/a319",1],["fin/a320",1],["scw/rj1h",1],["scw/rj85",1]]},
+        {"origin":"ESGG","destination":"","category":"departure","route":"ESGG21.IWEGU3B.IWEGU","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["ira/a306",1],["sas/b738",1]]},
+        {"origin":"ESGG","destination":"","category":"departure","route":"ESGG21.TURKU1B.TURKU","altitude":"","speed":"","method":"random","rate":1.88,"airlines":[["nax/b738",6],["afr/e170",1],["afr/e190",1],["hop/e145",1],["sas/a320",1],["sas/b738",1],["vlg/a320",1],["klm/e190",1],["klm/e170",1]]},
+        {"origin":"ESGG","destination":"","category":"departure","route":"ESGG21.TOFUG2F.TOFUG","altitude":"","speed":"","method":"random","rate":0.14,"airlines":[["wif/dh8c",1]]},
+        {"origin":"ESGG","destination":"","category":"departure","route":"ESGG21.TURKU1B.TURKU","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["se/c172",6],["se/p28a",5],["se/c182",3],["se/be36",2],["se/da42",1],["se/tb20",1],["se/c208",2],["se/pc12",2],["se/be20",1],["se/b350",1],["se/p180",1],["se/c510",1],["se/e50p",1],["se/c550",2],["se/e55p",1],["se/cl30",1],["se/c680",1],["se/h25b",1],["se/lj45",1],["se/f2th",1],["se/glf4",1],["se/glex",1],["se/glf5",1]]},
+        {"origin":"ESGG","destination":"","category":"departure","route":"ESGG21.JON3A.JON","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["se/c172",6],["se/p28a",5],["se/c182",3],["se/be36",2],["se/da42",1],["se/tb20",1],["se/c208",2],["se/pc12",2],["se/be20",1],["se/b350",1],["se/p180",1],["se/c510",1],["se/e50p",1],["se/c550",2],["se/e55p",1],["se/cl30",1],["se/c680",1],["se/h25b",1],["se/lj45",1],["se/f2th",1],["se/glf4",1],["se/glex",1],["se/glf5",1]]},
+        {"origin":"ESSA","destination":"ESGG","category":"arrival","route":"JON..MIGTA..ESGG","altitude":[6000,9000],"speed":250,"method":"random","rate":1.01,"airlines":[["sas/b737",2],["lbt/a320",1],["nax/b738",1],["sas/b712",1],["sas/b736",1],["sas/b738",1]]},
+        {"origin":"EGLL","destination":"ESGG","category":"arrival","route":"TURKU..ABIPA..ESGG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.87,"airlines":[["baw/a319",1],["baw/a320",1],["baw/a321",1],["sas/b736",1],["sas/b737",1],["sas/b738",1]]},
+        {"origin":"EDDF","destination":"ESGG","category":"arrival","route":"TURKU..ABIPA..ESGG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.58,"airlines":[["dlh/a319",1],["dlh/a320",1],["dlh/a321",1],["dlh/b733",1]]},
+        {"origin":"EKCH","destination":"ESGG","category":"arrival","route":"TURKU..ABIPA..ESGG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.58,"airlines":[["sas/a319",1],["sas/a320",1],["sas/a321",1],["sas/crj9",1]]},
+        {"origin":"EBBR","destination":"ESGG","category":"arrival","route":"TURKU..ABIPA..ESGG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["dat/a319",1],["dat/dh8d",1],["dat/rj1h",1]]},
+        {"origin":"LTFM","destination":"ESGG","category":"arrival","route":"IWEGU..UZEZE..ESGG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["sas/b739",1],["thy/b738",1],["thy/b739",1]]},
+        {"origin":"","destination":"ESGG","category":"arrival","route":"JON..MIGTA..ESGG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.72,"airlines":[["bti/dh8d",1],["fin/a319",1],["fin/a320",1],["scw/rj1h",1],["scw/rj85",1]]},
+        {"origin":"","destination":"ESGG","category":"arrival","route":"IWEGU..UZEZE..ESGG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.29,"airlines":[["ira/a306",1],["sas/b738",1]]},
+        {"origin":"","destination":"ESGG","category":"arrival","route":"TURKU..ABIPA..ESGG","altitude":[6000,9000],"speed":250,"method":"random","rate":1.88,"airlines":[["nax/b738",6],["afr/e170",1],["afr/e190",1],["hop/e145",1],["sas/a320",1],["sas/b738",1],["vlg/a320",1],["klm/e190",1],["klm/e170",1]]},
+        {"origin":"","destination":"ESGG","category":"arrival","route":"TOFUG..IKASU..ESGG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.14,"airlines":[["wif/dh8c",1]]},
+        {"origin":"","destination":"ESGG","category":"arrival","route":"TURKU..ABIPA..ESGG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["se/c172",6],["se/p28a",5],["se/c182",3],["se/be36",2],["se/da42",1],["se/tb20",1],["se/c208",2],["se/pc12",2],["se/be20",1],["se/b350",1],["se/p180",1],["se/c510",1],["se/e50p",1],["se/c550",2],["se/e55p",1],["se/cl30",1],["se/c680",1],["se/h25b",1],["se/lj45",1],["se/f2th",1],["se/glf4",1],["se/glex",1],["se/glf5",1]]},
+        {"origin":"","destination":"ESGG","category":"arrival","route":"JON..MIGTA..ESGG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["se/c172",6],["se/p28a",5],["se/c182",3],["se/be36",2],["se/da42",1],["se/tb20",1],["se/c208",2],["se/pc12",2],["se/be20",1],["se/b350",1],["se/p180",1],["se/c510",1],["se/e50p",1],["se/c550",2],["se/e55p",1],["se/cl30",1],["se/c680",1],["se/h25b",1],["se/lj45",1],["se/f2th",1],["se/glf4",1],["se/glex",1],["se/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [57.7604,14.0654,57.6882,12.7444],
+            [57.6882,12.7444,57.6628,12.2798],
+            [57.2027,13.2812,57.5,12.6341],
+            [57.5,12.6341,57.6628,12.2798],
+            [57.0432,11.6467,57.4436,12.0558],
+            [57.4436,12.0558,57.6628,12.2798],
+            [58.3508,11.9824,57.9062,12.1746],
+            [57.9062,12.1746,57.6628,12.2798]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [57.6495,12.2677,57.4997,12.1321],
+            [57.5702,12.2165,57.579,12.183],
+            [57.4953,12.1488,57.504,12.1154],
+            [57.6761,12.2919,57.8258,12.4287],
+            [57.7553,12.3433,57.7466,12.377],
+            [57.8302,12.4118,57.8214,12.4456]
+        ]}
+    ]
+}

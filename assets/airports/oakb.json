@@ -1,0 +1,85 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/OAKB/",
+    "info": {"country":"AF","city":"Kabul","type":"large_airport","longestRunwayM":3500,"frequencies":{"twr":"129.400","app":"131.600","gnd":"120.300"}},
+    "radio": {"twr":"Kabul Tower","app":"Kabul Approach","dep":"Kabul Departure"},
+    "icao": "OAKB",
+    "iata": "KBL",
+    "magnetic_north": 3.4,
+    "ctr_radius": 60,
+    "ctr_ceiling": 15000,
+    "initial_alt": 10000,
+    "position": [34.565899,69.212303,"5877ft"],
+    "rangeRings": {"enabled":true,"center":[34.565899,69.212303],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":310,"speed":9},
+    "arrivalRunway": "29",
+    "departureRunway": "29",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":150,"airspace_class":"C","poly":[[35.1045,69.2512],[35.0779,69.4191],[35.0164,69.573],[34.9241,69.7023],[34.8075,69.7982],[34.6744,69.8542],[34.5339,69.8664],[34.3956,69.8341],[34.2689,69.7593],[34.1624,69.6473],[34.0834,69.5057],[34.0373,69.3441],[34.0273,69.1734],[34.0539,69.0055],[34.1154,68.8516],[34.2076,68.7223],[34.3243,68.6264],[34.4574,68.5704],[34.5979,68.5582],[34.7362,68.5905],[34.8629,68.6653],[34.9694,68.7773],[35.0484,68.9189],[35.0945,69.0805]]}
+    ],
+    "fixes": {
+        "OAKB": [34.5659,69.2123],
+        "PC": [33.9054,70.0724,"parachinar"],
+        "GULUN": [34.39551,69.43418],
+        "REHAW": [34.13908,68.52915],
+        "HAHNA": [34.41489,68.97061],
+        "FODBO": [34.73147,68.37868],
+        "KOGCU": [34.62448,68.91737],
+        "EJEGI": [35.26998,69.14681],
+        "UKAMI": [34.815,69.18913],
+        "_RWY1104DME": [34.59024,69.11729],
+        "_RWY2904DME": [34.54324,69.30032]
+    },
+    "runways": [
+        {"name":["11","29"],"end":[[34.57043,69.19455,"5869ft"],[34.5631,69.22311,"5872ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "PC3D": {"icao":"PC3D","name":"Parachinar Three Delta","rwy":{"OAKB11":["_RWY2904DME"],"OAKB29":["_RWY1104DME"]},"body":[],"exitPoints":{"PC":["PC"]},"draw":[["OAKB","PC*"]]},
+        "REHAW1F": {"icao":"REHAW1F","name":"Rehaw One Foxtrot","rwy":{"OAKB11":["_RWY2904DME"],"OAKB29":["_RWY1104DME"]},"body":[],"exitPoints":{"REHAW":["REHAW"]},"draw":[["OAKB","REHAW*"]]},
+        "FODBO3A": {"icao":"FODBO3A","name":"Fodbo Three Alpha","rwy":{"OAKB11":["_RWY2904DME"],"OAKB29":["_RWY1104DME"]},"body":[],"exitPoints":{"FODBO":["FODBO"]},"draw":[["OAKB","FODBO*"]]},
+        "EJEGI3B": {"icao":"EJEGI3B","name":"Ejegi Three Bravo","rwy":{"OAKB11":["_RWY2904DME"],"OAKB29":["_RWY1104DME"]},"body":[],"exitPoints":{"EJEGI":["EJEGI"]},"draw":[["OAKB","EJEGI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"OAKB","destination":"OMDB","category":"departure","route":"OAKB29.REHAW1F.REHAW","altitude":"","speed":"","method":"random","rate":1.54,"airlines":[["afg/b734",1],["fdb/b738",1],["kmf/a320",1],["kmf/md87",1],["uae/a345",1]]},
+        {"origin":"OAKB","destination":"VIDP","category":"departure","route":"OAKB29.PC3D.PC","altitude":"","speed":"","method":"random","rate":1.54,"airlines":[["afg/b734",1],["aic/a320",1],["kmf/a320",1],["kmf/md82",1],["sej/b737",1]]},
+        {"origin":"OAKB","destination":"LTAC","category":"departure","route":"OAKB29.FODBO3A.FODBO","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["afg/b734",1]]},
+        {"origin":"OAKB","destination":"LTFM","category":"departure","route":"OAKB29.FODBO3A.FODBO","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["thy/a332",1]]},
+        {"origin":"OAKB","destination":"OAHR","category":"departure","route":"OAKB29.FODBO3A.FODBO","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["afg/b734",1]]},
+        {"origin":"OAKB","destination":"","category":"departure","route":"OAKB29.PC3D.PC","altitude":"","speed":"","method":"random","rate":0.61,"airlines":[["pia/at72",1],["pia/at45",1],["pia/at75",1]]},
+        {"origin":"OAKB","destination":"","category":"departure","route":"OAKB29.REHAW1F.REHAW","altitude":"","speed":"","method":"random","rate":0.61,"airlines":[["afg/b734",1],["fdb/b738",1]]},
+        {"origin":"OAKB","destination":"","category":"departure","route":"OAKB29.FODBO3A.FODBO","altitude":"","speed":"","method":"random","rate":1.23,"airlines":[["afg/b734",2],["irc/f100",2]]},
+        {"origin":"OAKB","destination":"","category":"departure","route":"OAKB29.EJEGI3B.EJEGI","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["kmf/md87",1]]},
+        {"origin":"OMDB","destination":"OAKB","category":"arrival","route":"REHAW..HAHNA..OAKB","altitude":[11000,14000],"speed":250,"method":"random","rate":1.54,"airlines":[["afg/b734",1],["fdb/b738",1],["kmf/a320",1],["kmf/md87",1],["uae/a345",1]]},
+        {"origin":"VIDP","destination":"OAKB","category":"arrival","route":"PC..GULUN..OAKB","altitude":[11000,14000],"speed":250,"method":"random","rate":1.54,"airlines":[["afg/b734",1],["aic/a320",1],["kmf/a320",1],["kmf/md82",1],["sej/b737",1]]},
+        {"origin":"LTAC","destination":"OAKB","category":"arrival","route":"FODBO..KOGCU..OAKB","altitude":[11000,14000],"speed":250,"method":"random","rate":0.31,"airlines":[["afg/b734",1]]},
+        {"origin":"LTFM","destination":"OAKB","category":"arrival","route":"FODBO..KOGCU..OAKB","altitude":[11000,14000],"speed":250,"method":"random","rate":0.31,"airlines":[["thy/a332",1]]},
+        {"origin":"OAHR","destination":"OAKB","category":"arrival","route":"FODBO..KOGCU..OAKB","altitude":[11000,14000],"speed":250,"method":"random","rate":0.31,"airlines":[["afg/b734",1]]},
+        {"origin":"","destination":"OAKB","category":"arrival","route":"PC..GULUN..OAKB","altitude":[11000,14000],"speed":250,"method":"random","rate":0.61,"airlines":[["pia/at72",1],["pia/at45",1],["pia/at75",1]]},
+        {"origin":"","destination":"OAKB","category":"arrival","route":"REHAW..HAHNA..OAKB","altitude":[11000,14000],"speed":250,"method":"random","rate":0.61,"airlines":[["afg/b734",1],["fdb/b738",1]]},
+        {"origin":"","destination":"OAKB","category":"arrival","route":"FODBO..KOGCU..OAKB","altitude":[11000,14000],"speed":250,"method":"random","rate":1.23,"airlines":[["afg/b734",2],["irc/f100",2]]},
+        {"origin":"","destination":"OAKB","category":"arrival","route":"EJEGI..UKAMI..OAKB","altitude":[11000,14000],"speed":250,"method":"random","rate":0.31,"airlines":[["kmf/md87",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [33.9054,70.0724,34.3955,69.4342],
+            [34.3955,69.4342,34.5659,69.2123],
+            [34.1391,68.5292,34.4149,68.9706],
+            [34.4149,68.9706,34.5659,69.2123],
+            [34.7315,68.3787,34.6245,68.9174],
+            [34.6245,68.9174,34.5659,69.2123],
+            [35.27,69.1468,34.815,69.1891],
+            [34.815,69.1891,34.5659,69.2123]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [34.5704,69.1946,34.6199,69.0013],
+            [34.5856,69.0944,34.6047,69.1016],
+            [34.6103,68.9977,34.6294,69.005],
+            [34.5631,69.2231,34.5134,69.4161],
+            [34.5478,69.3232,34.5287,69.316],
+            [34.5229,69.4197,34.5038,69.4125]
+        ]}
+    ]
+}

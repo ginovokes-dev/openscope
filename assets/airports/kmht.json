@@ -1,0 +1,91 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KMHT/",
+    "info": {"country":"US","city":"Manchester","type":"medium_airport","longestRunwayM":2824,"frequencies":{"atis":"119.550","twr":"121.300","gnd":"121.900"}},
+    "radio": {"twr":"Manchester Tower","app":"Manchester Approach","dep":"Manchester Departure"},
+    "icao": "KMHT",
+    "iata": "MHT",
+    "magnetic_north": -14,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [42.932598,-71.435699,"266ft"],
+    "rangeRings": {"enabled":true,"center":[42.932598,-71.435699],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":150,"speed":10},
+    "arrivalRunway": "17",
+    "departureRunway": "17",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[43.3253,-71.5694],[43.3372,-71.4261],[43.3216,-71.2833],[43.2795,-71.151],[43.2137,-71.0381],[43.1288,-70.9523],[43.0305,-70.8994],[42.9255,-70.883],[42.821,-70.9044],[42.7242,-70.9619],[42.6415,-71.0517],[42.5786,-71.1677],[42.5399,-71.302],[42.528,-71.4453],[42.5436,-71.5881],[42.5857,-71.7204],[42.6515,-71.8333],[42.7364,-71.9191],[42.8347,-71.972],[42.9397,-71.9884],[43.0441,-71.967],[43.141,-71.9095],[43.2237,-71.8197],[43.2866,-71.7037]]}
+    ],
+    "fixes": {
+        "KMHT": [42.9326,-71.4357],
+        "LC": [43.5367,-71.537,"blnap"],
+        "CO": [43.1188,-71.4524,"epsom"],
+        "ESG": [43.2201,-70.8283,"rollins"],
+        "BUGKI": [43.04111,-71.20645],
+        "BOS": [42.3574,-70.9895,"boston"],
+        "IDUTA": [42.75881,-71.30088],
+        "GDM": [42.546,-72.0582,"gardner"],
+        "AS": [42.8234,-71.6021,"chern"],
+        "EEN": [42.7943,-72.2918,"keene"],
+        "UTEHI": [42.88954,-71.70227],
+        "_RWY1704DME": [43.00207,-71.47535],
+        "_RWY3504DME": [42.85951,-71.3909],
+        "_RWY0604DME": [42.88054,-71.50843],
+        "_RWY2404DME": [42.99202,-71.36965]
+    },
+    "runways": [
+        {"name":["17","35"],"end":[[42.94095,-71.4391,"218ft"],[42.92064,-71.42706,"265ft"]],"ils":[true,true]},
+        {"name":["06","24"],"end":[[42.9298,-71.44719,"220ft"],[42.9428,-71.431,"238ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "LC1C": {"icao":"LC1C","name":"Blnap One Charlie","rwy":{"KMHT17":["_RWY3504DME"],"KMHT35":["_RWY1704DME"],"KMHT06":["_RWY2404DME"],"KMHT24":["_RWY0604DME"]},"body":[],"exitPoints":{"LC":["LC"]},"draw":[["KMHT","LC*"]]},
+        "ESG1B": {"icao":"ESG1B","name":"Rollins One Bravo","rwy":{"KMHT17":["_RWY3504DME"],"KMHT35":["_RWY1704DME"],"KMHT06":["_RWY2404DME"],"KMHT24":["_RWY0604DME"]},"body":[],"exitPoints":{"ESG":["ESG"]},"draw":[["KMHT","ESG*"]]},
+        "BOS1D": {"icao":"BOS1D","name":"Boston One Delta","rwy":{"KMHT17":["_RWY3504DME"],"KMHT35":["_RWY1704DME"],"KMHT06":["_RWY2404DME"],"KMHT24":["_RWY0604DME"]},"body":[],"exitPoints":{"BOS":["BOS"]},"draw":[["KMHT","BOS*"]]},
+        "GDM2E": {"icao":"GDM2E","name":"Gardner Two Echo","rwy":{"KMHT17":["_RWY3504DME"],"KMHT35":["_RWY1704DME"],"KMHT06":["_RWY2404DME"],"KMHT24":["_RWY0604DME"]},"body":[],"exitPoints":{"GDM":["GDM"]},"draw":[["KMHT","GDM*"]]},
+        "EEN3B": {"icao":"EEN3B","name":"Keene Three Bravo","rwy":{"KMHT17":["_RWY3504DME"],"KMHT35":["_RWY1704DME"],"KMHT06":["_RWY2404DME"],"KMHT24":["_RWY0604DME"]},"body":[],"exitPoints":{"EEN":["EEN"]},"draw":[["KMHT","EEN*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KMHT","destination":"KBWI","category":"departure","route":"KMHT17.GDM2E.GDM","altitude":"","speed":"","method":"random","rate":1.21,"airlines":[["swa/b733",2],["swa/b738",2],["swa/b737",1]]},
+        {"origin":"KMHT","destination":"KMCO","category":"departure","route":"KMHT17.GDM2E.GDM","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["swa/b738",2],["swa/b737",1]]},
+        {"origin":"KMHT","destination":"KDCA","category":"departure","route":"KMHT17.GDM2E.GDM","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["aal/crj7",1],["aal/crj9",1],["aal/crj2",1]]},
+        {"origin":"KMHT","destination":"KMDW","category":"departure","route":"KMHT17.EEN3B.EEN","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["swa/b737",1],["swa/b738",1]]},
+        {"origin":"KMHT","destination":"KTPA","category":"departure","route":"KMHT17.GDM2E.GDM","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["swa/b737",1],["swa/b738",1]]},
+        {"origin":"KMHT","destination":"","category":"departure","route":"KMHT17.GDM2E.GDM","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["dal/a320",1],["dal/e145",1],["aal/crj7",1],["aal/crj9",1],["aal/crj2",1],["dal/e135",1]]},
+        {"origin":"KMHT","destination":"","category":"departure","route":"KMHT17.EEN3B.EEN","altitude":"","speed":"","method":"random","rate":0.24,"airlines":[["dal/e145",1],["dal/e135",1]]},
+        {"origin":"KMHT","destination":"","category":"departure","route":"KMHT17.EEN3B.EEN","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KBWI","destination":"KMHT","category":"arrival","route":"GDM..AS..KMHT","altitude":[4000,7000],"speed":250,"method":"random","rate":1.21,"airlines":[["swa/b733",2],["swa/b738",2],["swa/b737",1]]},
+        {"origin":"KMCO","destination":"KMHT","category":"arrival","route":"GDM..AS..KMHT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["swa/b738",2],["swa/b737",1]]},
+        {"origin":"KDCA","destination":"KMHT","category":"arrival","route":"GDM..AS..KMHT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["aal/crj7",1],["aal/crj9",1],["aal/crj2",1]]},
+        {"origin":"KMDW","destination":"KMHT","category":"arrival","route":"EEN..UTEHI..KMHT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["swa/b737",1],["swa/b738",1]]},
+        {"origin":"KTPA","destination":"KMHT","category":"arrival","route":"GDM..AS..KMHT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["swa/b737",1],["swa/b738",1]]},
+        {"origin":"","destination":"KMHT","category":"arrival","route":"GDM..AS..KMHT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["dal/a320",1],["dal/e145",1],["aal/crj7",1],["aal/crj9",1],["aal/crj2",1],["dal/e135",1]]},
+        {"origin":"","destination":"KMHT","category":"arrival","route":"EEN..UTEHI..KMHT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.24,"airlines":[["dal/e145",1],["dal/e135",1]]},
+        {"origin":"","destination":"KMHT","category":"arrival","route":"EEN..UTEHI..KMHT","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [43.5367,-71.537,43.1188,-71.4524],
+            [43.1188,-71.4524,42.9326,-71.4357],
+            [43.2201,-70.8283,43.0411,-71.2065],
+            [43.0411,-71.2065,42.9326,-71.4357],
+            [42.3574,-70.9895,42.7588,-71.3009],
+            [42.7588,-71.3009,42.9326,-71.4357],
+            [42.546,-72.0582,42.8234,-71.6021],
+            [42.8234,-71.6021,42.9326,-71.4357],
+            [42.7943,-72.2918,42.8895,-71.7023],
+            [42.8895,-71.7023,42.9326,-71.4357]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [42.941,-71.4391,43.0937,-71.5299],
+            [43.0134,-71.497,43.0213,-71.4719],
+            [43.0897,-71.5424,43.0977,-71.5173],
+            [42.9206,-71.4271,42.7678,-71.3368],
+            [42.8482,-71.3694,42.8402,-71.3944],
+            [42.7718,-71.3243,42.7638,-71.3493]
+        ]}
+    ]
+}

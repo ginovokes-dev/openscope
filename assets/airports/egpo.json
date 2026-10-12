@@ -1,0 +1,74 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGPO/",
+    "info": {"country":"GB","city":"Stornoway","type":"medium_airport","longestRunwayM":2200,"frequencies":{"atis":"115.100","twr":"119.480","app":"119.480"}},
+    "radio": {"twr":"Stornoway Tower","app":"Stornoway Approach","dep":"Stornoway Radar"},
+    "icao": "EGPO",
+    "iata": "SYY",
+    "magnetic_north": -2.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [58.215599,-6.33111,"26ft"],
+    "rangeRings": {"enabled":true,"center":[58.215599,-6.33111],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":170,"speed":11},
+    "arrivalRunway": "18",
+    "departureRunway": "18",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[58.62,-6.3593],[58.6101,-6.1596],[58.5733,-5.9716],[58.5121,-5.8081],[58.4307,-5.6802],[58.3346,-5.5968],[58.2304,-5.5633],[58.1253,-5.5822],[58.0262,-5.6521],[57.9401,-5.7683],[57.8728,-5.9228],[57.8288,-6.1052],[57.8112,-6.303],[57.8211,-6.5026],[57.8579,-6.6906],[57.9191,-6.8541],[58.0005,-6.982],[58.0966,-7.0655],[58.2008,-7.0989],[58.3059,-7.08],[58.405,-7.0101],[58.4911,-6.8939],[58.5584,-6.7394],[58.6024,-6.557]]}
+    ],
+    "fixes": {
+        "EGPO": [58.2156,-6.33111],
+        "WACUF": [58.71113,-5.93367],
+        "PETDA": [58.39971,-6.18345],
+        "BADHA": [58.00626,-5.39033],
+        "VEBES": [58.13782,-5.98157],
+        "BEN": [57.4779,-7.3653,"benbecula"],
+        "BALES": [58.05482,-6.55651],
+        "ODEWE": [58.42494,-7.27189],
+        "ZAVNI": [58.29338,-6.68065],
+        "_RWY1804DME": [58.29061,-6.34541],
+        "_RWY3604DME": [58.13951,-6.31657],
+        "_RWY0604DME": [58.17925,-6.44578],
+        "_RWY2404DME": [58.24926,-6.21086]
+    },
+    "runways": [
+        {"name":["18","36"],"end":[[58.22432,-6.33273,"16ft"],[58.2058,-6.3292,"15ft"]],"ils":[true,true]},
+        {"name":["06","24"],"end":[[58.2121,-6.33581,"26ft"],[58.2165,-6.32105,"21ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "WACUF3B": {"icao":"WACUF3B","name":"Wacuf Three Bravo","rwy":{"EGPO18":["_RWY3604DME"],"EGPO36":["_RWY1804DME"],"EGPO06":["_RWY2404DME"],"EGPO24":["_RWY0604DME"]},"body":[],"exitPoints":{"WACUF":["WACUF"]},"draw":[["EGPO","WACUF*"]]},
+        "BADHA1A": {"icao":"BADHA1A","name":"Badha One Alpha","rwy":{"EGPO18":["_RWY3604DME"],"EGPO36":["_RWY1804DME"],"EGPO06":["_RWY2404DME"],"EGPO24":["_RWY0604DME"]},"body":[],"exitPoints":{"BADHA":["BADHA"]},"draw":[["EGPO","BADHA*"]]},
+        "BEN2B": {"icao":"BEN2B","name":"Benbecula Two Bravo","rwy":{"EGPO18":["_RWY3604DME"],"EGPO36":["_RWY1804DME"],"EGPO06":["_RWY2404DME"],"EGPO24":["_RWY0604DME"]},"body":[],"exitPoints":{"BEN":["BEN"]},"draw":[["EGPO","BEN*"]]},
+        "ODEWE2C": {"icao":"ODEWE2C","name":"Odewe Two Charlie","rwy":{"EGPO18":["_RWY3604DME"],"EGPO36":["_RWY1804DME"],"EGPO06":["_RWY2404DME"],"EGPO24":["_RWY0604DME"]},"body":[],"exitPoints":{"ODEWE":["ODEWE"]},"draw":[["EGPO","ODEWE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGPO","destination":"EGPD","category":"departure","route":"EGPO18.BADHA1A.BADHA","altitude":"","speed":"","method":"random","rate":2.24,"airlines":[["eze/js41",1]]},
+        {"origin":"EGPO","destination":"","category":"departure","route":"EGPO18.BADHA1A.BADHA","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]},
+        {"origin":"EGPD","destination":"EGPO","category":"arrival","route":"BADHA..VEBES..EGPO","altitude":[4000,7000],"speed":250,"method":"random","rate":2.24,"airlines":[["eze/js41",1]]},
+        {"origin":"","destination":"EGPO","category":"arrival","route":"BADHA..VEBES..EGPO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.75,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [58.7111,-5.9337,58.3997,-6.1834],
+            [58.3997,-6.1834,58.2156,-6.3311],
+            [58.0063,-5.3903,58.1378,-5.9816],
+            [58.1378,-5.9816,58.2156,-6.3311],
+            [57.4779,-7.3653,58.0548,-6.5565],
+            [58.0548,-6.5565,58.2156,-6.3311],
+            [58.4249,-7.2719,58.2934,-6.6806],
+            [58.2934,-6.6806,58.2156,-6.3311]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [58.2243,-6.3327,58.39,-6.3645],
+            [58.3062,-6.3675,58.3082,-6.3297],
+            [58.389,-6.3835,58.391,-6.3456],
+            [58.2058,-6.3292,58.0401,-6.2977],
+            [58.1239,-6.2946,58.1219,-6.3323],
+            [58.0411,-6.2789,58.0391,-6.3165]
+        ]}
+    ]
+}

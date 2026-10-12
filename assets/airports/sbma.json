@@ -1,0 +1,79 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SBMA/",
+    "info": {"country":"BR","city":"Maraba","type":"medium_airport","longestRunwayM":2012},
+    "radio": {"twr":"Maraba Tower","app":"Maraba Approach","dep":"Maraba Departure"},
+    "icao": "SBMA",
+    "iata": "MAB",
+    "magnetic_north": -20.9,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-5.36859,-49.138,"357ft"],
+    "rangeRings": {"enabled":true,"center":[-5.36859,-49.138],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":80,"speed":9},
+    "arrivalRunway": "07",
+    "departureRunway": "07",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-4.9905,-49.283],[-4.966,-49.1798],[-4.969,-49.0737],[-4.9992,-48.972],[-5.0545,-48.8816],[-5.1313,-48.8087],[-5.2242,-48.7583],[-5.327,-48.7337],[-5.4326,-48.7366],[-5.5338,-48.767],[-5.6238,-48.8226],[-5.6964,-48.8997],[-5.7467,-48.993],[-5.7711,-49.0962],[-5.7682,-49.2023],[-5.738,-49.304],[-5.6827,-49.3944],[-5.6059,-49.4673],[-5.513,-49.5177],[-5.4102,-49.5423],[-5.3046,-49.5394],[-5.2033,-49.509],[-5.1134,-49.4534],[-5.0408,-49.3763]]}
+    ],
+    "fixes": {
+        "SBMA": [-5.36859,-49.138],
+        "KALAT": [-4.83791,-49.04953],
+        "HIMTO": [-5.17142,-49.10513],
+        "LERAJ": [-5.34995,-48.59802],
+        "UWOHO": [-5.36166,-48.93737],
+        "SUVUC": [-5.89189,-49.01281],
+        "OZIRE": [-5.56302,-49.09149],
+        "DILHO": [-5.72202,-49.54533],
+        "LINIL": [-5.4999,-49.28934],
+        "_RWY0704DME": [-5.4174,-49.19615],
+        "_RWY2504DME": [-5.31982,-49.07997]
+    },
+    "runways": [
+        {"name":["07","25"],"end":[[-5.37444,-49.145,"355ft"],[-5.36278,-49.13111,"332ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "KALAT1A": {"icao":"KALAT1A","name":"Kalat One Alpha","rwy":{"SBMA07":["_RWY2504DME"],"SBMA25":["_RWY0704DME"]},"body":[],"exitPoints":{"KALAT":["KALAT"]},"draw":[["SBMA","KALAT*"]]},
+        "LERAJ1D": {"icao":"LERAJ1D","name":"Leraj One Delta","rwy":{"SBMA07":["_RWY2504DME"],"SBMA25":["_RWY0704DME"]},"body":[],"exitPoints":{"LERAJ":["LERAJ"]},"draw":[["SBMA","LERAJ*"]]},
+        "SUVUC2F": {"icao":"SUVUC2F","name":"Suvuc Two Foxtrot","rwy":{"SBMA07":["_RWY2504DME"],"SBMA25":["_RWY0704DME"]},"body":[],"exitPoints":{"SUVUC":["SUVUC"]},"draw":[["SBMA","SUVUC*"]]},
+        "DILHO1A": {"icao":"DILHO1A","name":"Dilho One Alpha","rwy":{"SBMA07":["_RWY2504DME"],"SBMA25":["_RWY0704DME"]},"body":[],"exitPoints":{"DILHO":["DILHO"]},"draw":[["SBMA","DILHO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SBMA","destination":"SBBE","category":"departure","route":"SBMA07.KALAT1A.KALAT","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["azu/at72",1],["glo/b737",1],["tam/a320",1]]},
+        {"origin":"SBMA","destination":"SBBR","category":"departure","route":"SBMA07.SUVUC2F.SUVUC","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["azu/e190",1],["glo/b737",1],["tam/a320",1]]},
+        {"origin":"SBMA","destination":"SBCJ","category":"departure","route":"SBMA07.DILHO1A.DILHO","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["azu/e190",1]]},
+        {"origin":"SBMA","destination":"SBTU","category":"departure","route":"SBMA07.KALAT1A.KALAT","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["azu/at72",1]]},
+        {"origin":"SBMA","destination":"","category":"departure","route":"SBMA07.SUVUC2F.SUVUC","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["azu/at72",1]]},
+        {"origin":"SBMA","destination":"","category":"departure","route":"SBMA07.KALAT1A.KALAT","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"SBBE","destination":"SBMA","category":"arrival","route":"KALAT..HIMTO..SBMA","altitude":[4000,7000],"speed":250,"method":"random","rate":1.17,"airlines":[["azu/at72",1],["glo/b737",1],["tam/a320",1]]},
+        {"origin":"SBBR","destination":"SBMA","category":"arrival","route":"SUVUC..OZIRE..SBMA","altitude":[4000,7000],"speed":250,"method":"random","rate":1.17,"airlines":[["azu/e190",1],["glo/b737",1],["tam/a320",1]]},
+        {"origin":"SBCJ","destination":"SBMA","category":"arrival","route":"DILHO..LINIL..SBMA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.39,"airlines":[["azu/e190",1]]},
+        {"origin":"SBTU","destination":"SBMA","category":"arrival","route":"KALAT..HIMTO..SBMA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.39,"airlines":[["azu/at72",1]]},
+        {"origin":"","destination":"SBMA","category":"arrival","route":"SUVUC..OZIRE..SBMA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.39,"airlines":[["azu/at72",1]]},
+        {"origin":"","destination":"SBMA","category":"arrival","route":"KALAT..HIMTO..SBMA","altitude":[4000,7000],"speed":250,"method":"random","rate":1.17,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-4.8379,-49.0495,-5.1714,-49.1051],
+            [-5.1714,-49.1051,-5.3686,-49.138],
+            [-5.3499,-48.598,-5.3617,-48.9374],
+            [-5.3617,-48.9374,-5.3686,-49.138],
+            [-5.8919,-49.0128,-5.563,-49.0915],
+            [-5.563,-49.0915,-5.3686,-49.138],
+            [-5.722,-49.5453,-5.4999,-49.2893],
+            [-5.4999,-49.2893,-5.3686,-49.138]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-5.3744,-49.145,-5.4818,-49.2729],
+            [-5.4358,-49.2025,-5.4205,-49.2154],
+            [-5.4895,-49.2664,-5.4742,-49.2794],
+            [-5.3628,-49.1311,-5.2554,-49.0033],
+            [-5.3014,-49.0737,-5.3167,-49.0607],
+            [-5.2477,-49.0097,-5.263,-48.9968]
+        ]}
+    ]
+}

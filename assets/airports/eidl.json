@@ -1,0 +1,69 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EIDL/",
+    "info": {"country":"IE","city":"Donegal","type":"medium_airport","longestRunwayM":1496,"frequencies":{"atis":"129.925","twr":"129.800","gnd":"129.800"}},
+    "radio": {"twr":"Donegal Tower","app":"Donegal Approach","dep":"Donegal Radar"},
+    "icao": "EIDL",
+    "iata": "CFN",
+    "magnetic_north": -2.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [55.044201,-8.341,"30ft"],
+    "rangeRings": {"enabled":true,"center":[55.044201,-8.341],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":230,"speed":11},
+    "arrivalRunway": "20",
+    "departureRunway": "20",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[55.4485,-8.3706],[55.4391,-8.1869],[55.4028,-8.0138],[55.3421,-7.8629],[55.261,-7.7446],[55.1652,-7.667],[55.0611,-7.6353],[54.9559,-7.6517],[54.8567,-7.715],[54.7703,-7.8211],[54.7025,-7.9625],[54.658,-8.1298],[54.6399,-8.3114],[54.6493,-8.4951],[54.6856,-8.6682],[54.7463,-8.8191],[54.8274,-8.9374],[54.9232,-9.015],[55.0273,-9.0467],[55.1325,-9.0303],[55.2317,-8.967],[55.3181,-8.8609],[55.3859,-8.7195],[55.4304,-8.5522]]}
+    ],
+    "fixes": {
+        "EIDL": [55.0442,-8.341],
+        "POSOV": [55.26987,-7.48871],
+        "MOWCU": [55.12805,-8.02434],
+        "EKN": [54.3942,-7.64337,"enniskillen"],
+        "EMIVA": [54.87395,-8.15827],
+        "TALSI": [54.81853,-9.19329],
+        "NUFOS": [54.96036,-8.65766],
+        "LAROD": [55.53251,-8.73488],
+        "UPASU": [55.22563,-8.48734],
+        "_RWY0203DME": [54.99269,-8.37407],
+        "_RWY2003DME": [55.0957,-8.30793]
+    },
+    "runways": [
+        {"name":["02","20"],"end":[[55.03959,-8.344,"10ft"],[55.04881,-8.33807,"30ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "POSOV1A": {"icao":"POSOV1A","name":"Posov One Alpha","rwy":{"EIDL02":["_RWY2003DME"],"EIDL20":["_RWY0203DME"]},"body":[],"exitPoints":{"POSOV":["POSOV"]},"draw":[["EIDL","POSOV*"]]},
+        "EKN3C": {"icao":"EKN3C","name":"Enniskillen Three Charlie","rwy":{"EIDL02":["_RWY2003DME"],"EIDL20":["_RWY0203DME"]},"body":[],"exitPoints":{"EKN":["EKN"]},"draw":[["EIDL","EKN*"]]},
+        "TALSI1A": {"icao":"TALSI1A","name":"Talsi One Alpha","rwy":{"EIDL02":["_RWY2003DME"],"EIDL20":["_RWY0203DME"]},"body":[],"exitPoints":{"TALSI":["TALSI"]},"draw":[["EIDL","TALSI*"]]},
+        "LAROD2A": {"icao":"LAROD2A","name":"Larod Two Alpha","rwy":{"EIDL02":["_RWY2003DME"],"EIDL20":["_RWY0203DME"]},"body":[],"exitPoints":{"LAROD":["LAROD"]},"draw":[["EIDL","LAROD*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EIDL","destination":"","category":"departure","route":"EIDL20.TALSI1A.TALSI","altitude":"","speed":"","method":"random","rate":4.5,"airlines":[["ei/c172",6],["ei/p28a",5],["ei/c182",3],["ei/be36",2],["ei/da42",1],["ei/tb20",1],["ei/c208",2],["ei/pc12",2],["ei/be20",1],["ei/b350",1],["ei/p180",1],["ei/c510",1],["ei/e50p",1],["ei/c550",1],["ei/e55p",1],["ei/c680",1],["ei/h25b",1],["ei/lj45",1],["ei/f2th",1],["ei/glf4",1],["ei/glex",1],["ei/glf5",1]]},
+        {"origin":"","destination":"EIDL","category":"arrival","route":"TALSI..NUFOS..EIDL","altitude":[4000,7000],"speed":250,"method":"random","rate":4.5,"airlines":[["ei/c172",6],["ei/p28a",5],["ei/c182",3],["ei/be36",2],["ei/da42",1],["ei/tb20",1],["ei/c208",2],["ei/pc12",2],["ei/be20",1],["ei/b350",1],["ei/p180",1],["ei/c510",1],["ei/e50p",1],["ei/c550",1],["ei/e55p",1],["ei/c680",1],["ei/h25b",1],["ei/lj45",1],["ei/f2th",1],["ei/glf4",1],["ei/glex",1],["ei/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [55.2699,-7.4887,55.128,-8.0243],
+            [55.128,-8.0243,55.0442,-8.341],
+            [54.3942,-7.6434,54.8739,-8.1583],
+            [54.8739,-8.1583,55.0442,-8.341],
+            [54.8185,-9.1933,54.9604,-8.6577],
+            [54.9604,-8.6577,55.0442,-8.341],
+            [55.5325,-8.7349,55.2256,-8.4873],
+            [55.2256,-8.4873,55.0442,-8.341]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [55.0396,-8.344,54.8832,-8.444],
+            [54.958,-8.3777,54.9649,-8.4104],
+            [54.8798,-8.4277,54.8867,-8.4603],
+            [55.0488,-8.3381,55.2051,-8.2373],
+            [55.1304,-8.3042,55.1235,-8.2714],
+            [55.2085,-8.2537,55.2016,-8.2209]
+        ]}
+    ]
+}

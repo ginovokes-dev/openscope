@@ -1,0 +1,85 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ZSYW/",
+    "info": {"country":"CN","city":"Yiwu","type":"large_airport","longestRunwayM":3008},
+    "radio": {"twr":"Yiwu Tower","app":"Yiwu Approach","dep":"Yiwu Departure"},
+    "icao": "ZSYW",
+    "iata": "YIW",
+    "magnetic_north": -5.8,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [29.342095,120.03116,"262ft"],
+    "rangeRings": {"enabled":true,"center":[29.342095,120.03116],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":40,"speed":7},
+    "arrivalRunway": "02",
+    "departureRunway": "02",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[29.7447,119.9842],[29.7416,120.1054],[29.7112,120.2215],[29.6557,120.3246],[29.5788,120.4077],[29.4858,120.4652],[29.383,120.493],[29.2774,120.4894],[29.1762,120.4546],[29.0863,120.3909],[29.0139,120.3027],[28.9638,120.196],[28.9395,120.0781],[28.9426,119.9569],[28.973,119.8409],[29.0285,119.7377],[29.1054,119.6546],[29.1984,119.5972],[29.3012,119.5693],[29.4068,119.5729],[29.508,119.6077],[29.5979,119.6714],[29.6703,119.7596],[29.7204,119.8663]]}
+    ],
+    "fixes": {
+        "ZSYW": [29.3421,120.03116],
+        "HGH": [30.24,120.458,"hangzhou"],
+        "LUVMO": [29.52674,120.11893],
+        "JUZIB": [29.09763,120.58086],
+        "GULID": [29.25127,120.2354],
+        "OCUBU": [28.93367,119.62954],
+        "MENDU": [29.19035,119.88194],
+        "TOL": [29.7633,119.658,"tonglu"],
+        "WOPKA": [29.50028,119.89102],
+        "_RWY0204DME": [29.26653,120.00289],
+        "_RWY2004DME": [29.41883,120.06025]
+    },
+    "runways": [
+        {"name":["02","20"],"end":[[29.32983,120.02671,"256ft"],[29.35553,120.03639,"256ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "HGH3A": {"icao":"HGH3A","name":"Hangzhou Three Alpha","rwy":{"ZSYW02":["_RWY2004DME"],"ZSYW20":["_RWY0204DME"]},"body":[],"exitPoints":{"HGH":["HGH"]},"draw":[["ZSYW","HGH*"]]},
+        "JUZIB1D": {"icao":"JUZIB1D","name":"Juzib One Delta","rwy":{"ZSYW02":["_RWY2004DME"],"ZSYW20":["_RWY0204DME"]},"body":[],"exitPoints":{"JUZIB":["JUZIB"]},"draw":[["ZSYW","JUZIB*"]]},
+        "OCUBU2D": {"icao":"OCUBU2D","name":"Ocubu Two Delta","rwy":{"ZSYW02":["_RWY2004DME"],"ZSYW20":["_RWY0204DME"]},"body":[],"exitPoints":{"OCUBU":["OCUBU"]},"draw":[["ZSYW","OCUBU*"]]},
+        "TOL3E": {"icao":"TOL3E","name":"Tonglu Three Echo","rwy":{"ZSYW02":["_RWY2004DME"],"ZSYW20":["_RWY0204DME"]},"body":[],"exitPoints":{"TOL":["TOL"]},"draw":[["ZSYW","TOL*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ZSYW","destination":"ZGGG","category":"departure","route":"ZSYW02.OCUBU2D.OCUBU","altitude":"","speed":"","method":"random","rate":0.96,"airlines":[["csn/a319",1],["csn/b738",1],["csn/e190",1]]},
+        {"origin":"ZSYW","destination":"ZBAA","category":"departure","route":"ZSYW02.TOL3E.TOL","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["cca/b738",1],["csn/b738",1]]},
+        {"origin":"ZSYW","destination":"ZGOW","category":"departure","route":"ZSYW02.OCUBU2D.OCUBU","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["csn/b738",1]]},
+        {"origin":"ZSYW","destination":"ZGSD","category":"departure","route":"ZSYW02.OCUBU2D.OCUBU","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["csn/b738",1]]},
+        {"origin":"ZSYW","destination":"ZHCC","category":"departure","route":"ZSYW02.TOL3E.TOL","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["csn/b738",1]]},
+        {"origin":"ZSYW","destination":"","category":"departure","route":"ZSYW02.HGH3A.HGH","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["csn/b738",2]]},
+        {"origin":"ZSYW","destination":"","category":"departure","route":"ZSYW02.OCUBU2D.OCUBU","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["csn/b738",2]]},
+        {"origin":"ZSYW","destination":"","category":"departure","route":"ZSYW02.TOL3E.TOL","altitude":"","speed":"","method":"random","rate":0.96,"airlines":[["cca/a319",1],["chh/b738",1],["csn/b738",1]]},
+        {"origin":"ZSYW","destination":"","category":"departure","route":"ZSYW02.HGH3A.HGH","altitude":"","speed":"","method":"random","rate":1.6,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",1],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
+        {"origin":"ZGGG","destination":"ZSYW","category":"arrival","route":"OCUBU..MENDU..ZSYW","altitude":[4000,7000],"speed":250,"method":"random","rate":0.96,"airlines":[["csn/a319",1],["csn/b738",1],["csn/e190",1]]},
+        {"origin":"ZBAA","destination":"ZSYW","category":"arrival","route":"TOL..WOPKA..ZSYW","altitude":[4000,7000],"speed":250,"method":"random","rate":0.64,"airlines":[["cca/b738",1],["csn/b738",1]]},
+        {"origin":"ZGOW","destination":"ZSYW","category":"arrival","route":"OCUBU..MENDU..ZSYW","altitude":[4000,7000],"speed":250,"method":"random","rate":0.32,"airlines":[["csn/b738",1]]},
+        {"origin":"ZGSD","destination":"ZSYW","category":"arrival","route":"OCUBU..MENDU..ZSYW","altitude":[4000,7000],"speed":250,"method":"random","rate":0.32,"airlines":[["csn/b738",1]]},
+        {"origin":"ZHCC","destination":"ZSYW","category":"arrival","route":"TOL..WOPKA..ZSYW","altitude":[4000,7000],"speed":250,"method":"random","rate":0.32,"airlines":[["csn/b738",1]]},
+        {"origin":"","destination":"ZSYW","category":"arrival","route":"HGH..LUVMO..ZSYW","altitude":[4000,7000],"speed":250,"method":"random","rate":0.64,"airlines":[["csn/b738",2]]},
+        {"origin":"","destination":"ZSYW","category":"arrival","route":"OCUBU..MENDU..ZSYW","altitude":[4000,7000],"speed":250,"method":"random","rate":0.64,"airlines":[["csn/b738",2]]},
+        {"origin":"","destination":"ZSYW","category":"arrival","route":"TOL..WOPKA..ZSYW","altitude":[4000,7000],"speed":250,"method":"random","rate":0.96,"airlines":[["cca/a319",1],["chh/b738",1],["csn/b738",1]]},
+        {"origin":"","destination":"ZSYW","category":"arrival","route":"HGH..LUVMO..ZSYW","altitude":[4000,7000],"speed":250,"method":"random","rate":1.6,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",1],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [30.24,120.458,29.5267,120.1189],
+            [29.5267,120.1189,29.3421,120.0312],
+            [29.0976,120.5809,29.2513,120.2354],
+            [29.2513,120.2354,29.3421,120.0312],
+            [28.9337,119.6295,29.1903,119.8819],
+            [29.1903,119.8819,29.3421,120.0312],
+            [29.7633,119.658,29.5003,119.891],
+            [29.5003,119.891,29.3421,120.0312]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [29.3298,120.0267,29.1716,119.9672],
+            [29.2476,120.0078,29.2538,119.9861],
+            [29.1685,119.9781,29.1747,119.9563],
+            [29.3555,120.0364,29.5138,120.0961],
+            [29.4378,120.0553,29.4315,120.0771],
+            [29.5169,120.0852,29.5106,120.107]
+        ]}
+    ]
+}

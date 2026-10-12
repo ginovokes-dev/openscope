@@ -1,0 +1,76 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EDLP/",
+    "info": {"country":"DE","city":"Buren","type":"large_airport","longestRunwayM":2180,"frequencies":{"atis":"125.730","twr":"133.380","gnd":"121.930"}},
+    "radio": {"twr":"Paderborn Lippstadt Tower","app":"Paderborn Lippstadt Approach","dep":"Paderborn Lippstadt Departure"},
+    "icao": "EDLP",
+    "iata": "PAD",
+    "magnetic_north": 3.7,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [51.612527,8.617459,"699ft"],
+    "rangeRings": {"enabled":true,"center":[51.612527,8.617459],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":220,"speed":6},
+    "arrivalRunway": "23",
+    "departureRunway": "23",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[52.0164,8.6595],[51.9959,8.8264],[51.9492,8.9791],[51.8796,9.1071],[51.7918,9.2017],[51.6918,9.2565],[51.5864,9.2678],[51.4828,9.2348],[51.388,9.1596],[51.3085,9.0476],[51.2497,8.9062],[51.2157,8.7452],[51.2087,8.5754],[51.2292,8.4085],[51.2758,8.2559],[51.3454,8.1279],[51.4332,8.0332],[51.5332,7.9784],[51.6386,7.9671],[51.7423,8.0002],[51.8371,8.0753],[51.9166,8.1873],[51.9753,8.3287],[52.0094,8.4898]]}
+    ],
+    "fixes": {
+        "EDLP": [51.61253,8.61746],
+        "LAU": [51.2043,9.69099,"lichtenau"],
+        "AFAWU": [51.50815,8.89194],
+        "GMH": [51.1705,7.89204,"germinghausen"],
+        "GIMUD": [51.47254,8.38773],
+        "OSN": [52.2001,8.28552,"osnabruck"],
+        "ZISJU": [51.80112,8.51091],
+        "_RWY0504DME": [51.57225,8.51342],
+        "_RWY2304DME": [51.65578,8.71952]
+    },
+    "runways": [
+        {"name":["05","23"],"end":[[51.6087,8.60318,"697ft"],[51.6194,8.62959,"673ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "LAU1E": {"icao":"LAU1E","name":"Lichtenau One Echo","rwy":{"EDLP05":["_RWY2304DME"],"EDLP23":["_RWY0504DME"]},"body":[],"exitPoints":{"LAU":["LAU"]},"draw":[["EDLP","LAU*"]]},
+        "GMH1D": {"icao":"GMH1D","name":"Germinghausen One Delta","rwy":{"EDLP05":["_RWY2304DME"],"EDLP23":["_RWY0504DME"]},"body":[],"exitPoints":{"GMH":["GMH"]},"draw":[["EDLP","GMH*"]]},
+        "OSN3C": {"icao":"OSN3C","name":"Osnabruck Three Charlie","rwy":{"EDLP05":["_RWY2304DME"],"EDLP23":["_RWY0504DME"]},"body":[],"exitPoints":{"OSN":["OSN"]},"draw":[["EDLP","OSN*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EDLP","destination":"LEPA","category":"departure","route":"EDLP23.GMH1D.GMH","altitude":"","speed":"","method":"random","rate":1.08,"airlines":[["ber/a320",1],["ber/b738",1],["cfg/a320",1]]},
+        {"origin":"EDLP","destination":"LTAI","category":"departure","route":"EDLP23.LAU1E.LAU","altitude":"","speed":"","method":"random","rate":1.08,"airlines":[["ber/b738",1],["cfg/a320",1],["sxs/b738",1]]},
+        {"origin":"EDLP","destination":"GCFV","category":"departure","route":"EDLP23.GMH1D.GMH","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["cfg/a320",1]]},
+        {"origin":"EDLP","destination":"GCLP","category":"departure","route":"EDLP23.GMH1D.GMH","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["cfg/a320",1]]},
+        {"origin":"EDLP","destination":"GCRR","category":"departure","route":"EDLP23.GMH1D.GMH","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["cfg/a320",1]]},
+        {"origin":"EDLP","destination":"","category":"departure","route":"EDLP23.GMH1D.GMH","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["ber/b738",1],["cfg/a320",1]]},
+        {"origin":"EDLP","destination":"","category":"departure","route":"EDLP23.GMH1D.GMH","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["d/c172",6],["d/p28a",5],["d/c182",3],["d/be36",2],["d/da42",1],["d/tb20",1],["d/c208",2],["d/pc12",2],["d/be20",1],["d/b350",1],["d/p180",1],["d/c510",1],["d/e50p",1],["d/c550",1],["d/e55p",1],["d/cl30",1],["d/c680",1],["d/h25b",1],["d/lj45",1],["d/f2th",1],["d/glf4",1],["d/glex",1],["d/glf5",1]]},
+        {"origin":"LEPA","destination":"EDLP","category":"arrival","route":"GMH..GIMUD..EDLP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.08,"airlines":[["ber/a320",1],["ber/b738",1],["cfg/a320",1]]},
+        {"origin":"LTAI","destination":"EDLP","category":"arrival","route":"LAU..AFAWU..EDLP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.08,"airlines":[["ber/b738",1],["cfg/a320",1],["sxs/b738",1]]},
+        {"origin":"GCFV","destination":"EDLP","category":"arrival","route":"GMH..GIMUD..EDLP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["cfg/a320",1]]},
+        {"origin":"GCLP","destination":"EDLP","category":"arrival","route":"GMH..GIMUD..EDLP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["cfg/a320",1]]},
+        {"origin":"GCRR","destination":"EDLP","category":"arrival","route":"GMH..GIMUD..EDLP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["cfg/a320",1]]},
+        {"origin":"","destination":"EDLP","category":"arrival","route":"GMH..GIMUD..EDLP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["ber/b738",1],["cfg/a320",1]]},
+        {"origin":"","destination":"EDLP","category":"arrival","route":"GMH..GIMUD..EDLP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["d/c172",6],["d/p28a",5],["d/c182",3],["d/be36",2],["d/da42",1],["d/tb20",1],["d/c208",2],["d/pc12",2],["d/be20",1],["d/b350",1],["d/p180",1],["d/c510",1],["d/e50p",1],["d/c550",1],["d/e55p",1],["d/cl30",1],["d/c680",1],["d/h25b",1],["d/lj45",1],["d/f2th",1],["d/glf4",1],["d/glex",1],["d/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [51.2043,9.691,51.5082,8.8919],
+            [51.5082,8.8919,51.6125,8.6175],
+            [51.1705,7.892,51.4725,8.3877],
+            [51.4725,8.3877,51.6125,8.6175],
+            [52.2001,8.2855,51.8011,8.5109],
+            [51.8011,8.5109,51.6125,8.6175]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [51.6087,8.6032,51.5174,8.379],
+            [51.5548,8.4998,51.5715,8.4822],
+            [51.5091,8.3878,51.5258,8.3703],
+            [51.6194,8.6296,51.7102,8.8547],
+            [51.6732,8.7332,51.6565,8.7508],
+            [51.7186,8.8459,51.7019,8.8635]
+        ]}
+    ]
+}

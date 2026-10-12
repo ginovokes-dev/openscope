@@ -1,0 +1,76 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SBPS/",
+    "info": {"country":"BR","city":"Porto Seguro","type":"large_airport","longestRunwayM":2000,"frequencies":{"twr":"118.200"}},
+    "radio": {"twr":"Porto Seguro Tower","app":"Porto Seguro Approach","dep":"Porto Seguro Departure"},
+    "icao": "SBPS",
+    "iata": "BPS",
+    "magnetic_north": -23.6,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-16.438426,-39.080584,"169ft"],
+    "rangeRings": {"enabled":true,"center":[-16.438426,-39.080584],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":120,"speed":11},
+    "arrivalRunway": "10",
+    "departureRunway": "10",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-16.0676,-39.2495],[-16.0383,-39.1437],[-16.0363,-39.0336],[-16.0616,-38.9266],[-16.1127,-38.8302],[-16.1859,-38.7508],[-16.2764,-38.6939],[-16.3779,-38.6634],[-16.4835,-38.6613],[-16.5861,-38.6877],[-16.6786,-38.741],[-16.7547,-38.8173],[-16.8093,-38.9117],[-16.8386,-39.0175],[-16.8406,-39.1276],[-16.8152,-39.2345],[-16.7642,-39.331],[-16.6909,-39.4103],[-16.6004,-39.4672],[-16.4989,-39.4978],[-16.3933,-39.4999],[-16.2908,-39.4734],[-16.1983,-39.4202],[-16.1221,-39.3438]]}
+    ],
+    "fixes": {
+        "SBPS": [-16.43843,-39.08058],
+        "IVUHA": [-15.91192,-38.96555],
+        "TUHJU": [-16.24281,-39.03785],
+        "TUTPO": [-16.69577,-38.58806],
+        "OCUDE": [-16.53404,-38.89759],
+        "GALIH": [-16.81664,-39.47942],
+        "PATED": [-16.57895,-39.22877],
+        "_RWY1004DME": [-16.45853,-39.15446],
+        "_RWY2804DME": [-16.41831,-39.00641]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[-16.44038,-39.08763,"169ft"],[-16.43647,-39.07323,"156ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "IVUHA1C": {"icao":"IVUHA1C","name":"Ivuha One Charlie","rwy":{"SBPS10":["_RWY2804DME"],"SBPS28":["_RWY1004DME"]},"body":[],"exitPoints":{"IVUHA":["IVUHA"]},"draw":[["SBPS","IVUHA*"]]},
+        "TUTPO1D": {"icao":"TUTPO1D","name":"Tutpo One Delta","rwy":{"SBPS10":["_RWY2804DME"],"SBPS28":["_RWY1004DME"]},"body":[],"exitPoints":{"TUTPO":["TUTPO"]},"draw":[["SBPS","TUTPO*"]]},
+        "GALIH3B": {"icao":"GALIH3B","name":"Galih Three Bravo","rwy":{"SBPS10":["_RWY2804DME"],"SBPS28":["_RWY1004DME"]},"body":[],"exitPoints":{"GALIH":["GALIH"]},"draw":[["SBPS","GALIH*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SBPS","destination":"SBCF","category":"departure","route":"SBPS10.GALIH3B.GALIH","altitude":"","speed":"","method":"random","rate":1.41,"airlines":[["azu/e190",1],["tam/a319",1],["tam/a320",1]]},
+        {"origin":"SBPS","destination":"SBGR","category":"departure","route":"SBPS10.GALIH3B.GALIH","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["tam/a320",1]]},
+        {"origin":"SBPS","destination":"SBKP","category":"departure","route":"SBPS10.GALIH3B.GALIH","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["azu/e190",1]]},
+        {"origin":"SBPS","destination":"SBRJ","category":"departure","route":"SBPS10.GALIH3B.GALIH","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["azu/e190",1]]},
+        {"origin":"SBPS","destination":"","category":"departure","route":"SBPS10.IVUHA1C.IVUHA","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["azu/at72",1]]},
+        {"origin":"SBPS","destination":"","category":"departure","route":"SBPS10.GALIH3B.GALIH","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["tam/a320",1]]},
+        {"origin":"SBPS","destination":"","category":"departure","route":"SBPS10.TUTPO1D.TUTPO","altitude":"","speed":"","method":"random","rate":1.25,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"SBCF","destination":"SBPS","category":"arrival","route":"GALIH..PATED..SBPS","altitude":[4000,7000],"speed":250,"method":"random","rate":1.41,"airlines":[["azu/e190",1],["tam/a319",1],["tam/a320",1]]},
+        {"origin":"SBGR","destination":"SBPS","category":"arrival","route":"GALIH..PATED..SBPS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.47,"airlines":[["tam/a320",1]]},
+        {"origin":"SBKP","destination":"SBPS","category":"arrival","route":"GALIH..PATED..SBPS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.47,"airlines":[["azu/e190",1]]},
+        {"origin":"SBRJ","destination":"SBPS","category":"arrival","route":"GALIH..PATED..SBPS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.47,"airlines":[["azu/e190",1]]},
+        {"origin":"","destination":"SBPS","category":"arrival","route":"IVUHA..TUHJU..SBPS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.47,"airlines":[["azu/at72",1]]},
+        {"origin":"","destination":"SBPS","category":"arrival","route":"GALIH..PATED..SBPS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.47,"airlines":[["tam/a320",1]]},
+        {"origin":"","destination":"SBPS","category":"arrival","route":"TUTPO..OCUDE..SBPS","altitude":[4000,7000],"speed":250,"method":"random","rate":1.25,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-15.9119,-38.9656,-16.2428,-39.0378],
+            [-16.2428,-39.0378,-16.4384,-39.0806],
+            [-16.6958,-38.5881,-16.534,-38.8976],
+            [-16.534,-38.8976,-16.4384,-39.0806],
+            [-16.8166,-39.4794,-16.5789,-39.2288],
+            [-16.5789,-39.2288,-16.4384,-39.0806]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-16.4404,-39.0876,-16.4857,-39.2547],
+            [-16.4727,-39.1683,-16.4534,-39.174],
+            [-16.4953,-39.2519,-16.4761,-39.2576],
+            [-16.4365,-39.0732,-16.391,-38.9062],
+            [-16.4041,-38.9925,-16.4234,-38.9869],
+            [-16.3814,-38.909,-16.4006,-38.9034]
+        ]}
+    ]
+}

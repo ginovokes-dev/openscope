@@ -1,0 +1,93 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ENRY/",
+    "info": {"country":"NO","city":"Oslo","type":"medium_airport","longestRunwayM":2442,"frequencies":{"twr":"119.500","app":"122.100"}},
+    "radio": {"twr":"Oslo Tower","app":"Oslo Approach","dep":"Oslo Departure"},
+    "icao": "ENRY",
+    "iata": "",
+    "magnetic_north": 4.9,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [59.378817,10.785439,"174ft"],
+    "rangeRings": {"enabled":true,"center":[59.378817,10.785439],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":280,"speed":11},
+    "arrivalRunway": "30",
+    "departureRunway": "30",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[59.9164,10.8759],[59.8862,11.146],[59.8214,11.3915],[59.7264,11.5958],[59.6077,11.7448],[59.4734,11.8284],[59.3327,11.8409],[59.1952,11.7815],[59.0701,11.6543],[58.9661,11.4678],[58.8902,11.2348],[58.8476,10.9712],[58.8412,10.695],[58.8714,10.4249],[58.9363,10.1793],[59.0313,9.9751],[59.1499,9.8261],[59.2842,9.7425],[59.4249,9.73],[59.5625,9.7893],[59.6875,9.9166],[59.7916,10.1031],[59.8675,10.3361],[59.91,10.5997]]}
+    ],
+    "fixes": {
+        "ENRY": [59.37882,10.78544],
+        "UCETE": [59.12076,12.07589],
+        "NOZOG": [59.28752,11.24199],
+        "AJASE": [58.70553,11.20341],
+        "RUKGI": [59.14061,10.93332],
+        "EZIKO": [58.74918,10.1578],
+        "UNIHA": [59.15606,10.56338],
+        "SKI": [59.188,9.57029,"skien"],
+        "DA": [59.2619,10.257,"dalen"],
+        "GRM": [60.1918,11.0744,"gardermoen"],
+        "PUHOD": [59.62465,10.87282],
+        "_RWY1204DME": [59.41348,10.64913],
+        "_RWY3004DME": [59.34402,10.92144]
+    },
+    "runways": [
+        {"name":["12","30"],"end":[[59.3837,10.7662,"169ft"],[59.3739,10.8046,"169ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "UCETE3F": {"icao":"UCETE3F","name":"Ucete Three Foxtrot","rwy":{"ENRY12":["_RWY3004DME"],"ENRY30":["_RWY1204DME"]},"body":[],"exitPoints":{"UCETE":["UCETE"]},"draw":[["ENRY","UCETE*"]]},
+        "AJASE3E": {"icao":"AJASE3E","name":"Ajase Three Echo","rwy":{"ENRY12":["_RWY3004DME"],"ENRY30":["_RWY1204DME"]},"body":[],"exitPoints":{"AJASE":["AJASE"]},"draw":[["ENRY","AJASE*"]]},
+        "EZIKO1E": {"icao":"EZIKO1E","name":"Eziko One Echo","rwy":{"ENRY12":["_RWY3004DME"],"ENRY30":["_RWY1204DME"]},"body":[],"exitPoints":{"EZIKO":["EZIKO"]},"draw":[["ENRY","EZIKO*"]]},
+        "SKI3E": {"icao":"SKI3E","name":"Skien Three Echo","rwy":{"ENRY12":["_RWY3004DME"],"ENRY30":["_RWY1204DME"]},"body":[],"exitPoints":{"SKI":["SKI"]},"draw":[["ENRY","SKI*"]]},
+        "GRM3E": {"icao":"GRM3E","name":"Gardermoen Three Echo","rwy":{"ENRY12":["_RWY3004DME"],"ENRY30":["_RWY1204DME"]},"body":[],"exitPoints":{"GRM":["GRM"]},"draw":[["ENRY","GRM*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ENRY","destination":"LEAL","category":"departure","route":"ENRY30.EZIKO1E.EZIKO","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["nax/b738",1],["ryr/b738",1]]},
+        {"origin":"ENRY","destination":"LEMG","category":"departure","route":"ENRY30.EZIKO1E.EZIKO","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["nax/b738",1],["ryr/b738",1]]},
+        {"origin":"ENRY","destination":"EBCI","category":"departure","route":"ENRY30.EZIKO1E.EZIKO","altitude":"","speed":"","method":"random","rate":0.22,"airlines":[["ryr/b738",1]]},
+        {"origin":"ENRY","destination":"EDDB","category":"departure","route":"ENRY30.AJASE3E.AJASE","altitude":"","speed":"","method":"random","rate":0.22,"airlines":[["ryr/b738",1]]},
+        {"origin":"ENRY","destination":"EETN","category":"departure","route":"ENRY30.UCETE3F.UCETE","altitude":"","speed":"","method":"random","rate":0.22,"airlines":[["ryr/b738",1]]},
+        {"origin":"ENRY","destination":"EGCC","category":"departure","route":"ENRY30.SKI3E.SKI","altitude":"","speed":"","method":"random","rate":0.22,"airlines":[["ryr/b738",1]]},
+        {"origin":"ENRY","destination":"","category":"departure","route":"ENRY30.UCETE3F.UCETE","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["ryr/b738",4]]},
+        {"origin":"ENRY","destination":"","category":"departure","route":"ENRY30.AJASE3E.AJASE","altitude":"","speed":"","method":"random","rate":3.71,"airlines":[["ryr/b738",17]]},
+        {"origin":"ENRY","destination":"","category":"departure","route":"ENRY30.EZIKO1E.EZIKO","altitude":"","speed":"","method":"random","rate":1.31,"airlines":[["ryr/b738",6]]},
+        {"origin":"ENRY","destination":"","category":"departure","route":"ENRY30.SKI3E.SKI","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["ryr/b738",2]]},
+        {"origin":"ENRY","destination":"","category":"departure","route":"ENRY30.UCETE3F.UCETE","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["ln/c172",6],["ln/p28a",5],["ln/c182",3],["ln/be36",2],["ln/da42",1],["ln/tb20",1],["ln/c208",2],["ln/pc12",2],["ln/be20",1],["ln/b350",1],["ln/p180",1],["ln/c510",1],["ln/e50p",1],["ln/c550",2],["ln/e55p",1],["ln/cl30",1],["ln/c680",1],["ln/h25b",1],["ln/lj45",1],["ln/f2th",1],["ln/glf4",1],["ln/glex",1],["ln/glf5",1]]},
+        {"origin":"ENRY","destination":"","category":"departure","route":"ENRY30.GRM3E.GRM","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["ln/c172",6],["ln/p28a",5],["ln/c182",3],["ln/be36",2],["ln/da42",1],["ln/tb20",1],["ln/c208",2],["ln/pc12",2],["ln/be20",1],["ln/b350",1],["ln/p180",1],["ln/c510",1],["ln/e50p",1],["ln/c550",2],["ln/e55p",1],["ln/cl30",1],["ln/c680",1],["ln/h25b",1],["ln/lj45",1],["ln/f2th",1],["ln/glf4",1],["ln/glex",1],["ln/glf5",1]]},
+        {"origin":"LEAL","destination":"ENRY","category":"arrival","route":"EZIKO..UNIHA..ENRY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.44,"airlines":[["nax/b738",1],["ryr/b738",1]]},
+        {"origin":"LEMG","destination":"ENRY","category":"arrival","route":"EZIKO..UNIHA..ENRY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.44,"airlines":[["nax/b738",1],["ryr/b738",1]]},
+        {"origin":"EBCI","destination":"ENRY","category":"arrival","route":"EZIKO..UNIHA..ENRY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.22,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDDB","destination":"ENRY","category":"arrival","route":"AJASE..RUKGI..ENRY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.22,"airlines":[["ryr/b738",1]]},
+        {"origin":"EETN","destination":"ENRY","category":"arrival","route":"UCETE..NOZOG..ENRY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.22,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGCC","destination":"ENRY","category":"arrival","route":"SKI..DA..ENRY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.22,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"ENRY","category":"arrival","route":"UCETE..NOZOG..ENRY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.87,"airlines":[["ryr/b738",4]]},
+        {"origin":"","destination":"ENRY","category":"arrival","route":"AJASE..RUKGI..ENRY","altitude":[6000,9000],"speed":250,"method":"random","rate":3.71,"airlines":[["ryr/b738",17]]},
+        {"origin":"","destination":"ENRY","category":"arrival","route":"EZIKO..UNIHA..ENRY","altitude":[6000,9000],"speed":250,"method":"random","rate":1.31,"airlines":[["ryr/b738",6]]},
+        {"origin":"","destination":"ENRY","category":"arrival","route":"SKI..DA..ENRY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.44,"airlines":[["ryr/b738",2]]},
+        {"origin":"","destination":"ENRY","category":"arrival","route":"UCETE..NOZOG..ENRY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.55,"airlines":[["ln/c172",6],["ln/p28a",5],["ln/c182",3],["ln/be36",2],["ln/da42",1],["ln/tb20",1],["ln/c208",2],["ln/pc12",2],["ln/be20",1],["ln/b350",1],["ln/p180",1],["ln/c510",1],["ln/e50p",1],["ln/c550",2],["ln/e55p",1],["ln/cl30",1],["ln/c680",1],["ln/h25b",1],["ln/lj45",1],["ln/f2th",1],["ln/glf4",1],["ln/glex",1],["ln/glf5",1]]},
+        {"origin":"","destination":"ENRY","category":"arrival","route":"GRM..PUHOD..ENRY","altitude":[6000,9000],"speed":250,"method":"random","rate":0.55,"airlines":[["ln/c172",6],["ln/p28a",5],["ln/c182",3],["ln/be36",2],["ln/da42",1],["ln/tb20",1],["ln/c208",2],["ln/pc12",2],["ln/be20",1],["ln/b350",1],["ln/p180",1],["ln/c510",1],["ln/e50p",1],["ln/c550",2],["ln/e55p",1],["ln/cl30",1],["ln/c680",1],["ln/h25b",1],["ln/lj45",1],["ln/f2th",1],["ln/glf4",1],["ln/glex",1],["ln/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [59.1208,12.0759,59.2875,11.242],
+            [59.2875,11.242,59.3788,10.7854],
+            [58.7055,11.2034,59.1406,10.9333],
+            [59.1406,10.9333,59.3788,10.7854],
+            [58.7492,10.1578,59.1561,10.5634],
+            [59.1561,10.5634,59.3788,10.7854],
+            [59.188,9.5703,59.2619,10.257],
+            [59.2619,10.257,59.3788,10.7854],
+            [60.1918,11.0744,59.6247,10.8728],
+            [59.6247,10.8728,59.3788,10.7854]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [59.3739,10.8046,59.299,11.0963],
+            [59.3455,10.9594,59.3276,10.9418],
+            [59.3079,11.1051,59.2901,11.0875]
+        ]}
+    ]
+}

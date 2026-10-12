@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SBEG/",
+    "info": {"country":"BR","city":"Manaus","type":"large_airport","longestRunwayM":2700,"frequencies":{"atis":"127.650","twr":"118.300","app":"119.700","gnd":"121.900"}},
+    "radio": {"twr":"Eduardo Gomes Tower","app":"Eduardo Gomes Approach","dep":"Eduardo Gomes Departure"},
+    "icao": "SBEG",
+    "iata": "MAO",
+    "magnetic_north": -16.9,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [-3.03861,-60.049702,"264ft"],
+    "rangeRings": {"enabled":true,"center":[-3.03861,-60.049702],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":100,"speed":10},
+    "arrivalRunway": "11",
+    "departureRunway": "11",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[-2.5223,-60.2068],[-2.4993,-60.0676],[-2.5131,-59.9272],[-2.5626,-59.7952],[-2.6446,-59.6805],[-2.7535,-59.591],[-2.8817,-59.5327],[-3.0207,-59.5096],[-3.1609,-59.5234],[-3.2928,-59.573],[-3.4073,-59.6552],[-3.4967,-59.7642],[-3.5549,-59.8926],[-3.5779,-60.0318],[-3.5642,-60.1722],[-3.5146,-60.3042],[-3.4326,-60.4189],[-3.3238,-60.5084],[-3.1955,-60.5667],[-3.0565,-60.5898],[-2.9163,-60.576],[-2.7845,-60.5264],[-2.6699,-60.4442],[-2.5805,-60.3352]]}
+    ],
+    "fixes": {
+        "SBEG": [-3.03861,-60.0497],
+        "MAPCA": [-2.97374,-59.34555],
+        "ELUDU": [-3.01566,-59.80058],
+        "NUGGI": [-3.60373,-59.62569],
+        "DECSI": [-3.23855,-59.89969],
+        "MAMUR": [-3.62486,-60.44389],
+        "VAWGI": [-3.24602,-60.18916],
+        "RUKLA": [-3.15763,-60.74673],
+        "JIVNO": [-3.08072,-60.29631],
+        "LIRIM": [-2.37271,-60.28502],
+        "CEWID": [-2.80302,-60.13296],
+        "_RWY1104DME": [-3.03842,-60.12857],
+        "_RWY2904DME": [-3.03876,-59.97084]
+    },
+    "runways": [
+        {"name":["11","29"],"end":[[-3.03856,-60.06185,"252ft"],[-3.03862,-60.03755,"263ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "MAPCA1C": {"icao":"MAPCA1C","name":"Mapca One Charlie","rwy":{"SBEG11":["_RWY2904DME"],"SBEG29":["_RWY1104DME"]},"body":[],"exitPoints":{"MAPCA":["MAPCA"]},"draw":[["SBEG","MAPCA*"]]},
+        "NUGGI1C": {"icao":"NUGGI1C","name":"Nuggi One Charlie","rwy":{"SBEG11":["_RWY2904DME"],"SBEG29":["_RWY1104DME"]},"body":[],"exitPoints":{"NUGGI":["NUGGI"]},"draw":[["SBEG","NUGGI*"]]},
+        "MAMUR2F": {"icao":"MAMUR2F","name":"Mamur Two Foxtrot","rwy":{"SBEG11":["_RWY2904DME"],"SBEG29":["_RWY1104DME"]},"body":[],"exitPoints":{"MAMUR":["MAMUR"]},"draw":[["SBEG","MAMUR*"]]},
+        "RUKLA2A": {"icao":"RUKLA2A","name":"Rukla Two Alpha","rwy":{"SBEG11":["_RWY2904DME"],"SBEG29":["_RWY1104DME"]},"body":[],"exitPoints":{"RUKLA":["RUKLA"]},"draw":[["SBEG","RUKLA*"]]},
+        "LIRIM3C": {"icao":"LIRIM3C","name":"Lirim Three Charlie","rwy":{"SBEG11":["_RWY2904DME"],"SBEG29":["_RWY1104DME"]},"body":[],"exitPoints":{"LIRIM":["LIRIM"]},"draw":[["SBEG","LIRIM*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SBEG","destination":"KMIA","category":"departure","route":"SBEG11.LIRIM3C.LIRIM","altitude":"","speed":"","method":"random","rate":0.83,"airlines":[["aal/b738",2],["aal/b763",1],["tam/b738",1],["tam/b763",1]]},
+        {"origin":"SBEG","destination":"SBBV","category":"departure","route":"SBEG11.LIRIM3C.LIRIM","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["azu/at72",1],["glo/b737",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBEG","destination":"SBGR","category":"departure","route":"SBEG11.NUGGI1C.NUGGI","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["glo/b738",1],["tam/a320",1],["tam/a321",1],["tam/a333",1],["tam/a332",1]]},
+        {"origin":"SBEG","destination":"SBPV","category":"departure","route":"SBEG11.MAMUR2F.MAMUR","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["azu/at72",1],["azu/e190",1],["glo/b737",1],["glo/b738",1]]},
+        {"origin":"SBEG","destination":"SBBE","category":"departure","route":"SBEG11.MAPCA1C.MAPCA","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["azu/e190",1],["glo/b737",1],["tam/a320",1]]},
+        {"origin":"SBEG","destination":"SBBR","category":"departure","route":"SBEG11.NUGGI1C.NUGGI","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["glo/b737",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBEG","destination":"","category":"departure","route":"SBEG11.MAPCA1C.MAPCA","altitude":"","speed":"","method":"random","rate":0.83,"airlines":[["azu/at72",2],["tam/a320",2],["glo/b738",1]]},
+        {"origin":"SBEG","destination":"","category":"departure","route":"SBEG11.NUGGI1C.NUGGI","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["azu/e190",2],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBEG","destination":"","category":"departure","route":"SBEG11.RUKLA2A.RUKLA","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["azu/at43",2],["azu/e190",2]]},
+        {"origin":"SBEG","destination":"","category":"departure","route":"SBEG11.LIRIM3C.LIRIM","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["azu/at43",1],["cmp/e190",1],["vcv/e190",1]]},
+        {"origin":"SBEG","destination":"","category":"departure","route":"SBEG11.NUGGI1C.NUGGI","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",2],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"SBEG","destination":"","category":"departure","route":"SBEG11.MAPCA1C.MAPCA","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",2],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"KMIA","destination":"SBEG","category":"arrival","route":"LIRIM..CEWID..SBEG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.83,"airlines":[["aal/b738",2],["aal/b763",1],["tam/b738",1],["tam/b763",1]]},
+        {"origin":"SBBV","destination":"SBEG","category":"arrival","route":"LIRIM..CEWID..SBEG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.67,"airlines":[["azu/at72",1],["glo/b737",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBGR","destination":"SBEG","category":"arrival","route":"NUGGI..DECSI..SBEG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.67,"airlines":[["glo/b738",1],["tam/a320",1],["tam/a321",1],["tam/a333",1],["tam/a332",1]]},
+        {"origin":"SBPV","destination":"SBEG","category":"arrival","route":"MAMUR..VAWGI..SBEG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.67,"airlines":[["azu/at72",1],["azu/e190",1],["glo/b737",1],["glo/b738",1]]},
+        {"origin":"SBBE","destination":"SBEG","category":"arrival","route":"MAPCA..ELUDU..SBEG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.5,"airlines":[["azu/e190",1],["glo/b737",1],["tam/a320",1]]},
+        {"origin":"SBBR","destination":"SBEG","category":"arrival","route":"NUGGI..DECSI..SBEG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.5,"airlines":[["glo/b737",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"","destination":"SBEG","category":"arrival","route":"MAPCA..ELUDU..SBEG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.83,"airlines":[["azu/at72",2],["tam/a320",2],["glo/b738",1]]},
+        {"origin":"","destination":"SBEG","category":"arrival","route":"NUGGI..DECSI..SBEG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.67,"airlines":[["azu/e190",2],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"","destination":"SBEG","category":"arrival","route":"RUKLA..JIVNO..SBEG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.67,"airlines":[["azu/at43",2],["azu/e190",2]]},
+        {"origin":"","destination":"SBEG","category":"arrival","route":"LIRIM..CEWID..SBEG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.5,"airlines":[["azu/at43",1],["cmp/e190",1],["vcv/e190",1]]},
+        {"origin":"","destination":"SBEG","category":"arrival","route":"NUGGI..DECSI..SBEG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.44,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",2],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"","destination":"SBEG","category":"arrival","route":"MAPCA..ELUDU..SBEG","altitude":[6000,9000],"speed":250,"method":"random","rate":0.44,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",2],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-2.9737,-59.3456,-3.0157,-59.8006],
+            [-3.0157,-59.8006,-3.0386,-60.0497],
+            [-3.6037,-59.6257,-3.2385,-59.8997],
+            [-3.2385,-59.8997,-3.0386,-60.0497],
+            [-3.6249,-60.4439,-3.246,-60.1892],
+            [-3.246,-60.1892,-3.0386,-60.0497],
+            [-3.1576,-60.7467,-3.0807,-60.2963],
+            [-3.0807,-60.2963,-3.0386,-60.0497],
+            [-2.3727,-60.285,-2.803,-60.133],
+            [-2.803,-60.133,-3.0386,-60.0497]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-3.0386,-60.0619,-3.0382,-60.2286],
+            [-3.0484,-60.1453,-3.0284,-60.1452],
+            [-3.0482,-60.2287,-3.0282,-60.2286],
+            [-3.0386,-60.0376,-3.039,-59.8708],
+            [-3.0288,-59.9541,-3.0488,-59.9542],
+            [-3.029,-59.8707,-3.049,-59.8708]
+        ]}
+    ]
+}

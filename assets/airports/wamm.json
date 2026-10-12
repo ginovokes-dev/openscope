@@ -1,0 +1,74 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/WAMM/",
+    "info": {"country":"ID","city":"Manado","type":"large_airport","longestRunwayM":2664,"frequencies":{"atis":"126.400","twr":"118.100","app":"119.000"}},
+    "radio": {"twr":"Sam Ratulangi Tower","app":"Sam Ratulangi Approach","dep":"Sam Ratulangi Departure"},
+    "icao": "WAMM",
+    "iata": "MDC",
+    "magnetic_north": -0.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [1.548591,124.92625,"264ft"],
+    "rangeRings": {"enabled":true,"center":[1.548591,124.92625],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":0,"speed":8},
+    "arrivalRunway": "36",
+    "departureRunway": "36",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[1.9533,124.9227],[1.9404,125.0276],[1.9008,125.1256],[1.8372,125.21],[1.754,125.2751],[1.6567,125.3164],[1.5521,125.3311],[1.4473,125.3182],[1.3493,125.2786],[1.2649,125.215],[1.1999,125.1317],[1.1586,125.0344],[1.1439,124.9298],[1.1568,124.8249],[1.1964,124.7269],[1.2599,124.6425],[1.3432,124.5774],[1.4404,124.5361],[1.5451,124.5214],[1.6499,124.5343],[1.7479,124.5739],[1.8322,124.6375],[1.8973,124.7208],[1.9386,124.8181]]}
+    ],
+    "fixes": {
+        "WAMM": [1.54859,124.92625],
+        "LAMAC": [1.39791,125.44284],
+        "ASOFO": [1.49261,125.11818],
+        "AZECE": [1.31777,124.44017],
+        "LIPIJ": [1.46283,124.74565],
+        "WIPHE": [2.08482,124.88336],
+        "AWIBI": [1.74782,124.91031],
+        "_RWY1804DME": [1.6259,124.92878],
+        "_RWY3604DME": [1.46884,124.92222]
+    },
+    "runways": [
+        {"name":["18","36"],"end":[[1.55934,124.926,"270ft"],[1.5354,124.925,"264ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "LAMAC2A": {"icao":"LAMAC2A","name":"Lamac Two Alpha","rwy":{"WAMM18":["_RWY3604DME"],"WAMM36":["_RWY1804DME"]},"body":[],"exitPoints":{"LAMAC":["LAMAC"]},"draw":[["WAMM","LAMAC*"]]},
+        "AZECE1A": {"icao":"AZECE1A","name":"Azece One Alpha","rwy":{"WAMM18":["_RWY3604DME"],"WAMM36":["_RWY1804DME"]},"body":[],"exitPoints":{"AZECE":["AZECE"]},"draw":[["WAMM","AZECE*"]]},
+        "WIPHE3A": {"icao":"WIPHE3A","name":"Wiphe Three Alpha","rwy":{"WAMM18":["_RWY3604DME"],"WAMM36":["_RWY1804DME"]},"body":[],"exitPoints":{"WIPHE":["WIPHE"]},"draw":[["WAMM","WIPHE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"WAMM","destination":"WAEE","category":"departure","route":"WAMM36.LAMAC2A.LAMAC","altitude":"","speed":"","method":"random","rate":1.5,"airlines":[["gia/crjx",1],["lni/b733",1],["sjy/b735",1],["lni/dh8d",1],["lni/dh8b",1],["lni/dh8c",1]]},
+        {"origin":"WAMM","destination":"WALL","category":"departure","route":"WAMM36.AZECE1A.AZECE","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["gia/crjx",1],["lni/b738",1]]},
+        {"origin":"WAMM","destination":"WAAA","category":"departure","route":"WAMM36.AZECE1A.AZECE","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["gia/crjx",1]]},
+        {"origin":"WAMM","destination":"WARR","category":"departure","route":"WAMM36.AZECE1A.AZECE","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["sjy/b735",1]]},
+        {"origin":"WAMM","destination":"","category":"departure","route":"WAMM36.AZECE1A.AZECE","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["gia/b738",1],["slk/a320",1]]},
+        {"origin":"WAMM","destination":"","category":"departure","route":"WAMM36.LAMAC2A.LAMAC","altitude":"","speed":"","method":"random","rate":1.25,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",1],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]},
+        {"origin":"WAEE","destination":"WAMM","category":"arrival","route":"LAMAC..ASOFO..WAMM","altitude":[4000,7000],"speed":250,"method":"random","rate":1.5,"airlines":[["gia/crjx",1],["lni/b733",1],["sjy/b735",1],["lni/dh8d",1],["lni/dh8b",1],["lni/dh8c",1]]},
+        {"origin":"WALL","destination":"WAMM","category":"arrival","route":"AZECE..LIPIJ..WAMM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.75,"airlines":[["gia/crjx",1],["lni/b738",1]]},
+        {"origin":"WAAA","destination":"WAMM","category":"arrival","route":"AZECE..LIPIJ..WAMM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.38,"airlines":[["gia/crjx",1]]},
+        {"origin":"WARR","destination":"WAMM","category":"arrival","route":"AZECE..LIPIJ..WAMM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.38,"airlines":[["sjy/b735",1]]},
+        {"origin":"","destination":"WAMM","category":"arrival","route":"AZECE..LIPIJ..WAMM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.75,"airlines":[["gia/b738",1],["slk/a320",1]]},
+        {"origin":"","destination":"WAMM","category":"arrival","route":"LAMAC..ASOFO..WAMM","altitude":[4000,7000],"speed":250,"method":"random","rate":1.25,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",1],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [1.3979,125.4428,1.4926,125.1182],
+            [1.4926,125.1182,1.5486,124.9263],
+            [1.3178,124.4402,1.4628,124.7457],
+            [1.4628,124.7457,1.5486,124.9263],
+            [2.0848,124.8834,1.7478,124.9103],
+            [1.7478,124.9103,1.5486,124.9263]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [1.5593,124.926,1.7257,124.933],
+            [1.643,124.9195,1.6421,124.9395],
+            [1.7262,124.923,1.7253,124.9429],
+            [1.5354,124.925,1.369,124.9181],
+            [1.4518,124.9315,1.4526,124.9115],
+            [1.3686,124.928,1.3694,124.9081]
+        ]}
+    ]
+}

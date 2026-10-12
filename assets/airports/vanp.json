@@ -1,0 +1,90 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VANP/",
+    "info": {"country":"IN","city":"Nagpur","type":"large_airport","longestRunwayM":3215,"frequencies":{"twr":"118.100","app":"122.700","gnd":"121.900"}},
+    "radio": {"twr":"Nagpur Tower","app":"Nagpur Approach","dep":"Nagpur Departure"},
+    "icao": "VANP",
+    "iata": "NAG",
+    "magnetic_north": 0,
+    "ctr_radius": 45,
+    "ctr_ceiling": 9000,
+    "initial_alt": 5000,
+    "position": [21.092199,79.047203,"1033ft"],
+    "rangeRings": {"enabled":true,"center":[21.092199,79.047203],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":120,"speed":10},
+    "arrivalRunway": "14",
+    "departureRunway": "14",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":90,"airspace_class":"D","poly":[[21.4969,79.0472],[21.4831,79.1595],[21.4427,79.2641],[21.3784,79.3539],[21.2945,79.4228],[21.1969,79.4662],[21.0922,79.481],[20.9875,79.4662],[20.8899,79.4228],[20.806,79.3539],[20.7417,79.2641],[20.7013,79.1595],[20.6875,79.0472],[20.7013,78.9349],[20.7417,78.8303],[20.806,78.7405],[20.8899,78.6716],[20.9875,78.6282],[21.0922,78.6134],[21.1969,78.6282],[21.2945,78.6716],[21.3784,78.7405],[21.4427,78.8303],[21.4831,78.9349]]}
+    ],
+    "fixes": {
+        "VANP": [21.0922,79.0472],
+        "ABUJA": [21.16703,79.61816],
+        "OROGI": [21.12,79.25934],
+        "LUDNE": [20.56152,78.95279],
+        "ANEWE": [20.89503,79.01212],
+        "GEWIM": [20.892,78.51205],
+        "KUHKE": [21.01782,78.84837],
+        "KEGZU": [21.35304,78.54295],
+        "IKAVO": [21.18911,78.85985],
+        "GAHKI": [21.61645,78.91796],
+        "WIZIP": [21.28698,78.99918],
+        "_RWY1404DME": [21.16244,78.99115],
+        "_RWY3204DME": [21.03235,79.09491]
+    },
+    "runways": [
+        {"name":["14","32"],"end":[[21.109,79.0338,"1033ft"],[21.0858,79.0523,"1007ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ABUJA1C": {"icao":"ABUJA1C","name":"Abuja One Charlie","rwy":{"VANP14":["_RWY3204DME"],"VANP32":["_RWY1404DME"]},"body":[],"exitPoints":{"ABUJA":["ABUJA"]},"draw":[["VANP","ABUJA*"]]},
+        "LUDNE2A": {"icao":"LUDNE2A","name":"Ludne Two Alpha","rwy":{"VANP14":["_RWY3204DME"],"VANP32":["_RWY1404DME"]},"body":[],"exitPoints":{"LUDNE":["LUDNE"]},"draw":[["VANP","LUDNE*"]]},
+        "GEWIM1A": {"icao":"GEWIM1A","name":"Gewim One Alpha","rwy":{"VANP14":["_RWY3204DME"],"VANP32":["_RWY1404DME"]},"body":[],"exitPoints":{"GEWIM":["GEWIM"]},"draw":[["VANP","GEWIM*"]]},
+        "KEGZU3F": {"icao":"KEGZU3F","name":"Kegzu Three Foxtrot","rwy":{"VANP14":["_RWY3204DME"],"VANP32":["_RWY1404DME"]},"body":[],"exitPoints":{"KEGZU":["KEGZU"]},"draw":[["VANP","KEGZU*"]]},
+        "GAHKI2A": {"icao":"GAHKI2A","name":"Gahki Two Alpha","rwy":{"VANP14":["_RWY3204DME"],"VANP32":["_RWY1404DME"]},"body":[],"exitPoints":{"GAHKI":["GAHKI"]},"draw":[["VANP","GAHKI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"VANP","destination":"VABB","category":"departure","route":"VANP14.GEWIM1A.GEWIM","altitude":"","speed":"","method":"random","rate":0.89,"airlines":[["aic/a319",1],["gow/a320",1],["igo/a320",1]]},
+        {"origin":"VANP","destination":"VIDP","category":"departure","route":"VANP14.GAHKI2A.GAHKI","altitude":"","speed":"","method":"random","rate":0.89,"airlines":[["aic/a319",1],["gow/a320",1],["igo/a320",1]]},
+        {"origin":"VANP","destination":"VAPO","category":"departure","route":"VANP14.GEWIM1A.GEWIM","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["gow/a320",1],["igo/a320",1]]},
+        {"origin":"VANP","destination":"VECC","category":"departure","route":"VANP14.ABUJA1C.ABUJA","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["gow/a320",1],["igo/a320",1]]},
+        {"origin":"VANP","destination":"OMSJ","category":"departure","route":"VANP14.KEGZU3F.KEGZU","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["aby/a320",1]]},
+        {"origin":"VANP","destination":"","category":"departure","route":"VANP14.ABUJA1C.ABUJA","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["aic/a319",1]]},
+        {"origin":"VANP","destination":"","category":"departure","route":"VANP14.LUDNE2A.LUDNE","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["igo/a320",1]]},
+        {"origin":"VANP","destination":"","category":"departure","route":"VANP14.KEGZU3F.KEGZU","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["igo/a320",1]]},
+        {"origin":"VANP","destination":"","category":"departure","route":"VANP14.ABUJA1C.ABUJA","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"VABB","destination":"VANP","category":"arrival","route":"GEWIM..KUHKE..VANP","altitude":[5000,8000],"speed":250,"method":"random","rate":0.89,"airlines":[["aic/a319",1],["gow/a320",1],["igo/a320",1]]},
+        {"origin":"VIDP","destination":"VANP","category":"arrival","route":"GAHKI..WIZIP..VANP","altitude":[5000,8000],"speed":250,"method":"random","rate":0.89,"airlines":[["aic/a319",1],["gow/a320",1],["igo/a320",1]]},
+        {"origin":"VAPO","destination":"VANP","category":"arrival","route":"GEWIM..KUHKE..VANP","altitude":[5000,8000],"speed":250,"method":"random","rate":0.59,"airlines":[["gow/a320",1],["igo/a320",1]]},
+        {"origin":"VECC","destination":"VANP","category":"arrival","route":"ABUJA..OROGI..VANP","altitude":[5000,8000],"speed":250,"method":"random","rate":0.59,"airlines":[["gow/a320",1],["igo/a320",1]]},
+        {"origin":"OMSJ","destination":"VANP","category":"arrival","route":"KEGZU..IKAVO..VANP","altitude":[5000,8000],"speed":250,"method":"random","rate":0.3,"airlines":[["aby/a320",1]]},
+        {"origin":"","destination":"VANP","category":"arrival","route":"ABUJA..OROGI..VANP","altitude":[5000,8000],"speed":250,"method":"random","rate":0.3,"airlines":[["aic/a319",1]]},
+        {"origin":"","destination":"VANP","category":"arrival","route":"LUDNE..ANEWE..VANP","altitude":[5000,8000],"speed":250,"method":"random","rate":0.3,"airlines":[["igo/a320",1]]},
+        {"origin":"","destination":"VANP","category":"arrival","route":"KEGZU..IKAVO..VANP","altitude":[5000,8000],"speed":250,"method":"random","rate":0.3,"airlines":[["igo/a320",1]]},
+        {"origin":"","destination":"VANP","category":"arrival","route":"ABUJA..OROGI..VANP","altitude":[5000,8000],"speed":250,"method":"random","rate":1.39,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [21.167,79.6182,21.12,79.2593],
+            [21.12,79.2593,21.0922,79.0472],
+            [20.5615,78.9528,20.895,79.0121],
+            [20.895,79.0121,21.0922,79.0472],
+            [20.892,78.512,21.0178,78.8484],
+            [21.0178,78.8484,21.0922,79.0472],
+            [21.353,78.543,21.1891,78.8599],
+            [21.1891,78.8599,21.0922,79.0472],
+            [21.6164,78.918,21.287,78.9992],
+            [21.287,78.9992,21.0922,79.0472]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [21.109,79.0338,21.2426,78.9271],
+            [21.1698,78.9719,21.1818,78.9891],
+            [21.2366,78.9185,21.2486,78.9357],
+            [21.0858,79.0523,20.9521,79.1588],
+            [21.0249,79.1141,21.013,79.097],
+            [20.9581,79.1674,20.9462,79.1502]
+        ]}
+    ]
+}

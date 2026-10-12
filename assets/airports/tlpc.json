@@ -1,0 +1,79 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/TLPC/",
+    "info": {"country":"LC","city":"Castries","type":"medium_airport","longestRunwayM":1748,"frequencies":{"atis":"132.600","twr":"118.000","gnd":"121.800"}},
+    "radio": {"twr":"Castries Tower","app":"Castries Approach","dep":"Castries Departure"},
+    "icao": "TLPC",
+    "iata": "SLU",
+    "magnetic_north": -15.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [14.0202,-60.992901,"22ft"],
+    "rangeRings": {"enabled":true,"center":[14.0202,-60.992901],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":90,"speed":11},
+    "arrivalRunway": "09",
+    "departureRunway": "09",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[14.4102,-61.1044],[14.4249,-60.9965],[14.412,-60.8885],[14.3724,-60.7875],[14.3088,-60.7005],[14.2256,-60.6335],[14.1283,-60.591],[14.0237,-60.5758],[13.9189,-60.5891],[13.8209,-60.6299],[13.7365,-60.6954],[13.6715,-60.7812],[13.6302,-60.8814],[13.6155,-60.9893],[13.6284,-61.0973],[13.668,-61.1983],[13.7316,-61.2853],[13.8148,-61.3523],[13.9121,-61.3949],[14.0167,-61.41],[14.1215,-61.3967],[14.2195,-61.3559],[14.3039,-61.2904],[14.3689,-61.2046]]}
+    ],
+    "fixes": {
+        "TLPC": [14.0202,-60.9929],
+        "FOF": [14.5907,-61.0228,"fort de france"],
+        "OKENA": [14.21981,-61.00336],
+        "PUFZU": [13.7292,-60.52658],
+        "JOWEV": [13.91208,-60.81964],
+        "SV": [13.1406,-61.2262,"e t joshua"],
+        "EZURU": [13.82664,-61.04424],
+        "ENAJA": [14.00441,-61.54712],
+        "IHINI": [14.01433,-61.19881],
+        "_RWY0903DME": [14.00523,-61.04983],
+        "_RWY2703DME": [14.03375,-60.93856]
+    },
+    "runways": [
+        {"name":["09","27"],"end":[[14.018,-61.00004,"20ft"],[14.021,-60.98835,"10ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "FOF1B": {"icao":"FOF1B","name":"Fort De France One Bravo","rwy":{"TLPC09":["_RWY2703DME"],"TLPC27":["_RWY0903DME"]},"body":[],"exitPoints":{"FOF":["FOF"]},"draw":[["TLPC","FOF*"]]},
+        "PUFZU2E": {"icao":"PUFZU2E","name":"Pufzu Two Echo","rwy":{"TLPC09":["_RWY2703DME"],"TLPC27":["_RWY0903DME"]},"body":[],"exitPoints":{"PUFZU":["PUFZU"]},"draw":[["TLPC","PUFZU*"]]},
+        "SV3B": {"icao":"SV3B","name":"E T Joshua Three Bravo","rwy":{"TLPC09":["_RWY2703DME"],"TLPC27":["_RWY0903DME"]},"body":[],"exitPoints":{"SV":["SV"]},"draw":[["TLPC","SV*"]]},
+        "ENAJA1C": {"icao":"ENAJA1C","name":"Enaja One Charlie","rwy":{"TLPC09":["_RWY2703DME"],"TLPC27":["_RWY0903DME"]},"body":[],"exitPoints":{"ENAJA":["ENAJA"]},"draw":[["TLPC","ENAJA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"TLPC","destination":"TFFF","category":"departure","route":"TLPC09.FOF1B.FOF","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["afr/at45",1],["fwi/at72",1],["lia/dh8c",1]]},
+        {"origin":"TLPC","destination":"TBPB","category":"departure","route":"TLPC09.PUFZU2E.PUFZU","altitude":"","speed":"","method":"random","rate":0.88,"airlines":[["lia/at72",1],["lia/dh8c",1]]},
+        {"origin":"TLPC","destination":"TTPP","category":"departure","route":"TLPC09.SV3B.SV","altitude":"","speed":"","method":"random","rate":0.88,"airlines":[["lia/at72",1],["bwa/at72",1],["bwa/at45",1],["bwa/at75",1]]},
+        {"origin":"TLPC","destination":"TVSA","category":"departure","route":"TLPC09.SV3B.SV","altitude":"","speed":"","method":"random","rate":0.88,"airlines":[["lia/at72",1],["lia/dh8c",1]]},
+        {"origin":"TLPC","destination":"TAPA","category":"departure","route":"TLPC09.FOF1B.FOF","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["lia/at72",1]]},
+        {"origin":"TLPC","destination":"","category":"departure","route":"TLPC09.FOF1B.FOF","altitude":"","speed":"","method":"random","rate":0.88,"airlines":[["lia/at72",1],["lia/dh8c",1]]},
+        {"origin":"TFFF","destination":"TLPC","category":"arrival","route":"FOF..OKENA..TLPC","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["afr/at45",1],["fwi/at72",1],["lia/dh8c",1]]},
+        {"origin":"TBPB","destination":"TLPC","category":"arrival","route":"PUFZU..JOWEV..TLPC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.88,"airlines":[["lia/at72",1],["lia/dh8c",1]]},
+        {"origin":"TTPP","destination":"TLPC","category":"arrival","route":"SV..EZURU..TLPC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.88,"airlines":[["lia/at72",1],["bwa/at72",1],["bwa/at45",1],["bwa/at75",1]]},
+        {"origin":"TVSA","destination":"TLPC","category":"arrival","route":"SV..EZURU..TLPC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.88,"airlines":[["lia/at72",1],["lia/dh8c",1]]},
+        {"origin":"TAPA","destination":"TLPC","category":"arrival","route":"FOF..OKENA..TLPC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["lia/at72",1]]},
+        {"origin":"","destination":"TLPC","category":"arrival","route":"FOF..OKENA..TLPC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.88,"airlines":[["lia/at72",1],["lia/dh8c",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [14.5907,-61.0228,14.2198,-61.0034],
+            [14.2198,-61.0034,14.0202,-60.9929],
+            [13.7292,-60.5266,13.9121,-60.8196],
+            [13.9121,-60.8196,14.0202,-60.9929],
+            [13.1406,-61.2262,13.8266,-61.0442],
+            [13.8266,-61.0442,14.0202,-60.9929],
+            [14.0044,-61.5471,14.0143,-61.1988],
+            [14.0143,-61.1988,14.0202,-60.9929]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [14.018,-61,13.9754,-61.166],
+            [13.987,-61.0804,14.0064,-61.0856],
+            [13.9657,-61.1633,13.9851,-61.1686],
+            [14.021,-60.9883,14.0635,-60.8223],
+            [14.0519,-60.908,14.0326,-60.9027],
+            [14.0731,-60.825,14.0538,-60.8197]
+        ]}
+    ]
+}

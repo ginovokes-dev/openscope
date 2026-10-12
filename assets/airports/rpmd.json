@@ -1,0 +1,78 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/RPMD/",
+    "info": {"country":"PH","city":"Davao","type":"large_airport","longestRunwayM":3040,"frequencies":{"atis":"127.000","twr":"118.100","app":"122.400"}},
+    "radio": {"twr":"Francisco Bangoy Tower","app":"Francisco Bangoy Approach","dep":"Francisco Bangoy Departure"},
+    "icao": "RPMD",
+    "iata": "DVO",
+    "magnetic_north": -1.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [7.12552,125.646004,"96ft"],
+    "rangeRings": {"enabled":true,"center":[7.12552,125.646004],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":60,"speed":9},
+    "arrivalRunway": "05",
+    "departureRunway": "05",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[7.5301,125.636],[7.5189,125.7419],[7.4808,125.8412],[7.4186,125.9273],[7.3364,125.9941],[7.2398,126.0373],[7.1354,126.0537],[7.0304,126.0424],[6.9318,126.0041],[6.8464,125.9414],[6.7801,125.8585],[6.7373,125.7612],[6.7209,125.656],[6.7322,125.5501],[6.7702,125.4508],[6.8325,125.3647],[6.9147,125.2979],[7.0113,125.2548],[7.1156,125.2383],[7.2207,125.2496],[7.3192,125.2879],[7.4046,125.3507],[7.4709,125.4335],[7.5137,125.5309]]}
+    ],
+    "fixes": {
+        "RPMD": [7.12552,125.646],
+        "ROJOG": [6.91121,126.14325],
+        "JAJES": [7.0459,125.83075],
+        "VAFWO": [7.03713,125.11125],
+        "UWAJI": [7.09268,125.44732],
+        "ITOTI": [7.57364,125.34609],
+        "VOFUT": [7.29202,125.53458],
+        "_RWY0504DME": [7.07353,125.58384],
+        "_RWY2304DME": [7.1775,125.70717]
+    },
+    "runways": [
+        {"name":["05","23"],"end":[[7.11667,125.635,"93ft"],[7.13437,125.656,"96ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ROJOG2B": {"icao":"ROJOG2B","name":"Rojog Two Bravo","rwy":{"RPMD05":["_RWY2304DME"],"RPMD23":["_RWY0504DME"]},"body":[],"exitPoints":{"ROJOG":["ROJOG"]},"draw":[["RPMD","ROJOG*"]]},
+        "VAFWO3A": {"icao":"VAFWO3A","name":"Vafwo Three Alpha","rwy":{"RPMD05":["_RWY2304DME"],"RPMD23":["_RWY0504DME"]},"body":[],"exitPoints":{"VAFWO":["VAFWO"]},"draw":[["RPMD","VAFWO*"]]},
+        "ITOTI1A": {"icao":"ITOTI1A","name":"Itoti One Alpha","rwy":{"RPMD05":["_RWY2304DME"],"RPMD23":["_RWY0504DME"]},"body":[],"exitPoints":{"ITOTI":["ITOTI"]},"draw":[["RPMD","ITOTI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"RPMD","destination":"RPLL","category":"departure","route":"RPMD05.ITOTI1A.ITOTI","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["ceb/a320",1],["pal/a320",1],["ceb/a333",1],["ceb/a332",1]]},
+        {"origin":"RPMD","destination":"RPVM","category":"departure","route":"RPMD05.ITOTI1A.ITOTI","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["ceb/a319",1],["ceb/a320",1],["slk/a320",1]]},
+        {"origin":"RPMD","destination":"RPVI","category":"departure","route":"RPMD05.ITOTI1A.ITOTI","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["ceb/a319",1],["ceb/a320",1]]},
+        {"origin":"RPMD","destination":"WSSS","category":"departure","route":"RPMD05.VAFWO3A.VAFWO","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["slk/a320",1],["slk/b738",1]]},
+        {"origin":"RPMD","destination":"RPMG","category":"departure","route":"RPMD05.ITOTI1A.ITOTI","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["ceb/at72",1],["ceb/at45",1],["ceb/at75",1]]},
+        {"origin":"RPMD","destination":"","category":"departure","route":"RPMD05.VAFWO3A.VAFWO","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["ceb/a319",2]]},
+        {"origin":"RPMD","destination":"","category":"departure","route":"RPMD05.ITOTI1A.ITOTI","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["ceb/a320",1],["ceb/at72",1],["ceb/at45",1],["ceb/at75",1]]},
+        {"origin":"RPMD","destination":"","category":"departure","route":"RPMD05.ITOTI1A.ITOTI","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["rp/c172",6],["rp/p28a",5],["rp/c182",3],["rp/be36",2],["rp/da42",1],["rp/tb20",1],["rp/c208",2],["rp/pc12",2],["rp/be20",1],["rp/b350",1],["rp/p180",1],["rp/c510",1],["rp/e50p",1],["rp/c550",1],["rp/e55p",1],["rp/cl30",1],["rp/c680",1],["rp/h25b",1],["rp/lj45",1],["rp/f2th",1],["rp/glf4",1],["rp/glex",1],["rp/glf5",1]]},
+        {"origin":"RPLL","destination":"RPMD","category":"arrival","route":"ITOTI..VOFUT..RPMD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.87,"airlines":[["ceb/a320",1],["pal/a320",1],["ceb/a333",1],["ceb/a332",1]]},
+        {"origin":"RPVM","destination":"RPMD","category":"arrival","route":"ITOTI..VOFUT..RPMD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.87,"airlines":[["ceb/a319",1],["ceb/a320",1],["slk/a320",1]]},
+        {"origin":"RPVI","destination":"RPMD","category":"arrival","route":"ITOTI..VOFUT..RPMD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.58,"airlines":[["ceb/a319",1],["ceb/a320",1]]},
+        {"origin":"WSSS","destination":"RPMD","category":"arrival","route":"VAFWO..UWAJI..RPMD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.58,"airlines":[["slk/a320",1],["slk/b738",1]]},
+        {"origin":"RPMG","destination":"RPMD","category":"arrival","route":"ITOTI..VOFUT..RPMD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.29,"airlines":[["ceb/at72",1],["ceb/at45",1],["ceb/at75",1]]},
+        {"origin":"","destination":"RPMD","category":"arrival","route":"VAFWO..UWAJI..RPMD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.58,"airlines":[["ceb/a319",2]]},
+        {"origin":"","destination":"RPMD","category":"arrival","route":"ITOTI..VOFUT..RPMD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.58,"airlines":[["ceb/a320",1],["ceb/at72",1],["ceb/at45",1],["ceb/at75",1]]},
+        {"origin":"","destination":"RPMD","category":"arrival","route":"ITOTI..VOFUT..RPMD","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["rp/c172",6],["rp/p28a",5],["rp/c182",3],["rp/be36",2],["rp/da42",1],["rp/tb20",1],["rp/c208",2],["rp/pc12",2],["rp/be20",1],["rp/b350",1],["rp/p180",1],["rp/c510",1],["rp/e50p",1],["rp/c550",1],["rp/e55p",1],["rp/cl30",1],["rp/c680",1],["rp/h25b",1],["rp/lj45",1],["rp/f2th",1],["rp/glf4",1],["rp/glex",1],["rp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [6.9112,126.1433,7.0459,125.8308],
+            [7.0459,125.8308,7.1255,125.646],
+            [7.0371,125.1112,7.0927,125.4473],
+            [7.0927,125.4473,7.1255,125.646],
+            [7.5736,125.3461,7.292,125.5346],
+            [7.292,125.5346,7.1255,125.646]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [7.1167,125.635,7.0088,125.5071],
+            [7.0551,125.5776,7.0704,125.5645],
+            [7.0012,125.5136,7.0164,125.5006],
+            [7.1344,125.656,7.2422,125.7839],
+            [7.1959,125.7134,7.1807,125.7265],
+            [7.2498,125.7774,7.2346,125.7905]
+        ]}
+    ]
+}

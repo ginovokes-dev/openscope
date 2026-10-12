@@ -1,0 +1,92 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ESMS/",
+    "info": {"country":"SE","city":"Malmo","type":"large_airport","longestRunwayM":2800,"frequencies":{"atis":"129.275","twr":"118.800","app":"135.900"}},
+    "radio": {"twr":"Malmo Tower","app":"Malmo Approach","dep":"Malmo Departure"},
+    "icao": "ESMS",
+    "iata": "MMX",
+    "magnetic_north": 5.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [55.535564,13.376327,"236ft"],
+    "rangeRings": {"enabled":true,"center":[55.535564,13.376327],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":0,"speed":12},
+    "arrivalRunway": "35",
+    "departureRunway": "35",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[55.9385,13.4436],[55.9149,13.6256],[55.8654,13.7906],[55.7935,13.9274],[55.704,14.0266],[55.6031,14.0815],[55.4975,14.0883],[55.3945,14.0466],[55.3011,13.9593],[55.2237,13.8322],[55.1676,13.674],[55.1365,13.4956],[55.1327,13.309],[55.1563,13.127],[55.2057,12.9621],[55.2776,12.8253],[55.3671,12.7261],[55.4681,12.6712],[55.5736,12.6644],[55.6766,12.706],[55.77,12.7934],[55.8474,12.9205],[55.9035,13.0786],[55.9346,13.2571]]}
+    ],
+    "fixes": {
+        "ESMS": [55.53556,13.37633],
+        "OEM": [55.9897,14.1008,"kristianstad"],
+        "FILEV": [55.68392,13.61299],
+        "ROE": [55.0656,14.7587,"ronne"],
+        "MEHKU": [55.43264,13.67908],
+        "LEBIL": [55.05432,13.80112],
+        "MOJEP": [55.35676,13.53415],
+        "CDA": [55.0015,12.3792,"codan"],
+        "JURWI": [55.39818,13.11982],
+        "SVD": [56.1689,12.5738,"sveda"],
+        "ITAPU": [55.69799,13.17051],
+        "_RWY1704DME": [55.61428,13.36027],
+        "_RWY3504DME": [55.45692,13.39238]
+    },
+    "runways": [
+        {"name":["17","35"],"end":[[55.5481,13.3738,"209ft"],[55.5231,13.3789,"236ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "OEM2F": {"icao":"OEM2F","name":"Kristianstad Two Foxtrot","rwy":{"ESMS17":["_RWY3504DME"],"ESMS35":["_RWY1704DME"]},"body":[],"exitPoints":{"OEM":["OEM"]},"draw":[["ESMS","OEM*"]]},
+        "ROE2A": {"icao":"ROE2A","name":"Ronne Two Alpha","rwy":{"ESMS17":["_RWY3504DME"],"ESMS35":["_RWY1704DME"]},"body":[],"exitPoints":{"ROE":["ROE"]},"draw":[["ESMS","ROE*"]]},
+        "LEBIL3F": {"icao":"LEBIL3F","name":"Lebil Three Foxtrot","rwy":{"ESMS17":["_RWY3504DME"],"ESMS35":["_RWY1704DME"]},"body":[],"exitPoints":{"LEBIL":["LEBIL"]},"draw":[["ESMS","LEBIL*"]]},
+        "CDA2C": {"icao":"CDA2C","name":"Codan Two Charlie","rwy":{"ESMS17":["_RWY3504DME"],"ESMS35":["_RWY1704DME"]},"body":[],"exitPoints":{"CDA":["CDA"]},"draw":[["ESMS","CDA*"]]},
+        "SVD2E": {"icao":"SVD2E","name":"Sveda Two Echo","rwy":{"ESMS17":["_RWY3504DME"],"ESMS35":["_RWY1704DME"]},"body":[],"exitPoints":{"SVD":["SVD"]},"draw":[["ESMS","SVD*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ESMS","destination":"ESSA","category":"departure","route":"ESMS35.OEM2F.OEM","altitude":"","speed":"","method":"random","rate":1.77,"airlines":[["sas/b737",2],["nax/b738",1],["sas/at72",1],["sas/b712",1],["sas/b736",1],["sas/b738",1]]},
+        {"origin":"ESMS","destination":"ESSB","category":"departure","route":"ESMS35.OEM2F.OEM","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["scw/rj1h",1],["scw/rj85",1]]},
+        {"origin":"ESMS","destination":"EGSS","category":"departure","route":"ESMS35.CDA2C.CDA","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["ryr/b738",1]]},
+        {"origin":"ESMS","destination":"EPGD","category":"departure","route":"ESMS35.ROE2A.ROE","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["wzz/a320",1]]},
+        {"origin":"ESMS","destination":"EPKT","category":"departure","route":"ESMS35.LEBIL3F.LEBIL","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["wzz/a320",1]]},
+        {"origin":"ESMS","destination":"","category":"departure","route":"ESMS35.OEM2F.OEM","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["gao/at72",1]]},
+        {"origin":"ESMS","destination":"","category":"departure","route":"ESMS35.ROE2A.ROE","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["wzz/a320",1]]},
+        {"origin":"ESMS","destination":"","category":"departure","route":"ESMS35.LEBIL3F.LEBIL","altitude":"","speed":"","method":"random","rate":1.01,"airlines":[["wzz/a320",4]]},
+        {"origin":"ESMS","destination":"","category":"departure","route":"ESMS35.CDA2C.CDA","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["ryr/b738",1]]},
+        {"origin":"ESMS","destination":"","category":"departure","route":"ESMS35.OEM2F.OEM","altitude":"","speed":"","method":"random","rate":1.6,"airlines":[["se/c172",6],["se/p28a",5],["se/c182",3],["se/be36",2],["se/da42",1],["se/tb20",1],["se/c208",2],["se/pc12",2],["se/be20",1],["se/b350",1],["se/p180",1],["se/c510",1],["se/e50p",1],["se/c550",1],["se/e55p",1],["se/cl30",1],["se/c680",1],["se/h25b",1],["se/lj45",1],["se/f2th",1],["se/glf4",1],["se/glex",1],["se/glf5",1]]},
+        {"origin":"ESSA","destination":"ESMS","category":"arrival","route":"OEM..FILEV..ESMS","altitude":[4000,7000],"speed":250,"method":"random","rate":1.77,"airlines":[["sas/b737",2],["nax/b738",1],["sas/at72",1],["sas/b712",1],["sas/b736",1],["sas/b738",1]]},
+        {"origin":"ESSB","destination":"ESMS","category":"arrival","route":"OEM..FILEV..ESMS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.51,"airlines":[["scw/rj1h",1],["scw/rj85",1]]},
+        {"origin":"EGSS","destination":"ESMS","category":"arrival","route":"CDA..JURWI..ESMS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.25,"airlines":[["ryr/b738",1]]},
+        {"origin":"EPGD","destination":"ESMS","category":"arrival","route":"ROE..MEHKU..ESMS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.25,"airlines":[["wzz/a320",1]]},
+        {"origin":"EPKT","destination":"ESMS","category":"arrival","route":"LEBIL..MOJEP..ESMS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.25,"airlines":[["wzz/a320",1]]},
+        {"origin":"","destination":"ESMS","category":"arrival","route":"OEM..FILEV..ESMS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.25,"airlines":[["gao/at72",1]]},
+        {"origin":"","destination":"ESMS","category":"arrival","route":"ROE..MEHKU..ESMS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.25,"airlines":[["wzz/a320",1]]},
+        {"origin":"","destination":"ESMS","category":"arrival","route":"LEBIL..MOJEP..ESMS","altitude":[4000,7000],"speed":250,"method":"random","rate":1.01,"airlines":[["wzz/a320",4]]},
+        {"origin":"","destination":"ESMS","category":"arrival","route":"CDA..JURWI..ESMS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.25,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"ESMS","category":"arrival","route":"OEM..FILEV..ESMS","altitude":[4000,7000],"speed":250,"method":"random","rate":1.6,"airlines":[["se/c172",6],["se/p28a",5],["se/c182",3],["se/be36",2],["se/da42",1],["se/tb20",1],["se/c208",2],["se/pc12",2],["se/be20",1],["se/b350",1],["se/p180",1],["se/c510",1],["se/e50p",1],["se/c550",1],["se/e55p",1],["se/cl30",1],["se/c680",1],["se/h25b",1],["se/lj45",1],["se/f2th",1],["se/glf4",1],["se/glex",1],["se/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [55.9897,14.1008,55.6839,13.613],
+            [55.6839,13.613,55.5356,13.3763],
+            [55.0656,14.7587,55.4326,13.6791],
+            [55.4326,13.6791,55.5356,13.3763],
+            [55.0543,13.8011,55.3568,13.5342],
+            [55.3568,13.5342,55.5356,13.3763],
+            [55.0015,12.3792,55.3982,13.1198],
+            [55.3982,13.1198,55.5356,13.3763],
+            [56.1689,12.5738,55.698,13.1705],
+            [55.698,13.1705,55.5356,13.3763]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [55.5481,13.3738,55.7135,13.3399],
+            [55.6297,13.3393,55.632,13.3745],
+            [55.7124,13.3223,55.7147,13.3575],
+            [55.5231,13.3789,55.3576,13.4125],
+            [55.4415,13.4132,55.4392,13.3782],
+            [55.3588,13.43,55.3565,13.3951]
+        ]}
+    ]
+}

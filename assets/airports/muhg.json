@@ -1,0 +1,90 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/MUHG/",
+    "info": {"country":"CU","city":"Holguin","type":"large_airport","longestRunwayM":3243,"frequencies":{"twr":"118.000","app":"119.100"}},
+    "radio": {"twr":"Frank Pais Tower","app":"Frank Pais Approach","dep":"Frank Pais Departure"},
+    "icao": "MUHG",
+    "iata": "HOG",
+    "magnetic_north": -9,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [20.785148,-76.315526,"361ft"],
+    "rangeRings": {"enabled":true,"center":[20.785148,-76.315526],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":70,"speed":9},
+    "arrivalRunway": "05",
+    "departureRunway": "05",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[21.1849,-76.3832],[21.1876,-76.2703],[21.163,-76.1604],[21.1126,-76.0611],[21.0398,-75.9791],[20.9498,-75.9201],[20.8485,-75.888],[20.7428,-75.885],[20.6401,-75.9114],[20.5473,-75.9653],[20.4706,-76.0431],[20.4154,-76.1395],[20.3854,-76.2478],[20.3827,-76.3608],[20.4073,-76.4707],[20.4577,-76.57],[20.5305,-76.6519],[20.6205,-76.711],[20.7218,-76.7431],[20.8275,-76.746],[20.9302,-76.7196],[21.023,-76.6657],[21.0997,-76.5879],[21.1549,-76.4916]]}
+    ],
+    "fixes": {
+        "MUHG": [20.78515,-76.31553],
+        "FALCU": [21.32001,-76.37695],
+        "FOSUM": [20.98387,-76.33835],
+        "HEVUD": [21.18187,-75.92693],
+        "IZUFO": [20.93255,-76.17115],
+        "UCU": [19.9778,-75.8228,"santiago de cuba"],
+        "FILIS": [20.61155,-76.20958],
+        "UBY": [20.3939,-76.6192,"bayamo"],
+        "JOWZI": [20.62339,-76.44108],
+        "UVT": [20.9886,-76.9388,"tunas"],
+        "CUJNE": [20.85103,-76.51736],
+        "_RWY0504DME": [20.72965,-76.37675],
+        "_RWY2304DME": [20.84207,-76.25272]
+    },
+    "runways": [
+        {"name":["05","23"],"end":[[20.77603,-76.32561,"279ft"],[20.7957,-76.3039,"361ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "FALCU2E": {"icao":"FALCU2E","name":"Falcu Two Echo","rwy":{"MUHG05":["_RWY2304DME"],"MUHG23":["_RWY0504DME"]},"body":[],"exitPoints":{"FALCU":["FALCU"]},"draw":[["MUHG","FALCU*"]]},
+        "HEVUD2D": {"icao":"HEVUD2D","name":"Hevud Two Delta","rwy":{"MUHG05":["_RWY2304DME"],"MUHG23":["_RWY0504DME"]},"body":[],"exitPoints":{"HEVUD":["HEVUD"]},"draw":[["MUHG","HEVUD*"]]},
+        "UCU2D": {"icao":"UCU2D","name":"Santiago De Cuba Two Delta","rwy":{"MUHG05":["_RWY2304DME"],"MUHG23":["_RWY0504DME"]},"body":[],"exitPoints":{"UCU":["UCU"]},"draw":[["MUHG","UCU*"]]},
+        "UBY2C": {"icao":"UBY2C","name":"Bayamo Two Charlie","rwy":{"MUHG05":["_RWY2304DME"],"MUHG23":["_RWY0504DME"]},"body":[],"exitPoints":{"UBY":["UBY"]},"draw":[["MUHG","UBY*"]]},
+        "UVT1C": {"icao":"UVT1C","name":"Tunas One Charlie","rwy":{"MUHG05":["_RWY2304DME"],"MUHG23":["_RWY0504DME"]},"body":[],"exitPoints":{"UVT":["UVT"]},"draw":[["MUHG","UVT*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"MUHG","destination":"CYUL","category":"departure","route":"MUHG05.FALCU2E.FALCU","altitude":"","speed":"","method":"random","rate":1.18,"airlines":[["aca/a319",1],["cub/a320",1],["tsc/a333",1],["tsc/a332",1]]},
+        {"origin":"MUHG","destination":"CYYZ","category":"departure","route":"MUHG05.FALCU2E.FALCU","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["aca/a319",1]]},
+        {"origin":"MUHG","destination":"EDDF","category":"departure","route":"MUHG05.HEVUD2D.HEVUD","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["cfg/b763",1]]},
+        {"origin":"MUHG","destination":"EGCC","category":"departure","route":"MUHG05.HEVUD2D.HEVUD","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["tcx/a332",1]]},
+        {"origin":"MUHG","destination":"EHAM","category":"departure","route":"MUHG05.HEVUD2D.HEVUD","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["tfl/b763",1]]},
+        {"origin":"MUHG","destination":"","category":"departure","route":"MUHG05.HEVUD2D.HEVUD","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["bpa/b763",1]]},
+        {"origin":"MUHG","destination":"","category":"departure","route":"MUHG05.UBY2C.UBY","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["cfg/b763",1]]},
+        {"origin":"MUHG","destination":"","category":"departure","route":"MUHG05.UVT1C.UVT","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["bpa/b763",1],["tfl/b763",1]]},
+        {"origin":"MUHG","destination":"","category":"departure","route":"MUHG05.UBY2C.UBY","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["cu/c172",6],["cu/p28a",5],["cu/c182",3],["cu/be36",2],["cu/da42",1],["cu/tb20",1],["cu/c208",2],["cu/pc12",2],["cu/be20",1],["cu/b350",1],["cu/p180",1],["cu/c510",1],["cu/e50p",1],["cu/c550",1],["cu/e55p",1],["cu/cl30",1],["cu/c680",1],["cu/h25b",1],["cu/lj45",1],["cu/f2th",1],["cu/glf4",1],["cu/glex",1],["cu/glf5",1]]},
+        {"origin":"CYUL","destination":"MUHG","category":"arrival","route":"FALCU..FOSUM..MUHG","altitude":[4000,7000],"speed":250,"method":"random","rate":1.18,"airlines":[["aca/a319",1],["cub/a320",1],["tsc/a333",1],["tsc/a332",1]]},
+        {"origin":"CYYZ","destination":"MUHG","category":"arrival","route":"FALCU..FOSUM..MUHG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.39,"airlines":[["aca/a319",1]]},
+        {"origin":"EDDF","destination":"MUHG","category":"arrival","route":"HEVUD..IZUFO..MUHG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.39,"airlines":[["cfg/b763",1]]},
+        {"origin":"EGCC","destination":"MUHG","category":"arrival","route":"HEVUD..IZUFO..MUHG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.39,"airlines":[["tcx/a332",1]]},
+        {"origin":"EHAM","destination":"MUHG","category":"arrival","route":"HEVUD..IZUFO..MUHG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.39,"airlines":[["tfl/b763",1]]},
+        {"origin":"","destination":"MUHG","category":"arrival","route":"HEVUD..IZUFO..MUHG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.39,"airlines":[["bpa/b763",1]]},
+        {"origin":"","destination":"MUHG","category":"arrival","route":"UBY..JOWZI..MUHG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.39,"airlines":[["cfg/b763",1]]},
+        {"origin":"","destination":"MUHG","category":"arrival","route":"UVT..CUJNE..MUHG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.79,"airlines":[["bpa/b763",1],["tfl/b763",1]]},
+        {"origin":"","destination":"MUHG","category":"arrival","route":"UBY..JOWZI..MUHG","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["cu/c172",6],["cu/p28a",5],["cu/c182",3],["cu/be36",2],["cu/da42",1],["cu/tb20",1],["cu/c208",2],["cu/pc12",2],["cu/be20",1],["cu/b350",1],["cu/p180",1],["cu/c510",1],["cu/e50p",1],["cu/c550",1],["cu/e55p",1],["cu/cl30",1],["cu/c680",1],["cu/h25b",1],["cu/lj45",1],["cu/f2th",1],["cu/glf4",1],["cu/glex",1],["cu/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [21.32,-76.3769,20.9839,-76.3383],
+            [20.9839,-76.3383,20.7851,-76.3155],
+            [21.1819,-75.9269,20.9325,-76.1711],
+            [20.9325,-76.1711,20.7851,-76.3155],
+            [19.9778,-75.8228,20.6116,-76.2096],
+            [20.6116,-76.2096,20.7851,-76.3155],
+            [20.3939,-76.6192,20.6234,-76.4411],
+            [20.6234,-76.4411,20.7851,-76.3155],
+            [20.9886,-76.9388,20.851,-76.5174],
+            [20.851,-76.5174,20.7851,-76.3155]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [20.776,-76.3256,20.66,-76.4534],
+            [20.7109,-76.3821,20.7252,-76.397],
+            [20.6529,-76.446,20.6672,-76.4608],
+            [20.7957,-76.3039,20.9116,-76.1759],
+            [20.8608,-76.2474,20.8465,-76.2325],
+            [20.9188,-76.1833,20.9044,-76.1684]
+        ]}
+    ]
+}

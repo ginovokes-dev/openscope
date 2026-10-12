@@ -1,0 +1,85 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/RJNK/",
+    "info": {"country":"JP","city":"Kanazawa","type":"large_airport","longestRunwayM":2714,"frequencies":{"twr":"118.250","app":"120.100","gnd":"121.700","dep":"120.100"}},
+    "radio": {"twr":"Kanazawa Tower","app":"Kanazawa Approach","dep":"Kanazawa Departure"},
+    "icao": "RJNK",
+    "iata": "KMQ",
+    "magnetic_north": -8.6,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [36.393407,136.406895,"36ft"],
+    "rangeRings": {"enabled":true,"center":[36.393407,136.406895],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":250,"speed":8},
+    "arrivalRunway": "24",
+    "departureRunway": "24",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[36.7936,136.3317],[36.7956,136.4629],[36.7702,136.5903],[36.7191,136.7052],[36.6459,136.7998],[36.5554,136.8676],[36.4539,136.904],[36.3483,136.9065],[36.2457,136.875],[36.1533,136.8116],[36.0771,136.7206],[36.0226,136.6082],[35.9933,136.4821],[35.9912,136.3509],[36.0166,136.2235],[36.0677,136.1086],[36.1409,136.014],[36.2314,135.9462],[36.3329,135.9098],[36.4385,135.9073],[36.5411,135.9388],[36.6336,136.0022],[36.7097,136.0932],[36.7643,136.2056]]}
+    ],
+    "fixes": {
+        "RJNK": [36.39341,136.4069],
+        "NTE": [37.29,136.963,"noto"],
+        "WUDLA": [36.57222,136.5178],
+        "BUJAW": [36.26485,137.05581],
+        "KUJJO": [36.34564,136.64799],
+        "TIGOL": [36.0667,135.87598],
+        "FOSAR": [36.27202,136.20964],
+        "NESPO": [36.49305,135.75018],
+        "SIJIG": [36.43043,136.1629],
+        "_RWY0604DME": [36.35,136.32578],
+        "_RWY2404DME": [36.43916,136.4873]
+    },
+    "runways": [
+        {"name":["06","24"],"end":[[36.3877,136.394,"36ft"],[36.4015,136.41901,"18ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "NTE1F": {"icao":"NTE1F","name":"Noto One Foxtrot","rwy":{"RJNK06":["_RWY2404DME"],"RJNK24":["_RWY0604DME"]},"body":[],"exitPoints":{"NTE":["NTE"]},"draw":[["RJNK","NTE*"]]},
+        "BUJAW1A": {"icao":"BUJAW1A","name":"Bujaw One Alpha","rwy":{"RJNK06":["_RWY2404DME"],"RJNK24":["_RWY0604DME"]},"body":[],"exitPoints":{"BUJAW":["BUJAW"]},"draw":[["RJNK","BUJAW*"]]},
+        "TIGOL2C": {"icao":"TIGOL2C","name":"Tigol Two Charlie","rwy":{"RJNK06":["_RWY2404DME"],"RJNK24":["_RWY0604DME"]},"body":[],"exitPoints":{"TIGOL":["TIGOL"]},"draw":[["RJNK","TIGOL*"]]},
+        "NESPO2F": {"icao":"NESPO2F","name":"Nespo Two Foxtrot","rwy":{"RJNK06":["_RWY2404DME"],"RJNK24":["_RWY0604DME"]},"body":[],"exitPoints":{"NESPO":["NESPO"]},"draw":[["RJNK","NESPO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"RJNK","destination":"RJTT","category":"departure","route":"RJNK24.BUJAW1A.BUJAW","altitude":"","speed":"","method":"random","rate":1,"airlines":[["ana/a320",1],["ana/b763",1],["jal/b763",1]]},
+        {"origin":"RJNK","destination":"RCTP","category":"departure","route":"RJNK24.TIGOL2C.TIGOL","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["eva/a321",1],["eva/a332",1]]},
+        {"origin":"RJNK","destination":"RJFF","category":"departure","route":"RJNK24.TIGOL2C.TIGOL","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["ana/b735",1],["ibx/crj7",1],["ibx/crj9",1],["ibx/crj2",1]]},
+        {"origin":"RJNK","destination":"RJAA","category":"departure","route":"RJNK24.BUJAW1A.BUJAW","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["ibx/crj7",1],["ibx/crj9",1],["ibx/crj2",1]]},
+        {"origin":"RJNK","destination":"RJCC","category":"departure","route":"RJNK24.NTE1F.NTE","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["ado/b735",1]]},
+        {"origin":"RJNK","destination":"","category":"departure","route":"RJNK24.NTE1F.NTE","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["ibx/crj7",1],["ibx/crj9",1],["ibx/crj2",1]]},
+        {"origin":"RJNK","destination":"","category":"departure","route":"RJNK24.TIGOL2C.TIGOL","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["ces/a319",1],["jta/b734",1]]},
+        {"origin":"RJNK","destination":"","category":"departure","route":"RJNK24.NESPO2F.NESPO","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["kal/b738",1]]},
+        {"origin":"RJNK","destination":"","category":"departure","route":"RJNK24.BUJAW1A.BUJAW","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["ja/c172",6],["ja/p28a",5],["ja/c182",3],["ja/be36",2],["ja/da42",1],["ja/tb20",1],["ja/c208",2],["ja/pc12",2],["ja/be20",1],["ja/b350",1],["ja/p180",1],["ja/c510",1],["ja/e50p",1],["ja/c550",1],["ja/e55p",1],["ja/cl30",1],["ja/c680",1],["ja/h25b",1],["ja/lj45",1],["ja/f2th",1],["ja/glf4",1],["ja/glex",1],["ja/glf5",1]]},
+        {"origin":"RJTT","destination":"RJNK","category":"arrival","route":"BUJAW..KUJJO..RJNK","altitude":[4000,7000],"speed":250,"method":"random","rate":1,"airlines":[["ana/a320",1],["ana/b763",1],["jal/b763",1]]},
+        {"origin":"RCTP","destination":"RJNK","category":"arrival","route":"TIGOL..FOSAR..RJNK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.67,"airlines":[["eva/a321",1],["eva/a332",1]]},
+        {"origin":"RJFF","destination":"RJNK","category":"arrival","route":"TIGOL..FOSAR..RJNK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.67,"airlines":[["ana/b735",1],["ibx/crj7",1],["ibx/crj9",1],["ibx/crj2",1]]},
+        {"origin":"RJAA","destination":"RJNK","category":"arrival","route":"BUJAW..KUJJO..RJNK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.33,"airlines":[["ibx/crj7",1],["ibx/crj9",1],["ibx/crj2",1]]},
+        {"origin":"RJCC","destination":"RJNK","category":"arrival","route":"NTE..WUDLA..RJNK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.33,"airlines":[["ado/b735",1]]},
+        {"origin":"","destination":"RJNK","category":"arrival","route":"NTE..WUDLA..RJNK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.33,"airlines":[["ibx/crj7",1],["ibx/crj9",1],["ibx/crj2",1]]},
+        {"origin":"","destination":"RJNK","category":"arrival","route":"TIGOL..FOSAR..RJNK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.67,"airlines":[["ces/a319",1],["jta/b734",1]]},
+        {"origin":"","destination":"RJNK","category":"arrival","route":"NESPO..SIJIG..RJNK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.33,"airlines":[["kal/b738",1]]},
+        {"origin":"","destination":"RJNK","category":"arrival","route":"BUJAW..KUJJO..RJNK","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["ja/c172",6],["ja/p28a",5],["ja/c182",3],["ja/be36",2],["ja/da42",1],["ja/tb20",1],["ja/c208",2],["ja/pc12",2],["ja/be20",1],["ja/b350",1],["ja/p180",1],["ja/c510",1],["ja/e50p",1],["ja/c550",1],["ja/e55p",1],["ja/cl30",1],["ja/c680",1],["ja/h25b",1],["ja/lj45",1],["ja/f2th",1],["ja/glf4",1],["ja/glex",1],["ja/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [37.29,136.963,36.5722,136.5178],
+            [36.5722,136.5178,36.3934,136.4069],
+            [36.2648,137.0558,36.3456,136.648],
+            [36.3456,136.648,36.3934,136.4069],
+            [36.0667,135.876,36.272,136.2096],
+            [36.272,136.2096,36.3934,136.4069],
+            [36.493,135.7502,36.4304,136.1629],
+            [36.4304,136.1629,36.3934,136.4069]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [36.3877,136.394,36.2934,136.2236],
+            [36.3323,136.3158,36.3488,136.3017],
+            [36.2851,136.2306,36.3016,136.2166],
+            [36.4015,136.419,36.4956,136.5899],
+            [36.4568,136.4974,36.4403,136.5114],
+            [36.5038,136.5828,36.4873,136.5969]
+        ]}
+    ]
+}

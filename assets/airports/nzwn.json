@@ -1,0 +1,79 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/NZWN/",
+    "info": {"country":"NZ","city":"Wellington","type":"large_airport","longestRunwayM":1936,"frequencies":{"atis":"126.900","twr":"118.800","app":"122.300","gnd":"121.900"}},
+    "radio": {"twr":"Wellington Tower","app":"Wellington Approach","dep":"Wellington Departure"},
+    "icao": "NZWN",
+    "iata": "WLG",
+    "magnetic_north": 23.3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-41.326839,174.806862,"41ft"],
+    "rangeRings": {"enabled":true,"center":[-41.326839,174.806862],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":320,"speed":12},
+    "arrivalRunway": "34",
+    "departureRunway": "34",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-40.9551,175.02],[-41.0092,175.1409],[-41.085,175.2389],[-41.1772,175.3076],[-41.2796,175.3421],[-41.3853,175.3401],[-41.4869,175.3018],[-41.5777,175.2298],[-41.6513,175.1289],[-41.7029,175.0061],[-41.7288,174.8697],[-41.7273,174.7291],[-41.6985,174.5937],[-41.6444,174.4729],[-41.5687,174.3748],[-41.4765,174.3061],[-41.3741,174.2716],[-41.2684,174.2736],[-41.1668,174.3119],[-41.076,174.3839],[-41.0024,174.4848],[-40.9508,174.6076],[-40.9249,174.744],[-40.9264,174.8847]]}
+    ],
+    "fixes": {
+        "NZWN": [-41.32684,174.80686],
+        "ECEGU": [-41.49249,175.48839],
+        "FY": [-41.3918,175.149,"ferry"],
+        "CC": [-41.734,174.272,"cape campbell"],
+        "FOMHI": [-41.46912,174.61995],
+        "WB": [-41.5197,173.86301,"woodbourne"],
+        "SUSOR": [-41.37931,174.55005],
+        "GIBMO": [-40.7889,174.80414],
+        "TY": [-41.1167,174.82001,"titahi bay"],
+        "_RWY1604DME": [-41.25142,174.81082],
+        "_RWY3404DME": [-41.40078,174.80217]
+    },
+    "runways": [
+        {"name":["16","34"],"end":[[-41.31798,174.80697,"41ft"],[-41.33423,174.80603,"23ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ECEGU1F": {"icao":"ECEGU1F","name":"Ecegu One Foxtrot","rwy":{"NZWN16":["_RWY3404DME"],"NZWN34":["_RWY1604DME"]},"body":[],"exitPoints":{"ECEGU":["ECEGU"]},"draw":[["NZWN","ECEGU*"]]},
+        "CC2B": {"icao":"CC2B","name":"Cape Campbell Two Bravo","rwy":{"NZWN16":["_RWY3404DME"],"NZWN34":["_RWY1604DME"]},"body":[],"exitPoints":{"CC":["CC"]},"draw":[["NZWN","CC*"]]},
+        "WB1A": {"icao":"WB1A","name":"Woodbourne One Alpha","rwy":{"NZWN16":["_RWY3404DME"],"NZWN34":["_RWY1604DME"]},"body":[],"exitPoints":{"WB":["WB"]},"draw":[["NZWN","WB*"]]},
+        "GIBMO2C": {"icao":"GIBMO2C","name":"Gibmo Two Charlie","rwy":{"NZWN16":["_RWY3404DME"],"NZWN34":["_RWY1604DME"]},"body":[],"exitPoints":{"GIBMO":["GIBMO"]},"draw":[["NZWN","GIBMO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"NZWN","destination":"NZCH","category":"departure","route":"NZWN34.CC2B.CC","altitude":"","speed":"","method":"random","rate":1.06,"airlines":[["anz/a320",1],["anz/dh8c",1],["jst/a320",1]]},
+        {"origin":"NZWN","destination":"NZAA","category":"departure","route":"NZWN34.GIBMO2C.GIBMO","altitude":"","speed":"","method":"random","rate":0.7,"airlines":[["anz/a320",1],["jst/a320",1]]},
+        {"origin":"NZWN","destination":"YMML","category":"departure","route":"NZWN34.WB1A.WB","altitude":"","speed":"","method":"random","rate":0.7,"airlines":[["anz/a320",1],["voz/a320",1]]},
+        {"origin":"NZWN","destination":"YSSY","category":"departure","route":"NZWN34.WB1A.WB","altitude":"","speed":"","method":"random","rate":0.7,"airlines":[["anz/a320",1],["voz/a320",1]]},
+        {"origin":"NZWN","destination":"","category":"departure","route":"NZWN34.CC2B.CC","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["anz/a320",1]]},
+        {"origin":"NZWN","destination":"","category":"departure","route":"NZWN34.WB1A.WB","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["zk/c172",6],["zk/p28a",5],["zk/c182",3],["zk/be36",2],["zk/da42",1],["zk/tb20",1],["zk/c208",2],["zk/pc12",2],["zk/be20",1],["zk/b350",1],["zk/p180",1],["zk/c510",1],["zk/e50p",1],["zk/c550",1],["zk/e55p",1],["zk/cl30",1],["zk/c680",1],["zk/h25b",1],["zk/lj45",1],["zk/f2th",1],["zk/glf4",1],["zk/glex",1],["zk/glf5",1]]},
+        {"origin":"NZCH","destination":"NZWN","category":"arrival","route":"CC..FOMHI..NZWN","altitude":[4000,7000],"speed":250,"method":"random","rate":1.06,"airlines":[["anz/a320",1],["anz/dh8c",1],["jst/a320",1]]},
+        {"origin":"NZAA","destination":"NZWN","category":"arrival","route":"GIBMO..TY..NZWN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.7,"airlines":[["anz/a320",1],["jst/a320",1]]},
+        {"origin":"YMML","destination":"NZWN","category":"arrival","route":"WB..SUSOR..NZWN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.7,"airlines":[["anz/a320",1],["voz/a320",1]]},
+        {"origin":"YSSY","destination":"NZWN","category":"arrival","route":"WB..SUSOR..NZWN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.7,"airlines":[["anz/a320",1],["voz/a320",1]]},
+        {"origin":"","destination":"NZWN","category":"arrival","route":"CC..FOMHI..NZWN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.35,"airlines":[["anz/a320",1]]},
+        {"origin":"","destination":"NZWN","category":"arrival","route":"WB..SUSOR..NZWN","altitude":[4000,7000],"speed":250,"method":"random","rate":1.17,"airlines":[["zk/c172",6],["zk/p28a",5],["zk/c182",3],["zk/be36",2],["zk/da42",1],["zk/tb20",1],["zk/c208",2],["zk/pc12",2],["zk/be20",1],["zk/b350",1],["zk/p180",1],["zk/c510",1],["zk/e50p",1],["zk/c550",1],["zk/e55p",1],["zk/cl30",1],["zk/c680",1],["zk/h25b",1],["zk/lj45",1],["zk/f2th",1],["zk/glf4",1],["zk/glex",1],["zk/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-41.4925,175.4884,-41.3918,175.149],
+            [-41.3918,175.149,-41.3268,174.8069],
+            [-41.734,174.272,-41.4691,174.62],
+            [-41.4691,174.62,-41.3268,174.8069],
+            [-41.5197,173.863,-41.3793,174.5501],
+            [-41.3793,174.5501,-41.3268,174.8069],
+            [-40.7889,174.8041,-41.1167,174.82],
+            [-41.1167,174.82,-41.3268,174.8069]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-41.318,174.807,-41.1516,174.8166],
+            [-41.2343,174.7985,-41.2352,174.8251],
+            [-41.1511,174.8033,-41.152,174.8298],
+            [-41.3342,174.806,-41.5006,174.7964],
+            [-41.4179,174.8145,-41.417,174.7879],
+            [-41.5011,174.8097,-41.5002,174.783]
+        ]}
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LOWG/",
+    "info": {"country":"AT","city":"Feldkirchen bei Graz","type":"large_airport","longestRunwayM":3000,"frequencies":{"atis":"126.125","twr":"118.200","app":"119.300"}},
+    "radio": {"twr":"Graz Tower","app":"Graz Approach","dep":"Graz Departure"},
+    "icao": "LOWG",
+    "iata": "GRZ",
+    "magnetic_north": 5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 9000,
+    "initial_alt": 5000,
+    "position": [46.9911,15.4396,"1115ft"],
+    "rangeRings": {"enabled":true,"center":[46.9911,15.4396],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":180,"speed":11},
+    "arrivalRunway": "16C",
+    "departureRunway": "16C",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":90,"airspace_class":"D","poly":[[47.3943,15.4913],[47.3714,15.6425],[47.3226,15.7799],[47.2512,15.8941],[47.1621,15.9773],[47.0614,16.0239],[46.9558,16.0306],[46.8527,15.9971],[46.759,15.9256],[46.6811,15.821],[46.6243,15.6903],[46.5926,15.5426],[46.5879,15.3879],[46.6108,15.2367],[46.6596,15.0993],[46.731,14.9851],[46.8201,14.9019],[46.9208,14.8553],[47.0264,14.8486],[47.1295,14.8821],[47.2232,14.9536],[47.3011,15.0582],[47.3579,15.1889],[47.3896,15.3366]]}
+    ],
+    "fixes": {
+        "LOWG": [46.9911,15.4396],
+        "TF": [47.841,16.2817,"wierner neustadt east"],
+        "TOWBE": [47.15669,15.60367],
+        "VAR": [46.3117,16.3808,"varazdin"],
+        "SOFEZ": [46.84583,15.64084],
+        "KFT": [46.5976,14.5623,"klagenfurt"],
+        "MALAW": [46.88129,15.19478],
+        "ZW": [47.1981,14.7567,"zeltweg"],
+        "LUSTI": [47.07226,15.17184],
+        "_RWY16C04DME": [47.06747,15.41857],
+        "_RWY34C04DME": [46.91232,15.46131]
+    },
+    "runways": [
+        {"name":["16C","34C"],"end":[[47.002,15.43663,"1115ft"],[46.9778,15.4433,"1088ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "TF2C": {"icao":"TF2C","name":"Wierner Neustadt East Two Charlie","rwy":{"LOWG16C":["_RWY34C04DME"],"LOWG34C":["_RWY16C04DME"]},"body":[],"exitPoints":{"TF":["TF"]},"draw":[["LOWG","TF*"]]},
+        "VAR3C": {"icao":"VAR3C","name":"Varazdin Three Charlie","rwy":{"LOWG16C":["_RWY34C04DME"],"LOWG34C":["_RWY16C04DME"]},"body":[],"exitPoints":{"VAR":["VAR"]},"draw":[["LOWG","VAR*"]]},
+        "KFT1D": {"icao":"KFT1D","name":"Klagenfurt One Delta","rwy":{"LOWG16C":["_RWY34C04DME"],"LOWG34C":["_RWY16C04DME"]},"body":[],"exitPoints":{"KFT":["KFT"]},"draw":[["LOWG","KFT*"]]},
+        "ZW2D": {"icao":"ZW2D","name":"Zeltweg Two Delta","rwy":{"LOWG16C":["_RWY34C04DME"],"LOWG34C":["_RWY16C04DME"]},"body":[],"exitPoints":{"ZW":["ZW"]},"draw":[["LOWG","ZW*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LOWG","destination":"EDDF","category":"departure","route":"LOWG16C.ZW2D.ZW","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["dlh/b733",1],["dlh/e190",1]]},
+        {"origin":"LOWG","destination":"GCTS","category":"departure","route":"LOWG16C.KFT1D.KFT","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["ber/a320",1],["nly/a320",1]]},
+        {"origin":"LOWG","destination":"LGIR","category":"departure","route":"LOWG16C.VAR3C.VAR","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["ber/a320",1],["nly/a320",1]]},
+        {"origin":"LOWG","destination":"LTAI","category":"departure","route":"LOWG16C.VAR3C.VAR","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["nly/a321",1],["sxs/b738",1]]},
+        {"origin":"LOWG","destination":"","category":"departure","route":"LOWG16C.KFT1D.KFT","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["nly/a320",1]]},
+        {"origin":"LOWG","destination":"","category":"departure","route":"LOWG16C.ZW2D.ZW","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["isk/dh8c",1]]},
+        {"origin":"LOWG","destination":"","category":"departure","route":"LOWG16C.TF2C.TF","altitude":"","speed":"","method":"random","rate":1.25,"airlines":[["oe/c172",6],["oe/p28a",5],["oe/c182",3],["oe/be36",2],["oe/da42",1],["oe/tb20",1],["oe/c208",2],["oe/pc12",2],["oe/be20",1],["oe/b350",1],["oe/p180",1],["oe/c510",1],["oe/e50p",1],["oe/c550",1],["oe/e55p",1],["oe/cl30",1],["oe/c680",1],["oe/h25b",1],["oe/lj45",1],["oe/f2th",1],["oe/glf4",1],["oe/glex",1],["oe/glf5",1]]},
+        {"origin":"EDDF","destination":"LOWG","category":"arrival","route":"ZW..LUSTI..LOWG","altitude":[5000,8000],"speed":250,"method":"random","rate":0.75,"airlines":[["dlh/b733",1],["dlh/e190",1]]},
+        {"origin":"GCTS","destination":"LOWG","category":"arrival","route":"KFT..MALAW..LOWG","altitude":[5000,8000],"speed":250,"method":"random","rate":0.75,"airlines":[["ber/a320",1],["nly/a320",1]]},
+        {"origin":"LGIR","destination":"LOWG","category":"arrival","route":"VAR..SOFEZ..LOWG","altitude":[5000,8000],"speed":250,"method":"random","rate":0.75,"airlines":[["ber/a320",1],["nly/a320",1]]},
+        {"origin":"LTAI","destination":"LOWG","category":"arrival","route":"VAR..SOFEZ..LOWG","altitude":[5000,8000],"speed":250,"method":"random","rate":0.75,"airlines":[["nly/a321",1],["sxs/b738",1]]},
+        {"origin":"","destination":"LOWG","category":"arrival","route":"KFT..MALAW..LOWG","altitude":[5000,8000],"speed":250,"method":"random","rate":0.38,"airlines":[["nly/a320",1]]},
+        {"origin":"","destination":"LOWG","category":"arrival","route":"ZW..LUSTI..LOWG","altitude":[5000,8000],"speed":250,"method":"random","rate":0.38,"airlines":[["isk/dh8c",1]]},
+        {"origin":"","destination":"LOWG","category":"arrival","route":"TF..TOWBE..LOWG","altitude":[5000,8000],"speed":250,"method":"random","rate":1.25,"airlines":[["oe/c172",6],["oe/p28a",5],["oe/c182",3],["oe/be36",2],["oe/da42",1],["oe/tb20",1],["oe/c208",2],["oe/pc12",2],["oe/be20",1],["oe/b350",1],["oe/p180",1],["oe/c510",1],["oe/e50p",1],["oe/c550",1],["oe/e55p",1],["oe/cl30",1],["oe/c680",1],["oe/h25b",1],["oe/lj45",1],["oe/f2th",1],["oe/glf4",1],["oe/glex",1],["oe/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [47.841,16.2817,47.1567,15.6037],
+            [47.1567,15.6037,46.9911,15.4396],
+            [46.3117,16.3808,46.8458,15.6408],
+            [46.8458,15.6408,46.9911,15.4396],
+            [46.5976,14.5623,46.8813,15.1948],
+            [46.8813,15.1948,46.9911,15.4396],
+            [47.1981,14.7567,47.0723,15.1718],
+            [47.0723,15.1718,46.9911,15.4396]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [47.002,15.4366,47.1657,15.3914],
+            [47.082,15.3996,47.0857,15.4285],
+            [47.1638,15.3769,47.1675,15.4058],
+            [46.9778,15.4433,46.8141,15.4883],
+            [46.8978,15.4802,46.8941,15.4514],
+            [46.8159,15.5026,46.8123,15.4739]
+        ]}
+    ]
+}

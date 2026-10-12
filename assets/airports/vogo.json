@@ -1,0 +1,88 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VOGO/",
+    "info": {"country":"IN","city":"Vasco da Gama","type":"large_airport","longestRunwayM":3458,"frequencies":{"atis":"126.600","twr":"118.100","app":"119.700"}},
+    "radio": {"twr":"Goa Dabolim Tower","app":"Goa Dabolim Approach","dep":"Goa Dabolim Departure"},
+    "icao": "VOGO",
+    "iata": "GOI",
+    "magnetic_north": -0.6,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [15.380062,73.833328,"150ft"],
+    "rangeRings": {"enabled":true,"center":[15.380062,73.833328],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":80,"speed":11},
+    "arrivalRunway": "08",
+    "departureRunway": "08",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[15.7847,73.8289],[15.772,73.9377],[15.7326,74.0394],[15.6692,74.127],[15.5861,74.1946],[15.4889,74.2376],[15.3843,74.253],[15.2794,74.2399],[15.1814,74.199],[15.0969,74.1332],[15.0317,74.047],[14.9903,73.9462],[14.9754,73.8377],[14.9881,73.7289],[15.0275,73.6273],[15.0909,73.5397],[15.1741,73.4721],[15.2712,73.4291],[15.3758,73.4136],[15.4807,73.4268],[15.5787,73.4677],[15.6632,73.5334],[15.7284,73.6197],[15.7698,73.7205]]}
+    ],
+    "fixes": {
+        "VOGO": [15.38006,73.83333],
+        "BBM": [15.8562,74.6169,"belgaum"],
+        "SOWHI": [15.48662,74.0087],
+        "ONECO": [15.14928,74.33729],
+        "URIWI": [15.29432,74.02057],
+        "FACUJ": [14.90898,73.56396],
+        "IBACA": [15.20504,73.73325],
+        "LUNZI": [15.66778,73.36192],
+        "MEPPE": [15.48696,73.65818],
+        "TEFCU": [15.90773,73.72485],
+        "GUHUT": [15.57611,73.79302],
+        "_RWY0804DME": [15.36471,73.74785],
+        "_RWY2604DME": [15.39697,73.91495]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[15.3778,73.8156,"110ft"],[15.3839,73.8472,"183ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "BBM3F": {"icao":"BBM3F","name":"Belgaum Three Foxtrot","rwy":{"VOGO08":["_RWY2604DME"],"VOGO26":["_RWY0804DME"]},"body":[],"exitPoints":{"BBM":["BBM"]},"draw":[["VOGO","BBM*"]]},
+        "ONECO3F": {"icao":"ONECO3F","name":"Oneco Three Foxtrot","rwy":{"VOGO08":["_RWY2604DME"],"VOGO26":["_RWY0804DME"]},"body":[],"exitPoints":{"ONECO":["ONECO"]},"draw":[["VOGO","ONECO*"]]},
+        "FACUJ1D": {"icao":"FACUJ1D","name":"Facuj One Delta","rwy":{"VOGO08":["_RWY2604DME"],"VOGO26":["_RWY0804DME"]},"body":[],"exitPoints":{"FACUJ":["FACUJ"]},"draw":[["VOGO","FACUJ*"]]},
+        "LUNZI1C": {"icao":"LUNZI1C","name":"Lunzi One Charlie","rwy":{"VOGO08":["_RWY2604DME"],"VOGO26":["_RWY0804DME"]},"body":[],"exitPoints":{"LUNZI":["LUNZI"]},"draw":[["VOGO","LUNZI*"]]},
+        "TEFCU1C": {"icao":"TEFCU1C","name":"Tefcu One Charlie","rwy":{"VOGO08":["_RWY2604DME"],"VOGO26":["_RWY0804DME"]},"body":[],"exitPoints":{"TEFCU":["TEFCU"]},"draw":[["VOGO","TEFCU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"VOGO","destination":"VABB","category":"departure","route":"VOGO08.TEFCU1C.TEFCU","altitude":"","speed":"","method":"random","rate":0.92,"airlines":[["aic/a321",1],["gow/a320",1],["igo/a320",1],["jai/b738",1],["sej/b737",1]]},
+        {"origin":"VOGO","destination":"VOBL","category":"departure","route":"VOGO08.ONECO3F.ONECO","altitude":"","speed":"","method":"random","rate":0.74,"airlines":[["aic/a319",1],["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VOGO","destination":"VIDP","category":"departure","route":"VOGO08.TEFCU1C.TEFCU","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VOGO","destination":"VOHS","category":"departure","route":"VOGO08.BBM3F.BBM","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["igo/a320",1],["sej/b737",1],["sej/dh8d",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"VOGO","destination":"VOMM","category":"departure","route":"VOGO08.ONECO3F.ONECO","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["aic/a320",1],["jai/b738",1],["sej/dh8d",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"VOGO","destination":"","category":"departure","route":"VOGO08.LUNZI1C.LUNZI","altitude":"","speed":"","method":"random","rate":0.74,"airlines":[["aby/a320",1],["aic/a319",1],["aic/a320",1],["qtr/a321",1]]},
+        {"origin":"VOGO","destination":"","category":"departure","route":"VOGO08.TEFCU1C.TEFCU","altitude":"","speed":"","method":"random","rate":0.74,"airlines":[["aic/a319",1],["igo/a320",1],["tso/b773",1],["sej/dh8d",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"VOGO","destination":"","category":"departure","route":"VOGO08.FACUJ1D.FACUJ","altitude":"","speed":"","method":"random","rate":1.6,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"VABB","destination":"VOGO","category":"arrival","route":"TEFCU..GUHUT..VOGO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.92,"airlines":[["aic/a321",1],["gow/a320",1],["igo/a320",1],["jai/b738",1],["sej/b737",1]]},
+        {"origin":"VOBL","destination":"VOGO","category":"arrival","route":"ONECO..URIWI..VOGO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.74,"airlines":[["aic/a319",1],["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VIDP","destination":"VOGO","category":"arrival","route":"TEFCU..GUHUT..VOGO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.55,"airlines":[["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VOHS","destination":"VOGO","category":"arrival","route":"BBM..SOWHI..VOGO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.55,"airlines":[["igo/a320",1],["sej/b737",1],["sej/dh8d",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"VOMM","destination":"VOGO","category":"arrival","route":"ONECO..URIWI..VOGO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.55,"airlines":[["aic/a320",1],["jai/b738",1],["sej/dh8d",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"","destination":"VOGO","category":"arrival","route":"LUNZI..MEPPE..VOGO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.74,"airlines":[["aby/a320",1],["aic/a319",1],["aic/a320",1],["qtr/a321",1]]},
+        {"origin":"","destination":"VOGO","category":"arrival","route":"TEFCU..GUHUT..VOGO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.74,"airlines":[["aic/a319",1],["igo/a320",1],["tso/b773",1],["sej/dh8d",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"","destination":"VOGO","category":"arrival","route":"FACUJ..IBACA..VOGO","altitude":[4000,7000],"speed":250,"method":"random","rate":1.6,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [15.8562,74.6169,15.4866,74.0087],
+            [15.4866,74.0087,15.3801,73.8333],
+            [15.1493,74.3373,15.2943,74.0206],
+            [15.2943,74.0206,15.3801,73.8333],
+            [14.909,73.564,15.205,73.7332],
+            [15.205,73.7332,15.3801,73.8333],
+            [15.6678,73.3619,15.487,73.6582],
+            [15.487,73.6582,15.3801,73.8333],
+            [15.9077,73.7248,15.5761,73.793],
+            [15.5761,73.793,15.3801,73.8333]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [15.3778,73.8156,15.345,73.6462],
+            [15.3516,73.733,15.3712,73.7289],
+            [15.3352,73.6483,15.3548,73.6442],
+            [15.3839,73.8472,15.4165,74.0166],
+            [15.41,73.9299,15.3904,73.9339],
+            [15.4263,74.0146,15.4067,74.0186]
+        ]}
+    ]
+}

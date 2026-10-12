@@ -1,0 +1,90 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ZBCZ/",
+    "info": {"country":"CN","city":"Changzhi","type":"small_airport","longestRunwayM":2600,"approximateRunways":true},
+    "radio": {"twr":"Changzhi Tower","app":"Changzhi Approach","dep":"Changzhi Departure"},
+    "icao": "ZBCZ",
+    "iata": "CIH",
+    "magnetic_north": -5.7,
+    "ctr_radius": 45,
+    "ctr_ceiling": 7000,
+    "initial_alt": 3000,
+    "position": [36.247501,113.125999,"0ft"],
+    "rangeRings": {"enabled":true,"center":[36.247501,113.125999],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":210,"speed":8},
+    "arrivalRunway": "19",
+    "departureRunway": "19",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":70,"airspace_class":"D","poly":[[36.6502,113.0762],[36.6469,113.2071],[36.6163,113.3325],[36.5607,113.4438],[36.4837,113.5335],[36.3906,113.5954],[36.2877,113.6253],[36.1821,113.6212],[36.081,113.5834],[35.9912,113.5143],[35.9189,113.4188],[35.8689,113.3034],[35.8448,113.1758],[35.8481,113.0449],[35.8787,112.9195],[35.9343,112.8082],[36.0113,112.7185],[36.1045,112.6566],[36.2073,112.6267],[36.3129,112.6308],[36.414,112.6686],[36.5038,112.7377],[36.5761,112.8332],[36.6261,112.9486]]}
+    ],
+    "fixes": {
+        "ZBCZ": [36.2475,113.126],
+        "EHIBA": [36.65942,113.555],
+        "NEZOW": [36.40055,113.28539],
+        "PINID": [35.94554,113.67803],
+        "GOZVA": [36.13531,113.3311],
+        "ALOLU": [35.71884,113.24932],
+        "FOKWO": [36.05108,113.17182],
+        "NERAB": [35.94681,112.57291],
+        "SEZVE": [36.13578,112.9205],
+        "HUKNA": [36.78149,113.04537],
+        "NEZIM": [36.4459,113.09604],
+        "_RWY0104DME": [36.16941,113.11872],
+        "_RWY1904DME": [36.32559,113.13329]
+    },
+    "runways": [
+        {"name":["01","19"],"end":[[36.23584,113.12491,"0ft"],[36.25916,113.12709,"0ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "EHIBA1D": {"icao":"EHIBA1D","name":"Ehiba One Delta","rwy":{"ZBCZ01":["_RWY1904DME"],"ZBCZ19":["_RWY0104DME"]},"body":[],"exitPoints":{"EHIBA":["EHIBA"]},"draw":[["ZBCZ","EHIBA*"]]},
+        "PINID1C": {"icao":"PINID1C","name":"Pinid One Charlie","rwy":{"ZBCZ01":["_RWY1904DME"],"ZBCZ19":["_RWY0104DME"]},"body":[],"exitPoints":{"PINID":["PINID"]},"draw":[["ZBCZ","PINID*"]]},
+        "ALOLU1B": {"icao":"ALOLU1B","name":"Alolu One Bravo","rwy":{"ZBCZ01":["_RWY1904DME"],"ZBCZ19":["_RWY0104DME"]},"body":[],"exitPoints":{"ALOLU":["ALOLU"]},"draw":[["ZBCZ","ALOLU*"]]},
+        "NERAB2E": {"icao":"NERAB2E","name":"Nerab Two Echo","rwy":{"ZBCZ01":["_RWY1904DME"],"ZBCZ19":["_RWY0104DME"]},"body":[],"exitPoints":{"NERAB":["NERAB"]},"draw":[["ZBCZ","NERAB*"]]},
+        "HUKNA3B": {"icao":"HUKNA3B","name":"Hukna Three Bravo","rwy":{"ZBCZ01":["_RWY1904DME"],"ZBCZ19":["_RWY0104DME"]},"body":[],"exitPoints":{"HUKNA":["HUKNA"]},"draw":[["ZBCZ","HUKNA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ZBCZ","destination":"ZBAA","category":"departure","route":"ZBCZ19.EHIBA1D.EHIBA","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["chh/b738",1],["csn/a320",1]]},
+        {"origin":"ZBCZ","destination":"ZBYN","category":"departure","route":"ZBCZ19.HUKNA3B.HUKNA","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["ces/e120",1],["chh/b738",1]]},
+        {"origin":"ZBCZ","destination":"ZBDT","category":"departure","route":"ZBCZ19.HUKNA3B.HUKNA","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["csn/a320",1]]},
+        {"origin":"ZBCZ","destination":"ZBTJ","category":"departure","route":"ZBCZ19.EHIBA1D.EHIBA","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["chh/b738",1]]},
+        {"origin":"ZBCZ","destination":"ZGGG","category":"departure","route":"ZBCZ19.ALOLU1B.ALOLU","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["csn/a320",1]]},
+        {"origin":"ZBCZ","destination":"","category":"departure","route":"ZBCZ19.PINID1C.PINID","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["dkh/a320",1]]},
+        {"origin":"ZBCZ","destination":"","category":"departure","route":"ZBCZ19.ALOLU1B.ALOLU","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["chh/b738",2],["ces/e120",1]]},
+        {"origin":"ZBCZ","destination":"","category":"departure","route":"ZBCZ19.NERAB2E.NERAB","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["cca/a319",1]]},
+        {"origin":"ZBCZ","destination":"","category":"departure","route":"ZBCZ19.NERAB2E.NERAB","altitude":"","speed":"","method":"random","rate":1.5,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",1],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
+        {"origin":"ZBAA","destination":"ZBCZ","category":"arrival","route":"EHIBA..NEZOW..ZBCZ","altitude":[3000,6000],"speed":250,"method":"random","rate":0.75,"airlines":[["chh/b738",1],["csn/a320",1]]},
+        {"origin":"ZBYN","destination":"ZBCZ","category":"arrival","route":"HUKNA..NEZIM..ZBCZ","altitude":[3000,6000],"speed":250,"method":"random","rate":0.75,"airlines":[["ces/e120",1],["chh/b738",1]]},
+        {"origin":"ZBDT","destination":"ZBCZ","category":"arrival","route":"HUKNA..NEZIM..ZBCZ","altitude":[3000,6000],"speed":250,"method":"random","rate":0.38,"airlines":[["csn/a320",1]]},
+        {"origin":"ZBTJ","destination":"ZBCZ","category":"arrival","route":"EHIBA..NEZOW..ZBCZ","altitude":[3000,6000],"speed":250,"method":"random","rate":0.38,"airlines":[["chh/b738",1]]},
+        {"origin":"ZGGG","destination":"ZBCZ","category":"arrival","route":"ALOLU..FOKWO..ZBCZ","altitude":[3000,6000],"speed":250,"method":"random","rate":0.38,"airlines":[["csn/a320",1]]},
+        {"origin":"","destination":"ZBCZ","category":"arrival","route":"PINID..GOZVA..ZBCZ","altitude":[3000,6000],"speed":250,"method":"random","rate":0.38,"airlines":[["dkh/a320",1]]},
+        {"origin":"","destination":"ZBCZ","category":"arrival","route":"ALOLU..FOKWO..ZBCZ","altitude":[3000,6000],"speed":250,"method":"random","rate":1.13,"airlines":[["chh/b738",2],["ces/e120",1]]},
+        {"origin":"","destination":"ZBCZ","category":"arrival","route":"NERAB..SEZVE..ZBCZ","altitude":[3000,6000],"speed":250,"method":"random","rate":0.38,"airlines":[["cca/a319",1]]},
+        {"origin":"","destination":"ZBCZ","category":"arrival","route":"NERAB..SEZVE..ZBCZ","altitude":[3000,6000],"speed":250,"method":"random","rate":1.5,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",1],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [36.6594,113.555,36.4005,113.2854],
+            [36.4005,113.2854,36.2475,113.126],
+            [35.9455,113.678,36.1353,113.3311],
+            [36.1353,113.3311,36.2475,113.126],
+            [35.7188,113.2493,36.0511,113.1718],
+            [36.0511,113.1718,36.2475,113.126],
+            [35.9468,112.5729,36.1358,112.9205],
+            [36.1358,112.9205,36.2475,113.126],
+            [36.7815,113.0454,36.4459,113.096],
+            [36.4459,113.096,36.2475,113.126]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [36.2358,113.1249,36.0698,113.1095],
+            [36.1521,113.1295,36.1535,113.1048],
+            [36.069,113.1218,36.0705,113.0971],
+            [36.2592,113.1271,36.4252,113.1426],
+            [36.343,113.1225,36.3415,113.1472],
+            [36.426,113.1302,36.4245,113.155]
+        ]}
+    ]
+}

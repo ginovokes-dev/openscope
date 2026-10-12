@@ -1,0 +1,81 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LGZA/",
+    "info": {"country":"GR","city":"Zakynthos","type":"medium_airport","longestRunwayM":2240,"frequencies":{"twr":"125.425"}},
+    "radio": {"twr":"Zakynthos Tower","app":"Zakynthos Approach","dep":"Zakynthos Departure"},
+    "icao": "LGZA",
+    "iata": "ZTH",
+    "magnetic_north": 4.8,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [37.7509,20.8843,"12ft"],
+    "rangeRings": {"enabled":true,"center":[37.7509,20.8843],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":140,"speed":7},
+    "arrivalRunway": "16",
+    "departureRunway": "16",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[38.1542,20.9271],[38.1317,21.0577],[38.0832,21.1764],[38.0121,21.2752],[37.9232,21.3474],[37.8226,21.388],[37.717,21.3943],[37.6138,21.3659],[37.5199,21.3046],[37.4418,21.2147],[37.3847,21.1022],[37.3526,20.9749],[37.3476,20.8415],[37.3701,20.7109],[37.4186,20.5922],[37.4897,20.4934],[37.5786,20.4212],[37.6792,20.3806],[37.7848,20.3743],[37.888,20.4027],[37.9819,20.464],[38.06,20.5539],[38.1171,20.6664],[38.1492,20.7937]]}
+    ],
+    "fixes": {
+        "LGZA": [37.7509,20.8843],
+        "IWEJI": [37.80084,21.56171],
+        "WICPU": [37.76946,21.13598],
+        "UPILE": [37.41034,21.41095],
+        "ASUWO": [37.62437,21.07997],
+        "UWEGU": [37.39596,20.37307],
+        "NUZBU": [37.61903,20.69436],
+        "KEF": [38.1157,20.4993,"kefallinia"],
+        "GISUK": [37.90436,20.72235],
+        "_RWY1604DME": [37.82265,20.85697],
+        "_RWY3404DME": [37.6791,20.91126]
+    },
+    "runways": [
+        {"name":["16","34"],"end":[[37.75882,20.88114,"11ft"],[37.74293,20.88715,"12ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "IWEJI3B": {"icao":"IWEJI3B","name":"Iweji Three Bravo","rwy":{"LGZA16":["_RWY3404DME"],"LGZA34":["_RWY1604DME"]},"body":[],"exitPoints":{"IWEJI":["IWEJI"]},"draw":[["LGZA","IWEJI*"]]},
+        "UPILE1C": {"icao":"UPILE1C","name":"Upile One Charlie","rwy":{"LGZA16":["_RWY3404DME"],"LGZA34":["_RWY1604DME"]},"body":[],"exitPoints":{"UPILE":["UPILE"]},"draw":[["LGZA","UPILE*"]]},
+        "UWEGU2B": {"icao":"UWEGU2B","name":"Uwegu Two Bravo","rwy":{"LGZA16":["_RWY3404DME"],"LGZA34":["_RWY1604DME"]},"body":[],"exitPoints":{"UWEGU":["UWEGU"]},"draw":[["LGZA","UWEGU*"]]},
+        "KEF3A": {"icao":"KEF3A","name":"Kefallinia Three Alpha","rwy":{"LGZA16":["_RWY3404DME"],"LGZA34":["_RWY1604DME"]},"body":[],"exitPoints":{"KEF":["KEF"]},"draw":[["LGZA","KEF*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LGZA","destination":"LOWW","category":"departure","route":"LGZA16.KEF3A.KEF","altitude":"","speed":"","method":"random","rate":1.41,"airlines":[["ber/a320",1],["ber/e190",1],["nly/a320",1],["nly/e190",1]]},
+        {"origin":"LGZA","destination":"EGCC","category":"departure","route":"LGZA16.KEF3A.KEF","altitude":"","speed":"","method":"random","rate":1.06,"airlines":[["cfg/b752",1],["exs/b738",1],["tvf/b738",1]]},
+        {"origin":"LGZA","destination":"EGKK","category":"departure","route":"LGZA16.KEF3A.KEF","altitude":"","speed":"","method":"random","rate":0.71,"airlines":[["ezy/a320",1],["tvf/b738",1]]},
+        {"origin":"LGZA","destination":"LGAV","category":"departure","route":"LGZA16.IWEJI3B.IWEJI","altitude":"","speed":"","method":"random","rate":0.71,"airlines":[["aee/dh8d",1],["oal/dh8d",1]]},
+        {"origin":"LGZA","destination":"EBCI","category":"departure","route":"LGZA16.KEF3A.KEF","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"LGZA","destination":"","category":"departure","route":"LGZA16.UPILE1C.UPILE","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["tra/b738",1]]},
+        {"origin":"LGZA","destination":"","category":"departure","route":"LGZA16.KEF3A.KEF","altitude":"","speed":"","method":"random","rate":1.41,"airlines":[["ber/b738",2],["exs/b738",1],["tra/b738",1]]},
+        {"origin":"LOWW","destination":"LGZA","category":"arrival","route":"KEF..GISUK..LGZA","altitude":[4000,7000],"speed":250,"method":"random","rate":1.41,"airlines":[["ber/a320",1],["ber/e190",1],["nly/a320",1],["nly/e190",1]]},
+        {"origin":"EGCC","destination":"LGZA","category":"arrival","route":"KEF..GISUK..LGZA","altitude":[4000,7000],"speed":250,"method":"random","rate":1.06,"airlines":[["cfg/b752",1],["exs/b738",1],["tvf/b738",1]]},
+        {"origin":"EGKK","destination":"LGZA","category":"arrival","route":"KEF..GISUK..LGZA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.71,"airlines":[["ezy/a320",1],["tvf/b738",1]]},
+        {"origin":"LGAV","destination":"LGZA","category":"arrival","route":"IWEJI..WICPU..LGZA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.71,"airlines":[["aee/dh8d",1],["oal/dh8d",1]]},
+        {"origin":"EBCI","destination":"LGZA","category":"arrival","route":"KEF..GISUK..LGZA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LGZA","category":"arrival","route":"UPILE..ASUWO..LGZA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.35,"airlines":[["tra/b738",1]]},
+        {"origin":"","destination":"LGZA","category":"arrival","route":"KEF..GISUK..LGZA","altitude":[4000,7000],"speed":250,"method":"random","rate":1.41,"airlines":[["ber/b738",2],["exs/b738",1],["tra/b738",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [37.8008,21.5617,37.7695,21.136],
+            [37.7695,21.136,37.7509,20.8843],
+            [37.4103,21.411,37.6244,21.08],
+            [37.6244,21.08,37.7509,20.8843],
+            [37.396,20.3731,37.619,20.6944],
+            [37.619,20.6944,37.7509,20.8843],
+            [38.1157,20.4993,37.9044,20.7223],
+            [37.9044,20.7223,37.7509,20.8843]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [37.7588,20.8811,37.9184,20.8207],
+            [37.8357,20.8388,37.8415,20.8631],
+            [37.9155,20.8085,37.9212,20.8328],
+            [37.7429,20.8871,37.5833,20.9474],
+            [37.666,20.9294,37.6603,20.9052],
+            [37.5862,20.9594,37.5805,20.9353]
+        ]}
+    ]
+}

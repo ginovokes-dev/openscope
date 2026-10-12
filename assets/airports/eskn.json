@@ -1,0 +1,101 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ESKN/",
+    "info": {"country":"SE","city":"Nykoping","type":"large_airport","longestRunwayM":2878,"frequencies":{"atis":"126.280","twr":"127.705","app":"132.955"}},
+    "radio": {"twr":"Stockholm Skavsta Tower","app":"Stockholm Skavsta Approach","dep":"Stockholm Skavsta Departure"},
+    "icao": "ESKN",
+    "iata": "NYO",
+    "magnetic_north": 7.1,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [58.789656,16.911479,"140ft"],
+    "rangeRings": {"enabled":true,"center":[58.789656,16.911479],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":250,"speed":11},
+    "arrivalRunway": "26",
+    "departureRunway": "26",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[59.3251,17.0402],[59.2896,17.3032],[59.22,17.5396],[59.1211,17.7332],[58.9996,17.8707],[58.8638,17.9429],[58.723,17.9448],[58.5866,17.8763],[58.4642,17.742],[58.3639,17.5511],[58.2926,17.3167],[58.2552,17.0546],[58.2542,16.7828],[58.2897,16.5197],[58.3593,16.2833],[58.4582,16.0898],[58.5797,15.9522],[58.7155,15.88],[58.8564,15.8781],[58.9927,15.9467],[59.1151,16.0809],[59.2154,16.2718],[59.2867,16.5063],[59.3241,16.7684]]}
+    ],
+    "fixes": {
+        "ESKN": [58.78966,16.91148],
+        "LNA": [59.539,17.3583,"lena"],
+        "AMABI": [59.02835,17.05381],
+        "COZUC": [58.69999,18.26319],
+        "JUCRU": [58.75793,17.38971],
+        "DAVHE": [58.08491,16.99729],
+        "LIHBA": [58.54032,16.94184],
+        "VSN": [58.3031,15.7098,"vassen"],
+        "MIJAN": [58.63583,16.53157],
+        "EN": [59.291,15.0651,"orebro"],
+        "JIWKA": [58.90562,16.48443],
+        "_RWY0804DME": [58.77875,16.75501],
+        "_RWY2604DME": [58.79776,17.05746],
+        "_RWY1604DME": [58.8647,16.86398],
+        "_RWY3404DME": [58.72068,16.95505]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[58.78684,16.8826,"113ft"],[58.7898,16.9298,"127ft"]],"ils":[true,true]},
+        {"name":["16","34"],"end":[[58.8014,16.9041,"133ft"],[58.784,16.9151,"131ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "LNA2F": {"icao":"LNA2F","name":"Lena Two Foxtrot","rwy":{"ESKN08":["_RWY2604DME"],"ESKN26":["_RWY0804DME"],"ESKN16":["_RWY3404DME"],"ESKN34":["_RWY1604DME"]},"body":[],"exitPoints":{"LNA":["LNA"]},"draw":[["ESKN","LNA*"]]},
+        "COZUC2E": {"icao":"COZUC2E","name":"Cozuc Two Echo","rwy":{"ESKN08":["_RWY2604DME"],"ESKN26":["_RWY0804DME"],"ESKN16":["_RWY3404DME"],"ESKN34":["_RWY1604DME"]},"body":[],"exitPoints":{"COZUC":["COZUC"]},"draw":[["ESKN","COZUC*"]]},
+        "DAVHE2D": {"icao":"DAVHE2D","name":"Davhe Two Delta","rwy":{"ESKN08":["_RWY2604DME"],"ESKN26":["_RWY0804DME"],"ESKN16":["_RWY3404DME"],"ESKN34":["_RWY1604DME"]},"body":[],"exitPoints":{"DAVHE":["DAVHE"]},"draw":[["ESKN","DAVHE*"]]},
+        "VSN1B": {"icao":"VSN1B","name":"Vassen One Bravo","rwy":{"ESKN08":["_RWY2604DME"],"ESKN26":["_RWY0804DME"],"ESKN16":["_RWY3404DME"],"ESKN34":["_RWY1604DME"]},"body":[],"exitPoints":{"VSN":["VSN"]},"draw":[["ESKN","VSN*"]]},
+        "EN1E": {"icao":"EN1E","name":"Orebro One Echo","rwy":{"ESKN08":["_RWY2604DME"],"ESKN26":["_RWY0804DME"],"ESKN16":["_RWY3404DME"],"ESKN34":["_RWY1604DME"]},"body":[],"exitPoints":{"EN":["EN"]},"draw":[["ESKN","EN*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ESKN","destination":"EBCI","category":"departure","route":"ESKN26.VSN1B.VSN","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["ryr/b738",1]]},
+        {"origin":"ESKN","destination":"EDDW","category":"departure","route":"ESKN26.VSN1B.VSN","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["ryr/b738",1]]},
+        {"origin":"ESKN","destination":"EGSS","category":"departure","route":"ESKN26.VSN1B.VSN","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["ryr/b738",1]]},
+        {"origin":"ESKN","destination":"EPGD","category":"departure","route":"ESKN26.DAVHE2D.DAVHE","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["wzz/a320",1]]},
+        {"origin":"ESKN","destination":"EPKK","category":"departure","route":"ESKN26.DAVHE2D.DAVHE","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["ryr/b738",1]]},
+        {"origin":"ESKN","destination":"EPKT","category":"departure","route":"ESKN26.DAVHE2D.DAVHE","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["wzz/a320",1]]},
+        {"origin":"ESKN","destination":"","category":"departure","route":"ESKN26.DAVHE2D.DAVHE","altitude":"","speed":"","method":"random","rate":4.51,"airlines":[["ryr/b738",13],["wzz/a320",5]]},
+        {"origin":"ESKN","destination":"","category":"departure","route":"ESKN26.VSN1B.VSN","altitude":"","speed":"","method":"random","rate":1.75,"airlines":[["ryr/b738",7]]},
+        {"origin":"ESKN","destination":"","category":"departure","route":"ESKN26.LNA2F.LNA","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["se/c172",6],["se/p28a",5],["se/c182",3],["se/be36",2],["se/da42",1],["se/tb20",1],["se/c208",2],["se/pc12",2],["se/be20",1],["se/b350",1],["se/p180",1],["se/c510",1],["se/e50p",1],["se/c550",2],["se/e55p",1],["se/cl30",1],["se/c680",1],["se/h25b",1],["se/lj45",1],["se/f2th",1],["se/glf4",1],["se/glex",1],["se/glf5",1]]},
+        {"origin":"ESKN","destination":"","category":"departure","route":"ESKN26.DAVHE2D.DAVHE","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["se/c172",6],["se/p28a",5],["se/c182",3],["se/be36",2],["se/da42",1],["se/tb20",1],["se/c208",2],["se/pc12",2],["se/be20",1],["se/b350",1],["se/p180",1],["se/c510",1],["se/e50p",1],["se/c550",2],["se/e55p",1],["se/cl30",1],["se/c680",1],["se/h25b",1],["se/lj45",1],["se/f2th",1],["se/glf4",1],["se/glex",1],["se/glf5",1]]},
+        {"origin":"EBCI","destination":"ESKN","category":"arrival","route":"VSN..MIJAN..ESKN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.25,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDDW","destination":"ESKN","category":"arrival","route":"VSN..MIJAN..ESKN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.25,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGSS","destination":"ESKN","category":"arrival","route":"VSN..MIJAN..ESKN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.25,"airlines":[["ryr/b738",1]]},
+        {"origin":"EPGD","destination":"ESKN","category":"arrival","route":"DAVHE..LIHBA..ESKN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.25,"airlines":[["wzz/a320",1]]},
+        {"origin":"EPKK","destination":"ESKN","category":"arrival","route":"DAVHE..LIHBA..ESKN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.25,"airlines":[["ryr/b738",1]]},
+        {"origin":"EPKT","destination":"ESKN","category":"arrival","route":"DAVHE..LIHBA..ESKN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.25,"airlines":[["wzz/a320",1]]},
+        {"origin":"","destination":"ESKN","category":"arrival","route":"DAVHE..LIHBA..ESKN","altitude":[6000,9000],"speed":250,"method":"random","rate":4.51,"airlines":[["ryr/b738",13],["wzz/a320",5]]},
+        {"origin":"","destination":"ESKN","category":"arrival","route":"VSN..MIJAN..ESKN","altitude":[6000,9000],"speed":250,"method":"random","rate":1.75,"airlines":[["ryr/b738",7]]},
+        {"origin":"","destination":"ESKN","category":"arrival","route":"LNA..AMABI..ESKN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.53,"airlines":[["se/c172",6],["se/p28a",5],["se/c182",3],["se/be36",2],["se/da42",1],["se/tb20",1],["se/c208",2],["se/pc12",2],["se/be20",1],["se/b350",1],["se/p180",1],["se/c510",1],["se/e50p",1],["se/c550",2],["se/e55p",1],["se/cl30",1],["se/c680",1],["se/h25b",1],["se/lj45",1],["se/f2th",1],["se/glf4",1],["se/glex",1],["se/glf5",1]]},
+        {"origin":"","destination":"ESKN","category":"arrival","route":"DAVHE..LIHBA..ESKN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.53,"airlines":[["se/c172",6],["se/p28a",5],["se/c182",3],["se/be36",2],["se/da42",1],["se/tb20",1],["se/c208",2],["se/pc12",2],["se/be20",1],["se/b350",1],["se/p180",1],["se/c510",1],["se/e50p",1],["se/c550",2],["se/e55p",1],["se/cl30",1],["se/c680",1],["se/h25b",1],["se/lj45",1],["se/f2th",1],["se/glf4",1],["se/glex",1],["se/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [59.539,17.3583,59.0284,17.0538],
+            [59.0284,17.0538,58.7897,16.9115],
+            [58.7,18.2632,58.7579,17.3897],
+            [58.7579,17.3897,58.7897,16.9115],
+            [58.0849,16.9973,58.5403,16.9418],
+            [58.5403,16.9418,58.7897,16.9115],
+            [58.3031,15.7098,58.6358,16.5316],
+            [58.6358,16.5316,58.7897,16.9115],
+            [59.291,15.0651,58.9056,16.4844],
+            [58.9056,16.4844,58.7897,16.9115]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [58.7868,16.8826,58.7664,16.5637],
+            [58.7668,16.7254,58.7866,16.7208],
+            [58.7565,16.5661,58.7763,16.5614],
+            [58.7898,16.9298,58.8095,17.2491],
+            [58.8097,17.0871,58.7898,17.0917],
+            [58.8194,17.2467,58.7995,17.2514],
+            [58.8014,16.9041,58.9596,16.8035],
+            [58.8774,16.8356,58.8836,16.8723],
+            [58.9565,16.7851,58.9627,16.8219],
+            [58.784,16.9151,58.6257,17.0147],
+            [58.708,16.9833,58.7017,16.9467],
+            [58.6288,17.033,58.6226,16.9965]
+        ]}
+    ]
+}

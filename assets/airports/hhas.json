@@ -1,0 +1,91 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/HHAS/",
+    "info": {"country":"ER","city":"Asmara","type":"medium_airport","longestRunwayM":3000,"frequencies":{"twr":"118.100","app":"120.700"}},
+    "radio": {"twr":"Asmara Tower","app":"Asmara Approach","dep":"Asmara Departure"},
+    "icao": "HHAS",
+    "iata": "ASM",
+    "magnetic_north": 3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 15000,
+    "initial_alt": 11000,
+    "position": [15.2919,38.910702,"7661ft"],
+    "rangeRings": {"enabled":true,"center":[15.2919,38.910702],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":90,"speed":10},
+    "arrivalRunway": "07",
+    "departureRunway": "07",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":150,"airspace_class":"D","poly":[[15.696,38.9327],[15.6768,39.0403],[15.6313,39.1392],[15.5627,39.2225],[15.4756,39.2845],[15.376,39.3211],[15.2707,39.3297],[15.1668,39.3097],[15.0715,39.2626],[14.9912,39.1914],[14.9313,39.1012],[14.896,38.9979],[14.8878,38.8887],[14.907,38.7811],[14.9525,38.6822],[15.0211,38.5989],[15.1082,38.5369],[15.2078,38.5003],[15.3131,38.4917],[15.417,38.5117],[15.5123,38.5588],[15.5926,38.63],[15.6525,38.7202],[15.6878,38.8235]]}
+    ],
+    "fixes": {
+        "HHAS": [15.2919,38.9107],
+        "MS": [15.6657,39.3158,"massawa"],
+        "POGRU": [15.43006,39.06043],
+        "EHOPI": [15.20312,39.46074],
+        "DUWSA": [15.25892,39.11506],
+        "KOFID": [14.79268,38.70296],
+        "IREZO": [15.10642,38.83352],
+        "AWESA": [15.32591,38.35413],
+        "EVOBO": [15.30454,38.70392],
+        "GOWAR": [15.82028,38.80602],
+        "VAMIK": [15.48821,38.87181],
+        "_RWY0704DME": [15.26604,38.82762],
+        "_RWY2504DME": [15.30944,38.98749],
+        "_RWY1204DME": [15.33303,38.84641],
+        "_RWY3004DME": [15.25885,38.98107]
+    },
+    "runways": [
+        {"name":["07","25"],"end":[[15.2841,38.8941,"7661ft"],[15.2914,38.921,"7654ft"]],"ils":[true,true]},
+        {"name":["12","30"],"end":[[15.3,38.9064,"7661ft"],[15.2919,38.9211,"7661ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "MS3D": {"icao":"MS3D","name":"Massawa Three Delta","rwy":{"HHAS07":["_RWY2504DME"],"HHAS25":["_RWY0704DME"],"HHAS12":["_RWY3004DME"],"HHAS30":["_RWY1204DME"]},"body":[],"exitPoints":{"MS":["MS"]},"draw":[["HHAS","MS*"]]},
+        "EHOPI1C": {"icao":"EHOPI1C","name":"Ehopi One Charlie","rwy":{"HHAS07":["_RWY2504DME"],"HHAS25":["_RWY0704DME"],"HHAS12":["_RWY3004DME"],"HHAS30":["_RWY1204DME"]},"body":[],"exitPoints":{"EHOPI":["EHOPI"]},"draw":[["HHAS","EHOPI*"]]},
+        "KOFID2A": {"icao":"KOFID2A","name":"Kofid Two Alpha","rwy":{"HHAS07":["_RWY2504DME"],"HHAS25":["_RWY0704DME"],"HHAS12":["_RWY3004DME"],"HHAS30":["_RWY1204DME"]},"body":[],"exitPoints":{"KOFID":["KOFID"]},"draw":[["HHAS","KOFID*"]]},
+        "AWESA3A": {"icao":"AWESA3A","name":"Awesa Three Alpha","rwy":{"HHAS07":["_RWY2504DME"],"HHAS25":["_RWY0704DME"],"HHAS12":["_RWY3004DME"],"HHAS30":["_RWY1204DME"]},"body":[],"exitPoints":{"AWESA":["AWESA"]},"draw":[["HHAS","AWESA*"]]},
+        "GOWAR1A": {"icao":"GOWAR1A","name":"Gowar One Alpha","rwy":{"HHAS07":["_RWY2504DME"],"HHAS25":["_RWY0704DME"],"HHAS12":["_RWY3004DME"],"HHAS30":["_RWY1204DME"]},"body":[],"exitPoints":{"GOWAR":["GOWAR"]},"draw":[["HHAS","GOWAR*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"HHAS","destination":"HECA","category":"departure","route":"HHAS07.GOWAR1A.GOWAR","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["msr/a320",1]]},
+        {"origin":"HHAS","destination":"HHMS","category":"departure","route":"HHAS07.MS3D.MS","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["nas/b733",1]]},
+        {"origin":"HHAS","destination":"HJJJ","category":"departure","route":"HHAS07.KOFID2A.KOFID","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["nas/a320",1]]},
+        {"origin":"HHAS","destination":"HKJK","category":"departure","route":"HHAS07.KOFID2A.KOFID","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["nas/a320",1]]},
+        {"origin":"HHAS","destination":"HSSK","category":"departure","route":"HHAS07.AWESA3A.AWESA","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["nas/b733",1]]},
+        {"origin":"HHAS","destination":"","category":"departure","route":"HHAS07.EHOPI1C.EHOPI","altitude":"","speed":"","method":"random","rate":1.29,"airlines":[["iye/a310",1],["nas/a320",1]]},
+        {"origin":"HHAS","destination":"","category":"departure","route":"HHAS07.KOFID2A.KOFID","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["nas/a320",1]]},
+        {"origin":"HHAS","destination":"","category":"departure","route":"HHAS07.GOWAR1A.GOWAR","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["nas/a320",1]]},
+        {"origin":"HECA","destination":"HHAS","category":"arrival","route":"GOWAR..VAMIK..HHAS","altitude":[11000,14000],"speed":250,"method":"random","rate":0.64,"airlines":[["msr/a320",1]]},
+        {"origin":"HHMS","destination":"HHAS","category":"arrival","route":"MS..POGRU..HHAS","altitude":[11000,14000],"speed":250,"method":"random","rate":0.64,"airlines":[["nas/b733",1]]},
+        {"origin":"HJJJ","destination":"HHAS","category":"arrival","route":"KOFID..IREZO..HHAS","altitude":[11000,14000],"speed":250,"method":"random","rate":0.64,"airlines":[["nas/a320",1]]},
+        {"origin":"HKJK","destination":"HHAS","category":"arrival","route":"KOFID..IREZO..HHAS","altitude":[11000,14000],"speed":250,"method":"random","rate":0.64,"airlines":[["nas/a320",1]]},
+        {"origin":"HSSK","destination":"HHAS","category":"arrival","route":"AWESA..EVOBO..HHAS","altitude":[11000,14000],"speed":250,"method":"random","rate":0.64,"airlines":[["nas/b733",1]]},
+        {"origin":"","destination":"HHAS","category":"arrival","route":"EHOPI..DUWSA..HHAS","altitude":[11000,14000],"speed":250,"method":"random","rate":1.29,"airlines":[["iye/a310",1],["nas/a320",1]]},
+        {"origin":"","destination":"HHAS","category":"arrival","route":"KOFID..IREZO..HHAS","altitude":[11000,14000],"speed":250,"method":"random","rate":0.64,"airlines":[["nas/a320",1]]},
+        {"origin":"","destination":"HHAS","category":"arrival","route":"GOWAR..VAMIK..HHAS","altitude":[11000,14000],"speed":250,"method":"random","rate":0.64,"airlines":[["nas/a320",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [15.6657,39.3158,15.4301,39.0604],
+            [15.4301,39.0604,15.2919,38.9107],
+            [15.2031,39.4607,15.2589,39.1151],
+            [15.2589,39.1151,15.2919,38.9107],
+            [14.7927,38.703,15.1064,38.8335],
+            [15.1064,38.8335,15.2919,38.9107],
+            [15.3259,38.3541,15.3045,38.7039],
+            [15.3045,38.7039,15.2919,38.9107],
+            [15.8203,38.806,15.4882,38.8718],
+            [15.4882,38.8718,15.2919,38.9107]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [15.2841,38.8941,15.2389,38.7279],
+            [15.2519,38.8138,15.2711,38.8082],
+            [15.2293,38.7307,15.2485,38.7251],
+            [15.2914,38.921,15.3365,39.0872],
+            [15.3236,39.0013,15.3043,39.0069],
+            [15.3461,39.0844,15.3268,39.0901]
+        ]}
+    ]
+}

@@ -1,0 +1,79 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/WMKL/",
+    "info": {"country":"MY","city":"Langkawi","type":"large_airport","longestRunwayM":3826,"frequencies":{"atis":"128.200","twr":"118.500","app":"119.400","gnd":"121.800"}},
+    "radio": {"twr":"Langkawi Tower","app":"Langkawi Approach","dep":"Langkawi Departure"},
+    "icao": "WMKL",
+    "iata": "LGK",
+    "magnetic_north": -0.3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [6.32973,99.728699,"29ft"],
+    "rangeRings": {"enabled":true,"center":[6.32973,99.728699],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":10,"speed":8},
+    "arrivalRunway": "03",
+    "departureRunway": "03",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[6.7344,99.7266],[6.7212,99.832],[6.6813,99.9304],[6.6174,100.0151],[6.5339,100.0803],[6.4365,100.1214],[6.3318,100.1359],[6.227,100.1225],[6.1292,100.0824],[6.0451,100.0181],[5.9803,99.9341],[5.9394,99.8361],[5.925,99.7308],[5.9383,99.6254],[5.9782,99.527],[6.0421,99.4423],[6.1256,99.3771],[6.2229,99.336],[6.3276,99.3215],[6.4324,99.3348],[6.5302,99.375],[6.6144,99.4393],[6.6791,99.5233],[6.7201,99.6213]]}
+    ],
+    "fixes": {
+        "WMKL": [6.32973,99.7287],
+        "HTY": [6.9341,100.388,"hat yai"],
+        "REWPI": [6.46523,99.87652],
+        "KUTPA": [5.87346,100.01539],
+        "AKENE": [6.16021,99.83522],
+        "REZIM": [6.04478,99.26963],
+        "DUBOV": [6.22386,99.55814],
+        "VACIF": [6.786,99.44201],
+        "BUZUV": [6.49925,99.62218],
+        "_RWY0304DME": [6.26499,99.68426],
+        "_RWY2104DME": [6.39899,99.77616]
+    },
+    "runways": [
+        {"name":["03","21"],"end":[[6.32004,99.72201,"21ft"],[6.34394,99.7384,"29ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "HTY1F": {"icao":"HTY1F","name":"Hat Yai One Foxtrot","rwy":{"WMKL03":["_RWY2104DME"],"WMKL21":["_RWY0304DME"]},"body":[],"exitPoints":{"HTY":["HTY"]},"draw":[["WMKL","HTY*"]]},
+        "KUTPA1C": {"icao":"KUTPA1C","name":"Kutpa One Charlie","rwy":{"WMKL03":["_RWY2104DME"],"WMKL21":["_RWY0304DME"]},"body":[],"exitPoints":{"KUTPA":["KUTPA"]},"draw":[["WMKL","KUTPA*"]]},
+        "REZIM2D": {"icao":"REZIM2D","name":"Rezim Two Delta","rwy":{"WMKL03":["_RWY2104DME"],"WMKL21":["_RWY0304DME"]},"body":[],"exitPoints":{"REZIM":["REZIM"]},"draw":[["WMKL","REZIM*"]]},
+        "VACIF3D": {"icao":"VACIF3D","name":"Vacif Three Delta","rwy":{"WMKL03":["_RWY2104DME"],"WMKL21":["_RWY0304DME"]},"body":[],"exitPoints":{"VACIF":["VACIF"]},"draw":[["WMKL","VACIF*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"WMKL","destination":"WMKK","category":"departure","route":"WMKL03.KUTPA1C.KUTPA","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["aal/b737",1],["axm/a320",1],["mas/b734",1],["mas/b738",1],["mxd/b739",1]]},
+        {"origin":"WMKL","destination":"WSSS","category":"departure","route":"WMKL03.KUTPA1C.KUTPA","altitude":"","speed":"","method":"random","rate":0.94,"airlines":[["axm/a320",1],["slk/a319",1],["slk/a320",1],["tgw/a320",1]]},
+        {"origin":"WMKL","destination":"WMKP","category":"departure","route":"WMKL03.KUTPA1C.KUTPA","altitude":"","speed":"","method":"random","rate":0.7,"airlines":[["axm/a320",1],["ffm/at72",1],["mxd/at72",1]]},
+        {"origin":"WMKL","destination":"WMSA","category":"departure","route":"WMKL03.KUTPA1C.KUTPA","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["ffm/at72",1],["mxd/at72",1]]},
+        {"origin":"WMKL","destination":"","category":"departure","route":"WMKL03.KUTPA1C.KUTPA","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["axm/a320",1]]},
+        {"origin":"WMKL","destination":"","category":"departure","route":"WMKL03.KUTPA1C.KUTPA","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["9m/c172",6],["9m/p28a",5],["9m/c182",3],["9m/be36",2],["9m/da42",1],["9m/tb20",1],["9m/c208",2],["9m/pc12",2],["9m/be20",1],["9m/b350",1],["9m/p180",1],["9m/c510",1],["9m/e50p",1],["9m/c550",1],["9m/e55p",1],["9m/cl30",1],["9m/c680",1],["9m/h25b",1],["9m/lj45",1],["9m/f2th",1],["9m/glf4",1],["9m/glex",1],["9m/glf5",1]]},
+        {"origin":"WMKK","destination":"WMKL","category":"arrival","route":"KUTPA..AKENE..WMKL","altitude":[4000,7000],"speed":250,"method":"random","rate":1.17,"airlines":[["aal/b737",1],["axm/a320",1],["mas/b734",1],["mas/b738",1],["mxd/b739",1]]},
+        {"origin":"WSSS","destination":"WMKL","category":"arrival","route":"KUTPA..AKENE..WMKL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.94,"airlines":[["axm/a320",1],["slk/a319",1],["slk/a320",1],["tgw/a320",1]]},
+        {"origin":"WMKP","destination":"WMKL","category":"arrival","route":"KUTPA..AKENE..WMKL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.7,"airlines":[["axm/a320",1],["ffm/at72",1],["mxd/at72",1]]},
+        {"origin":"WMSA","destination":"WMKL","category":"arrival","route":"KUTPA..AKENE..WMKL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.47,"airlines":[["ffm/at72",1],["mxd/at72",1]]},
+        {"origin":"","destination":"WMKL","category":"arrival","route":"KUTPA..AKENE..WMKL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.23,"airlines":[["axm/a320",1]]},
+        {"origin":"","destination":"WMKL","category":"arrival","route":"KUTPA..AKENE..WMKL","altitude":[4000,7000],"speed":250,"method":"random","rate":1.17,"airlines":[["9m/c172",6],["9m/p28a",5],["9m/c182",3],["9m/be36",2],["9m/da42",1],["9m/tb20",1],["9m/c208",2],["9m/pc12",2],["9m/be20",1],["9m/b350",1],["9m/p180",1],["9m/c510",1],["9m/e50p",1],["9m/c550",1],["9m/e55p",1],["9m/cl30",1],["9m/c680",1],["9m/h25b",1],["9m/lj45",1],["9m/f2th",1],["9m/glf4",1],["9m/glex",1],["9m/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [6.9341,100.388,6.4652,99.8765],
+            [6.4652,99.8765,6.3297,99.7287],
+            [5.8735,100.0154,6.1602,99.8352],
+            [6.1602,99.8352,6.3297,99.7287],
+            [6.0448,99.2696,6.2239,99.5581],
+            [6.2239,99.5581,6.3297,99.7287],
+            [6.786,99.442,6.4993,99.6222],
+            [6.4993,99.6222,6.3297,99.7287]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [6.32,99.722,6.1824,99.6276],
+            [6.2456,99.6831,6.2569,99.6665],
+            [6.1768,99.636,6.188,99.6193],
+            [6.3439,99.7384,6.4816,99.8328],
+            [6.4184,99.7773,6.4071,99.7939],
+            [6.4872,99.8245,6.4759,99.8411]
+        ]}
+    ]
+}

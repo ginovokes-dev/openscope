@@ -1,0 +1,79 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VLLB/",
+    "info": {"country":"LA","city":"Luang Phabang","type":"large_airport","longestRunwayM":2500,"frequencies":{"twr":"118.500","app":"118.500"}},
+    "radio": {"twr":"Luang Phabang Tower","app":"Luang Phabang Approach","dep":"Luang Phabang Departure"},
+    "icao": "VLLB",
+    "iata": "LPQ",
+    "magnetic_north": -1.2,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [19.904273,102.167191,"955ft"],
+    "rangeRings": {"enabled":true,"center":[19.904273,102.167191],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":40,"speed":9},
+    "arrivalRunway": "06",
+    "departureRunway": "06",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[20.3089,102.1582],[20.2973,102.2699],[20.2589,102.3745],[20.1964,102.4651],[20.1139,102.5353],[20.0172,102.5805],[19.9127,102.5975],[19.8077,102.5852],[19.7093,102.5444],[19.6242,102.4778],[19.5581,102.3902],[19.5156,102.2873],[19.4997,102.1762],[19.5113,102.0645],[19.5496,101.9598],[19.6122,101.8693],[19.6946,101.799],[19.7914,101.7539],[19.8958,101.7369],[20.0008,101.7492],[20.0992,101.79],[20.1844,101.8565],[20.2504,101.9442],[20.2929,102.0471]]}
+    ],
+    "fixes": {
+        "VLLB": [19.90427,102.16719],
+        "ASASA": [20.1037,102.69854],
+        "BOWOH": [19.97837,102.36461],
+        "PEPER": [19.36636,102.17268],
+        "ADOCU": [19.70442,102.16923],
+        "BOWUV": [19.71959,101.62985],
+        "UGOGE": [19.83566,101.96755],
+        "TAWZU": [20.35988,101.86302],
+        "DEBAT": [20.07355,102.05418],
+        "_RWY0604DME": [19.85988,102.09023],
+        "_RWY2404DME": [19.9346,102.23179]
+    },
+    "runways": [
+        {"name":["06","24"],"end":[[19.8925,102.152,"955ft"],[19.902,102.17,"955ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ASASA3C": {"icao":"ASASA3C","name":"Asasa Three Charlie","rwy":{"VLLB06":["_RWY2404DME"],"VLLB24":["_RWY0604DME"]},"body":[],"exitPoints":{"ASASA":["ASASA"]},"draw":[["VLLB","ASASA*"]]},
+        "PEPER1C": {"icao":"PEPER1C","name":"Peper One Charlie","rwy":{"VLLB06":["_RWY2404DME"],"VLLB24":["_RWY0604DME"]},"body":[],"exitPoints":{"PEPER":["PEPER"]},"draw":[["VLLB","PEPER*"]]},
+        "BOWUV3C": {"icao":"BOWUV3C","name":"Bowuv Three Charlie","rwy":{"VLLB06":["_RWY2404DME"],"VLLB24":["_RWY0604DME"]},"body":[],"exitPoints":{"BOWUV":["BOWUV"]},"draw":[["VLLB","BOWUV*"]]},
+        "TAWZU3D": {"icao":"TAWZU3D","name":"Tawzu Three Delta","rwy":{"VLLB06":["_RWY2404DME"],"VLLB24":["_RWY0604DME"]},"body":[],"exitPoints":{"TAWZU":["TAWZU"]},"draw":[["VLLB","TAWZU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"VLLB","destination":"VLVT","category":"departure","route":"VLLB06.PEPER1C.PEPER","altitude":"","speed":"","method":"random","rate":1.5,"airlines":[["lao/a320",1],["lao/at72",1],["ndc/b737",1]]},
+        {"origin":"VLLB","destination":"VTBS","category":"departure","route":"VLLB06.PEPER1C.PEPER","altitude":"","speed":"","method":"random","rate":1,"airlines":[["bkp/at72",1],["lao/at72",1]]},
+        {"origin":"VLLB","destination":"VVNB","category":"departure","route":"VLLB06.ASASA3C.ASASA","altitude":"","speed":"","method":"random","rate":1,"airlines":[["hvn/at72",1],["lao/at72",1]]},
+        {"origin":"VLLB","destination":"VLPS","category":"departure","route":"VLLB06.PEPER1C.PEPER","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["lao/at72",1]]},
+        {"origin":"VLLB","destination":"","category":"departure","route":"VLLB06.BOWUV3C.BOWUV","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["lao/at72",1]]},
+        {"origin":"VLLB","destination":"","category":"departure","route":"VLLB06.TAWZU3D.TAWZU","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["lao/at72",1]]},
+        {"origin":"VLVT","destination":"VLLB","category":"arrival","route":"PEPER..ADOCU..VLLB","altitude":[4000,7000],"speed":250,"method":"random","rate":1.5,"airlines":[["lao/a320",1],["lao/at72",1],["ndc/b737",1]]},
+        {"origin":"VTBS","destination":"VLLB","category":"arrival","route":"PEPER..ADOCU..VLLB","altitude":[4000,7000],"speed":250,"method":"random","rate":1,"airlines":[["bkp/at72",1],["lao/at72",1]]},
+        {"origin":"VVNB","destination":"VLLB","category":"arrival","route":"ASASA..BOWOH..VLLB","altitude":[4000,7000],"speed":250,"method":"random","rate":1,"airlines":[["hvn/at72",1],["lao/at72",1]]},
+        {"origin":"VLPS","destination":"VLLB","category":"arrival","route":"PEPER..ADOCU..VLLB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.5,"airlines":[["lao/at72",1]]},
+        {"origin":"","destination":"VLLB","category":"arrival","route":"BOWUV..UGOGE..VLLB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.5,"airlines":[["lao/at72",1]]},
+        {"origin":"","destination":"VLLB","category":"arrival","route":"TAWZU..DEBAT..VLLB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.5,"airlines":[["lao/at72",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [20.1037,102.6985,19.9784,102.3646],
+            [19.9784,102.3646,19.9043,102.1672],
+            [19.3664,102.1727,19.7044,102.1692],
+            [19.7044,102.1692,19.9043,102.1672],
+            [19.7196,101.6298,19.8357,101.9675],
+            [19.8357,101.9675,19.9043,102.1672],
+            [20.3599,101.863,20.0736,102.0542],
+            [20.0736,102.0542,19.9043,102.1672]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [19.8925,102.152,19.8109,101.9976],
+            [19.843,102.08,19.8604,102.0696],
+            [19.8022,102.0028,19.8196,101.9924],
+            [19.902,102.17,19.9835,102.3245],
+            [19.9515,102.242,19.934,102.2525],
+            [19.9922,102.3193,19.9748,102.3297]
+        ]}
+    ]
+}

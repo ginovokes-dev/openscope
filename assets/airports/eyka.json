@@ -1,0 +1,89 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EYKA/",
+    "info": {"country":"LT","city":"Kaunas","type":"large_airport","longestRunwayM":3250,"frequencies":{"twr":"118.500","app":"124.200"}},
+    "radio": {"twr":"Kaunas Tower","app":"Kaunas Approach","dep":"Kaunas Departure"},
+    "icao": "EYKA",
+    "iata": "KUN",
+    "magnetic_north": 8.4,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [54.963965,24.08582,"256ft"],
+    "rangeRings": {"enabled":true,"center":[54.963965,24.08582],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":250,"speed":11},
+    "arrivalRunway": "26",
+    "departureRunway": "26",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[55.4978,24.2231],[55.4592,24.4591],[55.3868,24.6696],[55.2857,24.8404],[55.1626,24.9597],[55.026,25.0195],[54.8851,25.0156],[54.7497,24.9484],[54.6288,24.8224],[54.5308,24.6462],[54.4623,24.4318],[54.4279,24.1939],[54.4302,23.9485],[54.4688,23.7125],[54.5411,23.502],[54.6422,23.3312],[54.7653,23.2119],[54.9019,23.1521],[55.0428,23.156],[55.1783,23.2232],[55.2991,23.3492],[55.3972,23.5254],[55.4657,23.7398],[55.5,23.9778]]}
+    ],
+    "fixes": {
+        "EYKA": [54.96397,24.08582],
+        "PA": [55.7611,24.4111,"pajuostis"],
+        "REHJI": [55.20721,24.18508],
+        "DOWWA": [54.29838,24.49668],
+        "OBOSI": [54.72848,24.23118],
+        "SUW": [54.0697,22.9003,"suwalki"],
+        "FEDEK": [54.76516,23.82227],
+        "SKD": [55.4169,22.5928,"skaudvile"],
+        "LUBKA": [55.08069,23.70106],
+        "_RWY0804DME": [54.95728,23.9492],
+        "_RWY2604DME": [54.97054,24.22196]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[54.96296,24.06481,"236ft"],[54.96497,24.10631,"256ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "PA2E": {"icao":"PA2E","name":"Pajuostis Two Echo","rwy":{"EYKA08":["_RWY2604DME"],"EYKA26":["_RWY0804DME"]},"body":[],"exitPoints":{"PA":["PA"]},"draw":[["EYKA","PA*"]]},
+        "DOWWA3E": {"icao":"DOWWA3E","name":"Dowwa Three Echo","rwy":{"EYKA08":["_RWY2604DME"],"EYKA26":["_RWY0804DME"]},"body":[],"exitPoints":{"DOWWA":["DOWWA"]},"draw":[["EYKA","DOWWA*"]]},
+        "SUW3B": {"icao":"SUW3B","name":"Suwalki Three Bravo","rwy":{"EYKA08":["_RWY2604DME"],"EYKA26":["_RWY0804DME"]},"body":[],"exitPoints":{"SUW":["SUW"]},"draw":[["EYKA","SUW*"]]},
+        "SKD1E": {"icao":"SKD1E","name":"Skaudvile One Echo","rwy":{"EYKA08":["_RWY2604DME"],"EYKA26":["_RWY0804DME"]},"body":[],"exitPoints":{"SKD":["SKD"]},"draw":[["EYKA","SKD*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EYKA","destination":"EDFH","category":"departure","route":"EYKA26.SUW3B.SUW","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"EYKA","destination":"EGBB","category":"departure","route":"EYKA26.SKD1E.SKD","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"EYKA","destination":"EGGD","category":"departure","route":"EYKA26.SKD1E.SKD","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"EYKA","destination":"EGGW","category":"departure","route":"EYKA26.SKD1E.SKD","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"EYKA","destination":"EGKK","category":"departure","route":"EYKA26.SKD1E.SKD","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"EYKA","destination":"EGPH","category":"departure","route":"EYKA26.SKD1E.SKD","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"EYKA","destination":"","category":"departure","route":"EYKA26.DOWWA3E.DOWWA","altitude":"","speed":"","method":"random","rate":1.04,"airlines":[["ryr/b738",3]]},
+        {"origin":"EYKA","destination":"","category":"departure","route":"EYKA26.SUW3B.SUW","altitude":"","speed":"","method":"random","rate":2.09,"airlines":[["ryr/b738",6]]},
+        {"origin":"EYKA","destination":"","category":"departure","route":"EYKA26.SKD1E.SKD","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["ryr/b738",4]]},
+        {"origin":"EYKA","destination":"","category":"departure","route":"EYKA26.PA2E.PA","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["ly/c172",6],["ly/p28a",5],["ly/c182",3],["ly/be36",2],["ly/da42",1],["ly/tb20",1],["ly/c208",2],["ly/pc12",2],["ly/be20",1],["ly/b350",1],["ly/p180",1],["ly/c510",1],["ly/e50p",1],["ly/c550",2],["ly/e55p",1],["ly/cl30",1],["ly/c680",1],["ly/h25b",1],["ly/lj45",1],["ly/f2th",1],["ly/glf4",1],["ly/glex",1],["ly/glf5",1]]},
+        {"origin":"EYKA","destination":"","category":"departure","route":"EYKA26.DOWWA3E.DOWWA","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["ly/c172",6],["ly/p28a",5],["ly/c182",3],["ly/be36",2],["ly/da42",1],["ly/tb20",1],["ly/c208",2],["ly/pc12",2],["ly/be20",1],["ly/b350",1],["ly/p180",1],["ly/c510",1],["ly/e50p",1],["ly/c550",2],["ly/e55p",1],["ly/cl30",1],["ly/c680",1],["ly/h25b",1],["ly/lj45",1],["ly/f2th",1],["ly/glf4",1],["ly/glex",1],["ly/glf5",1]]},
+        {"origin":"EDFH","destination":"EYKA","category":"arrival","route":"SUW..FEDEK..EYKA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGBB","destination":"EYKA","category":"arrival","route":"SKD..LUBKA..EYKA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGGD","destination":"EYKA","category":"arrival","route":"SKD..LUBKA..EYKA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGGW","destination":"EYKA","category":"arrival","route":"SKD..LUBKA..EYKA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGKK","destination":"EYKA","category":"arrival","route":"SKD..LUBKA..EYKA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGPH","destination":"EYKA","category":"arrival","route":"SKD..LUBKA..EYKA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.35,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"EYKA","category":"arrival","route":"DOWWA..OBOSI..EYKA","altitude":[6000,9000],"speed":250,"method":"random","rate":1.04,"airlines":[["ryr/b738",3]]},
+        {"origin":"","destination":"EYKA","category":"arrival","route":"SUW..FEDEK..EYKA","altitude":[6000,9000],"speed":250,"method":"random","rate":2.09,"airlines":[["ryr/b738",6]]},
+        {"origin":"","destination":"EYKA","category":"arrival","route":"SKD..LUBKA..EYKA","altitude":[6000,9000],"speed":250,"method":"random","rate":1.39,"airlines":[["ryr/b738",4]]},
+        {"origin":"","destination":"EYKA","category":"arrival","route":"PA..REHJI..EYKA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["ly/c172",6],["ly/p28a",5],["ly/c182",3],["ly/be36",2],["ly/da42",1],["ly/tb20",1],["ly/c208",2],["ly/pc12",2],["ly/be20",1],["ly/b350",1],["ly/p180",1],["ly/c510",1],["ly/e50p",1],["ly/c550",2],["ly/e55p",1],["ly/cl30",1],["ly/c680",1],["ly/h25b",1],["ly/lj45",1],["ly/f2th",1],["ly/glf4",1],["ly/glex",1],["ly/glf5",1]]},
+        {"origin":"","destination":"EYKA","category":"arrival","route":"DOWWA..OBOSI..EYKA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["ly/c172",6],["ly/p28a",5],["ly/c182",3],["ly/be36",2],["ly/da42",1],["ly/tb20",1],["ly/c208",2],["ly/pc12",2],["ly/be20",1],["ly/b350",1],["ly/p180",1],["ly/c510",1],["ly/e50p",1],["ly/c550",2],["ly/e55p",1],["ly/cl30",1],["ly/c680",1],["ly/h25b",1],["ly/lj45",1],["ly/f2th",1],["ly/glf4",1],["ly/glex",1],["ly/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [55.7611,24.4111,55.2072,24.1851],
+            [55.2072,24.1851,54.964,24.0858],
+            [54.2984,24.4967,54.7285,24.2312],
+            [54.7285,24.2312,54.964,24.0858],
+            [54.0697,22.9003,54.7652,23.8223],
+            [54.7652,23.8223,54.964,24.0858],
+            [55.4169,22.5928,55.0807,23.7011],
+            [55.0807,23.7011,54.964,24.0858]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [54.963,24.0648,54.9486,23.7758],
+            [54.9459,23.9218,54.9658,23.9188],
+            [54.9386,23.7773,54.9585,23.7744],
+            [54.965,24.1063,54.9787,24.3955],
+            [54.9819,24.2494,54.962,24.2523],
+            [54.9886,24.394,54.9687,24.397]
+        ]}
+    ]
+}

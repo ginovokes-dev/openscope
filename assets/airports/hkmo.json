@@ -1,0 +1,86 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/HKMO/",
+    "info": {"country":"KE","city":"Mombasa","type":"large_airport","longestRunwayM":3361,"frequencies":{"twr":"118.600","app":"120.300","gnd":"121.600"}},
+    "radio": {"twr":"Moi Tower","app":"Moi Approach","dep":"Moi Departure"},
+    "icao": "HKMO",
+    "iata": "MBA",
+    "magnetic_north": -1.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-4.03483,39.5942,"200ft"],
+    "rangeRings": {"enabled":true,"center":[-4.03483,39.5942],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":10,"speed":7},
+    "arrivalRunway": "03",
+    "departureRunway": "03",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-3.6303,39.5843],[-3.6415,39.6896],[-3.6795,39.7884],[-3.7418,39.874],[-3.824,39.9405],[-3.9206,39.9834],[-4.0249,39.9998],[-4.13,39.9885],[-4.2286,39.9504],[-4.3139,39.888],[-4.3803,39.8056],[-4.4231,39.7087],[-4.4394,39.6041],[-4.4282,39.4988],[-4.3901,39.4],[-4.3279,39.3144],[-4.2457,39.2479],[-4.1491,39.205],[-4.0447,39.1886],[-3.9397,39.1999],[-3.8411,39.238],[-3.7557,39.3004],[-3.6894,39.3828],[-3.6466,39.4797]]}
+    ],
+    "fixes": {
+        "HKMO": [-4.03483,39.5942],
+        "LAGNO": [-4.02652,40.13341],
+        "MERMI": [-4.03174,39.79454],
+        "KAFRA": [-4.56534,39.50491],
+        "IMEKI": [-4.23194,39.56103],
+        "TACVE": [-3.91467,39.06855],
+        "GOKCI": [-3.99019,39.3989],
+        "CIGBO": [-3.50732,39.48853],
+        "ICECI": [-3.83884,39.55494],
+        "_RWY0304DME": [-4.09778,39.5593],
+        "_RWY2104DME": [-3.95483,39.6388],
+        "_RWY1504DME": [-3.9719,39.55841],
+        "_RWY3304DME": [-4.09846,39.63049]
+    },
+    "runways": [
+        {"name":["03","21"],"end":[[-4.03952,39.5917,"190ft"],[-4.01309,39.6064,"199ft"]],"ils":[true,true]},
+        {"name":["15","33"],"end":[[-4.02983,39.5914,"177ft"],[-4.04054,39.5975,"184ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "LAGNO2C": {"icao":"LAGNO2C","name":"Lagno Two Charlie","rwy":{"HKMO03":["_RWY2104DME"],"HKMO21":["_RWY0304DME"],"HKMO15":["_RWY3304DME"],"HKMO33":["_RWY1504DME"]},"body":[],"exitPoints":{"LAGNO":["LAGNO"]},"draw":[["HKMO","LAGNO*"]]},
+        "KAFRA2F": {"icao":"KAFRA2F","name":"Kafra Two Foxtrot","rwy":{"HKMO03":["_RWY2104DME"],"HKMO21":["_RWY0304DME"],"HKMO15":["_RWY3304DME"],"HKMO33":["_RWY1504DME"]},"body":[],"exitPoints":{"KAFRA":["KAFRA"]},"draw":[["HKMO","KAFRA*"]]},
+        "TACVE1B": {"icao":"TACVE1B","name":"Tacve One Bravo","rwy":{"HKMO03":["_RWY2104DME"],"HKMO21":["_RWY0304DME"],"HKMO15":["_RWY3304DME"],"HKMO33":["_RWY1504DME"]},"body":[],"exitPoints":{"TACVE":["TACVE"]},"draw":[["HKMO","TACVE*"]]},
+        "CIGBO2F": {"icao":"CIGBO2F","name":"Cigbo Two Foxtrot","rwy":{"HKMO03":["_RWY2104DME"],"HKMO21":["_RWY0304DME"],"HKMO15":["_RWY3304DME"],"HKMO33":["_RWY1504DME"]},"body":[],"exitPoints":{"CIGBO":["CIGBO"]},"draw":[["HKMO","CIGBO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"HKMO","destination":"HKJK","category":"departure","route":"HKMO03.TACVE1B.TACVE","altitude":"","speed":"","method":"random","rate":1.19,"airlines":[["cfg/b763",1],["kqa/b733",1],["kqa/e190",1],["ffv/crj7",1],["ffv/crj9",1],["ffv/crj2",1]]},
+        {"origin":"HKMO","destination":"HAAB","category":"departure","route":"HKMO03.CIGBO2F.CIGBO","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["eth/b738",1],["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]},
+        {"origin":"HKMO","destination":"HTKJ","category":"departure","route":"HKMO03.TACVE1B.TACVE","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["thy/b739",1],["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]},
+        {"origin":"HKMO","destination":"HTZA","category":"departure","route":"HKMO03.KAFRA2F.KAFRA","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["cfg/b763",1],["ffv/crj7",1],["ffv/crj9",1],["ffv/crj2",1]]},
+        {"origin":"HKMO","destination":"EDDF","category":"departure","route":"HKMO03.CIGBO2F.CIGBO","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["cfg/b763",1]]},
+        {"origin":"HKMO","destination":"","category":"departure","route":"HKMO03.TACVE1B.TACVE","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["rwd/b738",1]]},
+        {"origin":"HKMO","destination":"","category":"departure","route":"HKMO03.CIGBO2F.CIGBO","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["rwd/b738",1],["thy/b739",1]]},
+        {"origin":"HKMO","destination":"","category":"departure","route":"HKMO03.CIGBO2F.CIGBO","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["5y/c172",6],["5y/p28a",5],["5y/c182",3],["5y/be36",2],["5y/da42",1],["5y/tb20",1],["5y/c208",2],["5y/pc12",2],["5y/be20",1],["5y/b350",1],["5y/p180",1],["5y/c510",1],["5y/e50p",1],["5y/c550",1],["5y/e55p",1],["5y/cl30",1],["5y/c680",1],["5y/h25b",1],["5y/lj45",1],["5y/f2th",1],["5y/glf4",1],["5y/glex",1],["5y/glf5",1]]},
+        {"origin":"HKJK","destination":"HKMO","category":"arrival","route":"TACVE..GOKCI..HKMO","altitude":[4000,7000],"speed":250,"method":"random","rate":1.19,"airlines":[["cfg/b763",1],["kqa/b733",1],["kqa/e190",1],["ffv/crj7",1],["ffv/crj9",1],["ffv/crj2",1]]},
+        {"origin":"HAAB","destination":"HKMO","category":"arrival","route":"CIGBO..ICECI..HKMO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.59,"airlines":[["eth/b738",1],["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]},
+        {"origin":"HTKJ","destination":"HKMO","category":"arrival","route":"TACVE..GOKCI..HKMO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.59,"airlines":[["thy/b739",1],["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]},
+        {"origin":"HTZA","destination":"HKMO","category":"arrival","route":"KAFRA..IMEKI..HKMO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.59,"airlines":[["cfg/b763",1],["ffv/crj7",1],["ffv/crj9",1],["ffv/crj2",1]]},
+        {"origin":"EDDF","destination":"HKMO","category":"arrival","route":"CIGBO..ICECI..HKMO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.3,"airlines":[["cfg/b763",1]]},
+        {"origin":"","destination":"HKMO","category":"arrival","route":"TACVE..GOKCI..HKMO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.3,"airlines":[["rwd/b738",1]]},
+        {"origin":"","destination":"HKMO","category":"arrival","route":"CIGBO..ICECI..HKMO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.59,"airlines":[["rwd/b738",1],["thy/b739",1]]},
+        {"origin":"","destination":"HKMO","category":"arrival","route":"CIGBO..ICECI..HKMO","altitude":[4000,7000],"speed":250,"method":"random","rate":1.39,"airlines":[["5y/c172",6],["5y/p28a",5],["5y/c182",3],["5y/be36",2],["5y/da42",1],["5y/tb20",1],["5y/c208",2],["5y/pc12",2],["5y/be20",1],["5y/b350",1],["5y/p180",1],["5y/c510",1],["5y/e50p",1],["5y/c550",1],["5y/e55p",1],["5y/cl30",1],["5y/c680",1],["5y/h25b",1],["5y/lj45",1],["5y/f2th",1],["5y/glf4",1],["5y/glex",1],["5y/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-4.0265,40.1334,-4.0317,39.7945],
+            [-4.0317,39.7945,-4.0348,39.5942],
+            [-4.5653,39.5049,-4.2319,39.561],
+            [-4.2319,39.561,-4.0348,39.5942],
+            [-3.9147,39.0685,-3.9902,39.3989],
+            [-3.9902,39.3989,-4.0348,39.5942],
+            [-3.5073,39.4885,-3.8388,39.5549],
+            [-3.8388,39.5549,-4.0348,39.5942]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-4.0395,39.5917,-4.1852,39.5107],
+            [-4.1172,39.56,-4.1075,39.5424],
+            [-4.19,39.5195,-4.1803,39.5019],
+            [-4.0131,39.6064,-3.8674,39.6874],
+            [-3.9354,39.6381,-3.9451,39.6557],
+            [-3.8626,39.6786,-3.8723,39.6961]
+        ]}
+    ]
+}

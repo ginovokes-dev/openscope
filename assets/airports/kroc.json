@@ -1,0 +1,97 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KROC/",
+    "info": {"country":"US","city":"Rochester","type":"large_airport","longestRunwayM":2439,"frequencies":{"atis":"124.825","twr":"118.300","gnd":"121.700"}},
+    "radio": {"twr":"Rochester Tower","app":"Rochester Approach","dep":"Rochester Departure"},
+    "icao": "KROC",
+    "iata": "ROC",
+    "magnetic_north": -11.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [43.1189,-77.672401,"559ft"],
+    "rangeRings": {"enabled":true,"center":[43.1189,-77.672401],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":210,"speed":7},
+    "arrivalRunway": "22",
+    "departureRunway": "22",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[43.516,-77.7791],[43.5227,-77.6347],[43.5018,-77.4928],[43.4548,-77.3632],[43.3849,-77.2546],[43.2969,-77.1745],[43.1968,-77.1283],[43.0914,-77.1193],[42.9878,-77.1479],[42.8932,-77.2122],[42.8139,-77.3079],[42.7555,-77.4285],[42.7218,-77.5657],[42.7151,-77.7101],[42.736,-77.852],[42.783,-77.9816],[42.8529,-78.0902],[42.9409,-78.1703],[43.041,-78.2165],[43.1464,-78.2255],[43.25,-78.1969],[43.3446,-78.1326],[43.4239,-78.0369],[43.4823,-77.9163]]}
+    ],
+    "fixes": {
+        "KROC": [43.1189,-77.6724],
+        "ZZR": [44.0528,-77.6267,"severn"],
+        "WAKPA": [43.31864,-77.66263],
+        "PYA": [42.644,-77.0561,"penn yan"],
+        "RULMI": [42.9738,-77.4841],
+        "LYS": [42.2835,-78.3349,"olean"],
+        "EJIRA": [42.94592,-77.80958],
+        "BUF": [42.929,-78.6463,"buffalo"],
+        "ALEFI": [43.06732,-77.93694],
+        "_RWY0404DME": [43.05008,-77.73533],
+        "_RWY2204DME": [43.18239,-77.62426],
+        "_RWY1004DME": [43.12008,-77.7677],
+        "_RWY2804DME": [43.12604,-77.56469],
+        "_RWY0704DME": [43.08411,-77.75294],
+        "_RWY2504DME": [43.15253,-77.57868]
+    },
+    "runways": [
+        {"name":["04","22"],"end":[[43.1069,-77.6877,"527ft"],[43.1256,-77.672,"559ft"]],"ils":[true,true]},
+        {"name":["10","28"],"end":[[43.1228,-77.6765,"554ft"],[43.1234,-77.6559,"541ft"]],"ils":[true,true]},
+        {"name":["07","25"],"end":[[43.1157,-77.6726,"540ft"],[43.121,-77.6591,"536ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "ZZR1F": {"icao":"ZZR1F","name":"Severn One Foxtrot","rwy":{"KROC04":["_RWY2204DME"],"KROC22":["_RWY0404DME"],"KROC10":["_RWY2804DME"],"KROC28":["_RWY1004DME"],"KROC07":["_RWY2504DME"],"KROC25":["_RWY0704DME"]},"body":[],"exitPoints":{"ZZR":["ZZR"]},"draw":[["KROC","ZZR*"]]},
+        "PYA1C": {"icao":"PYA1C","name":"Penn Yan One Charlie","rwy":{"KROC04":["_RWY2204DME"],"KROC22":["_RWY0404DME"],"KROC10":["_RWY2804DME"],"KROC28":["_RWY1004DME"],"KROC07":["_RWY2504DME"],"KROC25":["_RWY0704DME"]},"body":[],"exitPoints":{"PYA":["PYA"]},"draw":[["KROC","PYA*"]]},
+        "LYS2A": {"icao":"LYS2A","name":"Olean Two Alpha","rwy":{"KROC04":["_RWY2204DME"],"KROC22":["_RWY0404DME"],"KROC10":["_RWY2804DME"],"KROC28":["_RWY1004DME"],"KROC07":["_RWY2504DME"],"KROC25":["_RWY0704DME"]},"body":[],"exitPoints":{"LYS":["LYS"]},"draw":[["KROC","LYS*"]]},
+        "BUF3B": {"icao":"BUF3B","name":"Buffalo Three Bravo","rwy":{"KROC04":["_RWY2204DME"],"KROC22":["_RWY0404DME"],"KROC10":["_RWY2804DME"],"KROC28":["_RWY1004DME"],"KROC07":["_RWY2504DME"],"KROC25":["_RWY0704DME"]},"body":[],"exitPoints":{"BUF":["BUF"]},"draw":[["KROC","BUF*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KROC","destination":"KJFK","category":"departure","route":"KROC22.PYA1C.PYA","altitude":"","speed":"","method":"random","rate":1,"airlines":[["dal/crj9",1],["jbu/e190",1],["dal/e145",1],["dal/crj7",1],["dal/crj2",1],["dal/e135",1]]},
+        {"origin":"KROC","destination":"KORD","category":"departure","route":"KROC22.BUF3B.BUF","altitude":"","speed":"","method":"random","rate":1,"airlines":[["aal/e145",1],["ual/a319",1],["ual/a320",1],["ual/b738",1]]},
+        {"origin":"KROC","destination":"KATL","category":"departure","route":"KROC22.LYS2A.LYS","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["dal/md88",1],["dal/md90",1]]},
+        {"origin":"KROC","destination":"KCLT","category":"departure","route":"KROC22.LYS2A.LYS","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["aal/a319",2]]},
+        {"origin":"KROC","destination":"KBWI","category":"departure","route":"KROC22.PYA1C.PYA","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["swa/b737",1]]},
+        {"origin":"KROC","destination":"","category":"departure","route":"KROC22.PYA1C.PYA","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["aal/dh8c",1],["dal/crj7",1]]},
+        {"origin":"KROC","destination":"","category":"departure","route":"KROC22.LYS2A.LYS","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["swa/b737",2]]},
+        {"origin":"KROC","destination":"","category":"departure","route":"KROC22.BUF3B.BUF","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["swa/b737",1]]},
+        {"origin":"KROC","destination":"","category":"departure","route":"KROC22.BUF3B.BUF","altitude":"","speed":"","method":"random","rate":1.5,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KJFK","destination":"KROC","category":"arrival","route":"PYA..RULMI..KROC","altitude":[4000,7000],"speed":250,"method":"random","rate":1,"airlines":[["dal/crj9",1],["jbu/e190",1],["dal/e145",1],["dal/crj7",1],["dal/crj2",1],["dal/e135",1]]},
+        {"origin":"KORD","destination":"KROC","category":"arrival","route":"BUF..ALEFI..KROC","altitude":[4000,7000],"speed":250,"method":"random","rate":1,"airlines":[["aal/e145",1],["ual/a319",1],["ual/a320",1],["ual/b738",1]]},
+        {"origin":"KATL","destination":"KROC","category":"arrival","route":"LYS..EJIRA..KROC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.5,"airlines":[["dal/md88",1],["dal/md90",1]]},
+        {"origin":"KCLT","destination":"KROC","category":"arrival","route":"LYS..EJIRA..KROC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.5,"airlines":[["aal/a319",2]]},
+        {"origin":"KBWI","destination":"KROC","category":"arrival","route":"PYA..RULMI..KROC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.25,"airlines":[["swa/b737",1]]},
+        {"origin":"","destination":"KROC","category":"arrival","route":"PYA..RULMI..KROC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.5,"airlines":[["aal/dh8c",1],["dal/crj7",1]]},
+        {"origin":"","destination":"KROC","category":"arrival","route":"LYS..EJIRA..KROC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.5,"airlines":[["swa/b737",2]]},
+        {"origin":"","destination":"KROC","category":"arrival","route":"BUF..ALEFI..KROC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.25,"airlines":[["swa/b737",1]]},
+        {"origin":"","destination":"KROC","category":"arrival","route":"BUF..ALEFI..KROC","altitude":[4000,7000],"speed":250,"method":"random","rate":1.5,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [44.0528,-77.6267,43.3186,-77.6626],
+            [43.3186,-77.6626,43.1189,-77.6724],
+            [42.644,-77.0561,42.9738,-77.4841],
+            [42.9738,-77.4841,43.1189,-77.6724],
+            [42.2835,-78.3349,42.9459,-77.8096],
+            [42.9459,-77.8096,43.1189,-77.6724],
+            [42.929,-78.6463,43.0673,-77.9369],
+            [43.0673,-77.9369,43.1189,-77.6724]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [43.1069,-77.6877,42.9648,-77.8066],
+            [43.0307,-77.7356,43.0411,-77.7589],
+            [42.9596,-77.795,42.97,-77.8183],
+            [43.1256,-77.672,43.2675,-77.5525],
+            [43.2018,-77.624,43.1914,-77.6006],
+            [43.2728,-77.5642,43.2623,-77.5408],
+            [43.1228,-77.6765,43.1159,-77.9045],
+            [43.1094,-77.7899,43.1294,-77.791],
+            [43.1059,-77.9039,43.1259,-77.905],
+            [43.1234,-77.6559,43.1299,-77.4279],
+            [43.1367,-77.5424,43.1167,-77.5413],
+            [43.1399,-77.4284,43.1199,-77.4273]
+        ]}
+    ]
+}

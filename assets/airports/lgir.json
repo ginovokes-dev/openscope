@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LGIR/",
+    "info": {"country":"GR","city":"Heraklion","type":"large_airport","longestRunwayM":2714,"frequencies":{"atis":"127.550","twr":"120.850","app":"123.975","gnd":"121.700"}},
+    "radio": {"twr":"Heraklion Tower","app":"Heraklion Approach","dep":"Heraklion Departure"},
+    "icao": "LGIR",
+    "iata": "HER",
+    "magnetic_north": 5,
+    "ctr_radius": 75,
+    "ctr_ceiling": 12000,
+    "initial_alt": 6000,
+    "position": [35.339699,25.1803,"115ft"],
+    "rangeRings": {"enabled":true,"center":[35.339699,25.1803],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":260,"speed":11},
+    "arrivalRunway": "27",
+    "departureRunway": "27",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":120,"airspace_class":"C","poly":[[36.0116,25.2524],[35.9735,25.4631],[35.8922,25.6546],[35.7733,25.8137],[35.6248,25.9297],[35.4568,25.9946],[35.2809,26.004],[35.109,25.9573],[34.9528,25.8576],[34.823,25.7118],[34.7284,25.5297],[34.6755,25.3239],[34.6678,25.1082],[34.7059,24.8975],[34.7872,24.706],[34.9061,24.5469],[35.0546,24.4309],[35.2226,24.366],[35.3985,24.3566],[35.5704,24.4033],[35.7266,24.503],[35.8564,24.6488],[35.951,24.8309],[36.0039,25.0367]]}
+    ],
+    "fixes": {
+        "LGIR": [35.3397,25.1803],
+        "SNI": [36.3949,25.4826,"santorini"],
+        "KEGOT": [35.61541,25.25929],
+        "SHT": [35.2186,26.1068,"sitia"],
+        "JUFLU": [35.2949,25.52303],
+        "ECARE": [34.52975,24.77653],
+        "CUNIZ": [35.07741,25.04955],
+        "REMSI": [36.06588,24.5833],
+        "KAFMA": [35.57486,24.98697],
+        "_RWY0904DME": [35.34616,25.08505],
+        "_RWY2704DME": [35.33343,25.27188],
+        "_RWY1204DME": [35.38223,25.10854],
+        "_RWY3004DME": [35.29643,25.25334]
+    },
+    "runways": [
+        {"name":["09","27"],"end":[[35.34064,25.16644,"78ft"],[35.339,25.1905,"82ft"]],"ils":[true,true]},
+        {"name":["12","30"],"end":[[35.3431,25.17466,"57ft"],[35.3356,25.1873,"115ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "SNI3B": {"icao":"SNI3B","name":"Santorini Three Bravo","rwy":{"LGIR09":["_RWY2704DME"],"LGIR27":["_RWY0904DME"],"LGIR12":["_RWY3004DME"],"LGIR30":["_RWY1204DME"]},"body":[],"exitPoints":{"SNI":["SNI"]},"draw":[["LGIR","SNI*"]]},
+        "SHT2F": {"icao":"SHT2F","name":"Sitia Two Foxtrot","rwy":{"LGIR09":["_RWY2704DME"],"LGIR27":["_RWY0904DME"],"LGIR12":["_RWY3004DME"],"LGIR30":["_RWY1204DME"]},"body":[],"exitPoints":{"SHT":["SHT"]},"draw":[["LGIR","SHT*"]]},
+        "ECARE3A": {"icao":"ECARE3A","name":"Ecare Three Alpha","rwy":{"LGIR09":["_RWY2704DME"],"LGIR27":["_RWY0904DME"],"LGIR12":["_RWY3004DME"],"LGIR30":["_RWY1204DME"]},"body":[],"exitPoints":{"ECARE":["ECARE"]},"draw":[["LGIR","ECARE*"]]},
+        "REMSI2C": {"icao":"REMSI2C","name":"Remsi Two Charlie","rwy":{"LGIR09":["_RWY2704DME"],"LGIR27":["_RWY0904DME"],"LGIR12":["_RWY3004DME"],"LGIR30":["_RWY1204DME"]},"body":[],"exitPoints":{"REMSI":["REMSI"]},"draw":[["LGIR","REMSI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LGIR","destination":"EDDL","category":"departure","route":"LGIR27.REMSI2C.REMSI","altitude":"","speed":"","method":"random","rate":0.83,"airlines":[["aee/a320",1],["ber/a320",1],["ber/a321",1],["ber/b738",1],["cfg/b738",1],["cfg/b752",1],["gmi/b737",1],["gwi/a319",1],["hlx/b738",1]]},
+        {"origin":"LGIR","destination":"EDDM","category":"departure","route":"LGIR27.REMSI2C.REMSI","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["aee/a320",1],["ber/a320",1],["ber/b738",1],["cfg/a320",1],["hlx/b738",1]]},
+        {"origin":"LGIR","destination":"EGCC","category":"departure","route":"LGIR27.REMSI2C.REMSI","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["exs/b738",1],["exs/b752",1],["ezy/a319",1],["ezy/a320",1],["tvf/b738",1]]},
+        {"origin":"LGIR","destination":"LOWW","category":"departure","route":"LGIR27.REMSI2C.REMSI","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["aee/a320",1],["ber/a320",1],["ber/a321",1],["nly/a320",1],["nly/a321",1]]},
+        {"origin":"LGIR","destination":"EDDF","category":"departure","route":"LGIR27.REMSI2C.REMSI","altitude":"","speed":"","method":"random","rate":0.37,"airlines":[["aee/a320",1],["cfg/b738",1],["cfg/b752",1],["hlx/b738",1]]},
+        {"origin":"LGIR","destination":"EDDH","category":"departure","route":"LGIR27.REMSI2C.REMSI","altitude":"","speed":"","method":"random","rate":0.37,"airlines":[["ber/a320",1],["cfg/a320",1],["gwi/a319",1],["hlx/b738",1]]},
+        {"origin":"LGIR","destination":"EGBB","category":"departure","route":"LGIR27.REMSI2C.REMSI","altitude":"","speed":"","method":"random","rate":0.37,"airlines":[["mon/a320",1],["mon/a321",1],["tom/b752",1],["tvf/b752",1]]},
+        {"origin":"LGIR","destination":"","category":"departure","route":"LGIR27.SNI3B.SNI","altitude":"","speed":"","method":"random","rate":0.74,"airlines":[["aee/a320",2],["afl/a320",1],["afl/a321",1],["aui/b737",1],["sbi/a320",1],["tso/b734",1],["tso/b738",1]]},
+        {"origin":"LGIR","destination":"","category":"departure","route":"LGIR27.SHT2F.SHT","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["aee/a320",2],["cyp/a320",1]]},
+        {"origin":"LGIR","destination":"","category":"departure","route":"LGIR27.REMSI2C.REMSI","altitude":"","speed":"","method":"random","rate":6.08,"airlines":[["aee/a320",6],["ezy/a320",6],["tvf/b738",6],["hlx/b738",5],["cfg/a320",4],["ezy/a319",4],["tra/b738",4],["ber/a320",3],["ber/b738",3],["exs/b738",3],["gwi/a319",3],["ber/a321",2]]},
+        {"origin":"EDDL","destination":"LGIR","category":"arrival","route":"REMSI..KAFMA..LGIR","altitude":[8000,11000],"speed":250,"method":"random","rate":0.83,"airlines":[["aee/a320",1],["ber/a320",1],["ber/a321",1],["ber/b738",1],["cfg/b738",1],["cfg/b752",1],["gmi/b737",1],["gwi/a319",1],["hlx/b738",1]]},
+        {"origin":"EDDM","destination":"LGIR","category":"arrival","route":"REMSI..KAFMA..LGIR","altitude":[8000,11000],"speed":250,"method":"random","rate":0.46,"airlines":[["aee/a320",1],["ber/a320",1],["ber/b738",1],["cfg/a320",1],["hlx/b738",1]]},
+        {"origin":"EGCC","destination":"LGIR","category":"arrival","route":"REMSI..KAFMA..LGIR","altitude":[8000,11000],"speed":250,"method":"random","rate":0.46,"airlines":[["exs/b738",1],["exs/b752",1],["ezy/a319",1],["ezy/a320",1],["tvf/b738",1]]},
+        {"origin":"LOWW","destination":"LGIR","category":"arrival","route":"REMSI..KAFMA..LGIR","altitude":[8000,11000],"speed":250,"method":"random","rate":0.46,"airlines":[["aee/a320",1],["ber/a320",1],["ber/a321",1],["nly/a320",1],["nly/a321",1]]},
+        {"origin":"EDDF","destination":"LGIR","category":"arrival","route":"REMSI..KAFMA..LGIR","altitude":[8000,11000],"speed":250,"method":"random","rate":0.37,"airlines":[["aee/a320",1],["cfg/b738",1],["cfg/b752",1],["hlx/b738",1]]},
+        {"origin":"EDDH","destination":"LGIR","category":"arrival","route":"REMSI..KAFMA..LGIR","altitude":[8000,11000],"speed":250,"method":"random","rate":0.37,"airlines":[["ber/a320",1],["cfg/a320",1],["gwi/a319",1],["hlx/b738",1]]},
+        {"origin":"EGBB","destination":"LGIR","category":"arrival","route":"REMSI..KAFMA..LGIR","altitude":[8000,11000],"speed":250,"method":"random","rate":0.37,"airlines":[["mon/a320",1],["mon/a321",1],["tom/b752",1],["tvf/b752",1]]},
+        {"origin":"","destination":"LGIR","category":"arrival","route":"SNI..KEGOT..LGIR","altitude":[8000,11000],"speed":250,"method":"random","rate":0.74,"airlines":[["aee/a320",2],["afl/a320",1],["afl/a321",1],["aui/b737",1],["sbi/a320",1],["tso/b734",1],["tso/b738",1]]},
+        {"origin":"","destination":"LGIR","category":"arrival","route":"SHT..JUFLU..LGIR","altitude":[8000,11000],"speed":250,"method":"random","rate":0.28,"airlines":[["aee/a320",2],["cyp/a320",1]]},
+        {"origin":"","destination":"LGIR","category":"arrival","route":"REMSI..KAFMA..LGIR","altitude":[8000,11000],"speed":250,"method":"random","rate":6.08,"airlines":[["aee/a320",6],["ezy/a320",6],["tvf/b738",6],["hlx/b738",5],["cfg/a320",4],["ezy/a319",4],["tra/b738",4],["ber/a320",3],["ber/b738",3],["exs/b738",3],["gwi/a319",3],["ber/a321",2]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [36.3949,25.4826,35.6154,25.2593],
+            [35.6154,25.2593,35.3397,25.1803],
+            [35.2186,26.1068,35.2949,25.523],
+            [35.2949,25.523,35.3397,25.1803],
+            [34.5298,24.7765,35.0774,25.0495],
+            [35.0774,25.0495,35.3397,25.1803],
+            [36.0659,24.5833,35.5749,24.987],
+            [35.5749,24.987,35.3397,25.1803]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [35.3406,25.1664,35.3543,24.9629],
+            [35.3376,25.0637,35.3575,25.0657],
+            [35.3444,24.9619,35.3643,24.964],
+            [35.339,25.1905,35.325,25.3939],
+            [35.342,25.2932,35.3221,25.2912],
+            [35.3349,25.395,35.315,25.3929],
+            [35.3431,25.1747,35.4409,25.0093],
+            [35.3839,25.0848,35.4001,25.0992],
+            [35.4328,25.002,35.449,25.0165],
+            [35.3356,25.1873,35.2376,25.3523],
+            [35.2947,25.277,35.2785,25.2626],
+            [35.2457,25.3595,35.2295,25.3451]
+        ]}
+    ]
+}

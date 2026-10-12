@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KMDT/",
+    "info": {"country":"US","city":"Harrisburg","type":"medium_airport","longestRunwayM":3048,"frequencies":{"atis":"118.800","twr":"124.800","gnd":"121.700"}},
+    "radio": {"twr":"Harrisburg Tower","app":"Harrisburg Approach","dep":"Harrisburg Departure"},
+    "icao": "KMDT",
+    "iata": "MDT",
+    "magnetic_north": -11.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [40.192838,-76.762333,"310ft"],
+    "rangeRings": {"enabled":true,"center":[40.192838,-76.762333],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":290,"speed":8},
+    "arrivalRunway": "31",
+    "departureRunway": "31",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[40.59,-76.8643],[40.5966,-76.7263],[40.5757,-76.5907],[40.5287,-76.4668],[40.4589,-76.3631],[40.3709,-76.2866],[40.2708,-76.2425],[40.1653,-76.2338],[40.0618,-76.2611],[39.9671,-76.3226],[39.8879,-76.4141],[39.8294,-76.5293],[39.7957,-76.6603],[39.7891,-76.7984],[39.81,-76.9339],[39.8569,-77.0578],[39.9268,-77.1616],[40.0148,-77.2381],[40.1149,-77.2822],[40.2204,-77.2909],[40.3239,-77.2636],[40.4186,-77.2021],[40.4978,-77.1106],[40.5563,-76.9954]]}
+    ],
+    "fixes": {
+        "KMDT": [40.19284,-76.76233],
+        "ETX": [40.581,-75.684,"east texas"],
+        "ECELE": [40.27804,-76.52565],
+        "MXE": [39.9181,-75.6708,"modena"],
+        "GUGRI": [40.13029,-76.51383],
+        "FDK": [39.4122,-77.3751,"frederick"],
+        "DUZEH": [40.02143,-76.89688],
+        "RV": [40.6147,-77.7179,"stroh"],
+        "HAR": [40.3022,-77.0696,"harrisburg"],
+        "_RWY1304DME": [40.22828,-76.85325],
+        "_RWY3104DME": [40.15807,-76.67203]
+    },
+    "runways": [
+        {"name":["13","31"],"end":[[40.19817,-76.77542,"308ft"],[40.18823,-76.74978,"308ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ETX3C": {"icao":"ETX3C","name":"East Texas Three Charlie","rwy":{"KMDT13":["_RWY3104DME"],"KMDT31":["_RWY1304DME"]},"body":[],"exitPoints":{"ETX":["ETX"]},"draw":[["KMDT","ETX*"]]},
+        "MXE1E": {"icao":"MXE1E","name":"Modena One Echo","rwy":{"KMDT13":["_RWY3104DME"],"KMDT31":["_RWY1304DME"]},"body":[],"exitPoints":{"MXE":["MXE"]},"draw":[["KMDT","MXE*"]]},
+        "FDK1C": {"icao":"FDK1C","name":"Frederick One Charlie","rwy":{"KMDT13":["_RWY3104DME"],"KMDT31":["_RWY1304DME"]},"body":[],"exitPoints":{"FDK":["FDK"]},"draw":[["KMDT","FDK*"]]},
+        "RV3E": {"icao":"RV3E","name":"Stroh Three Echo","rwy":{"KMDT13":["_RWY3104DME"],"KMDT31":["_RWY1304DME"]},"body":[],"exitPoints":{"RV":["RV"]},"draw":[["KMDT","RV*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KMDT","destination":"KCLT","category":"departure","route":"KMDT31.FDK1C.FDK","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["aal/crj7",2],["aal/a319",2],["aal/crj9",1],["aal/crj2",1]]},
+        {"origin":"KMDT","destination":"KATL","category":"departure","route":"KMDT31.FDK1C.FDK","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["dal/md88",1],["flg/crj7",1],["flg/crj9",1],["flg/crj2",1]]},
+        {"origin":"KMDT","destination":"KORD","category":"departure","route":"KMDT31.RV3E.RV","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["ual/a319",1],["ual/a320",1]]},
+        {"origin":"KMDT","destination":"KBOS","category":"departure","route":"KMDT31.ETX3C.ETX","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["aal/dh8c",1]]},
+        {"origin":"KMDT","destination":"KDEN","category":"departure","route":"KMDT31.RV3E.RV","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["fft/a319",1]]},
+        {"origin":"KMDT","destination":"","category":"departure","route":"KMDT31.MXE1E.MXE","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["aal/dh8c",1]]},
+        {"origin":"KMDT","destination":"","category":"departure","route":"KMDT31.FDK1C.FDK","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["aay/md82",2],["fft/a319",1]]},
+        {"origin":"KMDT","destination":"","category":"departure","route":"KMDT31.FDK1C.FDK","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KCLT","destination":"KMDT","category":"arrival","route":"FDK..DUZEH..KMDT","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["aal/crj7",2],["aal/a319",2],["aal/crj9",1],["aal/crj2",1]]},
+        {"origin":"KATL","destination":"KMDT","category":"arrival","route":"FDK..DUZEH..KMDT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.58,"airlines":[["dal/md88",1],["flg/crj7",1],["flg/crj9",1],["flg/crj2",1]]},
+        {"origin":"KORD","destination":"KMDT","category":"arrival","route":"RV..HAR..KMDT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.58,"airlines":[["ual/a319",1],["ual/a320",1]]},
+        {"origin":"KBOS","destination":"KMDT","category":"arrival","route":"ETX..ECELE..KMDT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.29,"airlines":[["aal/dh8c",1]]},
+        {"origin":"KDEN","destination":"KMDT","category":"arrival","route":"RV..HAR..KMDT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.29,"airlines":[["fft/a319",1]]},
+        {"origin":"","destination":"KMDT","category":"arrival","route":"MXE..GUGRI..KMDT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.29,"airlines":[["aal/dh8c",1]]},
+        {"origin":"","destination":"KMDT","category":"arrival","route":"FDK..DUZEH..KMDT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.87,"airlines":[["aay/md82",2],["fft/a319",1]]},
+        {"origin":"","destination":"KMDT","category":"arrival","route":"FDK..DUZEH..KMDT","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [40.581,-75.684,40.278,-76.5257],
+            [40.278,-76.5257,40.1928,-76.7623],
+            [39.9181,-75.6708,40.1303,-76.5138],
+            [40.1303,-76.5138,40.1928,-76.7623],
+            [39.4122,-77.3751,40.0214,-76.8969],
+            [40.0214,-76.8969,40.1928,-76.7623],
+            [40.6147,-77.7179,40.3022,-77.0696],
+            [40.3022,-77.0696,40.1928,-76.7623]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [40.1982,-76.7754,40.2733,-76.9701],
+            [40.2269,-76.8786,40.2447,-76.8668],
+            [40.2644,-76.976,40.2823,-76.9642],
+            [40.1882,-76.7498,40.1127,-76.5555],
+            [40.1594,-76.6467,40.1416,-76.6585],
+            [40.1216,-76.5496,40.1038,-76.5615]
+        ]}
+    ]
+}

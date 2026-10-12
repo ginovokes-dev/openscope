@@ -1,0 +1,98 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LIRQ/",
+    "info": {"country":"IT","city":"Firenze","type":"large_airport","longestRunwayM":1560,"frequencies":{"atis":"129.350","twr":"118.300","app":"126.075"}},
+    "radio": {"twr":"Florence Tower","app":"Florence Approach","dep":"Florence Departure"},
+    "icao": "LIRQ",
+    "iata": "FLR",
+    "magnetic_north": 3.9,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [43.808558,11.202822,"142ft"],
+    "rangeRings": {"enabled":true,"center":[43.808558,11.202822],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":240,"speed":6},
+    "arrivalRunway": "23",
+    "departureRunway": "23",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[44.3469,11.2537],[44.3191,11.445],[44.2564,11.6199],[44.1633,11.7663],[44.0459,11.8743],[43.9124,11.9365],[43.7719,11.9488],[43.6338,11.9102],[43.5076,11.8234],[43.4019,11.6944],[43.324,11.5318],[43.2791,11.3468],[43.2702,11.152],[43.2981,10.9606],[43.3607,10.7858],[43.4538,10.6394],[43.5712,10.5314],[43.7047,10.4691],[43.8453,10.4568],[43.9833,10.4954],[44.1095,10.5822],[44.2152,10.7113],[44.2931,10.8739],[44.3381,11.0589]]}
+    ],
+    "fixes": {
+        "LIRQ": [43.80856,11.20282],
+        "FOR": [44.2481,11.9247,"forli"],
+        "GUGVE": [43.96967,11.46741],
+        "GRO": [42.7053,11.0253,"grosseto"],
+        "BOWUK": [43.56039,11.16289],
+        "GANUD": [43.14567,10.86558],
+        "EWOTI": [43.57403,11.08351],
+        "PIS": [43.5892,10.2971,"pisa"],
+        "SUHIL": [43.72907,10.87462],
+        "EZEMA": [44.38,10.62796],
+        "FRZ": [44.0272,11.0033,"firenze"],
+        "_RWY0503DME": [43.77288,11.14768],
+        "_RWY2303DME": [43.84476,11.25881]
+    },
+    "runways": [
+        {"name":["05","23"],"end":[[43.80624,11.19921,"123ft"],[43.81142,11.20721,"132ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "FOR2C": {"icao":"FOR2C","name":"Forli Two Charlie","rwy":{"LIRQ05":["_RWY2303DME"],"LIRQ23":["_RWY0503DME"]},"body":[],"exitPoints":{"FOR":["FOR"]},"draw":[["LIRQ","FOR*"]]},
+        "GRO1E": {"icao":"GRO1E","name":"Grosseto One Echo","rwy":{"LIRQ05":["_RWY2303DME"],"LIRQ23":["_RWY0503DME"]},"body":[],"exitPoints":{"GRO":["GRO"]},"draw":[["LIRQ","GRO*"]]},
+        "GANUD3B": {"icao":"GANUD3B","name":"Ganud Three Bravo","rwy":{"LIRQ05":["_RWY2303DME"],"LIRQ23":["_RWY0503DME"]},"body":[],"exitPoints":{"GANUD":["GANUD"]},"draw":[["LIRQ","GANUD*"]]},
+        "PIS2E": {"icao":"PIS2E","name":"Pisa Two Echo","rwy":{"LIRQ05":["_RWY2303DME"],"LIRQ23":["_RWY0503DME"]},"body":[],"exitPoints":{"PIS":["PIS"]},"draw":[["LIRQ","PIS*"]]},
+        "EZEMA3A": {"icao":"EZEMA3A","name":"Ezema Three Alpha","rwy":{"LIRQ05":["_RWY2303DME"],"LIRQ23":["_RWY0503DME"]},"body":[],"exitPoints":{"EZEMA":["EZEMA"]},"draw":[["LIRQ","EZEMA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LIRQ","destination":"EGLC","category":"departure","route":"LIRQ23.EZEMA3A.EZEMA","altitude":"","speed":"","method":"random","rate":0.61,"airlines":[["baw/e170",1],["bcy/rj85",1]]},
+        {"origin":"LIRQ","destination":"LFLL","category":"departure","route":"LIRQ23.EZEMA3A.EZEMA","altitude":"","speed":"","method":"random","rate":0.61,"airlines":[["afr/at45",1],["hop/at45",1]]},
+        {"origin":"LIRQ","destination":"EBBR","category":"departure","route":"LIRQ23.EZEMA3A.EZEMA","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["dat/rj1h",1]]},
+        {"origin":"LIRQ","destination":"EDDL","category":"departure","route":"LIRQ23.EZEMA3A.EZEMA","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["ber/dh8d",1]]},
+        {"origin":"LIRQ","destination":"EDDS","category":"departure","route":"LIRQ23.EZEMA3A.EZEMA","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["ber/dh8d",1]]},
+        {"origin":"LIRQ","destination":"EGBB","category":"departure","route":"LIRQ23.EZEMA3A.EZEMA","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["bee/e75l",1]]},
+        {"origin":"LIRQ","destination":"","category":"departure","route":"LIRQ23.FOR2C.FOR","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["nly/dh8d",1]]},
+        {"origin":"LIRQ","destination":"","category":"departure","route":"LIRQ23.GRO1E.GRO","altitude":"","speed":"","method":"random","rate":1.22,"airlines":[["vlg/a319",3],["aza/a319",1]]},
+        {"origin":"LIRQ","destination":"","category":"departure","route":"LIRQ23.GANUD3B.GANUD","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["vlg/a319",1]]},
+        {"origin":"LIRQ","destination":"","category":"departure","route":"LIRQ23.PIS2E.PIS","altitude":"","speed":"","method":"random","rate":0.61,"airlines":[["vlg/a319",2]]},
+        {"origin":"LIRQ","destination":"","category":"departure","route":"LIRQ23.EZEMA3A.EZEMA","altitude":"","speed":"","method":"random","rate":1.95,"airlines":[["vlg/a319",3],["bbo/sb20",2],["afr/a318",1],["klm/e170",1]]},
+        {"origin":"LIRQ","destination":"","category":"departure","route":"LIRQ23.FOR2C.FOR","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"LIRQ","destination":"","category":"departure","route":"LIRQ23.PIS2E.PIS","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"EGLC","destination":"LIRQ","category":"arrival","route":"EZEMA..FRZ..LIRQ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.61,"airlines":[["baw/e170",1],["bcy/rj85",1]]},
+        {"origin":"LFLL","destination":"LIRQ","category":"arrival","route":"EZEMA..FRZ..LIRQ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.61,"airlines":[["afr/at45",1],["hop/at45",1]]},
+        {"origin":"EBBR","destination":"LIRQ","category":"arrival","route":"EZEMA..FRZ..LIRQ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.3,"airlines":[["dat/rj1h",1]]},
+        {"origin":"EDDL","destination":"LIRQ","category":"arrival","route":"EZEMA..FRZ..LIRQ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.3,"airlines":[["ber/dh8d",1]]},
+        {"origin":"EDDS","destination":"LIRQ","category":"arrival","route":"EZEMA..FRZ..LIRQ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.3,"airlines":[["ber/dh8d",1]]},
+        {"origin":"EGBB","destination":"LIRQ","category":"arrival","route":"EZEMA..FRZ..LIRQ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.3,"airlines":[["bee/e75l",1]]},
+        {"origin":"","destination":"LIRQ","category":"arrival","route":"FOR..GUGVE..LIRQ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.3,"airlines":[["nly/dh8d",1]]},
+        {"origin":"","destination":"LIRQ","category":"arrival","route":"GRO..BOWUK..LIRQ","altitude":[6000,9000],"speed":250,"method":"random","rate":1.22,"airlines":[["vlg/a319",3],["aza/a319",1]]},
+        {"origin":"","destination":"LIRQ","category":"arrival","route":"GANUD..EWOTI..LIRQ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.3,"airlines":[["vlg/a319",1]]},
+        {"origin":"","destination":"LIRQ","category":"arrival","route":"PIS..SUHIL..LIRQ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.61,"airlines":[["vlg/a319",2]]},
+        {"origin":"","destination":"LIRQ","category":"arrival","route":"EZEMA..FRZ..LIRQ","altitude":[6000,9000],"speed":250,"method":"random","rate":1.95,"airlines":[["vlg/a319",3],["bbo/sb20",2],["afr/a318",1],["klm/e170",1]]},
+        {"origin":"","destination":"LIRQ","category":"arrival","route":"FOR..GUGVE..LIRQ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"","destination":"LIRQ","category":"arrival","route":"PIS..SUHIL..LIRQ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [44.2481,11.9247,43.9697,11.4674],
+            [43.9697,11.4674,43.8086,11.2028],
+            [42.7053,11.0253,43.5604,11.1629],
+            [43.5604,11.1629,43.8086,11.2028],
+            [43.1457,10.8656,43.574,11.0835],
+            [43.574,11.0835,43.8086,11.2028],
+            [43.5892,10.2971,43.7291,10.8746],
+            [43.7291,10.8746,43.8086,11.2028],
+            [44.38,10.628,44.0272,11.0033],
+            [44.0272,11.0033,43.8086,11.2028]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [43.8062,11.1992,43.6949,11.0277],
+            [43.7432,11.1226,43.7581,11.1041],
+            [43.6875,11.0369,43.7024,11.0184],
+            [43.8114,11.2072,43.9225,11.3794],
+            [43.8744,11.284,43.8595,11.3025],
+            [43.9299,11.3701,43.915,11.3887]
+        ]}
+    ]
+}

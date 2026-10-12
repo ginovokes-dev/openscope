@@ -1,0 +1,79 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/FALE/",
+    "info": {"country":"ZA","city":"Durban","type":"large_airport","longestRunwayM":3700,"approximateRunways":true},
+    "radio": {"twr":"King Shaka Tower","app":"King Shaka Approach","dep":"King Shaka Departure"},
+    "icao": "FALE",
+    "iata": "DUR",
+    "magnetic_north": -27.2,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-29.614444,31.119722,"295ft"],
+    "rangeRings": {"enabled":true,"center":[-29.614444,31.119722],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":60,"speed":9},
+    "arrivalRunway": "06",
+    "departureRunway": "06",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-29.2545,30.9069],[-29.2189,31.0213],[-29.2102,31.1425],[-29.2291,31.262],[-29.2743,31.3719],[-29.3426,31.4646],[-29.4295,31.5337],[-29.5289,31.5747],[-29.6342,31.5847],[-29.7382,31.5629],[-29.8337,31.511],[-29.9142,31.4324],[-29.9744,31.3325],[-30.01,31.2181],[-30.0187,31.097],[-29.9998,30.9774],[-29.9546,30.8676],[-29.8863,30.7749],[-29.7994,30.7057],[-29.7,30.6647],[-29.5947,30.6548],[-29.4907,30.6765],[-29.3952,30.7284],[-29.3146,30.807]]}
+    ],
+    "fixes": {
+        "FALE": [-29.61444,31.11972],
+        "ES": [-28.8883,31.4483,"eshowe"],
+        "VAKOG": [-29.42845,31.20388],
+        "NAKEL": [-29.47703,31.71796],
+        "LEJIW": [-29.56339,31.34199],
+        "PMV": [-29.6478,30.4004,"pietermaritzburg"],
+        "EPUSE": [-29.62509,30.89015],
+        "GYV": [-29.1235,30.5862,"greytown"],
+        "PURIV": [-29.46916,30.96184],
+        "_RWY0604DME": [-29.68442,31.06781],
+        "_RWY2404DME": [-29.54446,31.17158]
+    },
+    "runways": [
+        {"name":["06","24"],"end":[[-29.62843,31.10935,"304ft"],[-29.60046,31.13009,"304ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ES2A": {"icao":"ES2A","name":"Eshowe Two Alpha","rwy":{"FALE06":["_RWY2404DME"],"FALE24":["_RWY0604DME"]},"body":[],"exitPoints":{"ES":["ES"]},"draw":[["FALE","ES*"]]},
+        "NAKEL3C": {"icao":"NAKEL3C","name":"Nakel Three Charlie","rwy":{"FALE06":["_RWY2404DME"],"FALE24":["_RWY0604DME"]},"body":[],"exitPoints":{"NAKEL":["NAKEL"]},"draw":[["FALE","NAKEL*"]]},
+        "PMV3E": {"icao":"PMV3E","name":"Pietermaritzburg Three Echo","rwy":{"FALE06":["_RWY2404DME"],"FALE24":["_RWY0604DME"]},"body":[],"exitPoints":{"PMV":["PMV"]},"draw":[["FALE","PMV*"]]},
+        "GYV3F": {"icao":"GYV3F","name":"Greytown Three Foxtrot","rwy":{"FALE06":["_RWY2404DME"],"FALE24":["_RWY0604DME"]},"body":[],"exitPoints":{"GYV":["GYV"]},"draw":[["FALE","GYV*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"FALE","destination":"FAOR","category":"departure","route":"FALE06.GYV3F.GYV","altitude":"","speed":"","method":"random","rate":1.9,"airlines":[["caw/b738",1],["mno/b733",1],["mno/b738",1],["saa/a319",1],["saa/a320",1],["saa/b733",1],["saa/b738",1]]},
+        {"origin":"FALE","destination":"FACT","category":"departure","route":"FALE06.PMV3E.PMV","altitude":"","speed":"","method":"random","rate":0.81,"airlines":[["caw/b738",1],["mno/b738",1],["saa/b738",1]]},
+        {"origin":"FALE","destination":"FALA","category":"departure","route":"FALE06.GYV3F.GYV","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["caw/b738",1]]},
+        {"origin":"FALE","destination":"FIMP","category":"departure","route":"FALE06.NAKEL3C.NAKEL","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["mau/a319",1]]},
+        {"origin":"FALE","destination":"","category":"departure","route":"FALE06.ES2A.ES","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["uae/b77w",1]]},
+        {"origin":"FALE","destination":"","category":"departure","route":"FALE06.GYV3F.GYV","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["zs/c172",6],["zs/p28a",5],["zs/c182",3],["zs/be36",2],["zs/da42",1],["zs/tb20",1],["zs/c208",2],["zs/pc12",2],["zs/be20",1],["zs/b350",1],["zs/p180",1],["zs/c510",1],["zs/e50p",1],["zs/c550",1],["zs/e55p",1],["zs/cl30",1],["zs/c680",1],["zs/h25b",1],["zs/lj45",1],["zs/f2th",1],["zs/glf4",1],["zs/glex",1],["zs/glf5",1]]},
+        {"origin":"FAOR","destination":"FALE","category":"arrival","route":"GYV..PURIV..FALE","altitude":[4000,7000],"speed":250,"method":"random","rate":1.9,"airlines":[["caw/b738",1],["mno/b733",1],["mno/b738",1],["saa/a319",1],["saa/a320",1],["saa/b733",1],["saa/b738",1]]},
+        {"origin":"FACT","destination":"FALE","category":"arrival","route":"PMV..EPUSE..FALE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.81,"airlines":[["caw/b738",1],["mno/b738",1],["saa/b738",1]]},
+        {"origin":"FALA","destination":"FALE","category":"arrival","route":"GYV..PURIV..FALE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.27,"airlines":[["caw/b738",1]]},
+        {"origin":"FIMP","destination":"FALE","category":"arrival","route":"NAKEL..LEJIW..FALE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.27,"airlines":[["mau/a319",1]]},
+        {"origin":"","destination":"FALE","category":"arrival","route":"ES..VAKOG..FALE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.27,"airlines":[["uae/b77w",1]]},
+        {"origin":"","destination":"FALE","category":"arrival","route":"GYV..PURIV..FALE","altitude":[4000,7000],"speed":250,"method":"random","rate":1.17,"airlines":[["zs/c172",6],["zs/p28a",5],["zs/c182",3],["zs/be36",2],["zs/da42",1],["zs/tb20",1],["zs/c208",2],["zs/pc12",2],["zs/be20",1],["zs/b350",1],["zs/p180",1],["zs/c510",1],["zs/e50p",1],["zs/c550",1],["zs/e55p",1],["zs/cl30",1],["zs/c680",1],["zs/h25b",1],["zs/lj45",1],["zs/f2th",1],["zs/glf4",1],["zs/glex",1],["zs/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-28.8883,31.4483,-29.4285,31.2039],
+            [-29.4285,31.2039,-29.6144,31.1197],
+            [-29.477,31.718,-29.5634,31.342],
+            [-29.5634,31.342,-29.6144,31.1197],
+            [-29.6478,30.4004,-29.6251,30.8902],
+            [-29.6251,30.8902,-29.6144,31.1197],
+            [-29.1235,30.5862,-29.4692,30.9618],
+            [-29.4692,30.9618,-29.6144,31.1197]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-29.6284,31.1094,-29.7684,31.0054],
+            [-29.7038,31.0671,-29.693,31.0477],
+            [-29.7738,31.0151,-29.763,30.9957],
+            [-29.6005,31.1301,-29.4604,31.2337],
+            [-29.525,31.1723,-29.5359,31.1916],
+            [-29.455,31.2241,-29.4658,31.2434]
+        ]}
+    ]
+}

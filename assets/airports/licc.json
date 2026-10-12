@@ -1,0 +1,98 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LICC/",
+    "info": {"country":"IT","city":"Catania","type":"large_airport","longestRunwayM":2435,"frequencies":{"twr":"118.700","app":"119.250","gnd":"129.725"}},
+    "radio": {"twr":"Catania Tower","app":"Catania Approach","dep":"Catania Departure"},
+    "icao": "LICC",
+    "iata": "CTA",
+    "magnetic_north": 4,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [37.466801,15.0664,"39ft"],
+    "rangeRings": {"enabled":true,"center":[37.466801,15.0664],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":260,"speed":10},
+    "arrivalRunway": "26",
+    "departureRunway": "26",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[38.0051,15.1138],[37.977,15.2877],[37.9141,15.4466],[37.8208,15.5795],[37.7033,15.6774],[37.5698,15.7337],[37.4292,15.7446],[37.2911,15.7092],[37.1651,15.63],[37.0596,15.5124],[36.9818,15.3644],[36.9371,15.1961],[36.9285,15.019],[36.9566,14.8451],[37.0195,14.6862],[37.1128,14.5533],[37.2303,14.4554],[37.3638,14.3991],[37.5044,14.3882],[37.6425,14.4236],[37.7685,14.5028],[37.874,14.6204],[37.9518,14.7684],[37.9965,14.9367]]}
+    ],
+    "fixes": {
+        "LICC": [37.4668,15.0664],
+        "RCA": [38.0758,15.6455,"reggio calabria"],
+        "NUBWO": [37.66621,15.25602],
+        "ATIPA": [37.21971,15.89984],
+        "MALZU": [37.37938,15.36127],
+        "ERERI": [36.78819,14.82036],
+        "SOCHI": [37.22671,14.97935],
+        "TAFOW": [37.74064,14.24634],
+        "WOGHO": [37.56368,14.77627],
+        "GADSU": [38.11437,14.71161],
+        "ZAPHA": [37.69591,14.94088],
+        "_RWY0804DME": [37.45864,14.97031],
+        "_RWY2604DME": [37.47481,15.16262]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[37.46569,15.05377,"37ft"],[37.46782,15.07914,"17ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "RCA2A": {"icao":"RCA2A","name":"Reggio Calabria Two Alpha","rwy":{"LICC08":["_RWY2604DME"],"LICC26":["_RWY0804DME"]},"body":[],"exitPoints":{"RCA":["RCA"]},"draw":[["LICC","RCA*"]]},
+        "ATIPA3E": {"icao":"ATIPA3E","name":"Atipa Three Echo","rwy":{"LICC08":["_RWY2604DME"],"LICC26":["_RWY0804DME"]},"body":[],"exitPoints":{"ATIPA":["ATIPA"]},"draw":[["LICC","ATIPA*"]]},
+        "ERERI3B": {"icao":"ERERI3B","name":"Ereri Three Bravo","rwy":{"LICC08":["_RWY2604DME"],"LICC26":["_RWY0804DME"]},"body":[],"exitPoints":{"ERERI":["ERERI"]},"draw":[["LICC","ERERI*"]]},
+        "TAFOW3A": {"icao":"TAFOW3A","name":"Tafow Three Alpha","rwy":{"LICC08":["_RWY2604DME"],"LICC26":["_RWY0804DME"]},"body":[],"exitPoints":{"TAFOW":["TAFOW"]},"draw":[["LICC","TAFOW*"]]},
+        "GADSU2D": {"icao":"GADSU2D","name":"Gadsu Two Delta","rwy":{"LICC08":["_RWY2604DME"],"LICC26":["_RWY0804DME"]},"body":[],"exitPoints":{"GADSU":["GADSU"]},"draw":[["LICC","GADSU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LICC","destination":"LIRF","category":"departure","route":"LICC26.GADSU2D.GADSU","altitude":"","speed":"","method":"random","rate":0.7,"airlines":[["aza/a320",2],["aza/a319",1],["aza/a321",1],["bpa/b737",1],["ibe/a320",1],["iss/b737",1],["ryr/b738",1],["vlg/a320",1]]},
+        {"origin":"LICC","destination":"LIML","category":"departure","route":"LICC26.GADSU2D.GADSU","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["aza/a320",2],["aza/a319",1],["aza/e190",1],["aza/e75l",1],["iss/b737",1],["iss/md82",1]]},
+        {"origin":"LICC","destination":"EDDL","category":"departure","route":"LICC26.GADSU2D.GADSU","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["adh/a320",1],["aza/a320",1],["ber/a320",1],["ber/a321",1],["ber/b738",1],["gwi/crj7",1],["gwi/crj9",1],["gwi/crj2",1]]},
+        {"origin":"LICC","destination":"EDDM","category":"departure","route":"LICC26.GADSU2D.GADSU","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["amc/a319",1],["ber/a320",1],["ber/a321",1],["ber/b738",1],["dlh/a321",1],["dlh/e190",1]]},
+        {"origin":"LICC","destination":"EGKK","category":"departure","route":"LICC26.GADSU2D.GADSU","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["adh/a320",1],["aza/a320",1],["baw/a319",1],["ezy/a319",1],["nax/b738",1],["tvf/b752",1]]},
+        {"origin":"LICC","destination":"EDDS","category":"departure","route":"LICC26.GADSU2D.GADSU","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["adh/a320",1],["aza/a320",1],["ber/a320",1],["ber/b738",1],["gwi/a319",1]]},
+        {"origin":"LICC","destination":"LIPE","category":"departure","route":"LICC26.GADSU2D.GADSU","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["adh/a320",1],["aza/a320",1],["iss/a320",1],["iss/b737",1],["ryr/b738",1]]},
+        {"origin":"LICC","destination":"","category":"departure","route":"LICC26.RCA2A.RCA","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["wzz/a320",2],["adh/a320",1],["aza/a320",1],["bpa/b737",1],["tra/b738",1],["voe/b712",1]]},
+        {"origin":"LICC","destination":"","category":"departure","route":"LICC26.ERERI3B.ERERI","altitude":"","speed":"","method":"random","rate":0.15,"airlines":[["amc/a319",1],["amc/a320",1]]},
+        {"origin":"LICC","destination":"","category":"departure","route":"LICC26.TAFOW3A.TAFOW","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["ryr/b738",2],["ibe/a320",1],["tra/b738",1],["vlg/a320",1]]},
+        {"origin":"LICC","destination":"","category":"departure","route":"LICC26.GADSU2D.GADSU","altitude":"","speed":"","method":"random","rate":4.41,"airlines":[["adh/a320",9],["ezy/a319",7],["aza/a320",4],["ryr/b738",4],["voe/b712",4],["ber/a320",3],["ezy/a320",3],["gwi/a319",3],["iss/b737",3],["ber/a319",2],["iss/a320",2],["iss/md82",2]]},
+        {"origin":"LICC","destination":"","category":"departure","route":"LICC26.RCA2A.RCA","altitude":"","speed":"","method":"random","rate":0.61,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"LICC","destination":"","category":"departure","route":"LICC26.TAFOW3A.TAFOW","altitude":"","speed":"","method":"random","rate":0.61,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"LIRF","destination":"LICC","category":"arrival","route":"GADSU..ZAPHA..LICC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.7,"airlines":[["aza/a320",2],["aza/a319",1],["aza/a321",1],["bpa/b737",1],["ibe/a320",1],["iss/b737",1],["ryr/b738",1],["vlg/a320",1]]},
+        {"origin":"LIML","destination":"LICC","category":"arrival","route":"GADSU..ZAPHA..LICC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.54,"airlines":[["aza/a320",2],["aza/a319",1],["aza/e190",1],["aza/e75l",1],["iss/b737",1],["iss/md82",1]]},
+        {"origin":"EDDL","destination":"LICC","category":"arrival","route":"GADSU..ZAPHA..LICC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.46,"airlines":[["adh/a320",1],["aza/a320",1],["ber/a320",1],["ber/a321",1],["ber/b738",1],["gwi/crj7",1],["gwi/crj9",1],["gwi/crj2",1]]},
+        {"origin":"EDDM","destination":"LICC","category":"arrival","route":"GADSU..ZAPHA..LICC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.46,"airlines":[["amc/a319",1],["ber/a320",1],["ber/a321",1],["ber/b738",1],["dlh/a321",1],["dlh/e190",1]]},
+        {"origin":"EGKK","destination":"LICC","category":"arrival","route":"GADSU..ZAPHA..LICC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.46,"airlines":[["adh/a320",1],["aza/a320",1],["baw/a319",1],["ezy/a319",1],["nax/b738",1],["tvf/b752",1]]},
+        {"origin":"EDDS","destination":"LICC","category":"arrival","route":"GADSU..ZAPHA..LICC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.39,"airlines":[["adh/a320",1],["aza/a320",1],["ber/a320",1],["ber/b738",1],["gwi/a319",1]]},
+        {"origin":"LIPE","destination":"LICC","category":"arrival","route":"GADSU..ZAPHA..LICC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.39,"airlines":[["adh/a320",1],["aza/a320",1],["iss/a320",1],["iss/b737",1],["ryr/b738",1]]},
+        {"origin":"","destination":"LICC","category":"arrival","route":"RCA..NUBWO..LICC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.54,"airlines":[["wzz/a320",2],["adh/a320",1],["aza/a320",1],["bpa/b737",1],["tra/b738",1],["voe/b712",1]]},
+        {"origin":"","destination":"LICC","category":"arrival","route":"ERERI..SOCHI..LICC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.15,"airlines":[["amc/a319",1],["amc/a320",1]]},
+        {"origin":"","destination":"LICC","category":"arrival","route":"TAFOW..WOGHO..LICC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.39,"airlines":[["ryr/b738",2],["ibe/a320",1],["tra/b738",1],["vlg/a320",1]]},
+        {"origin":"","destination":"LICC","category":"arrival","route":"GADSU..ZAPHA..LICC","altitude":[6000,9000],"speed":250,"method":"random","rate":4.41,"airlines":[["adh/a320",9],["ezy/a319",7],["aza/a320",4],["ryr/b738",4],["voe/b712",4],["ber/a320",3],["ezy/a320",3],["gwi/a319",3],["iss/b737",3],["ber/a319",2],["iss/a320",2],["iss/md82",2]]},
+        {"origin":"","destination":"LICC","category":"arrival","route":"RCA..NUBWO..LICC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.61,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"","destination":"LICC","category":"arrival","route":"TAFOW..WOGHO..LICC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.61,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [38.0758,15.6455,37.6662,15.256],
+            [37.6662,15.256,37.4668,15.0664],
+            [37.2197,15.8998,37.3794,15.3613],
+            [37.3794,15.3613,37.4668,15.0664],
+            [36.7882,14.8204,37.2267,14.9794],
+            [37.2267,14.9794,37.4668,15.0664],
+            [37.7406,14.2463,37.5637,14.7763],
+            [37.5637,14.7763,37.4668,15.0664],
+            [38.1144,14.7116,37.6959,14.9409],
+            [37.6959,14.9409,37.4668,15.0664]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [37.4657,15.0538,37.448,14.8451],
+            [37.4469,14.9508,37.4668,14.9481],
+            [37.438,14.8465,37.4579,14.8438],
+            [37.4678,15.0791,37.4852,15.2879],
+            [37.4865,15.1822,37.4666,15.1848],
+            [37.4951,15.2865,37.4752,15.2892]
+        ]}
+    ]
+}

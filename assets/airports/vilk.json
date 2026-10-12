@@ -1,0 +1,87 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VILK/",
+    "info": {"country":"IN","city":"Lucknow","type":"large_airport","longestRunwayM":2742,"frequencies":{"atis":"126.800","twr":"118.600","app":"120.450","gnd":"120.450"}},
+    "radio": {"twr":"Lucknow Tower","app":"Lucknow Approach","dep":"Lucknow Departure"},
+    "icao": "VILK",
+    "iata": "LKO",
+    "magnetic_north": 0.7,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [26.760599,80.889297,"410ft"],
+    "rangeRings": {"enabled":true,"center":[26.760599,80.889297],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":110,"speed":9},
+    "arrivalRunway": "09",
+    "departureRunway": "09",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[27.1653,80.8948],[27.1502,81.0119],[27.1086,81.1207],[27.0432,81.2137],[26.9586,81.2846],[26.8606,81.3285],[26.7557,81.3425],[26.6511,81.3256],[26.554,81.279],[26.471,81.2058],[26.4077,81.1111],[26.3684,81.0012],[26.3559,80.8838],[26.371,80.7667],[26.4126,80.6579],[26.478,80.5649],[26.5625,80.494],[26.6606,80.4501],[26.7655,80.4361],[26.8701,80.453],[26.9672,80.4996],[27.0502,80.5727],[27.1135,80.6675],[27.1528,80.7773]]}
+    ],
+    "fixes": {
+        "VILK": [26.7606,80.8893],
+        "DISEH": [26.60956,81.46753],
+        "IVUDI": [26.70448,81.10413],
+        "KA": [26.4169,80.3983,"kanpur chakeri"],
+        "UNUWI": [26.63729,80.71314],
+        "UGIDO": [26.77041,80.28693],
+        "GAKOR": [26.76424,80.66549],
+        "TICAK": [27.20563,80.55084],
+        "UZONA": [26.92594,80.76355],
+        "_RWY0904DME": [26.75932,80.80248],
+        "_RWY2704DME": [26.76186,80.9777]
+    },
+    "runways": [
+        {"name":["09","27"],"end":[[26.76042,80.87708,"404ft"],[26.7608,80.9031,"399ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "DISEH2B": {"icao":"DISEH2B","name":"Diseh Two Bravo","rwy":{"VILK09":["_RWY2704DME"],"VILK27":["_RWY0904DME"]},"body":[],"exitPoints":{"DISEH":["DISEH"]},"draw":[["VILK","DISEH*"]]},
+        "KA2B": {"icao":"KA2B","name":"Kanpur Chakeri Two Bravo","rwy":{"VILK09":["_RWY2704DME"],"VILK27":["_RWY0904DME"]},"body":[],"exitPoints":{"KA":["KA"]},"draw":[["VILK","KA*"]]},
+        "UGIDO3E": {"icao":"UGIDO3E","name":"Ugido Three Echo","rwy":{"VILK09":["_RWY2704DME"],"VILK27":["_RWY0904DME"]},"body":[],"exitPoints":{"UGIDO":["UGIDO"]},"draw":[["VILK","UGIDO*"]]},
+        "TICAK1C": {"icao":"TICAK1C","name":"Ticak One Charlie","rwy":{"VILK09":["_RWY2704DME"],"VILK27":["_RWY0904DME"]},"body":[],"exitPoints":{"TICAK":["TICAK"]},"draw":[["VILK","TICAK*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"VILK","destination":"VABB","category":"departure","route":"VILK09.KA2B.KA","altitude":"","speed":"","method":"random","rate":1.16,"airlines":[["aic/a320",1],["gow/a320",1],["igo/a320",1],["jai/b738",1]]},
+        {"origin":"VILK","destination":"VIDP","category":"departure","route":"VILK09.TICAK1C.TICAK","altitude":"","speed":"","method":"random","rate":1.16,"airlines":[["aic/a321",1],["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VILK","destination":"OEJN","category":"departure","route":"VILK09.UGIDO3E.UGIDO","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["sva/a333",1]]},
+        {"origin":"VILK","destination":"OERK","category":"departure","route":"VILK09.UGIDO3E.UGIDO","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["sva/a333",1]]},
+        {"origin":"VILK","destination":"OMDB","category":"departure","route":"VILK09.UGIDO3E.UGIDO","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["fdb/b738",1]]},
+        {"origin":"VILK","destination":"","category":"departure","route":"VILK09.DISEH2B.DISEH","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["igo/a320",1]]},
+        {"origin":"VILK","destination":"","category":"departure","route":"VILK09.KA2B.KA","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["igo/a320",1]]},
+        {"origin":"VILK","destination":"","category":"departure","route":"VILK09.UGIDO3E.UGIDO","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["oma/b738",1]]},
+        {"origin":"VILK","destination":"","category":"departure","route":"VILK09.TICAK1C.TICAK","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["aic/crj7",1]]},
+        {"origin":"VILK","destination":"","category":"departure","route":"VILK09.KA2B.KA","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"VABB","destination":"VILK","category":"arrival","route":"KA..UNUWI..VILK","altitude":[4000,7000],"speed":250,"method":"random","rate":1.16,"airlines":[["aic/a320",1],["gow/a320",1],["igo/a320",1],["jai/b738",1]]},
+        {"origin":"VIDP","destination":"VILK","category":"arrival","route":"TICAK..UZONA..VILK","altitude":[4000,7000],"speed":250,"method":"random","rate":1.16,"airlines":[["aic/a321",1],["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"OEJN","destination":"VILK","category":"arrival","route":"UGIDO..GAKOR..VILK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.29,"airlines":[["sva/a333",1]]},
+        {"origin":"OERK","destination":"VILK","category":"arrival","route":"UGIDO..GAKOR..VILK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.29,"airlines":[["sva/a333",1]]},
+        {"origin":"OMDB","destination":"VILK","category":"arrival","route":"UGIDO..GAKOR..VILK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.29,"airlines":[["fdb/b738",1]]},
+        {"origin":"","destination":"VILK","category":"arrival","route":"DISEH..IVUDI..VILK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.29,"airlines":[["igo/a320",1]]},
+        {"origin":"","destination":"VILK","category":"arrival","route":"KA..UNUWI..VILK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.29,"airlines":[["igo/a320",1]]},
+        {"origin":"","destination":"VILK","category":"arrival","route":"UGIDO..GAKOR..VILK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.29,"airlines":[["oma/b738",1]]},
+        {"origin":"","destination":"VILK","category":"arrival","route":"TICAK..UZONA..VILK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.29,"airlines":[["aic/crj7",1]]},
+        {"origin":"","destination":"VILK","category":"arrival","route":"KA..UNUWI..VILK","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [26.6096,81.4675,26.7045,81.1041],
+            [26.7045,81.1041,26.7606,80.8893],
+            [26.4169,80.3983,26.6373,80.7131],
+            [26.6373,80.7131,26.7606,80.8893],
+            [26.7704,80.2869,26.7642,80.6655],
+            [26.7642,80.6655,26.7606,80.8893],
+            [27.2056,80.5508,26.9259,80.7635],
+            [26.9259,80.7635,26.7606,80.8893]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [26.7604,80.8771,26.7576,80.6906],
+            [26.749,80.784,26.769,80.7836],
+            [26.7476,80.6908,26.7676,80.6904],
+            [26.7608,80.9031,26.7634,81.0896],
+            [26.7721,80.9962,26.7521,80.9965],
+            [26.7734,81.0894,26.7534,81.0898]
+        ]}
+    ]
+}

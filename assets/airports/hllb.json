@@ -1,0 +1,92 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/HLLB/",
+    "info": {"country":"LY","city":"Benina","type":"large_airport","longestRunwayM":3587,"frequencies":{"twr":"118.100","app":"126.500","gnd":"121.300","dep":"127.000"}},
+    "radio": {"twr":"Benina Tower","app":"Benina Approach","dep":"Benina Departure"},
+    "icao": "HLLB",
+    "iata": "BEN",
+    "magnetic_north": 4.2,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [32.096802,20.269501,"433ft"],
+    "rangeRings": {"enabled":true,"center":[32.096802,20.269501],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":310,"speed":9},
+    "arrivalRunway": "33L",
+    "departureRunway": "33L",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[32.5004,20.3045],[32.479,20.4266],[32.4315,20.538],[32.3612,20.6311],[32.2729,20.6996],[32.1726,20.7388],[32.0672,20.7459],[31.9637,20.7206],[31.8693,20.6646],[31.7905,20.5816],[31.7324,20.4774],[31.6993,20.359],[31.6932,20.2345],[31.7146,20.1124],[31.7621,20.001],[31.8324,19.9079],[31.9207,19.8394],[32.021,19.8003],[32.1264,19.7931],[32.2299,19.8184],[32.3243,19.8744],[32.4032,19.9574],[32.4612,20.0616],[32.4943,20.18]]}
+    ],
+    "fixes": {
+        "HLLB": [32.0968,20.2695],
+        "GICJI": [32.54267,20.62477],
+        "OSEDA": [32.26246,20.4015],
+        "BEHNU": [32.06508,20.90339],
+        "WAZME": [32.08501,20.50502],
+        "IWENO": [31.58962,20.48113],
+        "SOMOB": [31.90836,20.34813],
+        "NOKOG": [32.31204,19.68755],
+        "MIDJO": [32.17677,20.05328],
+        "_RWY15R04DME": [32.16822,20.22004],
+        "_RWY33L04DME": [32.02406,20.316],
+        "_RWY15L04DME": [32.16962,20.22284],
+        "_RWY33R04DME": [32.02546,20.3188]
+    },
+    "runways": [
+        {"name":["15R","33L"],"end":[[32.1102,20.2587,"372ft"],[32.0821,20.2774,"429ft"]],"ils":[true,true]},
+        {"name":["15L","33R"],"end":[[32.1116,20.2615,"372ft"],[32.0835,20.2802,"433ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "GICJI3F": {"icao":"GICJI3F","name":"Gicji Three Foxtrot","rwy":{"HLLB15R":["_RWY33L04DME"],"HLLB33L":["_RWY15R04DME"],"HLLB15L":["_RWY33R04DME"],"HLLB33R":["_RWY15L04DME"]},"body":[],"exitPoints":{"GICJI":["GICJI"]},"draw":[["HLLB","GICJI*"]]},
+        "BEHNU1E": {"icao":"BEHNU1E","name":"Behnu One Echo","rwy":{"HLLB15R":["_RWY33L04DME"],"HLLB33L":["_RWY15R04DME"],"HLLB15L":["_RWY33R04DME"],"HLLB33R":["_RWY15L04DME"]},"body":[],"exitPoints":{"BEHNU":["BEHNU"]},"draw":[["HLLB","BEHNU*"]]},
+        "IWENO3F": {"icao":"IWENO3F","name":"Iweno Three Foxtrot","rwy":{"HLLB15R":["_RWY33L04DME"],"HLLB33L":["_RWY15R04DME"],"HLLB15L":["_RWY33R04DME"],"HLLB33R":["_RWY15L04DME"]},"body":[],"exitPoints":{"IWENO":["IWENO"]},"draw":[["HLLB","IWENO*"]]},
+        "NOKOG3D": {"icao":"NOKOG3D","name":"Nokog Three Delta","rwy":{"HLLB15R":["_RWY33L04DME"],"HLLB33L":["_RWY15R04DME"],"HLLB15L":["_RWY33R04DME"],"HLLB33R":["_RWY15L04DME"]},"body":[],"exitPoints":{"NOKOG":["NOKOG"]},"draw":[["HLLB","NOKOG*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"HLLB","destination":"DTTA","category":"departure","route":"HLLB33L.NOKOG3D.NOKOG","altitude":"","speed":"","method":"random","rate":1.2,"airlines":[["tar/a320",2],["aaw/a319",1],["aaw/a320",1],["laa/a320",1],["laa/crj9",1]]},
+        {"origin":"HLLB","destination":"OJAI","category":"departure","route":"HLLB33L.BEHNU1E.BEHNU","altitude":"","speed":"","method":"random","rate":1,"airlines":[["aaw/a320",1],["laa/a320",1],["rja/a319",1],["rja/e190",1],["rja/e75l",1]]},
+        {"origin":"HLLB","destination":"HECA","category":"departure","route":"HLLB33L.BEHNU1E.BEHNU","altitude":"","speed":"","method":"random","rate":0.8,"airlines":[["aaw/a320",1],["laa/a320",1],["msr/a320",1],["msr/e170",1]]},
+        {"origin":"HLLB","destination":"LTFM","category":"departure","route":"HLLB33L.GICJI3F.GICJI","altitude":"","speed":"","method":"random","rate":0.8,"airlines":[["aaw/a320",1],["laa/a320",1],["thy/b738",1],["thy/b739",1]]},
+        {"origin":"HLLB","destination":"HLMS","category":"departure","route":"HLLB33L.NOKOG3D.NOKOG","altitude":"","speed":"","method":"random","rate":0.6,"airlines":[["aaw/a320",1],["laa/a320",1],["laa/crj9",1]]},
+        {"origin":"HLLB","destination":"","category":"departure","route":"HLLB33L.BEHNU1E.BEHNU","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["aaw/a320",1],["laa/a320",1]]},
+        {"origin":"HLLB","destination":"","category":"departure","route":"HLLB33L.IWENO3F.IWENO","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["aaw/a320",1],["laa/crj9",1]]},
+        {"origin":"HLLB","destination":"","category":"departure","route":"HLLB33L.NOKOG3D.NOKOG","altitude":"","speed":"","method":"random","rate":1,"airlines":[["laa/a320",2],["aaw/a320",1],["amc/a320",1],["tui/crj9",1]]},
+        {"origin":"DTTA","destination":"HLLB","category":"arrival","route":"NOKOG..MIDJO..HLLB","altitude":[4000,7000],"speed":250,"method":"random","rate":1.2,"airlines":[["tar/a320",2],["aaw/a319",1],["aaw/a320",1],["laa/a320",1],["laa/crj9",1]]},
+        {"origin":"OJAI","destination":"HLLB","category":"arrival","route":"BEHNU..WAZME..HLLB","altitude":[4000,7000],"speed":250,"method":"random","rate":1,"airlines":[["aaw/a320",1],["laa/a320",1],["rja/a319",1],["rja/e190",1],["rja/e75l",1]]},
+        {"origin":"HECA","destination":"HLLB","category":"arrival","route":"BEHNU..WAZME..HLLB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.8,"airlines":[["aaw/a320",1],["laa/a320",1],["msr/a320",1],["msr/e170",1]]},
+        {"origin":"LTFM","destination":"HLLB","category":"arrival","route":"GICJI..OSEDA..HLLB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.8,"airlines":[["aaw/a320",1],["laa/a320",1],["thy/b738",1],["thy/b739",1]]},
+        {"origin":"HLMS","destination":"HLLB","category":"arrival","route":"NOKOG..MIDJO..HLLB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.6,"airlines":[["aaw/a320",1],["laa/a320",1],["laa/crj9",1]]},
+        {"origin":"","destination":"HLLB","category":"arrival","route":"BEHNU..WAZME..HLLB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["aaw/a320",1],["laa/a320",1]]},
+        {"origin":"","destination":"HLLB","category":"arrival","route":"IWENO..SOMOB..HLLB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["aaw/a320",1],["laa/crj9",1]]},
+        {"origin":"","destination":"HLLB","category":"arrival","route":"NOKOG..MIDJO..HLLB","altitude":[4000,7000],"speed":250,"method":"random","rate":1,"airlines":[["laa/a320",2],["aaw/a320",1],["amc/a320",1],["tui/crj9",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [32.5427,20.6248,32.2625,20.4015],
+            [32.2625,20.4015,32.0968,20.2695],
+            [32.0651,20.9034,32.085,20.505],
+            [32.085,20.505,32.0968,20.2695],
+            [31.5896,20.4811,31.9084,20.3481],
+            [31.9084,20.3481,32.0968,20.2695],
+            [32.312,19.6875,32.1768,20.0533],
+            [32.1768,20.0533,32.0968,20.2695]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [32.1102,20.2587,32.2552,20.162],
+            [32.1778,20.2001,32.1876,20.2207],
+            [32.2503,20.1517,32.2601,20.1723],
+            [32.0821,20.2774,31.937,20.3738],
+            [32.0145,20.3359,32.0046,20.3154],
+            [31.9419,20.3841,31.9321,20.3635],
+            [32.1116,20.2615,32.2566,20.1648],
+            [32.1792,20.2029,32.189,20.2235],
+            [32.2517,20.1545,32.2615,20.1751],
+            [32.0835,20.2802,31.9384,20.3766],
+            [32.0159,20.3387,32.006,20.3182],
+            [31.9433,20.3869,31.9335,20.3663]
+        ]}
+    ]
+}

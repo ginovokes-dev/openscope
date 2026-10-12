@@ -1,0 +1,88 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LRTR/",
+    "info": {"country":"RO","city":"Timisoara","type":"large_airport","longestRunwayM":3500,"frequencies":{"twr":"120.100","app":"120.100","gnd":"121.600"}},
+    "radio": {"twr":"Timisoara Tower","app":"Timisoara Approach","dep":"Timisoara Departure"},
+    "icao": "LRTR",
+    "iata": "TSR",
+    "magnetic_north": 5.9,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [45.809898,21.3379,"348ft"],
+    "rangeRings": {"enabled":true,"center":[45.809898,21.3379],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":300,"speed":11},
+    "arrivalRunway": "29",
+    "departureRunway": "29",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[46.2124,21.3976],[46.188,21.545],[46.1377,21.6783],[46.0651,21.7885],[45.9751,21.8679],[45.8739,21.9112],[45.7683,21.9154],[45.6655,21.8803],[45.5726,21.8082],[45.4958,21.7041],[45.4405,21.575],[45.4103,21.4297],[45.4073,21.2782],[45.4318,21.1308],[45.4821,20.9975],[45.5547,20.8873],[45.6446,20.8079],[45.7459,20.7646],[45.8515,20.7604],[45.9543,20.7955],[46.0472,20.8676],[46.124,20.9717],[46.1793,21.1008],[46.2095,21.2461]]}
+    ],
+    "fixes": {
+        "LRTR": [45.8099,21.3379],
+        "REKIM": [46.28538,21.69884],
+        "IWICU": [45.98656,21.472],
+        "CRS": [45.4429,22.1633,"caransebes"],
+        "UMUVO": [45.70241,21.57964],
+        "VAC": [45.1369,21.306,"vrsac"],
+        "VELCE": [45.61014,21.32843],
+        "DAK": [45.4208,20.4275,"dakovica"],
+        "WODER": [45.70542,21.09346],
+        "ZG": [46.2934,20.0907,"szeged"],
+        "JERIV": [45.90704,21.08732],
+        "_RWY1104DME": [45.83764,21.22683],
+        "_RWY2904DME": [45.78189,21.44888]
+    },
+    "runways": [
+        {"name":["11","29"],"end":[[45.8151,21.3168,"340ft"],[45.8045,21.359,"343ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "REKIM3E": {"icao":"REKIM3E","name":"Rekim Three Echo","rwy":{"LRTR11":["_RWY2904DME"],"LRTR29":["_RWY1104DME"]},"body":[],"exitPoints":{"REKIM":["REKIM"]},"draw":[["LRTR","REKIM*"]]},
+        "CRS3A": {"icao":"CRS3A","name":"Caransebes Three Alpha","rwy":{"LRTR11":["_RWY2904DME"],"LRTR29":["_RWY1104DME"]},"body":[],"exitPoints":{"CRS":["CRS"]},"draw":[["LRTR","CRS*"]]},
+        "VAC2C": {"icao":"VAC2C","name":"Vrsac Two Charlie","rwy":{"LRTR11":["_RWY2904DME"],"LRTR29":["_RWY1104DME"]},"body":[],"exitPoints":{"VAC":["VAC"]},"draw":[["LRTR","VAC*"]]},
+        "DAK2F": {"icao":"DAK2F","name":"Dakovica Two Foxtrot","rwy":{"LRTR11":["_RWY2904DME"],"LRTR29":["_RWY1104DME"]},"body":[],"exitPoints":{"DAK":["DAK"]},"draw":[["LRTR","DAK*"]]},
+        "ZG3A": {"icao":"ZG3A","name":"Szeged Three Alpha","rwy":{"LRTR11":["_RWY2904DME"],"LRTR29":["_RWY1104DME"]},"body":[],"exitPoints":{"ZG":["ZG"]},"draw":[["LRTR","ZG*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LRTR","destination":"LROP","category":"departure","route":"LRTR29.CRS3A.CRS","altitude":"","speed":"","method":"random","rate":1.33,"airlines":[["rot/a318",1],["rot/at45",1],["rot/at72",1],["rot/b733",1]]},
+        {"origin":"LRTR","destination":"EDLW","category":"departure","route":"LRTR29.ZG3A.ZG","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["wzz/a320",1]]},
+        {"origin":"LRTR","destination":"EGGW","category":"departure","route":"LRTR29.ZG3A.ZG","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["wzz/a320",1]]},
+        {"origin":"LRTR","destination":"LEBL","category":"departure","route":"LRTR29.DAK2F.DAK","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["wzz/a320",1]]},
+        {"origin":"LRTR","destination":"LEMD","category":"departure","route":"LRTR29.DAK2F.DAK","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["wzz/a320",1]]},
+        {"origin":"LRTR","destination":"","category":"departure","route":"LRTR29.DAK2F.DAK","altitude":"","speed":"","method":"random","rate":1,"airlines":[["wzz/a320",3]]},
+        {"origin":"LRTR","destination":"","category":"departure","route":"LRTR29.ZG3A.ZG","altitude":"","speed":"","method":"random","rate":1,"airlines":[["wzz/a320",3]]},
+        {"origin":"LRTR","destination":"","category":"departure","route":"LRTR29.REKIM3E.REKIM","altitude":"","speed":"","method":"random","rate":1.55,"airlines":[["yr/c172",6],["yr/p28a",5],["yr/c182",3],["yr/be36",2],["yr/da42",1],["yr/tb20",1],["yr/c208",2],["yr/pc12",2],["yr/be20",1],["yr/b350",1],["yr/p180",1],["yr/c510",1],["yr/e50p",1],["yr/c550",1],["yr/e55p",1],["yr/cl30",1],["yr/c680",1],["yr/h25b",1],["yr/lj45",1],["yr/f2th",1],["yr/glf4",1],["yr/glex",1],["yr/glf5",1]]},
+        {"origin":"LROP","destination":"LRTR","category":"arrival","route":"CRS..UMUVO..LRTR","altitude":[4000,7000],"speed":250,"method":"random","rate":1.33,"airlines":[["rot/a318",1],["rot/at45",1],["rot/at72",1],["rot/b733",1]]},
+        {"origin":"EDLW","destination":"LRTR","category":"arrival","route":"ZG..JERIV..LRTR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.33,"airlines":[["wzz/a320",1]]},
+        {"origin":"EGGW","destination":"LRTR","category":"arrival","route":"ZG..JERIV..LRTR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.33,"airlines":[["wzz/a320",1]]},
+        {"origin":"LEBL","destination":"LRTR","category":"arrival","route":"DAK..WODER..LRTR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.33,"airlines":[["wzz/a320",1]]},
+        {"origin":"LEMD","destination":"LRTR","category":"arrival","route":"DAK..WODER..LRTR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.33,"airlines":[["wzz/a320",1]]},
+        {"origin":"","destination":"LRTR","category":"arrival","route":"DAK..WODER..LRTR","altitude":[4000,7000],"speed":250,"method":"random","rate":1,"airlines":[["wzz/a320",3]]},
+        {"origin":"","destination":"LRTR","category":"arrival","route":"ZG..JERIV..LRTR","altitude":[4000,7000],"speed":250,"method":"random","rate":1,"airlines":[["wzz/a320",3]]},
+        {"origin":"","destination":"LRTR","category":"arrival","route":"REKIM..IWICU..LRTR","altitude":[4000,7000],"speed":250,"method":"random","rate":1.55,"airlines":[["yr/c172",6],["yr/p28a",5],["yr/c182",3],["yr/be36",2],["yr/da42",1],["yr/tb20",1],["yr/c208",2],["yr/pc12",2],["yr/be20",1],["yr/b350",1],["yr/p180",1],["yr/c510",1],["yr/e50p",1],["yr/c550",1],["yr/e55p",1],["yr/cl30",1],["yr/c680",1],["yr/h25b",1],["yr/lj45",1],["yr/f2th",1],["yr/glf4",1],["yr/glex",1],["yr/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [46.2854,21.6988,45.9866,21.472],
+            [45.9866,21.472,45.8099,21.3379],
+            [45.4429,22.1633,45.7024,21.5796],
+            [45.7024,21.5796,45.8099,21.3379],
+            [45.1369,21.306,45.6101,21.3284],
+            [45.6101,21.3284,45.8099,21.3379],
+            [45.4208,20.4275,45.7054,21.0935],
+            [45.7054,21.0935,45.8099,21.3379],
+            [46.2934,20.0907,45.907,21.0873],
+            [45.907,21.0873,45.8099,21.3379]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [45.8151,21.3168,45.8713,21.0917],
+            [45.8339,21.1995,45.8527,21.2092],
+            [45.8619,21.0869,45.8807,21.0966],
+            [45.8045,21.359,45.7479,21.5836],
+            [45.7856,21.4762,45.7668,21.4665],
+            [45.7573,21.5884,45.7385,21.5787]
+        ]}
+    ]
+}

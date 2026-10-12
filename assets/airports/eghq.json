@@ -1,0 +1,75 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGHQ/",
+    "info": {"country":"GB","city":"Newquay","type":"medium_airport","longestRunwayM":2744,"frequencies":{"atis":"127.400","twr":"134.375","app":"133.400","gnd":"121.950"}},
+    "radio": {"twr":"Newquay Tower","app":"Newquay Approach","dep":"Newquay Radar"},
+    "icao": "EGHQ",
+    "iata": "NQY",
+    "magnetic_north": -0.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [50.440601,-4.99541,"390ft"],
+    "rangeRings": {"enabled":true,"center":[50.440601,-4.99541],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":280,"speed":6},
+    "arrivalRunway": "30",
+    "departureRunway": "30",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[50.8453,-5.001],[50.8324,-4.8363],[50.7928,-4.6825],[50.7292,-4.55],[50.646,-4.4479],[50.5488,-4.3831],[50.4441,-4.36],[50.3393,-4.3802],[50.2413,-4.4424],[50.1569,-4.5422],[50.0919,-4.6729],[50.0506,-4.8256],[50.0359,-4.9899],[50.0488,-5.1545],[50.0884,-5.3083],[50.152,-5.4408],[50.2352,-5.5429],[50.3325,-5.6077],[50.4371,-5.6308],[50.5419,-5.6106],[50.6399,-5.5485],[50.7243,-5.4486],[50.7893,-5.3179],[50.8306,-5.1652]]}
+    ],
+    "fixes": {
+        "EGHQ": [50.4406,-4.99541],
+        "RUTKO": [50.9116,-4.58736],
+        "PEGWA": [50.6156,-4.8438],
+        "BHD": [50.3986,-3.49361,"berry head"],
+        "BAVET": [50.43183,-4.68189],
+        "EFUPI": [49.95323,-4.63789],
+        "NUTWU": [50.25952,-4.86258],
+        "LND": [50.1363,-5.63699,"lands end"],
+        "IMIME": [50.32122,-5.2471],
+        "_RWY1204DME": [50.4808,-5.10222],
+        "_RWY3004DME": [50.40064,-4.88872]
+    },
+    "runways": [
+        {"name":["12","30"],"end":[[50.447,-5.01203,"306ft"],[50.4345,-4.97876,"390ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "RUTKO1E": {"icao":"RUTKO1E","name":"Rutko One Echo","rwy":{"EGHQ12":["_RWY3004DME"],"EGHQ30":["_RWY1204DME"]},"body":[],"exitPoints":{"RUTKO":["RUTKO"]},"draw":[["EGHQ","RUTKO*"]]},
+        "BHD1B": {"icao":"BHD1B","name":"Berry Head One Bravo","rwy":{"EGHQ12":["_RWY3004DME"],"EGHQ30":["_RWY1204DME"]},"body":[],"exitPoints":{"BHD":["BHD"]},"draw":[["EGHQ","BHD*"]]},
+        "EFUPI2C": {"icao":"EFUPI2C","name":"Efupi Two Charlie","rwy":{"EGHQ12":["_RWY3004DME"],"EGHQ30":["_RWY1204DME"]},"body":[],"exitPoints":{"EFUPI":["EFUPI"]},"draw":[["EGHQ","EFUPI*"]]},
+        "LND3E": {"icao":"LND3E","name":"Lands End Three Echo","rwy":{"EGHQ12":["_RWY3004DME"],"EGHQ30":["_RWY1204DME"]},"body":[],"exitPoints":{"LND":["LND"]},"draw":[["EGHQ","LND*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGHQ","destination":"EDDL","category":"departure","route":"EGHQ30.BHD1B.BHD","altitude":"","speed":"","method":"random","rate":0.99,"airlines":[["gwi/crj7",1],["gwi/crj9",1],["gwi/crj2",1]]},
+        {"origin":"EGHQ","destination":"EGCC","category":"departure","route":"EGHQ30.RUTKO1E.RUTKO","altitude":"","speed":"","method":"random","rate":0.99,"airlines":[["bee/dh8d",1]]},
+        {"origin":"EGHQ","destination":"EGKK","category":"departure","route":"EGHQ30.BHD1B.BHD","altitude":"","speed":"","method":"random","rate":0.99,"airlines":[["bee/dh8d",1]]},
+        {"origin":"EGHQ","destination":"","category":"departure","route":"EGHQ30.RUTKO1E.RUTKO","altitude":"","speed":"","method":"random","rate":0.99,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]},
+        {"origin":"EDDL","destination":"EGHQ","category":"arrival","route":"BHD..BAVET..EGHQ","altitude":[4000,7000],"speed":250,"method":"random","rate":0.99,"airlines":[["gwi/crj7",1],["gwi/crj9",1],["gwi/crj2",1]]},
+        {"origin":"EGCC","destination":"EGHQ","category":"arrival","route":"RUTKO..PEGWA..EGHQ","altitude":[4000,7000],"speed":250,"method":"random","rate":0.99,"airlines":[["bee/dh8d",1]]},
+        {"origin":"EGKK","destination":"EGHQ","category":"arrival","route":"BHD..BAVET..EGHQ","altitude":[4000,7000],"speed":250,"method":"random","rate":0.99,"airlines":[["bee/dh8d",1]]},
+        {"origin":"","destination":"EGHQ","category":"arrival","route":"RUTKO..PEGWA..EGHQ","altitude":[4000,7000],"speed":250,"method":"random","rate":0.99,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [50.9116,-4.5874,50.6156,-4.8438],
+            [50.6156,-4.8438,50.4406,-4.9954],
+            [50.3986,-3.4936,50.4318,-4.6819],
+            [50.4318,-4.6819,50.4406,-4.9954],
+            [49.9532,-4.6379,50.2595,-4.8626],
+            [50.2595,-4.8626,50.4406,-4.9954],
+            [50.1363,-5.637,50.3212,-5.2471],
+            [50.3212,-5.2471,50.4406,-4.9954]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [50.447,-5.012,50.5314,-5.2378],
+            [50.4806,-5.1328,50.4978,-5.1168],
+            [50.5228,-5.2457,50.54,-5.2298],
+            [50.4345,-4.9788,50.3497,-4.7539],
+            [50.4008,-4.8583,50.3835,-4.8742],
+            [50.3583,-4.7459,50.3411,-4.7619]
+        ]}
+    ]
+}
