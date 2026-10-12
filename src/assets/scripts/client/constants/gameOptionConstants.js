@@ -31,7 +31,10 @@ export const GAME_OPTION_NAMES = {
     EVENTS_REQUESTS: 'eventsRequests',
     EVENTS_TRAFFIC: 'eventsTraffic',
     AIRCRAFT_INFO_DETAIL: 'aircraftInfoDetail',
-    FUEL_UNITS: 'fuelUnits'
+    FUEL_UNITS: 'fuelUnits',
+    TRAFFIC_LEVEL: 'trafficLevel',
+    DRAW_SIDS: 'drawSids',
+    DRAW_STARS: 'drawStars'
 };
 
 /**
@@ -67,20 +70,58 @@ export const GAME_OPTION_VALUES = [
     },
     {
         name: GAME_OPTION_NAMES.TOWER_CONTROLLER,
-        defaultValue: 'SYSTEM',
-        description: 'Tower Control (Experimental)',
+        group: 'Departures',
+        defaultValue: 'USER',
+        description: 'Who clears departures',
+        help: 'You: departures wait at the stand until you give them an IFR clearance, taxi instruction and takeoff clearance. ' +
+            'Automatic: the tower does it for you and they take off when the runway is clear.',
         type: 'select',
         onChangeEventHandler: null,
         optionList: [
             {
-                displayLabel: 'System Controlled',
-                value: 'SYSTEM'
+                displayLabel: 'Me (IFR clearance, taxi, takeoff)',
+                value: 'USER'
             },
             {
-                displayLabel: 'User Controlled',
-                value: 'USER'
+                displayLabel: 'Automatic (tower does it)',
+                value: 'SYSTEM'
             }
         ]
+    },
+    {
+        name: GAME_OPTION_NAMES.TRAFFIC_LEVEL,
+        group: 'Traffic',
+        defaultValue: 'medium',
+        description: 'How busy is the airport',
+        help: 'Scales how many aircraft arrive and depart, and caps how many arrivals are in the airspace at once.',
+        type: 'select',
+        onChangeEventHandler: EVENT.TRAFFIC_LEVEL_CHANGE,
+        optionList: [
+            { displayLabel: 'Quiet (a few aircraft)', value: 'quiet' },
+            { displayLabel: 'Medium', value: 'medium' },
+            { displayLabel: 'Busy', value: 'busy' },
+            { displayLabel: 'Rush hour', value: 'rush' }
+        ]
+    },
+    {
+        name: GAME_OPTION_NAMES.DRAW_SIDS,
+        group: 'Radar',
+        defaultValue: 'yes',
+        description: 'Show SIDs',
+        help: 'Draw departure routes and their names on the radar',
+        type: 'select',
+        onChangeEventHandler: EVENT.DRAW_PROCEDURES_CHANGE,
+        optionList: [{ displayLabel: 'Yes', value: 'yes' }, { displayLabel: 'No', value: 'no' }]
+    },
+    {
+        name: GAME_OPTION_NAMES.DRAW_STARS,
+        group: 'Radar',
+        defaultValue: 'yes',
+        description: 'Show STARs',
+        help: 'Draw arrival routes and their names on the radar',
+        type: 'select',
+        onChangeEventHandler: EVENT.DRAW_PROCEDURES_CHANGE,
+        optionList: [{ displayLabel: 'Yes', value: 'yes' }, { displayLabel: 'No', value: 'no' }]
     },
     {
         name: GAME_OPTION_NAMES.CONTROL_METHOD,

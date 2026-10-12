@@ -33,6 +33,10 @@ export const EVENT = {
 
     SIM_EVENT: 'sim-event',
 
+    DRAW_PROCEDURES_CHANGE: 'draw-procedures-change',
+
+    TRAFFIC_LEVEL_CHANGE: 'traffic-level-change',
+
     TOGGLE_AI_SETTINGS: 'toggle-ai-settings',
 
     TOGGLE_ATIS: 'toggle-atis',

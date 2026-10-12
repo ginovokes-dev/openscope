@@ -13,6 +13,9 @@ ava('sets #_options on instantiation', (t) => {
     const expectedResult = [
         'theme',
         'towerController',
+        'trafficLevel',
+        'drawSids',
+        'drawStars',
         'controlMethod',
         'drawIlsDistanceSeparator',
         'ptlLengths',

@@ -23,6 +23,10 @@ ava('souls on board are the sum of passengers and crew', (t) => {
 
 ava('burn() reduces fuel at the cruise rate', (t) => {
     const state = new OnboardState({ typeDefinition: loadType('A320') });
+
+    // a random start can be under an hour of fuel, which would not last the full hour of burn
+    state.setEnduranceMinutes(300);
+
     const before = state.fuelKg;
 
     state.burn(3600, CRUISE);

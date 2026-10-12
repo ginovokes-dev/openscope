@@ -12,6 +12,7 @@ import StaticPositionModel from '../base/StaticPositionModel';
 import { buildPreSpawnAircraft } from './buildPreSpawnAircraft';
 import { spawnPatternModelJsonValidator } from './spawnPatternModelJsonValidator';
 import { tau } from '../math/circle';
+import { getTrafficLevel } from './trafficLevel';
 import { FLIGHT_CATEGORY } from '../constants/aircraftConstants';
 import { AIRPORT_CONSTANTS } from '../constants/airportConstants';
 import {
@@ -297,6 +298,15 @@ export default class SpawnPatternModel extends BaseModel {
         this.rate = INVALID_NUMBER;
 
         /**
+         * The rate in the airport file, before the traffic level is applied
+         *
+         * @property baseRate
+         * @type {number}
+         * @default INVALID_NUMBER
+         */
+        this.baseRate = INVALID_NUMBER;
+
+        /**
          * Rate at which aircaft spawn, express in aircraft per hour
          * Used to preserve initial configuration
          *
@@ -437,9 +447,9 @@ export default class SpawnPatternModel extends BaseModel {
             return 'overflight';
         }
 
-        return this.isArrival()
-            ? this.destination
-            : this.origin;
+        return this.isArrival() ?
+            this.destination :
+            this.origin;
     }
 
     /**
@@ -507,7 +517,8 @@ export default class SpawnPatternModel extends BaseModel {
         this.commands = spawnPatternJson.commands;
         this.speed = this._extractSpeedFromJson(spawnPatternJson);
         this.method = spawnPatternJson.method;
-        this.rate = parseFloat(spawnPatternJson.rate);
+        this.baseRate = parseFloat(spawnPatternJson.rate);
+        this.rate = this.baseRate * getTrafficLevel().multiplier;
         this.defaultRate = this.rate;
         this.entrail = _get(spawnPatternJson, 'entrail', this.entrail);
 
@@ -549,6 +560,7 @@ export default class SpawnPatternModel extends BaseModel {
 
         this.cycleStartTime = INVALID_NUMBER;
         this.rate = INVALID_NUMBER;
+        this.baseRate = INVALID_NUMBER;
         this.offset = INVALID_NUMBER;
         this.period = INVALID_NUMBER;
         this.variation = INVALID_NUMBER;
@@ -566,6 +578,18 @@ export default class SpawnPatternModel extends BaseModel {
      */
     resetRate() {
         this.rate = this.defaultRate;
+    }
+
+    /**
+     * Apply a new traffic level: the airport file's rate scaled by the level's multiplier
+     *
+     * @for SpawnPatternModel
+     * @method applyTrafficLevel
+     * @param multiplier {number}
+     */
+    applyTrafficLevel(multiplier) {
+        this.rate = this.baseRate * multiplier;
+        this.defaultRate = this.rate;
     }
 
     /**
@@ -756,7 +780,7 @@ export default class SpawnPatternModel extends BaseModel {
         this.period = period ?
             convertMinutesToSeconds(period) :
             this.period;
-        this.variation = _get(spawnPatternJson, 'variation', 0);
+        this.variation = _get(spawnPatternJson, 'variation', 0) * getTrafficLevel().multiplier;
     }
 
     /**

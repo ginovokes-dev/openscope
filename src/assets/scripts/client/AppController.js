@@ -29,6 +29,7 @@ import SpawnScheduler from './trafficGenerator/SpawnScheduler';
 import UiController from './ui/UiController';
 import ScoreController from './game/ScoreController';
 import airportIndex from './geo/AirportIndex';
+import { activateTrafficLevels } from './trafficGenerator/trafficLevel';
 import { speech_init } from './speech';
 import { EVENT } from './constants/eventNames';
 import { SELECTORS } from './constants/selectors';
@@ -178,6 +179,7 @@ export default class AppController {
         // The order in which the following classes are instantiated is extremely important. Changing
         // this order could break a lot of things. This interdependency is something we should
         // work on reducing in the future.
+        activateTrafficLevels();
         AirportController.init(initialAirportIcao, initialAirportData, airportLoadList);
         NavigationLibrary.init(initialAirportData);
         SpawnPatternCollection.init(initialAirportData);

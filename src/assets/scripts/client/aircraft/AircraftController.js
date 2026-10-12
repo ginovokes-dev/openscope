@@ -16,6 +16,8 @@ import AircraftCommander from './AircraftCommander';
 import AircraftConflict from './AircraftConflict';
 import StripViewController from './StripView/StripViewController';
 import GameController, { GAME_EVENTS } from '../game/GameController';
+import TimeKeeper from '../engine/TimeKeeper';
+import { getTrafficLevel } from '../trafficGenerator/trafficLevel';
 import CommandParser from '../commands/parsers/CommandParser';
 import { airlineNameAndFleetHelper } from '../airline/airlineHelpers';
 import { getLongestRunwayInMeters, isAircraftTypeSuitableForRunwayLength } from './aircraftSuitability';
@@ -141,6 +143,15 @@ export default class AircraftController {
         // TODO: this should its own collection class
         this.aircraft.list = [];
         this.aircraft.auto = { enabled: false };
+
+        /**
+         * Game time of the most recent arrival spawn, used to keep new arrivals apart
+         *
+         * @property _lastArrivalSpawnTime
+         * @type {number}
+         * @private
+         */
+        this._lastArrivalSpawnTime = -Infinity;
         this.conflicts = [];
 
         /**
@@ -246,9 +257,58 @@ export default class AircraftController {
      * @private
      */
     createAircraftWithSpawnPatternModel = (spawnPatternModel) => {
+        if (!this._isSpawnAllowedByTrafficLevel(spawnPatternModel)) {
+            return;
+        }
+
         const initializationProps = this._buildAircraftProps(spawnPatternModel);
 
         this._createAircraftWithInitializationProps(initializationProps);
+    }
+
+    /**
+     * @for AircraftController
+     * @method _getArrivalCount
+     * @return {number} arrivals currently in the simulation
+     * @private
+     */
+    _getArrivalCount() {
+        return this.aircraft.list.filter((aircraft) => aircraft.isArrival() && !aircraft.hit).length;
+    }
+
+    /**
+     * Whether a new aircraft may appear right now at the current traffic level
+     *
+     * Keeps a burst of random spawns from flooding the scope: there is a limit on arrivals in the airspace, a minimum
+     * gap between new arrivals on any route, and a limit on departures waiting at the stands.
+     *
+     * @for AircraftController
+     * @method _isSpawnAllowedByTrafficLevel
+     * @param spawnPatternModel {SpawnPatternModel}
+     * @return {boolean}
+     * @private
+     */
+    _isSpawnAllowedByTrafficLevel(spawnPatternModel) {
+        const level = getTrafficLevel();
+        const now = TimeKeeper.accumulatedDeltaTime;
+
+        if (spawnPatternModel.isArrival()) {
+            if (this._getArrivalCount() >= level.maximumArrivals || now - this._lastArrivalSpawnTime < level.minimumArrivalGapSeconds) {
+                return false;
+            }
+
+            this._lastArrivalSpawnTime = now;
+
+            return true;
+        }
+
+        if (spawnPatternModel.category === FLIGHT_CATEGORY.DEPARTURE) {
+            const waitingCount = this.aircraft.list.filter((aircraft) => aircraft.flightPhase === FLIGHT_PHASE.APRON).length;
+
+            return waitingCount < level.maximumWaitingDepartures;
+        }
+
+        return true;
     }
 
     /**
@@ -272,6 +332,11 @@ export default class AircraftController {
         const isPreSpawn = true;
 
         for (let i = 0; i < spawnPatternModel.preSpawnAircraftList.length; i++) {
+            // the traffic level also limits how many arrivals are already on their way when the session starts
+            if (spawnPatternModel.isArrival() && this._getArrivalCount() >= getTrafficLevel().maximumArrivals) {
+                break;
+            }
+
             const preSpawnHeadingAndPosition = spawnPatternModel.preSpawnAircraftList[i];
             const baseAircraftProps = this._buildAircraftProps(spawnPatternModel, isPreSpawn);
             const initializationProps = Object.assign({}, baseAircraftProps, preSpawnHeadingAndPosition);

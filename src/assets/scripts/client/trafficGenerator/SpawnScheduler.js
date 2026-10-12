@@ -1,7 +1,11 @@
 import _forEach from 'lodash/forEach';
+import _shuffle from 'lodash/shuffle';
 import SpawnPatternCollection from './SpawnPatternCollection';
 import TimeKeeper from '../engine/TimeKeeper';
+import EventBus from '../lib/EventBus';
 import GameController from '../game/GameController';
+import { getTrafficLevel } from './trafficLevel';
+import { EVENT } from '../constants/eventNames';
 import { INVALID_NUMBER } from '../constants/globalConstants';
 
 /**
@@ -41,10 +45,29 @@ class SpawnScheduler {
 
         this._aircraftController = aircraftController;
 
+        EventBus.off(EVENT.TRAFFIC_LEVEL_CHANGE, this._onTrafficLevelChange);
+        EventBus.on(EVENT.TRAFFIC_LEVEL_CHANGE, this._onTrafficLevelChange);
+
         this.startScheduler();
 
         return this;
     }
+
+    /**
+     * The player changed how busy the airport should be: rescale every spawn pattern
+     *
+     * @for SpawnScheduler
+     * @method _onTrafficLevelChange
+     * @private
+     */
+    _onTrafficLevelChange = () => {
+        const { multiplier } = getTrafficLevel();
+
+        SpawnPatternCollection.spawnPatternModels.forEach((spawnPatternModel) => {
+            spawnPatternModel.applyTrafficLevel(multiplier);
+            this.resetTimer(spawnPatternModel);
+        });
+    };
 
     /**
      * Starts the scheduler and prespawns departures
@@ -67,7 +90,9 @@ class SpawnScheduler {
      * @method createSchedulesFromList
      */
     createSchedulesFromList() {
-        _forEach(SpawnPatternCollection.spawnPatternModels, (spawnPatternModel) => {
+        // shuffled so that, when the traffic level limits how many arrivals are already on their way at the start,
+        // they come from different routes rather than always the first few in the airport file
+        _forEach(_shuffle(SpawnPatternCollection.spawnPatternModels), (spawnPatternModel) => {
             // set the #cycleStartTime for this `spawnPatternModel` with current game time
             spawnPatternModel.cycleStart(TimeKeeper.accumulatedDeltaTime);
             spawnPatternModel.scheduleId = this.createNextSchedule(spawnPatternModel);
