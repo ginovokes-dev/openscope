@@ -3,6 +3,7 @@ import AirportController from '../airport/AirportController';
 import EventBus from '../lib/EventBus';
 import GameController from '../game/GameController';
 import SpawnPatternCollection from '../trafficGenerator/SpawnPatternCollection';
+import { areAllRoutesRunwayIndependent } from '../aircraft/routeRunway';
 import TimeKeeper from '../engine/TimeKeeper';
 import WeatherController from '../weather/WeatherController';
 import { hasSignificantWeatherChange } from '../weather/WeatherModel';
@@ -23,7 +24,6 @@ import { ATIS_LETTERS } from '../weather/weatherConstants';
 
 const CHECK_INTERVAL_SECONDS = 20;
 const ROUTINE_UPDATE_INTERVAL_SECONDS = 30 * 60;
-const AIRPORT_ROUTE_RUNWAY_PATTERN = /^[A-Z]{4}\d{2}[LRC]?$/;
 
 /**
  * Keeps the ATIS for the current airport: which information letter is current, what it says, whether
@@ -174,8 +174,9 @@ class AtisController {
     /**
      * Whether the player may change the active runway from the ATIS panel
      *
-     * Airports whose traffic is scripted with runway-specific routes (eg. `EGGW26.DET2Y...`) keep flying
-     * those runways, so changing the runway in the ATIS would not change what the aircraft do.
+     * Spawn routes name a runway (`WBA.WBA2I.EGGP27`); the runway can be changed when every route's procedure is
+     * published for every runway, because new traffic is then given the same procedure to the active runway.
+     * Airports whose procedures only serve one runway keep flying it.
      *
      * @for AtisController
      * @method canChangeRunway
@@ -183,12 +184,10 @@ class AtisController {
      */
     canChangeRunway() {
         const patterns = SpawnPatternCollection.spawnPatternModels || [];
+        const airport = AirportController.airport_get();
+        const runwayNames = airport.runways.reduce((names, pair) => names.concat(pair.map((runway) => runway.name)), []);
 
-        return !patterns.some((pattern) => {
-            const route = (pattern.routeString || '').split(/\.+/);
-
-            return route.some((token) => AIRPORT_ROUTE_RUNWAY_PATTERN.test(token) && token.startsWith(this._icao));
-        });
+        return areAllRoutesRunwayIndependent(patterns.map((pattern) => pattern.routeString || ''), runwayNames);
     }
 
     /**

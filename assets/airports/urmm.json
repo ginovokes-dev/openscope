@@ -32,19 +32,33 @@
         "KT": [45.1217,42.1817,"stavropol"],
         "TUNAW": [44.4279,42.87829],
         "_RWY1104DME": [44.27001,42.98269],
-        "_RWY2904DME": [44.18003,43.18099]
+        "_RWY2904DME": [44.18003,43.18099],
+        "_RWY1113DME": [44.34994,42.80547],
+        "_RWY1108DME": [44.30557,42.90398],
+        "_RWY2913DME": [44.09959,43.35724],
+        "_RWY2908DME": [44.14432,43.25938],
+        "_RWY11BASER": [44.40816,43.09233],
+        "_RWY29BASEL": [44.31016,43.30834],
+        "_RWY11BASEL": [44.14005,42.85546],
+        "_RWY29BASER": [44.04204,43.07147]
     },
     "runways": [
         {"name":["11","29"],"end":[[44.2344,43.0613,"1043ft"],[44.2157,43.1025,"1046ft"]],"ils":[true,true]}
     ],
     "sids": {
-        "URAWE1A": {"icao":"URAWE1A","name":"Urawe One Alpha","rwy":{"URMM11":["_RWY2904DME"],"URMM29":["_RWY1104DME"]},"body":[],"exitPoints":{"URAWE":["URAWE"]},"draw":[["URMM","URAWE*"]]},
-        "AWAJU2A": {"icao":"AWAJU2A","name":"Awaju Two Alpha","rwy":{"URMM11":["_RWY2904DME"],"URMM29":["_RWY1104DME"]},"body":[],"exitPoints":{"AWAJU":["AWAJU"]},"draw":[["URMM","AWAJU*"]]},
-        "NL3D": {"icao":"NL3D","name":"Nalchik Three Delta","rwy":{"URMM11":["_RWY2904DME"],"URMM29":["_RWY1104DME"]},"body":[],"exitPoints":{"NL":["NL"]},"draw":[["URMM","NL*"]]},
-        "GOSTO1D": {"icao":"GOSTO1D","name":"Gosto One Delta","rwy":{"URMM11":["_RWY2904DME"],"URMM29":["_RWY1104DME"]},"body":[],"exitPoints":{"GOSTO":["GOSTO"]},"draw":[["URMM","GOSTO*"]]},
-        "KT3D": {"icao":"KT3D","name":"Stavropol Three Delta","rwy":{"URMM11":["_RWY2904DME"],"URMM29":["_RWY1104DME"]},"body":[],"exitPoints":{"KT":["KT"]},"draw":[["URMM","KT*"]]}
+        "URAWE1A": {"icao":"URAWE1A","name":"Urawe One Alpha","rwy":{"URMM11":[["_RWY2904DME","A26+"]],"URMM29":[["_RWY1104DME","A26+"]]},"body":[],"exitPoints":{"URAWE":["URAWE"]},"draw":[["URMM","URAWE*"]]},
+        "AWAJU2A": {"icao":"AWAJU2A","name":"Awaju Two Alpha","rwy":{"URMM11":[["_RWY2904DME","A26+"]],"URMM29":[["_RWY1104DME","A26+"]]},"body":[],"exitPoints":{"AWAJU":["AWAJU"]},"draw":[["URMM","AWAJU*"]]},
+        "NL3D": {"icao":"NL3D","name":"Nalchik Three Delta","rwy":{"URMM11":[["_RWY2904DME","A26+"]],"URMM29":[["_RWY1104DME","A26+"]]},"body":[],"exitPoints":{"NL":["NL"]},"draw":[["URMM","NL*"]]},
+        "GOSTO1D": {"icao":"GOSTO1D","name":"Gosto One Delta","rwy":{"URMM11":[["_RWY2904DME","A26+"]],"URMM29":[["_RWY1104DME","A26+"]]},"body":[],"exitPoints":{"GOSTO":["GOSTO"]},"draw":[["URMM","GOSTO*"]]},
+        "KT3D": {"icao":"KT3D","name":"Stavropol Three Delta","rwy":{"URMM11":[["_RWY2904DME","A26+"]],"URMM29":[["_RWY1104DME","A26+"]]},"body":[],"exitPoints":{"KT":["KT"]},"draw":[["URMM","KT*"]]}
     },
-    "stars": {},
+    "stars": {
+        "URAWE1L": {"icao":"URAWE1L","name":"Urawe One Lima","entryPoints":{"URAWE":[]},"body":["URAWE",["MAZUT","S250-"]],"rwy":{"URMM11":[["_RWY11BASER","A63-|S230"],["_RWY1113DME","A53-|S210"],["_RWY1108DME","A37-|S180"],"#115"],"URMM29":[["_RWY29BASEL","A63-|S230"],["_RWY2913DME","A53-|S210"],["_RWY2908DME","A37-|S180"],"#295"]},"draw":[["URAWE*","MAZUT"],["MAZUT","_RWY11BASER","_RWY1113DME","_RWY1108DME"],["MAZUT","_RWY29BASEL","_RWY2913DME","_RWY2908DME"]]},
+        "AWAJU2K": {"icao":"AWAJU2K","name":"Awaju Two Kilo","entryPoints":{"AWAJU":[]},"body":["AWAJU",["KICUN","S250-"]],"rwy":{"URMM11":[["_RWY11BASER","A63-|S230"],["_RWY1113DME","A53-|S210"],["_RWY1108DME","A37-|S180"],"#115"],"URMM29":[["_RWY2913DME","A53-|S210"],["_RWY2908DME","A37-|S180"],"#295"]},"draw":[["AWAJU*","KICUN"],["KICUN","_RWY11BASER","_RWY1113DME","_RWY1108DME"],["KICUN","_RWY2913DME","_RWY2908DME"]]},
+        "NL2J": {"icao":"NL2J","name":"Nalchik Two Juliet","entryPoints":{"NL":[]},"body":["NL",["GOVEW","S250-"]],"rwy":{"URMM11":[["_RWY11BASEL","A63-|S230"],["_RWY1113DME","A53-|S210"],["_RWY1108DME","A37-|S180"],"#115"],"URMM29":[["_RWY2913DME","A53-|S210"],["_RWY2908DME","A37-|S180"],"#295"]},"draw":[["NL*","GOVEW"],["GOVEW","_RWY11BASEL","_RWY1113DME","_RWY1108DME"],["GOVEW","_RWY2913DME","_RWY2908DME"]]},
+        "GOSTO1H": {"icao":"GOSTO1H","name":"Gosto One Hotel","entryPoints":{"GOSTO":[]},"body":["GOSTO",["KAPGE","S250-"]],"rwy":{"URMM11":[["_RWY11BASEL","A63-|S230"],["_RWY1113DME","A53-|S210"],["_RWY1108DME","A37-|S180"],"#115"],"URMM29":[["_RWY29BASER","A63-|S230"],["_RWY2913DME","A53-|S210"],["_RWY2908DME","A37-|S180"],"#295"]},"draw":[["GOSTO*","KAPGE"],["KAPGE","_RWY11BASEL","_RWY1113DME","_RWY1108DME"],["KAPGE","_RWY29BASER","_RWY2913DME","_RWY2908DME"]]},
+        "KT1K": {"icao":"KT1K","name":"Stavropol One Kilo","entryPoints":{"KT":[]},"body":["KT",["TUNAW","S250-"]],"rwy":{"URMM11":[["_RWY1113DME","A53-|S210"],["_RWY1108DME","A37-|S180"],"#115"],"URMM29":[["_RWY29BASEL","A63-|S230"],["_RWY2913DME","A53-|S210"],["_RWY2908DME","A37-|S180"],"#295"]},"draw":[["KT*","TUNAW"],["TUNAW","_RWY1113DME","_RWY1108DME"],["TUNAW","_RWY29BASEL","_RWY2913DME","_RWY2908DME"]]}
+    },
     "spawnPatterns": [
         {"origin":"URMM","destination":"UUDD","category":"departure","route":"URMM29.KT3D.KT","altitude":"","speed":"","method":"random","rate":0.83,"airlines":[["sbi/a319",1],["svr/a320",1],["tso/b735",1]]},
         {"origin":"URMM","destination":"UUEE","category":"departure","route":"URMM29.KT3D.KT","altitude":"","speed":"","method":"random","rate":0.83,"airlines":[["afl/a319",1],["afl/a320",1],["afl/a321",1]]},
@@ -55,32 +69,23 @@
         {"origin":"URMM","destination":"","category":"departure","route":"URMM29.NL3D.NL","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["afl/a319",1],["svr/a321",1]]},
         {"origin":"URMM","destination":"","category":"departure","route":"URMM29.GOSTO1D.GOSTO","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["syl/b737",1]]},
         {"origin":"URMM","destination":"","category":"departure","route":"URMM29.KT3D.KT","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["afl/a319",1],["tso/b737",1]]},
-        {"origin":"URMM","destination":"","category":"departure","route":"URMM29.URAWE1A.URAWE","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",2],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]},
+        {"origin":"URMM","destination":"","category":"departure","route":"URMM29.GOSTO1D.GOSTO","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",2],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]},
         {"origin":"URMM","destination":"","category":"departure","route":"URMM29.NL3D.NL","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",2],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]},
-        {"origin":"UUDD","destination":"URMM","category":"arrival","route":"KT..TUNAW..URMM","altitude":[7000,10000],"speed":250,"method":"random","rate":0.83,"airlines":[["sbi/a319",1],["svr/a320",1],["tso/b735",1]]},
-        {"origin":"UUEE","destination":"URMM","category":"arrival","route":"KT..TUNAW..URMM","altitude":[7000,10000],"speed":250,"method":"random","rate":0.83,"airlines":[["afl/a319",1],["afl/a320",1],["afl/a321",1]]},
-        {"origin":"OMDB","destination":"URMM","category":"arrival","route":"NL..GOVEW..URMM","altitude":[7000,10000],"speed":250,"method":"random","rate":0.55,"airlines":[["fdb/b738",1],["svr/a320",1]]},
-        {"origin":"UBBB","destination":"URMM","category":"arrival","route":"NL..GOVEW..URMM","altitude":[7000,10000],"speed":250,"method":"random","rate":0.55,"airlines":[["ahy/e170",1],["ahy/e190",1]]},
-        {"origin":"USSS","destination":"URMM","category":"arrival","route":"URAWE..MAZUT..URMM","altitude":[7000,10000],"speed":250,"method":"random","rate":0.55,"airlines":[["afl/a319",1],["svr/a320",1]]},
-        {"origin":"","destination":"URMM","category":"arrival","route":"AWAJU..KICUN..URMM","altitude":[7000,10000],"speed":250,"method":"random","rate":1.1,"airlines":[["afl/a319",1],["svr/a320",1],["uzb/a320",1],["vsv/crj7",1],["vsv/crj9",1],["vsv/crj2",1]]},
-        {"origin":"","destination":"URMM","category":"arrival","route":"NL..GOVEW..URMM","altitude":[7000,10000],"speed":250,"method":"random","rate":0.55,"airlines":[["afl/a319",1],["svr/a321",1]]},
-        {"origin":"","destination":"URMM","category":"arrival","route":"GOSTO..KAPGE..URMM","altitude":[7000,10000],"speed":250,"method":"random","rate":0.28,"airlines":[["syl/b737",1]]},
-        {"origin":"","destination":"URMM","category":"arrival","route":"KT..TUNAW..URMM","altitude":[7000,10000],"speed":250,"method":"random","rate":0.55,"airlines":[["afl/a319",1],["tso/b737",1]]},
-        {"origin":"","destination":"URMM","category":"arrival","route":"URAWE..MAZUT..URMM","altitude":[7000,10000],"speed":250,"method":"random","rate":0.4,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",2],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]},
-        {"origin":"","destination":"URMM","category":"arrival","route":"NL..GOVEW..URMM","altitude":[7000,10000],"speed":250,"method":"random","rate":0.4,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",2],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]}
+        {"origin":"UUDD","destination":"URMM","category":"arrival","route":"KT.KT1K.URMM29","altitude":[7000,10000],"speed":250,"method":"random","rate":0.83,"airlines":[["sbi/a319",1],["svr/a320",1],["tso/b735",1]]},
+        {"origin":"UUEE","destination":"URMM","category":"arrival","route":"KT.KT1K.URMM29","altitude":[7000,10000],"speed":250,"method":"random","rate":0.83,"airlines":[["afl/a319",1],["afl/a320",1],["afl/a321",1]]},
+        {"origin":"OMDB","destination":"URMM","category":"arrival","route":"NL.NL2J.URMM29","altitude":[7000,10000],"speed":250,"method":"random","rate":0.55,"airlines":[["fdb/b738",1],["svr/a320",1]]},
+        {"origin":"UBBB","destination":"URMM","category":"arrival","route":"NL.NL2J.URMM29","altitude":[7000,10000],"speed":250,"method":"random","rate":0.55,"airlines":[["ahy/e170",1],["ahy/e190",1]]},
+        {"origin":"USSS","destination":"URMM","category":"arrival","route":"URAWE.URAWE1L.URMM29","altitude":[7000,10000],"speed":250,"method":"random","rate":0.55,"airlines":[["afl/a319",1],["svr/a320",1]]},
+        {"origin":"","destination":"URMM","category":"arrival","route":"AWAJU.AWAJU2K.URMM29","altitude":[7000,10000],"speed":250,"method":"random","rate":1.1,"airlines":[["afl/a319",1],["svr/a320",1],["uzb/a320",1],["vsv/crj7",1],["vsv/crj9",1],["vsv/crj2",1]]},
+        {"origin":"","destination":"URMM","category":"arrival","route":"NL.NL2J.URMM29","altitude":[7000,10000],"speed":250,"method":"random","rate":0.55,"airlines":[["afl/a319",1],["svr/a321",1]]},
+        {"origin":"","destination":"URMM","category":"arrival","route":"GOSTO.GOSTO1H.URMM29","altitude":[7000,10000],"speed":250,"method":"random","rate":0.28,"airlines":[["syl/b737",1]]},
+        {"origin":"","destination":"URMM","category":"arrival","route":"KT.KT1K.URMM29","altitude":[7000,10000],"speed":250,"method":"random","rate":0.55,"airlines":[["afl/a319",1],["tso/b737",1]]},
+        {"origin":"","destination":"URMM","category":"arrival","route":"GOSTO.GOSTO1H.URMM29","altitude":[7000,10000],"speed":250,"method":"random","rate":0.4,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",2],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]},
+        {"origin":"","destination":"URMM","category":"arrival","route":"NL.NL2J.URMM29","altitude":[7000,10000],"speed":250,"method":"random","rate":0.4,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",2],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]}
     ],
     "maps": [
         {"name":"Base Map","lines": [
-            [44.8007,43.6527,44.4288,43.2838],
-            [44.4288,43.2838,44.2251,43.0819],
-            [44.1968,44.0665,44.2151,43.4303],
-            [44.2151,43.4303,44.2251,43.0819],
-            [43.5333,43.6933,44.014,43.2684],
-            [44.014,43.2684,44.2251,43.0819],
-            [43.6164,42.5824,44.0098,42.9052],
-            [44.0098,42.9052,44.2251,43.0819],
-            [45.1217,42.1817,44.4279,42.8783],
-            [44.4279,42.8783,44.2251,43.0819]
+            [44.2344,43.0613,44.2157,43.1025]
         ]},
         {"name":"Extended Runway Centrelines","lines": [
             [44.2344,43.0613,44.3233,42.8646],

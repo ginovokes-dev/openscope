@@ -32,19 +32,32 @@
         "NZ": [56.2717,90.6117,"achinsk"],
         "IJIFE": [56.19863,92.03886],
         "_RWY1104DME": [56.20571,92.35582],
-        "_RWY2904DME": [56.14009,92.63059]
+        "_RWY2904DME": [56.14009,92.63059],
+        "_RWY1113DME": [56.26434,92.10759],
+        "_RWY1108DME": [56.23183,92.24559],
+        "_RWY2913DME": [56.08053,92.87729],
+        "_RWY2908DME": [56.11368,92.74033],
+        "_RWY11BASER": [56.35767,92.44691],
+        "_RWY11BASEL": [56.06604,92.22219],
+        "_RWY29BASER": [55.99382,92.52467]
     },
     "runways": [
         {"name":["11","29"],"end":[[56.1795,92.4659,"942ft"],[56.1664,92.5207,"942ft"]],"ils":[true,true]}
     ],
     "sids": {
-        "PA1A": {"icao":"PA1A","name":"Pavlovshina One Alpha","rwy":{"UNKL11":["_RWY2904DME"],"UNKL29":["_RWY1104DME"]},"body":[],"exitPoints":{"PA":["PA"]},"draw":[["UNKL","PA*"]]},
-        "RUJFA1B": {"icao":"RUJFA1B","name":"Rujfa One Bravo","rwy":{"UNKL11":["_RWY2904DME"],"UNKL29":["_RWY1104DME"]},"body":[],"exitPoints":{"RUJFA":["RUJFA"]},"draw":[["UNKL","RUJFA*"]]},
-        "NUZDE1E": {"icao":"NUZDE1E","name":"Nuzde One Echo","rwy":{"UNKL11":["_RWY2904DME"],"UNKL29":["_RWY1104DME"]},"body":[],"exitPoints":{"NUZDE":["NUZDE"]},"draw":[["UNKL","NUZDE*"]]},
-        "OBULU3A": {"icao":"OBULU3A","name":"Obulu Three Alpha","rwy":{"UNKL11":["_RWY2904DME"],"UNKL29":["_RWY1104DME"]},"body":[],"exitPoints":{"OBULU":["OBULU"]},"draw":[["UNKL","OBULU*"]]},
-        "NZ2E": {"icao":"NZ2E","name":"Achinsk Two Echo","rwy":{"UNKL11":["_RWY2904DME"],"UNKL29":["_RWY1104DME"]},"body":[],"exitPoints":{"NZ":["NZ"]},"draw":[["UNKL","NZ*"]]}
+        "PA1A": {"icao":"PA1A","name":"Pavlovshina One Alpha","rwy":{"UNKL11":[["_RWY2904DME","A24+"]],"UNKL29":[["_RWY1104DME","A24+"]]},"body":[],"exitPoints":{"PA":["PA"]},"draw":[["UNKL","PA*"]]},
+        "RUJFA1B": {"icao":"RUJFA1B","name":"Rujfa One Bravo","rwy":{"UNKL11":[["_RWY2904DME","A24+"]],"UNKL29":[["_RWY1104DME","A24+"]]},"body":[],"exitPoints":{"RUJFA":["RUJFA"]},"draw":[["UNKL","RUJFA*"]]},
+        "NUZDE1E": {"icao":"NUZDE1E","name":"Nuzde One Echo","rwy":{"UNKL11":[["_RWY2904DME","A24+"]],"UNKL29":[["_RWY1104DME","A24+"]]},"body":[],"exitPoints":{"NUZDE":["NUZDE"]},"draw":[["UNKL","NUZDE*"]]},
+        "OBULU3A": {"icao":"OBULU3A","name":"Obulu Three Alpha","rwy":{"UNKL11":[["_RWY2904DME","A24+"]],"UNKL29":[["_RWY1104DME","A24+"]]},"body":[],"exitPoints":{"OBULU":["OBULU"]},"draw":[["UNKL","OBULU*"]]},
+        "NZ2E": {"icao":"NZ2E","name":"Achinsk Two Echo","rwy":{"UNKL11":[["_RWY2904DME","A24+"]],"UNKL29":[["_RWY1104DME","A24+"]]},"body":[],"exitPoints":{"NZ":["NZ"]},"draw":[["UNKL","NZ*"]]}
     },
-    "stars": {},
+    "stars": {
+        "PA1K": {"icao":"PA1K","name":"Pavlovshina One Kilo","entryPoints":{"PA":[]},"body":["PA",["ASASU","S250-"]],"rwy":{"UNKL11":[["_RWY11BASER","A61-|S230"],["_RWY1113DME","A51-|S210"],["_RWY1108DME","A35-|S180"],"#110"],"UNKL29":[["_RWY2913DME","A51-|S210"],["_RWY2908DME","A35-|S180"],"#290"]},"draw":[["PA*","ASASU"],["ASASU","_RWY11BASER","_RWY1113DME","_RWY1108DME"],["ASASU","_RWY2913DME","_RWY2908DME"]]},
+        "RUJFA3I": {"icao":"RUJFA3I","name":"Rujfa Three India","entryPoints":{"RUJFA":[]},"body":["RUJFA",["DEWLE","S250-"]],"rwy":{"UNKL11":[["_RWY11BASEL","A61-|S230"],["_RWY1113DME","A51-|S210"],["_RWY1108DME","A35-|S180"],"#110"],"UNKL29":[["_RWY2913DME","A51-|S210"],["_RWY2908DME","A35-|S180"],"#290"]},"draw":[["RUJFA*","DEWLE"],["DEWLE","_RWY11BASEL","_RWY1113DME","_RWY1108DME"],["DEWLE","_RWY2913DME","_RWY2908DME"]]},
+        "NUZDE1I": {"icao":"NUZDE1I","name":"Nuzde One India","entryPoints":{"NUZDE":[]},"body":["NUZDE",["LUKKE","S250-"]],"rwy":{"UNKL11":[["_RWY11BASEL","A61-|S230"],["_RWY1113DME","A51-|S210"],["_RWY1108DME","A35-|S180"],"#110"],"UNKL29":[["_RWY2913DME","A51-|S210"],["_RWY2908DME","A35-|S180"],"#290"]},"draw":[["NUZDE*","LUKKE"],["LUKKE","_RWY11BASEL","_RWY1113DME","_RWY1108DME"],["LUKKE","_RWY2913DME","_RWY2908DME"]]},
+        "OBULU2J": {"icao":"OBULU2J","name":"Obulu Two Juliet","entryPoints":{"OBULU":[]},"body":["OBULU",["WEVIP","S250-"]],"rwy":{"UNKL11":[["_RWY1113DME","A51-|S210"],["_RWY1108DME","A35-|S180"],"#110"],"UNKL29":[["_RWY29BASER","A61-|S230"],["_RWY2913DME","A51-|S210"],["_RWY2908DME","A35-|S180"],"#290"]},"draw":[["OBULU*","WEVIP"],["WEVIP","_RWY1113DME","_RWY1108DME"],["WEVIP","_RWY29BASER","_RWY2913DME","_RWY2908DME"]]},
+        "NZ2I": {"icao":"NZ2I","name":"Achinsk Two India","entryPoints":{"NZ":[]},"body":["NZ",["IJIFE","S250-"]],"rwy":{"UNKL11":[["_RWY1113DME","A51-|S210"],["_RWY1108DME","A35-|S180"],"#110"],"UNKL29":[["_RWY29BASER","A61-|S230"],["_RWY2913DME","A51-|S210"],["_RWY2908DME","A35-|S180"],"#290"]},"draw":[["NZ*","IJIFE"],["IJIFE","_RWY1113DME","_RWY1108DME"],["IJIFE","_RWY29BASER","_RWY2913DME","_RWY2908DME"]]}
+    },
     "spawnPatterns": [
         {"origin":"UNKL","destination":"UUEE","category":"departure","route":"UNKL29.NZ2E.NZ","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["afl/a321",1],["afl/b77w",1]]},
         {"origin":"UNKL","destination":"UZTT","category":"departure","route":"UNKL29.OBULU3A.OBULU","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["svr/a320",1],["uzb/a320",1]]},
@@ -56,31 +69,22 @@
         {"origin":"UNKL","destination":"","category":"departure","route":"UNKL29.OBULU3A.OBULU","altitude":"","speed":"","method":"random","rate":1.35,"airlines":[["svr/a320",4]]},
         {"origin":"UNKL","destination":"","category":"departure","route":"UNKL29.NZ2E.NZ","altitude":"","speed":"","method":"random","rate":1.35,"airlines":[["afl/a320",1],["sbi/b738",1],["svr/a320",1],["tso/b738",1]]},
         {"origin":"UNKL","destination":"","category":"departure","route":"UNKL29.PA1A.PA","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",2],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]},
-        {"origin":"UNKL","destination":"","category":"departure","route":"UNKL29.NZ2E.NZ","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",2],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]},
-        {"origin":"UUEE","destination":"UNKL","category":"arrival","route":"NZ..IJIFE..UNKL","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["afl/a321",1],["afl/b77w",1]]},
-        {"origin":"UZTT","destination":"UNKL","category":"arrival","route":"OBULU..WEVIP..UNKL","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["svr/a320",1],["uzb/a320",1]]},
-        {"origin":"ZBAA","destination":"UNKL","category":"arrival","route":"RUJFA..DEWLE..UNKL","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["chh/a320",1],["sbi/a320",1]]},
-        {"origin":"UEEE","destination":"UNKL","category":"arrival","route":"PA..ASASU..UNKL","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["syl/dh8d",1]]},
-        {"origin":"UERR","destination":"UNKL","category":"arrival","route":"PA..ASASU..UNKL","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["dru/t134",1]]},
-        {"origin":"","destination":"UNKL","category":"arrival","route":"RUJFA..DEWLE..UNKL","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["afl/a319",1]]},
-        {"origin":"","destination":"UNKL","category":"arrival","route":"NUZDE..LUKKE..UNKL","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["tso/b763",1]]},
-        {"origin":"","destination":"UNKL","category":"arrival","route":"OBULU..WEVIP..UNKL","altitude":[6000,9000],"speed":250,"method":"random","rate":1.35,"airlines":[["svr/a320",4]]},
-        {"origin":"","destination":"UNKL","category":"arrival","route":"NZ..IJIFE..UNKL","altitude":[6000,9000],"speed":250,"method":"random","rate":1.35,"airlines":[["afl/a320",1],["sbi/b738",1],["svr/a320",1],["tso/b738",1]]},
-        {"origin":"","destination":"UNKL","category":"arrival","route":"PA..ASASU..UNKL","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",2],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]},
-        {"origin":"","destination":"UNKL","category":"arrival","route":"NZ..IJIFE..UNKL","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",2],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]}
+        {"origin":"UNKL","destination":"","category":"departure","route":"UNKL29.RUJFA1B.RUJFA","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",2],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]},
+        {"origin":"UUEE","destination":"UNKL","category":"arrival","route":"NZ.NZ2I.UNKL29","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["afl/a321",1],["afl/b77w",1]]},
+        {"origin":"UZTT","destination":"UNKL","category":"arrival","route":"OBULU.OBULU2J.UNKL29","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["svr/a320",1],["uzb/a320",1]]},
+        {"origin":"ZBAA","destination":"UNKL","category":"arrival","route":"RUJFA.RUJFA3I.UNKL29","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["chh/a320",1],["sbi/a320",1]]},
+        {"origin":"UEEE","destination":"UNKL","category":"arrival","route":"PA.PA1K.UNKL29","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["syl/dh8d",1]]},
+        {"origin":"UERR","destination":"UNKL","category":"arrival","route":"PA.PA1K.UNKL29","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["dru/t134",1]]},
+        {"origin":"","destination":"UNKL","category":"arrival","route":"RUJFA.RUJFA3I.UNKL29","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["afl/a319",1]]},
+        {"origin":"","destination":"UNKL","category":"arrival","route":"NUZDE.NUZDE1I.UNKL29","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["tso/b763",1]]},
+        {"origin":"","destination":"UNKL","category":"arrival","route":"OBULU.OBULU2J.UNKL29","altitude":[6000,9000],"speed":250,"method":"random","rate":1.35,"airlines":[["svr/a320",4]]},
+        {"origin":"","destination":"UNKL","category":"arrival","route":"NZ.NZ2I.UNKL29","altitude":[6000,9000],"speed":250,"method":"random","rate":1.35,"airlines":[["afl/a320",1],["sbi/b738",1],["svr/a320",1],["tso/b738",1]]},
+        {"origin":"","destination":"UNKL","category":"arrival","route":"PA.PA1K.UNKL29","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",2],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]},
+        {"origin":"","destination":"UNKL","category":"arrival","route":"RUJFA.RUJFA3I.UNKL29","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",2],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]}
     ],
     "maps": [
         {"name":"Base Map","lines": [
-            [56.75,93.5667,56.3482,92.8105],
-            [56.3482,92.8105,56.1757,92.4858],
-            [55.7671,93.5203,56.0312,92.8518],
-            [56.0312,92.8518,56.1757,92.4858],
-            [55.4846,92.7456,55.9312,92.5777],
-            [55.9312,92.5777,56.1757,92.4858],
-            [55.7548,91.4672,56.0268,92.1254],
-            [56.0268,92.1254,56.1757,92.4858],
-            [56.2717,90.6117,56.1986,92.0389],
-            [56.1986,92.0389,56.1757,92.4858]
+            [56.1795,92.4659,56.1664,92.5207]
         ]},
         {"name":"Extended Runway Centrelines","lines": [
             [56.1795,92.4659,56.2449,92.1904],

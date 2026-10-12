@@ -28,17 +28,29 @@
         "OSN": [52.2001,8.28552,"osnabruck"],
         "ZISJU": [51.80112,8.51091],
         "_RWY0504DME": [51.57225,8.51342],
-        "_RWY2304DME": [51.65578,8.71952]
+        "_RWY2304DME": [51.65578,8.71952],
+        "_RWY0513DME": [51.48999,8.31198],
+        "_RWY0508DME": [51.53573,8.4238],
+        "_RWY2313DME": [51.73738,8.92238],
+        "_RWY2308DME": [51.69209,8.80959],
+        "_RWY05BASEL": [51.42959,8.63359],
+        "_RWY23BASER": [51.52973,8.88065],
+        "_RWY05BASER": [51.69532,8.35427],
+        "_RWY23BASEL": [51.79546,8.60133]
     },
     "runways": [
         {"name":["05","23"],"end":[[51.6087,8.60318,"697ft"],[51.6194,8.62959,"673ft"]],"ils":[true,true]}
     ],
     "sids": {
-        "LAU1E": {"icao":"LAU1E","name":"Lichtenau One Echo","rwy":{"EDLP05":["_RWY2304DME"],"EDLP23":["_RWY0504DME"]},"body":[],"exitPoints":{"LAU":["LAU"]},"draw":[["EDLP","LAU*"]]},
-        "GMH1D": {"icao":"GMH1D","name":"Germinghausen One Delta","rwy":{"EDLP05":["_RWY2304DME"],"EDLP23":["_RWY0504DME"]},"body":[],"exitPoints":{"GMH":["GMH"]},"draw":[["EDLP","GMH*"]]},
-        "OSN3C": {"icao":"OSN3C","name":"Osnabruck Three Charlie","rwy":{"EDLP05":["_RWY2304DME"],"EDLP23":["_RWY0504DME"]},"body":[],"exitPoints":{"OSN":["OSN"]},"draw":[["EDLP","OSN*"]]}
+        "LAU1E": {"icao":"LAU1E","name":"Lichtenau One Echo","rwy":{"EDLP05":[["_RWY2304DME","A22+"]],"EDLP23":[["_RWY0504DME","A22+"]]},"body":[],"exitPoints":{"LAU":["LAU"]},"draw":[["EDLP","LAU*"]]},
+        "GMH1D": {"icao":"GMH1D","name":"Germinghausen One Delta","rwy":{"EDLP05":[["_RWY2304DME","A22+"]],"EDLP23":[["_RWY0504DME","A22+"]]},"body":[],"exitPoints":{"GMH":["GMH"]},"draw":[["EDLP","GMH*"]]},
+        "OSN3C": {"icao":"OSN3C","name":"Osnabruck Three Charlie","rwy":{"EDLP05":[["_RWY2304DME","A22+"]],"EDLP23":[["_RWY0504DME","A22+"]]},"body":[],"exitPoints":{"OSN":["OSN"]},"draw":[["EDLP","OSN*"]]}
     },
-    "stars": {},
+    "stars": {
+        "LAU2H": {"icao":"LAU2H","name":"Lichtenau Two Hotel","entryPoints":{"LAU":[]},"body":["LAU",["AFAWU","S250-"]],"rwy":{"EDLP05":[["_RWY05BASEL","A59-|S230"],["_RWY0513DME","A49-|S210"],["_RWY0508DME","A33-|S180"],"#053"],"EDLP23":[["_RWY2313DME","A49-|S210"],["_RWY2308DME","A33-|S180"],"#233"]},"draw":[["LAU*","AFAWU"],["AFAWU","_RWY05BASEL","_RWY0513DME","_RWY0508DME"],["AFAWU","_RWY2313DME","_RWY2308DME"]]},
+        "GMH3G": {"icao":"GMH3G","name":"Germinghausen Three Golf","entryPoints":{"GMH":[]},"body":["GMH",["GIMUD","S250-"]],"rwy":{"EDLP05":[["_RWY0513DME","A49-|S210"],["_RWY0508DME","A33-|S180"],"#053"],"EDLP23":[["_RWY23BASER","A59-|S230"],["_RWY2313DME","A49-|S210"],["_RWY2308DME","A33-|S180"],"#233"]},"draw":[["GMH*","GIMUD"],["GIMUD","_RWY0513DME","_RWY0508DME"],["GIMUD","_RWY23BASER","_RWY2313DME","_RWY2308DME"]]},
+        "OSN1L": {"icao":"OSN1L","name":"Osnabruck One Lima","entryPoints":{"OSN":[]},"body":["OSN",["ZISJU","S250-"]],"rwy":{"EDLP05":[["_RWY05BASER","A59-|S230"],["_RWY0513DME","A49-|S210"],["_RWY0508DME","A33-|S180"],"#053"],"EDLP23":[["_RWY23BASEL","A59-|S230"],["_RWY2313DME","A49-|S210"],["_RWY2308DME","A33-|S180"],"#233"]},"draw":[["OSN*","ZISJU"],["ZISJU","_RWY05BASER","_RWY0513DME","_RWY0508DME"],["ZISJU","_RWY23BASEL","_RWY2313DME","_RWY2308DME"]]}
+    },
     "spawnPatterns": [
         {"origin":"EDLP","destination":"LEPA","category":"departure","route":"EDLP23.GMH1D.GMH","altitude":"","speed":"","method":"random","rate":1.08,"airlines":[["ber/a320",1],["ber/b738",1],["cfg/a320",1]]},
         {"origin":"EDLP","destination":"LTAI","category":"departure","route":"EDLP23.LAU1E.LAU","altitude":"","speed":"","method":"random","rate":1.08,"airlines":[["ber/b738",1],["cfg/a320",1],["sxs/b738",1]]},
@@ -46,23 +58,18 @@
         {"origin":"EDLP","destination":"GCLP","category":"departure","route":"EDLP23.GMH1D.GMH","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["cfg/a320",1]]},
         {"origin":"EDLP","destination":"GCRR","category":"departure","route":"EDLP23.GMH1D.GMH","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["cfg/a320",1]]},
         {"origin":"EDLP","destination":"","category":"departure","route":"EDLP23.GMH1D.GMH","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["ber/b738",1],["cfg/a320",1]]},
-        {"origin":"EDLP","destination":"","category":"departure","route":"EDLP23.GMH1D.GMH","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["d/c172",6],["d/p28a",5],["d/c182",3],["d/be36",2],["d/da42",1],["d/tb20",1],["d/c208",2],["d/pc12",2],["d/be20",1],["d/b350",1],["d/p180",1],["d/c510",1],["d/e50p",1],["d/c550",1],["d/e55p",1],["d/cl30",1],["d/c680",1],["d/h25b",1],["d/lj45",1],["d/f2th",1],["d/glf4",1],["d/glex",1],["d/glf5",1]]},
-        {"origin":"LEPA","destination":"EDLP","category":"arrival","route":"GMH..GIMUD..EDLP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.08,"airlines":[["ber/a320",1],["ber/b738",1],["cfg/a320",1]]},
-        {"origin":"LTAI","destination":"EDLP","category":"arrival","route":"LAU..AFAWU..EDLP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.08,"airlines":[["ber/b738",1],["cfg/a320",1],["sxs/b738",1]]},
-        {"origin":"GCFV","destination":"EDLP","category":"arrival","route":"GMH..GIMUD..EDLP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["cfg/a320",1]]},
-        {"origin":"GCLP","destination":"EDLP","category":"arrival","route":"GMH..GIMUD..EDLP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["cfg/a320",1]]},
-        {"origin":"GCRR","destination":"EDLP","category":"arrival","route":"GMH..GIMUD..EDLP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["cfg/a320",1]]},
-        {"origin":"","destination":"EDLP","category":"arrival","route":"GMH..GIMUD..EDLP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["ber/b738",1],["cfg/a320",1]]},
-        {"origin":"","destination":"EDLP","category":"arrival","route":"GMH..GIMUD..EDLP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["d/c172",6],["d/p28a",5],["d/c182",3],["d/be36",2],["d/da42",1],["d/tb20",1],["d/c208",2],["d/pc12",2],["d/be20",1],["d/b350",1],["d/p180",1],["d/c510",1],["d/e50p",1],["d/c550",1],["d/e55p",1],["d/cl30",1],["d/c680",1],["d/h25b",1],["d/lj45",1],["d/f2th",1],["d/glf4",1],["d/glex",1],["d/glf5",1]]}
+        {"origin":"EDLP","destination":"","category":"departure","route":"EDLP23.LAU1E.LAU","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["d/c172",6],["d/p28a",5],["d/c182",3],["d/be36",2],["d/da42",1],["d/tb20",1],["d/c208",2],["d/pc12",2],["d/be20",1],["d/b350",1],["d/p180",1],["d/c510",1],["d/e50p",1],["d/c550",1],["d/e55p",1],["d/cl30",1],["d/c680",1],["d/h25b",1],["d/lj45",1],["d/f2th",1],["d/glf4",1],["d/glex",1],["d/glf5",1]]},
+        {"origin":"LEPA","destination":"EDLP","category":"arrival","route":"GMH.GMH3G.EDLP23","altitude":[4000,7000],"speed":250,"method":"random","rate":1.08,"airlines":[["ber/a320",1],["ber/b738",1],["cfg/a320",1]]},
+        {"origin":"LTAI","destination":"EDLP","category":"arrival","route":"LAU.LAU2H.EDLP23","altitude":[4000,7000],"speed":250,"method":"random","rate":1.08,"airlines":[["ber/b738",1],["cfg/a320",1],["sxs/b738",1]]},
+        {"origin":"GCFV","destination":"EDLP","category":"arrival","route":"GMH.GMH3G.EDLP23","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["cfg/a320",1]]},
+        {"origin":"GCLP","destination":"EDLP","category":"arrival","route":"GMH.GMH3G.EDLP23","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["cfg/a320",1]]},
+        {"origin":"GCRR","destination":"EDLP","category":"arrival","route":"GMH.GMH3G.EDLP23","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["cfg/a320",1]]},
+        {"origin":"","destination":"EDLP","category":"arrival","route":"GMH.GMH3G.EDLP23","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["ber/b738",1],["cfg/a320",1]]},
+        {"origin":"","destination":"EDLP","category":"arrival","route":"LAU.LAU2H.EDLP23","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["d/c172",6],["d/p28a",5],["d/c182",3],["d/be36",2],["d/da42",1],["d/tb20",1],["d/c208",2],["d/pc12",2],["d/be20",1],["d/b350",1],["d/p180",1],["d/c510",1],["d/e50p",1],["d/c550",1],["d/e55p",1],["d/cl30",1],["d/c680",1],["d/h25b",1],["d/lj45",1],["d/f2th",1],["d/glf4",1],["d/glex",1],["d/glf5",1]]}
     ],
     "maps": [
         {"name":"Base Map","lines": [
-            [51.2043,9.691,51.5082,8.8919],
-            [51.5082,8.8919,51.6125,8.6175],
-            [51.1705,7.892,51.4725,8.3877],
-            [51.4725,8.3877,51.6125,8.6175],
-            [52.2001,8.2855,51.8011,8.5109],
-            [51.8011,8.5109,51.6125,8.6175]
+            [51.6087,8.6032,51.6194,8.6296]
         ]},
         {"name":"Extended Runway Centrelines","lines": [
             [51.6087,8.6032,51.5174,8.379],

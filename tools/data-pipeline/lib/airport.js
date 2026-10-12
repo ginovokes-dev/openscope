@@ -4,8 +4,10 @@
  *
  * The structure mirrors working hand-authored files (egnm.json, eick.json): real `runways`,
  * an `airspace` polygon, `fixes`, exit-gate SIDs (one per gate, every runway end listed, each with
- * a hidden climb-out fix so the route has >= 2 waypoints as the FMS requires), no STARs, fix-direct
- * arrival spawn routes `GATE..INNER..ICAO`, and two small map layers.
+ * a hidden climb-out fix so the route has >= 2 waypoints as the FMS requires), one STAR per gate
+ * (gate -> inner fix -> per runway end: optional base fix, 13 DME and 8 DME fixes on the extended centreline,
+ * then a heading to fly), STAR-based arrival spawn routes `GATE.STAR.ICAO<runway>` (the client swaps in the active runway), and small map layers
+ * (coastline when a coastline file is given).
  */
 
 const {
@@ -18,6 +20,7 @@ const {
 } = require('./geo');
 const { createRng } = require('./rng');
 const { declination } = require('./magvar');
+const { coastSegmentsNear } = require('./coast');
 const { buildRunways } = require('./runways');
 const { airportPlaceName, cleanCity, sidName } = require('./naming');
 const { pickGateBearings, fillGateGaps, placeGates } = require('./gates');
@@ -328,11 +331,14 @@ function buildAirport(rec, ctx, relaxed) {
 
     runways.forEach((rw) => rw.names.forEach((n) => runwayEndNames.push(n)));
 
+    const hundreds = (ft) => Math.round(ft / 100);
+    const initialClimbRestriction = `A${hundreds(elevationFt + 1500)}+`;
+
     for (const g of gates) {
         const rwy = {};
 
         for (const name of runwayEndNames) {
-            rwy[`${rec.icao}${name}`] = [climbFix[name]];
+            rwy[`${rec.icao}${name}`] = [[climbFix[name], initialClimbRestriction]];
         }
 
         sids[g.sid] = {
@@ -345,12 +351,92 @@ function buildAirport(rec, ctx, relaxed) {
         };
     }
 
+    // ---------------------------------------------------------------- STARs
+    // For every runway end two hidden fixes on the extended centreline (13 and 8 DME) and, when the gate is on the
+    // far side of the airport, a base fix abeam on the gate's side so aircraft do not have to cross the field.
+    const stars = {};
+    const approachFixes = {};
+    const arrivalDescent = [
+        ['IF', 13, 4200, 210],
+        ['FAF', 8, 2600, 180]
+    ];
+
+    runways.forEach((rw) => {
+        [0, 1].forEach((end) => {
+            const name = rw.names[end];
+            const landingTrueHeading = normaliseDeg(endHeadingMag(rw, end) + decl);
+            const outward = normaliseDeg(landingTrueHeading + 180);
+
+            approachFixes[name] = {
+                outwardMag: normaliseDeg(endHeadingMag(rw, end) + 180),
+                headingMag: Math.round(endHeadingMag(rw, end)) % 360 || 360,
+                legs: arrivalDescent.map(([label, dme, aglFt, speed]) => {
+                    const [la, lo] = destinationPoint(rw.ends[end][0], rw.ends[end][1], outward, dme);
+                    const fixName = `_RWY${name}${String(dme).padStart(2, '0')}DME`;
+
+                    fix(fixName, la, lo);
+
+                    return [fixName, `A${hundreds(elevationFt + aglFt)}-|S${speed}`, label];
+                })
+            };
+        });
+    });
+
+    for (const g of gates) {
+        const version = rng.int(1, 3);
+        const letter = 6 + rng.int(0, 5); // G..L, never a letter used by the SIDs (A..F)
+        const star = sidName(g.name, g.spoken, version, letter);
+        const rwy = {};
+        const draw = [[`${g.name}*`, g.inner.name]];
+
+        for (const name of runwayEndNames) {
+            const approach = approachFixes[name];
+            const legs = [];
+            const route = [g.inner.name];
+            const side = angleDiffDeg(g.bearing, approach.outwardMag);
+
+            if (Math.abs(side) > 75) {
+                const sign = side >= 0 ? 1 : -1;
+                const baseName = `_RWY${name}BASE${sign > 0 ? 'R' : 'L'}`;
+
+                if (!fixes[baseName]) {
+                    const [la, lo] = simOffsetToLatLon(rec.lat, rec.lon, decl, normaliseDeg(approach.outwardMag + (sign * 60)), 11);
+
+                    fix(baseName, la, lo);
+                }
+
+                legs.push([baseName, `A${hundreds(elevationFt + 5200)}-|S230`]);
+                route.push(baseName);
+            }
+
+            for (const [fixName, restriction] of approach.legs) {
+                legs.push([fixName, restriction]);
+                route.push(fixName);
+            }
+
+            legs.push(`#${String(approach.headingMag).padStart(3, '0')}`);
+            rwy[`${rec.icao}${name}`] = legs;
+            draw.push(route);
+        }
+
+        g.star = star.icao;
+        g.starSpoken = star.name;
+        stars[star.icao] = {
+            icao: star.icao,
+            name: star.name,
+            entryPoints: { [g.name]: [] },
+            body: [g.name, [g.inner.name, 'S250-']],
+            rwy,
+            draw
+        };
+    }
+
     // ---------------------------------------------------------------- spawn patterns
     const gaId = GA_BY_COUNTRY[rec.country] && ctx.airlineIds.has(GA_BY_COUNTRY[rec.country]) ? GA_BY_COUNTRY[rec.country] : null;
     const gaMix = gaId ? gaAirlines(gaId, klass, longestM, elevationFt, ctx.aircraftTypes, rec.icao) : [];
     let gaShare = gaMix.length ? params.gaShare : 0;
     const departureBase = (gate) => `${rec.icao}${primaryName}.${gate.sid}.${gate.name}`;
-    const arrivalRoute = (gate) => `${gate.name}..${gate.inner.name}..${rec.icao}`;
+    const arrivalRoute = (gate) => `${gate.name}.${gate.star}.${rec.icao}${primaryName}`;
     const arrivalPatterns = [];
     const departurePatterns = [];
 
@@ -504,12 +590,7 @@ function buildAirport(rec, ctx, relaxed) {
 
     // ---------------------------------------------------------------- maps
     const lines4 = (la1, lo1, la2, lo2) => [round(la1, 4), round(lo1, 4), round(la2, 4), round(lo2, 4)];
-    const feeder = [];
-
-    for (const g of gates) {
-        feeder.push(lines4(g.lat, g.lon, g.inner.lat, g.inner.lon));
-        feeder.push(lines4(g.inner.lat, g.inner.lon, rec.lat, rec.lon));
-    }
+    const coastLines = ctx.coast ? coastSegmentsNear(ctx.coast, rec.lat, rec.lon, (radiusNm * 1.15)) : [];
 
     const centrelines = [];
     const drawEnds = [];
@@ -584,7 +665,7 @@ function buildAirport(rec, ctx, relaxed) {
         wind: { angle: windAngle, speed: windSpeed },
         arrivalRunway: primaryName,
         departureRunway: primaryName,
-        defaultMaps: ['Base Map', 'Extended Runway Centrelines'],
+        defaultMaps: coastLines.length > 0 ? ['Base Map', 'Coastline', 'Extended Runway Centrelines'] : ['Base Map', 'Extended Runway Centrelines'],
         airspace: [{
             // aircraft below the floor count as outside the airspace: airports below sea level need a negative floor
             floor: minElevationFt < 0 ? Math.floor(minElevationFt / 100) - 1 : 0,
@@ -602,10 +683,12 @@ function buildAirport(rec, ctx, relaxed) {
             ils: ils[i]
         })),
         sids,
-        stars: {},
+        stars,
         spawnPatterns,
         maps: [
-            { name: 'Base Map', lines: feeder },
+            // the runways themselves, so the base map is never empty
+            { name: 'Base Map', lines: runways.map((rw) => lines4(rw.ends[0][0], rw.ends[0][1], rw.ends[1][0], rw.ends[1][1])) },
+            ...(coastLines.length > 0 ? [{ name: 'Coastline', lines: coastLines }] : []),
             { name: 'Extended Runway Centrelines', lines: centrelines }
         ]
     };

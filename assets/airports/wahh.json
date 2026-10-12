@@ -15,7 +15,7 @@
     "wind": {"angle":100,"speed":12},
     "arrivalRunway": "09",
     "departureRunway": "09",
-    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "defaultMaps": ["Base Map","Coastline","Extended Runway Centrelines"],
     "airspace": [
         {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-7.3835,110.4377],[-7.3988,110.5432],[-7.4406,110.6411],[-7.506,110.7248],[-7.5907,110.7886],[-7.6889,110.828],[-7.7938,110.8404],[-7.8984,110.825],[-7.9954,110.7829],[-8.0783,110.7168],[-8.1414,110.6313],[-8.1805,110.5322],[-8.1928,110.4263],[-8.1776,110.3208],[-8.1358,110.2228],[-8.0703,110.1392],[-7.9856,110.0754],[-7.8875,110.036],[-7.7825,110.0236],[-7.678,110.039],[-7.581,110.0811],[-7.4981,110.1472],[-7.4349,110.2327],[-7.3959,110.3318]]}
     ],
@@ -30,18 +30,30 @@
         "IWIMA": [-7.38257,110.07536],
         "BIPNA": [-7.63748,110.29949],
         "_RWY0904DME": [-7.79111,110.3548],
-        "_RWY2704DME": [-7.78524,110.50919]
+        "_RWY2704DME": [-7.78524,110.50919],
+        "_RWY0913DME": [-7.7968,110.20362],
+        "_RWY0908DME": [-7.79364,110.28761],
+        "_RWY2713DME": [-7.77945,110.66037],
+        "_RWY2708DME": [-7.78268,110.57638],
+        "_RWY09BASER": [-7.63314,110.33348],
+        "_RWY27BASER": [-7.94322,110.53052],
+        "_RWY27BASEL": [-7.62612,110.51826]
     },
     "runways": [
         {"name":["09","27"],"end":[[-7.78856,110.422,"350ft"],[-7.7878,110.442,"350ft"]],"ils":[true,true]}
     ],
     "sids": {
-        "OCUPA1D": {"icao":"OCUPA1D","name":"Ocupa One Delta","rwy":{"WAHH09":["_RWY2704DME"],"WAHH27":["_RWY0904DME"]},"body":[],"exitPoints":{"OCUPA":["OCUPA"]},"draw":[["WAHH","OCUPA*"]]},
-        "AR3C": {"icao":"AR3C","name":"Iswahyudi Three Charlie","rwy":{"WAHH09":["_RWY2704DME"],"WAHH27":["_RWY0904DME"]},"body":[],"exitPoints":{"AR":["AR"]},"draw":[["WAHH","AR*"]]},
-        "NIKOW1A": {"icao":"NIKOW1A","name":"Nikow One Alpha","rwy":{"WAHH09":["_RWY2704DME"],"WAHH27":["_RWY0904DME"]},"body":[],"exitPoints":{"NIKOW":["NIKOW"]},"draw":[["WAHH","NIKOW*"]]},
-        "IWIMA2F": {"icao":"IWIMA2F","name":"Iwima Two Foxtrot","rwy":{"WAHH09":["_RWY2704DME"],"WAHH27":["_RWY0904DME"]},"body":[],"exitPoints":{"IWIMA":["IWIMA"]},"draw":[["WAHH","IWIMA*"]]}
+        "OCUPA1D": {"icao":"OCUPA1D","name":"Ocupa One Delta","rwy":{"WAHH09":[["_RWY2704DME","A19+"]],"WAHH27":[["_RWY0904DME","A19+"]]},"body":[],"exitPoints":{"OCUPA":["OCUPA"]},"draw":[["WAHH","OCUPA*"]]},
+        "AR3C": {"icao":"AR3C","name":"Iswahyudi Three Charlie","rwy":{"WAHH09":[["_RWY2704DME","A19+"]],"WAHH27":[["_RWY0904DME","A19+"]]},"body":[],"exitPoints":{"AR":["AR"]},"draw":[["WAHH","AR*"]]},
+        "NIKOW1A": {"icao":"NIKOW1A","name":"Nikow One Alpha","rwy":{"WAHH09":[["_RWY2704DME","A19+"]],"WAHH27":[["_RWY0904DME","A19+"]]},"body":[],"exitPoints":{"NIKOW":["NIKOW"]},"draw":[["WAHH","NIKOW*"]]},
+        "IWIMA2F": {"icao":"IWIMA2F","name":"Iwima Two Foxtrot","rwy":{"WAHH09":[["_RWY2704DME","A19+"]],"WAHH27":[["_RWY0904DME","A19+"]]},"body":[],"exitPoints":{"IWIMA":["IWIMA"]},"draw":[["WAHH","IWIMA*"]]}
     },
-    "stars": {},
+    "stars": {
+        "OCUPA3K": {"icao":"OCUPA3K","name":"Ocupa Three Kilo","entryPoints":{"OCUPA":[]},"body":["OCUPA",["TUFAL","S250-"]],"rwy":{"WAHH09":[["_RWY09BASER","A56-|S230"],["_RWY0913DME","A46-|S210"],["_RWY0908DME","A30-|S180"],"#087"],"WAHH27":[["_RWY2713DME","A46-|S210"],["_RWY2708DME","A30-|S180"],"#267"]},"draw":[["OCUPA*","TUFAL"],["TUFAL","_RWY09BASER","_RWY0913DME","_RWY0908DME"],["TUFAL","_RWY2713DME","_RWY2708DME"]]},
+        "AR3L": {"icao":"AR3L","name":"Iswahyudi Three Lima","entryPoints":{"AR":[]},"body":["AR",["WUDAS","S250-"]],"rwy":{"WAHH09":[["_RWY09BASER","A56-|S230"],["_RWY0913DME","A46-|S210"],["_RWY0908DME","A30-|S180"],"#087"],"WAHH27":[["_RWY2713DME","A46-|S210"],["_RWY2708DME","A30-|S180"],"#267"]},"draw":[["AR*","WUDAS"],["WUDAS","_RWY09BASER","_RWY0913DME","_RWY0908DME"],["WUDAS","_RWY2713DME","_RWY2708DME"]]},
+        "NIKOW2H": {"icao":"NIKOW2H","name":"Nikow Two Hotel","entryPoints":{"NIKOW":[]},"body":["NIKOW",["WAVUB","S250-"]],"rwy":{"WAHH09":[["_RWY0913DME","A46-|S210"],["_RWY0908DME","A30-|S180"],"#087"],"WAHH27":[["_RWY27BASER","A56-|S230"],["_RWY2713DME","A46-|S210"],["_RWY2708DME","A30-|S180"],"#267"]},"draw":[["NIKOW*","WAVUB"],["WAVUB","_RWY0913DME","_RWY0908DME"],["WAVUB","_RWY27BASER","_RWY2713DME","_RWY2708DME"]]},
+        "IWIMA3K": {"icao":"IWIMA3K","name":"Iwima Three Kilo","entryPoints":{"IWIMA":[]},"body":["IWIMA",["BIPNA","S250-"]],"rwy":{"WAHH09":[["_RWY0913DME","A46-|S210"],["_RWY0908DME","A30-|S180"],"#087"],"WAHH27":[["_RWY27BASEL","A56-|S230"],["_RWY2713DME","A46-|S210"],["_RWY2708DME","A30-|S180"],"#267"]},"draw":[["IWIMA*","BIPNA"],["BIPNA","_RWY0913DME","_RWY0908DME"],["BIPNA","_RWY27BASEL","_RWY2713DME","_RWY2708DME"]]}
+    },
     "spawnPatterns": [
         {"origin":"WAHH","destination":"WSSS","category":"departure","route":"WAHH09.IWIMA2F.IWIMA","altitude":"","speed":"","method":"random","rate":1.06,"airlines":[["awq/a320",1],["gia/a319",1],["slk/a320",1],["tgw/a320",1]]},
         {"origin":"WAHH","destination":"WIII","category":"departure","route":"WAHH09.IWIMA2F.IWIMA","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["awq/a320",1],["gia/b738",1],["lni/b738",1]]},
@@ -51,27 +63,30 @@
         {"origin":"WAHH","destination":"","category":"departure","route":"WAHH09.OCUPA1D.OCUPA","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["gia/crjx",1]]},
         {"origin":"WAHH","destination":"","category":"departure","route":"WAHH09.AR3C.AR","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["lni/b738",1]]},
         {"origin":"WAHH","destination":"","category":"departure","route":"WAHH09.IWIMA2F.IWIMA","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["axm/a320",1],["lni/b738",1],["mdl/a320",1]]},
-        {"origin":"WAHH","destination":"","category":"departure","route":"WAHH09.NIKOW1A.NIKOW","altitude":"","speed":"","method":"random","rate":1.5,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",1],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]},
-        {"origin":"WSSS","destination":"WAHH","category":"arrival","route":"IWIMA..BIPNA..WAHH","altitude":[4000,7000],"speed":250,"method":"random","rate":1.06,"airlines":[["awq/a320",1],["gia/a319",1],["slk/a320",1],["tgw/a320",1]]},
-        {"origin":"WIII","destination":"WAHH","category":"arrival","route":"IWIMA..BIPNA..WAHH","altitude":[4000,7000],"speed":250,"method":"random","rate":0.79,"airlines":[["awq/a320",1],["gia/b738",1],["lni/b738",1]]},
-        {"origin":"WADD","destination":"WAHH","category":"arrival","route":"AR..WUDAS..WAHH","altitude":[4000,7000],"speed":250,"method":"random","rate":0.53,"airlines":[["awq/a320",1],["gia/b738",1]]},
-        {"origin":"WIBB","destination":"WAHH","category":"arrival","route":"IWIMA..BIPNA..WAHH","altitude":[4000,7000],"speed":250,"method":"random","rate":0.53,"airlines":[["lni/b738",1],["mdl/a320",1]]},
-        {"origin":"WAAA","destination":"WAHH","category":"arrival","route":"AR..WUDAS..WAHH","altitude":[4000,7000],"speed":250,"method":"random","rate":0.26,"airlines":[["gia/crjx",1]]},
-        {"origin":"","destination":"WAHH","category":"arrival","route":"OCUPA..TUFAL..WAHH","altitude":[4000,7000],"speed":250,"method":"random","rate":0.26,"airlines":[["gia/crjx",1]]},
-        {"origin":"","destination":"WAHH","category":"arrival","route":"AR..WUDAS..WAHH","altitude":[4000,7000],"speed":250,"method":"random","rate":0.26,"airlines":[["lni/b738",1]]},
-        {"origin":"","destination":"WAHH","category":"arrival","route":"IWIMA..BIPNA..WAHH","altitude":[4000,7000],"speed":250,"method":"random","rate":0.79,"airlines":[["axm/a320",1],["lni/b738",1],["mdl/a320",1]]},
-        {"origin":"","destination":"WAHH","category":"arrival","route":"NIKOW..WAVUB..WAHH","altitude":[4000,7000],"speed":250,"method":"random","rate":1.5,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",1],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]}
+        {"origin":"WAHH","destination":"","category":"departure","route":"WAHH09.IWIMA2F.IWIMA","altitude":"","speed":"","method":"random","rate":1.5,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",1],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]},
+        {"origin":"WSSS","destination":"WAHH","category":"arrival","route":"IWIMA.IWIMA3K.WAHH09","altitude":[4000,7000],"speed":250,"method":"random","rate":1.06,"airlines":[["awq/a320",1],["gia/a319",1],["slk/a320",1],["tgw/a320",1]]},
+        {"origin":"WIII","destination":"WAHH","category":"arrival","route":"IWIMA.IWIMA3K.WAHH09","altitude":[4000,7000],"speed":250,"method":"random","rate":0.79,"airlines":[["awq/a320",1],["gia/b738",1],["lni/b738",1]]},
+        {"origin":"WADD","destination":"WAHH","category":"arrival","route":"AR.AR3L.WAHH09","altitude":[4000,7000],"speed":250,"method":"random","rate":0.53,"airlines":[["awq/a320",1],["gia/b738",1]]},
+        {"origin":"WIBB","destination":"WAHH","category":"arrival","route":"IWIMA.IWIMA3K.WAHH09","altitude":[4000,7000],"speed":250,"method":"random","rate":0.53,"airlines":[["lni/b738",1],["mdl/a320",1]]},
+        {"origin":"WAAA","destination":"WAHH","category":"arrival","route":"AR.AR3L.WAHH09","altitude":[4000,7000],"speed":250,"method":"random","rate":0.26,"airlines":[["gia/crjx",1]]},
+        {"origin":"","destination":"WAHH","category":"arrival","route":"OCUPA.OCUPA3K.WAHH09","altitude":[4000,7000],"speed":250,"method":"random","rate":0.26,"airlines":[["gia/crjx",1]]},
+        {"origin":"","destination":"WAHH","category":"arrival","route":"AR.AR3L.WAHH09","altitude":[4000,7000],"speed":250,"method":"random","rate":0.26,"airlines":[["lni/b738",1]]},
+        {"origin":"","destination":"WAHH","category":"arrival","route":"IWIMA.IWIMA3K.WAHH09","altitude":[4000,7000],"speed":250,"method":"random","rate":0.79,"airlines":[["axm/a320",1],["lni/b738",1],["mdl/a320",1]]},
+        {"origin":"","destination":"WAHH","category":"arrival","route":"IWIMA.IWIMA3K.WAHH09","altitude":[4000,7000],"speed":250,"method":"random","rate":1.5,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",1],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]}
     ],
     "maps": [
         {"name":"Base Map","lines": [
-            [-7.4075,110.8156,-7.6468,110.5745],
-            [-7.6468,110.5745,-7.7882,110.432],
-            [-7.6647,111.434,-7.7635,110.6322],
-            [-7.7635,110.6322,-7.7882,110.432],
-            [-8.2714,110.1933,-7.9677,110.3433],
-            [-7.9677,110.3433,-7.7882,110.432],
-            [-7.3826,110.0754,-7.6375,110.2995],
-            [-7.6375,110.2995,-7.7882,110.432]
+            [-7.7886,110.422,-7.7878,110.442]
+        ]},
+        {"name":"Coastline","lines": [
+            [-8.189,110.799,-8.201,110.708],
+            [-8.201,110.708,-8.184,110.707],
+            [-8.184,110.707,-8.099,110.434],
+            [-8.099,110.434,-8.07,110.374],
+            [-8.07,110.374,-8.033,110.345],
+            [-8.033,110.345,-7.991,110.221],
+            [-7.991,110.221,-7.884,109.991],
+            [-7.884,109.991,-7.771,109.551]
         ]},
         {"name":"Extended Runway Centrelines","lines": [
             [-7.7886,110.422,-7.7949,110.254],

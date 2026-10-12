@@ -20,6 +20,7 @@ import TimeKeeper from '../engine/TimeKeeper';
 import { getTrafficLevel } from '../trafficGenerator/trafficLevel';
 import CommandParser from '../commands/parsers/CommandParser';
 import { airlineNameAndFleetHelper } from '../airline/airlineHelpers';
+import { adaptRouteToActiveRunway } from './routeRunway';
 import { getLongestRunwayInMeters, isAircraftTypeSuitableForRunwayLength } from './aircraftSuitability';
 import { convertStaticPositionToDynamic } from '../base/staticPositionToDynamicPositionHelper';
 import { abs } from '../math/core';
@@ -719,7 +720,7 @@ export default class AircraftController {
             positionModel: dynamicPositionModel,
             icao: aircraftTypeDefinition.icao,
             model: aircraftTypeDefinition,
-            routeString: spawnPatternModel.routeString,
+            routeString: adaptRouteToActiveRunway(spawnPatternModel.routeString, spawnPatternModel.category),
             commands: spawnPatternModel.commands,
             // TODO: this may not be needed anymore
             waypoints: _get(spawnPatternModel, 'waypoints', [])

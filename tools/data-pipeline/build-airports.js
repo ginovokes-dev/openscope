@@ -15,6 +15,7 @@
  *                           and the Crown Dependencies)
  *   --include ICAO,ICAO     airports that are ALWAYS generated (default: UK business and general aviation
  *                           airports with hard runways that have no scheduled service, eg. Biggin Hill)
+ *   --coast-file FILE       GeoJSON coastline (`@geo-maps/countries-coastline-1km` map.geo.json): adds a Coastline map layer
  *   --only ICAO,ICAO        generate only these airports (debugging; disables pruning)
  *   --dry-run               compute everything but write nothing
  *   --no-prune              keep previously generated files that are no longer selected
@@ -58,6 +59,7 @@ function run(argv) {
     const dataDir = getDataDir(args);
     const ctx = loadContext(dataDir, {
         excludeDefunct: Boolean(args['exclude-defunct']),
+        coastFile: args['coast-file'] && args['coast-file'] !== true ? String(args['coast-file']) : null,
         repairAttribution: args.repair !== false
     });
 

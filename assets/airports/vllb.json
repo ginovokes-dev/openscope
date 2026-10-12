@@ -30,18 +30,31 @@
         "TAWZU": [20.35988,101.86302],
         "DEBAT": [20.07355,102.05418],
         "_RWY0604DME": [19.85988,102.09023],
-        "_RWY2404DME": [19.9346,102.23179]
+        "_RWY2404DME": [19.9346,102.23179],
+        "_RWY0613DME": [19.78639,101.95135],
+        "_RWY0608DME": [19.82723,102.02849],
+        "_RWY2413DME": [20.00788,102.37093],
+        "_RWY2408DME": [19.96719,102.29361],
+        "_RWY06BASEL": [19.72108,102.16485],
+        "_RWY24BASER": [19.81077,102.33475],
+        "_RWY24BASEL": [20.08747,102.16954],
+        "_RWY06BASER": [19.99778,101.99963]
     },
     "runways": [
         {"name":["06","24"],"end":[[19.8925,102.152,"955ft"],[19.902,102.17,"955ft"]],"ils":[true,true]}
     ],
     "sids": {
-        "ASASA3C": {"icao":"ASASA3C","name":"Asasa Three Charlie","rwy":{"VLLB06":["_RWY2404DME"],"VLLB24":["_RWY0604DME"]},"body":[],"exitPoints":{"ASASA":["ASASA"]},"draw":[["VLLB","ASASA*"]]},
-        "PEPER1C": {"icao":"PEPER1C","name":"Peper One Charlie","rwy":{"VLLB06":["_RWY2404DME"],"VLLB24":["_RWY0604DME"]},"body":[],"exitPoints":{"PEPER":["PEPER"]},"draw":[["VLLB","PEPER*"]]},
-        "BOWUV3C": {"icao":"BOWUV3C","name":"Bowuv Three Charlie","rwy":{"VLLB06":["_RWY2404DME"],"VLLB24":["_RWY0604DME"]},"body":[],"exitPoints":{"BOWUV":["BOWUV"]},"draw":[["VLLB","BOWUV*"]]},
-        "TAWZU3D": {"icao":"TAWZU3D","name":"Tawzu Three Delta","rwy":{"VLLB06":["_RWY2404DME"],"VLLB24":["_RWY0604DME"]},"body":[],"exitPoints":{"TAWZU":["TAWZU"]},"draw":[["VLLB","TAWZU*"]]}
+        "ASASA3C": {"icao":"ASASA3C","name":"Asasa Three Charlie","rwy":{"VLLB06":[["_RWY2404DME","A25+"]],"VLLB24":[["_RWY0604DME","A25+"]]},"body":[],"exitPoints":{"ASASA":["ASASA"]},"draw":[["VLLB","ASASA*"]]},
+        "PEPER1C": {"icao":"PEPER1C","name":"Peper One Charlie","rwy":{"VLLB06":[["_RWY2404DME","A25+"]],"VLLB24":[["_RWY0604DME","A25+"]]},"body":[],"exitPoints":{"PEPER":["PEPER"]},"draw":[["VLLB","PEPER*"]]},
+        "BOWUV3C": {"icao":"BOWUV3C","name":"Bowuv Three Charlie","rwy":{"VLLB06":[["_RWY2404DME","A25+"]],"VLLB24":[["_RWY0604DME","A25+"]]},"body":[],"exitPoints":{"BOWUV":["BOWUV"]},"draw":[["VLLB","BOWUV*"]]},
+        "TAWZU3D": {"icao":"TAWZU3D","name":"Tawzu Three Delta","rwy":{"VLLB06":[["_RWY2404DME","A25+"]],"VLLB24":[["_RWY0604DME","A25+"]]},"body":[],"exitPoints":{"TAWZU":["TAWZU"]},"draw":[["VLLB","TAWZU*"]]}
     },
-    "stars": {},
+    "stars": {
+        "ASASA2I": {"icao":"ASASA2I","name":"Asasa Two India","entryPoints":{"ASASA":[]},"body":["ASASA",["BOWOH","S250-"]],"rwy":{"VLLB06":[["_RWY06BASEL","A62-|S230"],["_RWY0613DME","A52-|S210"],["_RWY0608DME","A36-|S180"],"#062"],"VLLB24":[["_RWY2413DME","A52-|S210"],["_RWY2408DME","A36-|S180"],"#242"]},"draw":[["ASASA*","BOWOH"],["BOWOH","_RWY06BASEL","_RWY0613DME","_RWY0608DME"],["BOWOH","_RWY2413DME","_RWY2408DME"]]},
+        "PEPER1G": {"icao":"PEPER1G","name":"Peper One Golf","entryPoints":{"PEPER":[]},"body":["PEPER",["ADOCU","S250-"]],"rwy":{"VLLB06":[["_RWY0613DME","A52-|S210"],["_RWY0608DME","A36-|S180"],"#062"],"VLLB24":[["_RWY24BASER","A62-|S230"],["_RWY2413DME","A52-|S210"],["_RWY2408DME","A36-|S180"],"#242"]},"draw":[["PEPER*","ADOCU"],["ADOCU","_RWY0613DME","_RWY0608DME"],["ADOCU","_RWY24BASER","_RWY2413DME","_RWY2408DME"]]},
+        "BOWUV2K": {"icao":"BOWUV2K","name":"Bowuv Two Kilo","entryPoints":{"BOWUV":[]},"body":["BOWUV",["UGOGE","S250-"]],"rwy":{"VLLB06":[["_RWY0613DME","A52-|S210"],["_RWY0608DME","A36-|S180"],"#062"],"VLLB24":[["_RWY24BASEL","A62-|S230"],["_RWY2413DME","A52-|S210"],["_RWY2408DME","A36-|S180"],"#242"]},"draw":[["BOWUV*","UGOGE"],["UGOGE","_RWY0613DME","_RWY0608DME"],["UGOGE","_RWY24BASEL","_RWY2413DME","_RWY2408DME"]]},
+        "TAWZU2J": {"icao":"TAWZU2J","name":"Tawzu Two Juliet","entryPoints":{"TAWZU":[]},"body":["TAWZU",["DEBAT","S250-"]],"rwy":{"VLLB06":[["_RWY06BASER","A62-|S230"],["_RWY0613DME","A52-|S210"],["_RWY0608DME","A36-|S180"],"#062"],"VLLB24":[["_RWY24BASEL","A62-|S230"],["_RWY2413DME","A52-|S210"],["_RWY2408DME","A36-|S180"],"#242"]},"draw":[["TAWZU*","DEBAT"],["DEBAT","_RWY06BASER","_RWY0613DME","_RWY0608DME"],["DEBAT","_RWY24BASEL","_RWY2413DME","_RWY2408DME"]]}
+    },
     "spawnPatterns": [
         {"origin":"VLLB","destination":"VLVT","category":"departure","route":"VLLB06.PEPER1C.PEPER","altitude":"","speed":"","method":"random","rate":1.5,"airlines":[["lao/a320",1],["lao/at72",1],["ndc/b737",1]]},
         {"origin":"VLLB","destination":"VTBS","category":"departure","route":"VLLB06.PEPER1C.PEPER","altitude":"","speed":"","method":"random","rate":1,"airlines":[["bkp/at72",1],["lao/at72",1]]},
@@ -49,23 +62,16 @@
         {"origin":"VLLB","destination":"VLPS","category":"departure","route":"VLLB06.PEPER1C.PEPER","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["lao/at72",1]]},
         {"origin":"VLLB","destination":"","category":"departure","route":"VLLB06.BOWUV3C.BOWUV","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["lao/at72",1]]},
         {"origin":"VLLB","destination":"","category":"departure","route":"VLLB06.TAWZU3D.TAWZU","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["lao/at72",1]]},
-        {"origin":"VLVT","destination":"VLLB","category":"arrival","route":"PEPER..ADOCU..VLLB","altitude":[4000,7000],"speed":250,"method":"random","rate":1.5,"airlines":[["lao/a320",1],["lao/at72",1],["ndc/b737",1]]},
-        {"origin":"VTBS","destination":"VLLB","category":"arrival","route":"PEPER..ADOCU..VLLB","altitude":[4000,7000],"speed":250,"method":"random","rate":1,"airlines":[["bkp/at72",1],["lao/at72",1]]},
-        {"origin":"VVNB","destination":"VLLB","category":"arrival","route":"ASASA..BOWOH..VLLB","altitude":[4000,7000],"speed":250,"method":"random","rate":1,"airlines":[["hvn/at72",1],["lao/at72",1]]},
-        {"origin":"VLPS","destination":"VLLB","category":"arrival","route":"PEPER..ADOCU..VLLB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.5,"airlines":[["lao/at72",1]]},
-        {"origin":"","destination":"VLLB","category":"arrival","route":"BOWUV..UGOGE..VLLB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.5,"airlines":[["lao/at72",1]]},
-        {"origin":"","destination":"VLLB","category":"arrival","route":"TAWZU..DEBAT..VLLB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.5,"airlines":[["lao/at72",1]]}
+        {"origin":"VLVT","destination":"VLLB","category":"arrival","route":"PEPER.PEPER1G.VLLB06","altitude":[4000,7000],"speed":250,"method":"random","rate":1.5,"airlines":[["lao/a320",1],["lao/at72",1],["ndc/b737",1]]},
+        {"origin":"VTBS","destination":"VLLB","category":"arrival","route":"PEPER.PEPER1G.VLLB06","altitude":[4000,7000],"speed":250,"method":"random","rate":1,"airlines":[["bkp/at72",1],["lao/at72",1]]},
+        {"origin":"VVNB","destination":"VLLB","category":"arrival","route":"ASASA.ASASA2I.VLLB06","altitude":[4000,7000],"speed":250,"method":"random","rate":1,"airlines":[["hvn/at72",1],["lao/at72",1]]},
+        {"origin":"VLPS","destination":"VLLB","category":"arrival","route":"PEPER.PEPER1G.VLLB06","altitude":[4000,7000],"speed":250,"method":"random","rate":0.5,"airlines":[["lao/at72",1]]},
+        {"origin":"","destination":"VLLB","category":"arrival","route":"BOWUV.BOWUV2K.VLLB06","altitude":[4000,7000],"speed":250,"method":"random","rate":0.5,"airlines":[["lao/at72",1]]},
+        {"origin":"","destination":"VLLB","category":"arrival","route":"TAWZU.TAWZU2J.VLLB06","altitude":[4000,7000],"speed":250,"method":"random","rate":0.5,"airlines":[["lao/at72",1]]}
     ],
     "maps": [
         {"name":"Base Map","lines": [
-            [20.1037,102.6985,19.9784,102.3646],
-            [19.9784,102.3646,19.9043,102.1672],
-            [19.3664,102.1727,19.7044,102.1692],
-            [19.7044,102.1692,19.9043,102.1672],
-            [19.7196,101.6298,19.8357,101.9675],
-            [19.8357,101.9675,19.9043,102.1672],
-            [20.3599,101.863,20.0736,102.0542],
-            [20.0736,102.0542,19.9043,102.1672]
+            [19.8925,102.152,19.902,102.17]
         ]},
         {"name":"Extended Runway Centrelines","lines": [
             [19.8925,102.152,19.8109,101.9976],

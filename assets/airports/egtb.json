@@ -30,32 +30,38 @@
         "GST": [51.892,-2.1679,"gloucestershire"],
         "DAHMO": [51.67473,-1.11378],
         "_RWY0603DME": [51.58703,-0.88412],
-        "_RWY2403DME": [51.63643,-0.73222]
+        "_RWY2403DME": [51.63643,-0.73222],
+        "_RWY0613DME": [51.50937,-1.12105],
+        "_RWY0608DME": [51.54826,-1.00269],
+        "_RWY2413DME": [51.71332,-0.49397],
+        "_RWY2408DME": [51.67494,-0.61319],
+        "_RWY06BASER": [51.70982,-1.05754],
+        "_RWY06BASEL": [51.42872,-0.82044],
+        "_RWY24BASER": [51.51372,-0.55909],
+        "_RWY24BASEL": [51.79482,-0.79619]
     },
     "runways": [
         {"name":["06","24"],"end":[[51.61023,-0.81288,"513ft"],[51.61327,-0.80353,"513ft"]],"ils":[false,false]}
     ],
     "sids": {
-        "CFD1C": {"icao":"CFD1C","name":"Cranfield One Charlie","rwy":{"EGTB06":["_RWY2403DME"],"EGTB24":["_RWY0603DME"]},"body":[],"exitPoints":{"CFD":["CFD"]},"draw":[["EGTB","CFD*"]]},
-        "BIG1B": {"icao":"BIG1B","name":"Biggin One Bravo","rwy":{"EGTB06":["_RWY2403DME"],"EGTB24":["_RWY0603DME"]},"body":[],"exitPoints":{"BIG":["BIG"]},"draw":[["EGTB","BIG*"]]},
-        "SAM3C": {"icao":"SAM3C","name":"Southampton Three Charlie","rwy":{"EGTB06":["_RWY2403DME"],"EGTB24":["_RWY0603DME"]},"body":[],"exitPoints":{"SAM":["SAM"]},"draw":[["EGTB","SAM*"]]},
-        "GST1D": {"icao":"GST1D","name":"Gloucestershire One Delta","rwy":{"EGTB06":["_RWY2403DME"],"EGTB24":["_RWY0603DME"]},"body":[],"exitPoints":{"GST":["GST"]},"draw":[["EGTB","GST*"]]}
+        "CFD1C": {"icao":"CFD1C","name":"Cranfield One Charlie","rwy":{"EGTB06":[["_RWY2403DME","A20+"]],"EGTB24":[["_RWY0603DME","A20+"]]},"body":[],"exitPoints":{"CFD":["CFD"]},"draw":[["EGTB","CFD*"]]},
+        "BIG1B": {"icao":"BIG1B","name":"Biggin One Bravo","rwy":{"EGTB06":[["_RWY2403DME","A20+"]],"EGTB24":[["_RWY0603DME","A20+"]]},"body":[],"exitPoints":{"BIG":["BIG"]},"draw":[["EGTB","BIG*"]]},
+        "SAM3C": {"icao":"SAM3C","name":"Southampton Three Charlie","rwy":{"EGTB06":[["_RWY2403DME","A20+"]],"EGTB24":[["_RWY0603DME","A20+"]]},"body":[],"exitPoints":{"SAM":["SAM"]},"draw":[["EGTB","SAM*"]]},
+        "GST1D": {"icao":"GST1D","name":"Gloucestershire One Delta","rwy":{"EGTB06":[["_RWY2403DME","A20+"]],"EGTB24":[["_RWY0603DME","A20+"]]},"body":[],"exitPoints":{"GST":["GST"]},"draw":[["EGTB","GST*"]]}
     },
-    "stars": {},
+    "stars": {
+        "CFD2J": {"icao":"CFD2J","name":"Cranfield Two Juliet","entryPoints":{"CFD":[]},"body":["CFD",["SUZBU","S250-"]],"rwy":{"EGTB06":[["_RWY06BASER","A57-|S230"],["_RWY0613DME","A47-|S210"],["_RWY0608DME","A31-|S180"],"#062"],"EGTB24":[["_RWY2413DME","A47-|S210"],["_RWY2408DME","A31-|S180"],"#242"]},"draw":[["CFD*","SUZBU"],["SUZBU","_RWY06BASER","_RWY0613DME","_RWY0608DME"],["SUZBU","_RWY2413DME","_RWY2408DME"]]},
+        "BIG1L": {"icao":"BIG1L","name":"Biggin One Lima","entryPoints":{"BIG":[]},"body":["BIG",["LON","S250-"]],"rwy":{"EGTB06":[["_RWY06BASEL","A57-|S230"],["_RWY0613DME","A47-|S210"],["_RWY0608DME","A31-|S180"],"#062"],"EGTB24":[["_RWY2413DME","A47-|S210"],["_RWY2408DME","A31-|S180"],"#242"]},"draw":[["BIG*","LON"],["LON","_RWY06BASEL","_RWY0613DME","_RWY0608DME"],["LON","_RWY2413DME","_RWY2408DME"]]},
+        "SAM3K": {"icao":"SAM3K","name":"Southampton Three Kilo","entryPoints":{"SAM":[]},"body":["SAM",["UHEKI","S250-"]],"rwy":{"EGTB06":[["_RWY0613DME","A47-|S210"],["_RWY0608DME","A31-|S180"],"#062"],"EGTB24":[["_RWY24BASER","A57-|S230"],["_RWY2413DME","A47-|S210"],["_RWY2408DME","A31-|S180"],"#242"]},"draw":[["SAM*","UHEKI"],["UHEKI","_RWY0613DME","_RWY0608DME"],["UHEKI","_RWY24BASER","_RWY2413DME","_RWY2408DME"]]},
+        "GST3L": {"icao":"GST3L","name":"Gloucestershire Three Lima","entryPoints":{"GST":[]},"body":["GST",["DAHMO","S250-"]],"rwy":{"EGTB06":[["_RWY0613DME","A47-|S210"],["_RWY0608DME","A31-|S180"],"#062"],"EGTB24":[["_RWY24BASEL","A57-|S230"],["_RWY2413DME","A47-|S210"],["_RWY2408DME","A31-|S180"],"#242"]},"draw":[["GST*","DAHMO"],["DAHMO","_RWY0613DME","_RWY0608DME"],["DAHMO","_RWY24BASEL","_RWY2413DME","_RWY2408DME"]]}
+    },
     "spawnPatterns": [
         {"origin":"EGTB","destination":"","category":"departure","route":"EGTB24.SAM3C.SAM","altitude":"","speed":"","method":"random","rate":3,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1]]},
-        {"origin":"","destination":"EGTB","category":"arrival","route":"SAM..UHEKI..EGTB","altitude":[4000,7000],"speed":250,"method":"random","rate":3,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1]]}
+        {"origin":"","destination":"EGTB","category":"arrival","route":"SAM.SAM3K.EGTB24","altitude":[4000,7000],"speed":250,"method":"random","rate":3,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1]]}
     ],
     "maps": [
         {"name":"Base Map","lines": [
-            [52.0742,-0.6108,51.805,-0.7258],
-            [51.805,-0.7258,51.6118,-0.8083],
-            [51.3309,0.0348,51.4872,-0.4667],
-            [51.4872,-0.4667,51.6118,-0.8083],
-            [50.9553,-1.345,51.4336,-0.954],
-            [51.4336,-0.954,51.6118,-0.8083],
-            [51.892,-2.1679,51.6747,-1.1138],
-            [51.6747,-1.1138,51.6118,-0.8083]
+            [51.6102,-0.8129,51.6133,-0.8035]
         ]},
         {"name":"Extended Runway Centrelines","lines": [
             [51.6133,-0.8035,51.6903,-0.5655],

@@ -30,40 +30,46 @@
         "NOT": [52.9217,-1.07933,"nottingham"],
         "NN": [52.2991,-0.7976,"northampton"],
         "_RWY0304DME": [52.01,-0.67871],
-        "_RWY2104DME": [52.13574,-0.55295]
+        "_RWY2104DME": [52.13574,-0.55295],
+        "_RWY0313DME": [51.88218,-0.80572],
+        "_RWY0308DME": [51.95321,-0.73525],
+        "_RWY2113DME": [52.26331,-0.42453],
+        "_RWY2108DME": [52.19245,-0.49597],
+        "_RWY03BASEL": [51.91107,-0.47481],
+        "_RWY21BASER": [52.06715,-0.31872],
+        "_RWY21BASEL": [52.23333,-0.75852],
+        "_RWY03BASER": [52.07726,-0.91462]
     },
     "runways": [
         {"name":["03","21"],"end":[[52.06677,-0.62203,"358ft"],[52.079,-0.6098,"358ft"]],"ils":[false,false]}
     ],
     "sids": {
-        "CAM1C": {"icao":"CAM1C","name":"Cambridge One Charlie","rwy":{"EGTC03":["_RWY2104DME"],"EGTC21":["_RWY0304DME"]},"body":[],"exitPoints":{"CAM":["CAM"]},"draw":[["EGTC","CAM*"]]},
-        "LON2E": {"icao":"LON2E","name":"London Two Echo","rwy":{"EGTC03":["_RWY2104DME"],"EGTC21":["_RWY0304DME"]},"body":[],"exitPoints":{"LON":["LON"]},"draw":[["EGTC","LON*"]]},
-        "GST3F": {"icao":"GST3F","name":"Gloucestershire Three Foxtrot","rwy":{"EGTC03":["_RWY2104DME"],"EGTC21":["_RWY0304DME"]},"body":[],"exitPoints":{"GST":["GST"]},"draw":[["EGTC","GST*"]]},
-        "NOT1E": {"icao":"NOT1E","name":"Nottingham One Echo","rwy":{"EGTC03":["_RWY2104DME"],"EGTC21":["_RWY0304DME"]},"body":[],"exitPoints":{"NOT":["NOT"]},"draw":[["EGTC","NOT*"]]}
+        "CAM1C": {"icao":"CAM1C","name":"Cambridge One Charlie","rwy":{"EGTC03":[["_RWY2104DME","A19+"]],"EGTC21":[["_RWY0304DME","A19+"]]},"body":[],"exitPoints":{"CAM":["CAM"]},"draw":[["EGTC","CAM*"]]},
+        "LON2E": {"icao":"LON2E","name":"London Two Echo","rwy":{"EGTC03":[["_RWY2104DME","A19+"]],"EGTC21":[["_RWY0304DME","A19+"]]},"body":[],"exitPoints":{"LON":["LON"]},"draw":[["EGTC","LON*"]]},
+        "GST3F": {"icao":"GST3F","name":"Gloucestershire Three Foxtrot","rwy":{"EGTC03":[["_RWY2104DME","A19+"]],"EGTC21":[["_RWY0304DME","A19+"]]},"body":[],"exitPoints":{"GST":["GST"]},"draw":[["EGTC","GST*"]]},
+        "NOT1E": {"icao":"NOT1E","name":"Nottingham One Echo","rwy":{"EGTC03":[["_RWY2104DME","A19+"]],"EGTC21":[["_RWY0304DME","A19+"]]},"body":[],"exitPoints":{"NOT":["NOT"]},"draw":[["EGTC","NOT*"]]}
     },
-    "stars": {},
+    "stars": {
+        "CAM1K": {"icao":"CAM1K","name":"Cambridge One Kilo","entryPoints":{"CAM":[]},"body":["CAM",["OBUCO","S250-"]],"rwy":{"EGTC03":[["_RWY03BASEL","A56-|S230"],["_RWY0313DME","A46-|S210"],["_RWY0308DME","A30-|S180"],"#031"],"EGTC21":[["_RWY2113DME","A46-|S210"],["_RWY2108DME","A30-|S180"],"#211"]},"draw":[["CAM*","OBUCO"],["OBUCO","_RWY03BASEL","_RWY0313DME","_RWY0308DME"],["OBUCO","_RWY2113DME","_RWY2108DME"]]},
+        "LON2I": {"icao":"LON2I","name":"London Two India","entryPoints":{"LON":[]},"body":["LON",["RUNUH","S250-"]],"rwy":{"EGTC03":[["_RWY0313DME","A46-|S210"],["_RWY0308DME","A30-|S180"],"#031"],"EGTC21":[["_RWY21BASER","A56-|S230"],["_RWY2113DME","A46-|S210"],["_RWY2108DME","A30-|S180"],"#211"]},"draw":[["LON*","RUNUH"],["RUNUH","_RWY0313DME","_RWY0308DME"],["RUNUH","_RWY21BASER","_RWY2113DME","_RWY2108DME"]]},
+        "GST1H": {"icao":"GST1H","name":"Gloucestershire One Hotel","entryPoints":{"GST":[]},"body":["GST",["AWIMA","S250-"]],"rwy":{"EGTC03":[["_RWY0313DME","A46-|S210"],["_RWY0308DME","A30-|S180"],"#031"],"EGTC21":[["_RWY21BASEL","A56-|S230"],["_RWY2113DME","A46-|S210"],["_RWY2108DME","A30-|S180"],"#211"]},"draw":[["GST*","AWIMA"],["AWIMA","_RWY0313DME","_RWY0308DME"],["AWIMA","_RWY21BASEL","_RWY2113DME","_RWY2108DME"]]},
+        "NOT2I": {"icao":"NOT2I","name":"Nottingham Two India","entryPoints":{"NOT":[]},"body":["NOT",["NN","S250-"]],"rwy":{"EGTC03":[["_RWY03BASER","A56-|S230"],["_RWY0313DME","A46-|S210"],["_RWY0308DME","A30-|S180"],"#031"],"EGTC21":[["_RWY2113DME","A46-|S210"],["_RWY2108DME","A30-|S180"],"#211"]},"draw":[["NOT*","NN"],["NN","_RWY03BASER","_RWY0313DME","_RWY0308DME"],["NN","_RWY2113DME","_RWY2108DME"]]}
+    },
     "spawnPatterns": [
         {"origin":"EGTC","destination":"","category":"departure","route":"EGTC21.CAM1C.CAM","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
         {"origin":"EGTC","destination":"","category":"departure","route":"EGTC21.LON2E.LON","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
         {"origin":"EGTC","destination":"","category":"departure","route":"EGTC21.GST3F.GST","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
         {"origin":"EGTC","destination":"","category":"departure","route":"EGTC21.NOT1E.NOT","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
-        {"origin":"EGTC","destination":"","category":"departure","route":"EGTC21.CAM1C.CAM","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]},
-        {"origin":"","destination":"EGTC","category":"arrival","route":"CAM..OBUCO..EGTC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
-        {"origin":"","destination":"EGTC","category":"arrival","route":"LON..RUNUH..EGTC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
-        {"origin":"","destination":"EGTC","category":"arrival","route":"GST..AWIMA..EGTC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
-        {"origin":"","destination":"EGTC","category":"arrival","route":"NOT..NN..EGTC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
-        {"origin":"","destination":"EGTC","category":"arrival","route":"CAM..OBUCO..EGTC","altitude":[4000,7000],"speed":250,"method":"random","rate":1.13,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]}
+        {"origin":"EGTC","destination":"","category":"departure","route":"EGTC21.NOT1E.NOT","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]},
+        {"origin":"","destination":"EGTC","category":"arrival","route":"CAM.CAM1K.EGTC21","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
+        {"origin":"","destination":"EGTC","category":"arrival","route":"LON.LON2I.EGTC21","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
+        {"origin":"","destination":"EGTC","category":"arrival","route":"GST.GST1H.EGTC21","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
+        {"origin":"","destination":"EGTC","category":"arrival","route":"NOT.NOT2I.EGTC21","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
+        {"origin":"","destination":"EGTC","category":"arrival","route":"NOT.NOT2I.EGTC21","altitude":[4000,7000],"speed":250,"method":"random","rate":1.13,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]}
     ],
     "maps": [
         {"name":"Base Map","lines": [
-            [52.2108,0.1828,52.1265,-0.3037],
-            [52.1265,-0.3037,52.0722,-0.6167],
-            [51.4872,-0.4667,51.8748,-0.566],
-            [51.8748,-0.566,52.0722,-0.6167],
-            [51.892,-2.1679,52.0351,-0.9362],
-            [52.0351,-0.9362,52.0722,-0.6167],
-            [52.9217,-1.0793,52.2991,-0.7976],
-            [52.2991,-0.7976,52.0722,-0.6167]
+            [52.0668,-0.622,52.079,-0.6098]
         ]},
         {"name":"Extended Runway Centrelines","lines": [
             [52.079,-0.6098,52.2208,-0.4674],

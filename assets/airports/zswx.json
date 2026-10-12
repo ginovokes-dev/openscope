@@ -15,7 +15,7 @@
     "wind": {"angle":210,"speed":7},
     "arrivalRunway": "21",
     "departureRunway": "21",
-    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "defaultMaps": ["Base Map","Coastline","Extended Runway Centrelines"],
     "airspace": [
         {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[32.0332,120.3598],[32.0305,120.525],[31.9914,120.6837],[31.9187,120.8252],[31.8172,120.9397],[31.6938,121.0196],[31.5571,121.0593],[31.4163,121.0561],[31.2809,121.0103],[31.1603,120.9249],[31.0626,120.8059],[30.9946,120.6613],[30.9607,120.5009],[30.9634,120.3357],[31.0025,120.177],[31.0752,120.0356],[31.1767,119.921],[31.3001,119.8412],[31.4368,119.8015],[31.5776,119.8047],[31.713,119.8505],[31.8336,119.9358],[31.9313,120.0548],[31.9993,120.1995]]}
     ],
@@ -32,19 +32,33 @@
         "HOSLO": [32.1976,120.3272],
         "NUSOM": [31.74484,120.39388],
         "_RWY0304DME": [31.42129,120.39785],
-        "_RWY2104DME": [31.57346,120.46331]
+        "_RWY2104DME": [31.57346,120.46331],
+        "_RWY0313DME": [31.28053,120.33749],
+        "_RWY0308DME": [31.35873,120.371],
+        "_RWY2113DME": [31.71416,120.52404],
+        "_RWY2108DME": [31.63599,120.49028],
+        "_RWY03BASEL": [31.35631,120.56808],
+        "_RWY21BASER": [31.52832,120.64207],
+        "_RWY21BASEL": [31.63759,120.29268],
+        "_RWY03BASER": [31.46559,120.21869]
     },
     "runways": [
         {"name":["03","21"],"end":[[31.48384,120.42474,"15ft"],[31.51091,120.43639,"17ft"]],"ils":[true,true]}
     ],
     "sids": {
-        "BEBRO2E": {"icao":"BEBRO2E","name":"Bebro Two Echo","rwy":{"ZSWX03":["_RWY2104DME"],"ZSWX21":["_RWY0304DME"]},"body":[],"exitPoints":{"BEBRO":["BEBRO"]},"draw":[["ZSWX","BEBRO*"]]},
-        "SX2D": {"icao":"SX2D","name":"Nanxun Two Delta","rwy":{"ZSWX03":["_RWY2104DME"],"ZSWX21":["_RWY0304DME"]},"body":[],"exitPoints":{"SX":["SX"]},"draw":[["ZSWX","SX*"]]},
-        "CASFI3D": {"icao":"CASFI3D","name":"Casfi Three Delta","rwy":{"ZSWX03":["_RWY2104DME"],"ZSWX21":["_RWY0304DME"]},"body":[],"exitPoints":{"CASFI":["CASFI"]},"draw":[["ZSWX","CASFI*"]]},
-        "ZUHCO3A": {"icao":"ZUHCO3A","name":"Zuhco Three Alpha","rwy":{"ZSWX03":["_RWY2104DME"],"ZSWX21":["_RWY0304DME"]},"body":[],"exitPoints":{"ZUHCO":["ZUHCO"]},"draw":[["ZSWX","ZUHCO*"]]},
-        "HOSLO3A": {"icao":"HOSLO3A","name":"Hoslo Three Alpha","rwy":{"ZSWX03":["_RWY2104DME"],"ZSWX21":["_RWY0304DME"]},"body":[],"exitPoints":{"HOSLO":["HOSLO"]},"draw":[["ZSWX","HOSLO*"]]}
+        "BEBRO2E": {"icao":"BEBRO2E","name":"Bebro Two Echo","rwy":{"ZSWX03":[["_RWY2104DME","A15+"]],"ZSWX21":[["_RWY0304DME","A15+"]]},"body":[],"exitPoints":{"BEBRO":["BEBRO"]},"draw":[["ZSWX","BEBRO*"]]},
+        "SX2D": {"icao":"SX2D","name":"Nanxun Two Delta","rwy":{"ZSWX03":[["_RWY2104DME","A15+"]],"ZSWX21":[["_RWY0304DME","A15+"]]},"body":[],"exitPoints":{"SX":["SX"]},"draw":[["ZSWX","SX*"]]},
+        "CASFI3D": {"icao":"CASFI3D","name":"Casfi Three Delta","rwy":{"ZSWX03":[["_RWY2104DME","A15+"]],"ZSWX21":[["_RWY0304DME","A15+"]]},"body":[],"exitPoints":{"CASFI":["CASFI"]},"draw":[["ZSWX","CASFI*"]]},
+        "ZUHCO3A": {"icao":"ZUHCO3A","name":"Zuhco Three Alpha","rwy":{"ZSWX03":[["_RWY2104DME","A15+"]],"ZSWX21":[["_RWY0304DME","A15+"]]},"body":[],"exitPoints":{"ZUHCO":["ZUHCO"]},"draw":[["ZSWX","ZUHCO*"]]},
+        "HOSLO3A": {"icao":"HOSLO3A","name":"Hoslo Three Alpha","rwy":{"ZSWX03":[["_RWY2104DME","A15+"]],"ZSWX21":[["_RWY0304DME","A15+"]]},"body":[],"exitPoints":{"HOSLO":["HOSLO"]},"draw":[["ZSWX","HOSLO*"]]}
     },
-    "stars": {},
+    "stars": {
+        "BEBRO2H": {"icao":"BEBRO2H","name":"Bebro Two Hotel","entryPoints":{"BEBRO":[]},"body":["BEBRO",["TECWO","S250-"]],"rwy":{"ZSWX03":[["_RWY03BASEL","A52-|S230"],["_RWY0313DME","A42-|S210"],["_RWY0308DME","A26-|S180"],"#027"],"ZSWX21":[["_RWY2113DME","A42-|S210"],["_RWY2108DME","A26-|S180"],"#207"]},"draw":[["BEBRO*","TECWO"],["TECWO","_RWY03BASEL","_RWY0313DME","_RWY0308DME"],["TECWO","_RWY2113DME","_RWY2108DME"]]},
+        "SX3H": {"icao":"SX3H","name":"Nanxun Three Hotel","entryPoints":{"SX":[]},"body":["SX",["MUCKI","S250-"]],"rwy":{"ZSWX03":[["_RWY0313DME","A42-|S210"],["_RWY0308DME","A26-|S180"],"#027"],"ZSWX21":[["_RWY21BASER","A52-|S230"],["_RWY2113DME","A42-|S210"],["_RWY2108DME","A26-|S180"],"#207"]},"draw":[["SX*","MUCKI"],["MUCKI","_RWY0313DME","_RWY0308DME"],["MUCKI","_RWY21BASER","_RWY2113DME","_RWY2108DME"]]},
+        "CASFI1H": {"icao":"CASFI1H","name":"Casfi One Hotel","entryPoints":{"CASFI":[]},"body":["CASFI",["EBETA","S250-"]],"rwy":{"ZSWX03":[["_RWY0313DME","A42-|S210"],["_RWY0308DME","A26-|S180"],"#027"],"ZSWX21":[["_RWY21BASEL","A52-|S230"],["_RWY2113DME","A42-|S210"],["_RWY2108DME","A26-|S180"],"#207"]},"draw":[["CASFI*","EBETA"],["EBETA","_RWY0313DME","_RWY0308DME"],["EBETA","_RWY21BASEL","_RWY2113DME","_RWY2108DME"]]},
+        "ZUHCO2J": {"icao":"ZUHCO2J","name":"Zuhco Two Juliet","entryPoints":{"ZUHCO":[]},"body":["ZUHCO",["AZUKA","S250-"]],"rwy":{"ZSWX03":[["_RWY0313DME","A42-|S210"],["_RWY0308DME","A26-|S180"],"#027"],"ZSWX21":[["_RWY21BASEL","A52-|S230"],["_RWY2113DME","A42-|S210"],["_RWY2108DME","A26-|S180"],"#207"]},"draw":[["ZUHCO*","AZUKA"],["AZUKA","_RWY0313DME","_RWY0308DME"],["AZUKA","_RWY21BASEL","_RWY2113DME","_RWY2108DME"]]},
+        "HOSLO1H": {"icao":"HOSLO1H","name":"Hoslo One Hotel","entryPoints":{"HOSLO":[]},"body":["HOSLO",["NUSOM","S250-"]],"rwy":{"ZSWX03":[["_RWY03BASER","A52-|S230"],["_RWY0313DME","A42-|S210"],["_RWY0308DME","A26-|S180"],"#027"],"ZSWX21":[["_RWY2113DME","A42-|S210"],["_RWY2108DME","A26-|S180"],"#207"]},"draw":[["HOSLO*","NUSOM"],["NUSOM","_RWY03BASER","_RWY0313DME","_RWY0308DME"],["NUSOM","_RWY2113DME","_RWY2108DME"]]}
+    },
     "spawnPatterns": [
         {"origin":"ZSWX","destination":"ZGGG","category":"departure","route":"ZSWX21.CASFI3D.CASFI","altitude":"","speed":"","method":"random","rate":1.05,"airlines":[["cca/b738",1],["ces/a320",1],["ces/a321",1],["ces/e190",1],["csn/a321",1],["csn/e190",1],["csz/b738",1]]},
         {"origin":"ZSWX","destination":"ZBAA","category":"departure","route":"ZSWX21.HOSLO3A.HOSLO","altitude":"","speed":"","method":"random","rate":0.6,"airlines":[["cca/b738",1],["ces/a320",1],["ces/a321",1],["csz/b738",1]]},
@@ -57,34 +71,38 @@
         {"origin":"ZSWX","destination":"","category":"departure","route":"ZSWX21.CASFI3D.CASFI","altitude":"","speed":"","method":"random","rate":0.6,"airlines":[["ces/a320",2],["csz/a320",1],["csz/b738",1]]},
         {"origin":"ZSWX","destination":"","category":"departure","route":"ZSWX21.ZUHCO3A.ZUHCO","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["csz/b738",2],["ces/a320",1]]},
         {"origin":"ZSWX","destination":"","category":"departure","route":"ZSWX21.HOSLO3A.HOSLO","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["csz/b738",2],["cca/b738",1],["ces/a320",1],["csz/a320",1]]},
-        {"origin":"ZSWX","destination":"","category":"departure","route":"ZSWX21.HOSLO3A.HOSLO","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
         {"origin":"ZSWX","destination":"","category":"departure","route":"ZSWX21.ZUHCO3A.ZUHCO","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
-        {"origin":"ZGGG","destination":"ZSWX","category":"arrival","route":"CASFI..EBETA..ZSWX","altitude":[6000,9000],"speed":250,"method":"random","rate":1.05,"airlines":[["cca/b738",1],["ces/a320",1],["ces/a321",1],["ces/e190",1],["csn/a321",1],["csn/e190",1],["csz/b738",1]]},
-        {"origin":"ZBAA","destination":"ZSWX","category":"arrival","route":"HOSLO..NUSOM..ZSWX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.6,"airlines":[["cca/b738",1],["ces/a320",1],["ces/a321",1],["csz/b738",1]]},
-        {"origin":"ZGSZ","destination":"ZSWX","category":"arrival","route":"CASFI..EBETA..ZSWX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.6,"airlines":[["cca/b738",1],["ces/a320",1],["csn/a321",1],["csz/b738",1]]},
-        {"origin":"ZUCK","destination":"ZSWX","category":"arrival","route":"ZUHCO..AZUKA..ZSWX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.6,"airlines":[["cca/b738",1],["ces/a320",1],["csc/a319",1],["csz/b738",1]]},
-        {"origin":"ZUUU","destination":"ZSWX","category":"arrival","route":"ZUHCO..AZUKA..ZSWX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.6,"airlines":[["ces/a320",1],["ces/a321",1],["csc/a320",1],["csz/b738",1]]},
-        {"origin":"ZLXY","destination":"ZSWX","category":"arrival","route":"ZUHCO..AZUKA..ZSWX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["cca/b738",1],["ces/a320",1],["csz/b738",1]]},
-        {"origin":"","destination":"ZSWX","category":"arrival","route":"BEBRO..TECWO..ZSWX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.15,"airlines":[["csz/b738",1]]},
-        {"origin":"","destination":"ZSWX","category":"arrival","route":"SX..MUCKI..ZSWX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.75,"airlines":[["csz/b738",3],["ces/a321",2]]},
-        {"origin":"","destination":"ZSWX","category":"arrival","route":"CASFI..EBETA..ZSWX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.6,"airlines":[["ces/a320",2],["csz/a320",1],["csz/b738",1]]},
-        {"origin":"","destination":"ZSWX","category":"arrival","route":"ZUHCO..AZUKA..ZSWX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["csz/b738",2],["ces/a320",1]]},
-        {"origin":"","destination":"ZSWX","category":"arrival","route":"HOSLO..NUSOM..ZSWX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.75,"airlines":[["csz/b738",2],["cca/b738",1],["ces/a320",1],["csz/a320",1]]},
-        {"origin":"","destination":"ZSWX","category":"arrival","route":"HOSLO..NUSOM..ZSWX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
-        {"origin":"","destination":"ZSWX","category":"arrival","route":"ZUHCO..AZUKA..ZSWX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]}
+        {"origin":"ZSWX","destination":"","category":"departure","route":"ZSWX21.HOSLO3A.HOSLO","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
+        {"origin":"ZGGG","destination":"ZSWX","category":"arrival","route":"CASFI.CASFI1H.ZSWX21","altitude":[6000,9000],"speed":250,"method":"random","rate":1.05,"airlines":[["cca/b738",1],["ces/a320",1],["ces/a321",1],["ces/e190",1],["csn/a321",1],["csn/e190",1],["csz/b738",1]]},
+        {"origin":"ZBAA","destination":"ZSWX","category":"arrival","route":"HOSLO.HOSLO1H.ZSWX21","altitude":[6000,9000],"speed":250,"method":"random","rate":0.6,"airlines":[["cca/b738",1],["ces/a320",1],["ces/a321",1],["csz/b738",1]]},
+        {"origin":"ZGSZ","destination":"ZSWX","category":"arrival","route":"CASFI.CASFI1H.ZSWX21","altitude":[6000,9000],"speed":250,"method":"random","rate":0.6,"airlines":[["cca/b738",1],["ces/a320",1],["csn/a321",1],["csz/b738",1]]},
+        {"origin":"ZUCK","destination":"ZSWX","category":"arrival","route":"ZUHCO.ZUHCO2J.ZSWX21","altitude":[6000,9000],"speed":250,"method":"random","rate":0.6,"airlines":[["cca/b738",1],["ces/a320",1],["csc/a319",1],["csz/b738",1]]},
+        {"origin":"ZUUU","destination":"ZSWX","category":"arrival","route":"ZUHCO.ZUHCO2J.ZSWX21","altitude":[6000,9000],"speed":250,"method":"random","rate":0.6,"airlines":[["ces/a320",1],["ces/a321",1],["csc/a320",1],["csz/b738",1]]},
+        {"origin":"ZLXY","destination":"ZSWX","category":"arrival","route":"ZUHCO.ZUHCO2J.ZSWX21","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["cca/b738",1],["ces/a320",1],["csz/b738",1]]},
+        {"origin":"","destination":"ZSWX","category":"arrival","route":"BEBRO.BEBRO2H.ZSWX21","altitude":[6000,9000],"speed":250,"method":"random","rate":0.15,"airlines":[["csz/b738",1]]},
+        {"origin":"","destination":"ZSWX","category":"arrival","route":"SX.SX3H.ZSWX21","altitude":[6000,9000],"speed":250,"method":"random","rate":0.75,"airlines":[["csz/b738",3],["ces/a321",2]]},
+        {"origin":"","destination":"ZSWX","category":"arrival","route":"CASFI.CASFI1H.ZSWX21","altitude":[6000,9000],"speed":250,"method":"random","rate":0.6,"airlines":[["ces/a320",2],["csz/a320",1],["csz/b738",1]]},
+        {"origin":"","destination":"ZSWX","category":"arrival","route":"ZUHCO.ZUHCO2J.ZSWX21","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["csz/b738",2],["ces/a320",1]]},
+        {"origin":"","destination":"ZSWX","category":"arrival","route":"HOSLO.HOSLO1H.ZSWX21","altitude":[6000,9000],"speed":250,"method":"random","rate":0.75,"airlines":[["csz/b738",2],["cca/b738",1],["ces/a320",1],["csz/a320",1]]},
+        {"origin":"","destination":"ZSWX","category":"arrival","route":"ZUHCO.ZUHCO2J.ZSWX21","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
+        {"origin":"","destination":"ZSWX","category":"arrival","route":"HOSLO.HOSLO1H.ZSWX21","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]}
     ],
     "maps": [
         {"name":"Base Map","lines": [
-            [31.7062,121.2213,31.571,120.7102],
-            [31.571,120.7102,31.497,120.4304],
-            [30.8833,120.417,31.2472,120.4249],
-            [31.2472,120.4249,31.497,120.4304],
-            [30.909,119.9717,31.2889,120.2681],
-            [31.2889,120.2681,31.497,120.4304],
-            [31.5316,119.6032,31.5092,120.1377],
-            [31.5092,120.1377,31.497,120.4304],
-            [32.1976,120.3272,31.7448,120.3939],
-            [31.7448,120.3939,31.497,120.4304]
+            [31.4838,120.4247,31.5109,120.4364]
+        ]},
+        {"name":"Coastline","lines": [
+            [31.843,121.19,31.784,121.105],
+            [31.784,121.105,31.726,121.09],
+            [31.726,121.09,31.71,121.116],
+            [31.71,121.116,31.702,121.109],
+            [31.702,121.109,31.701,121.129],
+            [31.701,121.129,31.693,121.12],
+            [31.693,121.12,31.699,121.131],
+            [31.699,121.131,31.684,121.156],
+            [31.684,121.156,31.675,121.15],
+            [31.675,121.15,31.673,121.177],
+            [31.673,121.177,31.618,121.249]
         ]},
         {"name":"Extended Runway Centrelines","lines": [
             [31.4838,120.4247,31.3275,120.3576],

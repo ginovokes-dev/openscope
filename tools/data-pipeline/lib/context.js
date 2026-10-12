@@ -7,13 +7,14 @@ const data = require('./data');
 const repo = require('./repo');
 const { buildRouteIndex } = require('./routes');
 const { repairAirlineAttribution } = require('./repair');
+const { loadCoast } = require('./coast');
 
 /**
  * @param {string} dataDir
  * @param {{excludeDefunct?: boolean}} options
  * @returns {Object}
  */
-function loadContext(dataDir, { excludeDefunct = false, repairAttribution = true } = {}) {
+function loadContext(dataDir, { excludeDefunct = false, repairAttribution = true, coastFile = null } = {}) {
     data.checkDataDir(dataDir);
 
     const ourAirports = data.loadOurAirports(dataDir);
@@ -44,6 +45,7 @@ function loadContext(dataDir, { excludeDefunct = false, repairAttribution = true
     });
 
     return {
+        coast: coastFile ? loadCoast(coastFile) : null,
         dataDir,
         excludeDefunct,
         airports: ourAirports.airports,

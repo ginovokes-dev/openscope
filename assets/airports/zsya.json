@@ -30,18 +30,31 @@
         "OF": [32.66,118.582,"bantaji"],
         "PADOS": [32.58343,119.48385],
         "_RWY1704DME": [32.64585,119.69698],
-        "_RWY3504DME": [32.48797,119.74058]
+        "_RWY3504DME": [32.48797,119.74058],
+        "_RWY1713DME": [32.79183,119.65652],
+        "_RWY1708DME": [32.71073,119.67901],
+        "_RWY3513DME": [32.34196,119.78077],
+        "_RWY3508DME": [32.42308,119.75845],
+        "_RWY35BASEL": [32.51015,119.9278],
+        "_RWY17BASER": [32.68859,119.87852],
+        "_RWY17BASEL": [32.61665,119.5118],
+        "_RWY35BASER": [32.43821,119.56108]
     },
     "runways": [
         {"name":["17","35"],"end":[[32.58096,119.71491,"16ft"],[32.55286,119.72267,"16ft"]],"ils":[true,true]}
     ],
     "sids": {
-        "GARAT3B": {"icao":"GARAT3B","name":"Garat Three Bravo","rwy":{"ZSYA17":["_RWY3504DME"],"ZSYA35":["_RWY1704DME"]},"body":[],"exitPoints":{"GARAT":["GARAT"]},"draw":[["ZSYA","GARAT*"]]},
-        "IPOMA3E": {"icao":"IPOMA3E","name":"Ipoma Three Echo","rwy":{"ZSYA17":["_RWY3504DME"],"ZSYA35":["_RWY1704DME"]},"body":[],"exitPoints":{"IPOMA":["IPOMA"]},"draw":[["ZSYA","IPOMA*"]]},
-        "GT1D": {"icao":"GT1D","name":"Qunli One Delta","rwy":{"ZSYA17":["_RWY3504DME"],"ZSYA35":["_RWY1704DME"]},"body":[],"exitPoints":{"GT":["GT"]},"draw":[["ZSYA","GT*"]]},
-        "OF1A": {"icao":"OF1A","name":"Bantaji One Alpha","rwy":{"ZSYA17":["_RWY3504DME"],"ZSYA35":["_RWY1704DME"]},"body":[],"exitPoints":{"OF":["OF"]},"draw":[["ZSYA","OF*"]]}
+        "GARAT3B": {"icao":"GARAT3B","name":"Garat Three Bravo","rwy":{"ZSYA17":[["_RWY3504DME","A15+"]],"ZSYA35":[["_RWY1704DME","A15+"]]},"body":[],"exitPoints":{"GARAT":["GARAT"]},"draw":[["ZSYA","GARAT*"]]},
+        "IPOMA3E": {"icao":"IPOMA3E","name":"Ipoma Three Echo","rwy":{"ZSYA17":[["_RWY3504DME","A15+"]],"ZSYA35":[["_RWY1704DME","A15+"]]},"body":[],"exitPoints":{"IPOMA":["IPOMA"]},"draw":[["ZSYA","IPOMA*"]]},
+        "GT1D": {"icao":"GT1D","name":"Qunli One Delta","rwy":{"ZSYA17":[["_RWY3504DME","A15+"]],"ZSYA35":[["_RWY1704DME","A15+"]]},"body":[],"exitPoints":{"GT":["GT"]},"draw":[["ZSYA","GT*"]]},
+        "OF1A": {"icao":"OF1A","name":"Bantaji One Alpha","rwy":{"ZSYA17":[["_RWY3504DME","A15+"]],"ZSYA35":[["_RWY1704DME","A15+"]]},"body":[],"exitPoints":{"OF":["OF"]},"draw":[["ZSYA","OF*"]]}
     },
-    "stars": {},
+    "stars": {
+        "GARAT2L": {"icao":"GARAT2L","name":"Garat Two Lima","entryPoints":{"GARAT":[]},"body":["GARAT",["LIZIL","S250-"]],"rwy":{"ZSYA17":[["_RWY1713DME","A42-|S210"],["_RWY1708DME","A26-|S180"],"#173"],"ZSYA35":[["_RWY35BASEL","A52-|S230"],["_RWY3513DME","A42-|S210"],["_RWY3508DME","A26-|S180"],"#353"]},"draw":[["GARAT*","LIZIL"],["LIZIL","_RWY1713DME","_RWY1708DME"],["LIZIL","_RWY35BASEL","_RWY3513DME","_RWY3508DME"]]},
+        "IPOMA3I": {"icao":"IPOMA3I","name":"Ipoma Three India","entryPoints":{"IPOMA":[]},"body":["IPOMA",["AWIJA","S250-"]],"rwy":{"ZSYA17":[["_RWY17BASER","A52-|S230"],["_RWY1713DME","A42-|S210"],["_RWY1708DME","A26-|S180"],"#173"],"ZSYA35":[["_RWY3513DME","A42-|S210"],["_RWY3508DME","A26-|S180"],"#353"]},"draw":[["IPOMA*","AWIJA"],["AWIJA","_RWY17BASER","_RWY1713DME","_RWY1708DME"],["AWIJA","_RWY3513DME","_RWY3508DME"]]},
+        "GT3G": {"icao":"GT3G","name":"Qunli Three Golf","entryPoints":{"GT":[]},"body":["GT",["HUJOM","S250-"]],"rwy":{"ZSYA17":[["_RWY17BASEL","A52-|S230"],["_RWY1713DME","A42-|S210"],["_RWY1708DME","A26-|S180"],"#173"],"ZSYA35":[["_RWY3513DME","A42-|S210"],["_RWY3508DME","A26-|S180"],"#353"]},"draw":[["GT*","HUJOM"],["HUJOM","_RWY17BASEL","_RWY1713DME","_RWY1708DME"],["HUJOM","_RWY3513DME","_RWY3508DME"]]},
+        "OF1J": {"icao":"OF1J","name":"Bantaji One Juliet","entryPoints":{"OF":[]},"body":["OF",["PADOS","S250-"]],"rwy":{"ZSYA17":[["_RWY1713DME","A42-|S210"],["_RWY1708DME","A26-|S180"],"#173"],"ZSYA35":[["_RWY35BASER","A52-|S230"],["_RWY3513DME","A42-|S210"],["_RWY3508DME","A26-|S180"],"#353"]},"draw":[["OF*","PADOS"],["PADOS","_RWY1713DME","_RWY1708DME"],["PADOS","_RWY35BASER","_RWY3513DME","_RWY3508DME"]]}
+    },
     "spawnPatterns": [
         {"origin":"ZSYA","destination":"ZBAA","category":"departure","route":"ZSYA17.GARAT3B.GARAT","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["cca/b738",1]]},
         {"origin":"ZSYA","destination":"ZGGG","category":"departure","route":"ZSYA17.GT1D.GT","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["csn/b738",1]]},
@@ -51,27 +64,20 @@
         {"origin":"ZSYA","destination":"","category":"departure","route":"ZSYA17.GARAT3B.GARAT","altitude":"","speed":"","method":"random","rate":0.8,"airlines":[["csn/a320",2]]},
         {"origin":"ZSYA","destination":"","category":"departure","route":"ZSYA17.GT1D.GT","altitude":"","speed":"","method":"random","rate":0.8,"airlines":[["csn/a320",1],["csz/a320",1]]},
         {"origin":"ZSYA","destination":"","category":"departure","route":"ZSYA17.OF1A.OF","altitude":"","speed":"","method":"random","rate":1.2,"airlines":[["cca/b738",1],["csc/a319",1],["csz/a320",1]]},
-        {"origin":"ZSYA","destination":"","category":"departure","route":"ZSYA17.OF1A.OF","altitude":"","speed":"","method":"random","rate":1.6,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",1],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
-        {"origin":"ZBAA","destination":"ZSYA","category":"arrival","route":"GARAT..LIZIL..ZSYA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["cca/b738",1]]},
-        {"origin":"ZGGG","destination":"ZSYA","category":"arrival","route":"GT..HUJOM..ZSYA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["csn/b738",1]]},
-        {"origin":"ZGHA","destination":"ZSYA","category":"arrival","route":"GT..HUJOM..ZSYA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["csn/a320",1]]},
-        {"origin":"ZGSZ","destination":"ZSYA","category":"arrival","route":"GT..HUJOM..ZSYA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["csz/a320",1]]},
-        {"origin":"ZHCC","destination":"ZSYA","category":"arrival","route":"OF..PADOS..ZSYA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["csn/b738",1]]},
-        {"origin":"","destination":"ZSYA","category":"arrival","route":"GARAT..LIZIL..ZSYA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.8,"airlines":[["csn/a320",2]]},
-        {"origin":"","destination":"ZSYA","category":"arrival","route":"GT..HUJOM..ZSYA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.8,"airlines":[["csn/a320",1],["csz/a320",1]]},
-        {"origin":"","destination":"ZSYA","category":"arrival","route":"OF..PADOS..ZSYA","altitude":[4000,7000],"speed":250,"method":"random","rate":1.2,"airlines":[["cca/b738",1],["csc/a319",1],["csz/a320",1]]},
-        {"origin":"","destination":"ZSYA","category":"arrival","route":"OF..PADOS..ZSYA","altitude":[4000,7000],"speed":250,"method":"random","rate":1.6,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",1],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]}
+        {"origin":"ZSYA","destination":"","category":"departure","route":"ZSYA17.GARAT3B.GARAT","altitude":"","speed":"","method":"random","rate":1.6,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",1],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
+        {"origin":"ZBAA","destination":"ZSYA","category":"arrival","route":"GARAT.GARAT2L.ZSYA17","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["cca/b738",1]]},
+        {"origin":"ZGGG","destination":"ZSYA","category":"arrival","route":"GT.GT3G.ZSYA17","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["csn/b738",1]]},
+        {"origin":"ZGHA","destination":"ZSYA","category":"arrival","route":"GT.GT3G.ZSYA17","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["csn/a320",1]]},
+        {"origin":"ZGSZ","destination":"ZSYA","category":"arrival","route":"GT.GT3G.ZSYA17","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["csz/a320",1]]},
+        {"origin":"ZHCC","destination":"ZSYA","category":"arrival","route":"OF.OF1J.ZSYA17","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["csn/b738",1]]},
+        {"origin":"","destination":"ZSYA","category":"arrival","route":"GARAT.GARAT2L.ZSYA17","altitude":[4000,7000],"speed":250,"method":"random","rate":0.8,"airlines":[["csn/a320",2]]},
+        {"origin":"","destination":"ZSYA","category":"arrival","route":"GT.GT3G.ZSYA17","altitude":[4000,7000],"speed":250,"method":"random","rate":0.8,"airlines":[["csn/a320",1],["csz/a320",1]]},
+        {"origin":"","destination":"ZSYA","category":"arrival","route":"OF.OF1J.ZSYA17","altitude":[4000,7000],"speed":250,"method":"random","rate":1.2,"airlines":[["cca/b738",1],["csc/a319",1],["csz/a320",1]]},
+        {"origin":"","destination":"ZSYA","category":"arrival","route":"GARAT.GARAT2L.ZSYA17","altitude":[4000,7000],"speed":250,"method":"random","rate":1.6,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",1],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]}
     ],
     "maps": [
         {"name":"Base Map","lines": [
-            [33.0809,119.8939,32.7557,119.7845],
-            [32.7557,119.7845,32.5634,119.7198],
-            [32.3664,120.3137,32.4902,119.9405],
-            [32.4902,119.9405,32.5634,119.7198],
-            [31.7833,119.052,32.4013,119.581],
-            [32.4013,119.581,32.5634,119.7198],
-            [32.66,118.582,32.5834,119.4838],
-            [32.5834,119.4838,32.5634,119.7198]
+            [32.581,119.7149,32.5529,119.7227]
         ]},
         {"name":"Extended Runway Centrelines","lines": [
             [32.581,119.7149,32.7432,119.67],

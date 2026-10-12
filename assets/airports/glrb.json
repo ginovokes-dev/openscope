@@ -15,7 +15,7 @@
     "wind": {"angle":40,"speed":10},
     "arrivalRunway": "04",
     "departureRunway": "04",
-    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "defaultMaps": ["Base Map","Coastline","Extended Runway Centrelines"],
     "airspace": [
         {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[6.6368,-10.3999],[6.6327,-10.2937],[6.6015,-10.1922],[6.5452,-10.1023],[6.4676,-10.03],[6.3742,-9.9805],[6.2712,-9.9569],[6.1656,-9.961],[6.0647,-9.9924],[5.9753,-10.0491],[5.9035,-10.1271],[5.8542,-10.2211],[5.8308,-10.3247],[5.8349,-10.4309],[5.8661,-10.5324],[5.9224,-10.6223],[5.9999,-10.6946],[6.0934,-10.7441],[6.1964,-10.7677],[6.302,-10.7636],[6.4029,-10.7322],[6.4923,-10.6755],[6.5641,-10.5975],[6.6133,-10.5035]]}
     ],
@@ -30,40 +30,74 @@
         "GEMWO": [6.58298,-10.77393],
         "VOCAR": [6.36353,-10.51524],
         "_RWY0404DME": [6.16366,-10.4045],
-        "_RWY2204DME": [6.3011,-10.32179]
+        "_RWY2204DME": [6.3011,-10.32179],
+        "_RWY0413DME": [6.03501,-10.48188],
+        "_RWY0408DME": [6.10648,-10.4389],
+        "_RWY2213DME": [6.42972,-10.24433],
+        "_RWY2208DME": [6.35826,-10.28737],
+        "_RWY04BASER": [6.23664,-10.54658],
+        "_RWY04BASEL": [6.07372,-10.27264],
+        "_RWY22BASER": [6.23094,-10.17802],
+        "_RWY22BASEL": [6.39386,-10.45196]
     },
     "runways": [
         {"name":["04","22"],"end":[[6.22083,-10.3701,"29ft"],[6.24393,-10.3562,"25ft"]],"ils":[true,true]}
     ],
     "sids": {
-        "ACEMO1C": {"icao":"ACEMO1C","name":"Acemo One Charlie","rwy":{"GLRB04":["_RWY2204DME"],"GLRB22":["_RWY0404DME"]},"body":[],"exitPoints":{"ACEMO":["ACEMO"]},"draw":[["GLRB","ACEMO*"]]},
-        "ZOMBU3A": {"icao":"ZOMBU3A","name":"Zombu Three Alpha","rwy":{"GLRB04":["_RWY2204DME"],"GLRB22":["_RWY0404DME"]},"body":[],"exitPoints":{"ZOMBU":["ZOMBU"]},"draw":[["GLRB","ZOMBU*"]]},
-        "REKUV1B": {"icao":"REKUV1B","name":"Rekuv One Bravo","rwy":{"GLRB04":["_RWY2204DME"],"GLRB22":["_RWY0404DME"]},"body":[],"exitPoints":{"REKUV":["REKUV"]},"draw":[["GLRB","REKUV*"]]},
-        "GEMWO1F": {"icao":"GEMWO1F","name":"Gemwo One Foxtrot","rwy":{"GLRB04":["_RWY2204DME"],"GLRB22":["_RWY0404DME"]},"body":[],"exitPoints":{"GEMWO":["GEMWO"]},"draw":[["GLRB","GEMWO*"]]}
+        "ACEMO1C": {"icao":"ACEMO1C","name":"Acemo One Charlie","rwy":{"GLRB04":[["_RWY2204DME","A15+"]],"GLRB22":[["_RWY0404DME","A15+"]]},"body":[],"exitPoints":{"ACEMO":["ACEMO"]},"draw":[["GLRB","ACEMO*"]]},
+        "ZOMBU3A": {"icao":"ZOMBU3A","name":"Zombu Three Alpha","rwy":{"GLRB04":[["_RWY2204DME","A15+"]],"GLRB22":[["_RWY0404DME","A15+"]]},"body":[],"exitPoints":{"ZOMBU":["ZOMBU"]},"draw":[["GLRB","ZOMBU*"]]},
+        "REKUV1B": {"icao":"REKUV1B","name":"Rekuv One Bravo","rwy":{"GLRB04":[["_RWY2204DME","A15+"]],"GLRB22":[["_RWY0404DME","A15+"]]},"body":[],"exitPoints":{"REKUV":["REKUV"]},"draw":[["GLRB","REKUV*"]]},
+        "GEMWO1F": {"icao":"GEMWO1F","name":"Gemwo One Foxtrot","rwy":{"GLRB04":[["_RWY2204DME","A15+"]],"GLRB22":[["_RWY0404DME","A15+"]]},"body":[],"exitPoints":{"GEMWO":["GEMWO"]},"draw":[["GLRB","GEMWO*"]]}
     },
-    "stars": {},
+    "stars": {
+        "ACEMO1G": {"icao":"ACEMO1G","name":"Acemo One Golf","entryPoints":{"ACEMO":[]},"body":["ACEMO",["ARAKA","S250-"]],"rwy":{"GLRB04":[["_RWY04BASER","A52-|S230"],["_RWY0413DME","A42-|S210"],["_RWY0408DME","A26-|S180"],"#036"],"GLRB22":[["_RWY2213DME","A42-|S210"],["_RWY2208DME","A26-|S180"],"#216"]},"draw":[["ACEMO*","ARAKA"],["ARAKA","_RWY04BASER","_RWY0413DME","_RWY0408DME"],["ARAKA","_RWY2213DME","_RWY2208DME"]]},
+        "ZOMBU1K": {"icao":"ZOMBU1K","name":"Zombu One Kilo","entryPoints":{"ZOMBU":[]},"body":["ZOMBU",["HOTCI","S250-"]],"rwy":{"GLRB04":[["_RWY04BASEL","A52-|S230"],["_RWY0413DME","A42-|S210"],["_RWY0408DME","A26-|S180"],"#036"],"GLRB22":[["_RWY2213DME","A42-|S210"],["_RWY2208DME","A26-|S180"],"#216"]},"draw":[["ZOMBU*","HOTCI"],["HOTCI","_RWY04BASEL","_RWY0413DME","_RWY0408DME"],["HOTCI","_RWY2213DME","_RWY2208DME"]]},
+        "REKUV1I": {"icao":"REKUV1I","name":"Rekuv One India","entryPoints":{"REKUV":[]},"body":["REKUV",["FIBJO","S250-"]],"rwy":{"GLRB04":[["_RWY0413DME","A42-|S210"],["_RWY0408DME","A26-|S180"],"#036"],"GLRB22":[["_RWY22BASER","A52-|S230"],["_RWY2213DME","A42-|S210"],["_RWY2208DME","A26-|S180"],"#216"]},"draw":[["REKUV*","FIBJO"],["FIBJO","_RWY0413DME","_RWY0408DME"],["FIBJO","_RWY22BASER","_RWY2213DME","_RWY2208DME"]]},
+        "GEMWO1J": {"icao":"GEMWO1J","name":"Gemwo One Juliet","entryPoints":{"GEMWO":[]},"body":["GEMWO",["VOCAR","S250-"]],"rwy":{"GLRB04":[["_RWY04BASER","A52-|S230"],["_RWY0413DME","A42-|S210"],["_RWY0408DME","A26-|S180"],"#036"],"GLRB22":[["_RWY22BASEL","A52-|S230"],["_RWY2213DME","A42-|S210"],["_RWY2208DME","A26-|S180"],"#216"]},"draw":[["GEMWO*","VOCAR"],["VOCAR","_RWY04BASER","_RWY0413DME","_RWY0408DME"],["VOCAR","_RWY22BASEL","_RWY2213DME","_RWY2208DME"]]}
+    },
     "spawnPatterns": [
         {"origin":"GLRB","destination":"GFLL","category":"departure","route":"GLRB04.GEMWO1F.GEMWO","altitude":"","speed":"","method":"random","rate":2.14,"airlines":[["afr/a332",1],["baw/b763",1],["dat/a333",1],["ram/b737",1],["ram/b738",1]]},
         {"origin":"GLRB","destination":"DGAA","category":"departure","route":"GLRB04.ZOMBU3A.ZOMBU","altitude":"","speed":"","method":"random","rate":0.85,"airlines":[["dal/b763",1],["kqa/b738",1]]},
         {"origin":"GLRB","destination":"GMMN","category":"departure","route":"GLRB04.ACEMO1C.ACEMO","altitude":"","speed":"","method":"random","rate":0.85,"airlines":[["ram/b737",1],["ram/b738",1]]},
         {"origin":"GLRB","destination":"EBBR","category":"departure","route":"GLRB04.ACEMO1C.ACEMO","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["dat/a333",1]]},
         {"origin":"GLRB","destination":"","category":"departure","route":"GLRB04.ACEMO1C.ACEMO","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["afr/a332",1]]},
-        {"origin":"GFLL","destination":"GLRB","category":"arrival","route":"GEMWO..VOCAR..GLRB","altitude":[4000,7000],"speed":250,"method":"random","rate":2.14,"airlines":[["afr/a332",1],["baw/b763",1],["dat/a333",1],["ram/b737",1],["ram/b738",1]]},
-        {"origin":"DGAA","destination":"GLRB","category":"arrival","route":"ZOMBU..HOTCI..GLRB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.85,"airlines":[["dal/b763",1],["kqa/b738",1]]},
-        {"origin":"GMMN","destination":"GLRB","category":"arrival","route":"ACEMO..ARAKA..GLRB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.85,"airlines":[["ram/b737",1],["ram/b738",1]]},
-        {"origin":"EBBR","destination":"GLRB","category":"arrival","route":"ACEMO..ARAKA..GLRB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.43,"airlines":[["dat/a333",1]]},
-        {"origin":"","destination":"GLRB","category":"arrival","route":"ACEMO..ARAKA..GLRB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.43,"airlines":[["afr/a332",1]]}
+        {"origin":"GFLL","destination":"GLRB","category":"arrival","route":"GEMWO.GEMWO1J.GLRB04","altitude":[4000,7000],"speed":250,"method":"random","rate":2.14,"airlines":[["afr/a332",1],["baw/b763",1],["dat/a333",1],["ram/b737",1],["ram/b738",1]]},
+        {"origin":"DGAA","destination":"GLRB","category":"arrival","route":"ZOMBU.ZOMBU1K.GLRB04","altitude":[4000,7000],"speed":250,"method":"random","rate":0.85,"airlines":[["dal/b763",1],["kqa/b738",1]]},
+        {"origin":"GMMN","destination":"GLRB","category":"arrival","route":"ACEMO.ACEMO1G.GLRB04","altitude":[4000,7000],"speed":250,"method":"random","rate":0.85,"airlines":[["ram/b737",1],["ram/b738",1]]},
+        {"origin":"EBBR","destination":"GLRB","category":"arrival","route":"ACEMO.ACEMO1G.GLRB04","altitude":[4000,7000],"speed":250,"method":"random","rate":0.43,"airlines":[["dat/a333",1]]},
+        {"origin":"","destination":"GLRB","category":"arrival","route":"ACEMO.ACEMO1G.GLRB04","altitude":[4000,7000],"speed":250,"method":"random","rate":0.43,"airlines":[["afr/a332",1]]}
     ],
     "maps": [
         {"name":"Base Map","lines": [
-            [6.7644,-10.2736,6.431,-10.3293],
-            [6.431,-10.3293,6.2338,-10.3623],
-            [6.2055,-9.8219,6.2233,-10.1615],
-            [6.2233,-10.1615,6.2338,-10.3623],
-            [5.7341,-10.5628,6.0481,-10.4368],
-            [6.0481,-10.4368,6.2338,-10.3623],
-            [6.583,-10.7739,6.3635,-10.5152],
-            [6.3635,-10.5152,6.2338,-10.3623]
+            [6.2208,-10.3701,6.2439,-10.3562]
+        ]},
+        {"name":"Coastline","lines": [
+            [5.703,-9.867,5.857,-10.061],
+            [5.857,-10.061,5.855,-10.046],
+            [5.855,-10.046,5.869,-10.062],
+            [5.869,-10.062,5.888,-10.053],
+            [5.888,-10.053,5.919,-10.07],
+            [5.919,-10.07,5.937,-10.06],
+            [5.937,-10.06,5.926,-10.076],
+            [5.926,-10.076,5.909,-10.069],
+            [5.909,-10.069,5.969,-10.149],
+            [5.969,-10.149,5.987,-10.195],
+            [5.987,-10.195,6.05,-10.237],
+            [6.05,-10.237,6.103,-10.36],
+            [6.103,-10.36,6.144,-10.393],
+            [6.144,-10.393,6.233,-10.694],
+            [6.233,-10.694,6.257,-10.712],
+            [6.257,-10.712,6.293,-10.794],
+            [6.293,-10.794,6.313,-10.818],
+            [6.313,-10.818,6.332,-10.8],
+            [6.332,-10.8,6.349,-10.813],
+            [6.349,-10.813,6.335,-10.8],
+            [6.335,-10.8,6.347,-10.794],
+            [6.347,-10.794,6.357,-10.796],
+            [6.357,-10.796,6.351,-10.811],
+            [6.351,-10.811,6.359,-10.793],
+            [6.359,-10.793,6.379,-10.799],
+            [6.379,-10.799,6.466,-10.871]
         ]},
         {"name":"Extended Runway Centrelines","lines": [
             [6.2208,-10.3701,6.0779,-10.4561],

@@ -15,7 +15,7 @@
     "wind": {"angle":130,"speed":11},
     "arrivalRunway": "14",
     "departureRunway": "14",
-    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "defaultMaps": ["Base Map","Coastline","Extended Runway Centrelines"],
     "airspace": [
         {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[20.6557,85.8117],[20.6426,85.9235],[20.6029,86.0278],[20.5392,86.1176],[20.4558,86.1868],[20.3585,86.2306],[20.2538,86.2461],[20.149,86.2322],[20.0511,86.1898],[19.9669,86.1219],[19.902,86.033],[19.8609,85.9293],[19.8463,85.8178],[19.8594,85.706],[19.8991,85.6017],[19.9629,85.5119],[20.0462,85.4427],[20.1436,85.3989],[20.2482,85.3834],[20.353,85.3973],[20.4509,85.4397],[20.5352,85.5076],[20.6001,85.5965],[20.6412,85.7002]]}
     ],
@@ -32,19 +32,40 @@
         "_RWY1404DME": [20.31097,85.76587],
         "_RWY3204DME": [20.18712,85.8624],
         "_RWY0504DME": [20.19885,85.75738],
-        "_RWY2304DME": [20.28974,85.87815]
+        "_RWY2304DME": [20.28974,85.87815],
+        "_RWY1413DME": [20.43193,85.67142],
+        "_RWY1408DME": [20.36474,85.72391],
+        "_RWY3213DME": [20.06607,85.95656],
+        "_RWY3208DME": [20.13332,85.90427],
+        "_RWY0513DME": [20.10497,85.63291],
+        "_RWY0508DME": [20.15713,85.70204],
+        "_RWY2313DME": [20.38345,86.00292],
+        "_RWY2308DME": [20.3314,85.93358],
+        "_RWY14BASER": [20.41862,85.89363],
+        "_RWY32BASEL": [20.27073,86.0089],
+        "_RWY05BASER": [20.31746,85.63276],
+        "_RWY05BASEL": [20.06994,85.84441],
+        "_RWY23BASER": [20.18458,85.99673],
+        "_RWY14BASEL": [20.23131,85.6206],
+        "_RWY32BASER": [20.08342,85.73586],
+        "_RWY23BASEL": [20.4321,85.78508]
     },
     "runways": [
         {"name":["14","32"],"end":[[20.2572,85.8078,"115ft"],[20.2409,85.8205,"122ft"]],"ils":[true,true]},
         {"name":["05","23"],"end":[[20.24054,85.81276,"113ft"],[20.24806,85.82274,"139ft"]],"ils":[true,true]}
     ],
     "sids": {
-        "ADATA3A": {"icao":"ADATA3A","name":"Adata Three Alpha","rwy":{"VEBS14":["_RWY3204DME"],"VEBS32":["_RWY1404DME"],"VEBS05":["_RWY2304DME"],"VEBS23":["_RWY0504DME"]},"body":[],"exitPoints":{"ADATA":["ADATA"]},"draw":[["VEBS","ADATA*"]]},
-        "OKAMU1A": {"icao":"OKAMU1A","name":"Okamu One Alpha","rwy":{"VEBS14":["_RWY3204DME"],"VEBS32":["_RWY1404DME"],"VEBS05":["_RWY2304DME"],"VEBS23":["_RWY0504DME"]},"body":[],"exitPoints":{"OKAMU":["OKAMU"]},"draw":[["VEBS","OKAMU*"]]},
-        "EBOLA3E": {"icao":"EBOLA3E","name":"Ebola Three Echo","rwy":{"VEBS14":["_RWY3204DME"],"VEBS32":["_RWY1404DME"],"VEBS05":["_RWY2304DME"],"VEBS23":["_RWY0504DME"]},"body":[],"exitPoints":{"EBOLA":["EBOLA"]},"draw":[["VEBS","EBOLA*"]]},
-        "APEGE3D": {"icao":"APEGE3D","name":"Apege Three Delta","rwy":{"VEBS14":["_RWY3204DME"],"VEBS32":["_RWY1404DME"],"VEBS05":["_RWY2304DME"],"VEBS23":["_RWY0504DME"]},"body":[],"exitPoints":{"APEGE":["APEGE"]},"draw":[["VEBS","APEGE*"]]}
+        "ADATA3A": {"icao":"ADATA3A","name":"Adata Three Alpha","rwy":{"VEBS14":[["_RWY3204DME","A16+"]],"VEBS32":[["_RWY1404DME","A16+"]],"VEBS05":[["_RWY2304DME","A16+"]],"VEBS23":[["_RWY0504DME","A16+"]]},"body":[],"exitPoints":{"ADATA":["ADATA"]},"draw":[["VEBS","ADATA*"]]},
+        "OKAMU1A": {"icao":"OKAMU1A","name":"Okamu One Alpha","rwy":{"VEBS14":[["_RWY3204DME","A16+"]],"VEBS32":[["_RWY1404DME","A16+"]],"VEBS05":[["_RWY2304DME","A16+"]],"VEBS23":[["_RWY0504DME","A16+"]]},"body":[],"exitPoints":{"OKAMU":["OKAMU"]},"draw":[["VEBS","OKAMU*"]]},
+        "EBOLA3E": {"icao":"EBOLA3E","name":"Ebola Three Echo","rwy":{"VEBS14":[["_RWY3204DME","A16+"]],"VEBS32":[["_RWY1404DME","A16+"]],"VEBS05":[["_RWY2304DME","A16+"]],"VEBS23":[["_RWY0504DME","A16+"]]},"body":[],"exitPoints":{"EBOLA":["EBOLA"]},"draw":[["VEBS","EBOLA*"]]},
+        "APEGE3D": {"icao":"APEGE3D","name":"Apege Three Delta","rwy":{"VEBS14":[["_RWY3204DME","A16+"]],"VEBS32":[["_RWY1404DME","A16+"]],"VEBS05":[["_RWY2304DME","A16+"]],"VEBS23":[["_RWY0504DME","A16+"]]},"body":[],"exitPoints":{"APEGE":["APEGE"]},"draw":[["VEBS","APEGE*"]]}
     },
-    "stars": {},
+    "stars": {
+        "ADATA2L": {"icao":"ADATA2L","name":"Adata Two Lima","entryPoints":{"ADATA":[]},"body":["ADATA",["TUHAG","S250-"]],"rwy":{"VEBS14":[["_RWY14BASER","A53-|S230"],["_RWY1413DME","A43-|S210"],["_RWY1408DME","A27-|S180"],"#144"],"VEBS32":[["_RWY32BASEL","A53-|S230"],["_RWY3213DME","A43-|S210"],["_RWY3208DME","A27-|S180"],"#324"],"VEBS05":[["_RWY05BASER","A53-|S230"],["_RWY0513DME","A43-|S210"],["_RWY0508DME","A27-|S180"],"#052"],"VEBS23":[["_RWY2313DME","A43-|S210"],["_RWY2308DME","A27-|S180"],"#232"]},"draw":[["ADATA*","TUHAG"],["TUHAG","_RWY14BASER","_RWY1413DME","_RWY1408DME"],["TUHAG","_RWY32BASEL","_RWY3213DME","_RWY3208DME"],["TUHAG","_RWY05BASER","_RWY0513DME","_RWY0508DME"],["TUHAG","_RWY2313DME","_RWY2308DME"]]},
+        "OKAMU2I": {"icao":"OKAMU2I","name":"Okamu Two India","entryPoints":{"OKAMU":[]},"body":["OKAMU",["URUJO","S250-"]],"rwy":{"VEBS14":[["_RWY14BASER","A53-|S230"],["_RWY1413DME","A43-|S210"],["_RWY1408DME","A27-|S180"],"#144"],"VEBS32":[["_RWY3213DME","A43-|S210"],["_RWY3208DME","A27-|S180"],"#324"],"VEBS05":[["_RWY05BASEL","A53-|S230"],["_RWY0513DME","A43-|S210"],["_RWY0508DME","A27-|S180"],"#052"],"VEBS23":[["_RWY23BASER","A53-|S230"],["_RWY2313DME","A43-|S210"],["_RWY2308DME","A27-|S180"],"#232"]},"draw":[["OKAMU*","URUJO"],["URUJO","_RWY14BASER","_RWY1413DME","_RWY1408DME"],["URUJO","_RWY3213DME","_RWY3208DME"],["URUJO","_RWY05BASEL","_RWY0513DME","_RWY0508DME"],["URUJO","_RWY23BASER","_RWY2313DME","_RWY2308DME"]]},
+        "EBOLA2L": {"icao":"EBOLA2L","name":"Ebola Two Lima","entryPoints":{"EBOLA":[]},"body":["EBOLA",["UPECE","S250-"]],"rwy":{"VEBS14":[["_RWY14BASEL","A53-|S230"],["_RWY1413DME","A43-|S210"],["_RWY1408DME","A27-|S180"],"#144"],"VEBS32":[["_RWY32BASER","A53-|S230"],["_RWY3213DME","A43-|S210"],["_RWY3208DME","A27-|S180"],"#324"],"VEBS05":[["_RWY0513DME","A43-|S210"],["_RWY0508DME","A27-|S180"],"#052"],"VEBS23":[["_RWY23BASEL","A53-|S230"],["_RWY2313DME","A43-|S210"],["_RWY2308DME","A27-|S180"],"#232"]},"draw":[["EBOLA*","UPECE"],["UPECE","_RWY14BASEL","_RWY1413DME","_RWY1408DME"],["UPECE","_RWY32BASER","_RWY3213DME","_RWY3208DME"],["UPECE","_RWY0513DME","_RWY0508DME"],["UPECE","_RWY23BASEL","_RWY2313DME","_RWY2308DME"]]},
+        "APEGE3H": {"icao":"APEGE3H","name":"Apege Three Hotel","entryPoints":{"APEGE":[]},"body":["APEGE",["ONORI","S250-"]],"rwy":{"VEBS14":[["_RWY1413DME","A43-|S210"],["_RWY1408DME","A27-|S180"],"#144"],"VEBS32":[["_RWY32BASER","A53-|S230"],["_RWY3213DME","A43-|S210"],["_RWY3208DME","A27-|S180"],"#324"],"VEBS05":[["_RWY05BASER","A53-|S230"],["_RWY0513DME","A43-|S210"],["_RWY0508DME","A27-|S180"],"#052"],"VEBS23":[["_RWY23BASEL","A53-|S230"],["_RWY2313DME","A43-|S210"],["_RWY2308DME","A27-|S180"],"#232"]},"draw":[["APEGE*","ONORI"],["ONORI","_RWY1413DME","_RWY1408DME"],["ONORI","_RWY32BASER","_RWY3213DME","_RWY3208DME"],["ONORI","_RWY05BASER","_RWY0513DME","_RWY0508DME"],["ONORI","_RWY23BASEL","_RWY2313DME","_RWY2308DME"]]}
+    },
     "spawnPatterns": [
         {"origin":"VEBS","destination":"VIDP","category":"departure","route":"VEBS14.APEGE3D.APEGE","altitude":"","speed":"","method":"random","rate":1.44,"airlines":[["aic/a319",1],["aic/a320",1],["aic/crj7",1],["igo/a320",1]]},
         {"origin":"VEBS","destination":"VABB","category":"departure","route":"VEBS14.EBOLA3E.EBOLA","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["aic/a319",1],["igo/a320",1]]},
@@ -53,26 +74,44 @@
         {"origin":"VEBS","destination":"VOHS","category":"departure","route":"VEBS14.EBOLA3E.EBOLA","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["igo/a320",1]]},
         {"origin":"VEBS","destination":"","category":"departure","route":"VEBS14.OKAMU1A.OKAMU","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["aic/crj7",1]]},
         {"origin":"VEBS","destination":"","category":"departure","route":"VEBS14.EBOLA3E.EBOLA","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["igo/a320",1]]},
-        {"origin":"VEBS","destination":"","category":"departure","route":"VEBS14.APEGE3D.APEGE","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
-        {"origin":"VIDP","destination":"VEBS","category":"arrival","route":"APEGE..ONORI..VEBS","altitude":[4000,7000],"speed":250,"method":"random","rate":1.44,"airlines":[["aic/a319",1],["aic/a320",1],["aic/crj7",1],["igo/a320",1]]},
-        {"origin":"VABB","destination":"VEBS","category":"arrival","route":"EBOLA..UPECE..VEBS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["aic/a319",1],["igo/a320",1]]},
-        {"origin":"VECC","destination":"VEBS","category":"arrival","route":"ADATA..TUHAG..VEBS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["igo/a320",1]]},
-        {"origin":"VOBL","destination":"VEBS","category":"arrival","route":"EBOLA..UPECE..VEBS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["igo/a320",1]]},
-        {"origin":"VOHS","destination":"VEBS","category":"arrival","route":"EBOLA..UPECE..VEBS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["igo/a320",1]]},
-        {"origin":"","destination":"VEBS","category":"arrival","route":"OKAMU..URUJO..VEBS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["aic/crj7",1]]},
-        {"origin":"","destination":"VEBS","category":"arrival","route":"EBOLA..UPECE..VEBS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["igo/a320",1]]},
-        {"origin":"","destination":"VEBS","category":"arrival","route":"APEGE..ONORI..VEBS","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]}
+        {"origin":"VEBS","destination":"","category":"departure","route":"VEBS14.ADATA3A.ADATA","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"VIDP","destination":"VEBS","category":"arrival","route":"APEGE.APEGE3H.VEBS14","altitude":[4000,7000],"speed":250,"method":"random","rate":1.44,"airlines":[["aic/a319",1],["aic/a320",1],["aic/crj7",1],["igo/a320",1]]},
+        {"origin":"VABB","destination":"VEBS","category":"arrival","route":"EBOLA.EBOLA2L.VEBS14","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["aic/a319",1],["igo/a320",1]]},
+        {"origin":"VECC","destination":"VEBS","category":"arrival","route":"ADATA.ADATA2L.VEBS14","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["igo/a320",1]]},
+        {"origin":"VOBL","destination":"VEBS","category":"arrival","route":"EBOLA.EBOLA2L.VEBS14","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["igo/a320",1]]},
+        {"origin":"VOHS","destination":"VEBS","category":"arrival","route":"EBOLA.EBOLA2L.VEBS14","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["igo/a320",1]]},
+        {"origin":"","destination":"VEBS","category":"arrival","route":"OKAMU.OKAMU2I.VEBS14","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["aic/crj7",1]]},
+        {"origin":"","destination":"VEBS","category":"arrival","route":"EBOLA.EBOLA2L.VEBS14","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["igo/a320",1]]},
+        {"origin":"","destination":"VEBS","category":"arrival","route":"ADATA.ADATA2L.VEBS14","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]}
     ],
     "maps": [
         {"name":"Base Map","lines": [
-            [20.6308,86.2208,20.3921,85.9656],
-            [20.3921,85.9656,20.251,85.8147],
-            [19.8311,86.1731,20.095,85.9479],
-            [20.095,85.9479,20.251,85.8147],
-            [19.9321,85.353,20.1325,85.6432],
-            [20.1325,85.6432,20.251,85.8147],
-            [20.6509,85.4312,20.3996,85.6722],
-            [20.3996,85.6722,20.251,85.8147]
+            [20.2572,85.8078,20.2409,85.8205],
+            [20.2405,85.8128,20.2481,85.8227]
+        ]},
+        {"name":"Coastline","lines": [
+            [20.034,86.324,20.063,86.288],
+            [20.063,86.288,20.049,86.285],
+            [20.049,86.285,20.061,86.275],
+            [20.061,86.275,20.062,86.262],
+            [20.062,86.262,20.035,86.244],
+            [20.035,86.244,20.034,86.221],
+            [20.034,86.221,20.017,86.265],
+            [20.017,86.265,20.021,86.304],
+            [19.983,86.297,19.991,86.284],
+            [19.991,86.284,19.986,86.274],
+            [19.986,86.274,19.989,86.285],
+            [19.926,86.249,19.91,86.219],
+            [19.91,86.219,19.905,86.238],
+            [19.905,86.238,19.854,86.073],
+            [19.854,86.073,19.742,85.667],
+            [20.041,86.295,20.034,86.308],
+            [20.034,86.308,20.02,86.266],
+            [20.02,86.266,20.03,86.245],
+            [20.03,86.245,20.059,86.269],
+            [20.059,86.269,20.041,86.295],
+            [20.017,86.317,20.027,86.302],
+            [20.027,86.302,20.033,86.314]
         ]},
         {"name":"Extended Runway Centrelines","lines": [
             [20.2572,85.8078,20.3916,85.7029],

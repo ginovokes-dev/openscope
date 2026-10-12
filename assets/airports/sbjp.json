@@ -15,7 +15,7 @@
     "wind": {"angle":150,"speed":6},
     "arrivalRunway": "16",
     "departureRunway": "16",
-    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "defaultMaps": ["Base Map","Coastline","Extended Runway Centrelines"],
     "airspace": [
         {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-6.7704,-35.0954],[-6.7461,-34.9918],[-6.7492,-34.8853],[-6.7796,-34.7834],[-6.8351,-34.6928],[-6.912,-34.6197],[-7.005,-34.5693],[-7.1078,-34.5448],[-7.2134,-34.5479],[-7.3146,-34.5785],[-7.4045,-34.6345],[-7.4769,-34.712],[-7.527,-34.8057],[-7.5513,-34.9093],[-7.5482,-35.0158],[-7.5178,-35.1177],[-7.4623,-35.2083],[-7.3854,-35.2814],[-7.2924,-35.3318],[-7.1896,-35.3563],[-7.084,-35.3532],[-6.9828,-35.3226],[-6.8929,-35.2666],[-6.8205,-35.1891]]}
     ],
@@ -28,17 +28,28 @@
         "MUCIR": [-6.78027,-35.3456],
         "GEJES": [-7.01181,-35.09733],
         "_RWY1604DME": [-7.08969,-35.00187],
-        "_RWY3404DME": [-7.20768,-34.89923]
+        "_RWY3404DME": [-7.20768,-34.89923],
+        "_RWY1613DME": [-6.9762,-35.10053],
+        "_RWY1608DME": [-7.03926,-35.04572],
+        "_RWY3413DME": [-7.32114,-34.80047],
+        "_RWY3408DME": [-7.25811,-34.85534],
+        "_RWY16BASER": [-6.97567,-34.88983],
+        "_RWY16BASEL": [-7.18302,-35.13193],
+        "_RWY34BASER": [-7.32171,-35.01128]
     },
     "runways": [
         {"name":["16","34"],"end":[[-7.14013,-34.958,"217ft"],[-7.15725,-34.94311,"217ft"]],"ils":[true,true]}
     ],
     "sids": {
-        "ICIGU1C": {"icao":"ICIGU1C","name":"Icigu One Charlie","rwy":{"SBJP16":["_RWY3404DME"],"SBJP34":["_RWY1604DME"]},"body":[],"exitPoints":{"ICIGU":["ICIGU"]},"draw":[["SBJP","ICIGU*"]]},
-        "VSA1C": {"icao":"VSA1C","name":"Santo Antao One Charlie","rwy":{"SBJP16":["_RWY3404DME"],"SBJP34":["_RWY1604DME"]},"body":[],"exitPoints":{"VSA":["VSA"]},"draw":[["SBJP","VSA*"]]},
-        "MUCIR2B": {"icao":"MUCIR2B","name":"Mucir Two Bravo","rwy":{"SBJP16":["_RWY3404DME"],"SBJP34":["_RWY1604DME"]},"body":[],"exitPoints":{"MUCIR":["MUCIR"]},"draw":[["SBJP","MUCIR*"]]}
+        "ICIGU1C": {"icao":"ICIGU1C","name":"Icigu One Charlie","rwy":{"SBJP16":[["_RWY3404DME","A17+"]],"SBJP34":[["_RWY1604DME","A17+"]]},"body":[],"exitPoints":{"ICIGU":["ICIGU"]},"draw":[["SBJP","ICIGU*"]]},
+        "VSA1C": {"icao":"VSA1C","name":"Santo Antao One Charlie","rwy":{"SBJP16":[["_RWY3404DME","A17+"]],"SBJP34":[["_RWY1604DME","A17+"]]},"body":[],"exitPoints":{"VSA":["VSA"]},"draw":[["SBJP","VSA*"]]},
+        "MUCIR2B": {"icao":"MUCIR2B","name":"Mucir Two Bravo","rwy":{"SBJP16":[["_RWY3404DME","A17+"]],"SBJP34":[["_RWY1604DME","A17+"]]},"body":[],"exitPoints":{"MUCIR":["MUCIR"]},"draw":[["SBJP","MUCIR*"]]}
     },
-    "stars": {},
+    "stars": {
+        "ICIGU3J": {"icao":"ICIGU3J","name":"Icigu Three Juliet","entryPoints":{"ICIGU":[]},"body":["ICIGU",["COGEJ","S250-"]],"rwy":{"SBJP16":[["_RWY16BASER","A54-|S230"],["_RWY1613DME","A44-|S210"],["_RWY1608DME","A28-|S180"],"#160"],"SBJP34":[["_RWY3413DME","A44-|S210"],["_RWY3408DME","A28-|S180"],"#340"]},"draw":[["ICIGU*","COGEJ"],["COGEJ","_RWY16BASER","_RWY1613DME","_RWY1608DME"],["COGEJ","_RWY3413DME","_RWY3408DME"]]},
+        "VSA1H": {"icao":"VSA1H","name":"Santo Antao One Hotel","entryPoints":{"VSA":[]},"body":["VSA",["CUJLO","S250-"]],"rwy":{"SBJP16":[["_RWY16BASEL","A54-|S230"],["_RWY1613DME","A44-|S210"],["_RWY1608DME","A28-|S180"],"#160"],"SBJP34":[["_RWY3413DME","A44-|S210"],["_RWY3408DME","A28-|S180"],"#340"]},"draw":[["VSA*","CUJLO"],["CUJLO","_RWY16BASEL","_RWY1613DME","_RWY1608DME"],["CUJLO","_RWY3413DME","_RWY3408DME"]]},
+        "MUCIR2J": {"icao":"MUCIR2J","name":"Mucir Two Juliet","entryPoints":{"MUCIR":[]},"body":["MUCIR",["GEJES","S250-"]],"rwy":{"SBJP16":[["_RWY1613DME","A44-|S210"],["_RWY1608DME","A28-|S180"],"#160"],"SBJP34":[["_RWY34BASER","A54-|S230"],["_RWY3413DME","A44-|S210"],["_RWY3408DME","A28-|S180"],"#340"]},"draw":[["MUCIR*","GEJES"],["GEJES","_RWY1613DME","_RWY1608DME"],["GEJES","_RWY34BASER","_RWY3413DME","_RWY3408DME"]]}
+    },
     "spawnPatterns": [
         {"origin":"SBJP","destination":"SBBR","category":"departure","route":"SBJP16.VSA1C.VSA","altitude":"","speed":"","method":"random","rate":1.02,"airlines":[["glo/b738",1],["one/a319",1],["tam/a320",1]]},
         {"origin":"SBJP","destination":"SBGL","category":"departure","route":"SBJP16.VSA1C.VSA","altitude":"","speed":"","method":"random","rate":1.02,"airlines":[["glo/b738",1],["one/a318",1],["tam/a320",1]]},
@@ -46,21 +57,39 @@
         {"origin":"SBJP","destination":"SBFZ","category":"departure","route":"SBJP16.MUCIR2B.MUCIR","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["azu/at72",1]]},
         {"origin":"SBJP","destination":"","category":"departure","route":"SBJP16.VSA1C.VSA","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["azu/at72",1],["azu/e190",1]]},
         {"origin":"SBJP","destination":"","category":"departure","route":"SBJP16.MUCIR2B.MUCIR","altitude":"","speed":"","method":"random","rate":1.25,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
-        {"origin":"SBBR","destination":"SBJP","category":"arrival","route":"VSA..CUJLO..SBJP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.02,"airlines":[["glo/b738",1],["one/a319",1],["tam/a320",1]]},
-        {"origin":"SBGL","destination":"SBJP","category":"arrival","route":"VSA..CUJLO..SBJP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.02,"airlines":[["glo/b738",1],["one/a318",1],["tam/a320",1]]},
-        {"origin":"SBGR","destination":"SBJP","category":"arrival","route":"VSA..CUJLO..SBJP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.68,"airlines":[["glo/b738",1],["tam/a320",1]]},
-        {"origin":"SBFZ","destination":"SBJP","category":"arrival","route":"MUCIR..GEJES..SBJP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.34,"airlines":[["azu/at72",1]]},
-        {"origin":"","destination":"SBJP","category":"arrival","route":"VSA..CUJLO..SBJP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.68,"airlines":[["azu/at72",1],["azu/e190",1]]},
-        {"origin":"","destination":"SBJP","category":"arrival","route":"MUCIR..GEJES..SBJP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.25,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]}
+        {"origin":"SBBR","destination":"SBJP","category":"arrival","route":"VSA.VSA1H.SBJP16","altitude":[4000,7000],"speed":250,"method":"random","rate":1.02,"airlines":[["glo/b738",1],["one/a319",1],["tam/a320",1]]},
+        {"origin":"SBGL","destination":"SBJP","category":"arrival","route":"VSA.VSA1H.SBJP16","altitude":[4000,7000],"speed":250,"method":"random","rate":1.02,"airlines":[["glo/b738",1],["one/a318",1],["tam/a320",1]]},
+        {"origin":"SBGR","destination":"SBJP","category":"arrival","route":"VSA.VSA1H.SBJP16","altitude":[4000,7000],"speed":250,"method":"random","rate":0.68,"airlines":[["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBFZ","destination":"SBJP","category":"arrival","route":"MUCIR.MUCIR2J.SBJP16","altitude":[4000,7000],"speed":250,"method":"random","rate":0.34,"airlines":[["azu/at72",1]]},
+        {"origin":"","destination":"SBJP","category":"arrival","route":"VSA.VSA1H.SBJP16","altitude":[4000,7000],"speed":250,"method":"random","rate":0.68,"airlines":[["azu/at72",1],["azu/e190",1]]},
+        {"origin":"","destination":"SBJP","category":"arrival","route":"MUCIR.MUCIR2J.SBJP16","altitude":[4000,7000],"speed":250,"method":"random","rate":1.25,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]}
     ],
     "maps": [
         {"name":"Base Map","lines": [
-            [-7.0723,-34.4139,-7.1203,-34.7512],
-            [-7.1203,-34.7512,-7.1487,-34.9506],
-            [-8.1065,-35.2873,-7.3374,-35.0169],
-            [-7.3374,-35.0169,-7.1487,-34.9506],
-            [-6.7803,-35.3456,-7.0118,-35.0973],
-            [-7.0118,-35.0973,-7.1487,-34.9506]
+            [-7.1401,-34.958,-7.1573,-34.9431]
+        ]},
+        {"name":"Coastline","lines": [
+            [-6.398,-34.981,-6.638,-34.961],
+            [-6.638,-34.961,-6.668,-34.954],
+            [-6.668,-34.954,-6.69,-34.93],
+            [-6.69,-34.93,-6.77,-34.937],
+            [-6.77,-34.937,-6.767,-34.919],
+            [-6.767,-34.919,-6.84,-34.909],
+            [-6.84,-34.909,-6.883,-34.888],
+            [-6.883,-34.888,-6.9,-34.855],
+            [-6.9,-34.855,-6.942,-34.865],
+            [-6.942,-34.865,-6.974,-34.828],
+            [-6.974,-34.828,-7.052,-34.842],
+            [-7.052,-34.842,-7.094,-34.833],
+            [-7.094,-34.833,-7.137,-34.818],
+            [-7.137,-34.818,-7.155,-34.793],
+            [-7.155,-34.793,-7.242,-34.806],
+            [-7.242,-34.806,-7.333,-34.795],
+            [-7.333,-34.795,-7.471,-34.804],
+            [-7.471,-34.804,-7.513,-34.809],
+            [-7.513,-34.809,-7.559,-34.837],
+            [-7.559,-34.837,-7.624,-34.806],
+            [-7.624,-34.806,-7.685,-34.835]
         ]},
         {"name":"Extended Runway Centrelines","lines": [
             [-7.1401,-34.958,-7.014,-35.0676],

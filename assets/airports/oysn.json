@@ -32,19 +32,33 @@
         "BIGOW": [16.08467,43.84771],
         "DALME": [15.69154,44.08809],
         "_RWY1804DME": [15.55762,44.21915],
-        "_RWY3604DME": [15.39488,44.22025]
+        "_RWY3604DME": [15.39488,44.22025],
+        "_RWY1813DME": [15.70752,44.21815],
+        "_RWY1808DME": [15.62424,44.21871],
+        "_RWY3613DME": [15.24498,44.22125],
+        "_RWY3608DME": [15.32826,44.22069],
+        "_RWY36BASEL": [15.38572,44.38495],
+        "_RWY18BASER": [15.56893,44.38372],
+        "_RWY18BASEL": [15.56688,44.05445],
+        "_RWY36BASER": [15.38367,44.05568]
     },
     "runways": [
         {"name":["18","36"],"end":[[15.491,44.2196,"7165ft"],[15.4615,44.2198,"7216ft"]],"ils":[true,true]}
     ],
     "sids": {
-        "GEWAR3A": {"icao":"GEWAR3A","name":"Gewar Three Alpha","rwy":{"OYSN18":["_RWY3604DME"],"OYSN36":["_RWY1804DME"]},"body":[],"exitPoints":{"GEWAR":["GEWAR"]},"draw":[["OYSN","GEWAR*"]]},
-        "MRB2C": {"icao":"MRB2C","name":"Marib Two Charlie","rwy":{"OYSN18":["_RWY3604DME"],"OYSN36":["_RWY1804DME"]},"body":[],"exitPoints":{"MRB":["MRB"]},"draw":[["OYSN","MRB*"]]},
-        "TATAD2F": {"icao":"TATAD2F","name":"Tatad Two Foxtrot","rwy":{"OYSN18":["_RWY3604DME"],"OYSN36":["_RWY1804DME"]},"body":[],"exitPoints":{"TATAD":["TATAD"]},"draw":[["OYSN","TATAD*"]]},
-        "DULRI2C": {"icao":"DULRI2C","name":"Dulri Two Charlie","rwy":{"OYSN18":["_RWY3604DME"],"OYSN36":["_RWY1804DME"]},"body":[],"exitPoints":{"DULRI":["DULRI"]},"draw":[["OYSN","DULRI*"]]},
-        "BIGOW2B": {"icao":"BIGOW2B","name":"Bigow Two Bravo","rwy":{"OYSN18":["_RWY3604DME"],"OYSN36":["_RWY1804DME"]},"body":[],"exitPoints":{"BIGOW":["BIGOW"]},"draw":[["OYSN","BIGOW*"]]}
+        "GEWAR3A": {"icao":"GEWAR3A","name":"Gewar Three Alpha","rwy":{"OYSN18":[["_RWY3604DME","A87+"]],"OYSN36":[["_RWY1804DME","A87+"]]},"body":[],"exitPoints":{"GEWAR":["GEWAR"]},"draw":[["OYSN","GEWAR*"]]},
+        "MRB2C": {"icao":"MRB2C","name":"Marib Two Charlie","rwy":{"OYSN18":[["_RWY3604DME","A87+"]],"OYSN36":[["_RWY1804DME","A87+"]]},"body":[],"exitPoints":{"MRB":["MRB"]},"draw":[["OYSN","MRB*"]]},
+        "TATAD2F": {"icao":"TATAD2F","name":"Tatad Two Foxtrot","rwy":{"OYSN18":[["_RWY3604DME","A87+"]],"OYSN36":[["_RWY1804DME","A87+"]]},"body":[],"exitPoints":{"TATAD":["TATAD"]},"draw":[["OYSN","TATAD*"]]},
+        "DULRI2C": {"icao":"DULRI2C","name":"Dulri Two Charlie","rwy":{"OYSN18":[["_RWY3604DME","A87+"]],"OYSN36":[["_RWY1804DME","A87+"]]},"body":[],"exitPoints":{"DULRI":["DULRI"]},"draw":[["OYSN","DULRI*"]]},
+        "BIGOW2B": {"icao":"BIGOW2B","name":"Bigow Two Bravo","rwy":{"OYSN18":[["_RWY3604DME","A87+"]],"OYSN36":[["_RWY1804DME","A87+"]]},"body":[],"exitPoints":{"BIGOW":["BIGOW"]},"draw":[["OYSN","BIGOW*"]]}
     },
-    "stars": {},
+    "stars": {
+        "GEWAR3L": {"icao":"GEWAR3L","name":"Gewar Three Lima","entryPoints":{"GEWAR":[]},"body":["GEWAR",["PIJCE","S250-"]],"rwy":{"OYSN18":[["_RWY1813DME","A114-|S210"],["_RWY1808DME","A98-|S180"],"#177"],"OYSN36":[["_RWY36BASEL","A124-|S230"],["_RWY3613DME","A114-|S210"],["_RWY3608DME","A98-|S180"],"#357"]},"draw":[["GEWAR*","PIJCE"],["PIJCE","_RWY1813DME","_RWY1808DME"],["PIJCE","_RWY36BASEL","_RWY3613DME","_RWY3608DME"]]},
+        "MRB3H": {"icao":"MRB3H","name":"Marib Three Hotel","entryPoints":{"MRB":[]},"body":["MRB",["LOTSU","S250-"]],"rwy":{"OYSN18":[["_RWY18BASER","A124-|S230"],["_RWY1813DME","A114-|S210"],["_RWY1808DME","A98-|S180"],"#177"],"OYSN36":[["_RWY36BASEL","A124-|S230"],["_RWY3613DME","A114-|S210"],["_RWY3608DME","A98-|S180"],"#357"]},"draw":[["MRB*","LOTSU"],["LOTSU","_RWY18BASER","_RWY1813DME","_RWY1808DME"],["LOTSU","_RWY36BASEL","_RWY3613DME","_RWY3608DME"]]},
+        "TATAD2G": {"icao":"TATAD2G","name":"Tatad Two Golf","entryPoints":{"TATAD":[]},"body":["TATAD",["IFOJA","S250-"]],"rwy":{"OYSN18":[["_RWY18BASER","A124-|S230"],["_RWY1813DME","A114-|S210"],["_RWY1808DME","A98-|S180"],"#177"],"OYSN36":[["_RWY3613DME","A114-|S210"],["_RWY3608DME","A98-|S180"],"#357"]},"draw":[["TATAD*","IFOJA"],["IFOJA","_RWY18BASER","_RWY1813DME","_RWY1808DME"],["IFOJA","_RWY3613DME","_RWY3608DME"]]},
+        "DULRI1H": {"icao":"DULRI1H","name":"Dulri One Hotel","entryPoints":{"DULRI":[]},"body":["DULRI",["KUJIZ","S250-"]],"rwy":{"OYSN18":[["_RWY18BASEL","A124-|S230"],["_RWY1813DME","A114-|S210"],["_RWY1808DME","A98-|S180"],"#177"],"OYSN36":[["_RWY3613DME","A114-|S210"],["_RWY3608DME","A98-|S180"],"#357"]},"draw":[["DULRI*","KUJIZ"],["KUJIZ","_RWY18BASEL","_RWY1813DME","_RWY1808DME"],["KUJIZ","_RWY3613DME","_RWY3608DME"]]},
+        "BIGOW3J": {"icao":"BIGOW3J","name":"Bigow Three Juliet","entryPoints":{"BIGOW":[]},"body":["BIGOW",["DALME","S250-"]],"rwy":{"OYSN18":[["_RWY1813DME","A114-|S210"],["_RWY1808DME","A98-|S180"],"#177"],"OYSN36":[["_RWY36BASER","A124-|S230"],["_RWY3613DME","A114-|S210"],["_RWY3608DME","A98-|S180"],"#357"]},"draw":[["BIGOW*","DALME"],["DALME","_RWY1813DME","_RWY1808DME"],["DALME","_RWY36BASER","_RWY3613DME","_RWY3608DME"]]}
+    },
     "spawnPatterns": [
         {"origin":"OYSN","destination":"OYAA","category":"departure","route":"OYSN18.TATAD2F.TATAD","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["iye/a310",1],["iye/a320",1],["iye/crj2",1],["thy/b738",1],["iye/a333",1],["iye/a332",1]]},
         {"origin":"OYSN","destination":"HECA","category":"departure","route":"OYSN18.BIGOW2B.BIGOW","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["iye/a310",1],["iye/a320",1],["msr/a320",1],["iye/a333",1],["iye/a332",1]]},
@@ -57,30 +71,21 @@
         {"origin":"OYSN","destination":"","category":"departure","route":"OYSN18.TATAD2F.TATAD","altitude":"","speed":"","method":"random","rate":0.17,"airlines":[["iye/a320",1]]},
         {"origin":"OYSN","destination":"","category":"departure","route":"OYSN18.DULRI2C.DULRI","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["iye/a310",2],["iye/a333",1],["iye/a320",1],["iye/a332",1]]},
         {"origin":"OYSN","destination":"","category":"departure","route":"OYSN18.BIGOW2B.BIGOW","altitude":"","speed":"","method":"random","rate":1.01,"airlines":[["iye/a333",1],["iye/a310",1],["iye/a320",1],["rja/a320",1],["thy/b738",1],["iye/a332",1]]},
-        {"origin":"OYAA","destination":"OYSN","category":"arrival","route":"TATAD..IFOJA..OYSN","altitude":[13000,16000],"speed":250,"method":"random","rate":0.84,"airlines":[["iye/a310",1],["iye/a320",1],["iye/crj2",1],["thy/b738",1],["iye/a333",1],["iye/a332",1]]},
-        {"origin":"HECA","destination":"OYSN","category":"arrival","route":"BIGOW..DALME..OYSN","altitude":[13000,16000],"speed":250,"method":"random","rate":0.67,"airlines":[["iye/a310",1],["iye/a320",1],["msr/a320",1],["iye/a333",1],["iye/a332",1]]},
-        {"origin":"OEJN","destination":"OYSN","category":"arrival","route":"BIGOW..DALME..OYSN","altitude":[13000,16000],"speed":250,"method":"random","rate":0.67,"airlines":[["iye/a310",1],["iye/a320",1],["sva/a320",1],["iye/a333",1],["iye/a332",1]]},
-        {"origin":"OMDB","destination":"OYSN","category":"arrival","route":"GEWAR..PIJCE..OYSN","altitude":[13000,16000],"speed":250,"method":"random","rate":0.67,"airlines":[["fdb/b738",1],["iye/a310",1],["uae/a332",1],["iye/a333",1],["iye/a332",1]]},
-        {"origin":"OYHD","destination":"OYSN","category":"arrival","route":"DULRI..KUJIZ..OYSN","altitude":[13000,16000],"speed":250,"method":"random","rate":0.67,"airlines":[["iye/a310",1],["iye/a320",1],["iye/crj2",1],["iye/a333",1],["iye/a332",1]]},
-        {"origin":"OERK","destination":"OYSN","category":"arrival","route":"GEWAR..PIJCE..OYSN","altitude":[13000,16000],"speed":250,"method":"random","rate":0.5,"airlines":[["iye/a310",1],["iye/a320",1],["sva/a320",1]]},
-        {"origin":"","destination":"OYSN","category":"arrival","route":"GEWAR..PIJCE..OYSN","altitude":[13000,16000],"speed":250,"method":"random","rate":1.01,"airlines":[["etd/a320",1],["gba/a320",1],["iye/a310",1],["iye/a320",1],["kac/a320",1],["qtr/a320",1]]},
-        {"origin":"","destination":"OYSN","category":"arrival","route":"MRB..LOTSU..OYSN","altitude":[13000,16000],"speed":250,"method":"random","rate":0.84,"airlines":[["iye/a320",3],["iye/a310",1],["iye/a333",1],["iye/a332",1]]},
-        {"origin":"","destination":"OYSN","category":"arrival","route":"TATAD..IFOJA..OYSN","altitude":[13000,16000],"speed":250,"method":"random","rate":0.17,"airlines":[["iye/a320",1]]},
-        {"origin":"","destination":"OYSN","category":"arrival","route":"DULRI..KUJIZ..OYSN","altitude":[13000,16000],"speed":250,"method":"random","rate":0.84,"airlines":[["iye/a310",2],["iye/a333",1],["iye/a320",1],["iye/a332",1]]},
-        {"origin":"","destination":"OYSN","category":"arrival","route":"BIGOW..DALME..OYSN","altitude":[13000,16000],"speed":250,"method":"random","rate":1.01,"airlines":[["iye/a333",1],["iye/a310",1],["iye/a320",1],["rja/a320",1],["thy/b738",1],["iye/a332",1]]}
+        {"origin":"OYAA","destination":"OYSN","category":"arrival","route":"TATAD.TATAD2G.OYSN18","altitude":[13000,16000],"speed":250,"method":"random","rate":0.84,"airlines":[["iye/a310",1],["iye/a320",1],["iye/crj2",1],["thy/b738",1],["iye/a333",1],["iye/a332",1]]},
+        {"origin":"HECA","destination":"OYSN","category":"arrival","route":"BIGOW.BIGOW3J.OYSN18","altitude":[13000,16000],"speed":250,"method":"random","rate":0.67,"airlines":[["iye/a310",1],["iye/a320",1],["msr/a320",1],["iye/a333",1],["iye/a332",1]]},
+        {"origin":"OEJN","destination":"OYSN","category":"arrival","route":"BIGOW.BIGOW3J.OYSN18","altitude":[13000,16000],"speed":250,"method":"random","rate":0.67,"airlines":[["iye/a310",1],["iye/a320",1],["sva/a320",1],["iye/a333",1],["iye/a332",1]]},
+        {"origin":"OMDB","destination":"OYSN","category":"arrival","route":"GEWAR.GEWAR3L.OYSN18","altitude":[13000,16000],"speed":250,"method":"random","rate":0.67,"airlines":[["fdb/b738",1],["iye/a310",1],["uae/a332",1],["iye/a333",1],["iye/a332",1]]},
+        {"origin":"OYHD","destination":"OYSN","category":"arrival","route":"DULRI.DULRI1H.OYSN18","altitude":[13000,16000],"speed":250,"method":"random","rate":0.67,"airlines":[["iye/a310",1],["iye/a320",1],["iye/crj2",1],["iye/a333",1],["iye/a332",1]]},
+        {"origin":"OERK","destination":"OYSN","category":"arrival","route":"GEWAR.GEWAR3L.OYSN18","altitude":[13000,16000],"speed":250,"method":"random","rate":0.5,"airlines":[["iye/a310",1],["iye/a320",1],["sva/a320",1]]},
+        {"origin":"","destination":"OYSN","category":"arrival","route":"GEWAR.GEWAR3L.OYSN18","altitude":[13000,16000],"speed":250,"method":"random","rate":1.01,"airlines":[["etd/a320",1],["gba/a320",1],["iye/a310",1],["iye/a320",1],["kac/a320",1],["qtr/a320",1]]},
+        {"origin":"","destination":"OYSN","category":"arrival","route":"MRB.MRB3H.OYSN18","altitude":[13000,16000],"speed":250,"method":"random","rate":0.84,"airlines":[["iye/a320",3],["iye/a310",1],["iye/a333",1],["iye/a332",1]]},
+        {"origin":"","destination":"OYSN","category":"arrival","route":"TATAD.TATAD2G.OYSN18","altitude":[13000,16000],"speed":250,"method":"random","rate":0.17,"airlines":[["iye/a320",1]]},
+        {"origin":"","destination":"OYSN","category":"arrival","route":"DULRI.DULRI1H.OYSN18","altitude":[13000,16000],"speed":250,"method":"random","rate":0.84,"airlines":[["iye/a310",2],["iye/a333",1],["iye/a320",1],["iye/a332",1]]},
+        {"origin":"","destination":"OYSN","category":"arrival","route":"BIGOW.BIGOW3J.OYSN18","altitude":[13000,16000],"speed":250,"method":"random","rate":1.01,"airlines":[["iye/a333",1],["iye/a310",1],["iye/a320",1],["rja/a320",1],["thy/b738",1],["iye/a332",1]]}
     ],
     "maps": [
         {"name":"Base Map","lines": [
-            [16.1344,44.4854,15.7091,44.3137],
-            [15.7091,44.3137,15.4763,44.2197],
-            [15.4683,45.3283,15.4744,44.4789],
-            [15.4744,44.4789,15.4763,44.2197],
-            [14.7997,44.4294,15.2369,44.2939],
-            [15.2369,44.2939,15.4763,44.2197],
-            [14.8438,43.8939,15.2525,44.1044],
-            [15.2525,44.1044,15.4763,44.2197],
-            [16.0847,43.8477,15.6915,44.0881],
-            [15.6915,44.0881,15.4763,44.2197]
+            [15.491,44.2196,15.4615,44.2198]
         ]},
         {"name":"Extended Runway Centrelines","lines": [
             [15.491,44.2196,15.6576,44.2185],

@@ -15,7 +15,7 @@
     "wind": {"angle":20,"speed":8},
     "arrivalRunway": "01",
     "departureRunway": "01",
-    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "defaultMaps": ["Base Map","Coastline","Extended Runway Centrelines"],
     "airspace": [
         {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[17.276,-23.0259],[17.2767,-22.8788],[17.241,-22.7365],[17.1712,-22.6087],[17.0721,-22.5042],[16.9505,-22.43],[16.8146,-22.3911],[16.6738,-22.3904],[16.5375,-22.4277],[16.4152,-22.5006],[16.315,-22.604],[16.244,-22.731],[16.2068,-22.8729],[16.2061,-23.02],[16.2418,-23.1623],[16.3116,-23.2901],[16.4107,-23.3946],[16.5323,-23.4688],[16.6682,-23.5077],[16.809,-23.5084],[16.9453,-23.4711],[17.0676,-23.3982],[17.1678,-23.2948],[17.2388,-23.1678]]}
     ],
@@ -30,18 +30,31 @@
         "UWISE": [16.72872,-23.68668],
         "AWOMO": [16.73691,-23.21025],
         "_RWY0104DME": [16.65493,-22.94838],
-        "_RWY1904DME": [16.8153,-22.9495]
+        "_RWY1904DME": [16.8153,-22.9495],
+        "_RWY0113DME": [16.50503,-22.94735],
+        "_RWY0108DME": [16.58831,-22.94792],
+        "_RWY1913DME": [16.9652,-22.95054],
+        "_RWY1908DME": [16.88192,-22.94996],
+        "_RWY01BASEL": [16.65085,-22.78308],
+        "_RWY19BASER": [16.83406,-22.78435],
+        "_RWY19BASEL": [16.83195,-23.11572],
+        "_RWY01BASER": [16.64874,-23.11445]
     },
     "runways": [
         {"name":["01","19"],"end":[[16.72155,-22.94885,"176ft"],[16.74868,-22.94903,"170ft"]],"ils":[true,true]}
     ],
     "sids": {
-        "GENIH2C": {"icao":"GENIH2C","name":"Genih Two Charlie","rwy":{"GVAC01":["_RWY1904DME"],"GVAC19":["_RWY0104DME"]},"body":[],"exitPoints":{"GENIH":["GENIH"]},"draw":[["GVAC","GENIH*"]]},
-        "UDEKO1B": {"icao":"UDEKO1B","name":"Udeko One Bravo","rwy":{"GVAC01":["_RWY1904DME"],"GVAC19":["_RWY0104DME"]},"body":[],"exitPoints":{"UDEKO":["UDEKO"]},"draw":[["GVAC","UDEKO*"]]},
-        "KIPAJ3F": {"icao":"KIPAJ3F","name":"Kipaj Three Foxtrot","rwy":{"GVAC01":["_RWY1904DME"],"GVAC19":["_RWY0104DME"]},"body":[],"exitPoints":{"KIPAJ":["KIPAJ"]},"draw":[["GVAC","KIPAJ*"]]},
-        "UWISE3F": {"icao":"UWISE3F","name":"Uwise Three Foxtrot","rwy":{"GVAC01":["_RWY1904DME"],"GVAC19":["_RWY0104DME"]},"body":[],"exitPoints":{"UWISE":["UWISE"]},"draw":[["GVAC","UWISE*"]]}
+        "GENIH2C": {"icao":"GENIH2C","name":"Genih Two Charlie","rwy":{"GVAC01":[["_RWY1904DME","A17+"]],"GVAC19":[["_RWY0104DME","A17+"]]},"body":[],"exitPoints":{"GENIH":["GENIH"]},"draw":[["GVAC","GENIH*"]]},
+        "UDEKO1B": {"icao":"UDEKO1B","name":"Udeko One Bravo","rwy":{"GVAC01":[["_RWY1904DME","A17+"]],"GVAC19":[["_RWY0104DME","A17+"]]},"body":[],"exitPoints":{"UDEKO":["UDEKO"]},"draw":[["GVAC","UDEKO*"]]},
+        "KIPAJ3F": {"icao":"KIPAJ3F","name":"Kipaj Three Foxtrot","rwy":{"GVAC01":[["_RWY1904DME","A17+"]],"GVAC19":[["_RWY0104DME","A17+"]]},"body":[],"exitPoints":{"KIPAJ":["KIPAJ"]},"draw":[["GVAC","KIPAJ*"]]},
+        "UWISE3F": {"icao":"UWISE3F","name":"Uwise Three Foxtrot","rwy":{"GVAC01":[["_RWY1904DME","A17+"]],"GVAC19":[["_RWY0104DME","A17+"]]},"body":[],"exitPoints":{"UWISE":["UWISE"]},"draw":[["GVAC","UWISE*"]]}
     },
-    "stars": {},
+    "stars": {
+        "GENIH3L": {"icao":"GENIH3L","name":"Genih Three Lima","entryPoints":{"GENIH":[]},"body":["GENIH",["FAVAC","S250-"]],"rwy":{"GVAC01":[["_RWY01BASEL","A54-|S230"],["_RWY0113DME","A44-|S210"],["_RWY0108DME","A28-|S180"],"#007"],"GVAC19":[["_RWY1913DME","A44-|S210"],["_RWY1908DME","A28-|S180"],"#187"]},"draw":[["GENIH*","FAVAC"],["FAVAC","_RWY01BASEL","_RWY0113DME","_RWY0108DME"],["FAVAC","_RWY1913DME","_RWY1908DME"]]},
+        "UDEKO1K": {"icao":"UDEKO1K","name":"Udeko One Kilo","entryPoints":{"UDEKO":[]},"body":["UDEKO",["GOFIB","S250-"]],"rwy":{"GVAC01":[["_RWY0113DME","A44-|S210"],["_RWY0108DME","A28-|S180"],"#007"],"GVAC19":[["_RWY19BASER","A54-|S230"],["_RWY1913DME","A44-|S210"],["_RWY1908DME","A28-|S180"],"#187"]},"draw":[["UDEKO*","GOFIB"],["GOFIB","_RWY0113DME","_RWY0108DME"],["GOFIB","_RWY19BASER","_RWY1913DME","_RWY1908DME"]]},
+        "KIPAJ1I": {"icao":"KIPAJ1I","name":"Kipaj One India","entryPoints":{"KIPAJ":[]},"body":["KIPAJ",["GADUW","S250-"]],"rwy":{"GVAC01":[["_RWY0113DME","A44-|S210"],["_RWY0108DME","A28-|S180"],"#007"],"GVAC19":[["_RWY19BASEL","A54-|S230"],["_RWY1913DME","A44-|S210"],["_RWY1908DME","A28-|S180"],"#187"]},"draw":[["KIPAJ*","GADUW"],["GADUW","_RWY0113DME","_RWY0108DME"],["GADUW","_RWY19BASEL","_RWY1913DME","_RWY1908DME"]]},
+        "UWISE3G": {"icao":"UWISE3G","name":"Uwise Three Golf","entryPoints":{"UWISE":[]},"body":["UWISE",["AWOMO","S250-"]],"rwy":{"GVAC01":[["_RWY01BASER","A54-|S230"],["_RWY0113DME","A44-|S210"],["_RWY0108DME","A28-|S180"],"#007"],"GVAC19":[["_RWY19BASEL","A54-|S230"],["_RWY1913DME","A44-|S210"],["_RWY1908DME","A28-|S180"],"#187"]},"draw":[["UWISE*","AWOMO"],["AWOMO","_RWY01BASER","_RWY0113DME","_RWY0108DME"],["AWOMO","_RWY19BASEL","_RWY1913DME","_RWY1908DME"]]}
+    },
     "spawnPatterns": [
         {"origin":"GVAC","destination":"GVBA","category":"departure","route":"GVAC01.KIPAJ3F.KIPAJ","altitude":"","speed":"","method":"random","rate":0.85,"airlines":[["hlx/b738",1],["lgl/b737",1],["tcv/at72",1]]},
         {"origin":"GVAC","destination":"GVNP","category":"departure","route":"GVAC01.KIPAJ3F.KIPAJ","altitude":"","speed":"","method":"random","rate":0.85,"airlines":[["tcv/at72",1],["tcv/b738",1],["tcv/b752",1]]},
@@ -50,24 +63,48 @@
         {"origin":"GVAC","destination":"EHAM","category":"departure","route":"GVAC01.GENIH2C.GENIH","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["tcv/b738",1],["tra/b738",1]]},
         {"origin":"GVAC","destination":"","category":"departure","route":"GVAC01.GENIH2C.GENIH","altitude":"","speed":"","method":"random","rate":2.83,"airlines":[["hlx/b738",5],["tcv/b752",2],["lgl/b737",1],["tap/a320",1],["tra/b738",1]]},
         {"origin":"GVAC","destination":"","category":"departure","route":"GVAC01.UWISE3F.UWISE","altitude":"","speed":"","method":"random","rate":0.85,"airlines":[["tcv/at72",2],["tcv/b752",1]]},
-        {"origin":"GVBA","destination":"GVAC","category":"arrival","route":"KIPAJ..GADUW..GVAC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.85,"airlines":[["hlx/b738",1],["lgl/b737",1],["tcv/at72",1]]},
-        {"origin":"GVNP","destination":"GVAC","category":"arrival","route":"KIPAJ..GADUW..GVAC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.85,"airlines":[["tcv/at72",1],["tcv/b738",1],["tcv/b752",1]]},
-        {"origin":"EGCC","destination":"GVAC","category":"arrival","route":"GENIH..FAVAC..GVAC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.57,"airlines":[["tom/b752",1],["tvf/b752",1]]},
-        {"origin":"EGKK","destination":"GVAC","category":"arrival","route":"GENIH..FAVAC..GVAC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.57,"airlines":[["tom/b752",1],["tvf/b752",1]]},
-        {"origin":"EHAM","destination":"GVAC","category":"arrival","route":"GENIH..FAVAC..GVAC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.57,"airlines":[["tcv/b738",1],["tra/b738",1]]},
-        {"origin":"","destination":"GVAC","category":"arrival","route":"GENIH..FAVAC..GVAC","altitude":[6000,9000],"speed":250,"method":"random","rate":2.83,"airlines":[["hlx/b738",5],["tcv/b752",2],["lgl/b737",1],["tap/a320",1],["tra/b738",1]]},
-        {"origin":"","destination":"GVAC","category":"arrival","route":"UWISE..AWOMO..GVAC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.85,"airlines":[["tcv/at72",2],["tcv/b752",1]]}
+        {"origin":"GVBA","destination":"GVAC","category":"arrival","route":"KIPAJ.KIPAJ1I.GVAC01","altitude":[6000,9000],"speed":250,"method":"random","rate":0.85,"airlines":[["hlx/b738",1],["lgl/b737",1],["tcv/at72",1]]},
+        {"origin":"GVNP","destination":"GVAC","category":"arrival","route":"KIPAJ.KIPAJ1I.GVAC01","altitude":[6000,9000],"speed":250,"method":"random","rate":0.85,"airlines":[["tcv/at72",1],["tcv/b738",1],["tcv/b752",1]]},
+        {"origin":"EGCC","destination":"GVAC","category":"arrival","route":"GENIH.GENIH3L.GVAC01","altitude":[6000,9000],"speed":250,"method":"random","rate":0.57,"airlines":[["tom/b752",1],["tvf/b752",1]]},
+        {"origin":"EGKK","destination":"GVAC","category":"arrival","route":"GENIH.GENIH3L.GVAC01","altitude":[6000,9000],"speed":250,"method":"random","rate":0.57,"airlines":[["tom/b752",1],["tvf/b752",1]]},
+        {"origin":"EHAM","destination":"GVAC","category":"arrival","route":"GENIH.GENIH3L.GVAC01","altitude":[6000,9000],"speed":250,"method":"random","rate":0.57,"airlines":[["tcv/b738",1],["tra/b738",1]]},
+        {"origin":"","destination":"GVAC","category":"arrival","route":"GENIH.GENIH3L.GVAC01","altitude":[6000,9000],"speed":250,"method":"random","rate":2.83,"airlines":[["hlx/b738",5],["tcv/b752",2],["lgl/b737",1],["tap/a320",1],["tra/b738",1]]},
+        {"origin":"","destination":"GVAC","category":"arrival","route":"UWISE.UWISE3G.GVAC01","altitude":[6000,9000],"speed":250,"method":"random","rate":0.85,"airlines":[["tcv/at72",2],["tcv/b752",1]]}
     ],
     "maps": [
         {"name":"Base Map","lines": [
-            [17.3695,-22.6124,16.9636,-22.8302],
-            [16.9636,-22.8302,16.7414,-22.9494],
-            [16.544,-22.2414,16.6716,-22.6989],
-            [16.6716,-22.6989,16.7414,-22.9494],
-            [16.0382,-23.0172,16.4926,-22.9734],
-            [16.4926,-22.9734,16.7414,-22.9494],
-            [16.7287,-23.6867,16.7369,-23.2102],
-            [16.7369,-23.2102,16.7414,-22.9494]
+            [16.7215,-22.9488,16.7487,-22.949]
+        ]},
+        {"name":"Coastline","lines": [
+            [16.679,-22.937,16.696,-22.95],
+            [16.696,-22.95,16.7,-22.99],
+            [16.7,-22.99,16.713,-22.976],
+            [16.713,-22.976,16.809,-22.994],
+            [16.809,-22.994,16.831,-22.979],
+            [16.831,-22.979,16.856,-22.919],
+            [16.856,-22.919,16.834,-22.889],
+            [16.834,-22.889,16.805,-22.903],
+            [16.805,-22.903,16.771,-22.879],
+            [16.771,-22.879,16.752,-22.899],
+            [16.752,-22.899,16.671,-22.872],
+            [16.671,-22.872,16.632,-22.9],
+            [16.632,-22.9,16.592,-22.887],
+            [16.592,-22.887,16.588,-22.928],
+            [16.588,-22.928,16.653,-22.949],
+            [16.653,-22.949,16.679,-22.937],
+            [16.15,-22.906,16.179,-22.93],
+            [16.179,-22.93,16.2,-22.911],
+            [16.2,-22.911,16.229,-22.917],
+            [16.229,-22.917,16.202,-22.85],
+            [16.202,-22.85,16.212,-22.801],
+            [16.212,-22.801,16.23,-22.789],
+            [16.23,-22.789,16.202,-22.706],
+            [16.202,-22.706,16.176,-22.705],
+            [16.176,-22.705,16.146,-22.673],
+            [16.146,-22.673,16.08,-22.669],
+            [16.042,-22.966,16.083,-22.959],
+            [16.083,-22.959,16.118,-22.911],
+            [16.118,-22.911,16.15,-22.906]
         ]},
         {"name":"Extended Runway Centrelines","lines": [
             [16.7215,-22.9488,16.555,-22.9477],

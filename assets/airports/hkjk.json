@@ -34,20 +34,35 @@
         "NAK": [-0.30475,36.1534,"nakuru"],
         "ABECE": [-1.09387,36.75632],
         "_RWY0604DME": [-1.36694,36.86263],
-        "_RWY2404DME": [-1.26636,37.00007]
+        "_RWY2404DME": [-1.26636,37.00007],
+        "_RWY0613DME": [-1.45547,36.74163],
+        "_RWY0608DME": [-1.40629,36.80885],
+        "_RWY2413DME": [-1.17782,37.12106],
+        "_RWY2408DME": [-1.22701,37.05384],
+        "_RWY06BASEL": [-1.50102,36.94803],
+        "_RWY24BASER": [-1.39281,37.09591],
+        "_RWY24BASEL": [-1.13675,36.90843],
+        "_RWY06BASER": [-1.24496,36.76056]
     },
     "runways": [
         {"name":["06","24"],"end":[[-1.32759,36.9164,"5330ft"],[-1.30571,36.9463,"5281ft"]],"ils":[true,true]}
     ],
     "sids": {
-        "SF1D": {"icao":"SF1D","name":"Seven Forks One Delta","rwy":{"HKJK06":["_RWY2404DME"],"HKJK24":["_RWY0604DME"]},"body":[],"exitPoints":{"SF":["SF"]},"draw":[["HKJK","SF*"]]},
-        "TOHUS1E": {"icao":"TOHUS1E","name":"Tohus One Echo","rwy":{"HKJK06":["_RWY2404DME"],"HKJK24":["_RWY0604DME"]},"body":[],"exitPoints":{"TOHUS":["TOHUS"]},"draw":[["HKJK","TOHUS*"]]},
-        "GEBOF2E": {"icao":"GEBOF2E","name":"Gebof Two Echo","rwy":{"HKJK06":["_RWY2404DME"],"HKJK24":["_RWY0604DME"]},"body":[],"exitPoints":{"GEBOF":["GEBOF"]},"draw":[["HKJK","GEBOF*"]]},
-        "MIDFI2E": {"icao":"MIDFI2E","name":"Midfi Two Echo","rwy":{"HKJK06":["_RWY2404DME"],"HKJK24":["_RWY0604DME"]},"body":[],"exitPoints":{"MIDFI":["MIDFI"]},"draw":[["HKJK","MIDFI*"]]},
-        "NK1F": {"icao":"NK1F","name":"Narok One Foxtrot","rwy":{"HKJK06":["_RWY2404DME"],"HKJK24":["_RWY0604DME"]},"body":[],"exitPoints":{"NK":["NK"]},"draw":[["HKJK","NK*"]]},
-        "NAK2B": {"icao":"NAK2B","name":"Nakuru Two Bravo","rwy":{"HKJK06":["_RWY2404DME"],"HKJK24":["_RWY0604DME"]},"body":[],"exitPoints":{"NAK":["NAK"]},"draw":[["HKJK","NAK*"]]}
+        "SF1D": {"icao":"SF1D","name":"Seven Forks One Delta","rwy":{"HKJK06":[["_RWY2404DME","A68+"]],"HKJK24":[["_RWY0604DME","A68+"]]},"body":[],"exitPoints":{"SF":["SF"]},"draw":[["HKJK","SF*"]]},
+        "TOHUS1E": {"icao":"TOHUS1E","name":"Tohus One Echo","rwy":{"HKJK06":[["_RWY2404DME","A68+"]],"HKJK24":[["_RWY0604DME","A68+"]]},"body":[],"exitPoints":{"TOHUS":["TOHUS"]},"draw":[["HKJK","TOHUS*"]]},
+        "GEBOF2E": {"icao":"GEBOF2E","name":"Gebof Two Echo","rwy":{"HKJK06":[["_RWY2404DME","A68+"]],"HKJK24":[["_RWY0604DME","A68+"]]},"body":[],"exitPoints":{"GEBOF":["GEBOF"]},"draw":[["HKJK","GEBOF*"]]},
+        "MIDFI2E": {"icao":"MIDFI2E","name":"Midfi Two Echo","rwy":{"HKJK06":[["_RWY2404DME","A68+"]],"HKJK24":[["_RWY0604DME","A68+"]]},"body":[],"exitPoints":{"MIDFI":["MIDFI"]},"draw":[["HKJK","MIDFI*"]]},
+        "NK1F": {"icao":"NK1F","name":"Narok One Foxtrot","rwy":{"HKJK06":[["_RWY2404DME","A68+"]],"HKJK24":[["_RWY0604DME","A68+"]]},"body":[],"exitPoints":{"NK":["NK"]},"draw":[["HKJK","NK*"]]},
+        "NAK2B": {"icao":"NAK2B","name":"Nakuru Two Bravo","rwy":{"HKJK06":[["_RWY2404DME","A68+"]],"HKJK24":[["_RWY0604DME","A68+"]]},"body":[],"exitPoints":{"NAK":["NAK"]},"draw":[["HKJK","NAK*"]]}
     },
-    "stars": {},
+    "stars": {
+        "SF3G": {"icao":"SF3G","name":"Seven Forks Three Golf","entryPoints":{"SF":[]},"body":["SF",["ONACO","S250-"]],"rwy":{"HKJK06":[["_RWY06BASEL","A105-|S230"],["_RWY0613DME","A95-|S210"],["_RWY0608DME","A79-|S180"],"#053"],"HKJK24":[["_RWY2413DME","A95-|S210"],["_RWY2408DME","A79-|S180"],"#233"]},"draw":[["SF*","ONACO"],["ONACO","_RWY06BASEL","_RWY0613DME","_RWY0608DME"],["ONACO","_RWY2413DME","_RWY2408DME"]]},
+        "TOHUS1I": {"icao":"TOHUS1I","name":"Tohus One India","entryPoints":{"TOHUS":[]},"body":["TOHUS",["ACOGE","S250-"]],"rwy":{"HKJK06":[["_RWY06BASEL","A105-|S230"],["_RWY0613DME","A95-|S210"],["_RWY0608DME","A79-|S180"],"#053"],"HKJK24":[["_RWY2413DME","A95-|S210"],["_RWY2408DME","A79-|S180"],"#233"]},"draw":[["TOHUS*","ACOGE"],["ACOGE","_RWY06BASEL","_RWY0613DME","_RWY0608DME"],["ACOGE","_RWY2413DME","_RWY2408DME"]]},
+        "GEBOF2J": {"icao":"GEBOF2J","name":"Gebof Two Juliet","entryPoints":{"GEBOF":[]},"body":["GEBOF",["JOTPI","S250-"]],"rwy":{"HKJK06":[["_RWY06BASEL","A105-|S230"],["_RWY0613DME","A95-|S210"],["_RWY0608DME","A79-|S180"],"#053"],"HKJK24":[["_RWY24BASER","A105-|S230"],["_RWY2413DME","A95-|S210"],["_RWY2408DME","A79-|S180"],"#233"]},"draw":[["GEBOF*","JOTPI"],["JOTPI","_RWY06BASEL","_RWY0613DME","_RWY0608DME"],["JOTPI","_RWY24BASER","_RWY2413DME","_RWY2408DME"]]},
+        "MIDFI3K": {"icao":"MIDFI3K","name":"Midfi Three Kilo","entryPoints":{"MIDFI":[]},"body":["MIDFI",["WETJI","S250-"]],"rwy":{"HKJK06":[["_RWY0613DME","A95-|S210"],["_RWY0608DME","A79-|S180"],"#053"],"HKJK24":[["_RWY24BASER","A105-|S230"],["_RWY2413DME","A95-|S210"],["_RWY2408DME","A79-|S180"],"#233"]},"draw":[["MIDFI*","WETJI"],["WETJI","_RWY0613DME","_RWY0608DME"],["WETJI","_RWY24BASER","_RWY2413DME","_RWY2408DME"]]},
+        "NK3I": {"icao":"NK3I","name":"Narok Three India","entryPoints":{"NK":[]},"body":["NK",["ESOLA","S250-"]],"rwy":{"HKJK06":[["_RWY0613DME","A95-|S210"],["_RWY0608DME","A79-|S180"],"#053"],"HKJK24":[["_RWY24BASEL","A105-|S230"],["_RWY2413DME","A95-|S210"],["_RWY2408DME","A79-|S180"],"#233"]},"draw":[["NK*","ESOLA"],["ESOLA","_RWY0613DME","_RWY0608DME"],["ESOLA","_RWY24BASEL","_RWY2413DME","_RWY2408DME"]]},
+        "NAK3J": {"icao":"NAK3J","name":"Nakuru Three Juliet","entryPoints":{"NAK":[]},"body":["NAK",["ABECE","S250-"]],"rwy":{"HKJK06":[["_RWY06BASER","A105-|S230"],["_RWY0613DME","A95-|S210"],["_RWY0608DME","A79-|S180"],"#053"],"HKJK24":[["_RWY24BASEL","A105-|S230"],["_RWY2413DME","A95-|S210"],["_RWY2408DME","A79-|S180"],"#233"]},"draw":[["NAK*","ABECE"],["ABECE","_RWY06BASER","_RWY0613DME","_RWY0608DME"],["ABECE","_RWY24BASEL","_RWY2413DME","_RWY2408DME"]]}
+    },
     "spawnPatterns": [
         {"origin":"HKJK","destination":"FLKK","category":"departure","route":"HKJK06.MIDFI2E.MIDFI","altitude":"","speed":"","method":"random","rate":0.65,"airlines":[["csn/b738",1],["csn/b763",1],["csn/e170",1],["csn/e190",1],["kqa/b738",1],["kqa/b763",1],["kqa/e170",1],["kqa/e190",1]]},
         {"origin":"HKJK","destination":"FAOR","category":"departure","route":"HKJK06.MIDFI2E.MIDFI","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["kqa/b737",1],["kqa/b738",1],["kqa/b763",1],["saa/a319",1],["saa/a320",1]]},
@@ -63,37 +78,26 @@
         {"origin":"HKJK","destination":"","category":"departure","route":"HKJK06.NK1F.NK","altitude":"","speed":"","method":"random","rate":1.7,"airlines":[["kqa/b738",8],["kqa/b737",4],["kqa/e190",4],["kqa/e170",2],["dat/a332",1],["kqa/b763",1],["prf/at45",1]]},
         {"origin":"HKJK","destination":"","category":"departure","route":"HKJK06.NAK2B.NAK","altitude":"","speed":"","method":"random","rate":1.7,"airlines":[["kqa/b772",2],["kqa/e170",2],["kqa/e190",2],["ffv/dh8d",1],["baw/b744",1],["cfg/b763",1],["dat/a332",1],["klm/b744",1],["kqa/b733",1],["kqa/b763",1],["msr/a320",1],["nas/a320",1]]},
         {"origin":"HKJK","destination":"","category":"departure","route":"HKJK06.TOHUS1E.TOHUS","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["5y/c208",2],["5y/pc12",2],["5y/be20",1],["5y/b350",1],["5y/p180",1],["5y/c510",3],["5y/e50p",2],["5y/c550",3],["5y/e55p",2],["5y/cl30",2],["5y/c680",2],["5y/h25b",2],["5y/lj45",2],["5y/f2th",1],["5y/glf4",1],["5y/glex",1],["5y/glf5",1]]},
-        {"origin":"HKJK","destination":"","category":"departure","route":"HKJK06.GEBOF2E.GEBOF","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["5y/c208",2],["5y/pc12",2],["5y/be20",1],["5y/b350",1],["5y/p180",1],["5y/c510",3],["5y/e50p",2],["5y/c550",3],["5y/e55p",2],["5y/cl30",2],["5y/c680",2],["5y/h25b",2],["5y/lj45",2],["5y/f2th",1],["5y/glf4",1],["5y/glex",1],["5y/glf5",1]]},
-        {"origin":"FLKK","destination":"HKJK","category":"arrival","route":"MIDFI..WETJI..HKJK","altitude":[13000,16000],"speed":250,"method":"random","rate":0.65,"airlines":[["csn/b738",1],["csn/b763",1],["csn/e170",1],["csn/e190",1],["kqa/b738",1],["kqa/b763",1],["kqa/e170",1],["kqa/e190",1]]},
-        {"origin":"FAOR","destination":"HKJK","category":"arrival","route":"MIDFI..WETJI..HKJK","altitude":[13000,16000],"speed":250,"method":"random","rate":0.4,"airlines":[["kqa/b737",1],["kqa/b738",1],["kqa/b763",1],["saa/a319",1],["saa/a320",1]]},
-        {"origin":"HKKI","destination":"HKJK","category":"arrival","route":"NK..ESOLA..HKJK","altitude":[13000,16000],"speed":250,"method":"random","rate":0.4,"airlines":[["ffv/c172",1],["kqa/b733",1],["kqa/e170",1],["kqa/e190",1],["ffv/crj7",1],["ffv/crj9",1],["ffv/crj2",1]]},
-        {"origin":"FWKI","destination":"HKJK","category":"arrival","route":"MIDFI..WETJI..HKJK","altitude":[13000,16000],"speed":250,"method":"random","rate":0.32,"airlines":[["kqa/b738",1],["kqa/b763",1],["kqa/e170",1],["kqa/e190",1]]},
-        {"origin":"HAAB","destination":"HKJK","category":"arrival","route":"NAK..ABECE..HKJK","altitude":[13000,16000],"speed":250,"method":"random","rate":0.32,"airlines":[["aar/b763",1],["eth/b738",1],["eth/b763",1],["kqa/e190",1]]},
-        {"origin":"HKMO","destination":"HKJK","category":"arrival","route":"GEBOF..JOTPI..HKJK","altitude":[13000,16000],"speed":250,"method":"random","rate":0.32,"airlines":[["cfg/b763",1],["kqa/b733",1],["kqa/e190",1],["ffv/crj7",1],["ffv/crj9",1],["ffv/crj2",1]]},
-        {"origin":"HRYR","destination":"HKJK","category":"arrival","route":"NK..ESOLA..HKJK","altitude":[13000,16000],"speed":250,"method":"random","rate":0.32,"airlines":[["dat/a332",1],["kqa/e170",1],["kqa/e190",1],["rwd/crj7",1],["rwd/crj9",1],["rwd/crj2",1]]},
-        {"origin":"","destination":"HKJK","category":"arrival","route":"SF..ONACO..HKJK","altitude":[13000,16000],"speed":250,"method":"random","rate":1.29,"airlines":[["kqa/b737",2],["kqa/b763",2],["aby/a320",1],["chh/a320",1],["csn/b773",1],["etd/a320",1],["iye/a320",1],["kal/a332",1],["kqa/b772",1],["kqa/b773",1],["kqa/e190",1],["qtr/a320",1]]},
-        {"origin":"","destination":"HKJK","category":"arrival","route":"TOHUS..ACOGE..HKJK","altitude":[13000,16000],"speed":250,"method":"random","rate":0.32,"airlines":[["csn/b763",1],["kqa/b737",1],["kqa/b738",1],["kqa/b763",1]]},
-        {"origin":"","destination":"HKJK","category":"arrival","route":"GEBOF..JOTPI..HKJK","altitude":[13000,16000],"speed":250,"method":"random","rate":1.38,"airlines":[["kqa/e190",5],["kqa/b737",2],["kqa/e170",2],["iye/b738",1],["kqa/b738",1],["kqa/e145",1],["mau/a319",1],["prf/at72",1],["prf/e190",1],["swr/a333",1],["ffv/dh8d",1],["ffv/dh8b",1]]},
-        {"origin":"","destination":"HKJK","category":"arrival","route":"MIDFI..WETJI..HKJK","altitude":[13000,16000],"speed":250,"method":"random","rate":1.05,"airlines":[["kqa/e190",8],["kqa/e170",2],["kqa/b763",1],["prf/at72",1],["prf/e170",1]]},
-        {"origin":"","destination":"HKJK","category":"arrival","route":"NK..ESOLA..HKJK","altitude":[13000,16000],"speed":250,"method":"random","rate":1.7,"airlines":[["kqa/b738",8],["kqa/b737",4],["kqa/e190",4],["kqa/e170",2],["dat/a332",1],["kqa/b763",1],["prf/at45",1]]},
-        {"origin":"","destination":"HKJK","category":"arrival","route":"NAK..ABECE..HKJK","altitude":[13000,16000],"speed":250,"method":"random","rate":1.7,"airlines":[["kqa/b772",2],["kqa/e170",2],["kqa/e190",2],["ffv/dh8d",1],["baw/b744",1],["cfg/b763",1],["dat/a332",1],["klm/b744",1],["kqa/b733",1],["kqa/b763",1],["msr/a320",1],["nas/a320",1]]},
-        {"origin":"","destination":"HKJK","category":"arrival","route":"TOHUS..ACOGE..HKJK","altitude":[13000,16000],"speed":250,"method":"random","rate":0.38,"airlines":[["5y/c208",2],["5y/pc12",2],["5y/be20",1],["5y/b350",1],["5y/p180",1],["5y/c510",3],["5y/e50p",2],["5y/c550",3],["5y/e55p",2],["5y/cl30",2],["5y/c680",2],["5y/h25b",2],["5y/lj45",2],["5y/f2th",1],["5y/glf4",1],["5y/glex",1],["5y/glf5",1]]},
-        {"origin":"","destination":"HKJK","category":"arrival","route":"GEBOF..JOTPI..HKJK","altitude":[13000,16000],"speed":250,"method":"random","rate":0.38,"airlines":[["5y/c208",2],["5y/pc12",2],["5y/be20",1],["5y/b350",1],["5y/p180",1],["5y/c510",3],["5y/e50p",2],["5y/c550",3],["5y/e55p",2],["5y/cl30",2],["5y/c680",2],["5y/h25b",2],["5y/lj45",2],["5y/f2th",1],["5y/glf4",1],["5y/glex",1],["5y/glf5",1]]}
+        {"origin":"HKJK","destination":"","category":"departure","route":"HKJK06.NAK2B.NAK","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["5y/c208",2],["5y/pc12",2],["5y/be20",1],["5y/b350",1],["5y/p180",1],["5y/c510",3],["5y/e50p",2],["5y/c550",3],["5y/e55p",2],["5y/cl30",2],["5y/c680",2],["5y/h25b",2],["5y/lj45",2],["5y/f2th",1],["5y/glf4",1],["5y/glex",1],["5y/glf5",1]]},
+        {"origin":"FLKK","destination":"HKJK","category":"arrival","route":"MIDFI.MIDFI3K.HKJK06","altitude":[13000,16000],"speed":250,"method":"random","rate":0.65,"airlines":[["csn/b738",1],["csn/b763",1],["csn/e170",1],["csn/e190",1],["kqa/b738",1],["kqa/b763",1],["kqa/e170",1],["kqa/e190",1]]},
+        {"origin":"FAOR","destination":"HKJK","category":"arrival","route":"MIDFI.MIDFI3K.HKJK06","altitude":[13000,16000],"speed":250,"method":"random","rate":0.4,"airlines":[["kqa/b737",1],["kqa/b738",1],["kqa/b763",1],["saa/a319",1],["saa/a320",1]]},
+        {"origin":"HKKI","destination":"HKJK","category":"arrival","route":"NK.NK3I.HKJK06","altitude":[13000,16000],"speed":250,"method":"random","rate":0.4,"airlines":[["ffv/c172",1],["kqa/b733",1],["kqa/e170",1],["kqa/e190",1],["ffv/crj7",1],["ffv/crj9",1],["ffv/crj2",1]]},
+        {"origin":"FWKI","destination":"HKJK","category":"arrival","route":"MIDFI.MIDFI3K.HKJK06","altitude":[13000,16000],"speed":250,"method":"random","rate":0.32,"airlines":[["kqa/b738",1],["kqa/b763",1],["kqa/e170",1],["kqa/e190",1]]},
+        {"origin":"HAAB","destination":"HKJK","category":"arrival","route":"NAK.NAK3J.HKJK06","altitude":[13000,16000],"speed":250,"method":"random","rate":0.32,"airlines":[["aar/b763",1],["eth/b738",1],["eth/b763",1],["kqa/e190",1]]},
+        {"origin":"HKMO","destination":"HKJK","category":"arrival","route":"GEBOF.GEBOF2J.HKJK06","altitude":[13000,16000],"speed":250,"method":"random","rate":0.32,"airlines":[["cfg/b763",1],["kqa/b733",1],["kqa/e190",1],["ffv/crj7",1],["ffv/crj9",1],["ffv/crj2",1]]},
+        {"origin":"HRYR","destination":"HKJK","category":"arrival","route":"NK.NK3I.HKJK06","altitude":[13000,16000],"speed":250,"method":"random","rate":0.32,"airlines":[["dat/a332",1],["kqa/e170",1],["kqa/e190",1],["rwd/crj7",1],["rwd/crj9",1],["rwd/crj2",1]]},
+        {"origin":"","destination":"HKJK","category":"arrival","route":"SF.SF3G.HKJK06","altitude":[13000,16000],"speed":250,"method":"random","rate":1.29,"airlines":[["kqa/b737",2],["kqa/b763",2],["aby/a320",1],["chh/a320",1],["csn/b773",1],["etd/a320",1],["iye/a320",1],["kal/a332",1],["kqa/b772",1],["kqa/b773",1],["kqa/e190",1],["qtr/a320",1]]},
+        {"origin":"","destination":"HKJK","category":"arrival","route":"TOHUS.TOHUS1I.HKJK06","altitude":[13000,16000],"speed":250,"method":"random","rate":0.32,"airlines":[["csn/b763",1],["kqa/b737",1],["kqa/b738",1],["kqa/b763",1]]},
+        {"origin":"","destination":"HKJK","category":"arrival","route":"GEBOF.GEBOF2J.HKJK06","altitude":[13000,16000],"speed":250,"method":"random","rate":1.38,"airlines":[["kqa/e190",5],["kqa/b737",2],["kqa/e170",2],["iye/b738",1],["kqa/b738",1],["kqa/e145",1],["mau/a319",1],["prf/at72",1],["prf/e190",1],["swr/a333",1],["ffv/dh8d",1],["ffv/dh8b",1]]},
+        {"origin":"","destination":"HKJK","category":"arrival","route":"MIDFI.MIDFI3K.HKJK06","altitude":[13000,16000],"speed":250,"method":"random","rate":1.05,"airlines":[["kqa/e190",8],["kqa/e170",2],["kqa/b763",1],["prf/at72",1],["prf/e170",1]]},
+        {"origin":"","destination":"HKJK","category":"arrival","route":"NK.NK3I.HKJK06","altitude":[13000,16000],"speed":250,"method":"random","rate":1.7,"airlines":[["kqa/b738",8],["kqa/b737",4],["kqa/e190",4],["kqa/e170",2],["dat/a332",1],["kqa/b763",1],["prf/at45",1]]},
+        {"origin":"","destination":"HKJK","category":"arrival","route":"NAK.NAK3J.HKJK06","altitude":[13000,16000],"speed":250,"method":"random","rate":1.7,"airlines":[["kqa/b772",2],["kqa/e170",2],["kqa/e190",2],["ffv/dh8d",1],["baw/b744",1],["cfg/b763",1],["dat/a332",1],["klm/b744",1],["kqa/b733",1],["kqa/b763",1],["msr/a320",1],["nas/a320",1]]},
+        {"origin":"","destination":"HKJK","category":"arrival","route":"TOHUS.TOHUS1I.HKJK06","altitude":[13000,16000],"speed":250,"method":"random","rate":0.38,"airlines":[["5y/c208",2],["5y/pc12",2],["5y/be20",1],["5y/b350",1],["5y/p180",1],["5y/c510",3],["5y/e50p",2],["5y/c550",3],["5y/e55p",2],["5y/cl30",2],["5y/c680",2],["5y/h25b",2],["5y/lj45",2],["5y/f2th",1],["5y/glf4",1],["5y/glex",1],["5y/glf5",1]]},
+        {"origin":"","destination":"HKJK","category":"arrival","route":"NAK.NAK3J.HKJK06","altitude":[13000,16000],"speed":250,"method":"random","rate":0.38,"airlines":[["5y/c208",2],["5y/pc12",2],["5y/be20",1],["5y/b350",1],["5y/p180",1],["5y/c510",3],["5y/e50p",2],["5y/c550",3],["5y/e55p",2],["5y/cl30",2],["5y/c680",2],["5y/h25b",2],["5y/lj45",2],["5y/f2th",1],["5y/glf4",1],["5y/glex",1],["5y/glf5",1]]}
     ],
     "maps": [
         {"name":"Base Map","lines": [
-            [-0.836,37.7731,-1.1784,37.1741],
-            [-1.1784,37.1741,-1.3189,36.9282],
-            [-1.2798,37.8019,-1.3062,37.2112],
-            [-1.3062,37.2112,-1.3189,36.9282],
-            [-2.0504,37.4072,-1.5558,37.0833],
-            [-1.5558,37.0833,-1.3189,36.9282],
-            [-2.1271,36.5945,-1.5806,36.8202],
-            [-1.5806,36.8202,-1.3189,36.9282],
-            [-1.1026,35.8508,-1.2632,36.6506],
-            [-1.2632,36.6506,-1.3189,36.9282],
-            [-0.3047,36.1534,-1.0939,36.7563],
-            [-1.0939,36.7563,-1.3189,36.9282]
+            [-1.3276,36.9164,-1.3057,36.9463]
         ]},
         {"name":"Extended Runway Centrelines","lines": [
             [-1.3276,36.9164,-1.426,36.782],

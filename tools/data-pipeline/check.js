@@ -421,6 +421,45 @@ function checkAirport(icaoLower, d, ctx, report, isGenerated) {
         sid.draw.forEach((line) => line.forEach((el) => fixReferenced(fixNameOf(el), `SID ${id}/draw`)));
     }
 
+    for (const [id, star] of Object.entries(stars)) {
+        if (star.icao !== id || typeof star.name !== 'string' || !star.entryPoints || !star.rwy || !Array.isArray(star.body) ||
+            !Array.isArray(star.draw) || star.draw.length === 0) {
+            err(`STAR ${id} malformed`);
+            continue;
+        }
+
+        if (id in fixes) {
+            err(`STAR ${id} has the same identifier as a fix`);
+        }
+
+        for (const rwyName of runwayNames) {
+            if (!(`${d.icao}${rwyName}` in star.rwy)) {
+                err(`STAR ${id} lacks an exit for runway ${rwyName}`);
+            }
+        }
+
+        for (const [key, legs] of Object.entries(star.rwy)) {
+            if (key.slice(0, 4) !== d.icao || !runwayNames.has(key.slice(4))) {
+                err(`STAR ${id} rwy key "${key}" is not <ICAO><runway>`);
+            }
+
+            legs.forEach((el) => {
+                if (typeof el === 'string' && el.startsWith('#')) {
+                    return;
+                }
+
+                fixReferenced(fixNameOf(el), `STAR ${id}/${key}`);
+            });
+        }
+
+        star.body.forEach((el) => fixReferenced(fixNameOf(el), `STAR ${id}/body`));
+        star.draw.forEach((line) => line.forEach((el) => fixReferenced(fixNameOf(el), `STAR ${id}/draw`)));
+        Object.entries(star.entryPoints).forEach(([entry, legs]) => {
+            fixReferenced(entry, `STAR ${id}/entry`);
+            legs.forEach((el) => fixReferenced(fixNameOf(el), `STAR ${id}/entry ${entry}`));
+        });
+    }
+
     stats.gates = Object.keys(sids).length;
 
     // ---------------------------------------------------------------- spawn patterns
@@ -488,35 +527,50 @@ function checkAirport(icaoLower, d, ctx, report, isGenerated) {
                 err(`${where} arrival speed ${p.speed} invalid`);
             }
 
-            // route: direct legs only, every element a defined fix, last = airport fix
-            const elements = String(p.route).split('..');
+            // route: ENTRY.STAR.<ICAO><runway>; the entry is a defined fix outside the airspace and the STAR's next fix is inside it
+            const parts = String(p.route).split('.');
 
-            if (elements.length < 2 || elements.some((e) => e.includes('.') || !e)) {
-                err(`${where} arrival route "${p.route}" is not a fix-direct route`);
+            if (parts.length !== 3 || String(p.route).includes('..')) {
+                err(`${where} arrival route "${p.route}" must be ENTRY.STAR.<ICAO><runway>`);
             } else {
-                elements.forEach((e) => fixReferenced(e, `${where} route`));
+                const star = stars[parts[1]];
 
-                if (elements[elements.length - 1] !== d.icao) {
-                    err(`${where} arrival route must end at the airport fix ${d.icao}`);
-                }
-
-                const first = fixes[elements[0]];
-
-                if (first) {
-                    const [x, y] = rel(parseCoordinate(first[0]), parseCoordinate(first[1]));
-
-                    if (airspaceRel.length && geo.pointInPolygon([x, y], airspaceRel)) {
-                        err(`${where} spawns inside the airspace (first fix ${elements[0]})`);
+                if (!star) {
+                    err(`${where} unknown STAR "${parts[1]}"`);
+                } else {
+                    if (!(parts[0] in star.entryPoints)) {
+                        err(`${where} entry "${parts[0]}" not in STAR ${parts[1]} entryPoints`);
                     }
-                }
 
-                const second = fixes[elements[1]];
+                    if (!(parts[2] in star.rwy)) {
+                        err(`${where} exit "${parts[2]}" not in STAR ${parts[1]} rwy keys`);
+                    }
 
-                if (second && airspaceRel.length) {
-                    const [x, y] = rel(parseCoordinate(second[0]), parseCoordinate(second[1]));
+                    if (parts[2] !== `${d.icao}${d.arrivalRunway}`) {
+                        err(`${where} arrival exit should use the default arrival runway`);
+                    }
 
-                    if (!geo.pointInPolygon([x, y], airspaceRel)) {
-                        err(`${where} second fix ${elements[1]} is not inside the airspace`);
+                    fixReferenced(parts[0], `${where} route`);
+
+                    const first = fixes[parts[0]];
+
+                    if (first) {
+                        const [x, y] = rel(parseCoordinate(first[0]), parseCoordinate(first[1]));
+
+                        if (airspaceRel.length && geo.pointInPolygon([x, y], airspaceRel)) {
+                            err(`${where} spawns inside the airspace (first fix ${parts[0]})`);
+                        }
+                    }
+
+                    const secondName = fixNameOf(star.body[1]);
+                    const second = fixes[secondName];
+
+                    if (second && airspaceRel.length) {
+                        const [x, y] = rel(parseCoordinate(second[0]), parseCoordinate(second[1]));
+
+                        if (!geo.pointInPolygon([x, y], airspaceRel)) {
+                            err(`${where} second fix ${secondName} is not inside the airspace`);
+                        }
                     }
                 }
             }

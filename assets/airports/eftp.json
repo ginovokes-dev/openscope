@@ -30,18 +30,31 @@
         "HODDO": [61.80331,22.82831],
         "WUCJE": [61.55871,23.31605],
         "_RWY0604DME": [61.37994,23.45629],
-        "_RWY2404DME": [61.44825,23.75278]
+        "_RWY2404DME": [61.44825,23.75278],
+        "_RWY0613DME": [61.31435,23.17519],
+        "_RWY0608DME": [61.35086,23.33121],
+        "_RWY2413DME": [61.51274,24.0362],
+        "_RWY2408DME": [61.47698,23.8786],
+        "_RWY06BASER": [61.5173,23.28803],
+        "_RWY06BASEL": [61.2314,23.57579],
+        "_RWY24BASER": [61.3109,23.92077],
+        "_RWY24BASEL": [61.5968,23.63301]
     },
     "runways": [
         {"name":["06","24"],"end":[[61.4089,23.5816,"390ft"],[61.4194,23.6272,"366ft"]],"ils":[true,true]}
     ],
     "sids": {
-        "HAL1A": {"icao":"HAL1A","name":"Halli One Alpha","rwy":{"EFTP06":["_RWY2404DME"],"EFTP24":["_RWY0604DME"]},"body":[],"exitPoints":{"HAL":["HAL"]},"draw":[["EFTP","HAL*"]]},
-        "ANT2B": {"icao":"ANT2B","name":"Antoni Two Bravo","rwy":{"EFTP06":["_RWY2404DME"],"EFTP24":["_RWY0604DME"]},"body":[],"exitPoints":{"ANT":["ANT"]},"draw":[["EFTP","ANT*"]]},
-        "EGIHU3F": {"icao":"EGIHU3F","name":"Egihu Three Foxtrot","rwy":{"EFTP06":["_RWY2404DME"],"EFTP24":["_RWY0604DME"]},"body":[],"exitPoints":{"EGIHU":["EGIHU"]},"draw":[["EFTP","EGIHU*"]]},
-        "HODDO3A": {"icao":"HODDO3A","name":"Hoddo Three Alpha","rwy":{"EFTP06":["_RWY2404DME"],"EFTP24":["_RWY0604DME"]},"body":[],"exitPoints":{"HODDO":["HODDO"]},"draw":[["EFTP","HODDO*"]]}
+        "HAL1A": {"icao":"HAL1A","name":"Halli One Alpha","rwy":{"EFTP06":[["_RWY2404DME","A19+"]],"EFTP24":[["_RWY0604DME","A19+"]]},"body":[],"exitPoints":{"HAL":["HAL"]},"draw":[["EFTP","HAL*"]]},
+        "ANT2B": {"icao":"ANT2B","name":"Antoni Two Bravo","rwy":{"EFTP06":[["_RWY2404DME","A19+"]],"EFTP24":[["_RWY0604DME","A19+"]]},"body":[],"exitPoints":{"ANT":["ANT"]},"draw":[["EFTP","ANT*"]]},
+        "EGIHU3F": {"icao":"EGIHU3F","name":"Egihu Three Foxtrot","rwy":{"EFTP06":[["_RWY2404DME","A19+"]],"EFTP24":[["_RWY0604DME","A19+"]]},"body":[],"exitPoints":{"EGIHU":["EGIHU"]},"draw":[["EFTP","EGIHU*"]]},
+        "HODDO3A": {"icao":"HODDO3A","name":"Hoddo Three Alpha","rwy":{"EFTP06":[["_RWY2404DME","A19+"]],"EFTP24":[["_RWY0604DME","A19+"]]},"body":[],"exitPoints":{"HODDO":["HODDO"]},"draw":[["EFTP","HODDO*"]]}
     },
-    "stars": {},
+    "stars": {
+        "HAL1H": {"icao":"HAL1H","name":"Halli One Hotel","entryPoints":{"HAL":[]},"body":["HAL",["VINPI","S250-"]],"rwy":{"EFTP06":[["_RWY06BASER","A56-|S230"],["_RWY0613DME","A46-|S210"],["_RWY0608DME","A30-|S180"],"#054"],"EFTP24":[["_RWY2413DME","A46-|S210"],["_RWY2408DME","A30-|S180"],"#234"]},"draw":[["HAL*","VINPI"],["VINPI","_RWY06BASER","_RWY0613DME","_RWY0608DME"],["VINPI","_RWY2413DME","_RWY2408DME"]]},
+        "ANT1G": {"icao":"ANT1G","name":"Antoni One Golf","entryPoints":{"ANT":[]},"body":["ANT",["ELINI","S250-"]],"rwy":{"EFTP06":[["_RWY06BASEL","A56-|S230"],["_RWY0613DME","A46-|S210"],["_RWY0608DME","A30-|S180"],"#054"],"EFTP24":[["_RWY2413DME","A46-|S210"],["_RWY2408DME","A30-|S180"],"#234"]},"draw":[["ANT*","ELINI"],["ELINI","_RWY06BASEL","_RWY0613DME","_RWY0608DME"],["ELINI","_RWY2413DME","_RWY2408DME"]]},
+        "EGIHU3L": {"icao":"EGIHU3L","name":"Egihu Three Lima","entryPoints":{"EGIHU":[]},"body":["EGIHU",["KIKBO","S250-"]],"rwy":{"EFTP06":[["_RWY0613DME","A46-|S210"],["_RWY0608DME","A30-|S180"],"#054"],"EFTP24":[["_RWY24BASER","A56-|S230"],["_RWY2413DME","A46-|S210"],["_RWY2408DME","A30-|S180"],"#234"]},"draw":[["EGIHU*","KIKBO"],["KIKBO","_RWY0613DME","_RWY0608DME"],["KIKBO","_RWY24BASER","_RWY2413DME","_RWY2408DME"]]},
+        "HODDO1L": {"icao":"HODDO1L","name":"Hoddo One Lima","entryPoints":{"HODDO":[]},"body":["HODDO",["WUCJE","S250-"]],"rwy":{"EFTP06":[["_RWY0613DME","A46-|S210"],["_RWY0608DME","A30-|S180"],"#054"],"EFTP24":[["_RWY24BASEL","A56-|S230"],["_RWY2413DME","A46-|S210"],["_RWY2408DME","A30-|S180"],"#234"]},"draw":[["HODDO*","WUCJE"],["WUCJE","_RWY0613DME","_RWY0608DME"],["WUCJE","_RWY24BASEL","_RWY2413DME","_RWY2408DME"]]}
+    },
     "spawnPatterns": [
         {"origin":"EFTP","destination":"EDDW","category":"departure","route":"EFTP24.EGIHU3F.EGIHU","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["ryr/b738",1]]},
         {"origin":"EFTP","destination":"EDFH","category":"departure","route":"EFTP24.EGIHU3F.EGIHU","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["ryr/b738",1]]},
@@ -49,25 +62,18 @@
         {"origin":"EFTP","destination":"ESSA","category":"departure","route":"EFTP24.EGIHU3F.EGIHU","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["cca/sb20",1]]},
         {"origin":"EFTP","destination":"LEAL","category":"departure","route":"EFTP24.EGIHU3F.EGIHU","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["ryr/b738",1]]},
         {"origin":"EFTP","destination":"","category":"departure","route":"EFTP24.EGIHU3F.EGIHU","altitude":"","speed":"","method":"random","rate":1.93,"airlines":[["ryr/b738",4]]},
-        {"origin":"EFTP","destination":"","category":"departure","route":"EFTP24.HODDO3A.HODDO","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["oh/c172",6],["oh/p28a",5],["oh/c182",3],["oh/be36",2],["oh/da42",1],["oh/tb20",1],["oh/c208",2],["oh/pc12",2],["oh/be20",1],["oh/b350",1],["oh/p180",1],["oh/c510",1],["oh/e50p",1],["oh/c550",1],["oh/e55p",1],["oh/cl30",1],["oh/c680",1],["oh/h25b",1],["oh/lj45",1],["oh/f2th",1],["oh/glf4",1],["oh/glex",1],["oh/glf5",1]]},
-        {"origin":"EDDW","destination":"EFTP","category":"arrival","route":"EGIHU..KIKBO..EFTP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["ryr/b738",1]]},
-        {"origin":"EDFH","destination":"EFTP","category":"arrival","route":"EGIHU..KIKBO..EFTP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["ryr/b738",1]]},
-        {"origin":"EGSS","destination":"EFTP","category":"arrival","route":"EGIHU..KIKBO..EFTP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["ryr/b738",1]]},
-        {"origin":"ESSA","destination":"EFTP","category":"arrival","route":"EGIHU..KIKBO..EFTP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["cca/sb20",1]]},
-        {"origin":"LEAL","destination":"EFTP","category":"arrival","route":"EGIHU..KIKBO..EFTP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["ryr/b738",1]]},
-        {"origin":"","destination":"EFTP","category":"arrival","route":"EGIHU..KIKBO..EFTP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.93,"airlines":[["ryr/b738",4]]},
-        {"origin":"","destination":"EFTP","category":"arrival","route":"HODDO..WUCJE..EFTP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["oh/c172",6],["oh/p28a",5],["oh/c182",3],["oh/be36",2],["oh/da42",1],["oh/tb20",1],["oh/c208",2],["oh/pc12",2],["oh/be20",1],["oh/b350",1],["oh/p180",1],["oh/c510",1],["oh/e50p",1],["oh/c550",1],["oh/e55p",1],["oh/cl30",1],["oh/c680",1],["oh/h25b",1],["oh/lj45",1],["oh/f2th",1],["oh/glf4",1],["oh/glex",1],["oh/glf5",1]]}
+        {"origin":"EFTP","destination":"","category":"departure","route":"EFTP24.HAL1A.HAL","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["oh/c172",6],["oh/p28a",5],["oh/c182",3],["oh/be36",2],["oh/da42",1],["oh/tb20",1],["oh/c208",2],["oh/pc12",2],["oh/be20",1],["oh/b350",1],["oh/p180",1],["oh/c510",1],["oh/e50p",1],["oh/c550",1],["oh/e55p",1],["oh/cl30",1],["oh/c680",1],["oh/h25b",1],["oh/lj45",1],["oh/f2th",1],["oh/glf4",1],["oh/glex",1],["oh/glf5",1]]},
+        {"origin":"EDDW","destination":"EFTP","category":"arrival","route":"EGIHU.EGIHU3L.EFTP24","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDFH","destination":"EFTP","category":"arrival","route":"EGIHU.EGIHU3L.EFTP24","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGSS","destination":"EFTP","category":"arrival","route":"EGIHU.EGIHU3L.EFTP24","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["ryr/b738",1]]},
+        {"origin":"ESSA","destination":"EFTP","category":"arrival","route":"EGIHU.EGIHU3L.EFTP24","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["cca/sb20",1]]},
+        {"origin":"LEAL","destination":"EFTP","category":"arrival","route":"EGIHU.EGIHU3L.EFTP24","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"EFTP","category":"arrival","route":"EGIHU.EGIHU3L.EFTP24","altitude":[4000,7000],"speed":250,"method":"random","rate":1.93,"airlines":[["ryr/b738",4]]},
+        {"origin":"","destination":"EFTP","category":"arrival","route":"HAL.HAL1H.EFTP24","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["oh/c172",6],["oh/p28a",5],["oh/c182",3],["oh/be36",2],["oh/da42",1],["oh/tb20",1],["oh/c208",2],["oh/pc12",2],["oh/be20",1],["oh/b350",1],["oh/p180",1],["oh/c510",1],["oh/e50p",1],["oh/c550",1],["oh/e55p",1],["oh/cl30",1],["oh/c680",1],["oh/h25b",1],["oh/lj45",1],["oh/f2th",1],["oh/glf4",1],["oh/glex",1],["oh/glf5",1]]}
     ],
     "maps": [
         {"name":"Base Map","lines": [
-            [61.8547,24.8026,61.5359,23.9356],
-            [61.5359,23.9356,61.4141,23.6044],
-            [60.863,25.1268,61.2935,23.9375],
-            [61.2935,23.9375,61.4141,23.6044],
-            [61.0428,22.791,61.2761,23.3022],
-            [61.2761,23.3022,61.4141,23.6044],
-            [61.8033,22.8283,61.5587,23.3161],
-            [61.5587,23.3161,61.4141,23.6044]
+            [61.4089,23.5816,61.4194,23.6272]
         ]},
         {"name":"Extended Runway Centrelines","lines": [
             [61.4089,23.5816,61.3363,23.2688],

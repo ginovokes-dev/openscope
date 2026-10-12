@@ -32,19 +32,33 @@
         "TEVOK": [12.25296,-2.22798],
         "PATAF": [12.31774,-1.76558],
         "_RWY0404DME": [12.28589,-1.55721],
-        "_RWY2204DME": [12.42024,-1.46753]
+        "_RWY2204DME": [12.42024,-1.46753],
+        "_RWY0413DME": [12.1603,-1.64095],
+        "_RWY0408DME": [12.23008,-1.59444],
+        "_RWY2213DME": [12.54578,-1.38363],
+        "_RWY2208DME": [12.47604,-1.43025],
+        "_RWY04BASER": [12.36313,-1.6997],
+        "_RWY04BASEL": [12.1898,-1.42758],
+        "_RWY22BASER": [12.34327,-1.32514],
+        "_RWY22BASEL": [12.5166,-1.59726]
     },
     "runways": [
         {"name":["04","22"],"end":[[12.3417,-1.51997,"1034ft"],[12.36444,-1.50479,"982ft"]],"ils":[true,true]}
     ],
     "sids": {
-        "KUKEN2A": {"icao":"KUKEN2A","name":"Kuken Two Alpha","rwy":{"DFFD04":["_RWY2204DME"],"DFFD22":["_RWY0404DME"]},"body":[],"exitPoints":{"KUKEN":["KUKEN"]},"draw":[["DFFD","KUKEN*"]]},
-        "AKOLI2F": {"icao":"AKOLI2F","name":"Akoli Two Foxtrot","rwy":{"DFFD04":["_RWY2204DME"],"DFFD22":["_RWY0404DME"]},"body":[],"exitPoints":{"AKOLI":["AKOLI"]},"draw":[["DFFD","AKOLI*"]]},
-        "HISAP1B": {"icao":"HISAP1B","name":"Hisap One Bravo","rwy":{"DFFD04":["_RWY2204DME"],"DFFD22":["_RWY0404DME"]},"body":[],"exitPoints":{"HISAP":["HISAP"]},"draw":[["DFFD","HISAP*"]]},
-        "AZUKI3B": {"icao":"AZUKI3B","name":"Azuki Three Bravo","rwy":{"DFFD04":["_RWY2204DME"],"DFFD22":["_RWY0404DME"]},"body":[],"exitPoints":{"AZUKI":["AZUKI"]},"draw":[["DFFD","AZUKI*"]]},
-        "TEVOK1C": {"icao":"TEVOK1C","name":"Tevok One Charlie","rwy":{"DFFD04":["_RWY2204DME"],"DFFD22":["_RWY0404DME"]},"body":[],"exitPoints":{"TEVOK":["TEVOK"]},"draw":[["DFFD","TEVOK*"]]}
+        "KUKEN2A": {"icao":"KUKEN2A","name":"Kuken Two Alpha","rwy":{"DFFD04":[["_RWY2204DME","A25+"]],"DFFD22":[["_RWY0404DME","A25+"]]},"body":[],"exitPoints":{"KUKEN":["KUKEN"]},"draw":[["DFFD","KUKEN*"]]},
+        "AKOLI2F": {"icao":"AKOLI2F","name":"Akoli Two Foxtrot","rwy":{"DFFD04":[["_RWY2204DME","A25+"]],"DFFD22":[["_RWY0404DME","A25+"]]},"body":[],"exitPoints":{"AKOLI":["AKOLI"]},"draw":[["DFFD","AKOLI*"]]},
+        "HISAP1B": {"icao":"HISAP1B","name":"Hisap One Bravo","rwy":{"DFFD04":[["_RWY2204DME","A25+"]],"DFFD22":[["_RWY0404DME","A25+"]]},"body":[],"exitPoints":{"HISAP":["HISAP"]},"draw":[["DFFD","HISAP*"]]},
+        "AZUKI3B": {"icao":"AZUKI3B","name":"Azuki Three Bravo","rwy":{"DFFD04":[["_RWY2204DME","A25+"]],"DFFD22":[["_RWY0404DME","A25+"]]},"body":[],"exitPoints":{"AZUKI":["AZUKI"]},"draw":[["DFFD","AZUKI*"]]},
+        "TEVOK1C": {"icao":"TEVOK1C","name":"Tevok One Charlie","rwy":{"DFFD04":[["_RWY2204DME","A25+"]],"DFFD22":[["_RWY0404DME","A25+"]]},"body":[],"exitPoints":{"TEVOK":["TEVOK"]},"draw":[["DFFD","TEVOK*"]]}
     },
-    "stars": {},
+    "stars": {
+        "KUKEN3G": {"icao":"KUKEN3G","name":"Kuken Three Golf","entryPoints":{"KUKEN":[]},"body":["KUKEN",["AMOKU","S250-"]],"rwy":{"DFFD04":[["_RWY04BASER","A62-|S230"],["_RWY0413DME","A52-|S210"],["_RWY0408DME","A36-|S180"],"#034"],"DFFD22":[["_RWY2213DME","A52-|S210"],["_RWY2208DME","A36-|S180"],"#214"]},"draw":[["KUKEN*","AMOKU"],["AMOKU","_RWY04BASER","_RWY0413DME","_RWY0408DME"],["AMOKU","_RWY2213DME","_RWY2208DME"]]},
+        "AKOLI3K": {"icao":"AKOLI3K","name":"Akoli Three Kilo","entryPoints":{"AKOLI":[]},"body":["AKOLI",["FEKEC","S250-"]],"rwy":{"DFFD04":[["_RWY04BASEL","A62-|S230"],["_RWY0413DME","A52-|S210"],["_RWY0408DME","A36-|S180"],"#034"],"DFFD22":[["_RWY2213DME","A52-|S210"],["_RWY2208DME","A36-|S180"],"#214"]},"draw":[["AKOLI*","FEKEC"],["FEKEC","_RWY04BASEL","_RWY0413DME","_RWY0408DME"],["FEKEC","_RWY2213DME","_RWY2208DME"]]},
+        "HISAP2H": {"icao":"HISAP2H","name":"Hisap Two Hotel","entryPoints":{"HISAP":[]},"body":["HISAP",["MOTIP","S250-"]],"rwy":{"DFFD04":[["_RWY0413DME","A52-|S210"],["_RWY0408DME","A36-|S180"],"#034"],"DFFD22":[["_RWY22BASER","A62-|S230"],["_RWY2213DME","A52-|S210"],["_RWY2208DME","A36-|S180"],"#214"]},"draw":[["HISAP*","MOTIP"],["MOTIP","_RWY0413DME","_RWY0408DME"],["MOTIP","_RWY22BASER","_RWY2213DME","_RWY2208DME"]]},
+        "AZUKI3L": {"icao":"AZUKI3L","name":"Azuki Three Lima","entryPoints":{"AZUKI":[]},"body":["AZUKI",["TACDO","S250-"]],"rwy":{"DFFD04":[["_RWY0413DME","A52-|S210"],["_RWY0408DME","A36-|S180"],"#034"],"DFFD22":[["_RWY22BASER","A62-|S230"],["_RWY2213DME","A52-|S210"],["_RWY2208DME","A36-|S180"],"#214"]},"draw":[["AZUKI*","TACDO"],["TACDO","_RWY0413DME","_RWY0408DME"],["TACDO","_RWY22BASER","_RWY2213DME","_RWY2208DME"]]},
+        "TEVOK3H": {"icao":"TEVOK3H","name":"Tevok Three Hotel","entryPoints":{"TEVOK":[]},"body":["TEVOK",["PATAF","S250-"]],"rwy":{"DFFD04":[["_RWY0413DME","A52-|S210"],["_RWY0408DME","A36-|S180"],"#034"],"DFFD22":[["_RWY22BASEL","A62-|S230"],["_RWY2213DME","A52-|S210"],["_RWY2208DME","A36-|S180"],"#214"]},"draw":[["TEVOK*","PATAF"],["PATAF","_RWY0413DME","_RWY0408DME"],["PATAF","_RWY22BASEL","_RWY2213DME","_RWY2208DME"]]}
+    },
     "spawnPatterns": [
         {"origin":"DFFD","destination":"DIAP","category":"departure","route":"DFFD04.AZUKI3B.AZUKI","altitude":"","speed":"","method":"random","rate":1.24,"airlines":[["dat/a333",1],["eth/b752",1],["vbw/e170",1],["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
         {"origin":"DFFD","destination":"DRRN","category":"departure","route":"DFFD04.AKOLI2F.AKOLI","altitude":"","speed":"","method":"random","rate":1.24,"airlines":[["afr/a332",1],["eth/b752",1],["ram/b738",1],["thy/b739",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
@@ -55,28 +69,19 @@
         {"origin":"DFFD","destination":"","category":"departure","route":"DFFD04.AKOLI2F.AKOLI","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["eth/b752",1]]},
         {"origin":"DFFD","destination":"","category":"departure","route":"DFFD04.HISAP1B.HISAP","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
         {"origin":"DFFD","destination":"","category":"departure","route":"DFFD04.TEVOK1C.TEVOK","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
-        {"origin":"DIAP","destination":"DFFD","category":"arrival","route":"AZUKI..TACDO..DFFD","altitude":[7000,10000],"speed":250,"method":"random","rate":1.24,"airlines":[["dat/a333",1],["eth/b752",1],["vbw/e170",1],["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
-        {"origin":"DRRN","destination":"DFFD","category":"arrival","route":"AKOLI..FEKEC..DFFD","altitude":[7000,10000],"speed":250,"method":"random","rate":1.24,"airlines":[["afr/a332",1],["eth/b752",1],["ram/b738",1],["thy/b739",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
-        {"origin":"DXXX","destination":"DFFD","category":"arrival","route":"HISAP..MOTIP..DFFD","altitude":[7000,10000],"speed":250,"method":"random","rate":0.49,"airlines":[["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
-        {"origin":"EBBR","destination":"DFFD","category":"arrival","route":"KUKEN..AMOKU..DFFD","altitude":[7000,10000],"speed":250,"method":"random","rate":0.49,"airlines":[["dat/a332",1],["dat/a333",1]]},
-        {"origin":"GABS","destination":"DFFD","category":"arrival","route":"TEVOK..PATAF..DFFD","altitude":[7000,10000],"speed":250,"method":"random","rate":0.49,"airlines":[["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
-        {"origin":"","destination":"DFFD","category":"arrival","route":"KUKEN..AMOKU..DFFD","altitude":[7000,10000],"speed":250,"method":"random","rate":1.73,"airlines":[["afr/a343",1],["dah/b736",1],["ram/b737",1],["ram/b738",1],["tar/a320",1],["thy/b738",1],["thy/b739",1]]},
-        {"origin":"","destination":"DFFD","category":"arrival","route":"AKOLI..FEKEC..DFFD","altitude":[7000,10000],"speed":250,"method":"random","rate":0.25,"airlines":[["eth/b752",1]]},
-        {"origin":"","destination":"DFFD","category":"arrival","route":"HISAP..MOTIP..DFFD","altitude":[7000,10000],"speed":250,"method":"random","rate":0.49,"airlines":[["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
-        {"origin":"","destination":"DFFD","category":"arrival","route":"TEVOK..PATAF..DFFD","altitude":[7000,10000],"speed":250,"method":"random","rate":0.49,"airlines":[["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]}
+        {"origin":"DIAP","destination":"DFFD","category":"arrival","route":"AZUKI.AZUKI3L.DFFD04","altitude":[7000,10000],"speed":250,"method":"random","rate":1.24,"airlines":[["dat/a333",1],["eth/b752",1],["vbw/e170",1],["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"DRRN","destination":"DFFD","category":"arrival","route":"AKOLI.AKOLI3K.DFFD04","altitude":[7000,10000],"speed":250,"method":"random","rate":1.24,"airlines":[["afr/a332",1],["eth/b752",1],["ram/b738",1],["thy/b739",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"DXXX","destination":"DFFD","category":"arrival","route":"HISAP.HISAP2H.DFFD04","altitude":[7000,10000],"speed":250,"method":"random","rate":0.49,"airlines":[["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"EBBR","destination":"DFFD","category":"arrival","route":"KUKEN.KUKEN3G.DFFD04","altitude":[7000,10000],"speed":250,"method":"random","rate":0.49,"airlines":[["dat/a332",1],["dat/a333",1]]},
+        {"origin":"GABS","destination":"DFFD","category":"arrival","route":"TEVOK.TEVOK3H.DFFD04","altitude":[7000,10000],"speed":250,"method":"random","rate":0.49,"airlines":[["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"","destination":"DFFD","category":"arrival","route":"KUKEN.KUKEN3G.DFFD04","altitude":[7000,10000],"speed":250,"method":"random","rate":1.73,"airlines":[["afr/a343",1],["dah/b736",1],["ram/b737",1],["ram/b738",1],["tar/a320",1],["thy/b738",1],["thy/b739",1]]},
+        {"origin":"","destination":"DFFD","category":"arrival","route":"AKOLI.AKOLI3K.DFFD04","altitude":[7000,10000],"speed":250,"method":"random","rate":0.25,"airlines":[["eth/b752",1]]},
+        {"origin":"","destination":"DFFD","category":"arrival","route":"HISAP.HISAP2H.DFFD04","altitude":[7000,10000],"speed":250,"method":"random","rate":0.49,"airlines":[["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"","destination":"DFFD","category":"arrival","route":"TEVOK.TEVOK3H.DFFD04","altitude":[7000,10000],"speed":250,"method":"random","rate":0.49,"airlines":[["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]}
     ],
     "maps": [
         {"name":"Base Map","lines": [
-            [13.0593,-1.5054,12.603,-1.5099],
-            [12.603,-1.5099,12.3532,-1.5124],
-            [12.501,-0.8056,12.4055,-1.2623],
-            [12.4055,-1.2623,12.3532,-1.5124],
-            [11.7029,-1.2307,12.1231,-1.4128],
-            [12.1231,-1.4128,12.3532,-1.5124],
-            [11.6847,-1.7453,12.1167,-1.5948],
-            [12.1167,-1.5948,12.3532,-1.5124],
-            [12.253,-2.228,12.3177,-1.7656],
-            [12.3177,-1.7656,12.3532,-1.5124]
+            [12.3417,-1.52,12.3644,-1.5048]
         ]},
         {"name":"Extended Runway Centrelines","lines": [
             [12.3417,-1.52,12.2022,-1.613],

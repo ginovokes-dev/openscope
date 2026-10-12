@@ -15,7 +15,7 @@
     "wind": {"angle":320,"speed":9},
     "arrivalRunway": "33",
     "departureRunway": "33",
-    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "defaultMaps": ["Base Map","Coastline","Extended Runway Centrelines"],
     "airspace": [
         {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[32.7289,15.0911],[32.7086,15.2138],[32.6621,15.326],[32.5926,15.4202],[32.5049,15.49],[32.405,15.5305],[32.2996,15.539],[32.1959,15.5149],[32.101,15.4599],[32.0214,15.3777],[31.9625,15.2739],[31.9283,15.1557],[31.9211,15.0309],[31.9414,14.9082],[31.9879,14.796],[32.0574,14.7018],[32.1451,14.632],[32.245,14.5915],[32.3504,14.583],[32.4541,14.6071],[32.549,14.6621],[32.6286,14.7443],[32.6875,14.8481],[32.7217,14.9663]]}
     ],
@@ -30,18 +30,31 @@
         "PAKIP": [32.6922,14.59579],
         "CIJDA": [32.46143,14.88816],
         "_RWY1504DME": [32.39313,15.00654],
-        "_RWY3304DME": [32.25753,15.1154]
+        "_RWY3304DME": [32.25753,15.1154],
+        "_RWY1513DME": [32.5171,14.90668],
+        "_RWY1508DME": [32.44823,14.96219],
+        "_RWY3313DME": [32.13341,15.21471],
+        "_RWY3308DME": [32.20237,15.15957],
+        "_RWY15BASER": [32.48988,15.15552],
+        "_RWY33BASEL": [32.33827,15.27724],
+        "_RWY15BASEL": [32.31173,14.84476],
+        "_RWY33BASER": [32.16012,14.96648]
     },
     "runways": [
         {"name":["15","33"],"end":[[32.338,15.05083,"35ft"],[32.31267,15.07117,"25ft"]],"ils":[false,false]}
     ],
     "sids": {
-        "FOFAV1A": {"icao":"FOFAV1A","name":"Fofav One Alpha","rwy":{"HLMS15":["_RWY3304DME"],"HLMS33":["_RWY1504DME"]},"body":[],"exitPoints":{"FOFAV":["FOFAV"]},"draw":[["HLMS","FOFAV*"]]},
-        "HEGCO2D": {"icao":"HEGCO2D","name":"Hegco Two Delta","rwy":{"HLMS15":["_RWY3304DME"],"HLMS33":["_RWY1504DME"]},"body":[],"exitPoints":{"HEGCO":["HEGCO"]},"draw":[["HLMS","HEGCO*"]]},
-        "VALHU2B": {"icao":"VALHU2B","name":"Valhu Two Bravo","rwy":{"HLMS15":["_RWY3304DME"],"HLMS33":["_RWY1504DME"]},"body":[],"exitPoints":{"VALHU":["VALHU"]},"draw":[["HLMS","VALHU*"]]},
-        "PAKIP1A": {"icao":"PAKIP1A","name":"Pakip One Alpha","rwy":{"HLMS15":["_RWY3304DME"],"HLMS33":["_RWY1504DME"]},"body":[],"exitPoints":{"PAKIP":["PAKIP"]},"draw":[["HLMS","PAKIP*"]]}
+        "FOFAV1A": {"icao":"FOFAV1A","name":"Fofav One Alpha","rwy":{"HLMS15":[["_RWY3304DME","A16+"]],"HLMS33":[["_RWY1504DME","A16+"]]},"body":[],"exitPoints":{"FOFAV":["FOFAV"]},"draw":[["HLMS","FOFAV*"]]},
+        "HEGCO2D": {"icao":"HEGCO2D","name":"Hegco Two Delta","rwy":{"HLMS15":[["_RWY3304DME","A16+"]],"HLMS33":[["_RWY1504DME","A16+"]]},"body":[],"exitPoints":{"HEGCO":["HEGCO"]},"draw":[["HLMS","HEGCO*"]]},
+        "VALHU2B": {"icao":"VALHU2B","name":"Valhu Two Bravo","rwy":{"HLMS15":[["_RWY3304DME","A16+"]],"HLMS33":[["_RWY1504DME","A16+"]]},"body":[],"exitPoints":{"VALHU":["VALHU"]},"draw":[["HLMS","VALHU*"]]},
+        "PAKIP1A": {"icao":"PAKIP1A","name":"Pakip One Alpha","rwy":{"HLMS15":[["_RWY3304DME","A16+"]],"HLMS33":[["_RWY1504DME","A16+"]]},"body":[],"exitPoints":{"PAKIP":["PAKIP"]},"draw":[["HLMS","PAKIP*"]]}
     },
-    "stars": {},
+    "stars": {
+        "FOFAV2I": {"icao":"FOFAV2I","name":"Fofav Two India","entryPoints":{"FOFAV":[]},"body":["FOFAV",["OSAVO","S250-"]],"rwy":{"HLMS15":[["_RWY15BASER","A53-|S230"],["_RWY1513DME","A43-|S210"],["_RWY1508DME","A27-|S180"],"#142"],"HLMS33":[["_RWY33BASEL","A53-|S230"],["_RWY3313DME","A43-|S210"],["_RWY3308DME","A27-|S180"],"#322"]},"draw":[["FOFAV*","OSAVO"],["OSAVO","_RWY15BASER","_RWY1513DME","_RWY1508DME"],["OSAVO","_RWY33BASEL","_RWY3313DME","_RWY3308DME"]]},
+        "HEGCO1K": {"icao":"HEGCO1K","name":"Hegco One Kilo","entryPoints":{"HEGCO":[]},"body":["HEGCO",["UKEFI","S250-"]],"rwy":{"HLMS15":[["_RWY15BASER","A53-|S230"],["_RWY1513DME","A43-|S210"],["_RWY1508DME","A27-|S180"],"#142"],"HLMS33":[["_RWY3313DME","A43-|S210"],["_RWY3308DME","A27-|S180"],"#322"]},"draw":[["HEGCO*","UKEFI"],["UKEFI","_RWY15BASER","_RWY1513DME","_RWY1508DME"],["UKEFI","_RWY3313DME","_RWY3308DME"]]},
+        "VALHU2L": {"icao":"VALHU2L","name":"Valhu Two Lima","entryPoints":{"VALHU":[]},"body":["VALHU",["IHEZO","S250-"]],"rwy":{"HLMS15":[["_RWY15BASEL","A53-|S230"],["_RWY1513DME","A43-|S210"],["_RWY1508DME","A27-|S180"],"#142"],"HLMS33":[["_RWY3313DME","A43-|S210"],["_RWY3308DME","A27-|S180"],"#322"]},"draw":[["VALHU*","IHEZO"],["IHEZO","_RWY15BASEL","_RWY1513DME","_RWY1508DME"],["IHEZO","_RWY3313DME","_RWY3308DME"]]},
+        "PAKIP1H": {"icao":"PAKIP1H","name":"Pakip One Hotel","entryPoints":{"PAKIP":[]},"body":["PAKIP",["CIJDA","S250-"]],"rwy":{"HLMS15":[["_RWY1513DME","A43-|S210"],["_RWY1508DME","A27-|S180"],"#142"],"HLMS33":[["_RWY33BASER","A53-|S230"],["_RWY3313DME","A43-|S210"],["_RWY3308DME","A27-|S180"],"#322"]},"draw":[["PAKIP*","CIJDA"],["CIJDA","_RWY1513DME","_RWY1508DME"],["CIJDA","_RWY33BASER","_RWY3313DME","_RWY3308DME"]]}
+    },
     "spawnPatterns": [
         {"origin":"HLMS","destination":"DTTA","category":"departure","route":"HLMS33.PAKIP1A.PAKIP","altitude":"","speed":"","method":"random","rate":1.67,"airlines":[["tar/a320",2],["aaw/a319",1],["aaw/a320",1],["laa/a320",1],["tar/a319",1]]},
         {"origin":"HLMS","destination":"DTTX","category":"departure","route":"HLMS33.PAKIP1A.PAKIP","altitude":"","speed":"","method":"random","rate":1.11,"airlines":[["aaw/a319",1],["aaw/a320",1],["laa/a320",1],["laa/crj9",1]]},
@@ -49,23 +62,34 @@
         {"origin":"HLMS","destination":"LTFM","category":"departure","route":"HLMS33.FOFAV1A.FOFAV","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["aaw/a320",1],["thy/a319",1]]},
         {"origin":"HLMS","destination":"OJAI","category":"departure","route":"HLMS33.HEGCO2D.HEGCO","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["rja/e190",1],["rja/e75l",1]]},
         {"origin":"HLMS","destination":"","category":"departure","route":"HLMS33.HEGCO2D.HEGCO","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["laa/a320",2]]},
-        {"origin":"DTTA","destination":"HLMS","category":"arrival","route":"PAKIP..CIJDA..HLMS","altitude":[4000,7000],"speed":250,"method":"random","rate":1.67,"airlines":[["tar/a320",2],["aaw/a319",1],["aaw/a320",1],["laa/a320",1],["tar/a319",1]]},
-        {"origin":"DTTX","destination":"HLMS","category":"arrival","route":"PAKIP..CIJDA..HLMS","altitude":[4000,7000],"speed":250,"method":"random","rate":1.11,"airlines":[["aaw/a319",1],["aaw/a320",1],["laa/a320",1],["laa/crj9",1]]},
-        {"origin":"HLLB","destination":"HLMS","category":"arrival","route":"HEGCO..UKEFI..HLMS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["aaw/a320",1],["laa/a320",1],["laa/crj9",1]]},
-        {"origin":"LTFM","destination":"HLMS","category":"arrival","route":"FOFAV..OSAVO..HLMS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.56,"airlines":[["aaw/a320",1],["thy/a319",1]]},
-        {"origin":"OJAI","destination":"HLMS","category":"arrival","route":"HEGCO..UKEFI..HLMS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.56,"airlines":[["rja/e190",1],["rja/e75l",1]]},
-        {"origin":"","destination":"HLMS","category":"arrival","route":"HEGCO..UKEFI..HLMS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.56,"airlines":[["laa/a320",2]]}
+        {"origin":"DTTA","destination":"HLMS","category":"arrival","route":"PAKIP.PAKIP1H.HLMS33","altitude":[4000,7000],"speed":250,"method":"random","rate":1.67,"airlines":[["tar/a320",2],["aaw/a319",1],["aaw/a320",1],["laa/a320",1],["tar/a319",1]]},
+        {"origin":"DTTX","destination":"HLMS","category":"arrival","route":"PAKIP.PAKIP1H.HLMS33","altitude":[4000,7000],"speed":250,"method":"random","rate":1.11,"airlines":[["aaw/a319",1],["aaw/a320",1],["laa/a320",1],["laa/crj9",1]]},
+        {"origin":"HLLB","destination":"HLMS","category":"arrival","route":"HEGCO.HEGCO1K.HLMS33","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["aaw/a320",1],["laa/a320",1],["laa/crj9",1]]},
+        {"origin":"LTFM","destination":"HLMS","category":"arrival","route":"FOFAV.FOFAV2I.HLMS33","altitude":[4000,7000],"speed":250,"method":"random","rate":0.56,"airlines":[["aaw/a320",1],["thy/a319",1]]},
+        {"origin":"OJAI","destination":"HLMS","category":"arrival","route":"HEGCO.HEGCO1K.HLMS33","altitude":[4000,7000],"speed":250,"method":"random","rate":0.56,"airlines":[["rja/e190",1],["rja/e75l",1]]},
+        {"origin":"","destination":"HLMS","category":"arrival","route":"HEGCO.HEGCO1K.HLMS33","altitude":[4000,7000],"speed":250,"method":"random","rate":0.56,"airlines":[["laa/a320",2]]}
     ],
     "maps": [
         {"name":"Base Map","lines": [
-            [32.6934,15.5249,32.4619,15.2333],
-            [32.4619,15.2333,32.325,15.061],
-            [32.3164,15.6975,32.3218,15.2975],
-            [32.3218,15.2975,32.325,15.061],
-            [31.8262,14.8227,32.1397,14.9725],
-            [32.1397,14.9725,32.325,15.061],
-            [32.6922,14.5958,32.4614,14.8882],
-            [32.4614,14.8882,32.325,15.061]
+            [32.338,15.0508,32.3127,15.0712]
+        ]},
+        {"name":"Coastline","lines": [
+            [32.51,14.484,32.497,14.606],
+            [32.497,14.606,32.438,14.758],
+            [32.438,14.758,32.439,14.905],
+            [32.439,14.905,32.419,14.967],
+            [32.419,14.967,32.411,15.097],
+            [32.411,15.097,32.374,15.226],
+            [32.374,15.226,32.361,15.215],
+            [32.361,15.215,32.371,15.226],
+            [32.371,15.226,32.344,15.233],
+            [32.344,15.233,32.347,15.256],
+            [32.347,15.256,32.343,15.236],
+            [32.343,15.236,32.319,15.271],
+            [32.319,15.271,32.213,15.317],
+            [32.213,15.317,32.164,15.357],
+            [32.164,15.357,31.962,15.361],
+            [31.962,15.361,31.677,15.484]
         ]},
         {"name":"Extended Runway Centrelines","lines": [
             [32.3127,15.0712,32.1748,15.1816],
