@@ -207,7 +207,7 @@ export class VoiceInput {
             this._notify({ state: 'listening', interim: `${finalText}${interimText}`.trim() });
         };
         recognition.onerror = (event) => {
-            error = event.error;
+            ({ error } = event);
         };
         recognition.start();
 

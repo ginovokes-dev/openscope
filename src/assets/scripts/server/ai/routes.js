@@ -137,13 +137,21 @@ const registerAiRoutes = (app, env = process.env) => {
         maxRetries: 1,
         timeout: 45000
     });
-    const buildVoiceClient = (apiKey) => createElevenLabsClient({
-        apiKey,
-        baseUrl: config.elevenLabsBaseUrl,
-        ttsModel: config.ttsModel,
-        sttModel: config.sttModel,
-        configuredVoiceIds: config.voiceIds
-    });
+    // one client per key, so the list of voices is fetched once rather than for every utterance
+    const voiceClients = new Map();
+    const buildVoiceClient = (apiKey) => {
+        if (!voiceClients.has(apiKey)) {
+            voiceClients.set(apiKey, createElevenLabsClient({
+                apiKey,
+                baseUrl: config.elevenLabsBaseUrl,
+                ttsModel: config.ttsModel,
+                sttModel: config.sttModel,
+                configuredVoiceIds: config.voiceIds
+            }));
+        }
+
+        return voiceClients.get(apiKey);
+    };
 
     router.use(limiter);
 

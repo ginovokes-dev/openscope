@@ -209,6 +209,8 @@ ava('the rate limiter blocks after the limit', async(t) => {
     const statuses = [];
 
     for (let i = 0; i < 5; i++) {
+        // sequential on purpose: the limiter counts requests in order
+        // eslint-disable-next-line no-await-in-loop
         statuses.push((await fetch(url)).status);
     }
 

@@ -38,6 +38,11 @@
     "capability": {
         "ils": true,            - T/F: whether aircraft has ILS equipment
         "fix": true             - T/F: whether aircraft has VOR or GPS equipment
+    },
+    "profile": {
+        "seats": 416,           - Typical seats in a two or three class layout⁵ (passengers on board are a random load factor of this)
+        "fuelBurnKgPerHour": 10500, - Average fuel burn in cruise⁵ (kg/h); other phases scale from it
+        "fuelCapacityKg": 160000    - Usable fuel capacity⁵ (kg), limits endurance
     }
 }
 ```
@@ -51,3 +56,4 @@ Recommended sources:
 1. [https://contentzone.eurocontrol.int/aircraftperformance/default.aspx](https://contentzone.eurocontrol.int/aircraftperformance/default.aspx)
 1. [https://www.easa.europa.eu/document-library/type-certificates](https://www.easa.europa.eu/document-library/type-certificates) or [http://www1.airweb.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/MainFrame?OpenFrameSet](http://www1.airweb.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/MainFrame?OpenFrameSet)
 (Try to find the correct .pdf file and search for "VMO" or "MMO")
+1. Manufacturer airport planning documents / EUROCONTROL BADA for typical seats, fuel burn and fuel capacity. `profile` is optional: aircraft without it use a sensible default for their weight class. The values are used for the souls on board and fuel remaining that pilots report (`sob`, `sf`) and for deciding when an aircraft is short of fuel. `tools/aircraft-profiles/` holds the table the shipped values were generated from.

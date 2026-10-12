@@ -50,7 +50,8 @@ const parseDotEnv = (text) => {
             return;
         }
 
-        let [, key, value] = match;
+        const [, key] = match;
+        let [, , value] = match;
 
         if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith('\'') && value.endsWith('\''))) {
             value = value.slice(1, -1);

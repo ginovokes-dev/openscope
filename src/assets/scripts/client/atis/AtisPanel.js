@@ -4,6 +4,8 @@ import AtisController from './AtisController';
 import EventBus from '../lib/EventBus';
 import { EVENT } from '../constants/eventNames';
 import { SELECTORS } from '../constants/selectors';
+import airportIndex from '../geo/AirportIndex';
+import { fetchNotams, fetchStatus } from '../radio/aiClient';
 
 const PANEL_TEMPLATE = `
     <div id="atis-panel" class="dialog atis-panel">
@@ -58,6 +60,8 @@ const PANEL_TEMPLATE = `
                     placeholder="e.g. Taxiway Bravo closed between Bravo 2 and Bravo 4"></textarea>
             </label>
             <div class="atis-buttons">
+                <button type="button" class="atis-button js-atis-suggest" hidden
+                    title="Ask the language model for plausible NOTAM-style remarks for this airport">Suggest remarks (AI)</button>
                 <button type="submit" class="atis-button js-atis-issue">Issue new ATIS</button>
             </div>
         </form>
@@ -147,6 +151,8 @@ export default class AtisPanel {
 
         this.$panel.find('.js-atis-edit').on('click', () => this._toggleEditor());
 
+        this.$panel.find('.js-atis-suggest').on('click', () => this._suggestRemarks());
+
         this.$editor.on('submit', (event) => {
             event.preventDefault();
             this._submitEdit();
@@ -160,7 +166,34 @@ export default class AtisPanel {
 
         if (shouldOpen) {
             this._populateEditor();
+            fetchStatus().then((status) => this.$panel.find('.js-atis-suggest').prop('hidden', !status.llm));
         }
+    }
+
+    async _suggestRemarks() {
+        const $button = this.$panel.find('.js-atis-suggest');
+        const $remarks = this.$panel.find('.js-atis-remarks');
+        const airport = AirportController.airport_get();
+        const state = AtisController.getEditableState();
+        const indexed = airportIndex.lookup(airport.icao);
+
+        $button.prop('disabled', true).text('Thinking...');
+
+        try {
+            const remarks = await fetchNotams({
+                icao: airport.icao.toUpperCase(),
+                name: airport.name,
+                country: indexed ? indexed.country : '',
+                runways: state.runwayNames
+            });
+            const existing = $remarks.val().trim();
+
+            $remarks.val([existing, ...remarks].filter(Boolean).join('\n'));
+        } catch (error) {
+            this.$footer.text(`Could not get suggestions: ${error.message}`);
+        }
+
+        $button.prop('disabled', false).text('Suggest remarks (AI)');
     }
 
     _populateEditor() {

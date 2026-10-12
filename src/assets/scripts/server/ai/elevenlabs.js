@@ -90,6 +90,25 @@ const buildVoiceSettings = (voiceKey) => {
     };
 };
 
+async function describeFailure(response) {
+    try {
+        const body = await response.json();
+        const detail = body && body.detail;
+
+        if (typeof detail === 'string') {
+            return detail;
+        }
+
+        if (detail && detail.message) {
+            return detail.message;
+        }
+    } catch (error) {
+        // body was not JSON
+    }
+
+    return `ElevenLabs returned HTTP ${response.status}`;
+}
+
 const createClient = ({
     apiKey, baseUrl, ttsModel, sttModel, configuredVoiceIds
 }) => {
@@ -194,25 +213,6 @@ const createClient = ({
         }
     };
 };
-
-async function describeFailure(response) {
-    try {
-        const body = await response.json();
-        const detail = body && body.detail;
-
-        if (typeof detail === 'string') {
-            return detail;
-        }
-
-        if (detail && detail.message) {
-            return detail.message;
-        }
-    } catch (error) {
-        // body was not JSON
-    }
-
-    return `ElevenLabs returned HTTP ${response.status}`;
-}
 
 module.exports = {
     FALLBACK_VOICE_IDS,

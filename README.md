@@ -10,6 +10,11 @@ Visit http://openscope.io to begin playing now!
 
 If you're just getting started, try the tutorial and see the [command reference](documentation/commands.md) for a full list of commands you can use. For information on each airport, see the [airport guide](documentation/airport-guides/airport-guide-directory.md).
 
+### What's in this version
+
+This version adds a more realistic and varied simulation: hundreds of airports (all UK airports with scheduled service, plus business and general aviation fields), realistic aircraft-to-airport matching, drifting weather and a generated, editable ATIS, random emergencies and fuel states you can set the frequency of, an aircraft information panel, and a radio where you can talk to the pilots in your own words, by text or by voice.
+Press `F8` in the game for the controls guide, or read [Simulation features](documentation/simulation-features.md). To use the language model and studio voices, see [Setting up the AI and voice features](documentation/simulation-features.md#setting-up-the-ai-and-voice-features) (they are optional; typed commands and the built-in phrase matcher work without any keys).
+
 Feel free to [join us on slack](https://join.slack.com/t/openscopeatc/shared_invite/zt-g9wq2mch-B7Z9IltlgxgCBC2dBYPjiw) if you have questions, comments or would like to contribute to the project. We can then add you to the organization so you can begin committing to this repo.
 
 ---
@@ -40,6 +45,8 @@ Listening on PORT 3003
 ```
 
 Success!!
+
+To use the optional language model and voice features, copy `.env.example` to `.env` and add your `ANTHROPIC_API_KEY` and/or `ELEVENLABS_API_KEY` before `npm run start` (or enter them in the game's AI & Voice dialog).
 
 You you do not see this message and are having trouble getting set up, please join us on [Slack](https://join.slack.com/t/openscopeatc/shared_invite/zt-g9wq2mch-B7Z9IltlgxgCBC2dBYPjiw) and someone will be able to troubleshoot with you.
 

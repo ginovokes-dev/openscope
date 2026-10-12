@@ -1,3 +1,21 @@
+# 6.30.0 (unreleased)
+### New Features
+- Add 820 generated airports (all UK airports with scheduled service, UK business and general aviation airports, and major airports worldwide), a worldwide airport index, and about 130 more airlines; the airport switcher searches by city, IATA code and country
+- Enable 33 airports that were disabled because of out-of-date data, including London Heathrow, Gatwick, London City and Luton, Amsterdam and Hong Kong
+- Match aircraft types to the runways of the airport they use, with weighted airline fleets
+- Add drifting weather (wind, visibility, cloud, temperature, QNH) with a setting for how lively it is
+- Add a generated ATIS in ICAO format that can be updated and edited (`F3`)
+- Add random failures and emergencies (low fuel, medical, technical, radio failure, go-arounds, diversion requests) with a frequency setting and a switch per category
+- Add fuel burn and souls on board per aircraft type, and an aircraft information panel
+- Add commands `ga` (go around), `divert`, `sf` (say fuel), `sob` (say persons on board), `sint`, `sinfo`, `roger` and `unable`
+- Add a radio panel (`F4`): talk to pilots in free-form text or by voice; optional Claude language model and ElevenLabs voices
+- Add an in-game controls guide (`F8`)
+
+### Enhancements & Refactors
+- Fix the spelling of "forty" in pilot speech
+- Add `documentation/simulation-features.md`, and document the new commands and the aircraft `profile` block
+
+
 # 6.29.0 (October 1, 2022)
 ### New Features
 - <a href="https://github.com/openscope/openscope/issues/2000" target="_blank">#2000</a> - Add popup info for score changes

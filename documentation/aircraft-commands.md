@@ -14,6 +14,8 @@
 - [Expect Runway](#expect-runway)
 - [Descend via STAR](#descend-via-star)
 - [ILS](#ils)
+- [Go Around](#go-around)
+- [Divert](#divert)
 
 [Routing Commands](#routing-commands)
 
@@ -45,11 +47,17 @@
 - [Say Assigned Heading](#say-assigned-heading)
 - [Say Speed](#say-indicated-airspeed)
 - [Say Assigned Speed](#say-assigned-speed)
+- [Say Fuel](#say-fuel)
+- [Say Persons On Board](#say-persons-on-board)
+- [Say Intentions](#say-intentions)
+- [Say Information](#say-information)
 
 [Miscellaneous Commands](#miscellaneous-commands)
 
 - [~~Abort~~](#abort)
 - [Squawk](#squawk)
+- [Roger](#roger)
+- [Unable](#unable)
 
 [System Commands](#system-commands)
 
@@ -153,6 +161,29 @@ the glideslope and land.
 Note: This replaces the old `land` / `l` command.
 
 _Syntax -_ `AAL123 i [runway]`
+
+### Go Around
+
+_Aliases -_ `ga`, `goaround`, `missed`
+
+_Information -_ Orders an arrival to break off its approach. It cancels the approach clearance, flies the
+runway heading (its present heading if it is not yet established on final), climbs to a safe altitude above the airport
+and holds until given new instructions. Pilots also go around by themselves when the runway is occupied, the approach is
+unstable or windshear is reported.
+
+_Syntax -_ `AAL123 ga`
+
+### Divert
+
+_Aliases -_ `divert`, `dvt`
+
+_Information -_ Tells the aircraft to divert to another airport, anywhere in the world (the ICAO code must be in the
+airport index, `assets/airports/airportIndex.json`). The pilot first checks that it has the fuel to get there and
+that the airport has a runway it can use, and either accepts, or explains why it cannot. A diverting aircraft leaves
+your airspace without a penalty. When a pilot asks to divert (for weather, fuel or a medical emergency) answer with this
+command, or with `unable`.
+
+_Syntax -_ `AAL123 divert [ICAO]`
 
 ## Routing Commands
 
@@ -436,6 +467,41 @@ _Information -_ This aircraft reads back the aircraft's assigned speed, in knots
 
 _Syntax -_ `AAL123 sas`
 
+### Say Fuel
+
+_Aliases -_ `sf`, `fuel`
+
+_Information -_ The pilot reports fuel remaining as endurance (hours and minutes) and quantity, and says if it is at
+minimum fuel or in a fuel emergency. Fuel is burned in real time and depends on the aircraft type, phase of flight and
+the route flown.
+
+_Syntax -_ `AAL123 sf`
+
+### Say Persons On Board
+
+_Aliases -_ `sob`, `souls`, `pob`
+
+_Information -_ The pilot reports the number of souls on board (passengers and crew).
+
+_Syntax -_ `AAL123 sob`
+
+### Say Intentions
+
+_Aliases -_ `sint`, `intentions`
+
+_Information -_ The pilot repeats what it has asked for (or says it has no request).
+
+_Syntax -_ `AAL123 sint`
+
+### Say Information
+
+_Aliases -_ `sinfo`, `atisletter`
+
+_Information -_ The pilot says which ATIS information letter it holds. Aircraft quote the letter they heard when they
+first call you; if you have issued a new ATIS since, they will have an old one.
+
+_Syntax -_ `AAL123 sinfo`
+
 ## Miscellaneous Commands
 
 All other commands are listed below.
@@ -460,6 +526,23 @@ _Information -_ This command tells an aircraft to set its transponder code, or "
 _Parameters -_ A four digit number. Each number must be between `0` and `7`, inclusive. For example, `0736` is a valid squawk, `9416` is not.
 
 _Syntax -_ `AAL123 squawk ###`
+
+### Roger
+
+_Aliases -_ `roger`, `rgr`
+
+_Information -_ Acknowledges a pilot's call or request. It clears the request from the aircraft's side panel. It does
+not grant a request: to do that, give the instruction (for example `pd FIX` for a request for direct).
+
+_Syntax -_ `AAL123 roger`
+
+### Unable
+
+_Aliases -_ `unable`, `deny`
+
+_Information -_ Turns down a pilot's request. The pilot carries on as planned.
+
+_Syntax -_ `AAL123 unable`
 
 ## System Commands
 
