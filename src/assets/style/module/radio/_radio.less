@@ -184,7 +184,7 @@
     50% { opacity: 0.6; }
 }
 
-.ai-settings {
+.dialog.ai-settings {
     width: 520px;
 }
 
@@ -233,4 +233,105 @@
     display: flex;
     justify-content: center;
     padding-top: @spacing-3x;
+}
+
+.dialog.controls-guide {
+    width: 920px;
+    max-width: ~"calc(100% - 20px)";
+}
+
+.controls-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: @spacing-2x;
+}
+
+.controls-tab {
+    margin: 2px;
+    padding: 5px 12px;
+    color: @light-gray;
+    background-color: @dark;
+    border: 1px solid @blue-medium;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.controls-tab:hover,
+.controls-tab.is-selected {
+    color: @white;
+    background-color: @blue-medium;
+}
+
+.controls-body {
+    overflow-y: auto;
+    padding: @spacing-2x;
+    background-color: @dark;
+    border: 2px solid @blue-medium;
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 1.55;
+    user-select: text;
+}
+
+.controls-section[hidden] {
+    display: none;
+}
+
+.controls-intro {
+    margin: 0 0 @spacing-2x;
+    color: @light-gray;
+}
+
+.controls-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.controls-table th {
+    padding: 4px 8px;
+    color: @medium-light-gray;
+    font-weight: normal;
+    text-align: left;
+    border-bottom: 1px solid @blue-medium;
+}
+
+.controls-table td {
+    padding: 6px 8px;
+    vertical-align: top;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.controls-say {
+    color: @white;
+    width: 30%;
+}
+
+.controls-type {
+    width: 24%;
+    white-space: nowrap;
+}
+
+.controls-note {
+    color: @medium-light-gray;
+}
+
+.controls-guide code,
+.controls-guide kbd {
+    padding: 0 4px;
+    color: @green;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    font-family: inherit;
+}
+
+.controls-items {
+    margin: @spacing-2x 0 0;
+    padding-left: 18px;
+}
+
+.controls-items li {
+    margin-bottom: @spacing-1x;
 }

@@ -8,6 +8,7 @@ import CanvasController from './canvas/CanvasController';
 import AirportInfoController from './info/AirportInfoController';
 import AtisController from './atis/AtisController';
 import AtisPanel from './atis/AtisPanel';
+import ControlsGuide from './ui/ControlsGuide';
 import AiSettingsDialog from './radio/AiSettingsDialog';
 import RadioController from './radio/RadioController';
 import RadioPanel from './radio/RadioPanel';
@@ -222,6 +223,8 @@ export default class AppController {
         this.aiSettingsDialog = new AiSettingsDialog(this.$element, this.radioController);
         UiController.registerExtraDialog(this.radioPanel);
         UiController.registerExtraDialog(this.aiSettingsDialog);
+        this.controlsGuide = new ControlsGuide(this.$element);
+        UiController.registerExtraDialog(this.controlsGuide);
         zlsa.atc.debug.radio = this.radioController;
         this.airportGuideController = new AirportGuideViewController(this.$element, airportGuideData, initialAirportData.icao);
         this.changelogController = new ChangelogController(this.contentQueue);
