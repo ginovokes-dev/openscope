@@ -211,7 +211,7 @@ const sanitizeResult = (result, aircraftList) => {
  * @param payload {object} request body from the browser
  * @return {Promise<object>} sanitized result, or `{ error }`
  */
-const interpretTransmission = async (client, settings, payload) => {
+const interpretTransmission = async(client, settings, payload) => {
     if (!payload || !String(payload.transcript || '').trim()) {
         return { error: 'empty transcript' };
     }

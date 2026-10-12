@@ -1,0 +1,236 @@
+.radio-panel {
+    position: absolute;
+    bottom: 52px;
+    left: 340px;
+    z-index: @airportInfo-z;
+    display: none;
+    flex-direction: column;
+    width: 460px;
+    max-width: ~"calc(100% - 360px)";
+    box-sizing: border-box;
+    padding: @spacing-2x;
+    color: @light-gray;
+    background-color: @dark-085;
+    border: 2px solid @blue-medium;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.radio-panel.open {
+    display: flex;
+}
+
+.radio-panel.is-busy {
+    border-color: @blue-light;
+}
+
+.radio-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: @spacing-1x;
+}
+
+.radio-title {
+    color: @white;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.radio-mode {
+    margin-left: @spacing-2x;
+    padding: 1px 6px;
+    color: @dark;
+    background-color: @medium-light-gray;
+    border-radius: 3px;
+    font-size: 10px;
+    cursor: help;
+}
+
+.radio-mode[data-mode="ai"] {
+    background-color: @green;
+}
+
+.radio-header-buttons {
+    margin-left: auto;
+}
+
+.radio-icon-button {
+    padding: 0 6px;
+    color: @light-gray;
+    background: transparent;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.radio-icon-button:hover {
+    color: @white;
+}
+
+.radio-log {
+    height: 190px;
+    overflow-y: auto;
+    padding: @spacing-1x;
+    background-color: @dark;
+    border-radius: 6px;
+    line-height: 1.5;
+    user-select: text;
+}
+
+.radio-line {
+    display: flex;
+    padding: 1px 0;
+}
+
+.radio-line-time {
+    flex: 0 0 auto;
+    margin-right: @spacing-1x;
+    color: @medium-light-gray;
+    opacity: 0.6;
+}
+
+.radio-line-speaker {
+    flex: 0 0 auto;
+    min-width: 62px;
+    margin-right: @spacing-1x;
+    font-weight: bold;
+}
+
+.radio-line-text {
+    flex: 1 1 auto;
+}
+
+.radio-line_controller .radio-line-speaker {
+    color: @blue-light;
+}
+
+.radio-line_pilot .radio-line-speaker {
+    color: @green;
+}
+
+.radio-line_atis .radio-line-speaker {
+    color: #e8c46a;
+}
+
+.radio-line_system {
+    color: @medium-light-gray;
+    font-style: italic;
+}
+
+.radio-line_warning .radio-line-text {
+    color: @red;
+}
+
+.radio-form {
+    display: flex;
+    align-items: stretch;
+    margin-top: @spacing-1x;
+}
+
+.radio-input {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0 @spacing-1x;
+    padding: 5px 8px;
+    color: @white;
+    background-color: @dark;
+    border: 1px solid @blue-medium;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 12px;
+}
+
+.radio-input:focus {
+    outline: none;
+    border-color: @blue-light;
+}
+
+.radio-mic,
+.radio-send {
+    padding: 0 12px;
+    color: @light-gray;
+    background-color: @blue-medium;
+    border: 0;
+    border-radius: 3px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.radio-mic:hover,
+.radio-send:hover {
+    background-color: @blue-light;
+}
+
+.radio-mic:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.radio-mic.is-listening {
+    color: @white;
+    background-color: #c0392b;
+    animation: radio-pulse 1s ease-in-out infinite;
+}
+
+.radio-status {
+    min-height: 16px;
+    padding-top: @spacing-1x;
+    color: @medium-light-gray;
+    font-size: 11px;
+}
+
+@keyframes radio-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+.ai-settings {
+    width: 520px;
+}
+
+.ai-settings-status {
+    padding: @spacing-1x @spacing-2x;
+    color: @light-gray;
+    white-space: pre-line;
+    font-size: 12px;
+    text-align: center;
+}
+
+.ai-settings-label {
+    display: block;
+    padding-top: @spacing-2x;
+    font-size: 12px;
+}
+
+.ai-settings-input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 3px;
+    padding: 6px 8px;
+    color: @white;
+    background-color: @dark;
+    border: 1px solid @blue-medium;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 12px;
+}
+
+.ai-settings-hint {
+    margin: 4px 0 0;
+    color: @medium-light-gray;
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+.ai-settings-check {
+    display: block;
+    padding-top: @spacing-1x;
+    font-size: 12px;
+}
+
+.ai-settings-buttons {
+    display: flex;
+    justify-content: center;
+    padding-top: @spacing-3x;
+}

@@ -1,3 +1,5 @@
+// async functions are compiled to generators that need this small runtime
+import 'regenerator-runtime/runtime';
 import $ from 'jquery';
 import App from './App';
 

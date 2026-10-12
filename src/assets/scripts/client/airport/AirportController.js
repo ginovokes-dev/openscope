@@ -43,6 +43,16 @@ class AirportController {
         this.airports = {};
 
         /**
+         * Extra information from the load list that the airport model does not keep (IATA code, country),
+         * used by the airport switcher's search
+         *
+         * @property listMetadata
+         * @type {Object<string, object>}
+         * @default {}
+         */
+        this.listMetadata = {};
+
+        /**
          * The current airport
          *
          * This is a mutable property that will change based on
@@ -91,9 +101,14 @@ class AirportController {
      * @param icao {string}
      * @param level {string}
      * @param name {string}
+     * @param iata {string} [optional]
+     * @param country {string} ISO 3166 alpha-2 code [optional]
      */
-    airport_load({ icao, level, name }) {
+    airport_load({
+        icao, level, name, iata = '', country = ''
+    }) {
         icao = icao.toLowerCase();
+        this.listMetadata[icao] = { iata, country };
 
         if (this.hasAirport(icao)) {
             console.log(`${icao}: already loaded`);
@@ -129,6 +144,7 @@ class AirportController {
         this._eventBus = EventBus;
         this._airportListToLoad = [];
         this.airports = {};
+        this.listMetadata = {};
         this.current = null;
     }
 

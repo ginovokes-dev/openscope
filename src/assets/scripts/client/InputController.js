@@ -17,6 +17,7 @@ import FixCollection from './navigationLibrary/FixCollection';
 import { clamp } from './math/core';
 import { EVENT } from './constants/eventNames';
 import { GAME_OPTION_NAMES } from './constants/gameOptionConstants';
+import { looksLikeNaturalLanguage } from './radio/naturalLanguage';
 import { INVALID_NUMBER } from './constants/globalConstants';
 import {
     COMMAND_CONTEXT,
@@ -687,7 +688,7 @@ export default class InputController {
      * @private
      */
     _isDialog($element) {
-        if ($element.classList.contains(CLASSNAMES.DIALOG)) {
+        if ($element.classList.contains(CLASSNAMES.DIALOG) || $element.classList.contains('captures-keys')) {
             return true;
         }
 
@@ -847,6 +848,14 @@ export default class InputController {
             const parser = new CommandParser(userCommand);
             cmd = parser.parse();
         } catch (error) {
+            // a sentence rather than a command: hand it to the radio, which understands plain English
+            if (looksLikeNaturalLanguage(userCommand)) {
+                this.$commandInput.val('');
+                this._eventBus.trigger(EVENT.RADIO_FREE_TEXT, userCommand);
+
+                return [true, ''];
+            }
+
             UiController.ui_log('Command not understood', true);
             throw error;
         }

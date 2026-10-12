@@ -27,9 +27,13 @@ export const EVENT = {
 
     EMERGENCY_DECLARED: 'emergency-declared',
 
+    RADIO_FREE_TEXT: 'radio-free-text',
+
     RADIO_TRANSMISSION: 'radio-transmission',
 
     SIM_EVENT: 'sim-event',
+
+    TOGGLE_AI_SETTINGS: 'toggle-ai-settings',
 
     TOGGLE_ATIS: 'toggle-atis',
 

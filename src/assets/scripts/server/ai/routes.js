@@ -158,7 +158,7 @@ const registerAiRoutes = (app, env = process.env) => {
         });
     });
 
-    router.post('/atc/interpret', express.json({ limit: '1mb' }), async (request, response) => {
+    router.post('/atc/interpret', express.json({ limit: '1mb' }), async(request, response) => {
         if (sdkLoadError) {
             return response.status(501).json({ error: SDK_UNAVAILABLE });
         }
@@ -184,12 +184,14 @@ const registerAiRoutes = (app, env = process.env) => {
         }
     });
 
-    router.post('/atc/notams', express.json({ limit: '64kb' }), async (request, response) => {
+    router.post('/atc/notams', express.json({ limit: '64kb' }), async(request, response) => {
         if (sdkLoadError || !llmKey(request)) {
             return response.status(501).json({ error: 'The language model is not available.' });
         }
 
-        const { icao, name, country, runways } = request.body || {};
+        const {
+            icao, name, country, runways
+        } = request.body || {};
 
         try {
             const result = await buildAnthropic(llmKey(request)).messages.create({
@@ -223,7 +225,7 @@ const registerAiRoutes = (app, env = process.env) => {
         }
     });
 
-    router.post('/voice/tts', express.json({ limit: '16kb' }), async (request, response) => {
+    router.post('/voice/tts', express.json({ limit: '16kb' }), async(request, response) => {
         const apiKey = voiceKey(request);
 
         if (!apiKey) {
@@ -250,7 +252,7 @@ const registerAiRoutes = (app, env = process.env) => {
         }
     });
 
-    router.post('/voice/stt', readRawBody(25 * 1024 * 1024), async (request, response) => {
+    router.post('/voice/stt', readRawBody(25 * 1024 * 1024), async(request, response) => {
         const apiKey = voiceKey(request);
 
         if (!apiKey) {

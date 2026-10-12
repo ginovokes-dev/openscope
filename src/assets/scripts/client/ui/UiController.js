@@ -8,6 +8,8 @@ import SettingsController from './SettingsController';
 import TrafficRateController from './TrafficRateController';
 import VideoMapController from './VideoMapController';
 import TutorialView from './TutorialView';
+import airportIndex from '../geo/AirportIndex';
+import { buildAirportKeywords, getCountryName, matchesAirportQuery } from '../airport/airportSearch';
 import { speech_toggle } from '../speech';
 import { EVENT } from '../constants/eventNames';
 import { SELECTORS } from '../constants/selectors';
@@ -539,6 +541,16 @@ class UiController {
     }
 
     /**
+     * Rebuild the airport switcher, eg. after the worldwide airport index (city names) has loaded
+     *
+     * @for UiController
+     * @method refreshAirportList
+     */
+    refreshAirportList() {
+        this._buildAirportList();
+    }
+
+    /**
      * @for UiController
      * @method ui_log
      */
@@ -704,9 +716,14 @@ class UiController {
 
         for (let i = 0; i < airports.length; i++) {
             const { name, icao, level } = AirportController.airports[airports[i]];
+            const { iata, country } = AirportController.listMetadata[icao.toLowerCase()] || {};
+            const indexed = airportIndex.lookup(icao);
+            const keywords = buildAirportKeywords({
+                icao, iata, name, country, city: indexed && indexed.city
+            });
 
             difficulty = this._buildAirportListIconForDifficultyLevel(level);
-            const $airportListItem = $(this._buildAirportListItemTemplate(icao, difficulty, name));
+            const $airportListItem = $(this._buildAirportListItemTemplate(icao, difficulty, name, keywords, getCountryName(country)));
 
             // TODO: replace with an onClick() handler
             $airportListItem.click(icao.toLowerCase(), (event) => {
@@ -765,14 +782,20 @@ class UiController {
      * @param icao {string}
      * @param difficulty {string}
      * @param name {string}
+     * @param keywords {string} lower case search text
+     * @param countryName {string}
      * @return {DOM element|string}
      */
-    _buildAirportListItemTemplate(icao, difficulty, name) {
+    _buildAirportListItemTemplate(icao, difficulty, name, keywords = '', countryName = '') {
+        const escapedKeywords = keywords.replace(/"/g, '');
+        const country = countryName ? `<span class="country">${countryName}</span>` : '';
+
         return `
-            <li class="airport-list-item" data-icao="${icao.toLowerCase()}">
+            <li class="airport-list-item" data-icao="${icao.toLowerCase()}" data-keywords="${escapedKeywords}">
                 <span style="font-size: 7pt" class="difficulty">${difficulty}</span>
                 <span class="icao">${icao.toUpperCase()}</span>
                 <span class="name">${name}</span>
+                ${country}
             </li>
         `;
     }
@@ -807,11 +830,13 @@ class UiController {
     _onInitiateAirportSearch() {
         EventTracker.recordEvent(TRACKABLE_EVENT.AIRPORTS, 'airport-search', 'start');
 
-        const value = this.$airportSearch.val().toLowerCase();
+        const value = this.$airportSearch.val();
 
-        $('.dialog-body li').each(
+        this.$airportDialogBody.find('li').each(
             function() {
-                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+                const $item = $(this);
+
+                $item.toggle(matchesAirportQuery(String($item.data('keywords') || $item.text().toLowerCase()), value));
             }
         );
     }
@@ -826,7 +851,7 @@ class UiController {
         this.$airportDialog.removeClass(SELECTORS.CLASSNAMES.OPEN);
         this.$switchAirport.removeClass(SELECTORS.CLASSNAMES.ACTIVE);
         this.$airportSearch.val(null);
-        $('.dialog-body li').each(() => $(this).toggle(true));
+        this.$airportDialogBody.find('li').show();
     }
 
     /**

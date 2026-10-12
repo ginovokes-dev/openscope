@@ -3,6 +3,9 @@ import $ from 'jquery';
 import _get from 'lodash/get';
 import _has from 'lodash/has';
 import EventTracker from './EventTracker';
+import EventBus from './lib/EventBus';
+import voiceOutput from './radio/voiceOutput';
+import { EVENT } from './constants/eventNames';
 import { radio_heading, radio_altitude } from './utilities/radioUtilities';
 import { STORAGE_KEY } from './constants/storageKeys';
 import { SELECTORS } from './constants/selectors';
@@ -47,46 +50,58 @@ export const randomizePilotVoice = () => {
 };
 
 /**
+ * Turn the parts of a pilot transmission into the words that are spoken
+ *
+ * @function buildSpokenText
+ * @param sentence {array<object>} `[{ type: 'callsign'|'altitude'|'speed'|'heading'|'text', content }]`
+ * @return {string}
+ */
+const buildSpokenText = (sentence) => {
+    let textToSay = '';
+
+    for (let i = 0; i < sentence.length; i++) {
+        const singleSentence = sentence[i];
+
+        switch (singleSentence.type) {
+            case 'callsign':
+                textToSay += ` ${singleSentence.content.getRadioCallsign()} `;
+                break;
+            case 'altitude':
+                textToSay += ` ${radio_altitude(singleSentence.content)} `;
+                break;
+            case 'speed': case 'heading':
+                textToSay += ` ${radio_heading(singleSentence.content)} `;
+                break;
+            case 'text':
+                textToSay += ` ${singleSentence.content} `;
+                break;
+            default:
+                break;
+        }
+    }
+
+    return textToSay.replace(/\s+/g, ' ').trim();
+};
+
+/**
+ * Say something as a pilot: shown in the radio transcript, and spoken when speech is enabled
  *
  * @function speech_say
- * @param sentence
+ * @param sentence {array<object>}
+ * @param pilotVoice {object} `{ voice, pitch, rate, key }` the aircraft's voice; `key` (the callsign) keeps a studio voice stable
  */
 export const speech_say = (sentence, pilotVoice) => {
-    if (prop.speech.synthesis != null && prop.speech.enabled) {
-        let textToSay = '';
+    const textToSay = buildSpokenText(sentence);
+    const callsignPart = sentence.find((part) => part.type === 'callsign');
 
-        for (let i = 0; i < sentence.length; i++) {
-            const singleSentence = sentence[i];
+    EventBus.trigger(EVENT.RADIO_TRANSMISSION, {
+        kind: 'pilot',
+        speaker: callsignPart ? callsignPart.content.callsign : _get(pilotVoice, 'key', ''),
+        text: textToSay
+    });
 
-            switch (singleSentence.type) {
-                case 'callsign':
-                    textToSay += ` ${singleSentence.content.getRadioCallsign()} `;
-                    break;
-                case 'altitude':
-                    textToSay += ` ${radio_altitude(singleSentence.content)} `;
-                    break;
-                case 'speed': case 'heading':
-                    textToSay += ` ${radio_heading(singleSentence.content)} `;
-                    break;
-                case 'text':
-                    textToSay += ` ${singleSentence.content} `;
-                    break;
-                default:
-                    break;
-            }
-        }
-
-        const utterance = new SpeechSynthesisUtterance(textToSay); // make the object
-        utterance.lang = 'en-US'; // set the language
-        utterance.voice = prop.speech.synthesis.getVoices().filter((voice) => {
-            // set the voice
-            return voice.name === pilotVoice.voice;
-        })[0];
-        utterance.rate = pilotVoice.rate;
-        utterance.pitch = pilotVoice.pitch;
-
-        // say the words
-        prop.speech.synthesis.speak(utterance);
+    if (_get(prop, 'speech.enabled', false)) {
+        voiceOutput.speak({ text: textToSay, voiceKey: _get(pilotVoice, 'key', textToSay), pilotVoice });
     }
 };
 
@@ -99,7 +114,7 @@ export const speech_toggle = () => {
     prop.speech.enabled = !prop.speech.enabled;
 
     if (!prop.speech.enabled) {
-        prop.speech.synthesis.cancel();
+        voiceOutput.stop();
     }
 
     $speechToggleElement.toggleClass(SELECTORS.CLASSNAMES.ACTIVE);

@@ -754,6 +754,8 @@ export default class AircraftModel {
         this.airlineId = data.airline;
         this.airlineCallsign = data.airlineCallsign;
         this.flightNumber = data.callsign;
+        // the callsign keeps this pilot's studio voice the same all session
+        this.pilotVoice.key = this.callsign;
         this.category = data.category;
         this.heading = data.heading;
         this.altitude = data.altitude;

@@ -41,7 +41,7 @@ const readBody = (request) => new Promise((resolve) => {
     request.on('end', () => resolve(Buffer.concat(chunks)));
 });
 
-const startApp = async (env) => {
+const startApp = async(env) => {
     const app = express();
 
     registerAiRoutes(app, env);
@@ -50,8 +50,12 @@ const startApp = async (env) => {
 };
 
 const AIRCRAFT = [
-    { callsign: 'BAW123', spokenCallsign: 'Speedbird one two three', type: 'A320', category: 'arrival', phaseText: 'descending', altitude: 6000, onboard: { enduranceMinutes: 80, souls: 150 }, origin: { icao: 'EGLL' } },
-    { callsign: 'EZY64A', spokenCallsign: 'Easy six four alpha', type: 'A319', category: 'departure', phaseText: 'climbing', altitude: 3000 }
+    {
+        callsign: 'BAW123', spokenCallsign: 'Speedbird one two three', type: 'A320', category: 'arrival', phaseText: 'descending', altitude: 6000, onboard: { enduranceMinutes: 80, souls: 150 }, origin: { icao: 'EGLL' }
+    },
+    {
+        callsign: 'EZY64A', spokenCallsign: 'Easy six four alpha', type: 'A319', category: 'departure', phaseText: 'climbing', altitude: 3000
+    }
 ];
 
 // ---------------------------------------------------------------- config
@@ -121,9 +125,15 @@ ava('the system prompt contains the command table and the safety rules', (t) => 
 ava('sanitizeResult() keeps only real aircraft and well-formed commands', (t) => {
     const result = sanitizeResult({
         transmissions: [
-            { callsign: 'baw 123', commands: ['t l 270', 'd 30', '; rm -rf /', '', 'x'.repeat(200)], reply: '  roger  ', intent: 'command' },
-            { callsign: 'GHOST9', commands: ['sf'], reply: '', intent: 'query' },
-            { callsign: 'EZY64A', commands: ['sf'], reply: 'x'.repeat(1000), intent: 'query' }
+            {
+                callsign: 'baw 123', commands: ['t l 270', 'd 30', '; rm -rf /', '', 'x'.repeat(200)], reply: '  roger  ', intent: 'command'
+            },
+            {
+                callsign: 'GHOST9', commands: ['sf'], reply: '', intent: 'query'
+            },
+            {
+                callsign: 'EZY64A', commands: ['sf'], reply: 'x'.repeat(1000), intent: 'query'
+            }
         ],
         controller_note: 'ok'
     }, AIRCRAFT);
@@ -189,7 +199,7 @@ ava('voice settings vary a little between pilots but stay in range', (t) => {
 
 // ---------------------------------------------------------------- rate limiting
 
-ava('the rate limiter blocks after the limit', async (t) => {
+ava('the rate limiter blocks after the limit', async(t) => {
     const app = express();
 
     app.use(createRateLimiter(3));
@@ -208,7 +218,7 @@ ava('the rate limiter blocks after the limit', async (t) => {
 
 // ---------------------------------------------------------------- end to end against fake upstreams
 
-ava.serial('GET /api/status reports what is configured, and a per-request key counts', async (t) => {
+ava.serial('GET /api/status reports what is configured, and a per-request key counts', async(t) => {
     const { server, url } = await startApp({});
     const bare = await (await fetch(`${url}/api/status`)).json();
     const withKeys = await (await fetch(`${url}/api/status`, { headers: { 'x-anthropic-key': 'sk-a', 'x-elevenlabs-key': 'el-b' } })).json();
@@ -221,7 +231,7 @@ ava.serial('GET /api/status reports what is configured, and a per-request key co
     t.is(bare.model, 'claude-opus-5-5');
 });
 
-ava.serial('endpoints answer 501 when no key is configured', async (t) => {
+ava.serial('endpoints answer 501 when no key is configured', async(t) => {
     const { server, url } = await startApp({});
     const interpret = await fetch(`${url}/api/atc/interpret`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: '{"transcript":"x"}' });
     const tts = await fetch(`${url}/api/voice/tts`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: '{"text":"x"}' });
@@ -233,9 +243,9 @@ ava.serial('endpoints answer 501 when no key is configured', async (t) => {
     t.is(stt.status, 501);
 });
 
-ava.serial('POST /api/atc/interpret calls Claude with a grounded, structured request and sanitises the answer', async (t) => {
+ava.serial('POST /api/atc/interpret calls Claude with a grounded, structured request and sanitises the answer', async(t) => {
     let seen = null;
-    const anthropic = await listen(async (request, response) => {
+    const anthropic = await listen(async(request, response) => {
         const body = JSON.parse((await readBody(request)).toString());
 
         seen = { path: request.url, key: request.headers['x-api-key'], body };
@@ -247,13 +257,20 @@ ava.serial('POST /api/atc/interpret calls Claude with a grounded, structured req
             model: body.model,
             stop_reason: 'end_turn',
             stop_sequence: null,
-            content: [{ type: 'text', text: JSON.stringify({
-                transmissions: [
-                    { callsign: 'BAW123', commands: ['t l 270', 'd 30', 'bad;command'], reply: '', intent: 'command' },
-                    { callsign: 'NOTREAL', commands: ['sf'], reply: '', intent: 'query' }
-                ],
-                controller_note: ''
-            }) }],
+            content: [{
+                type: 'text',
+                text: JSON.stringify({
+                    transmissions: [
+                        {
+                            callsign: 'BAW123', commands: ['t l 270', 'd 30', 'bad;command'], reply: '', intent: 'command'
+                        },
+                        {
+                            callsign: 'NOTREAL', commands: ['sf'], reply: '', intent: 'query'
+                        }
+                    ],
+                    controller_note: ''
+                })
+            }],
             usage: { input_tokens: 1200, output_tokens: 80 }
         }));
     });
@@ -269,7 +286,9 @@ ava.serial('POST /api/atc/interpret calls Claude with a grounded, structured req
     anthropic.server.close();
 
     t.is(reply.status, 200);
-    t.deepEqual(result.transmissions, [{ callsign: 'BAW123', commands: ['t l 270', 'd 30'], reply: '', intent: 'command' }]);
+    t.deepEqual(result.transmissions, [{
+        callsign: 'BAW123', commands: ['t l 270', 'd 30'], reply: '', intent: 'command'
+    }]);
     t.is(seen.path, '/v1/messages');
     t.is(seen.key, 'sk-ant-test');
     t.is(seen.body.model, 'claude-opus-5-5');
@@ -280,15 +299,19 @@ ava.serial('POST /api/atc/interpret calls Claude with a grounded, structured req
     t.is(result.usage.input, 1200);
 });
 
-ava.serial('a browser-supplied key is used when the server has none, and refusal / bad JSON are reported', async (t) => {
+ava.serial('a browser-supplied key is used when the server has none, and refusal / bad JSON are reported', async(t) => {
     let key = null;
     let mode = 'refusal';
-    const anthropic = await listen(async (request, response) => {
+    const anthropic = await listen(async(request, response) => {
         key = request.headers['x-api-key'];
         await readBody(request);
         response.setHeader('content-type', 'application/json');
         response.end(JSON.stringify({
-            id: 'm', type: 'message', role: 'assistant', model: 'x', stop_sequence: null,
+            id: 'm',
+            type: 'message',
+            role: 'assistant',
+            model: 'x',
+            stop_sequence: null,
             stop_reason: mode === 'refusal' ? 'refusal' : 'end_turn',
             content: mode === 'refusal' ? [] : [{ type: 'text', text: 'not json' }],
             usage: { input_tokens: 1, output_tokens: 1 }
@@ -313,8 +336,8 @@ ava.serial('a browser-supplied key is used when the server has none, and refusal
     t.is(garbage.status, 422);
 });
 
-ava.serial('upstream authentication failures are explained', async (t) => {
-    const anthropic = await listen(async (request, response) => {
+ava.serial('upstream authentication failures are explained', async(t) => {
+    const anthropic = await listen(async(request, response) => {
         await readBody(request);
         response.statusCode = 401;
         response.setHeader('content-type', 'application/json');
@@ -329,7 +352,7 @@ ava.serial('upstream authentication failures are explained', async (t) => {
     t.true((await reply.json()).error.includes('rejected'));
 });
 
-ava.serial('empty transcripts are rejected without calling the model', async (t) => {
+ava.serial('empty transcripts are rejected without calling the model', async(t) => {
     let called = false;
     const anthropic = await listen((request, response) => { called = true; response.end('{}'); });
     const { server, url } = await startApp({ ANTHROPIC_API_KEY: 'k', ANTHROPIC_BASE_URL: anthropic.url });
@@ -341,20 +364,24 @@ ava.serial('empty transcripts are rejected without calling the model', async (t)
     t.false(called);
 });
 
-ava.serial('TTS and STT go through ElevenLabs with the right shapes', async (t) => {
+ava.serial('TTS and STT go through ElevenLabs with the right shapes', async(t) => {
     const calls = [];
-    const eleven = await listen(async (request, response) => {
+    const eleven = await listen(async(request, response) => {
         const body = await readBody(request);
 
-        calls.push({ method: request.method, url: request.url, key: request.headers['xi-api-key'], type: request.headers['content-type'], body });
+        calls.push({
+            method: request.method, url: request.url, key: request.headers['xi-api-key'], type: request.headers['content-type'], body
+        });
 
         if (request.url.startsWith('/v1/voices')) {
             response.setHeader('content-type', 'application/json');
 
-            return response.end(JSON.stringify({ voices: [
-                { voice_id: 'brit-1', name: 'Brit', labels: { accent: 'british', gender: 'male' } },
-                { voice_id: 'amer-1', name: 'Yank', labels: { accent: 'american', gender: 'female' } }
-            ] }));
+            return response.end(JSON.stringify({
+                voices: [
+                    { voice_id: 'brit-1', name: 'Brit', labels: { accent: 'british', gender: 'male' } },
+                    { voice_id: 'amer-1', name: 'Yank', labels: { accent: 'american', gender: 'female' } }
+                ]
+            }));
         }
 
         if (request.url.startsWith('/v1/text-to-speech/')) {
@@ -405,7 +432,7 @@ ava.serial('TTS and STT go through ElevenLabs with the right shapes', async (t) 
     t.true(sttCall.body.toString().includes('RIFFfakeaudio'));
 });
 
-ava.serial('STT rejects an empty recording and TTS rejects empty text', async (t) => {
+ava.serial('STT rejects an empty recording and TTS rejects empty text', async(t) => {
     const { server, url } = await startApp({ ELEVENLABS_API_KEY: 'k', ELEVENLABS_BASE_URL: 'http://127.0.0.1:1' });
     const stt = await fetch(`${url}/api/voice/stt`, { method: 'POST', headers: { 'content-type': 'audio/webm' }, body: Buffer.alloc(0) });
     const tts = await fetch(`${url}/api/voice/tts`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ text: '  ' }) });

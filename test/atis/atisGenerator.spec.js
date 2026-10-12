@@ -137,7 +137,9 @@ ava('cloud phrases and CAVOK', (t) => {
 
 ava('trend phrases', (t) => {
     t.is(buildTrendPhrases(null).written, 'TREND NOSIG');
-    const trend = buildTrendPhrases({ visibilityMeters: 4000, ceilingFeet: 1200, phenomena: ['RA'], inMinutes: 25 });
+    const trend = buildTrendPhrases({
+        visibilityMeters: 4000, ceilingFeet: 1200, phenomena: ['RA'], inMinutes: 25
+    });
 
     t.true(trend.written.includes('VIS 4000M'));
     t.true(trend.written.includes('RA'));
@@ -179,7 +181,9 @@ ava('arrival-only and departure-only ATIS name their type', (t) => {
 });
 
 ava('low visibility adds RVR and LVP notices', (t) => {
-    const fog = { ...CLEAR, visibilityMeters: 400, phenomena: ['FG'], cloud: [{ cover: 'VV', baseFt: 100, type: null }], ceilingFeet: 100, windSpeed: 2 };
+    const fog = {
+        ...CLEAR, visibilityMeters: 400, phenomena: ['FG'], cloud: [{ cover: 'VV', baseFt: 100, type: null }], ceilingFeet: 100, windSpeed: 2
+    };
     const atis = buildAtis(input({ weather: fog }));
 
     t.true(atis.written.includes('RVR RWY 27 450M'));
@@ -189,7 +193,9 @@ ava('low visibility adds RVR and LVP notices', (t) => {
 });
 
 ava('US airports use altimeter setting, statute miles and no transition level', (t) => {
-    const atis = buildAtis(input({ icao: 'KSEA', airportName: 'Seattle', arrivalRunway: '16L', departureRunway: '16L', weather: { ...CLEAR, qnhHpa: 1013 } }));
+    const atis = buildAtis(input({
+        icao: 'KSEA', airportName: 'Seattle', arrivalRunway: '16L', departureRunway: '16L', weather: { ...CLEAR, qnhHpa: 1013 }
+    }));
 
     t.true(atis.written.includes('ALTIMETER 29.91'));
     t.false(atis.written.includes('TRANSITION LEVEL'));

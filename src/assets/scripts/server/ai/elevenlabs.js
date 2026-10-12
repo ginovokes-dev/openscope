@@ -90,15 +90,19 @@ const buildVoiceSettings = (voiceKey) => {
     };
 };
 
-const createClient = ({ apiKey, baseUrl, ttsModel, sttModel, configuredVoiceIds }) => {
+const createClient = ({
+    apiKey, baseUrl, ttsModel, sttModel, configuredVoiceIds
+}) => {
     let cachedVoices = null;
     let cachedAt = 0;
 
     const headers = () => ({ 'xi-api-key': apiKey });
 
-    const listVoices = async () => {
+    const listVoices = async() => {
         if (configuredVoiceIds && configuredVoiceIds.length > 0) {
-            return configuredVoiceIds.map((id) => ({ id, name: id, accent: '', gender: '' }));
+            return configuredVoiceIds.map((id) => ({
+                id, name: id, accent: '', gender: ''
+            }));
         }
 
         if (cachedVoices && Date.now() - cachedAt < 60 * 60 * 1000) {
@@ -128,7 +132,9 @@ const createClient = ({ apiKey, baseUrl, ttsModel, sttModel, configuredVoiceIds 
             // fall through to the built-in list
         }
 
-        return FALLBACK_VOICE_IDS.map((id) => ({ id, name: id, accent: '', gender: '' }));
+        return FALLBACK_VOICE_IDS.map((id) => ({
+            id, name: id, accent: '', gender: ''
+        }));
     };
 
     return {
@@ -160,7 +166,9 @@ const createClient = ({ apiKey, baseUrl, ttsModel, sttModel, configuredVoiceIds 
                 return { ok: false, status: response.status, error: await describeFailure(response) };
             }
 
-            return { ok: true, status: 200, body: Buffer.from(await response.arrayBuffer()), voice: chosenVoice };
+            return {
+                ok: true, status: 200, body: Buffer.from(await response.arrayBuffer()), voice: chosenVoice
+            };
         },
 
         /**

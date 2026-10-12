@@ -8,6 +8,9 @@ import CanvasController from './canvas/CanvasController';
 import AirportInfoController from './info/AirportInfoController';
 import AtisController from './atis/AtisController';
 import AtisPanel from './atis/AtisPanel';
+import AiSettingsDialog from './radio/AiSettingsDialog';
+import RadioController from './radio/RadioController';
+import RadioPanel from './radio/RadioPanel';
 import WeatherController from './weather/WeatherController';
 import EventDirector from './events/EventDirector';
 import AircraftInfoPanel from './ui/AircraftInfoPanel';
@@ -24,6 +27,7 @@ import SpawnPatternCollection from './trafficGenerator/SpawnPatternCollection';
 import SpawnScheduler from './trafficGenerator/SpawnScheduler';
 import UiController from './ui/UiController';
 import ScoreController from './game/ScoreController';
+import airportIndex from './geo/AirportIndex';
 import { speech_init } from './speech';
 import { EVENT } from './constants/eventNames';
 import { SELECTORS } from './constants/selectors';
@@ -212,6 +216,13 @@ export default class AppController {
         this.aircraftInfoPanel = new AircraftInfoPanel(this.$element, this.aircraftController);
         this.atisPanel = new AtisPanel(this.$element);
         UiController.registerExtraDialog(this.atisPanel);
+        this.radioController = new RadioController(this.aircraftController, this.inputController);
+        this.radioController.init();
+        this.radioPanel = new RadioPanel(this.$element, this.radioController);
+        this.aiSettingsDialog = new AiSettingsDialog(this.$element, this.radioController);
+        UiController.registerExtraDialog(this.radioPanel);
+        UiController.registerExtraDialog(this.aiSettingsDialog);
+        zlsa.atc.debug.radio = this.radioController;
         this.airportGuideController = new AirportGuideViewController(this.$element, airportGuideData, initialAirportData.icao);
         this.changelogController = new ChangelogController(this.contentQueue);
 
@@ -233,6 +244,13 @@ export default class AppController {
      */
     init() {
         speech_init();
+
+        // the worldwide airport index is optional and loads in the background; the switcher is rebuilt with city names when it arrives
+        airportIndex.load().then((count) => {
+            if (count > 0) {
+                UiController.refreshAirportList();
+            }
+        });
 
         this.canvasController.canvas_init();
         UiController.ui_init();

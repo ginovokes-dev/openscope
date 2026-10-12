@@ -30,8 +30,12 @@ const makeAircraft = (overrides = {}) => ({
     ...overrides
 });
 
-const CLEAR = { visibilityMeters: 9999, phenomena: [], ceilingFeet: null, windGust: null };
-const ctx = (aircraft, weather = CLEAR, random = () => 0.1) => ({ aircraft, weather, random, now: 0, airportIcao: 'EGGP', actions: { getFixAhead: () => 'DET' } });
+const CLEAR = {
+    visibilityMeters: 9999, phenomena: [], ceilingFeet: null, windGust: null
+};
+const ctx = (aircraft, weather = CLEAR, random = () => 0.1) => ({
+    aircraft, weather, random, now: 0, airportIcao: 'EGGP', actions: { getFixAhead: () => 'DET' }
+});
 const definition = (id) => EVENT_DEFINITIONS.find((d) => d.id === id);
 
 ava('every definition declares what it needs', (t) => {
@@ -104,7 +108,9 @@ ava('go-arounds need an aircraft established on final', (t) => {
 
 ava('weather diversion requests only happen in bad weather', (t) => {
     const aircraft = makeAircraft();
-    const fog = { visibilityMeters: 400, phenomena: ['FG'], ceilingFeet: 100, windGust: null };
+    const fog = {
+        visibilityMeters: 400, phenomena: ['FG'], ceilingFeet: 100, windGust: null
+    };
 
     t.is(definition('WEATHER_DIVERSION_REQUEST').pick(ctx([aircraft], CLEAR)), null);
     t.is(definition('WEATHER_DIVERSION_REQUEST').pick(ctx([aircraft], fog)), aircraft);

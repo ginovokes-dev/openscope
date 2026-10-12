@@ -139,11 +139,15 @@ ava('severe variability does eventually produce several different regimes', (t) 
 });
 
 ava('snow only occurs in cold climates', (t) => {
-    const warm = new WeatherModel({ variability: WEATHER_VARIABILITY.SEVERE, random: seeded(3), latitudeDegrees: 1, seasonOffsetCelsius: 5 });
+    const warm = new WeatherModel({
+        variability: WEATHER_VARIABILITY.SEVERE, random: seeded(3), latitudeDegrees: 1, seasonOffsetCelsius: 5
+    });
 
     run(warm, 1200).forEach((s) => t.not(s.regime, WEATHER_REGIME.SNOW));
 
-    const cold = new WeatherModel({ variability: WEATHER_VARIABILITY.SEVERE, random: seeded(5), latitudeDegrees: 60, seasonOffsetCelsius: -10 });
+    const cold = new WeatherModel({
+        variability: WEATHER_VARIABILITY.SEVERE, random: seeded(5), latitudeDegrees: 60, seasonOffsetCelsius: -10
+    });
     const coldRegimes = new Set(run(cold, 2400).map((s) => s.regime));
 
     t.true(coldRegimes.has(WEATHER_REGIME.SNOW) || coldRegimes.size > 3);
@@ -240,7 +244,9 @@ ava('hasSignificantWeatherChange() applies ICAO-style thresholds', (t) => {
 });
 
 ava('direction changes in light winds are not significant', (t) => {
-    const calm = { windDirection: 90, windSpeed: 2, windGust: null, visibilityMeters: 9999, ceilingFeet: null, phenomena: [], qnhHpa: 1013 };
+    const calm = {
+        windDirection: 90, windSpeed: 2, windGust: null, visibilityMeters: 9999, ceilingFeet: null, phenomena: [], qnhHpa: 1013
+    };
 
     t.false(hasSignificantWeatherChange(calm, { ...calm, windDirection: 270 }));
 });

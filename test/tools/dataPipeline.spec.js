@@ -5,7 +5,9 @@ import path from 'path';
 import { parseCsv, parseCsvObjects } from '../../tools/data-pipeline/lib/csv';
 import { mapEquipment } from '../../tools/data-pipeline/lib/equipment';
 import { requiredRunwayKm, isTypeAllowed } from '../../tools/data-pipeline/lib/realism';
-import { areReciprocal, buildRunways, isHardSurface, parseRunwayEnd } from '../../tools/data-pipeline/lib/runways';
+import {
+    areReciprocal, buildRunways, isHardSurface, parseRunwayEnd
+} from '../../tools/data-pipeline/lib/runways';
 import { airportPlaceName, cleanCallsignName } from '../../tools/data-pipeline/lib/naming';
 import { simBearingDistance, simOffsetToLatLon } from '../../tools/data-pipeline/lib/geo';
 import { serializeFile } from '../../tools/data-pipeline/lib/format';
@@ -72,11 +74,19 @@ ava('runways: names are parsed, padded and checked for reciprocity', (t) => {
 });
 
 ava('runways: builds a pair from OurAirports rows and skips unsuitable ones', (t) => {
-    const end = (ident, lat, lon, elevationFt) => ({ ident, lat, lon, elevationFt, headingTrue: null, displacedFt: null });
+    const end = (ident, lat, lon, elevationFt) => ({
+        ident, lat, lon, elevationFt, headingTrue: null, displacedFt: null
+    });
     const rows = [
-        { lengthFt: 7497, widthFt: 150, surface: 'ASP', lighted: true, closed: false, le: end('9', 53.3329, -2.8660, 59), he: end('27', 53.3344, -2.8327, 77) },
-        { lengthFt: 3000, widthFt: 60, surface: 'TURF', lighted: false, closed: false, le: end('04', null, null, null), he: end('22', null, null, null) },
-        { lengthFt: 6000, widthFt: 100, surface: 'ASP', lighted: false, closed: true, le: end('01', null, null, null), he: end('19', null, null, null) }
+        {
+            lengthFt: 7497, widthFt: 150, surface: 'ASP', lighted: true, closed: false, le: end('9', 53.3329, -2.8660, 59), he: end('27', 53.3344, -2.8327, 77)
+        },
+        {
+            lengthFt: 3000, widthFt: 60, surface: 'TURF', lighted: false, closed: false, le: end('04', null, null, null), he: end('22', null, null, null)
+        },
+        {
+            lengthFt: 6000, widthFt: 100, surface: 'ASP', lighted: false, closed: true, le: end('01', null, null, null), he: end('19', null, null, null)
+        }
     ];
     const result = buildRunways(rows, { lat: 53.3349, lon: -2.8496, elevationFt: 80 }, 0, {});
 
@@ -121,7 +131,9 @@ ava('gates: bearing clustering finds the two dominant sectors', (t) => {
 });
 
 ava('format: top-level keys are on their own line and the text parses back', (t) => {
-    const obj = { _generated: true, icao: 'TEST', fixes: { A: [1, 2], B: [3, 4, 'bee'] }, maps: [{ name: 'x', lines: [[1, 2, 3, 4], [5, 6, 7, 8]] }] };
+    const obj = {
+        _generated: true, icao: 'TEST', fixes: { A: [1, 2], B: [3, 4, 'bee'] }, maps: [{ name: 'x', lines: [[1, 2, 3, 4], [5, 6, 7, 8]] }]
+    };
     const text = serializeFile(obj);
 
     t.deepEqual(JSON.parse(text), obj);
@@ -137,7 +149,9 @@ ava('loadlist: generated entries are merged without touching hand-authored text 
 
     fs.writeFileSync(file, original);
 
-    const entry = { icao: 'bbbb', level: 'beginner', name: 'B', premium: false, iata: 'BBB', country: 'GB', generated: true };
+    const entry = {
+        icao: 'bbbb', level: 'beginner', name: 'B', premium: false, iata: 'BBB', country: 'GB', generated: true
+    };
     const first = mergeLoadList(file, [entry]);
     const merged = fs.readFileSync(file, 'utf8');
     const parsed = JSON.parse(merged);
