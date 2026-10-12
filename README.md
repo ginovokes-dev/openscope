@@ -48,6 +48,10 @@ Success!!
 
 To use the optional language model and voice features, copy `.env.example` to `.env` and add your `ANTHROPIC_API_KEY` and/or `ELEVENLABS_API_KEY` before `npm run start` (or enter them in the game's AI & Voice dialog).
 
+### Running it in a GitHub Codespace
+
+Create the Codespace from the branch that has these changes (Code > Codespaces > ... > New with options > pick the branch), or in an existing one run `git fetch origin && git checkout claude/great-gates-xgg8ci`. The dev container installs, builds and starts the game; open the **Ports** tab, find port **3003** and click the globe icon (**Open in Browser**). If it is not running, use `npm install && npm run build && npm run start` in the terminal. To use the language model and voices, add `ANTHROPIC_API_KEY` and/or `ELEVENLABS_API_KEY` as Codespaces secrets (or put them in a `.env` file) before starting.
+
 You you do not see this message and are having trouble getting set up, please join us on [Slack](https://join.slack.com/t/openscopeatc/shared_invite/zt-g9wq2mch-B7Z9IltlgxgCBC2dBYPjiw) and someone will be able to troubleshoot with you.
 
 For more information on the available tools, please view the [Tools Readme](tools/README.md).

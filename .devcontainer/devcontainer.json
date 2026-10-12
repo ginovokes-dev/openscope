@@ -1,0 +1,13 @@
+{
+    "name": "openScope",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+    "postCreateCommand": "npm install && npm run build",
+    "postStartCommand": "nohup npm run start > /tmp/openscope.log 2>&1 &",
+    "forwardPorts": [3003],
+    "portsAttributes": {
+        "3003": {
+            "label": "openScope",
+            "onAutoForward": "openBrowser"
+        }
+    }
+}
