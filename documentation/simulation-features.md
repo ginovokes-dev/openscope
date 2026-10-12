@@ -9,6 +9,9 @@ simulation, how to configure them, and what they do not do.
 - [Weather and the ATIS](#weather-and-the-atis)
 - [Failures, emergencies and fuel](#failures-emergencies-and-fuel)
 - [The aircraft panel](#the-aircraft-panel)
+- [The radar: procedures, traffic level and readability](#the-radar-procedures-traffic-level-and-readability)
+- [Departures and the ground chart](#departures-and-the-ground-chart)
+- [Typing and talking in plain words](#typing-and-talking-in-plain-words)
 - [Radio: free-form text and voice](#radio-free-form-text-and-voice)
 - [Setting up the AI and voice features](#setting-up-the-ai-and-voice-features)
 - [Settings reference](#settings-reference)
@@ -20,7 +23,7 @@ Press `F8` (or the controls button in the footer) for the in-game controls guide
 and arrivals, the order in which to clear an aircraft, and every command in plain English next to the command that does it.
 The full command reference is in [aircraft-commands.md](aircraft-commands.md).
 
-A normal departure is `caf` (cleared as filed), `taxi [runway]`, `cvs` (climb via SID) and `cto` (cleared for takeoff).
+A normal departure is `caf` (cleared as filed; the pilot has asked for it), optionally `push`, `taxi [runway]`, optionally `lineup`, then `cto` (cleared for takeoff), and `cvs` (climb via SID).
 A normal arrival is `dvs` or altitude and speed instructions, `e [runway]`, vectors, and `i [runway]` (cleared ILS).
 
 ## Airports
@@ -38,9 +41,10 @@ A normal arrival is `dvs` or altitude and speed instructions, `e [runway]`, vect
 - A worldwide airport index (`assets/airports/airportIndex.json`, about 6,000 airports) provides names, cities and positions for every
   origin, destination and diversion airport.
 
-Generated airports do **not** have official procedures: SIDs and STARs are direct-to-fix routes between runway and gates named
-after nearby navaids, ILS availability is inferred from the runway data, and transition altitudes are regional defaults. They are for
-training and fun, not for navigation. See [data-sources.md](data-sources.md) for the data licences and attribution.
+Generated airports do **not** have official procedures: SIDs and STARs are generated routes between each runway and the gates (named
+after nearby navaids; the STARs fan in from every gate and join a final approach fix on each runway, the SIDs leave on a track that
+suits the gate), ILS availability is inferred from the runway data, and transition altitudes are regional defaults. Departure routes
+that make no sense for a runway are not offered for it. They are for training and fun, not for navigation. See [data-sources.md](data-sources.md) for the data licences and attribution.
 
 ## Traffic and aircraft
 
@@ -84,6 +88,58 @@ alternate, route, runway, altitude/heading/speed with their assigned values, pos
 fuel remaining with endurance, any emergency or pending request, and buttons for the common queries. **Settings → Aircraft info panel detail = Standard** hides the
 souls and fuel lines (a real controller would have to ask), for a harder game.
 
+## The radar: procedures, traffic level and readability
+
+- **SIDs and STARs are drawn and labelled by default** (blue departure routes, orange arrival routes), tied to the runway they belong to: when the ATIS
+  runway changes, only the routes for the runway in use stand out. Switch them off in Settings → Radar, from the footer buttons, or by saying "hide the SIDs".
+- **`F6` opens the procedures list** (also a footer button): every SID and STAR of the airport with its runways and gates. Hover or click a row to highlight it on the radar;
+  with an aircraft selected, a button assigns the procedure to it.
+- Airports are drawn with a ring and their identifier, neighbouring airports are shown as small markers with their codes, and the coastline is drawn behind the radar
+  at generated airports, so it is easy to see where you are. Runway lines are thicker the further you zoom in.
+- **Traffic level** (Settings → Traffic, or "make it quieter / busier"): *Quiet*, *Medium* (default), *Busy* and *Rush hour*. The level scales how often aircraft are
+  generated and caps how many arrivals can be in the airspace at once, how close together they come, and how many departures can queue, so the radar is never flooded.
+- Departures wait for you by default: nothing takes off or even taxis until you clear it (Settings → Departures → *Tower controller*: *You* by default, *Automatic* to
+  restore the original behaviour of departures lining up and departing by themselves).
+
+## Departures and the ground chart
+
+**The sequence.** A departure appears at a stand. After a short while the pilot calls Delivery: *"Seattle Delivery, UAL8 at the stand, request IFR clearance to Reno,
+information victor, expecting runway 16L"*. Then:
+
+| You say / type | What happens |
+|---|---|
+| `caf` (or `sid NAME`) | IFR clearance. The pilot reads back destination, SID, runway, initial climb and squawk |
+| `push` | Pushback and start-up approved. The pilot calls "ready to taxi" a little later. Optional: `taxi` from the stand pushes back too |
+| `taxi 16L` or `taxi 16L via A B` | The aircraft taxis along the routed taxiways (about 20 knots; larger airports take longer) to the holding point of that runway and calls ready for departure |
+| `hp` | Hold position. `taxi` sets the aircraft going again |
+| `lineup` | Line up and wait: the aircraft moves onto the runway and shows on the radar. Optional |
+| `cto` | Cleared for takeoff. Nothing departs without it, and without an IFR clearance the pilot refuses |
+
+Everything also works as plain words ("Speedbird one two three, taxi to holding point runway two seven right via alpha bravo"), and the aircraft panel has a button per step with the sensible next one highlighted.
+Departures from hand-made airports that file no destination are given a plausible one in the direction their SID leaves the airspace.
+
+**The ground chart** (`F9`, the footer button, "open the ground chart", or just zoom in on the airfield) shows the aprons, terminal, taxiways with their names, stands, holding-position bars,
+runway surfaces, the aircraft on the ground (click one to select it) and the route of the selected aircraft. The layout comes from:
+
+1. **OpenStreetMap** (the real thing), fetched by the browser from the Overpass API the first time an airport is opened and cached for 90 days; or
+2. a **generated schematic**: a parallel taxiway with connectors for every runway, one apron with a terminal and stands. It is clearly labelled as generated.
+   It is used immediately, while the real layout loads, when offline, when the airport is not mapped in OpenStreetMap, or when Settings → Ground → *Airport ground layout* is *Generated schematic only*.
+
+Taxi routes are found by A* over the taxiway graph (gaps in OpenStreetMap data of up to 80 m are bridged), and naming taxiways in `taxi ... via` makes the route prefer them.
+The chart legend credits OpenStreetMap contributors (ODbL) whenever its data is shown; see [data-sources.md](data-sources.md).
+
+## Typing and talking in plain words
+
+You can type in the command bar or the radio panel, or speak, instead of learning the commands. The command bar sends anything that is not a command to the radio.
+
+- Aircraft: "Speedbird one two three, descend flight level eight zero", "the center flight level zero five zero" (a typical mis-hearing of "descend flight level 050" - it is repaired),
+  "cleared to Dublin via the Daventry departure, squawk four seven two one", "line up and wait", "hold position".
+- The application: "open the ATIS", "give me the latest information", "update the ATIS", "what is the wind", "which runway is in use", "hide the SIDs", "show the stars",
+  "open the ground chart", "open settings", "make it quieter", "rush hour", "switch to Manchester", "zoom in", "pause", "speed up time".
+- Speech is repaired before it is interpreted: known mis-hearings of phraseology ("heating" → "heading", "for" between digits → "four"), words close to a callsign or a fix that exists right now,
+  and "speed bird" → "speedbird". The browser recogniser is asked for several alternatives and the one that reads most like an ATC call is used; ElevenLabs speech-to-text is used when a key is set.
+- With an Anthropic key the language model also gets the application actions as part of its answer, so any phrasing works; without one the built-in matcher handles the phrases above.
+
 ## Radio: free-form text and voice
 
 Press `F4` for the radio panel. Type a transmission and press Enter, or hold the microphone button (or **Right Shift**, from anywhere) and speak.
@@ -126,12 +182,21 @@ Open the settings (cog in the footer). New settings:
 | Failures and events | Low fuel, Medical, Technical, Weather, Pilot requests, Traffic | On, Off (each) |
 | Aircraft information | Aircraft info panel detail | Full (default), Standard |
 | Aircraft information | Fuel units | Kilograms, Pounds |
+| Departures | Tower controller | You (default), Automatic |
+| Traffic | How busy is the airport | Quiet, Medium (default), Busy, Rush hour |
+| Radar | Show SIDs, Show STARs | Yes (default), No |
+| Ground | Airport ground layout | Real (OpenStreetMap), else generated (default); Generated schematic only |
 
 ## Limitations and what is not done yet
 
-- **Tower, ground and delivery positions are not implemented.** You control approach and departure. Tower-issued IFR clearances, ground movements and a "tower controller can do anything" mode are planned.
+- **Delivery and ground are played by you through the same commands**: there are no separate delivery, ground and tower frequencies, but the pilots do call Delivery, Ground and Tower by name and the whole sequence
+  (clearance, pushback, taxi, line up, takeoff) is there. Arrivals still disappear on landing; they do not vacate and taxi to a stand. Pushback is a timer, not a movement. Taxiing aircraft do not
+  give way to each other or stop for runway crossings.
+- **The real ground layouts could not be tested against live OpenStreetMap data** where this was developed (only GitHub and the npm registry were reachable): the fetch, parsing, routing, caching and
+  drawing were tested with a synthetic Overpass response and the unit tests. Real airports differ (taxiways mapped in pieces, missing stands, differently tagged holding positions), so the layout code
+  bridges gaps, derives stands from aprons or dead ends and picks holding points from the network when they are not mapped. If a real airport looks wrong, set *Airport ground layout* to *Generated schematic only*.
 - The live language model and ElevenLabs integrations have been tested against recorded/faked servers and the unit tests, not exercised with real keys during development.
 - Generated airports have no real SIDs/STARs, approach charts or transition altitudes (see [Airports](#airports)); the OpenFlights route table is a 2014 snapshot, so some airline and route pairings are out of date.
-- Changing the runway in use (ATIS editor) is not possible at airports whose traffic follows scripted runway-specific routes.
+- Changing the runway in use (ATIS editor) is only possible at airports whose traffic does not follow scripted runway-specific routes; generated airports can always change runway for new traffic, aircraft already inbound keep the runway they were told to expect.
 - Four airports that were disabled in the original project (EDDT, ESPA, OSDI, WIMM) are still disabled (closed, or no usable data).
 - Wikipedia and ChartFox were not reachable when the data was built, so airport and callsign data come from OurAirports and OpenFlights; it is not a copy of ChartFox's charts.

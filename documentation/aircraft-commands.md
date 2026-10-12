@@ -80,7 +80,10 @@ _Information -_ This command tells the airplane that they are cleared to follow
 the flight plan that they requested when spawning. Therefore, when a departure
 spawns on the ground, and his strip shows that he filed for a particular SID,
 there is no need to use the `sid` command. Just clear him "as filed" with the
-`caf` command, and the airplane will take care of the rest.
+`caf` command, and the airplane will take care of the rest. The pilot reads
+back the clearance in full: destination, SID, runway, initial climb and squawk.
+Departures ask for this clearance themselves ("request IFR clearance") shortly after
+appearing at their stand.
 
 _Syntax -_ `AAL123 caf`
 
@@ -102,21 +105,51 @@ _Aliases -_ `takeoff`, `to`, `cto`, `/`
 
 _Hotkey -_ `numpad /`
 
-_Information -_ This command clears the specified plane for takeoff. They
+_Information -_ This command clears the specified plane for takeoff. It is refused unless the aircraft
+has an IFR clearance (`caf` or `sid`). They
 will climb to the altitude they were previously cleared to, or in accordance
 with a SID if told previously to "climb via the SID". If neither has happened,
 they will ask for an altitude assignment before they agree to take off.
 
 _Syntax -_ `AAL123 cto`
 
+### Pushback
+
+_Aliases -_ `push`, `pushback`, `pb`
+
+_Information -_ Pushback and engine start approved. The aircraft must already have its IFR clearance. After a short while the pilot calls ready to taxi.
+You can also skip this and use `taxi` straight from the stand, which pushes back as part of the taxi.
+
+_Syntax -_ `AAL123 push`
+
 ### Taxi
 
 _Aliases -_ `taxi`, `wait`, `w`
 
 _Information -_ This command tells the specified plane to taxi to and hold short
-of the specified runway.
+of the specified runway. The aircraft follows a route over the taxiways of the
+airport (shown on the ground chart, `F9`) at about 20 knots, which takes longer at
+larger airports. Taxiways can be named, and the route prefers them. If the aircraft is holding
+position (`hp`), `taxi` sets it going again.
 
-_Syntax -_ `AAL123 taxi [runway]`
+_Syntax -_ `AAL123 taxi [runway]` or `AAL123 taxi [runway] via [taxiway] [taxiway] ...`
+
+### Hold Position
+
+_Aliases -_ `hp`, `holdposition`, `stop`
+
+_Information -_ The aircraft stops where it is (taxiing) or stays where it is (holding short, lined up).
+
+_Syntax -_ `AAL123 hp`
+
+### Line Up and Wait
+
+_Aliases -_ `lineup`, `lu`, `luaw`, `lineupandwait`
+
+_Information -_ The aircraft, holding short of its runway and first in the queue, lines up on the runway and waits.
+It is then visible on the radar at the threshold. Optional: `cto` also works from the holding point.
+
+_Syntax -_ `AAL123 lineup`
 
 ## Arrival Commands
 

@@ -120,8 +120,9 @@ for n, text in enumerate([
     'Pick an airport with the airport button (search by city, IATA code or country). Press <b>F8</b> any time for the in-game controls guide.',
     '<b>Select an aircraft:</b> click it or its strip, or use PageUp / PageDown. The side panel shows squawk, route, QNH, fuel and souls on board. '
     'The command bar fills in its callsign.',
-    '<b>Departures:</b> <font name="Mono">caf</font> (cleared as filed), <font name="Mono">taxi 27R</font>, <font name="Mono">cvs</font> (climb via SID), '
-    '<font name="Mono">cto</font> (cleared for takeoff). Then vector, climb and route direct.',
+    '<b>Departures:</b> the pilot asks for the IFR clearance at the stand. Answer with <font name="Mono">caf</font> (cleared as filed; the pilot reads back SID, runway, climb and squawk), '
+    '<font name="Mono">push</font>, <font name="Mono">taxi 27R</font> (it follows the taxiways, see the ground chart on <b>F9</b>), optionally <font name="Mono">lineup</font>, then '
+    '<font name="Mono">cto</font>. Nothing departs without your clearance. Then vector, climb and route direct.',
     '<b>Arrivals:</b> <font name="Mono">dvs</font> or altitude and speed steps (<font name="Mono">d 80</font>, <font name="Mono">sp 210</font>), '
     '<font name="Mono">e 27R</font> (expect runway), vector onto the centreline, <font name="Mono">i 27R</font> (cleared ILS). '
     'Keep them separated and landing; a go-around is <font name="Mono">ga</font>.',
@@ -143,6 +144,8 @@ keys = [
     ['F3', 'ATIS: update, edit, read aloud, AI-suggested remarks'],
     ['F4', 'Radio panel: type or speak to pilots'],
     ['Right Shift (hold)', 'Push to talk, from anywhere'],
+    ['F6', 'SIDs and STARs: list, highlight on the radar, assign to the selected aircraft'],
+    ['F9', 'Ground chart (taxiways, stands, holding points); it also appears when you zoom in on the airfield'],
     ['F8', 'Controls guide'],
     ['Numpad / * + -', 'Insert takeoff, ILS, speed up, speed down'],
     ['Arrow keys (Control Method = Arrow Keys)', 'left / right insert a turn, up / down insert climb / descend'],
@@ -163,12 +166,15 @@ s.append(Paragraph('Aircraft commands', ParagraphStyle('t2', parent=title, fontS
 s.append(Paragraph('Every command starts with the aircraft: <font name="Mono">AAL123 &lt;command&gt;</font>. Several commands can follow one callsign. '
                    'Shorter aliases are shown first.', small))
 
-s += section('Departures', 'Used by aircraft on the ground.', [
-    ['Cleared as filed', 'AAL123 caf', 'Accept the filed flight plan and SID. Normal first step for a departure.'],
-    ['SID', 'AAL123 sid [name]', 'Clear them via a different SID.'],
-    ['Taxi / hold short', 'AAL123 taxi [runway]', 'Taxi to and hold short of the runway. Aliases: w, wait.'],
+s += section('Departures', 'Used by aircraft on the ground, in this order. The pilot calls for the clearance, then for push and taxi.', [
+    ['Cleared as filed', 'AAL123 caf', 'IFR clearance on the filed plan and SID. The pilot reads back destination, SID, runway, initial climb and squawk.'],
+    ['SID', 'AAL123 sid [name]', 'Clear them via a different SID (same readback).'],
+    ['Pushback', 'AAL123 push', 'Pushback and start-up approved (alias pb). Needs the clearance first. Optional: taxi also pushes back.'],
+    ['Taxi / hold short', 'AAL123 taxi [runway] [via A B]', 'Taxi along the taxiways to the holding point; larger airports take longer. via names taxiways to prefer. Aliases: w, wait.'],
+    ['Hold position', 'AAL123 hp', 'Stop where they are. taxi sets them off again.'],
+    ['Line up and wait', 'AAL123 lineup', 'Onto the runway, visible on the radar, and wait (alias lu). Optional.'],
     ['Climb via SID', 'AAL123 cvs  |  cvs [alt]', 'Climb following the SID restrictions, optionally to an altitude.'],
-    ['Takeoff', 'AAL123 cto', 'Cleared for takeoff (numpad /). Aliases: to, takeoff. Without a SID, cvs or an assigned altitude the pilot asks for one first.'],
+    ['Takeoff', 'AAL123 cto', 'Cleared for takeoff (numpad /). Aliases: to, takeoff. Refused without an IFR clearance.'],
 ])
 s += section('Arrivals', 'Used by aircraft inbound to the airport.', [
     ['Expect runway', 'AAL123 e [runway]', 'Tell them which runway to plan for (also selects the right STAR branch).'],
@@ -219,6 +225,23 @@ s += section('Scope commands (backquote to switch)', 'Affect the radar display, 
     ['Toggle halo', 'QP_J [callsign]  |  QP_J [nm] [callsign]', 'Show or hide a halo (default 3 nm) around an aircraft. F7 inserts QP_J.'],
 ])
 
+s.append(Paragraph('Ask the application, in plain words', h1))
+app_rows = [
+    ['"open the ATIS" / "give me the latest information" / "update the ATIS"', 'Open, refresh or read the ATIS'],
+    ['"what is the wind" / "what is the QNH" / "which runway is in use"', 'Answers from the live weather and ATIS'],
+    ['"hide the SIDs" / "show the stars" / "show the airspace"', 'Radar layers'],
+    ['"open the ground chart" / "open the procedures list" / "open settings"', 'Screens'],
+    ['"make it quieter" / "busy" / "rush hour" / "more traffic"', 'Traffic level (also in Settings)'],
+    ['"switch to Manchester" / "zoom in" / "pause" / "speed up time"', 'Airport, view and clock'],
+]
+at = Table([[p(a), p(b)] for a, b in app_rows], colWidths=[W - 62 * mm, 62 * mm])
+at.setStyle(TableStyle([('VALIGN', (0, 0), (-1, -1), 'TOP'), ('TOPPADDING', (0, 0), (-1, -1), 2.4), ('BOTTOMPADDING', (0, 0), (-1, -1), 2.4),
+                        ('LINEBELOW', (0, 0), (-1, -1), 0.4, RULE), ('LEFTPADDING', (0, 0), (-1, -1), 4)]))
+s.append(at)
+s.append(Spacer(1, 3))
+s.append(Paragraph('Type these in the command bar or the radio panel, or say them. Speech is cleaned up before it is interpreted: "the center flight level zero five zero" '
+                   'becomes "descend flight level 050", and callsigns and fixes that exist right now are matched to what the recogniser heard.', small))
+
 s.append(Paragraph('Talk to the pilots (F4)', h1))
 phr = [
     ['"Speedbird one two three, turn left heading two seven zero"', 'BAW123 t l 270'],
@@ -227,6 +250,8 @@ phr = [
     ['"Shamrock four two one, say fuel remaining" (or: how much fuel do you have)', 'EIN421 sf'],
     ['"Speedbird one two three, go around"', 'BAW123 ga'],
     ['"Speedbird one two three, divert to Manchester"', 'BAW123 divert EGCC'],
+    ['"Speedbird one two three, taxi to holding point runway two seven right via alpha bravo"', 'BAW123 taxi 27R via A B'],
+    ['"Speedbird one two three, line up and wait" / "cleared for take-off" / "hold position"', 'BAW123 lineup / cto / hp'],
 ]
 pt = Table([[p(a), p(b, code)] for a, b in phr], colWidths=[W - 52 * mm, 52 * mm])
 pt.setStyle(TableStyle([('VALIGN', (0, 0), (-1, -1), 'TOP'), ('TOPPADDING', (0, 0), (-1, -1), 2.4), ('BOTTOMPADDING', (0, 0), (-1, -1), 2.4),

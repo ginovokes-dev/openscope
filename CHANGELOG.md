@@ -10,6 +10,12 @@
 - Add commands `ga` (go around), `divert`, `sf` (say fuel), `sob` (say persons on board), `sint`, `sinfo`, `roger` and `unable`
 - Add a radio panel (`F4`): talk to pilots in free-form text or by voice; optional Claude language model and ElevenLabs voices
 - Add an in-game controls guide (`F8`)
+- Show SIDs and STARs on the radar by default, tied to their runway, with a procedures list (`F6`) to highlight and assign them; generate STARs for the generated airports; draw coastlines, neighbouring airports and an airport marker
+- Add a traffic level setting (quiet, medium, busy, rush hour) that scales and caps arrivals and departures, so the radar is not flooded
+- Departures wait for the controller by default: the pilot requests the IFR clearance, `caf` reads back destination, SID, runway, climb and squawk, and nothing taxis or departs without clearance
+- Add `push` (pushback), `lineup` (line up and wait), `hp` (hold position) and `taxi [rwy] via [taxiways]`
+- Add a ground chart (`F9`, footer button, or zoom in on the airfield): taxiways, aprons, stands, holding points and aircraft taxiing along routed taxiways, using the OpenStreetMap layout when it can be fetched and a generated schematic otherwise
+- Type or say plain sentences ("the center flight level zero five zero", "open the ATIS", "hide the SIDs", "switch to Manchester", "make it busier"); repair speech-to-text mistakes and choose between recogniser alternatives
 
 ### Enhancements & Refactors
 - Fix the spelling of "forty" in pilot speech
