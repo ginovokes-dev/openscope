@@ -1,0 +1,89 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ZSYN/",
+    "info": {"country":"CN","city":"Yancheng","type":"large_airport","longestRunwayM":2801},
+    "radio": {"twr":"Yancheng Tower","app":"Yancheng Approach","dep":"Yancheng Departure"},
+    "icao": "ZSYN",
+    "iata": "YNZ",
+    "magnetic_north": -6.8,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [33.428317,120.20545,"10ft"],
+    "rangeRings": {"enabled":true,"center":[33.428317,120.20545],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":240,"speed":6},
+    "arrivalRunway": "22",
+    "departureRunway": "22",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[33.9641,120.1289],[33.9624,120.2977],[33.9243,120.4602],[33.8524,120.6053],[33.7515,120.7232],[33.6287,120.8058],[33.4922,120.8474],[33.3514,120.8454],[33.2157,120.7997],[33.0946,120.7135],[32.9962,120.5927],[32.9273,120.4456],[32.8925,120.282],[32.8942,120.1132],[32.9324,119.9507],[33.0043,119.8056],[33.1051,119.6877],[33.2279,119.6051],[33.3644,119.5635],[33.5053,119.5655],[33.6409,119.6112],[33.762,119.6974],[33.8604,119.8182],[33.9293,119.9653]]}
+    ],
+    "fixes": {
+        "ZSYN": [33.42832,120.20545],
+        "OZOZI": [34.11035,120.42469],
+        "IWECI": [33.66962,120.28302],
+        "CECGA": [32.75343,120.45442],
+        "SANET": [33.18955,120.29354],
+        "VEVIJ": [32.86595,119.69373],
+        "ARETU": [33.22935,120.02441],
+        "OREJI": [33.54215,119.3704],
+        "SOJUM": [33.46859,119.91001],
+        "_RWY0404DME": [33.36629,120.14626],
+        "_RWY2204DME": [33.4904,120.26425]
+    },
+    "runways": [
+        {"name":["04","22"],"end":[[33.41849,120.19584,"10ft"],[33.43822,120.2146,"10ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "OZOZI2E": {"icao":"OZOZI2E","name":"Ozozi Two Echo","rwy":{"ZSYN04":["_RWY2204DME"],"ZSYN22":["_RWY0404DME"]},"body":[],"exitPoints":{"OZOZI":["OZOZI"]},"draw":[["ZSYN","OZOZI*"]]},
+        "CECGA1B": {"icao":"CECGA1B","name":"Cecga One Bravo","rwy":{"ZSYN04":["_RWY2204DME"],"ZSYN22":["_RWY0404DME"]},"body":[],"exitPoints":{"CECGA":["CECGA"]},"draw":[["ZSYN","CECGA*"]]},
+        "VEVIJ1C": {"icao":"VEVIJ1C","name":"Vevij One Charlie","rwy":{"ZSYN04":["_RWY2204DME"],"ZSYN22":["_RWY0404DME"]},"body":[],"exitPoints":{"VEVIJ":["VEVIJ"]},"draw":[["ZSYN","VEVIJ*"]]},
+        "OREJI1F": {"icao":"OREJI1F","name":"Oreji One Foxtrot","rwy":{"ZSYN04":["_RWY2204DME"],"ZSYN22":["_RWY0404DME"]},"body":[],"exitPoints":{"OREJI":["OREJI"]},"draw":[["ZSYN","OREJI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ZSYN","destination":"RCTP","category":"departure","route":"ZSYN22.CECGA1B.CECGA","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["ces/a320",1],["uia/a321",1]]},
+        {"origin":"ZSYN","destination":"ZHHH","category":"departure","route":"ZSYN22.VEVIJ1C.VEVIJ","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["csn/b737",1],["csn/b738",1]]},
+        {"origin":"ZSYN","destination":"ZYTL","category":"departure","route":"ZSYN22.OZOZI2E.OZOZI","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["csn/b737",1],["csn/b738",1]]},
+        {"origin":"ZSYN","destination":"ZYTX","category":"departure","route":"ZSYN22.OZOZI2E.OZOZI","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["csn/b737",1],["csn/b738",1]]},
+        {"origin":"ZSYN","destination":"VHHH","category":"departure","route":"ZSYN22.VEVIJ1C.VEVIJ","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["ces/a320",1]]},
+        {"origin":"ZSYN","destination":"","category":"departure","route":"ZSYN22.OZOZI2E.OZOZI","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["cca/b737",1],["cxa/b737",1]]},
+        {"origin":"ZSYN","destination":"","category":"departure","route":"ZSYN22.CECGA1B.CECGA","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["ces/a320",1],["csn/b738",1]]},
+        {"origin":"ZSYN","destination":"","category":"departure","route":"ZSYN22.VEVIJ1C.VEVIJ","altitude":"","speed":"","method":"random","rate":1.02,"airlines":[["ces/b733",1],["csn/b738",1],["cxa/b737",1]]},
+        {"origin":"ZSYN","destination":"","category":"departure","route":"ZSYN22.OREJI1F.OREJI","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["ces/a320",1]]},
+        {"origin":"ZSYN","destination":"","category":"departure","route":"ZSYN22.VEVIJ1C.VEVIJ","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
+        {"origin":"ZSYN","destination":"","category":"departure","route":"ZSYN22.CECGA1B.CECGA","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
+        {"origin":"RCTP","destination":"ZSYN","category":"arrival","route":"CECGA..SANET..ZSYN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["ces/a320",1],["uia/a321",1]]},
+        {"origin":"ZHHH","destination":"ZSYN","category":"arrival","route":"VEVIJ..ARETU..ZSYN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["csn/b737",1],["csn/b738",1]]},
+        {"origin":"ZYTL","destination":"ZSYN","category":"arrival","route":"OZOZI..IWECI..ZSYN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["csn/b737",1],["csn/b738",1]]},
+        {"origin":"ZYTX","destination":"ZSYN","category":"arrival","route":"OZOZI..IWECI..ZSYN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["csn/b737",1],["csn/b738",1]]},
+        {"origin":"VHHH","destination":"ZSYN","category":"arrival","route":"VEVIJ..ARETU..ZSYN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["ces/a320",1]]},
+        {"origin":"","destination":"ZSYN","category":"arrival","route":"OZOZI..IWECI..ZSYN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["cca/b737",1],["cxa/b737",1]]},
+        {"origin":"","destination":"ZSYN","category":"arrival","route":"CECGA..SANET..ZSYN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["ces/a320",1],["csn/b738",1]]},
+        {"origin":"","destination":"ZSYN","category":"arrival","route":"VEVIJ..ARETU..ZSYN","altitude":[6000,9000],"speed":250,"method":"random","rate":1.02,"airlines":[["ces/b733",1],["csn/b738",1],["cxa/b737",1]]},
+        {"origin":"","destination":"ZSYN","category":"arrival","route":"OREJI..SOJUM..ZSYN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["ces/a320",1]]},
+        {"origin":"","destination":"ZSYN","category":"arrival","route":"VEVIJ..ARETU..ZSYN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
+        {"origin":"","destination":"ZSYN","category":"arrival","route":"CECGA..SANET..ZSYN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [34.1103,120.4247,33.6696,120.283],
+            [33.6696,120.283,33.4283,120.2055],
+            [32.7534,120.4544,33.1895,120.2935],
+            [33.1895,120.2935,33.4283,120.2055],
+            [32.866,119.6937,33.2294,120.0244],
+            [33.2294,120.0244,33.4283,120.2055],
+            [33.5422,119.3704,33.4686,119.91],
+            [33.4686,119.91,33.4283,120.2055]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [33.4185,120.1958,33.2879,120.072],
+            [33.347,120.1432,33.3594,120.1245],
+            [33.2817,120.0814,33.2942,120.0626],
+            [33.4382,120.2146,33.5686,120.3388],
+            [33.5097,120.2673,33.4972,120.2861],
+            [33.5749,120.3294,33.5624,120.3482]
+        ]}
+    ]
+}

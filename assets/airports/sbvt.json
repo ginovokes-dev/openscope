@@ -1,0 +1,92 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SBVT/",
+    "info": {"country":"BR","city":"Vitoria","type":"large_airport","longestRunwayM":2059,"frequencies":{"atis":"127.575","twr":"118.100","app":"119.850"}},
+    "radio": {"twr":"Vitoria Tower","app":"Vitoria Approach","dep":"Vitoria Departure"},
+    "icao": "SBVT",
+    "iata": "VIX",
+    "magnetic_north": -23.7,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-20.258,-40.285,"34ft"],
+    "rangeRings": {"enabled":true,"center":[-20.258,-40.285],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":20,"speed":10},
+    "arrivalRunway": "02",
+    "departureRunway": "02",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-19.8874,-40.4584],[-19.858,-40.3503],[-19.8557,-40.2377],[-19.8809,-40.1283],[-19.9318,-40.0296],[-20.005,-39.9483],[-20.0953,-39.89],[-20.1968,-39.8586],[-20.3024,-39.8562],[-20.405,-39.8831],[-20.4976,-39.9373],[-20.5738,-40.0153],[-20.6286,-40.1116],[-20.658,-40.2197],[-20.6603,-40.3323],[-20.6351,-40.4417],[-20.5842,-40.5404],[-20.511,-40.6217],[-20.4207,-40.68],[-20.3192,-40.7114],[-20.2136,-40.7138],[-20.111,-40.6869],[-20.0184,-40.6327],[-19.9422,-40.5547]]}
+    ],
+    "fixes": {
+        "SBVT": [-20.258,-40.285],
+        "MOKIN": [-19.73754,-40.14001],
+        "UKUZA": [-20.06463,-40.23113],
+        "ISAVE": [-20.56274,-39.81248],
+        "JAHIF": [-20.37122,-40.10944],
+        "IPEWA": [-20.5714,-40.75104],
+        "RICAL": [-20.37444,-40.45815],
+        "ARIGA": [-20.10686,-40.83531],
+        "IROFE": [-20.20185,-40.48946],
+        "_RWY0204DME": [-20.33179,-40.26833],
+        "_RWY2004DME": [-20.18154,-40.2911],
+        "_RWY0604DME": [-20.32117,-40.32827],
+        "_RWY2404DME": [-20.19402,-40.24506]
+    },
+    "runways": [
+        {"name":["02","20"],"end":[[-20.26583,-40.27833,"34ft"],[-20.2475,-40.28111,"18ft"]],"ils":[true,true]},
+        {"name":["06","24"],"end":[[-20.2644,-40.2911,"13ft"],[-20.2508,-40.2822,"13ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "MOKIN3D": {"icao":"MOKIN3D","name":"Mokin Three Delta","rwy":{"SBVT02":["_RWY2004DME"],"SBVT20":["_RWY0204DME"],"SBVT06":["_RWY2404DME"],"SBVT24":["_RWY0604DME"]},"body":[],"exitPoints":{"MOKIN":["MOKIN"]},"draw":[["SBVT","MOKIN*"]]},
+        "ISAVE2B": {"icao":"ISAVE2B","name":"Isave Two Bravo","rwy":{"SBVT02":["_RWY2004DME"],"SBVT20":["_RWY0204DME"],"SBVT06":["_RWY2404DME"],"SBVT24":["_RWY0604DME"]},"body":[],"exitPoints":{"ISAVE":["ISAVE"]},"draw":[["SBVT","ISAVE*"]]},
+        "IPEWA3B": {"icao":"IPEWA3B","name":"Ipewa Three Bravo","rwy":{"SBVT02":["_RWY2004DME"],"SBVT20":["_RWY0204DME"],"SBVT06":["_RWY2404DME"],"SBVT24":["_RWY0604DME"]},"body":[],"exitPoints":{"IPEWA":["IPEWA"]},"draw":[["SBVT","IPEWA*"]]},
+        "ARIGA1C": {"icao":"ARIGA1C","name":"Ariga One Charlie","rwy":{"SBVT02":["_RWY2004DME"],"SBVT20":["_RWY0204DME"],"SBVT06":["_RWY2404DME"],"SBVT24":["_RWY0604DME"]},"body":[],"exitPoints":{"ARIGA":["ARIGA"]},"draw":[["SBVT","ARIGA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SBVT","destination":"SBRJ","category":"departure","route":"SBVT02.IPEWA3B.IPEWA","altitude":"","speed":"","method":"random","rate":0.8,"airlines":[["azu/e190",2],["glo/b737",1],["glo/b738",1],["tam/a319",1]]},
+        {"origin":"SBVT","destination":"SBCF","category":"departure","route":"SBVT02.ARIGA1C.ARIGA","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["azu/e190",2],["glo/b737",1],["glo/b738",1]]},
+        {"origin":"SBVT","destination":"SBSP","category":"departure","route":"SBVT02.IPEWA3B.IPEWA","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["glo/b737",1],["glo/b738",1],["tam/a319",1],["tam/a320",1]]},
+        {"origin":"SBVT","destination":"SBSV","category":"departure","route":"SBVT02.MOKIN3D.MOKIN","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["azu/e190",2],["azu/at72",1],["glo/b737",1]]},
+        {"origin":"SBVT","destination":"SBGL","category":"departure","route":"SBVT02.IPEWA3B.IPEWA","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["glo/b737",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBVT","destination":"","category":"departure","route":"SBVT02.IPEWA3B.IPEWA","altitude":"","speed":"","method":"random","rate":0.8,"airlines":[["azu/e190",2],["glo/b737",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBVT","destination":"","category":"departure","route":"SBVT02.ARIGA1C.ARIGA","altitude":"","speed":"","method":"random","rate":0.16,"airlines":[["tam/a320",1]]},
+        {"origin":"SBVT","destination":"","category":"departure","route":"SBVT02.MOKIN3D.MOKIN","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"SBRJ","destination":"SBVT","category":"arrival","route":"IPEWA..RICAL..SBVT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.8,"airlines":[["azu/e190",2],["glo/b737",1],["glo/b738",1],["tam/a319",1]]},
+        {"origin":"SBCF","destination":"SBVT","category":"arrival","route":"ARIGA..IROFE..SBVT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.64,"airlines":[["azu/e190",2],["glo/b737",1],["glo/b738",1]]},
+        {"origin":"SBSP","destination":"SBVT","category":"arrival","route":"IPEWA..RICAL..SBVT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.64,"airlines":[["glo/b737",1],["glo/b738",1],["tam/a319",1],["tam/a320",1]]},
+        {"origin":"SBSV","destination":"SBVT","category":"arrival","route":"MOKIN..UKUZA..SBVT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.64,"airlines":[["azu/e190",2],["azu/at72",1],["glo/b737",1]]},
+        {"origin":"SBGL","destination":"SBVT","category":"arrival","route":"IPEWA..RICAL..SBVT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["glo/b737",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"","destination":"SBVT","category":"arrival","route":"IPEWA..RICAL..SBVT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.8,"airlines":[["azu/e190",2],["glo/b737",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"","destination":"SBVT","category":"arrival","route":"ARIGA..IROFE..SBVT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.16,"airlines":[["tam/a320",1]]},
+        {"origin":"","destination":"SBVT","category":"arrival","route":"MOKIN..UKUZA..SBVT","altitude":[4000,7000],"speed":250,"method":"random","rate":1.39,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-19.7375,-40.14,-20.0646,-40.2311],
+            [-20.0646,-40.2311,-20.258,-40.285],
+            [-20.5627,-39.8125,-20.3712,-40.1094],
+            [-20.3712,-40.1094,-20.258,-40.285],
+            [-20.5714,-40.751,-20.3744,-40.4582],
+            [-20.3744,-40.4582,-20.258,-40.285],
+            [-20.1069,-40.8353,-20.2018,-40.4895],
+            [-20.2018,-40.4895,-20.258,-40.285]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-20.2658,-40.2783,-20.4307,-40.2533],
+            [-20.3469,-40.2553,-20.3497,-40.2764],
+            [-20.4293,-40.2428,-20.4321,-40.2639],
+            [-20.2475,-40.2811,-20.0826,-40.3061],
+            [-20.1665,-40.3041,-20.1636,-40.2831],
+            [-20.084,-40.3166,-20.0812,-40.2955],
+            [-20.2644,-40.2911,-20.4063,-40.3841],
+            [-20.3406,-40.3285,-20.3301,-40.3466],
+            [-20.4115,-40.375,-20.4011,-40.3932],
+            [-20.2508,-40.2822,-20.1088,-40.1894],
+            [-20.1746,-40.2449,-20.1851,-40.2267],
+            [-20.1036,-40.1985,-20.1141,-40.1803]
+        ]}
+    ]
+}

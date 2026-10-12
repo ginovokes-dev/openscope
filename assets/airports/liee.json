@@ -1,0 +1,103 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LIEE/",
+    "info": {"country":"IT","city":"Cagliari","type":"large_airport","longestRunwayM":2803,"frequencies":{"twr":"120.600","app":"118.750","gnd":"125.425"}},
+    "radio": {"twr":"Cagliari Tower","app":"Cagliari Approach","dep":"Cagliari Departure"},
+    "icao": "LIEE",
+    "iata": "CAG",
+    "magnetic_north": 3.3,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [39.251499,9.05428,"13ft"],
+    "rangeRings": {"enabled":true,"center":[39.251499,9.05428],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":310,"speed":7},
+    "arrivalRunway": "32",
+    "departureRunway": "32",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[39.7902,9.0944],[39.7638,9.2731],[39.7025,9.4368],[39.6105,9.5745],[39.4939,9.6768],[39.3609,9.7366],[39.2204,9.7499],[39.0821,9.7158],[38.9553,9.6367],[38.8486,9.5178],[38.7694,9.3674],[38.7231,9.1956],[38.7128,9.0142],[38.7392,8.8355],[38.8005,8.6717],[38.8925,8.534],[39.009,8.4318],[39.1421,8.3719],[39.2826,8.3586],[39.4209,8.3927],[39.5477,8.4719],[39.6544,8.5907],[39.7336,8.7412],[39.7799,8.913]]}
+    ],
+    "fixes": {
+        "LIEE": [39.2515,9.05428],
+        "IVAKA": [39.95606,9.11527],
+        "KONNI": [39.50077,9.07586],
+        "ARB": [39.9214,9.67867,"tortoli"],
+        "MOSOD": [39.45408,9.24309],
+        "CIFOP": [38.94802,9.87767],
+        "ROVOF": [39.14413,9.34559],
+        "NOLTA": [38.60305,8.69324],
+        "MOZLU": [39.02208,8.92655],
+        "KUZAN": [39.50679,8.20407],
+        "JOSTU": [39.34182,8.75348],
+        "EDUWO": [39.84164,8.5535],
+        "ZAKMO": [39.46029,8.87711],
+        "_RWY1404DME": [39.31039,8.986],
+        "_RWY3204DME": [39.19248,9.12249]
+    },
+    "runways": [
+        {"name":["14","32"],"end":[[39.2608,9.04347,"9ft"],[39.2421,9.06511,"4ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "IVAKA1F": {"icao":"IVAKA1F","name":"Ivaka One Foxtrot","rwy":{"LIEE14":["_RWY3204DME"],"LIEE32":["_RWY1404DME"]},"body":[],"exitPoints":{"IVAKA":["IVAKA"]},"draw":[["LIEE","IVAKA*"]]},
+        "ARB2D": {"icao":"ARB2D","name":"Tortoli Two Delta","rwy":{"LIEE14":["_RWY3204DME"],"LIEE32":["_RWY1404DME"]},"body":[],"exitPoints":{"ARB":["ARB"]},"draw":[["LIEE","ARB*"]]},
+        "CIFOP1D": {"icao":"CIFOP1D","name":"Cifop One Delta","rwy":{"LIEE14":["_RWY3204DME"],"LIEE32":["_RWY1404DME"]},"body":[],"exitPoints":{"CIFOP":["CIFOP"]},"draw":[["LIEE","CIFOP*"]]},
+        "NOLTA1D": {"icao":"NOLTA1D","name":"Nolta One Delta","rwy":{"LIEE14":["_RWY3204DME"],"LIEE32":["_RWY1404DME"]},"body":[],"exitPoints":{"NOLTA":["NOLTA"]},"draw":[["LIEE","NOLTA*"]]},
+        "KUZAN2C": {"icao":"KUZAN2C","name":"Kuzan Two Charlie","rwy":{"LIEE14":["_RWY3204DME"],"LIEE32":["_RWY1404DME"]},"body":[],"exitPoints":{"KUZAN":["KUZAN"]},"draw":[["LIEE","KUZAN*"]]},
+        "EDUWO3B": {"icao":"EDUWO3B","name":"Eduwo Three Bravo","rwy":{"LIEE14":["_RWY3204DME"],"LIEE32":["_RWY1404DME"]},"body":[],"exitPoints":{"EDUWO":["EDUWO"]},"draw":[["LIEE","EDUWO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LIEE","destination":"LIML","category":"departure","route":"LIEE32.IVAKA1F.IVAKA","altitude":"","speed":"","method":"random","rate":0.8,"airlines":[["aza/a320",2],["aza/a319",1],["aza/e190",1],["aza/e75l",1]]},
+        {"origin":"LIEE","destination":"LIRF","category":"departure","route":"LIEE32.ARB2D.ARB","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["aza/a320",2],["aza/a319",1],["aza/a321",1]]},
+        {"origin":"LIEE","destination":"EDDL","category":"departure","route":"LIEE32.IVAKA1F.IVAKA","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["ber/b738",1],["iss/a320",1],["gwi/crj7",1],["gwi/crj9",1],["gwi/crj2",1]]},
+        {"origin":"LIEE","destination":"EDDM","category":"departure","route":"LIEE32.IVAKA1F.IVAKA","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["ber/a320",1],["ber/b738",1],["dlh/e190",1]]},
+        {"origin":"LIEE","destination":"LIMC","category":"departure","route":"LIEE32.IVAKA1F.IVAKA","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["ezy/a319",1],["ezy/a320",1]]},
+        {"origin":"LIEE","destination":"LIRN","category":"departure","route":"LIEE32.ARB2D.ARB","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["iss/b737",1],["iss/md82",1]]},
+        {"origin":"LIEE","destination":"","category":"departure","route":"LIEE32.IVAKA1F.IVAKA","altitude":"","speed":"","method":"random","rate":3.18,"airlines":[["ryr/b738",10],["iss/md82",3],["gwi/a319",2],["ezy/a319",1],["ezy/a320",1],["ibe/a320",1],["lgl/dh8d",1],["vlg/a319",1]]},
+        {"origin":"LIEE","destination":"","category":"departure","route":"LIEE32.ARB2D.ARB","altitude":"","speed":"","method":"random","rate":0.96,"airlines":[["ryr/b738",6]]},
+        {"origin":"LIEE","destination":"","category":"departure","route":"LIEE32.CIFOP1D.CIFOP","altitude":"","speed":"","method":"random","rate":0.16,"airlines":[["ryr/b738",1]]},
+        {"origin":"LIEE","destination":"","category":"departure","route":"LIEE32.KUZAN2C.KUZAN","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["ryr/b738",2]]},
+        {"origin":"LIEE","destination":"","category":"departure","route":"LIEE32.EDUWO3B.EDUWO","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["ezy/a319",2],["ryr/b738",2]]},
+        {"origin":"LIEE","destination":"","category":"departure","route":"LIEE32.NOLTA1D.NOLTA","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"LIEE","destination":"","category":"departure","route":"LIEE32.EDUWO3B.EDUWO","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"LIML","destination":"LIEE","category":"arrival","route":"IVAKA..KONNI..LIEE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.8,"airlines":[["aza/a320",2],["aza/a319",1],["aza/e190",1],["aza/e75l",1]]},
+        {"origin":"LIRF","destination":"LIEE","category":"arrival","route":"ARB..MOSOD..LIEE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.64,"airlines":[["aza/a320",2],["aza/a319",1],["aza/a321",1]]},
+        {"origin":"EDDL","destination":"LIEE","category":"arrival","route":"IVAKA..KONNI..LIEE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.48,"airlines":[["ber/b738",1],["iss/a320",1],["gwi/crj7",1],["gwi/crj9",1],["gwi/crj2",1]]},
+        {"origin":"EDDM","destination":"LIEE","category":"arrival","route":"IVAKA..KONNI..LIEE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.48,"airlines":[["ber/a320",1],["ber/b738",1],["dlh/e190",1]]},
+        {"origin":"LIMC","destination":"LIEE","category":"arrival","route":"IVAKA..KONNI..LIEE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.32,"airlines":[["ezy/a319",1],["ezy/a320",1]]},
+        {"origin":"LIRN","destination":"LIEE","category":"arrival","route":"ARB..MOSOD..LIEE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.32,"airlines":[["iss/b737",1],["iss/md82",1]]},
+        {"origin":"","destination":"LIEE","category":"arrival","route":"IVAKA..KONNI..LIEE","altitude":[6000,9000],"speed":250,"method":"random","rate":3.18,"airlines":[["ryr/b738",10],["iss/md82",3],["gwi/a319",2],["ezy/a319",1],["ezy/a320",1],["ibe/a320",1],["lgl/dh8d",1],["vlg/a319",1]]},
+        {"origin":"","destination":"LIEE","category":"arrival","route":"ARB..MOSOD..LIEE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.96,"airlines":[["ryr/b738",6]]},
+        {"origin":"","destination":"LIEE","category":"arrival","route":"CIFOP..ROVOF..LIEE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.16,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LIEE","category":"arrival","route":"KUZAN..JOSTU..LIEE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.32,"airlines":[["ryr/b738",2]]},
+        {"origin":"","destination":"LIEE","category":"arrival","route":"EDUWO..ZAKMO..LIEE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.64,"airlines":[["ezy/a319",2],["ryr/b738",2]]},
+        {"origin":"","destination":"LIEE","category":"arrival","route":"NOLTA..MOZLU..LIEE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.56,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"","destination":"LIEE","category":"arrival","route":"EDUWO..ZAKMO..LIEE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.56,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [39.9561,9.1153,39.5008,9.0759],
+            [39.5008,9.0759,39.2515,9.0543],
+            [39.9214,9.6787,39.4541,9.2431],
+            [39.4541,9.2431,39.2515,9.0543],
+            [38.948,9.8777,39.1441,9.3456],
+            [39.1441,9.3456,39.2515,9.0543],
+            [38.6031,8.6932,39.0221,8.9265],
+            [39.0221,8.9265,39.2515,9.0543],
+            [39.5068,8.2041,39.3418,8.7535],
+            [39.3418,8.7535,39.2515,9.0543],
+            [39.8416,8.5535,39.4603,8.8771],
+            [39.4603,8.8771,39.2515,9.0543]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [39.2608,9.0435,39.3847,8.8996],
+            [39.3161,8.962,39.3295,8.9812],
+            [39.3781,8.89,39.3914,8.9093],
+            [39.2421,9.0651,39.118,9.2084],
+            [39.1867,9.1464,39.1734,9.1272],
+            [39.1247,9.218,39.1113,9.1988]
+        ]}
+    ]
+}

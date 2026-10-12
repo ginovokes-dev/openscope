@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SBFI/",
+    "info": {"country":"BR","city":"Foz do Iguacu","type":"large_airport","longestRunwayM":2705,"frequencies":{"twr":"118.800","app":"119.150"}},
+    "radio": {"twr":"Cataratas Tower","app":"Cataratas Approach","dep":"Cataratas Departure"},
+    "icao": "SBFI",
+    "iata": "IGU",
+    "magnetic_north": -17.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-25.594167,-54.489444,"786ft"],
+    "rangeRings": {"enabled":true,"center":[-25.594167,-54.489444],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":140,"speed":7},
+    "arrivalRunway": "15",
+    "departureRunway": "15",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-25.2082,-54.6244],[-25.1899,-54.509],[-25.1991,-54.3923],[-25.2352,-54.2822],[-25.2958,-54.1863],[-25.3767,-54.111],[-25.4725,-54.0615],[-25.5765,-54.0411],[-25.6818,-54.0514],[-25.781,-54.0914],[-25.8676,-54.1586],[-25.9355,-54.2483],[-25.9801,-54.3545],[-25.9985,-54.4699],[-25.9893,-54.5866],[-25.9531,-54.6966],[-25.8925,-54.7926],[-25.8116,-54.8679],[-25.7159,-54.9174],[-25.6118,-54.9377],[-25.5066,-54.9275],[-25.4073,-54.8875],[-25.3208,-54.8203],[-25.2529,-54.7305]]}
+    ],
+    "fixes": {
+        "SBFI": [-25.59417,-54.48944],
+        "GUWTA": [-25.48343,-53.90575],
+        "ARONI": [-25.55303,-54.27258],
+        "SOSRA": [-26.04543,-54.16478],
+        "KIPUW": [-25.76183,-54.36882],
+        "EDOSE": [-25.98992,-54.89345],
+        "ETUKO": [-25.7412,-54.63955],
+        "LAKHU": [-25.33957,-55.01487],
+        "TEMRO": [-25.49957,-54.68466],
+        "_RWY1504DME": [-25.54551,-54.55184],
+        "_RWY3304DME": [-25.64496,-54.42425]
+    },
+    "runways": [
+        {"name":["15","33"],"end":[[-25.58908,-54.49597,"764ft"],[-25.6014,-54.48016,"764ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "GUWTA1F": {"icao":"GUWTA1F","name":"Guwta One Foxtrot","rwy":{"SBFI15":["_RWY3304DME"],"SBFI33":["_RWY1504DME"]},"body":[],"exitPoints":{"GUWTA":["GUWTA"]},"draw":[["SBFI","GUWTA*"]]},
+        "SOSRA3E": {"icao":"SOSRA3E","name":"Sosra Three Echo","rwy":{"SBFI15":["_RWY3304DME"],"SBFI33":["_RWY1504DME"]},"body":[],"exitPoints":{"SOSRA":["SOSRA"]},"draw":[["SBFI","SOSRA*"]]},
+        "EDOSE3F": {"icao":"EDOSE3F","name":"Edose Three Foxtrot","rwy":{"SBFI15":["_RWY3304DME"],"SBFI33":["_RWY1504DME"]},"body":[],"exitPoints":{"EDOSE":["EDOSE"]},"draw":[["SBFI","EDOSE*"]]},
+        "LAKHU1B": {"icao":"LAKHU1B","name":"Lakhu One Bravo","rwy":{"SBFI15":["_RWY3304DME"],"SBFI33":["_RWY1504DME"]},"body":[],"exitPoints":{"LAKHU":["LAKHU"]},"draw":[["SBFI","LAKHU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SBFI","destination":"SBGR","category":"departure","route":"SBFI15.GUWTA1F.GUWTA","altitude":"","speed":"","method":"random","rate":0.99,"airlines":[["glo/b737",1],["glo/b738",1],["tam/a319",1],["tam/a320",1]]},
+        {"origin":"SBFI","destination":"SBCT","category":"departure","route":"SBFI15.GUWTA1F.GUWTA","altitude":"","speed":"","method":"random","rate":0.74,"airlines":[["azu/e190",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBFI","destination":"SBGL","category":"departure","route":"SBFI15.GUWTA1F.GUWTA","altitude":"","speed":"","method":"random","rate":0.74,"airlines":[["glo/b737",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBFI","destination":"SBKP","category":"departure","route":"SBFI15.GUWTA1F.GUWTA","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["azu/e190",2]]},
+        {"origin":"SBFI","destination":"SBSP","category":"departure","route":"SBFI15.GUWTA1F.GUWTA","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["tam/a319",1],["tam/a320",1]]},
+        {"origin":"SBFI","destination":"","category":"departure","route":"SBFI15.SOSRA3E.SOSRA","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["azu/at72",1]]},
+        {"origin":"SBFI","destination":"","category":"departure","route":"SBFI15.LAKHU1B.LAKHU","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["lan/a319",1]]},
+        {"origin":"SBFI","destination":"","category":"departure","route":"SBFI15.EDOSE3F.EDOSE","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"SBGR","destination":"SBFI","category":"arrival","route":"GUWTA..ARONI..SBFI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.99,"airlines":[["glo/b737",1],["glo/b738",1],["tam/a319",1],["tam/a320",1]]},
+        {"origin":"SBCT","destination":"SBFI","category":"arrival","route":"GUWTA..ARONI..SBFI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.74,"airlines":[["azu/e190",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBGL","destination":"SBFI","category":"arrival","route":"GUWTA..ARONI..SBFI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.74,"airlines":[["glo/b737",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBKP","destination":"SBFI","category":"arrival","route":"GUWTA..ARONI..SBFI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.5,"airlines":[["azu/e190",2]]},
+        {"origin":"SBSP","destination":"SBFI","category":"arrival","route":"GUWTA..ARONI..SBFI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.5,"airlines":[["tam/a319",1],["tam/a320",1]]},
+        {"origin":"","destination":"SBFI","category":"arrival","route":"SOSRA..KIPUW..SBFI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.25,"airlines":[["azu/at72",1]]},
+        {"origin":"","destination":"SBFI","category":"arrival","route":"LAKHU..TEMRO..SBFI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.25,"airlines":[["lan/a319",1]]},
+        {"origin":"","destination":"SBFI","category":"arrival","route":"EDOSE..ETUKO..SBFI","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-25.4834,-53.9058,-25.553,-54.2726],
+            [-25.553,-54.2726,-25.5942,-54.4894],
+            [-26.0454,-54.1648,-25.7618,-54.3688],
+            [-25.7618,-54.3688,-25.5942,-54.4894],
+            [-25.9899,-54.8934,-25.7412,-54.6395],
+            [-25.7412,-54.6395,-25.5942,-54.4894],
+            [-25.3396,-55.0149,-25.4996,-54.6847],
+            [-25.4996,-54.6847,-25.5942,-54.4894]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-25.5891,-54.496,-25.4801,-54.6356],
+            [-25.5422,-54.573,-25.527,-54.5586],
+            [-25.4877,-54.6428,-25.4725,-54.6283],
+            [-25.6014,-54.4802,-25.7102,-54.3403],
+            [-25.6483,-54.403,-25.6634,-54.4175],
+            [-25.7027,-54.3331,-25.7178,-54.3476]
+        ]}
+    ]
+}

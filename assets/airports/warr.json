@@ -1,0 +1,98 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/WARR/",
+    "info": {"country":"ID","city":"Surabaya","type":"large_airport","longestRunwayM":3017,"frequencies":{"atis":"128.200","twr":"118.100"}},
+    "radio": {"twr":"Juanda Tower","app":"Juanda Approach","dep":"Juanda Departure"},
+    "icao": "WARR",
+    "iata": "SUB",
+    "magnetic_north": 0.8,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [-7.37983,112.787003,"9ft"],
+    "rangeRings": {"enabled":true,"center":[-7.37983,112.787003],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":90,"speed":6},
+    "arrivalRunway": "10",
+    "departureRunway": "10",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[-6.8403,112.7946],[-6.8606,112.9352],[-6.9163,113.0656],[-7.0036,113.1771],[-7.1166,113.262],[-7.2475,113.3145],[-7.3874,113.3311],[-7.5268,113.3105],[-7.6561,113.2544],[-7.7667,113.1663],[-7.8509,113.0524],[-7.9029,112.9205],[-7.9194,112.7794],[-7.899,112.6389],[-7.8433,112.5084],[-7.756,112.3969],[-7.6431,112.312],[-7.5122,112.2595],[-7.3723,112.243],[-7.2329,112.2635],[-7.1035,112.3196],[-6.993,112.4077],[-6.9088,112.5216],[-6.8567,112.6535]]}
+    ],
+    "fixes": {
+        "WARR": [-7.37983,112.787],
+        "FIJBE": [-6.72788,113.06056],
+        "WEBRI": [-7.14917,112.88379],
+        "MP": [-7.0242,113.89,"sumenep"],
+        "KIZGU": [-7.30259,113.02658],
+        "BITAK": [-7.65678,113.442],
+        "LEDKE": [-7.47781,113.01874],
+        "ECOSE": [-7.38634,112.07499],
+        "IWAKA": [-7.38213,112.5351],
+        "WUWSA": [-6.87216,112.29208],
+        "LAWAS": [-7.20022,112.6119],
+        "_RWY1004DME": [-7.36694,112.7067],
+        "_RWY2804DME": [-7.39271,112.86631]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[-7.37765,112.773,"11ft"],[-7.38201,112.8,"8ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "FIJBE2F": {"icao":"FIJBE2F","name":"Fijbe Two Foxtrot","rwy":{"WARR10":["_RWY2804DME"],"WARR28":["_RWY1004DME"]},"body":[],"exitPoints":{"FIJBE":["FIJBE"]},"draw":[["WARR","FIJBE*"]]},
+        "MP2D": {"icao":"MP2D","name":"Sumenep Two Delta","rwy":{"WARR10":["_RWY2804DME"],"WARR28":["_RWY1004DME"]},"body":[],"exitPoints":{"MP":["MP"]},"draw":[["WARR","MP*"]]},
+        "BITAK3E": {"icao":"BITAK3E","name":"Bitak Three Echo","rwy":{"WARR10":["_RWY2804DME"],"WARR28":["_RWY1004DME"]},"body":[],"exitPoints":{"BITAK":["BITAK"]},"draw":[["WARR","BITAK*"]]},
+        "ECOSE2C": {"icao":"ECOSE2C","name":"Ecose Two Charlie","rwy":{"WARR10":["_RWY2804DME"],"WARR28":["_RWY1004DME"]},"body":[],"exitPoints":{"ECOSE":["ECOSE"]},"draw":[["WARR","ECOSE*"]]},
+        "WUWSA1E": {"icao":"WUWSA1E","name":"Wuwsa One Echo","rwy":{"WARR10":["_RWY2804DME"],"WARR28":["_RWY1004DME"]},"body":[],"exitPoints":{"WUWSA":["WUWSA"]},"draw":[["WARR","WUWSA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"WARR","destination":"WSSS","category":"departure","route":"WARR10.WUWSA1E.WUWSA","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["awq/a320",1],["cal/a333",1],["gia/b738",1],["qfa/a320",1],["sia/a333",1],["slk/a319",1],["slk/a320",1],["slk/a333",1],["tgw/a320",1],["vlu/a320",1]]},
+        {"origin":"WARR","destination":"WIII","category":"departure","route":"WARR10.ECOSE2C.ECOSE","altitude":"","speed":"","method":"random","rate":0.91,"airlines":[["awq/a320",1],["gia/a332",1],["gia/b738",1],["lni/b738",1],["lni/b739",1],["sjy/b733",1],["sjy/b734",1],["sjy/b735",1]]},
+        {"origin":"WARR","destination":"WALL","category":"departure","route":"WARR10.FIJBE2F.FIJBE","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["gia/b738",1],["gia/crjx",1],["lni/b738",1],["lni/b739",1],["sjy/b733",1],["sjy/b735",1]]},
+        {"origin":"WARR","destination":"WAAA","category":"departure","route":"WARR10.MP2D.MP","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["awq/a320",1],["gia/crjx",1],["lni/b739",1],["sjy/b733",1],["sjy/b735",1]]},
+        {"origin":"WARR","destination":"WADD","category":"departure","route":"WARR10.BITAK3E.BITAK","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["awq/a320",1],["gia/b738",1],["gia/crjx",1]]},
+        {"origin":"WARR","destination":"WAOO","category":"departure","route":"WARR10.FIJBE2F.FIJBE","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["gia/crjx",1],["lni/b738",1],["lni/b739",1]]},
+        {"origin":"WARR","destination":"","category":"departure","route":"WARR10.FIJBE2F.FIJBE","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["cpa/a333",1],["cpa/b772",1],["eva/a332",1],["lni/b738",1],["lni/b739",1],["rba/a319",1],["rba/a320",1]]},
+        {"origin":"WARR","destination":"","category":"departure","route":"WARR10.MP2D.MP","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["lni/b739",2],["gia/crjx",1],["lni/b738",1],["sjy/b735",1]]},
+        {"origin":"WARR","destination":"","category":"departure","route":"WARR10.BITAK3E.BITAK","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["lni/b739",2],["gia/crjx",1],["sjy/b734",1]]},
+        {"origin":"WARR","destination":"","category":"departure","route":"WARR10.ECOSE2C.ECOSE","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["sjy/b735",2],["awq/a320",1],["gia/b738",1],["gia/crjx",1],["lni/b738",1]]},
+        {"origin":"WARR","destination":"","category":"departure","route":"WARR10.WUWSA1E.WUWSA","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["awq/a320",4],["axm/a320",1],["lni/b739",1]]},
+        {"origin":"WARR","destination":"","category":"departure","route":"WARR10.FIJBE2F.FIJBE","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",2],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]},
+        {"origin":"WARR","destination":"","category":"departure","route":"WARR10.MP2D.MP","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",2],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]},
+        {"origin":"WSSS","destination":"WARR","category":"arrival","route":"WUWSA..LAWAS..WARR","altitude":[6000,9000],"speed":250,"method":"random","rate":1.13,"airlines":[["awq/a320",1],["cal/a333",1],["gia/b738",1],["qfa/a320",1],["sia/a333",1],["slk/a319",1],["slk/a320",1],["slk/a333",1],["tgw/a320",1],["vlu/a320",1]]},
+        {"origin":"WIII","destination":"WARR","category":"arrival","route":"ECOSE..IWAKA..WARR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.91,"airlines":[["awq/a320",1],["gia/a332",1],["gia/b738",1],["lni/b738",1],["lni/b739",1],["sjy/b733",1],["sjy/b734",1],["sjy/b735",1]]},
+        {"origin":"WALL","destination":"WARR","category":"arrival","route":"FIJBE..WEBRI..WARR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["gia/b738",1],["gia/crjx",1],["lni/b738",1],["lni/b739",1],["sjy/b733",1],["sjy/b735",1]]},
+        {"origin":"WAAA","destination":"WARR","category":"arrival","route":"MP..KIZGU..WARR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.57,"airlines":[["awq/a320",1],["gia/crjx",1],["lni/b739",1],["sjy/b733",1],["sjy/b735",1]]},
+        {"origin":"WADD","destination":"WARR","category":"arrival","route":"BITAK..LEDKE..WARR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["awq/a320",1],["gia/b738",1],["gia/crjx",1]]},
+        {"origin":"WAOO","destination":"WARR","category":"arrival","route":"FIJBE..WEBRI..WARR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["gia/crjx",1],["lni/b738",1],["lni/b739",1]]},
+        {"origin":"","destination":"WARR","category":"arrival","route":"FIJBE..WEBRI..WARR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.79,"airlines":[["cpa/a333",1],["cpa/b772",1],["eva/a332",1],["lni/b738",1],["lni/b739",1],["rba/a319",1],["rba/a320",1]]},
+        {"origin":"","destination":"WARR","category":"arrival","route":"MP..KIZGU..WARR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.57,"airlines":[["lni/b739",2],["gia/crjx",1],["lni/b738",1],["sjy/b735",1]]},
+        {"origin":"","destination":"WARR","category":"arrival","route":"BITAK..LEDKE..WARR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["lni/b739",2],["gia/crjx",1],["sjy/b734",1]]},
+        {"origin":"","destination":"WARR","category":"arrival","route":"ECOSE..IWAKA..WARR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["sjy/b735",2],["awq/a320",1],["gia/b738",1],["gia/crjx",1],["lni/b738",1]]},
+        {"origin":"","destination":"WARR","category":"arrival","route":"WUWSA..LAWAS..WARR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["awq/a320",4],["axm/a320",1],["lni/b739",1]]},
+        {"origin":"","destination":"WARR","category":"arrival","route":"FIJBE..WEBRI..WARR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.49,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",2],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]},
+        {"origin":"","destination":"WARR","category":"arrival","route":"MP..KIZGU..WARR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.49,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",2],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-6.7279,113.0606,-7.1492,112.8838],
+            [-7.1492,112.8838,-7.3798,112.787],
+            [-7.0242,113.89,-7.3026,113.0266],
+            [-7.3026,113.0266,-7.3798,112.787],
+            [-7.6568,113.442,-7.4778,113.0187],
+            [-7.4778,113.0187,-7.3798,112.787],
+            [-7.3863,112.075,-7.3821,112.5351],
+            [-7.3821,112.5351,-7.3798,112.787],
+            [-6.8722,112.2921,-7.2002,112.6119],
+            [-7.2002,112.6119,-7.3798,112.787]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-7.3776,112.773,-7.3508,112.6073],
+            [-7.3741,112.6885,-7.3544,112.6917],
+            [-7.3607,112.6056,-7.341,112.6089],
+            [-7.382,112.8,-7.4088,112.9658],
+            [-7.3855,112.8845,-7.4053,112.8813],
+            [-7.3989,112.9674,-7.4186,112.9642]
+        ]}
+    ]
+}

@@ -1,0 +1,87 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/UTDL/",
+    "info": {"country":"TJ","city":"Khujand","type":"large_airport","longestRunwayM":3180,"frequencies":{"twr":"120.300","app":"124.800"}},
+    "radio": {"twr":"Khujand Tower","app":"Khujand Approach","dep":"Khujand Departure"},
+    "icao": "UTDL",
+    "iata": "LBD",
+    "magnetic_north": 5.2,
+    "ctr_radius": 60,
+    "ctr_ceiling": 11000,
+    "initial_alt": 6000,
+    "position": [40.215401,69.694702,"1450ft"],
+    "rangeRings": {"enabled":true,"center":[40.215401,69.694702],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":270,"speed":5},
+    "arrivalRunway": "26",
+    "departureRunway": "26",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":110,"airspace_class":"C","poly":[[40.7528,69.7587],[40.7218,69.9387],[40.6563,70.102],[40.5608,70.2376],[40.4417,70.3362],[40.3072,70.391],[40.1665,70.3984],[40.0291,70.3579],[39.9044,70.2721],[39.8008,70.147],[39.7256,69.9911],[39.6837,69.815],[39.678,69.6307],[39.709,69.4507],[39.7745,69.2874],[39.87,69.1518],[39.9891,69.0532],[40.1236,68.9984],[40.2643,68.991],[40.4017,69.0315],[40.5264,69.1173],[40.63,69.2424],[40.7052,69.3983],[40.7471,69.5744]]}
+    ],
+    "fixes": {
+        "UTDL": [40.2154,69.6947],
+        "SW": [40.9167,69.8,"karakhtay"],
+        "WUROS": [40.46361,69.73197],
+        "EDAVE": [39.55441,70.02009],
+        "DIRZU": [39.98155,69.80982],
+        "CV": [40.8167,68.6833,"syrdarya"],
+        "CEPER": [40.36888,69.43655],
+        "TKT": [41.26,69.29,"tashkent"],
+        "ACISA": [40.45497,69.60189],
+        "_RWY0804DME": [40.20494,69.59322],
+        "_RWY2604DME": [40.22579,69.79621]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[40.21386,69.67967,"1450ft"],[40.21694,69.70973,"1401ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "SW3C": {"icao":"SW3C","name":"Karakhtay Three Charlie","rwy":{"UTDL08":["_RWY2604DME"],"UTDL26":["_RWY0804DME"]},"body":[],"exitPoints":{"SW":["SW"]},"draw":[["UTDL","SW*"]]},
+        "EDAVE3C": {"icao":"EDAVE3C","name":"Edave Three Charlie","rwy":{"UTDL08":["_RWY2604DME"],"UTDL26":["_RWY0804DME"]},"body":[],"exitPoints":{"EDAVE":["EDAVE"]},"draw":[["UTDL","EDAVE*"]]},
+        "CV1C": {"icao":"CV1C","name":"Syrdarya One Charlie","rwy":{"UTDL08":["_RWY2604DME"],"UTDL26":["_RWY0804DME"]},"body":[],"exitPoints":{"CV":["CV"]},"draw":[["UTDL","CV*"]]},
+        "TKT2F": {"icao":"TKT2F","name":"Tashkent Two Foxtrot","rwy":{"UTDL08":["_RWY2604DME"],"UTDL26":["_RWY0804DME"]},"body":[],"exitPoints":{"TKT":["TKT"]},"draw":[["UTDL","TKT*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"UTDL","destination":"USCC","category":"departure","route":"UTDL26.TKT2F.TKT","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["sbi/a319",1],["svr/a320",1]]},
+        {"origin":"UTDL","destination":"ULLI","category":"departure","route":"UTDL26.CV1C.CV","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["afl/a320",1]]},
+        {"origin":"UTDL","destination":"UNKL","category":"departure","route":"UTDL26.SW3C.SW","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["svr/a320",1]]},
+        {"origin":"UTDL","destination":"UNNT","category":"departure","route":"UTDL26.SW3C.SW","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["sbi/a320",1]]},
+        {"origin":"UTDL","destination":"URKK","category":"departure","route":"UTDL26.CV1C.CV","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["svr/a320",1]]},
+        {"origin":"UTDL","destination":"","category":"departure","route":"UTDL26.SW3C.SW","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["csn/b737",1]]},
+        {"origin":"UTDL","destination":"","category":"departure","route":"UTDL26.CV1C.CV","altitude":"","speed":"","method":"random","rate":2.66,"airlines":[["svr/a320",4],["afl/a319",1],["orb/b738",1],["sbi/a321",1]]},
+        {"origin":"UTDL","destination":"","category":"departure","route":"UTDL26.TKT2F.TKT","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["svr/a320",2]]},
+        {"origin":"UTDL","destination":"","category":"departure","route":"UTDL26.TKT2F.TKT","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["ey/c172",6],["ey/p28a",5],["ey/c182",3],["ey/be36",2],["ey/da42",1],["ey/tb20",1],["ey/c208",2],["ey/pc12",2],["ey/be20",1],["ey/b350",1],["ey/p180",1],["ey/c510",1],["ey/e50p",1],["ey/c550",2],["ey/e55p",1],["ey/cl30",1],["ey/c680",1],["ey/h25b",1],["ey/lj45",1],["ey/f2th",1],["ey/glf4",1],["ey/glex",1],["ey/glf5",1]]},
+        {"origin":"UTDL","destination":"","category":"departure","route":"UTDL26.EDAVE3C.EDAVE","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["ey/c172",6],["ey/p28a",5],["ey/c182",3],["ey/be36",2],["ey/da42",1],["ey/tb20",1],["ey/c208",2],["ey/pc12",2],["ey/be20",1],["ey/b350",1],["ey/p180",1],["ey/c510",1],["ey/e50p",1],["ey/c550",2],["ey/e55p",1],["ey/cl30",1],["ey/c680",1],["ey/h25b",1],["ey/lj45",1],["ey/f2th",1],["ey/glf4",1],["ey/glex",1],["ey/glf5",1]]},
+        {"origin":"USCC","destination":"UTDL","category":"arrival","route":"TKT..ACISA..UTDL","altitude":[7000,10000],"speed":250,"method":"random","rate":0.76,"airlines":[["sbi/a319",1],["svr/a320",1]]},
+        {"origin":"ULLI","destination":"UTDL","category":"arrival","route":"CV..CEPER..UTDL","altitude":[7000,10000],"speed":250,"method":"random","rate":0.38,"airlines":[["afl/a320",1]]},
+        {"origin":"UNKL","destination":"UTDL","category":"arrival","route":"SW..WUROS..UTDL","altitude":[7000,10000],"speed":250,"method":"random","rate":0.38,"airlines":[["svr/a320",1]]},
+        {"origin":"UNNT","destination":"UTDL","category":"arrival","route":"SW..WUROS..UTDL","altitude":[7000,10000],"speed":250,"method":"random","rate":0.38,"airlines":[["sbi/a320",1]]},
+        {"origin":"URKK","destination":"UTDL","category":"arrival","route":"CV..CEPER..UTDL","altitude":[7000,10000],"speed":250,"method":"random","rate":0.38,"airlines":[["svr/a320",1]]},
+        {"origin":"","destination":"UTDL","category":"arrival","route":"SW..WUROS..UTDL","altitude":[7000,10000],"speed":250,"method":"random","rate":0.38,"airlines":[["csn/b737",1]]},
+        {"origin":"","destination":"UTDL","category":"arrival","route":"CV..CEPER..UTDL","altitude":[7000,10000],"speed":250,"method":"random","rate":2.66,"airlines":[["svr/a320",4],["afl/a319",1],["orb/b738",1],["sbi/a321",1]]},
+        {"origin":"","destination":"UTDL","category":"arrival","route":"TKT..ACISA..UTDL","altitude":[7000,10000],"speed":250,"method":"random","rate":0.76,"airlines":[["svr/a320",2]]},
+        {"origin":"","destination":"UTDL","category":"arrival","route":"TKT..ACISA..UTDL","altitude":[7000,10000],"speed":250,"method":"random","rate":0.42,"airlines":[["ey/c172",6],["ey/p28a",5],["ey/c182",3],["ey/be36",2],["ey/da42",1],["ey/tb20",1],["ey/c208",2],["ey/pc12",2],["ey/be20",1],["ey/b350",1],["ey/p180",1],["ey/c510",1],["ey/e50p",1],["ey/c550",2],["ey/e55p",1],["ey/cl30",1],["ey/c680",1],["ey/h25b",1],["ey/lj45",1],["ey/f2th",1],["ey/glf4",1],["ey/glex",1],["ey/glf5",1]]},
+        {"origin":"","destination":"UTDL","category":"arrival","route":"EDAVE..DIRZU..UTDL","altitude":[7000,10000],"speed":250,"method":"random","rate":0.42,"airlines":[["ey/c172",6],["ey/p28a",5],["ey/c182",3],["ey/be36",2],["ey/da42",1],["ey/tb20",1],["ey/c208",2],["ey/pc12",2],["ey/be20",1],["ey/b350",1],["ey/p180",1],["ey/c510",1],["ey/e50p",1],["ey/c550",2],["ey/e55p",1],["ey/cl30",1],["ey/c680",1],["ey/h25b",1],["ey/lj45",1],["ey/f2th",1],["ey/glf4",1],["ey/glex",1],["ey/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [40.9167,69.8,40.4636,69.732],
+            [40.4636,69.732,40.2154,69.6947],
+            [39.5544,70.0201,39.9815,69.8098],
+            [39.9815,69.8098,40.2154,69.6947],
+            [40.8167,68.6833,40.3689,69.4365],
+            [40.3689,69.4365,40.2154,69.6947],
+            [41.26,69.29,40.455,69.6019],
+            [40.455,69.6019,40.2154,69.6947]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [40.2139,69.6797,40.1914,69.4636],
+            [40.1928,69.5734,40.2126,69.5699],
+            [40.1815,69.4653,40.2014,69.4618],
+            [40.2169,69.7097,40.239,69.926],
+            [40.2379,69.8161,40.2181,69.8196],
+            [40.2489,69.9242,40.229,69.9277]
+        ]}
+    ]
+}

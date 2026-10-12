@@ -1,0 +1,81 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/BKPR/",
+    "info": {"country":"XK","city":"Prishtina","type":"large_airport","longestRunwayM":3044,"frequencies":{"twr":"120.125","app":"118.775","gnd":"118.000"}},
+    "radio": {"twr":"Pristina Tower","app":"Pristina Approach","dep":"Pristina Departure"},
+    "icao": "BKPR",
+    "iata": "PRN",
+    "magnetic_north": 5.4,
+    "ctr_radius": 60,
+    "ctr_ceiling": 11000,
+    "initial_alt": 6000,
+    "position": [42.5728,21.035801,"1789ft"],
+    "rangeRings": {"enabled":true,"center":[42.5728,21.035801],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":20,"speed":6},
+    "arrivalRunway": "35",
+    "departureRunway": "35",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":110,"airspace_class":"C","poly":[[43.11,21.1048],[43.0786,21.2912],[43.0126,21.4603],[42.9167,21.6004],[42.7974,21.702],[42.6628,21.7583],[42.522,21.7653],[42.3847,21.7226],[42.2602,21.6331],[42.157,21.5029],[42.0822,21.3408],[42.0408,21.158],[42.0356,20.9668],[42.067,20.7804],[42.133,20.6113],[42.2289,20.4712],[42.3482,20.3696],[42.4828,20.3133],[42.6236,20.3063],[42.7609,20.349],[42.8854,20.4385],[42.9886,20.5687],[43.0634,20.7308],[43.1048,20.9136]]}
+    ],
+    "fixes": {
+        "BKPR": [42.5728,21.0358],
+        "BLC": [43.2487,21.3616,"blace"],
+        "GUBZA": [42.80824,21.14929],
+        "VRN": [42.5554,21.9114,"vranje"],
+        "EPURU": [42.56606,21.37493],
+        "UTIHI": [41.93049,20.63738],
+        "GIFUZ": [42.34555,20.89484],
+        "BRN": [42.8712,19.9034,"berane"],
+        "MIPJA": [42.65697,20.71638],
+        "_RWY1704DME": [42.65177,21.02784],
+        "_RWY3504DME": [42.4916,21.04412]
+    },
+    "runways": [
+        {"name":["17","35"],"end":[[42.58534,21.0346,"1789ft"],[42.55804,21.03737,"1786ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "BLC2F": {"icao":"BLC2F","name":"Blace Two Foxtrot","rwy":{"BKPR17":["_RWY3504DME"],"BKPR35":["_RWY1704DME"]},"body":[],"exitPoints":{"BLC":["BLC"]},"draw":[["BKPR","BLC*"]]},
+        "VRN1D": {"icao":"VRN1D","name":"Vranje One Delta","rwy":{"BKPR17":["_RWY3504DME"],"BKPR35":["_RWY1704DME"]},"body":[],"exitPoints":{"VRN":["VRN"]},"draw":[["BKPR","VRN*"]]},
+        "UTIHI1E": {"icao":"UTIHI1E","name":"Utihi One Echo","rwy":{"BKPR17":["_RWY3504DME"],"BKPR35":["_RWY1704DME"]},"body":[],"exitPoints":{"UTIHI":["UTIHI"]},"draw":[["BKPR","UTIHI*"]]},
+        "BRN3C": {"icao":"BRN3C","name":"Berane Three Charlie","rwy":{"BKPR17":["_RWY3504DME"],"BKPR35":["_RWY1704DME"]},"body":[],"exitPoints":{"BRN":["BRN"]},"draw":[["BKPR","BRN*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"BKPR","destination":"LTFM","category":"departure","route":"BKPR35.VRN1D.VRN","altitude":"","speed":"","method":"random","rate":1.26,"airlines":[["thy/a319",1],["thy/a320",1],["thy/b737",1],["thy/b738",1]]},
+        {"origin":"BKPR","destination":"EKCH","category":"departure","route":"BKPR35.BLC2F.BLC","altitude":"","speed":"","method":"random","rate":0.63,"airlines":[["sas/a320",1],["sas/crj9",1]]},
+        {"origin":"BKPR","destination":"LFSB","category":"departure","route":"BKPR35.BRN3C.BRN","altitude":"","speed":"","method":"random","rate":0.63,"airlines":[["ezy/a319",1],["ezy/a320",1]]},
+        {"origin":"BKPR","destination":"LJLJ","category":"departure","route":"BKPR35.BRN3C.BRN","altitude":"","speed":"","method":"random","rate":0.63,"airlines":[["adr/crj2",1],["adr/crj9",1]]},
+        {"origin":"BKPR","destination":"LSGG","category":"departure","route":"BKPR35.BRN3C.BRN","altitude":"","speed":"","method":"random","rate":0.63,"airlines":[["ezy/a319",1],["swr/a320",1]]},
+        {"origin":"BKPR","destination":"","category":"departure","route":"BKPR35.VRN1D.VRN","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["pgt/b738",1]]},
+        {"origin":"BKPR","destination":"","category":"departure","route":"BKPR35.BRN3C.BRN","altitude":"","speed":"","method":"random","rate":2.83,"airlines":[["gwi/a319",4],["adr/a319",2],["bhp/a320",1],["ctn/dh8d",1],["gmi/b737",1]]},
+        {"origin":"LTFM","destination":"BKPR","category":"arrival","route":"VRN..EPURU..BKPR","altitude":[7000,10000],"speed":250,"method":"random","rate":1.26,"airlines":[["thy/a319",1],["thy/a320",1],["thy/b737",1],["thy/b738",1]]},
+        {"origin":"EKCH","destination":"BKPR","category":"arrival","route":"BLC..GUBZA..BKPR","altitude":[7000,10000],"speed":250,"method":"random","rate":0.63,"airlines":[["sas/a320",1],["sas/crj9",1]]},
+        {"origin":"LFSB","destination":"BKPR","category":"arrival","route":"BRN..MIPJA..BKPR","altitude":[7000,10000],"speed":250,"method":"random","rate":0.63,"airlines":[["ezy/a319",1],["ezy/a320",1]]},
+        {"origin":"LJLJ","destination":"BKPR","category":"arrival","route":"BRN..MIPJA..BKPR","altitude":[7000,10000],"speed":250,"method":"random","rate":0.63,"airlines":[["adr/crj2",1],["adr/crj9",1]]},
+        {"origin":"LSGG","destination":"BKPR","category":"arrival","route":"BRN..MIPJA..BKPR","altitude":[7000,10000],"speed":250,"method":"random","rate":0.63,"airlines":[["ezy/a319",1],["swr/a320",1]]},
+        {"origin":"","destination":"BKPR","category":"arrival","route":"VRN..EPURU..BKPR","altitude":[7000,10000],"speed":250,"method":"random","rate":0.31,"airlines":[["pgt/b738",1]]},
+        {"origin":"","destination":"BKPR","category":"arrival","route":"BRN..MIPJA..BKPR","altitude":[7000,10000],"speed":250,"method":"random","rate":2.83,"airlines":[["gwi/a319",4],["adr/a319",2],["bhp/a320",1],["ctn/dh8d",1],["gmi/b737",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [43.2487,21.3616,42.8082,21.1493],
+            [42.8082,21.1493,42.5728,21.0358],
+            [42.5554,21.9114,42.5661,21.3749],
+            [42.5661,21.3749,42.5728,21.0358],
+            [41.9305,20.6374,42.3456,20.8948],
+            [42.3456,20.8948,42.5728,21.0358],
+            [42.8712,19.9034,42.657,20.7164],
+            [42.657,20.7164,42.5728,21.0358]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [42.5853,21.0346,42.7514,21.0177],
+            [42.6676,21.0126,42.6691,21.0397],
+            [42.7507,21.0041,42.7522,21.0312],
+            [42.558,21.0374,42.3919,21.0542],
+            [42.4757,21.0593,42.4742,21.0323],
+            [42.3927,21.0677,42.3912,21.0407]
+        ]}
+    ]
+}

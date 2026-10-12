@@ -1,0 +1,97 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KDSM/",
+    "info": {"country":"US","city":"Des Moines","type":"large_airport","longestRunwayM":2744,"frequencies":{"atis":"119.550","twr":"118.300","gnd":"121.900"}},
+    "radio": {"twr":"Des Moines Tower","app":"Des Moines Approach","dep":"Des Moines Departure"},
+    "icao": "KDSM",
+    "iata": "DSM",
+    "magnetic_north": 0.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [41.534027,-93.656719,"958ft"],
+    "rangeRings": {"enabled":true,"center":[41.534027,-93.656719],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":250,"speed":6},
+    "arrivalRunway": "23",
+    "departureRunway": "23",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[41.9387,-93.6529],[41.9242,-93.5132],[41.8831,-93.3831],[41.8182,-93.2718],[41.7339,-93.1866],[41.636,-93.1335],[41.5312,-93.1161],[41.4266,-93.1355],[41.3292,-93.1904],[41.2459,-93.2771],[41.1821,-93.3897],[41.1424,-93.5204],[41.1293,-93.6605],[41.1439,-93.8003],[41.185,-93.9303],[41.2499,-94.0417],[41.3341,-94.1268],[41.432,-94.1799],[41.5369,-94.1973],[41.6415,-94.1779],[41.7388,-94.123],[41.8222,-94.0363],[41.8859,-93.9238],[41.9257,-93.793]]}
+    ],
+    "fixes": {
+        "KDSM": [41.53403,-93.65672],
+        "GGI": [41.7097,-92.7296,"grinnell"],
+        "UJOZO": [41.58307,-93.39788],
+        "CNC": [41.0168,-93.362,"chariton"],
+        "CINOD": [41.35019,-93.55197],
+        "LMN": [40.5967,-93.9676,"lamoni"],
+        "VUFRO": [41.34005,-93.72105],
+        "GFZ": [41.3256,-94.4444,"greenfield"],
+        "LITAG": [41.46742,-93.90845],
+        "BNW": [42.0543,-93.8531,"boone"],
+        "GILOV": [41.72636,-93.72932],
+        "_RWY0504DME": [41.48406,-93.74889],
+        "_RWY2304DME": [41.57719,-93.5787],
+        "_RWY1304DME": [41.59049,-93.7403],
+        "_RWY3104DME": [41.48407,-93.58451]
+    },
+    "runways": [
+        {"name":["05","23"],"end":[[41.5234,-93.6771,"916ft"],[41.5379,-93.6506,"935ft"]],"ils":[true,true]},
+        {"name":["13","31"],"end":[[41.5456,-93.6745,"912ft"],[41.529,-93.6502,"958ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "GGI1F": {"icao":"GGI1F","name":"Grinnell One Foxtrot","rwy":{"KDSM05":["_RWY2304DME"],"KDSM23":["_RWY0504DME"],"KDSM13":["_RWY3104DME"],"KDSM31":["_RWY1304DME"]},"body":[],"exitPoints":{"GGI":["GGI"]},"draw":[["KDSM","GGI*"]]},
+        "CNC1C": {"icao":"CNC1C","name":"Chariton One Charlie","rwy":{"KDSM05":["_RWY2304DME"],"KDSM23":["_RWY0504DME"],"KDSM13":["_RWY3104DME"],"KDSM31":["_RWY1304DME"]},"body":[],"exitPoints":{"CNC":["CNC"]},"draw":[["KDSM","CNC*"]]},
+        "LMN1D": {"icao":"LMN1D","name":"Lamoni One Delta","rwy":{"KDSM05":["_RWY2304DME"],"KDSM23":["_RWY0504DME"],"KDSM13":["_RWY3104DME"],"KDSM31":["_RWY1304DME"]},"body":[],"exitPoints":{"LMN":["LMN"]},"draw":[["KDSM","LMN*"]]},
+        "GFZ1F": {"icao":"GFZ1F","name":"Greenfield One Foxtrot","rwy":{"KDSM05":["_RWY2304DME"],"KDSM23":["_RWY0504DME"],"KDSM13":["_RWY3104DME"],"KDSM31":["_RWY1304DME"]},"body":[],"exitPoints":{"GFZ":["GFZ"]},"draw":[["KDSM","GFZ*"]]},
+        "BNW2F": {"icao":"BNW2F","name":"Boone Two Foxtrot","rwy":{"KDSM05":["_RWY2304DME"],"KDSM23":["_RWY0504DME"],"KDSM13":["_RWY3104DME"],"KDSM31":["_RWY1304DME"]},"body":[],"exitPoints":{"BNW":["BNW"]},"draw":[["KDSM","BNW*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KDSM","destination":"KDFW","category":"departure","route":"KDSM23.LMN1D.LMN","altitude":"","speed":"","method":"random","rate":0.9,"airlines":[["aal/md82",2],["aal/md83",2],["aal/e145",1]]},
+        {"origin":"KDSM","destination":"KORD","category":"departure","route":"KDSM23.GGI1F.GGI","altitude":"","speed":"","method":"random","rate":0.9,"airlines":[["aal/e145",2],["ual/a319",1],["ual/b737",1],["ual/b738",1]]},
+        {"origin":"KDSM","destination":"KDEN","category":"departure","route":"KDSM23.GFZ1F.GFZ","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["fft/a319",1],["ual/a319",1],["ual/b737",1],["ual/b738",1]]},
+        {"origin":"KDSM","destination":"KLAS","category":"departure","route":"KDSM23.GFZ1F.GFZ","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["aay/md82",1],["swa/b733",1],["swa/b737",1]]},
+        {"origin":"KDSM","destination":"KMDW","category":"departure","route":"KDSM23.GGI1F.GGI","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["swa/b733",1],["swa/b737",1]]},
+        {"origin":"KDSM","destination":"","category":"departure","route":"KDSM23.CNC1C.CNC","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["aay/md82",3],["dal/md88",1]]},
+        {"origin":"KDSM","destination":"","category":"departure","route":"KDSM23.GFZ1F.GFZ","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["aal/a319",2]]},
+        {"origin":"KDSM","destination":"","category":"departure","route":"KDSM23.GFZ1F.GFZ","altitude":"","speed":"","method":"random","rate":1.5,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KDFW","destination":"KDSM","category":"arrival","route":"LMN..VUFRO..KDSM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.9,"airlines":[["aal/md82",2],["aal/md83",2],["aal/e145",1]]},
+        {"origin":"KORD","destination":"KDSM","category":"arrival","route":"GGI..UJOZO..KDSM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.9,"airlines":[["aal/e145",2],["ual/a319",1],["ual/b737",1],["ual/b738",1]]},
+        {"origin":"KDEN","destination":"KDSM","category":"arrival","route":"GFZ..LITAG..KDSM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["fft/a319",1],["ual/a319",1],["ual/b737",1],["ual/b738",1]]},
+        {"origin":"KLAS","destination":"KDSM","category":"arrival","route":"GFZ..LITAG..KDSM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.54,"airlines":[["aay/md82",1],["swa/b733",1],["swa/b737",1]]},
+        {"origin":"KMDW","destination":"KDSM","category":"arrival","route":"GGI..UJOZO..KDSM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["swa/b733",1],["swa/b737",1]]},
+        {"origin":"","destination":"KDSM","category":"arrival","route":"CNC..CINOD..KDSM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["aay/md82",3],["dal/md88",1]]},
+        {"origin":"","destination":"KDSM","category":"arrival","route":"GFZ..LITAG..KDSM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["aal/a319",2]]},
+        {"origin":"","destination":"KDSM","category":"arrival","route":"GFZ..LITAG..KDSM","altitude":[4000,7000],"speed":250,"method":"random","rate":1.5,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [41.7097,-92.7296,41.5831,-93.3979],
+            [41.5831,-93.3979,41.534,-93.6567],
+            [41.0168,-93.362,41.3502,-93.552],
+            [41.3502,-93.552,41.534,-93.6567],
+            [40.5967,-93.9676,41.3401,-93.7211],
+            [41.3401,-93.7211,41.534,-93.6567],
+            [41.3256,-94.4444,41.4674,-93.9085],
+            [41.4674,-93.9085,41.534,-93.6567],
+            [42.0543,-93.8531,41.7264,-93.7293],
+            [41.7264,-93.7293,41.534,-93.6567]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [41.5234,-93.6771,41.425,-93.8564],
+            [41.4661,-93.759,41.4823,-93.7747],
+            [41.4169,-93.8486,41.433,-93.8643],
+            [41.5379,-93.6506,41.6361,-93.4707],
+            [41.5951,-93.5686,41.5789,-93.5528],
+            [41.6441,-93.4786,41.628,-93.4628],
+            [41.5456,-93.6745,41.6577,-93.8392],
+            [41.5943,-93.7658,41.6091,-93.7478],
+            [41.6504,-93.8482,41.6651,-93.8302],
+            [41.529,-93.6502,41.4166,-93.4861],
+            [41.4802,-93.5591,41.4655,-93.5771],
+            [41.424,-93.4772,41.4092,-93.4951]
+        ]}
+    ]
+}

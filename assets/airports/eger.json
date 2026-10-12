@@ -1,0 +1,69 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGER/",
+    "info": {"country":"GB","city":"Stronsay","type":"small_airport","longestRunwayM":515,"approximateRunways":true},
+    "radio": {"twr":"Stronsay Tower","app":"Stronsay Approach","dep":"Stronsay Radar"},
+    "icao": "EGER",
+    "iata": "SOY",
+    "magnetic_north": -0.7,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [59.1553,-2.64139,"39ft"],
+    "rangeRings": {"enabled":true,"center":[59.1553,-2.64139],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":210,"speed":6},
+    "arrivalRunway": "20",
+    "departureRunway": "20",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[59.56,-2.651],[59.5475,-2.4464],[59.5082,-2.2551],[59.4449,-2.0901],[59.3619,-1.9627],[59.2648,-1.8815],[59.1602,-1.8521],[59.0553,-1.8765],[58.9572,-1.953],[58.8727,-2.0765],[58.8073,-2.2384],[58.7657,-2.4278],[58.7506,-2.6317],[58.7631,-2.8364],[58.8024,-3.0277],[58.8657,-3.1927],[58.9487,-3.3201],[59.0458,-3.4013],[59.1504,-3.4307],[59.2553,-3.4063],[59.3534,-3.3297],[59.4379,-3.2063],[59.5033,-3.0444],[59.5449,-2.855]]}
+    ],
+    "fixes": {
+        "EGER": [59.1553,-2.64139],
+        "SUM": [59.8789,-1.28667,"sumburgh"],
+        "KUMTU": [59.29949,-2.37144],
+        "IKEZI": [58.64981,-2.28249],
+        "UDEVI": [58.96749,-2.50805],
+        "DEFIJ": [58.97129,-3.6273],
+        "ELEKU": [59.08693,-3.00769],
+        "MEPAW": [59.66079,-3.00029],
+        "PIHIW": [59.34311,-2.77473],
+        "_RWY0203DME": [59.10791,-2.68442],
+        "_RWY2003DME": [59.20268,-2.59824],
+        "_RWY0603DME": [59.12782,-2.72703],
+        "_RWY2403DME": [59.18273,-2.55562]
+    },
+    "runways": [
+        {"name":["02","20"],"end":[[59.1532,-2.6433,"39ft"],[59.1574,-2.63948,"20ft"]],"ils":[false,false]},
+        {"name":["06","24"],"end":[[59.15432,-2.64445,"25ft"],[59.15628,-2.63833,"30ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "SUM2C": {"icao":"SUM2C","name":"Sumburgh Two Charlie","rwy":{"EGER02":["_RWY2003DME"],"EGER20":["_RWY0203DME"],"EGER06":["_RWY2403DME"],"EGER24":["_RWY0603DME"]},"body":[],"exitPoints":{"SUM":["SUM"]},"draw":[["EGER","SUM*"]]},
+        "IKEZI1D": {"icao":"IKEZI1D","name":"Ikezi One Delta","rwy":{"EGER02":["_RWY2003DME"],"EGER20":["_RWY0203DME"],"EGER06":["_RWY2403DME"],"EGER24":["_RWY0603DME"]},"body":[],"exitPoints":{"IKEZI":["IKEZI"]},"draw":[["EGER","IKEZI*"]]},
+        "DEFIJ2A": {"icao":"DEFIJ2A","name":"Defij Two Alpha","rwy":{"EGER02":["_RWY2003DME"],"EGER20":["_RWY0203DME"],"EGER06":["_RWY2403DME"],"EGER24":["_RWY0603DME"]},"body":[],"exitPoints":{"DEFIJ":["DEFIJ"]},"draw":[["EGER","DEFIJ*"]]},
+        "MEPAW1F": {"icao":"MEPAW1F","name":"Mepaw One Foxtrot","rwy":{"EGER02":["_RWY2003DME"],"EGER20":["_RWY0203DME"],"EGER06":["_RWY2403DME"],"EGER24":["_RWY0603DME"]},"body":[],"exitPoints":{"MEPAW":["MEPAW"]},"draw":[["EGER","MEPAW*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGER","destination":"","category":"departure","route":"EGER20.IKEZI1D.IKEZI","altitude":"","speed":"","method":"random","rate":3,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/pc12",2],["g/be20",1]]},
+        {"origin":"","destination":"EGER","category":"arrival","route":"IKEZI..UDEVI..EGER","altitude":[4000,7000],"speed":250,"method":"random","rate":3,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/pc12",2],["g/be20",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [59.8789,-1.2867,59.2995,-2.3714],
+            [59.2995,-2.3714,59.1553,-2.6414],
+            [58.6498,-2.2825,58.9675,-2.508],
+            [58.9675,-2.508,59.1553,-2.6414],
+            [58.9713,-3.6273,59.0869,-3.0077],
+            [59.0869,-3.0077,59.1553,-2.6414],
+            [59.6608,-3.0003,59.3431,-2.7747],
+            [59.3431,-2.7747,59.1553,-2.6414]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [59.1574,-2.6395,59.3083,-2.5016],
+            [59.2371,-2.5884,59.2286,-2.553],
+            [59.3125,-2.5193,59.3041,-2.4839]
+        ]}
+    ]
+}

@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KTTN/",
+    "info": {"country":"US","city":"Ewing Township","type":"medium_airport","longestRunwayM":1831,"frequencies":{"atis":"126.775","twr":"120.700","gnd":"121.900"}},
+    "radio": {"twr":"Trenton Mercer Tower","app":"Trenton Mercer Approach","dep":"Trenton Mercer Departure"},
+    "icao": "KTTN",
+    "iata": "TTN",
+    "magnetic_north": -12,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [40.276699,-74.813499,"213ft"],
+    "rangeRings": {"enabled":true,"center":[40.276699,-74.813499],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":260,"speed":7},
+    "arrivalRunway": "24",
+    "departureRunway": "24",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[40.8045,-74.9605],[40.8156,-74.7765],[40.7899,-74.5949],[40.7292,-74.4283],[40.6378,-74.2879],[40.5217,-74.1833],[40.3889,-74.1217],[40.2485,-74.1072],[40.11,-74.1409],[39.9828,-74.2203],[39.8757,-74.3402],[39.7959,-74.4924],[39.7489,-74.6665],[39.7378,-74.8505],[39.7635,-75.0321],[39.8242,-75.1987],[39.9156,-75.3391],[40.0317,-75.4437],[40.1645,-75.5053],[40.3049,-75.5198],[40.4434,-75.4861],[40.5706,-75.4067],[40.6777,-75.2868],[40.7575,-75.1346]]}
+    ],
+    "fixes": {
+        "KTTN": [40.2767,-74.8135],
+        "CRI": [40.6125,-73.8944,"canarsie"],
+        "PUHSI": [40.38461,-74.51816],
+        "OOD": [39.636,-75.303,"woodstown"],
+        "PNE": [40.0821,-75.0095,"north philadelphia"],
+        "ETX": [40.581,-75.684,"east texas"],
+        "TAHAP": [40.38077,-75.1112],
+        "_RWY0604DME": [40.2239,-74.88487],
+        "_RWY2404DME": [40.32696,-74.74263],
+        "_RWY1604DME": [40.33879,-74.86712],
+        "_RWY3404DME": [40.21768,-74.75926]
+    },
+    "runways": [
+        {"name":["06","24"],"end":[[40.2698,-74.8216,"160ft"],[40.2811,-74.806,"192ft"]],"ils":[true,true]},
+        {"name":["16","34"],"end":[[40.2837,-74.818,"212ft"],[40.2728,-74.8083,"174ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "CRI2A": {"icao":"CRI2A","name":"Canarsie Two Alpha","rwy":{"KTTN06":["_RWY2404DME"],"KTTN24":["_RWY0604DME"],"KTTN16":["_RWY3404DME"],"KTTN34":["_RWY1604DME"]},"body":[],"exitPoints":{"CRI":["CRI"]},"draw":[["KTTN","CRI*"]]},
+        "OOD1B": {"icao":"OOD1B","name":"Woodstown One Bravo","rwy":{"KTTN06":["_RWY2404DME"],"KTTN24":["_RWY0604DME"],"KTTN16":["_RWY3404DME"],"KTTN34":["_RWY1604DME"]},"body":[],"exitPoints":{"OOD":["OOD"]},"draw":[["KTTN","OOD*"]]},
+        "ETX2F": {"icao":"ETX2F","name":"East Texas Two Foxtrot","rwy":{"KTTN06":["_RWY2404DME"],"KTTN24":["_RWY0604DME"],"KTTN16":["_RWY3404DME"],"KTTN34":["_RWY1604DME"]},"body":[],"exitPoints":{"ETX":["ETX"]},"draw":[["KTTN","ETX*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KTTN","destination":"KATL","category":"departure","route":"KTTN24.OOD1B.OOD","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["fft/a319",1]]},
+        {"origin":"KTTN","destination":"KBNA","category":"departure","route":"KTTN24.OOD1B.OOD","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["fft/a319",1]]},
+        {"origin":"KTTN","destination":"KCLE","category":"departure","route":"KTTN24.ETX2F.ETX","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["fft/a319",1]]},
+        {"origin":"KTTN","destination":"KCLT","category":"departure","route":"KTTN24.OOD1B.OOD","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["fft/a319",1]]},
+        {"origin":"KTTN","destination":"KCVG","category":"departure","route":"KTTN24.ETX2F.ETX","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["fft/a319",1]]},
+        {"origin":"KTTN","destination":"","category":"departure","route":"KTTN24.OOD1B.OOD","altitude":"","speed":"","method":"random","rate":2.55,"airlines":[["fft/a319",6]]},
+        {"origin":"KTTN","destination":"","category":"departure","route":"KTTN24.ETX2F.ETX","altitude":"","speed":"","method":"random","rate":1.27,"airlines":[["fft/a319",3]]},
+        {"origin":"KTTN","destination":"","category":"departure","route":"KTTN24.ETX2F.ETX","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KTTN","destination":"","category":"departure","route":"KTTN24.OOD1B.OOD","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KATL","destination":"KTTN","category":"arrival","route":"OOD..PNE..KTTN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["fft/a319",1]]},
+        {"origin":"KBNA","destination":"KTTN","category":"arrival","route":"OOD..PNE..KTTN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["fft/a319",1]]},
+        {"origin":"KCLE","destination":"KTTN","category":"arrival","route":"ETX..TAHAP..KTTN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["fft/a319",1]]},
+        {"origin":"KCLT","destination":"KTTN","category":"arrival","route":"OOD..PNE..KTTN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["fft/a319",1]]},
+        {"origin":"KCVG","destination":"KTTN","category":"arrival","route":"ETX..TAHAP..KTTN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["fft/a319",1]]},
+        {"origin":"","destination":"KTTN","category":"arrival","route":"OOD..PNE..KTTN","altitude":[6000,9000],"speed":250,"method":"random","rate":2.55,"airlines":[["fft/a319",6]]},
+        {"origin":"","destination":"KTTN","category":"arrival","route":"ETX..TAHAP..KTTN","altitude":[6000,9000],"speed":250,"method":"random","rate":1.27,"airlines":[["fft/a319",3]]},
+        {"origin":"","destination":"KTTN","category":"arrival","route":"ETX..TAHAP..KTTN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.41,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"","destination":"KTTN","category":"arrival","route":"OOD..PNE..KTTN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.41,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [40.6125,-73.8944,40.3846,-74.5182],
+            [40.3846,-74.5182,40.2767,-74.8135],
+            [39.636,-75.303,40.0821,-75.0095],
+            [40.0821,-75.0095,40.2767,-74.8135],
+            [40.581,-75.684,40.3808,-75.1112],
+            [40.3808,-75.1112,40.2767,-74.8135]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [40.2698,-74.8216,40.155,-74.9796],
+            [40.2052,-74.8917,40.2197,-74.9097],
+            [40.1477,-74.9706,40.1622,-74.9886],
+            [40.2811,-74.806,40.3957,-74.6474],
+            [40.3457,-74.7358,40.3312,-74.7178],
+            [40.4029,-74.6565,40.3884,-74.6384]
+        ]}
+    ]
+}

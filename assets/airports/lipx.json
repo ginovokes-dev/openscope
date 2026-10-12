@@ -1,0 +1,98 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LIPX/",
+    "info": {"country":"IT","city":"Caselle","type":"large_airport","longestRunwayM":3075,"frequencies":{"twr":"118.650","app":"124.450","gnd":"121.750"}},
+    "radio": {"twr":"Villafranca Tower","app":"Villafranca Approach","dep":"Villafranca Departure"},
+    "icao": "LIPX",
+    "iata": "VRN",
+    "magnetic_north": 3.9,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [45.394955,10.887303,"239ft"],
+    "rangeRings": {"enabled":true,"center":[45.394955,10.887303],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":210,"speed":8},
+    "arrivalRunway": "22",
+    "departureRunway": "22",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[45.9333,10.9396],[45.9055,11.1362],[45.8428,11.3159],[45.7497,11.4664],[45.6323,11.5774],[45.4988,11.6413],[45.3583,11.6539],[45.2202,11.6143],[45.094,11.5251],[44.9883,11.3924],[44.9104,11.2254],[44.8655,11.0352],[44.8566,10.835],[44.8845,10.6384],[44.9471,10.4587],[45.0402,10.3083],[45.1576,10.1972],[45.2911,10.1333],[45.4317,10.1207],[45.5697,10.1603],[45.6959,10.2495],[45.8016,10.3822],[45.8795,10.5492],[45.9245,10.7394]]}
+    ],
+    "fixes": {
+        "LIPX": [45.39496,10.8873],
+        "OZE": [46.4048,11.2926,"bolzano"],
+        "ZONRI": [45.63542,10.98381],
+        "TES": [45.5192,12.3682,"tessera"],
+        "HIGAL": [45.42459,11.24057],
+        "BOA": [44.537,11.2907,"bologna"],
+        "TAWOP": [45.15772,10.99885],
+        "PIA": [44.8717,9.82667,"piacenza"],
+        "PEDES": [45.25134,10.59619],
+        "PEMUB": [45.93114,10.23293],
+        "ZUBEM": [45.58466,10.65579],
+        "_RWY0404DME": [45.34113,10.80896],
+        "_RWY2204DME": [45.45052,10.96874]
+    },
+    "runways": [
+        {"name":["04","22"],"end":[[45.38766,10.87683,"220ft"],[45.40403,10.90074,"238ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "OZE2E": {"icao":"OZE2E","name":"Bolzano Two Echo","rwy":{"LIPX04":["_RWY2204DME"],"LIPX22":["_RWY0404DME"]},"body":[],"exitPoints":{"OZE":["OZE"]},"draw":[["LIPX","OZE*"]]},
+        "TES2B": {"icao":"TES2B","name":"Tessera Two Bravo","rwy":{"LIPX04":["_RWY2204DME"],"LIPX22":["_RWY0404DME"]},"body":[],"exitPoints":{"TES":["TES"]},"draw":[["LIPX","TES*"]]},
+        "BOA2A": {"icao":"BOA2A","name":"Bologna Two Alpha","rwy":{"LIPX04":["_RWY2204DME"],"LIPX22":["_RWY0404DME"]},"body":[],"exitPoints":{"BOA":["BOA"]},"draw":[["LIPX","BOA*"]]},
+        "PIA3B": {"icao":"PIA3B","name":"Piacenza Three Bravo","rwy":{"LIPX04":["_RWY2204DME"],"LIPX22":["_RWY0404DME"]},"body":[],"exitPoints":{"PIA":["PIA"]},"draw":[["LIPX","PIA*"]]},
+        "PEMUB1D": {"icao":"PEMUB1D","name":"Pemub One Delta","rwy":{"LIPX04":["_RWY2204DME"],"LIPX22":["_RWY0404DME"]},"body":[],"exitPoints":{"PEMUB":["PEMUB"]},"draw":[["LIPX","PEMUB*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LIPX","destination":"EGKK","category":"departure","route":"LIPX22.PEMUB1D.PEMUB","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["baw/a319",1],["baw/a320",1],["baw/b734",1],["ezy/a319",1],["mon/a321",1],["tvf/b738",1],["tvf/b752",1]]},
+        {"origin":"LIPX","destination":"LICC","category":"departure","route":"LIPX22.BOA2A.BOA","altitude":"","speed":"","method":"random","rate":0.81,"airlines":[["adh/a320",1],["aza/a320",1],["iss/a320",1],["iss/b737",1],["iss/md82",1]]},
+        {"origin":"LIPX","destination":"EGCC","category":"departure","route":"LIPX22.PEMUB1D.PEMUB","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["mon/a321",1],["mon/b752",1],["tvf/b752",1]]},
+        {"origin":"LIPX","destination":"LATI","category":"departure","route":"LIPX22.TES2B.TES","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["adh/a320",1],["bpa/b737",1],["iss/a320",1]]},
+        {"origin":"LIPX","destination":"LIRF","category":"departure","route":"LIPX22.BOA2A.BOA","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["aza/a319",1],["aza/a320",1],["aza/e75l",1]]},
+        {"origin":"LIPX","destination":"LIRN","category":"departure","route":"LIPX22.BOA2A.BOA","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["iss/a320",1],["iss/b737",1],["iss/md82",1]]},
+        {"origin":"LIPX","destination":"","category":"departure","route":"LIPX22.OZE2E.OZE","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["dla/e190",1],["gwi/crj7",1],["gwi/crj9",1],["gwi/crj2",1]]},
+        {"origin":"LIPX","destination":"","category":"departure","route":"LIPX22.TES2B.TES","altitude":"","speed":"","method":"random","rate":0.81,"airlines":[["iss/b737",1],["mld/e190",1],["sbi/a320",1],["sbi/b738",1],["wzz/a320",1]]},
+        {"origin":"LIPX","destination":"","category":"departure","route":"LIPX22.BOA2A.BOA","altitude":"","speed":"","method":"random","rate":0.81,"airlines":[["iss/md82",2],["voe/b712",2],["adh/a320",1]]},
+        {"origin":"LIPX","destination":"","category":"departure","route":"LIPX22.PIA3B.PIA","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["iss/a320",2]]},
+        {"origin":"LIPX","destination":"","category":"departure","route":"LIPX22.PEMUB1D.PEMUB","altitude":"","speed":"","method":"random","rate":0.81,"airlines":[["afr/e170",1],["dla/e190",1],["ein/a320",1],["gwi/a319",1],["tra/b738",1]]},
+        {"origin":"LIPX","destination":"","category":"departure","route":"LIPX22.PIA3B.PIA","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"LIPX","destination":"","category":"departure","route":"LIPX22.TES2B.TES","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"EGKK","destination":"LIPX","category":"arrival","route":"PEMUB..ZUBEM..LIPX","altitude":[6000,9000],"speed":250,"method":"random","rate":1.13,"airlines":[["baw/a319",1],["baw/a320",1],["baw/b734",1],["ezy/a319",1],["mon/a321",1],["tvf/b738",1],["tvf/b752",1]]},
+        {"origin":"LICC","destination":"LIPX","category":"arrival","route":"BOA..TAWOP..LIPX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.81,"airlines":[["adh/a320",1],["aza/a320",1],["iss/a320",1],["iss/b737",1],["iss/md82",1]]},
+        {"origin":"EGCC","destination":"LIPX","category":"arrival","route":"PEMUB..ZUBEM..LIPX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.48,"airlines":[["mon/a321",1],["mon/b752",1],["tvf/b752",1]]},
+        {"origin":"LATI","destination":"LIPX","category":"arrival","route":"TES..HIGAL..LIPX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.48,"airlines":[["adh/a320",1],["bpa/b737",1],["iss/a320",1]]},
+        {"origin":"LIRF","destination":"LIPX","category":"arrival","route":"BOA..TAWOP..LIPX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.48,"airlines":[["aza/a319",1],["aza/a320",1],["aza/e75l",1]]},
+        {"origin":"LIRN","destination":"LIPX","category":"arrival","route":"BOA..TAWOP..LIPX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.48,"airlines":[["iss/a320",1],["iss/b737",1],["iss/md82",1]]},
+        {"origin":"","destination":"LIPX","category":"arrival","route":"OZE..ZONRI..LIPX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.32,"airlines":[["dla/e190",1],["gwi/crj7",1],["gwi/crj9",1],["gwi/crj2",1]]},
+        {"origin":"","destination":"LIPX","category":"arrival","route":"TES..HIGAL..LIPX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.81,"airlines":[["iss/b737",1],["mld/e190",1],["sbi/a320",1],["sbi/b738",1],["wzz/a320",1]]},
+        {"origin":"","destination":"LIPX","category":"arrival","route":"BOA..TAWOP..LIPX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.81,"airlines":[["iss/md82",2],["voe/b712",2],["adh/a320",1]]},
+        {"origin":"","destination":"LIPX","category":"arrival","route":"PIA..PEDES..LIPX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.32,"airlines":[["iss/a320",2]]},
+        {"origin":"","destination":"LIPX","category":"arrival","route":"PEMUB..ZUBEM..LIPX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.81,"airlines":[["afr/e170",1],["dla/e190",1],["ein/a320",1],["gwi/a319",1],["tra/b738",1]]},
+        {"origin":"","destination":"LIPX","category":"arrival","route":"PIA..PEDES..LIPX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"","destination":"LIPX","category":"arrival","route":"TES..HIGAL..LIPX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [46.4048,11.2926,45.6354,10.9838],
+            [45.6354,10.9838,45.395,10.8873],
+            [45.5192,12.3682,45.4246,11.2406],
+            [45.4246,11.2406,45.395,10.8873],
+            [44.537,11.2907,45.1577,10.9988],
+            [45.1577,10.9988,45.395,10.8873],
+            [44.8717,9.8267,45.2513,10.5962],
+            [45.2513,10.5962,45.395,10.8873],
+            [45.9311,10.2329,45.5847,10.6558],
+            [45.5847,10.6558,45.395,10.8873]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [45.3877,10.8768,45.2713,10.7074],
+            [45.3223,10.8019,45.3366,10.7821],
+            [45.2641,10.7173,45.2784,10.6975],
+            [45.404,10.9007,45.5202,11.0709],
+            [45.4693,10.9758,45.455,10.9957],
+            [45.5273,11.061,45.513,11.0809]
+        ]}
+    ]
+}

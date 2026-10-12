@@ -1,0 +1,94 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LIBR/",
+    "info": {"country":"IT","city":"Brindisi","type":"large_airport","longestRunwayM":3048,"frequencies":{"twr":"118.100","app":"118.400"}},
+    "radio": {"twr":"Brindisi Tower","app":"Brindisi Approach","dep":"Brindisi Departure"},
+    "icao": "LIBR",
+    "iata": "BDS",
+    "magnetic_north": 4.7,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [40.6576,17.947001,"47ft"],
+    "rangeRings": {"enabled":true,"center":[40.6576,17.947001],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":290,"speed":10},
+    "arrivalRunway": "31",
+    "departureRunway": "31",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[41.1954,18.0053],[41.1656,18.1868],[41.1012,18.3519],[41.0066,18.4895],[40.8882,18.5901],[40.7541,18.6468],[40.6134,18.6559],[40.4757,18.6167],[40.3504,18.5318],[40.2461,18.4071],[40.1698,18.251],[40.1267,18.0742],[40.1198,17.8887],[40.1496,17.7072],[40.214,17.5421],[40.3086,17.4045],[40.427,17.3039],[40.5611,17.2472],[40.7018,17.2381],[40.8395,17.2773],[40.9648,17.3622],[41.0691,17.4869],[41.1454,17.643],[41.1885,17.8198]]}
+    ],
+    "fixes": {
+        "LIBR": [40.6576,17.947],
+        "KEKUM": [41.16415,18.59554],
+        "OWOBO": [40.83681,18.17645],
+        "UGAPU": [40.16561,18.61472],
+        "ZUGIS": [40.48354,18.18324],
+        "AMIWO": [40.15105,17.29846],
+        "NUBCA": [40.47839,17.71755],
+        "BAR": [41.1443,16.7764,"bari"],
+        "HITZU": [40.77767,17.65821],
+        "_RWY1304DME": [40.72105,17.87014],
+        "_RWY3104DME": [40.60662,18.00995],
+        "_RWY0504DME": [40.61144,17.86747],
+        "_RWY2304DME": [40.70304,18.02307]
+    },
+    "runways": [
+        {"name":["13","31"],"end":[[40.6722,17.9299,"29ft"],[40.6555,17.9503,"26ft"]],"ils":[true,true]},
+        {"name":["05","23"],"end":[[40.6523,17.9368,"46ft"],[40.66222,17.95364,"13ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "KEKUM3B": {"icao":"KEKUM3B","name":"Kekum Three Bravo","rwy":{"LIBR13":["_RWY3104DME"],"LIBR31":["_RWY1304DME"],"LIBR05":["_RWY2304DME"],"LIBR23":["_RWY0504DME"]},"body":[],"exitPoints":{"KEKUM":["KEKUM"]},"draw":[["LIBR","KEKUM*"]]},
+        "UGAPU3C": {"icao":"UGAPU3C","name":"Ugapu Three Charlie","rwy":{"LIBR13":["_RWY3104DME"],"LIBR31":["_RWY1304DME"],"LIBR05":["_RWY2304DME"],"LIBR23":["_RWY0504DME"]},"body":[],"exitPoints":{"UGAPU":["UGAPU"]},"draw":[["LIBR","UGAPU*"]]},
+        "AMIWO2B": {"icao":"AMIWO2B","name":"Amiwo Two Bravo","rwy":{"LIBR13":["_RWY3104DME"],"LIBR31":["_RWY1304DME"],"LIBR05":["_RWY2304DME"],"LIBR23":["_RWY0504DME"]},"body":[],"exitPoints":{"AMIWO":["AMIWO"]},"draw":[["LIBR","AMIWO*"]]},
+        "BAR3E": {"icao":"BAR3E","name":"Bari Three Echo","rwy":{"LIBR13":["_RWY3104DME"],"LIBR31":["_RWY1304DME"],"LIBR05":["_RWY2304DME"],"LIBR23":["_RWY0504DME"]},"body":[],"exitPoints":{"BAR":["BAR"]},"draw":[["LIBR","BAR*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LIBR","destination":"LIRF","category":"departure","route":"LIBR31.BAR3E.BAR","altitude":"","speed":"","method":"random","rate":0.98,"airlines":[["aza/a320",2],["aza/a319",1],["aza/a321",1]]},
+        {"origin":"LIBR","destination":"EDDM","category":"departure","route":"LIBR31.BAR3E.BAR","altitude":"","speed":"","method":"random","rate":0.73,"airlines":[["ber/a321",1],["ber/b737",1],["ber/b738",1]]},
+        {"origin":"LIBR","destination":"LIMC","category":"departure","route":"LIBR31.BAR3E.BAR","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["ezy/a319",1],["ezy/a320",1]]},
+        {"origin":"LIBR","destination":"LSGG","category":"departure","route":"LIBR31.BAR3E.BAR","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["ezy/a319",1],["ezy/a320",1]]},
+        {"origin":"LIBR","destination":"LSZH","category":"departure","route":"LIBR31.BAR3E.BAR","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["ber/a320",1],["oaw/f100",1]]},
+        {"origin":"LIBR","destination":"EBCI","category":"departure","route":"LIBR31.BAR3E.BAR","altitude":"","speed":"","method":"random","rate":0.24,"airlines":[["ryr/b738",1]]},
+        {"origin":"LIBR","destination":"","category":"departure","route":"LIBR31.BAR3E.BAR","altitude":"","speed":"","method":"random","rate":3.18,"airlines":[["ryr/b738",10],["aza/e190",1],["ezy/a320",1],["gwi/a319",1]]},
+        {"origin":"LIBR","destination":"","category":"departure","route":"LIBR31.KEKUM3B.KEKUM","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"LIBR","destination":"","category":"departure","route":"LIBR31.BAR3E.BAR","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"LIRF","destination":"LIBR","category":"arrival","route":"BAR..HITZU..LIBR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.98,"airlines":[["aza/a320",2],["aza/a319",1],["aza/a321",1]]},
+        {"origin":"EDDM","destination":"LIBR","category":"arrival","route":"BAR..HITZU..LIBR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.73,"airlines":[["ber/a321",1],["ber/b737",1],["ber/b738",1]]},
+        {"origin":"LIMC","destination":"LIBR","category":"arrival","route":"BAR..HITZU..LIBR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.49,"airlines":[["ezy/a319",1],["ezy/a320",1]]},
+        {"origin":"LSGG","destination":"LIBR","category":"arrival","route":"BAR..HITZU..LIBR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.49,"airlines":[["ezy/a319",1],["ezy/a320",1]]},
+        {"origin":"LSZH","destination":"LIBR","category":"arrival","route":"BAR..HITZU..LIBR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.49,"airlines":[["ber/a320",1],["oaw/f100",1]]},
+        {"origin":"EBCI","destination":"LIBR","category":"arrival","route":"BAR..HITZU..LIBR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.24,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LIBR","category":"arrival","route":"BAR..HITZU..LIBR","altitude":[6000,9000],"speed":250,"method":"random","rate":3.18,"airlines":[["ryr/b738",10],["aza/e190",1],["ezy/a320",1],["gwi/a319",1]]},
+        {"origin":"","destination":"LIBR","category":"arrival","route":"KEKUM..OWOBO..LIBR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"","destination":"LIBR","category":"arrival","route":"BAR..HITZU..LIBR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [41.1641,18.5955,40.8368,18.1765],
+            [40.8368,18.1765,40.6576,17.947],
+            [40.1656,18.6147,40.4835,18.1832],
+            [40.4835,18.1832,40.6576,17.947],
+            [40.1511,17.2985,40.4784,17.7176],
+            [40.4784,17.7176,40.6576,17.947],
+            [41.1443,16.7764,40.7777,17.6582],
+            [40.7777,17.6582,40.6576,17.947]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [40.6722,17.9299,40.7943,17.7803],
+            [40.7265,17.8455,40.74,17.8649],
+            [40.7875,17.7707,40.801,17.79],
+            [40.6555,17.9503,40.5332,18.0993],
+            [40.6012,18.0345,40.5876,18.0152],
+            [40.54,18.1089,40.5265,18.0896],
+            [40.6523,17.9368,40.5501,17.7636],
+            [40.5933,17.8582,40.6091,17.8421],
+            [40.5422,17.7717,40.558,17.7556],
+            [40.6622,17.9536,40.7642,18.1274],
+            [40.7211,18.0324,40.7053,18.0485],
+            [40.7721,18.1193,40.7563,18.1355]
+        ]}
+    ]
+}

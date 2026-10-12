@@ -1,0 +1,85 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/FZAA/",
+    "info": {"country":"CD","city":"Kinshasa","type":"large_airport","longestRunwayM":4003,"frequencies":{"twr":"118.100","app":"119.700","gnd":"121.900"}},
+    "radio": {"twr":"Ndjili Tower","app":"Ndjili Approach","dep":"Ndjili Departure"},
+    "icao": "FZAA",
+    "iata": "FIH",
+    "magnetic_north": -0.6,
+    "ctr_radius": 45,
+    "ctr_ceiling": 9000,
+    "initial_alt": 5000,
+    "position": [-4.38575,15.4446,"1027ft"],
+    "rangeRings": {"enabled":true,"center":[-4.38575,15.4446],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":80,"speed":5},
+    "arrivalRunway": "06",
+    "departureRunway": "06",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":90,"airspace_class":"D","poly":[[-3.9811,15.4403],[-3.9938,15.5455],[-4.0332,15.6438],[-4.0966,15.7286],[-4.1797,15.794],[-4.2769,15.8355],[-4.3815,15.8505],[-4.4864,15.8377],[-4.5844,15.7982],[-4.6689,15.7346],[-4.7341,15.6512],[-4.7755,15.5538],[-4.7904,15.4489],[-4.7777,15.3437],[-4.7383,15.2454],[-4.6749,15.1606],[-4.5918,15.0952],[-4.4946,15.0537],[-4.39,15.0387],[-4.2851,15.0515],[-4.1871,15.091],[-4.1026,15.1546],[-4.0374,15.238],[-3.996,15.3354]]}
+    ],
+    "fixes": {
+        "FZAA": [-4.38575,15.4446],
+        "PAZHE": [-4.24061,15.96411],
+        "FEVPO": [-4.33182,15.63762],
+        "HOPMU": [-4.86022,15.69883],
+        "SIWFE": [-4.56203,15.53906],
+        "ORAZO": [-4.869,15.2076],
+        "UPAKE": [-4.5653,15.35654],
+        "SOTLU": [-3.87767,15.26737],
+        "TARMU": [-4.19698,15.37875],
+        "_RWY0604DME": [-4.43309,15.37096],
+        "_RWY2404DME": [-4.34124,15.51352]
+    },
+    "runways": [
+        {"name":["06","24"],"end":[[-4.39693,15.42708,"998ft"],[-4.37739,15.45741,"998ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "PAZHE2D": {"icao":"PAZHE2D","name":"Pazhe Two Delta","rwy":{"FZAA06":["_RWY2404DME"],"FZAA24":["_RWY0604DME"]},"body":[],"exitPoints":{"PAZHE":["PAZHE"]},"draw":[["FZAA","PAZHE*"]]},
+        "HOPMU2B": {"icao":"HOPMU2B","name":"Hopmu Two Bravo","rwy":{"FZAA06":["_RWY2404DME"],"FZAA24":["_RWY0604DME"]},"body":[],"exitPoints":{"HOPMU":["HOPMU"]},"draw":[["FZAA","HOPMU*"]]},
+        "ORAZO2E": {"icao":"ORAZO2E","name":"Orazo Two Echo","rwy":{"FZAA06":["_RWY2404DME"],"FZAA24":["_RWY0604DME"]},"body":[],"exitPoints":{"ORAZO":["ORAZO"]},"draw":[["FZAA","ORAZO*"]]},
+        "SOTLU1C": {"icao":"SOTLU1C","name":"Sotlu One Charlie","rwy":{"FZAA06":["_RWY2404DME"],"FZAA24":["_RWY0604DME"]},"body":[],"exitPoints":{"SOTLU":["SOTLU"]},"draw":[["FZAA","SOTLU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"FZAA","destination":"FAOR","category":"departure","route":"FZAA06.HOPMU2B.HOPMU","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["saa/a319",1],["saa/a320",1],["saa/b738",1]]},
+        {"origin":"FZAA","destination":"FCBB","category":"departure","route":"FZAA06.SOTLU1C.SOTLU","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["eth/b788",1],["kqa/b738",1],["ram/b738",1]]},
+        {"origin":"FZAA","destination":"HKJK","category":"departure","route":"FZAA06.PAZHE2D.PAZHE","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["kqa/b737",1],["kqa/b738",1],["kqa/b763",1]]},
+        {"origin":"FZAA","destination":"EBBR","category":"departure","route":"FZAA06.SOTLU1C.SOTLU","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["dat/a332",1],["dat/a333",1]]},
+        {"origin":"FZAA","destination":"FKKD","category":"departure","route":"FZAA06.SOTLU1C.SOTLU","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["dat/a333",1]]},
+        {"origin":"FZAA","destination":"","category":"departure","route":"FZAA06.PAZHE2D.PAZHE","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["eth/b788",1]]},
+        {"origin":"FZAA","destination":"","category":"departure","route":"FZAA06.ORAZO2E.ORAZO","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["dat/a333",1]]},
+        {"origin":"FZAA","destination":"","category":"departure","route":"FZAA06.SOTLU1C.SOTLU","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["afr/a343",1],["ram/b738",1],["thy/b739",1]]},
+        {"origin":"FZAA","destination":"","category":"departure","route":"FZAA06.HOPMU2B.HOPMU","altitude":"","speed":"","method":"random","rate":1.5,"airlines":[["9s/c172",6],["9s/p28a",5],["9s/c182",3],["9s/be36",2],["9s/da42",1],["9s/tb20",1],["9s/c208",2],["9s/pc12",2],["9s/be20",1],["9s/b350",1],["9s/p180",1],["9s/c510",1],["9s/e50p",1],["9s/c550",1],["9s/e55p",1],["9s/cl30",1],["9s/c680",1],["9s/h25b",1],["9s/lj45",1],["9s/f2th",1],["9s/glf4",1],["9s/glex",1],["9s/glf5",1]]},
+        {"origin":"FAOR","destination":"FZAA","category":"arrival","route":"HOPMU..SIWFE..FZAA","altitude":[5000,8000],"speed":250,"method":"random","rate":0.79,"airlines":[["saa/a319",1],["saa/a320",1],["saa/b738",1]]},
+        {"origin":"FCBB","destination":"FZAA","category":"arrival","route":"SOTLU..TARMU..FZAA","altitude":[5000,8000],"speed":250,"method":"random","rate":0.79,"airlines":[["eth/b788",1],["kqa/b738",1],["ram/b738",1]]},
+        {"origin":"HKJK","destination":"FZAA","category":"arrival","route":"PAZHE..FEVPO..FZAA","altitude":[5000,8000],"speed":250,"method":"random","rate":0.79,"airlines":[["kqa/b737",1],["kqa/b738",1],["kqa/b763",1]]},
+        {"origin":"EBBR","destination":"FZAA","category":"arrival","route":"SOTLU..TARMU..FZAA","altitude":[5000,8000],"speed":250,"method":"random","rate":0.53,"airlines":[["dat/a332",1],["dat/a333",1]]},
+        {"origin":"FKKD","destination":"FZAA","category":"arrival","route":"SOTLU..TARMU..FZAA","altitude":[5000,8000],"speed":250,"method":"random","rate":0.26,"airlines":[["dat/a333",1]]},
+        {"origin":"","destination":"FZAA","category":"arrival","route":"PAZHE..FEVPO..FZAA","altitude":[5000,8000],"speed":250,"method":"random","rate":0.26,"airlines":[["eth/b788",1]]},
+        {"origin":"","destination":"FZAA","category":"arrival","route":"ORAZO..UPAKE..FZAA","altitude":[5000,8000],"speed":250,"method":"random","rate":0.26,"airlines":[["dat/a333",1]]},
+        {"origin":"","destination":"FZAA","category":"arrival","route":"SOTLU..TARMU..FZAA","altitude":[5000,8000],"speed":250,"method":"random","rate":0.79,"airlines":[["afr/a343",1],["ram/b738",1],["thy/b739",1]]},
+        {"origin":"","destination":"FZAA","category":"arrival","route":"HOPMU..SIWFE..FZAA","altitude":[5000,8000],"speed":250,"method":"random","rate":1.5,"airlines":[["9s/c172",6],["9s/p28a",5],["9s/c182",3],["9s/be36",2],["9s/da42",1],["9s/tb20",1],["9s/c208",2],["9s/pc12",2],["9s/be20",1],["9s/b350",1],["9s/p180",1],["9s/c510",1],["9s/e50p",1],["9s/c550",1],["9s/e55p",1],["9s/cl30",1],["9s/c680",1],["9s/h25b",1],["9s/lj45",1],["9s/f2th",1],["9s/glf4",1],["9s/glex",1],["9s/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-4.2406,15.9641,-4.3318,15.6376],
+            [-4.3318,15.6376,-4.3857,15.4446],
+            [-4.8602,15.6988,-4.562,15.5391],
+            [-4.562,15.5391,-4.3857,15.4446],
+            [-4.869,15.2076,-4.5653,15.3565],
+            [-4.5653,15.3565,-4.3857,15.4446],
+            [-3.8777,15.2674,-4.197,15.3788],
+            [-4.197,15.3788,-4.3857,15.4446]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-4.3969,15.4271,-4.4873,15.2868],
+            [-4.4505,15.3624,-4.4337,15.3515],
+            [-4.4957,15.2922,-4.4789,15.2813],
+            [-4.3774,15.4574,-4.287,15.5977],
+            [-4.3238,15.5221,-4.3406,15.533],
+            [-4.2786,15.5923,-4.2954,15.6031]
+        ]}
+    ]
+}

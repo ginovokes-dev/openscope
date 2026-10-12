@@ -1,0 +1,81 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/TLPL/",
+    "info": {"country":"LC","city":"Vieux Fort","type":"large_airport","longestRunwayM":2744,"frequencies":{"twr":"118.300","app":"119.800","gnd":"121.600"}},
+    "radio": {"twr":"Hewanorra Tower","app":"Hewanorra Approach","dep":"Hewanorra Departure"},
+    "icao": "TLPL",
+    "iata": "UVF",
+    "magnetic_north": -15.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [13.7332,-60.952599,"14ft"],
+    "rangeRings": {"enabled":true,"center":[13.7332,-60.952599],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":90,"speed":6},
+    "arrivalRunway": "10",
+    "departureRunway": "10",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[14.1232,-61.0639],[14.1379,-60.9562],[14.125,-60.8483],[14.0854,-60.7475],[14.0218,-60.6606],[13.9386,-60.5936],[13.8413,-60.5511],[13.7367,-60.536],[13.6319,-60.5493],[13.5339,-60.59],[13.4495,-60.6555],[13.3845,-60.7412],[13.3432,-60.8413],[13.3285,-60.949],[13.3414,-61.0569],[13.381,-61.1577],[13.4446,-61.2446],[13.5278,-61.3116],[13.6251,-61.3541],[13.7297,-61.3692],[13.8345,-61.3559],[13.9325,-61.3152],[14.0169,-61.2497],[14.0819,-61.164]]}
+    ],
+    "fixes": {
+        "TLPL": [13.7332,-60.9526],
+        "SOVKE": [14.15315,-60.60652],
+        "DUMDE": [13.88923,-60.82402],
+        "TELAN": [13.44845,-60.48277],
+        "SEKAD": [13.6274,-60.77804],
+        "SV": [13.1406,-61.2262,"e t joshua"],
+        "URETI": [13.55084,-61.0368],
+        "FOF": [14.5907,-61.0228,"fort de france"],
+        "UWAZE": [13.93244,-60.96891],
+        "_RWY1004DME": [13.73319,-61.03388],
+        "_RWY2804DME": [13.73319,-60.87271]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[13.7332,-60.9653,"11ft"],[13.7332,-60.94129,"10ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "SOVKE2A": {"icao":"SOVKE2A","name":"Sovke Two Alpha","rwy":{"TLPL10":["_RWY2804DME"],"TLPL28":["_RWY1004DME"]},"body":[],"exitPoints":{"SOVKE":["SOVKE"]},"draw":[["TLPL","SOVKE*"]]},
+        "TELAN2E": {"icao":"TELAN2E","name":"Telan Two Echo","rwy":{"TLPL10":["_RWY2804DME"],"TLPL28":["_RWY1004DME"]},"body":[],"exitPoints":{"TELAN":["TELAN"]},"draw":[["TLPL","TELAN*"]]},
+        "SV3A": {"icao":"SV3A","name":"E T Joshua Three Alpha","rwy":{"TLPL10":["_RWY2804DME"],"TLPL28":["_RWY1004DME"]},"body":[],"exitPoints":{"SV":["SV"]},"draw":[["TLPL","SV*"]]},
+        "FOF3A": {"icao":"FOF3A","name":"Fort De France Three Alpha","rwy":{"TLPL10":["_RWY2804DME"],"TLPL28":["_RWY1004DME"]},"body":[],"exitPoints":{"FOF":["FOF"]},"draw":[["TLPL","FOF*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"TLPL","destination":"KCLT","category":"departure","route":"TLPL10.FOF3A.FOF","altitude":"","speed":"","method":"random","rate":1.58,"airlines":[["aal/a319",2],["aal/a320",2]]},
+        {"origin":"TLPL","destination":"KATL","category":"departure","route":"TLPL10.FOF3A.FOF","altitude":"","speed":"","method":"random","rate":1.19,"airlines":[["dal/b738",2],["dal/b752",1]]},
+        {"origin":"TLPL","destination":"CYYZ","category":"departure","route":"TLPL10.FOF3A.FOF","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["aca/a319",1],["wja/b737",1]]},
+        {"origin":"TLPL","destination":"EGKK","category":"departure","route":"TLPL10.SOVKE2A.SOVKE","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["vir/a333",1]]},
+        {"origin":"TLPL","destination":"KJFK","category":"departure","route":"TLPL10.FOF3A.FOF","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["jbu/a320",1]]},
+        {"origin":"TLPL","destination":"","category":"departure","route":"TLPL10.SV3A.SV","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["vir/a333",1]]},
+        {"origin":"TLPL","destination":"","category":"departure","route":"TLPL10.FOF3A.FOF","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["aal/b752",1],["vir/a333",1]]},
+        {"origin":"KCLT","destination":"TLPL","category":"arrival","route":"FOF..UWAZE..TLPL","altitude":[4000,7000],"speed":250,"method":"random","rate":1.58,"airlines":[["aal/a319",2],["aal/a320",2]]},
+        {"origin":"KATL","destination":"TLPL","category":"arrival","route":"FOF..UWAZE..TLPL","altitude":[4000,7000],"speed":250,"method":"random","rate":1.19,"airlines":[["dal/b738",2],["dal/b752",1]]},
+        {"origin":"CYYZ","destination":"TLPL","category":"arrival","route":"FOF..UWAZE..TLPL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.79,"airlines":[["aca/a319",1],["wja/b737",1]]},
+        {"origin":"EGKK","destination":"TLPL","category":"arrival","route":"SOVKE..DUMDE..TLPL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["vir/a333",1]]},
+        {"origin":"KJFK","destination":"TLPL","category":"arrival","route":"FOF..UWAZE..TLPL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["jbu/a320",1]]},
+        {"origin":"","destination":"TLPL","category":"arrival","route":"SV..URETI..TLPL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["vir/a333",1]]},
+        {"origin":"","destination":"TLPL","category":"arrival","route":"FOF..UWAZE..TLPL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.79,"airlines":[["aal/b752",1],["vir/a333",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [14.1531,-60.6065,13.8892,-60.824],
+            [13.8892,-60.824,13.7332,-60.9526],
+            [13.4484,-60.4828,13.6274,-60.778],
+            [13.6274,-60.778,13.7332,-60.9526],
+            [13.1406,-61.2262,13.5508,-61.0368],
+            [13.5508,-61.0368,13.7332,-60.9526],
+            [14.5907,-61.0228,13.9324,-60.9689],
+            [13.9324,-60.9689,13.7332,-60.9526]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [13.7332,-60.9653,13.7331,-61.1368],
+            [13.7232,-61.051,13.7432,-61.051],
+            [13.7231,-61.1368,13.7431,-61.1368],
+            [13.7332,-60.9413,13.7331,-60.7698],
+            [13.7432,-60.8556,13.7232,-60.8556],
+            [13.7431,-60.7698,13.7232,-60.7698]
+        ]}
+    ]
+}

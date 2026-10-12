@@ -1,0 +1,101 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/NTAA/",
+    "info": {"country":"PF","city":"Papeete","type":"large_airport","longestRunwayM":3463,"frequencies":{"atis":"128.800","twr":"118.100","app":"118.100","gnd":"121.900"}},
+    "radio": {"twr":"Fa'a'a Tower","app":"Fa'a'a Approach","dep":"Fa'a'a Departure"},
+    "icao": "NTAA",
+    "iata": "PPT",
+    "magnetic_north": 13,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [-17.553472,-149.606936,"5ft"],
+    "rangeRings": {"enabled":true,"center":[-17.553472,-149.606936],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":30,"speed":6},
+    "arrivalRunway": "04",
+    "departureRunway": "04",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[-17.0277,-149.4796],[-17.077,-149.3412],[-17.1588,-149.221],[-17.2675,-149.127],[-17.3957,-149.0657],[-17.5346,-149.0413],[-17.6749,-149.0555],[-17.8068,-149.1072],[-17.9215,-149.193],[-18.0111,-149.307],[-18.0695,-149.4415],[-18.0927,-149.5872],[-18.0792,-149.7342],[-18.0299,-149.8726],[-17.9481,-149.9929],[-17.8394,-150.0869],[-17.7112,-150.1482],[-17.5723,-150.1725],[-17.4321,-150.1584],[-17.3001,-150.1066],[-17.1855,-150.0208],[-17.0959,-149.9068],[-17.0375,-149.7724],[-17.0142,-149.6267]]}
+    ],
+    "fixes": {
+        "NTAA": [-17.55347,-149.60694],
+        "ADUBA": [-17.03725,-149.10158],
+        "VAJOR": [-17.37083,-149.42814],
+        "AGUWI": [-17.4844,-148.86985],
+        "EREMA": [-17.52903,-149.34616],
+        "ATEGU": [-18.25236,-149.50101],
+        "WEHEP": [-17.80073,-149.56946],
+        "ITIHI": [-17.89784,-150.25353],
+        "FAVEL": [-17.67531,-149.8357],
+        "BOLGA": [-17.21797,-150.25864],
+        "EMULE": [-17.43477,-149.83751],
+        "ULURA": [-16.86321,-149.76315],
+        "FUMOL": [-17.30926,-149.6622],
+        "_RWY0404DME": [-17.60064,-149.67364],
+        "_RWY2204DME": [-17.50566,-149.53869]
+    },
+    "runways": [
+        {"name":["04","22"],"end":[[-17.56108,-149.6174,"5ft"],[-17.54523,-149.5949,"5ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ADUBA2A": {"icao":"ADUBA2A","name":"Aduba Two Alpha","rwy":{"NTAA04":["_RWY2204DME"],"NTAA22":["_RWY0404DME"]},"body":[],"exitPoints":{"ADUBA":["ADUBA"]},"draw":[["NTAA","ADUBA*"]]},
+        "AGUWI2A": {"icao":"AGUWI2A","name":"Aguwi Two Alpha","rwy":{"NTAA04":["_RWY2204DME"],"NTAA22":["_RWY0404DME"]},"body":[],"exitPoints":{"AGUWI":["AGUWI"]},"draw":[["NTAA","AGUWI*"]]},
+        "ATEGU1F": {"icao":"ATEGU1F","name":"Ategu One Foxtrot","rwy":{"NTAA04":["_RWY2204DME"],"NTAA22":["_RWY0404DME"]},"body":[],"exitPoints":{"ATEGU":["ATEGU"]},"draw":[["NTAA","ATEGU*"]]},
+        "ITIHI3C": {"icao":"ITIHI3C","name":"Itihi Three Charlie","rwy":{"NTAA04":["_RWY2204DME"],"NTAA22":["_RWY0404DME"]},"body":[],"exitPoints":{"ITIHI":["ITIHI"]},"draw":[["NTAA","ITIHI*"]]},
+        "BOLGA2D": {"icao":"BOLGA2D","name":"Bolga Two Delta","rwy":{"NTAA04":["_RWY2204DME"],"NTAA22":["_RWY0404DME"]},"body":[],"exitPoints":{"BOLGA":["BOLGA"]},"draw":[["NTAA","BOLGA*"]]},
+        "ULURA2B": {"icao":"ULURA2B","name":"Ulura Two Bravo","rwy":{"NTAA04":["_RWY2204DME"],"NTAA22":["_RWY0404DME"]},"body":[],"exitPoints":{"ULURA":["ULURA"]},"draw":[["NTAA","ULURA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"NTAA","destination":"NZAA","category":"departure","route":"NTAA04.ITIHI3C.ITIHI","altitude":"","speed":"","method":"random","rate":1.14,"airlines":[["anz/a343",1],["anz/b763",1],["qfa/a343",1],["tht/a343",1],["tht/b763",1]]},
+        {"origin":"NTAA","destination":"KLAX","category":"departure","route":"NTAA04.ADUBA2A.ADUBA","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["afr/b772",1],["qfa/a343",1],["tht/a343",1]]},
+        {"origin":"NTAA","destination":"NTTM","category":"departure","route":"NTAA04.BOLGA2D.BOLGA","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["vta/dhc6",1],["vta/at72",1],["vta/at45",1],["vta/at75",1]]},
+        {"origin":"NTAA","destination":"NCRG","category":"departure","route":"NTAA04.ITIHI3C.ITIHI","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["vta/at72",1],["vta/at45",1],["vta/at75",1]]},
+        {"origin":"NTAA","destination":"NTAM","category":"departure","route":"NTAA04.ITIHI3C.ITIHI","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["vta/at72",1],["vta/at45",1],["vta/at75",1]]},
+        {"origin":"NTAA","destination":"NTAR","category":"departure","route":"NTAA04.ATEGU1F.ATEGU","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["vta/at72",1],["vta/at45",1],["vta/at75",1]]},
+        {"origin":"NTAA","destination":"","category":"departure","route":"NTAA04.ADUBA2A.ADUBA","altitude":"","speed":"","method":"random","rate":2.51,"airlines":[["vta/at72",7],["vta/at45",2],["vta/at75",2]]},
+        {"origin":"NTAA","destination":"","category":"departure","route":"NTAA04.AGUWI2A.AGUWI","altitude":"","speed":"","method":"random","rate":1.37,"airlines":[["vta/at72",3],["lan/b763",1],["vta/at45",1],["vta/at75",1]]},
+        {"origin":"NTAA","destination":"","category":"departure","route":"NTAA04.ATEGU1F.ATEGU","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["vta/at72",1],["vta/at45",1],["vta/at75",1]]},
+        {"origin":"NTAA","destination":"","category":"departure","route":"NTAA04.ITIHI3C.ITIHI","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["aci/a332",1]]},
+        {"origin":"NTAA","destination":"","category":"departure","route":"NTAA04.BOLGA2D.BOLGA","altitude":"","speed":"","method":"random","rate":1.14,"airlines":[["vta/at72",2],["tht/a343",1],["vta/at45",1],["vta/at75",1]]},
+        {"origin":"NTAA","destination":"","category":"departure","route":"NTAA04.ULURA2B.ULURA","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["hal/a332",1]]},
+        {"origin":"NZAA","destination":"NTAA","category":"arrival","route":"ITIHI..FAVEL..NTAA","altitude":[6000,9000],"speed":250,"method":"random","rate":1.14,"airlines":[["anz/a343",1],["anz/b763",1],["qfa/a343",1],["tht/a343",1],["tht/b763",1]]},
+        {"origin":"KLAX","destination":"NTAA","category":"arrival","route":"ADUBA..VAJOR..NTAA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.69,"airlines":[["afr/b772",1],["qfa/a343",1],["tht/a343",1]]},
+        {"origin":"NTTM","destination":"NTAA","category":"arrival","route":"BOLGA..EMULE..NTAA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.46,"airlines":[["vta/dhc6",1],["vta/at72",1],["vta/at45",1],["vta/at75",1]]},
+        {"origin":"NCRG","destination":"NTAA","category":"arrival","route":"ITIHI..FAVEL..NTAA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.23,"airlines":[["vta/at72",1],["vta/at45",1],["vta/at75",1]]},
+        {"origin":"NTAM","destination":"NTAA","category":"arrival","route":"ITIHI..FAVEL..NTAA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.23,"airlines":[["vta/at72",1],["vta/at45",1],["vta/at75",1]]},
+        {"origin":"NTAR","destination":"NTAA","category":"arrival","route":"ATEGU..WEHEP..NTAA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.23,"airlines":[["vta/at72",1],["vta/at45",1],["vta/at75",1]]},
+        {"origin":"","destination":"NTAA","category":"arrival","route":"ADUBA..VAJOR..NTAA","altitude":[6000,9000],"speed":250,"method":"random","rate":2.51,"airlines":[["vta/at72",7],["vta/at45",2],["vta/at75",2]]},
+        {"origin":"","destination":"NTAA","category":"arrival","route":"AGUWI..EREMA..NTAA","altitude":[6000,9000],"speed":250,"method":"random","rate":1.37,"airlines":[["vta/at72",3],["lan/b763",1],["vta/at45",1],["vta/at75",1]]},
+        {"origin":"","destination":"NTAA","category":"arrival","route":"ATEGU..WEHEP..NTAA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.46,"airlines":[["vta/at72",1],["vta/at45",1],["vta/at75",1]]},
+        {"origin":"","destination":"NTAA","category":"arrival","route":"ITIHI..FAVEL..NTAA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.23,"airlines":[["aci/a332",1]]},
+        {"origin":"","destination":"NTAA","category":"arrival","route":"BOLGA..EMULE..NTAA","altitude":[6000,9000],"speed":250,"method":"random","rate":1.14,"airlines":[["vta/at72",2],["tht/a343",1],["vta/at45",1],["vta/at75",1]]},
+        {"origin":"","destination":"NTAA","category":"arrival","route":"ULURA..FUMOL..NTAA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.23,"airlines":[["hal/a332",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-17.0372,-149.1016,-17.3708,-149.4281],
+            [-17.3708,-149.4281,-17.5535,-149.6069],
+            [-17.4844,-148.8699,-17.529,-149.3462],
+            [-17.529,-149.3462,-17.5535,-149.6069],
+            [-18.2524,-149.501,-17.8007,-149.5695],
+            [-17.8007,-149.5695,-17.5535,-149.6069],
+            [-17.8978,-150.2535,-17.6753,-149.8357],
+            [-17.6753,-149.8357,-17.5535,-149.6069],
+            [-17.218,-150.2586,-17.4348,-149.8375],
+            [-17.4348,-149.8375,-17.5535,-149.6069],
+            [-16.8632,-149.7632,-17.3093,-149.6622],
+            [-17.3093,-149.6622,-17.5535,-149.6069]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-17.5611,-149.6174,-17.6599,-149.758],
+            [-17.6186,-149.6815,-17.6025,-149.6939],
+            [-17.668,-149.7518,-17.6519,-149.7643],
+            [-17.5452,-149.5949,-17.4463,-149.4544],
+            [-17.4877,-149.5309,-17.5038,-149.5184],
+            [-17.4382,-149.4607,-17.4543,-149.4482]
+        ]}
+    ]
+}

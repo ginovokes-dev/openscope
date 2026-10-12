@@ -1,0 +1,103 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KGRR/",
+    "info": {"country":"US","city":"Grand Rapids","type":"large_airport","longestRunwayM":3048,"frequencies":{"atis":"118.725","twr":"135.650","gnd":"121.800"}},
+    "radio": {"twr":"Grand Rapids Tower","app":"Grand Rapids Approach","dep":"Grand Rapids Departure"},
+    "icao": "KGRR",
+    "iata": "GRR",
+    "magnetic_north": -5.8,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [42.880798,-85.522797,"794ft"],
+    "rangeRings": {"enabled":true,"center":[42.880798,-85.522797],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":280,"speed":11},
+    "arrivalRunway": "26L",
+    "departureRunway": "26L",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[43.4176,-85.5972],[43.4134,-85.4051],[43.373,-85.2209],[43.299,-85.0574],[43.1964,-84.9256],[43.0724,-84.8344],[42.9353,-84.7902],[42.7945,-84.7959],[42.6596,-84.8511],[42.5398,-84.9521],[42.4432,-85.092],[42.3764,-85.2613],[42.344,-85.4484],[42.3481,-85.6405],[42.3886,-85.8247],[42.4626,-85.9882],[42.5652,-86.12],[42.6892,-86.2112],[42.8263,-86.2554],[42.9671,-86.2497],[43.102,-86.1945],[43.2218,-86.0934],[43.3184,-85.9535],[43.3852,-85.7843]]}
+    ],
+    "fixes": {
+        "KGRR": [42.8808,-85.5228],
+        "HIC": [43.5749,-85.7162,"white cloud"],
+        "ZATOC": [43.12558,-85.591],
+        "LAN": [42.7174,-84.6977,"lansing"],
+        "IZUZE": [42.81562,-85.19366],
+        "AZO": [42.237,-85.5532,"kalamazoo"],
+        "AHAFO": [42.63112,-85.53459],
+        "USIJO": [42.69957,-86.45419],
+        "DUSUD": [42.81668,-85.85232],
+        "_RWY08R04DME": [42.86632,-85.63201],
+        "_RWY26L04DME": [42.891,-85.41545],
+        "_RWY1704DME": [42.95536,-85.53306],
+        "_RWY3504DME": [42.80064,-85.50078],
+        "_RWY08L04DME": [42.87852,-85.63003],
+        "_RWY26R04DME": [42.90112,-85.43193]
+    },
+    "runways": [
+        {"name":["08R","26L"],"end":[[42.8766,-85.5422,"792ft"],[42.8808,-85.5053,"790ft"]],"ils":[true,true]},
+        {"name":["17","35"],"end":[[42.8895,-85.5193,"782ft"],[42.8665,-85.5145,"789ft"]],"ils":[true,true]},
+        {"name":["08L","26R"],"end":[[42.8888,-85.5402,"786ft"],[42.8909,-85.5218,"784ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "HIC1A": {"icao":"HIC1A","name":"White Cloud One Alpha","rwy":{"KGRR08R":["_RWY26L04DME"],"KGRR26L":["_RWY08R04DME"],"KGRR17":["_RWY3504DME"],"KGRR35":["_RWY1704DME"],"KGRR08L":["_RWY26R04DME"],"KGRR26R":["_RWY08L04DME"]},"body":[],"exitPoints":{"HIC":["HIC"]},"draw":[["KGRR","HIC*"]]},
+        "LAN2B": {"icao":"LAN2B","name":"Lansing Two Bravo","rwy":{"KGRR08R":["_RWY26L04DME"],"KGRR26L":["_RWY08R04DME"],"KGRR17":["_RWY3504DME"],"KGRR35":["_RWY1704DME"],"KGRR08L":["_RWY26R04DME"],"KGRR26R":["_RWY08L04DME"]},"body":[],"exitPoints":{"LAN":["LAN"]},"draw":[["KGRR","LAN*"]]},
+        "AZO1C": {"icao":"AZO1C","name":"Kalamazoo One Charlie","rwy":{"KGRR08R":["_RWY26L04DME"],"KGRR26L":["_RWY08R04DME"],"KGRR17":["_RWY3504DME"],"KGRR35":["_RWY1704DME"],"KGRR08L":["_RWY26R04DME"],"KGRR26R":["_RWY08L04DME"]},"body":[],"exitPoints":{"AZO":["AZO"]},"draw":[["KGRR","AZO*"]]},
+        "USIJO1A": {"icao":"USIJO1A","name":"Usijo One Alpha","rwy":{"KGRR08R":["_RWY26L04DME"],"KGRR26L":["_RWY08R04DME"],"KGRR17":["_RWY3504DME"],"KGRR35":["_RWY1704DME"],"KGRR08L":["_RWY26R04DME"],"KGRR26R":["_RWY08L04DME"]},"body":[],"exitPoints":{"USIJO":["USIJO"]},"draw":[["KGRR","USIJO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KGRR","destination":"KATL","category":"departure","route":"KGRR26L.AZO1C.AZO","altitude":"","speed":"","method":"random","rate":0.88,"airlines":[["dal/a319",1],["dal/a320",1],["dal/b712",1],["dal/md88",1]]},
+        {"origin":"KGRR","destination":"KDTW","category":"departure","route":"KGRR26L.LAN2B.LAN","altitude":"","speed":"","method":"random","rate":0.88,"airlines":[["dal/a320",1],["dal/b712",1],["dal/md88",1],["dal/e145",1],["dal/e135",1]]},
+        {"origin":"KGRR","destination":"KMSP","category":"departure","route":"KGRR26L.USIJO1A.USIJO","altitude":"","speed":"","method":"random","rate":0.66,"airlines":[["dal/a319",1],["dal/a320",1],["dal/md88",1]]},
+        {"origin":"KGRR","destination":"KBWI","category":"departure","route":"KGRR26L.LAN2B.LAN","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["swa/b733",1],["swa/b737",1]]},
+        {"origin":"KGRR","destination":"KMCO","category":"departure","route":"KGRR26L.AZO1C.AZO","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["swa/b733",1],["swa/b737",1]]},
+        {"origin":"KGRR","destination":"","category":"departure","route":"KGRR26L.AZO1C.AZO","altitude":"","speed":"","method":"random","rate":1.1,"airlines":[["aay/a320",1],["aay/md82",1],["swa/b733",1],["swa/b737",1],["dal/e145",1],["dal/e135",1]]},
+        {"origin":"KGRR","destination":"","category":"departure","route":"KGRR26L.USIJO1A.USIJO","altitude":"","speed":"","method":"random","rate":1.54,"airlines":[["swa/b737",2],["aay/a319",1],["aay/md82",1],["swa/b733",1],["ual/a319",1],["ual/a320",1]]},
+        {"origin":"KGRR","destination":"","category":"departure","route":"KGRR26L.USIJO1A.USIJO","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KGRR","destination":"","category":"departure","route":"KGRR26L.HIC1A.HIC","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KATL","destination":"KGRR","category":"arrival","route":"AZO..AHAFO..KGRR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.88,"airlines":[["dal/a319",1],["dal/a320",1],["dal/b712",1],["dal/md88",1]]},
+        {"origin":"KDTW","destination":"KGRR","category":"arrival","route":"LAN..IZUZE..KGRR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.88,"airlines":[["dal/a320",1],["dal/b712",1],["dal/md88",1],["dal/e145",1],["dal/e135",1]]},
+        {"origin":"KMSP","destination":"KGRR","category":"arrival","route":"USIJO..DUSUD..KGRR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.66,"airlines":[["dal/a319",1],["dal/a320",1],["dal/md88",1]]},
+        {"origin":"KBWI","destination":"KGRR","category":"arrival","route":"LAN..IZUZE..KGRR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.44,"airlines":[["swa/b733",1],["swa/b737",1]]},
+        {"origin":"KMCO","destination":"KGRR","category":"arrival","route":"AZO..AHAFO..KGRR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.44,"airlines":[["swa/b733",1],["swa/b737",1]]},
+        {"origin":"","destination":"KGRR","category":"arrival","route":"AZO..AHAFO..KGRR","altitude":[6000,9000],"speed":250,"method":"random","rate":1.1,"airlines":[["aay/a320",1],["aay/md82",1],["swa/b733",1],["swa/b737",1],["dal/e145",1],["dal/e135",1]]},
+        {"origin":"","destination":"KGRR","category":"arrival","route":"USIJO..DUSUD..KGRR","altitude":[6000,9000],"speed":250,"method":"random","rate":1.54,"airlines":[["swa/b737",2],["aay/a319",1],["aay/md82",1],["swa/b733",1],["ual/a319",1],["ual/a320",1]]},
+        {"origin":"","destination":"KGRR","category":"arrival","route":"USIJO..DUSUD..KGRR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.41,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"","destination":"KGRR","category":"arrival","route":"HIC..ZATOC..KGRR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.41,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [43.5749,-85.7162,43.1256,-85.591],
+            [43.1256,-85.591,42.8808,-85.5228],
+            [42.7174,-84.6977,42.8156,-85.1937],
+            [42.8156,-85.1937,42.8808,-85.5228],
+            [42.237,-85.5532,42.6311,-85.5346],
+            [42.6311,-85.5346,42.8808,-85.5228],
+            [42.6996,-86.4542,42.8167,-85.8523],
+            [42.8167,-85.8523,42.8808,-85.5228]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [42.8766,-85.5422,42.8508,-85.7667],
+            [42.8539,-85.6524,42.8736,-85.6566],
+            [42.8409,-85.7646,42.8607,-85.7688],
+            [42.8808,-85.5053,42.9062,-85.2806],
+            [42.9034,-85.3951,42.8837,-85.3909],
+            [42.9161,-85.2827,42.8963,-85.2785],
+            [42.8895,-85.5193,43.0541,-85.5538],
+            [42.9703,-85.55,42.9733,-85.523],
+            [43.0526,-85.5673,43.0556,-85.5402],
+            [42.8665,-85.5145,42.7019,-85.4802],
+            [42.7857,-85.4839,42.7827,-85.5108],
+            [42.7034,-85.4668,42.7003,-85.4937],
+            [42.8888,-85.5402,42.863,-85.7647],
+            [42.8661,-85.6504,42.8858,-85.6546],
+            [42.8531,-85.7626,42.8728,-85.7668],
+            [42.8909,-85.5218,42.9163,-85.2971],
+            [42.9135,-85.4116,42.8938,-85.4074],
+            [42.9262,-85.2992,42.9064,-85.295]
+        ]}
+    ]
+}

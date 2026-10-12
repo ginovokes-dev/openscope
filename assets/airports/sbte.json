@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SBTE/",
+    "info": {"country":"BR","city":"Teresina","type":"medium_airport","longestRunwayM":2200,"frequencies":{"atis":"127.800","twr":"118.800","app":"119.600"},"approximateRunways":true},
+    "radio": {"twr":"Teresina Tower","app":"Teresina Approach","dep":"Teresina Departure"},
+    "icao": "SBTE",
+    "iata": "THE",
+    "magnetic_north": -21.2,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-5.06025,-42.823712,"219ft"],
+    "rangeRings": {"enabled":true,"center":[-5.06025,-42.823712],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":10,"speed":8},
+    "arrivalRunway": "02",
+    "departureRunway": "02",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-4.6829,-42.9706],[-4.6579,-42.8676],[-4.6603,-42.7616],[-4.69,-42.6598],[-4.7449,-42.5691],[-4.8212,-42.4959],[-4.9139,-42.4449],[-5.0165,-42.4198],[-5.1222,-42.4222],[-5.2236,-42.452],[-5.3138,-42.5071],[-5.3868,-42.5838],[-5.4376,-42.6768],[-5.4626,-42.7798],[-5.4602,-42.8859],[-5.4305,-42.9877],[-5.3756,-43.0783],[-5.2993,-43.1516],[-5.2066,-43.2025],[-5.104,-43.2276],[-4.9983,-43.2252],[-4.8969,-43.1954],[-4.8067,-43.1403],[-4.7337,-43.0637]]}
+    ],
+    "fixes": {
+        "SBTE": [-5.06025,-42.82371],
+        "MEWEM": [-4.57979,-42.58082],
+        "ZUJGA": [-4.88174,-42.73347],
+        "OBAZO": [-4.90714,-42.306],
+        "CUGIL": [-5.00337,-42.63136],
+        "ITATI": [-5.57384,-42.98434],
+        "FEGJU": [-5.25107,-42.88339],
+        "RIPAR": [-4.59298,-43.09128],
+        "IRAFA": [-4.88664,-42.92312],
+        "_RWY0204DME": [-5.13675,-42.8221],
+        "_RWY2004DME": [-4.98375,-42.82532]
+    },
+    "runways": [
+        {"name":["02","20"],"end":[[-5.07014,-42.8235,"219ft"],[-5.05036,-42.82392,"219ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "MEWEM2B": {"icao":"MEWEM2B","name":"Mewem Two Bravo","rwy":{"SBTE02":["_RWY2004DME"],"SBTE20":["_RWY0204DME"]},"body":[],"exitPoints":{"MEWEM":["MEWEM"]},"draw":[["SBTE","MEWEM*"]]},
+        "OBAZO3B": {"icao":"OBAZO3B","name":"Obazo Three Bravo","rwy":{"SBTE02":["_RWY2004DME"],"SBTE20":["_RWY0204DME"]},"body":[],"exitPoints":{"OBAZO":["OBAZO"]},"draw":[["SBTE","OBAZO*"]]},
+        "ITATI2A": {"icao":"ITATI2A","name":"Itati Two Alpha","rwy":{"SBTE02":["_RWY2004DME"],"SBTE20":["_RWY0204DME"]},"body":[],"exitPoints":{"ITATI":["ITATI"]},"draw":[["SBTE","ITATI*"]]},
+        "RIPAR3C": {"icao":"RIPAR3C","name":"Ripar Three Charlie","rwy":{"SBTE02":["_RWY2004DME"],"SBTE20":["_RWY0204DME"]},"body":[],"exitPoints":{"RIPAR":["RIPAR"]},"draw":[["SBTE","RIPAR*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SBTE","destination":"SBBR","category":"departure","route":"SBTE02.ITATI2A.ITATI","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["glo/b737",1],["glo/b738",1],["tam/a319",1],["tam/a320",1]]},
+        {"origin":"SBTE","destination":"SBFZ","category":"departure","route":"SBTE02.OBAZO3B.OBAZO","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["azu/e190",1],["glo/b738",1],["tam/a319",1],["tam/a320",1]]},
+        {"origin":"SBTE","destination":"SBGR","category":"departure","route":"SBTE02.ITATI2A.ITATI","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBTE","destination":"SBKP","category":"departure","route":"SBTE02.ITATI2A.ITATI","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["azu/e190",1]]},
+        {"origin":"SBTE","destination":"SBPB","category":"departure","route":"SBTE02.MEWEM2B.MEWEM","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["azu/at72",1]]},
+        {"origin":"SBTE","destination":"","category":"departure","route":"SBTE02.OBAZO3B.OBAZO","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["azu/e190",1]]},
+        {"origin":"SBTE","destination":"","category":"departure","route":"SBTE02.RIPAR3C.RIPAR","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["azu/e190",1]]},
+        {"origin":"SBTE","destination":"","category":"departure","route":"SBTE02.RIPAR3C.RIPAR","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"SBBR","destination":"SBTE","category":"arrival","route":"ITATI..FEGJU..SBTE","altitude":[4000,7000],"speed":250,"method":"random","rate":1.13,"airlines":[["glo/b737",1],["glo/b738",1],["tam/a319",1],["tam/a320",1]]},
+        {"origin":"SBFZ","destination":"SBTE","category":"arrival","route":"OBAZO..CUGIL..SBTE","altitude":[4000,7000],"speed":250,"method":"random","rate":1.13,"airlines":[["azu/e190",1],["glo/b738",1],["tam/a319",1],["tam/a320",1]]},
+        {"origin":"SBGR","destination":"SBTE","category":"arrival","route":"ITATI..FEGJU..SBTE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.57,"airlines":[["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBKP","destination":"SBTE","category":"arrival","route":"ITATI..FEGJU..SBTE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["azu/e190",1]]},
+        {"origin":"SBPB","destination":"SBTE","category":"arrival","route":"MEWEM..ZUJGA..SBTE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["azu/at72",1]]},
+        {"origin":"","destination":"SBTE","category":"arrival","route":"OBAZO..CUGIL..SBTE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["azu/e190",1]]},
+        {"origin":"","destination":"SBTE","category":"arrival","route":"RIPAR..IRAFA..SBTE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["azu/e190",1]]},
+        {"origin":"","destination":"SBTE","category":"arrival","route":"RIPAR..IRAFA..SBTE","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-4.5798,-42.5808,-4.8817,-42.7335],
+            [-4.8817,-42.7335,-5.0602,-42.8237],
+            [-4.9071,-42.306,-5.0034,-42.6314],
+            [-5.0034,-42.6314,-5.0602,-42.8237],
+            [-5.5738,-42.9843,-5.2511,-42.8834],
+            [-5.2511,-42.8834,-5.0602,-42.8237],
+            [-4.593,-43.0913,-4.8866,-42.9231],
+            [-4.8866,-42.9231,-5.0602,-42.8237]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-5.0701,-42.8235,-5.2367,-42.82],
+            [-5.1532,-42.8117,-5.1536,-42.8318],
+            [-5.2364,-42.81,-5.2369,-42.83],
+            [-5.0504,-42.8239,-4.8838,-42.8274],
+            [-4.9673,-42.8357,-4.9669,-42.8156],
+            [-4.8841,-42.8374,-4.8836,-42.8174]
+        ]}
+    ]
+}

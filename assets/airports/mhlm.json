@@ -1,0 +1,92 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/MHLM/",
+    "info": {"country":"HN","city":"San Pedro Sula","type":"large_airport","longestRunwayM":2808,"frequencies":{"twr":"118.200","app":"119.700","gnd":"121.900"}},
+    "radio": {"twr":"San Pedro Sula Tower","app":"San Pedro Sula Approach","dep":"San Pedro Sula Departure"},
+    "icao": "MHLM",
+    "iata": "SAP",
+    "magnetic_north": -1.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [15.4526,-87.923599,"91ft"],
+    "rangeRings": {"enabled":true,"center":[15.4526,-87.923599],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":60,"speed":8},
+    "arrivalRunway": "04",
+    "departureRunway": "04",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[15.8572,-87.9339],[15.8459,-87.8249],[15.8079,-87.7226],[15.7457,-87.634],[15.6634,-87.5652],[15.5669,-87.5208],[15.4625,-87.5039],[15.3574,-87.5155],[15.2589,-87.555],[15.1735,-87.6195],[15.1072,-87.7048],[15.0644,-87.8051],[15.048,-87.9133],[15.0593,-88.0223],[15.0973,-88.1246],[15.1595,-88.2132],[15.2418,-88.282],[15.3383,-88.3264],[15.4427,-88.3433],[15.5478,-88.3317],[15.6463,-88.2922],[15.7317,-88.2277],[15.798,-88.1424],[15.8408,-88.0421]]}
+    ],
+    "fixes": {
+        "MHLM": [15.4526,-87.9236],
+        "CIDWU": [15.93542,-87.6775],
+        "COHIP": [15.63199,-87.83216],
+        "IFONU": [15.05343,-87.54947],
+        "HEVIR": [15.30429,-87.78459],
+        "WECOF": [14.98109,-88.19227],
+        "NUPIB": [15.27742,-88.02342],
+        "IGAWI": [15.27982,-88.45214],
+        "NETAW": [15.3884,-88.11997],
+        "ZOLHA": [15.94457,-88.14934],
+        "LAZPO": [15.63539,-88.00747],
+        "_RWY0404DME": [15.39275,-87.97596],
+        "_RWY2204DME": [15.51251,-87.87111]
+    },
+    "runways": [
+        {"name":["04","22"],"end":[[15.44367,-87.9314,"91ft"],[15.4616,-87.9157,"83ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "CIDWU1A": {"icao":"CIDWU1A","name":"Cidwu One Alpha","rwy":{"MHLM04":["_RWY2204DME"],"MHLM22":["_RWY0404DME"]},"body":[],"exitPoints":{"CIDWU":["CIDWU"]},"draw":[["MHLM","CIDWU*"]]},
+        "IFONU1E": {"icao":"IFONU1E","name":"Ifonu One Echo","rwy":{"MHLM04":["_RWY2204DME"],"MHLM22":["_RWY0404DME"]},"body":[],"exitPoints":{"IFONU":["IFONU"]},"draw":[["MHLM","IFONU*"]]},
+        "WECOF1A": {"icao":"WECOF1A","name":"Wecof One Alpha","rwy":{"MHLM04":["_RWY2204DME"],"MHLM22":["_RWY0404DME"]},"body":[],"exitPoints":{"WECOF":["WECOF"]},"draw":[["MHLM","WECOF*"]]},
+        "IGAWI1D": {"icao":"IGAWI1D","name":"Igawi One Delta","rwy":{"MHLM04":["_RWY2204DME"],"MHLM22":["_RWY0404DME"]},"body":[],"exitPoints":{"IGAWI":["IGAWI"]},"draw":[["MHLM","IGAWI*"]]},
+        "ZOLHA1C": {"icao":"ZOLHA1C","name":"Zolha One Charlie","rwy":{"MHLM04":["_RWY2204DME"],"MHLM22":["_RWY0404DME"]},"body":[],"exitPoints":{"ZOLHA":["ZOLHA"]},"draw":[["MHLM","ZOLHA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"MHLM","destination":"KMIA","category":"departure","route":"MHLM04.CIDWU1A.CIDWU","altitude":"","speed":"","method":"random","rate":1.57,"airlines":[["aal/b738",2],["aal/a319",1],["aal/a320",1],["aal/e190",1],["ava/a319",1],["ava/a320",1],["ava/e190",1]]},
+        {"origin":"MHLM","destination":"MSLP","category":"departure","route":"MHLM04.WECOF1A.WECOF","altitude":"","speed":"","method":"random","rate":0.78,"airlines":[["ava/a319",1],["ava/a320",1],["ava/e190",1],["ava/at72",1],["ava/at45",1],["ava/at75",1]]},
+        {"origin":"MHLM","destination":"KATL","category":"departure","route":"MHLM04.CIDWU1A.CIDWU","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["dal/a319",1],["dal/a320",1]]},
+        {"origin":"MHLM","destination":"KFLL","category":"departure","route":"MHLM04.CIDWU1A.CIDWU","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["nks/a319",1],["nks/a320",1]]},
+        {"origin":"MHLM","destination":"MROC","category":"departure","route":"MHLM04.IFONU1E.IFONU","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["cmp/b738",1],["ava/at72",1],["ava/at45",1],["ava/at75",1]]},
+        {"origin":"MHLM","destination":"","category":"departure","route":"MHLM04.CIDWU1A.CIDWU","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["ava/a320",1],["ual/b738",1]]},
+        {"origin":"MHLM","destination":"","category":"departure","route":"MHLM04.IFONU1E.IFONU","altitude":"","speed":"","method":"random","rate":0.2,"airlines":[["cmp/e190",1]]},
+        {"origin":"MHLM","destination":"","category":"departure","route":"MHLM04.IGAWI1D.IGAWI","altitude":"","speed":"","method":"random","rate":0.2,"airlines":[["ava/at72",1],["ava/at45",1],["ava/at75",1]]},
+        {"origin":"MHLM","destination":"","category":"departure","route":"MHLM04.ZOLHA1C.ZOLHA","altitude":"","speed":"","method":"random","rate":0.2,"airlines":[["ual/b738",1]]},
+        {"origin":"MHLM","destination":"","category":"departure","route":"MHLM04.WECOF1A.WECOF","altitude":"","speed":"","method":"random","rate":1.5,"airlines":[["hr/c172",6],["hr/p28a",5],["hr/c182",3],["hr/be36",2],["hr/da42",1],["hr/tb20",1],["hr/c208",2],["hr/pc12",2],["hr/be20",1],["hr/b350",1],["hr/p180",1],["hr/c510",1],["hr/e50p",1],["hr/c550",1],["hr/e55p",1],["hr/cl30",1],["hr/c680",1],["hr/h25b",1],["hr/lj45",1],["hr/f2th",1],["hr/glf4",1],["hr/glex",1],["hr/glf5",1]]},
+        {"origin":"KMIA","destination":"MHLM","category":"arrival","route":"CIDWU..COHIP..MHLM","altitude":[4000,7000],"speed":250,"method":"random","rate":1.57,"airlines":[["aal/b738",2],["aal/a319",1],["aal/a320",1],["aal/e190",1],["ava/a319",1],["ava/a320",1],["ava/e190",1]]},
+        {"origin":"MSLP","destination":"MHLM","category":"arrival","route":"WECOF..NUPIB..MHLM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.78,"airlines":[["ava/a319",1],["ava/a320",1],["ava/e190",1],["ava/at72",1],["ava/at45",1],["ava/at75",1]]},
+        {"origin":"KATL","destination":"MHLM","category":"arrival","route":"CIDWU..COHIP..MHLM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.39,"airlines":[["dal/a319",1],["dal/a320",1]]},
+        {"origin":"KFLL","destination":"MHLM","category":"arrival","route":"CIDWU..COHIP..MHLM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.39,"airlines":[["nks/a319",1],["nks/a320",1]]},
+        {"origin":"MROC","destination":"MHLM","category":"arrival","route":"IFONU..HEVIR..MHLM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.39,"airlines":[["cmp/b738",1],["ava/at72",1],["ava/at45",1],["ava/at75",1]]},
+        {"origin":"","destination":"MHLM","category":"arrival","route":"CIDWU..COHIP..MHLM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.39,"airlines":[["ava/a320",1],["ual/b738",1]]},
+        {"origin":"","destination":"MHLM","category":"arrival","route":"IFONU..HEVIR..MHLM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.2,"airlines":[["cmp/e190",1]]},
+        {"origin":"","destination":"MHLM","category":"arrival","route":"IGAWI..NETAW..MHLM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.2,"airlines":[["ava/at72",1],["ava/at45",1],["ava/at75",1]]},
+        {"origin":"","destination":"MHLM","category":"arrival","route":"ZOLHA..LAZPO..MHLM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.2,"airlines":[["ual/b738",1]]},
+        {"origin":"","destination":"MHLM","category":"arrival","route":"WECOF..NUPIB..MHLM","altitude":[4000,7000],"speed":250,"method":"random","rate":1.5,"airlines":[["hr/c172",6],["hr/p28a",5],["hr/c182",3],["hr/be36",2],["hr/da42",1],["hr/tb20",1],["hr/c208",2],["hr/pc12",2],["hr/be20",1],["hr/b350",1],["hr/p180",1],["hr/c510",1],["hr/e50p",1],["hr/c550",1],["hr/e55p",1],["hr/cl30",1],["hr/c680",1],["hr/h25b",1],["hr/lj45",1],["hr/f2th",1],["hr/glf4",1],["hr/glex",1],["hr/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [15.9354,-87.6775,15.632,-87.8322],
+            [15.632,-87.8322,15.4526,-87.9236],
+            [15.0534,-87.5495,15.3043,-87.7846],
+            [15.3043,-87.7846,15.4526,-87.9236],
+            [14.9811,-88.1923,15.2774,-88.0234],
+            [15.2774,-88.0234,15.4526,-87.9236],
+            [15.2798,-88.4521,15.3884,-88.12],
+            [15.3884,-88.12,15.4526,-87.9236],
+            [15.9446,-88.1493,15.6354,-88.0075],
+            [15.6354,-88.0075,15.4526,-87.9236]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [15.4437,-87.9314,15.3164,-88.0428],
+            [15.3736,-87.9792,15.3865,-87.995],
+            [15.3099,-88.0349,15.3228,-88.0507],
+            [15.4616,-87.9157,15.5889,-87.8042],
+            [15.5317,-87.8679,15.5188,-87.852],
+            [15.5953,-87.8121,15.5824,-87.7963]
+        ]}
+    ]
+}

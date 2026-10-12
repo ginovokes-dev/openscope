@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EHBK/",
+    "info": {"country":"NL","city":"Maastricht","type":"large_airport","longestRunwayM":2750,"frequencies":{"atis":"124.580","twr":"119.480","app":"120.205","gnd":"121.830"}},
+    "radio": {"twr":"Maastricht Tower","app":"Maastricht Approach","dep":"Maastricht Departure"},
+    "icao": "EHBK",
+    "iata": "MST",
+    "magnetic_north": 2.9,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [50.911087,5.769401,"375ft"],
+    "rangeRings": {"enabled":true,"center":[50.911087,5.769401],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":220,"speed":7},
+    "arrivalRunway": "21",
+    "departureRunway": "21",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[51.3153,5.8019],[51.2962,5.9667],[51.2509,6.118],[51.1824,6.2456],[51.0954,6.3408],[50.9959,6.397],[50.8906,6.4104],[50.7867,6.3802],[50.6913,6.3083],[50.6108,6.1997],[50.5508,6.0618],[50.5154,5.9039],[50.5069,5.7369],[50.526,5.5721],[50.5713,5.4208],[50.6398,5.2932],[50.7267,5.198],[50.8263,5.1418],[50.9316,5.1284],[51.0355,5.1586],[51.1309,5.2305],[51.2114,5.3391],[51.2714,5.477],[51.3068,5.6349]]}
+    ],
+    "fixes": {
+        "EHBK": [50.91109,5.7694],
+        "PH": [51.5628,5.50556,"eindhoven"],
+        "DOHTE": [51.10474,5.691],
+        "NTM": [50.0159,6.53179,"nattenheim"],
+        "ETEKA": [50.735,5.91936],
+        "NIWRU": [50.39376,5.5355],
+        "OBIJA": [50.71888,5.6825],
+        "BUN": [51.1186,4.84194,"bruno"],
+        "RAVLO": [50.97793,5.47067],
+        "_RWY0304DME": [50.84748,5.70531],
+        "_RWY2104DME": [50.97509,5.83412]
+    },
+    "runways": [
+        {"name":["03","21"],"end":[[50.9037,5.76196,"365ft"],[50.9189,5.77732,"370ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "PH3C": {"icao":"PH3C","name":"Eindhoven Three Charlie","rwy":{"EHBK03":["_RWY2104DME"],"EHBK21":["_RWY0304DME"]},"body":[],"exitPoints":{"PH":["PH"]},"draw":[["EHBK","PH*"]]},
+        "NTM2C": {"icao":"NTM2C","name":"Nattenheim Two Charlie","rwy":{"EHBK03":["_RWY2104DME"],"EHBK21":["_RWY0304DME"]},"body":[],"exitPoints":{"NTM":["NTM"]},"draw":[["EHBK","NTM*"]]},
+        "NIWRU1E": {"icao":"NIWRU1E","name":"Niwru One Echo","rwy":{"EHBK03":["_RWY2104DME"],"EHBK21":["_RWY0304DME"]},"body":[],"exitPoints":{"NIWRU":["NIWRU"]},"draw":[["EHBK","NIWRU*"]]},
+        "BUN3C": {"icao":"BUN3C","name":"Bruno Three Charlie","rwy":{"EHBK03":["_RWY2104DME"],"EHBK21":["_RWY0304DME"]},"body":[],"exitPoints":{"BUN":["BUN"]},"draw":[["EHBK","BUN*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EHBK","destination":"EHGG","category":"departure","route":"EHBK21.PH3C.PH","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["tra/b738",1]]},
+        {"origin":"EHBK","destination":"GCTS","category":"departure","route":"EHBK21.NIWRU1E.NIWRU","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["ryr/b738",1]]},
+        {"origin":"EHBK","destination":"LEAL","category":"departure","route":"EHBK21.NIWRU1E.NIWRU","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["ryr/b738",1]]},
+        {"origin":"EHBK","destination":"LEGE","category":"departure","route":"EHBK21.NIWRU1E.NIWRU","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["ryr/b738",1]]},
+        {"origin":"EHBK","destination":"LEPA","category":"departure","route":"EHBK21.NIWRU1E.NIWRU","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["ryr/b738",1]]},
+        {"origin":"EHBK","destination":"","category":"departure","route":"EHBK21.NTM2C.NTM","altitude":"","speed":"","method":"random","rate":1.69,"airlines":[["ryr/b738",2],["tra/b738",2]]},
+        {"origin":"EHBK","destination":"","category":"departure","route":"EHBK21.NIWRU1E.NIWRU","altitude":"","speed":"","method":"random","rate":0.85,"airlines":[["ryr/b738",2]]},
+        {"origin":"EHBK","destination":"","category":"departure","route":"EHBK21.PH3C.PH","altitude":"","speed":"","method":"random","rate":1.55,"airlines":[["ph/c172",6],["ph/p28a",5],["ph/c182",3],["ph/be36",2],["ph/da42",1],["ph/tb20",1],["ph/c208",2],["ph/pc12",2],["ph/be20",1],["ph/b350",1],["ph/p180",1],["ph/c510",1],["ph/e50p",1],["ph/c550",1],["ph/e55p",1],["ph/cl30",1],["ph/c680",1],["ph/h25b",1],["ph/lj45",1],["ph/f2th",1],["ph/glf4",1],["ph/glex",1],["ph/glf5",1]]},
+        {"origin":"EHGG","destination":"EHBK","category":"arrival","route":"PH..DOHTE..EHBK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["tra/b738",1]]},
+        {"origin":"GCTS","destination":"EHBK","category":"arrival","route":"NIWRU..OBIJA..EHBK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["ryr/b738",1]]},
+        {"origin":"LEAL","destination":"EHBK","category":"arrival","route":"NIWRU..OBIJA..EHBK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["ryr/b738",1]]},
+        {"origin":"LEGE","destination":"EHBK","category":"arrival","route":"NIWRU..OBIJA..EHBK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["ryr/b738",1]]},
+        {"origin":"LEPA","destination":"EHBK","category":"arrival","route":"NIWRU..OBIJA..EHBK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"EHBK","category":"arrival","route":"NTM..ETEKA..EHBK","altitude":[4000,7000],"speed":250,"method":"random","rate":1.69,"airlines":[["ryr/b738",2],["tra/b738",2]]},
+        {"origin":"","destination":"EHBK","category":"arrival","route":"NIWRU..OBIJA..EHBK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.85,"airlines":[["ryr/b738",2]]},
+        {"origin":"","destination":"EHBK","category":"arrival","route":"PH..DOHTE..EHBK","altitude":[4000,7000],"speed":250,"method":"random","rate":1.55,"airlines":[["ph/c172",6],["ph/p28a",5],["ph/c182",3],["ph/be36",2],["ph/da42",1],["ph/tb20",1],["ph/c208",2],["ph/pc12",2],["ph/be20",1],["ph/b350",1],["ph/p180",1],["ph/c510",1],["ph/e50p",1],["ph/c550",1],["ph/e55p",1],["ph/cl30",1],["ph/c680",1],["ph/h25b",1],["ph/lj45",1],["ph/f2th",1],["ph/glf4",1],["ph/glex",1],["ph/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [51.5628,5.5056,51.1047,5.691],
+            [51.1047,5.691,50.9111,5.7694],
+            [50.0159,6.5318,50.735,5.9194],
+            [50.735,5.9194,50.9111,5.7694],
+            [50.3938,5.5355,50.7189,5.6825],
+            [50.7189,5.6825,50.9111,5.7694],
+            [51.1186,4.8419,50.9779,5.4707],
+            [50.9779,5.4707,50.9111,5.7694]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [50.9037,5.762,50.7631,5.6206],
+            [50.8281,5.7045,50.8388,5.6778],
+            [50.7577,5.6339,50.7685,5.6073],
+            [50.9189,5.7773,51.0593,5.9196],
+            [50.9945,5.835,50.9838,5.8617],
+            [51.0647,5.9062,51.054,5.933]
+        ]}
+    ]
+}

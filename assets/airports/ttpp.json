@@ -1,0 +1,91 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/TTPP/",
+    "info": {"country":"TT","city":"Port of Spain","type":"large_airport","longestRunwayM":3202,"frequencies":{"atis":"126.700","twr":"118.100","app":"119.000","gnd":"121.900"}},
+    "radio": {"twr":"Piarco Tower","app":"Piarco Approach","dep":"Piarco Departure"},
+    "icao": "TTPP",
+    "iata": "POS",
+    "magnetic_north": -15.6,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [10.59535,-61.337568,"58ft"],
+    "rangeRings": {"enabled":true,"center":[10.59535,-61.337568],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":110,"speed":6},
+    "arrivalRunway": "10",
+    "departureRunway": "10",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[11.1151,-61.4852],[11.1349,-61.3433],[11.118,-61.201],[11.0655,-61.0681],[10.9809,-60.9535],[10.87,-60.8651],[10.7405,-60.8088],[10.601,-60.7886],[10.4612,-60.8059],[10.3305,-60.8593],[10.2178,-60.9454],[10.1309,-61.0581],[10.0756,-61.1899],[10.0558,-61.3318],[10.0727,-61.4741],[10.1252,-61.6071],[10.2098,-61.7216],[10.3207,-61.8101],[10.4502,-61.8663],[10.5897,-61.8865],[10.7295,-61.8693],[10.8602,-61.8158],[10.9729,-61.7298],[11.0598,-61.617]]}
+    ],
+    "fixes": {
+        "TTPP": [10.59535,-61.33757],
+        "BGH": [11.1313,-61.659,"bgh"],
+        "OFEHE": [10.81057,-61.46664],
+        "TAB": [11.1528,-60.8414,"crown point"],
+        "PINUL": [10.78338,-61.17021],
+        "VAVEB": [10.08393,-60.8422],
+        "JONMO": [10.41441,-61.16231],
+        "GUI": [10.5712,-62.3109,"guiria"],
+        "AGEDI": [10.58905,-61.59165],
+        "_RWY1004DME": [10.59506,-61.41967],
+        "_RWY2804DME": [10.59563,-61.25482]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[10.5953,-61.3519,"30ft"],[10.5954,-61.3226,"58ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "BGH3C": {"icao":"BGH3C","name":"Bgh Three Charlie","rwy":{"TTPP10":["_RWY2804DME"],"TTPP28":["_RWY1004DME"]},"body":[],"exitPoints":{"BGH":["BGH"]},"draw":[["TTPP","BGH*"]]},
+        "TAB3D": {"icao":"TAB3D","name":"Crown Point Three Delta","rwy":{"TTPP10":["_RWY2804DME"],"TTPP28":["_RWY1004DME"]},"body":[],"exitPoints":{"TAB":["TAB"]},"draw":[["TTPP","TAB*"]]},
+        "VAVEB3D": {"icao":"VAVEB3D","name":"Vaveb Three Delta","rwy":{"TTPP10":["_RWY2804DME"],"TTPP28":["_RWY1004DME"]},"body":[],"exitPoints":{"VAVEB":["VAVEB"]},"draw":[["TTPP","VAVEB*"]]},
+        "GUI2B": {"icao":"GUI2B","name":"Guiria Two Bravo","rwy":{"TTPP10":["_RWY2804DME"],"TTPP28":["_RWY1004DME"]},"body":[],"exitPoints":{"GUI":["GUI"]},"draw":[["TTPP","GUI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"TTPP","destination":"TGPY","category":"departure","route":"TTPP10.BGH3C.BGH","altitude":"","speed":"","method":"random","rate":0.98,"airlines":[["bwa/b738",1],["lia/at43",1],["lia/at72",1],["lia/dh8c",1],["vcv/e190",1],["bwa/at72",1],["bwa/at45",1],["bwa/at75",1]]},
+        {"origin":"TTPP","destination":"MPTO","category":"departure","route":"TTPP10.GUI2B.GUI","altitude":"","speed":"","method":"random","rate":0.65,"airlines":[["amx/b737",1],["amx/e190",1],["cmp/b737",1],["cmp/e190",1]]},
+        {"origin":"TTPP","destination":"KMIA","category":"departure","route":"TTPP10.BGH3C.BGH","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["aal/b752",2],["bwa/b738",1]]},
+        {"origin":"TTPP","destination":"TVSA","category":"departure","route":"TTPP10.BGH3C.BGH","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["lia/at43",1],["lia/at72",1],["lia/dh8c",1]]},
+        {"origin":"TTPP","destination":"CYYZ","category":"departure","route":"TTPP10.BGH3C.BGH","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["bwa/b738",1],["wja/b737",1]]},
+        {"origin":"TTPP","destination":"KFLL","category":"departure","route":"TTPP10.BGH3C.BGH","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["bwa/b738",1],["jbu/a320",1]]},
+        {"origin":"TTPP","destination":"","category":"departure","route":"TTPP10.BGH3C.BGH","altitude":"","speed":"","method":"random","rate":0.81,"airlines":[["bwa/b738",2],["ual/b738",2],["jbu/a320",1]]},
+        {"origin":"TTPP","destination":"","category":"departure","route":"TTPP10.TAB3D.TAB","altitude":"","speed":"","method":"random","rate":1.3,"airlines":[["bwa/b738",2],["bwa/at72",2],["baw/b772",1],["bwa/b763",1],["lia/at72",1],["bwa/at45",1],["bwa/at75",1]]},
+        {"origin":"TTPP","destination":"","category":"departure","route":"TTPP10.VAVEB3D.VAVEB","altitude":"","speed":"","method":"random","rate":0.65,"airlines":[["bwa/b738",2],["bwa/b763",1],["slm/b733",1]]},
+        {"origin":"TTPP","destination":"","category":"departure","route":"TTPP10.GUI2B.GUI","altitude":"","speed":"","method":"random","rate":0.81,"airlines":[["bwa/b738",1],["lia/at72",1],["slm/b733",1],["vcv/e190",1],["bwa/at72",1],["bwa/at45",1],["bwa/at75",1]]},
+        {"origin":"TTPP","destination":"","category":"departure","route":"TTPP10.BGH3C.BGH","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["9y/c172",6],["9y/p28a",5],["9y/c182",3],["9y/be36",2],["9y/da42",1],["9y/tb20",1],["9y/c208",2],["9y/pc12",2],["9y/be20",1],["9y/b350",1],["9y/p180",1],["9y/c510",1],["9y/e50p",1],["9y/c550",2],["9y/e55p",1],["9y/cl30",1],["9y/c680",1],["9y/h25b",1],["9y/lj45",1],["9y/f2th",1],["9y/glf4",1],["9y/glex",1],["9y/glf5",1]]},
+        {"origin":"TTPP","destination":"","category":"departure","route":"TTPP10.TAB3D.TAB","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["9y/c172",6],["9y/p28a",5],["9y/c182",3],["9y/be36",2],["9y/da42",1],["9y/tb20",1],["9y/c208",2],["9y/pc12",2],["9y/be20",1],["9y/b350",1],["9y/p180",1],["9y/c510",1],["9y/e50p",1],["9y/c550",2],["9y/e55p",1],["9y/cl30",1],["9y/c680",1],["9y/h25b",1],["9y/lj45",1],["9y/f2th",1],["9y/glf4",1],["9y/glex",1],["9y/glf5",1]]},
+        {"origin":"TGPY","destination":"TTPP","category":"arrival","route":"BGH..OFEHE..TTPP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.98,"airlines":[["bwa/b738",1],["lia/at43",1],["lia/at72",1],["lia/dh8c",1],["vcv/e190",1],["bwa/at72",1],["bwa/at45",1],["bwa/at75",1]]},
+        {"origin":"MPTO","destination":"TTPP","category":"arrival","route":"GUI..AGEDI..TTPP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.65,"airlines":[["amx/b737",1],["amx/e190",1],["cmp/b737",1],["cmp/e190",1]]},
+        {"origin":"KMIA","destination":"TTPP","category":"arrival","route":"BGH..OFEHE..TTPP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.49,"airlines":[["aal/b752",2],["bwa/b738",1]]},
+        {"origin":"TVSA","destination":"TTPP","category":"arrival","route":"BGH..OFEHE..TTPP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.49,"airlines":[["lia/at43",1],["lia/at72",1],["lia/dh8c",1]]},
+        {"origin":"CYYZ","destination":"TTPP","category":"arrival","route":"BGH..OFEHE..TTPP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.33,"airlines":[["bwa/b738",1],["wja/b737",1]]},
+        {"origin":"KFLL","destination":"TTPP","category":"arrival","route":"BGH..OFEHE..TTPP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.33,"airlines":[["bwa/b738",1],["jbu/a320",1]]},
+        {"origin":"","destination":"TTPP","category":"arrival","route":"BGH..OFEHE..TTPP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.81,"airlines":[["bwa/b738",2],["ual/b738",2],["jbu/a320",1]]},
+        {"origin":"","destination":"TTPP","category":"arrival","route":"TAB..PINUL..TTPP","altitude":[6000,9000],"speed":250,"method":"random","rate":1.3,"airlines":[["bwa/b738",2],["bwa/at72",2],["baw/b772",1],["bwa/b763",1],["lia/at72",1],["bwa/at45",1],["bwa/at75",1]]},
+        {"origin":"","destination":"TTPP","category":"arrival","route":"VAVEB..JONMO..TTPP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.65,"airlines":[["bwa/b738",2],["bwa/b763",1],["slm/b733",1]]},
+        {"origin":"","destination":"TTPP","category":"arrival","route":"GUI..AGEDI..TTPP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.81,"airlines":[["bwa/b738",1],["lia/at72",1],["slm/b733",1],["vcv/e190",1],["bwa/at72",1],["bwa/at45",1],["bwa/at75",1]]},
+        {"origin":"","destination":"TTPP","category":"arrival","route":"BGH..OFEHE..TTPP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["9y/c172",6],["9y/p28a",5],["9y/c182",3],["9y/be36",2],["9y/da42",1],["9y/tb20",1],["9y/c208",2],["9y/pc12",2],["9y/be20",1],["9y/b350",1],["9y/p180",1],["9y/c510",1],["9y/e50p",1],["9y/c550",2],["9y/e55p",1],["9y/cl30",1],["9y/c680",1],["9y/h25b",1],["9y/lj45",1],["9y/f2th",1],["9y/glf4",1],["9y/glex",1],["9y/glf5",1]]},
+        {"origin":"","destination":"TTPP","category":"arrival","route":"TAB..PINUL..TTPP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["9y/c172",6],["9y/p28a",5],["9y/c182",3],["9y/be36",2],["9y/da42",1],["9y/tb20",1],["9y/c208",2],["9y/pc12",2],["9y/be20",1],["9y/b350",1],["9y/p180",1],["9y/c510",1],["9y/e50p",1],["9y/c550",2],["9y/e55p",1],["9y/cl30",1],["9y/c680",1],["9y/h25b",1],["9y/lj45",1],["9y/f2th",1],["9y/glf4",1],["9y/glex",1],["9y/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [11.1313,-61.659,10.8106,-61.4666],
+            [10.8106,-61.4666,10.5954,-61.3376],
+            [11.1528,-60.8414,10.7834,-61.1702],
+            [10.7834,-61.1702,10.5954,-61.3376],
+            [10.0839,-60.8422,10.4144,-61.1623],
+            [10.4144,-61.1623,10.5954,-61.3376],
+            [10.5712,-62.3109,10.589,-61.5917],
+            [10.589,-61.5917,10.5954,-61.3376]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [10.5953,-61.3519,10.5947,-61.5213],
+            [10.585,-61.4366,10.605,-61.4367],
+            [10.5847,-61.5213,10.6047,-61.5214],
+            [10.5954,-61.3226,10.5959,-61.1532],
+            [10.6057,-61.2379,10.5857,-61.2378],
+            [10.6059,-61.1532,10.5859,-61.1531]
+        ]}
+    ]
+}

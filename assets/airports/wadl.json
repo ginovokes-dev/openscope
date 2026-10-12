@@ -1,0 +1,85 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/WADL/",
+    "info": {"country":"ID","city":"Mataram","type":"large_airport","longestRunwayM":3300},
+    "radio": {"twr":"Lombok Tower","app":"Lombok Approach","dep":"Lombok Departure"},
+    "icao": "WADL",
+    "iata": "LOP",
+    "magnetic_north": 0.8,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-8.759962,116.278169,"319ft"],
+    "rangeRings": {"enabled":true,"center":[-8.759962,116.278169],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":140,"speed":7},
+    "arrivalRunway": "13",
+    "departureRunway": "13",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-8.3553,116.2839],[-8.3706,116.3897],[-8.4123,116.4878],[-8.4778,116.5717],[-8.5625,116.6356],[-8.6607,116.6751],[-8.7656,116.6876],[-8.8702,116.6722],[-8.9672,116.6299],[-9.0501,116.5636],[-9.1132,116.4779],[-9.1523,116.3786],[-9.1646,116.2725],[-9.1494,116.1667],[-9.1076,116.0685],[-9.0421,115.9846],[-8.9574,115.9207],[-8.8592,115.8812],[-8.7543,115.8687],[-8.6498,115.8842],[-8.5527,115.9264],[-8.4698,115.9927],[-8.4067,116.0784],[-8.3676,116.1777]]}
+    ],
+    "fixes": {
+        "WADL": [-8.75996,116.27817],
+        "KUKSU": [-8.35794,116.63982],
+        "KIWLU": [-8.6106,116.41254],
+        "NAPOV": [-8.78991,116.82161],
+        "LEVAJ": [-8.77109,116.48008],
+        "IGOZA": [-9.29786,116.2718],
+        "ULAHE": [-8.95981,116.2758],
+        "EDOSO": [-8.64949,115.74548],
+        "OVOBO": [-8.71892,116.08025],
+        "_RWY1304DME": [-8.70665,116.21425],
+        "_RWY3104DME": [-8.80768,116.33677]
+    },
+    "runways": [
+        {"name":["13","31"],"end":[[-8.74933,116.266,"307ft"],[-8.765,116.285,"343ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "KUKSU2C": {"icao":"KUKSU2C","name":"Kuksu Two Charlie","rwy":{"WADL13":["_RWY3104DME"],"WADL31":["_RWY1304DME"]},"body":[],"exitPoints":{"KUKSU":["KUKSU"]},"draw":[["WADL","KUKSU*"]]},
+        "NAPOV2B": {"icao":"NAPOV2B","name":"Napov Two Bravo","rwy":{"WADL13":["_RWY3104DME"],"WADL31":["_RWY1304DME"]},"body":[],"exitPoints":{"NAPOV":["NAPOV"]},"draw":[["WADL","NAPOV*"]]},
+        "IGOZA2D": {"icao":"IGOZA2D","name":"Igoza Two Delta","rwy":{"WADL13":["_RWY3104DME"],"WADL31":["_RWY1304DME"]},"body":[],"exitPoints":{"IGOZA":["IGOZA"]},"draw":[["WADL","IGOZA*"]]},
+        "EDOSO1A": {"icao":"EDOSO1A","name":"Edoso One Alpha","rwy":{"WADL13":["_RWY3104DME"],"WADL31":["_RWY1304DME"]},"body":[],"exitPoints":{"EDOSO":["EDOSO"]},"draw":[["WADL","EDOSO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"WADL","destination":"WIII","category":"departure","route":"WADL13.EDOSO1A.EDOSO","altitude":"","speed":"","method":"random","rate":0.9,"airlines":[["gia/b738",1],["lni/b738",1],["lni/b739",1]]},
+        {"origin":"WADL","destination":"WADD","category":"departure","route":"WADL13.EDOSO1A.EDOSO","altitude":"","speed":"","method":"random","rate":0.6,"airlines":[["gia/at72",1],["gia/b738",1]]},
+        {"origin":"WADL","destination":"WARR","category":"departure","route":"WADL13.EDOSO1A.EDOSO","altitude":"","speed":"","method":"random","rate":0.6,"airlines":[["gia/crjx",1],["lni/b739",1]]},
+        {"origin":"WADL","destination":"WSSS","category":"departure","route":"WADL13.EDOSO1A.EDOSO","altitude":"","speed":"","method":"random","rate":0.6,"airlines":[["slk/a319",1],["slk/a320",1]]},
+        {"origin":"WADL","destination":"WAAA","category":"departure","route":"WADL13.KUKSU2C.KUKSU","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["gia/crjx",1]]},
+        {"origin":"WADL","destination":"","category":"departure","route":"WADL13.NAPOV2B.NAPOV","altitude":"","speed":"","method":"random","rate":0.6,"airlines":[["gia/at72",1],["gia/crjx",1]]},
+        {"origin":"WADL","destination":"","category":"departure","route":"WADL13.IGOZA2D.IGOZA","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["jst/a320",1]]},
+        {"origin":"WADL","destination":"","category":"departure","route":"WADL13.EDOSO1A.EDOSO","altitude":"","speed":"","method":"random","rate":0.6,"airlines":[["axm/a320",1],["lni/b738",1]]},
+        {"origin":"WADL","destination":"","category":"departure","route":"WADL13.IGOZA2D.IGOZA","altitude":"","speed":"","method":"random","rate":1.5,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",1],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]},
+        {"origin":"WIII","destination":"WADL","category":"arrival","route":"EDOSO..OVOBO..WADL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.9,"airlines":[["gia/b738",1],["lni/b738",1],["lni/b739",1]]},
+        {"origin":"WADD","destination":"WADL","category":"arrival","route":"EDOSO..OVOBO..WADL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.6,"airlines":[["gia/at72",1],["gia/b738",1]]},
+        {"origin":"WARR","destination":"WADL","category":"arrival","route":"EDOSO..OVOBO..WADL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.6,"airlines":[["gia/crjx",1],["lni/b739",1]]},
+        {"origin":"WSSS","destination":"WADL","category":"arrival","route":"EDOSO..OVOBO..WADL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.6,"airlines":[["slk/a319",1],["slk/a320",1]]},
+        {"origin":"WAAA","destination":"WADL","category":"arrival","route":"KUKSU..KIWLU..WADL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.3,"airlines":[["gia/crjx",1]]},
+        {"origin":"","destination":"WADL","category":"arrival","route":"NAPOV..LEVAJ..WADL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.6,"airlines":[["gia/at72",1],["gia/crjx",1]]},
+        {"origin":"","destination":"WADL","category":"arrival","route":"IGOZA..ULAHE..WADL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.3,"airlines":[["jst/a320",1]]},
+        {"origin":"","destination":"WADL","category":"arrival","route":"EDOSO..OVOBO..WADL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.6,"airlines":[["axm/a320",1],["lni/b738",1]]},
+        {"origin":"","destination":"WADL","category":"arrival","route":"IGOZA..ULAHE..WADL","altitude":[4000,7000],"speed":250,"method":"random","rate":1.5,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",1],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-8.3579,116.6398,-8.6106,116.4125],
+            [-8.6106,116.4125,-8.76,116.2782],
+            [-8.7899,116.8216,-8.7711,116.4801],
+            [-8.7711,116.4801,-8.76,116.2782],
+            [-9.2979,116.2718,-8.9598,116.2758],
+            [-8.9598,116.2758,-8.76,116.2782],
+            [-8.6495,115.7455,-8.7189,116.0803],
+            [-8.7189,116.0803,-8.76,116.2782]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-8.7493,116.266,-8.6426,116.1366],
+            [-8.7036,116.1948,-8.6883,116.2078],
+            [-8.6503,116.1302,-8.6349,116.1431],
+            [-8.765,116.285,-8.8717,116.4144],
+            [-8.8107,116.3562,-8.826,116.3432],
+            [-8.864,116.4209,-8.8793,116.408]
+        ]}
+    ]
+}

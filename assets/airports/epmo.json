@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EPMO/",
+    "info": {"country":"PL","city":"Nowy Dwor Mazowiecki","type":"large_airport","longestRunwayM":2500},
+    "radio": {"twr":"Warsaw Modlin Tower","app":"Warsaw Modlin Approach","dep":"Warsaw Modlin Departure"},
+    "icao": "EPMO",
+    "iata": "WMI",
+    "magnetic_north": 6.9,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [52.451099,20.6518,"341ft"],
+    "rangeRings": {"enabled":true,"center":[52.451099,20.6518],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":260,"speed":11},
+    "arrivalRunway": "26",
+    "departureRunway": "26",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[52.9868,20.7582],[52.9518,20.982],[52.8826,21.1834],[52.784,21.3485],[52.6628,21.4662],[52.5271,21.5284],[52.3863,21.5308],[52.2498,21.4733],[52.1271,21.3598],[52.0265,21.1981],[51.9548,20.9992],[51.9169,20.7766],[51.9154,20.5454],[51.9504,20.3216],[52.0196,20.1202],[52.1182,19.9551],[52.2394,19.8374],[52.3751,19.7752],[52.5159,19.7728],[52.6524,19.8303],[52.7751,19.9438],[52.8757,20.1055],[52.9474,20.3044],[52.9853,20.527]]}
+    ],
+    "fixes": {
+        "EPMO": [52.4511,20.6518],
+        "AHAPU": [52.67718,21.7495],
+        "LECMO": [52.53108,21.04016],
+        "LASUH": [51.75384,20.83509],
+        "WAR": [52.2591,20.6571,"zaborowek"],
+        "LDZ": [51.8001,19.6561,"lodz"],
+        "COJOP": [52.26835,20.37229],
+        "KEVJA": [52.52729,19.49988],
+        "OZACE": [52.47806,20.24426],
+        "WAGIG": [53.07318,20.10349],
+        "VIVWA": [52.67119,20.45781],
+        "_RWY0804DME": [52.43992,20.52544],
+        "_RWY2604DME": [52.46218,20.77822]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[52.4495,20.6336,"338ft"],[52.4527,20.67,"341ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "AHAPU1F": {"icao":"AHAPU1F","name":"Ahapu One Foxtrot","rwy":{"EPMO08":["_RWY2604DME"],"EPMO26":["_RWY0804DME"]},"body":[],"exitPoints":{"AHAPU":["AHAPU"]},"draw":[["EPMO","AHAPU*"]]},
+        "LASUH1E": {"icao":"LASUH1E","name":"Lasuh One Echo","rwy":{"EPMO08":["_RWY2604DME"],"EPMO26":["_RWY0804DME"]},"body":[],"exitPoints":{"LASUH":["LASUH"]},"draw":[["EPMO","LASUH*"]]},
+        "LDZ2E": {"icao":"LDZ2E","name":"Lodz Two Echo","rwy":{"EPMO08":["_RWY2604DME"],"EPMO26":["_RWY0804DME"]},"body":[],"exitPoints":{"LDZ":["LDZ"]},"draw":[["EPMO","LDZ*"]]},
+        "KEVJA3B": {"icao":"KEVJA3B","name":"Kevja Three Bravo","rwy":{"EPMO08":["_RWY2604DME"],"EPMO26":["_RWY0804DME"]},"body":[],"exitPoints":{"KEVJA":["KEVJA"]},"draw":[["EPMO","KEVJA*"]]},
+        "WAGIG1B": {"icao":"WAGIG1B","name":"Wagig One Bravo","rwy":{"EPMO08":["_RWY2604DME"],"EPMO26":["_RWY0804DME"]},"body":[],"exitPoints":{"WAGIG":["WAGIG"]},"draw":[["EPMO","WAGIG*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EPMO","destination":"EBCI","category":"departure","route":"EPMO26.KEVJA3B.KEVJA","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["ryr/b738",1]]},
+        {"origin":"EPMO","destination":"EGCC","category":"departure","route":"EPMO26.KEVJA3B.KEVJA","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["ryr/b738",1]]},
+        {"origin":"EPMO","destination":"EGGD","category":"departure","route":"EPMO26.KEVJA3B.KEVJA","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["ryr/b738",1]]},
+        {"origin":"EPMO","destination":"EGGP","category":"departure","route":"EPMO26.KEVJA3B.KEVJA","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["ryr/b738",1]]},
+        {"origin":"EPMO","destination":"EGNX","category":"departure","route":"EPMO26.KEVJA3B.KEVJA","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["ryr/b738",1]]},
+        {"origin":"EPMO","destination":"EGPK","category":"departure","route":"EPMO26.KEVJA3B.KEVJA","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["ryr/b738",1]]},
+        {"origin":"EPMO","destination":"","category":"departure","route":"EPMO26.LASUH1E.LASUH","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["ryr/b738",2]]},
+        {"origin":"EPMO","destination":"","category":"departure","route":"EPMO26.LDZ2E.LDZ","altitude":"","speed":"","method":"random","rate":2.82,"airlines":[["ryr/b738",10]]},
+        {"origin":"EPMO","destination":"","category":"departure","route":"EPMO26.KEVJA3B.KEVJA","altitude":"","speed":"","method":"random","rate":1.41,"airlines":[["ryr/b738",5]]},
+        {"origin":"EPMO","destination":"","category":"departure","route":"EPMO26.WAGIG1B.WAGIG","altitude":"","speed":"","method":"random","rate":0.85,"airlines":[["ryr/b738",3]]},
+        {"origin":"EPMO","destination":"","category":"departure","route":"EPMO26.LASUH1E.LASUH","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["sp/c172",6],["sp/p28a",5],["sp/c182",3],["sp/be36",2],["sp/da42",1],["sp/tb20",1],["sp/c208",2],["sp/pc12",2],["sp/be20",1],["sp/b350",1],["sp/p180",1],["sp/c510",1],["sp/e50p",1],["sp/c550",2],["sp/e55p",1],["sp/cl30",1],["sp/c680",1],["sp/h25b",1],["sp/lj45",1],["sp/f2th",1],["sp/glf4",1],["sp/glex",1],["sp/glf5",1]]},
+        {"origin":"EPMO","destination":"","category":"departure","route":"EPMO26.AHAPU1F.AHAPU","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["sp/c172",6],["sp/p28a",5],["sp/c182",3],["sp/be36",2],["sp/da42",1],["sp/tb20",1],["sp/c208",2],["sp/pc12",2],["sp/be20",1],["sp/b350",1],["sp/p180",1],["sp/c510",1],["sp/e50p",1],["sp/c550",2],["sp/e55p",1],["sp/cl30",1],["sp/c680",1],["sp/h25b",1],["sp/lj45",1],["sp/f2th",1],["sp/glf4",1],["sp/glex",1],["sp/glf5",1]]},
+        {"origin":"EBCI","destination":"EPMO","category":"arrival","route":"KEVJA..OZACE..EPMO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.28,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGCC","destination":"EPMO","category":"arrival","route":"KEVJA..OZACE..EPMO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.28,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGGD","destination":"EPMO","category":"arrival","route":"KEVJA..OZACE..EPMO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.28,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGGP","destination":"EPMO","category":"arrival","route":"KEVJA..OZACE..EPMO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.28,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGNX","destination":"EPMO","category":"arrival","route":"KEVJA..OZACE..EPMO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.28,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGPK","destination":"EPMO","category":"arrival","route":"KEVJA..OZACE..EPMO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.28,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"EPMO","category":"arrival","route":"LASUH..WAR..EPMO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.56,"airlines":[["ryr/b738",2]]},
+        {"origin":"","destination":"EPMO","category":"arrival","route":"LDZ..COJOP..EPMO","altitude":[6000,9000],"speed":250,"method":"random","rate":2.82,"airlines":[["ryr/b738",10]]},
+        {"origin":"","destination":"EPMO","category":"arrival","route":"KEVJA..OZACE..EPMO","altitude":[6000,9000],"speed":250,"method":"random","rate":1.41,"airlines":[["ryr/b738",5]]},
+        {"origin":"","destination":"EPMO","category":"arrival","route":"WAGIG..VIVWA..EPMO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.85,"airlines":[["ryr/b738",3]]},
+        {"origin":"","destination":"EPMO","category":"arrival","route":"LASUH..WAR..EPMO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.5,"airlines":[["sp/c172",6],["sp/p28a",5],["sp/c182",3],["sp/be36",2],["sp/da42",1],["sp/tb20",1],["sp/c208",2],["sp/pc12",2],["sp/be20",1],["sp/b350",1],["sp/p180",1],["sp/c510",1],["sp/e50p",1],["sp/c550",2],["sp/e55p",1],["sp/cl30",1],["sp/c680",1],["sp/h25b",1],["sp/lj45",1],["sp/f2th",1],["sp/glf4",1],["sp/glex",1],["sp/glf5",1]]},
+        {"origin":"","destination":"EPMO","category":"arrival","route":"AHAPU..LECMO..EPMO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.5,"airlines":[["sp/c172",6],["sp/p28a",5],["sp/c182",3],["sp/be36",2],["sp/da42",1],["sp/tb20",1],["sp/c208",2],["sp/pc12",2],["sp/be20",1],["sp/b350",1],["sp/p180",1],["sp/c510",1],["sp/e50p",1],["sp/c550",2],["sp/e55p",1],["sp/cl30",1],["sp/c680",1],["sp/h25b",1],["sp/lj45",1],["sp/f2th",1],["sp/glf4",1],["sp/glex",1],["sp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [52.6772,21.7495,52.5311,21.0402],
+            [52.5311,21.0402,52.4511,20.6518],
+            [51.7538,20.8351,52.2591,20.6571],
+            [52.2591,20.6571,52.4511,20.6518],
+            [51.8001,19.6561,52.2683,20.3723],
+            [52.2683,20.3723,52.4511,20.6518],
+            [52.5273,19.4999,52.4781,20.2443],
+            [52.4781,20.2443,52.4511,20.6518],
+            [53.0732,20.1035,52.6712,20.4578],
+            [52.6712,20.4578,52.4511,20.6518]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [52.4495,20.6336,52.4254,20.3633],
+            [52.4276,20.5007,52.4474,20.4961],
+            [52.4155,20.3656,52.4353,20.3609],
+            [52.4527,20.67,52.4762,20.9406],
+            [52.4744,20.8029,52.4546,20.8076],
+            [52.4861,20.9383,52.4663,20.943]
+        ]}
+    ]
+}

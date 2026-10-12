@@ -1,0 +1,93 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/URRP/",
+    "info": {"country":"RU","city":"Rostov-on-Don","type":"large_airport","longestRunwayM":3600},
+    "radio": {"twr":"Platov Tower","app":"Platov Approach","dep":"Platov Departure"},
+    "icao": "URRP",
+    "iata": "ROV",
+    "magnetic_north": 8.8,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [47.493888,39.924722,"213ft"],
+    "rangeRings": {"enabled":true,"center":[47.493888,39.924722],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":240,"speed":6},
+    "arrivalRunway": "23",
+    "departureRunway": "23",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[48.0271,40.0469],[47.9876,40.247],[47.9144,40.4251],[47.8126,40.5692],[47.689,40.6693],[47.5522,40.7187],[47.4113,40.7139],[47.2761,40.6554],[47.1558,40.5471],[47.0585,40.3964],[46.9908,40.2135],[46.9575,40.011],[46.9606,39.8025],[47.0002,39.6024],[47.0734,39.4243],[47.1752,39.2803],[47.2988,39.1802],[47.4356,39.1308],[47.5764,39.1355],[47.7116,39.194],[47.832,39.3023],[47.9293,39.4531],[47.997,39.6359],[48.0303,39.8385]]}
+    ],
+    "fixes": {
+        "URRP": [47.49389,39.92472],
+        "KA": [47.6167,41.1167,"konstantinovsk"],
+        "ESAHA": [47.53155,40.29025],
+        "ER": [46.5833,40.6667,"yegorlykskaya"],
+        "WETUP": [47.27503,40.10305],
+        "BOGOP": [47.01874,39.1516],
+        "GUBUT": [47.32578,39.65119],
+        "LS": [48.1815,38.9384,"krasnyi luch"],
+        "BUFJU": [47.67329,39.66739],
+        "LG": [48.409,39.4465,"luhansk"],
+        "SB": [47.75,39.8,"sambek"],
+        "_RWY0504DME": [47.4456,39.82539],
+        "_RWY2304DME": [47.54228,40.02431]
+    },
+    "runways": [
+        {"name":["05","23"],"end":[[47.48454,39.90536,"226ft"],[47.5034,39.94419,"281ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "KA1A": {"icao":"KA1A","name":"Konstantinovsk One Alpha","rwy":{"URRP05":["_RWY2304DME"],"URRP23":["_RWY0504DME"]},"body":[],"exitPoints":{"KA":["KA"]},"draw":[["URRP","KA*"]]},
+        "ER1E": {"icao":"ER1E","name":"Yegorlykskaya One Echo","rwy":{"URRP05":["_RWY2304DME"],"URRP23":["_RWY0504DME"]},"body":[],"exitPoints":{"ER":["ER"]},"draw":[["URRP","ER*"]]},
+        "BOGOP2C": {"icao":"BOGOP2C","name":"Bogop Two Charlie","rwy":{"URRP05":["_RWY2304DME"],"URRP23":["_RWY0504DME"]},"body":[],"exitPoints":{"BOGOP":["BOGOP"]},"draw":[["URRP","BOGOP*"]]},
+        "LS2F": {"icao":"LS2F","name":"Krasnyi Luch Two Foxtrot","rwy":{"URRP05":["_RWY2304DME"],"URRP23":["_RWY0504DME"]},"body":[],"exitPoints":{"LS":["LS"]},"draw":[["URRP","LS*"]]},
+        "LG3A": {"icao":"LG3A","name":"Luhansk Three Alpha","rwy":{"URRP05":["_RWY2304DME"],"URRP23":["_RWY0504DME"]},"body":[],"exitPoints":{"LG":["LG"]},"draw":[["URRP","LG*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"URRP","destination":"ULLI","category":"departure","route":"URRP23.LG3A.LG","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["afl/a148",1],["afl/a319",1],["svr/a320",1]]},
+        {"origin":"URRP","destination":"UUDD","category":"departure","route":"URRP23.LG3A.LG","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["sbi/a319",1],["svr/a320",1],["tso/b735",1]]},
+        {"origin":"URRP","destination":"LTFM","category":"departure","route":"URRP23.BOGOP2C.BOGOP","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["afl/a319",1],["thy/a319",1]]},
+        {"origin":"URRP","destination":"UKBB","category":"departure","route":"URRP23.LS2F.LS","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["aui/b739",1],["sbi/b735",1]]},
+        {"origin":"URRP","destination":"UUEE","category":"departure","route":"URRP23.LG3A.LG","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["afl/a319",1],["afl/b734",1]]},
+        {"origin":"URRP","destination":"UZTT","category":"departure","route":"URRP23.KA1A.KA","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["afl/a319",1],["uzb/a320",1]]},
+        {"origin":"URRP","destination":"","category":"departure","route":"URRP23.KA1A.KA","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["afl/a319",2],["svr/a320",1]]},
+        {"origin":"URRP","destination":"","category":"departure","route":"URRP23.ER1E.ER","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["aby/a320",1],["afl/a319",1],["fdb/b738",1]]},
+        {"origin":"URRP","destination":"","category":"departure","route":"URRP23.BOGOP2C.BOGOP","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["afl/a319",3]]},
+        {"origin":"URRP","destination":"","category":"departure","route":"URRP23.LS2F.LS","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["csa/a319",1],["svr/a320",1]]},
+        {"origin":"URRP","destination":"","category":"departure","route":"URRP23.LG3A.LG","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",2],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]},
+        {"origin":"URRP","destination":"","category":"departure","route":"URRP23.KA1A.KA","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",2],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]},
+        {"origin":"ULLI","destination":"URRP","category":"arrival","route":"LG..SB..URRP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.76,"airlines":[["afl/a148",1],["afl/a319",1],["svr/a320",1]]},
+        {"origin":"UUDD","destination":"URRP","category":"arrival","route":"LG..SB..URRP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.76,"airlines":[["sbi/a319",1],["svr/a320",1],["tso/b735",1]]},
+        {"origin":"LTFM","destination":"URRP","category":"arrival","route":"BOGOP..GUBUT..URRP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["afl/a319",1],["thy/a319",1]]},
+        {"origin":"UKBB","destination":"URRP","category":"arrival","route":"LS..BUFJU..URRP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["aui/b739",1],["sbi/b735",1]]},
+        {"origin":"UUEE","destination":"URRP","category":"arrival","route":"LG..SB..URRP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["afl/a319",1],["afl/b734",1]]},
+        {"origin":"UZTT","destination":"URRP","category":"arrival","route":"KA..ESAHA..URRP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["afl/a319",1],["uzb/a320",1]]},
+        {"origin":"","destination":"URRP","category":"arrival","route":"KA..ESAHA..URRP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.76,"airlines":[["afl/a319",2],["svr/a320",1]]},
+        {"origin":"","destination":"URRP","category":"arrival","route":"ER..WETUP..URRP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.76,"airlines":[["aby/a320",1],["afl/a319",1],["fdb/b738",1]]},
+        {"origin":"","destination":"URRP","category":"arrival","route":"BOGOP..GUBUT..URRP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.76,"airlines":[["afl/a319",3]]},
+        {"origin":"","destination":"URRP","category":"arrival","route":"LS..BUFJU..URRP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["csa/a319",1],["svr/a320",1]]},
+        {"origin":"","destination":"URRP","category":"arrival","route":"LG..SB..URRP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",2],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]},
+        {"origin":"","destination":"URRP","category":"arrival","route":"KA..ESAHA..URRP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",2],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [47.6167,41.1167,47.5315,40.2903],
+            [47.5315,40.2903,47.4939,39.9247],
+            [46.5833,40.6667,47.275,40.1031],
+            [47.275,40.1031,47.4939,39.9247],
+            [47.0187,39.1516,47.3258,39.6512],
+            [47.3258,39.6512,47.4939,39.9247],
+            [48.1815,38.9384,47.6733,39.6674],
+            [47.6733,39.6674,47.4939,39.9247],
+            [48.409,39.4465,47.75,39.8],
+            [47.75,39.8,47.4939,39.9247]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [47.5034,39.9442,47.6005,40.1447],
+            [47.5601,40.0357,47.5439,40.053],
+            [47.6086,40.136,47.5924,40.1534]
+        ]}
+    ]
+}

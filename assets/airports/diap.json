@@ -1,0 +1,89 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/DIAP/",
+    "info": {"country":"CI","city":"Abidjan","type":"large_airport","longestRunwayM":3012,"frequencies":{"atis":"126.600","twr":"118.100"}},
+    "radio": {"twr":"Felix-Houphouet-Boigny Tower","app":"Felix-Houphouet-Boigny Approach","dep":"Felix-Houphouet-Boigny Departure"},
+    "icao": "DIAP",
+    "iata": "ABJ",
+    "magnetic_north": -3.5,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [5.26139,-3.92629,"21ft"],
+    "rangeRings": {"enabled":true,"center":[5.26139,-3.92629],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":30,"speed":6},
+    "arrivalRunway": "03",
+    "departureRunway": "03",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[5.8,-3.9594],[5.7902,-3.8183],[5.7443,-3.6845],[5.6655,-3.5672],[5.5592,-3.4744],[5.4326,-3.4124],[5.2943,-3.3854],[5.1538,-3.3953],[5.0206,-3.4413],[4.9038,-3.5204],[4.8114,-3.6272],[4.7497,-3.7544],[4.7228,-3.8932],[4.7326,-4.0343],[4.7785,-4.1681],[4.8573,-4.2853],[4.9636,-4.3782],[5.0902,-4.4402],[5.2284,-4.4672],[5.369,-4.4573],[5.5022,-4.4112],[5.6189,-4.3321],[5.7113,-4.2254],[5.7731,-4.0982]]}
+    ],
+    "fixes": {
+        "DIAP": [5.26139,-3.92629],
+        "KAVKU": [5.96259,-3.84247],
+        "LINVE": [5.50947,-3.89663],
+        "AFO": [5.41114,-2.91647,"afienou"],
+        "UFIPI": [5.29819,-3.67814],
+        "TOVKU": [4.57331,-4.08567],
+        "BURAS": [5.01795,-3.98268],
+        "JABIH": [5.63134,-4.53032],
+        "SAFAC": [5.39228,-4.13999],
+        "_RWY0304DME": [5.1872,-3.9568],
+        "_RWY2104DME": [5.33557,-3.89578]
+    },
+    "runways": [
+        {"name":["03","21"],"end":[[5.24885,-3.93145,"21ft"],[5.27392,-3.92114,"11ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "KAVKU3B": {"icao":"KAVKU3B","name":"Kavku Three Bravo","rwy":{"DIAP03":["_RWY2104DME"],"DIAP21":["_RWY0304DME"]},"body":[],"exitPoints":{"KAVKU":["KAVKU"]},"draw":[["DIAP","KAVKU*"]]},
+        "AFO1A": {"icao":"AFO1A","name":"Afienou One Alpha","rwy":{"DIAP03":["_RWY2104DME"],"DIAP21":["_RWY0304DME"]},"body":[],"exitPoints":{"AFO":["AFO"]},"draw":[["DIAP","AFO*"]]},
+        "TOVKU1B": {"icao":"TOVKU1B","name":"Tovku One Bravo","rwy":{"DIAP03":["_RWY2104DME"],"DIAP21":["_RWY0304DME"]},"body":[],"exitPoints":{"TOVKU":["TOVKU"]},"draw":[["DIAP","TOVKU*"]]},
+        "JABIH3C": {"icao":"JABIH3C","name":"Jabih Three Charlie","rwy":{"DIAP03":["_RWY2104DME"],"DIAP21":["_RWY0304DME"]},"body":[],"exitPoints":{"JABIH":["JABIH"]},"draw":[["DIAP","JABIH*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"DIAP","destination":"DFFD","category":"departure","route":"DIAP03.KAVKU3B.KAVKU","altitude":"","speed":"","method":"random","rate":1.03,"airlines":[["dat/a333",1],["eth/b752",1],["vbw/e170",1],["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"DIAP","destination":"DGAA","category":"departure","route":"DIAP03.AFO1A.AFO","altitude":"","speed":"","method":"random","rate":0.82,"airlines":[["mea/a332",1],["msr/b738",1],["saa/a332",1],["thy/b739",1]]},
+        {"origin":"DIAP","destination":"DBBB","category":"departure","route":"DIAP03.AFO1A.AFO","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["dat/a332",1],["eth/b737",1],["eth/b752",1]]},
+        {"origin":"DIAP","destination":"DXXX","category":"departure","route":"DIAP03.AFO1A.AFO","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["dat/a333",1],["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]},
+        {"origin":"DIAP","destination":"EBBR","category":"departure","route":"DIAP03.KAVKU3B.KAVKU","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["dat/a332",1],["dat/a333",1]]},
+        {"origin":"DIAP","destination":"GMMN","category":"departure","route":"DIAP03.KAVKU3B.KAVKU","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["ram/b737",1],["ram/b738",1]]},
+        {"origin":"DIAP","destination":"","category":"departure","route":"DIAP03.KAVKU3B.KAVKU","altitude":"","speed":"","method":"random","rate":1.23,"airlines":[["afr/b772",1],["crl/a333",1],["dah/b738",1],["tar/a320",1],["thy/b739",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"DIAP","destination":"","category":"departure","route":"DIAP03.AFO1A.AFO","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["kqa/b737",1],["kqa/b738",1],["mea/a332",1]]},
+        {"origin":"DIAP","destination":"","category":"departure","route":"DIAP03.JABIH3C.JABIH","altitude":"","speed":"","method":"random","rate":0.82,"airlines":[["kqa/b737",1],["kqa/b738",1],["vbw/md87",1],["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]},
+        {"origin":"DIAP","destination":"","category":"departure","route":"DIAP03.AFO1A.AFO","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["tu/c172",6],["tu/p28a",5],["tu/c182",3],["tu/be36",2],["tu/da42",1],["tu/tb20",1],["tu/c208",2],["tu/pc12",2],["tu/be20",1],["tu/b350",1],["tu/p180",1],["tu/c510",1],["tu/e50p",1],["tu/c550",2],["tu/e55p",1],["tu/cl30",1],["tu/c680",1],["tu/h25b",1],["tu/lj45",1],["tu/f2th",1],["tu/glf4",1],["tu/glex",1],["tu/glf5",1]]},
+        {"origin":"DIAP","destination":"","category":"departure","route":"DIAP03.JABIH3C.JABIH","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["tu/c172",6],["tu/p28a",5],["tu/c182",3],["tu/be36",2],["tu/da42",1],["tu/tb20",1],["tu/c208",2],["tu/pc12",2],["tu/be20",1],["tu/b350",1],["tu/p180",1],["tu/c510",1],["tu/e50p",1],["tu/c550",2],["tu/e55p",1],["tu/cl30",1],["tu/c680",1],["tu/h25b",1],["tu/lj45",1],["tu/f2th",1],["tu/glf4",1],["tu/glex",1],["tu/glf5",1]]},
+        {"origin":"DFFD","destination":"DIAP","category":"arrival","route":"KAVKU..LINVE..DIAP","altitude":[6000,9000],"speed":250,"method":"random","rate":1.03,"airlines":[["dat/a333",1],["eth/b752",1],["vbw/e170",1],["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"DGAA","destination":"DIAP","category":"arrival","route":"AFO..UFIPI..DIAP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.82,"airlines":[["mea/a332",1],["msr/b738",1],["saa/a332",1],["thy/b739",1]]},
+        {"origin":"DBBB","destination":"DIAP","category":"arrival","route":"AFO..UFIPI..DIAP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.62,"airlines":[["dat/a332",1],["eth/b737",1],["eth/b752",1]]},
+        {"origin":"DXXX","destination":"DIAP","category":"arrival","route":"AFO..UFIPI..DIAP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.41,"airlines":[["dat/a333",1],["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]},
+        {"origin":"EBBR","destination":"DIAP","category":"arrival","route":"KAVKU..LINVE..DIAP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.41,"airlines":[["dat/a332",1],["dat/a333",1]]},
+        {"origin":"GMMN","destination":"DIAP","category":"arrival","route":"KAVKU..LINVE..DIAP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.41,"airlines":[["ram/b737",1],["ram/b738",1]]},
+        {"origin":"","destination":"DIAP","category":"arrival","route":"KAVKU..LINVE..DIAP","altitude":[6000,9000],"speed":250,"method":"random","rate":1.23,"airlines":[["afr/b772",1],["crl/a333",1],["dah/b738",1],["tar/a320",1],["thy/b739",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"","destination":"DIAP","category":"arrival","route":"AFO..UFIPI..DIAP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.62,"airlines":[["kqa/b737",1],["kqa/b738",1],["mea/a332",1]]},
+        {"origin":"","destination":"DIAP","category":"arrival","route":"JABIH..SAFAC..DIAP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.82,"airlines":[["kqa/b737",1],["kqa/b738",1],["vbw/md87",1],["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]},
+        {"origin":"","destination":"DIAP","category":"arrival","route":"AFO..UFIPI..DIAP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["tu/c172",6],["tu/p28a",5],["tu/c182",3],["tu/be36",2],["tu/da42",1],["tu/tb20",1],["tu/c208",2],["tu/pc12",2],["tu/be20",1],["tu/b350",1],["tu/p180",1],["tu/c510",1],["tu/e50p",1],["tu/c550",2],["tu/e55p",1],["tu/cl30",1],["tu/c680",1],["tu/h25b",1],["tu/lj45",1],["tu/f2th",1],["tu/glf4",1],["tu/glex",1],["tu/glf5",1]]},
+        {"origin":"","destination":"DIAP","category":"arrival","route":"JABIH..SAFAC..DIAP","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["tu/c172",6],["tu/p28a",5],["tu/c182",3],["tu/be36",2],["tu/da42",1],["tu/tb20",1],["tu/c208",2],["tu/pc12",2],["tu/be20",1],["tu/b350",1],["tu/p180",1],["tu/c510",1],["tu/e50p",1],["tu/c550",2],["tu/e55p",1],["tu/cl30",1],["tu/c680",1],["tu/h25b",1],["tu/lj45",1],["tu/f2th",1],["tu/glf4",1],["tu/glex",1],["tu/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [5.9626,-3.8425,5.5095,-3.8966],
+            [5.5095,-3.8966,5.2614,-3.9263],
+            [5.4111,-2.9165,5.2982,-3.6781],
+            [5.2982,-3.6781,5.2614,-3.9263],
+            [4.5733,-4.0857,5.018,-3.9827],
+            [5.018,-3.9827,5.2614,-3.9263],
+            [5.6313,-4.5303,5.3923,-4.14],
+            [5.3923,-4.14,5.2614,-3.9263]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [5.2489,-3.9314,5.0947,-3.9948],
+            [5.168,-3.9539,5.1756,-3.9724],
+            [5.0909,-3.9855,5.0985,-4.0041],
+            [5.2739,-3.9211,5.428,-3.8577],
+            [5.3548,-3.8987,5.3472,-3.8802],
+            [5.4318,-3.867,5.4243,-3.8484]
+        ]}
+    ]
+}

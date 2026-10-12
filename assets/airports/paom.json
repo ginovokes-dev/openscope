@@ -1,0 +1,86 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/PAOM/",
+    "info": {"country":"US","city":"Nome","type":"medium_airport","longestRunwayM":1882,"frequencies":{"atis":"119.925"}},
+    "radio": {"twr":"Nome Tower","app":"Nome Approach","dep":"Nome Departure"},
+    "icao": "PAOM",
+    "iata": "OME",
+    "magnetic_north": 7.3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [64.512199,-165.445007,"37ft"],
+    "rangeRings": {"enabled":true,"center":[64.512199,-165.445007],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":230,"speed":11},
+    "arrivalRunway": "21",
+    "departureRunway": "21",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[64.9136,-165.3255],[64.8866,-165.0881],[64.8341,-164.8751],[64.7597,-164.7009],[64.6684,-164.5774],[64.5664,-164.513],[64.4608,-164.5122],[64.3586,-164.5749],[64.267,-164.6969],[64.192,-164.8699],[64.1389,-165.0821],[64.1112,-165.319],[64.1108,-165.5645],[64.1378,-165.8019],[64.1903,-166.0149],[64.2647,-166.1891],[64.356,-166.3126],[64.458,-166.377],[64.5636,-166.3778],[64.6658,-166.3151],[64.7574,-166.1931],[64.8324,-166.0201],[64.8855,-165.8079],[64.9132,-165.571]]}
+    ],
+    "fixes": {
+        "PAOM": [64.5122,-165.44501],
+        "OGEGE": [64.58403,-164.20611],
+        "GOPDO": [64.53889,-164.98471],
+        "CAMMI": [63.98503,-165.19611],
+        "JUGIL": [64.31634,-165.35253],
+        "LOTBO": [64.3703,-166.65082],
+        "VEWLU": [64.45948,-165.89301],
+        "OKIKU": [64.94981,-166.17203],
+        "DIRRU": [64.67479,-165.71513],
+        "_RWY0304DME": [64.45779,-165.55573],
+        "_RWY2104DME": [64.56794,-165.32385],
+        "_RWY1004DME": [64.5365,-165.61404],
+        "_RWY2804DME": [64.48645,-165.28623]
+    },
+    "runways": [
+        {"name":["03","21"],"end":[[64.5072,-165.452,"12ft"],[64.5186,-165.42799,"36ft"]],"ils":[true,true]},
+        {"name":["10","28"],"end":[[64.5143,-165.468,"16ft"],[64.5088,-165.43201,"21ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "OGEGE1C": {"icao":"OGEGE1C","name":"Ogege One Charlie","rwy":{"PAOM03":["_RWY2104DME"],"PAOM21":["_RWY0304DME"],"PAOM10":["_RWY2804DME"],"PAOM28":["_RWY1004DME"]},"body":[],"exitPoints":{"OGEGE":["OGEGE"]},"draw":[["PAOM","OGEGE*"]]},
+        "CAMMI1C": {"icao":"CAMMI1C","name":"Cammi One Charlie","rwy":{"PAOM03":["_RWY2104DME"],"PAOM21":["_RWY0304DME"],"PAOM10":["_RWY2804DME"],"PAOM28":["_RWY1004DME"]},"body":[],"exitPoints":{"CAMMI":["CAMMI"]},"draw":[["PAOM","CAMMI*"]]},
+        "LOTBO1D": {"icao":"LOTBO1D","name":"Lotbo One Delta","rwy":{"PAOM03":["_RWY2104DME"],"PAOM21":["_RWY0304DME"],"PAOM10":["_RWY2804DME"],"PAOM28":["_RWY1004DME"]},"body":[],"exitPoints":{"LOTBO":["LOTBO"]},"draw":[["PAOM","LOTBO*"]]},
+        "OKIKU2B": {"icao":"OKIKU2B","name":"Okiku Two Bravo","rwy":{"PAOM03":["_RWY2104DME"],"PAOM21":["_RWY0304DME"],"PAOM10":["_RWY2804DME"],"PAOM28":["_RWY1004DME"]},"body":[],"exitPoints":{"OKIKU":["OKIKU"]},"draw":[["PAOM","OKIKU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"PAOM","destination":"PASH","category":"departure","route":"PAOM21.OKIKU2B.OKIKU","altitude":"","speed":"","method":"random","rate":0.74,"airlines":[["brg/b190",1],["brg/c208",1]]},
+        {"origin":"PAOM","destination":"PAGM","category":"departure","route":"PAOM21.LOTBO1D.LOTBO","altitude":"","speed":"","method":"random","rate":0.37,"airlines":[["brg/b190",1]]},
+        {"origin":"PAOM","destination":"PAIW","category":"departure","route":"PAOM21.OKIKU2B.OKIKU","altitude":"","speed":"","method":"random","rate":0.37,"airlines":[["brg/c208",1]]},
+        {"origin":"PAOM","destination":"PAKK","category":"departure","route":"PAOM21.OGEGE1C.OGEGE","altitude":"","speed":"","method":"random","rate":0.37,"airlines":[["brg/c208",1]]},
+        {"origin":"PAOM","destination":"PASA","category":"departure","route":"PAOM21.LOTBO1D.LOTBO","altitude":"","speed":"","method":"random","rate":0.37,"airlines":[["brg/b190",1]]},
+        {"origin":"PAOM","destination":"","category":"departure","route":"PAOM21.OGEGE1C.OGEGE","altitude":"","speed":"","method":"random","rate":1.48,"airlines":[["brg/c208",3],["brg/b190",1]]},
+        {"origin":"PAOM","destination":"","category":"departure","route":"PAOM21.OKIKU2B.OKIKU","altitude":"","speed":"","method":"random","rate":1.11,"airlines":[["brg/c208",3]]},
+        {"origin":"PAOM","destination":"","category":"departure","route":"PAOM21.OGEGE1C.OGEGE","altitude":"","speed":"","method":"random","rate":1.6,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"PASH","destination":"PAOM","category":"arrival","route":"OKIKU..DIRRU..PAOM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.74,"airlines":[["brg/b190",1],["brg/c208",1]]},
+        {"origin":"PAGM","destination":"PAOM","category":"arrival","route":"LOTBO..VEWLU..PAOM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.37,"airlines":[["brg/b190",1]]},
+        {"origin":"PAIW","destination":"PAOM","category":"arrival","route":"OKIKU..DIRRU..PAOM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.37,"airlines":[["brg/c208",1]]},
+        {"origin":"PAKK","destination":"PAOM","category":"arrival","route":"OGEGE..GOPDO..PAOM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.37,"airlines":[["brg/c208",1]]},
+        {"origin":"PASA","destination":"PAOM","category":"arrival","route":"LOTBO..VEWLU..PAOM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.37,"airlines":[["brg/b190",1]]},
+        {"origin":"","destination":"PAOM","category":"arrival","route":"OGEGE..GOPDO..PAOM","altitude":[4000,7000],"speed":250,"method":"random","rate":1.48,"airlines":[["brg/c208",3],["brg/b190",1]]},
+        {"origin":"","destination":"PAOM","category":"arrival","route":"OKIKU..DIRRU..PAOM","altitude":[4000,7000],"speed":250,"method":"random","rate":1.11,"airlines":[["brg/c208",3]]},
+        {"origin":"","destination":"PAOM","category":"arrival","route":"OGEGE..GOPDO..PAOM","altitude":[4000,7000],"speed":250,"method":"random","rate":1.6,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [64.584,-164.2061,64.5389,-164.9847],
+            [64.5389,-164.9847,64.5122,-165.445],
+            [63.985,-165.1961,64.3163,-165.3525],
+            [64.3163,-165.3525,64.5122,-165.445],
+            [64.3703,-166.6508,64.4595,-165.893],
+            [64.4595,-165.893,64.5122,-165.445],
+            [64.9498,-166.172,64.6748,-165.7151],
+            [64.6748,-165.7151,64.5122,-165.445]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [64.5072,-165.452,64.3835,-165.7106],
+            [64.4387,-165.5644,64.4521,-165.5988],
+            [64.3768,-165.6935,64.3902,-165.7278],
+            [64.5186,-165.428,64.6418,-165.1669],
+            [64.587,-165.315,64.5736,-165.2805],
+            [64.6485,-165.1842,64.6351,-165.1496]
+        ]}
+    ]
+}

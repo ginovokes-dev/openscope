@@ -1,0 +1,90 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/OIBK/",
+    "info": {"country":"IR","city":"Kish Island","type":"large_airport","longestRunwayM":3659,"frequencies":{"atis":"128.000","twr":"118.450"}},
+    "radio": {"twr":"Kish Tower","app":"Kish Approach","dep":"Kish Departure"},
+    "icao": "OIBK",
+    "iata": "KIH",
+    "magnetic_north": 2.6,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [26.525427,53.980462,"101ft"],
+    "rangeRings": {"enabled":true,"center":[26.525427,53.980462],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":80,"speed":9},
+    "arrivalRunway": "09R",
+    "departureRunway": "09R",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[26.9297,54.001],[26.9112,54.1172],[26.8664,54.2242],[26.7983,54.3145],[26.7117,54.382],[26.6123,54.4222],[26.5071,54.4323],[26.4031,54.4116],[26.3074,54.3615],[26.2266,54.2855],[26.1661,54.1886],[26.1302,54.0776],[26.1211,53.9599],[26.1397,53.8437],[26.1845,53.7368],[26.2525,53.6465],[26.3392,53.5789],[26.4385,53.5387],[26.5438,53.5286],[26.6478,53.5493],[26.7435,53.5994],[26.8243,53.6755],[26.8847,53.7723],[26.9207,53.8833]]}
+    ],
+    "fixes": {
+        "OIBK": [26.52543,53.98046],
+        "VOBKA": [27.01283,54.23487],
+        "FEKKA": [26.70652,54.07499],
+        "LEN": [26.5361,54.8512,"bandar lengeh"],
+        "AHIBO": [26.52816,54.20382],
+        "SIR": [25.9142,54.5365,"sirri island"],
+        "LUDWE": [26.37042,54.12147],
+        "NAFRU": [26.30001,53.43457],
+        "SACFU": [26.44168,53.77764],
+        "KATRA": [27.04112,53.80935],
+        "HOMRU": [26.71703,53.91689],
+        "_RWY09R04DME": [26.53325,53.8877],
+        "_RWY27L04DME": [26.51911,54.07269]
+    },
+    "runways": [
+        {"name":["09R","27L"],"end":[[26.5276,53.9619,"95ft"],[26.5248,53.9985,"98ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "VOBKA1B": {"icao":"VOBKA1B","name":"Vobka One Bravo","rwy":{"OIBK09R":["_RWY27L04DME"],"OIBK27L":["_RWY09R04DME"]},"body":[],"exitPoints":{"VOBKA":["VOBKA"]},"draw":[["OIBK","VOBKA*"]]},
+        "LEN1C": {"icao":"LEN1C","name":"Bandar Lengeh One Charlie","rwy":{"OIBK09R":["_RWY27L04DME"],"OIBK27L":["_RWY09R04DME"]},"body":[],"exitPoints":{"LEN":["LEN"]},"draw":[["OIBK","LEN*"]]},
+        "SIR2D": {"icao":"SIR2D","name":"Sirri Island Two Delta","rwy":{"OIBK09R":["_RWY27L04DME"],"OIBK27L":["_RWY09R04DME"]},"body":[],"exitPoints":{"SIR":["SIR"]},"draw":[["OIBK","SIR*"]]},
+        "NAFRU2E": {"icao":"NAFRU2E","name":"Nafru Two Echo","rwy":{"OIBK09R":["_RWY27L04DME"],"OIBK27L":["_RWY09R04DME"]},"body":[],"exitPoints":{"NAFRU":["NAFRU"]},"draw":[["OIBK","NAFRU*"]]},
+        "KATRA3C": {"icao":"KATRA3C","name":"Katra Three Charlie","rwy":{"OIBK09R":["_RWY27L04DME"],"OIBK27L":["_RWY09R04DME"]},"body":[],"exitPoints":{"KATRA":["KATRA"]},"draw":[["OIBK","KATRA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"OIBK","destination":"OIII","category":"departure","route":"OIBK09R.KATRA3C.KATRA","altitude":"","speed":"","method":"random","rate":1.25,"airlines":[["ira/a30b",1],["ira/a320",1],["ira/f100",1],["ira/md82",1],["irk/md82",1],["irk/t134",1]]},
+        {"origin":"OIBK","destination":"OIFM","category":"departure","route":"OIBK09R.KATRA3C.KATRA","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["ira/a320",1],["ira/f100",1],["irk/md82",1]]},
+        {"origin":"OIBK","destination":"OIKB","category":"departure","route":"OIBK09R.LEN1C.LEN","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["irc/at72",1],["irk/f50",1],["irk/md82",1]]},
+        {"origin":"OIBK","destination":"OISS","category":"departure","route":"OIBK09R.KATRA3C.KATRA","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["ira/md82",1],["irc/at72",1],["irc/f100",1]]},
+        {"origin":"OIBK","destination":"OMDB","category":"departure","route":"OIBK09R.SIR2D.SIR","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["irk/f50",1],["irk/md82",1]]},
+        {"origin":"OIBK","destination":"","category":"departure","route":"OIBK09R.VOBKA1B.VOBKA","altitude":"","speed":"","method":"random","rate":0.21,"airlines":[["irk/md82",1]]},
+        {"origin":"OIBK","destination":"","category":"departure","route":"OIBK09R.SIR2D.SIR","altitude":"","speed":"","method":"random","rate":0.21,"airlines":[["irk/f50",1]]},
+        {"origin":"OIBK","destination":"","category":"departure","route":"OIBK09R.KATRA3C.KATRA","altitude":"","speed":"","method":"random","rate":0.21,"airlines":[["ira/md82",1]]},
+        {"origin":"OIBK","destination":"","category":"departure","route":"OIBK09R.SIR2D.SIR","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["ep/c172",6],["ep/p28a",5],["ep/c182",3],["ep/be36",2],["ep/da42",1],["ep/tb20",1],["ep/c208",2],["ep/pc12",2],["ep/be20",1],["ep/b350",1],["ep/p180",1],["ep/c510",1],["ep/e50p",1],["ep/c550",1],["ep/e55p",1],["ep/cl30",1],["ep/c680",1],["ep/h25b",1],["ep/lj45",1],["ep/f2th",1],["ep/glf4",1],["ep/glex",1],["ep/glf5",1]]},
+        {"origin":"OIII","destination":"OIBK","category":"arrival","route":"KATRA..HOMRU..OIBK","altitude":[4000,7000],"speed":250,"method":"random","rate":1.25,"airlines":[["ira/a30b",1],["ira/a320",1],["ira/f100",1],["ira/md82",1],["irk/md82",1],["irk/t134",1]]},
+        {"origin":"OIFM","destination":"OIBK","category":"arrival","route":"KATRA..HOMRU..OIBK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.62,"airlines":[["ira/a320",1],["ira/f100",1],["irk/md82",1]]},
+        {"origin":"OIKB","destination":"OIBK","category":"arrival","route":"LEN..AHIBO..OIBK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.62,"airlines":[["irc/at72",1],["irk/f50",1],["irk/md82",1]]},
+        {"origin":"OISS","destination":"OIBK","category":"arrival","route":"KATRA..HOMRU..OIBK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.62,"airlines":[["ira/md82",1],["irc/at72",1],["irc/f100",1]]},
+        {"origin":"OMDB","destination":"OIBK","category":"arrival","route":"SIR..LUDWE..OIBK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["irk/f50",1],["irk/md82",1]]},
+        {"origin":"","destination":"OIBK","category":"arrival","route":"VOBKA..FEKKA..OIBK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.21,"airlines":[["irk/md82",1]]},
+        {"origin":"","destination":"OIBK","category":"arrival","route":"SIR..LUDWE..OIBK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.21,"airlines":[["irk/f50",1]]},
+        {"origin":"","destination":"OIBK","category":"arrival","route":"KATRA..HOMRU..OIBK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.21,"airlines":[["ira/md82",1]]},
+        {"origin":"","destination":"OIBK","category":"arrival","route":"SIR..LUDWE..OIBK","altitude":[4000,7000],"speed":250,"method":"random","rate":1.39,"airlines":[["ep/c172",6],["ep/p28a",5],["ep/c182",3],["ep/be36",2],["ep/da42",1],["ep/tb20",1],["ep/c208",2],["ep/pc12",2],["ep/be20",1],["ep/b350",1],["ep/p180",1],["ep/c510",1],["ep/e50p",1],["ep/c550",1],["ep/e55p",1],["ep/cl30",1],["ep/c680",1],["ep/h25b",1],["ep/lj45",1],["ep/f2th",1],["ep/glf4",1],["ep/glex",1],["ep/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [27.0128,54.2349,26.7065,54.075],
+            [26.7065,54.075,26.5254,53.9805],
+            [26.5361,54.8512,26.5282,54.2038],
+            [26.5282,54.2038,26.5254,53.9805],
+            [25.9142,54.5365,26.3704,54.1215],
+            [26.3704,54.1215,26.5254,53.9805],
+            [26.3,53.4346,26.4417,53.7776],
+            [26.4417,53.7776,26.5254,53.9805],
+            [27.0411,53.8093,26.717,53.9169],
+            [26.717,53.9169,26.5254,53.9805]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [26.5276,53.9619,26.5416,53.7764],
+            [26.5247,53.8682,26.5446,53.8701],
+            [26.5317,53.7754,26.5516,53.7773],
+            [26.5248,53.9985,26.5105,54.184],
+            [26.5276,54.0922,26.5077,54.0903],
+            [26.5205,54.1849,26.5006,54.183]
+        ]}
+    ]
+}

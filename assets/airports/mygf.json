@@ -1,0 +1,85 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/MYGF/",
+    "info": {"country":"BS","city":"Freeport","type":"large_airport","longestRunwayM":3359,"frequencies":{"twr":"118.500","app":"126.500","gnd":"121.700"}},
+    "radio": {"twr":"Grand Bahama Tower","app":"Grand Bahama Approach","dep":"Grand Bahama Departure"},
+    "icao": "MYGF",
+    "iata": "FPO",
+    "magnetic_north": -8.3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [26.557996,-78.695583,"7ft"],
+    "rangeRings": {"enabled":true,"center":[26.557996,-78.695583],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":70,"speed":6},
+    "arrivalRunway": "06",
+    "departureRunway": "06",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[26.9585,-78.7609],[26.9599,-78.6428],[26.934,-78.5283],[26.8825,-78.4252],[26.8088,-78.3405],[26.7181,-78.28],[26.6164,-78.2479],[26.5108,-78.2462],[26.4084,-78.2752],[26.3161,-78.3328],[26.2404,-78.4152],[26.1863,-78.5166],[26.1575,-78.6303],[26.1561,-78.7484],[26.182,-78.8629],[26.2335,-78.966],[26.3072,-79.0506],[26.3979,-79.1111],[26.4996,-79.1433],[26.6052,-79.1449],[26.7076,-79.116],[26.7999,-79.0583],[26.8756,-78.976],[26.9297,-78.8745]]}
+    ],
+    "fixes": {
+        "MYGF": [26.558,-78.69558],
+        "ZWC": [27.2517,-78.4006,"walker cay"],
+        "RIPEW": [26.7448,-78.61615],
+        "MOJAC": [26.12473,-78.33913],
+        "IKIPA": [26.39702,-78.56315],
+        "ONIBU": [26.33466,-79.2427],
+        "VONUL": [26.47502,-78.89886],
+        "GODSI": [26.95202,-79.10501],
+        "VATON": [26.70439,-78.8477],
+        "_RWY0604DME": [26.51885,-78.77533],
+        "_RWY2404DME": [26.59842,-78.61572]
+    },
+    "runways": [
+        {"name":["06","24"],"end":[[26.5513,-78.7103,"6ft"],[26.566,-78.6808,"7ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ZWC1A": {"icao":"ZWC1A","name":"Walker Cay One Alpha","rwy":{"MYGF06":["_RWY2404DME"],"MYGF24":["_RWY0604DME"]},"body":[],"exitPoints":{"ZWC":["ZWC"]},"draw":[["MYGF","ZWC*"]]},
+        "MOJAC2E": {"icao":"MOJAC2E","name":"Mojac Two Echo","rwy":{"MYGF06":["_RWY2404DME"],"MYGF24":["_RWY0604DME"]},"body":[],"exitPoints":{"MOJAC":["MOJAC"]},"draw":[["MYGF","MOJAC*"]]},
+        "ONIBU3D": {"icao":"ONIBU3D","name":"Onibu Three Delta","rwy":{"MYGF06":["_RWY2404DME"],"MYGF24":["_RWY0604DME"]},"body":[],"exitPoints":{"ONIBU":["ONIBU"]},"draw":[["MYGF","ONIBU*"]]},
+        "GODSI3A": {"icao":"GODSI3A","name":"Godsi Three Alpha","rwy":{"MYGF06":["_RWY2404DME"],"MYGF24":["_RWY0604DME"]},"body":[],"exitPoints":{"GODSI":["GODSI"]},"draw":[["MYGF","GODSI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"MYGF","destination":"KMIA","category":"departure","route":"MYGF06.ONIBU3D.ONIBU","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["aal/e145",2]]},
+        {"origin":"MYGF","destination":"KATL","category":"departure","route":"MYGF06.GODSI3A.GODSI","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["dal/md88",1]]},
+        {"origin":"MYGF","destination":"KBHM","category":"departure","route":"MYGF06.GODSI3A.GODSI","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["bhs/b734",1]]},
+        {"origin":"MYGF","destination":"KBWI","category":"departure","route":"MYGF06.ZWC1A.ZWC","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["bhs/b734",1]]},
+        {"origin":"MYGF","destination":"KCMH","category":"departure","route":"MYGF06.GODSI3A.GODSI","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["bhs/b734",1]]},
+        {"origin":"MYGF","destination":"","category":"departure","route":"MYGF06.ZWC1A.ZWC","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["bhs/b734",2]]},
+        {"origin":"MYGF","destination":"","category":"departure","route":"MYGF06.MOJAC2E.MOJAC","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["bhs/dh8d",1],["bhs/dh8b",1],["bhs/dh8c",1]]},
+        {"origin":"MYGF","destination":"","category":"departure","route":"MYGF06.ONIBU3D.ONIBU","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["bhs/dh8d",1],["bhs/dh8b",1],["bhs/dh8c",1]]},
+        {"origin":"MYGF","destination":"","category":"departure","route":"MYGF06.MOJAC2E.MOJAC","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["c6/c172",6],["c6/p28a",5],["c6/c182",3],["c6/be36",2],["c6/da42",1],["c6/tb20",1],["c6/c208",2],["c6/pc12",2],["c6/be20",1],["c6/b350",1],["c6/p180",1],["c6/c510",1],["c6/e50p",1],["c6/c550",1],["c6/e55p",1],["c6/cl30",1],["c6/c680",1],["c6/h25b",1],["c6/lj45",1],["c6/f2th",1],["c6/glf4",1],["c6/glex",1],["c6/glf5",1]]},
+        {"origin":"KMIA","destination":"MYGF","category":"arrival","route":"ONIBU..VONUL..MYGF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.87,"airlines":[["aal/e145",2]]},
+        {"origin":"KATL","destination":"MYGF","category":"arrival","route":"GODSI..VATON..MYGF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.43,"airlines":[["dal/md88",1]]},
+        {"origin":"KBHM","destination":"MYGF","category":"arrival","route":"GODSI..VATON..MYGF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.43,"airlines":[["bhs/b734",1]]},
+        {"origin":"KBWI","destination":"MYGF","category":"arrival","route":"ZWC..RIPEW..MYGF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.43,"airlines":[["bhs/b734",1]]},
+        {"origin":"KCMH","destination":"MYGF","category":"arrival","route":"GODSI..VATON..MYGF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.43,"airlines":[["bhs/b734",1]]},
+        {"origin":"","destination":"MYGF","category":"arrival","route":"ZWC..RIPEW..MYGF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.87,"airlines":[["bhs/b734",2]]},
+        {"origin":"","destination":"MYGF","category":"arrival","route":"MOJAC..IKIPA..MYGF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.43,"airlines":[["bhs/dh8d",1],["bhs/dh8b",1],["bhs/dh8c",1]]},
+        {"origin":"","destination":"MYGF","category":"arrival","route":"ONIBU..VONUL..MYGF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.43,"airlines":[["bhs/dh8d",1],["bhs/dh8b",1],["bhs/dh8c",1]]},
+        {"origin":"","destination":"MYGF","category":"arrival","route":"MOJAC..IKIPA..MYGF","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["c6/c172",6],["c6/p28a",5],["c6/c182",3],["c6/be36",2],["c6/da42",1],["c6/tb20",1],["c6/c208",2],["c6/pc12",2],["c6/be20",1],["c6/b350",1],["c6/p180",1],["c6/c510",1],["c6/e50p",1],["c6/c550",1],["c6/e55p",1],["c6/cl30",1],["c6/c680",1],["c6/h25b",1],["c6/lj45",1],["c6/f2th",1],["c6/glf4",1],["c6/glex",1],["c6/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [27.2517,-78.4006,26.7448,-78.6161],
+            [26.7448,-78.6161,26.558,-78.6956],
+            [26.1247,-78.3391,26.397,-78.5631],
+            [26.397,-78.5631,26.558,-78.6956],
+            [26.3347,-79.2427,26.475,-78.8989],
+            [26.475,-78.8989,26.558,-78.6956],
+            [26.952,-79.105,26.7044,-78.8477],
+            [26.7044,-78.8477,26.558,-78.6956]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [26.5513,-78.7103,26.4701,-78.8728],
+            [26.502,-78.7862,26.5195,-78.797],
+            [26.4614,-78.8674,26.4789,-78.8783],
+            [26.566,-78.6808,26.647,-78.518],
+            [26.6152,-78.6049,26.5978,-78.594],
+            [26.6557,-78.5235,26.6383,-78.5126]
+        ]}
+    ]
+}

@@ -1,0 +1,91 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SEGU/",
+    "info": {"country":"EC","city":"Guayaquil","type":"large_airport","longestRunwayM":2795,"frequencies":{"atis":"115.900","twr":"118.300","app":"119.300","gnd":"121.900"}},
+    "radio": {"twr":"Guayaquil Tower","app":"Guayaquil Approach","dep":"Guayaquil Departure"},
+    "icao": "SEGU",
+    "iata": "GYE",
+    "magnetic_north": -3.6,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [-2.15742,-79.883598,"19ft"],
+    "rangeRings": {"enabled":true,"center":[-2.15742,-79.883598],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":40,"speed":9},
+    "arrivalRunway": "03",
+    "departureRunway": "03",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[-1.6189,-79.9175],[-1.6285,-79.7769],[-1.6741,-79.6435],[-1.7527,-79.5265],[-1.8588,-79.4338],[-1.9853,-79.3718],[-2.1235,-79.3447],[-2.2641,-79.3543],[-2.3973,-79.3999],[-2.5143,-79.4786],[-2.6069,-79.5848],[-2.6688,-79.7114],[-2.6959,-79.8497],[-2.6864,-79.9903],[-2.6407,-80.1237],[-2.5622,-80.2407],[-2.456,-80.3334],[-2.3295,-80.3954],[-2.1913,-80.4225],[-2.0508,-80.4129],[-1.9175,-80.3673],[-1.8006,-80.2886],[-1.708,-80.1824],[-1.646,-80.0558]]}
+    ],
+    "fixes": {
+        "SEGU": [-2.15742,-79.8836],
+        "RIPSA": [-1.45134,-79.89322],
+        "CUDAG": [-1.90761,-79.887],
+        "ARILU": [-1.61944,-79.42587],
+        "WUDWI": [-1.96708,-79.72166],
+        "MHV": [-3.295,-79.9442,"machala"],
+        "PINIM": [-2.4069,-79.89689],
+        "SAV": [-2.21972,-80.9733,"salinas"],
+        "FUGGE": [-2.17169,-80.1332],
+        "_RWY0304DME": [-2.22497,-79.9231],
+        "_RWY2104DME": [-2.09098,-79.84466]
+    },
+    "runways": [
+        {"name":["03","21"],"end":[[-2.16747,-79.88943,"16ft"],[-2.14849,-79.87832,"14ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "RIPSA3C": {"icao":"RIPSA3C","name":"Ripsa Three Charlie","rwy":{"SEGU03":["_RWY2104DME"],"SEGU21":["_RWY0304DME"]},"body":[],"exitPoints":{"RIPSA":["RIPSA"]},"draw":[["SEGU","RIPSA*"]]},
+        "ARILU3B": {"icao":"ARILU3B","name":"Arilu Three Bravo","rwy":{"SEGU03":["_RWY2104DME"],"SEGU21":["_RWY0304DME"]},"body":[],"exitPoints":{"ARILU":["ARILU"]},"draw":[["SEGU","ARILU*"]]},
+        "MHV3D": {"icao":"MHV3D","name":"Machala Three Delta","rwy":{"SEGU03":["_RWY2104DME"],"SEGU21":["_RWY0304DME"]},"body":[],"exitPoints":{"MHV":["MHV"]},"draw":[["SEGU","MHV*"]]},
+        "SAV1B": {"icao":"SAV1B","name":"Salinas One Bravo","rwy":{"SEGU03":["_RWY2104DME"],"SEGU21":["_RWY0304DME"]},"body":[],"exitPoints":{"SAV":["SAV"]},"draw":[["SEGU","SAV*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SEGU","destination":"SEQM","category":"departure","route":"SEGU03.ARILU3B.ARILU","altitude":"","speed":"","method":"random","rate":1.16,"airlines":[["glg/a319",1],["glg/a320",1],["lan/a319",1],["lne/a319",1],["lne/a320",1],["tae/a320",1]]},
+        {"origin":"SEGU","destination":"SEST","category":"departure","route":"SEGU03.SAV1B.SAV","altitude":"","speed":"","method":"random","rate":0.77,"airlines":[["glg/a319",1],["glg/a320",1],["lne/a319",1],["tae/a320",1]]},
+        {"origin":"SEGU","destination":"KMIA","category":"departure","route":"SEGU03.RIPSA3C.RIPSA","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["aal/b738",1],["aal/b752",1],["aal/b763",1]]},
+        {"origin":"SEGU","destination":"SPJC","category":"departure","route":"SEGU03.MHV3D.MHV","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["ava/a319",1],["ava/a320",1],["lan/b763",1]]},
+        {"origin":"SEGU","destination":"MPTO","category":"departure","route":"SEGU03.RIPSA3C.RIPSA","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["cmp/b738",1],["tae/e190",1]]},
+        {"origin":"SEGU","destination":"SCEL","category":"departure","route":"SEGU03.MHV3D.MHV","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["lan/a319",1],["lan/b763",1]]},
+        {"origin":"SEGU","destination":"","category":"departure","route":"SEGU03.RIPSA3C.RIPSA","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["ava/e190",1],["lne/b763",1],["tae/e170",1]]},
+        {"origin":"SEGU","destination":"","category":"departure","route":"SEGU03.ARILU3B.ARILU","altitude":"","speed":"","method":"random","rate":0.96,"airlines":[["glg/a319",2],["lan/a320",1],["lan/b763",1],["tae/e170",1]]},
+        {"origin":"SEGU","destination":"","category":"departure","route":"SEGU03.MHV3D.MHV","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["tae/e190",2],["tae/a320",1]]},
+        {"origin":"SEGU","destination":"","category":"departure","route":"SEGU03.SAV1B.SAV","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["lne/a319",1],["tae/a320",1]]},
+        {"origin":"SEGU","destination":"","category":"departure","route":"SEGU03.MHV3D.MHV","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["hc/c172",6],["hc/p28a",5],["hc/c182",3],["hc/be36",2],["hc/da42",1],["hc/tb20",1],["hc/c208",2],["hc/pc12",2],["hc/be20",1],["hc/b350",1],["hc/p180",1],["hc/c510",1],["hc/e50p",1],["hc/c550",2],["hc/e55p",1],["hc/cl30",1],["hc/c680",1],["hc/h25b",1],["hc/lj45",1],["hc/f2th",1],["hc/glf4",1],["hc/glex",1],["hc/glf5",1]]},
+        {"origin":"SEGU","destination":"","category":"departure","route":"SEGU03.RIPSA3C.RIPSA","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["hc/c172",6],["hc/p28a",5],["hc/c182",3],["hc/be36",2],["hc/da42",1],["hc/tb20",1],["hc/c208",2],["hc/pc12",2],["hc/be20",1],["hc/b350",1],["hc/p180",1],["hc/c510",1],["hc/e50p",1],["hc/c550",2],["hc/e55p",1],["hc/cl30",1],["hc/c680",1],["hc/h25b",1],["hc/lj45",1],["hc/f2th",1],["hc/glf4",1],["hc/glex",1],["hc/glf5",1]]},
+        {"origin":"SEQM","destination":"SEGU","category":"arrival","route":"ARILU..WUDWI..SEGU","altitude":[6000,9000],"speed":250,"method":"random","rate":1.16,"airlines":[["glg/a319",1],["glg/a320",1],["lan/a319",1],["lne/a319",1],["lne/a320",1],["tae/a320",1]]},
+        {"origin":"SEST","destination":"SEGU","category":"arrival","route":"SAV..FUGGE..SEGU","altitude":[6000,9000],"speed":250,"method":"random","rate":0.77,"airlines":[["glg/a319",1],["glg/a320",1],["lne/a319",1],["tae/a320",1]]},
+        {"origin":"KMIA","destination":"SEGU","category":"arrival","route":"RIPSA..CUDAG..SEGU","altitude":[6000,9000],"speed":250,"method":"random","rate":0.58,"airlines":[["aal/b738",1],["aal/b752",1],["aal/b763",1]]},
+        {"origin":"SPJC","destination":"SEGU","category":"arrival","route":"MHV..PINIM..SEGU","altitude":[6000,9000],"speed":250,"method":"random","rate":0.58,"airlines":[["ava/a319",1],["ava/a320",1],["lan/b763",1]]},
+        {"origin":"MPTO","destination":"SEGU","category":"arrival","route":"RIPSA..CUDAG..SEGU","altitude":[6000,9000],"speed":250,"method":"random","rate":0.39,"airlines":[["cmp/b738",1],["tae/e190",1]]},
+        {"origin":"SCEL","destination":"SEGU","category":"arrival","route":"MHV..PINIM..SEGU","altitude":[6000,9000],"speed":250,"method":"random","rate":0.39,"airlines":[["lan/a319",1],["lan/b763",1]]},
+        {"origin":"","destination":"SEGU","category":"arrival","route":"RIPSA..CUDAG..SEGU","altitude":[6000,9000],"speed":250,"method":"random","rate":0.58,"airlines":[["ava/e190",1],["lne/b763",1],["tae/e170",1]]},
+        {"origin":"","destination":"SEGU","category":"arrival","route":"ARILU..WUDWI..SEGU","altitude":[6000,9000],"speed":250,"method":"random","rate":0.96,"airlines":[["glg/a319",2],["lan/a320",1],["lan/b763",1],["tae/e170",1]]},
+        {"origin":"","destination":"SEGU","category":"arrival","route":"MHV..PINIM..SEGU","altitude":[6000,9000],"speed":250,"method":"random","rate":0.58,"airlines":[["tae/e190",2],["tae/a320",1]]},
+        {"origin":"","destination":"SEGU","category":"arrival","route":"SAV..FUGGE..SEGU","altitude":[6000,9000],"speed":250,"method":"random","rate":0.39,"airlines":[["lne/a319",1],["tae/a320",1]]},
+        {"origin":"","destination":"SEGU","category":"arrival","route":"MHV..PINIM..SEGU","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["hc/c172",6],["hc/p28a",5],["hc/c182",3],["hc/be36",2],["hc/da42",1],["hc/tb20",1],["hc/c208",2],["hc/pc12",2],["hc/be20",1],["hc/b350",1],["hc/p180",1],["hc/c510",1],["hc/e50p",1],["hc/c550",2],["hc/e55p",1],["hc/cl30",1],["hc/c680",1],["hc/h25b",1],["hc/lj45",1],["hc/f2th",1],["hc/glf4",1],["hc/glex",1],["hc/glf5",1]]},
+        {"origin":"","destination":"SEGU","category":"arrival","route":"RIPSA..CUDAG..SEGU","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["hc/c172",6],["hc/p28a",5],["hc/c182",3],["hc/be36",2],["hc/da42",1],["hc/tb20",1],["hc/c208",2],["hc/pc12",2],["hc/be20",1],["hc/b350",1],["hc/p180",1],["hc/c510",1],["hc/e50p",1],["hc/c550",2],["hc/e55p",1],["hc/cl30",1],["hc/c680",1],["hc/h25b",1],["hc/lj45",1],["hc/f2th",1],["hc/glf4",1],["hc/glex",1],["hc/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-1.4513,-79.8932,-1.9076,-79.887],
+            [-1.9076,-79.887,-2.1574,-79.8836],
+            [-1.6194,-79.4259,-1.9671,-79.7217],
+            [-1.9671,-79.7217,-2.1574,-79.8836],
+            [-3.295,-79.9442,-2.4069,-79.8969],
+            [-2.4069,-79.8969,-2.1574,-79.8836],
+            [-2.2197,-80.9733,-2.1717,-80.1332],
+            [-2.1717,-80.1332,-2.1574,-79.8836]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-2.1675,-79.8894,-2.3112,-79.9736],
+            [-2.2444,-79.9229,-2.2343,-79.9401],
+            [-2.3163,-79.965,-2.3062,-79.9822],
+            [-2.1485,-79.8783,-2.0047,-79.7942],
+            [-2.0716,-79.8449,-2.0816,-79.8276],
+            [-1.9997,-79.8028,-2.0098,-79.7855]
+        ]}
+    ]
+}

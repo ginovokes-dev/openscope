@@ -1,0 +1,91 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/WBKK/",
+    "info": {"country":"MY","city":"Kota Kinabalu","type":"large_airport","longestRunwayM":3796,"frequencies":{"atis":"127.400","twr":"118.300","gnd":"121.600"}},
+    "radio": {"twr":"Kota Kinabalu Tower","app":"Kota Kinabalu Approach","dep":"Kota Kinabalu Departure"},
+    "icao": "WBKK",
+    "iata": "BKI",
+    "magnetic_north": -0.8,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [5.932743,116.049324,"10ft"],
+    "rangeRings": {"enabled":true,"center":[5.932743,116.049324],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":10,"speed":6},
+    "arrivalRunway": "02",
+    "departureRunway": "02",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[6.4723,116.0417],[6.4558,116.1824],[6.4038,116.314],[6.3196,116.4275],[6.209,116.5153],[6.0797,116.5713],[5.9403,116.5918],[5.8004,116.5752],[5.6695,116.5229],[5.5566,116.4382],[5.4693,116.3271],[5.4135,116.197],[5.3932,116.0569],[5.4096,115.9162],[5.4617,115.7847],[5.5459,115.6711],[5.6564,115.5833],[5.7858,115.5273],[5.9252,115.5069],[6.0651,115.5234],[6.196,115.5758],[6.3089,115.6604],[6.3962,115.7715],[6.4519,115.9016]]}
+    ],
+    "fixes": {
+        "WBKK": [5.93274,116.04932],
+        "TETAJ": [6.63808,116.08332],
+        "SESAC": [6.18229,116.06135],
+        "HIGEW": [5.92277,116.7592],
+        "VUVRU": [5.92922,116.30048],
+        "TUDTI": [5.22693,116.02733],
+        "HADEW": [5.68303,116.04154],
+        "VLB": [5.29,115.252,"labuan"],
+        "SISAS": [5.77544,115.85419],
+        "_RWY0204DME": [5.86077,116.01893],
+        "_RWY2004DME": [6.01055,116.08217]
+    },
+    "runways": [
+        {"name":["02","20"],"end":[[5.9222,116.04486,"10ft"],[5.94913,116.05623,"10ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "TETAJ2F": {"icao":"TETAJ2F","name":"Tetaj Two Foxtrot","rwy":{"WBKK02":["_RWY2004DME"],"WBKK20":["_RWY0204DME"]},"body":[],"exitPoints":{"TETAJ":["TETAJ"]},"draw":[["WBKK","TETAJ*"]]},
+        "HIGEW3C": {"icao":"HIGEW3C","name":"Higew Three Charlie","rwy":{"WBKK02":["_RWY2004DME"],"WBKK20":["_RWY0204DME"]},"body":[],"exitPoints":{"HIGEW":["HIGEW"]},"draw":[["WBKK","HIGEW*"]]},
+        "TUDTI1B": {"icao":"TUDTI1B","name":"Tudti One Bravo","rwy":{"WBKK02":["_RWY2004DME"],"WBKK20":["_RWY0204DME"]},"body":[],"exitPoints":{"TUDTI":["TUDTI"]},"draw":[["WBKK","TUDTI*"]]},
+        "VLB2D": {"icao":"VLB2D","name":"Labuan Two Delta","rwy":{"WBKK02":["_RWY2004DME"],"WBKK20":["_RWY0204DME"]},"body":[],"exitPoints":{"VLB":["VLB"]},"draw":[["WBKK","VLB*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"WBKK","destination":"VHHH","category":"departure","route":"WBKK02.TETAJ2F.TETAJ","altitude":"","speed":"","method":"random","rate":1.21,"airlines":[["axm/a320",1],["cpa/a320",1],["cpa/a321",1],["hda/a320",1],["hda/a321",1],["hke/a320",1],["mas/a320",1],["mas/b738",1]]},
+        {"origin":"WBKK","destination":"WMKK","category":"departure","route":"WBKK02.VLB2D.VLB","altitude":"","speed":"","method":"random","rate":0.6,"airlines":[["axm/a320",1],["mas/b734",1],["mas/b738",1],["mxd/b739",1]]},
+        {"origin":"WBKK","destination":"RKSI","category":"departure","route":"WBKK02.TETAJ2F.TETAJ","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["aar/a321",1],["esr/b738",1],["kal/b739",1]]},
+        {"origin":"WBKK","destination":"WBKS","category":"departure","route":"WBKK02.HIGEW3C.HIGEW","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["axm/a320",1],["mas/at72",1],["mas/b738",1]]},
+        {"origin":"WBKK","destination":"WSSS","category":"departure","route":"WBKK02.VLB2D.VLB","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["axm/a320",1],["slk/a319",1],["slk/a320",1]]},
+        {"origin":"WBKK","destination":"RCTP","category":"departure","route":"WBKK02.TETAJ2F.TETAJ","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["axm/a320",1],["mas/b738",1]]},
+        {"origin":"WBKK","destination":"","category":"departure","route":"WBKK02.TETAJ2F.TETAJ","altitude":"","speed":"","method":"random","rate":1.36,"airlines":[["axm/a320",3],["mas/b738",2],["ceb/a320",1],["csn/a321",1],["jal/b738",1],["mas/at72",1]]},
+        {"origin":"WBKK","destination":"","category":"departure","route":"WBKK02.HIGEW3C.HIGEW","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["axm/a320",1],["mas/b738",1]]},
+        {"origin":"WBKK","destination":"","category":"departure","route":"WBKK02.TUDTI1B.TUDTI","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["awq/a320",1],["mas/b738",1]]},
+        {"origin":"WBKK","destination":"","category":"departure","route":"WBKK02.VLB2D.VLB","altitude":"","speed":"","method":"random","rate":1.81,"airlines":[["axm/a320",6],["mas/at72",2],["mas/b738",2],["mas/a320",1],["rba/a320",1]]},
+        {"origin":"WBKK","destination":"","category":"departure","route":"WBKK02.VLB2D.VLB","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["9m/c172",6],["9m/p28a",5],["9m/c182",3],["9m/be36",2],["9m/da42",1],["9m/tb20",1],["9m/c208",2],["9m/pc12",2],["9m/be20",1],["9m/b350",1],["9m/p180",1],["9m/c510",1],["9m/e50p",1],["9m/c550",2],["9m/e55p",1],["9m/cl30",1],["9m/c680",1],["9m/h25b",1],["9m/lj45",1],["9m/f2th",1],["9m/glf4",1],["9m/glex",1],["9m/glf5",1]]},
+        {"origin":"WBKK","destination":"","category":"departure","route":"WBKK02.TETAJ2F.TETAJ","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["9m/c172",6],["9m/p28a",5],["9m/c182",3],["9m/be36",2],["9m/da42",1],["9m/tb20",1],["9m/c208",2],["9m/pc12",2],["9m/be20",1],["9m/b350",1],["9m/p180",1],["9m/c510",1],["9m/e50p",1],["9m/c550",2],["9m/e55p",1],["9m/cl30",1],["9m/c680",1],["9m/h25b",1],["9m/lj45",1],["9m/f2th",1],["9m/glf4",1],["9m/glex",1],["9m/glf5",1]]},
+        {"origin":"VHHH","destination":"WBKK","category":"arrival","route":"TETAJ..SESAC..WBKK","altitude":[6000,9000],"speed":250,"method":"random","rate":1.21,"airlines":[["axm/a320",1],["cpa/a320",1],["cpa/a321",1],["hda/a320",1],["hda/a321",1],["hke/a320",1],["mas/a320",1],["mas/b738",1]]},
+        {"origin":"WMKK","destination":"WBKK","category":"arrival","route":"VLB..SISAS..WBKK","altitude":[6000,9000],"speed":250,"method":"random","rate":0.6,"airlines":[["axm/a320",1],["mas/b734",1],["mas/b738",1],["mxd/b739",1]]},
+        {"origin":"RKSI","destination":"WBKK","category":"arrival","route":"TETAJ..SESAC..WBKK","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["aar/a321",1],["esr/b738",1],["kal/b739",1]]},
+        {"origin":"WBKS","destination":"WBKK","category":"arrival","route":"HIGEW..VUVRU..WBKK","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["axm/a320",1],["mas/at72",1],["mas/b738",1]]},
+        {"origin":"WSSS","destination":"WBKK","category":"arrival","route":"VLB..SISAS..WBKK","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["axm/a320",1],["slk/a319",1],["slk/a320",1]]},
+        {"origin":"RCTP","destination":"WBKK","category":"arrival","route":"TETAJ..SESAC..WBKK","altitude":[6000,9000],"speed":250,"method":"random","rate":0.3,"airlines":[["axm/a320",1],["mas/b738",1]]},
+        {"origin":"","destination":"WBKK","category":"arrival","route":"TETAJ..SESAC..WBKK","altitude":[6000,9000],"speed":250,"method":"random","rate":1.36,"airlines":[["axm/a320",3],["mas/b738",2],["ceb/a320",1],["csn/a321",1],["jal/b738",1],["mas/at72",1]]},
+        {"origin":"","destination":"WBKK","category":"arrival","route":"HIGEW..VUVRU..WBKK","altitude":[6000,9000],"speed":250,"method":"random","rate":0.3,"airlines":[["axm/a320",1],["mas/b738",1]]},
+        {"origin":"","destination":"WBKK","category":"arrival","route":"TUDTI..HADEW..WBKK","altitude":[6000,9000],"speed":250,"method":"random","rate":0.3,"airlines":[["awq/a320",1],["mas/b738",1]]},
+        {"origin":"","destination":"WBKK","category":"arrival","route":"VLB..SISAS..WBKK","altitude":[6000,9000],"speed":250,"method":"random","rate":1.81,"airlines":[["axm/a320",6],["mas/at72",2],["mas/b738",2],["mas/a320",1],["rba/a320",1]]},
+        {"origin":"","destination":"WBKK","category":"arrival","route":"VLB..SISAS..WBKK","altitude":[6000,9000],"speed":250,"method":"random","rate":0.49,"airlines":[["9m/c172",6],["9m/p28a",5],["9m/c182",3],["9m/be36",2],["9m/da42",1],["9m/tb20",1],["9m/c208",2],["9m/pc12",2],["9m/be20",1],["9m/b350",1],["9m/p180",1],["9m/c510",1],["9m/e50p",1],["9m/c550",2],["9m/e55p",1],["9m/cl30",1],["9m/c680",1],["9m/h25b",1],["9m/lj45",1],["9m/f2th",1],["9m/glf4",1],["9m/glex",1],["9m/glf5",1]]},
+        {"origin":"","destination":"WBKK","category":"arrival","route":"TETAJ..SESAC..WBKK","altitude":[6000,9000],"speed":250,"method":"random","rate":0.49,"airlines":[["9m/c172",6],["9m/p28a",5],["9m/c182",3],["9m/be36",2],["9m/da42",1],["9m/tb20",1],["9m/c208",2],["9m/pc12",2],["9m/be20",1],["9m/b350",1],["9m/p180",1],["9m/c510",1],["9m/e50p",1],["9m/c550",2],["9m/e55p",1],["9m/cl30",1],["9m/c680",1],["9m/h25b",1],["9m/lj45",1],["9m/f2th",1],["9m/glf4",1],["9m/glex",1],["9m/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [6.6381,116.0833,6.1823,116.0613],
+            [6.1823,116.0613,5.9327,116.0493],
+            [5.9228,116.7592,5.9292,116.3005],
+            [5.9292,116.3005,5.9327,116.0493],
+            [5.2269,116.0273,5.683,116.0415],
+            [5.683,116.0415,5.9327,116.0493],
+            [5.29,115.252,5.7754,115.8542],
+            [5.7754,115.8542,5.9327,116.0493]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [5.9222,116.0449,5.7686,115.98],
+            [5.8415,116.0217,5.8493,116.0032],
+            [5.7648,115.9893,5.7725,115.9708],
+            [5.9491,116.0562,6.1027,116.1211],
+            [6.0298,116.0794,6.022,116.0979],
+            [6.1066,116.1118,6.0988,116.1304]
+        ]}
+    ]
+}

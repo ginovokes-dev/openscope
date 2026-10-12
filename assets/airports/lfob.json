@@ -1,0 +1,101 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LFOB/",
+    "info": {"country":"FR","city":"Beauvais","type":"large_airport","longestRunwayM":2430,"frequencies":{"atis":"118.375","twr":"121.400","app":"119.900"}},
+    "radio": {"twr":"Beauvais Tower","app":"Beauvais Approach","dep":"Beauvais Departure"},
+    "icao": "LFOB",
+    "iata": "BVA",
+    "magnetic_north": 1.9,
+    "ctr_radius": 75,
+    "ctr_ceiling": 12000,
+    "initial_alt": 6000,
+    "position": [49.454399,2.11278,"359ft"],
+    "rangeRings": {"enabled":true,"center":[49.454399,2.11278],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":310,"speed":8},
+    "arrivalRunway": "30",
+    "departureRunway": "30",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":120,"airspace_class":"C","poly":[[50.1285,2.1472],[50.0998,2.4144],[50.027,2.6611],[49.9153,2.8704],[49.7721,3.0281],[49.6073,3.1234],[49.432,3.1498],[49.2583,3.1056],[49.098,2.9937],[48.9619,2.8217],[48.8594,2.6015],[48.7975,2.348],[48.7803,2.0784],[48.809,1.8111],[48.8818,1.5645],[48.9935,1.3552],[49.1367,1.1975],[49.3015,1.1022],[49.4768,1.0758],[49.6505,1.12],[49.8108,1.2319],[49.9469,1.4038],[50.0494,1.6241],[50.1113,1.8776]]}
+    ],
+    "fixes": {
+        "LFOB": [49.4544,2.11278],
+        "CMB": [50.2281,3.1515,"cambrai"],
+        "OBIBU": [49.66773,2.39918],
+        "REM": [49.3116,4.04536,"reims"],
+        "RIMTU": [49.42242,2.54556],
+        "CLM": [48.8446,3.01386,"coulommiers"],
+        "CRL": [49.2553,2.51478,"creil"],
+        "EPR": [48.6257,1.65656,"epernon"],
+        "HEMFU": [49.18781,1.96602],
+        "DPE": [49.9254,1.17064,"dieppe"],
+        "POPJI": [49.62701,1.76751],
+        "_RWY1204DME": [49.49524,2.01852],
+        "_RWY3004DME": [49.4092,2.21692],
+        "_RWY0404DME": [49.40477,2.04503],
+        "_RWY2204DME": [49.51189,2.19141]
+    },
+    "runways": [
+        {"name":["12","30"],"end":[[49.4583,2.10385,"352ft"],[49.4462,2.13174,"297ft"]],"ils":[true,true]},
+        {"name":["04","22"],"end":[[49.4546,2.11302,"332ft"],[49.4621,2.12327,"359ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "CMB3A": {"icao":"CMB3A","name":"Cambrai Three Alpha","rwy":{"LFOB12":["_RWY3004DME"],"LFOB30":["_RWY1204DME"],"LFOB04":["_RWY2204DME"],"LFOB22":["_RWY0404DME"]},"body":[],"exitPoints":{"CMB":["CMB"]},"draw":[["LFOB","CMB*"]]},
+        "REM3C": {"icao":"REM3C","name":"Reims Three Charlie","rwy":{"LFOB12":["_RWY3004DME"],"LFOB30":["_RWY1204DME"],"LFOB04":["_RWY2204DME"],"LFOB22":["_RWY0404DME"]},"body":[],"exitPoints":{"REM":["REM"]},"draw":[["LFOB","REM*"]]},
+        "CLM1D": {"icao":"CLM1D","name":"Coulommiers One Delta","rwy":{"LFOB12":["_RWY3004DME"],"LFOB30":["_RWY1204DME"],"LFOB04":["_RWY2204DME"],"LFOB22":["_RWY0404DME"]},"body":[],"exitPoints":{"CLM":["CLM"]},"draw":[["LFOB","CLM*"]]},
+        "EPR3C": {"icao":"EPR3C","name":"Epernon Three Charlie","rwy":{"LFOB12":["_RWY3004DME"],"LFOB30":["_RWY1204DME"],"LFOB04":["_RWY2204DME"],"LFOB22":["_RWY0404DME"]},"body":[],"exitPoints":{"EPR":["EPR"]},"draw":[["LFOB","EPR*"]]},
+        "DPE3F": {"icao":"DPE3F","name":"Dieppe Three Foxtrot","rwy":{"LFOB12":["_RWY3004DME"],"LFOB30":["_RWY1204DME"],"LFOB04":["_RWY2204DME"],"LFOB22":["_RWY0404DME"]},"body":[],"exitPoints":{"DPE":["DPE"]},"draw":[["LFOB","DPE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LFOB","destination":"EYVI","category":"departure","route":"LFOB30.CMB3A.CMB","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["ryr/b738",1],["wzz/a320",1]]},
+        {"origin":"LFOB","destination":"EGCC","category":"departure","route":"LFOB30.DPE3F.DPE","altitude":"","speed":"","method":"random","rate":0.17,"airlines":[["ryr/b738",1]]},
+        {"origin":"LFOB","destination":"EIDW","category":"departure","route":"LFOB30.DPE3F.DPE","altitude":"","speed":"","method":"random","rate":0.17,"airlines":[["ryr/b738",1]]},
+        {"origin":"LFOB","destination":"EINN","category":"departure","route":"LFOB30.DPE3F.DPE","altitude":"","speed":"","method":"random","rate":0.17,"airlines":[["ryr/b738",1]]},
+        {"origin":"LFOB","destination":"ENRY","category":"departure","route":"LFOB30.CMB3A.CMB","altitude":"","speed":"","method":"random","rate":0.17,"airlines":[["ryr/b738",1]]},
+        {"origin":"LFOB","destination":"EPGD","category":"departure","route":"LFOB30.CMB3A.CMB","altitude":"","speed":"","method":"random","rate":0.17,"airlines":[["wzz/a320",1]]},
+        {"origin":"LFOB","destination":"EPKK","category":"departure","route":"LFOB30.REM3C.REM","altitude":"","speed":"","method":"random","rate":0.17,"airlines":[["ryr/b738",1]]},
+        {"origin":"LFOB","destination":"","category":"departure","route":"LFOB30.CMB3A.CMB","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["ryr/b738",3],["wzz/a320",1]]},
+        {"origin":"LFOB","destination":"","category":"departure","route":"LFOB30.REM3C.REM","altitude":"","speed":"","method":"random","rate":2.83,"airlines":[["wzz/a320",9],["ryr/b738",6],["elo/dh8d",1],["mld/e190",1]]},
+        {"origin":"LFOB","destination":"","category":"departure","route":"LFOB30.CLM1D.CLM","altitude":"","speed":"","method":"random","rate":1.67,"airlines":[["ryr/b738",10]]},
+        {"origin":"LFOB","destination":"","category":"departure","route":"LFOB30.EPR3C.EPR","altitude":"","speed":"","method":"random","rate":3.5,"airlines":[["ryr/b738",21]]},
+        {"origin":"LFOB","destination":"","category":"departure","route":"LFOB30.CLM1D.CLM","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["f/c172",3],["f/p28a",3],["f/c182",2],["f/be36",1],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",3],["f/e50p",2],["f/c550",3],["f/e55p",2],["f/cl30",2],["f/c680",2],["f/h25b",2],["f/lj45",2],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]},
+        {"origin":"LFOB","destination":"","category":"departure","route":"LFOB30.CMB3A.CMB","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["f/c172",3],["f/p28a",3],["f/c182",2],["f/be36",1],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",3],["f/e50p",2],["f/c550",3],["f/e55p",2],["f/cl30",2],["f/c680",2],["f/h25b",2],["f/lj45",2],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]},
+        {"origin":"EYVI","destination":"LFOB","category":"arrival","route":"CMB..OBIBU..LFOB","altitude":[8000,11000],"speed":250,"method":"random","rate":0.33,"airlines":[["ryr/b738",1],["wzz/a320",1]]},
+        {"origin":"EGCC","destination":"LFOB","category":"arrival","route":"DPE..POPJI..LFOB","altitude":[8000,11000],"speed":250,"method":"random","rate":0.17,"airlines":[["ryr/b738",1]]},
+        {"origin":"EIDW","destination":"LFOB","category":"arrival","route":"DPE..POPJI..LFOB","altitude":[8000,11000],"speed":250,"method":"random","rate":0.17,"airlines":[["ryr/b738",1]]},
+        {"origin":"EINN","destination":"LFOB","category":"arrival","route":"DPE..POPJI..LFOB","altitude":[8000,11000],"speed":250,"method":"random","rate":0.17,"airlines":[["ryr/b738",1]]},
+        {"origin":"ENRY","destination":"LFOB","category":"arrival","route":"CMB..OBIBU..LFOB","altitude":[8000,11000],"speed":250,"method":"random","rate":0.17,"airlines":[["ryr/b738",1]]},
+        {"origin":"EPGD","destination":"LFOB","category":"arrival","route":"CMB..OBIBU..LFOB","altitude":[8000,11000],"speed":250,"method":"random","rate":0.17,"airlines":[["wzz/a320",1]]},
+        {"origin":"EPKK","destination":"LFOB","category":"arrival","route":"REM..RIMTU..LFOB","altitude":[8000,11000],"speed":250,"method":"random","rate":0.17,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LFOB","category":"arrival","route":"CMB..OBIBU..LFOB","altitude":[8000,11000],"speed":250,"method":"random","rate":0.67,"airlines":[["ryr/b738",3],["wzz/a320",1]]},
+        {"origin":"","destination":"LFOB","category":"arrival","route":"REM..RIMTU..LFOB","altitude":[8000,11000],"speed":250,"method":"random","rate":2.83,"airlines":[["wzz/a320",9],["ryr/b738",6],["elo/dh8d",1],["mld/e190",1]]},
+        {"origin":"","destination":"LFOB","category":"arrival","route":"CLM..CRL..LFOB","altitude":[8000,11000],"speed":250,"method":"random","rate":1.67,"airlines":[["ryr/b738",10]]},
+        {"origin":"","destination":"LFOB","category":"arrival","route":"EPR..HEMFU..LFOB","altitude":[8000,11000],"speed":250,"method":"random","rate":3.5,"airlines":[["ryr/b738",21]]},
+        {"origin":"","destination":"LFOB","category":"arrival","route":"CLM..CRL..LFOB","altitude":[8000,11000],"speed":250,"method":"random","rate":0.38,"airlines":[["f/c172",3],["f/p28a",3],["f/c182",2],["f/be36",1],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",3],["f/e50p",2],["f/c550",3],["f/e55p",2],["f/cl30",2],["f/c680",2],["f/h25b",2],["f/lj45",2],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]},
+        {"origin":"","destination":"LFOB","category":"arrival","route":"CMB..OBIBU..LFOB","altitude":[8000,11000],"speed":250,"method":"random","rate":0.38,"airlines":[["f/c172",3],["f/p28a",3],["f/c182",2],["f/be36",1],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",3],["f/e50p",2],["f/c550",3],["f/e55p",2],["f/cl30",2],["f/c680",2],["f/h25b",2],["f/lj45",2],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [50.2281,3.1515,49.6677,2.3992],
+            [49.6677,2.3992,49.4544,2.1128],
+            [49.3116,4.0454,49.4224,2.5456],
+            [49.4224,2.5456,49.4544,2.1128],
+            [48.8446,3.0139,49.2553,2.5148],
+            [49.2553,2.5148,49.4544,2.1128],
+            [48.6257,1.6566,49.1878,1.966],
+            [49.1878,1.966,49.4544,2.1128],
+            [49.9254,1.1706,49.627,1.7675],
+            [49.627,1.7675,49.4544,2.1128]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [49.4583,2.1039,49.5505,1.8903],
+            [49.4962,1.9886,49.5128,2.0057],
+            [49.5422,1.8817,49.5589,1.8988],
+            [49.4462,2.1317,49.3536,2.3444],
+            [49.4082,2.2467,49.3916,2.2297],
+            [49.3619,2.353,49.3453,2.3359]
+        ]}
+    ]
+}

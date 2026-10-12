@@ -1,0 +1,92 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VLVT/",
+    "info": {"country":"LA","city":"Vientiane","type":"large_airport","longestRunwayM":3003,"frequencies":{"twr":"118.100","app":"119.700"}},
+    "radio": {"twr":"Wattay Tower","app":"Wattay Approach","dep":"Wattay Departure"},
+    "icao": "VLVT",
+    "iata": "VTE",
+    "magnetic_north": -1.1,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [17.985052,102.566692,"564ft"],
+    "rangeRings": {"enabled":true,"center":[17.985052,102.566692],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":120,"speed":9},
+    "arrivalRunway": "13",
+    "departureRunway": "13",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[18.5245,102.5558],[18.5088,102.703],[18.4574,102.8409],[18.3739,102.9601],[18.2638,103.0525],[18.1347,103.1118],[17.9954,103.1339],[17.8554,103.1174],[17.7243,103.0634],[17.6109,102.9755],[17.523,102.8597],[17.4666,102.724],[17.4456,102.5776],[17.4613,102.4304],[17.5127,102.2925],[17.5962,102.1733],[17.7063,102.0809],[17.8354,102.0216],[17.9747,101.9995],[18.1147,102.016],[18.2458,102.07],[18.3592,102.1579],[18.4471,102.2737],[18.5035,102.4094]]}
+    ],
+    "fixes": {
+        "VLVT": [17.98505,102.56669],
+        "BERSO": [18.46501,103.11126],
+        "MORGI": [18.15486,102.75936],
+        "AFETI": [17.54198,103.14479],
+        "WISUP": [17.8283,102.77122],
+        "BIGUP": [17.308,102.35577],
+        "TULUM": [17.74551,102.49207],
+        "PORZA": [18.03081,101.82583],
+        "RUKIN": [18.00124,102.30458],
+        "AWEFU": [18.68236,102.4496],
+        "PUBSU": [18.23176,102.52526],
+        "_RWY1304DME": [18.04539,102.5041],
+        "_RWY3104DME": [17.93128,102.62239]
+    },
+    "runways": [
+        {"name":["13","31"],"end":[[17.99796,102.55329,"563ft"],[17.97873,102.57323,"563ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "BERSO1B": {"icao":"BERSO1B","name":"Berso One Bravo","rwy":{"VLVT13":["_RWY3104DME"],"VLVT31":["_RWY1304DME"]},"body":[],"exitPoints":{"BERSO":["BERSO"]},"draw":[["VLVT","BERSO*"]]},
+        "AFETI2D": {"icao":"AFETI2D","name":"Afeti Two Delta","rwy":{"VLVT13":["_RWY3104DME"],"VLVT31":["_RWY1304DME"]},"body":[],"exitPoints":{"AFETI":["AFETI"]},"draw":[["VLVT","AFETI*"]]},
+        "BIGUP3A": {"icao":"BIGUP3A","name":"Bigup Three Alpha","rwy":{"VLVT13":["_RWY3104DME"],"VLVT31":["_RWY1304DME"]},"body":[],"exitPoints":{"BIGUP":["BIGUP"]},"draw":[["VLVT","BIGUP*"]]},
+        "PORZA2B": {"icao":"PORZA2B","name":"Porza Two Bravo","rwy":{"VLVT13":["_RWY3104DME"],"VLVT31":["_RWY1304DME"]},"body":[],"exitPoints":{"PORZA":["PORZA"]},"draw":[["VLVT","PORZA*"]]},
+        "AWEFU3D": {"icao":"AWEFU3D","name":"Awefu Three Delta","rwy":{"VLVT13":["_RWY3104DME"],"VLVT31":["_RWY1304DME"]},"body":[],"exitPoints":{"AWEFU":["AWEFU"]},"draw":[["VLVT","AWEFU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"VLVT","destination":"VTBS","category":"departure","route":"VLVT13.BIGUP3A.BIGUP","altitude":"","speed":"","method":"random","rate":1.34,"airlines":[["bkp/a319",1],["lao/a320",1],["lao/at72",1],["ndc/b737",1],["tha/b734",1]]},
+        {"origin":"VLVT","destination":"VLLB","category":"departure","route":"VLVT13.AWEFU3D.AWEFU","altitude":"","speed":"","method":"random","rate":0.8,"airlines":[["lao/a320",1],["lao/at72",1],["ndc/b737",1]]},
+        {"origin":"VLVT","destination":"RKSI","category":"departure","route":"VLVT13.BERSO1B.BERSO","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["jna/b738",1],["lao/a320",1]]},
+        {"origin":"VLVT","destination":"VLPS","category":"departure","route":"VLVT13.AFETI2D.AFETI","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["lao/a320",1],["lao/at72",1]]},
+        {"origin":"VLVT","destination":"VVNB","category":"departure","route":"VLVT13.BERSO1B.BERSO","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["hvn/a321",1],["lao/a320",1]]},
+        {"origin":"VLVT","destination":"ZPPP","category":"departure","route":"VLVT13.AWEFU3D.AWEFU","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["ces/b737",1],["lao/a320",1]]},
+        {"origin":"VLVT","destination":"","category":"departure","route":"VLVT13.BERSO1B.BERSO","altitude":"","speed":"","method":"random","rate":1.07,"airlines":[["ces/b737",1],["hvn/at72",1],["lao/a320",1],["lao/at72",1]]},
+        {"origin":"VLVT","destination":"","category":"departure","route":"VLVT13.AFETI2D.AFETI","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["hvn/a321",1],["lao/at72",1]]},
+        {"origin":"VLVT","destination":"","category":"departure","route":"VLVT13.BIGUP3A.BIGUP","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["axm/a320",1],["lao/a320",1]]},
+        {"origin":"VLVT","destination":"","category":"departure","route":"VLVT13.AWEFU3D.AWEFU","altitude":"","speed":"","method":"random","rate":0.8,"airlines":[["lao/at72",3]]},
+        {"origin":"VTBS","destination":"VLVT","category":"arrival","route":"BIGUP..TULUM..VLVT","altitude":[6000,9000],"speed":250,"method":"random","rate":1.34,"airlines":[["bkp/a319",1],["lao/a320",1],["lao/at72",1],["ndc/b737",1],["tha/b734",1]]},
+        {"origin":"VLLB","destination":"VLVT","category":"arrival","route":"AWEFU..PUBSU..VLVT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.8,"airlines":[["lao/a320",1],["lao/at72",1],["ndc/b737",1]]},
+        {"origin":"RKSI","destination":"VLVT","category":"arrival","route":"BERSO..MORGI..VLVT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.54,"airlines":[["jna/b738",1],["lao/a320",1]]},
+        {"origin":"VLPS","destination":"VLVT","category":"arrival","route":"AFETI..WISUP..VLVT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.54,"airlines":[["lao/a320",1],["lao/at72",1]]},
+        {"origin":"VVNB","destination":"VLVT","category":"arrival","route":"BERSO..MORGI..VLVT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.54,"airlines":[["hvn/a321",1],["lao/a320",1]]},
+        {"origin":"ZPPP","destination":"VLVT","category":"arrival","route":"AWEFU..PUBSU..VLVT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.54,"airlines":[["ces/b737",1],["lao/a320",1]]},
+        {"origin":"","destination":"VLVT","category":"arrival","route":"BERSO..MORGI..VLVT","altitude":[6000,9000],"speed":250,"method":"random","rate":1.07,"airlines":[["ces/b737",1],["hvn/at72",1],["lao/a320",1],["lao/at72",1]]},
+        {"origin":"","destination":"VLVT","category":"arrival","route":"AFETI..WISUP..VLVT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.54,"airlines":[["hvn/a321",1],["lao/at72",1]]},
+        {"origin":"","destination":"VLVT","category":"arrival","route":"BIGUP..TULUM..VLVT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.54,"airlines":[["axm/a320",1],["lao/a320",1]]},
+        {"origin":"","destination":"VLVT","category":"arrival","route":"AWEFU..PUBSU..VLVT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.8,"airlines":[["lao/at72",3]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [18.465,103.1113,18.1549,102.7594],
+            [18.1549,102.7594,17.9851,102.5667],
+            [17.542,103.1448,17.8283,102.7712],
+            [17.8283,102.7712,17.9851,102.5667],
+            [17.308,102.3558,17.7455,102.4921],
+            [17.7455,102.4921,17.9851,102.5667],
+            [18.0308,101.8258,18.0012,102.3046],
+            [18.0012,102.3046,17.9851,102.5667],
+            [18.6824,102.4496,18.2318,102.5253],
+            [18.2318,102.5253,17.9851,102.5667]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [17.998,102.5533,18.1165,102.4303],
+            [18.0502,102.4843,18.0643,102.4993],
+            [18.1095,102.4228,18.1235,102.4377],
+            [17.9787,102.5732,17.8601,102.6961],
+            [17.9264,102.6422,17.9124,102.6272],
+            [17.8671,102.7036,17.8531,102.6886]
+        ]}
+    ]
+}

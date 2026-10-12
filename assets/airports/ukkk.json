@@ -1,0 +1,93 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/UKKK/",
+    "info": {"country":"UA","city":"Kyiv","type":"medium_airport","longestRunwayM":2310,"frequencies":{"twr":"120.700","app":"125.300","gnd":"119.000"}},
+    "radio": {"twr":"Kyiv Tower","app":"Kyiv Approach","dep":"Kyiv Departure"},
+    "icao": "UKKK",
+    "iata": "IEV",
+    "magnetic_north": 8.4,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [50.40194,30.45194,"587ft"],
+    "rangeRings": {"enabled":true,"center":[50.40194,30.45194],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":240,"speed":10},
+    "arrivalRunway": "26",
+    "departureRunway": "26",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[50.9357,30.5756],[50.8972,30.7881],[50.8248,30.9778],[50.7237,31.1316],[50.6006,31.239],[50.464,31.2929],[50.3231,31.2894],[50.1876,31.2289],[50.0668,31.1154],[49.9687,30.9567],[49.9002,30.7636],[49.8659,30.5492],[49.8681,30.3283],[49.9067,30.1157],[49.9791,29.9261],[50.0802,29.7723],[50.2033,29.6648],[50.3399,29.611],[50.4808,29.6145],[50.6162,29.675],[50.7371,29.7885],[50.8351,29.9472],[50.9036,30.1403],[50.938,30.3546]]}
+    ],
+    "fixes": {
+        "UKKK": [50.40194,30.45194],
+        "KO": [50.9465,30.9765,"koshany"],
+        "IDOCI": [50.61484,30.65702],
+        "PI": [49.8731,31.1233,"pii"],
+        "NOLZE": [50.20773,30.69849],
+        "AWAMO": [49.70581,30.63788],
+        "MOLMI": [50.15565,30.51772],
+        "KR": [50.6064,29.2782,"krabor"],
+        "SIJJO": [50.4678,30.07385],
+        "WAMKA": [50.98335,29.8232],
+        "LC": [50.6503,30.154,"antonov"],
+        "_RWY0804DME": [50.3969,30.33291],
+        "_RWY2604DME": [50.40657,30.57085]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[50.40119,30.43721,"560ft"],[50.40237,30.46653,"587ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "KO1F": {"icao":"KO1F","name":"Koshany One Foxtrot","rwy":{"UKKK08":["_RWY2604DME"],"UKKK26":["_RWY0804DME"]},"body":[],"exitPoints":{"KO":["KO"]},"draw":[["UKKK","KO*"]]},
+        "PI3F": {"icao":"PI3F","name":"Pii Three Foxtrot","rwy":{"UKKK08":["_RWY2604DME"],"UKKK26":["_RWY0804DME"]},"body":[],"exitPoints":{"PI":["PI"]},"draw":[["UKKK","PI*"]]},
+        "AWAMO3A": {"icao":"AWAMO3A","name":"Awamo Three Alpha","rwy":{"UKKK08":["_RWY2604DME"],"UKKK26":["_RWY0804DME"]},"body":[],"exitPoints":{"AWAMO":["AWAMO"]},"draw":[["UKKK","AWAMO*"]]},
+        "KR1D": {"icao":"KR1D","name":"Krabor One Delta","rwy":{"UKKK08":["_RWY2604DME"],"UKKK26":["_RWY0804DME"]},"body":[],"exitPoints":{"KR":["KR"]},"draw":[["UKKK","KR*"]]},
+        "WAMKA3B": {"icao":"WAMKA3B","name":"Wamka Three Bravo","rwy":{"UKKK08":["_RWY2604DME"],"UKKK26":["_RWY0804DME"]},"body":[],"exitPoints":{"WAMKA":["WAMKA"]},"draw":[["UKKK","WAMKA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"UKKK","destination":"EDDK","category":"departure","route":"UKKK26.KR1D.KR","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["wau/a320",1]]},
+        {"origin":"UKKK","destination":"EDJA","category":"departure","route":"UKKK26.KR1D.KR","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["wau/a320",1]]},
+        {"origin":"UKKK","destination":"EDLW","category":"departure","route":"UKKK26.KR1D.KR","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["wau/a320",1]]},
+        {"origin":"UKKK","destination":"EGGW","category":"departure","route":"UKKK26.KR1D.KR","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["wzz/a320",1]]},
+        {"origin":"UKKK","destination":"EPKT","category":"departure","route":"UKKK26.KR1D.KR","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["wau/a320",1]]},
+        {"origin":"UKKK","destination":"EYVI","category":"departure","route":"UKKK26.WAMKA3B.WAMKA","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["wau/a320",1]]},
+        {"origin":"UKKK","destination":"","category":"departure","route":"UKKK26.KO1F.KO","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["tso/b737",1]]},
+        {"origin":"UKKK","destination":"","category":"departure","route":"UKKK26.PI3F.PI","altitude":"","speed":"","method":"random","rate":1.08,"airlines":[["fdb/b738",1],["msi/an24",1],["wau/a320",1]]},
+        {"origin":"UKKK","destination":"","category":"departure","route":"UKKK26.AWAMO3A.AWAMO","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["aee/a320",1],["wau/a320",1]]},
+        {"origin":"UKKK","destination":"","category":"departure","route":"UKKK26.KR1D.KR","altitude":"","speed":"","method":"random","rate":2.16,"airlines":[["wau/a320",4],["vlg/a320",1],["wzz/a320",1]]},
+        {"origin":"UKKK","destination":"","category":"departure","route":"UKKK26.WAMKA3B.WAMKA","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["ur/c172",6],["ur/p28a",5],["ur/c182",3],["ur/be36",2],["ur/da42",1],["ur/tb20",1],["ur/c208",2],["ur/pc12",2],["ur/be20",1],["ur/b350",1],["ur/p180",1],["ur/c510",1],["ur/e50p",1],["ur/c550",2],["ur/e55p",1],["ur/cl30",1],["ur/c680",1],["ur/h25b",1],["ur/lj45",1],["ur/f2th",1],["ur/glf4",1],["ur/glex",1],["ur/glf5",1]]},
+        {"origin":"UKKK","destination":"","category":"departure","route":"UKKK26.PI3F.PI","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["ur/c172",6],["ur/p28a",5],["ur/c182",3],["ur/be36",2],["ur/da42",1],["ur/tb20",1],["ur/c208",2],["ur/pc12",2],["ur/be20",1],["ur/b350",1],["ur/p180",1],["ur/c510",1],["ur/e50p",1],["ur/c550",2],["ur/e55p",1],["ur/cl30",1],["ur/c680",1],["ur/h25b",1],["ur/lj45",1],["ur/f2th",1],["ur/glf4",1],["ur/glex",1],["ur/glf5",1]]},
+        {"origin":"EDDK","destination":"UKKK","category":"arrival","route":"KR..SIJJO..UKKK","altitude":[6000,9000],"speed":250,"method":"random","rate":0.36,"airlines":[["wau/a320",1]]},
+        {"origin":"EDJA","destination":"UKKK","category":"arrival","route":"KR..SIJJO..UKKK","altitude":[6000,9000],"speed":250,"method":"random","rate":0.36,"airlines":[["wau/a320",1]]},
+        {"origin":"EDLW","destination":"UKKK","category":"arrival","route":"KR..SIJJO..UKKK","altitude":[6000,9000],"speed":250,"method":"random","rate":0.36,"airlines":[["wau/a320",1]]},
+        {"origin":"EGGW","destination":"UKKK","category":"arrival","route":"KR..SIJJO..UKKK","altitude":[6000,9000],"speed":250,"method":"random","rate":0.36,"airlines":[["wzz/a320",1]]},
+        {"origin":"EPKT","destination":"UKKK","category":"arrival","route":"KR..SIJJO..UKKK","altitude":[6000,9000],"speed":250,"method":"random","rate":0.36,"airlines":[["wau/a320",1]]},
+        {"origin":"EYVI","destination":"UKKK","category":"arrival","route":"WAMKA..LC..UKKK","altitude":[6000,9000],"speed":250,"method":"random","rate":0.36,"airlines":[["wau/a320",1]]},
+        {"origin":"","destination":"UKKK","category":"arrival","route":"KO..IDOCI..UKKK","altitude":[6000,9000],"speed":250,"method":"random","rate":0.36,"airlines":[["tso/b737",1]]},
+        {"origin":"","destination":"UKKK","category":"arrival","route":"PI..NOLZE..UKKK","altitude":[6000,9000],"speed":250,"method":"random","rate":1.08,"airlines":[["fdb/b738",1],["msi/an24",1],["wau/a320",1]]},
+        {"origin":"","destination":"UKKK","category":"arrival","route":"AWAMO..MOLMI..UKKK","altitude":[6000,9000],"speed":250,"method":"random","rate":0.72,"airlines":[["aee/a320",1],["wau/a320",1]]},
+        {"origin":"","destination":"UKKK","category":"arrival","route":"KR..SIJJO..UKKK","altitude":[6000,9000],"speed":250,"method":"random","rate":2.16,"airlines":[["wau/a320",4],["vlg/a320",1],["wzz/a320",1]]},
+        {"origin":"","destination":"UKKK","category":"arrival","route":"WAMKA..LC..UKKK","altitude":[6000,9000],"speed":250,"method":"random","rate":0.44,"airlines":[["ur/c172",6],["ur/p28a",5],["ur/c182",3],["ur/be36",2],["ur/da42",1],["ur/tb20",1],["ur/c208",2],["ur/pc12",2],["ur/be20",1],["ur/b350",1],["ur/p180",1],["ur/c510",1],["ur/e50p",1],["ur/c550",2],["ur/e55p",1],["ur/cl30",1],["ur/c680",1],["ur/h25b",1],["ur/lj45",1],["ur/f2th",1],["ur/glf4",1],["ur/glex",1],["ur/glf5",1]]},
+        {"origin":"","destination":"UKKK","category":"arrival","route":"PI..NOLZE..UKKK","altitude":[6000,9000],"speed":250,"method":"random","rate":0.44,"airlines":[["ur/c172",6],["ur/p28a",5],["ur/c182",3],["ur/be36",2],["ur/da42",1],["ur/tb20",1],["ur/c208",2],["ur/pc12",2],["ur/be20",1],["ur/b350",1],["ur/p180",1],["ur/c510",1],["ur/e50p",1],["ur/c550",2],["ur/e55p",1],["ur/cl30",1],["ur/c680",1],["ur/h25b",1],["ur/lj45",1],["ur/f2th",1],["ur/glf4",1],["ur/glex",1],["ur/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [50.9465,30.9765,50.6148,30.657],
+            [50.6148,30.657,50.4019,30.4519],
+            [49.8731,31.1233,50.2077,30.6985],
+            [50.2077,30.6985,50.4019,30.4519],
+            [49.7058,30.6379,50.1557,30.5177],
+            [50.1557,30.5177,50.4019,30.4519],
+            [50.6064,29.2782,50.4678,30.0739],
+            [50.4678,30.0739,50.4019,30.4519],
+            [50.9833,29.8232,50.6503,30.154],
+            [50.6503,30.154,50.4019,30.4519]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [50.4024,30.4665,50.4127,30.7274],
+            [50.4176,30.5959,50.3976,30.5979],
+            [50.4227,30.7264,50.4027,30.7284]
+        ]}
+    ]
+}

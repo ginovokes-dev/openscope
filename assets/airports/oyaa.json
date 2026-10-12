@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/OYAA/",
+    "info": {"country":"YE","city":"Aden","type":"large_airport","longestRunwayM":3115,"frequencies":{"atis":"122.600","twr":"118.700","app":"119.700","gnd":"121.900"}},
+    "radio": {"twr":"Aden Tower","app":"Aden Approach","dep":"Aden Departure"},
+    "icao": "OYAA",
+    "iata": "ADE",
+    "magnetic_north": 1.7,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [12.829564,45.029976,"7ft"],
+    "rangeRings": {"enabled":true,"center":[12.829564,45.029976],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":90,"speed":12},
+    "arrivalRunway": "08",
+    "departureRunway": "08",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[13.2341,45.0423],[13.2172,45.1492],[13.1739,45.2481],[13.1071,45.332],[13.0214,45.3954],[12.9227,45.4339],[12.8176,45.4448],[12.7133,45.4275],[12.6169,45.3831],[12.535,45.3146],[12.4732,45.2267],[12.4357,45.1255],[12.425,45.0177],[12.4419,44.9107],[12.4852,44.8119],[12.552,44.7279],[12.6377,44.6645],[12.7365,44.6261],[12.8416,44.6151],[12.9459,44.6324],[13.0422,44.6768],[13.1241,44.7453],[13.1859,44.8332],[13.2234,44.9345]]}
+    ],
+    "fixes": {
+        "OYAA": [12.82956,45.02998],
+        "KIDZO": [13.27718,45.33597],
+        "NELEB": [12.99587,45.14366],
+        "MAWZI": [12.31386,45.18696],
+        "AFORU": [12.63796,45.0883],
+        "OGIZO": [13.04194,44.52308],
+        "BULWE": [12.90847,44.84164],
+        "PADAP": [13.31992,44.80311],
+        "TABIN": [13.01175,44.94569],
+        "_RWY0804DME": [12.81141,44.94823],
+        "_RWY2604DME": [12.84768,45.10938]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[12.8264,45.0148,"7ft"],[12.8327,45.0428,"7ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "KIDZO3C": {"icao":"KIDZO3C","name":"Kidzo Three Charlie","rwy":{"OYAA08":["_RWY2604DME"],"OYAA26":["_RWY0804DME"]},"body":[],"exitPoints":{"KIDZO":["KIDZO"]},"draw":[["OYAA","KIDZO*"]]},
+        "MAWZI1F": {"icao":"MAWZI1F","name":"Mawzi One Foxtrot","rwy":{"OYAA08":["_RWY2604DME"],"OYAA26":["_RWY0804DME"]},"body":[],"exitPoints":{"MAWZI":["MAWZI"]},"draw":[["OYAA","MAWZI*"]]},
+        "OGIZO2C": {"icao":"OGIZO2C","name":"Ogizo Two Charlie","rwy":{"OYAA08":["_RWY2604DME"],"OYAA26":["_RWY0804DME"]},"body":[],"exitPoints":{"OGIZO":["OGIZO"]},"draw":[["OYAA","OGIZO*"]]},
+        "PADAP2C": {"icao":"PADAP2C","name":"Padap Two Charlie","rwy":{"OYAA08":["_RWY2604DME"],"OYAA26":["_RWY0804DME"]},"body":[],"exitPoints":{"PADAP":["PADAP"]},"draw":[["OYAA","PADAP*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"OYAA","destination":"OYSN","category":"departure","route":"OYAA08.PADAP2C.PADAP","altitude":"","speed":"","method":"random","rate":1.41,"airlines":[["iye/a310",1],["iye/a320",1],["iye/crj2",1],["thy/b738",1],["iye/a333",1],["iye/a332",1]]},
+        {"origin":"OYAA","destination":"OJAI","category":"departure","route":"OYAA08.PADAP2C.PADAP","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["iye/a310",1],["rja/a320",1],["rja/e190",1],["rja/e75l",1]]},
+        {"origin":"OYAA","destination":"OEJN","category":"departure","route":"OYAA08.PADAP2C.PADAP","altitude":"","speed":"","method":"random","rate":0.85,"airlines":[["iye/a320",1],["sva/a320",1],["iye/a333",1],["iye/a332",1]]},
+        {"origin":"OYAA","destination":"OMDB","category":"departure","route":"OYAA08.KIDZO3C.KIDZO","altitude":"","speed":"","method":"random","rate":0.85,"airlines":[["iye/a310",1],["iye/a320",1],["nas/a320",1]]},
+        {"origin":"OYAA","destination":"HECA","category":"departure","route":"OYAA08.PADAP2C.PADAP","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["iye/a320",1]]},
+        {"origin":"OYAA","destination":"","category":"departure","route":"OYAA08.KIDZO3C.KIDZO","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["iye/a320",3],["iye/a310",1]]},
+        {"origin":"OYAA","destination":"","category":"departure","route":"OYAA08.OGIZO2C.OGIZO","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["nas/a320",1]]},
+        {"origin":"OYAA","destination":"","category":"departure","route":"OYAA08.PADAP2C.PADAP","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["thy/b738",1]]},
+        {"origin":"OYSN","destination":"OYAA","category":"arrival","route":"PADAP..TABIN..OYAA","altitude":[4000,7000],"speed":250,"method":"random","rate":1.41,"airlines":[["iye/a310",1],["iye/a320",1],["iye/crj2",1],["thy/b738",1],["iye/a333",1],["iye/a332",1]]},
+        {"origin":"OJAI","destination":"OYAA","category":"arrival","route":"PADAP..TABIN..OYAA","altitude":[4000,7000],"speed":250,"method":"random","rate":1.13,"airlines":[["iye/a310",1],["rja/a320",1],["rja/e190",1],["rja/e75l",1]]},
+        {"origin":"OEJN","destination":"OYAA","category":"arrival","route":"PADAP..TABIN..OYAA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.85,"airlines":[["iye/a320",1],["sva/a320",1],["iye/a333",1],["iye/a332",1]]},
+        {"origin":"OMDB","destination":"OYAA","category":"arrival","route":"KIDZO..NELEB..OYAA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.85,"airlines":[["iye/a310",1],["iye/a320",1],["nas/a320",1]]},
+        {"origin":"HECA","destination":"OYAA","category":"arrival","route":"PADAP..TABIN..OYAA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["iye/a320",1]]},
+        {"origin":"","destination":"OYAA","category":"arrival","route":"KIDZO..NELEB..OYAA","altitude":[4000,7000],"speed":250,"method":"random","rate":1.13,"airlines":[["iye/a320",3],["iye/a310",1]]},
+        {"origin":"","destination":"OYAA","category":"arrival","route":"OGIZO..BULWE..OYAA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["nas/a320",1]]},
+        {"origin":"","destination":"OYAA","category":"arrival","route":"PADAP..TABIN..OYAA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["thy/b738",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [13.2772,45.336,12.9959,45.1437],
+            [12.9959,45.1437,12.8296,45.03],
+            [12.3139,45.187,12.638,45.0883],
+            [12.638,45.0883,12.8296,45.03],
+            [13.0419,44.5231,12.9085,44.8416],
+            [12.9085,44.8416,12.8296,45.03],
+            [13.3199,44.8031,13.0117,44.9457],
+            [13.0117,44.9457,12.8296,45.03]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [12.8264,45.0148,12.7889,44.8484],
+            [12.7979,44.9339,12.8174,44.9293],
+            [12.7792,44.8507,12.7986,44.8461],
+            [12.8327,45.0428,12.8701,45.2093],
+            [12.8612,45.1237,12.8417,45.1283],
+            [12.8798,45.207,12.8604,45.2116]
+        ]}
+    ]
+}

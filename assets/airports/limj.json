@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LIMJ/",
+    "info": {"country":"IT","city":"Genova","type":"large_airport","longestRunwayM":2915,"frequencies":{"atis":"122.825","twr":"118.600","app":"119.600"}},
+    "radio": {"twr":"Genoa Tower","app":"Genoa Approach","dep":"Genoa Departure"},
+    "icao": "LIMJ",
+    "iata": "GOA",
+    "magnetic_north": 3.5,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [44.412039,8.840732,"13ft"],
+    "rangeRings": {"enabled":true,"center":[44.412039,8.840732],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":300,"speed":7},
+    "arrivalRunway": "28",
+    "departureRunway": "28",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[44.9506,8.8868],[44.9237,9.0804],[44.862,9.2577],[44.7696,9.4065],[44.6528,9.5168],[44.5196,9.581],[44.3791,9.5947],[44.2408,9.5571],[44.1142,9.4706],[44.0079,9.3413],[43.9291,9.1778],[43.8833,8.9913],[43.8735,8.7946],[43.9003,8.601],[43.9621,8.4238],[44.0545,8.275],[44.1713,8.1647],[44.3045,8.1005],[44.445,8.0868],[44.5833,8.1244],[44.7099,8.2108],[44.8162,8.3402],[44.8949,8.5037],[44.9408,8.6901]]}
+    ],
+    "fixes": {
+        "LIMJ": [44.41204,8.84073],
+        "COD": [45.2263,9.54117,"codogno"],
+        "ELAWO": [44.6249,9.02383],
+        "PAR": [44.8223,10.2933,"parma"],
+        "TADCI": [44.5039,9.16598],
+        "WUZIV": [43.85903,9.45546],
+        "RIMWA": [44.21639,9.05822],
+        "ALB": [44.0482,8.12762,"albenga"],
+        "HIBPU": [44.26683,8.55613],
+        "TOP": [44.9254,7.86166,"torino"],
+        "DAHEZ": [44.55987,8.55879],
+        "_RWY1004DME": [44.4329,8.73418],
+        "_RWY2804DME": [44.39131,8.94757]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[44.4154,8.82419,"9ft"],[44.40888,8.85763,"12ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "COD3E": {"icao":"COD3E","name":"Codogno Three Echo","rwy":{"LIMJ10":["_RWY2804DME"],"LIMJ28":["_RWY1004DME"]},"body":[],"exitPoints":{"COD":["COD"]},"draw":[["LIMJ","COD*"]]},
+        "PAR3F": {"icao":"PAR3F","name":"Parma Three Foxtrot","rwy":{"LIMJ10":["_RWY2804DME"],"LIMJ28":["_RWY1004DME"]},"body":[],"exitPoints":{"PAR":["PAR"]},"draw":[["LIMJ","PAR*"]]},
+        "WUZIV2D": {"icao":"WUZIV2D","name":"Wuziv Two Delta","rwy":{"LIMJ10":["_RWY2804DME"],"LIMJ28":["_RWY1004DME"]},"body":[],"exitPoints":{"WUZIV":["WUZIV"]},"draw":[["LIMJ","WUZIV*"]]},
+        "ALB1E": {"icao":"ALB1E","name":"Albenga One Echo","rwy":{"LIMJ10":["_RWY2804DME"],"LIMJ28":["_RWY1004DME"]},"body":[],"exitPoints":{"ALB":["ALB"]},"draw":[["LIMJ","ALB*"]]},
+        "TOP2E": {"icao":"TOP2E","name":"Torino Two Echo","rwy":{"LIMJ10":["_RWY2804DME"],"LIMJ28":["_RWY1004DME"]},"body":[],"exitPoints":{"TOP":["TOP"]},"draw":[["LIMJ","TOP*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LIMJ","destination":"LIRF","category":"departure","route":"LIMJ28.WUZIV2D.WUZIV","altitude":"","speed":"","method":"random","rate":1.18,"airlines":[["aza/a320",2],["aza/a319",1],["aza/e190",1],["aza/e75l",1]]},
+        {"origin":"LIMJ","destination":"EGKK","category":"departure","route":"LIMJ28.TOP2E.TOP","altitude":"","speed":"","method":"random","rate":0.71,"airlines":[["baw/a319",1],["baw/a320",1],["baw/b734",1]]},
+        {"origin":"LIMJ","destination":"LTFM","category":"departure","route":"LIMJ28.PAR3F.PAR","altitude":"","speed":"","method":"random","rate":0.71,"airlines":[["thy/b738",1],["thy/b739",1],["thy/a333",1],["thy/a332",1]]},
+        {"origin":"LIMJ","destination":"EDDM","category":"departure","route":"LIMJ28.COD3E.COD","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["dlh/crj7",1],["dlh/crj9",1]]},
+        {"origin":"LIMJ","destination":"LFPG","category":"departure","route":"LIMJ28.TOP2E.TOP","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["afr/e170",1],["afr/e190",1]]},
+        {"origin":"LIMJ","destination":"EBCI","category":"departure","route":"LIMJ28.TOP2E.TOP","altitude":"","speed":"","method":"random","rate":0.24,"airlines":[["ryr/b738",1]]},
+        {"origin":"LIMJ","destination":"","category":"departure","route":"LIMJ28.COD3E.COD","altitude":"","speed":"","method":"random","rate":0.24,"airlines":[["sbi/a320",1]]},
+        {"origin":"LIMJ","destination":"","category":"departure","route":"LIMJ28.WUZIV2D.WUZIV","altitude":"","speed":"","method":"random","rate":1.88,"airlines":[["voe/b712",4],["ryr/b738",3],["adh/a320",1]]},
+        {"origin":"LIMJ","destination":"","category":"departure","route":"LIMJ28.ALB1E.ALB","altitude":"","speed":"","method":"random","rate":0.24,"airlines":[["vlg/a320",1]]},
+        {"origin":"LIMJ","destination":"","category":"departure","route":"LIMJ28.TOP2E.TOP","altitude":"","speed":"","method":"random","rate":0.24,"airlines":[["ryr/b738",1]]},
+        {"origin":"LIMJ","destination":"","category":"departure","route":"LIMJ28.WUZIV2D.WUZIV","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"LIMJ","destination":"","category":"departure","route":"LIMJ28.PAR3F.PAR","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"LIRF","destination":"LIMJ","category":"arrival","route":"WUZIV..RIMWA..LIMJ","altitude":[6000,9000],"speed":250,"method":"random","rate":1.18,"airlines":[["aza/a320",2],["aza/a319",1],["aza/e190",1],["aza/e75l",1]]},
+        {"origin":"EGKK","destination":"LIMJ","category":"arrival","route":"TOP..DAHEZ..LIMJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.71,"airlines":[["baw/a319",1],["baw/a320",1],["baw/b734",1]]},
+        {"origin":"LTFM","destination":"LIMJ","category":"arrival","route":"PAR..TADCI..LIMJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.71,"airlines":[["thy/b738",1],["thy/b739",1],["thy/a333",1],["thy/a332",1]]},
+        {"origin":"EDDM","destination":"LIMJ","category":"arrival","route":"COD..ELAWO..LIMJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["dlh/crj7",1],["dlh/crj9",1]]},
+        {"origin":"LFPG","destination":"LIMJ","category":"arrival","route":"TOP..DAHEZ..LIMJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["afr/e170",1],["afr/e190",1]]},
+        {"origin":"EBCI","destination":"LIMJ","category":"arrival","route":"TOP..DAHEZ..LIMJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.24,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LIMJ","category":"arrival","route":"COD..ELAWO..LIMJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.24,"airlines":[["sbi/a320",1]]},
+        {"origin":"","destination":"LIMJ","category":"arrival","route":"WUZIV..RIMWA..LIMJ","altitude":[6000,9000],"speed":250,"method":"random","rate":1.88,"airlines":[["voe/b712",4],["ryr/b738",3],["adh/a320",1]]},
+        {"origin":"","destination":"LIMJ","category":"arrival","route":"ALB..HIBPU..LIMJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.24,"airlines":[["vlg/a320",1]]},
+        {"origin":"","destination":"LIMJ","category":"arrival","route":"TOP..DAHEZ..LIMJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.24,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LIMJ","category":"arrival","route":"WUZIV..RIMWA..LIMJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"","destination":"LIMJ","category":"arrival","route":"PAR..TADCI..LIMJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [45.2263,9.5412,44.6249,9.0238],
+            [44.6249,9.0238,44.412,8.8407],
+            [44.8223,10.2933,44.5039,9.166],
+            [44.5039,9.166,44.412,8.8407],
+            [43.859,9.4555,44.2164,9.0582],
+            [44.2164,9.0582,44.412,8.8407],
+            [44.0482,8.1276,44.2668,8.5561],
+            [44.2668,8.5561,44.412,8.8407],
+            [44.9254,7.8617,44.5599,8.5588],
+            [44.5599,8.5588,44.412,8.8407]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [44.4154,8.8242,44.459,8.5991],
+            [44.4276,8.708,44.4469,8.7154],
+            [44.4494,8.5954,44.4687,8.6027],
+            [44.4089,8.8576,44.3648,9.0824],
+            [44.3966,8.9737,44.3773,8.9664],
+            [44.3745,9.0861,44.3552,9.0787]
+        ]}
+    ]
+}

@@ -1,0 +1,77 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VIJU/",
+    "info": {"country":"IN","city":"Jammu","type":"medium_airport","longestRunwayM":2060,"frequencies":{"twr":"122.850"}},
+    "radio": {"twr":"Jammu Tower","app":"Jammu Approach","dep":"Jammu Departure"},
+    "icao": "VIJU",
+    "iata": "IXJ",
+    "magnetic_north": 2.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [32.688849,74.838152,"996ft"],
+    "rangeRings": {"enabled":true,"center":[32.688849,74.838152],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":10,"speed":11},
+    "arrivalRunway": "36",
+    "departureRunway": "36",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[33.0932,74.8583],[33.075,74.9819],[33.0305,75.0958],[32.9628,75.1921],[32.8763,75.2643],[32.7771,75.3074],[32.6719,75.3186],[32.5678,75.297],[32.472,75.2442],[32.391,75.1636],[32.3302,75.0609],[32.2939,74.943],[32.2845,74.818],[32.3027,74.6944],[32.3472,74.5805],[32.4149,74.4842],[32.5014,74.412],[32.6006,74.3689],[32.7058,74.3577],[32.8099,74.3793],[32.9057,74.4322],[32.9867,74.5127],[33.0475,74.6154],[33.0838,74.7333]]}
+    ],
+    "fixes": {
+        "VIJU": [32.68885,74.83815],
+        "NEJEB": [32.98468,75.37199],
+        "GEGHU": [32.79876,75.03649],
+        "AAR": [31.7069,74.8008,"amritsar"],
+        "HUNOL": [32.48909,74.83055],
+        "PUNEW": [32.55829,74.21809],
+        "FIWEV": [32.64034,74.60777],
+        "VAVAC": [33.22634,74.81207],
+        "VASAD": [32.88855,74.82846],
+        "_RWY1804DME": [32.76437,74.83252],
+        "_RWY3604DME": [32.61338,74.8423]
+    },
+    "runways": [
+        {"name":["18","36"],"end":[[32.69785,74.83683,"956ft"],[32.6799,74.838,"951ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "NEJEB3F": {"icao":"NEJEB3F","name":"Nejeb Three Foxtrot","rwy":{"VIJU18":["_RWY3604DME"],"VIJU36":["_RWY1804DME"]},"body":[],"exitPoints":{"NEJEB":["NEJEB"]},"draw":[["VIJU","NEJEB*"]]},
+        "AAR3C": {"icao":"AAR3C","name":"Amritsar Three Charlie","rwy":{"VIJU18":["_RWY3604DME"],"VIJU36":["_RWY1804DME"]},"body":[],"exitPoints":{"AAR":["AAR"]},"draw":[["VIJU","AAR*"]]},
+        "PUNEW1A": {"icao":"PUNEW1A","name":"Punew One Alpha","rwy":{"VIJU18":["_RWY3604DME"],"VIJU36":["_RWY1804DME"]},"body":[],"exitPoints":{"PUNEW":["PUNEW"]},"draw":[["VIJU","PUNEW*"]]},
+        "VAVAC2F": {"icao":"VAVAC2F","name":"Vavac Two Foxtrot","rwy":{"VIJU18":["_RWY3604DME"],"VIJU36":["_RWY1804DME"]},"body":[],"exitPoints":{"VAVAC":["VAVAC"]},"draw":[["VIJU","VAVAC*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"VIJU","destination":"VIDP","category":"departure","route":"VIJU36.AAR3C.AAR","altitude":"","speed":"","method":"random","rate":1.19,"airlines":[["aic/a320",1],["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VIJU","destination":"VISR","category":"departure","route":"VIJU36.VAVAC2F.VAVAC","altitude":"","speed":"","method":"random","rate":1.19,"airlines":[["aic/a320",1],["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VIJU","destination":"VABB","category":"departure","route":"VIJU36.AAR3C.AAR","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["gow/a320",1],["igo/a320",1]]},
+        {"origin":"VIJU","destination":"VILH","category":"departure","route":"VIJU36.NEJEB3F.NEJEB","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["aic/a319",1]]},
+        {"origin":"VIJU","destination":"","category":"departure","route":"VIJU36.AAR3C.AAR","altitude":"","speed":"","method":"random","rate":1.09,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"VIDP","destination":"VIJU","category":"arrival","route":"AAR..HUNOL..VIJU","altitude":[4000,7000],"speed":250,"method":"random","rate":1.19,"airlines":[["aic/a320",1],["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VISR","destination":"VIJU","category":"arrival","route":"VAVAC..VASAD..VIJU","altitude":[4000,7000],"speed":250,"method":"random","rate":1.19,"airlines":[["aic/a320",1],["gow/a320",1],["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VABB","destination":"VIJU","category":"arrival","route":"AAR..HUNOL..VIJU","altitude":[4000,7000],"speed":250,"method":"random","rate":0.59,"airlines":[["gow/a320",1],["igo/a320",1]]},
+        {"origin":"VILH","destination":"VIJU","category":"arrival","route":"NEJEB..GEGHU..VIJU","altitude":[4000,7000],"speed":250,"method":"random","rate":0.3,"airlines":[["aic/a319",1]]},
+        {"origin":"","destination":"VIJU","category":"arrival","route":"AAR..HUNOL..VIJU","altitude":[4000,7000],"speed":250,"method":"random","rate":1.09,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [32.9847,75.372,32.7988,75.0365],
+            [32.7988,75.0365,32.6888,74.8382],
+            [31.7069,74.8008,32.4891,74.8306],
+            [32.4891,74.8306,32.6888,74.8382],
+            [32.5583,74.2181,32.6403,74.6078],
+            [32.6403,74.6078,32.6888,74.8382],
+            [33.2263,74.8121,32.8885,74.8285],
+            [32.8885,74.8285,32.6888,74.8382]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [32.6979,74.8368,32.8642,74.826],
+            [32.7805,74.8196,32.7815,74.8433],
+            [32.8636,74.8142,32.8647,74.8379],
+            [32.6799,74.838,32.5136,74.8487],
+            [32.5973,74.8552,32.5962,74.8315],
+            [32.5141,74.8606,32.513,74.8369]
+        ]}
+    ]
+}

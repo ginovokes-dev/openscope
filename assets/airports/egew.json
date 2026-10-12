@@ -1,0 +1,69 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGEW/",
+    "info": {"country":"GB","city":"Westray","type":"small_airport","longestRunwayM":527,"approximateRunways":true},
+    "radio": {"twr":"Westray Tower","app":"Westray Approach","dep":"Westray Radar"},
+    "icao": "EGEW",
+    "iata": "WRY",
+    "magnetic_north": -0.8,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [59.350475,-2.950062,"29ft"],
+    "rangeRings": {"enabled":true,"center":[59.350475,-2.950062],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":250,"speed":11},
+    "arrivalRunway": "27",
+    "departureRunway": "27",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[59.7551,-2.9611],[59.7428,-2.7553],[59.7037,-2.5628],[59.6406,-2.3966],[59.5577,-2.2682],[59.4607,-2.1862],[59.3561,-2.1563],[59.2512,-2.1805],[59.153,-2.2571],[59.0683,-2.3809],[59.0029,-2.5436],[58.9611,-2.7339],[58.9458,-2.939],[58.9581,-3.1448],[58.9972,-3.3374],[59.0603,-3.5035],[59.1433,-3.632],[59.2403,-3.7139],[59.3448,-3.7438],[59.4497,-3.7197],[59.5479,-3.643],[59.6326,-3.5192],[59.6981,-3.3565],[59.7399,-3.1662]]}
+    ],
+    "fixes": {
+        "EGEW": [59.35048,-2.95006],
+        "SUM": [59.8789,-1.28667,"sumburgh"],
+        "KOSOD": [59.45618,-2.61733],
+        "AJOFI": [58.98368,-2.17818],
+        "CAFTU": [59.2142,-2.66328],
+        "HOCUN": [58.95698,-3.66958],
+        "WEGOB": [59.20428,-3.21739],
+        "WIFBE": [59.71727,-3.72194],
+        "NUPTA": [59.48675,-3.23685],
+        "_RWY0903DME": [59.3486,-3.05266],
+        "_RWY2703DME": [59.35227,-2.84746],
+        "_RWY1303DME": [59.38582,-3.02454],
+        "_RWY3103DME": [59.31509,-2.87574]
+    },
+    "runways": [
+        {"name":["09","27"],"end":[[59.35039,-2.95471,"29ft"],[59.35056,-2.94542,"15ft"]],"ils":[false,false]},
+        {"name":["13","31"],"end":[[59.35177,-2.95278,"25ft"],[59.34918,-2.94735,"16ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "SUM3B": {"icao":"SUM3B","name":"Sumburgh Three Bravo","rwy":{"EGEW09":["_RWY2703DME"],"EGEW27":["_RWY0903DME"],"EGEW13":["_RWY3103DME"],"EGEW31":["_RWY1303DME"]},"body":[],"exitPoints":{"SUM":["SUM"]},"draw":[["EGEW","SUM*"]]},
+        "AJOFI2B": {"icao":"AJOFI2B","name":"Ajofi Two Bravo","rwy":{"EGEW09":["_RWY2703DME"],"EGEW27":["_RWY0903DME"],"EGEW13":["_RWY3103DME"],"EGEW31":["_RWY1303DME"]},"body":[],"exitPoints":{"AJOFI":["AJOFI"]},"draw":[["EGEW","AJOFI*"]]},
+        "HOCUN2C": {"icao":"HOCUN2C","name":"Hocun Two Charlie","rwy":{"EGEW09":["_RWY2703DME"],"EGEW27":["_RWY0903DME"],"EGEW13":["_RWY3103DME"],"EGEW31":["_RWY1303DME"]},"body":[],"exitPoints":{"HOCUN":["HOCUN"]},"draw":[["EGEW","HOCUN*"]]},
+        "WIFBE3B": {"icao":"WIFBE3B","name":"Wifbe Three Bravo","rwy":{"EGEW09":["_RWY2703DME"],"EGEW27":["_RWY0903DME"],"EGEW13":["_RWY3103DME"],"EGEW31":["_RWY1303DME"]},"body":[],"exitPoints":{"WIFBE":["WIFBE"]},"draw":[["EGEW","WIFBE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGEW","destination":"","category":"departure","route":"EGEW27.WIFBE3B.WIFBE","altitude":"","speed":"","method":"random","rate":3,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/pc12",2],["g/be20",1]]},
+        {"origin":"","destination":"EGEW","category":"arrival","route":"WIFBE..NUPTA..EGEW","altitude":[4000,7000],"speed":250,"method":"random","rate":3,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/pc12",2],["g/be20",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [59.8789,-1.2867,59.4562,-2.6173],
+            [59.4562,-2.6173,59.3505,-2.9501],
+            [58.9837,-2.1782,59.2142,-2.6633],
+            [59.2142,-2.6633,59.3505,-2.9501],
+            [58.957,-3.6696,59.2043,-3.2174],
+            [59.2043,-3.2174,59.3505,-2.9501],
+            [59.7173,-3.7219,59.4868,-3.2368],
+            [59.4868,-3.2368,59.3505,-2.9501]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [59.3506,-2.9454,59.356,-2.6188],
+            [59.3634,-2.7828,59.3434,-2.7815],
+            [59.366,-2.6195,59.346,-2.6182]
+        ]}
+    ]
+}

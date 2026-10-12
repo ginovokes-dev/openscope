@@ -1,0 +1,79 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SBSN/",
+    "info": {"country":"BR","city":"Santarem","type":"medium_airport","longestRunwayM":2400,"frequencies":{"twr":"118.100","app":"119.300"},"approximateRunways":true},
+    "radio": {"twr":"Santarem Tower","app":"Santarem Approach","dep":"Santarem Departure"},
+    "icao": "SBSN",
+    "iata": "STM",
+    "magnetic_north": -19,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-2.422423,-54.79306,"198ft"],
+    "rangeRings": {"enabled":true,"center":[-2.422423,-54.79306],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":80,"speed":11},
+    "arrivalRunway": "10",
+    "departureRunway": "10",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-2.0398,-54.9249],[-2.0187,-54.8213],[-2.0252,-54.7158],[-2.0587,-54.6155],[-2.117,-54.5273],[-2.1961,-54.4573],[-2.2907,-54.4101],[-2.3942,-54.389],[-2.4996,-54.3954],[-2.5998,-54.429],[-2.6879,-54.4874],[-2.7579,-54.5666],[-2.8051,-54.6612],[-2.8261,-54.7648],[-2.8197,-54.8703],[-2.7862,-54.9706],[-2.7278,-55.0588],[-2.6487,-55.1289],[-2.5542,-55.176],[-2.4507,-55.1971],[-2.3452,-55.1907],[-2.245,-55.1571],[-2.1569,-55.0988],[-2.0869,-55.0196]]}
+    ],
+    "fixes": {
+        "SBSN": [-2.42242,-54.79306],
+        "DESAG": [-1.88549,-54.82596],
+        "ILELE": [-2.22293,-54.80528],
+        "JEWDE": [-2.42062,-54.25464],
+        "JUNIC": [-2.42175,-54.59302],
+        "EKIDU": [-2.87105,-55.09017],
+        "PALIZ": [-2.5891,-54.90345],
+        "OFOVA": [-2.48625,-55.32768],
+        "TAPEF": [-2.44614,-54.99169],
+        "_RWY1004DME": [-2.43453,-54.86959],
+        "_RWY2804DME": [-2.41031,-54.71653]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[-2.42411,-54.80373,"198ft"],[-2.42073,-54.78239,"198ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "DESAG3E": {"icao":"DESAG3E","name":"Desag Three Echo","rwy":{"SBSN10":["_RWY2804DME"],"SBSN28":["_RWY1004DME"]},"body":[],"exitPoints":{"DESAG":["DESAG"]},"draw":[["SBSN","DESAG*"]]},
+        "JEWDE3E": {"icao":"JEWDE3E","name":"Jewde Three Echo","rwy":{"SBSN10":["_RWY2804DME"],"SBSN28":["_RWY1004DME"]},"body":[],"exitPoints":{"JEWDE":["JEWDE"]},"draw":[["SBSN","JEWDE*"]]},
+        "EKIDU2F": {"icao":"EKIDU2F","name":"Ekidu Two Foxtrot","rwy":{"SBSN10":["_RWY2804DME"],"SBSN28":["_RWY1004DME"]},"body":[],"exitPoints":{"EKIDU":["EKIDU"]},"draw":[["SBSN","EKIDU*"]]},
+        "OFOVA1C": {"icao":"OFOVA1C","name":"Ofova One Charlie","rwy":{"SBSN10":["_RWY2804DME"],"SBSN28":["_RWY1004DME"]},"body":[],"exitPoints":{"OFOVA":["OFOVA"]},"draw":[["SBSN","OFOVA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SBSN","destination":"SBBE","category":"departure","route":"SBSN10.JEWDE3E.JEWDE","altitude":"","speed":"","method":"random","rate":1.41,"airlines":[["azu/at72",1],["glo/b737",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBSN","destination":"SBEG","category":"departure","route":"SBSN10.OFOVA1C.OFOVA","altitude":"","speed":"","method":"random","rate":1.06,"airlines":[["azu/at72",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBSN","destination":"SBHT","category":"departure","route":"SBSN10.JEWDE3E.JEWDE","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["azu/at72",1]]},
+        {"origin":"SBSN","destination":"SBIH","category":"departure","route":"SBSN10.EKIDU2F.EKIDU","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["azu/at72",1]]},
+        {"origin":"SBSN","destination":"","category":"departure","route":"SBSN10.OFOVA1C.OFOVA","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["azu/at72",1]]},
+        {"origin":"SBSN","destination":"","category":"departure","route":"SBSN10.DESAG3E.DESAG","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"SBBE","destination":"SBSN","category":"arrival","route":"JEWDE..JUNIC..SBSN","altitude":[4000,7000],"speed":250,"method":"random","rate":1.41,"airlines":[["azu/at72",1],["glo/b737",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBEG","destination":"SBSN","category":"arrival","route":"OFOVA..TAPEF..SBSN","altitude":[4000,7000],"speed":250,"method":"random","rate":1.06,"airlines":[["azu/at72",1],["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBHT","destination":"SBSN","category":"arrival","route":"JEWDE..JUNIC..SBSN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.35,"airlines":[["azu/at72",1]]},
+        {"origin":"SBIH","destination":"SBSN","category":"arrival","route":"EKIDU..PALIZ..SBSN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.35,"airlines":[["azu/at72",1]]},
+        {"origin":"","destination":"SBSN","category":"arrival","route":"OFOVA..TAPEF..SBSN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.35,"airlines":[["azu/at72",1]]},
+        {"origin":"","destination":"SBSN","category":"arrival","route":"DESAG..ILELE..SBSN","altitude":[4000,7000],"speed":250,"method":"random","rate":1.17,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-1.8855,-54.826,-2.2229,-54.8053],
+            [-2.2229,-54.8053,-2.4224,-54.7931],
+            [-2.4206,-54.2546,-2.4218,-54.593],
+            [-2.4218,-54.593,-2.4224,-54.7931],
+            [-2.871,-55.0902,-2.5891,-54.9034],
+            [-2.5891,-54.9034,-2.4224,-54.7931],
+            [-2.4862,-55.3277,-2.4461,-54.9917],
+            [-2.4461,-54.9917,-2.4224,-54.7931]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-2.4241,-54.8037,-2.4502,-54.9684],
+            [-2.447,-54.8845,-2.4273,-54.8876],
+            [-2.46,-54.9668,-2.4403,-54.9699],
+            [-2.4207,-54.7824,-2.3947,-54.6177],
+            [-2.3978,-54.7016,-2.4176,-54.6985],
+            [-2.3848,-54.6193,-2.4045,-54.6162]
+        ]}
+    ]
+}

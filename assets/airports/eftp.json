@@ -1,0 +1,81 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EFTP/",
+    "info": {"country":"FI","city":"Tampere","type":"large_airport","longestRunwayM":2700,"frequencies":{"atis":"133.550","twr":"118.700","app":"126.200"}},
+    "radio": {"twr":"Tampere Tower","app":"Tampere Approach","dep":"Tampere Departure"},
+    "icao": "EFTP",
+    "iata": "TMP",
+    "magnetic_north": 10.3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [61.414101,23.604401,"390ft"],
+    "rangeRings": {"enabled":true,"center":[61.414101,23.604401],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":240,"speed":11},
+    "arrivalRunway": "24",
+    "departureRunway": "24",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[61.8123,23.7556],[61.78,23.9659],[61.7227,24.1515],[61.6445,24.2998],[61.5505,24.4007],[61.4473,24.4474],[61.3417,24.4366],[61.2412,24.3691],[61.1523,24.2495],[61.0814,24.0859],[61.0331,23.8895],[61.0108,23.6737],[61.0159,23.4532],[61.0482,23.2429],[61.1055,23.0573],[61.1837,22.909],[61.2777,22.8081],[61.3809,22.7614],[61.4865,22.7722],[61.5871,22.8397],[61.6759,22.9593],[61.7468,23.1229],[61.7951,23.3193],[61.8174,23.5351]]}
+    ],
+    "fixes": {
+        "EFTP": [61.4141,23.6044],
+        "HAL": [61.8547,24.8026,"halli"],
+        "VINPI": [61.53589,23.9356],
+        "ANT": [60.863,25.1268,"antoni"],
+        "ELINI": [61.29351,23.93752],
+        "EGIHU": [61.04276,22.79096],
+        "KIKBO": [61.27613,23.30218],
+        "HODDO": [61.80331,22.82831],
+        "WUCJE": [61.55871,23.31605],
+        "_RWY0604DME": [61.37994,23.45629],
+        "_RWY2404DME": [61.44825,23.75278]
+    },
+    "runways": [
+        {"name":["06","24"],"end":[[61.4089,23.5816,"390ft"],[61.4194,23.6272,"366ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "HAL1A": {"icao":"HAL1A","name":"Halli One Alpha","rwy":{"EFTP06":["_RWY2404DME"],"EFTP24":["_RWY0604DME"]},"body":[],"exitPoints":{"HAL":["HAL"]},"draw":[["EFTP","HAL*"]]},
+        "ANT2B": {"icao":"ANT2B","name":"Antoni Two Bravo","rwy":{"EFTP06":["_RWY2404DME"],"EFTP24":["_RWY0604DME"]},"body":[],"exitPoints":{"ANT":["ANT"]},"draw":[["EFTP","ANT*"]]},
+        "EGIHU3F": {"icao":"EGIHU3F","name":"Egihu Three Foxtrot","rwy":{"EFTP06":["_RWY2404DME"],"EFTP24":["_RWY0604DME"]},"body":[],"exitPoints":{"EGIHU":["EGIHU"]},"draw":[["EFTP","EGIHU*"]]},
+        "HODDO3A": {"icao":"HODDO3A","name":"Hoddo Three Alpha","rwy":{"EFTP06":["_RWY2404DME"],"EFTP24":["_RWY0604DME"]},"body":[],"exitPoints":{"HODDO":["HODDO"]},"draw":[["EFTP","HODDO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EFTP","destination":"EDDW","category":"departure","route":"EFTP24.EGIHU3F.EGIHU","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["ryr/b738",1]]},
+        {"origin":"EFTP","destination":"EDFH","category":"departure","route":"EFTP24.EGIHU3F.EGIHU","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["ryr/b738",1]]},
+        {"origin":"EFTP","destination":"EGSS","category":"departure","route":"EFTP24.EGIHU3F.EGIHU","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["ryr/b738",1]]},
+        {"origin":"EFTP","destination":"ESSA","category":"departure","route":"EFTP24.EGIHU3F.EGIHU","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["cca/sb20",1]]},
+        {"origin":"EFTP","destination":"LEAL","category":"departure","route":"EFTP24.EGIHU3F.EGIHU","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["ryr/b738",1]]},
+        {"origin":"EFTP","destination":"","category":"departure","route":"EFTP24.EGIHU3F.EGIHU","altitude":"","speed":"","method":"random","rate":1.93,"airlines":[["ryr/b738",4]]},
+        {"origin":"EFTP","destination":"","category":"departure","route":"EFTP24.HODDO3A.HODDO","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["oh/c172",6],["oh/p28a",5],["oh/c182",3],["oh/be36",2],["oh/da42",1],["oh/tb20",1],["oh/c208",2],["oh/pc12",2],["oh/be20",1],["oh/b350",1],["oh/p180",1],["oh/c510",1],["oh/e50p",1],["oh/c550",1],["oh/e55p",1],["oh/cl30",1],["oh/c680",1],["oh/h25b",1],["oh/lj45",1],["oh/f2th",1],["oh/glf4",1],["oh/glex",1],["oh/glf5",1]]},
+        {"origin":"EDDW","destination":"EFTP","category":"arrival","route":"EGIHU..KIKBO..EFTP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDFH","destination":"EFTP","category":"arrival","route":"EGIHU..KIKBO..EFTP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGSS","destination":"EFTP","category":"arrival","route":"EGIHU..KIKBO..EFTP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["ryr/b738",1]]},
+        {"origin":"ESSA","destination":"EFTP","category":"arrival","route":"EGIHU..KIKBO..EFTP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["cca/sb20",1]]},
+        {"origin":"LEAL","destination":"EFTP","category":"arrival","route":"EGIHU..KIKBO..EFTP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"EFTP","category":"arrival","route":"EGIHU..KIKBO..EFTP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.93,"airlines":[["ryr/b738",4]]},
+        {"origin":"","destination":"EFTP","category":"arrival","route":"HODDO..WUCJE..EFTP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["oh/c172",6],["oh/p28a",5],["oh/c182",3],["oh/be36",2],["oh/da42",1],["oh/tb20",1],["oh/c208",2],["oh/pc12",2],["oh/be20",1],["oh/b350",1],["oh/p180",1],["oh/c510",1],["oh/e50p",1],["oh/c550",1],["oh/e55p",1],["oh/cl30",1],["oh/c680",1],["oh/h25b",1],["oh/lj45",1],["oh/f2th",1],["oh/glf4",1],["oh/glex",1],["oh/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [61.8547,24.8026,61.5359,23.9356],
+            [61.5359,23.9356,61.4141,23.6044],
+            [60.863,25.1268,61.2935,23.9375],
+            [61.2935,23.9375,61.4141,23.6044],
+            [61.0428,22.791,61.2761,23.3022],
+            [61.2761,23.3022,61.4141,23.6044],
+            [61.8033,22.8283,61.5587,23.3161],
+            [61.5587,23.3161,61.4141,23.6044]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [61.4089,23.5816,61.3363,23.2688],
+            [61.3637,23.434,61.3817,23.4159],
+            [61.3273,23.2778,61.3453,23.2597],
+            [61.4194,23.6272,61.4913,23.9416],
+            [61.4644,23.7751,61.4464,23.7933],
+            [61.5003,23.9325,61.4823,23.9507]
+        ]}
+    ]
+}

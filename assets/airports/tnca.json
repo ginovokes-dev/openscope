@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/TNCA/",
+    "info": {"country":"AW","city":"Oranjestad","type":"large_airport","longestRunwayM":2743,"frequencies":{"atis":"132.100","twr":"120.900","gnd":"121.900"}},
+    "radio": {"twr":"Queen Beatrix Tower","app":"Queen Beatrix Approach","dep":"Queen Beatrix Departure"},
+    "icao": "TNCA",
+    "iata": "AUA",
+    "magnetic_north": -11.7,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [12.501056,-70.014281,"60ft"],
+    "rangeRings": {"enabled":true,"center":[12.501056,-70.014281],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":140,"speed":6},
+    "arrivalRunway": "11",
+    "departureRunway": "11",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[13.0294,-70.1264],[13.0398,-69.9825],[13.0134,-69.8407],[12.9521,-69.7108],[12.86,-69.6016],[12.7435,-69.5205],[12.6105,-69.4731],[12.47,-69.4625],[12.3316,-69.4895],[12.2048,-69.5523],[12.0982,-69.6466],[12.019,-69.7659],[11.9727,-69.9022],[11.9624,-70.0461],[11.9888,-70.1878],[12.0501,-70.3177],[12.1421,-70.4269],[12.2586,-70.508],[12.3916,-70.5555],[12.5321,-70.5661],[12.6705,-70.539],[12.7973,-70.4762],[12.9039,-70.382],[12.9831,-70.2626]]}
+    ],
+    "fixes": {
+        "TNCA": [12.50106,-70.01428],
+        "ABILO": [13.05257,-69.56258],
+        "TEFIG": [12.69618,-69.85447],
+        "PJG": [12.2012,-69.0095,"curacao"],
+        "SIGIW": [12.42802,-69.76956],
+        "PRG": [11.7834,-70.1334,"paraguana"],
+        "KENUT": [12.25444,-70.05521],
+        "SUVEZ": [12.26518,-70.69603],
+        "RAVCO": [12.4176,-70.25548],
+        "ZEWRA": [13.17513,-70.22978],
+        "RUFAR": [12.73954,-70.09052],
+        "_RWY1104DME": [12.5206,-70.09369],
+        "_RWY2904DME": [12.48218,-69.93681]
+    },
+    "runways": [
+        {"name":["11","29"],"end":[[12.5044,-70.0275,"12ft"],[12.4984,-70.003,"62ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ABILO2F": {"icao":"ABILO2F","name":"Abilo Two Foxtrot","rwy":{"TNCA11":["_RWY2904DME"],"TNCA29":["_RWY1104DME"]},"body":[],"exitPoints":{"ABILO":["ABILO"]},"draw":[["TNCA","ABILO*"]]},
+        "PJG2D": {"icao":"PJG2D","name":"Curacao Two Delta","rwy":{"TNCA11":["_RWY2904DME"],"TNCA29":["_RWY1104DME"]},"body":[],"exitPoints":{"PJG":["PJG"]},"draw":[["TNCA","PJG*"]]},
+        "PRG2A": {"icao":"PRG2A","name":"Paraguana Two Alpha","rwy":{"TNCA11":["_RWY2904DME"],"TNCA29":["_RWY1104DME"]},"body":[],"exitPoints":{"PRG":["PRG"]},"draw":[["TNCA","PRG*"]]},
+        "SUVEZ2D": {"icao":"SUVEZ2D","name":"Suvez Two Delta","rwy":{"TNCA11":["_RWY2904DME"],"TNCA29":["_RWY1104DME"]},"body":[],"exitPoints":{"SUVEZ":["SUVEZ"]},"draw":[["TNCA","SUVEZ*"]]},
+        "ZEWRA1F": {"icao":"ZEWRA1F","name":"Zewra One Foxtrot","rwy":{"TNCA11":["_RWY2904DME"],"TNCA29":["_RWY1104DME"]},"body":[],"exitPoints":{"ZEWRA":["ZEWRA"]},"draw":[["TNCA","ZEWRA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"TNCA","destination":"KCLT","category":"departure","route":"TNCA11.ZEWRA1F.ZEWRA","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["aal/a319",2],["aal/a320",2],["aal/b752",2]]},
+        {"origin":"TNCA","destination":"KATL","category":"departure","route":"TNCA11.ZEWRA1F.ZEWRA","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["dal/b738",1],["dal/b752",1],["swa/b737",1]]},
+        {"origin":"TNCA","destination":"KMIA","category":"departure","route":"TNCA11.ZEWRA1F.ZEWRA","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["aal/b738",2],["slm/b733",1]]},
+        {"origin":"TNCA","destination":"CYYZ","category":"departure","route":"TNCA11.ZEWRA1F.ZEWRA","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["aca/a319",1],["wja/b737",1]]},
+        {"origin":"TNCA","destination":"EHAM","category":"departure","route":"TNCA11.ABILO2F.ABILO","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["tfl/b763",1],["klm/a333",1],["klm/a332",1]]},
+        {"origin":"TNCA","destination":"KJFK","category":"departure","route":"TNCA11.ZEWRA1F.ZEWRA","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["dal/b738",1],["jbu/a320",1]]},
+        {"origin":"TNCA","destination":"","category":"departure","route":"TNCA11.PJG2D.PJG","altitude":"","speed":"","method":"random","rate":0.94,"airlines":[["glo/b738",1],["oca/md82",1],["slm/b733",1],["tfl/b763",1],["klm/a333",1],["klm/a332",1]]},
+        {"origin":"TNCA","destination":"","category":"departure","route":"TNCA11.PRG2A.PRG","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["ava/a319",1],["ava/a320",1]]},
+        {"origin":"TNCA","destination":"","category":"departure","route":"TNCA11.SUVEZ2D.SUVEZ","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["cmp/b738",1],["cmp/e190",1]]},
+        {"origin":"TNCA","destination":"","category":"departure","route":"TNCA11.ZEWRA1F.ZEWRA","altitude":"","speed":"","method":"random","rate":1.51,"airlines":[["aal/a320",2],["swa/b737",2],["dal/b738",1],["jbu/a320",1],["nks/a319",1],["ual/b753",1]]},
+        {"origin":"TNCA","destination":"","category":"departure","route":"TNCA11.PRG2A.PRG","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["p4/c172",6],["p4/p28a",5],["p4/c182",3],["p4/be36",2],["p4/da42",1],["p4/tb20",1],["p4/c208",2],["p4/pc12",2],["p4/be20",1],["p4/b350",1],["p4/p180",1],["p4/c510",1],["p4/e50p",1],["p4/c550",2],["p4/e55p",1],["p4/cl30",1],["p4/c680",1],["p4/h25b",1],["p4/lj45",1],["p4/f2th",1],["p4/glf4",1],["p4/glex",1],["p4/glf5",1]]},
+        {"origin":"TNCA","destination":"","category":"departure","route":"TNCA11.ZEWRA1F.ZEWRA","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["p4/c172",6],["p4/p28a",5],["p4/c182",3],["p4/be36",2],["p4/da42",1],["p4/tb20",1],["p4/c208",2],["p4/pc12",2],["p4/be20",1],["p4/b350",1],["p4/p180",1],["p4/c510",1],["p4/e50p",1],["p4/c550",2],["p4/e55p",1],["p4/cl30",1],["p4/c680",1],["p4/h25b",1],["p4/lj45",1],["p4/f2th",1],["p4/glf4",1],["p4/glex",1],["p4/glf5",1]]},
+        {"origin":"KCLT","destination":"TNCA","category":"arrival","route":"ZEWRA..RUFAR..TNCA","altitude":[6000,9000],"speed":250,"method":"random","rate":1.13,"airlines":[["aal/a319",2],["aal/a320",2],["aal/b752",2]]},
+        {"origin":"KATL","destination":"TNCA","category":"arrival","route":"ZEWRA..RUFAR..TNCA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.57,"airlines":[["dal/b738",1],["dal/b752",1],["swa/b737",1]]},
+        {"origin":"KMIA","destination":"TNCA","category":"arrival","route":"ZEWRA..RUFAR..TNCA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.57,"airlines":[["aal/b738",2],["slm/b733",1]]},
+        {"origin":"CYYZ","destination":"TNCA","category":"arrival","route":"ZEWRA..RUFAR..TNCA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.38,"airlines":[["aca/a319",1],["wja/b737",1]]},
+        {"origin":"EHAM","destination":"TNCA","category":"arrival","route":"ABILO..TEFIG..TNCA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.38,"airlines":[["tfl/b763",1],["klm/a333",1],["klm/a332",1]]},
+        {"origin":"KJFK","destination":"TNCA","category":"arrival","route":"ZEWRA..RUFAR..TNCA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.38,"airlines":[["dal/b738",1],["jbu/a320",1]]},
+        {"origin":"","destination":"TNCA","category":"arrival","route":"PJG..SIGIW..TNCA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.94,"airlines":[["glo/b738",1],["oca/md82",1],["slm/b733",1],["tfl/b763",1],["klm/a333",1],["klm/a332",1]]},
+        {"origin":"","destination":"TNCA","category":"arrival","route":"PRG..KENUT..TNCA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.38,"airlines":[["ava/a319",1],["ava/a320",1]]},
+        {"origin":"","destination":"TNCA","category":"arrival","route":"SUVEZ..RAVCO..TNCA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.38,"airlines":[["cmp/b738",1],["cmp/e190",1]]},
+        {"origin":"","destination":"TNCA","category":"arrival","route":"ZEWRA..RUFAR..TNCA","altitude":[6000,9000],"speed":250,"method":"random","rate":1.51,"airlines":[["aal/a320",2],["swa/b737",2],["dal/b738",1],["jbu/a320",1],["nks/a319",1],["ual/b753",1]]},
+        {"origin":"","destination":"TNCA","category":"arrival","route":"PRG..KENUT..TNCA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["p4/c172",6],["p4/p28a",5],["p4/c182",3],["p4/be36",2],["p4/da42",1],["p4/tb20",1],["p4/c208",2],["p4/pc12",2],["p4/be20",1],["p4/b350",1],["p4/p180",1],["p4/c510",1],["p4/e50p",1],["p4/c550",2],["p4/e55p",1],["p4/cl30",1],["p4/c680",1],["p4/h25b",1],["p4/lj45",1],["p4/f2th",1],["p4/glf4",1],["p4/glex",1],["p4/glf5",1]]},
+        {"origin":"","destination":"TNCA","category":"arrival","route":"ZEWRA..RUFAR..TNCA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["p4/c172",6],["p4/p28a",5],["p4/c182",3],["p4/be36",2],["p4/da42",1],["p4/tb20",1],["p4/c208",2],["p4/pc12",2],["p4/be20",1],["p4/b350",1],["p4/p180",1],["p4/c510",1],["p4/e50p",1],["p4/c550",2],["p4/e55p",1],["p4/cl30",1],["p4/c680",1],["p4/h25b",1],["p4/lj45",1],["p4/f2th",1],["p4/glf4",1],["p4/glex",1],["p4/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [13.0526,-69.5626,12.6962,-69.8545],
+            [12.6962,-69.8545,12.5011,-70.0143],
+            [12.2012,-69.0095,12.428,-69.7696],
+            [12.428,-69.7696,12.5011,-70.0143],
+            [11.7834,-70.1334,12.2544,-70.0552],
+            [12.2544,-70.0552,12.5011,-70.0143],
+            [12.2652,-70.696,12.4176,-70.2555],
+            [12.4176,-70.2555,12.5011,-70.0143],
+            [13.1751,-70.2298,12.7395,-70.0905],
+            [12.7395,-70.0905,12.5011,-70.0143]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [12.5044,-70.0275,12.5449,-70.193],
+            [12.515,-70.1127,12.5343,-70.1077],
+            [12.5352,-70.1955,12.5546,-70.1905],
+            [12.4984,-70.003,12.4578,-69.8376],
+            [12.4878,-69.9178,12.4684,-69.9228],
+            [12.4675,-69.8351,12.4481,-69.84]
+        ]}
+    ]
+}

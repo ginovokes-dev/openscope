@@ -1,0 +1,89 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/GMMX/",
+    "info": {"country":"MA","city":"Marrakesh","type":"large_airport","longestRunwayM":3100,"frequencies":{"twr":"118.700","app":"119.700"}},
+    "radio": {"twr":"Marrakesh Tower","app":"Marrakesh Approach","dep":"Marrakesh Departure"},
+    "icao": "GMMX",
+    "iata": "RAK",
+    "magnetic_north": -0.8,
+    "ctr_radius": 60,
+    "ctr_ceiling": 11000,
+    "initial_alt": 6000,
+    "position": [31.604807,-8.035788,"1545ft"],
+    "rangeRings": {"enabled":true,"center":[31.604807,-8.035788],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":280,"speed":9},
+    "arrivalRunway": "28",
+    "departureRunway": "28",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":110,"airspace_class":"C","poly":[[32.1443,-8.0446],[32.1279,-7.8804],[32.0758,-7.7267],[31.9916,-7.5941],[31.8811,-7.4916],[31.7517,-7.4262],[31.6123,-7.4023],[31.4724,-7.4216],[31.3416,-7.4827],[31.2286,-7.5816],[31.1413,-7.7114],[31.0856,-7.8633],[31.0653,-8.0269],[31.0817,-8.1912],[31.1338,-8.3449],[31.218,-8.4775],[31.3285,-8.58],[31.4579,-8.6454],[31.5973,-8.6693],[31.7372,-8.65],[31.8681,-8.5888],[31.981,-8.49],[32.0683,-8.3602],[32.124,-8.2083]]}
+    ],
+    "fixes": {
+        "GMMX": [31.60481,-8.03579],
+        "JIHBU": [32.24287,-7.68059],
+        "GITBA": [31.83055,-7.91012],
+        "OZT": [30.94,-6.90444,"ouarzazate"],
+        "LOVUW": [31.46293,-7.79434],
+        "MIHHI": [30.96674,-8.39099],
+        "UZIVU": [31.37906,-8.16146],
+        "KEKNO": [31.90732,-8.78497],
+        "BUCBA": [31.71184,-8.30085],
+        "_RWY1004DME": [31.61504,-8.12741],
+        "_RWY2804DME": [31.59855,-7.9422]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[31.60814,-8.0496,"1506ft"],[31.6055,-8.01999,"1545ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "JIHBU1D": {"icao":"JIHBU1D","name":"Jihbu One Delta","rwy":{"GMMX10":["_RWY2804DME"],"GMMX28":["_RWY1004DME"]},"body":[],"exitPoints":{"JIHBU":["JIHBU"]},"draw":[["GMMX","JIHBU*"]]},
+        "OZT1B": {"icao":"OZT1B","name":"Ouarzazate One Bravo","rwy":{"GMMX10":["_RWY2804DME"],"GMMX28":["_RWY1004DME"]},"body":[],"exitPoints":{"OZT":["OZT"]},"draw":[["GMMX","OZT*"]]},
+        "MIHHI2F": {"icao":"MIHHI2F","name":"Mihhi Two Foxtrot","rwy":{"GMMX10":["_RWY2804DME"],"GMMX28":["_RWY1004DME"]},"body":[],"exitPoints":{"MIHHI":["MIHHI"]},"draw":[["GMMX","MIHHI*"]]},
+        "KEKNO1C": {"icao":"KEKNO1C","name":"Kekno One Charlie","rwy":{"GMMX10":["_RWY2804DME"],"GMMX28":["_RWY1004DME"]},"body":[],"exitPoints":{"KEKNO":["KEKNO"]},"draw":[["GMMX","KEKNO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"GMMX","destination":"EGKK","category":"departure","route":"GMMX28.JIHBU1D.JIHBU","altitude":"","speed":"","method":"random","rate":0.92,"airlines":[["baw/a319",1],["baw/a320",1],["baw/b734",1],["ezy/a319",1],["ezy/a320",1],["ram/b738",1],["tom/b738",1],["tvf/b738",1],["tvf/b752",1]]},
+        {"origin":"GMMX","destination":"LFBO","category":"departure","route":"GMMX28.JIHBU1D.JIHBU","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["afr/a319",1],["afr/a320",1],["ezy/a319",1],["ezy/a320",1],["ram/b738",1]]},
+        {"origin":"GMMX","destination":"EGCC","category":"departure","route":"GMMX28.JIHBU1D.JIHBU","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["ezy/a319",1],["ezy/a320",1],["tom/b738",1],["tvf/b738",1]]},
+        {"origin":"GMMX","destination":"GMMN","category":"departure","route":"GMMX28.JIHBU1D.JIHBU","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["ram/at72",1],["ram/b737",1],["ram/b738",1]]},
+        {"origin":"GMMX","destination":"LFBD","category":"departure","route":"GMMX28.JIHBU1D.JIHBU","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["ezy/a319",1],["ezy/a320",1],["ram/b738",1]]},
+        {"origin":"GMMX","destination":"LFLL","category":"departure","route":"GMMX28.JIHBU1D.JIHBU","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["ezy/a319",1],["ram/b738",1],["tvf/b738",1]]},
+        {"origin":"GMMX","destination":"LFML","category":"departure","route":"GMMX28.JIHBU1D.JIHBU","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["afr/a320",1],["ram/b738",1],["ryr/b738",1]]},
+        {"origin":"GMMX","destination":"","category":"departure","route":"GMMX28.JIHBU1D.JIHBU","altitude":"","speed":"","method":"random","rate":5.65,"airlines":[["ryr/b738",17],["ezy/a319",7],["ezy/a320",7],["ram/b738",6],["tvf/b738",4],["nax/b738",2],["dat/a319",1],["gwi/a319",1],["lgl/b738",1],["ram/a319",1],["swr/a320",1],["tap/a319",1]]},
+        {"origin":"GMMX","destination":"","category":"departure","route":"GMMX28.MIHHI2F.MIHHI","altitude":"","speed":"","method":"random","rate":0.1,"airlines":[["tra/b738",1]]},
+        {"origin":"GMMX","destination":"","category":"departure","route":"GMMX28.OZT1B.OZT","altitude":"","speed":"","method":"random","rate":0.6,"airlines":[["cn/c172",6],["cn/p28a",5],["cn/c182",3],["cn/be36",2],["cn/da42",1],["cn/tb20",1],["cn/c208",2],["cn/pc12",2],["cn/be20",1],["cn/b350",1],["cn/p180",1],["cn/c510",1],["cn/e50p",1],["cn/c550",2],["cn/e55p",1],["cn/cl30",1],["cn/c680",1],["cn/h25b",1],["cn/lj45",1],["cn/f2th",1],["cn/glf4",1],["cn/glex",1],["cn/glf5",1]]},
+        {"origin":"GMMX","destination":"","category":"departure","route":"GMMX28.JIHBU1D.JIHBU","altitude":"","speed":"","method":"random","rate":0.6,"airlines":[["cn/c172",6],["cn/p28a",5],["cn/c182",3],["cn/be36",2],["cn/da42",1],["cn/tb20",1],["cn/c208",2],["cn/pc12",2],["cn/be20",1],["cn/b350",1],["cn/p180",1],["cn/c510",1],["cn/e50p",1],["cn/c550",2],["cn/e55p",1],["cn/cl30",1],["cn/c680",1],["cn/h25b",1],["cn/lj45",1],["cn/f2th",1],["cn/glf4",1],["cn/glex",1],["cn/glf5",1]]},
+        {"origin":"EGKK","destination":"GMMX","category":"arrival","route":"JIHBU..GITBA..GMMX","altitude":[7000,10000],"speed":250,"method":"random","rate":0.92,"airlines":[["baw/a319",1],["baw/a320",1],["baw/b734",1],["ezy/a319",1],["ezy/a320",1],["ram/b738",1],["tom/b738",1],["tvf/b738",1],["tvf/b752",1]]},
+        {"origin":"LFBO","destination":"GMMX","category":"arrival","route":"JIHBU..GITBA..GMMX","altitude":[7000,10000],"speed":250,"method":"random","rate":0.51,"airlines":[["afr/a319",1],["afr/a320",1],["ezy/a319",1],["ezy/a320",1],["ram/b738",1]]},
+        {"origin":"EGCC","destination":"GMMX","category":"arrival","route":"JIHBU..GITBA..GMMX","altitude":[7000,10000],"speed":250,"method":"random","rate":0.41,"airlines":[["ezy/a319",1],["ezy/a320",1],["tom/b738",1],["tvf/b738",1]]},
+        {"origin":"GMMN","destination":"GMMX","category":"arrival","route":"JIHBU..GITBA..GMMX","altitude":[7000,10000],"speed":250,"method":"random","rate":0.31,"airlines":[["ram/at72",1],["ram/b737",1],["ram/b738",1]]},
+        {"origin":"LFBD","destination":"GMMX","category":"arrival","route":"JIHBU..GITBA..GMMX","altitude":[7000,10000],"speed":250,"method":"random","rate":0.31,"airlines":[["ezy/a319",1],["ezy/a320",1],["ram/b738",1]]},
+        {"origin":"LFLL","destination":"GMMX","category":"arrival","route":"JIHBU..GITBA..GMMX","altitude":[7000,10000],"speed":250,"method":"random","rate":0.31,"airlines":[["ezy/a319",1],["ram/b738",1],["tvf/b738",1]]},
+        {"origin":"LFML","destination":"GMMX","category":"arrival","route":"JIHBU..GITBA..GMMX","altitude":[7000,10000],"speed":250,"method":"random","rate":0.31,"airlines":[["afr/a320",1],["ram/b738",1],["ryr/b738",1]]},
+        {"origin":"","destination":"GMMX","category":"arrival","route":"JIHBU..GITBA..GMMX","altitude":[7000,10000],"speed":250,"method":"random","rate":5.65,"airlines":[["ryr/b738",17],["ezy/a319",7],["ezy/a320",7],["ram/b738",6],["tvf/b738",4],["nax/b738",2],["dat/a319",1],["gwi/a319",1],["lgl/b738",1],["ram/a319",1],["swr/a320",1],["tap/a319",1]]},
+        {"origin":"","destination":"GMMX","category":"arrival","route":"MIHHI..UZIVU..GMMX","altitude":[7000,10000],"speed":250,"method":"random","rate":0.1,"airlines":[["tra/b738",1]]},
+        {"origin":"","destination":"GMMX","category":"arrival","route":"OZT..LOVUW..GMMX","altitude":[7000,10000],"speed":250,"method":"random","rate":0.6,"airlines":[["cn/c172",6],["cn/p28a",5],["cn/c182",3],["cn/be36",2],["cn/da42",1],["cn/tb20",1],["cn/c208",2],["cn/pc12",2],["cn/be20",1],["cn/b350",1],["cn/p180",1],["cn/c510",1],["cn/e50p",1],["cn/c550",2],["cn/e55p",1],["cn/cl30",1],["cn/c680",1],["cn/h25b",1],["cn/lj45",1],["cn/f2th",1],["cn/glf4",1],["cn/glex",1],["cn/glf5",1]]},
+        {"origin":"","destination":"GMMX","category":"arrival","route":"JIHBU..GITBA..GMMX","altitude":[7000,10000],"speed":250,"method":"random","rate":0.6,"airlines":[["cn/c172",6],["cn/p28a",5],["cn/c182",3],["cn/be36",2],["cn/da42",1],["cn/tb20",1],["cn/c208",2],["cn/pc12",2],["cn/be20",1],["cn/b350",1],["cn/p180",1],["cn/c510",1],["cn/e50p",1],["cn/c550",2],["cn/e55p",1],["cn/cl30",1],["cn/c680",1],["cn/h25b",1],["cn/lj45",1],["cn/f2th",1],["cn/glf4",1],["cn/glex",1],["cn/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [32.2429,-7.6806,31.8306,-7.9101],
+            [31.8306,-7.9101,31.6048,-8.0358],
+            [30.94,-6.9044,31.4629,-7.7943],
+            [31.4629,-7.7943,31.6048,-8.0358],
+            [30.9667,-8.391,31.3791,-8.1615],
+            [31.3791,-8.1615,31.6048,-8.0358],
+            [31.9073,-8.785,31.7118,-8.3008],
+            [31.7118,-8.3008,31.6048,-8.0358]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [31.6081,-8.0496,31.6253,-8.2441],
+            [31.6068,-8.1481,31.6267,-8.1456],
+            [31.6154,-8.2454,31.6352,-8.2429],
+            [31.6055,-8.02,31.588,-7.8255],
+            [31.6067,-7.9215,31.5869,-7.924],
+            [31.598,-7.8243,31.5781,-7.8267]
+        ]}
+    ]
+}

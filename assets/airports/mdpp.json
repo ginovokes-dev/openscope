@@ -1,0 +1,88 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/MDPP/",
+    "info": {"country":"DO","city":"Puerto Plata","type":"medium_airport","longestRunwayM":3081,"frequencies":{"twr":"118.000","app":"119.000","gnd":"121.900"}},
+    "radio": {"twr":"Gregorio Luperon Tower","app":"Gregorio Luperon Approach","dep":"Gregorio Luperon Departure"},
+    "icao": "MDPP",
+    "iata": "POP",
+    "magnetic_north": -11.8,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [19.7579,-70.57,"15ft"],
+    "rangeRings": {"enabled":true,"center":[19.7579,-70.57],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":90,"speed":7},
+    "arrivalRunway": "08",
+    "departureRunway": "08",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[20.154,-70.6579],[20.162,-70.546],[20.1423,-70.4357],[20.0965,-70.3345],[20.0276,-70.2494],[19.9404,-70.1862],[19.8407,-70.1491],[19.7353,-70.1407],[19.6315,-70.1615],[19.5363,-70.2102],[19.4562,-70.2834],[19.3967,-70.3761],[19.3618,-70.4821],[19.3538,-70.594],[19.3735,-70.7043],[19.4193,-70.8055],[19.4882,-70.8906],[19.5754,-70.9538],[19.6751,-70.9909],[19.7805,-70.9993],[19.8843,-70.9785],[19.9795,-70.9298],[20.0596,-70.8566],[20.1191,-70.7639]]}
+    ],
+    "fixes": {
+        "MDPP": [19.7579,-70.57],
+        "UZALE": [20.28655,-70.67574],
+        "ZABOC": [19.95432,-70.60929],
+        "BILSI": [20.15993,-70.19022],
+        "FELOB": [19.90727,-70.4289],
+        "POHAB": [19.50265,-70.06685],
+        "JIKOT": [19.66307,-70.38306],
+        "HENUS": [19.30197,-70.87335],
+        "TUBOR": [19.58851,-70.68271],
+        "IFOGO": [20.07244,-71.0337],
+        "ECAHU": [19.87476,-70.74228],
+        "_RWY0804DME": [19.73405,-70.6517],
+        "_RWY2604DME": [19.78172,-70.48838]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[19.7538,-70.5841,"17ft"],[19.762,-70.556,"15ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "UZALE2E": {"icao":"UZALE2E","name":"Uzale Two Echo","rwy":{"MDPP08":["_RWY2604DME"],"MDPP26":["_RWY0804DME"]},"body":[],"exitPoints":{"UZALE":["UZALE"]},"draw":[["MDPP","UZALE*"]]},
+        "BILSI1C": {"icao":"BILSI1C","name":"Bilsi One Charlie","rwy":{"MDPP08":["_RWY2604DME"],"MDPP26":["_RWY0804DME"]},"body":[],"exitPoints":{"BILSI":["BILSI"]},"draw":[["MDPP","BILSI*"]]},
+        "POHAB1E": {"icao":"POHAB1E","name":"Pohab One Echo","rwy":{"MDPP08":["_RWY2604DME"],"MDPP26":["_RWY0804DME"]},"body":[],"exitPoints":{"POHAB":["POHAB"]},"draw":[["MDPP","POHAB*"]]},
+        "HENUS2C": {"icao":"HENUS2C","name":"Henus Two Charlie","rwy":{"MDPP08":["_RWY2604DME"],"MDPP26":["_RWY0804DME"]},"body":[],"exitPoints":{"HENUS":["HENUS"]},"draw":[["MDPP","HENUS*"]]},
+        "IFOGO1C": {"icao":"IFOGO1C","name":"Ifogo One Charlie","rwy":{"MDPP08":["_RWY2604DME"],"MDPP26":["_RWY0804DME"]},"body":[],"exitPoints":{"IFOGO":["IFOGO"]},"draw":[["MDPP","IFOGO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"MDPP","destination":"CYYZ","category":"departure","route":"MDPP08.UZALE2E.UZALE","altitude":"","speed":"","method":"random","rate":0.96,"airlines":[["aca/a319",1],["wja/b738",1]]},
+        {"origin":"MDPP","destination":"KMIA","category":"departure","route":"MDPP08.IFOGO1C.IFOGO","altitude":"","speed":"","method":"random","rate":0.96,"airlines":[["aal/b752",2]]},
+        {"origin":"MDPP","destination":"CYHZ","category":"departure","route":"MDPP08.UZALE2E.UZALE","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["aca/a319",1]]},
+        {"origin":"MDPP","destination":"EDDF","category":"departure","route":"MDPP08.BILSI1C.BILSI","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["cfg/b763",1]]},
+        {"origin":"MDPP","destination":"EDDL","category":"departure","route":"MDPP08.BILSI1C.BILSI","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["ber/a332",1]]},
+        {"origin":"MDPP","destination":"","category":"departure","route":"MDPP08.UZALE2E.UZALE","altitude":"","speed":"","method":"random","rate":0.96,"airlines":[["jbu/a320",1],["ual/b739",1]]},
+        {"origin":"MDPP","destination":"","category":"departure","route":"MDPP08.BILSI1C.BILSI","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["tfl/b763",1]]},
+        {"origin":"MDPP","destination":"","category":"departure","route":"MDPP08.POHAB1E.POHAB","altitude":"","speed":"","method":"random","rate":1.43,"airlines":[["cfg/b763",1],["tfl/b763",1],["tsc/a310",1]]},
+        {"origin":"CYYZ","destination":"MDPP","category":"arrival","route":"UZALE..ZABOC..MDPP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.96,"airlines":[["aca/a319",1],["wja/b738",1]]},
+        {"origin":"KMIA","destination":"MDPP","category":"arrival","route":"IFOGO..ECAHU..MDPP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.96,"airlines":[["aal/b752",2]]},
+        {"origin":"CYHZ","destination":"MDPP","category":"arrival","route":"UZALE..ZABOC..MDPP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["aca/a319",1]]},
+        {"origin":"EDDF","destination":"MDPP","category":"arrival","route":"BILSI..FELOB..MDPP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["cfg/b763",1]]},
+        {"origin":"EDDL","destination":"MDPP","category":"arrival","route":"BILSI..FELOB..MDPP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["ber/a332",1]]},
+        {"origin":"","destination":"MDPP","category":"arrival","route":"UZALE..ZABOC..MDPP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.96,"airlines":[["jbu/a320",1],["ual/b739",1]]},
+        {"origin":"","destination":"MDPP","category":"arrival","route":"BILSI..FELOB..MDPP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["tfl/b763",1]]},
+        {"origin":"","destination":"MDPP","category":"arrival","route":"POHAB..JIKOT..MDPP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.43,"airlines":[["cfg/b763",1],["tfl/b763",1],["tsc/a310",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [20.2866,-70.6757,19.9543,-70.6093],
+            [19.9543,-70.6093,19.7579,-70.57],
+            [20.1599,-70.1902,19.9073,-70.4289],
+            [19.9073,-70.4289,19.7579,-70.57],
+            [19.5027,-70.0669,19.6631,-70.3831],
+            [19.6631,-70.3831,19.7579,-70.57],
+            [19.302,-70.8734,19.5885,-70.6827],
+            [19.5885,-70.6827,19.7579,-70.57],
+            [20.0724,-71.0337,19.8748,-70.7423],
+            [19.8748,-70.7423,19.7579,-70.57]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [19.7538,-70.5841,19.7044,-70.7531],
+            [19.7196,-70.6655,19.7387,-70.6717],
+            [19.6948,-70.7499,19.7139,-70.7562],
+            [19.762,-70.556,19.8113,-70.3869],
+            [19.7962,-70.4746,19.7771,-70.4683],
+            [19.8208,-70.3901,19.8017,-70.3838]
+        ]}
+    ]
+}

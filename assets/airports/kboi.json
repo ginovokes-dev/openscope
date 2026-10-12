@@ -1,0 +1,97 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KBOI/",
+    "info": {"country":"US","city":"Boise","type":"large_airport","longestRunwayM":3048,"frequencies":{"atis":"123.900","twr":"118.100","gnd":"121.700"}},
+    "radio": {"twr":"Boise Tower","app":"Boise Approach","dep":"Boise Departure"},
+    "icao": "KBOI",
+    "iata": "BOI",
+    "magnetic_north": 12.7,
+    "ctr_radius": 45,
+    "ctr_ceiling": 10000,
+    "initial_alt": 6000,
+    "position": [43.5644,-116.223,"2871ft"],
+    "rangeRings": {"enabled":true,"center":[43.5644,-116.223],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":280,"speed":5},
+    "arrivalRunway": "28R",
+    "departureRunway": "28R",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"D","poly":[[43.9592,-116.1002],[43.9227,-115.9634],[43.8618,-115.8442],[43.7806,-115.7509],[43.6847,-115.6898],[43.5806,-115.6649],[43.4754,-115.6782],[43.3763,-115.7285],[43.29,-115.8125],[43.2223,-115.9246],[43.178,-116.0569],[43.16,-116.2006],[43.1696,-116.3458],[43.2061,-116.4826],[43.267,-116.6018],[43.3482,-116.6951],[43.4441,-116.7562],[43.5482,-116.7811],[43.6534,-116.7678],[43.7525,-116.7175],[43.8388,-116.6335],[43.9065,-116.5214],[43.9508,-116.3891],[43.9688,-116.2454]]}
+    ],
+    "fixes": {
+        "KBOI": [43.5644,-116.223],
+        "LEBRO": [43.68156,-115.49843],
+        "SICUW": [43.60793,-115.95379],
+        "STI": [43.1133,-115.659,"sturgeon"],
+        "JUROH": [43.41628,-116.03781],
+        "BOKSO": [43.04027,-116.05588],
+        "CUGSE": [43.36966,-116.16091],
+        "HABLI": [43.15174,-116.69926],
+        "CUBUZ": [43.41108,-116.39995],
+        "PUNUT": [44.09003,-116.38091],
+        "ERUTA": [43.75969,-116.28167],
+        "_RWY10L04DME": [43.59854,-116.32024],
+        "_RWY28R04DME": [43.5302,-116.11986],
+        "_RWY10R04DME": [43.59773,-116.32662],
+        "_RWY28L04DME": [43.53091,-116.12547]
+    },
+    "runways": [
+        {"name":["10L","28R"],"end":[[43.5702,-116.237,"2831ft"],[43.5586,-116.203,"2871ft"]],"ils":[true,true]},
+        {"name":["10R","28L"],"end":[[43.57,-116.243,"2824ft"],[43.5587,-116.209,"2858ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "LEBRO2C": {"icao":"LEBRO2C","name":"Lebro Two Charlie","rwy":{"KBOI10L":["_RWY28R04DME"],"KBOI28R":["_RWY10L04DME"],"KBOI10R":["_RWY28L04DME"],"KBOI28L":["_RWY10R04DME"]},"body":[],"exitPoints":{"LEBRO":["LEBRO"]},"draw":[["KBOI","LEBRO*"]]},
+        "STI3E": {"icao":"STI3E","name":"Sturgeon Three Echo","rwy":{"KBOI10L":["_RWY28R04DME"],"KBOI28R":["_RWY10L04DME"],"KBOI10R":["_RWY28L04DME"],"KBOI28L":["_RWY10R04DME"]},"body":[],"exitPoints":{"STI":["STI"]},"draw":[["KBOI","STI*"]]},
+        "BOKSO1A": {"icao":"BOKSO1A","name":"Bokso One Alpha","rwy":{"KBOI10L":["_RWY28R04DME"],"KBOI28R":["_RWY10L04DME"],"KBOI10R":["_RWY28L04DME"],"KBOI28L":["_RWY10R04DME"]},"body":[],"exitPoints":{"BOKSO":["BOKSO"]},"draw":[["KBOI","BOKSO*"]]},
+        "HABLI3F": {"icao":"HABLI3F","name":"Habli Three Foxtrot","rwy":{"KBOI10L":["_RWY28R04DME"],"KBOI28R":["_RWY10L04DME"],"KBOI10R":["_RWY28L04DME"],"KBOI28L":["_RWY10R04DME"]},"body":[],"exitPoints":{"HABLI":["HABLI"]},"draw":[["KBOI","HABLI*"]]},
+        "PUNUT1B": {"icao":"PUNUT1B","name":"Punut One Bravo","rwy":{"KBOI10L":["_RWY28R04DME"],"KBOI28R":["_RWY10L04DME"],"KBOI10R":["_RWY28L04DME"],"KBOI28L":["_RWY10R04DME"]},"body":[],"exitPoints":{"PUNUT":["PUNUT"]},"draw":[["KBOI","PUNUT*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KBOI","destination":"KDEN","category":"departure","route":"KBOI28R.STI3E.STI","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["swa/b733",1],["swa/b737",1],["ual/a319",1],["ual/a320",1],["ual/b738",1],["ual/b739",1]]},
+        {"origin":"KBOI","destination":"KSLC","category":"departure","route":"KBOI28R.STI3E.STI","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["dal/b738",2],["dal/a319",1],["dal/a320",1]]},
+        {"origin":"KBOI","destination":"KLAS","category":"departure","route":"KBOI28R.BOKSO1A.BOKSO","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["aay/md82",1],["swa/b733",1],["swa/b737",1]]},
+        {"origin":"KBOI","destination":"KPHX","category":"departure","route":"KBOI28R.BOKSO1A.BOKSO","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["aal/a319",2],["swa/b737",1]]},
+        {"origin":"KBOI","destination":"KMSP","category":"departure","route":"KBOI28R.LEBRO2C.LEBRO","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["dal/a320",1],["dal/b738",1]]},
+        {"origin":"KBOI","destination":"","category":"departure","route":"KBOI28R.HABLI3F.HABLI","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["swa/b733",1],["swa/b737",1]]},
+        {"origin":"KBOI","destination":"","category":"departure","route":"KBOI28R.PUNUT1B.PUNUT","altitude":"","speed":"","method":"random","rate":0.19,"airlines":[["swa/b737",1]]},
+        {"origin":"KBOI","destination":"","category":"departure","route":"KBOI28R.LEBRO2C.LEBRO","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KDEN","destination":"KBOI","category":"arrival","route":"STI..JUROH..KBOI","altitude":[6000,9000],"speed":250,"method":"random","rate":1.13,"airlines":[["swa/b733",1],["swa/b737",1],["ual/a319",1],["ual/a320",1],["ual/b738",1],["ual/b739",1]]},
+        {"origin":"KSLC","destination":"KBOI","category":"arrival","route":"STI..JUROH..KBOI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.76,"airlines":[["dal/b738",2],["dal/a319",1],["dal/a320",1]]},
+        {"origin":"KLAS","destination":"KBOI","category":"arrival","route":"BOKSO..CUGSE..KBOI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.57,"airlines":[["aay/md82",1],["swa/b733",1],["swa/b737",1]]},
+        {"origin":"KPHX","destination":"KBOI","category":"arrival","route":"BOKSO..CUGSE..KBOI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.57,"airlines":[["aal/a319",2],["swa/b737",1]]},
+        {"origin":"KMSP","destination":"KBOI","category":"arrival","route":"LEBRO..SICUW..KBOI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.38,"airlines":[["dal/a320",1],["dal/b738",1]]},
+        {"origin":"","destination":"KBOI","category":"arrival","route":"HABLI..CUBUZ..KBOI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.38,"airlines":[["swa/b733",1],["swa/b737",1]]},
+        {"origin":"","destination":"KBOI","category":"arrival","route":"PUNUT..ERUTA..KBOI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.19,"airlines":[["swa/b737",1]]},
+        {"origin":"","destination":"KBOI","category":"arrival","route":"LEBRO..SICUW..KBOI","altitude":[6000,9000],"speed":250,"method":"random","rate":1.32,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [43.6816,-115.4984,43.6079,-115.9538],
+            [43.6079,-115.9538,43.5644,-116.223],
+            [43.1133,-115.659,43.4163,-116.0378],
+            [43.4163,-116.0378,43.5644,-116.223],
+            [43.0403,-116.0559,43.3697,-116.1609],
+            [43.3697,-116.1609,43.5644,-116.223],
+            [43.1517,-116.6993,43.4111,-116.3999],
+            [43.4111,-116.3999,43.5644,-116.223],
+            [44.09,-116.3809,43.7597,-116.2817],
+            [43.7597,-116.2817,43.5644,-116.223]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [43.5702,-116.237,43.6409,-116.4452],
+            [43.5966,-116.3469,43.6147,-116.3352],
+            [43.6319,-116.4511,43.65,-116.4394],
+            [43.5586,-116.203,43.4875,-115.9953],
+            [43.5321,-116.0932,43.514,-116.105],
+            [43.4965,-115.9894,43.4784,-116.0012],
+            [43.57,-116.243,43.6392,-116.4522],
+            [43.5956,-116.3533,43.6137,-116.3418],
+            [43.6301,-116.458,43.6483,-116.4464],
+            [43.5587,-116.209,43.4891,-116.0003],
+            [43.533,-116.0989,43.5149,-116.1103],
+            [43.4982,-115.9946,43.48,-116.0061]
+        ]}
+    ]
+}

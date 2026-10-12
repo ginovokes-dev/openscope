@@ -1,0 +1,81 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/GVAC/",
+    "info": {"country":"CV","city":"Espargos","type":"large_airport","longestRunwayM":3283,"frequencies":{"twr":"119.700","app":"126.400"}},
+    "radio": {"twr":"Amilcar Cabral Tower","app":"Amilcar Cabral Approach","dep":"Amilcar Cabral Departure"},
+    "icao": "GVAC",
+    "iata": "SID",
+    "magnetic_north": -7.8,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [16.7414,-22.9494,"177ft"],
+    "rangeRings": {"enabled":true,"center":[16.7414,-22.9494],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":20,"speed":8},
+    "arrivalRunway": "01",
+    "departureRunway": "01",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[17.276,-23.0259],[17.2767,-22.8788],[17.241,-22.7365],[17.1712,-22.6087],[17.0721,-22.5042],[16.9505,-22.43],[16.8146,-22.3911],[16.6738,-22.3904],[16.5375,-22.4277],[16.4152,-22.5006],[16.315,-22.604],[16.244,-22.731],[16.2068,-22.8729],[16.2061,-23.02],[16.2418,-23.1623],[16.3116,-23.2901],[16.4107,-23.3946],[16.5323,-23.4688],[16.6682,-23.5077],[16.809,-23.5084],[16.9453,-23.4711],[17.0676,-23.3982],[17.1678,-23.2948],[17.2388,-23.1678]]}
+    ],
+    "fixes": {
+        "GVAC": [16.7414,-22.9494],
+        "GENIH": [17.36949,-22.6124],
+        "FAVAC": [16.96362,-22.83017],
+        "UDEKO": [16.54398,-22.2414],
+        "GOFIB": [16.67156,-22.69891],
+        "KIPAJ": [16.03824,-23.01719],
+        "GADUW": [16.49263,-22.97338],
+        "UWISE": [16.72872,-23.68668],
+        "AWOMO": [16.73691,-23.21025],
+        "_RWY0104DME": [16.65493,-22.94838],
+        "_RWY1904DME": [16.8153,-22.9495]
+    },
+    "runways": [
+        {"name":["01","19"],"end":[[16.72155,-22.94885,"176ft"],[16.74868,-22.94903,"170ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "GENIH2C": {"icao":"GENIH2C","name":"Genih Two Charlie","rwy":{"GVAC01":["_RWY1904DME"],"GVAC19":["_RWY0104DME"]},"body":[],"exitPoints":{"GENIH":["GENIH"]},"draw":[["GVAC","GENIH*"]]},
+        "UDEKO1B": {"icao":"UDEKO1B","name":"Udeko One Bravo","rwy":{"GVAC01":["_RWY1904DME"],"GVAC19":["_RWY0104DME"]},"body":[],"exitPoints":{"UDEKO":["UDEKO"]},"draw":[["GVAC","UDEKO*"]]},
+        "KIPAJ3F": {"icao":"KIPAJ3F","name":"Kipaj Three Foxtrot","rwy":{"GVAC01":["_RWY1904DME"],"GVAC19":["_RWY0104DME"]},"body":[],"exitPoints":{"KIPAJ":["KIPAJ"]},"draw":[["GVAC","KIPAJ*"]]},
+        "UWISE3F": {"icao":"UWISE3F","name":"Uwise Three Foxtrot","rwy":{"GVAC01":["_RWY1904DME"],"GVAC19":["_RWY0104DME"]},"body":[],"exitPoints":{"UWISE":["UWISE"]},"draw":[["GVAC","UWISE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"GVAC","destination":"GVBA","category":"departure","route":"GVAC01.KIPAJ3F.KIPAJ","altitude":"","speed":"","method":"random","rate":0.85,"airlines":[["hlx/b738",1],["lgl/b737",1],["tcv/at72",1]]},
+        {"origin":"GVAC","destination":"GVNP","category":"departure","route":"GVAC01.KIPAJ3F.KIPAJ","altitude":"","speed":"","method":"random","rate":0.85,"airlines":[["tcv/at72",1],["tcv/b738",1],["tcv/b752",1]]},
+        {"origin":"GVAC","destination":"EGCC","category":"departure","route":"GVAC01.GENIH2C.GENIH","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["tom/b752",1],["tvf/b752",1]]},
+        {"origin":"GVAC","destination":"EGKK","category":"departure","route":"GVAC01.GENIH2C.GENIH","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["tom/b752",1],["tvf/b752",1]]},
+        {"origin":"GVAC","destination":"EHAM","category":"departure","route":"GVAC01.GENIH2C.GENIH","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["tcv/b738",1],["tra/b738",1]]},
+        {"origin":"GVAC","destination":"","category":"departure","route":"GVAC01.GENIH2C.GENIH","altitude":"","speed":"","method":"random","rate":2.83,"airlines":[["hlx/b738",5],["tcv/b752",2],["lgl/b737",1],["tap/a320",1],["tra/b738",1]]},
+        {"origin":"GVAC","destination":"","category":"departure","route":"GVAC01.UWISE3F.UWISE","altitude":"","speed":"","method":"random","rate":0.85,"airlines":[["tcv/at72",2],["tcv/b752",1]]},
+        {"origin":"GVBA","destination":"GVAC","category":"arrival","route":"KIPAJ..GADUW..GVAC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.85,"airlines":[["hlx/b738",1],["lgl/b737",1],["tcv/at72",1]]},
+        {"origin":"GVNP","destination":"GVAC","category":"arrival","route":"KIPAJ..GADUW..GVAC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.85,"airlines":[["tcv/at72",1],["tcv/b738",1],["tcv/b752",1]]},
+        {"origin":"EGCC","destination":"GVAC","category":"arrival","route":"GENIH..FAVAC..GVAC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.57,"airlines":[["tom/b752",1],["tvf/b752",1]]},
+        {"origin":"EGKK","destination":"GVAC","category":"arrival","route":"GENIH..FAVAC..GVAC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.57,"airlines":[["tom/b752",1],["tvf/b752",1]]},
+        {"origin":"EHAM","destination":"GVAC","category":"arrival","route":"GENIH..FAVAC..GVAC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.57,"airlines":[["tcv/b738",1],["tra/b738",1]]},
+        {"origin":"","destination":"GVAC","category":"arrival","route":"GENIH..FAVAC..GVAC","altitude":[6000,9000],"speed":250,"method":"random","rate":2.83,"airlines":[["hlx/b738",5],["tcv/b752",2],["lgl/b737",1],["tap/a320",1],["tra/b738",1]]},
+        {"origin":"","destination":"GVAC","category":"arrival","route":"UWISE..AWOMO..GVAC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.85,"airlines":[["tcv/at72",2],["tcv/b752",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [17.3695,-22.6124,16.9636,-22.8302],
+            [16.9636,-22.8302,16.7414,-22.9494],
+            [16.544,-22.2414,16.6716,-22.6989],
+            [16.6716,-22.6989,16.7414,-22.9494],
+            [16.0382,-23.0172,16.4926,-22.9734],
+            [16.4926,-22.9734,16.7414,-22.9494],
+            [16.7287,-23.6867,16.7369,-23.2102],
+            [16.7369,-23.2102,16.7414,-22.9494]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [16.7215,-22.9488,16.555,-22.9477],
+            [16.6383,-22.9378,16.6382,-22.9587],
+            [16.5551,-22.9373,16.5549,-22.9581],
+            [16.7487,-22.949,16.9152,-22.9502],
+            [16.8319,-22.9601,16.832,-22.9392],
+            [16.9152,-22.9606,16.9153,-22.9397]
+        ]}
+    ]
+}

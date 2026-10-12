@@ -1,0 +1,98 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/MMGL/",
+    "info": {"country":"MX","city":"Guadalajara","type":"large_airport","longestRunwayM":4000,"frequencies":{"atis":"127.900","twr":"118.100","app":"119.300","gnd":"121.900"}},
+    "radio": {"twr":"Guadalajara Tower","app":"Guadalajara Approach","dep":"Guadalajara Departure"},
+    "icao": "MMGL",
+    "iata": "GDL",
+    "magnetic_north": 5.5,
+    "ctr_radius": 60,
+    "ctr_ceiling": 15000,
+    "initial_alt": 10000,
+    "position": [20.523342,-103.310108,"5016ft"],
+    "rangeRings": {"enabled":true,"center":[20.523342,-103.310108],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":130,"speed":7},
+    "arrivalRunway": "11R",
+    "departureRunway": "11R",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":150,"airspace_class":"C","poly":[[21.0605,-103.2549],[21.0288,-103.1083],[20.9626,-102.9755],[20.8666,-102.8655],[20.7471,-102.7858],[20.6124,-102.7418],[20.4716,-102.7366],[20.3344,-102.7704],[20.21,-102.841],[20.107,-102.9436],[20.0323,-103.0712],[19.9911,-103.215],[19.9862,-103.3653],[20.0179,-103.5119],[20.0841,-103.6447],[20.1801,-103.7547],[20.2996,-103.8344],[20.4343,-103.8784],[20.5751,-103.8836],[20.7123,-103.8498],[20.8367,-103.7792],[20.9397,-103.6766],[21.0144,-103.549],[21.0555,-103.4052]]}
+    ],
+    "fixes": {
+        "MMGL": [20.52334,-103.31011],
+        "MAFBE": [21.13509,-102.93348],
+        "DADPO": [20.73977,-103.17686],
+        "BOHUW": [20.38278,-102.57119],
+        "SICAC": [20.47361,-103.04868],
+        "MIGPO": [19.91937,-103.70078],
+        "DEPDI": [20.30966,-103.44833],
+        "TINAN": [21.07159,-103.78531],
+        "ZAP": [20.7498,-103.465,"zapopan"],
+        "_RWY11R04DME": [20.55603,-103.39262],
+        "_RWY29L04DME": [20.48681,-103.22777],
+        "_RWY11L04DME": [20.55825,-103.39159],
+        "_RWY29R04DME": [20.49074,-103.23077]
+    },
+    "runways": [
+        {"name":["11R","29L"],"end":[[20.52879,-103.3277,"5012ft"],[20.51407,-103.29266,"5011ft"]],"ils":[true,true]},
+        {"name":["11L","29R"],"end":[[20.53102,-103.32666,"5006ft"],[20.518,-103.29567,"5006ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "MAFBE3F": {"icao":"MAFBE3F","name":"Mafbe Three Foxtrot","rwy":{"MMGL11R":["_RWY29L04DME"],"MMGL29L":["_RWY11R04DME"],"MMGL11L":["_RWY29R04DME"],"MMGL29R":["_RWY11L04DME"]},"body":[],"exitPoints":{"MAFBE":["MAFBE"]},"draw":[["MMGL","MAFBE*"]]},
+        "BOHUW1C": {"icao":"BOHUW1C","name":"Bohuw One Charlie","rwy":{"MMGL11R":["_RWY29L04DME"],"MMGL29L":["_RWY11R04DME"],"MMGL11L":["_RWY29R04DME"],"MMGL29R":["_RWY11L04DME"]},"body":[],"exitPoints":{"BOHUW":["BOHUW"]},"draw":[["MMGL","BOHUW*"]]},
+        "MIGPO3E": {"icao":"MIGPO3E","name":"Migpo Three Echo","rwy":{"MMGL11R":["_RWY29L04DME"],"MMGL29L":["_RWY11R04DME"],"MMGL11L":["_RWY29R04DME"],"MMGL29R":["_RWY11L04DME"]},"body":[],"exitPoints":{"MIGPO":["MIGPO"]},"draw":[["MMGL","MIGPO*"]]},
+        "TINAN2F": {"icao":"TINAN2F","name":"Tinan Two Foxtrot","rwy":{"MMGL11R":["_RWY29L04DME"],"MMGL29L":["_RWY11R04DME"],"MMGL11L":["_RWY29R04DME"],"MMGL29R":["_RWY11L04DME"]},"body":[],"exitPoints":{"TINAN":["TINAN"]},"draw":[["MMGL","TINAN*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"MMGL","destination":"MMMX","category":"departure","route":"MMGL11R.BOHUW1C.BOHUW","altitude":"","speed":"","method":"random","rate":1.01,"airlines":[["amx/e170",1],["amx/b737",1],["amx/b738",1],["amx/e75l",1],["voi/a319",1],["voi/a320",1],["amx/e145",1],["amx/e190",1],["amx/e135",1]]},
+        {"origin":"MMGL","destination":"KLAX","category":"departure","route":"MMGL11R.TINAN2F.TINAN","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["amx/b738",1],["asa/b738",1],["dal/b738",1],["ual/a319",1],["voi/a319",1],["voi/a320",1]]},
+        {"origin":"MMGL","destination":"KDFW","category":"departure","route":"MMGL11R.MAFBE3F.MAFBE","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["aal/md82",2],["aal/e145",1]]},
+        {"origin":"MMGL","destination":"KSFO","category":"departure","route":"MMGL11R.TINAN2F.TINAN","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["amx/b738",1],["ual/a319",1],["ual/b738",1]]},
+        {"origin":"MMGL","destination":"KSMF","category":"departure","route":"MMGL11R.TINAN2F.TINAN","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["amx/b738",1],["voi/a319",1],["voi/a320",1]]},
+        {"origin":"MMGL","destination":"MMTJ","category":"departure","route":"MMGL11R.TINAN2F.TINAN","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["amx/b738",1],["voi/a319",1],["voi/a320",1]]},
+        {"origin":"MMGL","destination":"","category":"departure","route":"MMGL11R.MAFBE3F.MAFBE","altitude":"","speed":"","method":"random","rate":1.26,"airlines":[["voi/a319",3],["voi/a320",2],["amx/b737",1],["dal/a320",1],["dal/b737",1],["ual/a319",1],["ual/b737",1]]},
+        {"origin":"MMGL","destination":"","category":"departure","route":"MMGL11R.BOHUW1C.BOHUW","altitude":"","speed":"","method":"random","rate":1.01,"airlines":[["voi/a319",5],["voi/a320",2],["cmp/e190",1]]},
+        {"origin":"MMGL","destination":"","category":"departure","route":"MMGL11R.TINAN2F.TINAN","altitude":"","speed":"","method":"random","rate":2.39,"airlines":[["voi/a319",10],["voi/a320",6],["amx/b738",2],["asa/b738",1]]},
+        {"origin":"MMGL","destination":"","category":"departure","route":"MMGL11R.TINAN2F.TINAN","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["xa/c172",6],["xa/p28a",5],["xa/c182",3],["xa/be36",2],["xa/da42",1],["xa/tb20",1],["xa/c208",2],["xa/pc12",2],["xa/be20",1],["xa/b350",1],["xa/p180",1],["xa/c510",1],["xa/e50p",1],["xa/c550",2],["xa/e55p",1],["xa/cl30",1],["xa/c680",1],["xa/h25b",1],["xa/lj45",1],["xa/f2th",1],["xa/glf4",1],["xa/glex",1],["xa/glf5",1]]},
+        {"origin":"MMGL","destination":"","category":"departure","route":"MMGL11R.BOHUW1C.BOHUW","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["xa/c172",6],["xa/p28a",5],["xa/c182",3],["xa/be36",2],["xa/da42",1],["xa/tb20",1],["xa/c208",2],["xa/pc12",2],["xa/be20",1],["xa/b350",1],["xa/p180",1],["xa/c510",1],["xa/e50p",1],["xa/c550",2],["xa/e55p",1],["xa/cl30",1],["xa/c680",1],["xa/h25b",1],["xa/lj45",1],["xa/f2th",1],["xa/glf4",1],["xa/glex",1],["xa/glf5",1]]},
+        {"origin":"MMMX","destination":"MMGL","category":"arrival","route":"BOHUW..SICAC..MMGL","altitude":[11000,14000],"speed":250,"method":"random","rate":1.01,"airlines":[["amx/e170",1],["amx/b737",1],["amx/b738",1],["amx/e75l",1],["voi/a319",1],["voi/a320",1],["amx/e145",1],["amx/e190",1],["amx/e135",1]]},
+        {"origin":"KLAX","destination":"MMGL","category":"arrival","route":"TINAN..ZAP..MMGL","altitude":[11000,14000],"speed":250,"method":"random","rate":0.75,"airlines":[["amx/b738",1],["asa/b738",1],["dal/b738",1],["ual/a319",1],["voi/a319",1],["voi/a320",1]]},
+        {"origin":"KDFW","destination":"MMGL","category":"arrival","route":"MAFBE..DADPO..MMGL","altitude":[11000,14000],"speed":250,"method":"random","rate":0.38,"airlines":[["aal/md82",2],["aal/e145",1]]},
+        {"origin":"KSFO","destination":"MMGL","category":"arrival","route":"TINAN..ZAP..MMGL","altitude":[11000,14000],"speed":250,"method":"random","rate":0.38,"airlines":[["amx/b738",1],["ual/a319",1],["ual/b738",1]]},
+        {"origin":"KSMF","destination":"MMGL","category":"arrival","route":"TINAN..ZAP..MMGL","altitude":[11000,14000],"speed":250,"method":"random","rate":0.38,"airlines":[["amx/b738",1],["voi/a319",1],["voi/a320",1]]},
+        {"origin":"MMTJ","destination":"MMGL","category":"arrival","route":"TINAN..ZAP..MMGL","altitude":[11000,14000],"speed":250,"method":"random","rate":0.38,"airlines":[["amx/b738",1],["voi/a319",1],["voi/a320",1]]},
+        {"origin":"","destination":"MMGL","category":"arrival","route":"MAFBE..DADPO..MMGL","altitude":[11000,14000],"speed":250,"method":"random","rate":1.26,"airlines":[["voi/a319",3],["voi/a320",2],["amx/b737",1],["dal/a320",1],["dal/b737",1],["ual/a319",1],["ual/b737",1]]},
+        {"origin":"","destination":"MMGL","category":"arrival","route":"BOHUW..SICAC..MMGL","altitude":[11000,14000],"speed":250,"method":"random","rate":1.01,"airlines":[["voi/a319",5],["voi/a320",2],["cmp/e190",1]]},
+        {"origin":"","destination":"MMGL","category":"arrival","route":"TINAN..ZAP..MMGL","altitude":[11000,14000],"speed":250,"method":"random","rate":2.39,"airlines":[["voi/a319",10],["voi/a320",6],["amx/b738",2],["asa/b738",1]]},
+        {"origin":"","destination":"MMGL","category":"arrival","route":"TINAN..ZAP..MMGL","altitude":[11000,14000],"speed":250,"method":"random","rate":0.54,"airlines":[["xa/c172",6],["xa/p28a",5],["xa/c182",3],["xa/be36",2],["xa/da42",1],["xa/tb20",1],["xa/c208",2],["xa/pc12",2],["xa/be20",1],["xa/b350",1],["xa/p180",1],["xa/c510",1],["xa/e50p",1],["xa/c550",2],["xa/e55p",1],["xa/cl30",1],["xa/c680",1],["xa/h25b",1],["xa/lj45",1],["xa/f2th",1],["xa/glf4",1],["xa/glex",1],["xa/glf5",1]]},
+        {"origin":"","destination":"MMGL","category":"arrival","route":"BOHUW..SICAC..MMGL","altitude":[11000,14000],"speed":250,"method":"random","rate":0.54,"airlines":[["xa/c172",6],["xa/p28a",5],["xa/c182",3],["xa/be36",2],["xa/da42",1],["xa/tb20",1],["xa/c208",2],["xa/pc12",2],["xa/be20",1],["xa/b350",1],["xa/p180",1],["xa/c510",1],["xa/e50p",1],["xa/c550",2],["xa/e55p",1],["xa/cl30",1],["xa/c680",1],["xa/h25b",1],["xa/lj45",1],["xa/f2th",1],["xa/glf4",1],["xa/glex",1],["xa/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [21.1351,-102.9335,20.7398,-103.1769],
+            [20.7398,-103.1769,20.5233,-103.3101],
+            [20.3828,-102.5712,20.4736,-103.0487],
+            [20.4736,-103.0487,20.5233,-103.3101],
+            [19.9194,-103.7008,20.3097,-103.4483],
+            [20.3097,-103.4483,20.5233,-103.3101],
+            [21.0716,-103.7853,20.7498,-103.465],
+            [20.7498,-103.465,20.5233,-103.3101]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [20.5288,-103.3277,20.5968,-103.4901],
+            [20.5537,-103.4132,20.572,-103.4045],
+            [20.5877,-103.4944,20.606,-103.4857],
+            [20.5141,-103.2927,20.4459,-103.1305],
+            [20.4891,-103.2072,20.4709,-103.2159],
+            [20.455,-103.1261,20.4367,-103.1348],
+            [20.531,-103.3267,20.5991,-103.489],
+            [20.5559,-103.4122,20.5742,-103.4035],
+            [20.5899,-103.4934,20.6082,-103.4847],
+            [20.518,-103.2957,20.4498,-103.1335],
+            [20.493,-103.2102,20.4748,-103.2189],
+            [20.4589,-103.1291,20.4407,-103.1378]
+        ]}
+    ]
+}

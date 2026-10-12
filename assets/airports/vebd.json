@@ -1,0 +1,79 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VEBD/",
+    "info": {"country":"IN","city":"Siliguri","type":"large_airport","longestRunwayM":2754,"frequencies":{"twr":"122.300","app":"131.200"}},
+    "radio": {"twr":"Bagdogra Tower","app":"Bagdogra Approach","dep":"Bagdogra Departure"},
+    "icao": "VEBD",
+    "iata": "IXB",
+    "magnetic_north": 0,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [26.6812,88.328598,"412ft"],
+    "rangeRings": {"enabled":true,"center":[26.6812,88.328598],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":210,"speed":12},
+    "arrivalRunway": "18",
+    "departureRunway": "18",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[27.0859,88.3286],[27.0721,88.4458],[27.0317,88.5551],[26.9674,88.6489],[26.8835,88.7208],[26.7859,88.7661],[26.6812,88.7815],[26.5765,88.7661],[26.4789,88.7208],[26.395,88.6489],[26.3307,88.5551],[26.2903,88.4458],[26.2765,88.3286],[26.2903,88.2114],[26.3307,88.1021],[26.395,88.0083],[26.4789,87.9364],[26.5765,87.8911],[26.6812,87.8757],[26.7859,87.8911],[26.8835,87.9364],[26.9674,88.0083],[27.0317,88.1021],[27.0721,88.2114]]}
+    ],
+    "fixes": {
+        "VEBD": [26.6812,88.3286],
+        "VUPUM": [27.00295,88.81108],
+        "UTICU": [26.80074,88.50786],
+        "EPUBA": [26.58395,88.92072],
+        "BUVMI": [26.64507,88.5486],
+        "ERABU": [26.14346,88.34503],
+        "KEGVU": [26.48141,88.3347],
+        "BRT": [26.4808,87.2631,"biratnagar"],
+        "VORZE": [26.64003,88.10971],
+        "_RWY1804DME": [26.7602,88.3308],
+        "_RWY3604DME": [26.6023,88.32631]
+    },
+    "runways": [
+        {"name":["18","36"],"end":[[26.6936,88.3289,"412ft"],[26.6689,88.3282,"412ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "VUPUM2E": {"icao":"VUPUM2E","name":"Vupum Two Echo","rwy":{"VEBD18":["_RWY3604DME"],"VEBD36":["_RWY1804DME"]},"body":[],"exitPoints":{"VUPUM":["VUPUM"]},"draw":[["VEBD","VUPUM*"]]},
+        "EPUBA2B": {"icao":"EPUBA2B","name":"Epuba Two Bravo","rwy":{"VEBD18":["_RWY3604DME"],"VEBD36":["_RWY1804DME"]},"body":[],"exitPoints":{"EPUBA":["EPUBA"]},"draw":[["VEBD","EPUBA*"]]},
+        "ERABU1B": {"icao":"ERABU1B","name":"Erabu One Bravo","rwy":{"VEBD18":["_RWY3604DME"],"VEBD36":["_RWY1804DME"]},"body":[],"exitPoints":{"ERABU":["ERABU"]},"draw":[["VEBD","ERABU*"]]},
+        "BRT1B": {"icao":"BRT1B","name":"Biratnagar One Bravo","rwy":{"VEBD18":["_RWY3604DME"],"VEBD36":["_RWY1804DME"]},"body":[],"exitPoints":{"BRT":["BRT"]},"draw":[["VEBD","BRT*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"VEBD","destination":"VECC","category":"departure","route":"VEBD18.ERABU1B.ERABU","altitude":"","speed":"","method":"random","rate":1.41,"airlines":[["aic/a319",1],["aic/a320",1],["gow/a320",1],["igo/a320",1],["jai/b738",1],["sej/b737",1]]},
+        {"origin":"VEBD","destination":"VIDP","category":"departure","route":"VEBD18.BRT1B.BRT","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["aic/a321",1],["gow/a320",1],["igo/a320",1],["jai/b737",1],["sej/b737",1]]},
+        {"origin":"VEBD","destination":"VEGT","category":"departure","route":"VEBD18.EPUBA2B.EPUBA","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VEBD","destination":"VQPR","category":"departure","route":"VEBD18.VUPUM2E.VUPUM","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["drk/a319",1]]},
+        {"origin":"VEBD","destination":"","category":"departure","route":"VEBD18.EPUBA2B.EPUBA","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["drk/a319",1]]},
+        {"origin":"VEBD","destination":"","category":"departure","route":"VEBD18.VUPUM2E.VUPUM","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"VECC","destination":"VEBD","category":"arrival","route":"ERABU..KEGVU..VEBD","altitude":[4000,7000],"speed":250,"method":"random","rate":1.41,"airlines":[["aic/a319",1],["aic/a320",1],["gow/a320",1],["igo/a320",1],["jai/b738",1],["sej/b737",1]]},
+        {"origin":"VIDP","destination":"VEBD","category":"arrival","route":"BRT..VORZE..VEBD","altitude":[4000,7000],"speed":250,"method":"random","rate":1.17,"airlines":[["aic/a321",1],["gow/a320",1],["igo/a320",1],["jai/b737",1],["sej/b737",1]]},
+        {"origin":"VEGT","destination":"VEBD","category":"arrival","route":"EPUBA..BUVMI..VEBD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.47,"airlines":[["igo/a320",1],["sej/b737",1]]},
+        {"origin":"VQPR","destination":"VEBD","category":"arrival","route":"VUPUM..UTICU..VEBD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.23,"airlines":[["drk/a319",1]]},
+        {"origin":"","destination":"VEBD","category":"arrival","route":"EPUBA..BUVMI..VEBD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.23,"airlines":[["drk/a319",1]]},
+        {"origin":"","destination":"VEBD","category":"arrival","route":"VUPUM..UTICU..VEBD","altitude":[4000,7000],"speed":250,"method":"random","rate":1.17,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [27.003,88.8111,26.8007,88.5079],
+            [26.8007,88.5079,26.6812,88.3286],
+            [26.584,88.9207,26.6451,88.5486],
+            [26.6451,88.5486,26.6812,88.3286],
+            [26.1435,88.345,26.4814,88.3347],
+            [26.4814,88.3347,26.6812,88.3286],
+            [26.4808,87.2631,26.64,88.1097],
+            [26.64,88.1097,26.6812,88.3286]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [26.6936,88.3289,26.8601,88.3336],
+            [26.7771,88.3201,26.7766,88.3425],
+            [26.8604,88.3224,26.8598,88.3448],
+            [26.6689,88.3282,26.5024,88.3235],
+            [26.5854,88.337,26.5859,88.3147],
+            [26.5021,88.3346,26.5027,88.3123]
+        ]}
+    ]
+}

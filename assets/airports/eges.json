@@ -1,0 +1,69 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGES/",
+    "info": {"country":"GB","city":"Sanday","type":"small_airport","longestRunwayM":467,"approximateRunways":true},
+    "radio": {"twr":"Sanday Tower","app":"Sanday Approach","dep":"Sanday Radar"},
+    "icao": "EGES",
+    "iata": "NDY",
+    "magnetic_north": -0.6,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [59.250301,-2.57667,"68ft"],
+    "rangeRings": {"enabled":true,"center":[59.250301,-2.57667],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":210,"speed":11},
+    "arrivalRunway": "21",
+    "departureRunway": "21",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[59.655,-2.585],[59.6423,-2.3798],[59.6029,-2.1881],[59.5394,-2.0229],[59.4563,-1.8954],[59.3591,-1.8143],[59.2545,-1.7852],[59.1497,-1.81],[59.0516,-1.8871],[58.9672,-2.0112],[58.902,-2.1738],[58.8605,-2.3638],[58.8456,-2.5684],[58.8583,-2.7735],[58.8977,-2.9652],[58.9612,-3.1305],[59.0443,-3.258],[59.1415,-3.339],[59.2461,-3.3681],[59.3509,-3.3433],[59.449,-3.2663],[59.5335,-3.1422],[59.5986,-2.9796],[59.6401,-2.7895]]}
+    ],
+    "fixes": {
+        "EGES": [59.2503,-2.57667],
+        "SUM": [59.8789,-1.28667,"sumburgh"],
+        "NEWMA": [59.38819,-2.2937],
+        "ELOWO": [58.74168,-2.23409],
+        "AHOCU": [59.06133,-2.44939],
+        "OCAGA": [59.07514,-3.57146],
+        "SIFER": [59.18522,-2.94627],
+        "TULMI": [59.75892,-2.91925],
+        "GUZID": [59.43927,-2.70395],
+        "_RWY0303DME": [59.2035,-2.62125],
+        "_RWY2103DME": [59.29709,-2.53197],
+        "_RWY1103DME": [59.2637,-2.67472],
+        "_RWY2903DME": [59.23683,-2.4787]
+    },
+    "runways": [
+        {"name":["03","21"],"end":[[59.24841,-2.57847,"33ft"],[59.25219,-2.57487,"60ft"]],"ils":[false,false]},
+        {"name":["11","29"],"end":[[59.2508,-2.58029,"50ft"],[59.24981,-2.57305,"48ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "SUM3B": {"icao":"SUM3B","name":"Sumburgh Three Bravo","rwy":{"EGES03":["_RWY2103DME"],"EGES21":["_RWY0303DME"],"EGES11":["_RWY2903DME"],"EGES29":["_RWY1103DME"]},"body":[],"exitPoints":{"SUM":["SUM"]},"draw":[["EGES","SUM*"]]},
+        "ELOWO3F": {"icao":"ELOWO3F","name":"Elowo Three Foxtrot","rwy":{"EGES03":["_RWY2103DME"],"EGES21":["_RWY0303DME"],"EGES11":["_RWY2903DME"],"EGES29":["_RWY1103DME"]},"body":[],"exitPoints":{"ELOWO":["ELOWO"]},"draw":[["EGES","ELOWO*"]]},
+        "OCAGA2A": {"icao":"OCAGA2A","name":"Ocaga Two Alpha","rwy":{"EGES03":["_RWY2103DME"],"EGES21":["_RWY0303DME"],"EGES11":["_RWY2903DME"],"EGES29":["_RWY1103DME"]},"body":[],"exitPoints":{"OCAGA":["OCAGA"]},"draw":[["EGES","OCAGA*"]]},
+        "TULMI3C": {"icao":"TULMI3C","name":"Tulmi Three Charlie","rwy":{"EGES03":["_RWY2103DME"],"EGES21":["_RWY0303DME"],"EGES11":["_RWY2903DME"],"EGES29":["_RWY1103DME"]},"body":[],"exitPoints":{"TULMI":["TULMI"]},"draw":[["EGES","TULMI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGES","destination":"","category":"departure","route":"EGES21.TULMI3C.TULMI","altitude":"","speed":"","method":"random","rate":3,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1]]},
+        {"origin":"","destination":"EGES","category":"arrival","route":"TULMI..GUZID..EGES","altitude":[4000,7000],"speed":250,"method":"random","rate":3,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [59.8789,-1.2867,59.3882,-2.2937],
+            [59.3882,-2.2937,59.2503,-2.5767],
+            [58.7417,-2.2341,59.0613,-2.4494],
+            [59.0613,-2.4494,59.2503,-2.5767],
+            [59.0751,-3.5715,59.1852,-2.9463],
+            [59.1852,-2.9463,59.2503,-2.5767],
+            [59.7589,-2.9192,59.4393,-2.704],
+            [59.4393,-2.704,59.2503,-2.5767]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [59.2522,-2.5749,59.4018,-2.4314],
+            [59.3314,-2.5209,59.3226,-2.4857],
+            [59.4062,-2.4491,59.3974,-2.4138]
+        ]}
+    ]
+}

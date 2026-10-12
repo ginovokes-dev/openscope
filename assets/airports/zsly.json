@@ -1,0 +1,88 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ZSLY/",
+    "info": {"country":"CN","city":"Linyi","type":"medium_airport","longestRunwayM":3200,"approximateRunways":true},
+    "radio": {"twr":"Linyi Tower","app":"Linyi Approach","dep":"Linyi Departure"},
+    "icao": "ZSLY",
+    "iata": "LYI",
+    "magnetic_north": -6.9,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [35.052918,118.411828,"177ft"],
+    "rangeRings": {"enabled":true,"center":[35.052918,118.411828],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":180,"speed":7},
+    "arrivalRunway": "17",
+    "departureRunway": "17",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[35.4547,118.3524],[35.4536,118.4815],[35.4252,118.6058],[35.3714,118.7169],[35.2959,118.8072],[35.2039,118.8705],[35.1015,118.9026],[34.9959,118.9013],[34.8941,118.8666],[34.8032,118.8009],[34.7293,118.7087],[34.6774,118.5962],[34.6512,118.4712],[34.6523,118.3422],[34.6807,118.2179],[34.7344,118.1068],[34.8099,118.0165],[34.902,117.9531],[35.0043,117.921],[35.1099,117.9224],[35.2117,117.9571],[35.3026,118.0228],[35.3765,118.115],[35.4284,118.2274]]}
+    ],
+    "fixes": {
+        "ZSLY": [35.05292,118.41183],
+        "GELEF": [35.52074,118.73622],
+        "PAGFA": [35.22673,118.53235],
+        "CIFIB": [34.58917,118.74484],
+        "UJAVO": [34.88062,118.53556],
+        "PIX": [34.315,117.98,"pixian"],
+        "MOZVA": [34.87267,118.30635],
+        "NUTJU": [35.03752,117.75497],
+        "OHOKA": [35.0472,118.16778],
+        "ZUJAM": [35.57146,118.23697],
+        "PAWSO": [35.24558,118.34686],
+        "_RWY1704DME": [35.13043,118.38303],
+        "_RWY3504DME": [34.97541,118.44058]
+    },
+    "runways": [
+        {"name":["17","35"],"end":[[35.06669,118.40672,"177ft"],[35.03915,118.41694,"177ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "GELEF2C": {"icao":"GELEF2C","name":"Gelef Two Charlie","rwy":{"ZSLY17":["_RWY3504DME"],"ZSLY35":["_RWY1704DME"]},"body":[],"exitPoints":{"GELEF":["GELEF"]},"draw":[["ZSLY","GELEF*"]]},
+        "CIFIB1D": {"icao":"CIFIB1D","name":"Cifib One Delta","rwy":{"ZSLY17":["_RWY3504DME"],"ZSLY35":["_RWY1704DME"]},"body":[],"exitPoints":{"CIFIB":["CIFIB"]},"draw":[["ZSLY","CIFIB*"]]},
+        "PIX3A": {"icao":"PIX3A","name":"Pixian Three Alpha","rwy":{"ZSLY17":["_RWY3504DME"],"ZSLY35":["_RWY1704DME"]},"body":[],"exitPoints":{"PIX":["PIX"]},"draw":[["ZSLY","PIX*"]]},
+        "NUTJU1F": {"icao":"NUTJU1F","name":"Nutju One Foxtrot","rwy":{"ZSLY17":["_RWY3504DME"],"ZSLY35":["_RWY1704DME"]},"body":[],"exitPoints":{"NUTJU":["NUTJU"]},"draw":[["ZSLY","NUTJU*"]]},
+        "ZUJAM1D": {"icao":"ZUJAM1D","name":"Zujam One Delta","rwy":{"ZSLY17":["_RWY3504DME"],"ZSLY35":["_RWY1704DME"]},"body":[],"exitPoints":{"ZUJAM":["ZUJAM"]},"draw":[["ZSLY","ZUJAM*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ZSLY","destination":"ZGGG","category":"departure","route":"ZSLY17.PIX3A.PIX","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["cca/a320",1],["csz/a320",1]]},
+        {"origin":"ZSLY","destination":"ZLXY","category":"departure","route":"ZSLY17.NUTJU1F.NUTJU","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["csc/a319",1],["csc/a320",1]]},
+        {"origin":"ZSLY","destination":"ZSSS","category":"departure","route":"ZSLY17.CIFIB1D.CIFIB","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["ces/a320",1],["csh/b737",1]]},
+        {"origin":"ZSLY","destination":"ZYTX","category":"departure","route":"ZSLY17.GELEF2C.GELEF","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["cca/a320",1],["csz/a320",1]]},
+        {"origin":"ZSLY","destination":"ZBAA","category":"departure","route":"ZSLY17.ZUJAM1D.ZUJAM","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["ces/a319",1]]},
+        {"origin":"ZSLY","destination":"","category":"departure","route":"ZSLY17.CIFIB1D.CIFIB","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["ces/a320",2]]},
+        {"origin":"ZSLY","destination":"","category":"departure","route":"ZSLY17.PIX3A.PIX","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["chh/b738",1]]},
+        {"origin":"ZSLY","destination":"","category":"departure","route":"ZSLY17.GELEF2C.GELEF","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",1],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
+        {"origin":"ZGGG","destination":"ZSLY","category":"arrival","route":"PIX..MOZVA..ZSLY","altitude":[4000,7000],"speed":250,"method":"random","rate":0.69,"airlines":[["cca/a320",1],["csz/a320",1]]},
+        {"origin":"ZLXY","destination":"ZSLY","category":"arrival","route":"NUTJU..OHOKA..ZSLY","altitude":[4000,7000],"speed":250,"method":"random","rate":0.69,"airlines":[["csc/a319",1],["csc/a320",1]]},
+        {"origin":"ZSSS","destination":"ZSLY","category":"arrival","route":"CIFIB..UJAVO..ZSLY","altitude":[4000,7000],"speed":250,"method":"random","rate":0.69,"airlines":[["ces/a320",1],["csh/b737",1]]},
+        {"origin":"ZYTX","destination":"ZSLY","category":"arrival","route":"GELEF..PAGFA..ZSLY","altitude":[4000,7000],"speed":250,"method":"random","rate":0.69,"airlines":[["cca/a320",1],["csz/a320",1]]},
+        {"origin":"ZBAA","destination":"ZSLY","category":"arrival","route":"ZUJAM..PAWSO..ZSLY","altitude":[4000,7000],"speed":250,"method":"random","rate":0.35,"airlines":[["ces/a319",1]]},
+        {"origin":"","destination":"ZSLY","category":"arrival","route":"CIFIB..UJAVO..ZSLY","altitude":[4000,7000],"speed":250,"method":"random","rate":0.69,"airlines":[["ces/a320",2]]},
+        {"origin":"","destination":"ZSLY","category":"arrival","route":"PIX..MOZVA..ZSLY","altitude":[4000,7000],"speed":250,"method":"random","rate":0.35,"airlines":[["chh/b738",1]]},
+        {"origin":"","destination":"ZSLY","category":"arrival","route":"GELEF..PAGFA..ZSLY","altitude":[4000,7000],"speed":250,"method":"random","rate":1.39,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",1],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [35.5207,118.7362,35.2267,118.5324],
+            [35.2267,118.5324,35.0529,118.4118],
+            [34.5892,118.7448,34.8806,118.5356],
+            [34.8806,118.5356,35.0529,118.4118],
+            [34.315,117.98,34.8727,118.3063],
+            [34.8727,118.3063,35.0529,118.4118],
+            [35.0375,117.755,35.0472,118.1678],
+            [35.0472,118.1678,35.0529,118.4118],
+            [35.5715,118.237,35.2456,118.3469],
+            [35.2456,118.3469,35.0529,118.4118]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [35.0667,118.4067,35.226,118.3474],
+            [35.1435,118.3654,35.1493,118.3888],
+            [35.2231,118.3357,35.2289,118.3591],
+            [35.0392,118.4169,34.8798,118.476],
+            [34.9624,118.4581,34.9566,118.4348],
+            [34.8827,118.4876,34.8769,118.4643]
+        ]}
+    ]
+}

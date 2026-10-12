@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SKCL/",
+    "info": {"country":"CO","city":"Cali","type":"large_airport","longestRunwayM":3006,"frequencies":{"atis":"115.500","twr":"118.100","app":"119.100","gnd":"121.900"}},
+    "radio": {"twr":"Cali Tower","app":"Cali Approach","dep":"Cali Departure"},
+    "icao": "SKCL",
+    "iata": "CLO",
+    "magnetic_north": -7,
+    "ctr_radius": 60,
+    "ctr_ceiling": 13000,
+    "initial_alt": 8000,
+    "position": [3.542717,-76.381898,"3162ft"],
+    "rangeRings": {"enabled":true,"center":[3.542717,-76.381898],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":0,"speed":10},
+    "arrivalRunway": "02",
+    "departureRunway": "02",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":130,"airspace_class":"C","poly":[[4.0783,-76.4478],[4.0771,-76.3067],[4.0394,-76.1707],[3.9679,-76.0491],[3.8675,-75.9501],[3.7449,-75.8806],[3.6085,-75.8453],[3.4676,-75.8465],[3.3319,-75.8842],[3.2105,-75.9559],[3.1118,-76.0565],[3.0424,-76.1794],[3.0071,-76.316],[3.0084,-76.4571],[3.046,-76.5931],[3.1175,-76.7147],[3.218,-76.8137],[3.3406,-76.8832],[3.477,-76.9185],[3.6178,-76.9173],[3.7536,-76.8795],[3.8749,-76.8079],[3.9737,-76.7073],[4.043,-76.5844]]}
+    ],
+    "fixes": {
+        "SKCL": [3.54272,-76.3819],
+        "EDULO": [4.24719,-76.33322],
+        "DEKKE": [3.79196,-76.36468],
+        "AXM": [4.45135,-75.7729,"armenia"],
+        "KAHVE": [3.75037,-76.24272],
+        "PPN": [2.44972,-76.6142,"popayan"],
+        "WIBGU": [3.29832,-76.43384],
+        "ZAHIH": [3.07659,-76.91335],
+        "DIMEF": [3.3778,-76.56992],
+        "BUN": [3.82553,-76.9954,"buenaventura"],
+        "MIWET": [3.64747,-76.60914],
+        "_RWY0204DME": [3.46425,-76.39524],
+        "_RWY2004DME": [3.62219,-76.36796]
+    },
+    "runways": [
+        {"name":["02","20"],"end":[[3.5299,-76.3839,"3153ft"],[3.55654,-76.3793,"3162ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "EDULO3B": {"icao":"EDULO3B","name":"Edulo Three Bravo","rwy":{"SKCL02":["_RWY2004DME"],"SKCL20":["_RWY0204DME"]},"body":[],"exitPoints":{"EDULO":["EDULO"]},"draw":[["SKCL","EDULO*"]]},
+        "AXM1E": {"icao":"AXM1E","name":"Armenia One Echo","rwy":{"SKCL02":["_RWY2004DME"],"SKCL20":["_RWY0204DME"]},"body":[],"exitPoints":{"AXM":["AXM"]},"draw":[["SKCL","AXM*"]]},
+        "PPN1F": {"icao":"PPN1F","name":"Popayan One Foxtrot","rwy":{"SKCL02":["_RWY2004DME"],"SKCL20":["_RWY0204DME"]},"body":[],"exitPoints":{"PPN":["PPN"]},"draw":[["SKCL","PPN*"]]},
+        "ZAHIH2B": {"icao":"ZAHIH2B","name":"Zahih Two Bravo","rwy":{"SKCL02":["_RWY2004DME"],"SKCL20":["_RWY0204DME"]},"body":[],"exitPoints":{"ZAHIH":["ZAHIH"]},"draw":[["SKCL","ZAHIH*"]]},
+        "BUN2B": {"icao":"BUN2B","name":"Buenaventura Two Bravo","rwy":{"SKCL02":["_RWY2004DME"],"SKCL20":["_RWY0204DME"]},"body":[],"exitPoints":{"BUN":["BUN"]},"draw":[["SKCL","BUN*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SKCL","destination":"KMIA","category":"departure","route":"SKCL02.EDULO3B.EDULO","altitude":"","speed":"","method":"random","rate":1.38,"airlines":[["aal/b738",2],["aal/a318",1],["aal/a319",1],["aal/a320",1],["ava/a318",1],["ava/a319",1],["ava/a320",1]]},
+        {"origin":"SKCL","destination":"SKBO","category":"departure","route":"SKCL02.AXM1E.AXM","altitude":"","speed":"","method":"random","rate":1.38,"airlines":[["ava/a318",1],["ava/a319",1],["ava/a320",1],["ava/at72",1],["cmp/a318",1],["cmp/a319",1],["cmp/a320",1],["ava/a333",1],["ava/a332",1]]},
+        {"origin":"SKCL","destination":"SKRG","category":"departure","route":"SKCL02.AXM1E.AXM","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["ava/a318",1],["ava/a319",1],["ava/a320",1],["ava/at72",1]]},
+        {"origin":"SKCL","destination":"MPTO","category":"departure","route":"SKCL02.EDULO3B.EDULO","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["cmp/b737",1],["cmp/e190",1]]},
+        {"origin":"SKCL","destination":"SKBQ","category":"departure","route":"SKCL02.EDULO3B.EDULO","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["ava/a318",1],["ava/a320",1]]},
+        {"origin":"SKCL","destination":"","category":"departure","route":"SKCL02.EDULO3B.EDULO","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ava/a318",1],["ava/a320",1],["nse/at45",1]]},
+        {"origin":"SKCL","destination":"","category":"departure","route":"SKCL02.AXM1E.AXM","altitude":"","speed":"","method":"random","rate":0.17,"airlines":[["ava/a333",1],["ava/a332",1]]},
+        {"origin":"SKCL","destination":"","category":"departure","route":"SKCL02.PPN1F.PPN","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ava/at72",1],["ava/e190",1],["nse/at45",1]]},
+        {"origin":"SKCL","destination":"","category":"departure","route":"SKCL02.ZAHIH2B.ZAHIH","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["ava/at72",1],["glg/a319",1],["nse/at45",1],["tae/e170",1]]},
+        {"origin":"SKCL","destination":"","category":"departure","route":"SKCL02.BUN2B.BUN","altitude":"","speed":"","method":"random","rate":0.17,"airlines":[["ava/e190",1]]},
+        {"origin":"SKCL","destination":"","category":"departure","route":"SKCL02.PPN1F.PPN","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["hk/c172",6],["hk/p28a",5],["hk/c182",3],["hk/be36",2],["hk/da42",1],["hk/tb20",1],["hk/c208",2],["hk/pc12",2],["hk/be20",1],["hk/b350",1],["hk/p180",1],["hk/c510",1],["hk/e50p",1],["hk/c550",2],["hk/e55p",1],["hk/cl30",1],["hk/c680",1],["hk/h25b",1],["hk/lj45",1],["hk/f2th",1],["hk/glf4",1],["hk/glex",1],["hk/glf5",1]]},
+        {"origin":"SKCL","destination":"","category":"departure","route":"SKCL02.ZAHIH2B.ZAHIH","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["hk/c172",6],["hk/p28a",5],["hk/c182",3],["hk/be36",2],["hk/da42",1],["hk/tb20",1],["hk/c208",2],["hk/pc12",2],["hk/be20",1],["hk/b350",1],["hk/p180",1],["hk/c510",1],["hk/e50p",1],["hk/c550",2],["hk/e55p",1],["hk/cl30",1],["hk/c680",1],["hk/h25b",1],["hk/lj45",1],["hk/f2th",1],["hk/glf4",1],["hk/glex",1],["hk/glf5",1]]},
+        {"origin":"KMIA","destination":"SKCL","category":"arrival","route":"EDULO..DEKKE..SKCL","altitude":[9000,12000],"speed":250,"method":"random","rate":1.38,"airlines":[["aal/b738",2],["aal/a318",1],["aal/a319",1],["aal/a320",1],["ava/a318",1],["ava/a319",1],["ava/a320",1]]},
+        {"origin":"SKBO","destination":"SKCL","category":"arrival","route":"AXM..KAHVE..SKCL","altitude":[9000,12000],"speed":250,"method":"random","rate":1.38,"airlines":[["ava/a318",1],["ava/a319",1],["ava/a320",1],["ava/at72",1],["cmp/a318",1],["cmp/a319",1],["cmp/a320",1],["ava/a333",1],["ava/a332",1]]},
+        {"origin":"SKRG","destination":"SKCL","category":"arrival","route":"AXM..KAHVE..SKCL","altitude":[9000,12000],"speed":250,"method":"random","rate":0.69,"airlines":[["ava/a318",1],["ava/a319",1],["ava/a320",1],["ava/at72",1]]},
+        {"origin":"MPTO","destination":"SKCL","category":"arrival","route":"EDULO..DEKKE..SKCL","altitude":[9000,12000],"speed":250,"method":"random","rate":0.35,"airlines":[["cmp/b737",1],["cmp/e190",1]]},
+        {"origin":"SKBQ","destination":"SKCL","category":"arrival","route":"EDULO..DEKKE..SKCL","altitude":[9000,12000],"speed":250,"method":"random","rate":0.35,"airlines":[["ava/a318",1],["ava/a320",1]]},
+        {"origin":"","destination":"SKCL","category":"arrival","route":"EDULO..DEKKE..SKCL","altitude":[9000,12000],"speed":250,"method":"random","rate":0.52,"airlines":[["ava/a318",1],["ava/a320",1],["nse/at45",1]]},
+        {"origin":"","destination":"SKCL","category":"arrival","route":"AXM..KAHVE..SKCL","altitude":[9000,12000],"speed":250,"method":"random","rate":0.17,"airlines":[["ava/a333",1],["ava/a332",1]]},
+        {"origin":"","destination":"SKCL","category":"arrival","route":"PPN..WIBGU..SKCL","altitude":[9000,12000],"speed":250,"method":"random","rate":0.52,"airlines":[["ava/at72",1],["ava/e190",1],["nse/at45",1]]},
+        {"origin":"","destination":"SKCL","category":"arrival","route":"ZAHIH..DIMEF..SKCL","altitude":[9000,12000],"speed":250,"method":"random","rate":0.69,"airlines":[["ava/at72",1],["glg/a319",1],["nse/at45",1],["tae/e170",1]]},
+        {"origin":"","destination":"SKCL","category":"arrival","route":"BUN..MIWET..SKCL","altitude":[9000,12000],"speed":250,"method":"random","rate":0.17,"airlines":[["ava/e190",1]]},
+        {"origin":"","destination":"SKCL","category":"arrival","route":"PPN..WIBGU..SKCL","altitude":[9000,12000],"speed":250,"method":"random","rate":0.42,"airlines":[["hk/c172",6],["hk/p28a",5],["hk/c182",3],["hk/be36",2],["hk/da42",1],["hk/tb20",1],["hk/c208",2],["hk/pc12",2],["hk/be20",1],["hk/b350",1],["hk/p180",1],["hk/c510",1],["hk/e50p",1],["hk/c550",2],["hk/e55p",1],["hk/cl30",1],["hk/c680",1],["hk/h25b",1],["hk/lj45",1],["hk/f2th",1],["hk/glf4",1],["hk/glex",1],["hk/glf5",1]]},
+        {"origin":"","destination":"SKCL","category":"arrival","route":"ZAHIH..DIMEF..SKCL","altitude":[9000,12000],"speed":250,"method":"random","rate":0.42,"airlines":[["hk/c172",6],["hk/p28a",5],["hk/c182",3],["hk/be36",2],["hk/da42",1],["hk/tb20",1],["hk/c208",2],["hk/pc12",2],["hk/be20",1],["hk/b350",1],["hk/p180",1],["hk/c510",1],["hk/e50p",1],["hk/c550",2],["hk/e55p",1],["hk/cl30",1],["hk/c680",1],["hk/h25b",1],["hk/lj45",1],["hk/f2th",1],["hk/glf4",1],["hk/glex",1],["hk/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [4.2472,-76.3332,3.792,-76.3647],
+            [3.792,-76.3647,3.5427,-76.3819],
+            [4.4514,-75.7729,3.7504,-76.2427],
+            [3.7504,-76.2427,3.5427,-76.3819],
+            [2.4497,-76.6142,3.2983,-76.4338],
+            [3.2983,-76.4338,3.5427,-76.3819],
+            [3.0766,-76.9134,3.3778,-76.5699],
+            [3.3778,-76.5699,3.5427,-76.3819],
+            [3.8255,-76.9954,3.6475,-76.6091],
+            [3.6475,-76.6091,3.5427,-76.3819]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [3.5299,-76.3839,3.3658,-76.4122],
+            [3.4461,-76.3882,3.4495,-76.4079],
+            [3.3641,-76.4024,3.3675,-76.4221],
+            [3.5565,-76.3793,3.7207,-76.351],
+            [3.6403,-76.375,3.6369,-76.3553],
+            [3.7224,-76.3608,3.719,-76.3411]
+        ]}
+    ]
+}

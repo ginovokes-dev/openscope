@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ZSTX/",
+    "info": {"country":"CN","city":"Huangshan","type":"large_airport","longestRunwayM":2601},
+    "radio": {"twr":"Huangshan Tower","app":"Huangshan Approach","dep":"Huangshan Departure"},
+    "icao": "ZSTX",
+    "iata": "TXN",
+    "magnetic_north": -5.6,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [29.733299,118.255997,"436ft"],
+    "rangeRings": {"enabled":true,"center":[29.733299,118.255997],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":150,"speed":11},
+    "arrivalRunway": "13",
+    "departureRunway": "13",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[30.2703,118.1954],[30.2656,118.3575],[30.2247,118.5127],[30.1503,118.6504],[30.0474,118.7613],[29.9232,118.8377],[29.786,118.8744],[29.6452,118.8691],[29.5104,118.8219],[29.3908,118.7362],[29.2946,118.6177],[29.2282,118.4746],[29.1963,118.3166],[29.201,118.1545],[29.2419,117.9993],[29.3163,117.8616],[29.4192,117.7507],[29.5434,117.6743],[29.6806,117.6376],[29.8214,117.6429],[29.9562,117.6901],[30.0758,117.7758],[30.172,117.8943],[30.2384,118.0374]]}
+    ],
+    "fixes": {
+        "ZSTX": [29.7333,118.256],
+        "IFUVI": [30.3763,118.59212],
+        "DAFIF": [29.96079,118.37492],
+        "NUCIK": [29.1235,118.66605],
+        "ROMSA": [29.51755,118.40107],
+        "VUDLO": [29.14278,117.81007],
+        "AGUBO": [29.52438,118.09823],
+        "LISDU": [29.70133,117.44362],
+        "GECUF": [29.72199,117.96858],
+        "UGAVU": [30.36136,117.88428],
+        "VOWIP": [29.9555,118.12449],
+        "_RWY1304DME": [29.78201,118.18521],
+        "_RWY3104DME": [29.68534,118.32714]
+    },
+    "runways": [
+        {"name":["13","31"],"end":[[29.74091,118.24561,"436ft"],[29.72647,118.2668,"436ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "IFUVI3E": {"icao":"IFUVI3E","name":"Ifuvi Three Echo","rwy":{"ZSTX13":["_RWY3104DME"],"ZSTX31":["_RWY1304DME"]},"body":[],"exitPoints":{"IFUVI":["IFUVI"]},"draw":[["ZSTX","IFUVI*"]]},
+        "NUCIK1F": {"icao":"NUCIK1F","name":"Nucik One Foxtrot","rwy":{"ZSTX13":["_RWY3104DME"],"ZSTX31":["_RWY1304DME"]},"body":[],"exitPoints":{"NUCIK":["NUCIK"]},"draw":[["ZSTX","NUCIK*"]]},
+        "VUDLO1C": {"icao":"VUDLO1C","name":"Vudlo One Charlie","rwy":{"ZSTX13":["_RWY3104DME"],"ZSTX31":["_RWY1304DME"]},"body":[],"exitPoints":{"VUDLO":["VUDLO"]},"draw":[["ZSTX","VUDLO*"]]},
+        "LISDU3C": {"icao":"LISDU3C","name":"Lisdu Three Charlie","rwy":{"ZSTX13":["_RWY3104DME"],"ZSTX31":["_RWY1304DME"]},"body":[],"exitPoints":{"LISDU":["LISDU"]},"draw":[["ZSTX","LISDU*"]]},
+        "UGAVU3D": {"icao":"UGAVU3D","name":"Ugavu Three Delta","rwy":{"ZSTX13":["_RWY3104DME"],"ZSTX31":["_RWY1304DME"]},"body":[],"exitPoints":{"UGAVU":["UGAVU"]},"draw":[["ZSTX","UGAVU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ZSTX","destination":"RKSI","category":"departure","route":"ZSTX13.IFUVI3E.IFUVI","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["aar/a320",1],["kal/b738",1]]},
+        {"origin":"ZSTX","destination":"RCTP","category":"departure","route":"ZSTX13.NUCIK1F.NUCIK","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["eva/md90",1]]},
+        {"origin":"ZSTX","destination":"RKPK","category":"departure","route":"ZSTX13.IFUVI3E.IFUVI","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["aar/a320",1]]},
+        {"origin":"ZSTX","destination":"ZBAA","category":"departure","route":"ZSTX13.UGAVU3D.UGAVU","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["cca/b738",1]]},
+        {"origin":"ZSTX","destination":"ZBYN","category":"departure","route":"ZSTX13.UGAVU3D.UGAVU","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["cxa/b737",1]]},
+        {"origin":"ZSTX","destination":"","category":"departure","route":"ZSTX13.IFUVI3E.IFUVI","altitude":"","speed":"","method":"random","rate":1.14,"airlines":[["csn/a320",2],["csh/b737",1]]},
+        {"origin":"ZSTX","destination":"","category":"departure","route":"ZSTX13.NUCIK1F.NUCIK","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["cxa/b737",1]]},
+        {"origin":"ZSTX","destination":"","category":"departure","route":"ZSTX13.VUDLO1C.VUDLO","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["csn/a319",1],["csn/a320",1]]},
+        {"origin":"ZSTX","destination":"","category":"departure","route":"ZSTX13.LISDU3C.LISDU","altitude":"","speed":"","method":"random","rate":1.14,"airlines":[["csh/b737",2],["csn/a320",1]]},
+        {"origin":"ZSTX","destination":"","category":"departure","route":"ZSTX13.UGAVU3D.UGAVU","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["ces/a320",1]]},
+        {"origin":"ZSTX","destination":"","category":"departure","route":"ZSTX13.UGAVU3D.UGAVU","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
+        {"origin":"ZSTX","destination":"","category":"departure","route":"ZSTX13.IFUVI3E.IFUVI","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
+        {"origin":"RKSI","destination":"ZSTX","category":"arrival","route":"IFUVI..DAFIF..ZSTX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.76,"airlines":[["aar/a320",1],["kal/b738",1]]},
+        {"origin":"RCTP","destination":"ZSTX","category":"arrival","route":"NUCIK..ROMSA..ZSTX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.38,"airlines":[["eva/md90",1]]},
+        {"origin":"RKPK","destination":"ZSTX","category":"arrival","route":"IFUVI..DAFIF..ZSTX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.38,"airlines":[["aar/a320",1]]},
+        {"origin":"ZBAA","destination":"ZSTX","category":"arrival","route":"UGAVU..VOWIP..ZSTX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.38,"airlines":[["cca/b738",1]]},
+        {"origin":"ZBYN","destination":"ZSTX","category":"arrival","route":"UGAVU..VOWIP..ZSTX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.38,"airlines":[["cxa/b737",1]]},
+        {"origin":"","destination":"ZSTX","category":"arrival","route":"IFUVI..DAFIF..ZSTX","altitude":[6000,9000],"speed":250,"method":"random","rate":1.14,"airlines":[["csn/a320",2],["csh/b737",1]]},
+        {"origin":"","destination":"ZSTX","category":"arrival","route":"NUCIK..ROMSA..ZSTX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.38,"airlines":[["cxa/b737",1]]},
+        {"origin":"","destination":"ZSTX","category":"arrival","route":"VUDLO..AGUBO..ZSTX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.76,"airlines":[["csn/a319",1],["csn/a320",1]]},
+        {"origin":"","destination":"ZSTX","category":"arrival","route":"LISDU..GECUF..ZSTX","altitude":[6000,9000],"speed":250,"method":"random","rate":1.14,"airlines":[["csh/b737",2],["csn/a320",1]]},
+        {"origin":"","destination":"ZSTX","category":"arrival","route":"UGAVU..VOWIP..ZSTX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.38,"airlines":[["ces/a320",1]]},
+        {"origin":"","destination":"ZSTX","category":"arrival","route":"UGAVU..VOWIP..ZSTX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
+        {"origin":"","destination":"ZSTX","category":"arrival","route":"IFUVI..DAFIF..ZSTX","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",2],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [30.3763,118.5921,29.9608,118.3749],
+            [29.9608,118.3749,29.7333,118.256],
+            [29.1235,118.6661,29.5176,118.4011],
+            [29.5176,118.4011,29.7333,118.256],
+            [29.1428,117.8101,29.5244,118.0982],
+            [29.5244,118.0982,29.7333,118.256],
+            [29.7013,117.4436,29.722,117.9686],
+            [29.722,117.9686,29.7333,118.256],
+            [30.3614,117.8843,29.9555,118.1245],
+            [29.9555,118.1245,29.7333,118.256]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [29.7409,118.2456,29.8436,118.0945],
+            [29.7844,118.163,29.8001,118.1772],
+            [29.8357,118.0874,29.8515,118.1016],
+            [29.7265,118.2668,29.6236,118.4176],
+            [29.6829,118.3493,29.6672,118.3351],
+            [29.6315,118.4247,29.6157,118.4105]
+        ]}
+    ]
+}

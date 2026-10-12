@@ -1,0 +1,92 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/DABB/",
+    "info": {"country":"DZ","city":"Annaba","type":"large_airport","longestRunwayM":3002,"frequencies":{"twr":"118.700","app":"119.000"}},
+    "radio": {"twr":"Annaba Tower","app":"Annaba Approach","dep":"Annaba Departure"},
+    "icao": "DABB",
+    "iata": "AAE",
+    "magnetic_north": 2.9,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [36.826781,7.81334,"16ft"],
+    "rangeRings": {"enabled":true,"center":[36.826781,7.81334],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":170,"speed":9},
+    "arrivalRunway": "18",
+    "departureRunway": "18",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[37.231,7.8389],[37.2119,7.9687],[37.1666,8.088],[37.0981,8.1885],[37.0111,8.2634],[36.9116,8.3077],[36.8063,8.3183],[36.7024,8.2945],[36.607,8.2378],[36.5265,8.1523],[36.4665,8.0437],[36.4311,7.9193],[36.4226,7.7878],[36.4417,7.6579],[36.487,7.5387],[36.5555,7.4382],[36.6424,7.3633],[36.7419,7.319],[36.8473,7.3084],[36.9512,7.3322],[37.0466,7.3888],[37.1271,7.4744],[37.187,7.583],[37.2225,7.7074]]}
+    ],
+    "fixes": {
+        "DABB": [36.82678,7.81334],
+        "TBK": [36.9782,8.88358,"tabarka"],
+        "ABOKO": [36.86157,8.05922],
+        "HUPJE": [36.30157,7.95868],
+        "MIKFU": [36.63165,7.86734],
+        "BIRAZ": [36.79681,7.14234],
+        "ELENU": [36.81565,7.56404],
+        "EVETE": [37.34555,7.63554],
+        "WAGKA": [37.01952,7.74728],
+        "_RWY1804DME": [36.91124,7.82272],
+        "_RWY3604DME": [36.75307,7.79887],
+        "_RWY0504DME": [36.77923,7.74153],
+        "_RWY2304DME": [36.87464,7.8921]
+    },
+    "runways": [
+        {"name":["18","36"],"end":[[36.8451,7.81274,"10ft"],[36.81921,7.80884,"16ft"]],"ils":[true,true]},
+        {"name":["05","23"],"end":[[36.8206,7.80675,"16ft"],[36.8333,7.8268,"10ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "TBK3B": {"icao":"TBK3B","name":"Tabarka Three Bravo","rwy":{"DABB18":["_RWY3604DME"],"DABB36":["_RWY1804DME"],"DABB05":["_RWY2304DME"],"DABB23":["_RWY0504DME"]},"body":[],"exitPoints":{"TBK":["TBK"]},"draw":[["DABB","TBK*"]]},
+        "HUPJE2D": {"icao":"HUPJE2D","name":"Hupje Two Delta","rwy":{"DABB18":["_RWY3604DME"],"DABB36":["_RWY1804DME"],"DABB05":["_RWY2304DME"],"DABB23":["_RWY0504DME"]},"body":[],"exitPoints":{"HUPJE":["HUPJE"]},"draw":[["DABB","HUPJE*"]]},
+        "BIRAZ2D": {"icao":"BIRAZ2D","name":"Biraz Two Delta","rwy":{"DABB18":["_RWY3604DME"],"DABB36":["_RWY1804DME"],"DABB05":["_RWY2304DME"],"DABB23":["_RWY0504DME"]},"body":[],"exitPoints":{"BIRAZ":["BIRAZ"]},"draw":[["DABB","BIRAZ*"]]},
+        "EVETE1F": {"icao":"EVETE1F","name":"Evete One Foxtrot","rwy":{"DABB18":["_RWY3604DME"],"DABB36":["_RWY1804DME"],"DABB05":["_RWY2304DME"],"DABB23":["_RWY0504DME"]},"body":[],"exitPoints":{"EVETE":["EVETE"]},"draw":[["DABB","EVETE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"DABB","destination":"DAAG","category":"departure","route":"DABB18.BIRAZ2D.BIRAZ","altitude":"","speed":"","method":"random","rate":1.08,"airlines":[["dah/b736",1],["dah/b738",1],["dah/at72",1],["dah/at45",1],["dah/at75",1]]},
+        {"origin":"DABB","destination":"LFML","category":"departure","route":"DABB18.EVETE1F.EVETE","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["aaf/a319",1],["dah/b738",1]]},
+        {"origin":"DABB","destination":"LFPO","category":"departure","route":"DABB18.EVETE1F.EVETE","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["aaf/a319",1],["dah/b736",1]]},
+        {"origin":"DABB","destination":"DAOO","category":"departure","route":"DABB18.BIRAZ2D.BIRAZ","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["dah/at72",1],["dah/at45",1],["dah/at75",1]]},
+        {"origin":"DABB","destination":"LFLL","category":"departure","route":"DABB18.EVETE1F.EVETE","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["dah/b738",1]]},
+        {"origin":"DABB","destination":"","category":"departure","route":"DABB18.TBK3B.TBK","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["dah/b738",1]]},
+        {"origin":"DABB","destination":"","category":"departure","route":"DABB18.EVETE1F.EVETE","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["dah/b738",1]]},
+        {"origin":"DABB","destination":"","category":"departure","route":"DABB18.HUPJE2D.HUPJE","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["7t/c172",6],["7t/p28a",5],["7t/c182",3],["7t/be36",2],["7t/da42",1],["7t/tb20",1],["7t/c208",2],["7t/pc12",2],["7t/be20",1],["7t/b350",1],["7t/p180",1],["7t/c510",1],["7t/e50p",1],["7t/c550",1],["7t/e55p",1],["7t/cl30",1],["7t/c680",1],["7t/h25b",1],["7t/lj45",1],["7t/f2th",1],["7t/glf4",1],["7t/glex",1],["7t/glf5",1]]},
+        {"origin":"DAAG","destination":"DABB","category":"arrival","route":"BIRAZ..ELENU..DABB","altitude":[4000,7000],"speed":250,"method":"random","rate":1.08,"airlines":[["dah/b736",1],["dah/b738",1],["dah/at72",1],["dah/at45",1],["dah/at75",1]]},
+        {"origin":"LFML","destination":"DABB","category":"arrival","route":"EVETE..WAGKA..DABB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["aaf/a319",1],["dah/b738",1]]},
+        {"origin":"LFPO","destination":"DABB","category":"arrival","route":"EVETE..WAGKA..DABB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["aaf/a319",1],["dah/b736",1]]},
+        {"origin":"DAOO","destination":"DABB","category":"arrival","route":"BIRAZ..ELENU..DABB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["dah/at72",1],["dah/at45",1],["dah/at75",1]]},
+        {"origin":"LFLL","destination":"DABB","category":"arrival","route":"EVETE..WAGKA..DABB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["dah/b738",1]]},
+        {"origin":"","destination":"DABB","category":"arrival","route":"TBK..ABOKO..DABB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["dah/b738",1]]},
+        {"origin":"","destination":"DABB","category":"arrival","route":"EVETE..WAGKA..DABB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["dah/b738",1]]},
+        {"origin":"","destination":"DABB","category":"arrival","route":"HUPJE..MIKFU..DABB","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["7t/c172",6],["7t/p28a",5],["7t/c182",3],["7t/be36",2],["7t/da42",1],["7t/tb20",1],["7t/c208",2],["7t/pc12",2],["7t/be20",1],["7t/b350",1],["7t/p180",1],["7t/c510",1],["7t/e50p",1],["7t/c550",1],["7t/e55p",1],["7t/cl30",1],["7t/c680",1],["7t/h25b",1],["7t/lj45",1],["7t/f2th",1],["7t/glf4",1],["7t/glex",1],["7t/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [36.9782,8.8836,36.8616,8.0592],
+            [36.8616,8.0592,36.8268,7.8133],
+            [36.3016,7.9587,36.6316,7.8673],
+            [36.6316,7.8673,36.8268,7.8133],
+            [36.7968,7.1423,36.8156,7.564],
+            [36.8156,7.564,36.8268,7.8133],
+            [37.3456,7.6355,37.0195,7.7473],
+            [37.0195,7.7473,36.8268,7.8133]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [36.8451,7.8127,37.0105,7.8377],
+            [36.929,7.8128,36.9266,7.8376],
+            [37.0116,7.8253,37.0093,7.8502],
+            [36.8192,7.8088,36.6539,7.784],
+            [36.7353,7.8088,36.7377,7.784],
+            [36.6527,7.7963,36.655,7.7716],
+            [36.8206,7.8068,36.7171,7.6438],
+            [36.761,7.733,36.7767,7.7175],
+            [36.7093,7.6516,36.7249,7.6361],
+            [36.8333,7.8268,36.9366,7.9902],
+            [36.8928,7.9007,36.8771,7.9162],
+            [36.9444,7.9824,36.9287,7.9979]
+        ]}
+    ]
+}

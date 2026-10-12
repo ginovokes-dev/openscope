@@ -1,0 +1,79 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/DRRN/",
+    "info": {"country":"NE","city":"Niamey","type":"large_airport","longestRunwayM":3798,"frequencies":{"twr":"119.700"}},
+    "radio": {"twr":"Diori Hamani Tower","app":"Diori Hamani Approach","dep":"Diori Hamani Departure"},
+    "icao": "DRRN",
+    "iata": "NIM",
+    "magnetic_north": -0.3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [13.4815,2.18361,"732ft"],
+    "rangeRings": {"enabled":true,"center":[13.4815,2.18361],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":100,"speed":6},
+    "arrivalRunway": "09R",
+    "departureRunway": "09R",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[13.8862,2.1814],[13.8729,2.2892],[13.833,2.3898],[13.7692,2.4763],[13.6857,2.5429],[13.5883,2.585],[13.4836,2.5998],[13.3788,2.5862],[13.281,2.5451],[13.1968,2.4794],[13.1321,2.3936],[13.0911,2.2934],[13.0768,2.1858],[13.0901,2.078],[13.13,1.9774],[13.1938,1.8909],[13.2773,1.8243],[13.3747,1.7822],[13.4794,1.7675],[13.5842,1.7811],[13.682,1.8221],[13.7662,1.8878],[13.8309,1.9736],[13.8719,2.0738]]}
+    ],
+    "fixes": {
+        "DRRN": [13.4815,2.18361],
+        "HUWTU": [13.45134,2.73592],
+        "TOWGI": [13.4703,2.38882],
+        "ONIBA": [12.94743,2.24986],
+        "WECZO": [13.28307,2.20823],
+        "BAZRA": [13.32448,1.65452],
+        "ZIBLU": [13.42316,1.98703],
+        "IPISA": [14.01477,2.11089],
+        "OFOJA": [13.67963,2.15659],
+        "_RWY09R04DME": [13.47844,2.10098],
+        "_RWY27L04DME": [13.48639,2.27293]
+    },
+    "runways": [
+        {"name":["09R","27L"],"end":[[13.48161,2.16941,"728ft"],[13.48323,2.2045,"705ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "HUWTU1D": {"icao":"HUWTU1D","name":"Huwtu One Delta","rwy":{"DRRN09R":["_RWY27L04DME"],"DRRN27L":["_RWY09R04DME"]},"body":[],"exitPoints":{"HUWTU":["HUWTU"]},"draw":[["DRRN","HUWTU*"]]},
+        "ONIBA2B": {"icao":"ONIBA2B","name":"Oniba Two Bravo","rwy":{"DRRN09R":["_RWY27L04DME"],"DRRN27L":["_RWY09R04DME"]},"body":[],"exitPoints":{"ONIBA":["ONIBA"]},"draw":[["DRRN","ONIBA*"]]},
+        "BAZRA2B": {"icao":"BAZRA2B","name":"Bazra Two Bravo","rwy":{"DRRN09R":["_RWY27L04DME"],"DRRN27L":["_RWY09R04DME"]},"body":[],"exitPoints":{"BAZRA":["BAZRA"]},"draw":[["DRRN","BAZRA*"]]},
+        "IPISA2D": {"icao":"IPISA2D","name":"Ipisa Two Delta","rwy":{"DRRN09R":["_RWY27L04DME"],"DRRN27L":["_RWY09R04DME"]},"body":[],"exitPoints":{"IPISA":["IPISA"]},"draw":[["DRRN","IPISA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"DRRN","destination":"DFFD","category":"departure","route":"DRRN09R.BAZRA2B.BAZRA","altitude":"","speed":"","method":"random","rate":1.93,"airlines":[["afr/a332",1],["eth/b752",1],["ram/b738",1],["thy/b739",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"DRRN","destination":"GMMN","category":"departure","route":"DRRN09R.IPISA2D.IPISA","altitude":"","speed":"","method":"random","rate":0.77,"airlines":[["ram/b737",1],["ram/b738",1]]},
+        {"origin":"DRRN","destination":"LFPG","category":"departure","route":"DRRN09R.IPISA2D.IPISA","altitude":"","speed":"","method":"random","rate":0.77,"airlines":[["afr/a332",1],["afr/a343",1]]},
+        {"origin":"DRRN","destination":"LTFM","category":"departure","route":"DRRN09R.IPISA2D.IPISA","altitude":"","speed":"","method":"random","rate":0.77,"airlines":[["thy/b738",1],["thy/b739",1]]},
+        {"origin":"DRRN","destination":"","category":"departure","route":"DRRN09R.HUWTU1D.HUWTU","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["eth/b752",1]]},
+        {"origin":"DRRN","destination":"","category":"departure","route":"DRRN09R.IPISA2D.IPISA","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["dah/b738",1]]},
+        {"origin":"DFFD","destination":"DRRN","category":"arrival","route":"BAZRA..ZIBLU..DRRN","altitude":[4000,7000],"speed":250,"method":"random","rate":1.93,"airlines":[["afr/a332",1],["eth/b752",1],["ram/b738",1],["thy/b739",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"GMMN","destination":"DRRN","category":"arrival","route":"IPISA..OFOJA..DRRN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.77,"airlines":[["ram/b737",1],["ram/b738",1]]},
+        {"origin":"LFPG","destination":"DRRN","category":"arrival","route":"IPISA..OFOJA..DRRN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.77,"airlines":[["afr/a332",1],["afr/a343",1]]},
+        {"origin":"LTFM","destination":"DRRN","category":"arrival","route":"IPISA..OFOJA..DRRN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.77,"airlines":[["thy/b738",1],["thy/b739",1]]},
+        {"origin":"","destination":"DRRN","category":"arrival","route":"HUWTU..TOWGI..DRRN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.39,"airlines":[["eth/b752",1]]},
+        {"origin":"","destination":"DRRN","category":"arrival","route":"IPISA..OFOJA..DRRN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.39,"airlines":[["dah/b738",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [13.4513,2.7359,13.4703,2.3888],
+            [13.4703,2.3888,13.4815,2.1836],
+            [12.9474,2.2499,13.2831,2.2082],
+            [13.2831,2.2082,13.4815,2.1836],
+            [13.3245,1.6545,13.4232,1.987],
+            [13.4232,1.987,13.4815,2.1836],
+            [14.0148,2.1109,13.6796,2.1566],
+            [13.6796,2.1566,13.4815,2.1836]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [13.4816,2.1694,13.4736,1.9983],
+            [13.4677,2.0844,13.4876,2.0834],
+            [13.4637,1.9988,13.4836,1.9979],
+            [13.4832,2.2045,13.4911,2.3756],
+            [13.4972,2.2896,13.4772,2.2905],
+            [13.5011,2.3751,13.4811,2.3761]
+        ]}
+    ]
+}

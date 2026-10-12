@@ -1,0 +1,74 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SBJP/",
+    "info": {"country":"BR","city":"Joao Pessoa","type":"large_airport","longestRunwayM":2515,"frequencies":{"twr":"118.300","app":"118.300"},"approximateRunways":true},
+    "radio": {"twr":"Joao Pessoa Tower","app":"Joao Pessoa Approach","dep":"Joao Pessoa Departure"},
+    "icao": "SBJP",
+    "iata": "JPA",
+    "magnetic_north": -20.8,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-7.148691,-34.950554,"217ft"],
+    "rangeRings": {"enabled":true,"center":[-7.148691,-34.950554],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":150,"speed":6},
+    "arrivalRunway": "16",
+    "departureRunway": "16",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-6.7704,-35.0954],[-6.7461,-34.9918],[-6.7492,-34.8853],[-6.7796,-34.7834],[-6.8351,-34.6928],[-6.912,-34.6197],[-7.005,-34.5693],[-7.1078,-34.5448],[-7.2134,-34.5479],[-7.3146,-34.5785],[-7.4045,-34.6345],[-7.4769,-34.712],[-7.527,-34.8057],[-7.5513,-34.9093],[-7.5482,-35.0158],[-7.5178,-35.1177],[-7.4623,-35.2083],[-7.3854,-35.2814],[-7.2924,-35.3318],[-7.1896,-35.3563],[-7.084,-35.3532],[-6.9828,-35.3226],[-6.8929,-35.2666],[-6.8205,-35.1891]]}
+    ],
+    "fixes": {
+        "SBJP": [-7.14869,-34.95055],
+        "ICIGU": [-7.07233,-34.41389],
+        "COGEJ": [-7.12032,-34.75116],
+        "VSA": [-8.1065,-35.2873,"santo antao"],
+        "CUJLO": [-7.3374,-35.0169],
+        "MUCIR": [-6.78027,-35.3456],
+        "GEJES": [-7.01181,-35.09733],
+        "_RWY1604DME": [-7.08969,-35.00187],
+        "_RWY3404DME": [-7.20768,-34.89923]
+    },
+    "runways": [
+        {"name":["16","34"],"end":[[-7.14013,-34.958,"217ft"],[-7.15725,-34.94311,"217ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ICIGU1C": {"icao":"ICIGU1C","name":"Icigu One Charlie","rwy":{"SBJP16":["_RWY3404DME"],"SBJP34":["_RWY1604DME"]},"body":[],"exitPoints":{"ICIGU":["ICIGU"]},"draw":[["SBJP","ICIGU*"]]},
+        "VSA1C": {"icao":"VSA1C","name":"Santo Antao One Charlie","rwy":{"SBJP16":["_RWY3404DME"],"SBJP34":["_RWY1604DME"]},"body":[],"exitPoints":{"VSA":["VSA"]},"draw":[["SBJP","VSA*"]]},
+        "MUCIR2B": {"icao":"MUCIR2B","name":"Mucir Two Bravo","rwy":{"SBJP16":["_RWY3404DME"],"SBJP34":["_RWY1604DME"]},"body":[],"exitPoints":{"MUCIR":["MUCIR"]},"draw":[["SBJP","MUCIR*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SBJP","destination":"SBBR","category":"departure","route":"SBJP16.VSA1C.VSA","altitude":"","speed":"","method":"random","rate":1.02,"airlines":[["glo/b738",1],["one/a319",1],["tam/a320",1]]},
+        {"origin":"SBJP","destination":"SBGL","category":"departure","route":"SBJP16.VSA1C.VSA","altitude":"","speed":"","method":"random","rate":1.02,"airlines":[["glo/b738",1],["one/a318",1],["tam/a320",1]]},
+        {"origin":"SBJP","destination":"SBGR","category":"departure","route":"SBJP16.VSA1C.VSA","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBJP","destination":"SBFZ","category":"departure","route":"SBJP16.MUCIR2B.MUCIR","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["azu/at72",1]]},
+        {"origin":"SBJP","destination":"","category":"departure","route":"SBJP16.VSA1C.VSA","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["azu/at72",1],["azu/e190",1]]},
+        {"origin":"SBJP","destination":"","category":"departure","route":"SBJP16.MUCIR2B.MUCIR","altitude":"","speed":"","method":"random","rate":1.25,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"SBBR","destination":"SBJP","category":"arrival","route":"VSA..CUJLO..SBJP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.02,"airlines":[["glo/b738",1],["one/a319",1],["tam/a320",1]]},
+        {"origin":"SBGL","destination":"SBJP","category":"arrival","route":"VSA..CUJLO..SBJP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.02,"airlines":[["glo/b738",1],["one/a318",1],["tam/a320",1]]},
+        {"origin":"SBGR","destination":"SBJP","category":"arrival","route":"VSA..CUJLO..SBJP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.68,"airlines":[["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBFZ","destination":"SBJP","category":"arrival","route":"MUCIR..GEJES..SBJP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.34,"airlines":[["azu/at72",1]]},
+        {"origin":"","destination":"SBJP","category":"arrival","route":"VSA..CUJLO..SBJP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.68,"airlines":[["azu/at72",1],["azu/e190",1]]},
+        {"origin":"","destination":"SBJP","category":"arrival","route":"MUCIR..GEJES..SBJP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.25,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-7.0723,-34.4139,-7.1203,-34.7512],
+            [-7.1203,-34.7512,-7.1487,-34.9506],
+            [-8.1065,-35.2873,-7.3374,-35.0169],
+            [-7.3374,-35.0169,-7.1487,-34.9506],
+            [-6.7803,-35.3456,-7.0118,-35.0973],
+            [-7.0118,-35.0973,-7.1487,-34.9506]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-7.1401,-34.958,-7.014,-35.0676],
+            [-7.0836,-35.0205,-7.0706,-35.0052],
+            [-7.0206,-35.0753,-7.0075,-35.06],
+            [-7.1573,-34.9431,-7.2833,-34.8334],
+            [-7.2138,-34.8806,-7.2268,-34.8959],
+            [-7.2768,-34.8258,-7.2899,-34.841]
+        ]}
+    ]
+}

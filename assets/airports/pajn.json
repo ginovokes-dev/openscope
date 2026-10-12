@@ -1,0 +1,92 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/PAJN/",
+    "info": {"country":"US","city":"Juneau","type":"medium_airport","longestRunwayM":2700,"frequencies":{"atis":"135.200","twr":"118.700","gnd":"121.900"}},
+    "radio": {"twr":"Juneau Tower","app":"Juneau Approach","dep":"Juneau Departure"},
+    "icao": "PAJN",
+    "iata": "JNU",
+    "magnetic_north": 17.7,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [58.354935,-134.574416,"21ft"],
+    "rangeRings": {"enabled":true,"center":[58.354935,-134.574416],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":250,"speed":10},
+    "arrivalRunway": "26",
+    "departureRunway": "26",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[58.7405,-134.3399],[58.6955,-134.1577],[58.6273,-134.0039],[58.5405,-133.889],[58.4411,-133.8208],[58.3359,-133.8039],[58.2319,-133.8396],[58.1363,-133.9253],[58.0556,-134.0553],[57.9953,-134.2206],[57.9595,-134.4101],[57.9507,-134.6108],[57.9694,-134.8089],[58.0144,-134.9911],[58.0826,-135.1449],[58.1693,-135.2599],[58.2687,-135.3281],[58.374,-135.3449],[58.478,-135.3093],[58.5736,-135.2235],[58.6543,-135.0935],[58.7146,-134.9282],[58.7503,-134.7387],[58.7592,-134.5381]]}
+    ],
+    "fixes": {
+        "PAJN": [58.35494,-134.57442],
+        "UHUBO": [57.9087,-134.00182],
+        "LILAP": [58.18914,-134.36168],
+        "IROKA": [57.84382,-134.89416],
+        "ANEGO": [58.16504,-134.69321],
+        "POTET": [58.08509,-135.4614],
+        "UGEGE": [58.25468,-134.90397],
+        "GAV": [58.4219,-135.705,"gustavus"],
+        "RONIM": [58.37736,-134.95296],
+        "HNS": [59.2121,-135.431,"haines"],
+        "AVIKO": [58.53195,-134.75131],
+        "_RWY0804DME": [58.37467,-134.72094],
+        "_RWY2604DME": [58.33512,-134.4322]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[58.3579,-134.59801,"21ft"],[58.352,-134.55499,"20ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "UHUBO2F": {"icao":"UHUBO2F","name":"Uhubo Two Foxtrot","rwy":{"PAJN08":["_RWY2604DME"],"PAJN26":["_RWY0804DME"]},"body":[],"exitPoints":{"UHUBO":["UHUBO"]},"draw":[["PAJN","UHUBO*"]]},
+        "IROKA2B": {"icao":"IROKA2B","name":"Iroka Two Bravo","rwy":{"PAJN08":["_RWY2604DME"],"PAJN26":["_RWY0804DME"]},"body":[],"exitPoints":{"IROKA":["IROKA"]},"draw":[["PAJN","IROKA*"]]},
+        "POTET1B": {"icao":"POTET1B","name":"Potet One Bravo","rwy":{"PAJN08":["_RWY2604DME"],"PAJN26":["_RWY0804DME"]},"body":[],"exitPoints":{"POTET":["POTET"]},"draw":[["PAJN","POTET*"]]},
+        "GAV2C": {"icao":"GAV2C","name":"Gustavus Two Charlie","rwy":{"PAJN08":["_RWY2604DME"],"PAJN26":["_RWY0804DME"]},"body":[],"exitPoints":{"GAV":["GAV"]},"draw":[["PAJN","GAV*"]]},
+        "HNS1B": {"icao":"HNS1B","name":"Haines One Bravo","rwy":{"PAJN08":["_RWY2604DME"],"PAJN26":["_RWY0804DME"]},"body":[],"exitPoints":{"HNS":["HNS"]},"draw":[["PAJN","HNS*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"PAJN","destination":"KSEA","category":"departure","route":"PAJN26.UHUBO2F.UHUBO","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["asa/b734",2],["asa/b738",1]]},
+        {"origin":"PAJN","destination":"PAGS","category":"departure","route":"PAJN26.GAV2C.GAV","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["sqh/c172",1],["sqh/c208",1]]},
+        {"origin":"PAJN","destination":"PAGY","category":"departure","route":"PAJN26.HNS1B.HNS","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["sqh/c172",1],["sqh/c208",1]]},
+        {"origin":"PAJN","destination":"PAHN","category":"departure","route":"PAJN26.HNS1B.HNS","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["sqh/c172",1],["sqh/c208",1]]},
+        {"origin":"PAJN","destination":"PANC","category":"departure","route":"PAJN26.GAV2C.GAV","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["asa/b734",2]]},
+        {"origin":"PAJN","destination":"","category":"departure","route":"PAJN26.UHUBO2F.UHUBO","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["asa/b734",2]]},
+        {"origin":"PAJN","destination":"","category":"departure","route":"PAJN26.IROKA2B.IROKA","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["asa/b734",1]]},
+        {"origin":"PAJN","destination":"","category":"departure","route":"PAJN26.POTET1B.POTET","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["sqh/c172",1],["sqh/c208",1]]},
+        {"origin":"PAJN","destination":"","category":"departure","route":"PAJN26.GAV2C.GAV","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["asa/b734",1]]},
+        {"origin":"PAJN","destination":"","category":"departure","route":"PAJN26.UHUBO2F.UHUBO","altitude":"","speed":"","method":"random","rate":1.5,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KSEA","destination":"PAJN","category":"arrival","route":"UHUBO..LILAP..PAJN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.79,"airlines":[["asa/b734",2],["asa/b738",1]]},
+        {"origin":"PAGS","destination":"PAJN","category":"arrival","route":"GAV..RONIM..PAJN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.53,"airlines":[["sqh/c172",1],["sqh/c208",1]]},
+        {"origin":"PAGY","destination":"PAJN","category":"arrival","route":"HNS..AVIKO..PAJN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.53,"airlines":[["sqh/c172",1],["sqh/c208",1]]},
+        {"origin":"PAHN","destination":"PAJN","category":"arrival","route":"HNS..AVIKO..PAJN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.53,"airlines":[["sqh/c172",1],["sqh/c208",1]]},
+        {"origin":"PANC","destination":"PAJN","category":"arrival","route":"GAV..RONIM..PAJN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.53,"airlines":[["asa/b734",2]]},
+        {"origin":"","destination":"PAJN","category":"arrival","route":"UHUBO..LILAP..PAJN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.53,"airlines":[["asa/b734",2]]},
+        {"origin":"","destination":"PAJN","category":"arrival","route":"IROKA..ANEGO..PAJN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.26,"airlines":[["asa/b734",1]]},
+        {"origin":"","destination":"PAJN","category":"arrival","route":"POTET..UGEGE..PAJN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.53,"airlines":[["sqh/c172",1],["sqh/c208",1]]},
+        {"origin":"","destination":"PAJN","category":"arrival","route":"GAV..RONIM..PAJN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.26,"airlines":[["asa/b734",1]]},
+        {"origin":"","destination":"PAJN","category":"arrival","route":"UHUBO..LILAP..PAJN","altitude":[4000,7000],"speed":250,"method":"random","rate":1.5,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [57.9087,-134.0018,58.1891,-134.3617],
+            [58.1891,-134.3617,58.3549,-134.5744],
+            [57.8438,-134.8942,58.165,-134.6932],
+            [58.165,-134.6932,58.3549,-134.5744],
+            [58.0851,-135.4614,58.2547,-134.904],
+            [58.2547,-134.904,58.3549,-134.5744],
+            [58.4219,-135.705,58.3774,-134.953],
+            [58.3774,-134.953,58.3549,-134.5744],
+            [59.2121,-135.431,58.5319,-134.7513],
+            [58.5319,-134.7513,58.3549,-134.5744]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [58.3579,-134.598,58.3996,-134.9056],
+            [58.3692,-134.7565,58.3885,-134.7469],
+            [58.3899,-134.9104,58.4093,-134.9007],
+            [58.352,-134.555,58.3096,-134.2482],
+            [58.3405,-134.3967,58.3212,-134.4063],
+            [58.3192,-134.2434,58.2999,-134.253]
+        ]}
+    ]
+}

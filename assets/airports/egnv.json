@@ -1,0 +1,71 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGNV/",
+    "info": {"country":"GB","city":"Darlington","type":"medium_airport","longestRunwayM":2292,"frequencies":{"atis":"132.375","twr":"119.800"}},
+    "radio": {"twr":"Teesside Tower","app":"Teesside Approach","dep":"Teesside Radar"},
+    "icao": "EGNV",
+    "iata": "MME",
+    "magnetic_north": 0.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [54.509201,-1.42941,"120ft"],
+    "rangeRings": {"enabled":true,"center":[54.509201,-1.42941],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":230,"speed":5},
+    "arrivalRunway": "23",
+    "departureRunway": "23",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[54.9139,-1.4245],[54.8994,-1.2443],[54.8583,-1.0767],[54.7934,-0.9331],[54.7091,-0.8233],[54.6112,-0.7549],[54.5064,-0.7324],[54.4017,-0.7574],[54.3044,-0.8282],[54.221,-0.94],[54.1573,-1.0851],[54.1176,-1.2537],[54.1045,-1.4343],[54.119,-1.6145],[54.1601,-1.7821],[54.225,-1.9257],[54.3093,-2.0355],[54.4072,-2.104],[54.512,-2.1265],[54.6167,-2.1014],[54.714,-2.0306],[54.7974,-1.9189],[54.8611,-1.7737],[54.9008,-1.6051]]}
+    ],
+    "fixes": {
+        "EGNV": [54.5092,-1.42941],
+        "MIPAG": [54.59133,-0.51371],
+        "POFAH": [54.53972,-1.08919],
+        "LBA": [53.865,-1.65289,"leeds bradford"],
+        "BEPOW": [54.31327,-1.49738],
+        "ICEHI": [54.42707,-2.34511],
+        "UVUBI": [54.47869,-1.76963],
+        "NEW": [55.0384,-1.69837,"newcastle"],
+        "ANUGU": [54.7009,-1.52684],
+        "_RWY0504DME": [54.45691,-1.52652],
+        "_RWY2304DME": [54.56144,-1.33208]
+    },
+    "runways": [
+        {"name":["05","23"],"end":[[54.5022,-1.44243,"115ft"],[54.5162,-1.41638,"116ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "MIPAG2D": {"icao":"MIPAG2D","name":"Mipag Two Delta","rwy":{"EGNV05":["_RWY2304DME"],"EGNV23":["_RWY0504DME"]},"body":[],"exitPoints":{"MIPAG":["MIPAG"]},"draw":[["EGNV","MIPAG*"]]},
+        "LBA2E": {"icao":"LBA2E","name":"Leeds Bradford Two Echo","rwy":{"EGNV05":["_RWY2304DME"],"EGNV23":["_RWY0504DME"]},"body":[],"exitPoints":{"LBA":["LBA"]},"draw":[["EGNV","LBA*"]]},
+        "ICEHI3C": {"icao":"ICEHI3C","name":"Icehi Three Charlie","rwy":{"EGNV05":["_RWY2304DME"],"EGNV23":["_RWY0504DME"]},"body":[],"exitPoints":{"ICEHI":["ICEHI"]},"draw":[["EGNV","ICEHI*"]]},
+        "NEW1E": {"icao":"NEW1E","name":"Newcastle One Echo","rwy":{"EGNV05":["_RWY2304DME"],"EGNV23":["_RWY0504DME"]},"body":[],"exitPoints":{"NEW":["NEW"]},"draw":[["EGNV","NEW*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGNV","destination":"EGPD","category":"departure","route":"EGNV23.NEW1E.NEW","altitude":"","speed":"","method":"random","rate":2.24,"airlines":[["eze/js41",1],["eze/sb20",1]]},
+        {"origin":"EGNV","destination":"","category":"departure","route":"EGNV23.MIPAG2D.MIPAG","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]},
+        {"origin":"EGPD","destination":"EGNV","category":"arrival","route":"NEW..ANUGU..EGNV","altitude":[4000,7000],"speed":250,"method":"random","rate":2.24,"airlines":[["eze/js41",1],["eze/sb20",1]]},
+        {"origin":"","destination":"EGNV","category":"arrival","route":"MIPAG..POFAH..EGNV","altitude":[4000,7000],"speed":250,"method":"random","rate":0.75,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [54.5913,-0.5137,54.5397,-1.0892],
+            [54.5397,-1.0892,54.5092,-1.4294],
+            [53.865,-1.6529,54.3133,-1.4974],
+            [54.3133,-1.4974,54.5092,-1.4294],
+            [54.4271,-2.3451,54.4787,-1.7696],
+            [54.4787,-1.7696,54.5092,-1.4294],
+            [55.0384,-1.6984,54.7009,-1.5268],
+            [54.7009,-1.5268,54.5092,-1.4294]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [54.5022,-1.4424,54.3889,-1.6523],
+            [54.4382,-1.5358,54.4529,-1.5592],
+            [54.3815,-1.6406,54.3962,-1.664],
+            [54.5162,-1.4164,54.6292,-1.2053],
+            [54.5801,-1.3227,54.5654,-1.2993],
+            [54.6365,-1.217,54.6218,-1.1935]
+        ]}
+    ]
+}

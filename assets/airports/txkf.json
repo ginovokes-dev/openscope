@@ -1,0 +1,81 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/TXKF/",
+    "info": {"country":"BM","city":"Hamilton","type":"large_airport","longestRunwayM":2958,"frequencies":{"twr":"118.100","app":"119.100","gnd":"124.500"}},
+    "radio": {"twr":"LF Wade Tower","app":"LF Wade Approach","dep":"LF Wade Departure"},
+    "icao": "TXKF",
+    "iata": "BDA",
+    "magnetic_north": -14.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [32.363802,-64.67824,"12ft"],
+    "rangeRings": {"enabled":true,"center":[32.363802,-64.67824],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":280,"speed":7},
+    "arrivalRunway": "30",
+    "departureRunway": "30",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[32.7558,-64.7974],[32.7685,-64.6732],[32.7536,-64.5494],[32.7121,-64.4343],[32.647,-64.3359],[32.5625,-64.2608],[32.4644,-64.2142],[32.3596,-64.1991],[32.255,-64.2168],[32.1578,-64.2658],[32.0747,-64.343],[32.0112,-64.443],[31.9718,-64.5591],[31.9591,-64.6833],[31.974,-64.8071],[32.0155,-64.9221],[32.0807,-65.0206],[32.1651,-65.0957],[32.2632,-65.1423],[32.368,-65.1573],[32.4726,-65.1397],[32.5698,-65.0906],[32.6529,-65.0135],[32.7164,-64.9134]]}
+    ],
+    "fixes": {
+        "TXKF": [32.3638,-64.67824],
+        "MEBSU": [32.72509,-64.20638],
+        "IWEWI": [32.49803,-64.50293],
+        "EZONA": [31.90742,-64.34109],
+        "ALIHA": [32.19424,-64.55298],
+        "ENIZU": [32.16458,-65.26982],
+        "DOJAV": [32.28979,-64.89804],
+        "REGIJ": [32.78219,-65.07855],
+        "VODUM": [32.51925,-64.82697],
+        "_RWY1204DME": [32.37996,-64.7714],
+        "_RWY3004DME": [32.34809,-64.58602]
+    },
+    "runways": [
+        {"name":["12","30"],"end":[[32.3667,-64.6941,"18ft"],[32.3614,-64.6633,"18ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "MEBSU3E": {"icao":"MEBSU3E","name":"Mebsu Three Echo","rwy":{"TXKF12":["_RWY3004DME"],"TXKF30":["_RWY1204DME"]},"body":[],"exitPoints":{"MEBSU":["MEBSU"]},"draw":[["TXKF","MEBSU*"]]},
+        "EZONA2C": {"icao":"EZONA2C","name":"Ezona Two Charlie","rwy":{"TXKF12":["_RWY3004DME"],"TXKF30":["_RWY1204DME"]},"body":[],"exitPoints":{"EZONA":["EZONA"]},"draw":[["TXKF","EZONA*"]]},
+        "ENIZU3B": {"icao":"ENIZU3B","name":"Enizu Three Bravo","rwy":{"TXKF12":["_RWY3004DME"],"TXKF30":["_RWY1204DME"]},"body":[],"exitPoints":{"ENIZU":["ENIZU"]},"draw":[["TXKF","ENIZU*"]]},
+        "REGIJ3A": {"icao":"REGIJ3A","name":"Regij Three Alpha","rwy":{"TXKF12":["_RWY3004DME"],"TXKF30":["_RWY1204DME"]},"body":[],"exitPoints":{"REGIJ":["REGIJ"]},"draw":[["TXKF","REGIJ*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"TXKF","destination":"KJFK","category":"departure","route":"TXKF30.REGIJ3A.REGIJ","altitude":"","speed":"","method":"random","rate":1.58,"airlines":[["aal/b738",2],["dal/b738",1],["jbu/a320",1]]},
+        {"origin":"TXKF","destination":"CYYZ","category":"departure","route":"TXKF30.REGIJ3A.REGIJ","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["aca/a319",1],["wja/b737",1]]},
+        {"origin":"TXKF","destination":"KMIA","category":"departure","route":"TXKF30.ENIZU3B.ENIZU","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["aal/b738",2]]},
+        {"origin":"TXKF","destination":"KPHL","category":"departure","route":"TXKF30.REGIJ3A.REGIJ","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["aal/a319",2]]},
+        {"origin":"TXKF","destination":"EGKK","category":"departure","route":"TXKF30.MEBSU3E.MEBSU","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["baw/b772",1]]},
+        {"origin":"TXKF","destination":"","category":"departure","route":"TXKF30.ENIZU3B.ENIZU","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["dal/a319",1]]},
+        {"origin":"TXKF","destination":"","category":"departure","route":"TXKF30.REGIJ3A.REGIJ","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["dal/b738",1],["ual/b738",1]]},
+        {"origin":"KJFK","destination":"TXKF","category":"arrival","route":"REGIJ..VODUM..TXKF","altitude":[4000,7000],"speed":250,"method":"random","rate":1.58,"airlines":[["aal/b738",2],["dal/b738",1],["jbu/a320",1]]},
+        {"origin":"CYYZ","destination":"TXKF","category":"arrival","route":"REGIJ..VODUM..TXKF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.79,"airlines":[["aca/a319",1],["wja/b737",1]]},
+        {"origin":"KMIA","destination":"TXKF","category":"arrival","route":"ENIZU..DOJAV..TXKF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.79,"airlines":[["aal/b738",2]]},
+        {"origin":"KPHL","destination":"TXKF","category":"arrival","route":"REGIJ..VODUM..TXKF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.79,"airlines":[["aal/a319",2]]},
+        {"origin":"EGKK","destination":"TXKF","category":"arrival","route":"MEBSU..IWEWI..TXKF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["baw/b772",1]]},
+        {"origin":"","destination":"TXKF","category":"arrival","route":"ENIZU..DOJAV..TXKF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["dal/a319",1]]},
+        {"origin":"","destination":"TXKF","category":"arrival","route":"REGIJ..VODUM..TXKF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.79,"airlines":[["dal/b738",1],["ual/b738",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [32.7251,-64.2064,32.498,-64.5029],
+            [32.498,-64.5029,32.3638,-64.6782],
+            [31.9074,-64.3411,32.1942,-64.553],
+            [32.1942,-64.553,32.3638,-64.6782],
+            [32.1646,-65.2698,32.2898,-64.898],
+            [32.2898,-64.898,32.3638,-64.6782],
+            [32.7822,-65.0786,32.5192,-64.827],
+            [32.5192,-64.827,32.3638,-64.6782]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [32.3667,-64.6941,32.3998,-64.8874],
+            [32.3735,-64.7931,32.3931,-64.7884],
+            [32.39,-64.8898,32.4096,-64.885],
+            [32.3614,-64.6633,32.328,-64.4702],
+            [32.3545,-64.5643,32.335,-64.5691],
+            [32.3378,-64.4678,32.3182,-64.4725]
+        ]}
+    ]
+}

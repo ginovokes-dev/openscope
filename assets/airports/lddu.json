@@ -1,0 +1,91 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LDDU/",
+    "info": {"country":"HR","city":"Dubrovnik","type":"large_airport","longestRunwayM":3230,"frequencies":{"twr":"129.500","app":"123.600"}},
+    "radio": {"twr":"Dubrovnik Tower","app":"Dubrovnik Approach","dep":"Dubrovnik Departure"},
+    "icao": "LDDU",
+    "iata": "DBV",
+    "magnetic_north": 5,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [42.562247,18.265543,"527ft"],
+    "rangeRings": {"enabled":true,"center":[42.562247,18.265543],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":300,"speed":5},
+    "arrivalRunway": "29",
+    "departureRunway": "29",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[43.0998,18.3294],[43.0693,18.5161],[43.0043,18.6857],[42.9091,18.8267],[42.7903,18.9295],[42.6559,18.987],[42.5152,18.9954],[42.3777,18.954],[42.2527,18.8657],[42.1489,18.7365],[42.0732,18.5752],[42.0309,18.3928],[42.0247,18.2017],[42.0552,18.015],[42.1202,17.8453],[42.2154,17.7043],[42.3342,17.6016],[42.4685,17.5441],[42.6093,17.5357],[42.7468,17.5771],[42.8717,17.6654],[42.9756,17.7946],[43.0513,17.9559],[43.0936,18.1383]]}
+    ],
+    "fixes": {
+        "LDDU": [42.56225,18.26554],
+        "GADOK": [42.06297,18.94353],
+        "GOKAV": [42.38561,18.50541],
+        "DILJI": [42.51206,17.30923],
+        "UKICI": [42.54449,17.92721],
+        "MSR": [43.2614,17.8557,"mostar"],
+        "IZOHI": [42.79161,18.13109],
+        "GAC": [43.1429,18.5583,"gacko"],
+        "OZOBU": [42.79645,18.38363],
+        "_RWY1104DME": [42.60078,18.16871],
+        "_RWY2904DME": [42.52421,18.36179]
+    },
+    "runways": [
+        {"name":["11","29"],"end":[[42.56923,18.2484,"519ft"],[42.55582,18.28219,"484ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "GADOK1C": {"icao":"GADOK1C","name":"Gadok One Charlie","rwy":{"LDDU11":["_RWY2904DME"],"LDDU29":["_RWY1104DME"]},"body":[],"exitPoints":{"GADOK":["GADOK"]},"draw":[["LDDU","GADOK*"]]},
+        "DILJI3E": {"icao":"DILJI3E","name":"Dilji Three Echo","rwy":{"LDDU11":["_RWY2904DME"],"LDDU29":["_RWY1104DME"]},"body":[],"exitPoints":{"DILJI":["DILJI"]},"draw":[["LDDU","DILJI*"]]},
+        "MSR1E": {"icao":"MSR1E","name":"Mostar One Echo","rwy":{"LDDU11":["_RWY2904DME"],"LDDU29":["_RWY1104DME"]},"body":[],"exitPoints":{"MSR":["MSR"]},"draw":[["LDDU","MSR*"]]},
+        "GAC1B": {"icao":"GAC1B","name":"Gacko One Bravo","rwy":{"LDDU11":["_RWY2904DME"],"LDDU29":["_RWY1104DME"]},"body":[],"exitPoints":{"GAC":["GAC"]},"draw":[["LDDU","GAC*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LDDU","destination":"EGKK","category":"departure","route":"LDDU29.MSR1E.MSR","altitude":"","speed":"","method":"random","rate":1,"airlines":[["baw/a319",1],["baw/b734",1],["ezy/a319",1],["ezy/a320",1],["mon/a321",1],["mon/b752",1],["nax/b738",1],["tvf/b752",1]]},
+        {"origin":"LDDU","destination":"EGBB","category":"departure","route":"LDDU29.MSR1E.MSR","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["bee/e75l",1],["mon/a320",1],["mon/a321",1],["tvf/b738",1]]},
+        {"origin":"LDDU","destination":"EGCC","category":"departure","route":"LDDU29.MSR1E.MSR","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["exs/b733",1],["mon/a320",1],["mon/a321",1],["tvf/b738",1]]},
+        {"origin":"LDDU","destination":"EDDF","category":"departure","route":"LDDU29.MSR1E.MSR","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["cfg/a320",1],["ctn/a319",1],["ctn/a320",1]]},
+        {"origin":"LDDU","destination":"EDDM","category":"departure","route":"LDDU29.MSR1E.MSR","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["dlh/a319",1],["dlh/a320",1],["dlh/e190",1]]},
+        {"origin":"LDDU","destination":"EFHK","category":"departure","route":"LDDU29.GAC1B.GAC","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["fin/a320",1],["fin/a321",1],["nax/b738",1]]},
+        {"origin":"LDDU","destination":"","category":"departure","route":"LDDU29.GADOK1C.GADOK","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["ctn/a319",1],["ctn/dh8d",1]]},
+        {"origin":"LDDU","destination":"","category":"departure","route":"LDDU29.DILJI3E.DILJI","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["ctn/dh8d",1],["ezy/a320",1],["vlg/a320",1]]},
+        {"origin":"LDDU","destination":"","category":"departure","route":"LDDU29.MSR1E.MSR","altitude":"","speed":"","method":"random","rate":3.89,"airlines":[["ctn/a319",5],["exs/b733",5],["gwi/a319",4],["nax/b738",4],["ctn/dh8d",3],["ctn/a320",2],["ctn/e120",2],["ein/a320",1],["ezy/a319",1],["ezy/a320",1],["lgl/dh8d",1],["tvf/b738",1]]},
+        {"origin":"LDDU","destination":"","category":"departure","route":"LDDU29.GAC1B.GAC","altitude":"","speed":"","method":"random","rate":0.63,"airlines":[["ctn/dh8d",1],["elo/dh8d",1],["nax/b738",1],["sas/b737",1],["sas/b738",1]]},
+        {"origin":"LDDU","destination":"","category":"departure","route":"LDDU29.DILJI3E.DILJI","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["9a/c172",6],["9a/p28a",5],["9a/c182",3],["9a/be36",2],["9a/da42",1],["9a/tb20",1],["9a/c208",2],["9a/pc12",2],["9a/be20",1],["9a/b350",1],["9a/p180",1],["9a/c510",1],["9a/e50p",1],["9a/c550",2],["9a/e55p",1],["9a/cl30",1],["9a/c680",1],["9a/h25b",1],["9a/lj45",1],["9a/f2th",1],["9a/glf4",1],["9a/glex",1],["9a/glf5",1]]},
+        {"origin":"LDDU","destination":"","category":"departure","route":"LDDU29.MSR1E.MSR","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["9a/c172",6],["9a/p28a",5],["9a/c182",3],["9a/be36",2],["9a/da42",1],["9a/tb20",1],["9a/c208",2],["9a/pc12",2],["9a/be20",1],["9a/b350",1],["9a/p180",1],["9a/c510",1],["9a/e50p",1],["9a/c550",2],["9a/e55p",1],["9a/cl30",1],["9a/c680",1],["9a/h25b",1],["9a/lj45",1],["9a/f2th",1],["9a/glf4",1],["9a/glex",1],["9a/glf5",1]]},
+        {"origin":"EGKK","destination":"LDDU","category":"arrival","route":"MSR..IZOHI..LDDU","altitude":[6000,9000],"speed":250,"method":"random","rate":1,"airlines":[["baw/a319",1],["baw/b734",1],["ezy/a319",1],["ezy/a320",1],["mon/a321",1],["mon/b752",1],["nax/b738",1],["tvf/b752",1]]},
+        {"origin":"EGBB","destination":"LDDU","category":"arrival","route":"MSR..IZOHI..LDDU","altitude":[6000,9000],"speed":250,"method":"random","rate":0.5,"airlines":[["bee/e75l",1],["mon/a320",1],["mon/a321",1],["tvf/b738",1]]},
+        {"origin":"EGCC","destination":"LDDU","category":"arrival","route":"MSR..IZOHI..LDDU","altitude":[6000,9000],"speed":250,"method":"random","rate":0.5,"airlines":[["exs/b733",1],["mon/a320",1],["mon/a321",1],["tvf/b738",1]]},
+        {"origin":"EDDF","destination":"LDDU","category":"arrival","route":"MSR..IZOHI..LDDU","altitude":[6000,9000],"speed":250,"method":"random","rate":0.38,"airlines":[["cfg/a320",1],["ctn/a319",1],["ctn/a320",1]]},
+        {"origin":"EDDM","destination":"LDDU","category":"arrival","route":"MSR..IZOHI..LDDU","altitude":[6000,9000],"speed":250,"method":"random","rate":0.38,"airlines":[["dlh/a319",1],["dlh/a320",1],["dlh/e190",1]]},
+        {"origin":"EFHK","destination":"LDDU","category":"arrival","route":"GAC..OZOBU..LDDU","altitude":[6000,9000],"speed":250,"method":"random","rate":0.38,"airlines":[["fin/a320",1],["fin/a321",1],["nax/b738",1]]},
+        {"origin":"","destination":"LDDU","category":"arrival","route":"GADOK..GOKAV..LDDU","altitude":[6000,9000],"speed":250,"method":"random","rate":0.25,"airlines":[["ctn/a319",1],["ctn/dh8d",1]]},
+        {"origin":"","destination":"LDDU","category":"arrival","route":"DILJI..UKICI..LDDU","altitude":[6000,9000],"speed":250,"method":"random","rate":0.38,"airlines":[["ctn/dh8d",1],["ezy/a320",1],["vlg/a320",1]]},
+        {"origin":"","destination":"LDDU","category":"arrival","route":"MSR..IZOHI..LDDU","altitude":[6000,9000],"speed":250,"method":"random","rate":3.89,"airlines":[["ctn/a319",5],["exs/b733",5],["gwi/a319",4],["nax/b738",4],["ctn/dh8d",3],["ctn/a320",2],["ctn/e120",2],["ein/a320",1],["ezy/a319",1],["ezy/a320",1],["lgl/dh8d",1],["tvf/b738",1]]},
+        {"origin":"","destination":"LDDU","category":"arrival","route":"GAC..OZOBU..LDDU","altitude":[6000,9000],"speed":250,"method":"random","rate":0.63,"airlines":[["ctn/dh8d",1],["elo/dh8d",1],["nax/b738",1],["sas/b737",1],["sas/b738",1]]},
+        {"origin":"","destination":"LDDU","category":"arrival","route":"DILJI..UKICI..LDDU","altitude":[6000,9000],"speed":250,"method":"random","rate":0.56,"airlines":[["9a/c172",6],["9a/p28a",5],["9a/c182",3],["9a/be36",2],["9a/da42",1],["9a/tb20",1],["9a/c208",2],["9a/pc12",2],["9a/be20",1],["9a/b350",1],["9a/p180",1],["9a/c510",1],["9a/e50p",1],["9a/c550",2],["9a/e55p",1],["9a/cl30",1],["9a/c680",1],["9a/h25b",1],["9a/lj45",1],["9a/f2th",1],["9a/glf4",1],["9a/glex",1],["9a/glf5",1]]},
+        {"origin":"","destination":"LDDU","category":"arrival","route":"MSR..IZOHI..LDDU","altitude":[6000,9000],"speed":250,"method":"random","rate":0.56,"airlines":[["9a/c172",6],["9a/p28a",5],["9a/c182",3],["9a/be36",2],["9a/da42",1],["9a/tb20",1],["9a/c208",2],["9a/pc12",2],["9a/be20",1],["9a/b350",1],["9a/p180",1],["9a/c510",1],["9a/e50p",1],["9a/c550",2],["9a/e55p",1],["9a/cl30",1],["9a/c680",1],["9a/h25b",1],["9a/lj45",1],["9a/f2th",1],["9a/glf4",1],["9a/glex",1],["9a/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [42.063,18.9435,42.3856,18.5054],
+            [42.3856,18.5054,42.5622,18.2655],
+            [42.5121,17.3092,42.5445,17.9272],
+            [42.5445,17.9272,42.5622,18.2655],
+            [43.2614,17.8557,42.7916,18.1311],
+            [42.7916,18.1311,42.5622,18.2655],
+            [43.1429,18.5583,42.7965,18.3836],
+            [42.7965,18.3836,42.5622,18.2655]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [42.5692,18.2484,42.648,18.049],
+            [42.5999,18.1423,42.6175,18.1552],
+            [42.6392,18.0426,42.6568,18.0555],
+            [42.5558,18.2822,42.4767,18.481],
+            [42.5251,18.3881,42.5075,18.3752],
+            [42.4855,18.4875,42.4679,18.4746]
+        ]}
+    ]
+}

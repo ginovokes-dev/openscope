@@ -1,0 +1,80 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EIKN/",
+    "info": {"country":"IE","city":"Charlestown","type":"large_airport","longestRunwayM":2300,"frequencies":{"twr":"130.700","gnd":"121.900"}},
+    "radio": {"twr":"Connaught Tower","app":"Connaught Approach","dep":"Connaught Radar"},
+    "icao": "EIKN",
+    "iata": "NOC",
+    "magnetic_north": -2.4,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [53.910439,-8.817002,"665ft"],
+    "rangeRings": {"enabled":true,"center":[53.910439,-8.817002],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":240,"speed":6},
+    "arrivalRunway": "26",
+    "departureRunway": "26",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[54.4496,-8.8554],[54.437,-8.6172],[54.3886,-8.3926],[54.3076,-8.197],[54.1996,-8.0436],[54.0718,-7.9429],[53.933,-7.9018],[53.7927,-7.923],[53.6604,-8.0052],[53.5452,-8.1427],[53.4548,-8.3262],[53.3955,-8.5431],[53.3713,-8.7786],[53.3838,-9.0168],[53.4322,-9.2414],[53.5132,-9.437],[53.6213,-9.5904],[53.7491,-9.6911],[53.8878,-9.7322],[54.0281,-9.711],[54.1604,-9.6288],[54.2757,-9.4913],[54.366,-9.3078],[54.4253,-9.0909]]}
+    ],
+    "fixes": {
+        "EIKN": [53.91044,-8.817],
+        "CEPHI": [53.72583,-7.6599],
+        "HOLWI": [53.84513,-8.40762],
+        "CRN": [53.2994,-8.94088,"galway"],
+        "OSODU": [53.66237,-8.86729],
+        "SITKU": [54.42173,-9.64385],
+        "FURKI": [54.09133,-9.10954],
+        "_RWY0804DME": [53.89557,-8.94426],
+        "_RWY2604DME": [53.9252,-8.69035]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[53.90857,-8.83336,"592ft"],[53.9123,-8.80133,"665ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "CEPHI2B": {"icao":"CEPHI2B","name":"Cephi Two Bravo","rwy":{"EIKN08":["_RWY2604DME"],"EIKN26":["_RWY0804DME"]},"body":[],"exitPoints":{"CEPHI":["CEPHI"]},"draw":[["EIKN","CEPHI*"]]},
+        "CRN1C": {"icao":"CRN1C","name":"Galway One Charlie","rwy":{"EIKN08":["_RWY2604DME"],"EIKN26":["_RWY0804DME"]},"body":[],"exitPoints":{"CRN":["CRN"]},"draw":[["EIKN","CRN*"]]},
+        "SITKU3A": {"icao":"SITKU3A","name":"Sitku Three Alpha","rwy":{"EIKN08":["_RWY2604DME"],"EIKN26":["_RWY0804DME"]},"body":[],"exitPoints":{"SITKU":["SITKU"]},"draw":[["EIKN","SITKU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EIKN","destination":"EGCC","category":"departure","route":"EIKN26.CEPHI2B.CEPHI","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["bee/dh8d",1],["bee/e75l",1]]},
+        {"origin":"EIKN","destination":"EGBB","category":"departure","route":"EIKN26.CEPHI2B.CEPHI","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["bee/dh8d",1]]},
+        {"origin":"EIKN","destination":"EGGD","category":"departure","route":"EIKN26.CEPHI2B.CEPHI","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["ryr/b738",1]]},
+        {"origin":"EIKN","destination":"EGGP","category":"departure","route":"EIKN26.CEPHI2B.CEPHI","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["ryr/b738",1]]},
+        {"origin":"EIKN","destination":"EGGW","category":"departure","route":"EIKN26.CEPHI2B.CEPHI","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["ryr/b738",1]]},
+        {"origin":"EIKN","destination":"","category":"departure","route":"EIKN26.CEPHI2B.CEPHI","altitude":"","speed":"","method":"random","rate":1.9,"airlines":[["ryr/b738",4],["ein/a319",1]]},
+        {"origin":"EIKN","destination":"","category":"departure","route":"EIKN26.CRN1C.CRN","altitude":"","speed":"","method":"random","rate":1.9,"airlines":[["ryr/b738",5]]},
+        {"origin":"EIKN","destination":"","category":"departure","route":"EIKN26.CRN1C.CRN","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["ei/c172",6],["ei/p28a",5],["ei/c182",3],["ei/be36",2],["ei/da42",1],["ei/tb20",1],["ei/c208",2],["ei/pc12",2],["ei/be20",1],["ei/b350",1],["ei/p180",1],["ei/c510",1],["ei/e50p",1],["ei/c550",2],["ei/e55p",1],["ei/cl30",1],["ei/c680",1],["ei/h25b",1],["ei/lj45",1],["ei/f2th",1],["ei/glf4",1],["ei/glex",1],["ei/glf5",1]]},
+        {"origin":"EIKN","destination":"","category":"departure","route":"EIKN26.CEPHI2B.CEPHI","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["ei/c172",6],["ei/p28a",5],["ei/c182",3],["ei/be36",2],["ei/da42",1],["ei/tb20",1],["ei/c208",2],["ei/pc12",2],["ei/be20",1],["ei/b350",1],["ei/p180",1],["ei/c510",1],["ei/e50p",1],["ei/c550",2],["ei/e55p",1],["ei/cl30",1],["ei/c680",1],["ei/h25b",1],["ei/lj45",1],["ei/f2th",1],["ei/glf4",1],["ei/glex",1],["ei/glf5",1]]},
+        {"origin":"EGCC","destination":"EIKN","category":"arrival","route":"CEPHI..HOLWI..EIKN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.76,"airlines":[["bee/dh8d",1],["bee/e75l",1]]},
+        {"origin":"EGBB","destination":"EIKN","category":"arrival","route":"CEPHI..HOLWI..EIKN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.38,"airlines":[["bee/dh8d",1]]},
+        {"origin":"EGGD","destination":"EIKN","category":"arrival","route":"CEPHI..HOLWI..EIKN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.38,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGGP","destination":"EIKN","category":"arrival","route":"CEPHI..HOLWI..EIKN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.38,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGGW","destination":"EIKN","category":"arrival","route":"CEPHI..HOLWI..EIKN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.38,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"EIKN","category":"arrival","route":"CEPHI..HOLWI..EIKN","altitude":[6000,9000],"speed":250,"method":"random","rate":1.9,"airlines":[["ryr/b738",4],["ein/a319",1]]},
+        {"origin":"","destination":"EIKN","category":"arrival","route":"CRN..OSODU..EIKN","altitude":[6000,9000],"speed":250,"method":"random","rate":1.9,"airlines":[["ryr/b738",5]]},
+        {"origin":"","destination":"EIKN","category":"arrival","route":"CRN..OSODU..EIKN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["ei/c172",6],["ei/p28a",5],["ei/c182",3],["ei/be36",2],["ei/da42",1],["ei/tb20",1],["ei/c208",2],["ei/pc12",2],["ei/be20",1],["ei/b350",1],["ei/p180",1],["ei/c510",1],["ei/e50p",1],["ei/c550",2],["ei/e55p",1],["ei/cl30",1],["ei/c680",1],["ei/h25b",1],["ei/lj45",1],["ei/f2th",1],["ei/glf4",1],["ei/glex",1],["ei/glf5",1]]},
+        {"origin":"","destination":"EIKN","category":"arrival","route":"CEPHI..HOLWI..EIKN","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["ei/c172",6],["ei/p28a",5],["ei/c182",3],["ei/be36",2],["ei/da42",1],["ei/tb20",1],["ei/c208",2],["ei/pc12",2],["ei/be20",1],["ei/b350",1],["ei/p180",1],["ei/c510",1],["ei/e50p",1],["ei/c550",2],["ei/e55p",1],["ei/cl30",1],["ei/c680",1],["ei/h25b",1],["ei/lj45",1],["ei/f2th",1],["ei/glf4",1],["ei/glex",1],["ei/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [53.7258,-7.6599,53.8451,-8.4076],
+            [53.8451,-8.4076,53.9104,-8.817],
+            [53.2994,-8.9409,53.6624,-8.8673],
+            [53.6624,-8.8673,53.9104,-8.817],
+            [54.4217,-9.6439,54.0913,-9.1095],
+            [54.0913,-9.1095,53.9104,-8.817]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [53.9086,-8.8334,53.8759,-9.1105],
+            [53.8825,-8.9687,53.9021,-8.9753],
+            [53.8661,-9.1072,53.8857,-9.1138],
+            [53.9123,-8.8013,53.9444,-8.5237],
+            [53.9382,-8.6659,53.9186,-8.6593],
+            [53.9542,-8.527,53.9346,-8.5204]
+        ]}
+    ]
+}

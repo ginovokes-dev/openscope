@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/FOOL/",
+    "info": {"country":"GA","city":"Libreville","type":"large_airport","longestRunwayM":3013,"frequencies":{"twr":"118.700"}},
+    "radio": {"twr":"Libreville Tower","app":"Libreville Approach","dep":"Libreville Departure"},
+    "icao": "FOOL",
+    "iata": "LBV",
+    "magnetic_north": -1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [0.458951,9.41214,"39ft"],
+    "rangeRings": {"enabled":true,"center":[0.458951,9.41214],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":150,"speed":11},
+    "arrivalRunway": "16",
+    "departureRunway": "16",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[0.8636,9.4051],[0.8516,9.51],[0.8129,9.6083],[0.7501,9.6933],[0.6674,9.759],[0.5705,9.8012],[0.466,9.8168],[0.361,9.8048],[0.2628,9.7661],[0.1778,9.7033],[0.1121,9.6206],[0.0699,9.5237],[0.0543,9.4192],[0.0663,9.3142],[0.105,9.2159],[0.1678,9.131],[0.2505,9.0652],[0.3474,9.0231],[0.4519,9.0075],[0.5569,9.0195],[0.6552,9.0582],[0.7401,9.121],[0.8058,9.2037],[0.848,9.3006]]}
+    ],
+    "fixes": {
+        "FOOL": [0.45895,9.41214],
+        "AHUFI": [0.48808,9.94931],
+        "COVEF": [0.46977,9.61172],
+        "RACSE": [0.00748,9.70463],
+        "HIRTI": [0.29121,9.52081],
+        "ZUVID": [0.29912,8.89848],
+        "RAGLI": [0.39957,9.22129],
+        "APALA": [0.99667,9.39683],
+        "IHUFE": [0.65874,9.40645],
+        "_RWY1604DME": [0.53079,9.37734],
+        "_RWY3404DME": [0.38644,9.44716]
+    },
+    "runways": [
+        {"name":["16","34"],"end":[[0.47081,9.40635,"29ft"],[0.44642,9.41815,"28ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "AHUFI1F": {"icao":"AHUFI1F","name":"Ahufi One Foxtrot","rwy":{"FOOL16":["_RWY3404DME"],"FOOL34":["_RWY1604DME"]},"body":[],"exitPoints":{"AHUFI":["AHUFI"]},"draw":[["FOOL","AHUFI*"]]},
+        "RACSE3E": {"icao":"RACSE3E","name":"Racse Three Echo","rwy":{"FOOL16":["_RWY3404DME"],"FOOL34":["_RWY1604DME"]},"body":[],"exitPoints":{"RACSE":["RACSE"]},"draw":[["FOOL","RACSE*"]]},
+        "ZUVID3B": {"icao":"ZUVID3B","name":"Zuvid Three Bravo","rwy":{"FOOL16":["_RWY3404DME"],"FOOL34":["_RWY1604DME"]},"body":[],"exitPoints":{"ZUVID":["ZUVID"]},"draw":[["FOOL","ZUVID*"]]},
+        "APALA2A": {"icao":"APALA2A","name":"Apala Two Alpha","rwy":{"FOOL16":["_RWY3404DME"],"FOOL34":["_RWY1604DME"]},"body":[],"exitPoints":{"APALA":["APALA"]},"draw":[["FOOL","APALA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"FOOL","destination":"FKKD","category":"departure","route":"FOOL16.APALA2A.APALA","altitude":"","speed":"","method":"random","rate":1.49,"airlines":[["rwd/b737",1],["rwd/b738",1],["saa/a319",1],["saa/a320",1],["thy/b739",1]]},
+        {"origin":"FOOL","destination":"FAOR","category":"departure","route":"FOOL16.RACSE3E.RACSE","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["saa/a319",1],["saa/a320",1]]},
+        {"origin":"FOOL","destination":"HRYR","category":"departure","route":"FOOL16.AHUFI1F.AHUFI","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["rwd/b737",1],["rwd/b738",1]]},
+        {"origin":"FOOL","destination":"FGSL","category":"departure","route":"FOOL16.APALA2A.APALA","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["ram/b738",1]]},
+        {"origin":"FOOL","destination":"GMMN","category":"departure","route":"FOOL16.APALA2A.APALA","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["ram/b738",1]]},
+        {"origin":"FOOL","destination":"","category":"departure","route":"FOOL16.AHUFI1F.AHUFI","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["eth/b738",1]]},
+        {"origin":"FOOL","destination":"","category":"departure","route":"FOOL16.APALA2A.APALA","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["afr/b772",1],["thy/b739",1]]},
+        {"origin":"FOOL","destination":"","category":"departure","route":"FOOL16.AHUFI1F.AHUFI","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["tr/c172",6],["tr/p28a",5],["tr/c182",3],["tr/be36",2],["tr/da42",1],["tr/tb20",1],["tr/c208",2],["tr/pc12",2],["tr/be20",1],["tr/b350",1],["tr/p180",1],["tr/c510",1],["tr/e50p",1],["tr/c550",1],["tr/e55p",1],["tr/cl30",1],["tr/c680",1],["tr/h25b",1],["tr/lj45",1],["tr/f2th",1],["tr/glf4",1],["tr/glex",1],["tr/glf5",1]]},
+        {"origin":"FKKD","destination":"FOOL","category":"arrival","route":"APALA..IHUFE..FOOL","altitude":[4000,7000],"speed":250,"method":"random","rate":1.49,"airlines":[["rwd/b737",1],["rwd/b738",1],["saa/a319",1],["saa/a320",1],["thy/b739",1]]},
+        {"origin":"FAOR","destination":"FOOL","category":"arrival","route":"RACSE..HIRTI..FOOL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.59,"airlines":[["saa/a319",1],["saa/a320",1]]},
+        {"origin":"HRYR","destination":"FOOL","category":"arrival","route":"AHUFI..COVEF..FOOL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.59,"airlines":[["rwd/b737",1],["rwd/b738",1]]},
+        {"origin":"FGSL","destination":"FOOL","category":"arrival","route":"APALA..IHUFE..FOOL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.3,"airlines":[["ram/b738",1]]},
+        {"origin":"GMMN","destination":"FOOL","category":"arrival","route":"APALA..IHUFE..FOOL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.3,"airlines":[["ram/b738",1]]},
+        {"origin":"","destination":"FOOL","category":"arrival","route":"AHUFI..COVEF..FOOL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.3,"airlines":[["eth/b738",1]]},
+        {"origin":"","destination":"FOOL","category":"arrival","route":"APALA..IHUFE..FOOL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.59,"airlines":[["afr/b772",1],["thy/b739",1]]},
+        {"origin":"","destination":"FOOL","category":"arrival","route":"AHUFI..COVEF..FOOL","altitude":[4000,7000],"speed":250,"method":"random","rate":1.39,"airlines":[["tr/c172",6],["tr/p28a",5],["tr/c182",3],["tr/be36",2],["tr/da42",1],["tr/tb20",1],["tr/c208",2],["tr/pc12",2],["tr/be20",1],["tr/b350",1],["tr/p180",1],["tr/c510",1],["tr/e50p",1],["tr/c550",1],["tr/e55p",1],["tr/cl30",1],["tr/c680",1],["tr/h25b",1],["tr/lj45",1],["tr/f2th",1],["tr/glf4",1],["tr/glex",1],["tr/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [0.4881,9.9493,0.4698,9.6117],
+            [0.4698,9.6117,0.459,9.4121],
+            [0.0075,9.7046,0.2912,9.5208],
+            [0.2912,9.5208,0.459,9.4121],
+            [0.2991,8.8985,0.3996,9.2213],
+            [0.3996,9.2213,0.459,9.4121],
+            [0.9967,9.3968,0.6587,9.4065],
+            [0.6587,9.4065,0.459,9.4121]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [0.4708,9.4064,0.6208,9.3338],
+            [0.5414,9.3611,0.5501,9.3791],
+            [0.6164,9.3248,0.6251,9.3428],
+            [0.4464,9.4182,0.2965,9.4907],
+            [0.3758,9.4634,0.3671,9.4454],
+            [0.3008,9.4997,0.2921,9.4817]
+        ]}
+    ]
+}

@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SBLO/",
+    "info": {"country":"BR","city":"Londrina","type":"medium_airport","longestRunwayM":2101,"frequencies":{"atis":"127.675","twr":"118.400","app":"129.700"}},
+    "radio": {"twr":"Londrina Tower","app":"Londrina Approach","dep":"Londrina Departure"},
+    "icao": "SBLO",
+    "iata": "LDB",
+    "magnetic_north": -20,
+    "ctr_radius": 45,
+    "ctr_ceiling": 9000,
+    "initial_alt": 5000,
+    "position": [-23.334375,-51.128365,"1867ft"],
+    "rangeRings": {"enabled":true,"center":[-23.334375,-51.128365],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":120,"speed":11},
+    "arrivalRunway": "13",
+    "departureRunway": "13",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":90,"airspace_class":"D","poly":[[-22.9541,-51.2791],[-22.9312,-51.1668],[-22.9358,-51.0518],[-22.9676,-50.9421],[-23.0244,-50.8451],[-23.1023,-50.7673],[-23.196,-50.7142],[-23.2991,-50.6893],[-23.4046,-50.6943],[-23.5054,-50.7289],[-23.5945,-50.7907],[-23.6659,-50.8756],[-23.7147,-50.9776],[-23.7375,-51.09],[-23.7329,-51.2049],[-23.7012,-51.3146],[-23.6444,-51.4117],[-23.5665,-51.4894],[-23.4728,-51.5425],[-23.3696,-51.5674],[-23.2641,-51.5624],[-23.1633,-51.5278],[-23.0742,-51.466],[-23.0029,-51.3812]]}
+    ],
+    "fixes": {
+        "SBLO": [-23.33437,-51.12836],
+        "OPAZO": [-23.34001,-50.54254],
+        "LEJWA": [-23.33647,-50.91071],
+        "HIHTE": [-23.75469,-50.76274],
+        "JEFEP": [-23.49054,-50.99252],
+        "MRN": [-23.4758,-52.006,"maringa"],
+        "PEWKI": [-23.36892,-51.34276],
+        "TOGUJ": [-22.8799,-51.4418],
+        "IDASO": [-23.16552,-51.24482],
+        "_RWY1304DME": [-23.30842,-51.20473],
+        "_RWY3104DME": [-23.35982,-51.05228]
+    },
+    "runways": [
+        {"name":["13","31"],"end":[[-23.3314,-51.13664,"1866ft"],[-23.33687,-51.12041,"1869ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "OPAZO3D": {"icao":"OPAZO3D","name":"Opazo Three Delta","rwy":{"SBLO13":["_RWY3104DME"],"SBLO31":["_RWY1304DME"]},"body":[],"exitPoints":{"OPAZO":["OPAZO"]},"draw":[["SBLO","OPAZO*"]]},
+        "HIHTE1E": {"icao":"HIHTE1E","name":"Hihte One Echo","rwy":{"SBLO13":["_RWY3104DME"],"SBLO31":["_RWY1304DME"]},"body":[],"exitPoints":{"HIHTE":["HIHTE"]},"draw":[["SBLO","HIHTE*"]]},
+        "MRN2E": {"icao":"MRN2E","name":"Maringa Two Echo","rwy":{"SBLO13":["_RWY3104DME"],"SBLO31":["_RWY1304DME"]},"body":[],"exitPoints":{"MRN":["MRN"]},"draw":[["SBLO","MRN*"]]},
+        "TOGUJ3F": {"icao":"TOGUJ3F","name":"Toguj Three Foxtrot","rwy":{"SBLO13":["_RWY3104DME"],"SBLO31":["_RWY1304DME"]},"body":[],"exitPoints":{"TOGUJ":["TOGUJ"]},"draw":[["SBLO","TOGUJ*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SBLO","destination":"SBCT","category":"departure","route":"SBLO13.HIHTE1E.HIHTE","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["azu/at72",1],["azu/e190",1],["glo/b737",1],["tam/a320",1]]},
+        {"origin":"SBLO","destination":"SBKP","category":"departure","route":"SBLO13.OPAZO3D.OPAZO","altitude":"","speed":"","method":"random","rate":0.85,"airlines":[["azu/e190",2],["azu/at72",1]]},
+        {"origin":"SBLO","destination":"SBGR","category":"departure","route":"SBLO13.OPAZO3D.OPAZO","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["glo/b737",1],["tam/a320",1]]},
+        {"origin":"SBLO","destination":"SBSP","category":"departure","route":"SBLO13.OPAZO3D.OPAZO","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["glo/b737",1],["tam/a319",1]]},
+        {"origin":"SBLO","destination":"SBCY","category":"departure","route":"SBLO13.TOGUJ3F.TOGUJ","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["azu/e190",1]]},
+        {"origin":"SBLO","destination":"","category":"departure","route":"SBLO13.HIHTE1E.HIHTE","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["azu/at72",1]]},
+        {"origin":"SBLO","destination":"","category":"departure","route":"SBLO13.MRN2E.MRN","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["azu/at72",1]]},
+        {"origin":"SBLO","destination":"","category":"departure","route":"SBLO13.OPAZO3D.OPAZO","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"SBCT","destination":"SBLO","category":"arrival","route":"HIHTE..JEFEP..SBLO","altitude":[5000,8000],"speed":250,"method":"random","rate":1.13,"airlines":[["azu/at72",1],["azu/e190",1],["glo/b737",1],["tam/a320",1]]},
+        {"origin":"SBKP","destination":"SBLO","category":"arrival","route":"OPAZO..LEJWA..SBLO","altitude":[5000,8000],"speed":250,"method":"random","rate":0.85,"airlines":[["azu/e190",2],["azu/at72",1]]},
+        {"origin":"SBGR","destination":"SBLO","category":"arrival","route":"OPAZO..LEJWA..SBLO","altitude":[5000,8000],"speed":250,"method":"random","rate":0.57,"airlines":[["glo/b737",1],["tam/a320",1]]},
+        {"origin":"SBSP","destination":"SBLO","category":"arrival","route":"OPAZO..LEJWA..SBLO","altitude":[5000,8000],"speed":250,"method":"random","rate":0.57,"airlines":[["glo/b737",1],["tam/a319",1]]},
+        {"origin":"SBCY","destination":"SBLO","category":"arrival","route":"TOGUJ..IDASO..SBLO","altitude":[5000,8000],"speed":250,"method":"random","rate":0.28,"airlines":[["azu/e190",1]]},
+        {"origin":"","destination":"SBLO","category":"arrival","route":"HIHTE..JEFEP..SBLO","altitude":[5000,8000],"speed":250,"method":"random","rate":0.28,"airlines":[["azu/at72",1]]},
+        {"origin":"","destination":"SBLO","category":"arrival","route":"MRN..PEWKI..SBLO","altitude":[5000,8000],"speed":250,"method":"random","rate":0.28,"airlines":[["azu/at72",1]]},
+        {"origin":"","destination":"SBLO","category":"arrival","route":"OPAZO..LEJWA..SBLO","altitude":[5000,8000],"speed":250,"method":"random","rate":1.32,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-23.34,-50.5425,-23.3365,-50.9107],
+            [-23.3365,-50.9107,-23.3344,-51.1284],
+            [-23.7547,-50.7627,-23.4905,-50.9925],
+            [-23.4905,-50.9925,-23.3344,-51.1284],
+            [-23.4758,-52.006,-23.3689,-51.3428],
+            [-23.3689,-51.3428,-23.3344,-51.1284],
+            [-22.8799,-51.4418,-23.1655,-51.2448],
+            [-23.1655,-51.2448,-23.3344,-51.1284]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-23.3314,-51.1366,-23.2739,-51.3068],
+            [-23.3121,-51.2255,-23.2933,-51.218],
+            [-23.2833,-51.3106,-23.2645,-51.3031],
+            [-23.3369,-51.1204,-23.3942,-50.9501],
+            [-23.3562,-51.0315,-23.3749,-51.039],
+            [-23.3848,-50.9463,-23.4036,-50.9538]
+        ]}
+    ]
+}

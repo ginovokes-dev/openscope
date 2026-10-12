@@ -1,0 +1,89 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LIEA/",
+    "info": {"country":"IT","city":"Alghero","type":"medium_airport","longestRunwayM":3006,"frequencies":{"atis":"125.025","twr":"118.850","app":"128.550"}},
+    "radio": {"twr":"Alghero Tower","app":"Alghero Approach","dep":"Alghero Departure"},
+    "icao": "LIEA",
+    "iata": "AHO",
+    "magnetic_north": 3.2,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [40.632099,8.29077,"87ft"],
+    "rangeRings": {"enabled":true,"center":[40.632099,8.29077],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":200,"speed":6},
+    "arrivalRunway": "20",
+    "departureRunway": "20",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[41.1709,8.3305],[41.1447,8.5128],[41.0836,8.6801],[40.9918,8.8208],[40.8754,8.9254],[40.7424,8.9868],[40.602,9.0007],[40.4636,8.9662],[40.3366,8.8857],[40.2298,8.7647],[40.1505,8.6114],[40.1039,8.4362],[40.0933,8.2511],[40.1195,8.0687],[40.1806,7.9014],[40.2724,7.7607],[40.3888,7.6561],[40.5218,7.5948],[40.6622,7.5809],[40.8006,7.6153],[40.9276,7.6958],[41.0344,7.8169],[41.1137,7.9702],[41.1603,8.1454]]}
+    ],
+    "fixes": {
+        "LIEA": [40.6321,8.29077],
+        "FGI": [41.5022,9.08342,"figari"],
+        "TAHPE": [40.8376,8.47798],
+        "ALOJE": [39.96578,8.59885],
+        "MUDGO": [40.39636,8.39977],
+        "OCARO": [40.76577,7.37711],
+        "NUZKU": [40.67939,7.96752],
+        "WIZUP": [41.33821,8.30033],
+        "SUTJI": [40.88192,8.29415],
+        "_RWY0204DME": [40.55917,8.24704],
+        "_RWY2004DME": [40.70502,8.33459]
+    },
+    "runways": [
+        {"name":["02","20"],"end":[[40.6198,8.28339,"69ft"],[40.6444,8.29816,"87ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "FGI3C": {"icao":"FGI3C","name":"Figari Three Charlie","rwy":{"LIEA02":["_RWY2004DME"],"LIEA20":["_RWY0204DME"]},"body":[],"exitPoints":{"FGI":["FGI"]},"draw":[["LIEA","FGI*"]]},
+        "ALOJE1A": {"icao":"ALOJE1A","name":"Aloje One Alpha","rwy":{"LIEA02":["_RWY2004DME"],"LIEA20":["_RWY0204DME"]},"body":[],"exitPoints":{"ALOJE":["ALOJE"]},"draw":[["LIEA","ALOJE*"]]},
+        "OCARO2D": {"icao":"OCARO2D","name":"Ocaro Two Delta","rwy":{"LIEA02":["_RWY2004DME"],"LIEA20":["_RWY0204DME"]},"body":[],"exitPoints":{"OCARO":["OCARO"]},"draw":[["LIEA","OCARO*"]]},
+        "WIZUP1F": {"icao":"WIZUP1F","name":"Wizup One Foxtrot","rwy":{"LIEA02":["_RWY2004DME"],"LIEA20":["_RWY0204DME"]},"body":[],"exitPoints":{"WIZUP":["WIZUP"]},"draw":[["LIEA","WIZUP*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LIEA","destination":"EBCI","category":"departure","route":"LIEA20.WIZUP1F.WIZUP","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["ryr/b738",1]]},
+        {"origin":"LIEA","destination":"EDFH","category":"departure","route":"LIEA20.WIZUP1F.WIZUP","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["ryr/b738",1]]},
+        {"origin":"LIEA","destination":"EDJA","category":"departure","route":"LIEA20.WIZUP1F.WIZUP","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["ryr/b738",1]]},
+        {"origin":"LIEA","destination":"EDLV","category":"departure","route":"LIEA20.WIZUP1F.WIZUP","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["ryr/b738",1]]},
+        {"origin":"LIEA","destination":"EDLW","category":"departure","route":"LIEA20.WIZUP1F.WIZUP","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["ryr/b738",1]]},
+        {"origin":"LIEA","destination":"EGGW","category":"departure","route":"LIEA20.WIZUP1F.WIZUP","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["ryr/b738",1]]},
+        {"origin":"LIEA","destination":"","category":"departure","route":"LIEA20.FGI3C.FGI","altitude":"","speed":"","method":"random","rate":2.3,"airlines":[["ryr/b738",8],["wzz/a320",1]]},
+        {"origin":"LIEA","destination":"","category":"departure","route":"LIEA20.OCARO2D.OCARO","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["ryr/b738",2]]},
+        {"origin":"LIEA","destination":"","category":"departure","route":"LIEA20.WIZUP1F.WIZUP","altitude":"","speed":"","method":"random","rate":3.33,"airlines":[["ryr/b738",10],["aza/a319",2],["ezy/a319",1]]},
+        {"origin":"LIEA","destination":"","category":"departure","route":"LIEA20.OCARO2D.OCARO","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"LIEA","destination":"","category":"departure","route":"LIEA20.ALOJE1A.ALOJE","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"EBCI","destination":"LIEA","category":"arrival","route":"WIZUP..SUTJI..LIEA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.26,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDFH","destination":"LIEA","category":"arrival","route":"WIZUP..SUTJI..LIEA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.26,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDJA","destination":"LIEA","category":"arrival","route":"WIZUP..SUTJI..LIEA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.26,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDLV","destination":"LIEA","category":"arrival","route":"WIZUP..SUTJI..LIEA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.26,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDLW","destination":"LIEA","category":"arrival","route":"WIZUP..SUTJI..LIEA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.26,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGGW","destination":"LIEA","category":"arrival","route":"WIZUP..SUTJI..LIEA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.26,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LIEA","category":"arrival","route":"FGI..TAHPE..LIEA","altitude":[6000,9000],"speed":250,"method":"random","rate":2.3,"airlines":[["ryr/b738",8],["wzz/a320",1]]},
+        {"origin":"","destination":"LIEA","category":"arrival","route":"OCARO..NUZKU..LIEA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["ryr/b738",2]]},
+        {"origin":"","destination":"LIEA","category":"arrival","route":"WIZUP..SUTJI..LIEA","altitude":[6000,9000],"speed":250,"method":"random","rate":3.33,"airlines":[["ryr/b738",10],["aza/a319",2],["ezy/a319",1]]},
+        {"origin":"","destination":"LIEA","category":"arrival","route":"OCARO..NUZKU..LIEA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"","destination":"LIEA","category":"arrival","route":"ALOJE..MUDGO..LIEA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [41.5022,9.0834,40.8376,8.478],
+            [40.8376,8.478,40.6321,8.2908],
+            [39.9658,8.5988,40.3964,8.3998],
+            [40.3964,8.3998,40.6321,8.2908],
+            [40.7658,7.3771,40.6794,7.9675],
+            [40.6794,7.9675,40.6321,8.2908],
+            [41.3382,8.3003,40.8819,8.2942],
+            [40.8819,8.2942,40.6321,8.2908]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [40.6198,8.2834,40.4682,8.1926],
+            [40.5399,8.2499,40.5481,8.226],
+            [40.4641,8.2046,40.4723,8.1807],
+            [40.6444,8.2982,40.7959,8.3894],
+            [40.7243,8.3317,40.716,8.3557],
+            [40.8001,8.3773,40.7918,8.4014]
+        ]}
+    ]
+}

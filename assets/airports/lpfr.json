@@ -1,0 +1,93 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LPFR/",
+    "info": {"country":"PT","city":"Faro","type":"large_airport","longestRunwayM":2490,"frequencies":{"atis":"124.200","twr":"118.200","app":"119.400","gnd":"118.575"}},
+    "radio": {"twr":"Faro Tower","app":"Faro Approach","dep":"Faro Departure"},
+    "icao": "LPFR",
+    "iata": "FAO",
+    "magnetic_north": -0.6,
+    "ctr_radius": 75,
+    "ctr_ceiling": 12000,
+    "initial_alt": 6000,
+    "position": [37.015909,-7.970939,"24ft"],
+    "rangeRings": {"enabled":true,"center":[37.015909,-7.970939],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":280,"speed":9},
+    "arrivalRunway": "28",
+    "departureRunway": "28",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":120,"airspace_class":"C","poly":[[37.6904,-7.9798],[37.6692,-7.7609],[37.6035,-7.5563],[37.4978,-7.3799],[37.3593,-7.2438],[37.1973,-7.1573],[37.023,-7.1263],[36.8482,-7.1527],[36.6848,-7.235],[36.544,-7.3674],[36.4353,-7.5409],[36.3663,-7.7438],[36.3415,-7.9621],[36.3626,-8.181],[36.4283,-8.3856],[36.534,-8.562],[36.6726,-8.698],[36.8345,-8.7846],[37.0088,-8.8156],[37.1836,-8.7891],[37.347,-8.7069],[37.4878,-8.5745],[37.5965,-8.4009],[37.6656,-8.1981]]}
+    ],
+    "fixes": {
+        "LPFR": [37.01591,-7.97094],
+        "BEJ": [38.1284,-7.92669,"beja"],
+        "BAJZE": [37.29891,-7.95968],
+        "VIPOT": [37.31585,-6.94235],
+        "HUVKO": [37.11304,-7.63785],
+        "WEZDO": [36.2018,-8.37037],
+        "ZALCO": [36.75228,-8.10029],
+        "WIWOC": [37.79392,-8.47065],
+        "EBOTA": [37.26785,-8.13276],
+        "_RWY1004DME": [37.02883,-8.06776],
+        "_RWY2804DME": [37.00182,-7.87692]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[37.01723,-7.98559,"24ft"],[37.01347,-7.95906,"18ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "BEJ1F": {"icao":"BEJ1F","name":"Beja One Foxtrot","rwy":{"LPFR10":["_RWY2804DME"],"LPFR28":["_RWY1004DME"]},"body":[],"exitPoints":{"BEJ":["BEJ"]},"draw":[["LPFR","BEJ*"]]},
+        "VIPOT2E": {"icao":"VIPOT2E","name":"Vipot Two Echo","rwy":{"LPFR10":["_RWY2804DME"],"LPFR28":["_RWY1004DME"]},"body":[],"exitPoints":{"VIPOT":["VIPOT"]},"draw":[["LPFR","VIPOT*"]]},
+        "WEZDO1D": {"icao":"WEZDO1D","name":"Wezdo One Delta","rwy":{"LPFR10":["_RWY2804DME"],"LPFR28":["_RWY1004DME"]},"body":[],"exitPoints":{"WEZDO":["WEZDO"]},"draw":[["LPFR","WEZDO*"]]},
+        "WIWOC3A": {"icao":"WIWOC3A","name":"Wiwoc Three Alpha","rwy":{"LPFR10":["_RWY2804DME"],"LPFR28":["_RWY1004DME"]},"body":[],"exitPoints":{"WIWOC":["WIWOC"]},"draw":[["LPFR","WIWOC*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LPFR","destination":"EGKK","category":"departure","route":"LPFR28.BEJ1F.BEJ","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["baw/a319",1],["baw/a320",1],["ezy/a319",1],["ezy/a320",1],["mon/a321",1],["mon/a332",1],["mon/b752",1],["nax/b738",1],["tvf/b738",1]]},
+        {"origin":"LPFR","destination":"EGCC","category":"departure","route":"LPFR28.BEJ1F.BEJ","altitude":"","speed":"","method":"random","rate":0.61,"airlines":[["exs/b752",2],["exs/b738",1],["mon/a320",1],["mon/a321",1],["mon/b752",1],["ryr/b738",1],["tvf/b738",1]]},
+        {"origin":"LPFR","destination":"EGGW","category":"departure","route":"LPFR28.BEJ1F.BEJ","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["ezy/a319",1],["ezy/a320",1],["mon/a320",1],["mon/a321",1],["tvf/b738",1],["tvf/b752",1]]},
+        {"origin":"LPFR","destination":"EGNM","category":"departure","route":"LPFR28.BEJ1F.BEJ","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["exs/b733",1],["exs/b738",1],["exs/b752",1],["mon/a320",1],["ryr/b738",1]]},
+        {"origin":"LPFR","destination":"EGNT","category":"departure","route":"LPFR28.BEJ1F.BEJ","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["exs/b733",2],["ezy/a319",1],["ezy/a320",1],["tvf/b738",1]]},
+        {"origin":"LPFR","destination":"EIDW","category":"departure","route":"LPFR28.BEJ1F.BEJ","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["ein/a332",1],["ein/a320",1],["ein/a321",1],["ryr/b738",1]]},
+        {"origin":"LPFR","destination":"EDDF","category":"departure","route":"LPFR28.VIPOT2E.VIPOT","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["dlh/a320",2],["dlh/a321",1],["hlx/b738",1]]},
+        {"origin":"LPFR","destination":"","category":"departure","route":"LPFR28.BEJ1F.BEJ","altitude":"","speed":"","method":"random","rate":5.6,"airlines":[["ryr/b738",24],["ezy/a319",5],["tvf/b738",5],["exs/b733",4],["tra/b738",4],["ein/a320",3],["ezy/a320",3],["nax/b738",3],["bee/e190",2],["ber/a320",2],["exs/b738",2],["gwi/a319",2]]},
+        {"origin":"LPFR","destination":"","category":"departure","route":"LPFR28.VIPOT2E.VIPOT","altitude":"","speed":"","method":"random","rate":0.98,"airlines":[["ber/b738",2],["ezy/a319",2],["hlx/b738",2],["ber/a320",1],["dlh/a321",1],["ezy/a320",1],["gwi/a319",1],["gwi/a320",1],["lgl/b738",1],["ryr/b738",1]]},
+        {"origin":"LPFR","destination":"","category":"departure","route":"LPFR28.WEZDO1D.WEZDO","altitude":"","speed":"","method":"random","rate":0.08,"airlines":[["tra/b738",1]]},
+        {"origin":"LPFR","destination":"","category":"departure","route":"LPFR28.WIWOC3A.WIWOC","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["ryr/b738",1],["tap/a319",1],["tap/a320",1],["tap/e145",1]]},
+        {"origin":"LPFR","destination":"","category":"departure","route":"LPFR28.WIWOC3A.WIWOC","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["cs/c172",3],["cs/p28a",3],["cs/c182",2],["cs/be36",1],["cs/da42",1],["cs/tb20",1],["cs/c208",2],["cs/pc12",2],["cs/be20",1],["cs/b350",1],["cs/p180",1],["cs/c510",3],["cs/e50p",2],["cs/c550",3],["cs/e55p",2],["cs/cl30",2],["cs/c680",2],["cs/h25b",2],["cs/lj45",2],["cs/f2th",1],["cs/glf4",1],["cs/glex",1],["cs/glf5",1]]},
+        {"origin":"LPFR","destination":"","category":"departure","route":"LPFR28.BEJ1F.BEJ","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["cs/c172",3],["cs/p28a",3],["cs/c182",2],["cs/be36",1],["cs/da42",1],["cs/tb20",1],["cs/c208",2],["cs/pc12",2],["cs/be20",1],["cs/b350",1],["cs/p180",1],["cs/c510",3],["cs/e50p",2],["cs/c550",3],["cs/e55p",2],["cs/cl30",2],["cs/c680",2],["cs/h25b",2],["cs/lj45",2],["cs/f2th",1],["cs/glf4",1],["cs/glex",1],["cs/glf5",1]]},
+        {"origin":"EGKK","destination":"LPFR","category":"arrival","route":"BEJ..BAJZE..LPFR","altitude":[8000,11000],"speed":250,"method":"random","rate":0.68,"airlines":[["baw/a319",1],["baw/a320",1],["ezy/a319",1],["ezy/a320",1],["mon/a321",1],["mon/a332",1],["mon/b752",1],["nax/b738",1],["tvf/b738",1]]},
+        {"origin":"EGCC","destination":"LPFR","category":"arrival","route":"BEJ..BAJZE..LPFR","altitude":[8000,11000],"speed":250,"method":"random","rate":0.61,"airlines":[["exs/b752",2],["exs/b738",1],["mon/a320",1],["mon/a321",1],["mon/b752",1],["ryr/b738",1],["tvf/b738",1]]},
+        {"origin":"EGGW","destination":"LPFR","category":"arrival","route":"BEJ..BAJZE..LPFR","altitude":[8000,11000],"speed":250,"method":"random","rate":0.45,"airlines":[["ezy/a319",1],["ezy/a320",1],["mon/a320",1],["mon/a321",1],["tvf/b738",1],["tvf/b752",1]]},
+        {"origin":"EGNM","destination":"LPFR","category":"arrival","route":"BEJ..BAJZE..LPFR","altitude":[8000,11000],"speed":250,"method":"random","rate":0.38,"airlines":[["exs/b733",1],["exs/b738",1],["exs/b752",1],["mon/a320",1],["ryr/b738",1]]},
+        {"origin":"EGNT","destination":"LPFR","category":"arrival","route":"BEJ..BAJZE..LPFR","altitude":[8000,11000],"speed":250,"method":"random","rate":0.38,"airlines":[["exs/b733",2],["ezy/a319",1],["ezy/a320",1],["tvf/b738",1]]},
+        {"origin":"EIDW","destination":"LPFR","category":"arrival","route":"BEJ..BAJZE..LPFR","altitude":[8000,11000],"speed":250,"method":"random","rate":0.33,"airlines":[["ein/a332",1],["ein/a320",1],["ein/a321",1],["ryr/b738",1]]},
+        {"origin":"EDDF","destination":"LPFR","category":"arrival","route":"VIPOT..HUVKO..LPFR","altitude":[8000,11000],"speed":250,"method":"random","rate":0.3,"airlines":[["dlh/a320",2],["dlh/a321",1],["hlx/b738",1]]},
+        {"origin":"","destination":"LPFR","category":"arrival","route":"BEJ..BAJZE..LPFR","altitude":[8000,11000],"speed":250,"method":"random","rate":5.6,"airlines":[["ryr/b738",24],["ezy/a319",5],["tvf/b738",5],["exs/b733",4],["tra/b738",4],["ein/a320",3],["ezy/a320",3],["nax/b738",3],["bee/e190",2],["ber/a320",2],["exs/b738",2],["gwi/a319",2]]},
+        {"origin":"","destination":"LPFR","category":"arrival","route":"VIPOT..HUVKO..LPFR","altitude":[8000,11000],"speed":250,"method":"random","rate":0.98,"airlines":[["ber/b738",2],["ezy/a319",2],["hlx/b738",2],["ber/a320",1],["dlh/a321",1],["ezy/a320",1],["gwi/a319",1],["gwi/a320",1],["lgl/b738",1],["ryr/b738",1]]},
+        {"origin":"","destination":"LPFR","category":"arrival","route":"WEZDO..ZALCO..LPFR","altitude":[8000,11000],"speed":250,"method":"random","rate":0.08,"airlines":[["tra/b738",1]]},
+        {"origin":"","destination":"LPFR","category":"arrival","route":"WIWOC..EBOTA..LPFR","altitude":[8000,11000],"speed":250,"method":"random","rate":0.3,"airlines":[["ryr/b738",1],["tap/a319",1],["tap/a320",1],["tap/e145",1]]},
+        {"origin":"","destination":"LPFR","category":"arrival","route":"WIWOC..EBOTA..LPFR","altitude":[8000,11000],"speed":250,"method":"random","rate":0.38,"airlines":[["cs/c172",3],["cs/p28a",3],["cs/c182",2],["cs/be36",1],["cs/da42",1],["cs/tb20",1],["cs/c208",2],["cs/pc12",2],["cs/be20",1],["cs/b350",1],["cs/p180",1],["cs/c510",3],["cs/e50p",2],["cs/c550",3],["cs/e55p",2],["cs/cl30",2],["cs/c680",2],["cs/h25b",2],["cs/lj45",2],["cs/f2th",1],["cs/glf4",1],["cs/glex",1],["cs/glf5",1]]},
+        {"origin":"","destination":"LPFR","category":"arrival","route":"BEJ..BAJZE..LPFR","altitude":[8000,11000],"speed":250,"method":"random","rate":0.38,"airlines":[["cs/c172",3],["cs/p28a",3],["cs/c182",2],["cs/be36",1],["cs/da42",1],["cs/tb20",1],["cs/c208",2],["cs/pc12",2],["cs/be20",1],["cs/b350",1],["cs/p180",1],["cs/c510",3],["cs/e50p",2],["cs/c550",3],["cs/e55p",2],["cs/cl30",2],["cs/c680",2],["cs/h25b",2],["cs/lj45",2],["cs/f2th",1],["cs/glf4",1],["cs/glex",1],["cs/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [38.1284,-7.9267,37.2989,-7.9597],
+            [37.2989,-7.9597,37.0159,-7.9709],
+            [37.3159,-6.9423,37.113,-7.6378],
+            [37.113,-7.6378,37.0159,-7.9709],
+            [36.2018,-8.3704,36.7523,-8.1003],
+            [36.7523,-8.1003,37.0159,-7.9709],
+            [37.7939,-8.4706,37.2679,-8.1328],
+            [37.2679,-8.1328,37.0159,-7.9709]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [37.0172,-7.9856,37.0461,-8.1911],
+            [37.0219,-8.0905,37.0416,-8.0861],
+            [37.0363,-8.1932,37.056,-8.1889],
+            [37.0135,-7.9591,36.9842,-7.7538],
+            [37.0087,-7.8542,36.9891,-7.8586],
+            [36.9941,-7.7516,36.9744,-7.7559]
+        ]}
+    ]
+}

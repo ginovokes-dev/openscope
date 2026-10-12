@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/FACT/",
+    "info": {"country":"ZA","city":"Cape Town","type":"large_airport","longestRunwayM":3209,"frequencies":{"atis":"127.000","twr":"118.100","app":"119.700","gnd":"121.900"}},
+    "radio": {"twr":"Cape Town Tower","app":"Cape Town Approach","dep":"Cape Town Departure"},
+    "icao": "FACT",
+    "iata": "CPT",
+    "magnetic_north": -26.8,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [-33.97403,18.604333,"151ft"],
+    "rangeRings": {"enabled":true,"center":[-33.97403,18.604333],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":180,"speed":6},
+    "arrivalRunway": "19",
+    "departureRunway": "19",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[-33.4924,18.311],[-33.4458,18.4713],[-33.4353,18.6407],[-33.4614,18.8076],[-33.5225,18.9606],[-33.6144,19.0894],[-33.7307,19.1851],[-33.8637,19.2413],[-34.0042,19.254],[-34.1426,19.2224],[-34.2695,19.1488],[-34.3763,19.038],[-34.4557,18.8977],[-34.5022,18.7374],[-34.5128,18.568],[-34.4866,18.4011],[-34.4255,18.2481],[-34.3337,18.1193],[-34.2173,18.0236],[-34.0844,17.9674],[-33.9439,17.9547],[-33.8055,17.9862],[-33.6786,18.0599],[-33.5718,18.1706]]}
+    ],
+    "fixes": {
+        "FACT": [-33.97403,18.60433],
+        "SVV": [-33.2493,18.4781,"somersveld"],
+        "ECUWO": [-33.72676,18.56126],
+        "WY": [-33.4139,19.1869,"wolseley"],
+        "RICRE": [-33.78485,18.80109],
+        "GE": [-34.0573,19.6033,"greyton"],
+        "ZOPMI": [-33.99902,18.90408],
+        "TUCEK": [-34.50607,18.04446],
+        "EWEHE": [-34.16226,18.40625],
+        "_RWY0104DME": [-34.0521,18.62947],
+        "_RWY1904DME": [-33.89539,18.57947],
+        "_RWY1604DME": [-33.91383,18.54128],
+        "_RWY3404DME": [-34.01984,18.66669]
+    },
+    "runways": [
+        {"name":["01","19"],"end":[[-33.9877,18.6089,"144ft"],[-33.9598,18.6,"147ft"]],"ils":[true,true]},
+        {"name":["16","34"],"end":[[-33.9614,18.5975,"143ft"],[-33.9723,18.6104,"151ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "SVV2A": {"icao":"SVV2A","name":"Somersveld Two Alpha","rwy":{"FACT01":["_RWY1904DME"],"FACT19":["_RWY0104DME"],"FACT16":["_RWY3404DME"],"FACT34":["_RWY1604DME"]},"body":[],"exitPoints":{"SVV":["SVV"]},"draw":[["FACT","SVV*"]]},
+        "WY2E": {"icao":"WY2E","name":"Wolseley Two Echo","rwy":{"FACT01":["_RWY1904DME"],"FACT19":["_RWY0104DME"],"FACT16":["_RWY3404DME"],"FACT34":["_RWY1604DME"]},"body":[],"exitPoints":{"WY":["WY"]},"draw":[["FACT","WY*"]]},
+        "GE3B": {"icao":"GE3B","name":"Greyton Three Bravo","rwy":{"FACT01":["_RWY1904DME"],"FACT19":["_RWY0104DME"],"FACT16":["_RWY3404DME"],"FACT34":["_RWY1604DME"]},"body":[],"exitPoints":{"GE":["GE"]},"draw":[["FACT","GE*"]]},
+        "TUCEK1F": {"icao":"TUCEK1F","name":"Tucek One Foxtrot","rwy":{"FACT01":["_RWY1904DME"],"FACT19":["_RWY0104DME"],"FACT16":["_RWY3404DME"],"FACT34":["_RWY1604DME"]},"body":[],"exitPoints":{"TUCEK":["TUCEK"]},"draw":[["FACT","TUCEK*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"FACT","destination":"FAOR","category":"departure","route":"FACT19.WY2E.WY","altitude":"","speed":"","method":"random","rate":2.25,"airlines":[["saa/a343",2],["caw/b738",1],["mno/b733",1],["mno/b738",1],["qtr/b788",1],["saa/a319",1],["saa/a320",1],["saa/a332",1],["saa/a346",1],["saa/b733",1],["saa/b738",1],["sia/b772",1]]},
+        {"origin":"FACT","destination":"FABL","category":"departure","route":"FACT19.WY2E.WY","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["mno/b733",1],["mno/b738",1],["saa/b733",1],["saa/b738",1]]},
+        {"origin":"FACT","destination":"FALA","category":"departure","route":"FACT19.WY2E.WY","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["caw/b738",1],["mno/b738",1],["saa/b738",1]]},
+        {"origin":"FACT","destination":"FALE","category":"departure","route":"FACT19.GE3B.GE","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["caw/b738",1],["mno/b738",1],["saa/b738",1]]},
+        {"origin":"FACT","destination":"EGLL","category":"departure","route":"FACT19.SVV2A.SVV","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["baw/b744",1],["baw/b772",1]]},
+        {"origin":"FACT","destination":"","category":"departure","route":"FACT19.SVV2A.SVV","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["dta/b737",1],["dta/b772",1],["klm/b772",1],["nmb/a319",1]]},
+        {"origin":"FACT","destination":"","category":"departure","route":"FACT19.WY2E.WY","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["bot/rj85",2],["qtr/b788",1]]},
+        {"origin":"FACT","destination":"","category":"departure","route":"FACT19.GE3B.GE","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["mau/a319",1],["mno/b733",1],["saa/b733",1]]},
+        {"origin":"FACT","destination":"","category":"departure","route":"FACT19.GE3B.GE","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["zs/c172",6],["zs/p28a",5],["zs/c182",3],["zs/be36",2],["zs/da42",1],["zs/tb20",1],["zs/c208",2],["zs/pc12",2],["zs/be20",1],["zs/b350",1],["zs/p180",1],["zs/c510",1],["zs/e50p",1],["zs/c550",2],["zs/e55p",1],["zs/cl30",1],["zs/c680",1],["zs/h25b",1],["zs/lj45",1],["zs/f2th",1],["zs/glf4",1],["zs/glex",1],["zs/glf5",1]]},
+        {"origin":"FACT","destination":"","category":"departure","route":"FACT19.TUCEK1F.TUCEK","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["zs/c172",6],["zs/p28a",5],["zs/c182",3],["zs/be36",2],["zs/da42",1],["zs/tb20",1],["zs/c208",2],["zs/pc12",2],["zs/be20",1],["zs/b350",1],["zs/p180",1],["zs/c510",1],["zs/e50p",1],["zs/c550",2],["zs/e55p",1],["zs/cl30",1],["zs/c680",1],["zs/h25b",1],["zs/lj45",1],["zs/f2th",1],["zs/glf4",1],["zs/glex",1],["zs/glf5",1]]},
+        {"origin":"FAOR","destination":"FACT","category":"arrival","route":"WY..RICRE..FACT","altitude":[6000,9000],"speed":250,"method":"random","rate":2.25,"airlines":[["saa/a343",2],["caw/b738",1],["mno/b733",1],["mno/b738",1],["qtr/b788",1],["saa/a319",1],["saa/a320",1],["saa/a332",1],["saa/a346",1],["saa/b733",1],["saa/b738",1],["sia/b772",1]]},
+        {"origin":"FABL","destination":"FACT","category":"arrival","route":"WY..RICRE..FACT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.64,"airlines":[["mno/b733",1],["mno/b738",1],["saa/b733",1],["saa/b738",1]]},
+        {"origin":"FALA","destination":"FACT","category":"arrival","route":"WY..RICRE..FACT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.48,"airlines":[["caw/b738",1],["mno/b738",1],["saa/b738",1]]},
+        {"origin":"FALE","destination":"FACT","category":"arrival","route":"GE..ZOPMI..FACT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.48,"airlines":[["caw/b738",1],["mno/b738",1],["saa/b738",1]]},
+        {"origin":"EGLL","destination":"FACT","category":"arrival","route":"SVV..ECUWO..FACT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.32,"airlines":[["baw/b744",1],["baw/b772",1]]},
+        {"origin":"","destination":"FACT","category":"arrival","route":"SVV..ECUWO..FACT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.64,"airlines":[["dta/b737",1],["dta/b772",1],["klm/b772",1],["nmb/a319",1]]},
+        {"origin":"","destination":"FACT","category":"arrival","route":"WY..RICRE..FACT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.48,"airlines":[["bot/rj85",2],["qtr/b788",1]]},
+        {"origin":"","destination":"FACT","category":"arrival","route":"GE..ZOPMI..FACT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.48,"airlines":[["mau/a319",1],["mno/b733",1],["saa/b733",1]]},
+        {"origin":"","destination":"FACT","category":"arrival","route":"GE..ZOPMI..FACT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["zs/c172",6],["zs/p28a",5],["zs/c182",3],["zs/be36",2],["zs/da42",1],["zs/tb20",1],["zs/c208",2],["zs/pc12",2],["zs/be20",1],["zs/b350",1],["zs/p180",1],["zs/c510",1],["zs/e50p",1],["zs/c550",2],["zs/e55p",1],["zs/cl30",1],["zs/c680",1],["zs/h25b",1],["zs/lj45",1],["zs/f2th",1],["zs/glf4",1],["zs/glex",1],["zs/glf5",1]]},
+        {"origin":"","destination":"FACT","category":"arrival","route":"TUCEK..EWEHE..FACT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["zs/c172",6],["zs/p28a",5],["zs/c182",3],["zs/be36",2],["zs/da42",1],["zs/tb20",1],["zs/c208",2],["zs/pc12",2],["zs/be20",1],["zs/b350",1],["zs/p180",1],["zs/c510",1],["zs/e50p",1],["zs/c550",2],["zs/e55p",1],["zs/cl30",1],["zs/c680",1],["zs/h25b",1],["zs/lj45",1],["zs/f2th",1],["zs/glf4",1],["zs/glex",1],["zs/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-33.2493,18.4781,-33.7268,18.5613],
+            [-33.7268,18.5613,-33.974,18.6043],
+            [-33.4139,19.1869,-33.7848,18.8011],
+            [-33.7848,18.8011,-33.974,18.6043],
+            [-34.0573,19.6033,-33.999,18.9041],
+            [-33.999,18.9041,-33.974,18.6043],
+            [-34.5061,18.0445,-34.1623,18.4063],
+            [-34.1623,18.4063,-33.974,18.6043]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-33.9877,18.6089,-34.1487,18.6604],
+            [-34.0656,18.6463,-34.0708,18.623],
+            [-34.1461,18.6721,-34.1513,18.6487],
+            [-33.9598,18.6,-33.7988,18.5487],
+            [-33.8818,18.5627,-33.8767,18.586],
+            [-33.8013,18.5371,-33.7962,18.5604],
+            [-33.9614,18.5975,-33.8424,18.4571],
+            [-33.9089,18.5186,-33.8949,18.5358],
+            [-33.8494,18.4485,-33.8354,18.4656],
+            [-33.9723,18.6104,-34.0911,18.7513],
+            [-34.0247,18.6894,-34.0387,18.6722],
+            [-34.0841,18.7599,-34.0981,18.7426]
+        ]}
+    ]
+}

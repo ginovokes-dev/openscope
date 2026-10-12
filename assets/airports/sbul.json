@@ -1,0 +1,79 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SBUL/",
+    "info": {"country":"BR","city":"Uberlandia","type":"medium_airport","longestRunwayM":1950,"frequencies":{"twr":"118.800","app":"120.800"},"approximateRunways":true},
+    "radio": {"twr":"Uberlandia Tower","app":"Uberlandia Approach","dep":"Uberlandia Departure"},
+    "icao": "SBUL",
+    "iata": "UDI",
+    "magnetic_north": -21.9,
+    "ctr_radius": 45,
+    "ctr_ceiling": 11000,
+    "initial_alt": 7000,
+    "position": [-18.883579,-48.225936,"3094ft"],
+    "rangeRings": {"enabled":true,"center":[-18.883579,-48.225936],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":60,"speed":7},
+    "arrivalRunway": "04",
+    "departureRunway": "04",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":110,"airspace_class":"D","poly":[[-18.5081,-48.3855],[-18.4818,-48.2773],[-18.4829,-48.1657],[-18.5113,-48.0581],[-18.5651,-47.962],[-18.6406,-47.8839],[-18.7326,-47.8291],[-18.835,-47.8013],[-18.9406,-47.8025],[-19.0424,-47.8325],[-19.1333,-47.8894],[-19.2072,-47.9691],[-19.2591,-48.0664],[-19.2853,-48.1746],[-19.2842,-48.2862],[-19.2558,-48.3937],[-19.202,-48.4899],[-19.1266,-48.568],[-19.0345,-48.6228],[-18.9322,-48.6506],[-18.8266,-48.6494],[-18.7248,-48.6194],[-18.6339,-48.5625],[-18.56,-48.4827]]}
+    ],
+    "fixes": {
+        "SBUL": [-18.88358,-48.22594],
+        "DEMOT": [-18.34817,-48.17082],
+        "JOFOK": [-18.68466,-48.20546],
+        "VUKOJ": [-19.00221,-47.67139],
+        "ICOJE": [-18.92765,-48.0199],
+        "URB": [-19.7655,-47.9592,"uberaba"],
+        "PANAT": [-19.07573,-48.16782],
+        "NECKO": [-18.9284,-48.7925],
+        "WISPU": [-18.90023,-48.43644],
+        "_RWY0404DME": [-18.95524,-48.2507],
+        "_RWY2204DME": [-18.81192,-48.20119]
+    },
+    "runways": [
+        {"name":["04","22"],"end":[[-18.89191,-48.22881,"3094ft"],[-18.87524,-48.22306,"3094ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "DEMOT2C": {"icao":"DEMOT2C","name":"Demot Two Charlie","rwy":{"SBUL04":["_RWY2204DME"],"SBUL22":["_RWY0404DME"]},"body":[],"exitPoints":{"DEMOT":["DEMOT"]},"draw":[["SBUL","DEMOT*"]]},
+        "VUKOJ2D": {"icao":"VUKOJ2D","name":"Vukoj Two Delta","rwy":{"SBUL04":["_RWY2204DME"],"SBUL22":["_RWY0404DME"]},"body":[],"exitPoints":{"VUKOJ":["VUKOJ"]},"draw":[["SBUL","VUKOJ*"]]},
+        "URB2E": {"icao":"URB2E","name":"Uberaba Two Echo","rwy":{"SBUL04":["_RWY2204DME"],"SBUL22":["_RWY0404DME"]},"body":[],"exitPoints":{"URB":["URB"]},"draw":[["SBUL","URB*"]]},
+        "NECKO2A": {"icao":"NECKO2A","name":"Necko Two Alpha","rwy":{"SBUL04":["_RWY2204DME"],"SBUL22":["_RWY0404DME"]},"body":[],"exitPoints":{"NECKO":["NECKO"]},"draw":[["SBUL","NECKO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SBUL","destination":"SBKP","category":"departure","route":"SBUL04.URB2E.URB","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["azu/e190",2],["azu/at72",1]]},
+        {"origin":"SBUL","destination":"SBBR","category":"departure","route":"SBUL04.DEMOT2C.DEMOT","altitude":"","speed":"","method":"random","rate":0.78,"airlines":[["azu/at72",1],["tam/a320",1]]},
+        {"origin":"SBUL","destination":"SBSP","category":"departure","route":"SBUL04.URB2E.URB","altitude":"","speed":"","method":"random","rate":0.78,"airlines":[["tam/a319",1],["tam/a320",1]]},
+        {"origin":"SBUL","destination":"SBBH","category":"departure","route":"SBUL04.VUKOJ2D.VUKOJ","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["azu/at72",1]]},
+        {"origin":"SBUL","destination":"","category":"departure","route":"SBUL04.VUKOJ2D.VUKOJ","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["azu/e190",1]]},
+        {"origin":"SBUL","destination":"","category":"departure","route":"SBUL04.NECKO2A.NECKO","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"SBKP","destination":"SBUL","category":"arrival","route":"URB..PANAT..SBUL","altitude":[7000,10000],"speed":250,"method":"random","rate":1.17,"airlines":[["azu/e190",2],["azu/at72",1]]},
+        {"origin":"SBBR","destination":"SBUL","category":"arrival","route":"DEMOT..JOFOK..SBUL","altitude":[7000,10000],"speed":250,"method":"random","rate":0.78,"airlines":[["azu/at72",1],["tam/a320",1]]},
+        {"origin":"SBSP","destination":"SBUL","category":"arrival","route":"URB..PANAT..SBUL","altitude":[7000,10000],"speed":250,"method":"random","rate":0.78,"airlines":[["tam/a319",1],["tam/a320",1]]},
+        {"origin":"SBBH","destination":"SBUL","category":"arrival","route":"VUKOJ..ICOJE..SBUL","altitude":[7000,10000],"speed":250,"method":"random","rate":0.39,"airlines":[["azu/at72",1]]},
+        {"origin":"","destination":"SBUL","category":"arrival","route":"VUKOJ..ICOJE..SBUL","altitude":[7000,10000],"speed":250,"method":"random","rate":0.39,"airlines":[["azu/e190",1]]},
+        {"origin":"","destination":"SBUL","category":"arrival","route":"NECKO..WISPU..SBUL","altitude":[7000,10000],"speed":250,"method":"random","rate":1.17,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-18.3482,-48.1708,-18.6847,-48.2055],
+            [-18.6847,-48.2055,-18.8836,-48.2259],
+            [-19.0022,-47.6714,-18.9277,-48.0199],
+            [-18.9277,-48.0199,-18.8836,-48.2259],
+            [-19.7655,-47.9592,-19.0757,-48.1678],
+            [-19.0757,-48.1678,-18.8836,-48.2259],
+            [-18.9284,-48.7925,-18.9002,-48.4364],
+            [-18.9002,-48.4364,-18.8836,-48.2259]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-18.8919,-48.2288,-19.0502,-48.2836],
+            [-18.9742,-48.2461,-18.968,-48.2662],
+            [-19.0533,-48.2735,-19.0471,-48.2936],
+            [-18.8752,-48.2231,-18.7169,-48.1684],
+            [-18.793,-48.2058,-18.7992,-48.1857],
+            [-18.7138,-48.1785,-18.72,-48.1584]
+        ]}
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/YBRM/",
+    "info": {"country":"AU","city":"Broome","type":"large_airport","longestRunwayM":2415,"frequencies":{"atis":"126.550"}},
+    "radio": {"twr":"Broome Tower","app":"Broome Approach","dep":"Broome Departure"},
+    "icao": "YBRM",
+    "iata": "BME",
+    "magnetic_north": 1.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-17.949194,122.2283,"56ft"],
+    "rangeRings": {"enabled":true,"center":[-17.949194,122.2283],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":110,"speed":12},
+    "arrivalRunway": "10",
+    "departureRunway": "10",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-17.5446,122.2394],[-17.5612,122.3491],[-17.6041,122.4506],[-17.6706,122.5369],[-17.7561,122.6021],[-17.8547,122.6419],[-17.9598,122.6536],[-18.0641,122.6362],[-18.1606,122.591],[-18.2427,122.5211],[-18.3048,122.4313],[-18.3427,122.3276],[-18.3538,122.2172],[-18.3372,122.1075],[-18.2943,122.006],[-18.2278,121.9197],[-18.1423,121.8545],[-18.0437,121.8147],[-17.9386,121.803],[-17.8343,121.8204],[-17.7377,121.8656],[-17.6556,121.9355],[-17.5935,122.0253],[-17.5557,122.129]]}
+    ],
+    "fixes": {
+        "YBRM": [-17.94919,122.2283],
+        "MIJGA": [-17.71901,122.73938],
+        "EDIRI": [-17.86367,122.41818],
+        "EGUDO": [-18.22394,122.71445],
+        "ULIZU": [-18.05127,122.40892],
+        "OBISU": [-18.24416,121.75543],
+        "ABECI": [-18.05878,122.05261],
+        "WAPTA": [-17.48004,121.95163],
+        "SOJUW": [-17.77489,122.12551],
+        "_RWY1004DME": [-17.92779,122.14853],
+        "_RWY2804DME": [-17.96919,122.30549]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[-17.9456,122.216,"56ft"],[-17.9514,122.238,"22ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "MIJGA2D": {"icao":"MIJGA2D","name":"Mijga Two Delta","rwy":{"YBRM10":["_RWY2804DME"],"YBRM28":["_RWY1004DME"]},"body":[],"exitPoints":{"MIJGA":["MIJGA"]},"draw":[["YBRM","MIJGA*"]]},
+        "EGUDO2A": {"icao":"EGUDO2A","name":"Egudo Two Alpha","rwy":{"YBRM10":["_RWY2804DME"],"YBRM28":["_RWY1004DME"]},"body":[],"exitPoints":{"EGUDO":["EGUDO"]},"draw":[["YBRM","EGUDO*"]]},
+        "OBISU1C": {"icao":"OBISU1C","name":"Obisu One Charlie","rwy":{"YBRM10":["_RWY2804DME"],"YBRM28":["_RWY1004DME"]},"body":[],"exitPoints":{"OBISU":["OBISU"]},"draw":[["YBRM","OBISU*"]]},
+        "WAPTA1F": {"icao":"WAPTA1F","name":"Wapta One Foxtrot","rwy":{"YBRM10":["_RWY2804DME"],"YBRM28":["_RWY1004DME"]},"body":[],"exitPoints":{"WAPTA":["WAPTA"]},"draw":[["YBRM","WAPTA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"YBRM","destination":"YPPD","category":"departure","route":"YBRM10.OBISU1C.OBISU","altitude":"","speed":"","method":"random","rate":0.83,"airlines":[["ano/e170",1],["voz/f100",1]]},
+        {"origin":"YBRM","destination":"YPPH","category":"departure","route":"YBRM10.OBISU1C.OBISU","altitude":"","speed":"","method":"random","rate":0.83,"airlines":[["qfa/b738",1],["voz/f100",1]]},
+        {"origin":"YBRM","destination":"YBBN","category":"departure","route":"YBRM10.EGUDO2A.EGUDO","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["qfa/b738",1]]},
+        {"origin":"YBRM","destination":"YMML","category":"departure","route":"YBRM10.EGUDO2A.EGUDO","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["qfa/b738",1]]},
+        {"origin":"YBRM","destination":"YPDN","category":"departure","route":"YBRM10.MIJGA2D.MIJGA","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["ano/e170",1]]},
+        {"origin":"YBRM","destination":"","category":"departure","route":"YBRM10.MIJGA2D.MIJGA","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["ano/e170",1]]},
+        {"origin":"YBRM","destination":"","category":"departure","route":"YBRM10.EGUDO2A.EGUDO","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["qfa/b738",1]]},
+        {"origin":"YBRM","destination":"","category":"departure","route":"YBRM10.OBISU1C.OBISU","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["ano/e170",1]]},
+        {"origin":"YBRM","destination":"","category":"departure","route":"YBRM10.WAPTA1F.WAPTA","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["vh/c172",6],["vh/p28a",5],["vh/c182",3],["vh/be36",2],["vh/da42",1],["vh/tb20",1],["vh/c208",2],["vh/pc12",2],["vh/be20",1],["vh/b350",1],["vh/p180",1],["vh/c510",1],["vh/e50p",1],["vh/c550",1],["vh/e55p",1],["vh/cl30",1],["vh/c680",1],["vh/h25b",1],["vh/lj45",1],["vh/f2th",1],["vh/glf4",1],["vh/glex",1],["vh/glf5",1]]},
+        {"origin":"YPPD","destination":"YBRM","category":"arrival","route":"OBISU..ABECI..YBRM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.83,"airlines":[["ano/e170",1],["voz/f100",1]]},
+        {"origin":"YPPH","destination":"YBRM","category":"arrival","route":"OBISU..ABECI..YBRM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.83,"airlines":[["qfa/b738",1],["voz/f100",1]]},
+        {"origin":"YBBN","destination":"YBRM","category":"arrival","route":"EGUDO..ULIZU..YBRM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["qfa/b738",1]]},
+        {"origin":"YMML","destination":"YBRM","category":"arrival","route":"EGUDO..ULIZU..YBRM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["qfa/b738",1]]},
+        {"origin":"YPDN","destination":"YBRM","category":"arrival","route":"MIJGA..EDIRI..YBRM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["ano/e170",1]]},
+        {"origin":"","destination":"YBRM","category":"arrival","route":"MIJGA..EDIRI..YBRM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["ano/e170",1]]},
+        {"origin":"","destination":"YBRM","category":"arrival","route":"EGUDO..ULIZU..YBRM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["qfa/b738",1]]},
+        {"origin":"","destination":"YBRM","category":"arrival","route":"OBISU..ABECI..YBRM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["ano/e170",1]]},
+        {"origin":"","destination":"YBRM","category":"arrival","route":"WAPTA..SOJUW..YBRM","altitude":[4000,7000],"speed":250,"method":"random","rate":1.39,"airlines":[["vh/c172",6],["vh/p28a",5],["vh/c182",3],["vh/be36",2],["vh/da42",1],["vh/tb20",1],["vh/c208",2],["vh/pc12",2],["vh/be20",1],["vh/b350",1],["vh/p180",1],["vh/c510",1],["vh/e50p",1],["vh/c550",1],["vh/e55p",1],["vh/cl30",1],["vh/c680",1],["vh/h25b",1],["vh/lj45",1],["vh/f2th",1],["vh/glf4",1],["vh/glex",1],["vh/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-17.719,122.7394,-17.8637,122.4182],
+            [-17.8637,122.4182,-17.9492,122.2283],
+            [-18.2239,122.7144,-18.0513,122.4089],
+            [-18.0513,122.4089,-17.9492,122.2283],
+            [-18.2442,121.7554,-18.0588,122.0526],
+            [-18.0588,122.0526,-17.9492,122.2283],
+            [-17.48,121.9516,-17.7749,122.1255],
+            [-17.7749,122.1255,-17.9492,122.2283]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-17.9456,122.216,-17.901,122.0473],
+            [-17.933,122.1289,-17.9137,122.1345],
+            [-17.9107,122.0445,-17.8914,122.0501],
+            [-17.9514,122.238,-17.9958,122.4068],
+            [-17.964,122.3252,-17.9833,122.3196],
+            [-17.9862,122.4096,-18.0055,122.4039]
+        ]}
+    ]
+}

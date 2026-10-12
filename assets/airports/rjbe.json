@@ -1,0 +1,85 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/RJBE/",
+    "info": {"country":"JP","city":"Kobe","type":"large_airport","longestRunwayM":2500,"frequencies":{"atis":"128.075","twr":"118.500","app":"121.150"}},
+    "radio": {"twr":"Kobe Tower","app":"Kobe Approach","dep":"Kobe Departure"},
+    "icao": "RJBE",
+    "iata": "UKB",
+    "magnetic_north": -8.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [34.632801,135.223999,"22ft"],
+    "rangeRings": {"enabled":true,"center":[34.632801,135.223999],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":250,"speed":7},
+    "arrivalRunway": "27",
+    "departureRunway": "27",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[35.0335,135.1547],[35.0346,135.2831],[35.0083,135.4075],[34.9564,135.5193],[34.8825,135.611],[34.7916,135.6764],[34.6898,135.7109],[34.5842,135.7123],[34.4819,135.6803],[34.3898,135.6173],[34.3143,135.5275],[34.2606,135.417],[34.2321,135.2933],[34.231,135.1649],[34.2573,135.0405],[34.3092,134.9287],[34.3831,134.8369],[34.474,134.7716],[34.5758,134.7371],[34.6814,134.7357],[34.7837,134.7676],[34.8758,134.8307],[34.9513,134.9205],[35.005,135.031]]}
+    ],
+    "fixes": {
+        "RJBE": [34.6328,135.224],
+        "CUE": [35.017,135.826,"otsu"],
+        "OWE": [34.776,135.452,"osaka"],
+        "NKE": [33.6613,135.35899,"nanki"],
+        "KNE": [34.4301,135.252,"kansai"],
+        "AJE": [34.2703,134.713,"awaji"],
+        "JUWGE": [34.50229,135.04003],
+        "OKC": [34.6714,134.015,"okayama"],
+        "INAMA": [34.64055,134.98128],
+        "_RWY0904DME": [34.62499,135.12944],
+        "_RWY2704DME": [34.64036,135.31758]
+    },
+    "runways": [
+        {"name":["09","27"],"end":[[34.6316,135.21001,"27ft"],[34.6338,135.237,"26ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "CUE2E": {"icao":"CUE2E","name":"Otsu Two Echo","rwy":{"RJBE09":["_RWY2704DME"],"RJBE27":["_RWY0904DME"]},"body":[],"exitPoints":{"CUE":["CUE"]},"draw":[["RJBE","CUE*"]]},
+        "NKE3B": {"icao":"NKE3B","name":"Nanki Three Bravo","rwy":{"RJBE09":["_RWY2704DME"],"RJBE27":["_RWY0904DME"]},"body":[],"exitPoints":{"NKE":["NKE"]},"draw":[["RJBE","NKE*"]]},
+        "AJE2C": {"icao":"AJE2C","name":"Awaji Two Charlie","rwy":{"RJBE09":["_RWY2704DME"],"RJBE27":["_RWY0904DME"]},"body":[],"exitPoints":{"AJE":["AJE"]},"draw":[["RJBE","AJE*"]]},
+        "OKC3D": {"icao":"OKC3D","name":"Okayama Three Delta","rwy":{"RJBE09":["_RWY2704DME"],"RJBE27":["_RWY0904DME"]},"body":[],"exitPoints":{"OKC":["OKC"]},"draw":[["RJBE","OKC*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"RJBE","destination":"RJTT","category":"departure","route":"RJBE27.CUE2E.CUE","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["ana/b737",1],["ana/b763",1],["sky/b737",1]]},
+        {"origin":"RJBE","destination":"RJCC","category":"departure","route":"RJBE27.CUE2E.CUE","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["ana/b737",1],["sky/b737",1]]},
+        {"origin":"RJBE","destination":"RJAH","category":"departure","route":"RJBE27.CUE2E.CUE","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["sky/b737",1]]},
+        {"origin":"RJBE","destination":"RJFK","category":"departure","route":"RJBE27.AJE2C.AJE","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["sky/b737",1]]},
+        {"origin":"RJBE","destination":"RJFU","category":"departure","route":"RJBE27.AJE2C.AJE","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["sky/b737",1]]},
+        {"origin":"RJBE","destination":"","category":"departure","route":"RJBE27.CUE2E.CUE","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["sky/b737",1]]},
+        {"origin":"RJBE","destination":"","category":"departure","route":"RJBE27.AJE2C.AJE","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["sky/b737",1]]},
+        {"origin":"RJBE","destination":"","category":"departure","route":"RJBE27.OKC3D.OKC","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["sky/b737",1]]},
+        {"origin":"RJBE","destination":"","category":"departure","route":"RJBE27.OKC3D.OKC","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["ja/c172",6],["ja/p28a",5],["ja/c182",3],["ja/be36",2],["ja/da42",1],["ja/tb20",1],["ja/c208",2],["ja/pc12",2],["ja/be20",1],["ja/b350",1],["ja/p180",1],["ja/c510",1],["ja/e50p",1],["ja/c550",1],["ja/e55p",1],["ja/cl30",1],["ja/c680",1],["ja/h25b",1],["ja/lj45",1],["ja/f2th",1],["ja/glf4",1],["ja/glex",1],["ja/glf5",1]]},
+        {"origin":"RJTT","destination":"RJBE","category":"arrival","route":"CUE..OWE..RJBE","altitude":[4000,7000],"speed":250,"method":"random","rate":1.13,"airlines":[["ana/b737",1],["ana/b763",1],["sky/b737",1]]},
+        {"origin":"RJCC","destination":"RJBE","category":"arrival","route":"CUE..OWE..RJBE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.76,"airlines":[["ana/b737",1],["sky/b737",1]]},
+        {"origin":"RJAH","destination":"RJBE","category":"arrival","route":"CUE..OWE..RJBE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.38,"airlines":[["sky/b737",1]]},
+        {"origin":"RJFK","destination":"RJBE","category":"arrival","route":"AJE..JUWGE..RJBE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.38,"airlines":[["sky/b737",1]]},
+        {"origin":"RJFU","destination":"RJBE","category":"arrival","route":"AJE..JUWGE..RJBE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.38,"airlines":[["sky/b737",1]]},
+        {"origin":"","destination":"RJBE","category":"arrival","route":"CUE..OWE..RJBE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.38,"airlines":[["sky/b737",1]]},
+        {"origin":"","destination":"RJBE","category":"arrival","route":"AJE..JUWGE..RJBE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.38,"airlines":[["sky/b737",1]]},
+        {"origin":"","destination":"RJBE","category":"arrival","route":"OKC..INAMA..RJBE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.38,"airlines":[["sky/b737",1]]},
+        {"origin":"","destination":"RJBE","category":"arrival","route":"OKC..INAMA..RJBE","altitude":[4000,7000],"speed":250,"method":"random","rate":1.39,"airlines":[["ja/c172",6],["ja/p28a",5],["ja/c182",3],["ja/be36",2],["ja/da42",1],["ja/tb20",1],["ja/c208",2],["ja/pc12",2],["ja/be20",1],["ja/b350",1],["ja/p180",1],["ja/c510",1],["ja/e50p",1],["ja/c550",1],["ja/e55p",1],["ja/cl30",1],["ja/c680",1],["ja/h25b",1],["ja/lj45",1],["ja/f2th",1],["ja/glf4",1],["ja/glex",1],["ja/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [35.017,135.826,34.776,135.452],
+            [34.776,135.452,34.6328,135.224],
+            [33.6613,135.359,34.4301,135.252],
+            [34.4301,135.252,34.6328,135.224],
+            [34.2703,134.713,34.5023,135.04],
+            [34.5023,135.04,34.6328,135.224],
+            [34.6714,134.015,34.6405,134.9813],
+            [34.6405,134.9813,34.6328,135.224]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [34.6316,135.21,34.615,135.0086],
+            [34.6134,135.1105,34.6333,135.1081],
+            [34.605,135.0098,34.6249,135.0074],
+            [34.6338,135.237,34.6501,135.4385],
+            [34.6519,135.3365,34.632,135.3389],
+            [34.66,135.4373,34.6401,135.4397]
+        ]}
+    ]
+}

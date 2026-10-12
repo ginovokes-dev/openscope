@@ -1,0 +1,90 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ZSJD/",
+    "info": {"country":"CN","city":"Jingdezhen","type":"medium_airport","longestRunwayM":2400,"approximateRunways":true},
+    "radio": {"twr":"Jingdezhen Tower","app":"Jingdezhen Approach","dep":"Jingdezhen Departure"},
+    "icao": "ZSJD",
+    "iata": "JDZ",
+    "magnetic_north": -5.3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [29.3386,117.176003,"112ft"],
+    "rangeRings": {"enabled":true,"center":[29.3386,117.176003],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":20,"speed":12},
+    "arrivalRunway": "04",
+    "departureRunway": "04",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[29.7416,117.1331],[29.7375,117.2542],[29.7063,117.37],[29.65,117.4725],[29.5725,117.5549],[29.479,117.6114],[29.376,117.6383],[29.2704,117.6336],[29.1695,117.5978],[29.0801,117.5332],[29.0083,117.4443],[28.959,117.3371],[28.9356,117.2189],[28.9397,117.0978],[28.9709,116.982],[29.0272,116.8795],[29.1047,116.7971],[29.1982,116.7406],[29.3012,116.7137],[29.4068,116.7184],[29.5077,116.7542],[29.5971,116.8188],[29.6689,116.9077],[29.7182,117.0149]]}
+    ],
+    "fixes": {
+        "ZSJD": [29.3386,117.176],
+        "ALOME": [29.87608,117.15041],
+        "TIRSI": [29.53829,117.16649],
+        "HOFUW": [29.59455,117.71877],
+        "FEGNI": [29.43369,117.37766],
+        "SOZPE": [28.84691,117.42633],
+        "AGODU": [29.15592,117.26901],
+        "ABOBO": [28.86426,116.88495],
+        "ADOPE": [29.16236,117.06786],
+        "SOTFI": [29.66766,116.68783],
+        "WOJVO": [29.46086,116.99463],
+        "_RWY0404DME": [29.27494,117.12548],
+        "_RWY2204DME": [29.40224,117.22658]
+    },
+    "runways": [
+        {"name":["04","22"],"end":[[29.32973,117.16896,"112ft"],[29.34747,117.18305,"112ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ALOME1F": {"icao":"ALOME1F","name":"Alome One Foxtrot","rwy":{"ZSJD04":["_RWY2204DME"],"ZSJD22":["_RWY0404DME"]},"body":[],"exitPoints":{"ALOME":["ALOME"]},"draw":[["ZSJD","ALOME*"]]},
+        "HOFUW2E": {"icao":"HOFUW2E","name":"Hofuw Two Echo","rwy":{"ZSJD04":["_RWY2204DME"],"ZSJD22":["_RWY0404DME"]},"body":[],"exitPoints":{"HOFUW":["HOFUW"]},"draw":[["ZSJD","HOFUW*"]]},
+        "SOZPE1F": {"icao":"SOZPE1F","name":"Sozpe One Foxtrot","rwy":{"ZSJD04":["_RWY2204DME"],"ZSJD22":["_RWY0404DME"]},"body":[],"exitPoints":{"SOZPE":["SOZPE"]},"draw":[["ZSJD","SOZPE*"]]},
+        "ABOBO2D": {"icao":"ABOBO2D","name":"Abobo Two Delta","rwy":{"ZSJD04":["_RWY2204DME"],"ZSJD22":["_RWY0404DME"]},"body":[],"exitPoints":{"ABOBO":["ABOBO"]},"draw":[["ZSJD","ABOBO*"]]},
+        "SOTFI2B": {"icao":"SOTFI2B","name":"Sotfi Two Bravo","rwy":{"ZSJD04":["_RWY2204DME"],"ZSJD22":["_RWY0404DME"]},"body":[],"exitPoints":{"SOTFI":["SOTFI"]},"draw":[["ZSJD","SOTFI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ZSJD","destination":"ZLXY","category":"departure","route":"ZSJD04.SOTFI2B.SOTFI","altitude":"","speed":"","method":"random","rate":0.83,"airlines":[["cca/a320",1],["csz/a320",1]]},
+        {"origin":"ZSJD","destination":"ZSFZ","category":"departure","route":"ZSJD04.SOZPE1F.SOZPE","altitude":"","speed":"","method":"random","rate":0.83,"airlines":[["cca/a320",1],["csz/a320",1]]},
+        {"origin":"ZSJD","destination":"ZBAA","category":"departure","route":"ZSJD04.ALOME1F.ALOME","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["cca/b738",1]]},
+        {"origin":"ZSJD","destination":"ZGGG","category":"departure","route":"ZSJD04.ABOBO2D.ABOBO","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["csz/a320",1]]},
+        {"origin":"ZSJD","destination":"ZGSZ","category":"departure","route":"ZSJD04.ABOBO2D.ABOBO","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["csz/a320",1]]},
+        {"origin":"ZSJD","destination":"","category":"departure","route":"ZSJD04.HOFUW2E.HOFUW","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["csz/a320",1]]},
+        {"origin":"ZSJD","destination":"","category":"departure","route":"ZSJD04.SOZPE1F.SOZPE","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["cdg/b738",1]]},
+        {"origin":"ZSJD","destination":"","category":"departure","route":"ZSJD04.SOTFI2B.SOTFI","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["cdg/b738",1]]},
+        {"origin":"ZSJD","destination":"","category":"departure","route":"ZSJD04.SOZPE1F.SOZPE","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",1],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
+        {"origin":"ZLXY","destination":"ZSJD","category":"arrival","route":"SOTFI..WOJVO..ZSJD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.83,"airlines":[["cca/a320",1],["csz/a320",1]]},
+        {"origin":"ZSFZ","destination":"ZSJD","category":"arrival","route":"SOZPE..AGODU..ZSJD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.83,"airlines":[["cca/a320",1],["csz/a320",1]]},
+        {"origin":"ZBAA","destination":"ZSJD","category":"arrival","route":"ALOME..TIRSI..ZSJD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["cca/b738",1]]},
+        {"origin":"ZGGG","destination":"ZSJD","category":"arrival","route":"ABOBO..ADOPE..ZSJD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["csz/a320",1]]},
+        {"origin":"ZGSZ","destination":"ZSJD","category":"arrival","route":"ABOBO..ADOPE..ZSJD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["csz/a320",1]]},
+        {"origin":"","destination":"ZSJD","category":"arrival","route":"HOFUW..FEGNI..ZSJD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["csz/a320",1]]},
+        {"origin":"","destination":"ZSJD","category":"arrival","route":"SOZPE..AGODU..ZSJD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["cdg/b738",1]]},
+        {"origin":"","destination":"ZSJD","category":"arrival","route":"SOTFI..WOJVO..ZSJD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["cdg/b738",1]]},
+        {"origin":"","destination":"ZSJD","category":"arrival","route":"SOZPE..AGODU..ZSJD","altitude":[4000,7000],"speed":250,"method":"random","rate":1.39,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",1],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [29.8761,117.1504,29.5383,117.1665],
+            [29.5383,117.1665,29.3386,117.176],
+            [29.5945,117.7188,29.4337,117.3777],
+            [29.4337,117.3777,29.3386,117.176],
+            [28.8469,117.4263,29.1559,117.269],
+            [29.1559,117.269,29.3386,117.176],
+            [28.8643,116.8849,29.1624,117.0679],
+            [29.1624,117.0679,29.3386,117.176],
+            [29.6677,116.6878,29.4609,116.9946],
+            [29.4609,116.9946,29.3386,117.176]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [29.3297,117.169,29.1927,117.0604],
+            [29.2556,117.124,29.2669,117.1052],
+            [29.1871,117.0698,29.1984,117.0509],
+            [29.3475,117.1831,29.4844,117.292],
+            [29.4216,117.228,29.4102,117.2469],
+            [29.4901,117.2825,29.4787,117.3014]
+        ]}
+    ]
+}

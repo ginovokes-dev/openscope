@@ -1,0 +1,81 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/FKYS/",
+    "info": {"country":"CM","city":"Yaounde","type":"large_airport","longestRunwayM":3419,"frequencies":{"twr":"119.100","app":"121.300"}},
+    "radio": {"twr":"Yaounde Tower","app":"Yaounde Approach","dep":"Yaounde Departure"},
+    "icao": "FKYS",
+    "iata": "NSI",
+    "magnetic_north": 0.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 10000,
+    "initial_alt": 6000,
+    "position": [3.72256,11.5533,"2278ft"],
+    "rangeRings": {"enabled":true,"center":[3.72256,11.5533],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":350,"speed":9},
+    "arrivalRunway": "01",
+    "departureRunway": "01",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"D","poly":[[4.1273,11.554],[4.1133,11.6589],[4.0727,11.7567],[4.0082,11.8406],[3.9243,11.9049],[3.8266,11.9452],[3.7219,11.9588],[3.6171,11.9448],[3.5196,11.9042],[3.4359,11.8396],[3.3717,11.7555],[3.3315,11.6576],[3.3179,11.5526],[3.3318,11.4477],[3.3724,11.3499],[3.4369,11.266],[3.5208,11.2017],[3.6185,11.1614],[3.7233,11.1478],[3.828,11.1618],[3.9255,11.2024],[4.0092,11.267],[4.0734,11.3511],[4.1136,11.449]]}
+    ],
+    "fixes": {
+        "FKYS": [3.72256,11.5533],
+        "ZIVOB": [3.68572,12.09111],
+        "BICUS": [3.70887,11.75312],
+        "OHEFE": [3.18797,11.49323],
+        "LAWUP": [3.52394,11.53098],
+        "UWELE": [3.8055,11.02067],
+        "WOKAR": [3.75338,11.35541],
+        "MOMCI": [4.24378,11.41997],
+        "BAFHU": [3.91622,11.50376],
+        "_RWY0104DME": [3.64178,11.53912],
+        "_RWY1904DME": [3.80333,11.56738]
+    },
+    "runways": [
+        {"name":["01","19"],"end":[[3.70741,11.5506,"2263ft"],[3.7377,11.5559,"2276ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ZIVOB3A": {"icao":"ZIVOB3A","name":"Zivob Three Alpha","rwy":{"FKYS01":["_RWY1904DME"],"FKYS19":["_RWY0104DME"]},"body":[],"exitPoints":{"ZIVOB":["ZIVOB"]},"draw":[["FKYS","ZIVOB*"]]},
+        "OHEFE2E": {"icao":"OHEFE2E","name":"Ohefe Two Echo","rwy":{"FKYS01":["_RWY1904DME"],"FKYS19":["_RWY0104DME"]},"body":[],"exitPoints":{"OHEFE":["OHEFE"]},"draw":[["FKYS","OHEFE*"]]},
+        "UWELE2A": {"icao":"UWELE2A","name":"Uwele Two Alpha","rwy":{"FKYS01":["_RWY1904DME"],"FKYS19":["_RWY0104DME"]},"body":[],"exitPoints":{"UWELE":["UWELE"]},"draw":[["FKYS","UWELE*"]]},
+        "MOMCI1D": {"icao":"MOMCI1D","name":"Momci One Delta","rwy":{"FKYS01":["_RWY1904DME"],"FKYS19":["_RWY0104DME"]},"body":[],"exitPoints":{"MOMCI":["MOMCI"]},"draw":[["FKYS","MOMCI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"FKYS","destination":"FKKD","category":"departure","route":"FKYS01.UWELE2A.UWELE","altitude":"","speed":"","method":"random","rate":1.19,"airlines":[["dat/a332",1],["ram/b738",1],["thy/b739",1]]},
+        {"origin":"FKYS","destination":"HKJK","category":"departure","route":"FKYS01.ZIVOB3A.ZIVOB","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["kqa/b738",1],["kqa/e190",1]]},
+        {"origin":"FKYS","destination":"EBBR","category":"departure","route":"FKYS01.MOMCI1D.MOMCI","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["dat/a332",1]]},
+        {"origin":"FKYS","destination":"FEFF","category":"departure","route":"FKYS01.ZIVOB3A.ZIVOB","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["afr/b772",1]]},
+        {"origin":"FKYS","destination":"GMMN","category":"departure","route":"FKYS01.MOMCI1D.MOMCI","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["ram/b738",1]]},
+        {"origin":"FKYS","destination":"","category":"departure","route":"FKYS01.MOMCI1D.MOMCI","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["afr/b772",1],["thy/b739",1]]},
+        {"origin":"FKYS","destination":"","category":"departure","route":"FKYS01.MOMCI1D.MOMCI","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["tj/c172",6],["tj/p28a",5],["tj/c182",3],["tj/be36",2],["tj/da42",1],["tj/tb20",1],["tj/c208",2],["tj/pc12",2],["tj/be20",1],["tj/b350",1],["tj/p180",1],["tj/c510",1],["tj/e50p",1],["tj/c550",1],["tj/e55p",1],["tj/cl30",1],["tj/c680",1],["tj/h25b",1],["tj/lj45",1],["tj/f2th",1],["tj/glf4",1],["tj/glex",1],["tj/glf5",1]]},
+        {"origin":"FKKD","destination":"FKYS","category":"arrival","route":"UWELE..WOKAR..FKYS","altitude":[6000,9000],"speed":250,"method":"random","rate":1.19,"airlines":[["dat/a332",1],["ram/b738",1],["thy/b739",1]]},
+        {"origin":"HKJK","destination":"FKYS","category":"arrival","route":"ZIVOB..BICUS..FKYS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.79,"airlines":[["kqa/b738",1],["kqa/e190",1]]},
+        {"origin":"EBBR","destination":"FKYS","category":"arrival","route":"MOMCI..BAFHU..FKYS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["dat/a332",1]]},
+        {"origin":"FEFF","destination":"FKYS","category":"arrival","route":"ZIVOB..BICUS..FKYS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["afr/b772",1]]},
+        {"origin":"GMMN","destination":"FKYS","category":"arrival","route":"MOMCI..BAFHU..FKYS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["ram/b738",1]]},
+        {"origin":"","destination":"FKYS","category":"arrival","route":"MOMCI..BAFHU..FKYS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.79,"airlines":[["afr/b772",1],["thy/b739",1]]},
+        {"origin":"","destination":"FKYS","category":"arrival","route":"MOMCI..BAFHU..FKYS","altitude":[6000,9000],"speed":250,"method":"random","rate":1.32,"airlines":[["tj/c172",6],["tj/p28a",5],["tj/c182",3],["tj/be36",2],["tj/da42",1],["tj/tb20",1],["tj/c208",2],["tj/pc12",2],["tj/be20",1],["tj/b350",1],["tj/p180",1],["tj/c510",1],["tj/e50p",1],["tj/c550",1],["tj/e55p",1],["tj/cl30",1],["tj/c680",1],["tj/h25b",1],["tj/lj45",1],["tj/f2th",1],["tj/glf4",1],["tj/glex",1],["tj/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [3.6857,12.0911,3.7089,11.7531],
+            [3.7089,11.7531,3.7226,11.5533],
+            [3.188,11.4932,3.5239,11.531],
+            [3.5239,11.531,3.7226,11.5533],
+            [3.8055,11.0207,3.7534,11.3554],
+            [3.7534,11.3554,3.7226,11.5533],
+            [4.2438,11.42,3.9162,11.5038],
+            [3.9162,11.5038,3.7226,11.5533]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [3.7074,11.5506,3.5433,11.5219],
+            [3.6237,11.5461,3.6271,11.5264],
+            [3.5416,11.5318,3.5451,11.512],
+            [3.7377,11.5559,3.9018,11.5846],
+            [3.8215,11.5604,3.818,11.5801],
+            [3.9035,11.5747,3.9001,11.5945]
+        ]}
+    ]
+}

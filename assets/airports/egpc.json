@@ -1,0 +1,71 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGPC/",
+    "info": {"country":"GB","city":"Wick","type":"medium_airport","longestRunwayM":1831,"frequencies":{"atis":"113.600","twr":"119.705","app":"119.705"}},
+    "radio": {"twr":"Wick Tower","app":"Wick Approach","dep":"Wick Radar"},
+    "icao": "EGPC",
+    "iata": "WIC",
+    "magnetic_north": -0.8,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [58.4589,-3.09306,"126ft"],
+    "rangeRings": {"enabled":true,"center":[58.4589,-3.09306],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":300,"speed":12},
+    "arrivalRunway": "31",
+    "departureRunway": "31",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[58.8636,-3.1039],[58.8512,-2.9033],[58.8122,-2.7156],[58.749,-2.5537],[58.6661,-2.4285],[58.5691,-2.3487],[58.4646,-2.3195],[58.3596,-2.3431],[58.2615,-2.4177],[58.1768,-2.5384],[58.1113,-2.6969],[58.0695,-2.8824],[58.0542,-3.0823],[58.0666,-3.2828],[58.1056,-3.4705],[58.1688,-3.6324],[58.2517,-3.7576],[58.3487,-3.8375],[58.4532,-3.8666],[58.5582,-3.8431],[58.6563,-3.7684],[58.741,-3.6477],[58.8065,-3.4892],[58.8483,-3.3037]]}
+    ],
+    "fixes": {
+        "EGPC": [58.4589,-3.09306],
+        "ZATCA": [58.65297,-2.13397],
+        "OCAVO": [58.531,-2.73672],
+        "GUFIZ": [57.95719,-2.72207],
+        "WOFJE": [58.27249,-2.95522],
+        "WUPOS": [58.26483,-4.05215],
+        "DERLI": [58.3868,-3.4494],
+        "KIWPO": [58.96061,-3.46405],
+        "EKIMA": [58.64531,-3.2309],
+        "_RWY1304DME": [58.50247,-3.20377],
+        "_RWY3104DME": [58.41527,-2.9832]
+    },
+    "runways": [
+        {"name":["13","31"],"end":[[58.46234,-3.10204,"114ft"],[58.45548,-3.08468,"114ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ZATCA3C": {"icao":"ZATCA3C","name":"Zatca Three Charlie","rwy":{"EGPC13":["_RWY3104DME"],"EGPC31":["_RWY1304DME"]},"body":[],"exitPoints":{"ZATCA":["ZATCA"]},"draw":[["EGPC","ZATCA*"]]},
+        "GUFIZ1A": {"icao":"GUFIZ1A","name":"Gufiz One Alpha","rwy":{"EGPC13":["_RWY3104DME"],"EGPC31":["_RWY1304DME"]},"body":[],"exitPoints":{"GUFIZ":["GUFIZ"]},"draw":[["EGPC","GUFIZ*"]]},
+        "WUPOS3C": {"icao":"WUPOS3C","name":"Wupos Three Charlie","rwy":{"EGPC13":["_RWY3104DME"],"EGPC31":["_RWY1304DME"]},"body":[],"exitPoints":{"WUPOS":["WUPOS"]},"draw":[["EGPC","WUPOS*"]]},
+        "KIWPO3B": {"icao":"KIWPO3B","name":"Kiwpo Three Bravo","rwy":{"EGPC13":["_RWY3104DME"],"EGPC31":["_RWY1304DME"]},"body":[],"exitPoints":{"KIWPO":["KIWPO"]},"draw":[["EGPC","KIWPO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGPC","destination":"EGPD","category":"departure","route":"EGPC31.GUFIZ1A.GUFIZ","altitude":"","speed":"","method":"random","rate":2.24,"airlines":[["eze/js41",1]]},
+        {"origin":"EGPC","destination":"","category":"departure","route":"EGPC31.KIWPO3B.KIWPO","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]},
+        {"origin":"EGPD","destination":"EGPC","category":"arrival","route":"GUFIZ..WOFJE..EGPC","altitude":[4000,7000],"speed":250,"method":"random","rate":2.24,"airlines":[["eze/js41",1]]},
+        {"origin":"","destination":"EGPC","category":"arrival","route":"KIWPO..EKIMA..EGPC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.75,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [58.653,-2.134,58.531,-2.7367],
+            [58.531,-2.7367,58.4589,-3.0931],
+            [57.9572,-2.7221,58.2725,-2.9552],
+            [58.2725,-2.9552,58.4589,-3.0931],
+            [58.2648,-4.0522,58.3868,-3.4494],
+            [58.3868,-3.4494,58.4589,-3.0931],
+            [58.9606,-3.4641,58.6453,-3.2309],
+            [58.6453,-3.2309,58.4589,-3.0931]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [58.4623,-3.102,58.5625,-3.3568],
+            [58.5045,-3.2408,58.5205,-3.2177],
+            [58.5545,-3.3684,58.5705,-3.3453],
+            [58.4555,-3.0847,58.3548,-2.8314],
+            [58.4132,-2.9464,58.3972,-2.9694],
+            [58.3628,-2.8199,58.3468,-2.8429]
+        ]}
+    ]
+}

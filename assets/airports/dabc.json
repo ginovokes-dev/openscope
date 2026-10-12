@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/DABC/",
+    "info": {"country":"DZ","city":"Constantine","type":"large_airport","longestRunwayM":3010,"frequencies":{"twr":"118.300","app":"120.100"}},
+    "radio": {"twr":"Mohamed Boudiaf Tower","app":"Mohamed Boudiaf Approach","dep":"Mohamed Boudiaf Departure"},
+    "icao": "DABC",
+    "iata": "CZL",
+    "magnetic_north": 2.7,
+    "ctr_radius": 45,
+    "ctr_ceiling": 10000,
+    "initial_alt": 6000,
+    "position": [36.276001,6.62039,"2265ft"],
+    "rangeRings": {"enabled":true,"center":[36.276001,6.62039],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":310,"speed":6},
+    "arrivalRunway": "34",
+    "departureRunway": "34",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"D","poly":[[36.6802,6.644],[36.6615,6.773],[36.6166,6.8916],[36.5484,6.9917],[36.4616,7.0665],[36.3622,7.1109],[36.2569,7.1218],[36.153,7.0986],[36.0574,7.0428],[35.9767,6.9582],[35.9164,6.8506],[35.8806,6.7273],[35.8718,6.5967],[35.8905,6.4678],[35.9354,6.3492],[36.0036,6.2491],[36.0904,6.1743],[36.1898,6.1299],[36.2951,6.119],[36.399,6.1422],[36.4946,6.198],[36.5753,6.2825],[36.6356,6.3902],[36.6714,6.5135]]}
+    ],
+    "fixes": {
+        "DABC": [36.276,6.62039],
+        "MARIL": [36.48583,7.2348],
+        "EZAFE": [36.35396,6.84867],
+        "BTN": [35.7715,6.34379,"batna"],
+        "ETEKO": [36.0932,6.52016],
+        "ITOVO": [36.32339,5.95571],
+        "JANJU": [36.29361,6.37344],
+        "IGUGI": [36.81005,6.54034],
+        "OKAMA": [36.47442,6.59065],
+        "_RWY1604DME": [36.35036,6.58114],
+        "_RWY3404DME": [36.20053,6.65186],
+        "_RWY1304DME": [36.33225,6.5572],
+        "_RWY3104DME": [36.22102,6.69077]
+    },
+    "runways": [
+        {"name":["16","34"],"end":[[36.2881,6.61056,"2313ft"],[36.2628,6.6225,"2316ft"]],"ils":[true,true]},
+        {"name":["13","31"],"end":[[36.2844,6.61472,"2306ft"],[36.2689,6.63333,"2254ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "MARIL2D": {"icao":"MARIL2D","name":"Maril Two Delta","rwy":{"DABC16":["_RWY3404DME"],"DABC34":["_RWY1604DME"],"DABC13":["_RWY3104DME"],"DABC31":["_RWY1304DME"]},"body":[],"exitPoints":{"MARIL":["MARIL"]},"draw":[["DABC","MARIL*"]]},
+        "BTN2F": {"icao":"BTN2F","name":"Batna Two Foxtrot","rwy":{"DABC16":["_RWY3404DME"],"DABC34":["_RWY1604DME"],"DABC13":["_RWY3104DME"],"DABC31":["_RWY1304DME"]},"body":[],"exitPoints":{"BTN":["BTN"]},"draw":[["DABC","BTN*"]]},
+        "ITOVO3A": {"icao":"ITOVO3A","name":"Itovo Three Alpha","rwy":{"DABC16":["_RWY3404DME"],"DABC34":["_RWY1604DME"],"DABC13":["_RWY3104DME"],"DABC31":["_RWY1304DME"]},"body":[],"exitPoints":{"ITOVO":["ITOVO"]},"draw":[["DABC","ITOVO*"]]},
+        "IGUGI2D": {"icao":"IGUGI2D","name":"Igugi Two Delta","rwy":{"DABC16":["_RWY3404DME"],"DABC34":["_RWY1604DME"],"DABC13":["_RWY3104DME"],"DABC31":["_RWY1304DME"]},"body":[],"exitPoints":{"IGUGI":["IGUGI"]},"draw":[["DABC","IGUGI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"DABC","destination":"DAAG","category":"departure","route":"DABC34.ITOVO3A.ITOVO","altitude":"","speed":"","method":"random","rate":1.04,"airlines":[["dah/b736",1],["dah/b738",1],["dah/b763",1],["dah/at72",1],["dah/at45",1],["dah/at75",1]]},
+        {"origin":"DABC","destination":"LFLL","category":"departure","route":"DABC34.IGUGI2D.IGUGI","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["aaf/a320",1],["dah/b738",1]]},
+        {"origin":"DABC","destination":"LFML","category":"departure","route":"DABC34.IGUGI2D.IGUGI","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["aaf/a319",1],["dah/b738",1]]},
+        {"origin":"DABC","destination":"LFMN","category":"departure","route":"DABC34.IGUGI2D.IGUGI","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["dah/b736",1],["dah/b738",1]]},
+        {"origin":"DABC","destination":"LFPO","category":"departure","route":"DABC34.IGUGI2D.IGUGI","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["aaf/a319",1],["dah/b736",1]]},
+        {"origin":"DABC","destination":"","category":"departure","route":"DABC34.MARIL2D.MARIL","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["dah/b738",1]]},
+        {"origin":"DABC","destination":"","category":"departure","route":"DABC34.BTN2F.BTN","altitude":"","speed":"","method":"random","rate":0.78,"airlines":[["dah/at72",2],["dah/at45",1],["dah/at75",1]]},
+        {"origin":"DABC","destination":"","category":"departure","route":"DABC34.ITOVO3A.ITOVO","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["dah/at72",1],["dah/at45",1],["dah/at75",1]]},
+        {"origin":"DABC","destination":"","category":"departure","route":"DABC34.IGUGI2D.IGUGI","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["dah/b738",1]]},
+        {"origin":"DABC","destination":"","category":"departure","route":"DABC34.MARIL2D.MARIL","altitude":"","speed":"","method":"random","rate":1.55,"airlines":[["7t/c172",6],["7t/p28a",5],["7t/c182",3],["7t/be36",2],["7t/da42",1],["7t/tb20",1],["7t/c208",2],["7t/pc12",2],["7t/be20",1],["7t/b350",1],["7t/p180",1],["7t/c510",1],["7t/e50p",1],["7t/c550",1],["7t/e55p",1],["7t/cl30",1],["7t/c680",1],["7t/h25b",1],["7t/lj45",1],["7t/f2th",1],["7t/glf4",1],["7t/glex",1],["7t/glf5",1]]},
+        {"origin":"DAAG","destination":"DABC","category":"arrival","route":"ITOVO..JANJU..DABC","altitude":[6000,9000],"speed":250,"method":"random","rate":1.04,"airlines":[["dah/b736",1],["dah/b738",1],["dah/b763",1],["dah/at72",1],["dah/at45",1],["dah/at75",1]]},
+        {"origin":"LFLL","destination":"DABC","category":"arrival","route":"IGUGI..OKAMA..DABC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["aaf/a320",1],["dah/b738",1]]},
+        {"origin":"LFML","destination":"DABC","category":"arrival","route":"IGUGI..OKAMA..DABC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["aaf/a319",1],["dah/b738",1]]},
+        {"origin":"LFMN","destination":"DABC","category":"arrival","route":"IGUGI..OKAMA..DABC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["dah/b736",1],["dah/b738",1]]},
+        {"origin":"LFPO","destination":"DABC","category":"arrival","route":"IGUGI..OKAMA..DABC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["aaf/a319",1],["dah/b736",1]]},
+        {"origin":"","destination":"DABC","category":"arrival","route":"MARIL..EZAFE..DABC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.26,"airlines":[["dah/b738",1]]},
+        {"origin":"","destination":"DABC","category":"arrival","route":"BTN..ETEKO..DABC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.78,"airlines":[["dah/at72",2],["dah/at45",1],["dah/at75",1]]},
+        {"origin":"","destination":"DABC","category":"arrival","route":"ITOVO..JANJU..DABC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.26,"airlines":[["dah/at72",1],["dah/at45",1],["dah/at75",1]]},
+        {"origin":"","destination":"DABC","category":"arrival","route":"IGUGI..OKAMA..DABC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.26,"airlines":[["dah/b738",1]]},
+        {"origin":"","destination":"DABC","category":"arrival","route":"MARIL..EZAFE..DABC","altitude":[6000,9000],"speed":250,"method":"random","rate":1.55,"airlines":[["7t/c172",6],["7t/p28a",5],["7t/c182",3],["7t/be36",2],["7t/da42",1],["7t/tb20",1],["7t/c208",2],["7t/pc12",2],["7t/be20",1],["7t/b350",1],["7t/p180",1],["7t/c510",1],["7t/e50p",1],["7t/c550",1],["7t/e55p",1],["7t/cl30",1],["7t/c680",1],["7t/h25b",1],["7t/lj45",1],["7t/f2th",1],["7t/glf4",1],["7t/glex",1],["7t/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [36.4858,7.2348,36.354,6.8487],
+            [36.354,6.8487,36.276,6.6204],
+            [35.7715,6.3438,36.0932,6.5202],
+            [36.0932,6.5202,36.276,6.6204],
+            [36.3234,5.9557,36.2936,6.3734],
+            [36.2936,6.3734,36.276,6.6204],
+            [36.8101,6.5403,36.4744,6.5906],
+            [36.4744,6.5906,36.276,6.6204]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [36.2881,6.6106,36.4437,6.5369],
+            [36.3624,6.5622,36.3695,6.5854],
+            [36.4402,6.5253,36.4473,6.5485],
+            [36.2628,6.6225,36.1071,6.6958],
+            [36.1885,6.6708,36.1814,6.6476],
+            [36.1107,6.7074,36.1036,6.6843],
+            [36.2844,6.6147,36.404,6.4708],
+            [36.3373,6.5339,36.3512,6.5517],
+            [36.397,6.4619,36.4109,6.4797],
+            [36.2689,6.6333,36.1492,6.7768],
+            [36.216,6.714,36.2021,6.6962],
+            [36.1561,6.7857,36.1422,6.7679]
+        ]}
+    ]
+}

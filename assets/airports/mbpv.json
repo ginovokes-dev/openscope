@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/MBPV/",
+    "info": {"country":"TC","city":"Providenciales","type":"large_airport","longestRunwayM":2804,"frequencies":{"twr":"119.900","app":"126.000","gnd":"121.900"}},
+    "radio": {"twr":"Providenciales Tower","app":"Providenciales Approach","dep":"Providenciales Departure"},
+    "icao": "MBPV",
+    "iata": "PLS",
+    "magnetic_north": -11.2,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [21.773697,-72.268321,"15ft"],
+    "rangeRings": {"enabled":true,"center":[21.773697,-72.268321],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":130,"speed":11},
+    "arrivalRunway": "10",
+    "departureRunway": "10",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[22.303,-72.3812],[22.3121,-72.2298],[22.2845,-72.0811],[22.2221,-71.9451],[22.1291,-71.8311],[22.0119,-71.747],[21.8785,-71.6983],[21.7379,-71.6886],[21.5998,-71.7183],[21.4735,-71.7855],[21.3677,-71.8856],[21.2895,-72.0118],[21.2444,-72.1555],[21.2353,-72.3068],[21.2629,-72.4556],[21.3253,-72.5916],[21.4183,-72.7055],[21.5355,-72.7897],[21.6689,-72.8383],[21.8095,-72.8481],[21.9476,-72.8184],[22.0739,-72.7512],[22.1797,-72.6511],[22.2579,-72.5249]]}
+    ],
+    "fixes": {
+        "MBPV": [21.7737,-72.26832],
+        "EGUSI": [22.4772,-72.33405],
+        "EWIRI": [22.02259,-72.29157],
+        "GTK": [21.4407,-71.1344,"grand turk"],
+        "ODUBU": [21.69837,-72.01182],
+        "CUZZI": [21.13341,-72.58898],
+        "OTIDA": [21.54717,-72.38177],
+        "PAZUF": [22.15452,-72.90866],
+        "UFOVO": [21.90843,-72.49487],
+        "_RWY1004DME": [21.77784,-72.35208],
+        "_RWY2804DME": [21.76958,-72.1835]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[21.77434,-72.28043,"13ft"],[21.7731,-72.25514,"3ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "EGUSI1A": {"icao":"EGUSI1A","name":"Egusi One Alpha","rwy":{"MBPV10":["_RWY2804DME"],"MBPV28":["_RWY1004DME"]},"body":[],"exitPoints":{"EGUSI":["EGUSI"]},"draw":[["MBPV","EGUSI*"]]},
+        "GTK3D": {"icao":"GTK3D","name":"Grand Turk Three Delta","rwy":{"MBPV10":["_RWY2804DME"],"MBPV28":["_RWY1004DME"]},"body":[],"exitPoints":{"GTK":["GTK"]},"draw":[["MBPV","GTK*"]]},
+        "CUZZI1E": {"icao":"CUZZI1E","name":"Cuzzi One Echo","rwy":{"MBPV10":["_RWY2804DME"],"MBPV28":["_RWY1004DME"]},"body":[],"exitPoints":{"CUZZI":["CUZZI"]},"draw":[["MBPV","CUZZI*"]]},
+        "PAZUF1C": {"icao":"PAZUF1C","name":"Pazuf One Charlie","rwy":{"MBPV10":["_RWY2804DME"],"MBPV28":["_RWY1004DME"]},"body":[],"exitPoints":{"PAZUF":["PAZUF"]},"draw":[["MBPV","PAZUF*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"MBPV","destination":"CYYZ","category":"departure","route":"MBPV10.EGUSI1A.EGUSI","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["aca/e190",1],["wja/b738",1]]},
+        {"origin":"MBPV","destination":"KATL","category":"departure","route":"MBPV10.PAZUF1C.PAZUF","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["dal/b737",1],["dal/md88",1]]},
+        {"origin":"MBPV","destination":"KBOS","category":"departure","route":"MBPV10.EGUSI1A.EGUSI","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["dal/a320",1],["jbu/a320",1]]},
+        {"origin":"MBPV","destination":"KCLT","category":"departure","route":"MBPV10.EGUSI1A.EGUSI","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["aal/a321",2]]},
+        {"origin":"MBPV","destination":"KDFW","category":"departure","route":"MBPV10.PAZUF1C.PAZUF","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["aal/b738",2]]},
+        {"origin":"MBPV","destination":"","category":"departure","route":"MBPV10.EGUSI1A.EGUSI","altitude":"","speed":"","method":"random","rate":2,"airlines":[["aal/a319",2],["aca/a319",1],["dal/b738",1],["jbu/a320",1],["ual/b738",1],["ual/b739",1]]},
+        {"origin":"MBPV","destination":"","category":"departure","route":"MBPV10.GTK3D.GTK","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["pba/c208",1]]},
+        {"origin":"MBPV","destination":"","category":"departure","route":"MBPV10.PAZUF1C.PAZUF","altitude":"","speed":"","method":"random","rate":1.43,"airlines":[["aal/b752",2],["aca/a319",1],["baw/b763",1],["bhs/dh8d",1],["bhs/dh8b",1],["bhs/dh8c",1]]},
+        {"origin":"CYYZ","destination":"MBPV","category":"arrival","route":"EGUSI..EWIRI..MBPV","altitude":[6000,9000],"speed":250,"method":"random","rate":0.57,"airlines":[["aca/e190",1],["wja/b738",1]]},
+        {"origin":"KATL","destination":"MBPV","category":"arrival","route":"PAZUF..UFOVO..MBPV","altitude":[6000,9000],"speed":250,"method":"random","rate":0.57,"airlines":[["dal/b737",1],["dal/md88",1]]},
+        {"origin":"KBOS","destination":"MBPV","category":"arrival","route":"EGUSI..EWIRI..MBPV","altitude":[6000,9000],"speed":250,"method":"random","rate":0.57,"airlines":[["dal/a320",1],["jbu/a320",1]]},
+        {"origin":"KCLT","destination":"MBPV","category":"arrival","route":"EGUSI..EWIRI..MBPV","altitude":[6000,9000],"speed":250,"method":"random","rate":0.57,"airlines":[["aal/a321",2]]},
+        {"origin":"KDFW","destination":"MBPV","category":"arrival","route":"PAZUF..UFOVO..MBPV","altitude":[6000,9000],"speed":250,"method":"random","rate":0.57,"airlines":[["aal/b738",2]]},
+        {"origin":"","destination":"MBPV","category":"arrival","route":"EGUSI..EWIRI..MBPV","altitude":[6000,9000],"speed":250,"method":"random","rate":2,"airlines":[["aal/a319",2],["aca/a319",1],["dal/b738",1],["jbu/a320",1],["ual/b738",1],["ual/b739",1]]},
+        {"origin":"","destination":"MBPV","category":"arrival","route":"GTK..ODUBU..MBPV","altitude":[6000,9000],"speed":250,"method":"random","rate":0.29,"airlines":[["pba/c208",1]]},
+        {"origin":"","destination":"MBPV","category":"arrival","route":"PAZUF..UFOVO..MBPV","altitude":[6000,9000],"speed":250,"method":"random","rate":1.43,"airlines":[["aal/b752",2],["aca/a319",1],["baw/b763",1],["bhs/dh8d",1],["bhs/dh8b",1],["bhs/dh8c",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [22.4772,-72.334,22.0226,-72.2916],
+            [22.0226,-72.2916,21.7737,-72.2683],
+            [21.4407,-71.1344,21.6984,-72.0118],
+            [21.6984,-72.0118,21.7737,-72.2683],
+            [21.1334,-72.589,21.5472,-72.3818],
+            [21.5472,-72.3818,21.7737,-72.2683],
+            [22.1545,-72.9087,21.9084,-72.4949],
+            [21.9084,-72.4949,21.7737,-72.2683]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [21.7743,-72.2804,21.783,-72.4595],
+            [21.7687,-72.3706,21.7887,-72.3694],
+            [21.773,-72.4601,21.793,-72.459],
+            [21.7731,-72.2551,21.7642,-72.0761],
+            [21.7787,-72.165,21.7587,-72.1662],
+            [21.7742,-72.0755,21.7543,-72.0766]
+        ]}
+    ]
+}

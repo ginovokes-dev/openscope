@@ -1,0 +1,101 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KPIE/",
+    "info": {"country":"US","city":"Pinellas Park","type":"large_airport","longestRunwayM":2966,"frequencies":{"atis":"134.500","twr":"118.300","gnd":"121.900"},"approximateRunways":true},
+    "radio": {"twr":"St Petersburg Tower","app":"St Petersburg Approach","dep":"St Petersburg Departure"},
+    "icao": "KPIE",
+    "iata": "PIE",
+    "magnetic_north": -6.1,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [27.9102,-82.687401,"11ft"],
+    "rangeRings": {"enabled":true,"center":[27.9102,-82.687401],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":190,"speed":7},
+    "arrivalRunway": "18",
+    "departureRunway": "18",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[28.4467,-82.7523],[28.4433,-82.5929],[28.4035,-82.44],[28.3301,-82.304],[28.2281,-82.194],[28.1045,-82.1177],[27.9675,-82.0802],[27.8267,-82.0841],[27.6916,-82.1291],[27.5714,-82.2122],[27.4742,-82.3276],[27.4068,-82.4676],[27.3737,-82.6225],[27.3771,-82.7819],[27.4169,-82.9348],[27.4903,-83.0708],[27.5923,-83.1808],[27.7159,-83.2571],[27.8529,-83.2946],[27.9937,-83.2907],[28.1288,-83.2457],[28.249,-83.1626],[28.3462,-83.0472],[28.4136,-82.9072]]}
+    ],
+    "fixes": {
+        "KPIE": [27.9102,-82.6874],
+        "ZAMEK": [28.61428,-82.62629],
+        "NIDAJ": [28.1593,-82.66578],
+        "ISM": [28.2894,-81.4342,"kissimmee"],
+        "HUSUN": [27.99113,-82.41993],
+        "VNC": [27.0614,-82.4306,"venice"],
+        "FALED": [27.66885,-82.61438],
+        "UCAVE": [27.61338,-83.41248],
+        "IPOMU": [27.80519,-82.94393],
+        "JAJRI": [28.49143,-83.1412],
+        "NIPIL": [28.11584,-82.84795],
+        "_RWY1804DME": [27.98917,-82.70156],
+        "_RWY3604DME": [27.83123,-82.67326],
+        "_RWY0404DME": [27.84917,-82.73594],
+        "_RWY2204DME": [27.96411,-82.62981]
+    },
+    "runways": [
+        {"name":["18","36"],"end":[[27.92337,-82.68976,"7ft"],[27.89703,-82.68504,"10ft"]],"ils":[true,true]},
+        {"name":["04","22"],"end":[[27.9008,-82.6883,"10ft"],[27.9125,-82.6775,"5ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ZAMEK2B": {"icao":"ZAMEK2B","name":"Zamek Two Bravo","rwy":{"KPIE18":["_RWY3604DME"],"KPIE36":["_RWY1804DME"],"KPIE04":["_RWY2204DME"],"KPIE22":["_RWY0404DME"]},"body":[],"exitPoints":{"ZAMEK":["ZAMEK"]},"draw":[["KPIE","ZAMEK*"]]},
+        "ISM3E": {"icao":"ISM3E","name":"Kissimmee Three Echo","rwy":{"KPIE18":["_RWY3604DME"],"KPIE36":["_RWY1804DME"],"KPIE04":["_RWY2204DME"],"KPIE22":["_RWY0404DME"]},"body":[],"exitPoints":{"ISM":["ISM"]},"draw":[["KPIE","ISM*"]]},
+        "VNC3D": {"icao":"VNC3D","name":"Venice Three Delta","rwy":{"KPIE18":["_RWY3604DME"],"KPIE36":["_RWY1804DME"],"KPIE04":["_RWY2204DME"],"KPIE22":["_RWY0404DME"]},"body":[],"exitPoints":{"VNC":["VNC"]},"draw":[["KPIE","VNC*"]]},
+        "UCAVE2A": {"icao":"UCAVE2A","name":"Ucave Two Alpha","rwy":{"KPIE18":["_RWY3604DME"],"KPIE36":["_RWY1804DME"],"KPIE04":["_RWY2204DME"],"KPIE22":["_RWY0404DME"]},"body":[],"exitPoints":{"UCAVE":["UCAVE"]},"draw":[["KPIE","UCAVE*"]]},
+        "JAJRI3C": {"icao":"JAJRI3C","name":"Jajri Three Charlie","rwy":{"KPIE18":["_RWY3604DME"],"KPIE36":["_RWY1804DME"],"KPIE04":["_RWY2204DME"],"KPIE22":["_RWY0404DME"]},"body":[],"exitPoints":{"JAJRI":["JAJRI"]},"draw":[["KPIE","JAJRI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KPIE","destination":"KABE","category":"departure","route":"KPIE18.ZAMEK2B.ZAMEK","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["aay/a320",1],["aay/md82",1]]},
+        {"origin":"KPIE","destination":"KFWA","category":"departure","route":"KPIE18.ZAMEK2B.ZAMEK","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["aay/a320",1],["aay/md82",1]]},
+        {"origin":"KPIE","destination":"KGSP","category":"departure","route":"KPIE18.ZAMEK2B.ZAMEK","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["aay/a320",1],["aay/md82",1]]},
+        {"origin":"KPIE","destination":"KPIA","category":"departure","route":"KPIE18.JAJRI3C.JAJRI","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["aay/a320",1],["aay/md82",1]]},
+        {"origin":"KPIE","destination":"KTYS","category":"departure","route":"KPIE18.ZAMEK2B.ZAMEK","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["aay/a320",1],["aay/md82",1]]},
+        {"origin":"KPIE","destination":"KAVL","category":"departure","route":"KPIE18.ZAMEK2B.ZAMEK","altitude":"","speed":"","method":"random","rate":0.22,"airlines":[["aay/a320",1]]},
+        {"origin":"KPIE","destination":"","category":"departure","route":"KPIE18.ZAMEK2B.ZAMEK","altitude":"","speed":"","method":"random","rate":3.66,"airlines":[["aay/a320",9],["aay/md82",8]]},
+        {"origin":"KPIE","destination":"","category":"departure","route":"KPIE18.JAJRI3C.JAJRI","altitude":"","speed":"","method":"random","rate":1.72,"airlines":[["aay/a320",5],["aay/md82",3]]},
+        {"origin":"KPIE","destination":"","category":"departure","route":"KPIE18.UCAVE2A.UCAVE","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KPIE","destination":"","category":"departure","route":"KPIE18.VNC3D.VNC","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KABE","destination":"KPIE","category":"arrival","route":"ZAMEK..NIDAJ..KPIE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["aay/a320",1],["aay/md82",1]]},
+        {"origin":"KFWA","destination":"KPIE","category":"arrival","route":"ZAMEK..NIDAJ..KPIE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["aay/a320",1],["aay/md82",1]]},
+        {"origin":"KGSP","destination":"KPIE","category":"arrival","route":"ZAMEK..NIDAJ..KPIE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["aay/a320",1],["aay/md82",1]]},
+        {"origin":"KPIA","destination":"KPIE","category":"arrival","route":"JAJRI..NIPIL..KPIE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["aay/a320",1],["aay/md82",1]]},
+        {"origin":"KTYS","destination":"KPIE","category":"arrival","route":"ZAMEK..NIDAJ..KPIE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["aay/a320",1],["aay/md82",1]]},
+        {"origin":"KAVL","destination":"KPIE","category":"arrival","route":"ZAMEK..NIDAJ..KPIE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.22,"airlines":[["aay/a320",1]]},
+        {"origin":"","destination":"KPIE","category":"arrival","route":"ZAMEK..NIDAJ..KPIE","altitude":[6000,9000],"speed":250,"method":"random","rate":3.66,"airlines":[["aay/a320",9],["aay/md82",8]]},
+        {"origin":"","destination":"KPIE","category":"arrival","route":"JAJRI..NIPIL..KPIE","altitude":[6000,9000],"speed":250,"method":"random","rate":1.72,"airlines":[["aay/a320",5],["aay/md82",3]]},
+        {"origin":"","destination":"KPIE","category":"arrival","route":"UCAVE..IPOMU..KPIE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.53,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"","destination":"KPIE","category":"arrival","route":"VNC..FALED..KPIE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.53,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [28.6143,-82.6263,28.1593,-82.6658],
+            [28.1593,-82.6658,27.9102,-82.6874],
+            [28.2894,-81.4342,27.9911,-82.4199],
+            [27.9911,-82.4199,27.9102,-82.6874],
+            [27.0614,-82.4306,27.6688,-82.6144],
+            [27.6688,-82.6144,27.9102,-82.6874],
+            [27.6134,-83.4125,27.8052,-82.9439],
+            [27.8052,-82.9439,27.9102,-82.6874],
+            [28.4914,-83.1412,28.1158,-82.848],
+            [28.1158,-82.848,27.9102,-82.6874]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [27.9234,-82.6898,28.0879,-82.7193],
+            [28.0041,-82.7157,28.0072,-82.6933],
+            [28.0863,-82.7305,28.0894,-82.7081],
+            [27.897,-82.685,27.7325,-82.6556],
+            [27.8163,-82.6592,27.8132,-82.6815],
+            [27.7341,-82.6445,27.731,-82.6668],
+            [27.9008,-82.6883,27.7717,-82.8073],
+            [27.8299,-82.7391,27.8426,-82.7566],
+            [27.7654,-82.7986,27.778,-82.8161],
+            [27.9125,-82.6775,28.0415,-82.5582],
+            [27.9833,-82.6267,27.9707,-82.6091],
+            [28.0478,-82.567,28.0352,-82.5494]
+        ]}
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/YBCG/",
+    "info": {"country":"AU","city":"Gold Coast","type":"large_airport","longestRunwayM":2492,"frequencies":{"atis":"112.300","twr":"118.700"}},
+    "radio": {"twr":"Gold Coast Tower","app":"Gold Coast Approach","dep":"Gold Coast Departure"},
+    "icao": "YBCG",
+    "iata": "OOL",
+    "magnetic_north": 11.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-28.165962,153.506641,"21ft"],
+    "rangeRings": {"enabled":true,"center":[-28.165962,153.506641],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":130,"speed":6},
+    "arrivalRunway": "14",
+    "departureRunway": "14",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-27.7694,153.5982],[-27.8038,153.7115],[-27.8629,153.8108],[-27.9426,153.8894],[-28.0376,153.942],[-28.1413,153.9648],[-28.2466,153.9565],[-28.3465,153.9175],[-28.4341,153.8505],[-28.5034,153.76],[-28.5497,153.6523],[-28.5699,153.5347],[-28.5625,153.4151],[-28.5281,153.3018],[-28.4691,153.2025],[-28.3893,153.1238],[-28.2944,153.0713],[-28.1907,153.0484],[-28.0853,153.0568],[-27.9854,153.0958],[-27.8978,153.1628],[-27.8285,153.2533],[-27.7822,153.361],[-27.762,153.4786]]}
+    ],
+    "fixes": {
+        "YBCG": [-28.16596,153.50664],
+        "PIMWE": [-27.86182,154.00995],
+        "IKELE": [-28.05296,153.69364],
+        "COTEH": [-28.52504,153.96099],
+        "DIKPA": [-28.29937,153.67545],
+        "LIS": [-28.8231,153.258,"lismore"],
+        "IMALO": [-28.35556,153.4349],
+        "BML": [-27.9661,152.901,"bromelton"],
+        "FETJU": [-28.0959,153.29432],
+        "BN": [-27.3658,153.13901,"brisbane"],
+        "LIWDA": [-27.98072,153.42153],
+        "_RWY1404DME": [-28.09807,153.46471],
+        "_RWY3204DME": [-28.23095,153.54731]
+    },
+    "runways": [
+        {"name":["14","32"],"end":[[-28.1565,153.50101,"21ft"],[-28.17253,153.51097,"13ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "PIMWE2C": {"icao":"PIMWE2C","name":"Pimwe Two Charlie","rwy":{"YBCG14":["_RWY3204DME"],"YBCG32":["_RWY1404DME"]},"body":[],"exitPoints":{"PIMWE":["PIMWE"]},"draw":[["YBCG","PIMWE*"]]},
+        "COTEH3A": {"icao":"COTEH3A","name":"Coteh Three Alpha","rwy":{"YBCG14":["_RWY3204DME"],"YBCG32":["_RWY1404DME"]},"body":[],"exitPoints":{"COTEH":["COTEH"]},"draw":[["YBCG","COTEH*"]]},
+        "LIS1F": {"icao":"LIS1F","name":"Lismore One Foxtrot","rwy":{"YBCG14":["_RWY3204DME"],"YBCG32":["_RWY1404DME"]},"body":[],"exitPoints":{"LIS":["LIS"]},"draw":[["YBCG","LIS*"]]},
+        "BML2D": {"icao":"BML2D","name":"Bromelton Two Delta","rwy":{"YBCG14":["_RWY3204DME"],"YBCG32":["_RWY1404DME"]},"body":[],"exitPoints":{"BML":["BML"]},"draw":[["YBCG","BML*"]]},
+        "BN2E": {"icao":"BN2E","name":"Brisbane Two Echo","rwy":{"YBCG14":["_RWY3204DME"],"YBCG32":["_RWY1404DME"]},"body":[],"exitPoints":{"BN":["BN"]},"draw":[["YBCG","BN*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"YBCG","destination":"YSSY","category":"departure","route":"YBCG14.LIS1F.LIS","altitude":"","speed":"","method":"random","rate":1.2,"airlines":[["jst/a320",1],["jst/a321",1],["jst/a332",1],["qfa/b738",1],["tgw/a320",1]]},
+        {"origin":"YBCG","destination":"NZCH","category":"departure","route":"YBCG14.COTEH3A.COTEH","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["anz/a320",1],["jst/a320",1],["voz/a320",1]]},
+        {"origin":"YBCG","destination":"YMML","category":"departure","route":"YBCG14.LIS1F.LIS","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["jst/a320",1],["jst/a321",1],["tgw/a320",1]]},
+        {"origin":"YBCG","destination":"NZAA","category":"departure","route":"YBCG14.COTEH3A.COTEH","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["anz/a320",1],["jst/a320",1]]},
+        {"origin":"YBCG","destination":"RJAA","category":"departure","route":"YBCG14.BN2E.BN","altitude":"","speed":"","method":"random","rate":0.24,"airlines":[["jst/a332",1]]},
+        {"origin":"YBCG","destination":"","category":"departure","route":"YBCG14.LIS1F.LIS","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["jst/a320",2]]},
+        {"origin":"YBCG","destination":"","category":"departure","route":"YBCG14.BML2D.BML","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["ano/e170",1],["xax/a332",1]]},
+        {"origin":"YBCG","destination":"","category":"departure","route":"YBCG14.BN2E.BN","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["jst/a320",1],["jst/a332",1]]},
+        {"origin":"YBCG","destination":"","category":"departure","route":"YBCG14.COTEH3A.COTEH","altitude":"","speed":"","method":"random","rate":1.55,"airlines":[["vh/c172",6],["vh/p28a",5],["vh/c182",3],["vh/be36",2],["vh/da42",1],["vh/tb20",1],["vh/c208",2],["vh/pc12",2],["vh/be20",1],["vh/b350",1],["vh/p180",1],["vh/c510",1],["vh/e50p",1],["vh/c550",1],["vh/e55p",1],["vh/cl30",1],["vh/c680",1],["vh/h25b",1],["vh/lj45",1],["vh/f2th",1],["vh/glf4",1],["vh/glex",1],["vh/glf5",1]]},
+        {"origin":"YSSY","destination":"YBCG","category":"arrival","route":"LIS..IMALO..YBCG","altitude":[4000,7000],"speed":250,"method":"random","rate":1.2,"airlines":[["jst/a320",1],["jst/a321",1],["jst/a332",1],["qfa/b738",1],["tgw/a320",1]]},
+        {"origin":"NZCH","destination":"YBCG","category":"arrival","route":"COTEH..DIKPA..YBCG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["anz/a320",1],["jst/a320",1],["voz/a320",1]]},
+        {"origin":"YMML","destination":"YBCG","category":"arrival","route":"LIS..IMALO..YBCG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["jst/a320",1],["jst/a321",1],["tgw/a320",1]]},
+        {"origin":"NZAA","destination":"YBCG","category":"arrival","route":"COTEH..DIKPA..YBCG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["anz/a320",1],["jst/a320",1]]},
+        {"origin":"RJAA","destination":"YBCG","category":"arrival","route":"BN..LIWDA..YBCG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.24,"airlines":[["jst/a332",1]]},
+        {"origin":"","destination":"YBCG","category":"arrival","route":"LIS..IMALO..YBCG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["jst/a320",2]]},
+        {"origin":"","destination":"YBCG","category":"arrival","route":"BML..FETJU..YBCG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.34,"airlines":[["ano/e170",1],["xax/a332",1]]},
+        {"origin":"","destination":"YBCG","category":"arrival","route":"BN..LIWDA..YBCG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["jst/a320",1],["jst/a332",1]]},
+        {"origin":"","destination":"YBCG","category":"arrival","route":"COTEH..DIKPA..YBCG","altitude":[4000,7000],"speed":250,"method":"random","rate":1.55,"airlines":[["vh/c172",6],["vh/p28a",5],["vh/c182",3],["vh/be36",2],["vh/da42",1],["vh/tb20",1],["vh/c208",2],["vh/pc12",2],["vh/be20",1],["vh/b350",1],["vh/p180",1],["vh/c510",1],["vh/e50p",1],["vh/c550",1],["vh/e55p",1],["vh/cl30",1],["vh/c680",1],["vh/h25b",1],["vh/lj45",1],["vh/f2th",1],["vh/glf4",1],["vh/glex",1],["vh/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-27.8618,154.0099,-28.053,153.6936],
+            [-28.053,153.6936,-28.166,153.5066],
+            [-28.525,153.961,-28.2994,153.6755],
+            [-28.2994,153.6755,-28.166,153.5066],
+            [-28.8231,153.258,-28.3556,153.4349],
+            [-28.3556,153.4349,-28.166,153.5066],
+            [-27.9661,152.901,-28.0959,153.2943],
+            [-28.0959,153.2943,-28.166,153.5066],
+            [-27.3658,153.139,-27.9807,153.4215],
+            [-27.9807,153.4215,-28.166,153.5066]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-28.1565,153.501,-28.0104,153.4103],
+            [-28.0883,153.4457,-28.0787,153.4656],
+            [-28.0152,153.4004,-28.0056,153.4203],
+            [-28.1725,153.511,-28.3186,153.6019],
+            [-28.2408,153.5663,-28.2504,153.5465],
+            [-28.3138,153.6118,-28.3234,153.5919]
+        ]}
+    ]
+}

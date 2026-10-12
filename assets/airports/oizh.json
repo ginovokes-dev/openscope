@@ -1,0 +1,97 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/OIZH/",
+    "info": {"country":"IR","city":"Zahedan","type":"large_airport","longestRunwayM":4280,"frequencies":{"atis":"128.450","twr":"118.100"}},
+    "radio": {"twr":"Zahedan Tower","app":"Zahedan Approach","dep":"Zahedan Departure"},
+    "icao": "OIZH",
+    "iata": "ZAH",
+    "magnetic_north": 2.7,
+    "ctr_radius": 45,
+    "ctr_ceiling": 12000,
+    "initial_alt": 8000,
+    "position": [29.4757,60.9062,"4564ft"],
+    "rangeRings": {"enabled":true,"center":[29.4757,60.9062],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":340,"speed":5},
+    "arrivalRunway": "35R",
+    "departureRunway": "35R",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":120,"airspace_class":"D","poly":[[29.8799,60.9281],[29.8612,61.0475],[29.8163,61.1573],[29.7481,61.25],[29.6613,61.3193],[29.5619,61.3604],[29.4566,61.3705],[29.3527,61.3491],[29.2571,61.2974],[29.1764,61.2191],[29.1161,61.1194],[29.0803,61.0052],[29.0715,60.8843],[29.0902,60.7649],[29.1351,60.6551],[29.2033,60.5624],[29.2901,60.4931],[29.3895,60.452],[29.4948,60.4419],[29.5987,60.4633],[29.6943,60.515],[29.775,60.5933],[29.8353,60.693],[29.8711,60.8072]]}
+    ],
+    "fixes": {
+        "OIZH": [29.4757,60.9062],
+        "MEHNO": [29.64568,61.49246],
+        "ODIKO": [29.53885,61.12402],
+        "JABAP": [28.94144,60.83411],
+        "RIRUV": [29.2772,60.87941],
+        "TOTNA": [29.13439,60.42859],
+        "IFAMO": [29.34889,60.72875],
+        "MUSER": [29.49966,60.28889],
+        "ZAGJI": [29.4846,60.67685],
+        "ROBIS": [29.86565,60.48054],
+        "EMIRO": [29.62058,60.74805],
+        "_RWY17L04DME": [29.56101,60.89522],
+        "_RWY35R04DME": [29.39485,60.91902],
+        "_RWY17R04DME": [29.56075,60.89276],
+        "_RWY35L04DME": [29.39526,60.91648]
+    },
+    "runways": [
+        {"name":["17L","35R"],"end":[[29.4949,60.9047,"4475ft"],[29.46096,60.90956,"4517ft"]],"ils":[true,true]},
+        {"name":["17R","35L"],"end":[[29.49464,60.90224,"4536ft"],[29.46137,60.90701,"4564ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "MEHNO1F": {"icao":"MEHNO1F","name":"Mehno One Foxtrot","rwy":{"OIZH17L":["_RWY35R04DME"],"OIZH35R":["_RWY17L04DME"],"OIZH17R":["_RWY35L04DME"],"OIZH35L":["_RWY17R04DME"]},"body":[],"exitPoints":{"MEHNO":["MEHNO"]},"draw":[["OIZH","MEHNO*"]]},
+        "JABAP2A": {"icao":"JABAP2A","name":"Jabap Two Alpha","rwy":{"OIZH17L":["_RWY35R04DME"],"OIZH35R":["_RWY17L04DME"],"OIZH17R":["_RWY35L04DME"],"OIZH35L":["_RWY17R04DME"]},"body":[],"exitPoints":{"JABAP":["JABAP"]},"draw":[["OIZH","JABAP*"]]},
+        "TOTNA2B": {"icao":"TOTNA2B","name":"Totna Two Bravo","rwy":{"OIZH17L":["_RWY35R04DME"],"OIZH35R":["_RWY17L04DME"],"OIZH17R":["_RWY35L04DME"],"OIZH35L":["_RWY17R04DME"]},"body":[],"exitPoints":{"TOTNA":["TOTNA"]},"draw":[["OIZH","TOTNA*"]]},
+        "MUSER3B": {"icao":"MUSER3B","name":"Muser Three Bravo","rwy":{"OIZH17L":["_RWY35R04DME"],"OIZH35R":["_RWY17L04DME"],"OIZH17R":["_RWY35L04DME"],"OIZH35L":["_RWY17R04DME"]},"body":[],"exitPoints":{"MUSER":["MUSER"]},"draw":[["OIZH","MUSER*"]]},
+        "ROBIS2F": {"icao":"ROBIS2F","name":"Robis Two Foxtrot","rwy":{"OIZH17L":["_RWY35R04DME"],"OIZH35R":["_RWY17L04DME"],"OIZH17R":["_RWY35L04DME"],"OIZH35L":["_RWY17R04DME"]},"body":[],"exitPoints":{"ROBIS":["ROBIS"]},"draw":[["OIZH","ROBIS*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"OIZH","destination":"OIII","category":"departure","route":"OIZH35R.ROBIS2F.ROBIS","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["ira/a320",1],["ira/f100",1],["ira/md82",1],["irc/f100",1]]},
+        {"origin":"OIZH","destination":"OIZC","category":"departure","route":"OIZH35R.JABAP2A.JABAP","altitude":"","speed":"","method":"random","rate":0.85,"airlines":[["ira/a320",1],["ira/f100",1],["ira/md82",1]]},
+        {"origin":"OIZH","destination":"OIMM","category":"departure","route":"OIZH35R.ROBIS2F.ROBIS","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["ira/md82",1],["irc/f100",1]]},
+        {"origin":"OIZH","destination":"OING","category":"departure","route":"OIZH35R.ROBIS2F.ROBIS","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["ira/f100",1],["irc/f100",1]]},
+        {"origin":"OIZH","destination":"OIKK","category":"departure","route":"OIZH35R.MUSER3B.MUSER","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["ira/f100",1]]},
+        {"origin":"OIZH","destination":"","category":"departure","route":"OIZH35R.TOTNA2B.TOTNA","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["irc/f100",1]]},
+        {"origin":"OIZH","destination":"","category":"departure","route":"OIZH35R.MUSER3B.MUSER","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["irc/f100",1]]},
+        {"origin":"OIZH","destination":"","category":"departure","route":"OIZH35R.MEHNO1F.MEHNO","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["ep/c172",6],["ep/p28a",5],["ep/c182",3],["ep/be36",2],["ep/da42",1],["ep/tb20",1],["ep/c208",2],["ep/pc12",2],["ep/be20",1],["ep/b350",1],["ep/p180",1],["ep/c510",1],["ep/e50p",1],["ep/c550",1],["ep/e55p",1],["ep/cl30",1],["ep/c680",1],["ep/h25b",1],["ep/lj45",1],["ep/f2th",1],["ep/glf4",1],["ep/glex",1],["ep/glf5",1]]},
+        {"origin":"OIII","destination":"OIZH","category":"arrival","route":"ROBIS..EMIRO..OIZH","altitude":[8000,11000],"speed":250,"method":"random","rate":1.13,"airlines":[["ira/a320",1],["ira/f100",1],["ira/md82",1],["irc/f100",1]]},
+        {"origin":"OIZC","destination":"OIZH","category":"arrival","route":"JABAP..RIRUV..OIZH","altitude":[8000,11000],"speed":250,"method":"random","rate":0.85,"airlines":[["ira/a320",1],["ira/f100",1],["ira/md82",1]]},
+        {"origin":"OIMM","destination":"OIZH","category":"arrival","route":"ROBIS..EMIRO..OIZH","altitude":[8000,11000],"speed":250,"method":"random","rate":0.57,"airlines":[["ira/md82",1],["irc/f100",1]]},
+        {"origin":"OING","destination":"OIZH","category":"arrival","route":"ROBIS..EMIRO..OIZH","altitude":[8000,11000],"speed":250,"method":"random","rate":0.57,"airlines":[["ira/f100",1],["irc/f100",1]]},
+        {"origin":"OIKK","destination":"OIZH","category":"arrival","route":"MUSER..ZAGJI..OIZH","altitude":[8000,11000],"speed":250,"method":"random","rate":0.28,"airlines":[["ira/f100",1]]},
+        {"origin":"","destination":"OIZH","category":"arrival","route":"TOTNA..IFAMO..OIZH","altitude":[8000,11000],"speed":250,"method":"random","rate":0.28,"airlines":[["irc/f100",1]]},
+        {"origin":"","destination":"OIZH","category":"arrival","route":"MUSER..ZAGJI..OIZH","altitude":[8000,11000],"speed":250,"method":"random","rate":0.28,"airlines":[["irc/f100",1]]},
+        {"origin":"","destination":"OIZH","category":"arrival","route":"MEHNO..ODIKO..OIZH","altitude":[8000,11000],"speed":250,"method":"random","rate":1.32,"airlines":[["ep/c172",6],["ep/p28a",5],["ep/c182",3],["ep/be36",2],["ep/da42",1],["ep/tb20",1],["ep/c208",2],["ep/pc12",2],["ep/be20",1],["ep/b350",1],["ep/p180",1],["ep/c510",1],["ep/e50p",1],["ep/c550",1],["ep/e55p",1],["ep/cl30",1],["ep/c680",1],["ep/h25b",1],["ep/lj45",1],["ep/f2th",1],["ep/glf4",1],["ep/glex",1],["ep/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [29.6457,61.4925,29.5389,61.124],
+            [29.5389,61.124,29.4757,60.9062],
+            [28.9414,60.8341,29.2772,60.8794],
+            [29.2772,60.8794,29.4757,60.9062],
+            [29.1344,60.4286,29.3489,60.7287],
+            [29.3489,60.7287,29.4757,60.9062],
+            [29.4997,60.2889,29.4846,60.6768],
+            [29.4846,60.6768,29.4757,60.9062],
+            [29.8656,60.4805,29.6206,60.7481],
+            [29.6206,60.7481,29.4757,60.9062]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [29.4949,60.9047,29.6602,60.881],
+            [29.5763,60.8814,29.5788,60.9043],
+            [29.6589,60.8696,29.6614,60.8924],
+            [29.461,60.9096,29.2957,60.9332],
+            [29.3796,60.9328,29.3771,60.91],
+            [29.2969,60.9446,29.2944,60.9218],
+            [29.4946,60.9022,29.6599,60.8785],
+            [29.576,60.879,29.5785,60.9018],
+            [29.6587,60.8671,29.6611,60.8899],
+            [29.4614,60.907,29.2961,60.9307],
+            [29.38,60.9302,29.3775,60.9075],
+            [29.2973,60.942,29.2949,60.9193]
+        ]}
+    ]
+}

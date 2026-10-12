@@ -1,0 +1,75 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/FMCZ/",
+    "info": {"country":"YT","city":"Dzaoudzi","type":"large_airport","longestRunwayM":1929},
+    "radio": {"twr":"Dzaoudzi Tower","app":"Dzaoudzi Approach","dep":"Dzaoudzi Departure"},
+    "icao": "FMCZ",
+    "iata": "DZA",
+    "magnetic_north": -8.9,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-12.809319,45.281815,"23ft"],
+    "rangeRings": {"enabled":true,"center":[-12.809319,45.281815],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":0,"speed":7},
+    "arrivalRunway": "34",
+    "departureRunway": "34",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-12.4095,45.2176],[-12.4069,45.3259],[-12.4318,45.4312],[-12.4823,45.5263],[-12.5552,45.6048],[-12.6454,45.6613],[-12.7467,45.6918],[-12.8523,45.6945],[-12.955,45.669],[-13.0478,45.6171],[-13.1243,45.5424],[-13.1793,45.45],[-13.2091,45.346],[-13.2117,45.2377],[-13.1869,45.1324],[-13.1363,45.0373],[-13.0635,44.9588],[-12.9733,44.9024],[-12.8719,44.8718],[-12.7663,44.8691],[-12.6636,44.8946],[-12.5709,44.9465],[-12.4944,45.0212],[-12.4393,45.1137]]}
+    ],
+    "fixes": {
+        "FMCZ": [-12.80932,45.28182],
+        "OZIVI": [-12.52227,45.74837],
+        "VEFRO": [-12.70267,45.45516],
+        "DOMEN": [-13.31646,45.46581],
+        "VEMEL": [-12.99774,45.35018],
+        "ALOPA": [-13.09637,44.81526],
+        "WERRA": [-12.91597,45.10847],
+        "HIPCO": [-12.42905,44.89161],
+        "JOZBO": [-12.66804,45.13684],
+        "_RWY1604DME": [-12.74512,45.24406],
+        "_RWY3404DME": [-12.87437,45.32071]
+    },
+    "runways": [
+        {"name":["16","34"],"end":[[-12.80279,45.27825,"10ft"],[-12.8167,45.2865,"23ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "OZIVI3C": {"icao":"OZIVI3C","name":"Ozivi Three Charlie","rwy":{"FMCZ16":["_RWY3404DME"],"FMCZ34":["_RWY1604DME"]},"body":[],"exitPoints":{"OZIVI":["OZIVI"]},"draw":[["FMCZ","OZIVI*"]]},
+        "DOMEN1A": {"icao":"DOMEN1A","name":"Domen One Alpha","rwy":{"FMCZ16":["_RWY3404DME"],"FMCZ34":["_RWY1604DME"]},"body":[],"exitPoints":{"DOMEN":["DOMEN"]},"draw":[["FMCZ","DOMEN*"]]},
+        "ALOPA3D": {"icao":"ALOPA3D","name":"Alopa Three Delta","rwy":{"FMCZ16":["_RWY3404DME"],"FMCZ34":["_RWY1604DME"]},"body":[],"exitPoints":{"ALOPA":["ALOPA"]},"draw":[["FMCZ","ALOPA*"]]},
+        "HIPCO3C": {"icao":"HIPCO3C","name":"Hipco Three Charlie","rwy":{"FMCZ16":["_RWY3404DME"],"FMCZ34":["_RWY1604DME"]},"body":[],"exitPoints":{"HIPCO":["HIPCO"]},"draw":[["FMCZ","HIPCO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"FMCZ","destination":"HKJK","category":"departure","route":"FMCZ34.HIPCO3C.HIPCO","altitude":"","speed":"","method":"random","rate":1.74,"airlines":[["kqa/b737",1],["kqa/e190",1]]},
+        {"origin":"FMCZ","destination":"FMCH","category":"departure","route":"FMCZ34.HIPCO3C.HIPCO","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["kqa/b737",1]]},
+        {"origin":"FMCZ","destination":"FMMI","category":"departure","route":"FMCZ34.DOMEN1A.DOMEN","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["mdg/at72",1]]},
+        {"origin":"FMCZ","destination":"FMNM","category":"departure","route":"FMCZ34.DOMEN1A.DOMEN","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["mdg/at72",1]]},
+        {"origin":"HKJK","destination":"FMCZ","category":"arrival","route":"HIPCO..JOZBO..FMCZ","altitude":[4000,7000],"speed":250,"method":"random","rate":1.74,"airlines":[["kqa/b737",1],["kqa/e190",1]]},
+        {"origin":"FMCH","destination":"FMCZ","category":"arrival","route":"HIPCO..JOZBO..FMCZ","altitude":[4000,7000],"speed":250,"method":"random","rate":0.87,"airlines":[["kqa/b737",1]]},
+        {"origin":"FMMI","destination":"FMCZ","category":"arrival","route":"DOMEN..VEMEL..FMCZ","altitude":[4000,7000],"speed":250,"method":"random","rate":0.87,"airlines":[["mdg/at72",1]]},
+        {"origin":"FMNM","destination":"FMCZ","category":"arrival","route":"DOMEN..VEMEL..FMCZ","altitude":[4000,7000],"speed":250,"method":"random","rate":0.87,"airlines":[["mdg/at72",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-12.5223,45.7484,-12.7027,45.4552],
+            [-12.7027,45.4552,-12.8093,45.2818],
+            [-13.3165,45.4658,-12.9977,45.3502],
+            [-12.9977,45.3502,-12.8093,45.2818],
+            [-13.0964,44.8153,-12.916,45.1085],
+            [-12.916,45.1085,-12.8093,45.2818],
+            [-12.4291,44.8916,-12.668,45.1368],
+            [-12.668,45.1368,-12.8093,45.2818]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-12.8028,45.2783,-12.6586,45.1928],
+            [-12.7357,45.2266,-12.7257,45.2444],
+            [-12.6636,45.1839,-12.6536,45.2017],
+            [-12.8167,45.2865,-12.9609,45.3721],
+            [-12.8838,45.3381,-12.8938,45.3204],
+            [-12.9559,45.3809,-12.9659,45.3632]
+        ]}
+    ]
+}

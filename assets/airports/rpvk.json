@@ -1,0 +1,85 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/RPVK/",
+    "info": {"country":"PH","city":"Kalibo","type":"large_airport","longestRunwayM":2188,"frequencies":{"twr":"124.200"}},
+    "radio": {"twr":"Kalibo Tower","app":"Kalibo Approach","dep":"Kalibo Departure"},
+    "icao": "RPVK",
+    "iata": "KLO",
+    "magnetic_north": -2.2,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [11.6794,122.375999,"14ft"],
+    "rangeRings": {"enabled":true,"center":[11.6794,122.375999],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":60,"speed":6},
+    "arrivalRunway": "05",
+    "departureRunway": "05",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[12.0838,122.3601],[12.074,122.4676],[12.0374,122.5687],[11.9763,122.6568],[11.8951,122.7257],[11.7991,122.7708],[11.6949,122.7889],[11.5897,122.779],[11.4907,122.7416],[11.4044,122.6792],[11.337,122.5962],[11.2928,122.4982],[11.275,122.3919],[11.2848,122.2844],[11.3214,122.1833],[11.3825,122.0952],[11.4637,122.0263],[11.5597,121.9812],[11.6639,121.9631],[11.7691,121.973],[11.8681,122.0104],[11.9544,122.0728],[12.0218,122.1558],[12.066,122.2538]]}
+    ],
+    "fixes": {
+        "RPVK": [11.6794,122.376],
+        "TEKUM": [11.98727,122.82645],
+        "GUVMI": [11.79379,122.54336],
+        "LELOB": [11.32735,122.79134],
+        "IKUFU": [11.5486,122.53031],
+        "KAFSO": [11.44681,121.88069],
+        "NISOD": [11.59298,122.19197],
+        "COLAZ": [12.1826,122.18181],
+        "JOCKE": [11.86636,122.30385],
+        "_RWY0504DME": [11.62855,122.31824],
+        "_RWY2304DME": [11.73034,122.43478]
+    },
+    "runways": [
+        {"name":["05","23"],"end":[[11.6729,122.369,"14ft"],[11.686,122.384,"14ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "TEKUM3E": {"icao":"TEKUM3E","name":"Tekum Three Echo","rwy":{"RPVK05":["_RWY2304DME"],"RPVK23":["_RWY0504DME"]},"body":[],"exitPoints":{"TEKUM":["TEKUM"]},"draw":[["RPVK","TEKUM*"]]},
+        "LELOB2D": {"icao":"LELOB2D","name":"Lelob Two Delta","rwy":{"RPVK05":["_RWY2304DME"],"RPVK23":["_RWY0504DME"]},"body":[],"exitPoints":{"LELOB":["LELOB"]},"draw":[["RPVK","LELOB*"]]},
+        "KAFSO2C": {"icao":"KAFSO2C","name":"Kafso Two Charlie","rwy":{"RPVK05":["_RWY2304DME"],"RPVK23":["_RWY0504DME"]},"body":[],"exitPoints":{"KAFSO":["KAFSO"]},"draw":[["RPVK","KAFSO*"]]},
+        "COLAZ3B": {"icao":"COLAZ3B","name":"Colaz Three Bravo","rwy":{"RPVK05":["_RWY2304DME"],"RPVK23":["_RWY0504DME"]},"body":[],"exitPoints":{"COLAZ":["COLAZ"]},"draw":[["RPVK","COLAZ*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"RPVK","destination":"RPLL","category":"departure","route":"RPVK05.COLAZ3B.COLAZ","altitude":"","speed":"","method":"random","rate":1.66,"airlines":[["ceb/a319",1],["ceb/a320",1],["gap/a320",1],["pal/a320",1],["srq/a320",1],["ceb/at72",1],["ceb/at45",1],["ceb/at75",1]]},
+        {"origin":"RPVK","destination":"RKSI","category":"departure","route":"RPVK05.COLAZ3B.COLAZ","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["ceb/a320",1],["pal/a320",1]]},
+        {"origin":"RPVK","destination":"WSSS","category":"departure","route":"RPVK05.KAFSO2C.KAFSO","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["srq/a320",1],["tgw/a320",1]]},
+        {"origin":"RPVK","destination":"RCTP","category":"departure","route":"RPVK05.COLAZ3B.COLAZ","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["pal/a320",1]]},
+        {"origin":"RPVK","destination":"RKPK","category":"departure","route":"RPVK05.COLAZ3B.COLAZ","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["pal/a320",1]]},
+        {"origin":"RPVK","destination":"","category":"departure","route":"RPVK05.LELOB2D.LELOB","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["ceb/a320",1]]},
+        {"origin":"RPVK","destination":"","category":"departure","route":"RPVK05.KAFSO2C.KAFSO","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["axm/a320",1]]},
+        {"origin":"RPVK","destination":"","category":"departure","route":"RPVK05.COLAZ3B.COLAZ","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["srq/a320",1]]},
+        {"origin":"RPVK","destination":"","category":"departure","route":"RPVK05.COLAZ3B.COLAZ","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["rp/c172",6],["rp/p28a",5],["rp/c182",3],["rp/be36",2],["rp/da42",1],["rp/tb20",1],["rp/c208",2],["rp/pc12",2],["rp/be20",1],["rp/b350",1],["rp/p180",1],["rp/c510",1],["rp/e50p",1],["rp/c550",1],["rp/e55p",1],["rp/cl30",1],["rp/c680",1],["rp/h25b",1],["rp/lj45",1],["rp/f2th",1],["rp/glf4",1],["rp/glex",1],["rp/glf5",1]]},
+        {"origin":"RPLL","destination":"RPVK","category":"arrival","route":"COLAZ..JOCKE..RPVK","altitude":[4000,7000],"speed":250,"method":"random","rate":1.66,"airlines":[["ceb/a319",1],["ceb/a320",1],["gap/a320",1],["pal/a320",1],["srq/a320",1],["ceb/at72",1],["ceb/at45",1],["ceb/at75",1]]},
+        {"origin":"RKSI","destination":"RPVK","category":"arrival","route":"COLAZ..JOCKE..RPVK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.55,"airlines":[["ceb/a320",1],["pal/a320",1]]},
+        {"origin":"WSSS","destination":"RPVK","category":"arrival","route":"KAFSO..NISOD..RPVK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.55,"airlines":[["srq/a320",1],["tgw/a320",1]]},
+        {"origin":"RCTP","destination":"RPVK","category":"arrival","route":"COLAZ..JOCKE..RPVK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["pal/a320",1]]},
+        {"origin":"RKPK","destination":"RPVK","category":"arrival","route":"COLAZ..JOCKE..RPVK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["pal/a320",1]]},
+        {"origin":"","destination":"RPVK","category":"arrival","route":"LELOB..IKUFU..RPVK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["ceb/a320",1]]},
+        {"origin":"","destination":"RPVK","category":"arrival","route":"KAFSO..NISOD..RPVK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["axm/a320",1]]},
+        {"origin":"","destination":"RPVK","category":"arrival","route":"COLAZ..JOCKE..RPVK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["srq/a320",1]]},
+        {"origin":"","destination":"RPVK","category":"arrival","route":"COLAZ..JOCKE..RPVK","altitude":[4000,7000],"speed":250,"method":"random","rate":1.39,"airlines":[["rp/c172",6],["rp/p28a",5],["rp/c182",3],["rp/be36",2],["rp/da42",1],["rp/tb20",1],["rp/c208",2],["rp/pc12",2],["rp/be20",1],["rp/b350",1],["rp/p180",1],["rp/c510",1],["rp/e50p",1],["rp/c550",1],["rp/e55p",1],["rp/cl30",1],["rp/c680",1],["rp/h25b",1],["rp/lj45",1],["rp/f2th",1],["rp/glf4",1],["rp/glex",1],["rp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [11.9873,122.8265,11.7938,122.5434],
+            [11.7938,122.5434,11.6794,122.376],
+            [11.3273,122.7913,11.5486,122.5303],
+            [11.5486,122.5303,11.6794,122.376],
+            [11.4468,121.8807,11.593,122.192],
+            [11.593,122.192,11.6794,122.376],
+            [12.1826,122.1818,11.8664,122.3039],
+            [11.8664,122.3039,11.6794,122.376]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [11.6729,122.369,11.562,122.2421],
+            [11.61,122.3123,11.6249,122.2988],
+            [11.5546,122.2489,11.5695,122.2353],
+            [11.686,122.384,11.7968,122.511],
+            [11.7489,122.4407,11.734,122.4543],
+            [11.8043,122.5042,11.7894,122.5178]
+        ]}
+    ]
+}

@@ -1,0 +1,88 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/PHLI/",
+    "info": {"country":"US","city":"Lihue","type":"large_airport","longestRunwayM":2019,"frequencies":{"atis":"127.200","twr":"118.900","gnd":"121.900"}},
+    "radio": {"twr":"Lihue Tower","app":"Lihue Approach","dep":"Lihue Departure"},
+    "icao": "PHLI",
+    "iata": "LIH",
+    "magnetic_north": 9.3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [21.974393,-159.337146,"153ft"],
+    "rangeRings": {"enabled":true,"center":[21.974393,-159.337146],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":40,"speed":11},
+    "arrivalRunway": "03",
+    "departureRunway": "03",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[22.3738,-159.2666],[22.3432,-159.1576],[22.2876,-159.0607],[22.2105,-158.9828],[22.1174,-158.9289],[22.0146,-158.9029],[21.909,-158.9065],[21.8079,-158.9394],[21.7181,-158.9994],[21.6457,-159.0825],[21.5958,-159.1829],[21.5717,-159.2938],[21.575,-159.4077],[21.6056,-159.5167],[21.6612,-159.6136],[21.7382,-159.6915],[21.8313,-159.7454],[21.9342,-159.7714],[22.0398,-159.7678],[22.1409,-159.7349],[22.2307,-159.6748],[22.303,-159.5918],[22.353,-159.4914],[22.3771,-159.3805]]}
+    ],
+    "fixes": {
+        "PHLI": [21.97439,-159.33715],
+        "LIPUD": [22.24099,-158.83331],
+        "BESAC": [22.07344,-159.14995],
+        "ZIDLI": [21.75772,-158.8062],
+        "GULCA": [21.89389,-159.13988],
+        "FUTEZ": [21.94645,-159.91644],
+        "OREBI": [21.96401,-159.55238],
+        "ISEJU": [22.4906,-159.50037],
+        "EPOPU": [22.16618,-159.39779],
+        "_RWY0304DME": [21.92629,-159.40032],
+        "_RWY2104DME": [22.0318,-159.28408],
+        "_RWY1704DME": [22.04832,-159.336],
+        "_RWY3504DME": [21.89718,-159.336]
+    },
+    "runways": [
+        {"name":["03","21"],"end":[[21.9729,-159.349,"153ft"],[21.98521,-159.33544,"83ft"]],"ils":[true,true]},
+        {"name":["17","35"],"end":[[21.9817,-159.336,"92ft"],[21.9638,-159.336,"92ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "LIPUD3F": {"icao":"LIPUD3F","name":"Lipud Three Foxtrot","rwy":{"PHLI03":["_RWY2104DME"],"PHLI21":["_RWY0304DME"],"PHLI17":["_RWY3504DME"],"PHLI35":["_RWY1704DME"]},"body":[],"exitPoints":{"LIPUD":["LIPUD"]},"draw":[["PHLI","LIPUD*"]]},
+        "ZIDLI2E": {"icao":"ZIDLI2E","name":"Zidli Two Echo","rwy":{"PHLI03":["_RWY2104DME"],"PHLI21":["_RWY0304DME"],"PHLI17":["_RWY3504DME"],"PHLI35":["_RWY1704DME"]},"body":[],"exitPoints":{"ZIDLI":["ZIDLI"]},"draw":[["PHLI","ZIDLI*"]]},
+        "FUTEZ3D": {"icao":"FUTEZ3D","name":"Futez Three Delta","rwy":{"PHLI03":["_RWY2104DME"],"PHLI21":["_RWY0304DME"],"PHLI17":["_RWY3504DME"],"PHLI35":["_RWY1704DME"]},"body":[],"exitPoints":{"FUTEZ":["FUTEZ"]},"draw":[["PHLI","FUTEZ*"]]},
+        "ISEJU3D": {"icao":"ISEJU3D","name":"Iseju Three Delta","rwy":{"PHLI03":["_RWY2104DME"],"PHLI21":["_RWY0304DME"],"PHLI17":["_RWY3504DME"],"PHLI35":["_RWY1704DME"]},"body":[],"exitPoints":{"ISEJU":["ISEJU"]},"draw":[["PHLI","ISEJU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"PHLI","destination":"KLAX","category":"departure","route":"PHLI03.LIPUD3F.LIPUD","altitude":"","speed":"","method":"random","rate":1.5,"airlines":[["aal/b752",2],["dal/b752",1],["ual/b752",1]]},
+        {"origin":"PHLI","destination":"KPHX","category":"departure","route":"PHLI03.LIPUD3F.LIPUD","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["aal/b752",2]]},
+        {"origin":"PHLI","destination":"KDEN","category":"departure","route":"PHLI03.LIPUD3F.LIPUD","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["ual/b752",1]]},
+        {"origin":"PHLI","destination":"KSFO","category":"departure","route":"PHLI03.LIPUD3F.LIPUD","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["ual/b752",1]]},
+        {"origin":"PHLI","destination":"","category":"departure","route":"PHLI03.ZIDLI2E.ZIDLI","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["hal/b712",2]]},
+        {"origin":"PHLI","destination":"","category":"departure","route":"PHLI03.ZIDLI2E.ZIDLI","altitude":"","speed":"","method":"random","rate":1.25,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KLAX","destination":"PHLI","category":"arrival","route":"LIPUD..BESAC..PHLI","altitude":[4000,7000],"speed":250,"method":"random","rate":1.5,"airlines":[["aal/b752",2],["dal/b752",1],["ual/b752",1]]},
+        {"origin":"KPHX","destination":"PHLI","category":"arrival","route":"LIPUD..BESAC..PHLI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.75,"airlines":[["aal/b752",2]]},
+        {"origin":"KDEN","destination":"PHLI","category":"arrival","route":"LIPUD..BESAC..PHLI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.38,"airlines":[["ual/b752",1]]},
+        {"origin":"KSFO","destination":"PHLI","category":"arrival","route":"LIPUD..BESAC..PHLI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.38,"airlines":[["ual/b752",1]]},
+        {"origin":"","destination":"PHLI","category":"arrival","route":"ZIDLI..GULCA..PHLI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.75,"airlines":[["hal/b712",2]]},
+        {"origin":"","destination":"PHLI","category":"arrival","route":"ZIDLI..GULCA..PHLI","altitude":[4000,7000],"speed":250,"method":"random","rate":1.25,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [22.241,-158.8333,22.0734,-159.15],
+            [22.0734,-159.15,21.9744,-159.3371],
+            [21.7577,-158.8062,21.8939,-159.1399],
+            [21.8939,-159.1399,21.9744,-159.3371],
+            [21.9464,-159.9164,21.964,-159.5524],
+            [21.964,-159.5524,21.9744,-159.3371],
+            [22.4906,-159.5004,22.1662,-159.3978],
+            [22.1662,-159.3978,21.9744,-159.3371]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [21.9729,-159.349,21.8563,-159.4772],
+            [21.9075,-159.4056,21.9218,-159.4207],
+            [21.8492,-159.4697,21.8635,-159.4848],
+            [21.9852,-159.3354,22.1017,-159.207],
+            [22.0506,-159.2788,22.0363,-159.2637],
+            [22.1088,-159.2145,22.0945,-159.1994],
+            [21.9817,-159.336,22.1483,-159.336],
+            [22.065,-159.3468,22.065,-159.3252],
+            [22.1483,-159.3468,22.1483,-159.3252],
+            [21.9638,-159.336,21.7972,-159.336],
+            [21.8805,-159.3252,21.8805,-159.3468],
+            [21.7972,-159.3252,21.7972,-159.3468]
+        ]}
+    ]
+}

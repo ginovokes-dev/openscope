@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ESSB/",
+    "info": {"country":"SE","city":"Stockholm","type":"medium_airport","longestRunwayM":1668,"frequencies":{"atis":"122.450","twr":"118.100","app":"120.150","gnd":"121.600"}},
+    "radio": {"twr":"Stockholm Tower","app":"Stockholm Approach","dep":"Stockholm Departure"},
+    "icao": "ESSB",
+    "iata": "BMA",
+    "magnetic_north": 7.6,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [59.354401,17.9417,"47ft"],
+    "rangeRings": {"enabled":true,"center":[59.354401,17.9417],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":290,"speed":10},
+    "arrivalRunway": "30",
+    "departureRunway": "30",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[59.7555,18.0467],[59.728,18.2468],[59.675,18.4261],[59.6002,18.5724],[59.5086,18.6757],[59.4065,18.729],[59.3009,18.7287],[59.1989,18.6747],[59.1075,18.5707],[59.0329,18.4239],[58.9802,18.2442],[58.9531,18.044],[58.9533,17.8367],[58.9808,17.6366],[59.0338,17.4573],[59.1086,17.311],[59.2002,17.2077],[59.3023,17.1544],[59.4079,17.1547],[59.5099,17.2087],[59.6013,17.3127],[59.6759,17.4595],[59.7286,17.6392],[59.7557,17.8394]]}
+    ],
+    "fixes": {
+        "ESSB": [59.3544,17.9417],
+        "ZOBEM": [59.36068,18.99698],
+        "VINMO": [59.35674,18.33378],
+        "ABIDA": [58.82081,18.07566],
+        "RUHOB": [59.15615,17.99147],
+        "TRS": [58.9379,17.5022,"trosa"],
+        "SULOF": [59.17838,17.75596],
+        "HMR": [60.2793,18.3916,"hammar"],
+        "UJIKE": [59.54839,18.03606],
+        "_RWY1203DME": [59.38732,17.84921],
+        "_RWY3003DME": [59.32143,18.03394]
+    },
+    "runways": [
+        {"name":["12","30"],"end":[[59.3587,17.9296,"46ft"],[59.3501,17.9537,"42ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ZOBEM2D": {"icao":"ZOBEM2D","name":"Zobem Two Delta","rwy":{"ESSB12":["_RWY3003DME"],"ESSB30":["_RWY1203DME"]},"body":[],"exitPoints":{"ZOBEM":["ZOBEM"]},"draw":[["ESSB","ZOBEM*"]]},
+        "ABIDA3E": {"icao":"ABIDA3E","name":"Abida Three Echo","rwy":{"ESSB12":["_RWY3003DME"],"ESSB30":["_RWY1203DME"]},"body":[],"exitPoints":{"ABIDA":["ABIDA"]},"draw":[["ESSB","ABIDA*"]]},
+        "TRS3D": {"icao":"TRS3D","name":"Trosa Three Delta","rwy":{"ESSB12":["_RWY3003DME"],"ESSB30":["_RWY1203DME"]},"body":[],"exitPoints":{"TRS":["TRS"]},"draw":[["ESSB","TRS*"]]},
+        "HMR2B": {"icao":"HMR2B","name":"Hammar Two Bravo","rwy":{"ESSB12":["_RWY3003DME"],"ESSB30":["_RWY1203DME"]},"body":[],"exitPoints":{"HMR":["HMR"]},"draw":[["ESSB","HMR*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ESSB","destination":"ESGG","category":"departure","route":"ESSB30.TRS3D.TRS","altitude":"","speed":"","method":"random","rate":0.6,"airlines":[["scw/rj1h",1],["scw/rj85",1]]},
+        {"origin":"ESSB","destination":"ESMS","category":"departure","route":"ESSB30.TRS3D.TRS","altitude":"","speed":"","method":"random","rate":0.6,"airlines":[["scw/rj1h",1],["scw/rj85",1]]},
+        {"origin":"ESSB","destination":"ESNU","category":"departure","route":"ESSB30.HMR2B.HMR","altitude":"","speed":"","method":"random","rate":0.6,"airlines":[["scw/rj1h",1],["scw/rj85",1]]},
+        {"origin":"ESSB","destination":"ESSV","category":"departure","route":"ESSB30.ABIDA3E.ABIDA","altitude":"","speed":"","method":"random","rate":0.6,"airlines":[["gao/at72",1],["gao/rj1h",1]]},
+        {"origin":"ESSB","destination":"EBBR","category":"departure","route":"ESSB30.TRS3D.TRS","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["dat/rj1h",1]]},
+        {"origin":"ESSB","destination":"","category":"departure","route":"ESSB30.TRS3D.TRS","altitude":"","speed":"","method":"random","rate":1.5,"airlines":[["gao/sb20",3],["gao/at72",2]]},
+        {"origin":"ESSB","destination":"","category":"departure","route":"ESSB30.HMR2B.HMR","altitude":"","speed":"","method":"random","rate":0.6,"airlines":[["gao/sb20",1],["scw/sb20",1]]},
+        {"origin":"ESSB","destination":"","category":"departure","route":"ESSB30.TRS3D.TRS","altitude":"","speed":"","method":"random","rate":1.6,"airlines":[["se/c172",6],["se/p28a",5],["se/c182",3],["se/be36",2],["se/da42",1],["se/tb20",1],["se/c208",2],["se/pc12",2],["se/be20",1],["se/b350",1],["se/p180",1],["se/c510",1],["se/e50p",1],["se/c550",1],["se/e55p",1],["se/cl30",1],["se/c680",1],["se/h25b",1],["se/lj45",1],["se/f2th",1],["se/glf4",1],["se/glex",1],["se/glf5",1]]},
+        {"origin":"ESGG","destination":"ESSB","category":"arrival","route":"TRS..SULOF..ESSB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.6,"airlines":[["scw/rj1h",1],["scw/rj85",1]]},
+        {"origin":"ESMS","destination":"ESSB","category":"arrival","route":"TRS..SULOF..ESSB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.6,"airlines":[["scw/rj1h",1],["scw/rj85",1]]},
+        {"origin":"ESNU","destination":"ESSB","category":"arrival","route":"HMR..UJIKE..ESSB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.6,"airlines":[["scw/rj1h",1],["scw/rj85",1]]},
+        {"origin":"ESSV","destination":"ESSB","category":"arrival","route":"ABIDA..RUHOB..ESSB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.6,"airlines":[["gao/at72",1],["gao/rj1h",1]]},
+        {"origin":"EBBR","destination":"ESSB","category":"arrival","route":"TRS..SULOF..ESSB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.3,"airlines":[["dat/rj1h",1]]},
+        {"origin":"","destination":"ESSB","category":"arrival","route":"TRS..SULOF..ESSB","altitude":[4000,7000],"speed":250,"method":"random","rate":1.5,"airlines":[["gao/sb20",3],["gao/at72",2]]},
+        {"origin":"","destination":"ESSB","category":"arrival","route":"HMR..UJIKE..ESSB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.6,"airlines":[["gao/sb20",1],["scw/sb20",1]]},
+        {"origin":"","destination":"ESSB","category":"arrival","route":"TRS..SULOF..ESSB","altitude":[4000,7000],"speed":250,"method":"random","rate":1.6,"airlines":[["se/c172",6],["se/p28a",5],["se/c182",3],["se/be36",2],["se/da42",1],["se/tb20",1],["se/c208",2],["se/pc12",2],["se/be20",1],["se/b350",1],["se/p180",1],["se/c510",1],["se/e50p",1],["se/c550",1],["se/e55p",1],["se/cl30",1],["se/c680",1],["se/h25b",1],["se/lj45",1],["se/f2th",1],["se/glf4",1],["se/glex",1],["se/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [59.3607,18.997,59.3567,18.3338],
+            [59.3567,18.3338,59.3544,17.9417],
+            [58.8208,18.0757,59.1562,17.9915],
+            [59.1562,17.9915,59.3544,17.9417],
+            [58.9379,17.5022,59.1784,17.756],
+            [59.1784,17.756,59.3544,17.9417],
+            [60.2793,18.3916,59.5484,18.0361],
+            [59.5484,18.0361,59.3544,17.9417]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [59.3587,17.9296,59.4539,17.6611],
+            [59.3982,17.7843,59.4146,17.8068],
+            [59.4457,17.6498,59.4621,17.6724],
+            [59.3501,17.9537,59.2543,18.2206],
+            [59.3105,18.0986,59.2941,18.0761],
+            [59.2625,18.2318,59.2461,18.2094]
+        ]}
+    ]
+}

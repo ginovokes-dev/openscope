@@ -1,0 +1,72 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGPR/",
+    "info": {"country":"GB","city":"Eoligarry","type":"medium_airport","longestRunwayM":846,"approximateRunways":true},
+    "radio": {"twr":"Barra Tower","app":"Barra Approach","dep":"Barra Radar"},
+    "icao": "EGPR",
+    "iata": "BRR",
+    "magnetic_north": -2.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [57.0228,-7.44306,"5ft"],
+    "rangeRings": {"enabled":true,"center":[57.0228,-7.44306],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":330,"speed":9},
+    "arrivalRunway": "33",
+    "departureRunway": "33",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[57.4271,-7.4742],[57.4177,-7.2809],[57.3814,-7.0986],[57.3207,-6.9398],[57.2396,-6.8153],[57.1438,-6.7336],[57.0397,-6.7002],[56.9345,-6.7175],[56.8353,-6.7842],[56.7489,-6.8958],[56.6811,-7.0447],[56.6366,-7.2207],[56.6185,-7.4119],[56.6279,-7.6053],[56.6642,-7.7875],[56.7249,-7.9463],[56.806,-8.0708],[56.9018,-8.1525],[57.0059,-8.1859],[57.1111,-8.1687],[57.2103,-8.102],[57.2967,-7.9904],[57.3645,-7.8415],[57.409,-7.6654]]}
+    ],
+    "fixes": {
+        "EGPR": [57.0228,-7.44306],
+        "ELUMI": [57.5478,-7.22759],
+        "BIFAZ": [57.21786,-7.363],
+        "BFD": [57.2548,-5.83287,"broadford"],
+        "KISNO": [57.07395,-7.08809],
+        "IKIGA": [56.4978,-7.65853],
+        "MEDEJ": [56.82774,-7.52312],
+        "OSIMI": [57.14008,-8.40759],
+        "JICMI": [57.06638,-7.80142],
+        "_RWY1503DME": [57.06819,-7.49606],
+        "_RWY3303DME": [56.97739,-7.39018],
+        "_RWY0703DME": [57.00236,-7.53398],
+        "_RWY2503DME": [57.04319,-7.35204],
+        "_RWY1103DME": [57.0388,-7.53596],
+        "_RWY2903DME": [57.00674,-7.35024]
+    },
+    "runways": [
+        {"name":["15","33"],"end":[[57.02601,-7.44681,"4ft"],[57.01959,-7.43931,"1ft"]],"ils":[false,false]},
+        {"name":["07","25"],"end":[[57.02143,-7.44916,"4ft"],[57.02417,-7.43696,"1ft"]],"ils":[false,false]},
+        {"name":["11","29"],"end":[[57.02372,-7.44841,"5ft"],[57.02188,-7.4377,"5ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "ELUMI1E": {"icao":"ELUMI1E","name":"Elumi One Echo","rwy":{"EGPR15":["_RWY3303DME"],"EGPR33":["_RWY1503DME"],"EGPR07":["_RWY2503DME"],"EGPR25":["_RWY0703DME"],"EGPR11":["_RWY2903DME"],"EGPR29":["_RWY1103DME"]},"body":[],"exitPoints":{"ELUMI":["ELUMI"]},"draw":[["EGPR","ELUMI*"]]},
+        "BFD2F": {"icao":"BFD2F","name":"Broadford Two Foxtrot","rwy":{"EGPR15":["_RWY3303DME"],"EGPR33":["_RWY1503DME"],"EGPR07":["_RWY2503DME"],"EGPR25":["_RWY0703DME"],"EGPR11":["_RWY2903DME"],"EGPR29":["_RWY1103DME"]},"body":[],"exitPoints":{"BFD":["BFD"]},"draw":[["EGPR","BFD*"]]},
+        "IKIGA3A": {"icao":"IKIGA3A","name":"Ikiga Three Alpha","rwy":{"EGPR15":["_RWY3303DME"],"EGPR33":["_RWY1503DME"],"EGPR07":["_RWY2503DME"],"EGPR25":["_RWY0703DME"],"EGPR11":["_RWY2903DME"],"EGPR29":["_RWY1103DME"]},"body":[],"exitPoints":{"IKIGA":["IKIGA"]},"draw":[["EGPR","IKIGA*"]]},
+        "OSIMI2D": {"icao":"OSIMI2D","name":"Osimi Two Delta","rwy":{"EGPR15":["_RWY3303DME"],"EGPR33":["_RWY1503DME"],"EGPR07":["_RWY2503DME"],"EGPR25":["_RWY0703DME"],"EGPR11":["_RWY2903DME"],"EGPR29":["_RWY1103DME"]},"body":[],"exitPoints":{"OSIMI":["OSIMI"]},"draw":[["EGPR","OSIMI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGPR","destination":"","category":"departure","route":"EGPR33.ELUMI1E.ELUMI","altitude":"","speed":"","method":"random","rate":4.5,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/p180",1],["g/c510",1]]},
+        {"origin":"","destination":"EGPR","category":"arrival","route":"ELUMI..BIFAZ..EGPR","altitude":[4000,7000],"speed":250,"method":"random","rate":4.5,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/p180",1],["g/c510",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [57.5478,-7.2276,57.2179,-7.363],
+            [57.2179,-7.363,57.0228,-7.4431],
+            [57.2548,-5.8329,57.0739,-7.0881],
+            [57.0739,-7.0881,57.0228,-7.4431],
+            [56.4978,-7.6585,56.8277,-7.5231],
+            [56.8277,-7.5231,57.0228,-7.4431],
+            [57.1401,-8.4076,57.0664,-7.8014],
+            [57.0664,-7.8014,57.0228,-7.4431]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [57.0196,-7.4393,56.8789,-7.276],
+            [56.9546,-7.342,56.9439,-7.3729],
+            [56.8842,-7.2605,56.8735,-7.2914]
+        ]}
+    ]
+}

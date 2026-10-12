@@ -1,0 +1,86 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/HJJJ/",
+    "info": {"country":"SS","city":"Juba","type":"large_airport","longestRunwayM":3100,"frequencies":{"twr":"118.400"}},
+    "radio": {"twr":"Juba Tower","app":"Juba Approach","dep":"Juba Departure"},
+    "icao": "HJJJ",
+    "iata": "JUB",
+    "magnetic_north": 2.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 9000,
+    "initial_alt": 5000,
+    "position": [4.87201,31.601101,"1513ft"],
+    "rangeRings": {"enabled":true,"center":[4.87201,31.601101],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":100,"speed":9},
+    "arrivalRunway": "13",
+    "departureRunway": "13",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":90,"airspace_class":"D","poly":[[5.2763,31.6188],[5.258,31.7232],[5.2133,31.8193],[5.1454,31.9006],[5.0589,31.9614],[4.9596,31.9976],[4.8544,32.0069],[4.7503,31.9885],[4.6546,31.9437],[4.5736,31.8755],[4.513,31.7886],[4.4769,31.689],[4.4677,31.5834],[4.486,31.479],[4.5307,31.3829],[4.5986,31.3016],[4.6851,31.2408],[4.7844,31.2046],[4.8897,31.1953],[4.9937,31.2137],[5.0895,31.2585],[5.1704,31.3267],[5.231,31.4136],[5.2671,31.5132]]}
+    ],
+    "fixes": {
+        "HJJJ": [4.87201,31.6011],
+        "AMARI": [5.40935,31.62663],
+        "BADCA": [5.07165,31.61058],
+        "FURCI": [5.23104,32.00315],
+        "BIHAW": [5.0054,31.75048],
+        "JADUG": [4.46488,31.95398],
+        "MUBLI": [4.72075,31.73221],
+        "ZUPSU": [4.33417,31.59085],
+        "ABOLO": [4.67218,31.59729],
+        "APOPA": [4.88984,31.06151],
+        "PELOP": [4.87863,31.40062],
+        "_RWY1304DME": [4.92225,31.54202],
+        "_RWY3104DME": [4.82177,31.66027]
+    },
+    "runways": [
+        {"name":["13","31"],"end":[[4.87902,31.5929,"1503ft"],[4.865,31.6094,"1505ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "AMARI1F": {"icao":"AMARI1F","name":"Amari One Foxtrot","rwy":{"HJJJ13":["_RWY3104DME"],"HJJJ31":["_RWY1304DME"]},"body":[],"exitPoints":{"AMARI":["AMARI"]},"draw":[["HJJJ","AMARI*"]]},
+        "FURCI1C": {"icao":"FURCI1C","name":"Furci One Charlie","rwy":{"HJJJ13":["_RWY3104DME"],"HJJJ31":["_RWY1304DME"]},"body":[],"exitPoints":{"FURCI":["FURCI"]},"draw":[["HJJJ","FURCI*"]]},
+        "JADUG1E": {"icao":"JADUG1E","name":"Jadug One Echo","rwy":{"HJJJ13":["_RWY3104DME"],"HJJJ31":["_RWY1304DME"]},"body":[],"exitPoints":{"JADUG":["JADUG"]},"draw":[["HJJJ","JADUG*"]]},
+        "ZUPSU1F": {"icao":"ZUPSU1F","name":"Zupsu One Foxtrot","rwy":{"HJJJ13":["_RWY3104DME"],"HJJJ31":["_RWY1304DME"]},"body":[],"exitPoints":{"ZUPSU":["ZUPSU"]},"draw":[["HJJJ","ZUPSU*"]]},
+        "APOPA1A": {"icao":"APOPA1A","name":"Apopa One Alpha","rwy":{"HJJJ13":["_RWY3104DME"],"HJJJ31":["_RWY1304DME"]},"body":[],"exitPoints":{"APOPA":["APOPA"]},"draw":[["HJJJ","APOPA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"HJJJ","destination":"HKJK","category":"departure","route":"HJJJ13.JADUG1E.JADUG","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["kqa/e170",1],["kqa/e190",1],["ffv/crj7",1],["ffv/crj9",1],["ffv/crj2",1]]},
+        {"origin":"HJJJ","destination":"HAAB","category":"departure","route":"HJJJ13.FURCI1C.FURCI","altitude":"","speed":"","method":"random","rate":0.92,"airlines":[["eth/b737",1],["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]},
+        {"origin":"HJJJ","destination":"HSSK","category":"departure","route":"HJJJ13.AMARI1F.AMARI","altitude":"","speed":"","method":"random","rate":0.92,"airlines":[["nas/b733",1],["sud/a320",1]]},
+        {"origin":"HJJJ","destination":"HECA","category":"departure","route":"HJJJ13.AMARI1F.AMARI","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["msr/a320",1]]},
+        {"origin":"HJJJ","destination":"HHAS","category":"departure","route":"HJJJ13.FURCI1C.FURCI","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["nas/a320",1]]},
+        {"origin":"HJJJ","destination":"","category":"departure","route":"HJJJ13.FURCI1C.FURCI","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["fdb/b738",1]]},
+        {"origin":"HJJJ","destination":"","category":"departure","route":"HJJJ13.ZUPSU1F.ZUPSU","altitude":"","speed":"","method":"random","rate":0.92,"airlines":[["nas/a320",1],["rwd/crj7",1],["rwd/crj9",1],["rwd/crj2",1]]},
+        {"origin":"HKJK","destination":"HJJJ","category":"arrival","route":"JADUG..MUBLI..HJJJ","altitude":[5000,8000],"speed":250,"method":"random","rate":1.39,"airlines":[["kqa/e170",1],["kqa/e190",1],["ffv/crj7",1],["ffv/crj9",1],["ffv/crj2",1]]},
+        {"origin":"HAAB","destination":"HJJJ","category":"arrival","route":"FURCI..BIHAW..HJJJ","altitude":[5000,8000],"speed":250,"method":"random","rate":0.92,"airlines":[["eth/b737",1],["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]},
+        {"origin":"HSSK","destination":"HJJJ","category":"arrival","route":"AMARI..BADCA..HJJJ","altitude":[5000,8000],"speed":250,"method":"random","rate":0.92,"airlines":[["nas/b733",1],["sud/a320",1]]},
+        {"origin":"HECA","destination":"HJJJ","category":"arrival","route":"AMARI..BADCA..HJJJ","altitude":[5000,8000],"speed":250,"method":"random","rate":0.46,"airlines":[["msr/a320",1]]},
+        {"origin":"HHAS","destination":"HJJJ","category":"arrival","route":"FURCI..BIHAW..HJJJ","altitude":[5000,8000],"speed":250,"method":"random","rate":0.46,"airlines":[["nas/a320",1]]},
+        {"origin":"","destination":"HJJJ","category":"arrival","route":"FURCI..BIHAW..HJJJ","altitude":[5000,8000],"speed":250,"method":"random","rate":0.46,"airlines":[["fdb/b738",1]]},
+        {"origin":"","destination":"HJJJ","category":"arrival","route":"ZUPSU..ABOLO..HJJJ","altitude":[5000,8000],"speed":250,"method":"random","rate":0.92,"airlines":[["nas/a320",1],["rwd/crj7",1],["rwd/crj9",1],["rwd/crj2",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [5.4093,31.6266,5.0717,31.6106],
+            [5.0717,31.6106,4.872,31.6011],
+            [5.231,32.0031,5.0054,31.7505],
+            [5.0054,31.7505,4.872,31.6011],
+            [4.4649,31.954,4.7207,31.7322],
+            [4.7207,31.7322,4.872,31.6011],
+            [4.3342,31.5908,4.6722,31.5973],
+            [4.6722,31.5973,4.872,31.6011],
+            [4.8898,31.0615,4.8786,31.4006],
+            [4.8786,31.4006,4.872,31.6011]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [4.879,31.5929,4.9871,31.4657],
+            [4.9254,31.5228,4.9407,31.5358],
+            [4.9795,31.4592,4.9947,31.4722],
+            [4.865,31.6094,4.7569,31.7366],
+            [4.8186,31.6795,4.8034,31.6665],
+            [4.7645,31.7431,4.7493,31.7301]
+        ]}
+    ]
+}

@@ -1,0 +1,92 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/OETF/",
+    "info": {"country":"SA","city":"Taif","type":"large_airport","longestRunwayM":3747,"frequencies":{"atis":"112.700","twr":"118.700","app":"119.700","gnd":"121.900"}},
+    "radio": {"twr":"Taif Tower","app":"Taif Approach","dep":"Taif Departure"},
+    "icao": "OETF",
+    "iata": "TIF",
+    "magnetic_north": 3.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 12000,
+    "initial_alt": 8000,
+    "position": [21.484739,40.544074,"4848ft"],
+    "rangeRings": {"enabled":true,"center":[21.484739,40.544074],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":90,"speed":7},
+    "arrivalRunway": "07",
+    "departureRunway": "07",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":120,"airspace_class":"D","poly":[[21.8887,40.5699],[21.8687,40.6814],[21.8226,40.7835],[21.7534,40.8693],[21.6659,40.933],[21.5661,40.9701],[21.4607,40.9782],[21.357,40.9568],[21.262,40.9072],[21.1821,40.8328],[21.1229,40.7388],[21.0883,40.6315],[21.0808,40.5183],[21.1007,40.4068],[21.1469,40.3047],[21.2161,40.2188],[21.3035,40.1552],[21.4034,40.118],[21.5087,40.1099],[21.6125,40.1314],[21.7075,40.181],[21.7874,40.2553],[21.8466,40.3493],[21.8812,40.4566]]}
+    ],
+    "fixes": {
+        "OETF": [21.48474,40.54407],
+        "SUVAP": [21.71859,41.0647],
+        "JEHON": [21.57162,40.73751],
+        "VUMBO": [21.02779,40.84913],
+        "NOZFU": [21.31496,40.65741],
+        "IFEPE": [21.1906,40.06004],
+        "ODAFE": [21.37546,40.36424],
+        "IZIHA": [21.92836,40.21709],
+        "GUVUD": [21.64956,40.42259],
+        "_RWY0704DME": [21.45949,40.45162],
+        "_RWY2504DME": [21.50408,40.6245],
+        "_RWY1704DME": [21.57238,40.531],
+        "_RWY3504DME": [21.41042,40.55529]
+    },
+    "runways": [
+        {"name":["07","25"],"end":[[21.4773,40.5206,"4848ft"],[21.4863,40.5555,"4737ft"]],"ils":[true,true]},
+        {"name":["17","35"],"end":[[21.5064,40.5409,"4753ft"],[21.4764,40.5454,"4775ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "SUVAP1D": {"icao":"SUVAP1D","name":"Suvap One Delta","rwy":{"OETF07":["_RWY2504DME"],"OETF25":["_RWY0704DME"],"OETF17":["_RWY3504DME"],"OETF35":["_RWY1704DME"]},"body":[],"exitPoints":{"SUVAP":["SUVAP"]},"draw":[["OETF","SUVAP*"]]},
+        "VUMBO1A": {"icao":"VUMBO1A","name":"Vumbo One Alpha","rwy":{"OETF07":["_RWY2504DME"],"OETF25":["_RWY0704DME"],"OETF17":["_RWY3504DME"],"OETF35":["_RWY1704DME"]},"body":[],"exitPoints":{"VUMBO":["VUMBO"]},"draw":[["OETF","VUMBO*"]]},
+        "IFEPE1D": {"icao":"IFEPE1D","name":"Ifepe One Delta","rwy":{"OETF07":["_RWY2504DME"],"OETF25":["_RWY0704DME"],"OETF17":["_RWY3504DME"],"OETF35":["_RWY1704DME"]},"body":[],"exitPoints":{"IFEPE":["IFEPE"]},"draw":[["OETF","IFEPE*"]]},
+        "IZIHA2C": {"icao":"IZIHA2C","name":"Iziha Two Charlie","rwy":{"OETF07":["_RWY2504DME"],"OETF25":["_RWY0704DME"],"OETF17":["_RWY3504DME"],"OETF35":["_RWY1704DME"]},"body":[],"exitPoints":{"IZIHA":["IZIHA"]},"draw":[["OETF","IZIHA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"OETF","destination":"HECA","category":"departure","route":"OETF07.IZIHA2C.IZIHA","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["lmu/a320",1],["nia/a320",1]]},
+        {"origin":"OETF","destination":"OEDF","category":"departure","route":"OETF07.SUVAP1D.SUVAP","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["kne/a320",1],["sva/a320",1]]},
+        {"origin":"OETF","destination":"OERK","category":"departure","route":"OETF07.SUVAP1D.SUVAP","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["kne/a320",1],["sva/a320",1]]},
+        {"origin":"OETF","destination":"OTHH","category":"departure","route":"OETF07.SUVAP1D.SUVAP","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["qtr/a320",1],["qtr/a321",1]]},
+        {"origin":"OETF","destination":"LTFM","category":"departure","route":"OETF07.IZIHA2C.IZIHA","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["thy/a319",1]]},
+        {"origin":"OETF","destination":"","category":"departure","route":"OETF07.SUVAP1D.SUVAP","altitude":"","speed":"","method":"random","rate":1,"airlines":[["aby/a320",1],["fdb/b738",1],["kne/a320",1]]},
+        {"origin":"OETF","destination":"","category":"departure","route":"OETF07.VUMBO1A.VUMBO","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["sva/a320",1]]},
+        {"origin":"OETF","destination":"","category":"departure","route":"OETF07.IZIHA2C.IZIHA","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["hz/c172",6],["hz/p28a",5],["hz/c182",3],["hz/be36",2],["hz/da42",1],["hz/tb20",1],["hz/c208",2],["hz/pc12",2],["hz/be20",1],["hz/b350",1],["hz/p180",1],["hz/c510",1],["hz/e50p",1],["hz/c550",1],["hz/e55p",1],["hz/cl30",1],["hz/c680",1],["hz/h25b",1],["hz/lj45",1],["hz/f2th",1],["hz/glf4",1],["hz/glex",1],["hz/glf5",1]]},
+        {"origin":"HECA","destination":"OETF","category":"arrival","route":"IZIHA..GUVUD..OETF","altitude":[8000,11000],"speed":250,"method":"random","rate":0.67,"airlines":[["lmu/a320",1],["nia/a320",1]]},
+        {"origin":"OEDF","destination":"OETF","category":"arrival","route":"SUVAP..JEHON..OETF","altitude":[8000,11000],"speed":250,"method":"random","rate":0.67,"airlines":[["kne/a320",1],["sva/a320",1]]},
+        {"origin":"OERK","destination":"OETF","category":"arrival","route":"SUVAP..JEHON..OETF","altitude":[8000,11000],"speed":250,"method":"random","rate":0.67,"airlines":[["kne/a320",1],["sva/a320",1]]},
+        {"origin":"OTHH","destination":"OETF","category":"arrival","route":"SUVAP..JEHON..OETF","altitude":[8000,11000],"speed":250,"method":"random","rate":0.67,"airlines":[["qtr/a320",1],["qtr/a321",1]]},
+        {"origin":"LTFM","destination":"OETF","category":"arrival","route":"IZIHA..GUVUD..OETF","altitude":[8000,11000],"speed":250,"method":"random","rate":0.33,"airlines":[["thy/a319",1]]},
+        {"origin":"","destination":"OETF","category":"arrival","route":"SUVAP..JEHON..OETF","altitude":[8000,11000],"speed":250,"method":"random","rate":1,"airlines":[["aby/a320",1],["fdb/b738",1],["kne/a320",1]]},
+        {"origin":"","destination":"OETF","category":"arrival","route":"VUMBO..NOZFU..OETF","altitude":[8000,11000],"speed":250,"method":"random","rate":0.33,"airlines":[["sva/a320",1]]},
+        {"origin":"","destination":"OETF","category":"arrival","route":"IZIHA..GUVUD..OETF","altitude":[8000,11000],"speed":250,"method":"random","rate":1.45,"airlines":[["hz/c172",6],["hz/p28a",5],["hz/c182",3],["hz/be36",2],["hz/da42",1],["hz/tb20",1],["hz/c208",2],["hz/pc12",2],["hz/be20",1],["hz/b350",1],["hz/p180",1],["hz/c510",1],["hz/e50p",1],["hz/c550",1],["hz/e55p",1],["hz/cl30",1],["hz/c680",1],["hz/h25b",1],["hz/lj45",1],["hz/f2th",1],["hz/glf4",1],["hz/glex",1],["hz/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [21.7186,41.0647,21.5716,40.7375],
+            [21.5716,40.7375,21.4847,40.5441],
+            [21.0278,40.8491,21.315,40.6574],
+            [21.315,40.6574,21.4847,40.5441],
+            [21.1906,40.06,21.3755,40.3642],
+            [21.3755,40.3642,21.4847,40.5441],
+            [21.9284,40.2171,21.6496,40.4226],
+            [21.6496,40.4226,21.4847,40.5441]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [21.4773,40.5206,21.4327,40.3482],
+            [21.4454,40.4372,21.4647,40.4315],
+            [21.4231,40.351,21.4423,40.3453],
+            [21.4863,40.5555,21.5307,40.728],
+            [21.5182,40.6389,21.4989,40.6446],
+            [21.5403,40.7252,21.5211,40.7309],
+            [21.5064,40.5409,21.6714,40.5161],
+            [21.5875,40.5179,21.5903,40.5392],
+            [21.67,40.5055,21.6727,40.5268],
+            [21.4764,40.5454,21.3114,40.5701],
+            [21.3953,40.5684,21.3925,40.5471],
+            [21.3128,40.5807,21.3101,40.5595]
+        ]}
+    ]
+}

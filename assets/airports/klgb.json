@@ -1,0 +1,90 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KLGB/",
+    "info": {"country":"US","city":"Long Beach","type":"large_airport","longestRunwayM":3049,"frequencies":{"atis":"127.750","twr":"119.400","app":"124.650","gnd":"133.000","dep":"127.200"}},
+    "radio": {"twr":"Long Beach Tower","app":"Long Beach Approach","dep":"Long Beach Departure"},
+    "icao": "KLGB",
+    "iata": "LGB",
+    "magnetic_north": 11.3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [33.816523,-118.149891,"60ft"],
+    "rangeRings": {"enabled":true,"center":[33.816523,-118.149891],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":290,"speed":8},
+    "arrivalRunway": "30",
+    "departureRunway": "30",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[34.2134,-118.0544],[34.1793,-117.9341],[34.1206,-117.8284],[34.0411,-117.7446],[33.9463,-117.6885],[33.8426,-117.6638],[33.7372,-117.6722],[33.6372,-117.7132],[33.5494,-117.7839],[33.4798,-117.8796],[33.4332,-117.9937],[33.4127,-118.1185],[33.4197,-118.2453],[33.4537,-118.3657],[33.5125,-118.4714],[33.592,-118.5551],[33.6868,-118.6113],[33.7904,-118.636],[33.8958,-118.6275],[33.9958,-118.5866],[34.0836,-118.5158],[34.1532,-118.4202],[34.1999,-118.3061],[34.2204,-118.1813]]}
+    ],
+    "fixes": {
+        "KLGB": [33.81652,-118.14989],
+        "RAL": [33.952,-117.449,"riverside"],
+        "IHULU": [33.86181,-117.91559],
+        "SXC": [33.3751,-118.42,"santa catalina"],
+        "OZUSO": [33.63836,-118.25891],
+        "VNY": [34.2234,-118.492,"van nuys"],
+        "OS": [33.9643,-118.278,"romen"],
+        "_RWY1204DME": [33.87058,-118.21527],
+        "_RWY3004DME": [33.76373,-118.08603],
+        "_RWY08L04DME": [33.82297,-118.23942],
+        "_RWY26R04DME": [33.82244,-118.06473],
+        "_RWY08R04DME": [33.81385,-118.2415],
+        "_RWY26L04DME": [33.81391,-118.06826]
+    },
+    "runways": [
+        {"name":["12","30"],"end":[[33.8236,-118.15839,"52ft"],[33.81074,-118.14284,"30ft"]],"ils":[true,true]},
+        {"name":["08L","26R"],"end":[[33.82275,-118.15923,"52ft"],[33.82271,-118.14492,"39ft"]],"ils":[true,true]},
+        {"name":["08R","26L"],"end":[[33.8139,-118.16131,"50ft"],[33.81391,-118.14844,"29ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "RAL1C": {"icao":"RAL1C","name":"Riverside One Charlie","rwy":{"KLGB12":["_RWY3004DME"],"KLGB30":["_RWY1204DME"],"KLGB08L":["_RWY26R04DME"],"KLGB26R":["_RWY08L04DME"],"KLGB08R":["_RWY26L04DME"],"KLGB26L":["_RWY08R04DME"]},"body":[],"exitPoints":{"RAL":["RAL"]},"draw":[["KLGB","RAL*"]]},
+        "SXC1F": {"icao":"SXC1F","name":"Santa Catalina One Foxtrot","rwy":{"KLGB12":["_RWY3004DME"],"KLGB30":["_RWY1204DME"],"KLGB08L":["_RWY26R04DME"],"KLGB26R":["_RWY08L04DME"],"KLGB08R":["_RWY26L04DME"],"KLGB26L":["_RWY08R04DME"]},"body":[],"exitPoints":{"SXC":["SXC"]},"draw":[["KLGB","SXC*"]]},
+        "VNY2D": {"icao":"VNY2D","name":"Van Nuys Two Delta","rwy":{"KLGB12":["_RWY3004DME"],"KLGB30":["_RWY1204DME"],"KLGB08L":["_RWY26R04DME"],"KLGB26R":["_RWY08L04DME"],"KLGB08R":["_RWY26L04DME"],"KLGB26L":["_RWY08R04DME"]},"body":[],"exitPoints":{"VNY":["VNY"]},"draw":[["KLGB","VNY*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KLGB","destination":"KPHX","category":"departure","route":"KLGB30.RAL1C.RAL","altitude":"","speed":"","method":"random","rate":0.74,"airlines":[["aal/a319",2]]},
+        {"origin":"KLGB","destination":"KAUS","category":"departure","route":"KLGB30.RAL1C.RAL","altitude":"","speed":"","method":"random","rate":0.37,"airlines":[["jbu/a320",1]]},
+        {"origin":"KLGB","destination":"KBOS","category":"departure","route":"KLGB30.RAL1C.RAL","altitude":"","speed":"","method":"random","rate":0.37,"airlines":[["jbu/a320",1]]},
+        {"origin":"KLGB","destination":"KIAD","category":"departure","route":"KLGB30.RAL1C.RAL","altitude":"","speed":"","method":"random","rate":0.37,"airlines":[["jbu/a320",1]]},
+        {"origin":"KLGB","destination":"KJFK","category":"departure","route":"KLGB30.RAL1C.RAL","altitude":"","speed":"","method":"random","rate":0.37,"airlines":[["jbu/a320",1]]},
+        {"origin":"KLGB","destination":"","category":"departure","route":"KLGB30.RAL1C.RAL","altitude":"","speed":"","method":"random","rate":0.74,"airlines":[["jbu/a320",2]]},
+        {"origin":"KLGB","destination":"","category":"departure","route":"KLGB30.VNY2D.VNY","altitude":"","speed":"","method":"random","rate":1.85,"airlines":[["jbu/a320",5]]},
+        {"origin":"KLGB","destination":"","category":"departure","route":"KLGB30.RAL1C.RAL","altitude":"","speed":"","method":"random","rate":1.6,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KPHX","destination":"KLGB","category":"arrival","route":"RAL..IHULU..KLGB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.74,"airlines":[["aal/a319",2]]},
+        {"origin":"KAUS","destination":"KLGB","category":"arrival","route":"RAL..IHULU..KLGB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.37,"airlines":[["jbu/a320",1]]},
+        {"origin":"KBOS","destination":"KLGB","category":"arrival","route":"RAL..IHULU..KLGB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.37,"airlines":[["jbu/a320",1]]},
+        {"origin":"KIAD","destination":"KLGB","category":"arrival","route":"RAL..IHULU..KLGB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.37,"airlines":[["jbu/a320",1]]},
+        {"origin":"KJFK","destination":"KLGB","category":"arrival","route":"RAL..IHULU..KLGB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.37,"airlines":[["jbu/a320",1]]},
+        {"origin":"","destination":"KLGB","category":"arrival","route":"RAL..IHULU..KLGB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.74,"airlines":[["jbu/a320",2]]},
+        {"origin":"","destination":"KLGB","category":"arrival","route":"VNY..OS..KLGB","altitude":[4000,7000],"speed":250,"method":"random","rate":1.85,"airlines":[["jbu/a320",5]]},
+        {"origin":"","destination":"KLGB","category":"arrival","route":"RAL..IHULU..KLGB","altitude":[4000,7000],"speed":250,"method":"random","rate":1.6,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [33.952,-117.449,33.8618,-117.9156],
+            [33.8618,-117.9156,33.8165,-118.1499],
+            [33.3751,-118.42,33.6384,-118.2589],
+            [33.6384,-118.2589,33.8165,-118.1499],
+            [34.2234,-118.492,33.9643,-118.278],
+            [33.9643,-118.278,33.8165,-118.1499]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [33.8236,-118.1584,33.941,-118.3007],
+            [33.8752,-118.238,33.8894,-118.221],
+            [33.9339,-118.3092,33.9481,-118.2922],
+            [33.8107,-118.1428,33.6932,-118.0009],
+            [33.7591,-118.0634,33.7449,-118.0803],
+            [33.7003,-117.9925,33.6861,-118.0094],
+            [33.8228,-118.1592,33.8232,-118.3597],
+            [33.813,-118.2595,33.833,-118.2594],
+            [33.8132,-118.3598,33.8332,-118.3597],
+            [33.8227,-118.1449,33.8219,-117.9444],
+            [33.8324,-118.0446,33.8124,-118.0447],
+            [33.8319,-117.9444,33.8119,-117.9445]
+        ]}
+    ]
+}

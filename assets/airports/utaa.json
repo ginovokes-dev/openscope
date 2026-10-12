@@ -1,0 +1,94 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/UTAA/",
+    "info": {"country":"TM","city":"Ashgabat","type":"large_airport","longestRunwayM":3800,"frequencies":{"twr":"120.000","app":"123.500","gnd":"121.700"}},
+    "radio": {"twr":"Ashgabat Tower","app":"Ashgabat Approach","dep":"Ashgabat Departure"},
+    "icao": "UTAA",
+    "iata": "ASB",
+    "magnetic_north": 5.3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [37.986801,58.361,"692ft"],
+    "rangeRings": {"enabled":true,"center":[37.986801,58.361],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":280,"speed":10},
+    "arrivalRunway": "29R",
+    "departureRunway": "29R",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[38.3898,58.4084],[38.3664,58.5391],[38.3171,58.6577],[38.2453,58.7561],[38.1559,58.8275],[38.055,58.8671],[37.9494,58.8723],[37.8464,58.8426],[37.7529,58.7801],[37.6754,58.689],[37.6191,58.5756],[37.5879,58.4475],[37.5838,58.3136],[37.6072,58.1829],[37.6565,58.0643],[37.7283,57.9659],[37.8177,57.8945],[37.9186,57.8549],[38.0242,57.8497],[38.1272,57.8794],[38.2207,57.9419],[38.2982,58.033],[38.3545,58.1464],[38.3857,58.2745]]}
+    ],
+    "fixes": {
+        "UTAA": [37.9868,58.361],
+        "LITER": [38.20935,58.98238],
+        "PEJLO": [38.06949,58.59187],
+        "UBIFI": [37.778,58.99002],
+        "WELEL": [37.90922,58.5947],
+        "TAFIP": [37.46085,58.21771],
+        "OSASA": [37.79139,58.30776],
+        "UJORO": [38.24621,57.76307],
+        "HODCI": [38.08318,58.13885],
+        "_RWY11L04DME": [38.03297,58.26947],
+        "_RWY29R04DME": [37.95061,58.45436],
+        "_RWY11R04DME": [38.02269,58.26217],
+        "_RWY29L04DME": [37.94032,58.44702]
+    },
+    "runways": [
+        {"name":["11L","29R"],"end":[[38.00021,58.34311,"682ft"],[37.98341,58.3808,"679ft"]],"ils":[true,true]},
+        {"name":["11R","29L"],"end":[[37.98993,58.33579,"689ft"],[37.97313,58.37348,"679ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "LITER2D": {"icao":"LITER2D","name":"Liter Two Delta","rwy":{"UTAA11L":["_RWY29R04DME"],"UTAA29R":["_RWY11L04DME"],"UTAA11R":["_RWY29L04DME"],"UTAA29L":["_RWY11R04DME"]},"body":[],"exitPoints":{"LITER":["LITER"]},"draw":[["UTAA","LITER*"]]},
+        "UBIFI3F": {"icao":"UBIFI3F","name":"Ubifi Three Foxtrot","rwy":{"UTAA11L":["_RWY29R04DME"],"UTAA29R":["_RWY11L04DME"],"UTAA11R":["_RWY29L04DME"],"UTAA29L":["_RWY11R04DME"]},"body":[],"exitPoints":{"UBIFI":["UBIFI"]},"draw":[["UTAA","UBIFI*"]]},
+        "TAFIP1C": {"icao":"TAFIP1C","name":"Tafip One Charlie","rwy":{"UTAA11L":["_RWY29R04DME"],"UTAA29R":["_RWY11L04DME"],"UTAA11R":["_RWY29L04DME"],"UTAA29L":["_RWY11R04DME"]},"body":[],"exitPoints":{"TAFIP":["TAFIP"]},"draw":[["UTAA","TAFIP*"]]},
+        "UJORO3B": {"icao":"UJORO3B","name":"Ujoro Three Bravo","rwy":{"UTAA11L":["_RWY29R04DME"],"UTAA29R":["_RWY11L04DME"],"UTAA11R":["_RWY29L04DME"],"UTAA29L":["_RWY11R04DME"]},"body":[],"exitPoints":{"UJORO":["UJORO"]},"draw":[["UTAA","UJORO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"UTAA","destination":"LTFM","category":"departure","route":"UTAA29R.UJORO3B.UJORO","altitude":"","speed":"","method":"random","rate":0.82,"airlines":[["thy/a321",1],["tua/b738",1],["tua/b752",1]]},
+        {"origin":"UTAA","destination":"UUDD","category":"departure","route":"UTAA29R.UJORO3B.UJORO","altitude":"","speed":"","method":"random","rate":0.82,"airlines":[["sbi/a319",1],["tua/b738",1],["tua/b752",1]]},
+        {"origin":"UTAA","destination":"OMDB","category":"departure","route":"UTAA29R.TAFIP1C.TAFIP","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["fdb/b738",1],["tua/b733",1]]},
+        {"origin":"UTAA","destination":"UBBB","category":"departure","route":"UTAA29R.UJORO3B.UJORO","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["dlh/a333",1],["dlh/a343",1]]},
+        {"origin":"UTAA","destination":"EDDF","category":"departure","route":"UTAA29R.UJORO3B.UJORO","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["tua/b738",1]]},
+        {"origin":"UTAA","destination":"","category":"departure","route":"UTAA29R.LITER2D.LITER","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["csn/b737",1]]},
+        {"origin":"UTAA","destination":"","category":"departure","route":"UTAA29R.UBIFI3F.UBIFI","altitude":"","speed":"","method":"random","rate":0.55,"airlines":[["tua/b733",1],["tua/b752",1]]},
+        {"origin":"UTAA","destination":"","category":"departure","route":"UTAA29R.UJORO3B.UJORO","altitude":"","speed":"","method":"random","rate":0.82,"airlines":[["tua/b752",2],["bru/b735",1]]},
+        {"origin":"UTAA","destination":"","category":"departure","route":"UTAA29R.UBIFI3F.UBIFI","altitude":"","speed":"","method":"random","rate":1.55,"airlines":[["ez/c172",6],["ez/p28a",5],["ez/c182",3],["ez/be36",2],["ez/da42",1],["ez/tb20",1],["ez/c208",2],["ez/pc12",2],["ez/be20",1],["ez/b350",1],["ez/p180",1],["ez/c510",1],["ez/e50p",1],["ez/c550",1],["ez/e55p",1],["ez/cl30",1],["ez/c680",1],["ez/h25b",1],["ez/lj45",1],["ez/f2th",1],["ez/glf4",1],["ez/glex",1],["ez/glf5",1]]},
+        {"origin":"LTFM","destination":"UTAA","category":"arrival","route":"UJORO..HODCI..UTAA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.82,"airlines":[["thy/a321",1],["tua/b738",1],["tua/b752",1]]},
+        {"origin":"UUDD","destination":"UTAA","category":"arrival","route":"UJORO..HODCI..UTAA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.82,"airlines":[["sbi/a319",1],["tua/b738",1],["tua/b752",1]]},
+        {"origin":"OMDB","destination":"UTAA","category":"arrival","route":"TAFIP..OSASA..UTAA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.55,"airlines":[["fdb/b738",1],["tua/b733",1]]},
+        {"origin":"UBBB","destination":"UTAA","category":"arrival","route":"UJORO..HODCI..UTAA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.55,"airlines":[["dlh/a333",1],["dlh/a343",1]]},
+        {"origin":"EDDF","destination":"UTAA","category":"arrival","route":"UJORO..HODCI..UTAA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.27,"airlines":[["tua/b738",1]]},
+        {"origin":"","destination":"UTAA","category":"arrival","route":"LITER..PEJLO..UTAA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.27,"airlines":[["csn/b737",1]]},
+        {"origin":"","destination":"UTAA","category":"arrival","route":"UBIFI..WELEL..UTAA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.55,"airlines":[["tua/b733",1],["tua/b752",1]]},
+        {"origin":"","destination":"UTAA","category":"arrival","route":"UJORO..HODCI..UTAA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.82,"airlines":[["tua/b752",2],["bru/b735",1]]},
+        {"origin":"","destination":"UTAA","category":"arrival","route":"UBIFI..WELEL..UTAA","altitude":[4000,7000],"speed":250,"method":"random","rate":1.55,"airlines":[["ez/c172",6],["ez/p28a",5],["ez/c182",3],["ez/be36",2],["ez/da42",1],["ez/tb20",1],["ez/c208",2],["ez/pc12",2],["ez/be20",1],["ez/b350",1],["ez/p180",1],["ez/c510",1],["ez/e50p",1],["ez/c550",1],["ez/e55p",1],["ez/cl30",1],["ez/c680",1],["ez/h25b",1],["ez/lj45",1],["ez/f2th",1],["ez/glf4",1],["ez/glex",1],["ez/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [38.2093,58.9824,38.0695,58.5919],
+            [38.0695,58.5919,37.9868,58.361],
+            [37.778,58.99,37.9092,58.5947],
+            [37.9092,58.5947,37.9868,58.361],
+            [37.4609,58.2177,37.7914,58.3078],
+            [37.7914,58.3078,37.9868,58.361],
+            [38.2462,57.7631,38.0832,58.1388],
+            [38.0832,58.1388,37.9868,58.361]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [38.0002,58.3431,38.082,58.1589],
+            [38.0324,58.2448,38.0498,58.2573],
+            [38.0733,58.1526,38.0907,58.1651],
+            [37.9834,58.3808,37.9013,58.5646],
+            [37.9511,58.479,37.9337,58.4665],
+            [37.91,58.5708,37.8926,58.5583],
+            [37.9899,58.3358,38.0717,58.1516],
+            [38.0222,58.2375,38.0396,58.25],
+            [38.063,58.1454,38.0804,58.1579],
+            [37.9731,58.3735,37.891,58.5572],
+            [37.9408,58.4716,37.9234,58.4592],
+            [37.8997,58.5634,37.8823,58.551]
+        ]}
+    ]
+}

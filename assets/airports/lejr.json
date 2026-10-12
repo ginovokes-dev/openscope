@@ -1,0 +1,87 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LEJR/",
+    "info": {"country":"ES","city":"Jerez de la Frontera","type":"medium_airport","longestRunwayM":2304,"frequencies":{"twr":"118.550","app":"128.500","gnd":"121.600"}},
+    "radio": {"twr":"Jerez Tower","app":"Jerez Approach","dep":"Jerez Departure"},
+    "icao": "LEJR",
+    "iata": "XRY",
+    "magnetic_north": -0.1,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [36.744598,-6.06011,"93ft"],
+    "rangeRings": {"enabled":true,"center":[36.744598,-6.06011],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":200,"speed":7},
+    "arrivalRunway": "20",
+    "departureRunway": "20",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[37.2842,-6.0613],[37.266,-5.887],[37.2124,-5.7244],[37.1268,-5.5848],[37.0152,-5.4775],[36.8852,-5.41],[36.7455,-5.3867],[36.6059,-5.4094],[36.4756,-5.4764],[36.3637,-5.5831],[36.2778,-5.7224],[36.2236,-5.8847],[36.205,-6.0589],[36.2231,-6.2333],[36.2768,-6.3958],[36.3624,-6.5354],[36.474,-6.6427],[36.604,-6.7102],[36.7437,-6.7335],[36.8833,-6.7109],[37.0136,-6.6439],[37.1255,-6.5371],[37.2114,-6.3978],[37.2656,-6.2355]]}
+    ],
+    "fixes": {
+        "LEJR": [36.7446,-6.06011],
+        "MNF": [37.2946,-5.56214,"moron"],
+        "SIBIK": [36.94682,-5.87702],
+        "MAR": [37.0553,-4.93989,"martin"],
+        "UBAPO": [36.82632,-5.76548],
+        "TNG": [35.7289,-5.89083,"tanger"],
+        "TEVEP": [36.49697,-6.01884],
+        "REJAL": [36.87496,-6.92621],
+        "MAGEH": [36.79072,-6.36653],
+        "_RWY0204DME": [36.67293,-6.09501],
+        "_RWY2004DME": [36.81636,-6.02516]
+    },
+    "runways": [
+        {"name":["02","20"],"end":[[36.735,-6.06481,"68ft"],[36.7543,-6.05541,"93ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "MNF3D": {"icao":"MNF3D","name":"Moron Three Delta","rwy":{"LEJR02":["_RWY2004DME"],"LEJR20":["_RWY0204DME"]},"body":[],"exitPoints":{"MNF":["MNF"]},"draw":[["LEJR","MNF*"]]},
+        "MAR2B": {"icao":"MAR2B","name":"Martin Two Bravo","rwy":{"LEJR02":["_RWY2004DME"],"LEJR20":["_RWY0204DME"]},"body":[],"exitPoints":{"MAR":["MAR"]},"draw":[["LEJR","MAR*"]]},
+        "TNG2C": {"icao":"TNG2C","name":"Tanger Two Charlie","rwy":{"LEJR02":["_RWY2004DME"],"LEJR20":["_RWY0204DME"]},"body":[],"exitPoints":{"TNG":["TNG"]},"draw":[["LEJR","TNG*"]]},
+        "REJAL1D": {"icao":"REJAL1D","name":"Rejal One Delta","rwy":{"LEJR02":["_RWY2004DME"],"LEJR20":["_RWY0204DME"]},"body":[],"exitPoints":{"REJAL":["REJAL"]},"draw":[["LEJR","REJAL*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LEJR","destination":"EDDF","category":"departure","route":"LEJR20.MNF3D.MNF","altitude":"","speed":"","method":"random","rate":0.97,"airlines":[["cfg/b738",1],["cfg/b752",1],["cfg/b763",1],["hlx/b738",1]]},
+        {"origin":"LEJR","destination":"EDDL","category":"departure","route":"LEJR20.MNF3D.MNF","altitude":"","speed":"","method":"random","rate":0.73,"airlines":[["cfg/a320",1],["cfg/b752",1],["hlx/b738",1]]},
+        {"origin":"LEJR","destination":"LEBL","category":"departure","route":"LEJR20.MNF3D.MNF","altitude":"","speed":"","method":"random","rate":0.73,"airlines":[["ibe/a320",1],["ryr/b738",1],["vlg/a320",1]]},
+        {"origin":"LEJR","destination":"EDDH","category":"departure","route":"LEJR20.MNF3D.MNF","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["cfg/a320",1],["hlx/b738",1]]},
+        {"origin":"LEJR","destination":"EDDM","category":"departure","route":"LEJR20.MNF3D.MNF","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["cfg/a320",1],["hlx/b738",1]]},
+        {"origin":"LEJR","destination":"","category":"departure","route":"LEJR20.MNF3D.MNF","altitude":"","speed":"","method":"random","rate":1.95,"airlines":[["cfg/a320",2],["hlx/b738",2],["ryr/b738",2],["gwi/a319",1],["lgl/b738",1]]},
+        {"origin":"LEJR","destination":"","category":"departure","route":"LEJR20.MAR2B.MAR","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["ber/a320",1],["lgl/b738",1]]},
+        {"origin":"LEJR","destination":"","category":"departure","route":"LEJR20.REJAL1D.REJAL","altitude":"","speed":"","method":"random","rate":0.24,"airlines":[["lgl/b738",1]]},
+        {"origin":"LEJR","destination":"","category":"departure","route":"LEJR20.MAR2B.MAR","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"LEJR","destination":"","category":"departure","route":"LEJR20.TNG2C.TNG","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"EDDF","destination":"LEJR","category":"arrival","route":"MNF..SIBIK..LEJR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.97,"airlines":[["cfg/b738",1],["cfg/b752",1],["cfg/b763",1],["hlx/b738",1]]},
+        {"origin":"EDDL","destination":"LEJR","category":"arrival","route":"MNF..SIBIK..LEJR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.73,"airlines":[["cfg/a320",1],["cfg/b752",1],["hlx/b738",1]]},
+        {"origin":"LEBL","destination":"LEJR","category":"arrival","route":"MNF..SIBIK..LEJR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.73,"airlines":[["ibe/a320",1],["ryr/b738",1],["vlg/a320",1]]},
+        {"origin":"EDDH","destination":"LEJR","category":"arrival","route":"MNF..SIBIK..LEJR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.49,"airlines":[["cfg/a320",1],["hlx/b738",1]]},
+        {"origin":"EDDM","destination":"LEJR","category":"arrival","route":"MNF..SIBIK..LEJR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.49,"airlines":[["cfg/a320",1],["hlx/b738",1]]},
+        {"origin":"","destination":"LEJR","category":"arrival","route":"MNF..SIBIK..LEJR","altitude":[6000,9000],"speed":250,"method":"random","rate":1.95,"airlines":[["cfg/a320",2],["hlx/b738",2],["ryr/b738",2],["gwi/a319",1],["lgl/b738",1]]},
+        {"origin":"","destination":"LEJR","category":"arrival","route":"MAR..UBAPO..LEJR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.49,"airlines":[["ber/a320",1],["lgl/b738",1]]},
+        {"origin":"","destination":"LEJR","category":"arrival","route":"REJAL..MAGEH..LEJR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.24,"airlines":[["lgl/b738",1]]},
+        {"origin":"","destination":"LEJR","category":"arrival","route":"MAR..UBAPO..LEJR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"","destination":"LEJR","category":"arrival","route":"TNG..TEVEP..LEJR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [37.2946,-5.5621,36.9468,-5.877],
+            [36.9468,-5.877,36.7446,-6.0601],
+            [37.0553,-4.9399,36.8263,-5.7655],
+            [36.8263,-5.7655,36.7446,-6.0601],
+            [35.7289,-5.8908,36.497,-6.0188],
+            [36.497,-6.0188,36.7446,-6.0601],
+            [36.875,-6.9262,36.7907,-6.3665],
+            [36.7907,-6.3665,36.7446,-6.0601]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [36.735,-6.0648,36.5798,-6.1402],
+            [36.6538,-6.0909,36.661,-6.1142],
+            [36.5762,-6.1286,36.5835,-6.1518],
+            [36.7543,-6.0554,36.9094,-5.9797],
+            [36.8355,-6.0292,36.8282,-6.006],
+            [36.9131,-5.9913,36.9058,-5.968]
+        ]}
+    ]
+}

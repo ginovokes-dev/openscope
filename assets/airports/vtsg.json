@@ -1,0 +1,74 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VTSG/",
+    "info": {"country":"TH","city":"Krabi","type":"large_airport","longestRunwayM":3000,"frequencies":{"twr":"118.600","app":"120.050","gnd":"121.900"}},
+    "radio": {"twr":"Krabi Tower","app":"Krabi Approach","dep":"Krabi Departure"},
+    "icao": "VTSG",
+    "iata": "KBV",
+    "magnetic_north": -0.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [8.095591,98.988955,"82ft"],
+    "rangeRings": {"enabled":true,"center":[8.095591,98.988955],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":140,"speed":9},
+    "arrivalRunway": "14",
+    "departureRunway": "14",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[8.5003,98.9861],[8.4872,99.092],[8.4475,99.1909],[8.3837,99.276],[8.3004,99.3415],[8.2031,99.383],[8.0984,99.3977],[7.9936,99.3845],[7.8957,99.3444],[7.8114,99.28],[7.7465,99.1958],[7.7054,99.0975],[7.6909,98.9918],[7.704,98.8859],[7.7437,98.787],[7.8074,98.7019],[7.8908,98.6364],[7.9881,98.5949],[8.0928,98.5802],[8.1976,98.5934],[8.2955,98.6335],[8.3797,98.6979],[8.4446,98.7821],[8.4858,98.8804]]}
+    ],
+    "fixes": {
+        "VTSG": [8.09559,98.98896],
+        "MUZME": [8.62068,99.10699],
+        "IVUGO": [8.29068,99.03281],
+        "TRN": [7.50894,99.626,"trang"],
+        "EFOBU": [7.95947,99.13677],
+        "PUT": [8.11523,98.3063,"phuket"],
+        "AVOGE": [8.1014,98.78716],
+        "_RWY1404DME": [8.15813,98.9376],
+        "_RWY3204DME": [8.0401,99.03469]
+    },
+    "runways": [
+        {"name":["14","32"],"end":[[8.10647,98.9801,"82ft"],[8.09176,98.9922,"77ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "MUZME2E": {"icao":"MUZME2E","name":"Muzme Two Echo","rwy":{"VTSG14":["_RWY3204DME"],"VTSG32":["_RWY1404DME"]},"body":[],"exitPoints":{"MUZME":["MUZME"]},"draw":[["VTSG","MUZME*"]]},
+        "TRN3C": {"icao":"TRN3C","name":"Trang Three Charlie","rwy":{"VTSG14":["_RWY3204DME"],"VTSG32":["_RWY1404DME"]},"body":[],"exitPoints":{"TRN":["TRN"]},"draw":[["VTSG","TRN*"]]},
+        "PUT3E": {"icao":"PUT3E","name":"Phuket Three Echo","rwy":{"VTSG14":["_RWY3204DME"],"VTSG32":["_RWY1404DME"]},"body":[],"exitPoints":{"PUT":["PUT"]},"draw":[["VTSG","PUT*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"VTSG","destination":"VTBS","category":"departure","route":"VTSG14.MUZME2E.MUZME","altitude":"","speed":"","method":"random","rate":1.25,"airlines":[["bkp/a319",1],["bkp/a320",1],["tha/a320",1],["tha/a333",1]]},
+        {"origin":"VTSG","destination":"VTBD","category":"departure","route":"VTSG14.MUZME2E.MUZME","altitude":"","speed":"","method":"random","rate":0.63,"airlines":[["aiq/a320",1],["nok/b738",1]]},
+        {"origin":"VTSG","destination":"WMKK","category":"departure","route":"VTSG14.TRN3C.TRN","altitude":"","speed":"","method":"random","rate":0.63,"airlines":[["axm/a320",1],["mas/b738",1]]},
+        {"origin":"VTSG","destination":"WSSS","category":"departure","route":"VTSG14.TRN3C.TRN","altitude":"","speed":"","method":"random","rate":0.63,"airlines":[["aiq/a320",1],["tgw/a320",1]]},
+        {"origin":"VTSG","destination":"","category":"departure","route":"VTSG14.MUZME2E.MUZME","altitude":"","speed":"","method":"random","rate":0.63,"airlines":[["aiq/a320",1],["bkp/at72",1]]},
+        {"origin":"VTSG","destination":"","category":"departure","route":"VTSG14.TRN3C.TRN","altitude":"","speed":"","method":"random","rate":1.25,"airlines":[["hs/c172",6],["hs/p28a",5],["hs/c182",3],["hs/be36",2],["hs/da42",1],["hs/tb20",1],["hs/c208",2],["hs/pc12",2],["hs/be20",1],["hs/b350",1],["hs/p180",1],["hs/c510",1],["hs/e50p",1],["hs/c550",1],["hs/e55p",1],["hs/cl30",1],["hs/c680",1],["hs/h25b",1],["hs/lj45",1],["hs/f2th",1],["hs/glf4",1],["hs/glex",1],["hs/glf5",1]]},
+        {"origin":"VTBS","destination":"VTSG","category":"arrival","route":"MUZME..IVUGO..VTSG","altitude":[4000,7000],"speed":250,"method":"random","rate":1.25,"airlines":[["bkp/a319",1],["bkp/a320",1],["tha/a320",1],["tha/a333",1]]},
+        {"origin":"VTBD","destination":"VTSG","category":"arrival","route":"MUZME..IVUGO..VTSG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.63,"airlines":[["aiq/a320",1],["nok/b738",1]]},
+        {"origin":"WMKK","destination":"VTSG","category":"arrival","route":"TRN..EFOBU..VTSG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.63,"airlines":[["axm/a320",1],["mas/b738",1]]},
+        {"origin":"WSSS","destination":"VTSG","category":"arrival","route":"TRN..EFOBU..VTSG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.63,"airlines":[["aiq/a320",1],["tgw/a320",1]]},
+        {"origin":"","destination":"VTSG","category":"arrival","route":"MUZME..IVUGO..VTSG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.63,"airlines":[["aiq/a320",1],["bkp/at72",1]]},
+        {"origin":"","destination":"VTSG","category":"arrival","route":"TRN..EFOBU..VTSG","altitude":[4000,7000],"speed":250,"method":"random","rate":1.25,"airlines":[["hs/c172",6],["hs/p28a",5],["hs/c182",3],["hs/be36",2],["hs/da42",1],["hs/tb20",1],["hs/c208",2],["hs/pc12",2],["hs/be20",1],["hs/b350",1],["hs/p180",1],["hs/c510",1],["hs/e50p",1],["hs/c550",1],["hs/e55p",1],["hs/cl30",1],["hs/c680",1],["hs/h25b",1],["hs/lj45",1],["hs/f2th",1],["hs/glf4",1],["hs/glex",1],["hs/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [8.6207,99.107,8.2907,99.0328],
+            [8.2907,99.0328,8.0956,98.989],
+            [7.5089,99.626,7.9595,99.1368],
+            [7.9595,99.1368,8.0956,98.989],
+            [8.1152,98.3063,8.1014,98.7872],
+            [8.1014,98.7872,8.0956,98.989]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [8.1065,98.9801,8.2356,98.8738],
+            [8.1647,98.9191,8.1773,98.9348],
+            [8.2293,98.866,8.2419,98.8817],
+            [8.0918,98.9922,7.9626,99.0984],
+            [8.0335,99.0531,8.0209,99.0375],
+            [7.9689,99.1062,7.9563,99.0906]
+        ]}
+    ]
+}

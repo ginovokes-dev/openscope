@@ -1,0 +1,90 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/RJFK/",
+    "info": {"country":"JP","city":"Kagoshima","type":"large_airport","longestRunwayM":3010,"frequencies":{"atis":"127.050","twr":"118.200","app":"126.000","gnd":"121.700","dep":"119.400"}},
+    "radio": {"twr":"Kagoshima Tower","app":"Kagoshima Approach","dep":"Kagoshima Departure"},
+    "icao": "RJFK",
+    "iata": "KOJ",
+    "magnetic_north": -7.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [31.8034,130.718994,"906ft"],
+    "rangeRings": {"enabled":true,"center":[31.8034,130.718994],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":170,"speed":7},
+    "arrivalRunway": "16",
+    "departureRunway": "16",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[32.2046,130.6568],[32.2046,130.7811],[32.1773,130.9012],[32.1245,131.0089],[32.0498,131.0968],[31.9583,131.1589],[31.8562,131.1911],[31.7506,131.1911],[31.6485,131.1589],[31.557,131.0968],[31.4823,131.0089],[31.4295,130.9012],[31.4022,130.7811],[31.4022,130.6568],[31.4295,130.5368],[31.4823,130.4291],[31.557,130.3412],[31.6485,130.2791],[31.7506,130.2469],[31.8562,130.2469],[31.9583,130.2791],[32.0498,130.3412],[32.1245,130.4291],[32.1773,130.5368]]}
+    ],
+    "fixes": {
+        "RJFK": [31.8034,130.71899],
+        "MZE": [31.8787,131.437,"miyazaki"],
+        "EJUHA": [31.82788,130.9524],
+        "HUMUV": [31.40279,131.14143],
+        "KBE": [31.6439,130.842,"kokubu"],
+        "FICHA": [31.39092,130.31268],
+        "HK": [31.6447,130.56599,"kagoshima"],
+        "AVORE": [31.7788,130.08668],
+        "AZERA": [31.79426,130.48407],
+        "AKE": [32.481,130.16,"amakusa"],
+        "ZETSI": [31.96705,130.58399],
+        "_RWY1604DME": [31.87269,130.67157],
+        "_RWY3404DME": [31.7341,130.76638]
+    },
+    "runways": [
+        {"name":["16","34"],"end":[[31.8151,130.711,"906ft"],[31.7917,130.72701,"859ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "MZE2D": {"icao":"MZE2D","name":"Miyazaki Two Delta","rwy":{"RJFK16":["_RWY3404DME"],"RJFK34":["_RWY1604DME"]},"body":[],"exitPoints":{"MZE":["MZE"]},"draw":[["RJFK","MZE*"]]},
+        "HUMUV2A": {"icao":"HUMUV2A","name":"Humuv Two Alpha","rwy":{"RJFK16":["_RWY3404DME"],"RJFK34":["_RWY1604DME"]},"body":[],"exitPoints":{"HUMUV":["HUMUV"]},"draw":[["RJFK","HUMUV*"]]},
+        "FICHA2C": {"icao":"FICHA2C","name":"Ficha Two Charlie","rwy":{"RJFK16":["_RWY3404DME"],"RJFK34":["_RWY1604DME"]},"body":[],"exitPoints":{"FICHA":["FICHA"]},"draw":[["RJFK","FICHA*"]]},
+        "AVORE1A": {"icao":"AVORE1A","name":"Avore One Alpha","rwy":{"RJFK16":["_RWY3404DME"],"RJFK34":["_RWY1604DME"]},"body":[],"exitPoints":{"AVORE":["AVORE"]},"draw":[["RJFK","AVORE*"]]},
+        "AKE2F": {"icao":"AKE2F","name":"Amakusa Two Foxtrot","rwy":{"RJFK16":["_RWY3404DME"],"RJFK34":["_RWY1604DME"]},"body":[],"exitPoints":{"AKE":["AKE"]},"draw":[["RJFK","AKE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"RJFK","destination":"RJTT","category":"departure","route":"RJFK16.MZE2D.MZE","altitude":"","speed":"","method":"random","rate":1.14,"airlines":[["ana/a320",1],["ana/b763",1],["jal/b738",1],["jal/b763",1],["sky/b737",1]]},
+        {"origin":"RJFK","destination":"RJGG","category":"departure","route":"RJFK16.MZE2D.MZE","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["ana/b735",1],["ana/b737",1],["ana/b738",1]]},
+        {"origin":"RJFK","destination":"RJOO","category":"departure","route":"RJFK16.MZE2D.MZE","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["ana/a320",1],["ana/b735",1],["ana/b763",1]]},
+        {"origin":"RJFK","destination":"RKSI","category":"departure","route":"RJFK16.AKE2F.AKE","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["kal/b739",2],["kal/b738",1]]},
+        {"origin":"RJFK","destination":"RCTP","category":"departure","route":"RJFK16.FICHA2C.FICHA","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["cal/b738",1]]},
+        {"origin":"RJFK","destination":"","category":"departure","route":"RJFK16.MZE2D.MZE","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["sky/b737",1]]},
+        {"origin":"RJFK","destination":"","category":"departure","route":"RJFK16.FICHA2C.FICHA","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["ana/b735",1],["crk/a320",1]]},
+        {"origin":"RJFK","destination":"","category":"departure","route":"RJFK16.AVORE1A.AVORE","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["ces/a319",1]]},
+        {"origin":"RJFK","destination":"","category":"departure","route":"RJFK16.FICHA2C.FICHA","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["ja/c172",6],["ja/p28a",5],["ja/c182",3],["ja/be36",2],["ja/da42",1],["ja/tb20",1],["ja/c208",2],["ja/pc12",2],["ja/be20",1],["ja/b350",1],["ja/p180",1],["ja/c510",1],["ja/e50p",1],["ja/c550",1],["ja/e55p",1],["ja/cl30",1],["ja/c680",1],["ja/h25b",1],["ja/lj45",1],["ja/f2th",1],["ja/glf4",1],["ja/glex",1],["ja/glf5",1]]},
+        {"origin":"RJTT","destination":"RJFK","category":"arrival","route":"MZE..EJUHA..RJFK","altitude":[4000,7000],"speed":250,"method":"random","rate":1.14,"airlines":[["ana/a320",1],["ana/b763",1],["jal/b738",1],["jal/b763",1],["sky/b737",1]]},
+        {"origin":"RJGG","destination":"RJFK","category":"arrival","route":"MZE..EJUHA..RJFK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.69,"airlines":[["ana/b735",1],["ana/b737",1],["ana/b738",1]]},
+        {"origin":"RJOO","destination":"RJFK","category":"arrival","route":"MZE..EJUHA..RJFK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.69,"airlines":[["ana/a320",1],["ana/b735",1],["ana/b763",1]]},
+        {"origin":"RKSI","destination":"RJFK","category":"arrival","route":"AKE..ZETSI..RJFK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.69,"airlines":[["kal/b739",2],["kal/b738",1]]},
+        {"origin":"RCTP","destination":"RJFK","category":"arrival","route":"FICHA..HK..RJFK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.23,"airlines":[["cal/b738",1]]},
+        {"origin":"","destination":"RJFK","category":"arrival","route":"MZE..EJUHA..RJFK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.23,"airlines":[["sky/b737",1]]},
+        {"origin":"","destination":"RJFK","category":"arrival","route":"FICHA..HK..RJFK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.46,"airlines":[["ana/b735",1],["crk/a320",1]]},
+        {"origin":"","destination":"RJFK","category":"arrival","route":"AVORE..AZERA..RJFK","altitude":[4000,7000],"speed":250,"method":"random","rate":0.23,"airlines":[["ces/a319",1]]},
+        {"origin":"","destination":"RJFK","category":"arrival","route":"FICHA..HK..RJFK","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["ja/c172",6],["ja/p28a",5],["ja/c182",3],["ja/be36",2],["ja/da42",1],["ja/tb20",1],["ja/c208",2],["ja/pc12",2],["ja/be20",1],["ja/b350",1],["ja/p180",1],["ja/c510",1],["ja/e50p",1],["ja/c550",1],["ja/e55p",1],["ja/cl30",1],["ja/c680",1],["ja/h25b",1],["ja/lj45",1],["ja/f2th",1],["ja/glf4",1],["ja/glex",1],["ja/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [31.8787,131.437,31.8279,130.9524],
+            [31.8279,130.9524,31.8034,130.719],
+            [31.4028,131.1414,31.6439,130.842],
+            [31.6439,130.842,31.8034,130.719],
+            [31.3909,130.3127,31.6447,130.566],
+            [31.6447,130.566,31.8034,130.719],
+            [31.7788,130.0867,31.7943,130.4841],
+            [31.7943,130.4841,31.8034,130.719],
+            [32.481,130.16,31.9671,130.584],
+            [31.9671,130.584,31.8034,130.719]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [31.8151,130.711,31.959,130.6123],
+            [31.8821,130.6515,31.8921,130.6719],
+            [31.954,130.6021,31.9641,130.6225],
+            [31.7917,130.727,31.6477,130.8253],
+            [31.7247,130.7864,31.7147,130.7661],
+            [31.6527,130.8355,31.6427,130.8152]
+        ]}
+    ]
+}

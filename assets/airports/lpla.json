@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LPLA/",
+    "info": {"country":"PT","city":"Praia da Vitoria","type":"medium_airport","longestRunwayM":3317,"frequencies":{"atis":"120.300","twr":"122.100","app":"135.000"}},
+    "radio": {"twr":"Lajes Tower","app":"Lajes Approach","dep":"Lajes Departure"},
+    "icao": "LPLA",
+    "iata": "TER",
+    "magnetic_north": -7.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [38.761799,-27.090799,"180ft"],
+    "rangeRings": {"enabled":true,"center":[38.761799,-27.090799],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":340,"speed":8},
+    "arrivalRunway": "33",
+    "departureRunway": "33",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[39.1631,-27.1576],[39.1629,-27.0222],[39.1354,-26.8913],[39.0824,-26.7741],[39.0076,-26.6785],[38.916,-26.611],[38.8139,-26.5761],[38.7083,-26.5764],[38.6063,-26.6117],[38.5149,-26.6796],[38.4403,-26.7756],[38.3876,-26.893],[38.3605,-27.024],[38.3607,-27.1594],[38.3882,-27.2902],[38.4412,-27.4075],[38.516,-27.5031],[38.6076,-27.5706],[38.7097,-27.6055],[38.8153,-27.6052],[38.9173,-27.5699],[39.0087,-27.502],[39.0833,-27.406],[39.136,-27.2886]]}
+    ],
+    "fixes": {
+        "LPLA": [38.7618,-27.0908],
+        "TANSI": [39.29595,-27.17255],
+        "KALKU": [38.96026,-27.12117],
+        "UTEKE": [38.84462,-26.40914],
+        "GIFSI": [38.79257,-26.83754],
+        "AVEME": [38.3978,-26.58284],
+        "EKUZO": [38.62656,-26.90207],
+        "MATIJ": [38.7172,-27.7783],
+        "JUBIK": [38.74523,-27.34623],
+        "_RWY1504DME": [38.82758,-27.15971],
+        "_RWY3304DME": [38.70129,-27.02739]
+    },
+    "runways": [
+        {"name":["15","33"],"end":[[38.776,-27.1056,"158ft"],[38.7529,-27.0814,"180ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "TANSI2B": {"icao":"TANSI2B","name":"Tansi Two Bravo","rwy":{"LPLA15":["_RWY3304DME"],"LPLA33":["_RWY1504DME"]},"body":[],"exitPoints":{"TANSI":["TANSI"]},"draw":[["LPLA","TANSI*"]]},
+        "UTEKE3F": {"icao":"UTEKE3F","name":"Uteke Three Foxtrot","rwy":{"LPLA15":["_RWY3304DME"],"LPLA33":["_RWY1504DME"]},"body":[],"exitPoints":{"UTEKE":["UTEKE"]},"draw":[["LPLA","UTEKE*"]]},
+        "AVEME1C": {"icao":"AVEME1C","name":"Aveme One Charlie","rwy":{"LPLA15":["_RWY3304DME"],"LPLA33":["_RWY1504DME"]},"body":[],"exitPoints":{"AVEME":["AVEME"]},"draw":[["LPLA","AVEME*"]]},
+        "MATIJ2F": {"icao":"MATIJ2F","name":"Matij Two Foxtrot","rwy":{"LPLA15":["_RWY3304DME"],"LPLA33":["_RWY1504DME"]},"body":[],"exitPoints":{"MATIJ":["MATIJ"]},"draw":[["LPLA","MATIJ*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LPLA","destination":"LPPT","category":"departure","route":"LPLA33.UTEKE3F.UTEKE","altitude":"","speed":"","method":"random","rate":1.22,"airlines":[["rzo/a320",1],["tap/a319",1],["tap/a320",1],["tap/a321",1],["tap/a332",1]]},
+        {"origin":"LPLA","destination":"LPGR","category":"departure","route":"LPLA33.MATIJ2F.MATIJ","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["sat/dh8b",1],["sat/dh8d",1]]},
+        {"origin":"LPLA","destination":"LPHR","category":"departure","route":"LPLA33.MATIJ2F.MATIJ","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["sat/dh8b",1],["sat/dh8d",1]]},
+        {"origin":"LPLA","destination":"LPPD","category":"departure","route":"LPLA33.AVEME1C.AVEME","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["sat/dh8b",1],["sat/dh8d",1]]},
+        {"origin":"LPLA","destination":"LPPI","category":"departure","route":"LPLA33.MATIJ2F.MATIJ","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["sat/dh8d",1],["tap/a320",1]]},
+        {"origin":"LPLA","destination":"","category":"departure","route":"LPLA33.UTEKE3F.UTEKE","altitude":"","speed":"","method":"random","rate":0.24,"airlines":[["rzo/a320",1]]},
+        {"origin":"LPLA","destination":"","category":"departure","route":"LPLA33.MATIJ2F.MATIJ","altitude":"","speed":"","method":"random","rate":0.73,"airlines":[["sat/dh8d",2],["sat/dh8b",1]]},
+        {"origin":"LPLA","destination":"","category":"departure","route":"LPLA33.TANSI2B.TANSI","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["cs/c172",6],["cs/p28a",5],["cs/c182",3],["cs/be36",2],["cs/da42",1],["cs/tb20",1],["cs/c208",2],["cs/pc12",2],["cs/be20",1],["cs/b350",1],["cs/p180",1],["cs/c510",1],["cs/e50p",1],["cs/c550",1],["cs/e55p",1],["cs/cl30",1],["cs/c680",1],["cs/h25b",1],["cs/lj45",1],["cs/f2th",1],["cs/glf4",1],["cs/glex",1],["cs/glf5",1]]},
+        {"origin":"LPPT","destination":"LPLA","category":"arrival","route":"UTEKE..GIFSI..LPLA","altitude":[4000,7000],"speed":250,"method":"random","rate":1.22,"airlines":[["rzo/a320",1],["tap/a319",1],["tap/a320",1],["tap/a321",1],["tap/a332",1]]},
+        {"origin":"LPGR","destination":"LPLA","category":"arrival","route":"MATIJ..JUBIK..LPLA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.49,"airlines":[["sat/dh8b",1],["sat/dh8d",1]]},
+        {"origin":"LPHR","destination":"LPLA","category":"arrival","route":"MATIJ..JUBIK..LPLA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.49,"airlines":[["sat/dh8b",1],["sat/dh8d",1]]},
+        {"origin":"LPPD","destination":"LPLA","category":"arrival","route":"AVEME..EKUZO..LPLA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.49,"airlines":[["sat/dh8b",1],["sat/dh8d",1]]},
+        {"origin":"LPPI","destination":"LPLA","category":"arrival","route":"MATIJ..JUBIK..LPLA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.49,"airlines":[["sat/dh8d",1],["tap/a320",1]]},
+        {"origin":"","destination":"LPLA","category":"arrival","route":"UTEKE..GIFSI..LPLA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.24,"airlines":[["rzo/a320",1]]},
+        {"origin":"","destination":"LPLA","category":"arrival","route":"MATIJ..JUBIK..LPLA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.73,"airlines":[["sat/dh8d",2],["sat/dh8b",1]]},
+        {"origin":"","destination":"LPLA","category":"arrival","route":"TANSI..KALKU..LPLA","altitude":[4000,7000],"speed":250,"method":"random","rate":1.39,"airlines":[["cs/c172",6],["cs/p28a",5],["cs/c182",3],["cs/be36",2],["cs/da42",1],["cs/tb20",1],["cs/c208",2],["cs/pc12",2],["cs/be20",1],["cs/b350",1],["cs/p180",1],["cs/c510",1],["cs/e50p",1],["cs/c550",1],["cs/e55p",1],["cs/cl30",1],["cs/c680",1],["cs/h25b",1],["cs/lj45",1],["cs/f2th",1],["cs/glf4",1],["cs/glex",1],["cs/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [39.2959,-27.1726,38.9603,-27.1212],
+            [38.9603,-27.1212,38.7618,-27.0908],
+            [38.8446,-26.4091,38.7926,-26.8375],
+            [38.7926,-26.8375,38.7618,-27.0908],
+            [38.3978,-26.5828,38.6266,-26.9021],
+            [38.6266,-26.9021,38.7618,-27.0908],
+            [38.7172,-27.7783,38.7452,-27.3462],
+            [38.7452,-27.3462,38.7618,-27.0908]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [38.776,-27.1056,38.9049,-27.241],
+            [38.8341,-27.1832,38.8468,-27.1633],
+            [38.8986,-27.251,38.9112,-27.2311],
+            [38.7529,-27.0814,38.6238,-26.9465],
+            [38.6947,-27.004,38.6821,-27.0238],
+            [38.6302,-26.9366,38.6175,-26.9564]
+        ]}
+    ]
+}

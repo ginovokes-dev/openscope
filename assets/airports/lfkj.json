@@ -1,0 +1,89 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LFKJ/",
+    "info": {"country":"FR","city":"Ajaccio","type":"medium_airport","longestRunwayM":2415,"frequencies":{"atis":"126.925","twr":"118.075","app":"121.050","gnd":"121.700"}},
+    "radio": {"twr":"Ajaccio Tower","app":"Ajaccio Approach","dep":"Ajaccio Departure"},
+    "icao": "LFKJ",
+    "iata": "AJA",
+    "magnetic_north": 3.4,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [41.923599,8.80292,"18ft"],
+    "rangeRings": {"enabled":true,"center":[41.923599,8.80292],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":190,"speed":9},
+    "arrivalRunway": "20",
+    "departureRunway": "20",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[42.4622,8.8459],[42.4356,9.0318],[42.3741,9.2021],[42.2818,9.3452],[42.1652,9.4514],[42.0321,9.5133],[41.8916,9.5269],[41.7533,9.4911],[41.6266,9.4084],[41.5201,9.2844],[41.4411,9.1276],[41.395,8.9487],[41.385,8.7599],[41.4116,8.574],[41.4731,8.4037],[41.5653,8.2606],[41.682,8.1545],[41.8151,8.0925],[41.9556,8.079],[42.0939,8.1148],[42.2206,8.1975],[42.3271,8.3214],[42.4061,8.4782],[42.4522,8.6571]]}
+    ],
+    "fixes": {
+        "LFKJ": [41.9236,8.80292],
+        "CV": [42.577,8.80658,"calvi"],
+        "VAJJA": [42.17343,8.80432],
+        "SME": [40.89,9.50118,"olbia costa smeralda"],
+        "ADOFO": [41.70038,8.95372],
+        "AVOHA": [41.51717,8.0268],
+        "GITJA": [41.77981,8.52833],
+        "WEZZU": [42.44507,8.16298],
+        "VEPHI": [42.10809,8.57651],
+        "_RWY0204DME": [41.85114,8.75783],
+        "_RWY2004DME": [41.9899,8.84421]
+    },
+    "runways": [
+        {"name":["02","20"],"end":[[41.9116,8.79542,"15ft"],[41.92945,8.80654,"18ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "CV3C": {"icao":"CV3C","name":"Calvi Three Charlie","rwy":{"LFKJ02":["_RWY2004DME"],"LFKJ20":["_RWY0204DME"]},"body":[],"exitPoints":{"CV":["CV"]},"draw":[["LFKJ","CV*"]]},
+        "SME1A": {"icao":"SME1A","name":"Olbia Costa Smeralda One Alpha","rwy":{"LFKJ02":["_RWY2004DME"],"LFKJ20":["_RWY0204DME"]},"body":[],"exitPoints":{"SME":["SME"]},"draw":[["LFKJ","SME*"]]},
+        "AVOHA1A": {"icao":"AVOHA1A","name":"Avoha One Alpha","rwy":{"LFKJ02":["_RWY2004DME"],"LFKJ20":["_RWY0204DME"]},"body":[],"exitPoints":{"AVOHA":["AVOHA"]},"draw":[["LFKJ","AVOHA*"]]},
+        "WEZZU1A": {"icao":"WEZZU1A","name":"Wezzu One Alpha","rwy":{"LFKJ02":["_RWY2004DME"],"LFKJ20":["_RWY0204DME"]},"body":[],"exitPoints":{"WEZZU":["WEZZU"]},"draw":[["LFKJ","WEZZU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LFKJ","destination":"LFML","category":"departure","route":"LFKJ20.WEZZU1A.WEZZU","altitude":"","speed":"","method":"random","rate":0.8,"airlines":[["aza/a320",1],["aza/at72",1],["ccm/a320",1],["ccm/at72",1]]},
+        {"origin":"LFKJ","destination":"LFPO","category":"departure","route":"LFKJ20.WEZZU1A.WEZZU","altitude":"","speed":"","method":"random","rate":0.8,"airlines":[["afr/a319",1],["afr/a320",1],["afr/a321",1],["ccm/a319",1]]},
+        {"origin":"LFKJ","destination":"EBLG","category":"departure","route":"LFKJ20.CV3C.CV","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["afr/a320",1],["ccm/a320",1]]},
+        {"origin":"LFKJ","destination":"LFBO","category":"departure","route":"LFKJ20.WEZZU1A.WEZZU","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["ccm/a320",1],["voe/b712",1]]},
+        {"origin":"LFKJ","destination":"LFLL","category":"departure","route":"LFKJ20.WEZZU1A.WEZZU","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["ccm/a320",1],["ezy/a319",1]]},
+        {"origin":"LFKJ","destination":"LFMN","category":"departure","route":"LFKJ20.WEZZU1A.WEZZU","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["aza/at72",1],["ccm/at72",1]]},
+        {"origin":"LFKJ","destination":"","category":"departure","route":"LFKJ20.CV3C.CV","altitude":"","speed":"","method":"random","rate":1.21,"airlines":[["nax/b738",2],["ezy/a319",1],["lgl/b737",1],["tra/b738",1],["voe/b712",1]]},
+        {"origin":"LFKJ","destination":"","category":"departure","route":"LFKJ20.SME1A.SME","altitude":"","speed":"","method":"random","rate":0.2,"airlines":[["tra/b738",1]]},
+        {"origin":"LFKJ","destination":"","category":"departure","route":"LFKJ20.WEZZU1A.WEZZU","altitude":"","speed":"","method":"random","rate":2.61,"airlines":[["voe/b712",6],["hop/at45",3],["ezy/a319",2],["ccm/a320",1],["ezy/a320",1]]},
+        {"origin":"LFKJ","destination":"","category":"departure","route":"LFKJ20.WEZZU1A.WEZZU","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["f/c172",6],["f/p28a",5],["f/c182",3],["f/be36",2],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",1],["f/e50p",1],["f/c550",2],["f/e55p",1],["f/cl30",1],["f/c680",1],["f/h25b",1],["f/lj45",1],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]},
+        {"origin":"LFKJ","destination":"","category":"departure","route":"LFKJ20.CV3C.CV","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["f/c172",6],["f/p28a",5],["f/c182",3],["f/be36",2],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",1],["f/e50p",1],["f/c550",2],["f/e55p",1],["f/cl30",1],["f/c680",1],["f/h25b",1],["f/lj45",1],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]},
+        {"origin":"LFML","destination":"LFKJ","category":"arrival","route":"WEZZU..VEPHI..LFKJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.8,"airlines":[["aza/a320",1],["aza/at72",1],["ccm/a320",1],["ccm/at72",1]]},
+        {"origin":"LFPO","destination":"LFKJ","category":"arrival","route":"WEZZU..VEPHI..LFKJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.8,"airlines":[["afr/a319",1],["afr/a320",1],["afr/a321",1],["ccm/a319",1]]},
+        {"origin":"EBLG","destination":"LFKJ","category":"arrival","route":"CV..VAJJA..LFKJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["afr/a320",1],["ccm/a320",1]]},
+        {"origin":"LFBO","destination":"LFKJ","category":"arrival","route":"WEZZU..VEPHI..LFKJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["ccm/a320",1],["voe/b712",1]]},
+        {"origin":"LFLL","destination":"LFKJ","category":"arrival","route":"WEZZU..VEPHI..LFKJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["ccm/a320",1],["ezy/a319",1]]},
+        {"origin":"LFMN","destination":"LFKJ","category":"arrival","route":"WEZZU..VEPHI..LFKJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["aza/at72",1],["ccm/at72",1]]},
+        {"origin":"","destination":"LFKJ","category":"arrival","route":"CV..VAJJA..LFKJ","altitude":[6000,9000],"speed":250,"method":"random","rate":1.21,"airlines":[["nax/b738",2],["ezy/a319",1],["lgl/b737",1],["tra/b738",1],["voe/b712",1]]},
+        {"origin":"","destination":"LFKJ","category":"arrival","route":"SME..ADOFO..LFKJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.2,"airlines":[["tra/b738",1]]},
+        {"origin":"","destination":"LFKJ","category":"arrival","route":"WEZZU..VEPHI..LFKJ","altitude":[6000,9000],"speed":250,"method":"random","rate":2.61,"airlines":[["voe/b712",6],["hop/at45",3],["ezy/a319",2],["ccm/a320",1],["ezy/a320",1]]},
+        {"origin":"","destination":"LFKJ","category":"arrival","route":"WEZZU..VEPHI..LFKJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.49,"airlines":[["f/c172",6],["f/p28a",5],["f/c182",3],["f/be36",2],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",1],["f/e50p",1],["f/c550",2],["f/e55p",1],["f/cl30",1],["f/c680",1],["f/h25b",1],["f/lj45",1],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]},
+        {"origin":"","destination":"LFKJ","category":"arrival","route":"CV..VAJJA..LFKJ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.49,"airlines":[["f/c172",6],["f/p28a",5],["f/c182",3],["f/be36",2],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",1],["f/e50p",1],["f/c550",2],["f/e55p",1],["f/cl30",1],["f/c680",1],["f/h25b",1],["f/lj45",1],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [42.577,8.8066,42.1734,8.8043],
+            [42.1734,8.8043,41.9236,8.8029],
+            [40.89,9.5012,41.7004,8.9537],
+            [41.7004,8.9537,41.9236,8.8029],
+            [41.5172,8.0268,41.7798,8.5283],
+            [41.7798,8.5283,41.9236,8.8029],
+            [42.4451,8.163,42.1081,8.5765],
+            [42.1081,8.5765,41.9236,8.8029]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [41.9116,8.7954,41.7604,8.7016],
+            [41.8318,8.7606,41.8402,8.7363],
+            [41.7562,8.7137,41.7646,8.6894],
+            [41.9295,8.8065,42.0805,8.9009],
+            [42.0092,8.8414,42.0008,8.8658],
+            [42.0847,8.8886,42.0763,8.9131]
+        ]}
+    ]
+}

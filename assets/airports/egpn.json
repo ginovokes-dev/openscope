@@ -1,0 +1,68 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGPN/",
+    "info": {"country":"GB","city":"Dundee","type":"medium_airport","longestRunwayM":1400,"frequencies":{"atis":"119.330","twr":"122.905","app":"122.905"}},
+    "radio": {"twr":"Dundee Tower","app":"Dundee Approach","dep":"Dundee Radar"},
+    "icao": "EGPN",
+    "iata": "DND",
+    "magnetic_north": -0.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [56.452499,-3.02583,"17ft"],
+    "rangeRings": {"enabled":true,"center":[56.452499,-3.02583],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":270,"speed":8},
+    "arrivalRunway": "27",
+    "departureRunway": "27",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[56.8572,-3.0322],[56.8443,-2.8425],[56.8047,-2.6652],[56.7411,-2.5125],[56.6579,-2.3949],[56.5606,-2.3202],[56.456,-2.2935],[56.3512,-2.3168],[56.2532,-2.3885],[56.1688,-2.5035],[56.1038,-2.6542],[56.0625,-2.8301],[56.0478,-3.0194],[56.0607,-3.2092],[56.1003,-3.3864],[56.1639,-3.5391],[56.2471,-3.6568],[56.3443,-3.7315],[56.449,-3.7581],[56.5538,-3.7348],[56.6518,-3.6632],[56.7362,-3.5481],[56.8012,-3.3975],[56.8425,-3.2215]]}
+    ],
+    "fixes": {
+        "EGPN": [56.4525,-3.02583],
+        "ATF": [57.0775,-2.1057,"aberdeen dyce"],
+        "EJAKO": [56.60754,-2.79759],
+        "SAB": [55.9075,-2.20639,"st aabs"],
+        "WUBAB": [56.29878,-2.7947],
+        "GOW": [55.8705,-4.44572,"glasgow"],
+        "AVUZO": [56.33343,-3.31631],
+        "UGEWE": [56.94387,-3.42199],
+        "FUFFI": [56.63506,-3.17302],
+        "_RWY0903DME": [56.45285,-3.12759],
+        "_RWY2703DME": [56.45198,-2.92407]
+    },
+    "runways": [
+        {"name":["09","27"],"end":[[56.4525,-3.03718,"17ft"],[56.4524,-3.01448,"13ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "ATF1B": {"icao":"ATF1B","name":"Aberdeen Dyce One Bravo","rwy":{"EGPN09":["_RWY2703DME"],"EGPN27":["_RWY0903DME"]},"body":[],"exitPoints":{"ATF":["ATF"]},"draw":[["EGPN","ATF*"]]},
+        "SAB1E": {"icao":"SAB1E","name":"St Aabs One Echo","rwy":{"EGPN09":["_RWY2703DME"],"EGPN27":["_RWY0903DME"]},"body":[],"exitPoints":{"SAB":["SAB"]},"draw":[["EGPN","SAB*"]]},
+        "GOW2D": {"icao":"GOW2D","name":"Glasgow Two Delta","rwy":{"EGPN09":["_RWY2703DME"],"EGPN27":["_RWY0903DME"]},"body":[],"exitPoints":{"GOW":["GOW"]},"draw":[["EGPN","GOW*"]]},
+        "UGEWE1E": {"icao":"UGEWE1E","name":"Ugewe One Echo","rwy":{"EGPN09":["_RWY2703DME"],"EGPN27":["_RWY0903DME"]},"body":[],"exitPoints":{"UGEWE":["UGEWE"]},"draw":[["EGPN","UGEWE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGPN","destination":"EGSS","category":"departure","route":"EGPN27.SAB1E.SAB","altitude":"","speed":"","method":"random","rate":2.24,"airlines":[["bee/d328",1]]},
+        {"origin":"EGPN","destination":"","category":"departure","route":"EGPN27.UGEWE1E.UGEWE","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/c680",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glf5",1]]},
+        {"origin":"EGSS","destination":"EGPN","category":"arrival","route":"SAB..WUBAB..EGPN","altitude":[4000,7000],"speed":250,"method":"random","rate":2.24,"airlines":[["bee/d328",1]]},
+        {"origin":"","destination":"EGPN","category":"arrival","route":"UGEWE..FUFFI..EGPN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.75,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/c680",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [57.0775,-2.1057,56.6075,-2.7976],
+            [56.6075,-2.7976,56.4525,-3.0258],
+            [55.9075,-2.2064,56.2988,-2.7947],
+            [56.2988,-2.7947,56.4525,-3.0258],
+            [55.8705,-4.4457,56.3334,-3.3163],
+            [56.3334,-3.3163,56.4525,-3.0258],
+            [56.9439,-3.422,56.6351,-3.173],
+            [56.6351,-3.173,56.4525,-3.0258]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [56.4524,-3.0145,56.4507,-2.7131],
+            [56.4617,-2.8637,56.4417,-2.8639],
+            [56.4607,-2.713,56.4408,-2.7133]
+        ]}
+    ]
+}

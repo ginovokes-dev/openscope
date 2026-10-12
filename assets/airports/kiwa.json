@@ -1,0 +1,95 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KIWA/",
+    "info": {"country":"US","city":"Mesa","type":"medium_airport","longestRunwayM":3181,"frequencies":{"atis":"133.500","twr":"118.800","gnd":"128.250"}},
+    "radio": {"twr":"Mesa Tower","app":"Mesa Approach","dep":"Mesa Departure"},
+    "icao": "KIWA",
+    "iata": "AZA",
+    "magnetic_north": 9.5,
+    "ctr_radius": 60,
+    "ctr_ceiling": 11000,
+    "initial_alt": 6000,
+    "position": [33.3078,-111.654999,"1382ft"],
+    "rangeRings": {"enabled":true,"center":[33.3078,-111.654999],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":290,"speed":9},
+    "arrivalRunway": "30L",
+    "departureRunway": "30L",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":110,"airspace_class":"C","poly":[[33.84,-111.5484],[33.7988,-111.3873],[33.7242,-111.2443],[33.6211,-111.1294],[33.4968,-111.0502],[33.3595,-111.0123],[33.2187,-111.0182],[33.084,-111.0675],[32.9646,-111.1568],[32.8685,-111.2801],[32.8024,-111.4289],[32.7707,-111.5931],[32.7756,-111.7616],[32.8168,-111.9227],[32.8914,-112.0657],[32.9945,-112.1806],[33.1188,-112.2598],[33.2561,-112.2977],[33.3969,-112.2918],[33.5316,-112.2425],[33.651,-112.1532],[33.7471,-112.0299],[33.8132,-111.8811],[33.8449,-111.7169]]}
+    ],
+    "fixes": {
+        "KIWA": [33.3078,-111.655],
+        "SEKER": [33.7681,-111.01423],
+        "EZATI": [33.47065,-111.4283],
+        "AVQ": [32.4118,-111.216,"marana"],
+        "WALER": [33.0766,-111.54172],
+        "CAHRA": [33.73836,-112.32471],
+        "IGOZI": [33.46013,-111.89194],
+        "BIVOH": [34.00899,-111.75495],
+        "UHORU": [33.55588,-111.69036],
+        "_RWY12R04DME": [33.36519,-111.72892],
+        "_RWY30L04DME": [33.24978,-111.59315],
+        "_RWY12C04DME": [33.36561,-111.72128],
+        "_RWY30C04DME": [33.24956,-111.58779],
+        "_RWY12L04DME": [33.36566,-111.71623],
+        "_RWY30R04DME": [33.25122,-111.58484]
+    },
+    "runways": [
+        {"name":["12R","30L"],"end":[[33.3177,-111.673,"1339ft"],[33.2973,-111.649,"1372ft"]],"ils":[true,true]},
+        {"name":["12C","30C"],"end":[[33.3176,-111.666,"1346ft"],[33.2976,-111.643,"1378ft"]],"ils":[false,false]},
+        {"name":["12L","30R"],"end":[[33.3176,-111.661,"1353ft"],[33.2993,-111.64,"1380ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "SEKER3A": {"icao":"SEKER3A","name":"Seker Three Alpha","rwy":{"KIWA12R":["_RWY30L04DME"],"KIWA30L":["_RWY12R04DME"],"KIWA12C":["_RWY30C04DME"],"KIWA30C":["_RWY12C04DME"],"KIWA12L":["_RWY30R04DME"],"KIWA30R":["_RWY12L04DME"]},"body":[],"exitPoints":{"SEKER":["SEKER"]},"draw":[["KIWA","SEKER*"]]},
+        "AVQ1E": {"icao":"AVQ1E","name":"Marana One Echo","rwy":{"KIWA12R":["_RWY30L04DME"],"KIWA30L":["_RWY12R04DME"],"KIWA12C":["_RWY30C04DME"],"KIWA30C":["_RWY12C04DME"],"KIWA12L":["_RWY30R04DME"],"KIWA30R":["_RWY12L04DME"]},"body":[],"exitPoints":{"AVQ":["AVQ"]},"draw":[["KIWA","AVQ*"]]},
+        "CAHRA3F": {"icao":"CAHRA3F","name":"Cahra Three Foxtrot","rwy":{"KIWA12R":["_RWY30L04DME"],"KIWA30L":["_RWY12R04DME"],"KIWA12C":["_RWY30C04DME"],"KIWA30C":["_RWY12C04DME"],"KIWA12L":["_RWY30R04DME"],"KIWA30R":["_RWY12L04DME"]},"body":[],"exitPoints":{"CAHRA":["CAHRA"]},"draw":[["KIWA","CAHRA*"]]},
+        "BIVOH3D": {"icao":"BIVOH3D","name":"Bivoh Three Delta","rwy":{"KIWA12R":["_RWY30L04DME"],"KIWA30L":["_RWY12R04DME"],"KIWA12C":["_RWY30C04DME"],"KIWA30C":["_RWY12C04DME"],"KIWA12L":["_RWY30R04DME"],"KIWA30R":["_RWY12L04DME"]},"body":[],"exitPoints":{"BIVOH":["BIVOH"]},"draw":[["KIWA","BIVOH*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KIWA","destination":"KCID","category":"departure","route":"KIWA30L.SEKER3A.SEKER","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["aay/a319",1],["aay/md82",1]]},
+        {"origin":"KIWA","destination":"KFAR","category":"departure","route":"KIWA30L.SEKER3A.SEKER","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["aay/a319",1],["aay/md82",1]]},
+        {"origin":"KIWA","destination":"KFSD","category":"departure","route":"KIWA30L.SEKER3A.SEKER","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["aay/a319",1],["aay/md82",1]]},
+        {"origin":"KIWA","destination":"KATW","category":"departure","route":"KIWA30L.SEKER3A.SEKER","altitude":"","speed":"","method":"random","rate":0.22,"airlines":[["aay/md82",1]]},
+        {"origin":"KIWA","destination":"KBIL","category":"departure","route":"KIWA30L.BIVOH3D.BIVOH","altitude":"","speed":"","method":"random","rate":0.22,"airlines":[["aay/a319",1]]},
+        {"origin":"KIWA","destination":"KBIS","category":"departure","route":"KIWA30L.SEKER3A.SEKER","altitude":"","speed":"","method":"random","rate":0.22,"airlines":[["aay/md82",1]]},
+        {"origin":"KIWA","destination":"","category":"departure","route":"KIWA30L.SEKER3A.SEKER","altitude":"","speed":"","method":"random","rate":3.36,"airlines":[["aay/md82",9],["aay/a319",6]]},
+        {"origin":"KIWA","destination":"","category":"departure","route":"KIWA30L.CAHRA3F.CAHRA","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["aay/md82",3]]},
+        {"origin":"KIWA","destination":"","category":"departure","route":"KIWA30L.BIVOH3D.BIVOH","altitude":"","speed":"","method":"random","rate":1.79,"airlines":[["aay/md82",6],["aay/a319",2]]},
+        {"origin":"KIWA","destination":"","category":"departure","route":"KIWA30L.AVQ1E.AVQ","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KIWA","destination":"","category":"departure","route":"KIWA30L.CAHRA3F.CAHRA","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KCID","destination":"KIWA","category":"arrival","route":"SEKER..EZATI..KIWA","altitude":[7000,10000],"speed":250,"method":"random","rate":0.45,"airlines":[["aay/a319",1],["aay/md82",1]]},
+        {"origin":"KFAR","destination":"KIWA","category":"arrival","route":"SEKER..EZATI..KIWA","altitude":[7000,10000],"speed":250,"method":"random","rate":0.45,"airlines":[["aay/a319",1],["aay/md82",1]]},
+        {"origin":"KFSD","destination":"KIWA","category":"arrival","route":"SEKER..EZATI..KIWA","altitude":[7000,10000],"speed":250,"method":"random","rate":0.45,"airlines":[["aay/a319",1],["aay/md82",1]]},
+        {"origin":"KATW","destination":"KIWA","category":"arrival","route":"SEKER..EZATI..KIWA","altitude":[7000,10000],"speed":250,"method":"random","rate":0.22,"airlines":[["aay/md82",1]]},
+        {"origin":"KBIL","destination":"KIWA","category":"arrival","route":"BIVOH..UHORU..KIWA","altitude":[7000,10000],"speed":250,"method":"random","rate":0.22,"airlines":[["aay/a319",1]]},
+        {"origin":"KBIS","destination":"KIWA","category":"arrival","route":"SEKER..EZATI..KIWA","altitude":[7000,10000],"speed":250,"method":"random","rate":0.22,"airlines":[["aay/md82",1]]},
+        {"origin":"","destination":"KIWA","category":"arrival","route":"SEKER..EZATI..KIWA","altitude":[7000,10000],"speed":250,"method":"random","rate":3.36,"airlines":[["aay/md82",9],["aay/a319",6]]},
+        {"origin":"","destination":"KIWA","category":"arrival","route":"CAHRA..IGOZI..KIWA","altitude":[7000,10000],"speed":250,"method":"random","rate":0.67,"airlines":[["aay/md82",3]]},
+        {"origin":"","destination":"KIWA","category":"arrival","route":"BIVOH..UHORU..KIWA","altitude":[7000,10000],"speed":250,"method":"random","rate":1.79,"airlines":[["aay/md82",6],["aay/a319",2]]},
+        {"origin":"","destination":"KIWA","category":"arrival","route":"AVQ..WALER..KIWA","altitude":[7000,10000],"speed":250,"method":"random","rate":0.53,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"","destination":"KIWA","category":"arrival","route":"CAHRA..IGOZI..KIWA","altitude":[7000,10000],"speed":250,"method":"random","rate":0.53,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [33.7681,-111.0142,33.4707,-111.4283],
+            [33.4707,-111.4283,33.3078,-111.655],
+            [32.4118,-111.216,33.0766,-111.5417],
+            [33.0766,-111.5417,33.3078,-111.655],
+            [33.7384,-112.3247,33.4601,-111.8919],
+            [33.4601,-111.8919,33.3078,-111.655],
+            [34.009,-111.7549,33.5559,-111.6904],
+            [33.5559,-111.6904,33.3078,-111.655]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [33.3177,-111.673,33.4364,-111.8129],
+            [33.3701,-111.7514,33.3841,-111.7344],
+            [33.4294,-111.8215,33.4434,-111.8044],
+            [33.2973,-111.649,33.1785,-111.5095],
+            [33.2449,-111.5707,33.2309,-111.5877],
+            [33.1855,-111.501,33.1714,-111.518]
+        ]}
+    ]
+}

@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VNKT/",
+    "info": {"country":"NP","city":"Kathmandu","type":"large_airport","longestRunwayM":3350,"frequencies":{"atis":"127.000","twr":"118.100","app":"120.600","gnd":"121.900"}},
+    "radio": {"twr":"Tribhuvan Tower","app":"Tribhuvan Approach","dep":"Tribhuvan Departure"},
+    "icao": "VNKT",
+    "iata": "KTM",
+    "magnetic_north": 0.4,
+    "ctr_radius": 60,
+    "ctr_ceiling": 14000,
+    "initial_alt": 9000,
+    "position": [27.6966,85.3591,"4390ft"],
+    "rangeRings": {"enabled":true,"center":[27.6966,85.3591],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":40,"speed":11},
+    "arrivalRunway": "02",
+    "departureRunway": "02",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":140,"airspace_class":"C","poly":[[28.2362,85.3634],[28.2168,85.5209],[28.162,85.6675],[28.0755,85.793],[27.9631,85.889],[27.8326,85.9488],[27.6928,85.9685],[27.5533,85.9466],[27.4235,85.8847],[27.3124,85.787],[27.2274,85.6601],[27.1744,85.5127],[27.157,85.3548],[27.1764,85.1973],[27.2312,85.0507],[27.3177,84.9252],[27.4301,84.8292],[27.5606,84.7694],[27.7004,84.7497],[27.8399,84.7716],[27.9697,84.8335],[28.0808,84.9312],[28.1658,85.0581],[28.2188,85.2055]]}
+    ],
+    "fixes": {
+        "VNKT": [27.6966,85.3591],
+        "OJEMO": [27.73707,86.15532],
+        "FUPZO": [27.71092,85.6408],
+        "JKP": [26.7122,85.9217,"janakpur"],
+        "IHAPA": [27.47368,85.4865],
+        "SMR": [27.1642,84.9822,"simara"],
+        "HERZI": [27.48492,85.20924],
+        "BHP": [27.6794,84.4297,"bharatpur"],
+        "ATOZA": [27.69138,85.077],
+        "WUWHA": [28.40272,85.35182],
+        "GOFUV": [27.94642,85.35653],
+        "_RWY0204DME": [27.62409,85.32683],
+        "_RWY2004DME": [27.76886,85.39129]
+    },
+    "runways": [
+        {"name":["02","20"],"end":[[27.68607,85.35441,"4313ft"],[27.70689,85.36368,"4387ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "OJEMO2D": {"icao":"OJEMO2D","name":"Ojemo Two Delta","rwy":{"VNKT02":["_RWY2004DME"],"VNKT20":["_RWY0204DME"]},"body":[],"exitPoints":{"OJEMO":["OJEMO"]},"draw":[["VNKT","OJEMO*"]]},
+        "JKP3E": {"icao":"JKP3E","name":"Janakpur Three Echo","rwy":{"VNKT02":["_RWY2004DME"],"VNKT20":["_RWY0204DME"]},"body":[],"exitPoints":{"JKP":["JKP"]},"draw":[["VNKT","JKP*"]]},
+        "SMR3D": {"icao":"SMR3D","name":"Simara Three Delta","rwy":{"VNKT02":["_RWY2004DME"],"VNKT20":["_RWY0204DME"]},"body":[],"exitPoints":{"SMR":["SMR"]},"draw":[["VNKT","SMR*"]]},
+        "BHP1B": {"icao":"BHP1B","name":"Bharatpur One Bravo","rwy":{"VNKT02":["_RWY2004DME"],"VNKT20":["_RWY0204DME"]},"body":[],"exitPoints":{"BHP":["BHP"]},"draw":[["VNKT","BHP*"]]},
+        "WUWHA3D": {"icao":"WUWHA3D","name":"Wuwha Three Delta","rwy":{"VNKT02":["_RWY2004DME"],"VNKT20":["_RWY0204DME"]},"body":[],"exitPoints":{"WUWHA":["WUWHA"]},"draw":[["VNKT","WUWHA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"VNKT","destination":"VIDP","category":"departure","route":"VNKT02.BHP1B.BHP","altitude":"","speed":"","method":"random","rate":1.06,"airlines":[["aic/a320",1],["aic/a321",1],["drk/a319",1],["igo/a320",1],["jai/b738",1],["sej/b737",1]]},
+        {"origin":"VNKT","destination":"VGHS","category":"departure","route":"VNKT02.JKP3E.JKP","altitude":"","speed":"","method":"random","rate":0.7,"airlines":[["bbc/a310",1],["cpa/a333",1],["hda/a333",1],["ubd/at72",1]]},
+        {"origin":"VNKT","destination":"OTHH","category":"departure","route":"VNKT02.BHP1B.BHP","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["qtr/a320",1],["qtr/a333",1],["rna/b752",1]]},
+        {"origin":"VNKT","destination":"WMKK","category":"departure","route":"VNKT02.JKP3E.JKP","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["mas/b738",1],["rna/b752",1],["xax/a333",1],["xax/a332",1]]},
+        {"origin":"VNKT","destination":"LTFM","category":"departure","route":"VNKT02.BHP1B.BHP","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["thy/a332",1],["thy/a333",1]]},
+        {"origin":"VNKT","destination":"VABB","category":"departure","route":"VNKT02.SMR3D.SMR","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["jai/b738",1],["jai/b739",1]]},
+        {"origin":"VNKT","destination":"","category":"departure","route":"VNKT02.OJEMO2D.OJEMO","altitude":"","speed":"","method":"random","rate":1.58,"airlines":[["cca/a319",2],["ces/b737",1],["csn/a319",1],["drk/a319",1],["kal/b772",1],["rna/b752",1],["cca/a333",1],["drk/at72",1],["cca/a332",1],["drk/at45",1],["drk/at75",1]]},
+        {"origin":"VNKT","destination":"","category":"departure","route":"VNKT02.JKP3E.JKP","altitude":"","speed":"","method":"random","rate":0.7,"airlines":[["aic/a319",1],["rna/b752",1],["slk/a320",1],["tha/b772",1]]},
+        {"origin":"VNKT","destination":"","category":"departure","route":"VNKT02.SMR3D.SMR","altitude":"","speed":"","method":"random","rate":0.18,"airlines":[["aic/a321",1]]},
+        {"origin":"VNKT","destination":"","category":"departure","route":"VNKT02.BHP1B.BHP","altitude":"","speed":"","method":"random","rate":1.06,"airlines":[["fdb/b738",2],["aby/a320",1],["etd/a320",1],["oma/b738",1],["pia/a310",1]]},
+        {"origin":"VNKT","destination":"","category":"departure","route":"VNKT02.BHP1B.BHP","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["9n/c172",6],["9n/p28a",5],["9n/c182",3],["9n/be36",2],["9n/da42",1],["9n/tb20",1],["9n/c208",2],["9n/pc12",2],["9n/be20",1],["9n/b350",1],["9n/p180",1],["9n/c510",1],["9n/e50p",1],["9n/c550",2],["9n/e55p",1],["9n/cl30",1],["9n/c680",1],["9n/h25b",1],["9n/lj45",1],["9n/f2th",1],["9n/glf4",1],["9n/glex",1],["9n/glf5",1]]},
+        {"origin":"VNKT","destination":"","category":"departure","route":"VNKT02.OJEMO2D.OJEMO","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["9n/c172",6],["9n/p28a",5],["9n/c182",3],["9n/be36",2],["9n/da42",1],["9n/tb20",1],["9n/c208",2],["9n/pc12",2],["9n/be20",1],["9n/b350",1],["9n/p180",1],["9n/c510",1],["9n/e50p",1],["9n/c550",2],["9n/e55p",1],["9n/cl30",1],["9n/c680",1],["9n/h25b",1],["9n/lj45",1],["9n/f2th",1],["9n/glf4",1],["9n/glex",1],["9n/glf5",1]]},
+        {"origin":"VIDP","destination":"VNKT","category":"arrival","route":"BHP..ATOZA..VNKT","altitude":[10000,13000],"speed":250,"method":"random","rate":1.06,"airlines":[["aic/a320",1],["aic/a321",1],["drk/a319",1],["igo/a320",1],["jai/b738",1],["sej/b737",1]]},
+        {"origin":"VGHS","destination":"VNKT","category":"arrival","route":"JKP..IHAPA..VNKT","altitude":[10000,13000],"speed":250,"method":"random","rate":0.7,"airlines":[["bbc/a310",1],["cpa/a333",1],["hda/a333",1],["ubd/at72",1]]},
+        {"origin":"OTHH","destination":"VNKT","category":"arrival","route":"BHP..ATOZA..VNKT","altitude":[10000,13000],"speed":250,"method":"random","rate":0.53,"airlines":[["qtr/a320",1],["qtr/a333",1],["rna/b752",1]]},
+        {"origin":"WMKK","destination":"VNKT","category":"arrival","route":"JKP..IHAPA..VNKT","altitude":[10000,13000],"speed":250,"method":"random","rate":0.53,"airlines":[["mas/b738",1],["rna/b752",1],["xax/a333",1],["xax/a332",1]]},
+        {"origin":"LTFM","destination":"VNKT","category":"arrival","route":"BHP..ATOZA..VNKT","altitude":[10000,13000],"speed":250,"method":"random","rate":0.35,"airlines":[["thy/a332",1],["thy/a333",1]]},
+        {"origin":"VABB","destination":"VNKT","category":"arrival","route":"SMR..HERZI..VNKT","altitude":[10000,13000],"speed":250,"method":"random","rate":0.35,"airlines":[["jai/b738",1],["jai/b739",1]]},
+        {"origin":"","destination":"VNKT","category":"arrival","route":"OJEMO..FUPZO..VNKT","altitude":[10000,13000],"speed":250,"method":"random","rate":1.58,"airlines":[["cca/a319",2],["ces/b737",1],["csn/a319",1],["drk/a319",1],["kal/b772",1],["rna/b752",1],["cca/a333",1],["drk/at72",1],["cca/a332",1],["drk/at45",1],["drk/at75",1]]},
+        {"origin":"","destination":"VNKT","category":"arrival","route":"JKP..IHAPA..VNKT","altitude":[10000,13000],"speed":250,"method":"random","rate":0.7,"airlines":[["aic/a319",1],["rna/b752",1],["slk/a320",1],["tha/b772",1]]},
+        {"origin":"","destination":"VNKT","category":"arrival","route":"SMR..HERZI..VNKT","altitude":[10000,13000],"speed":250,"method":"random","rate":0.18,"airlines":[["aic/a321",1]]},
+        {"origin":"","destination":"VNKT","category":"arrival","route":"BHP..ATOZA..VNKT","altitude":[10000,13000],"speed":250,"method":"random","rate":1.06,"airlines":[["fdb/b738",2],["aby/a320",1],["etd/a320",1],["oma/b738",1],["pia/a310",1]]},
+        {"origin":"","destination":"VNKT","category":"arrival","route":"BHP..ATOZA..VNKT","altitude":[10000,13000],"speed":250,"method":"random","rate":0.48,"airlines":[["9n/c172",6],["9n/p28a",5],["9n/c182",3],["9n/be36",2],["9n/da42",1],["9n/tb20",1],["9n/c208",2],["9n/pc12",2],["9n/be20",1],["9n/b350",1],["9n/p180",1],["9n/c510",1],["9n/e50p",1],["9n/c550",2],["9n/e55p",1],["9n/cl30",1],["9n/c680",1],["9n/h25b",1],["9n/lj45",1],["9n/f2th",1],["9n/glf4",1],["9n/glex",1],["9n/glf5",1]]},
+        {"origin":"","destination":"VNKT","category":"arrival","route":"OJEMO..FUPZO..VNKT","altitude":[10000,13000],"speed":250,"method":"random","rate":0.48,"airlines":[["9n/c172",6],["9n/p28a",5],["9n/c182",3],["9n/be36",2],["9n/da42",1],["9n/tb20",1],["9n/c208",2],["9n/pc12",2],["9n/be20",1],["9n/b350",1],["9n/p180",1],["9n/c510",1],["9n/e50p",1],["9n/c550",2],["9n/e55p",1],["9n/cl30",1],["9n/c680",1],["9n/h25b",1],["9n/lj45",1],["9n/f2th",1],["9n/glf4",1],["9n/glex",1],["9n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [27.7371,86.1553,27.7109,85.6408],
+            [27.7109,85.6408,27.6966,85.3591],
+            [26.7122,85.9217,27.4737,85.4865],
+            [27.4737,85.4865,27.6966,85.3591],
+            [27.1642,84.9822,27.4849,85.2092],
+            [27.4849,85.2092,27.6966,85.3591],
+            [27.6794,84.4297,27.6914,85.077],
+            [27.6914,85.077,27.6966,85.3591],
+            [28.4027,85.3518,27.9464,85.3565],
+            [27.9464,85.3565,27.6966,85.3591]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [27.6861,85.3544,27.5311,85.2855],
+            [27.6049,85.3304,27.6123,85.3095],
+            [27.5274,85.296,27.5348,85.275],
+            [27.7069,85.3637,27.8618,85.4328],
+            [27.788,85.3877,27.7807,85.4087],
+            [27.8655,85.4223,27.8582,85.4433]
+        ]}
+    ]
+}

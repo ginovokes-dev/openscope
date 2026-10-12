@@ -1,0 +1,94 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/RKSS/",
+    "info": {"country":"KR","city":"Seoul","type":"large_airport","longestRunwayM":3608,"frequencies":{"atis":"126.400","twr":"118.100","app":"120.800","gnd":"121.900","dep":"125.150"}},
+    "radio": {"twr":"Seoul Tower","app":"Seoul Approach","dep":"Seoul Departure"},
+    "icao": "RKSS",
+    "iata": "GMP",
+    "magnetic_north": -9,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [37.5583,126.791,"59ft"],
+    "rangeRings": {"enabled":true,"center":[37.5583,126.791],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":310,"speed":6},
+    "arrivalRunway": "32R",
+    "departureRunway": "32R",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[38.0912,126.6845],[38.0949,126.8621],[38.0621,127.0349],[37.9948,127.1911],[37.8979,127.32],[37.7778,127.4128],[37.6427,127.4633],[37.5019,127.4679],[37.3649,127.4265],[37.2411,127.3417],[37.139,127.2194],[37.0654,127.0679],[37.0254,126.8975],[37.0217,126.7199],[37.0545,126.5471],[37.1218,126.3909],[37.2187,126.262],[37.3388,126.1692],[37.4739,126.1187],[37.6147,126.1141],[37.7517,126.1555],[37.8755,126.2403],[37.9776,126.3626],[38.0512,126.5141]]}
+    ],
+    "fixes": {
+        "RKSS": [37.5583,126.791],
+        "VERPA": [38.19802,127.16819],
+        "PIPFU": [37.78463,126.92445],
+        "ICN": [37.2017,127.483,"icheon"],
+        "KSM": [37.4352,127.11,"seoul"],
+        "PTK": [36.9678,127.021,"pyeongtaek"],
+        "CUJIP": [37.31959,126.88398],
+        "OGICU": [37.80851,125.95802],
+        "JIFEF": [37.64682,126.4963],
+        "_RWY14L04DME": [37.6173,126.7184],
+        "_RWY32R04DME": [37.50038,126.8665],
+        "_RWY14R04DME": [37.61576,126.71739],
+        "_RWY32L04DME": [37.49981,126.85953]
+    },
+    "runways": [
+        {"name":["14L","32R"],"end":[[37.5703,126.778,"38ft"],[37.5474,126.807,"42ft"]],"ils":[true,true]},
+        {"name":["14R","32L"],"end":[[37.568,126.776,"34ft"],[37.5476,126.801,"41ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "VERPA2E": {"icao":"VERPA2E","name":"Verpa Two Echo","rwy":{"RKSS14L":["_RWY32R04DME"],"RKSS32R":["_RWY14L04DME"],"RKSS14R":["_RWY32L04DME"],"RKSS32L":["_RWY14R04DME"]},"body":[],"exitPoints":{"VERPA":["VERPA"]},"draw":[["RKSS","VERPA*"]]},
+        "ICN2E": {"icao":"ICN2E","name":"Icheon Two Echo","rwy":{"RKSS14L":["_RWY32R04DME"],"RKSS32R":["_RWY14L04DME"],"RKSS14R":["_RWY32L04DME"],"RKSS32L":["_RWY14R04DME"]},"body":[],"exitPoints":{"ICN":["ICN"]},"draw":[["RKSS","ICN*"]]},
+        "PTK1F": {"icao":"PTK1F","name":"Pyeongtaek One Foxtrot","rwy":{"RKSS14L":["_RWY32R04DME"],"RKSS32R":["_RWY14L04DME"],"RKSS14R":["_RWY32L04DME"],"RKSS32L":["_RWY14R04DME"]},"body":[],"exitPoints":{"PTK":["PTK"]},"draw":[["RKSS","PTK*"]]},
+        "OGICU3B": {"icao":"OGICU3B","name":"Ogicu Three Bravo","rwy":{"RKSS14L":["_RWY32R04DME"],"RKSS32R":["_RWY14L04DME"],"RKSS14R":["_RWY32L04DME"],"RKSS32L":["_RWY14R04DME"]},"body":[],"exitPoints":{"OGICU":["OGICU"]},"draw":[["RKSS","OGICU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"RKSS","destination":"RKPC","category":"departure","route":"RKSS32R.PTK1F.PTK","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["aar/a320",1],["aar/a321",1],["aar/a333",1],["aar/b763",1],["esr/b737",1],["jja/b737",1],["jja/b738",1],["jna/b738",1],["kal/b738",1],["kal/b739",1],["kal/b744",1],["kal/b772",1]]},
+        {"origin":"RKSS","destination":"RJTT","category":"departure","route":"RKSS32R.ICN2E.ICN","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["aar/a333",1],["ana/b772",1],["ana/b77w",1],["jal/b763",1],["kal/b772",1],["kal/b773",1]]},
+        {"origin":"RKSS","destination":"ZBAA","category":"departure","route":"RKSS32R.OGICU3B.OGICU","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["aar/a333",1],["cca/a333",1],["cca/b738",1],["csn/a321",1],["kal/b744",1],["kal/b772",1]]},
+        {"origin":"RKSS","destination":"RCSS","category":"departure","route":"RKSS32R.PTK1F.PTK","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["cal/b738",1],["esr/b738",1],["eva/a321",1],["twb/b737",1]]},
+        {"origin":"RKSS","destination":"RJBB","category":"departure","route":"RKSS32R.ICN2E.ICN","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["aar/a321",1],["jal/b738",1],["jja/b737",1],["kal/b772",1]]},
+        {"origin":"RKSS","destination":"","category":"departure","route":"RKSS32R.ICN2E.ICN","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["aar/a320",2],["kal/b738",2],["jja/b737",1]]},
+        {"origin":"RKSS","destination":"","category":"departure","route":"RKSS32R.PTK1F.PTK","altitude":"","speed":"","method":"random","rate":1.56,"airlines":[["kal/b738",4],["aar/a320",2],["aar/a321",2],["kal/b739",2],["aar/a333",1],["ces/a321",1],["csh/a333",1],["kal/b772",1]]},
+        {"origin":"RKSS","destination":"","category":"departure","route":"RKSS32R.PTK1F.PTK","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["hl/c172",6],["hl/p28a",5],["hl/c182",3],["hl/be36",2],["hl/da42",1],["hl/tb20",1],["hl/c208",2],["hl/pc12",2],["hl/be20",1],["hl/b350",1],["hl/p180",1],["hl/c510",1],["hl/e50p",1],["hl/c550",2],["hl/e55p",1],["hl/cl30",1],["hl/c680",1],["hl/h25b",1],["hl/lj45",1],["hl/f2th",1],["hl/glf4",1],["hl/glex",1],["hl/glf5",1]]},
+        {"origin":"RKSS","destination":"","category":"departure","route":"RKSS32R.OGICU3B.OGICU","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["hl/c172",6],["hl/p28a",5],["hl/c182",3],["hl/be36",2],["hl/da42",1],["hl/tb20",1],["hl/c208",2],["hl/pc12",2],["hl/be20",1],["hl/b350",1],["hl/p180",1],["hl/c510",1],["hl/e50p",1],["hl/c550",2],["hl/e55p",1],["hl/cl30",1],["hl/c680",1],["hl/h25b",1],["hl/lj45",1],["hl/f2th",1],["hl/glf4",1],["hl/glex",1],["hl/glf5",1]]},
+        {"origin":"RKPC","destination":"RKSS","category":"arrival","route":"PTK..CUJIP..RKSS","altitude":[6000,9000],"speed":250,"method":"random","rate":1.45,"airlines":[["aar/a320",1],["aar/a321",1],["aar/a333",1],["aar/b763",1],["esr/b737",1],["jja/b737",1],["jja/b738",1],["jna/b738",1],["kal/b738",1],["kal/b739",1],["kal/b744",1],["kal/b772",1]]},
+        {"origin":"RJTT","destination":"RKSS","category":"arrival","route":"ICN..KSM..RKSS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.67,"airlines":[["aar/a333",1],["ana/b772",1],["ana/b77w",1],["jal/b763",1],["kal/b772",1],["kal/b773",1]]},
+        {"origin":"ZBAA","destination":"RKSS","category":"arrival","route":"OGICU..JIFEF..RKSS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.67,"airlines":[["aar/a333",1],["cca/a333",1],["cca/b738",1],["csn/a321",1],["kal/b744",1],["kal/b772",1]]},
+        {"origin":"RCSS","destination":"RKSS","category":"arrival","route":"PTK..CUJIP..RKSS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["cal/b738",1],["esr/b738",1],["eva/a321",1],["twb/b737",1]]},
+        {"origin":"RJBB","destination":"RKSS","category":"arrival","route":"ICN..KSM..RKSS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["aar/a321",1],["jal/b738",1],["jja/b737",1],["kal/b772",1]]},
+        {"origin":"","destination":"RKSS","category":"arrival","route":"ICN..KSM..RKSS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.56,"airlines":[["aar/a320",2],["kal/b738",2],["jja/b737",1]]},
+        {"origin":"","destination":"RKSS","category":"arrival","route":"PTK..CUJIP..RKSS","altitude":[6000,9000],"speed":250,"method":"random","rate":1.56,"airlines":[["kal/b738",4],["aar/a320",2],["aar/a321",2],["kal/b739",2],["aar/a333",1],["ces/a321",1],["csh/a333",1],["kal/b772",1]]},
+        {"origin":"","destination":"RKSS","category":"arrival","route":"PTK..CUJIP..RKSS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["hl/c172",6],["hl/p28a",5],["hl/c182",3],["hl/be36",2],["hl/da42",1],["hl/tb20",1],["hl/c208",2],["hl/pc12",2],["hl/be20",1],["hl/b350",1],["hl/p180",1],["hl/c510",1],["hl/e50p",1],["hl/c550",2],["hl/e55p",1],["hl/cl30",1],["hl/c680",1],["hl/h25b",1],["hl/lj45",1],["hl/f2th",1],["hl/glf4",1],["hl/glex",1],["hl/glf5",1]]},
+        {"origin":"","destination":"RKSS","category":"arrival","route":"OGICU..JIFEF..RKSS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["hl/c172",6],["hl/p28a",5],["hl/c182",3],["hl/be36",2],["hl/da42",1],["hl/tb20",1],["hl/c208",2],["hl/pc12",2],["hl/be20",1],["hl/b350",1],["hl/p180",1],["hl/c510",1],["hl/e50p",1],["hl/c550",2],["hl/e55p",1],["hl/cl30",1],["hl/c680",1],["hl/h25b",1],["hl/lj45",1],["hl/f2th",1],["hl/glf4",1],["hl/glex",1],["hl/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [38.198,127.1682,37.7846,126.9244],
+            [37.7846,126.9244,37.5583,126.791],
+            [37.2017,127.483,37.4352,127.11],
+            [37.4352,127.11,37.5583,126.791],
+            [36.9678,127.021,37.3196,126.884],
+            [37.3196,126.884,37.5583,126.791],
+            [37.8085,125.958,37.6468,126.4963],
+            [37.6468,126.4963,37.5583,126.791]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [37.5703,126.778,37.6877,126.6289],
+            [37.622,126.6946,37.6361,126.7124],
+            [37.6807,126.62,37.6948,126.6378],
+            [37.5474,126.807,37.4298,126.9556],
+            [37.4957,126.8903,37.4815,126.8725],
+            [37.4369,126.9645,37.4227,126.9467],
+            [37.568,126.776,37.6874,126.6293],
+            [37.6207,126.6937,37.6347,126.7118],
+            [37.6804,126.6203,37.6943,126.6384],
+            [37.5476,126.801,37.4281,126.9472],
+            [37.4948,126.8832,37.4809,126.8651],
+            [37.435,126.9562,37.4211,126.9381]
+        ]}
+    ]
+}

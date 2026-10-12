@@ -1,0 +1,78 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/WICC/",
+    "info": {"country":"ID","city":"Bandung","type":"medium_airport","longestRunwayM":2250,"frequencies":{"twr":"118.650","app":"121.000"}},
+    "radio": {"twr":"Husein Sastranegara Tower","app":"Husein Sastranegara Approach","dep":"Husein Sastranegara Departure"},
+    "icao": "WICC",
+    "iata": "BDO",
+    "magnetic_north": 0.7,
+    "ctr_radius": 45,
+    "ctr_ceiling": 10000,
+    "initial_alt": 6000,
+    "position": [-6.90063,107.575996,"2436ft"],
+    "rangeRings": {"enabled":true,"center":[-6.90063,107.575996],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":130,"speed":10},
+    "arrivalRunway": "11",
+    "departureRunway": "11",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"D","poly":[[-6.496,107.581],[-6.511,107.6863],[-6.5527,107.7841],[-6.618,107.8677],[-6.7026,107.9315],[-6.8007,107.971],[-6.9056,107.9836],[-7.0101,107.9684],[-7.1072,107.9265],[-7.1903,107.8607],[-7.2536,107.7755],[-7.2928,107.6767],[-7.3053,107.571],[-7.2902,107.4657],[-7.2486,107.3679],[-7.1833,107.2842],[-7.0987,107.2205],[-7.0006,107.181],[-6.8957,107.1684],[-6.7911,107.1836],[-6.694,107.2255],[-6.611,107.2913],[-6.5477,107.3765],[-6.5085,107.4753]]}
+    ],
+    "fixes": {
+        "WICC": [-6.90063,107.576],
+        "PG": [-6.7551,108.54,"penggung"],
+        "EKECE": [-6.87058,107.77503],
+        "VOCAR": [-7.33882,107.26168],
+        "CIFOW": [-7.06343,107.45921],
+        "HLM": [-6.27194,106.887,"halim perdanakusuma"],
+        "VILIS": [-6.76538,107.42777],
+        "_RWY1104DME": [-6.87535,107.50365],
+        "_RWY2904DME": [-6.92589,107.64935]
+    },
+    "runways": [
+        {"name":["11","29"],"end":[[-6.89733,107.567,"2430ft"],[-6.90392,107.586,"2430ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "PG1A": {"icao":"PG1A","name":"Penggung One Alpha","rwy":{"WICC11":["_RWY2904DME"],"WICC29":["_RWY1104DME"]},"body":[],"exitPoints":{"PG":["PG"]},"draw":[["WICC","PG*"]]},
+        "VOCAR3C": {"icao":"VOCAR3C","name":"Vocar Three Charlie","rwy":{"WICC11":["_RWY2904DME"],"WICC29":["_RWY1104DME"]},"body":[],"exitPoints":{"VOCAR":["VOCAR"]},"draw":[["WICC","VOCAR*"]]},
+        "HLM1F": {"icao":"HLM1F","name":"Halim Perdanakusuma One Foxtrot","rwy":{"WICC11":["_RWY2904DME"],"WICC29":["_RWY1104DME"]},"body":[],"exitPoints":{"HLM":["HLM"]},"draw":[["WICC","HLM*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"WICC","destination":"WADD","category":"departure","route":"WICC11.PG1A.PG","altitude":"","speed":"","method":"random","rate":0.73,"airlines":[["awq/a320",1],["gia/b738",1],["lni/b738",1]]},
+        {"origin":"WICC","destination":"WARR","category":"departure","route":"WICC11.PG1A.PG","altitude":"","speed":"","method":"random","rate":0.73,"airlines":[["awq/a320",1],["gia/b738",1],["lni/b738",1]]},
+        {"origin":"WICC","destination":"WMKK","category":"departure","route":"WICC11.HLM1F.HLM","altitude":"","speed":"","method":"random","rate":0.73,"airlines":[["awq/a320",1],["axm/a320",1],["lni/b738",1]]},
+        {"origin":"WICC","destination":"WSSS","category":"departure","route":"WICC11.HLM1F.HLM","altitude":"","speed":"","method":"random","rate":0.73,"airlines":[["awq/a320",1],["slk/a319",1],["tgw/a320",1]]},
+        {"origin":"WICC","destination":"WIBB","category":"departure","route":"WICC11.HLM1F.HLM","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["awq/a320",1],["lni/b738",1]]},
+        {"origin":"WICC","destination":"","category":"departure","route":"WICC11.PG1A.PG","altitude":"","speed":"","method":"random","rate":0.24,"airlines":[["lni/b738",1]]},
+        {"origin":"WICC","destination":"","category":"departure","route":"WICC11.HLM1F.HLM","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["awq/a320",1],["lni/b738",1]]},
+        {"origin":"WICC","destination":"","category":"departure","route":"WICC11.HLM1F.HLM","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",1],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]},
+        {"origin":"WADD","destination":"WICC","category":"arrival","route":"PG..EKECE..WICC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.73,"airlines":[["awq/a320",1],["gia/b738",1],["lni/b738",1]]},
+        {"origin":"WARR","destination":"WICC","category":"arrival","route":"PG..EKECE..WICC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.73,"airlines":[["awq/a320",1],["gia/b738",1],["lni/b738",1]]},
+        {"origin":"WMKK","destination":"WICC","category":"arrival","route":"HLM..VILIS..WICC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.73,"airlines":[["awq/a320",1],["axm/a320",1],["lni/b738",1]]},
+        {"origin":"WSSS","destination":"WICC","category":"arrival","route":"HLM..VILIS..WICC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.73,"airlines":[["awq/a320",1],["slk/a319",1],["tgw/a320",1]]},
+        {"origin":"WIBB","destination":"WICC","category":"arrival","route":"HLM..VILIS..WICC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.49,"airlines":[["awq/a320",1],["lni/b738",1]]},
+        {"origin":"","destination":"WICC","category":"arrival","route":"PG..EKECE..WICC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.24,"airlines":[["lni/b738",1]]},
+        {"origin":"","destination":"WICC","category":"arrival","route":"HLM..VILIS..WICC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.49,"airlines":[["awq/a320",1],["lni/b738",1]]},
+        {"origin":"","destination":"WICC","category":"arrival","route":"HLM..VILIS..WICC","altitude":[6000,9000],"speed":250,"method":"random","rate":1.39,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",1],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-6.7551,108.54,-6.8706,107.775],
+            [-6.8706,107.775,-6.9006,107.576],
+            [-7.3388,107.2617,-7.0634,107.4592],
+            [-7.0634,107.4592,-6.9006,107.576],
+            [-6.2719,106.887,-6.7654,107.4278],
+            [-6.7654,107.4278,-6.9006,107.576]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-6.8973,107.567,-6.8424,107.4086],
+            [-6.8793,107.4845,-6.8604,107.4911],
+            [-6.8518,107.4053,-6.8329,107.412],
+            [-6.9039,107.586,-6.9588,107.7444],
+            [-6.922,107.6685,-6.9408,107.6619],
+            [-6.9494,107.7477,-6.9683,107.7411]
+        ]}
+    ]
+}

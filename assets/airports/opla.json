@@ -1,0 +1,98 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/OPLA/",
+    "info": {"country":"PK","city":"Lahore","type":"large_airport","longestRunwayM":3360,"frequencies":{"atis":"126.300","twr":"118.100","app":"121.300","gnd":"118.400"}},
+    "radio": {"twr":"Allama Iqbal Tower","app":"Allama Iqbal Approach","dep":"Allama Iqbal Departure"},
+    "icao": "OPLA",
+    "iata": "LHE",
+    "magnetic_north": 2.2,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [31.521601,74.403603,"712ft"],
+    "rangeRings": {"enabled":true,"center":[31.521601,74.403603],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":180,"speed":7},
+    "arrivalRunway": "18L",
+    "departureRunway": "18L",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[32.0608,74.4279],[32.0371,74.5908],[31.9782,74.7409],[31.8882,74.8681],[31.7733,74.9635],[31.6411,75.0209],[31.5009,75.0361],[31.362,75.0083],[31.2341,74.9392],[31.1257,74.8337],[31.0443,74.6988],[30.9954,74.5438],[30.9824,74.3793],[31.0061,74.2164],[31.065,74.0663],[31.155,73.9392],[31.2699,73.8437],[31.4021,73.7863],[31.5423,73.7711],[31.6812,73.7989],[31.8091,73.868],[31.9175,73.9735],[31.9989,74.1084],[32.0478,74.2634]]}
+    ],
+    "fixes": {
+        "OPLA": [31.5216,74.4036],
+        "FODUZ": [32.05514,74.94626],
+        "HORID": [31.71036,74.59559],
+        "OPADU": [31.05408,75.02442],
+        "EROKI": [31.35619,74.62325],
+        "ZOKCE": [31.34378,73.60192],
+        "DOSPU": [31.45869,74.11997],
+        "KUPUC": [31.9792,73.7727],
+        "ENUWO": [31.6835,74.18039],
+        "_RWY18L04DME": [31.60321,74.40591],
+        "_RWY36R04DME": [31.43989,74.40318],
+        "_RWY18R04DME": [31.60051,74.4039],
+        "_RWY36L04DME": [31.44258,74.40131]
+    },
+    "runways": [
+        {"name":["18L","36R"],"end":[[31.5366,74.4048,"712ft"],[31.5065,74.4043,"707ft"]],"ils":[true,true]},
+        {"name":["18R","36L"],"end":[[31.5339,74.4028,"710ft"],[31.5092,74.4024,"705ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "FODUZ1F": {"icao":"FODUZ1F","name":"Foduz One Foxtrot","rwy":{"OPLA18L":["_RWY36R04DME"],"OPLA36R":["_RWY18L04DME"],"OPLA18R":["_RWY36L04DME"],"OPLA36L":["_RWY18R04DME"]},"body":[],"exitPoints":{"FODUZ":["FODUZ"]},"draw":[["OPLA","FODUZ*"]]},
+        "OPADU1D": {"icao":"OPADU1D","name":"Opadu One Delta","rwy":{"OPLA18L":["_RWY36R04DME"],"OPLA36R":["_RWY18L04DME"],"OPLA18R":["_RWY36L04DME"],"OPLA36L":["_RWY18R04DME"]},"body":[],"exitPoints":{"OPADU":["OPADU"]},"draw":[["OPLA","OPADU*"]]},
+        "ZOKCE3D": {"icao":"ZOKCE3D","name":"Zokce Three Delta","rwy":{"OPLA18L":["_RWY36R04DME"],"OPLA36R":["_RWY18L04DME"],"OPLA18R":["_RWY36L04DME"],"OPLA36L":["_RWY18R04DME"]},"body":[],"exitPoints":{"ZOKCE":["ZOKCE"]},"draw":[["OPLA","ZOKCE*"]]},
+        "KUPUC1B": {"icao":"KUPUC1B","name":"Kupuc One Bravo","rwy":{"OPLA18L":["_RWY36R04DME"],"OPLA36R":["_RWY18L04DME"],"OPLA18R":["_RWY36L04DME"],"OPLA36L":["_RWY18R04DME"]},"body":[],"exitPoints":{"KUPUC":["KUPUC"]},"draw":[["OPLA","KUPUC*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"OPLA","destination":"OMAA","category":"departure","route":"OPLA18L.ZOKCE3D.ZOKCE","altitude":"","speed":"","method":"random","rate":1.12,"airlines":[["aza/a320",1],["aza/a332",1],["aza/a346",1],["aza/b77w",1],["etd/a320",1],["etd/a332",1],["etd/a345",1],["etd/a346",1],["etd/b77w",1],["pia/a310",1],["pia/b738",1],["sai/b734",1]]},
+        {"origin":"OPLA","destination":"OOMS","category":"departure","route":"OPLA18L.ZOKCE3D.ZOKCE","altitude":"","speed":"","method":"random","rate":0.65,"airlines":[["oma/a333",1],["oma/b737",1],["oma/b738",1],["pia/b737",1],["sai/a320",1],["sai/a333",1],["sai/b734",1]]},
+        {"origin":"OPLA","destination":"OPKC","category":"departure","route":"OPLA18L.ZOKCE3D.ZOKCE","altitude":"","speed":"","method":"random","rate":0.65,"airlines":[["pia/a310",1],["pia/a320",1],["pia/b737",1],["pia/b738",1],["pia/b772",1],["sai/a320",1],["sai/b734",1]]},
+        {"origin":"OPLA","destination":"OEJN","category":"departure","route":"OPLA18L.ZOKCE3D.ZOKCE","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["pia/a310",1],["pia/b772",1],["sai/a320",1],["sai/a333",1],["sva/b744",1],["kne/a333",1],["kne/a332",1]]},
+        {"origin":"OPLA","destination":"OBBI","category":"departure","route":"OPLA18L.ZOKCE3D.ZOKCE","altitude":"","speed":"","method":"random","rate":0.37,"airlines":[["gba/a332",1],["pia/b737",1],["pia/b738",1],["gba/a333",1]]},
+        {"origin":"OPLA","destination":"OKKK","category":"departure","route":"OPLA18L.ZOKCE3D.ZOKCE","altitude":"","speed":"","method":"random","rate":0.37,"airlines":[["kac/a320",1],["pia/a310",1],["pia/b738",1],["sai/a320",1]]},
+        {"origin":"OPLA","destination":"","category":"departure","route":"OPLA18L.OPADU1D.OPADU","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["pia/a310",1],["pia/b738",1],["tha/a333",1]]},
+        {"origin":"OPLA","destination":"","category":"departure","route":"OPLA18L.ZOKCE3D.ZOKCE","altitude":"","speed":"","method":"random","rate":2.51,"airlines":[["pia/b737",5],["pia/b738",4],["pia/a310",3],["pia/at72",2],["sai/a320",2],["pia/a320",1],["pia/b772",1],["qtr/a332",1],["qtr/a333",1],["qtr/b77w",1],["sai/a333",1],["sai/b734",1]]},
+        {"origin":"OPLA","destination":"","category":"departure","route":"OPLA18L.KUPUC1B.KUPUC","altitude":"","speed":"","method":"random","rate":1.49,"airlines":[["pia/b772",8],["pia/a310",3],["pia/b737",1],["pia/b738",1],["sai/a320",1],["thy/b738",1],["pia/at72",1],["pia/at45",1],["pia/at75",1]]},
+        {"origin":"OPLA","destination":"","category":"departure","route":"OPLA18L.KUPUC1B.KUPUC","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["ap/c172",6],["ap/p28a",5],["ap/c182",3],["ap/be36",2],["ap/da42",1],["ap/tb20",1],["ap/c208",2],["ap/pc12",2],["ap/be20",1],["ap/b350",1],["ap/p180",1],["ap/c510",1],["ap/e50p",1],["ap/c550",2],["ap/e55p",1],["ap/cl30",1],["ap/c680",1],["ap/h25b",1],["ap/lj45",1],["ap/f2th",1],["ap/glf4",1],["ap/glex",1],["ap/glf5",1]]},
+        {"origin":"OPLA","destination":"","category":"departure","route":"OPLA18L.OPADU1D.OPADU","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["ap/c172",6],["ap/p28a",5],["ap/c182",3],["ap/be36",2],["ap/da42",1],["ap/tb20",1],["ap/c208",2],["ap/pc12",2],["ap/be20",1],["ap/b350",1],["ap/p180",1],["ap/c510",1],["ap/e50p",1],["ap/c550",2],["ap/e55p",1],["ap/cl30",1],["ap/c680",1],["ap/h25b",1],["ap/lj45",1],["ap/f2th",1],["ap/glf4",1],["ap/glex",1],["ap/glf5",1]]},
+        {"origin":"OMAA","destination":"OPLA","category":"arrival","route":"ZOKCE..DOSPU..OPLA","altitude":[6000,9000],"speed":250,"method":"random","rate":1.12,"airlines":[["aza/a320",1],["aza/a332",1],["aza/a346",1],["aza/b77w",1],["etd/a320",1],["etd/a332",1],["etd/a345",1],["etd/a346",1],["etd/b77w",1],["pia/a310",1],["pia/b738",1],["sai/b734",1]]},
+        {"origin":"OOMS","destination":"OPLA","category":"arrival","route":"ZOKCE..DOSPU..OPLA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.65,"airlines":[["oma/a333",1],["oma/b737",1],["oma/b738",1],["pia/b737",1],["sai/a320",1],["sai/a333",1],["sai/b734",1]]},
+        {"origin":"OPKC","destination":"OPLA","category":"arrival","route":"ZOKCE..DOSPU..OPLA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.65,"airlines":[["pia/a310",1],["pia/a320",1],["pia/b737",1],["pia/b738",1],["pia/b772",1],["sai/a320",1],["sai/b734",1]]},
+        {"origin":"OEJN","destination":"OPLA","category":"arrival","route":"ZOKCE..DOSPU..OPLA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.56,"airlines":[["pia/a310",1],["pia/b772",1],["sai/a320",1],["sai/a333",1],["sva/b744",1],["kne/a333",1],["kne/a332",1]]},
+        {"origin":"OBBI","destination":"OPLA","category":"arrival","route":"ZOKCE..DOSPU..OPLA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.37,"airlines":[["gba/a332",1],["pia/b737",1],["pia/b738",1],["gba/a333",1]]},
+        {"origin":"OKKK","destination":"OPLA","category":"arrival","route":"ZOKCE..DOSPU..OPLA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.37,"airlines":[["kac/a320",1],["pia/a310",1],["pia/b738",1],["sai/a320",1]]},
+        {"origin":"","destination":"OPLA","category":"arrival","route":"OPADU..EROKI..OPLA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.28,"airlines":[["pia/a310",1],["pia/b738",1],["tha/a333",1]]},
+        {"origin":"","destination":"OPLA","category":"arrival","route":"ZOKCE..DOSPU..OPLA","altitude":[6000,9000],"speed":250,"method":"random","rate":2.51,"airlines":[["pia/b737",5],["pia/b738",4],["pia/a310",3],["pia/at72",2],["sai/a320",2],["pia/a320",1],["pia/b772",1],["qtr/a332",1],["qtr/a333",1],["qtr/b77w",1],["sai/a333",1],["sai/b734",1]]},
+        {"origin":"","destination":"OPLA","category":"arrival","route":"KUPUC..ENUWO..OPLA","altitude":[6000,9000],"speed":250,"method":"random","rate":1.49,"airlines":[["pia/b772",8],["pia/a310",3],["pia/b737",1],["pia/b738",1],["sai/a320",1],["thy/b738",1],["pia/at72",1],["pia/at45",1],["pia/at75",1]]},
+        {"origin":"","destination":"OPLA","category":"arrival","route":"KUPUC..ENUWO..OPLA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.54,"airlines":[["ap/c172",6],["ap/p28a",5],["ap/c182",3],["ap/be36",2],["ap/da42",1],["ap/tb20",1],["ap/c208",2],["ap/pc12",2],["ap/be20",1],["ap/b350",1],["ap/p180",1],["ap/c510",1],["ap/e50p",1],["ap/c550",2],["ap/e55p",1],["ap/cl30",1],["ap/c680",1],["ap/h25b",1],["ap/lj45",1],["ap/f2th",1],["ap/glf4",1],["ap/glex",1],["ap/glf5",1]]},
+        {"origin":"","destination":"OPLA","category":"arrival","route":"OPADU..EROKI..OPLA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.54,"airlines":[["ap/c172",6],["ap/p28a",5],["ap/c182",3],["ap/be36",2],["ap/da42",1],["ap/tb20",1],["ap/c208",2],["ap/pc12",2],["ap/be20",1],["ap/b350",1],["ap/p180",1],["ap/c510",1],["ap/e50p",1],["ap/c550",2],["ap/e55p",1],["ap/cl30",1],["ap/c680",1],["ap/h25b",1],["ap/lj45",1],["ap/f2th",1],["ap/glf4",1],["ap/glex",1],["ap/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [32.0551,74.9463,31.7104,74.5956],
+            [31.7104,74.5956,31.5216,74.4036],
+            [31.0541,75.0244,31.3562,74.6232],
+            [31.3562,74.6232,31.5216,74.4036],
+            [31.3438,73.6019,31.4587,74.12],
+            [31.4587,74.12,31.5216,74.4036],
+            [31.9792,73.7727,31.6835,74.1804],
+            [31.6835,74.1804,31.5216,74.4036]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [31.5366,74.4048,31.7031,74.4076],
+            [31.62,74.3945,31.6197,74.4179],
+            [31.7033,74.3958,31.703,74.4193],
+            [31.5065,74.4043,31.34,74.4015],
+            [31.4231,74.4146,31.4234,74.3912],
+            [31.3398,74.4132,31.3401,74.3898],
+            [31.5339,74.4028,31.7004,74.4055],
+            [31.6173,74.3924,31.617,74.4159],
+            [31.7006,74.3938,31.7003,74.4173],
+            [31.5092,74.4024,31.3427,74.3997],
+            [31.4258,74.4127,31.4261,74.3893],
+            [31.3425,74.4114,31.3428,74.388]
+        ]}
+    ]
+}

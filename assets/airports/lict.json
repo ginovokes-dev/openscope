@@ -1,0 +1,98 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LICT/",
+    "info": {"country":"IT","city":"Trapani","type":"medium_airport","longestRunwayM":2698,"frequencies":{"twr":"119.700","app":"119.950"}},
+    "radio": {"twr":"Trapani Tower","app":"Trapani Approach","dep":"Trapani Departure"},
+    "icao": "LICT",
+    "iata": "TPS",
+    "magnetic_north": 3.7,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [37.9114,12.488,"25ft"],
+    "rangeRings": {"enabled":true,"center":[37.9114,12.488],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":300,"speed":7},
+    "arrivalRunway": "31",
+    "departureRunway": "31",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[38.4499,12.5321],[38.4225,12.7073],[38.3603,12.8675],[38.2675,13.0018],[38.1505,13.1011],[38.0171,13.1587],[37.8766,13.1705],[37.7384,13.1358],[37.612,13.057],[37.506,12.9394],[37.4277,12.791],[37.3823,12.622],[37.3729,12.4439],[37.4003,12.2687],[37.4625,12.1085],[37.5553,11.9742],[37.6723,11.8749],[37.8057,11.8173],[37.9462,11.8055],[38.0844,11.8402],[38.2108,11.919],[38.3168,12.0366],[38.3951,12.185],[38.4405,12.354]]}
+    ],
+    "fixes": {
+        "LICT": [37.9114,12.488],
+        "SUSRA": [38.57408,12.79718],
+        "IJABI": [38.14585,12.59739],
+        "HOTHA": [37.35811,13.04413],
+        "PABHE": [37.71565,12.68475],
+        "PAN": [36.8142,11.9652,"pantelleria"],
+        "MUZNU": [37.67755,12.37657],
+        "FAPBI": [38.25813,11.70829],
+        "OLIKE": [38.03407,12.21214],
+        "CIZAB": [38.59469,12.26211],
+        "WADON": [38.15314,12.40808],
+        "_RWY1304DME": [37.95949,12.40891],
+        "_RWY3104DME": [37.86465,12.56465]
+    },
+    "runways": [
+        {"name":["13","31"],"end":[[37.9188,12.4758,"10ft"],[37.90537,12.49785,"24ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "SUSRA1E": {"icao":"SUSRA1E","name":"Susra One Echo","rwy":{"LICT13":["_RWY3104DME"],"LICT31":["_RWY1304DME"]},"body":[],"exitPoints":{"SUSRA":["SUSRA"]},"draw":[["LICT","SUSRA*"]]},
+        "HOTHA2B": {"icao":"HOTHA2B","name":"Hotha Two Bravo","rwy":{"LICT13":["_RWY3104DME"],"LICT31":["_RWY1304DME"]},"body":[],"exitPoints":{"HOTHA":["HOTHA"]},"draw":[["LICT","HOTHA*"]]},
+        "PAN2D": {"icao":"PAN2D","name":"Pantelleria Two Delta","rwy":{"LICT13":["_RWY3104DME"],"LICT31":["_RWY1304DME"]},"body":[],"exitPoints":{"PAN":["PAN"]},"draw":[["LICT","PAN*"]]},
+        "FAPBI1A": {"icao":"FAPBI1A","name":"Fapbi One Alpha","rwy":{"LICT13":["_RWY3104DME"],"LICT31":["_RWY1304DME"]},"body":[],"exitPoints":{"FAPBI":["FAPBI"]},"draw":[["LICT","FAPBI*"]]},
+        "CIZAB3B": {"icao":"CIZAB3B","name":"Cizab Three Bravo","rwy":{"LICT13":["_RWY3104DME"],"LICT31":["_RWY1304DME"]},"body":[],"exitPoints":{"CIZAB":["CIZAB"]},"draw":[["LICT","CIZAB*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LICT","destination":"EBCI","category":"departure","route":"LICT31.CIZAB3B.CIZAB","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["ryr/b738",1]]},
+        {"origin":"LICT","destination":"EDFH","category":"departure","route":"LICT31.CIZAB3B.CIZAB","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["ryr/b738",1]]},
+        {"origin":"LICT","destination":"EDJA","category":"departure","route":"LICT31.CIZAB3B.CIZAB","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["ryr/b738",1]]},
+        {"origin":"LICT","destination":"EDSB","category":"departure","route":"LICT31.CIZAB3B.CIZAB","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["ryr/b738",1]]},
+        {"origin":"LICT","destination":"EGCC","category":"departure","route":"LICT31.CIZAB3B.CIZAB","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["ryr/b738",1]]},
+        {"origin":"LICT","destination":"EHBK","category":"departure","route":"LICT31.CIZAB3B.CIZAB","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["ryr/b738",1]]},
+        {"origin":"LICT","destination":"","category":"departure","route":"LICT31.SUSRA1E.SUSRA","altitude":"","speed":"","method":"random","rate":1.61,"airlines":[["ryr/b738",6]]},
+        {"origin":"LICT","destination":"","category":"departure","route":"LICT31.HOTHA2B.HOTHA","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["ryr/b738",1]]},
+        {"origin":"LICT","destination":"","category":"departure","route":"LICT31.PAN2D.PAN","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["bbo/at72",1]]},
+        {"origin":"LICT","destination":"","category":"departure","route":"LICT31.FAPBI1A.FAPBI","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["ryr/b738",2]]},
+        {"origin":"LICT","destination":"","category":"departure","route":"LICT31.CIZAB3B.CIZAB","altitude":"","speed":"","method":"random","rate":3.22,"airlines":[["ryr/b738",12]]},
+        {"origin":"LICT","destination":"","category":"departure","route":"LICT31.FAPBI1A.FAPBI","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"LICT","destination":"","category":"departure","route":"LICT31.HOTHA2B.HOTHA","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"EBCI","destination":"LICT","category":"arrival","route":"CIZAB..WADON..LICT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.27,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDFH","destination":"LICT","category":"arrival","route":"CIZAB..WADON..LICT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.27,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDJA","destination":"LICT","category":"arrival","route":"CIZAB..WADON..LICT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.27,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDSB","destination":"LICT","category":"arrival","route":"CIZAB..WADON..LICT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.27,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGCC","destination":"LICT","category":"arrival","route":"CIZAB..WADON..LICT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.27,"airlines":[["ryr/b738",1]]},
+        {"origin":"EHBK","destination":"LICT","category":"arrival","route":"CIZAB..WADON..LICT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.27,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LICT","category":"arrival","route":"SUSRA..IJABI..LICT","altitude":[6000,9000],"speed":250,"method":"random","rate":1.61,"airlines":[["ryr/b738",6]]},
+        {"origin":"","destination":"LICT","category":"arrival","route":"HOTHA..PABHE..LICT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.27,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LICT","category":"arrival","route":"PAN..MUZNU..LICT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.27,"airlines":[["bbo/at72",1]]},
+        {"origin":"","destination":"LICT","category":"arrival","route":"FAPBI..OLIKE..LICT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.54,"airlines":[["ryr/b738",2]]},
+        {"origin":"","destination":"LICT","category":"arrival","route":"CIZAB..WADON..LICT","altitude":[6000,9000],"speed":250,"method":"random","rate":3.22,"airlines":[["ryr/b738",12]]},
+        {"origin":"","destination":"LICT","category":"arrival","route":"FAPBI..OLIKE..LICT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"","destination":"LICT","category":"arrival","route":"HOTHA..PABHE..LICT","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",2],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [38.5741,12.7972,38.1459,12.5974],
+            [38.1459,12.5974,37.9114,12.488],
+            [37.3581,13.0441,37.7156,12.6848],
+            [37.7156,12.6848,37.9114,12.488],
+            [36.8142,11.9652,37.6775,12.3766],
+            [37.6775,12.3766,37.9114,12.488],
+            [38.2581,11.7083,38.0341,12.2121],
+            [38.0341,12.2121,37.9114,12.488],
+            [38.5947,12.2621,38.1531,12.4081],
+            [38.1531,12.4081,37.9114,12.488]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [37.9188,12.4758,38.0204,12.3084],
+            [37.9617,12.3844,37.9776,12.3999],
+            [38.0125,12.3007,38.0284,12.3162],
+            [37.9054,12.4978,37.8035,12.6647],
+            [37.8624,12.5891,37.8466,12.5736],
+            [37.8114,12.6724,37.7956,12.657]
+        ]}
+    ]
+}

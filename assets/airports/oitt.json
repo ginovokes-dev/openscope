@@ -1,0 +1,92 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/OITT/",
+    "info": {"country":"IR","city":"Tabriz","type":"large_airport","longestRunwayM":3604,"frequencies":{"atis":"127.000","twr":"124.100","app":"122.500"}},
+    "radio": {"twr":"Tabriz Tower","app":"Tabriz Approach","dep":"Tabriz Departure"},
+    "icao": "OITT",
+    "iata": "TBZ",
+    "magnetic_north": 5.9,
+    "ctr_radius": 45,
+    "ctr_ceiling": 12000,
+    "initial_alt": 8000,
+    "position": [38.1339,46.235001,"4459ft"],
+    "rangeRings": {"enabled":true,"center":[38.1339,46.235001],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":320,"speed":8},
+    "arrivalRunway": "30R",
+    "departureRunway": "30R",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":120,"airspace_class":"D","poly":[[38.5365,46.2879],[38.512,46.4185],[38.4617,46.5367],[38.3891,46.6343],[38.2991,46.7047],[38.1979,46.743],[38.0923,46.7468],[37.9895,46.7157],[37.8966,46.6518],[37.8198,46.5595],[37.7645,46.4451],[37.7343,46.3164],[37.7313,46.1821],[37.7558,46.0515],[37.8061,45.9333],[37.8787,45.8357],[37.9687,45.7653],[38.0699,45.727],[38.1755,45.7232],[38.2783,45.7543],[38.3712,45.8182],[38.448,45.9105],[38.5033,46.0249],[38.5335,46.1536]]}
+    ],
+    "fixes": {
+        "OITT": [38.1339,46.235],
+        "ALOZO": [38.47665,46.76211],
+        "RIPGI": [38.26124,46.43084],
+        "SALAN": [37.75847,46.72481],
+        "EWAGA": [37.99441,46.41698],
+        "SHD": [37.346,46.1427,"sahand"],
+        "SEKDU": [37.93488,46.21169],
+        "ZAFVO": [38.30591,45.587],
+        "NAGEG": [38.19781,45.99424],
+        "_RWY12L04DME": [38.1859,46.15383],
+        "_RWY30R04DME": [38.08146,46.31718],
+        "_RWY12R04DME": [38.18424,46.15286],
+        "_RWY30L04DME": [38.08043,46.31565]
+    },
+    "runways": [
+        {"name":["12L","30R"],"end":[[38.1439,46.2196,"4449ft"],[38.1235,46.2515,"4459ft"]],"ils":[true,true]},
+        {"name":["12R","30L"],"end":[[38.1423,46.2187,"4448ft"],[38.1224,46.2499,"4458ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ALOZO2D": {"icao":"ALOZO2D","name":"Alozo Two Delta","rwy":{"OITT12L":["_RWY30R04DME"],"OITT30R":["_RWY12L04DME"],"OITT12R":["_RWY30L04DME"],"OITT30L":["_RWY12R04DME"]},"body":[],"exitPoints":{"ALOZO":["ALOZO"]},"draw":[["OITT","ALOZO*"]]},
+        "SALAN3F": {"icao":"SALAN3F","name":"Salan Three Foxtrot","rwy":{"OITT12L":["_RWY30R04DME"],"OITT30R":["_RWY12L04DME"],"OITT12R":["_RWY30L04DME"],"OITT30L":["_RWY12R04DME"]},"body":[],"exitPoints":{"SALAN":["SALAN"]},"draw":[["OITT","SALAN*"]]},
+        "SHD1A": {"icao":"SHD1A","name":"Sahand One Alpha","rwy":{"OITT12L":["_RWY30R04DME"],"OITT30R":["_RWY12L04DME"],"OITT12R":["_RWY30L04DME"],"OITT30L":["_RWY12R04DME"]},"body":[],"exitPoints":{"SHD":["SHD"]},"draw":[["OITT","SHD*"]]},
+        "ZAFVO2D": {"icao":"ZAFVO2D","name":"Zafvo Two Delta","rwy":{"OITT12L":["_RWY30R04DME"],"OITT30R":["_RWY12L04DME"],"OITT12R":["_RWY30L04DME"],"OITT30L":["_RWY12R04DME"]},"body":[],"exitPoints":{"ZAFVO":["ZAFVO"]},"draw":[["OITT","ZAFVO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"OITT","destination":"OIII","category":"departure","route":"OITT30R.SALAN3F.SALAN","altitude":"","speed":"","method":"random","rate":1.16,"airlines":[["ira/a30b",1],["ira/f100",1],["ira/md82",1],["irc/f100",1],["irk/t134",1]]},
+        {"origin":"OITT","destination":"OIMM","category":"departure","route":"OITT30R.SALAN3F.SALAN","altitude":"","speed":"","method":"random","rate":0.93,"airlines":[["ira/a30b",1],["ira/f100",1],["ira/md82",1],["irc/f100",1]]},
+        {"origin":"OITT","destination":"LTFM","category":"departure","route":"OITT30R.ZAFVO2D.ZAFVO","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["thy/a319",1],["thy/b738",1]]},
+        {"origin":"OITT","destination":"UBBB","category":"departure","route":"OITT30R.ALOZO2D.ALOZO","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["ahy/e170",1],["ahy/e190",1]]},
+        {"origin":"OITT","destination":"OEJN","category":"departure","route":"OITT30R.SHD1A.SHD","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["sva/a306",1]]},
+        {"origin":"OITT","destination":"","category":"departure","route":"OITT30R.SALAN3F.SALAN","altitude":"","speed":"","method":"random","rate":0.93,"airlines":[["ira/f100",2],["irc/f100",2]]},
+        {"origin":"OITT","destination":"","category":"departure","route":"OITT30R.SHD1A.SHD","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["ira/a30b",1],["sva/a306",1]]},
+        {"origin":"OITT","destination":"","category":"departure","route":"OITT30R.ZAFVO2D.ZAFVO","altitude":"","speed":"","method":"random","rate":1.55,"airlines":[["ep/c172",6],["ep/p28a",5],["ep/c182",3],["ep/be36",2],["ep/da42",1],["ep/tb20",1],["ep/c208",2],["ep/pc12",2],["ep/be20",1],["ep/b350",1],["ep/p180",1],["ep/c510",1],["ep/e50p",1],["ep/c550",1],["ep/e55p",1],["ep/cl30",1],["ep/c680",1],["ep/h25b",1],["ep/lj45",1],["ep/f2th",1],["ep/glf4",1],["ep/glex",1],["ep/glf5",1]]},
+        {"origin":"OIII","destination":"OITT","category":"arrival","route":"SALAN..EWAGA..OITT","altitude":[8000,11000],"speed":250,"method":"random","rate":1.16,"airlines":[["ira/a30b",1],["ira/f100",1],["ira/md82",1],["irc/f100",1],["irk/t134",1]]},
+        {"origin":"OIMM","destination":"OITT","category":"arrival","route":"SALAN..EWAGA..OITT","altitude":[8000,11000],"speed":250,"method":"random","rate":0.93,"airlines":[["ira/a30b",1],["ira/f100",1],["ira/md82",1],["irc/f100",1]]},
+        {"origin":"LTFM","destination":"OITT","category":"arrival","route":"ZAFVO..NAGEG..OITT","altitude":[8000,11000],"speed":250,"method":"random","rate":0.47,"airlines":[["thy/a319",1],["thy/b738",1]]},
+        {"origin":"UBBB","destination":"OITT","category":"arrival","route":"ALOZO..RIPGI..OITT","altitude":[8000,11000],"speed":250,"method":"random","rate":0.47,"airlines":[["ahy/e170",1],["ahy/e190",1]]},
+        {"origin":"OEJN","destination":"OITT","category":"arrival","route":"SHD..SEKDU..OITT","altitude":[8000,11000],"speed":250,"method":"random","rate":0.23,"airlines":[["sva/a306",1]]},
+        {"origin":"","destination":"OITT","category":"arrival","route":"SALAN..EWAGA..OITT","altitude":[8000,11000],"speed":250,"method":"random","rate":0.93,"airlines":[["ira/f100",2],["irc/f100",2]]},
+        {"origin":"","destination":"OITT","category":"arrival","route":"SHD..SEKDU..OITT","altitude":[8000,11000],"speed":250,"method":"random","rate":0.47,"airlines":[["ira/a30b",1],["sva/a306",1]]},
+        {"origin":"","destination":"OITT","category":"arrival","route":"ZAFVO..NAGEG..OITT","altitude":[8000,11000],"speed":250,"method":"random","rate":1.55,"airlines":[["ep/c172",6],["ep/p28a",5],["ep/c182",3],["ep/be36",2],["ep/da42",1],["ep/tb20",1],["ep/c208",2],["ep/pc12",2],["ep/be20",1],["ep/b350",1],["ep/p180",1],["ep/c510",1],["ep/e50p",1],["ep/c550",1],["ep/e55p",1],["ep/cl30",1],["ep/c680",1],["ep/h25b",1],["ep/lj45",1],["ep/f2th",1],["ep/glf4",1],["ep/glex",1],["ep/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [38.4766,46.7621,38.2612,46.4308],
+            [38.2612,46.4308,38.1339,46.235],
+            [37.7585,46.7248,37.9944,46.417],
+            [37.9944,46.417,38.1339,46.235],
+            [37.346,46.1427,37.9349,46.2117],
+            [37.9349,46.2117,38.1339,46.235],
+            [38.3059,45.587,38.1978,45.9942],
+            [38.1978,45.9942,38.1339,46.235]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [38.1439,46.2196,38.2488,46.055],
+            [38.1886,46.1294,38.2042,46.1454],
+            [38.2411,46.047,38.2566,46.0631],
+            [38.1235,46.2515,38.0183,46.4156],
+            [38.0787,46.3416,38.0632,46.3256],
+            [38.0261,46.4236,38.0106,46.4076],
+            [38.1423,46.2187,38.2471,46.054],
+            [38.1869,46.1284,38.2025,46.1444],
+            [38.2393,46.0459,38.2548,46.062],
+            [38.1224,46.2499,38.0174,46.4141],
+            [38.0777,46.3401,38.0622,46.3241],
+            [38.0252,46.4221,38.0096,46.4061]
+        ]}
+    ]
+}

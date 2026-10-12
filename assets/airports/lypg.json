@@ -1,0 +1,92 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LYPG/",
+    "info": {"country":"ME","city":"Podgorica","type":"large_airport","longestRunwayM":2500,"frequencies":{"twr":"118.200","app":"118.700"}},
+    "radio": {"twr":"Podgorica Tower","app":"Podgorica Approach","dep":"Podgorica Departure"},
+    "icao": "LYPG",
+    "iata": "TGD",
+    "magnetic_north": 5.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [42.359402,19.2519,"141ft"],
+    "rangeRings": {"enabled":true,"center":[42.359402,19.2519],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":170,"speed":11},
+    "arrivalRunway": "18",
+    "departureRunway": "18",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[42.7625,19.3006],[42.7394,19.4401],[42.6905,19.5668],[42.619,19.6721],[42.5298,19.7487],[42.429,19.7914],[42.3234,19.7974],[42.2203,19.7662],[42.1267,19.7],[42.0489,19.6032],[41.9923,19.4825],[41.9607,19.3461],[41.9563,19.2032],[41.9794,19.0637],[42.0283,18.937],[42.0998,18.8317],[42.189,18.7551],[42.2898,18.7124],[42.3954,18.7064],[42.4985,18.7376],[42.5921,18.8038],[42.6699,18.9006],[42.7265,19.0213],[42.7581,19.1577]]}
+    ],
+    "fixes": {
+        "LYPG": [42.3594,19.2519],
+        "MOJ": [42.9446,19.5755,"mojkovac"],
+        "TURDO": [42.54442,19.35421],
+        "BUI": [42.633,20.4958,"budisavci"],
+        "LOCDI": [42.41642,19.51114],
+        "TRN": [41.4161,19.7182,"tirana"],
+        "HEDAH": [42.17167,19.3447],
+        "DBK": [42.5538,18.2774,"dubrovnik"],
+        "BUTGE": [42.41149,18.99077],
+        "NIK": [42.7764,18.9242,"niksic"],
+        "DAN": [42.545,19.1235,"podgorica"],
+        "_RWY1804DME": [42.43703,19.25983],
+        "_RWY3604DME": [42.28177,19.24389]
+    },
+    "runways": [
+        {"name":["18","36"],"end":[[42.3706,19.253,"118ft"],[42.3482,19.2507,"82ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "MOJ1F": {"icao":"MOJ1F","name":"Mojkovac One Foxtrot","rwy":{"LYPG18":["_RWY3604DME"],"LYPG36":["_RWY1804DME"]},"body":[],"exitPoints":{"MOJ":["MOJ"]},"draw":[["LYPG","MOJ*"]]},
+        "BUI2D": {"icao":"BUI2D","name":"Budisavci Two Delta","rwy":{"LYPG18":["_RWY3604DME"],"LYPG36":["_RWY1804DME"]},"body":[],"exitPoints":{"BUI":["BUI"]},"draw":[["LYPG","BUI*"]]},
+        "TRN3C": {"icao":"TRN3C","name":"Tirana Three Charlie","rwy":{"LYPG18":["_RWY3604DME"],"LYPG36":["_RWY1804DME"]},"body":[],"exitPoints":{"TRN":["TRN"]},"draw":[["LYPG","TRN*"]]},
+        "DBK3F": {"icao":"DBK3F","name":"Dubrovnik Three Foxtrot","rwy":{"LYPG18":["_RWY3604DME"],"LYPG36":["_RWY1804DME"]},"body":[],"exitPoints":{"DBK":["DBK"]},"draw":[["LYPG","DBK*"]]},
+        "NIK1B": {"icao":"NIK1B","name":"Niksic One Bravo","rwy":{"LYPG18":["_RWY3604DME"],"LYPG36":["_RWY1804DME"]},"body":[],"exitPoints":{"NIK":["NIK"]},"draw":[["LYPG","NIK*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LYPG","destination":"LIRF","category":"departure","route":"LYPG18.DBK3F.DBK","altitude":"","speed":"","method":"random","rate":1.01,"airlines":[["aza/e75l",1],["aza/f100",1],["mgx/e75l",1],["mgx/f100",1]]},
+        {"origin":"LYPG","destination":"LJLJ","category":"departure","route":"LYPG18.NIK1B.NIK","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["adr/crj2",1],["adr/crj9",1],["mgx/f100",1]]},
+        {"origin":"LYPG","destination":"LYBE","category":"departure","route":"LYPG18.MOJ1F.MOJ","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["asl/a319",1],["asl/at72",1],["mgx/f100",1]]},
+        {"origin":"LYPG","destination":"EBCI","category":"departure","route":"LYPG18.NIK1B.NIK","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["ryr/b738",1]]},
+        {"origin":"LYPG","destination":"EDDF","category":"departure","route":"LYPG18.NIK1B.NIK","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["mgx/f100",1]]},
+        {"origin":"LYPG","destination":"","category":"departure","route":"LYPG18.MOJ1F.MOJ","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["mgx/e190",1]]},
+        {"origin":"LYPG","destination":"","category":"departure","route":"LYPG18.BUI2D.BUI","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["thy/a319",1]]},
+        {"origin":"LYPG","destination":"","category":"departure","route":"LYPG18.DBK3F.DBK","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["mgx/f100",1]]},
+        {"origin":"LYPG","destination":"","category":"departure","route":"LYPG18.NIK1B.NIK","altitude":"","speed":"","method":"random","rate":1.01,"airlines":[["mgx/f100",3],["ryr/b738",1]]},
+        {"origin":"LYPG","destination":"","category":"departure","route":"LYPG18.TRN3C.TRN","altitude":"","speed":"","method":"random","rate":1.6,"airlines":[["4o/c172",6],["4o/p28a",5],["4o/c182",3],["4o/be36",2],["4o/da42",1],["4o/tb20",1],["4o/c208",2],["4o/pc12",2],["4o/be20",1],["4o/b350",1],["4o/p180",1],["4o/c510",1],["4o/e50p",1],["4o/c550",1],["4o/e55p",1],["4o/cl30",1],["4o/c680",1],["4o/h25b",1],["4o/lj45",1],["4o/f2th",1],["4o/glf4",1],["4o/glex",1],["4o/glf5",1]]},
+        {"origin":"LIRF","destination":"LYPG","category":"arrival","route":"DBK..BUTGE..LYPG","altitude":[4000,7000],"speed":250,"method":"random","rate":1.01,"airlines":[["aza/e75l",1],["aza/f100",1],["mgx/e75l",1],["mgx/f100",1]]},
+        {"origin":"LJLJ","destination":"LYPG","category":"arrival","route":"NIK..DAN..LYPG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.76,"airlines":[["adr/crj2",1],["adr/crj9",1],["mgx/f100",1]]},
+        {"origin":"LYBE","destination":"LYPG","category":"arrival","route":"MOJ..TURDO..LYPG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.76,"airlines":[["asl/a319",1],["asl/at72",1],["mgx/f100",1]]},
+        {"origin":"EBCI","destination":"LYPG","category":"arrival","route":"NIK..DAN..LYPG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.25,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDDF","destination":"LYPG","category":"arrival","route":"NIK..DAN..LYPG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.25,"airlines":[["mgx/f100",1]]},
+        {"origin":"","destination":"LYPG","category":"arrival","route":"MOJ..TURDO..LYPG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.25,"airlines":[["mgx/e190",1]]},
+        {"origin":"","destination":"LYPG","category":"arrival","route":"BUI..LOCDI..LYPG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.25,"airlines":[["thy/a319",1]]},
+        {"origin":"","destination":"LYPG","category":"arrival","route":"DBK..BUTGE..LYPG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.25,"airlines":[["mgx/f100",1]]},
+        {"origin":"","destination":"LYPG","category":"arrival","route":"NIK..DAN..LYPG","altitude":[4000,7000],"speed":250,"method":"random","rate":1.01,"airlines":[["mgx/f100",3],["ryr/b738",1]]},
+        {"origin":"","destination":"LYPG","category":"arrival","route":"TRN..HEDAH..LYPG","altitude":[4000,7000],"speed":250,"method":"random","rate":1.6,"airlines":[["4o/c172",6],["4o/p28a",5],["4o/c182",3],["4o/be36",2],["4o/da42",1],["4o/tb20",1],["4o/c208",2],["4o/pc12",2],["4o/be20",1],["4o/b350",1],["4o/p180",1],["4o/c510",1],["4o/e50p",1],["4o/c550",1],["4o/e55p",1],["4o/cl30",1],["4o/c680",1],["4o/h25b",1],["4o/lj45",1],["4o/f2th",1],["4o/glf4",1],["4o/glex",1],["4o/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [42.9446,19.5755,42.5444,19.3542],
+            [42.5444,19.3542,42.3594,19.2519],
+            [42.633,20.4958,42.4164,19.5111],
+            [42.4164,19.5111,42.3594,19.2519],
+            [41.4161,19.7182,42.1717,19.3447],
+            [42.1717,19.3447,42.3594,19.2519],
+            [42.5538,18.2774,42.4115,18.9908],
+            [42.4115,18.9908,42.3594,19.2519],
+            [42.7764,18.9242,42.545,19.1235],
+            [42.545,19.1235,42.3594,19.2519]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [42.3706,19.253,42.5367,19.2701],
+            [42.4544,19.248,42.4529,19.275],
+            [42.5374,19.2566,42.5359,19.2836],
+            [42.3482,19.2507,42.1821,19.2337],
+            [42.2644,19.2556,42.2659,19.2287],
+            [42.1814,19.2471,42.1829,19.2202]
+        ]}
+    ]
+}

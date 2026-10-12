@@ -1,0 +1,78 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/GMFF/",
+    "info": {"country":"MA","city":"Saiss","type":"large_airport","longestRunwayM":3200,"frequencies":{"twr":"118.600"}},
+    "radio": {"twr":"Saiss Tower","app":"Saiss Approach","dep":"Saiss Departure"},
+    "icao": "GMFF",
+    "iata": "FEZ",
+    "magnetic_north": 0.1,
+    "ctr_radius": 60,
+    "ctr_ceiling": 11000,
+    "initial_alt": 6000,
+    "position": [33.927299,-4.97796,"1900ft"],
+    "rangeRings": {"enabled":true,"center":[33.927299,-4.97796],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":270,"speed":8},
+    "arrivalRunway": "27",
+    "departureRunway": "27",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":110,"airspace_class":"C","poly":[[34.4669,-4.9768],[34.4483,-4.8086],[34.3941,-4.6518],[34.3082,-4.5173],[34.1963,-4.4142],[34.066,-4.3495],[33.9264,-4.3277],[33.7867,-4.3501],[33.6567,-4.4153],[33.5451,-4.5189],[33.4595,-4.6538],[33.4058,-4.8107],[33.3877,-4.9791],[33.4063,-5.1474],[33.4605,-5.3041],[33.5464,-5.4386],[33.6583,-5.5417],[33.7886,-5.6064],[33.9282,-5.6283],[34.0679,-5.6058],[34.1979,-5.5406],[34.3095,-5.437],[34.3951,-5.3021],[34.4487,-5.1452]]}
+    ],
+    "fixes": {
+        "GMFF": [33.9273,-4.97796],
+        "IKEBE": [34.57548,-4.64027],
+        "IDABA": [34.15662,-4.85849],
+        "AROFO": [33.38768,-4.42903],
+        "EWAWO": [33.73638,-4.78375],
+        "OMENI": [33.75992,-5.80475],
+        "TUCLO": [33.86808,-5.27047],
+        "_RWY0904DME": [33.92759,-5.0755],
+        "_RWY2704DME": [33.92706,-4.88308]
+    },
+    "runways": [
+        {"name":["09","27"],"end":[[33.9274,-4.99521,"1854ft"],[33.92731,-4.96337,"1890ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "IKEBE3E": {"icao":"IKEBE3E","name":"Ikebe Three Echo","rwy":{"GMFF09":["_RWY2704DME"],"GMFF27":["_RWY0904DME"]},"body":[],"exitPoints":{"IKEBE":["IKEBE"]},"draw":[["GMFF","IKEBE*"]]},
+        "AROFO3E": {"icao":"AROFO3E","name":"Arofo Three Echo","rwy":{"GMFF09":["_RWY2704DME"],"GMFF27":["_RWY0904DME"]},"body":[],"exitPoints":{"AROFO":["AROFO"]},"draw":[["GMFF","AROFO*"]]},
+        "OMENI2C": {"icao":"OMENI2C","name":"Omeni Two Charlie","rwy":{"GMFF09":["_RWY2704DME"],"GMFF27":["_RWY0904DME"]},"body":[],"exitPoints":{"OMENI":["OMENI"]},"draw":[["GMFF","OMENI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"GMFF","destination":"GMMN","category":"departure","route":"GMFF27.OMENI2C.OMENI","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["ram/at72",1],["ram/b738",1]]},
+        {"origin":"GMFF","destination":"LEBL","category":"departure","route":"GMFF27.IKEBE3E.IKEBE","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["ryr/b738",1],["vlg/a320",1]]},
+        {"origin":"GMFF","destination":"EBCI","category":"departure","route":"GMFF27.IKEBE3E.IKEBE","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["ryr/b738",1]]},
+        {"origin":"GMFF","destination":"EDFH","category":"departure","route":"GMFF27.IKEBE3E.IKEBE","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["ryr/b738",1]]},
+        {"origin":"GMFF","destination":"EDLV","category":"departure","route":"GMFF27.IKEBE3E.IKEBE","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["ryr/b738",1]]},
+        {"origin":"GMFF","destination":"","category":"departure","route":"GMFF27.IKEBE3E.IKEBE","altitude":"","speed":"","method":"random","rate":3.58,"airlines":[["ryr/b738",9],["ram/b738",1]]},
+        {"origin":"GMFF","destination":"","category":"departure","route":"GMFF27.IKEBE3E.IKEBE","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["cn/c172",6],["cn/p28a",5],["cn/c182",3],["cn/be36",2],["cn/da42",1],["cn/tb20",1],["cn/c208",2],["cn/pc12",2],["cn/be20",1],["cn/b350",1],["cn/p180",1],["cn/c510",1],["cn/e50p",1],["cn/c550",2],["cn/e55p",1],["cn/cl30",1],["cn/c680",1],["cn/h25b",1],["cn/lj45",1],["cn/f2th",1],["cn/glf4",1],["cn/glex",1],["cn/glf5",1]]},
+        {"origin":"GMFF","destination":"","category":"departure","route":"GMFF27.AROFO3E.AROFO","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["cn/c172",6],["cn/p28a",5],["cn/c182",3],["cn/be36",2],["cn/da42",1],["cn/tb20",1],["cn/c208",2],["cn/pc12",2],["cn/be20",1],["cn/b350",1],["cn/p180",1],["cn/c510",1],["cn/e50p",1],["cn/c550",2],["cn/e55p",1],["cn/cl30",1],["cn/c680",1],["cn/h25b",1],["cn/lj45",1],["cn/f2th",1],["cn/glf4",1],["cn/glex",1],["cn/glf5",1]]},
+        {"origin":"GMMN","destination":"GMFF","category":"arrival","route":"OMENI..TUCLO..GMFF","altitude":[7000,10000],"speed":250,"method":"random","rate":0.72,"airlines":[["ram/at72",1],["ram/b738",1]]},
+        {"origin":"LEBL","destination":"GMFF","category":"arrival","route":"IKEBE..IDABA..GMFF","altitude":[7000,10000],"speed":250,"method":"random","rate":0.72,"airlines":[["ryr/b738",1],["vlg/a320",1]]},
+        {"origin":"EBCI","destination":"GMFF","category":"arrival","route":"IKEBE..IDABA..GMFF","altitude":[7000,10000],"speed":250,"method":"random","rate":0.36,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDFH","destination":"GMFF","category":"arrival","route":"IKEBE..IDABA..GMFF","altitude":[7000,10000],"speed":250,"method":"random","rate":0.36,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDLV","destination":"GMFF","category":"arrival","route":"IKEBE..IDABA..GMFF","altitude":[7000,10000],"speed":250,"method":"random","rate":0.36,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"GMFF","category":"arrival","route":"IKEBE..IDABA..GMFF","altitude":[7000,10000],"speed":250,"method":"random","rate":3.58,"airlines":[["ryr/b738",9],["ram/b738",1]]},
+        {"origin":"","destination":"GMFF","category":"arrival","route":"IKEBE..IDABA..GMFF","altitude":[7000,10000],"speed":250,"method":"random","rate":0.42,"airlines":[["cn/c172",6],["cn/p28a",5],["cn/c182",3],["cn/be36",2],["cn/da42",1],["cn/tb20",1],["cn/c208",2],["cn/pc12",2],["cn/be20",1],["cn/b350",1],["cn/p180",1],["cn/c510",1],["cn/e50p",1],["cn/c550",2],["cn/e55p",1],["cn/cl30",1],["cn/c680",1],["cn/h25b",1],["cn/lj45",1],["cn/f2th",1],["cn/glf4",1],["cn/glex",1],["cn/glf5",1]]},
+        {"origin":"","destination":"GMFF","category":"arrival","route":"AROFO..EWAWO..GMFF","altitude":[7000,10000],"speed":250,"method":"random","rate":0.42,"airlines":[["cn/c172",6],["cn/p28a",5],["cn/c182",3],["cn/be36",2],["cn/da42",1],["cn/tb20",1],["cn/c208",2],["cn/pc12",2],["cn/be20",1],["cn/b350",1],["cn/p180",1],["cn/c510",1],["cn/e50p",1],["cn/c550",2],["cn/e55p",1],["cn/cl30",1],["cn/c680",1],["cn/h25b",1],["cn/lj45",1],["cn/f2th",1],["cn/glf4",1],["cn/glex",1],["cn/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [34.5755,-4.6403,34.1566,-4.8585],
+            [34.1566,-4.8585,33.9273,-4.978],
+            [33.3877,-4.429,33.7364,-4.7838],
+            [33.7364,-4.7838,33.9273,-4.978],
+            [33.7599,-5.8047,33.8681,-5.2705],
+            [33.8681,-5.2705,33.9273,-4.978]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [33.9274,-4.9952,33.9278,-5.1959],
+            [33.9176,-5.0956,33.9376,-5.0955],
+            [33.9178,-5.196,33.9378,-5.1959],
+            [33.9273,-4.9634,33.9266,-4.7626],
+            [33.937,-4.863,33.917,-4.863],
+            [33.9366,-4.7626,33.9166,-4.7627]
+        ]}
+    ]
+}

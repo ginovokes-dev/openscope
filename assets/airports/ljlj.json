@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LJLJ/",
+    "info": {"country":"SI","city":"Zgornji Brnik","type":"large_airport","longestRunwayM":3300,"frequencies":{"atis":"128.175","twr":"118.000","gnd":"121.625"}},
+    "radio": {"twr":"Ljubljana Tower","app":"Ljubljana Approach","dep":"Ljubljana Departure"},
+    "icao": "LJLJ",
+    "iata": "LJU",
+    "magnetic_north": 4.7,
+    "ctr_radius": 60,
+    "ctr_ceiling": 11000,
+    "initial_alt": 6000,
+    "position": [46.223701,14.4576,"1273ft"],
+    "rangeRings": {"enabled":true,"center":[46.223701,14.4576],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":320,"speed":6},
+    "arrivalRunway": "30",
+    "departureRunway": "30",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":110,"airspace_class":"C","poly":[[46.7615,14.5215],[46.7317,14.7205],[46.6673,14.9016],[46.5727,15.0524],[46.4543,15.1627],[46.3202,15.225],[46.1795,15.2349],[46.0418,15.1919],[45.9165,15.0988],[45.8122,14.9621],[45.7359,14.7909],[45.6928,14.5971],[45.6859,14.3937],[45.7157,14.1947],[45.7801,14.0136],[45.8747,13.8628],[45.9931,13.7525],[46.1272,13.6902],[46.2679,13.6803],[46.4056,13.7233],[46.5309,13.8164],[46.6352,13.9531],[46.7115,14.1243],[46.7546,14.3181]]}
+    ],
+    "fixes": {
+        "LJLJ": [46.2237,14.4576],
+        "GRZ": [46.9554,15.4494,"graz"],
+        "JABRO": [46.40594,14.70462],
+        "MEL": [45.6546,15.3182,"metlika"],
+        "KAM": [46.105,14.6755,"dolsko"],
+        "ILB": [45.5656,14.1709,"bistrica"],
+        "RABEZ": [45.9845,14.35339],
+        "UNALO": [46.66724,13.66339],
+        "FONET": [46.38062,14.17661],
+        "ZW": [47.1981,14.7567,"zeltweg"],
+        "EPESI": [46.46808,14.53261],
+        "_RWY1204DME": [46.27207,14.36289],
+        "_RWY3004DME": [46.17528,14.55217]
+    },
+    "runways": [
+        {"name":["12","30"],"end":[[46.2325,14.4404,"1273ft"],[46.2149,14.4748,"1191ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "GRZ1C": {"icao":"GRZ1C","name":"Graz One Charlie","rwy":{"LJLJ12":["_RWY3004DME"],"LJLJ30":["_RWY1204DME"]},"body":[],"exitPoints":{"GRZ":["GRZ"]},"draw":[["LJLJ","GRZ*"]]},
+        "MEL2D": {"icao":"MEL2D","name":"Metlika Two Delta","rwy":{"LJLJ12":["_RWY3004DME"],"LJLJ30":["_RWY1204DME"]},"body":[],"exitPoints":{"MEL":["MEL"]},"draw":[["LJLJ","MEL*"]]},
+        "ILB2C": {"icao":"ILB2C","name":"Bistrica Two Charlie","rwy":{"LJLJ12":["_RWY3004DME"],"LJLJ30":["_RWY1204DME"]},"body":[],"exitPoints":{"ILB":["ILB"]},"draw":[["LJLJ","ILB*"]]},
+        "UNALO3F": {"icao":"UNALO3F","name":"Unalo Three Foxtrot","rwy":{"LJLJ12":["_RWY3004DME"],"LJLJ30":["_RWY1204DME"]},"body":[],"exitPoints":{"UNALO":["UNALO"]},"draw":[["LJLJ","UNALO*"]]},
+        "ZW3A": {"icao":"ZW3A","name":"Zeltweg Three Alpha","rwy":{"LJLJ12":["_RWY3004DME"],"LJLJ30":["_RWY1204DME"]},"body":[],"exitPoints":{"ZW":["ZW"]},"draw":[["LJLJ","ZW*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LJLJ","destination":"LFPG","category":"departure","route":"LJLJ30.UNALO3F.UNALO","altitude":"","speed":"","method":"random","rate":0.63,"airlines":[["adr/a319",1],["adr/crj2",1],["adr/crj9",1],["afr/e170",1]]},
+        {"origin":"LJLJ","destination":"LTFM","category":"departure","route":"LJLJ30.MEL2D.MEL","altitude":"","speed":"","method":"random","rate":0.63,"airlines":[["adr/a319",1],["adr/crj9",1],["thy/a319",1],["thy/crj9",1]]},
+        {"origin":"LJLJ","destination":"UUEE","category":"departure","route":"LJLJ30.GRZ1C.GRZ","altitude":"","speed":"","method":"random","rate":0.63,"airlines":[["adr/a319",1],["adr/crj2",1],["adr/crj9",1],["afl/crj2",1]]},
+        {"origin":"LJLJ","destination":"LSZH","category":"departure","route":"LJLJ30.UNALO3F.UNALO","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["adr/a319",1],["adr/crj2",1],["adr/crj9",1]]},
+        {"origin":"LJLJ","destination":"LYPG","category":"departure","route":"LJLJ30.MEL2D.MEL","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["adr/crj2",1],["adr/crj9",1],["mgx/f100",1]]},
+        {"origin":"LJLJ","destination":"BKPR","category":"departure","route":"LJLJ30.MEL2D.MEL","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["adr/crj2",1],["adr/crj9",1]]},
+        {"origin":"LJLJ","destination":"","category":"departure","route":"LJLJ30.GRZ1C.GRZ","altitude":"","speed":"","method":"random","rate":0.63,"airlines":[["adr/crj2",2],["adr/crj9",1],["lot/crj2",1]]},
+        {"origin":"LJLJ","destination":"","category":"departure","route":"LJLJ30.MEL2D.MEL","altitude":"","speed":"","method":"random","rate":0.95,"airlines":[["adr/crj2",3],["adr/crj9",2],["asl/at72",1]]},
+        {"origin":"LJLJ","destination":"","category":"departure","route":"LJLJ30.UNALO3F.UNALO","altitude":"","speed":"","method":"random","rate":1.73,"airlines":[["adr/crj9",4],["adr/a319",3],["wzz/a320",2],["adr/crj2",1],["ezy/a319",1]]},
+        {"origin":"LJLJ","destination":"","category":"departure","route":"LJLJ30.ZW3A.ZW","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["adr/crj2",1],["adr/crj9",1],["fin/a320",1]]},
+        {"origin":"LJLJ","destination":"","category":"departure","route":"LJLJ30.ZW3A.ZW","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["s5/c172",6],["s5/p28a",5],["s5/c182",3],["s5/be36",2],["s5/da42",1],["s5/tb20",1],["s5/c208",2],["s5/pc12",2],["s5/be20",1],["s5/b350",1],["s5/p180",1],["s5/c510",1],["s5/e50p",1],["s5/c550",2],["s5/e55p",1],["s5/cl30",1],["s5/c680",1],["s5/h25b",1],["s5/lj45",1],["s5/f2th",1],["s5/glf4",1],["s5/glex",1],["s5/glf5",1]]},
+        {"origin":"LJLJ","destination":"","category":"departure","route":"LJLJ30.UNALO3F.UNALO","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["s5/c172",6],["s5/p28a",5],["s5/c182",3],["s5/be36",2],["s5/da42",1],["s5/tb20",1],["s5/c208",2],["s5/pc12",2],["s5/be20",1],["s5/b350",1],["s5/p180",1],["s5/c510",1],["s5/e50p",1],["s5/c550",2],["s5/e55p",1],["s5/cl30",1],["s5/c680",1],["s5/h25b",1],["s5/lj45",1],["s5/f2th",1],["s5/glf4",1],["s5/glex",1],["s5/glf5",1]]},
+        {"origin":"LFPG","destination":"LJLJ","category":"arrival","route":"UNALO..FONET..LJLJ","altitude":[7000,10000],"speed":250,"method":"random","rate":0.63,"airlines":[["adr/a319",1],["adr/crj2",1],["adr/crj9",1],["afr/e170",1]]},
+        {"origin":"LTFM","destination":"LJLJ","category":"arrival","route":"MEL..KAM..LJLJ","altitude":[7000,10000],"speed":250,"method":"random","rate":0.63,"airlines":[["adr/a319",1],["adr/crj9",1],["thy/a319",1],["thy/crj9",1]]},
+        {"origin":"UUEE","destination":"LJLJ","category":"arrival","route":"GRZ..JABRO..LJLJ","altitude":[7000,10000],"speed":250,"method":"random","rate":0.63,"airlines":[["adr/a319",1],["adr/crj2",1],["adr/crj9",1],["afl/crj2",1]]},
+        {"origin":"LSZH","destination":"LJLJ","category":"arrival","route":"UNALO..FONET..LJLJ","altitude":[7000,10000],"speed":250,"method":"random","rate":0.47,"airlines":[["adr/a319",1],["adr/crj2",1],["adr/crj9",1]]},
+        {"origin":"LYPG","destination":"LJLJ","category":"arrival","route":"MEL..KAM..LJLJ","altitude":[7000,10000],"speed":250,"method":"random","rate":0.47,"airlines":[["adr/crj2",1],["adr/crj9",1],["mgx/f100",1]]},
+        {"origin":"BKPR","destination":"LJLJ","category":"arrival","route":"MEL..KAM..LJLJ","altitude":[7000,10000],"speed":250,"method":"random","rate":0.32,"airlines":[["adr/crj2",1],["adr/crj9",1]]},
+        {"origin":"","destination":"LJLJ","category":"arrival","route":"GRZ..JABRO..LJLJ","altitude":[7000,10000],"speed":250,"method":"random","rate":0.63,"airlines":[["adr/crj2",2],["adr/crj9",1],["lot/crj2",1]]},
+        {"origin":"","destination":"LJLJ","category":"arrival","route":"MEL..KAM..LJLJ","altitude":[7000,10000],"speed":250,"method":"random","rate":0.95,"airlines":[["adr/crj2",3],["adr/crj9",2],["asl/at72",1]]},
+        {"origin":"","destination":"LJLJ","category":"arrival","route":"UNALO..FONET..LJLJ","altitude":[7000,10000],"speed":250,"method":"random","rate":1.73,"airlines":[["adr/crj9",4],["adr/a319",3],["wzz/a320",2],["adr/crj2",1],["ezy/a319",1]]},
+        {"origin":"","destination":"LJLJ","category":"arrival","route":"ZW..EPESI..LJLJ","altitude":[7000,10000],"speed":250,"method":"random","rate":0.47,"airlines":[["adr/crj2",1],["adr/crj9",1],["fin/a320",1]]},
+        {"origin":"","destination":"LJLJ","category":"arrival","route":"ZW..EPESI..LJLJ","altitude":[7000,10000],"speed":250,"method":"random","rate":0.47,"airlines":[["s5/c172",6],["s5/p28a",5],["s5/c182",3],["s5/be36",2],["s5/da42",1],["s5/tb20",1],["s5/c208",2],["s5/pc12",2],["s5/be20",1],["s5/b350",1],["s5/p180",1],["s5/c510",1],["s5/e50p",1],["s5/c550",2],["s5/e55p",1],["s5/cl30",1],["s5/c680",1],["s5/h25b",1],["s5/lj45",1],["s5/f2th",1],["s5/glf4",1],["s5/glex",1],["s5/glf5",1]]},
+        {"origin":"","destination":"LJLJ","category":"arrival","route":"UNALO..FONET..LJLJ","altitude":[7000,10000],"speed":250,"method":"random","rate":0.47,"airlines":[["s5/c172",6],["s5/p28a",5],["s5/c182",3],["s5/be36",2],["s5/da42",1],["s5/tb20",1],["s5/c208",2],["s5/pc12",2],["s5/be20",1],["s5/b350",1],["s5/p180",1],["s5/c510",1],["s5/e50p",1],["s5/c550",2],["s5/e55p",1],["s5/cl30",1],["s5/c680",1],["s5/h25b",1],["s5/lj45",1],["s5/f2th",1],["s5/glf4",1],["s5/glex",1],["s5/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [46.9554,15.4494,46.4059,14.7046],
+            [46.4059,14.7046,46.2237,14.4576],
+            [45.6546,15.3182,46.105,14.6755],
+            [46.105,14.6755,46.2237,14.4576],
+            [45.5656,14.1709,45.9845,14.3534],
+            [45.9845,14.3534,46.2237,14.4576],
+            [46.6672,13.6634,46.3806,14.1766],
+            [46.3806,14.1766,46.2237,14.4576],
+            [47.1981,14.7567,46.4681,14.5326],
+            [46.4681,14.5326,46.2237,14.4576]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [46.2325,14.4404,46.3313,14.2464],
+            [46.2739,14.3349,46.29,14.3521],
+            [46.3233,14.2378,46.3394,14.255],
+            [46.2149,14.4748,46.1157,14.668],
+            [46.1734,14.5801,46.1573,14.5629],
+            [46.1238,14.6766,46.1077,14.6595]
+        ]}
+    ]
+}

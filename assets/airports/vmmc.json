@@ -1,0 +1,101 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VMMC/",
+    "info": {"country":"MO","city":"Nossa Senhora do Carmo","type":"large_airport","longestRunwayM":3240,"frequencies":{"atis":"126.400","twr":"118.000","app":"126.300","gnd":"121.725"}},
+    "radio": {"twr":"Macau Tower","app":"Macau Approach","dep":"Macau Departure"},
+    "icao": "VMMC",
+    "iata": "MFM",
+    "magnetic_north": -3.2,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [22.149599,113.592003,"20ft"],
+    "rangeRings": {"enabled":true,"center":[22.149599,113.592003],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":140,"speed":12},
+    "arrivalRunway": "16",
+    "departureRunway": "16",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[22.6884,113.5595],[22.6778,113.7111],[22.6312,113.8547],[22.5519,113.9803],[22.4451,114.0795],[22.3181,114.1454],[22.1797,114.1737],[22.0393,114.1623],[21.9063,114.112],[21.7899,114.0263],[21.6981,113.911],[21.637,113.774],[21.6108,113.6245],[21.6214,113.4729],[21.668,113.3293],[21.7473,113.2037],[21.8541,113.1045],[21.9811,113.0386],[22.1195,113.0103],[22.2599,113.0217],[22.3929,113.072],[22.5093,113.1577],[22.6011,113.273],[22.6622,113.41]]}
+    ],
+    "fixes": {
+        "VMMC": [22.1496,113.592],
+        "SHL": [23.09,113.853,"shilong"],
+        "JIZFE": [22.39156,113.65916],
+        "WITEK": [22.65705,114.12218],
+        "SUCNA": [22.32913,113.77958],
+        "KAMOD": [21.64359,114.12379],
+        "KEWZA": [21.97058,113.78015],
+        "ASIFU": [21.68933,113.01379],
+        "JALNE": [21.98676,113.38744],
+        "TOGOB": [22.22743,112.83424],
+        "GOCES": [22.17713,113.32391],
+        "POU": [23.02,113.19,"pingzhou"],
+        "UHIMO": [22.3793,113.48592],
+        "_RWY1604DME": [22.22164,113.56207],
+        "_RWY3404DME": [22.0757,113.62089]
+    },
+    "runways": [
+        {"name":["16","34"],"end":[[22.15923,113.58724,"20ft"],[22.13812,113.59574,"20ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "SHL3E": {"icao":"SHL3E","name":"Shilong Three Echo","rwy":{"VMMC16":["_RWY3404DME"],"VMMC34":["_RWY1604DME"]},"body":[],"exitPoints":{"SHL":["SHL"]},"draw":[["VMMC","SHL*"]]},
+        "WITEK3E": {"icao":"WITEK3E","name":"Witek Three Echo","rwy":{"VMMC16":["_RWY3404DME"],"VMMC34":["_RWY1604DME"]},"body":[],"exitPoints":{"WITEK":["WITEK"]},"draw":[["VMMC","WITEK*"]]},
+        "KAMOD2D": {"icao":"KAMOD2D","name":"Kamod Two Delta","rwy":{"VMMC16":["_RWY3404DME"],"VMMC34":["_RWY1604DME"]},"body":[],"exitPoints":{"KAMOD":["KAMOD"]},"draw":[["VMMC","KAMOD*"]]},
+        "ASIFU1F": {"icao":"ASIFU1F","name":"Asifu One Foxtrot","rwy":{"VMMC16":["_RWY3404DME"],"VMMC34":["_RWY1604DME"]},"body":[],"exitPoints":{"ASIFU":["ASIFU"]},"draw":[["VMMC","ASIFU*"]]},
+        "TOGOB3E": {"icao":"TOGOB3E","name":"Togob Three Echo","rwy":{"VMMC16":["_RWY3404DME"],"VMMC34":["_RWY1604DME"]},"body":[],"exitPoints":{"TOGOB":["TOGOB"]},"draw":[["VMMC","TOGOB*"]]},
+        "POU3C": {"icao":"POU3C","name":"Pingzhou Three Charlie","rwy":{"VMMC16":["_RWY3404DME"],"VMMC34":["_RWY1604DME"]},"body":[],"exitPoints":{"POU":["POU"]},"draw":[["VMMC","POU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"VMMC","destination":"RCTP","category":"departure","route":"VMMC16.WITEK3E.WITEK","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["amu/a319",1],["amu/a320",1],["amu/a321",1],["eva/a321",1],["eva/a332",1],["eva/b744",1],["eva/md90",1],["tna/a320",1],["tna/a321",1]]},
+        {"origin":"VMMC","destination":"ZSHC","category":"departure","route":"VMMC16.WITEK3E.WITEK","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["amu/a319",1],["amu/a320",1],["amu/a321",1],["cca/a319",1],["cca/a320",1],["cca/a321",1],["cxa/b738",1]]},
+        {"origin":"VMMC","destination":"ZSSS","category":"departure","route":"VMMC16.WITEK3E.WITEK","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["amu/a319",1],["amu/a320",1],["amu/a321",1],["cca/a319",1],["cca/a320",1],["cca/a321",1],["csh/b738",1]]},
+        {"origin":"VMMC","destination":"ZBAA","category":"departure","route":"VMMC16.SHL3E.SHL","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["amu/a319",1],["amu/a320",1],["amu/a321",1],["cca/a319",1],["cca/a320",1],["cca/a321",1]]},
+        {"origin":"VMMC","destination":"ZGNN","category":"departure","route":"VMMC16.TOGOB3E.TOGOB","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["amu/a319",1],["amu/a320",1],["amu/a321",1],["cca/a319",1],["cca/a320",1],["cca/a321",1]]},
+        {"origin":"VMMC","destination":"ZSAM","category":"departure","route":"VMMC16.WITEK3E.WITEK","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["amu/a319",1],["amu/a321",1],["cca/a319",1],["cca/a321",1],["csn/b738",1],["cxa/b738",1]]},
+        {"origin":"VMMC","destination":"","category":"departure","route":"VMMC16.SHL3E.SHL","altitude":"","speed":"","method":"random","rate":1.41,"airlines":[["cca/a320",4],["amu/a319",3],["amu/a320",3],["cca/a319",3],["amu/a321",2],["cca/a321",2]]},
+        {"origin":"VMMC","destination":"","category":"departure","route":"VMMC16.WITEK3E.WITEK","altitude":"","speed":"","method":"random","rate":2.66,"airlines":[["amu/a320",6],["amu/a319",5],["amu/a321",5],["csn/b738",2],["cxa/b738",2],["tna/a320",2],["aar/a321",1],["abl/a321",1],["cca/a319",1],["cca/a320",1],["cca/a321",1],["ces/a321",1]]},
+        {"origin":"VMMC","destination":"","category":"departure","route":"VMMC16.KAMOD2D.KAMOD","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["ceb/a319",2],["pal/a320",1]]},
+        {"origin":"VMMC","destination":"","category":"departure","route":"VMMC16.ASIFU1F.ASIFU","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["amu/a319",2],["aiq/a320",1],["amu/a320",1],["amu/a321",1],["axm/a320",1],["tgw/a320",1],["tha/a320",1]]},
+        {"origin":"VMMC","destination":"","category":"departure","route":"VMMC16.TOGOB3E.TOGOB","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["aiq/a320",1],["amu/a319",1],["ces/b737",1]]},
+        {"origin":"VMMC","destination":"","category":"departure","route":"VMMC16.POU3C.POU","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["amu/a320",2],["cca/a319",2],["cca/a320",2],["amu/a319",1],["amu/a321",1],["cca/a321",1]]},
+        {"origin":"RCTP","destination":"VMMC","category":"arrival","route":"WITEK..SUCNA..VMMC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.75,"airlines":[["amu/a319",1],["amu/a320",1],["amu/a321",1],["eva/a321",1],["eva/a332",1],["eva/b744",1],["eva/md90",1],["tna/a320",1],["tna/a321",1]]},
+        {"origin":"ZSHC","destination":"VMMC","category":"arrival","route":"WITEK..SUCNA..VMMC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.58,"airlines":[["amu/a319",1],["amu/a320",1],["amu/a321",1],["cca/a319",1],["cca/a320",1],["cca/a321",1],["cxa/b738",1]]},
+        {"origin":"ZSSS","destination":"VMMC","category":"arrival","route":"WITEK..SUCNA..VMMC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.58,"airlines":[["amu/a319",1],["amu/a320",1],["amu/a321",1],["cca/a319",1],["cca/a320",1],["cca/a321",1],["csh/b738",1]]},
+        {"origin":"ZBAA","destination":"VMMC","category":"arrival","route":"SHL..JIZFE..VMMC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.5,"airlines":[["amu/a319",1],["amu/a320",1],["amu/a321",1],["cca/a319",1],["cca/a320",1],["cca/a321",1]]},
+        {"origin":"ZGNN","destination":"VMMC","category":"arrival","route":"TOGOB..GOCES..VMMC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.5,"airlines":[["amu/a319",1],["amu/a320",1],["amu/a321",1],["cca/a319",1],["cca/a320",1],["cca/a321",1]]},
+        {"origin":"ZSAM","destination":"VMMC","category":"arrival","route":"WITEK..SUCNA..VMMC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.5,"airlines":[["amu/a319",1],["amu/a321",1],["cca/a319",1],["cca/a321",1],["csn/b738",1],["cxa/b738",1]]},
+        {"origin":"","destination":"VMMC","category":"arrival","route":"SHL..JIZFE..VMMC","altitude":[6000,9000],"speed":250,"method":"random","rate":1.41,"airlines":[["cca/a320",4],["amu/a319",3],["amu/a320",3],["cca/a319",3],["amu/a321",2],["cca/a321",2]]},
+        {"origin":"","destination":"VMMC","category":"arrival","route":"WITEK..SUCNA..VMMC","altitude":[6000,9000],"speed":250,"method":"random","rate":2.66,"airlines":[["amu/a320",6],["amu/a319",5],["amu/a321",5],["csn/b738",2],["cxa/b738",2],["tna/a320",2],["aar/a321",1],["abl/a321",1],["cca/a319",1],["cca/a320",1],["cca/a321",1],["ces/a321",1]]},
+        {"origin":"","destination":"VMMC","category":"arrival","route":"KAMOD..KEWZA..VMMC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.25,"airlines":[["ceb/a319",2],["pal/a320",1]]},
+        {"origin":"","destination":"VMMC","category":"arrival","route":"ASIFU..JALNE..VMMC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.67,"airlines":[["amu/a319",2],["aiq/a320",1],["amu/a320",1],["amu/a321",1],["axm/a320",1],["tgw/a320",1],["tha/a320",1]]},
+        {"origin":"","destination":"VMMC","category":"arrival","route":"TOGOB..GOCES..VMMC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.25,"airlines":[["aiq/a320",1],["amu/a319",1],["ces/b737",1]]},
+        {"origin":"","destination":"VMMC","category":"arrival","route":"POU..UHIMO..VMMC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.75,"airlines":[["amu/a320",2],["cca/a319",2],["cca/a320",2],["amu/a319",1],["amu/a321",1],["cca/a321",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [23.09,113.853,22.3916,113.6592],
+            [22.3916,113.6592,22.1496,113.592],
+            [22.6571,114.1222,22.3291,113.7796],
+            [22.3291,113.7796,22.1496,113.592],
+            [21.6436,114.1238,21.9706,113.7801],
+            [21.9706,113.7801,22.1496,113.592],
+            [21.6893,113.0138,21.9868,113.3874],
+            [21.9868,113.3874,22.1496,113.592],
+            [22.2274,112.8342,22.1771,113.3239],
+            [22.1771,113.3239,22.1496,113.592],
+            [23.02,113.19,22.3793,113.4859],
+            [22.3793,113.4859,22.1496,113.592]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [22.1592,113.5872,22.3153,113.5243],
+            [22.2338,113.5457,22.2407,113.5659],
+            [22.3118,113.5142,22.3187,113.5344],
+            [22.1381,113.5957,21.9821,113.6586],
+            [22.0636,113.6373,22.0566,113.6171],
+            [21.9856,113.6687,21.9786,113.6485]
+        ]}
+    ]
+}

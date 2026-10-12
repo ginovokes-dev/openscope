@@ -1,0 +1,89 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LRCL/",
+    "info": {"country":"RO","city":"Cluj-Napoca","type":"large_airport","longestRunwayM":2040,"frequencies":{"atis":"125.525","twr":"118.705","app":"126.430"}},
+    "radio": {"twr":"Cluj-napoca Tower","app":"Cluj-napoca Approach","dep":"Cluj-napoca Departure"},
+    "icao": "LRCL",
+    "iata": "CLJ",
+    "magnetic_north": 6.4,
+    "ctr_radius": 60,
+    "ctr_ceiling": 11000,
+    "initial_alt": 6000,
+    "position": [46.786042,23.685733,"1039ft"],
+    "rangeRings": {"enabled":true,"center":[46.786042,23.685733],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":260,"speed":6},
+    "arrivalRunway": "25",
+    "departureRunway": "25",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":110,"airspace_class":"C","poly":[[47.3223,23.7736],[47.2884,23.9733],[47.2204,24.1534],[47.1227,24.3016],[47.0021,24.4079],[46.8667,24.4649],[46.7259,24.4689],[46.5892,24.4194],[46.4658,24.32],[46.3643,24.1774],[46.2916,24.0012],[46.2525,23.8036],[46.2498,23.5979],[46.2837,23.3982],[46.3517,23.2181],[46.4494,23.0699],[46.57,22.9636],[46.7054,22.9065],[46.8462,22.9026],[46.9829,22.952],[47.1062,23.0514],[47.2077,23.1941],[47.2805,23.3702],[47.3196,23.5679]]}
+    ],
+    "fixes": {
+        "LRCL": [46.78604,23.68573],
+        "BAMOL": [47.31001,24.3771],
+        "MAFWA": [46.97142,23.93034],
+        "SIB": [45.785,24.1526,"sibiu"],
+        "URARO": [46.54805,23.79673],
+        "SARUR": [46.65738,22.67171],
+        "WOZAH": [46.74052,23.32698],
+        "ZINME": [47.14869,22.80083],
+        "GISCA": [46.91435,23.37266],
+        "_RWY0704DME": [46.76428,23.58168],
+        "_RWY2504DME": [46.81099,23.78892]
+    },
+    "runways": [
+        {"name":["07","25"],"end":[[46.78515,23.67406,"1036ft"],[46.7902,23.69646,"1025ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "BAMOL2F": {"icao":"BAMOL2F","name":"Bamol Two Foxtrot","rwy":{"LRCL07":["_RWY2504DME"],"LRCL25":["_RWY0704DME"]},"body":[],"exitPoints":{"BAMOL":["BAMOL"]},"draw":[["LRCL","BAMOL*"]]},
+        "SIB1F": {"icao":"SIB1F","name":"Sibiu One Foxtrot","rwy":{"LRCL07":["_RWY2504DME"],"LRCL25":["_RWY0704DME"]},"body":[],"exitPoints":{"SIB":["SIB"]},"draw":[["LRCL","SIB*"]]},
+        "SARUR1D": {"icao":"SARUR1D","name":"Sarur One Delta","rwy":{"LRCL07":["_RWY2504DME"],"LRCL25":["_RWY0704DME"]},"body":[],"exitPoints":{"SARUR":["SARUR"]},"draw":[["LRCL","SARUR*"]]},
+        "ZINME2B": {"icao":"ZINME2B","name":"Zinme Two Bravo","rwy":{"LRCL07":["_RWY2504DME"],"LRCL25":["_RWY0704DME"]},"body":[],"exitPoints":{"ZINME":["ZINME"]},"draw":[["LRCL","ZINME*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LRCL","destination":"LROP","category":"departure","route":"LRCL25.SIB1F.SIB","altitude":"","speed":"","method":"random","rate":0.95,"airlines":[["rot/a318",1],["rot/at45",1],["rot/at72",1]]},
+        {"origin":"LRCL","destination":"LKPR","category":"departure","route":"LRCL25.ZINME2B.ZINME","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["csa/at45",1],["rot/at45",1]]},
+        {"origin":"LRCL","destination":"EBCI","category":"departure","route":"LRCL25.ZINME2B.ZINME","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["wzz/a320",1]]},
+        {"origin":"LRCL","destination":"EDLW","category":"departure","route":"LRCL25.ZINME2B.ZINME","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["wzz/a320",1]]},
+        {"origin":"LRCL","destination":"EGGW","category":"departure","route":"LRCL25.ZINME2B.ZINME","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["wzz/a320",1]]},
+        {"origin":"LRCL","destination":"EHEH","category":"departure","route":"LRCL25.ZINME2B.ZINME","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["wzz/a320",1]]},
+        {"origin":"LRCL","destination":"","category":"departure","route":"LRCL25.SIB1F.SIB","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["wzz/a320",1]]},
+        {"origin":"LRCL","destination":"","category":"departure","route":"LRCL25.SARUR1D.SARUR","altitude":"","speed":"","method":"random","rate":2.54,"airlines":[["wzz/a320",8]]},
+        {"origin":"LRCL","destination":"","category":"departure","route":"LRCL25.ZINME2B.ZINME","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["rot/at45",1],["wzz/a320",1]]},
+        {"origin":"LRCL","destination":"","category":"departure","route":"LRCL25.SARUR1D.SARUR","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["yr/c172",6],["yr/p28a",5],["yr/c182",3],["yr/be36",2],["yr/da42",1],["yr/tb20",1],["yr/c208",2],["yr/pc12",2],["yr/be20",1],["yr/b350",1],["yr/p180",1],["yr/c510",1],["yr/e50p",1],["yr/c550",2],["yr/e55p",1],["yr/cl30",1],["yr/c680",1],["yr/h25b",1],["yr/lj45",1],["yr/f2th",1],["yr/glf4",1],["yr/glex",1],["yr/glf5",1]]},
+        {"origin":"LRCL","destination":"","category":"departure","route":"LRCL25.BAMOL2F.BAMOL","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["yr/c172",6],["yr/p28a",5],["yr/c182",3],["yr/be36",2],["yr/da42",1],["yr/tb20",1],["yr/c208",2],["yr/pc12",2],["yr/be20",1],["yr/b350",1],["yr/p180",1],["yr/c510",1],["yr/e50p",1],["yr/c550",2],["yr/e55p",1],["yr/cl30",1],["yr/c680",1],["yr/h25b",1],["yr/lj45",1],["yr/f2th",1],["yr/glf4",1],["yr/glex",1],["yr/glf5",1]]},
+        {"origin":"LROP","destination":"LRCL","category":"arrival","route":"SIB..URARO..LRCL","altitude":[7000,10000],"speed":250,"method":"random","rate":0.95,"airlines":[["rot/a318",1],["rot/at45",1],["rot/at72",1]]},
+        {"origin":"LKPR","destination":"LRCL","category":"arrival","route":"ZINME..GISCA..LRCL","altitude":[7000,10000],"speed":250,"method":"random","rate":0.64,"airlines":[["csa/at45",1],["rot/at45",1]]},
+        {"origin":"EBCI","destination":"LRCL","category":"arrival","route":"ZINME..GISCA..LRCL","altitude":[7000,10000],"speed":250,"method":"random","rate":0.32,"airlines":[["wzz/a320",1]]},
+        {"origin":"EDLW","destination":"LRCL","category":"arrival","route":"ZINME..GISCA..LRCL","altitude":[7000,10000],"speed":250,"method":"random","rate":0.32,"airlines":[["wzz/a320",1]]},
+        {"origin":"EGGW","destination":"LRCL","category":"arrival","route":"ZINME..GISCA..LRCL","altitude":[7000,10000],"speed":250,"method":"random","rate":0.32,"airlines":[["wzz/a320",1]]},
+        {"origin":"EHEH","destination":"LRCL","category":"arrival","route":"ZINME..GISCA..LRCL","altitude":[7000,10000],"speed":250,"method":"random","rate":0.32,"airlines":[["wzz/a320",1]]},
+        {"origin":"","destination":"LRCL","category":"arrival","route":"SIB..URARO..LRCL","altitude":[7000,10000],"speed":250,"method":"random","rate":0.32,"airlines":[["wzz/a320",1]]},
+        {"origin":"","destination":"LRCL","category":"arrival","route":"SARUR..WOZAH..LRCL","altitude":[7000,10000],"speed":250,"method":"random","rate":2.54,"airlines":[["wzz/a320",8]]},
+        {"origin":"","destination":"LRCL","category":"arrival","route":"ZINME..GISCA..LRCL","altitude":[7000,10000],"speed":250,"method":"random","rate":0.64,"airlines":[["rot/at45",1],["wzz/a320",1]]},
+        {"origin":"","destination":"LRCL","category":"arrival","route":"SARUR..WOZAH..LRCL","altitude":[7000,10000],"speed":250,"method":"random","rate":0.43,"airlines":[["yr/c172",6],["yr/p28a",5],["yr/c182",3],["yr/be36",2],["yr/da42",1],["yr/tb20",1],["yr/c208",2],["yr/pc12",2],["yr/be20",1],["yr/b350",1],["yr/p180",1],["yr/c510",1],["yr/e50p",1],["yr/c550",2],["yr/e55p",1],["yr/cl30",1],["yr/c680",1],["yr/h25b",1],["yr/lj45",1],["yr/f2th",1],["yr/glf4",1],["yr/glex",1],["yr/glf5",1]]},
+        {"origin":"","destination":"LRCL","category":"arrival","route":"BAMOL..MAFWA..LRCL","altitude":[7000,10000],"speed":250,"method":"random","rate":0.43,"airlines":[["yr/c172",6],["yr/p28a",5],["yr/c182",3],["yr/be36",2],["yr/da42",1],["yr/tb20",1],["yr/c208",2],["yr/pc12",2],["yr/be20",1],["yr/b350",1],["yr/p180",1],["yr/c510",1],["yr/e50p",1],["yr/c550",2],["yr/e55p",1],["yr/cl30",1],["yr/c680",1],["yr/h25b",1],["yr/lj45",1],["yr/f2th",1],["yr/glf4",1],["yr/glex",1],["yr/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [47.31,24.3771,46.9714,23.9303],
+            [46.9714,23.9303,46.786,23.6857],
+            [45.785,24.1526,46.5481,23.7967],
+            [46.5481,23.7967,46.786,23.6857],
+            [46.6574,22.6717,46.7405,23.327],
+            [46.7405,23.327,46.786,23.6857],
+            [47.1487,22.8008,46.9143,23.3727],
+            [46.9143,23.3727,46.786,23.6857]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [46.7851,23.6741,46.7328,23.4432],
+            [46.7496,23.5632,46.7685,23.554],
+            [46.7234,23.4478,46.7423,23.4387],
+            [46.7902,23.6965,46.842,23.9278],
+            [46.8257,23.8075,46.8067,23.8166],
+            [46.8515,23.9232,46.8325,23.9323]
+        ]}
+    ]
+}

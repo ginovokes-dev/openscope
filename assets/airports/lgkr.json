@@ -1,0 +1,92 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LGKR/",
+    "info": {"country":"GR","city":"Kerkyra","type":"large_airport","longestRunwayM":2377,"frequencies":{"atis":"126.350","twr":"120.850","app":"118.075"}},
+    "radio": {"twr":"Kerkyra Tower","app":"Kerkyra Approach","dep":"Kerkyra Departure"},
+    "icao": "LGKR",
+    "iata": "CFU",
+    "magnetic_north": 4.9,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [39.60145,19.912179,"6ft"],
+    "rangeRings": {"enabled":true,"center":[39.60145,19.912179],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":350,"speed":9},
+    "arrivalRunway": "34",
+    "departureRunway": "34",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[40.1391,19.972],[40.1088,20.1506],[40.044,20.3129],[39.949,20.4479],[39.8303,20.5464],[39.6961,20.6016],[39.5554,20.6099],[39.4178,20.5707],[39.2927,20.4865],[39.1887,20.3633],[39.1128,20.2093],[39.0702,20.035],[39.0638,19.8524],[39.0941,19.6738],[39.1589,19.5115],[39.2539,19.3765],[39.3726,19.278],[39.5068,19.2227],[39.6475,19.2144],[39.7851,19.2537],[39.9102,19.3378],[40.0142,19.4611],[40.0901,19.6151],[40.1327,19.7894]]}
+    ],
+    "fixes": {
+        "LGKR": [39.60145,19.91218],
+        "DAMON": [40.20575,20.38632],
+        "ELOFI": [39.81525,20.07993],
+        "AKT": [38.9249,20.7615,"preveza aktion"],
+        "KRK": [39.4439,20.0728,"kerkira"],
+        "UJOJI": [38.9275,20.18578],
+        "SUFHO": [39.36301,20.00898],
+        "FUDES": [39.29225,19.08823],
+        "HUWUD": [39.49206,19.62067],
+        "UVACO": [40.18294,19.3922],
+        "LUMKU": [39.80718,19.72821],
+        "_RWY1604DME": [39.67425,19.89357],
+        "_RWY3404DME": [39.52677,19.93142]
+    },
+    "runways": [
+        {"name":["16","34"],"end":[[39.6089,19.91036,"5ft"],[39.59212,19.91466,"5ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "DAMON3A": {"icao":"DAMON3A","name":"Damon Three Alpha","rwy":{"LGKR16":["_RWY3404DME"],"LGKR34":["_RWY1604DME"]},"body":[],"exitPoints":{"DAMON":["DAMON"]},"draw":[["LGKR","DAMON*"]]},
+        "AKT1B": {"icao":"AKT1B","name":"Preveza Aktion One Bravo","rwy":{"LGKR16":["_RWY3404DME"],"LGKR34":["_RWY1604DME"]},"body":[],"exitPoints":{"AKT":["AKT"]},"draw":[["LGKR","AKT*"]]},
+        "UJOJI3B": {"icao":"UJOJI3B","name":"Ujoji Three Bravo","rwy":{"LGKR16":["_RWY3404DME"],"LGKR34":["_RWY1604DME"]},"body":[],"exitPoints":{"UJOJI":["UJOJI"]},"draw":[["LGKR","UJOJI*"]]},
+        "FUDES2F": {"icao":"FUDES2F","name":"Fudes Two Foxtrot","rwy":{"LGKR16":["_RWY3404DME"],"LGKR34":["_RWY1604DME"]},"body":[],"exitPoints":{"FUDES":["FUDES"]},"draw":[["LGKR","FUDES*"]]},
+        "UVACO1D": {"icao":"UVACO1D","name":"Uvaco One Delta","rwy":{"LGKR16":["_RWY3404DME"],"LGKR34":["_RWY1604DME"]},"body":[],"exitPoints":{"UVACO":["UVACO"]},"draw":[["LGKR","UVACO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LGKR","destination":"EDDL","category":"departure","route":"LGKR34.UVACO1D.UVACO","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["ber/a321",1],["ber/b738",1],["cfg/a320",1],["hlx/b738",1]]},
+        {"origin":"LGKR","destination":"EDDM","category":"departure","route":"LGKR34.UVACO1D.UVACO","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["ber/a320",1],["ber/a321",1],["cfg/a320",1],["hlx/b738",1]]},
+        {"origin":"LGKR","destination":"EGCC","category":"departure","route":"LGKR34.UVACO1D.UVACO","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["ezy/a320",1],["ryr/b738",1],["tvf/b738",1],["tvf/b763",1]]},
+        {"origin":"LGKR","destination":"EDDF","category":"departure","route":"LGKR34.UVACO1D.UVACO","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["ber/a320",1],["cfg/b738",1],["hlx/b738",1]]},
+        {"origin":"LGKR","destination":"EDDK","category":"departure","route":"LGKR34.UVACO1D.UVACO","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["ber/b738",1],["gwi/a319",1],["gwi/a320",1]]},
+        {"origin":"LGKR","destination":"EGKK","category":"departure","route":"LGKR34.UVACO1D.UVACO","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["ezy/a320",1],["tvf/b738",1],["tvf/b752",1]]},
+        {"origin":"LGKR","destination":"","category":"departure","route":"LGKR34.DAMON3A.DAMON","altitude":"","speed":"","method":"random","rate":0.17,"airlines":[["aee/a320",1]]},
+        {"origin":"LGKR","destination":"","category":"departure","route":"LGKR34.AKT1B.AKT","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["aee/a320",1],["aee/dh8d",1]]},
+        {"origin":"LGKR","destination":"","category":"departure","route":"LGKR34.UJOJI3B.UJOJI","altitude":"","speed":"","method":"random","rate":0.17,"airlines":[["tra/b738",1]]},
+        {"origin":"LGKR","destination":"","category":"departure","route":"LGKR34.UVACO1D.UVACO","altitude":"","speed":"","method":"random","rate":4.88,"airlines":[["ryr/b738",12],["ber/a320",2],["cfg/a320",2],["ezy/a320",2],["gwi/a319",2],["hlx/b738",2],["ber/b738",1],["cfg/b738",1],["ein/a320",1],["lgl/b738",1],["nly/a320",1],["tra/b738",1]]},
+        {"origin":"EDDL","destination":"LGKR","category":"arrival","route":"UVACO..LUMKU..LGKR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.67,"airlines":[["ber/a321",1],["ber/b738",1],["cfg/a320",1],["hlx/b738",1]]},
+        {"origin":"EDDM","destination":"LGKR","category":"arrival","route":"UVACO..LUMKU..LGKR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.67,"airlines":[["ber/a320",1],["ber/a321",1],["cfg/a320",1],["hlx/b738",1]]},
+        {"origin":"EGCC","destination":"LGKR","category":"arrival","route":"UVACO..LUMKU..LGKR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.67,"airlines":[["ezy/a320",1],["ryr/b738",1],["tvf/b738",1],["tvf/b763",1]]},
+        {"origin":"EDDF","destination":"LGKR","category":"arrival","route":"UVACO..LUMKU..LGKR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.5,"airlines":[["ber/a320",1],["cfg/b738",1],["hlx/b738",1]]},
+        {"origin":"EDDK","destination":"LGKR","category":"arrival","route":"UVACO..LUMKU..LGKR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.5,"airlines":[["ber/b738",1],["gwi/a319",1],["gwi/a320",1]]},
+        {"origin":"EGKK","destination":"LGKR","category":"arrival","route":"UVACO..LUMKU..LGKR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.5,"airlines":[["ezy/a320",1],["tvf/b738",1],["tvf/b752",1]]},
+        {"origin":"","destination":"LGKR","category":"arrival","route":"DAMON..ELOFI..LGKR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.17,"airlines":[["aee/a320",1]]},
+        {"origin":"","destination":"LGKR","category":"arrival","route":"AKT..KRK..LGKR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["aee/a320",1],["aee/dh8d",1]]},
+        {"origin":"","destination":"LGKR","category":"arrival","route":"UJOJI..SUFHO..LGKR","altitude":[6000,9000],"speed":250,"method":"random","rate":0.17,"airlines":[["tra/b738",1]]},
+        {"origin":"","destination":"LGKR","category":"arrival","route":"UVACO..LUMKU..LGKR","altitude":[6000,9000],"speed":250,"method":"random","rate":4.88,"airlines":[["ryr/b738",12],["ber/a320",2],["cfg/a320",2],["ezy/a320",2],["gwi/a319",2],["hlx/b738",2],["ber/b738",1],["cfg/b738",1],["ein/a320",1],["lgl/b738",1],["nly/a320",1],["tra/b738",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [40.2058,20.3863,39.8152,20.0799],
+            [39.8152,20.0799,39.6015,19.9122],
+            [38.9249,20.7615,39.4439,20.0728],
+            [39.4439,20.0728,39.6015,19.9122],
+            [38.9275,20.1858,39.363,20.009],
+            [39.363,20.009,39.6015,19.9122],
+            [39.2922,19.0882,39.4921,19.6207],
+            [39.4921,19.6207,39.6015,19.9122],
+            [40.1829,19.3922,39.8072,19.7282],
+            [39.8072,19.7282,39.6015,19.9122]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [39.6089,19.9104,39.7723,19.8683],
+            [39.6887,19.8766,39.6925,19.9021],
+            [39.7703,19.8556,39.7742,19.8811],
+            [39.5921,19.9147,39.4287,19.9565],
+            [39.5124,19.9483,39.5085,19.9229],
+            [39.4307,19.9692,39.4268,19.9438]
+        ]}
+    ]
+}

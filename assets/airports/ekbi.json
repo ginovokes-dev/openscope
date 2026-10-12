@@ -1,0 +1,98 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EKBI/",
+    "info": {"country":"DK","city":"Billund","type":"large_airport","longestRunwayM":3100,"frequencies":{"atis":"118.775","twr":"119.000","app":"127.575"}},
+    "radio": {"twr":"Billund Tower","app":"Billund Approach","dep":"Billund Departure"},
+    "icao": "EKBI",
+    "iata": "BLL",
+    "magnetic_north": 4,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [55.740335,9.157019,"247ft"],
+    "rangeRings": {"enabled":true,"center":[55.740335,9.157019],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":260,"speed":11},
+    "arrivalRunway": "27",
+    "departureRunway": "27",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[56.2786,9.2239],[56.2505,9.4691],[56.1877,9.693],[56.0943,9.8804],[55.9769,10.0185],[55.8433,10.0979],[55.7027,10.1132],[55.5647,10.0633],[55.4386,9.9517],[55.3331,9.7859],[55.2554,9.5772],[55.2107,9.3399],[55.2021,9.0902],[55.2301,8.845],[55.293,8.621],[55.3863,8.4336],[55.5038,8.2955],[55.6374,8.2161],[55.778,8.2008],[55.916,8.2507],[56.0421,8.3624],[56.1476,8.5282],[56.2253,8.7368],[56.27,8.9741]]}
+    ],
+    "fixes": {
+        "EKBI": [55.74034,9.15702],
+        "ZAROP": [56.42556,9.46007],
+        "OLIVU": [55.98277,9.26424],
+        "ODN": [55.581,10.653,"odin"],
+        "KEFDI": [55.69389,9.59308],
+        "ALS": [54.9054,9.99338,"alsie"],
+        "AKUMU": [55.52272,9.37501],
+        "SLT": [54.8569,8.40998,"sylt"],
+        "ECISU": [55.51476,8.96627],
+        "RAM": [56.4784,8.18736,"ramme"],
+        "SALIV": [55.9412,8.89313],
+        "_RWY0904DME": [55.73611,9.01667],
+        "_RWY2704DME": [55.74468,9.29756]
+    },
+    "runways": [
+        {"name":["09","27"],"end":[[55.73977,9.13483,"215ft"],[55.74113,9.17937,"244ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ZAROP1D": {"icao":"ZAROP1D","name":"Zarop One Delta","rwy":{"EKBI09":["_RWY2704DME"],"EKBI27":["_RWY0904DME"]},"body":[],"exitPoints":{"ZAROP":["ZAROP"]},"draw":[["EKBI","ZAROP*"]]},
+        "ODN3B": {"icao":"ODN3B","name":"Odin Three Bravo","rwy":{"EKBI09":["_RWY2704DME"],"EKBI27":["_RWY0904DME"]},"body":[],"exitPoints":{"ODN":["ODN"]},"draw":[["EKBI","ODN*"]]},
+        "ALS2F": {"icao":"ALS2F","name":"Alsie Two Foxtrot","rwy":{"EKBI09":["_RWY2704DME"],"EKBI27":["_RWY0904DME"]},"body":[],"exitPoints":{"ALS":["ALS"]},"draw":[["EKBI","ALS*"]]},
+        "SLT1E": {"icao":"SLT1E","name":"Sylt One Echo","rwy":{"EKBI09":["_RWY2704DME"],"EKBI27":["_RWY0904DME"]},"body":[],"exitPoints":{"SLT":["SLT"]},"draw":[["EKBI","SLT*"]]},
+        "RAM1E": {"icao":"RAM1E","name":"Ramme One Echo","rwy":{"EKBI09":["_RWY2704DME"],"EKBI27":["_RWY0904DME"]},"body":[],"exitPoints":{"RAM":["RAM"]},"draw":[["EKBI","RAM*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EKBI","destination":"EKYT","category":"departure","route":"EKBI27.ZAROP1D.ZAROP","altitude":"","speed":"","method":"random","rate":0.71,"airlines":[["dtr/sf34",1],["sas/a319",1],["thy/a319",1],["thy/b738",1]]},
+        {"origin":"EKBI","destination":"LTFM","category":"departure","route":"EKBI27.ALS2F.ALS","altitude":"","speed":"","method":"random","rate":0.71,"airlines":[["sas/a319",1],["sas/b738",1],["thy/a319",1],["thy/b738",1]]},
+        {"origin":"EKBI","destination":"ENGM","category":"departure","route":"EKBI27.ZAROP1D.ZAROP","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["nax/b733",1],["nax/b738",1],["sas/at72",1]]},
+        {"origin":"EKBI","destination":"EDDF","category":"departure","route":"EKBI27.SLT1E.SLT","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["dlh/b733",1],["dlh/b735",1]]},
+        {"origin":"EKBI","destination":"EHAM","category":"departure","route":"EKBI27.SLT1E.SLT","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["klm/b737",1],["klm/e190",1],["klm/e170",1]]},
+        {"origin":"EKBI","destination":"EKEB","category":"departure","route":"EKBI27.SLT1E.SLT","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["dtr/at45",1],["dtr/sf34",1]]},
+        {"origin":"EKBI","destination":"","category":"departure","route":"EKBI27.ZAROP1D.ZAROP","altitude":"","speed":"","method":"random","rate":0.18,"airlines":[["sas/sb20",1]]},
+        {"origin":"EKBI","destination":"","category":"departure","route":"EKBI27.ODN3B.ODN","altitude":"","speed":"","method":"random","rate":0.18,"airlines":[["bti/dh8d",1]]},
+        {"origin":"EKBI","destination":"","category":"departure","route":"EKBI27.ALS2F.ALS","altitude":"","speed":"","method":"random","rate":1.76,"airlines":[["ryr/b738",9],["pgt/b738",1]]},
+        {"origin":"EKBI","destination":"","category":"departure","route":"EKBI27.SLT1E.SLT","altitude":"","speed":"","method":"random","rate":1.94,"airlines":[["ryr/b738",9],["afr/e190",1],["nax/b738",1]]},
+        {"origin":"EKBI","destination":"","category":"departure","route":"EKBI27.RAM1E.RAM","altitude":"","speed":"","method":"random","rate":0.71,"airlines":[["dtr/at45",1],["dtr/sf34",1],["fli/a319",1],["ice/b752",1]]},
+        {"origin":"EKBI","destination":"","category":"departure","route":"EKBI27.RAM1E.RAM","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["oy/c172",6],["oy/p28a",5],["oy/c182",3],["oy/be36",2],["oy/da42",1],["oy/tb20",1],["oy/c208",2],["oy/pc12",2],["oy/be20",1],["oy/b350",1],["oy/p180",1],["oy/c510",1],["oy/e50p",1],["oy/c550",2],["oy/e55p",1],["oy/cl30",1],["oy/c680",1],["oy/h25b",1],["oy/lj45",1],["oy/f2th",1],["oy/glf4",1],["oy/glex",1],["oy/glf5",1]]},
+        {"origin":"EKBI","destination":"","category":"departure","route":"EKBI27.ODN3B.ODN","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["oy/c172",6],["oy/p28a",5],["oy/c182",3],["oy/be36",2],["oy/da42",1],["oy/tb20",1],["oy/c208",2],["oy/pc12",2],["oy/be20",1],["oy/b350",1],["oy/p180",1],["oy/c510",1],["oy/e50p",1],["oy/c550",2],["oy/e55p",1],["oy/cl30",1],["oy/c680",1],["oy/h25b",1],["oy/lj45",1],["oy/f2th",1],["oy/glf4",1],["oy/glex",1],["oy/glf5",1]]},
+        {"origin":"EKYT","destination":"EKBI","category":"arrival","route":"ZAROP..OLIVU..EKBI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.71,"airlines":[["dtr/sf34",1],["sas/a319",1],["thy/a319",1],["thy/b738",1]]},
+        {"origin":"LTFM","destination":"EKBI","category":"arrival","route":"ALS..AKUMU..EKBI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.71,"airlines":[["sas/a319",1],["sas/b738",1],["thy/a319",1],["thy/b738",1]]},
+        {"origin":"ENGM","destination":"EKBI","category":"arrival","route":"ZAROP..OLIVU..EKBI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.53,"airlines":[["nax/b733",1],["nax/b738",1],["sas/at72",1]]},
+        {"origin":"EDDF","destination":"EKBI","category":"arrival","route":"SLT..ECISU..EKBI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.35,"airlines":[["dlh/b733",1],["dlh/b735",1]]},
+        {"origin":"EHAM","destination":"EKBI","category":"arrival","route":"SLT..ECISU..EKBI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.35,"airlines":[["klm/b737",1],["klm/e190",1],["klm/e170",1]]},
+        {"origin":"EKEB","destination":"EKBI","category":"arrival","route":"SLT..ECISU..EKBI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.35,"airlines":[["dtr/at45",1],["dtr/sf34",1]]},
+        {"origin":"","destination":"EKBI","category":"arrival","route":"ZAROP..OLIVU..EKBI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.18,"airlines":[["sas/sb20",1]]},
+        {"origin":"","destination":"EKBI","category":"arrival","route":"ODN..KEFDI..EKBI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.18,"airlines":[["bti/dh8d",1]]},
+        {"origin":"","destination":"EKBI","category":"arrival","route":"ALS..AKUMU..EKBI","altitude":[6000,9000],"speed":250,"method":"random","rate":1.76,"airlines":[["ryr/b738",9],["pgt/b738",1]]},
+        {"origin":"","destination":"EKBI","category":"arrival","route":"SLT..ECISU..EKBI","altitude":[6000,9000],"speed":250,"method":"random","rate":1.94,"airlines":[["ryr/b738",9],["afr/e190",1],["nax/b738",1]]},
+        {"origin":"","destination":"EKBI","category":"arrival","route":"RAM..SALIV..EKBI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.71,"airlines":[["dtr/at45",1],["dtr/sf34",1],["fli/a319",1],["ice/b752",1]]},
+        {"origin":"","destination":"EKBI","category":"arrival","route":"RAM..SALIV..EKBI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.53,"airlines":[["oy/c172",6],["oy/p28a",5],["oy/c182",3],["oy/be36",2],["oy/da42",1],["oy/tb20",1],["oy/c208",2],["oy/pc12",2],["oy/be20",1],["oy/b350",1],["oy/p180",1],["oy/c510",1],["oy/e50p",1],["oy/c550",2],["oy/e55p",1],["oy/cl30",1],["oy/c680",1],["oy/h25b",1],["oy/lj45",1],["oy/f2th",1],["oy/glf4",1],["oy/glex",1],["oy/glf5",1]]},
+        {"origin":"","destination":"EKBI","category":"arrival","route":"ODN..KEFDI..EKBI","altitude":[6000,9000],"speed":250,"method":"random","rate":0.53,"airlines":[["oy/c172",6],["oy/p28a",5],["oy/c182",3],["oy/be36",2],["oy/da42",1],["oy/tb20",1],["oy/c208",2],["oy/pc12",2],["oy/be20",1],["oy/b350",1],["oy/p180",1],["oy/c510",1],["oy/e50p",1],["oy/c550",2],["oy/e55p",1],["oy/cl30",1],["oy/c680",1],["oy/h25b",1],["oy/lj45",1],["oy/f2th",1],["oy/glf4",1],["oy/glex",1],["oy/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [56.4256,9.4601,55.9828,9.2642],
+            [55.9828,9.2642,55.7403,9.157],
+            [55.581,10.653,55.6939,9.5931],
+            [55.6939,9.5931,55.7403,9.157],
+            [54.9054,9.9934,55.5227,9.375],
+            [55.5227,9.375,55.7403,9.157],
+            [54.8569,8.41,55.5148,8.9663],
+            [55.5148,8.9663,55.7403,9.157],
+            [56.4784,8.1874,55.9412,8.8931],
+            [55.9412,8.8931,55.7403,9.157]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [55.7398,9.1348,55.7304,8.8395],
+            [55.7252,8.9881,55.7451,8.9862],
+            [55.7204,8.8404,55.7404,8.8385],
+            [55.7411,9.1794,55.7498,9.4749],
+            [55.7555,9.3261,55.7356,9.3281],
+            [55.7598,9.4739,55.7398,9.4758]
+        ]}
+    ]
+}

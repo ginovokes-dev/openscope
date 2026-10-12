@@ -1,0 +1,81 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/MDST/",
+    "info": {"country":"DO","city":"Santiago","type":"large_airport","longestRunwayM":2628,"frequencies":{"twr":"118.300","app":"119.000","gnd":"121.900"}},
+    "radio": {"twr":"Cibao Tower","app":"Cibao Approach","dep":"Cibao Departure"},
+    "icao": "MDST",
+    "iata": "STI",
+    "magnetic_north": -11.8,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [19.40406,-70.604431,"565ft"],
+    "rangeRings": {"enabled":true,"center":[19.40406,-70.604431],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":130,"speed":6},
+    "arrivalRunway": "11",
+    "departureRunway": "11",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[19.8002,-70.6922],[19.8081,-70.5805],[19.7885,-70.4704],[19.7427,-70.3695],[19.6738,-70.2846],[19.5865,-70.2215],[19.4868,-70.1844],[19.3815,-70.176],[19.2777,-70.1968],[19.1825,-70.2454],[19.1024,-70.3184],[19.0428,-70.411],[19.0079,-70.5167],[19,-70.6284],[19.0196,-70.7384],[19.0654,-70.8394],[19.1343,-70.9243],[19.2216,-70.9874],[19.3213,-71.0244],[19.4267,-71.0328],[19.5305,-71.012],[19.6257,-70.9635],[19.7058,-70.8904],[19.7653,-70.7979]]}
+    ],
+    "fixes": {
+        "MDST": [19.40406,-70.60443],
+        "IFUPA": [19.93974,-70.65667],
+        "UZACO": [19.60309,-70.62384],
+        "OTUWE": [19.29461,-70.04603],
+        "IDIRA": [19.3634,-70.39696],
+        "VEJNO": [18.99594,-70.97598],
+        "ZOBEZ": [19.25243,-70.74248],
+        "INIHA": [19.73427,-71.05467],
+        "IMOJO": [19.52675,-70.77171],
+        "_RWY1104DME": [19.424,-70.68567],
+        "_RWY2904DME": [19.38817,-70.52374]
+    },
+    "runways": [
+        {"name":["11","29"],"end":[[19.4088,-70.6169,"565ft"],[19.4034,-70.5925,"551ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "IFUPA2C": {"icao":"IFUPA2C","name":"Ifupa Two Charlie","rwy":{"MDST11":["_RWY2904DME"],"MDST29":["_RWY1104DME"]},"body":[],"exitPoints":{"IFUPA":["IFUPA"]},"draw":[["MDST","IFUPA*"]]},
+        "OTUWE2A": {"icao":"OTUWE2A","name":"Otuwe Two Alpha","rwy":{"MDST11":["_RWY2904DME"],"MDST29":["_RWY1104DME"]},"body":[],"exitPoints":{"OTUWE":["OTUWE"]},"draw":[["MDST","OTUWE*"]]},
+        "VEJNO3C": {"icao":"VEJNO3C","name":"Vejno Three Charlie","rwy":{"MDST11":["_RWY2904DME"],"MDST29":["_RWY1104DME"]},"body":[],"exitPoints":{"VEJNO":["VEJNO"]},"draw":[["MDST","VEJNO*"]]},
+        "INIHA2F": {"icao":"INIHA2F","name":"Iniha Two Foxtrot","rwy":{"MDST11":["_RWY2904DME"],"MDST29":["_RWY1104DME"]},"body":[],"exitPoints":{"INIHA":["INIHA"]},"draw":[["MDST","INIHA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"MDST","destination":"KMIA","category":"departure","route":"MDST11.INIHA2F.INIHA","altitude":"","speed":"","method":"random","rate":1.63,"airlines":[["aal/b738",2],["aal/b752",2]]},
+        {"origin":"MDST","destination":"KJFK","category":"departure","route":"MDST11.IFUPA2C.IFUPA","altitude":"","speed":"","method":"random","rate":1.22,"airlines":[["dal/b738",1],["jbu/a320",1],["jbu/a321",1]]},
+        {"origin":"MDST","destination":"TJSJ","category":"departure","route":"MDST11.OTUWE2A.OTUWE","altitude":"","speed":"","method":"random","rate":0.81,"airlines":[["jbu/e190",1],["sbs/sf34",1]]},
+        {"origin":"MDST","destination":"KBOS","category":"departure","route":"MDST11.IFUPA2C.IFUPA","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["jbu/a320",1]]},
+        {"origin":"MDST","destination":"KEWR","category":"departure","route":"MDST11.IFUPA2C.IFUPA","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["jbu/a320",1]]},
+        {"origin":"MDST","destination":"","category":"departure","route":"MDST11.VEJNO3C.VEJNO","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["cmp/e190",1]]},
+        {"origin":"MDST","destination":"","category":"departure","route":"MDST11.INIHA2F.INIHA","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["nks/a319",1]]},
+        {"origin":"KMIA","destination":"MDST","category":"arrival","route":"INIHA..IMOJO..MDST","altitude":[4000,7000],"speed":250,"method":"random","rate":1.63,"airlines":[["aal/b738",2],["aal/b752",2]]},
+        {"origin":"KJFK","destination":"MDST","category":"arrival","route":"IFUPA..UZACO..MDST","altitude":[4000,7000],"speed":250,"method":"random","rate":1.22,"airlines":[["dal/b738",1],["jbu/a320",1],["jbu/a321",1]]},
+        {"origin":"TJSJ","destination":"MDST","category":"arrival","route":"OTUWE..IDIRA..MDST","altitude":[4000,7000],"speed":250,"method":"random","rate":0.81,"airlines":[["jbu/e190",1],["sbs/sf34",1]]},
+        {"origin":"KBOS","destination":"MDST","category":"arrival","route":"IFUPA..UZACO..MDST","altitude":[4000,7000],"speed":250,"method":"random","rate":0.41,"airlines":[["jbu/a320",1]]},
+        {"origin":"KEWR","destination":"MDST","category":"arrival","route":"IFUPA..UZACO..MDST","altitude":[4000,7000],"speed":250,"method":"random","rate":0.41,"airlines":[["jbu/a320",1]]},
+        {"origin":"","destination":"MDST","category":"arrival","route":"VEJNO..ZOBEZ..MDST","altitude":[4000,7000],"speed":250,"method":"random","rate":0.41,"airlines":[["cmp/e190",1]]},
+        {"origin":"","destination":"MDST","category":"arrival","route":"INIHA..IMOJO..MDST","altitude":[4000,7000],"speed":250,"method":"random","rate":0.41,"airlines":[["nks/a319",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [19.9397,-70.6567,19.6031,-70.6238],
+            [19.6031,-70.6238,19.4041,-70.6044],
+            [19.2946,-70.046,19.3634,-70.397],
+            [19.3634,-70.397,19.4041,-70.6044],
+            [18.9959,-70.976,19.2524,-70.7425],
+            [19.2524,-70.7425,19.4041,-70.6044],
+            [19.7343,-71.0547,19.5267,-70.7717],
+            [19.5267,-70.7717,19.4041,-70.6044]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [19.4088,-70.6169,19.4468,-70.7889],
+            [19.4181,-70.7053,19.4375,-70.7004],
+            [19.437,-70.7913,19.4565,-70.7864],
+            [19.4034,-70.5925,19.3653,-70.4206],
+            [19.3941,-70.5041,19.3746,-70.509],
+            [19.375,-70.4182,19.3556,-70.423]
+        ]}
+    ]
+}

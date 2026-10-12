@@ -1,0 +1,77 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/WAOO/",
+    "info": {"country":"ID","city":"Banjarbaru","type":"large_airport","longestRunwayM":2593,"frequencies":{"atis":"128.050","twr":"118.400","app":"126.500"}},
+    "radio": {"twr":"Syamsudin Noor Tower","app":"Syamsudin Noor Approach","dep":"Syamsudin Noor Departure"},
+    "icao": "WAOO",
+    "iata": "BDJ",
+    "magnetic_north": 0.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-3.440112,114.761209,"66ft"],
+    "rangeRings": {"enabled":true,"center":[-3.440112,114.761209],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":110,"speed":11},
+    "arrivalRunway": "10",
+    "departureRunway": "10",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-3.0354,114.764],[-3.0499,114.8689],[-3.0911,114.9664],[-3.156,115.0499],[-3.2402,115.1137],[-3.3381,115.1535],[-3.4429,115.1666],[-3.5476,115.1521],[-3.6449,115.1109],[-3.7283,115.0459],[-3.792,114.9615],[-3.8317,114.8634],[-3.8448,114.7584],[-3.8303,114.6535],[-3.7892,114.5561],[-3.7243,114.4725],[-3.64,114.4087],[-3.5421,114.3689],[-3.4373,114.3558],[-3.3326,114.3703],[-3.2353,114.4115],[-3.152,114.4765],[-3.0882,114.561],[-3.0485,114.659]]}
+    ],
+    "fixes": {
+        "WAOO": [-3.44011,114.76121],
+        "IHEGI": [-3.05651,115.13902],
+        "OMACI": [-3.29759,114.90158],
+        "NEBGO": [-3.88897,115.05824],
+        "KOTPI": [-3.60688,114.87157],
+        "KECAN": [-3.63645,114.25948],
+        "SEFNE": [-3.51306,114.5748],
+        "HEFMI": [-2.99126,114.46418],
+        "BUDEL": [-3.27335,114.65085],
+        "_RWY1004DME": [-3.42865,114.68529],
+        "_RWY2804DME": [-3.45604,114.83972]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[-3.44031,114.751,"66ft"],[-3.44439,114.774,"66ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "IHEGI3F": {"icao":"IHEGI3F","name":"Ihegi Three Foxtrot","rwy":{"WAOO10":["_RWY2804DME"],"WAOO28":["_RWY1004DME"]},"body":[],"exitPoints":{"IHEGI":["IHEGI"]},"draw":[["WAOO","IHEGI*"]]},
+        "NEBGO3A": {"icao":"NEBGO3A","name":"Nebgo Three Alpha","rwy":{"WAOO10":["_RWY2804DME"],"WAOO28":["_RWY1004DME"]},"body":[],"exitPoints":{"NEBGO":["NEBGO"]},"draw":[["WAOO","NEBGO*"]]},
+        "KECAN1B": {"icao":"KECAN1B","name":"Kecan One Bravo","rwy":{"WAOO10":["_RWY2804DME"],"WAOO28":["_RWY1004DME"]},"body":[],"exitPoints":{"KECAN":["KECAN"]},"draw":[["WAOO","KECAN*"]]},
+        "HEFMI3F": {"icao":"HEFMI3F","name":"Hefmi Three Foxtrot","rwy":{"WAOO10":["_RWY2804DME"],"WAOO28":["_RWY1004DME"]},"body":[],"exitPoints":{"HEFMI":["HEFMI"]},"draw":[["WAOO","HEFMI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"WAOO","destination":"WIII","category":"departure","route":"WAOO10.KECAN1B.KECAN","altitude":"","speed":"","method":"random","rate":1.22,"airlines":[["gia/b738",1],["lni/b738",1],["sjy/b735",1]]},
+        {"origin":"WAOO","destination":"WALL","category":"departure","route":"WAOO10.IHEGI3F.IHEGI","altitude":"","speed":"","method":"random","rate":0.82,"airlines":[["lni/b738",1],["sjy/b735",1]]},
+        {"origin":"WAOO","destination":"WARR","category":"departure","route":"WAOO10.KECAN1B.KECAN","altitude":"","speed":"","method":"random","rate":0.82,"airlines":[["gia/crjx",1],["lni/b738",1]]},
+        {"origin":"WAOO","destination":"WICC","category":"departure","route":"WAOO10.KECAN1B.KECAN","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["lni/b738",1]]},
+        {"origin":"WAOO","destination":"","category":"departure","route":"WAOO10.IHEGI3F.IHEGI","altitude":"","speed":"","method":"random","rate":1.09,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",1],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]},
+        {"origin":"WIII","destination":"WAOO","category":"arrival","route":"KECAN..SEFNE..WAOO","altitude":[4000,7000],"speed":250,"method":"random","rate":1.22,"airlines":[["gia/b738",1],["lni/b738",1],["sjy/b735",1]]},
+        {"origin":"WALL","destination":"WAOO","category":"arrival","route":"IHEGI..OMACI..WAOO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.82,"airlines":[["lni/b738",1],["sjy/b735",1]]},
+        {"origin":"WARR","destination":"WAOO","category":"arrival","route":"KECAN..SEFNE..WAOO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.82,"airlines":[["gia/crjx",1],["lni/b738",1]]},
+        {"origin":"WICC","destination":"WAOO","category":"arrival","route":"KECAN..SEFNE..WAOO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.41,"airlines":[["lni/b738",1]]},
+        {"origin":"","destination":"WAOO","category":"arrival","route":"IHEGI..OMACI..WAOO","altitude":[4000,7000],"speed":250,"method":"random","rate":1.09,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",1],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-3.0565,115.139,-3.2976,114.9016],
+            [-3.2976,114.9016,-3.4401,114.7612],
+            [-3.889,115.0582,-3.6069,114.8716],
+            [-3.6069,114.8716,-3.4401,114.7612],
+            [-3.6365,114.2595,-3.5131,114.5748],
+            [-3.5131,114.5748,-3.4401,114.7612],
+            [-2.9913,114.4642,-3.2733,114.6509],
+            [-3.2733,114.6509,-3.4401,114.7612]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-3.4403,114.751,-3.4112,114.5867],
+            [-3.4356,114.6671,-3.4159,114.6706],
+            [-3.421,114.585,-3.4013,114.5885],
+            [-3.4444,114.774,-3.4735,114.9383],
+            [-3.4491,114.8579,-3.4688,114.8544],
+            [-3.4637,114.94,-3.4834,114.9365]
+        ]}
+    ]
+}

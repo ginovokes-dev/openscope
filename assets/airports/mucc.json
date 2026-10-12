@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/MUCC/",
+    "info": {"country":"CU","city":"Cayo Coco","type":"medium_airport","longestRunwayM":3001,"frequencies":{"twr":"118.800"}},
+    "radio": {"twr":"Cunagua Tower","app":"Cunagua Approach","dep":"Cunagua Departure"},
+    "icao": "MUCC",
+    "iata": "CCC",
+    "magnetic_north": -8,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [22.461,-78.3284,"13ft"],
+    "rangeRings": {"enabled":true,"center":[22.461,-78.3284],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":80,"speed":6},
+    "arrivalRunway": "08",
+    "departureRunway": "08",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[22.8618,-78.3893],[22.8627,-78.275],[22.8362,-78.1644],[22.7842,-78.0649],[22.7102,-77.9833],[22.6191,-77.9253],[22.5173,-77.8947],[22.4117,-77.8937],[22.3094,-77.9224],[22.2174,-77.9787],[22.1421,-78.0588],[22.0885,-78.1573],[22.0602,-78.2675],[22.0593,-78.3818],[22.0858,-78.4924],[22.1378,-78.5919],[22.2118,-78.6735],[22.3029,-78.7315],[22.4047,-78.7621],[22.5103,-78.7631],[22.6126,-78.7344],[22.7046,-78.6781],[22.7799,-78.598],[22.8335,-78.4995]]}
+    ],
+    "fixes": {
+        "MUCC": [22.461,-78.3284],
+        "VUMOR": [22.99831,-78.30022],
+        "OSARE": [22.66063,-78.31793],
+        "FOCLA": [22.53537,-77.75189],
+        "ZEDON": [22.48863,-78.1142],
+        "JALIF": [21.95136,-78.14209],
+        "AZURE": [22.27165,-78.25918],
+        "WAGFU": [22.53029,-78.90565],
+        "GEWTU": [22.48674,-78.54287],
+        "_RWY0804DME": [22.43475,-78.41053],
+        "_RWY2604DME": [22.48702,-78.24664]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[22.4565,-78.3424,"10ft"],[22.4653,-78.3148,"13ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "VUMOR3F": {"icao":"VUMOR3F","name":"Vumor Three Foxtrot","rwy":{"MUCC08":["_RWY2604DME"],"MUCC26":["_RWY0804DME"]},"body":[],"exitPoints":{"VUMOR":["VUMOR"]},"draw":[["MUCC","VUMOR*"]]},
+        "FOCLA1D": {"icao":"FOCLA1D","name":"Focla One Delta","rwy":{"MUCC08":["_RWY2604DME"],"MUCC26":["_RWY0804DME"]},"body":[],"exitPoints":{"FOCLA":["FOCLA"]},"draw":[["MUCC","FOCLA*"]]},
+        "JALIF1C": {"icao":"JALIF1C","name":"Jalif One Charlie","rwy":{"MUCC08":["_RWY2604DME"],"MUCC26":["_RWY0804DME"]},"body":[],"exitPoints":{"JALIF":["JALIF"]},"draw":[["MUCC","JALIF*"]]},
+        "WAGFU3D": {"icao":"WAGFU3D","name":"Wagfu Three Delta","rwy":{"MUCC08":["_RWY2604DME"],"MUCC26":["_RWY0804DME"]},"body":[],"exitPoints":{"WAGFU":["WAGFU"]},"draw":[["MUCC","WAGFU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"MUCC","destination":"CYUL","category":"departure","route":"MUCC08.VUMOR3F.VUMOR","altitude":"","speed":"","method":"random","rate":0.83,"airlines":[["aca/a319",1],["cub/a320",1]]},
+        {"origin":"MUCC","destination":"CYYZ","category":"departure","route":"MUCC08.VUMOR3F.VUMOR","altitude":"","speed":"","method":"random","rate":0.83,"airlines":[["aca/a319",1],["wja/b737",1]]},
+        {"origin":"MUCC","destination":"CYHZ","category":"departure","route":"MUCC08.VUMOR3F.VUMOR","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["tsc/a310",1]]},
+        {"origin":"MUCC","destination":"EGCC","category":"departure","route":"MUCC08.VUMOR3F.VUMOR","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["tcx/a332",1]]},
+        {"origin":"MUCC","destination":"MUHA","category":"departure","route":"MUCC08.WAGFU3D.WAGFU","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["cub/il96",1]]},
+        {"origin":"MUCC","destination":"","category":"departure","route":"MUCC08.JALIF1C.JALIF","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["cub/il96",1]]},
+        {"origin":"MUCC","destination":"","category":"departure","route":"MUCC08.WAGFU3D.WAGFU","altitude":"","speed":"","method":"random","rate":0.83,"airlines":[["cub/a320",1],["tsc/a310",1]]},
+        {"origin":"MUCC","destination":"","category":"departure","route":"MUCC08.FOCLA1D.FOCLA","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["cu/c172",6],["cu/p28a",5],["cu/c182",3],["cu/be36",2],["cu/da42",1],["cu/tb20",1],["cu/c208",2],["cu/pc12",2],["cu/be20",1],["cu/b350",1],["cu/p180",1],["cu/c510",1],["cu/e50p",1],["cu/c550",1],["cu/e55p",1],["cu/cl30",1],["cu/c680",1],["cu/h25b",1],["cu/lj45",1],["cu/f2th",1],["cu/glf4",1],["cu/glex",1],["cu/glf5",1]]},
+        {"origin":"CYUL","destination":"MUCC","category":"arrival","route":"VUMOR..OSARE..MUCC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.83,"airlines":[["aca/a319",1],["cub/a320",1]]},
+        {"origin":"CYYZ","destination":"MUCC","category":"arrival","route":"VUMOR..OSARE..MUCC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.83,"airlines":[["aca/a319",1],["wja/b737",1]]},
+        {"origin":"CYHZ","destination":"MUCC","category":"arrival","route":"VUMOR..OSARE..MUCC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["tsc/a310",1]]},
+        {"origin":"EGCC","destination":"MUCC","category":"arrival","route":"VUMOR..OSARE..MUCC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["tcx/a332",1]]},
+        {"origin":"MUHA","destination":"MUCC","category":"arrival","route":"WAGFU..GEWTU..MUCC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["cub/il96",1]]},
+        {"origin":"","destination":"MUCC","category":"arrival","route":"JALIF..AZURE..MUCC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["cub/il96",1]]},
+        {"origin":"","destination":"MUCC","category":"arrival","route":"WAGFU..GEWTU..MUCC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.83,"airlines":[["cub/a320",1],["tsc/a310",1]]},
+        {"origin":"","destination":"MUCC","category":"arrival","route":"FOCLA..ZEDON..MUCC","altitude":[4000,7000],"speed":250,"method":"random","rate":1.39,"airlines":[["cu/c172",6],["cu/p28a",5],["cu/c182",3],["cu/be36",2],["cu/da42",1],["cu/tb20",1],["cu/c208",2],["cu/pc12",2],["cu/be20",1],["cu/b350",1],["cu/p180",1],["cu/c510",1],["cu/e50p",1],["cu/c550",1],["cu/e55p",1],["cu/cl30",1],["cu/c680",1],["cu/h25b",1],["cu/lj45",1],["cu/f2th",1],["cu/glf4",1],["cu/glex",1],["cu/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [22.9983,-78.3002,22.6606,-78.3179],
+            [22.6606,-78.3179,22.461,-78.3284],
+            [22.5354,-77.7519,22.4886,-78.1142],
+            [22.4886,-78.1142,22.461,-78.3284],
+            [21.9514,-78.1421,22.2716,-78.2592],
+            [22.2716,-78.2592,22.461,-78.3284],
+            [22.5303,-78.9056,22.4867,-78.5429],
+            [22.4867,-78.5429,22.461,-78.3284]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [22.4565,-78.3424,22.4021,-78.5127],
+            [22.4199,-78.424,22.4388,-78.4311],
+            [22.3926,-78.5092,22.4115,-78.5162],
+            [22.4653,-78.3148,22.5195,-78.1444],
+            [22.5019,-78.2331,22.483,-78.2261],
+            [22.529,-78.1479,22.5101,-78.1408]
+        ]}
+    ]
+}

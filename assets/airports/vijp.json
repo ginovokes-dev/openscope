@@ -1,0 +1,99 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VIJP/",
+    "info": {"country":"IN","city":"Jaipur","type":"large_airport","longestRunwayM":2797,"frequencies":{"atis":"126.600"}},
+    "radio": {"twr":"Jaipur Tower","app":"Jaipur Approach","dep":"Jaipur Departure"},
+    "icao": "VIJP",
+    "iata": "JAI",
+    "magnetic_north": 1.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 9000,
+    "initial_alt": 5000,
+    "position": [26.8242,75.812202,"1263ft"],
+    "rangeRings": {"enabled":true,"center":[26.8242,75.812202],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":90,"speed":10},
+    "arrivalRunway": "08",
+    "departureRunway": "08",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":90,"airspace_class":"D","poly":[[27.2288,75.8209],[27.213,75.938],[27.1707,76.0464],[27.1048,76.139],[27.0198,76.2092],[26.9214,76.2524],[26.8164,76.2656],[26.712,76.2479],[26.6152,76.2005],[26.5326,76.1267],[26.4699,76.0314],[26.4314,75.9211],[26.4196,75.8035],[26.4354,75.6864],[26.4777,75.578],[26.5436,75.4854],[26.6286,75.4152],[26.727,75.372],[26.832,75.3588],[26.9364,75.3765],[27.0332,75.4239],[27.1158,75.4977],[27.1785,75.593],[27.217,75.7033]]}
+    ],
+    "fixes": {
+        "VIJP": [26.8242,75.8122],
+        "EFEKU": [27.27548,76.14029],
+        "TUSUD": [26.99187,75.9341],
+        "UVOCO": [26.66479,76.38793],
+        "GIHHU": [26.76497,76.02611],
+        "NIMCI": [26.30389,75.96523],
+        "TIDAN": [26.63088,75.86906],
+        "PIBAH": [26.34068,75.548],
+        "ROPPE": [26.64455,75.71404],
+        "IHAMO": [26.796,75.21023],
+        "HOZHU": [26.81372,75.58855],
+        "_RWY0804DME": [26.81598,75.72395],
+        "_RWY2604DME": [26.83238,75.90046],
+        "_RWY1504DME": [26.88908,75.75083],
+        "_RWY3304DME": [26.76951,75.84773]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[26.8229,75.7982,"1262ft"],[26.8255,75.8262,"1250ft"]],"ils":[true,true]},
+        {"name":["15","33"],"end":[[26.8351,75.7946,"1263ft"],[26.8235,75.804,"1263ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "EFEKU2C": {"icao":"EFEKU2C","name":"Efeku Two Charlie","rwy":{"VIJP08":["_RWY2604DME"],"VIJP26":["_RWY0804DME"],"VIJP15":["_RWY3304DME"],"VIJP33":["_RWY1504DME"]},"body":[],"exitPoints":{"EFEKU":["EFEKU"]},"draw":[["VIJP","EFEKU*"]]},
+        "UVOCO2D": {"icao":"UVOCO2D","name":"Uvoco Two Delta","rwy":{"VIJP08":["_RWY2604DME"],"VIJP26":["_RWY0804DME"],"VIJP15":["_RWY3304DME"],"VIJP33":["_RWY1504DME"]},"body":[],"exitPoints":{"UVOCO":["UVOCO"]},"draw":[["VIJP","UVOCO*"]]},
+        "NIMCI1B": {"icao":"NIMCI1B","name":"Nimci One Bravo","rwy":{"VIJP08":["_RWY2604DME"],"VIJP26":["_RWY0804DME"],"VIJP15":["_RWY3304DME"],"VIJP33":["_RWY1504DME"]},"body":[],"exitPoints":{"NIMCI":["NIMCI"]},"draw":[["VIJP","NIMCI*"]]},
+        "PIBAH1C": {"icao":"PIBAH1C","name":"Pibah One Charlie","rwy":{"VIJP08":["_RWY2604DME"],"VIJP26":["_RWY0804DME"],"VIJP15":["_RWY3304DME"],"VIJP33":["_RWY1504DME"]},"body":[],"exitPoints":{"PIBAH":["PIBAH"]},"draw":[["VIJP","PIBAH*"]]},
+        "IHAMO2B": {"icao":"IHAMO2B","name":"Ihamo Two Bravo","rwy":{"VIJP08":["_RWY2604DME"],"VIJP26":["_RWY0804DME"],"VIJP15":["_RWY3304DME"],"VIJP33":["_RWY1504DME"]},"body":[],"exitPoints":{"IHAMO":["IHAMO"]},"draw":[["VIJP","IHAMO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"VIJP","destination":"VABB","category":"departure","route":"VIJP08.PIBAH1C.PIBAH","altitude":"","speed":"","method":"random","rate":1.16,"airlines":[["aic/a319",1],["gow/a320",1],["igo/a320",1],["jai/b737",1]]},
+        {"origin":"VIJP","destination":"VIDP","category":"departure","route":"VIJP08.EFEKU2C.EFEKU","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["aic/a319",1],["jai/b738",1],["sej/dh8d",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"VIJP","destination":"OMSJ","category":"departure","route":"VIJP08.IHAMO2B.IHAMO","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["aby/a320",1],["axb/b738",1]]},
+        {"origin":"VIJP","destination":"OMAA","category":"departure","route":"VIJP08.IHAMO2B.IHAMO","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["etd/a320",1]]},
+        {"origin":"VIJP","destination":"OOMS","category":"departure","route":"VIJP08.IHAMO2B.IHAMO","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["oma/b738",1]]},
+        {"origin":"VIJP","destination":"","category":"departure","route":"VIJP08.UVOCO2D.UVOCO","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["igo/a320",1]]},
+        {"origin":"VIJP","destination":"","category":"departure","route":"VIJP08.NIMCI1B.NIMCI","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["igo/a320",2]]},
+        {"origin":"VIJP","destination":"","category":"departure","route":"VIJP08.PIBAH1C.PIBAH","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["igo/a320",1]]},
+        {"origin":"VIJP","destination":"","category":"departure","route":"VIJP08.EFEKU2C.EFEKU","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"VABB","destination":"VIJP","category":"arrival","route":"PIBAH..ROPPE..VIJP","altitude":[5000,8000],"speed":250,"method":"random","rate":1.16,"airlines":[["aic/a319",1],["gow/a320",1],["igo/a320",1],["jai/b737",1]]},
+        {"origin":"VIDP","destination":"VIJP","category":"arrival","route":"EFEKU..TUSUD..VIJP","altitude":[5000,8000],"speed":250,"method":"random","rate":0.87,"airlines":[["aic/a319",1],["jai/b738",1],["sej/dh8d",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"OMSJ","destination":"VIJP","category":"arrival","route":"IHAMO..HOZHU..VIJP","altitude":[5000,8000],"speed":250,"method":"random","rate":0.58,"airlines":[["aby/a320",1],["axb/b738",1]]},
+        {"origin":"OMAA","destination":"VIJP","category":"arrival","route":"IHAMO..HOZHU..VIJP","altitude":[5000,8000],"speed":250,"method":"random","rate":0.29,"airlines":[["etd/a320",1]]},
+        {"origin":"OOMS","destination":"VIJP","category":"arrival","route":"IHAMO..HOZHU..VIJP","altitude":[5000,8000],"speed":250,"method":"random","rate":0.29,"airlines":[["oma/b738",1]]},
+        {"origin":"","destination":"VIJP","category":"arrival","route":"UVOCO..GIHHU..VIJP","altitude":[5000,8000],"speed":250,"method":"random","rate":0.29,"airlines":[["igo/a320",1]]},
+        {"origin":"","destination":"VIJP","category":"arrival","route":"NIMCI..TIDAN..VIJP","altitude":[5000,8000],"speed":250,"method":"random","rate":0.58,"airlines":[["igo/a320",2]]},
+        {"origin":"","destination":"VIJP","category":"arrival","route":"PIBAH..ROPPE..VIJP","altitude":[5000,8000],"speed":250,"method":"random","rate":0.29,"airlines":[["igo/a320",1]]},
+        {"origin":"","destination":"VIJP","category":"arrival","route":"EFEKU..TUSUD..VIJP","altitude":[5000,8000],"speed":250,"method":"random","rate":1.45,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [27.2755,76.1403,26.9919,75.9341],
+            [26.9919,75.9341,26.8242,75.8122],
+            [26.6648,76.3879,26.765,76.0261],
+            [26.765,76.0261,26.8242,75.8122],
+            [26.3039,75.9652,26.6309,75.8691],
+            [26.6309,75.8691,26.8242,75.8122],
+            [26.3407,75.548,26.6446,75.714],
+            [26.6446,75.714,26.8242,75.8122],
+            [26.796,75.2102,26.8137,75.5885],
+            [26.8137,75.5885,26.8242,75.8122]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [26.8229,75.7982,26.8055,75.6126],
+            [26.8043,75.7066,26.8242,75.7042],
+            [26.7956,75.6138,26.8155,75.6114],
+            [26.8255,75.8262,26.8426,76.0119],
+            [26.844,75.9179,26.8242,75.9202],
+            [26.8526,76.0107,26.8327,76.013],
+            [26.8351,75.7946,26.97,75.6851],
+            [26.8967,75.7308,26.9084,75.749],
+            [26.9642,75.676,26.9759,75.6942],
+            [26.8235,75.804,26.6885,75.9132],
+            [26.7619,75.8677,26.7502,75.8496],
+            [26.6944,75.9223,26.6826,75.9042]
+        ]}
+    ]
+}

@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/CYTZ/",
+    "info": {"country":"CA","city":"Toronto","type":"medium_airport","longestRunwayM":1216,"frequencies":{"atis":"133.600","twr":"118.200","gnd":"121.700","dep":"133.400"}},
+    "radio": {"twr":"Toronto Tower","app":"Toronto Approach","dep":"Toronto Departure"},
+    "icao": "CYTZ",
+    "iata": "YTZ",
+    "magnetic_north": -10.1,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [43.627852,-79.39553,"252ft"],
+    "rangeRings": {"enabled":true,"center":[43.627852,-79.39553],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":290,"speed":9},
+    "arrivalRunway": "26",
+    "departureRunway": "26",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[44.1591,-79.5263],[44.1655,-79.3319],[44.1352,-79.1418],[44.0704,-78.969],[43.9754,-78.8253],[43.8567,-78.7205],[43.7225,-78.6616],[43.5818,-78.6528],[43.4442,-78.6946],[43.3191,-78.7841],[43.2151,-78.9154],[43.1392,-79.0793],[43.0966,-79.2648],[43.0902,-79.4592],[43.1205,-79.6493],[43.1853,-79.822],[43.2803,-79.9658],[43.399,-80.0706],[43.5332,-80.1294],[43.6739,-80.1383],[43.8115,-80.0965],[43.9366,-80.0069],[44.0406,-79.8757],[44.1165,-79.7118]]}
+    ],
+    "fixes": {
+        "CYTZ": [43.62785,-79.39553],
+        "YPQ": [44.2131,-78.4581,"peterborough"],
+        "MIGIJ": [43.79102,-79.13417],
+        "BUF": [42.929,-78.6463,"buffalo"],
+        "IMICI": [43.43048,-79.18393],
+        "UMUPO": [42.93263,-79.22459],
+        "ASOBO": [43.38189,-79.33505],
+        "ZKF": [43.4931,-80.2869,"wellington"],
+        "ZLB": [43.6162,-79.6884,"britannia"],
+        "YEE": [44.5817,-79.7931,"midland"],
+        "ERIZI": [43.86704,-79.49522],
+        "_RWY0803DME": [43.61138,-79.46868],
+        "_RWY2603DME": [43.64702,-79.32368],
+        "_RWY0603DME": [43.59363,-79.45029],
+        "_RWY2403DME": [43.6624,-79.33765]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[43.62747,-79.40334,"251ft"],[43.63097,-79.38907,"250ft"]],"ils":[false,false]},
+        {"name":["06","24"],"end":[[43.62586,-79.39755,"251ft"],[43.6302,-79.39044,"250ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "YPQ3C": {"icao":"YPQ3C","name":"Peterborough Three Charlie","rwy":{"CYTZ08":["_RWY2603DME"],"CYTZ26":["_RWY0803DME"],"CYTZ06":["_RWY2403DME"],"CYTZ24":["_RWY0603DME"]},"body":[],"exitPoints":{"YPQ":["YPQ"]},"draw":[["CYTZ","YPQ*"]]},
+        "BUF3C": {"icao":"BUF3C","name":"Buffalo Three Charlie","rwy":{"CYTZ08":["_RWY2603DME"],"CYTZ26":["_RWY0803DME"],"CYTZ06":["_RWY2403DME"],"CYTZ24":["_RWY0603DME"]},"body":[],"exitPoints":{"BUF":["BUF"]},"draw":[["CYTZ","BUF*"]]},
+        "UMUPO1B": {"icao":"UMUPO1B","name":"Umupo One Bravo","rwy":{"CYTZ08":["_RWY2603DME"],"CYTZ26":["_RWY0803DME"],"CYTZ06":["_RWY2403DME"],"CYTZ24":["_RWY0603DME"]},"body":[],"exitPoints":{"UMUPO":["UMUPO"]},"draw":[["CYTZ","UMUPO*"]]},
+        "ZKF3E": {"icao":"ZKF3E","name":"Wellington Three Echo","rwy":{"CYTZ08":["_RWY2603DME"],"CYTZ26":["_RWY0803DME"],"CYTZ06":["_RWY2403DME"],"CYTZ24":["_RWY0603DME"]},"body":[],"exitPoints":{"ZKF":["ZKF"]},"draw":[["CYTZ","ZKF*"]]},
+        "YEE3A": {"icao":"YEE3A","name":"Midland Three Alpha","rwy":{"CYTZ08":["_RWY2603DME"],"CYTZ26":["_RWY0803DME"],"CYTZ06":["_RWY2403DME"],"CYTZ24":["_RWY0603DME"]},"body":[],"exitPoints":{"YEE":["YEE"]},"draw":[["CYTZ","YEE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"CYTZ","destination":"CYAM","category":"departure","route":"CYTZ26.YEE3A.YEE","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["poe/dh8d",1]]},
+        {"origin":"CYTZ","destination":"CYOW","category":"departure","route":"CYTZ26.YPQ3C.YPQ","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["poe/dh8d",1]]},
+        {"origin":"CYTZ","destination":"CYQB","category":"departure","route":"CYTZ26.YPQ3C.YPQ","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["poe/dh8d",1]]},
+        {"origin":"CYTZ","destination":"CYQG","category":"departure","route":"CYTZ26.ZKF3E.ZKF","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["poe/dh8d",1]]},
+        {"origin":"CYTZ","destination":"CYQT","category":"departure","route":"CYTZ26.YEE3A.YEE","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["poe/dh8d",1]]},
+        {"origin":"CYTZ","destination":"","category":"departure","route":"CYTZ26.YPQ3C.YPQ","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["poe/dh8d",1]]},
+        {"origin":"CYTZ","destination":"","category":"departure","route":"CYTZ26.BUF3C.BUF","altitude":"","speed":"","method":"random","rate":0.89,"airlines":[["poe/dh8d",2]]},
+        {"origin":"CYTZ","destination":"","category":"departure","route":"CYTZ26.UMUPO1B.UMUPO","altitude":"","speed":"","method":"random","rate":0.89,"airlines":[["poe/dh8d",2]]},
+        {"origin":"CYTZ","destination":"","category":"departure","route":"CYTZ26.ZKF3E.ZKF","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["poe/dh8d",1]]},
+        {"origin":"CYTZ","destination":"","category":"departure","route":"CYTZ26.YEE3A.YEE","altitude":"","speed":"","method":"random","rate":0.89,"airlines":[["poe/dh8d",2]]},
+        {"origin":"CYTZ","destination":"","category":"departure","route":"CYTZ26.YPQ3C.YPQ","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["c/c172",6],["c/p28a",5],["c/c182",3],["c/be36",2],["c/da42",1],["c/tb20",1],["c/c208",2],["c/pc12",2],["c/be20",1],["c/b350",1],["c/p180",1],["c/c510",1],["c/e50p",1],["c/c550",2],["c/e55p",1],["c/c680",1],["c/lj45",1]]},
+        {"origin":"CYTZ","destination":"","category":"departure","route":"CYTZ26.ZKF3E.ZKF","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["c/c172",6],["c/p28a",5],["c/c182",3],["c/be36",2],["c/da42",1],["c/tb20",1],["c/c208",2],["c/pc12",2],["c/be20",1],["c/b350",1],["c/p180",1],["c/c510",1],["c/e50p",1],["c/c550",2],["c/e55p",1],["c/c680",1],["c/lj45",1]]},
+        {"origin":"CYAM","destination":"CYTZ","category":"arrival","route":"YEE..ERIZI..CYTZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["poe/dh8d",1]]},
+        {"origin":"CYOW","destination":"CYTZ","category":"arrival","route":"YPQ..MIGIJ..CYTZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["poe/dh8d",1]]},
+        {"origin":"CYQB","destination":"CYTZ","category":"arrival","route":"YPQ..MIGIJ..CYTZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["poe/dh8d",1]]},
+        {"origin":"CYQG","destination":"CYTZ","category":"arrival","route":"ZKF..ZLB..CYTZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["poe/dh8d",1]]},
+        {"origin":"CYQT","destination":"CYTZ","category":"arrival","route":"YEE..ERIZI..CYTZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["poe/dh8d",1]]},
+        {"origin":"","destination":"CYTZ","category":"arrival","route":"YPQ..MIGIJ..CYTZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["poe/dh8d",1]]},
+        {"origin":"","destination":"CYTZ","category":"arrival","route":"BUF..IMICI..CYTZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.89,"airlines":[["poe/dh8d",2]]},
+        {"origin":"","destination":"CYTZ","category":"arrival","route":"UMUPO..ASOBO..CYTZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.89,"airlines":[["poe/dh8d",2]]},
+        {"origin":"","destination":"CYTZ","category":"arrival","route":"ZKF..ZLB..CYTZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["poe/dh8d",1]]},
+        {"origin":"","destination":"CYTZ","category":"arrival","route":"YEE..ERIZI..CYTZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.89,"airlines":[["poe/dh8d",2]]},
+        {"origin":"","destination":"CYTZ","category":"arrival","route":"YPQ..MIGIJ..CYTZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["c/c172",6],["c/p28a",5],["c/c182",3],["c/be36",2],["c/da42",1],["c/tb20",1],["c/c208",2],["c/pc12",2],["c/be20",1],["c/b350",1],["c/p180",1],["c/c510",1],["c/e50p",1],["c/c550",2],["c/e55p",1],["c/c680",1],["c/lj45",1]]},
+        {"origin":"","destination":"CYTZ","category":"arrival","route":"ZKF..ZLB..CYTZ","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["c/c172",6],["c/p28a",5],["c/c182",3],["c/be36",2],["c/da42",1],["c/tb20",1],["c/c208",2],["c/pc12",2],["c/be20",1],["c/b350",1],["c/p180",1],["c/c510",1],["c/e50p",1],["c/c550",2],["c/e55p",1],["c/c680",1],["c/lj45",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [44.2131,-78.4581,43.791,-79.1342],
+            [43.791,-79.1342,43.6279,-79.3955],
+            [42.929,-78.6463,43.4305,-79.1839],
+            [43.4305,-79.1839,43.6279,-79.3955],
+            [42.9326,-79.2246,43.3819,-79.3351],
+            [43.3819,-79.3351,43.6279,-79.3955],
+            [43.4931,-80.2869,43.6162,-79.6884],
+            [43.6162,-79.6884,43.6279,-79.3955],
+            [44.5817,-79.7931,43.867,-79.4952],
+            [43.867,-79.4952,43.6279,-79.3955]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [43.631,-79.3891,43.6843,-79.171],
+            [43.6672,-79.2845,43.6482,-79.2756],
+            [43.6938,-79.1754,43.6749,-79.1665]
+        ]}
+    ]
+}

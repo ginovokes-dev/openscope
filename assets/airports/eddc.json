@@ -1,0 +1,91 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EDDC/",
+    "info": {"country":"DE","city":"Dresden","type":"large_airport","longestRunwayM":2850,"frequencies":{"atis":"118.880","twr":"122.930","app":"125.625","gnd":"121.980"}},
+    "radio": {"twr":"Dresden Tower","app":"Dresden Approach","dep":"Dresden Departure"},
+    "icao": "EDDC",
+    "iata": "DRS",
+    "magnetic_north": 5,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [51.134123,13.767831,"755ft"],
+    "rangeRings": {"enabled":true,"center":[51.134123,13.767831],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":200,"speed":8},
+    "arrivalRunway": "22",
+    "departureRunway": "22",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[51.6717,13.8428],[51.6412,14.0619],[51.5761,14.2611],[51.481,14.4266],[51.3622,14.5472],[51.2278,14.6147],[51.0871,14.6245],[50.9496,14.5759],[50.8246,14.4722],[50.7208,14.3206],[50.6451,14.1312],[50.6027,13.9172],[50.5966,13.6929],[50.6271,13.4737],[50.6921,13.2746],[50.7873,13.1091],[50.9061,12.9885],[51.0404,12.921],[51.1812,12.9112],[51.3187,12.9598],[51.4436,13.0634],[51.5475,13.2151],[51.6232,13.4044],[51.6655,13.6185]]}
+    ],
+    "fixes": {
+        "EDDC": [51.13412,13.76783],
+        "RO": [51.3436,14.952,"rothenburg"],
+        "ZOWUN": [51.20191,14.15103],
+        "NER": [50.3666,14.6214,"neratovice"],
+        "AMIKI": [50.92925,13.99568],
+        "KVY": [50.2012,12.9259,"karlovy vary"],
+        "KIRHE": [50.91673,13.57164],
+        "LEG": [51.436,12.4732,"leipzig"],
+        "HERUG": [51.22115,13.39463],
+        "_RWY0404DME": [51.07422,13.68538],
+        "_RWY2204DME": [51.19239,13.84801]
+    },
+    "runways": [
+        {"name":["04","22"],"end":[[51.12466,13.75468,"755ft"],[51.14199,13.77853,"703ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "RO3A": {"icao":"RO3A","name":"Rothenburg Three Alpha","rwy":{"EDDC04":["_RWY2204DME"],"EDDC22":["_RWY0404DME"]},"body":[],"exitPoints":{"RO":["RO"]},"draw":[["EDDC","RO*"]]},
+        "NER3B": {"icao":"NER3B","name":"Neratovice Three Bravo","rwy":{"EDDC04":["_RWY2204DME"],"EDDC22":["_RWY0404DME"]},"body":[],"exitPoints":{"NER":["NER"]},"draw":[["EDDC","NER*"]]},
+        "KVY2F": {"icao":"KVY2F","name":"Karlovy Vary Two Foxtrot","rwy":{"EDDC04":["_RWY2204DME"],"EDDC22":["_RWY0404DME"]},"body":[],"exitPoints":{"KVY":["KVY"]},"draw":[["EDDC","KVY*"]]},
+        "LEG1B": {"icao":"LEG1B","name":"Leipzig One Bravo","rwy":{"EDDC04":["_RWY2204DME"],"EDDC22":["_RWY0404DME"]},"body":[],"exitPoints":{"LEG":["LEG"]},"draw":[["EDDC","LEG*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EDDC","destination":"EDDL","category":"departure","route":"EDDC22.LEG1B.LEG","altitude":"","speed":"","method":"random","rate":1.05,"airlines":[["ber/a319",1],["ber/b737",1],["ber/dh8d",1],["gwi/a319",1],["gwi/crj7",1],["gwi/crj9",1],["gwi/crj2",1]]},
+        {"origin":"EDDC","destination":"EDDF","category":"departure","route":"EDDC22.LEG1B.LEG","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["dlh/a320",1],["dlh/b733",1],["dlh/b735",1],["dlh/e190",1]]},
+        {"origin":"EDDC","destination":"EDDK","category":"departure","route":"EDDC22.LEG1B.LEG","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["gwi/a319",1],["gwi/crj7",1],["gwi/crj9",1],["gwi/crj2",1]]},
+        {"origin":"EDDC","destination":"EDDS","category":"departure","route":"EDDC22.KVY2F.KVY","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["gwi/a319",1],["gwi/crj7",1],["gwi/crj9",1],["gwi/crj2",1]]},
+        {"origin":"EDDC","destination":"LEBL","category":"departure","route":"EDDC22.KVY2F.KVY","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["vlg/a319",1],["vlg/a320",1]]},
+        {"origin":"EDDC","destination":"LEPA","category":"departure","route":"EDDC22.KVY2F.KVY","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["ber/a321",1],["ber/b738",1]]},
+        {"origin":"EDDC","destination":"","category":"departure","route":"EDDC22.RO3A.RO","altitude":"","speed":"","method":"random","rate":0.21,"airlines":[["afl/su95",1]]},
+        {"origin":"EDDC","destination":"","category":"departure","route":"EDDC22.NER3B.NER","altitude":"","speed":"","method":"random","rate":1.25,"airlines":[["ber/b738",4],["gmi/a321",1],["gwi/a319",1]]},
+        {"origin":"EDDC","destination":"","category":"departure","route":"EDDC22.KVY2F.KVY","altitude":"","speed":"","method":"random","rate":1.25,"airlines":[["ber/b738",2],["dlh/e190",1],["ezy/a319",1],["ezy/a320",1],["isk/dh8c",1]]},
+        {"origin":"EDDC","destination":"","category":"departure","route":"EDDC22.LEG1B.LEG","altitude":"","speed":"","method":"random","rate":0.21,"airlines":[["bcy/rj85",1]]},
+        {"origin":"EDDC","destination":"","category":"departure","route":"EDDC22.LEG1B.LEG","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["d/c172",6],["d/p28a",5],["d/c182",3],["d/be36",2],["d/da42",1],["d/tb20",1],["d/c208",2],["d/pc12",2],["d/be20",1],["d/b350",1],["d/p180",1],["d/c510",1],["d/e50p",1],["d/c550",2],["d/e55p",1],["d/cl30",1],["d/c680",1],["d/h25b",1],["d/lj45",1],["d/f2th",1],["d/glf4",1],["d/glex",1],["d/glf5",1]]},
+        {"origin":"EDDC","destination":"","category":"departure","route":"EDDC22.RO3A.RO","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["d/c172",6],["d/p28a",5],["d/c182",3],["d/be36",2],["d/da42",1],["d/tb20",1],["d/c208",2],["d/pc12",2],["d/be20",1],["d/b350",1],["d/p180",1],["d/c510",1],["d/e50p",1],["d/c550",2],["d/e55p",1],["d/cl30",1],["d/c680",1],["d/h25b",1],["d/lj45",1],["d/f2th",1],["d/glf4",1],["d/glex",1],["d/glf5",1]]},
+        {"origin":"EDDL","destination":"EDDC","category":"arrival","route":"LEG..HERUG..EDDC","altitude":[6000,9000],"speed":250,"method":"random","rate":1.05,"airlines":[["ber/a319",1],["ber/b737",1],["ber/dh8d",1],["gwi/a319",1],["gwi/crj7",1],["gwi/crj9",1],["gwi/crj2",1]]},
+        {"origin":"EDDF","destination":"EDDC","category":"arrival","route":"LEG..HERUG..EDDC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.84,"airlines":[["dlh/a320",1],["dlh/b733",1],["dlh/b735",1],["dlh/e190",1]]},
+        {"origin":"EDDK","destination":"EDDC","category":"arrival","route":"LEG..HERUG..EDDC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["gwi/a319",1],["gwi/crj7",1],["gwi/crj9",1],["gwi/crj2",1]]},
+        {"origin":"EDDS","destination":"EDDC","category":"arrival","route":"KVY..KIRHE..EDDC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["gwi/a319",1],["gwi/crj7",1],["gwi/crj9",1],["gwi/crj2",1]]},
+        {"origin":"LEBL","destination":"EDDC","category":"arrival","route":"KVY..KIRHE..EDDC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["vlg/a319",1],["vlg/a320",1]]},
+        {"origin":"LEPA","destination":"EDDC","category":"arrival","route":"KVY..KIRHE..EDDC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["ber/a321",1],["ber/b738",1]]},
+        {"origin":"","destination":"EDDC","category":"arrival","route":"RO..ZOWUN..EDDC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.21,"airlines":[["afl/su95",1]]},
+        {"origin":"","destination":"EDDC","category":"arrival","route":"NER..AMIKI..EDDC","altitude":[6000,9000],"speed":250,"method":"random","rate":1.25,"airlines":[["ber/b738",4],["gmi/a321",1],["gwi/a319",1]]},
+        {"origin":"","destination":"EDDC","category":"arrival","route":"KVY..KIRHE..EDDC","altitude":[6000,9000],"speed":250,"method":"random","rate":1.25,"airlines":[["ber/b738",2],["dlh/e190",1],["ezy/a319",1],["ezy/a320",1],["isk/dh8c",1]]},
+        {"origin":"","destination":"EDDC","category":"arrival","route":"LEG..HERUG..EDDC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.21,"airlines":[["bcy/rj85",1]]},
+        {"origin":"","destination":"EDDC","category":"arrival","route":"LEG..HERUG..EDDC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.44,"airlines":[["d/c172",6],["d/p28a",5],["d/c182",3],["d/be36",2],["d/da42",1],["d/tb20",1],["d/c208",2],["d/pc12",2],["d/be20",1],["d/b350",1],["d/p180",1],["d/c510",1],["d/e50p",1],["d/c550",2],["d/e55p",1],["d/cl30",1],["d/c680",1],["d/h25b",1],["d/lj45",1],["d/f2th",1],["d/glf4",1],["d/glex",1],["d/glf5",1]]},
+        {"origin":"","destination":"EDDC","category":"arrival","route":"RO..ZOWUN..EDDC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.44,"airlines":[["d/c172",6],["d/p28a",5],["d/c182",3],["d/be36",2],["d/da42",1],["d/tb20",1],["d/c208",2],["d/pc12",2],["d/be20",1],["d/b350",1],["d/p180",1],["d/c510",1],["d/e50p",1],["d/c550",2],["d/e55p",1],["d/cl30",1],["d/c680",1],["d/h25b",1],["d/lj45",1],["d/f2th",1],["d/glf4",1],["d/glex",1],["d/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [51.3436,14.952,51.2019,14.151],
+            [51.2019,14.151,51.1341,13.7678],
+            [50.3666,14.6214,50.9292,13.9957],
+            [50.9292,13.9957,51.1341,13.7678],
+            [50.2012,12.9259,50.9167,13.5716],
+            [50.9167,13.5716,51.1341,13.7678],
+            [51.436,12.4732,51.2211,13.3946],
+            [51.2211,13.3946,51.1341,13.7678]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [51.1247,13.7547,50.9985,13.5817],
+            [51.0551,13.6801,51.0681,13.656],
+            [50.9919,13.5937,51.005,13.5697],
+            [51.142,13.7785,51.2679,13.9525],
+            [51.2115,13.8533,51.1985,13.8775],
+            [51.2744,13.9404,51.2614,13.9646]
+        ]}
+    ]
+}

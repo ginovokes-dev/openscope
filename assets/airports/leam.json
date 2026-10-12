@@ -1,0 +1,85 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LEAM/",
+    "info": {"country":"ES","city":"Almeria","type":"medium_airport","longestRunwayM":3200,"frequencies":{"twr":"118.350","app":"118.350","gnd":"121.700"}},
+    "radio": {"twr":"Almeria Tower","app":"Almeria Approach","dep":"Almeria Departure"},
+    "icao": "LEAM",
+    "iata": "LEI",
+    "magnetic_north": 0.9,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [36.843899,-2.3701,"70ft"],
+    "rangeRings": {"enabled":true,"center":[36.843899,-2.3701],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":280,"speed":7},
+    "arrivalRunway": "25",
+    "departureRunway": "25",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[37.3834,-2.3595],[37.3628,-2.1854],[37.3069,-2.0238],[37.2194,-1.8859],[37.1063,-1.7809],[36.9754,-1.7162],[36.8354,-1.6959],[36.6961,-1.7216],[36.5668,-1.7915],[36.4564,-1.9009],[36.3724,-2.0422],[36.3206,-2.2058],[36.3044,-2.3807],[36.325,-2.5548],[36.3809,-2.7164],[36.4684,-2.8543],[36.5815,-2.9593],[36.7124,-3.024],[36.8524,-3.0443],[36.9917,-3.0186],[37.121,-2.9487],[37.2314,-2.8393],[37.3154,-2.698],[37.3672,-2.5344]]}
+    ],
+    "fixes": {
+        "LEAM": [36.8439,-2.3701],
+        "MIPCE": [37.54747,-2.29482],
+        "NASPO": [37.09282,-2.34346],
+        "PEVLO": [37.25454,-1.65225],
+        "CAWOB": [36.98918,-2.11613],
+        "ETIME": [36.15186,-2.19459],
+        "NONUB": [36.59906,-2.30801],
+        "ARM": [37.0735,-3.80208,"armilla"],
+        "VAKIF": [36.89298,-2.6762],
+        "_RWY0704DME": [36.82057,-2.46523],
+        "_RWY2504DME": [36.86757,-2.27331]
+    },
+    "runways": [
+        {"name":["07","25"],"end":[[36.84009,-2.38565,"26ft"],[36.8481,-2.35294,"70ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "MIPCE2B": {"icao":"MIPCE2B","name":"Mipce Two Bravo","rwy":{"LEAM07":["_RWY2504DME"],"LEAM25":["_RWY0704DME"]},"body":[],"exitPoints":{"MIPCE":["MIPCE"]},"draw":[["LEAM","MIPCE*"]]},
+        "PEVLO2C": {"icao":"PEVLO2C","name":"Pevlo Two Charlie","rwy":{"LEAM07":["_RWY2504DME"],"LEAM25":["_RWY0704DME"]},"body":[],"exitPoints":{"PEVLO":["PEVLO"]},"draw":[["LEAM","PEVLO*"]]},
+        "ETIME1A": {"icao":"ETIME1A","name":"Etime One Alpha","rwy":{"LEAM07":["_RWY2504DME"],"LEAM25":["_RWY0704DME"]},"body":[],"exitPoints":{"ETIME":["ETIME"]},"draw":[["LEAM","ETIME*"]]},
+        "ARM3C": {"icao":"ARM3C","name":"Armilla Three Charlie","rwy":{"LEAM07":["_RWY2504DME"],"LEAM25":["_RWY0704DME"]},"body":[],"exitPoints":{"ARM":["ARM"]},"draw":[["LEAM","ARM*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LEAM","destination":"EGCC","category":"departure","route":"LEAM25.MIPCE2B.MIPCE","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["mon/a321",1],["tvf/b738",1]]},
+        {"origin":"LEAM","destination":"EGKK","category":"departure","route":"LEAM25.MIPCE2B.MIPCE","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["ezy/a319",1],["ezy/a320",1]]},
+        {"origin":"LEAM","destination":"LEZL","category":"departure","route":"LEAM25.ARM3C.ARM","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["tra/b738",1],["aea/at72",1],["aea/at45",1],["aea/at75",1]]},
+        {"origin":"LEAM","destination":"EBCI","category":"departure","route":"LEAM25.MIPCE2B.MIPCE","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["ryr/b738",1]]},
+        {"origin":"LEAM","destination":"EDLV","category":"departure","route":"LEAM25.MIPCE2B.MIPCE","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["ryr/b738",1]]},
+        {"origin":"LEAM","destination":"","category":"departure","route":"LEAM25.MIPCE2B.MIPCE","altitude":"","speed":"","method":"random","rate":2.17,"airlines":[["ryr/b738",3],["mon/a321",1],["tra/b738",1],["aea/at72",1],["aea/at45",1],["aea/at75",1]]},
+        {"origin":"LEAM","destination":"","category":"departure","route":"LEAM25.PEVLO2C.PEVLO","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["ber/b738",1],["vlg/a320",1]]},
+        {"origin":"LEAM","destination":"","category":"departure","route":"LEAM25.PEVLO2C.PEVLO","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"LEAM","destination":"","category":"departure","route":"LEAM25.MIPCE2B.MIPCE","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"EGCC","destination":"LEAM","category":"arrival","route":"MIPCE..NASPO..LEAM","altitude":[6000,9000],"speed":250,"method":"random","rate":0.72,"airlines":[["mon/a321",1],["tvf/b738",1]]},
+        {"origin":"EGKK","destination":"LEAM","category":"arrival","route":"MIPCE..NASPO..LEAM","altitude":[6000,9000],"speed":250,"method":"random","rate":0.72,"airlines":[["ezy/a319",1],["ezy/a320",1]]},
+        {"origin":"LEZL","destination":"LEAM","category":"arrival","route":"ARM..VAKIF..LEAM","altitude":[6000,9000],"speed":250,"method":"random","rate":0.72,"airlines":[["tra/b738",1],["aea/at72",1],["aea/at45",1],["aea/at75",1]]},
+        {"origin":"EBCI","destination":"LEAM","category":"arrival","route":"MIPCE..NASPO..LEAM","altitude":[6000,9000],"speed":250,"method":"random","rate":0.36,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDLV","destination":"LEAM","category":"arrival","route":"MIPCE..NASPO..LEAM","altitude":[6000,9000],"speed":250,"method":"random","rate":0.36,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LEAM","category":"arrival","route":"MIPCE..NASPO..LEAM","altitude":[6000,9000],"speed":250,"method":"random","rate":2.17,"airlines":[["ryr/b738",3],["mon/a321",1],["tra/b738",1],["aea/at72",1],["aea/at45",1],["aea/at75",1]]},
+        {"origin":"","destination":"LEAM","category":"arrival","route":"PEVLO..CAWOB..LEAM","altitude":[6000,9000],"speed":250,"method":"random","rate":0.72,"airlines":[["ber/b738",1],["vlg/a320",1]]},
+        {"origin":"","destination":"LEAM","category":"arrival","route":"PEVLO..CAWOB..LEAM","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"","destination":"LEAM","category":"arrival","route":"MIPCE..NASPO..LEAM","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [37.5475,-2.2948,37.0928,-2.3435],
+            [37.0928,-2.3435,36.8439,-2.3701],
+            [37.2545,-1.6522,36.9892,-2.1161],
+            [36.9892,-2.1161,36.8439,-2.3701],
+            [36.1519,-2.1946,36.5991,-2.308],
+            [36.5991,-2.308,36.8439,-2.3701],
+            [37.0735,-3.8021,36.893,-2.6762],
+            [36.893,-2.6762,36.8439,-2.3701]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [36.8401,-2.3856,36.7912,-2.5845],
+            [36.8061,-2.4815,36.8252,-2.4888],
+            [36.7816,-2.5809,36.8007,-2.5882],
+            [36.8481,-2.3529,36.8967,-2.1538],
+            [36.882,-2.2571,36.8629,-2.2497],
+            [36.9062,-2.1574,36.8871,-2.1501]
+        ]}
+    ]
+}

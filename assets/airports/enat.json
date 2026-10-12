@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ENAT/",
+    "info": {"country":"NO","city":"Alta","type":"medium_airport","longestRunwayM":2184,"frequencies":{"atis":"118.175","twr":"118.100"}},
+    "radio": {"twr":"Alta Tower","app":"Alta Approach","dep":"Alta Departure"},
+    "icao": "ENAT",
+    "iata": "ALF",
+    "magnetic_north": 13.7,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [69.976097,23.3717,"9ft"],
+    "rangeRings": {"enabled":true,"center":[69.976097,23.3717],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":300,"speed":10},
+    "arrivalRunway": "29",
+    "departureRunway": "29",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[70.3693,23.6516],[70.3311,23.9393],[70.2687,24.1882],[70.1863,24.3816],[70.0897,24.5061],[69.9853,24.5533],[69.8802,24.52],[69.7818,24.4084],[69.6965,24.2262],[69.6303,23.9857],[69.5877,23.7034],[69.5715,23.3985],[69.5829,23.0918],[69.6211,22.8041],[69.6835,22.5552],[69.7659,22.3618],[69.8625,22.2373],[69.9669,22.1901],[70.0719,22.2234],[70.1704,22.335],[70.2557,22.5172],[70.3219,22.7577],[70.3645,23.04],[70.3807,23.3449]]}
+    ],
+    "fixes": {
+        "ENAT": [69.9761,23.3717],
+        "BNR": [70.0743,24.9795,"banak"],
+        "JUDIL": [70.0112,23.94633],
+        "KUVOS": [69.52785,22.50315],
+        "POBGE": [69.80955,23.049],
+        "HTK": [69.9264,21.003,"hestvik"],
+        "ALOME": [69.96387,22.78909],
+        "HMF": [70.7042,23.6907,"hammerfest"],
+        "JIJUV": [70.17375,23.4583],
+        "_RWY1104DME": [70.01577,23.17868],
+        "_RWY2904DME": [69.93841,23.55336]
+    },
+    "runways": [
+        {"name":["11","29"],"end":[[69.98144,23.34562,"8ft"],[69.97289,23.38704,"7ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "BNR1F": {"icao":"BNR1F","name":"Banak One Foxtrot","rwy":{"ENAT11":["_RWY2904DME"],"ENAT29":["_RWY1104DME"]},"body":[],"exitPoints":{"BNR":["BNR"]},"draw":[["ENAT","BNR*"]]},
+        "KUVOS2F": {"icao":"KUVOS2F","name":"Kuvos Two Foxtrot","rwy":{"ENAT11":["_RWY2904DME"],"ENAT29":["_RWY1104DME"]},"body":[],"exitPoints":{"KUVOS":["KUVOS"]},"draw":[["ENAT","KUVOS*"]]},
+        "HTK1B": {"icao":"HTK1B","name":"Hestvik One Bravo","rwy":{"ENAT11":["_RWY2904DME"],"ENAT29":["_RWY1104DME"]},"body":[],"exitPoints":{"HTK":["HTK"]},"draw":[["ENAT","HTK*"]]},
+        "HMF1D": {"icao":"HMF1D","name":"Hammerfest One Delta","rwy":{"ENAT11":["_RWY2904DME"],"ENAT29":["_RWY1104DME"]},"body":[],"exitPoints":{"HMF":["HMF"]},"draw":[["ENAT","HMF*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ENAT","destination":"ENTC","category":"departure","route":"ENAT29.HTK1B.HTK","altitude":"","speed":"","method":"random","rate":1.25,"airlines":[["sas/b737",2],["sas/b736",1],["wif/dh8a",1],["wif/dh8b",1],["wif/dh8c",1]]},
+        {"origin":"ENAT","destination":"ENGM","category":"departure","route":"ENAT29.KUVOS2F.KUVOS","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["sas/b737",2],["sas/b736",1]]},
+        {"origin":"ENAT","destination":"ENHF","category":"departure","route":"ENAT29.HMF1D.HMF","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENAT","destination":"ENKR","category":"departure","route":"ENAT29.BNR1F.BNR","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENAT","destination":"ENNA","category":"departure","route":"ENAT29.BNR1F.BNR","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["wif/dh8a",1],["wif/dh8c",1]]},
+        {"origin":"ENAT","destination":"","category":"departure","route":"ENAT29.BNR1F.BNR","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["wif/dh8b",2],["wif/dh8a",1]]},
+        {"origin":"ENAT","destination":"","category":"departure","route":"ENAT29.HTK1B.HTK","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENAT","destination":"","category":"departure","route":"ENAT29.HMF1D.HMF","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["ln/c172",6],["ln/p28a",5],["ln/c182",3],["ln/be36",2],["ln/da42",1],["ln/tb20",1],["ln/c208",2],["ln/pc12",2],["ln/be20",1],["ln/b350",1],["ln/p180",1],["ln/c510",1],["ln/e50p",1],["ln/c550",1],["ln/e55p",1],["ln/cl30",1],["ln/c680",1],["ln/h25b",1],["ln/lj45",1],["ln/f2th",1],["ln/glf4",1],["ln/glex",1],["ln/glf5",1]]},
+        {"origin":"ENTC","destination":"ENAT","category":"arrival","route":"HTK..ALOME..ENAT","altitude":[4000,7000],"speed":250,"method":"random","rate":1.25,"airlines":[["sas/b737",2],["sas/b736",1],["wif/dh8a",1],["wif/dh8b",1],["wif/dh8c",1]]},
+        {"origin":"ENGM","destination":"ENAT","category":"arrival","route":"KUVOS..POBGE..ENAT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.62,"airlines":[["sas/b737",2],["sas/b736",1]]},
+        {"origin":"ENHF","destination":"ENAT","category":"arrival","route":"HMF..JIJUV..ENAT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENKR","destination":"ENAT","category":"arrival","route":"BNR..JUDIL..ENAT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENNA","destination":"ENAT","category":"arrival","route":"BNR..JUDIL..ENAT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["wif/dh8a",1],["wif/dh8c",1]]},
+        {"origin":"","destination":"ENAT","category":"arrival","route":"BNR..JUDIL..ENAT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.62,"airlines":[["wif/dh8b",2],["wif/dh8a",1]]},
+        {"origin":"","destination":"ENAT","category":"arrival","route":"HTK..ALOME..ENAT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"","destination":"ENAT","category":"arrival","route":"HMF..JIJUV..ENAT","altitude":[4000,7000],"speed":250,"method":"random","rate":1.39,"airlines":[["ln/c172",6],["ln/p28a",5],["ln/c182",3],["ln/be36",2],["ln/da42",1],["ln/tb20",1],["ln/c208",2],["ln/pc12",2],["ln/be20",1],["ln/b350",1],["ln/p180",1],["ln/c510",1],["ln/e50p",1],["ln/c550",1],["ln/e55p",1],["ln/cl30",1],["ln/c680",1],["ln/h25b",1],["ln/lj45",1],["ln/f2th",1],["ln/glf4",1],["ln/glex",1],["ln/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [70.0743,24.9795,70.0112,23.9463],
+            [70.0112,23.9463,69.9761,23.3717],
+            [69.5278,22.5031,69.8096,23.049],
+            [69.8096,23.049,69.9761,23.3717],
+            [69.9264,21.003,69.9639,22.7891],
+            [69.9639,22.7891,69.9761,23.3717],
+            [70.7042,23.6907,70.1738,23.4583],
+            [70.1738,23.4583,69.9761,23.3717]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [69.9814,23.3456,70.067,22.9272],
+            [70.0158,23.1218,70.0329,23.152],
+            [70.0584,22.9121,70.0755,22.9424],
+            [69.9729,23.387,69.8864,23.8018],
+            [69.9383,23.6099,69.9212,23.5798],
+            [69.895,23.8168,69.8778,23.7868]
+        ]}
+    ]
+}

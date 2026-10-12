@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VOML/",
+    "info": {"country":"IN","city":"Mangaluru","type":"large_airport","longestRunwayM":2449,"frequencies":{"twr":"122.100","app":"122.100"}},
+    "radio": {"twr":"Mangaluru Tower","app":"Mangaluru Approach","dep":"Mangaluru Departure"},
+    "icao": "VOML",
+    "iata": "IXE",
+    "magnetic_north": -1.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [12.95471,74.886812,"337ft"],
+    "rangeRings": {"enabled":true,"center":[12.95471,74.886812],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":70,"speed":10},
+    "arrivalRunway": "06",
+    "departureRunway": "06",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[13.3593,74.8788],[13.3476,74.9866],[13.309,75.0875],[13.2463,75.1748],[13.1637,75.2424],[13.0669,75.2858],[12.9625,75.302],[12.8575,75.2899],[12.7591,75.2504],[12.6741,75.186],[12.6082,75.1013],[12.5659,75.002],[12.5501,74.8948],[12.5619,74.7871],[12.6004,74.6861],[12.6631,74.5989],[12.7457,74.5312],[12.8425,74.4878],[12.9469,74.4716],[13.0519,74.4837],[13.1503,74.5233],[13.2353,74.5876],[13.3012,74.6723],[13.3435,74.7717]]}
+    ],
+    "fixes": {
+        "VOML": [12.95471,74.88681],
+        "WIFEG": [13.00513,75.43637],
+        "HUNKO": [12.97344,75.09099],
+        "ONUME": [12.48879,75.16272],
+        "DEGDI": [12.7816,74.98932],
+        "OZINI": [12.59131,74.47982],
+        "ESEMO": [12.81969,74.7356],
+        "SILEM": [13.26324,74.43464],
+        "EVAVU": [13.06934,74.71881],
+        "_RWY0604DME": [12.91402,74.81951],
+        "_RWY2404DME": [12.99523,74.95403]
+    },
+    "runways": [
+        {"name":["06","24"],"end":[[12.94911,74.87762,"307ft"],[12.96015,74.89591,"308ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "WIFEG3C": {"icao":"WIFEG3C","name":"Wifeg Three Charlie","rwy":{"VOML06":["_RWY2404DME"],"VOML24":["_RWY0604DME"]},"body":[],"exitPoints":{"WIFEG":["WIFEG"]},"draw":[["VOML","WIFEG*"]]},
+        "ONUME1C": {"icao":"ONUME1C","name":"Onume One Charlie","rwy":{"VOML06":["_RWY2404DME"],"VOML24":["_RWY0604DME"]},"body":[],"exitPoints":{"ONUME":["ONUME"]},"draw":[["VOML","ONUME*"]]},
+        "OZINI1E": {"icao":"OZINI1E","name":"Ozini One Echo","rwy":{"VOML06":["_RWY2404DME"],"VOML24":["_RWY0604DME"]},"body":[],"exitPoints":{"OZINI":["OZINI"]},"draw":[["VOML","OZINI*"]]},
+        "SILEM3E": {"icao":"SILEM3E","name":"Silem Three Echo","rwy":{"VOML06":["_RWY2404DME"],"VOML24":["_RWY0604DME"]},"body":[],"exitPoints":{"SILEM":["SILEM"]},"draw":[["VOML","SILEM*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"VOML","destination":"VABB","category":"departure","route":"VOML06.SILEM3E.SILEM","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["aic/a321",1],["axb/b738",1],["jai/b738",1],["sej/b737",1]]},
+        {"origin":"VOML","destination":"VOBL","category":"departure","route":"VOML06.WIFEG3C.WIFEG","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["jai/b738",1],["sej/dh8d",1],["aic/at72",1],["aic/at45",1],["aic/at75",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"VOML","destination":"OMDB","category":"departure","route":"VOML06.SILEM3E.SILEM","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["axb/b738",1],["jai/b738",1]]},
+        {"origin":"VOML","destination":"OBBI","category":"departure","route":"VOML06.SILEM3E.SILEM","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["axb/b738",1]]},
+        {"origin":"VOML","destination":"OEDF","category":"departure","route":"VOML06.SILEM3E.SILEM","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["axb/b738",1]]},
+        {"origin":"VOML","destination":"","category":"departure","route":"VOML06.ONUME1C.ONUME","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["axb/b738",1]]},
+        {"origin":"VOML","destination":"","category":"departure","route":"VOML06.SILEM3E.SILEM","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["axb/b738",4]]},
+        {"origin":"VOML","destination":"","category":"departure","route":"VOML06.SILEM3E.SILEM","altitude":"","speed":"","method":"random","rate":1.5,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"VABB","destination":"VOML","category":"arrival","route":"SILEM..EVAVU..VOML","altitude":[4000,7000],"speed":250,"method":"random","rate":1.13,"airlines":[["aic/a321",1],["axb/b738",1],["jai/b738",1],["sej/b737",1]]},
+        {"origin":"VOBL","destination":"VOML","category":"arrival","route":"WIFEG..HUNKO..VOML","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["jai/b738",1],["sej/dh8d",1],["aic/at72",1],["aic/at45",1],["aic/at75",1],["sej/dh8b",1],["sej/dh8c",1]]},
+        {"origin":"OMDB","destination":"VOML","category":"arrival","route":"SILEM..EVAVU..VOML","altitude":[4000,7000],"speed":250,"method":"random","rate":0.56,"airlines":[["axb/b738",1],["jai/b738",1]]},
+        {"origin":"OBBI","destination":"VOML","category":"arrival","route":"SILEM..EVAVU..VOML","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["axb/b738",1]]},
+        {"origin":"OEDF","destination":"VOML","category":"arrival","route":"SILEM..EVAVU..VOML","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["axb/b738",1]]},
+        {"origin":"","destination":"VOML","category":"arrival","route":"ONUME..DEGDI..VOML","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["axb/b738",1]]},
+        {"origin":"","destination":"VOML","category":"arrival","route":"SILEM..EVAVU..VOML","altitude":[4000,7000],"speed":250,"method":"random","rate":1.13,"airlines":[["axb/b738",4]]},
+        {"origin":"","destination":"VOML","category":"arrival","route":"SILEM..EVAVU..VOML","altitude":[4000,7000],"speed":250,"method":"random","rate":1.5,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [13.0051,75.4364,12.9734,75.091],
+            [12.9734,75.091,12.9547,74.8868],
+            [12.4888,75.1627,12.7816,74.9893],
+            [12.7816,74.9893,12.9547,74.8868],
+            [12.5913,74.4798,12.8197,74.7356],
+            [12.8197,74.7356,12.9547,74.8868],
+            [13.2632,74.4346,13.0693,74.7188],
+            [13.0693,74.7188,12.9547,74.8868]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [12.9491,74.8776,12.8614,74.7324],
+            [12.8968,74.8104,12.9137,74.7996],
+            [12.8529,74.7378,12.8699,74.727],
+            [12.9602,74.8959,13.0478,75.0412],
+            [13.0125,74.9632,12.9955,74.974],
+            [13.0563,75.0358,13.0393,75.0466]
+        ]}
+    ]
+}

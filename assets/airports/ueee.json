@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/UEEE/",
+    "info": {"country":"RU","city":"Yakutsk","type":"large_airport","longestRunwayM":3400,"frequencies":{"atis":"126.200","twr":"120.000","app":"129.300","gnd":"121.700"}},
+    "radio": {"twr":"Yakutsk Tower","app":"Yakutsk Approach","dep":"Yakutsk Departure"},
+    "icao": "UEEE",
+    "iata": "YKS",
+    "magnetic_north": -16.4,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [62.0933,129.770996,"325ft"],
+    "rangeRings": {"enabled":true,"center":[62.0933,129.770996],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":250,"speed":5},
+    "arrivalRunway": "23L",
+    "departureRunway": "23L",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[62.6109,129.4455],[62.6327,129.7428],[62.6178,130.0421],[62.5671,130.3229],[62.4841,130.5661],[62.3744,130.7551],[62.2456,130.877],[62.1065,130.9235],[61.9664,130.8916],[61.835,130.7832],[61.7212,130.6059],[61.6327,130.3717],[61.5757,130.0965],[61.5539,129.7992],[61.5688,129.4999],[61.6195,129.2191],[61.7025,128.9759],[61.8122,128.7869],[61.941,128.665],[62.0801,128.6184],[62.2202,128.6504],[62.3516,128.7588],[62.4654,128.9361],[62.5539,129.1703]]}
+    ],
+    "fixes": {
+        "UEEE": [62.0933,129.771],
+        "JEWNA": [62.79916,129.728],
+        "NIKEC": [62.34303,129.75579],
+        "BICFU": [62.12456,131.27827],
+        "PURDU": [62.10436,130.30426],
+        "ACIFA": [61.38843,129.86157],
+        "VIVUS": [61.84392,129.80304],
+        "CUPGI": [61.84496,128.35862],
+        "PANFI": [62.00544,129.2713],
+        "HASOL": [62.52283,128.57345],
+        "DISNO": [62.24526,129.34731],
+        "_RWY05R04DME": [62.02852,129.67195],
+        "_RWY23L04DME": [62.15963,129.88143]
+    },
+    "runways": [
+        {"name":["05R","23L"],"end":[[62.0819,129.757,"322ft"],[62.1063,129.79601,"315ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "JEWNA2B": {"icao":"JEWNA2B","name":"Jewna Two Bravo","rwy":{"UEEE05R":["_RWY23L04DME"],"UEEE23L":["_RWY05R04DME"]},"body":[],"exitPoints":{"JEWNA":["JEWNA"]},"draw":[["UEEE","JEWNA*"]]},
+        "BICFU3B": {"icao":"BICFU3B","name":"Bicfu Three Bravo","rwy":{"UEEE05R":["_RWY23L04DME"],"UEEE23L":["_RWY05R04DME"]},"body":[],"exitPoints":{"BICFU":["BICFU"]},"draw":[["UEEE","BICFU*"]]},
+        "ACIFA1F": {"icao":"ACIFA1F","name":"Acifa One Foxtrot","rwy":{"UEEE05R":["_RWY23L04DME"],"UEEE23L":["_RWY05R04DME"]},"body":[],"exitPoints":{"ACIFA":["ACIFA"]},"draw":[["UEEE","ACIFA*"]]},
+        "CUPGI2F": {"icao":"CUPGI2F","name":"Cupgi Two Foxtrot","rwy":{"UEEE05R":["_RWY23L04DME"],"UEEE23L":["_RWY05R04DME"]},"body":[],"exitPoints":{"CUPGI":["CUPGI"]},"draw":[["UEEE","CUPGI*"]]},
+        "HASOL1A": {"icao":"HASOL1A","name":"Hasol One Alpha","rwy":{"UEEE05R":["_RWY23L04DME"],"UEEE23L":["_RWY05R04DME"]},"body":[],"exitPoints":{"HASOL":["HASOL"]},"draw":[["UEEE","HASOL*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"UEEE","destination":"UHHH","category":"departure","route":"UEEE23L.ACIFA1F.ACIFA","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["syl/b737",1],["syl/dh8d",1],["syl/su95",1]]},
+        {"origin":"UEEE","destination":"UIII","category":"departure","route":"UEEE23L.CUPGI2F.CUPGI","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["sbi/b738",1],["syl/b737",1],["syl/b738",1]]},
+        {"origin":"UEEE","destination":"UERR","category":"departure","route":"UEEE23L.HASOL1A.HASOL","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["dru/an24",1],["dru/t134",1]]},
+        {"origin":"UEEE","destination":"UHWW","category":"departure","route":"UEEE23L.ACIFA1F.ACIFA","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["afl/a319",1],["syl/su95",1]]},
+        {"origin":"UEEE","destination":"UUDD","category":"departure","route":"UEEE23L.HASOL1A.HASOL","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["tso/b763",1],["tso/t204",1]]},
+        {"origin":"UEEE","destination":"ZBAA","category":"departure","route":"UEEE23L.ACIFA1F.ACIFA","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["sbi/b738",1],["syl/b737",1]]},
+        {"origin":"UEEE","destination":"","category":"departure","route":"UEEE23L.JEWNA2B.JEWNA","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["syl/dh8d",1]]},
+        {"origin":"UEEE","destination":"","category":"departure","route":"UEEE23L.ACIFA1F.ACIFA","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["syl/dh8d",1],["syl/su95",1]]},
+        {"origin":"UEEE","destination":"","category":"departure","route":"UEEE23L.CUPGI2F.CUPGI","altitude":"","speed":"","method":"random","rate":1.02,"airlines":[["syl/dh8d",2],["dru/an24",1],["svr/a320",1]]},
+        {"origin":"UEEE","destination":"","category":"departure","route":"UEEE23L.HASOL1A.HASOL","altitude":"","speed":"","method":"random","rate":1.02,"airlines":[["syl/b738",2],["afl/b738",1],["dru/an24",1]]},
+        {"origin":"UEEE","destination":"","category":"departure","route":"UEEE23L.CUPGI2F.CUPGI","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",2],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]},
+        {"origin":"UEEE","destination":"","category":"departure","route":"UEEE23L.JEWNA2B.JEWNA","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",2],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]},
+        {"origin":"UHHH","destination":"UEEE","category":"arrival","route":"ACIFA..VIVUS..UEEE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.76,"airlines":[["syl/b737",1],["syl/dh8d",1],["syl/su95",1]]},
+        {"origin":"UIII","destination":"UEEE","category":"arrival","route":"CUPGI..PANFI..UEEE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.76,"airlines":[["sbi/b738",1],["syl/b737",1],["syl/b738",1]]},
+        {"origin":"UERR","destination":"UEEE","category":"arrival","route":"HASOL..DISNO..UEEE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["dru/an24",1],["dru/t134",1]]},
+        {"origin":"UHWW","destination":"UEEE","category":"arrival","route":"ACIFA..VIVUS..UEEE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["afl/a319",1],["syl/su95",1]]},
+        {"origin":"UUDD","destination":"UEEE","category":"arrival","route":"HASOL..DISNO..UEEE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["tso/b763",1],["tso/t204",1]]},
+        {"origin":"ZBAA","destination":"UEEE","category":"arrival","route":"ACIFA..VIVUS..UEEE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["sbi/b738",1],["syl/b737",1]]},
+        {"origin":"","destination":"UEEE","category":"arrival","route":"JEWNA..NIKEC..UEEE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.25,"airlines":[["syl/dh8d",1]]},
+        {"origin":"","destination":"UEEE","category":"arrival","route":"ACIFA..VIVUS..UEEE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["syl/dh8d",1],["syl/su95",1]]},
+        {"origin":"","destination":"UEEE","category":"arrival","route":"CUPGI..PANFI..UEEE","altitude":[6000,9000],"speed":250,"method":"random","rate":1.02,"airlines":[["syl/dh8d",2],["dru/an24",1],["svr/a320",1]]},
+        {"origin":"","destination":"UEEE","category":"arrival","route":"HASOL..DISNO..UEEE","altitude":[6000,9000],"speed":250,"method":"random","rate":1.02,"airlines":[["syl/b738",2],["afl/b738",1],["dru/an24",1]]},
+        {"origin":"","destination":"UEEE","category":"arrival","route":"CUPGI..PANFI..UEEE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",2],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]},
+        {"origin":"","destination":"UEEE","category":"arrival","route":"JEWNA..NIKEC..UEEE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",2],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [62.7992,129.728,62.343,129.7558],
+            [62.343,129.7558,62.0933,129.771],
+            [62.1246,131.2783,62.1044,130.3043],
+            [62.1044,130.3043,62.0933,129.771],
+            [61.3884,129.8616,61.8439,129.803],
+            [61.8439,129.803,62.0933,129.771],
+            [61.845,128.3586,62.0054,129.2713],
+            [62.0054,129.2713,62.0933,129.771],
+            [62.5228,128.5734,62.2453,129.3473],
+            [62.2453,129.3473,62.0933,129.771]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [62.0819,129.757,61.9483,129.5449],
+            [62.0092,129.6678,62.0211,129.6337],
+            [61.9424,129.5619,61.9543,129.5279],
+            [62.1063,129.796,62.2395,130.0101],
+            [62.1789,129.8857,62.167,129.92],
+            [62.2455,129.9929,62.2335,130.0273]
+        ]}
+    ]
+}

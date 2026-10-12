@@ -1,0 +1,92 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/UWGG/",
+    "info": {"country":"RU","city":"Nizhny Novgorod","type":"large_airport","longestRunwayM":3000,"frequencies":{"atis":"127.800","twr":"120.400","app":"124.700","gnd":"121.800"}},
+    "radio": {"twr":"Nizhny Novgorod Tower","app":"Nizhny Novgorod Approach","dep":"Nizhny Novgorod Departure"},
+    "icao": "UWGG",
+    "iata": "GOJ",
+    "magnetic_north": 13.6,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [56.227351,43.785152,"256ft"],
+    "rangeRings": {"enabled":true,"center":[56.227351,43.785152],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":0,"speed":8},
+    "arrivalRunway": "36R",
+    "departureRunway": "36R",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[56.6207,43.9563],[56.5827,44.1336],[56.5204,44.2872],[56.4382,44.4065],[56.3416,44.4835],[56.2372,44.5129],[56.1322,44.4927],[56.0336,44.4243],[55.9483,44.3123],[55.8819,44.1644],[55.8391,43.9907],[55.8228,43.8029],[55.834,43.614],[55.872,43.4367],[55.9343,43.2831],[56.0165,43.1638],[56.1131,43.0868],[56.2175,43.0574],[56.3225,43.0776],[56.4211,43.146],[56.5064,43.258],[56.5728,43.4059],[56.6156,43.5796],[56.6319,43.7674]]}
+    ],
+    "fixes": {
+        "UWGG": [56.22735,43.78515],
+        "OK": [56,45.0333,"lyskovo"],
+        "JOCFA": [56.16512,44.12681],
+        "MB": [55.6,43.7833,"chernukha"],
+        "SOZUL": [56.02749,43.78456],
+        "OSEZO": [56.17502,42.82205],
+        "EZEFO": [56.20791,43.42732],
+        "ZUCUP": [56.75092,44.00735],
+        "PEDNE": [56.42188,43.86771],
+        "_RWY18L04DME": [56.30688,43.81399],
+        "_RWY36R04DME": [56.15422,43.758],
+        "_RWY18R04DME": [56.30726,43.81081],
+        "_RWY36L04DME": [56.15203,43.75359]
+    },
+    "runways": [
+        {"name":["18L","36R"],"end":[[56.2416,43.79,"253ft"],[56.2195,43.7819,"253ft"]],"ils":[true,true]},
+        {"name":["18R","36L"],"end":[[56.242,43.7867,"256ft"],[56.2173,43.7776,"254ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "OK1D": {"icao":"OK1D","name":"Lyskovo One Delta","rwy":{"UWGG18L":["_RWY36R04DME"],"UWGG36R":["_RWY18L04DME"],"UWGG18R":["_RWY36L04DME"],"UWGG36L":["_RWY18R04DME"]},"body":[],"exitPoints":{"OK":["OK"]},"draw":[["UWGG","OK*"]]},
+        "MB2E": {"icao":"MB2E","name":"Chernukha Two Echo","rwy":{"UWGG18L":["_RWY36R04DME"],"UWGG36R":["_RWY18L04DME"],"UWGG18R":["_RWY36L04DME"],"UWGG36L":["_RWY18R04DME"]},"body":[],"exitPoints":{"MB":["MB"]},"draw":[["UWGG","MB*"]]},
+        "OSEZO1E": {"icao":"OSEZO1E","name":"Osezo One Echo","rwy":{"UWGG18L":["_RWY36R04DME"],"UWGG36R":["_RWY18L04DME"],"UWGG18R":["_RWY36L04DME"],"UWGG36L":["_RWY18R04DME"]},"body":[],"exitPoints":{"OSEZO":["OSEZO"]},"draw":[["UWGG","OSEZO*"]]},
+        "ZUCUP1B": {"icao":"ZUCUP1B","name":"Zucup One Bravo","rwy":{"UWGG18L":["_RWY36R04DME"],"UWGG36R":["_RWY18L04DME"],"UWGG18R":["_RWY36L04DME"],"UWGG36L":["_RWY18R04DME"]},"body":[],"exitPoints":{"ZUCUP":["ZUCUP"]},"draw":[["UWGG","ZUCUP*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"UWGG","destination":"LKPR","category":"departure","route":"UWGG36R.OSEZO1E.OSEZO","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["csa/a320",1],["svr/a320",1]]},
+        {"origin":"UWGG","destination":"UUDD","category":"departure","route":"UWGG36R.OSEZO1E.OSEZO","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["sbi/a319",1],["svr/a320",1]]},
+        {"origin":"UWGG","destination":"UUEE","category":"departure","route":"UWGG36R.OSEZO1E.OSEZO","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["afl/a320",1],["afl/su95",1]]},
+        {"origin":"UWGG","destination":"EDDF","category":"departure","route":"UWGG36R.OSEZO1E.OSEZO","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["dlh/a319",1]]},
+        {"origin":"UWGG","destination":"OMDW","category":"departure","route":"UWGG36R.MB2E.MB","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["svr/a321",1]]},
+        {"origin":"UWGG","destination":"","category":"departure","route":"UWGG36R.OK1D.OK","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["svr/a320",4]]},
+        {"origin":"UWGG","destination":"","category":"departure","route":"UWGG36R.MB2E.MB","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["svr/a320",1]]},
+        {"origin":"UWGG","destination":"","category":"departure","route":"UWGG36R.ZUCUP1B.ZUCUP","altitude":"","speed":"","method":"random","rate":1.5,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",1],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]},
+        {"origin":"LKPR","destination":"UWGG","category":"arrival","route":"OSEZO..EZEFO..UWGG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.69,"airlines":[["csa/a320",1],["svr/a320",1]]},
+        {"origin":"UUDD","destination":"UWGG","category":"arrival","route":"OSEZO..EZEFO..UWGG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.69,"airlines":[["sbi/a319",1],["svr/a320",1]]},
+        {"origin":"UUEE","destination":"UWGG","category":"arrival","route":"OSEZO..EZEFO..UWGG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.69,"airlines":[["afl/a320",1],["afl/su95",1]]},
+        {"origin":"EDDF","destination":"UWGG","category":"arrival","route":"OSEZO..EZEFO..UWGG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.35,"airlines":[["dlh/a319",1]]},
+        {"origin":"OMDW","destination":"UWGG","category":"arrival","route":"MB..SOZUL..UWGG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.35,"airlines":[["svr/a321",1]]},
+        {"origin":"","destination":"UWGG","category":"arrival","route":"OK..JOCFA..UWGG","altitude":[4000,7000],"speed":250,"method":"random","rate":1.39,"airlines":[["svr/a320",4]]},
+        {"origin":"","destination":"UWGG","category":"arrival","route":"MB..SOZUL..UWGG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.35,"airlines":[["svr/a320",1]]},
+        {"origin":"","destination":"UWGG","category":"arrival","route":"ZUCUP..PEDNE..UWGG","altitude":[4000,7000],"speed":250,"method":"random","rate":1.5,"airlines":[["ra/c172",6],["ra/p28a",5],["ra/c182",3],["ra/be36",2],["ra/da42",1],["ra/tb20",1],["ra/c208",2],["ra/pc12",2],["ra/be20",1],["ra/b350",1],["ra/p180",1],["ra/c510",1],["ra/e50p",1],["ra/c550",1],["ra/e55p",1],["ra/cl30",1],["ra/c680",1],["ra/h25b",1],["ra/lj45",1],["ra/f2th",1],["ra/glf4",1],["ra/glex",1],["ra/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [56,45.0333,56.1651,44.1268],
+            [56.1651,44.1268,56.2274,43.7852],
+            [55.6,43.7833,56.0275,43.7846],
+            [56.0275,43.7846,56.2274,43.7852],
+            [56.175,42.8221,56.2079,43.4273],
+            [56.2079,43.4273,56.2274,43.7852],
+            [56.7509,44.0073,56.4219,43.8677],
+            [56.4219,43.8677,56.2274,43.7852]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [56.2416,43.79,56.4048,43.8501],
+            [56.3252,43.8023,56.3212,43.8377],
+            [56.4068,43.8324,56.4028,43.8678],
+            [56.2195,43.7819,56.0563,43.7223],
+            [56.1359,43.7696,56.1399,43.7345],
+            [56.0543,43.7398,56.0583,43.7048],
+            [56.242,43.7867,56.4052,43.8471],
+            [56.3256,43.7992,56.3216,43.8345],
+            [56.4072,43.8294,56.4031,43.8648],
+            [56.2173,43.7776,56.0541,43.7177],
+            [56.1337,43.7652,56.1377,43.73],
+            [56.0521,43.7353,56.0561,43.7002]
+        ]}
+    ]
+}

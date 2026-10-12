@@ -1,0 +1,91 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LPMA/",
+    "info": {"country":"PT","city":"Funchal","type":"large_airport","longestRunwayM":2777,"frequencies":{"twr":"118.350","app":"119.200"}},
+    "radio": {"twr":"Cristiano Ronaldo Tower","app":"Cristiano Ronaldo Approach","dep":"Cristiano Ronaldo Departure"},
+    "icao": "LPMA",
+    "iata": "FNC",
+    "magnetic_north": -3.6,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [32.697812,-16.774613,"192ft"],
+    "rangeRings": {"enabled":true,"center":[32.697812,-16.774613],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":240,"speed":8},
+    "arrivalRunway": "23",
+    "departureRunway": "23",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[33.2363,-16.8149],[33.2268,-16.6479],[33.1811,-16.4895],[33.1026,-16.3506],[32.9964,-16.2405],[32.8699,-16.1669],[32.7317,-16.1347],[32.5912,-16.1461],[32.4579,-16.2003],[32.341,-16.2936],[32.2484,-16.4198],[32.1864,-16.5701],[32.1593,-16.7344],[32.1689,-16.9014],[32.2145,-17.0597],[32.2931,-17.1986],[32.3992,-17.3087],[32.5257,-17.3823],[32.6639,-17.4146],[32.8045,-17.4032],[32.9377,-17.3489],[33.0547,-17.2556],[33.1473,-17.1294],[33.2092,-16.9791]]}
+    ],
+    "fixes": {
+        "LPMA": [32.69781,-16.77461],
+        "UNEHE": [33.27179,-16.28582],
+        "IRERO": [32.90088,-16.60168],
+        "PELAK": [32.01406,-16.56497],
+        "GEGEJ": [32.4559,-16.70044],
+        "UBAZA": [32.52988,-17.58966],
+        "TIDOJ": [32.6384,-17.06297],
+        "MOTOJ": [33.12468,-17.44306],
+        "EGOBU": [32.84884,-17.01111],
+        "_RWY0504DME": [32.64242,-16.83917],
+        "_RWY2304DME": [32.75333,-16.70958]
+    },
+    "runways": [
+        {"name":["05","23"],"end":[[32.68994,-16.7837,"147ft"],[32.70584,-16.76512,"192ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "UNEHE2E": {"icao":"UNEHE2E","name":"Unehe Two Echo","rwy":{"LPMA05":["_RWY2304DME"],"LPMA23":["_RWY0504DME"]},"body":[],"exitPoints":{"UNEHE":["UNEHE"]},"draw":[["LPMA","UNEHE*"]]},
+        "PELAK3B": {"icao":"PELAK3B","name":"Pelak Three Bravo","rwy":{"LPMA05":["_RWY2304DME"],"LPMA23":["_RWY0504DME"]},"body":[],"exitPoints":{"PELAK":["PELAK"]},"draw":[["LPMA","PELAK*"]]},
+        "UBAZA2F": {"icao":"UBAZA2F","name":"Ubaza Two Foxtrot","rwy":{"LPMA05":["_RWY2304DME"],"LPMA23":["_RWY0504DME"]},"body":[],"exitPoints":{"UBAZA":["UBAZA"]},"draw":[["LPMA","UBAZA*"]]},
+        "MOTOJ3A": {"icao":"MOTOJ3A","name":"Motoj Three Alpha","rwy":{"LPMA05":["_RWY2304DME"],"LPMA23":["_RWY0504DME"]},"body":[],"exitPoints":{"MOTOJ":["MOTOJ"]},"draw":[["LPMA","MOTOJ*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LPMA","destination":"EGKK","category":"departure","route":"LPMA23.UNEHE2E.UNEHE","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["ezy/a319",1],["ezy/a320",1],["mon/a321",1],["tap/a319",1],["tap/a320",1],["tvf/b752",1]]},
+        {"origin":"LPMA","destination":"LPPT","category":"departure","route":"LPMA23.UNEHE2E.UNEHE","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["ezy/a319",1],["tap/a319",1],["tap/a320",1],["tap/a321",1],["tap/a332",1],["tap/f100",1]]},
+        {"origin":"LPMA","destination":"LPPR","category":"departure","route":"LPMA23.UNEHE2E.UNEHE","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["tap/a319",1],["tap/a320",1],["tap/f100",1],["tvf/b738",1]]},
+        {"origin":"LPMA","destination":"EDDL","category":"departure","route":"LPMA23.UNEHE2E.UNEHE","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["ber/a321",1],["ber/b738",1],["cfg/a320",1]]},
+        {"origin":"LPMA","destination":"EGBB","category":"departure","route":"LPMA23.UNEHE2E.UNEHE","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["mon/a320",1],["mon/a321",1],["tvf/b752",1]]},
+        {"origin":"LPMA","destination":"EGCC","category":"departure","route":"LPMA23.UNEHE2E.UNEHE","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["exs/b733",1],["exs/b752",1],["tvf/b752",1]]},
+        {"origin":"LPMA","destination":"","category":"departure","route":"LPMA23.UNEHE2E.UNEHE","altitude":"","speed":"","method":"random","rate":3.47,"airlines":[["hlx/b738",5],["cfg/a320",3],["ber/b738",2],["aaf/a320",1],["ber/a320",1],["ber/a321",1],["cfg/a321",1],["cfg/b752",1],["exs/b733",1],["exs/b738",1],["ezy/a320",1],["gmi/a319",1]]},
+        {"origin":"LPMA","destination":"","category":"departure","route":"LPMA23.PELAK3B.PELAK","altitude":"","speed":"","method":"random","rate":0.14,"airlines":[["ibb/dh8d",1]]},
+        {"origin":"LPMA","destination":"","category":"departure","route":"LPMA23.UBAZA2F.UBAZA","altitude":"","speed":"","method":"random","rate":0.14,"airlines":[["tap/a332",1]]},
+        {"origin":"LPMA","destination":"","category":"departure","route":"LPMA23.MOTOJ3A.MOTOJ","altitude":"","speed":"","method":"random","rate":0.14,"airlines":[["ibb/dh8d",1]]},
+        {"origin":"LPMA","destination":"","category":"departure","route":"LPMA23.PELAK3B.PELAK","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["cs/c172",6],["cs/p28a",5],["cs/c182",3],["cs/be36",2],["cs/da42",1],["cs/tb20",1],["cs/c208",2],["cs/pc12",2],["cs/be20",1],["cs/b350",1],["cs/p180",1],["cs/c510",1],["cs/e50p",1],["cs/c550",2],["cs/e55p",1],["cs/cl30",1],["cs/c680",1],["cs/h25b",1],["cs/lj45",1],["cs/f2th",1],["cs/glf4",1],["cs/glex",1],["cs/glf5",1]]},
+        {"origin":"LPMA","destination":"","category":"departure","route":"LPMA23.MOTOJ3A.MOTOJ","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["cs/c172",6],["cs/p28a",5],["cs/c182",3],["cs/be36",2],["cs/da42",1],["cs/tb20",1],["cs/c208",2],["cs/pc12",2],["cs/be20",1],["cs/b350",1],["cs/p180",1],["cs/c510",1],["cs/e50p",1],["cs/c550",2],["cs/e55p",1],["cs/cl30",1],["cs/c680",1],["cs/h25b",1],["cs/lj45",1],["cs/f2th",1],["cs/glf4",1],["cs/glex",1],["cs/glf5",1]]},
+        {"origin":"EGKK","destination":"LPMA","category":"arrival","route":"UNEHE..IRERO..LPMA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.87,"airlines":[["ezy/a319",1],["ezy/a320",1],["mon/a321",1],["tap/a319",1],["tap/a320",1],["tvf/b752",1]]},
+        {"origin":"LPPT","destination":"LPMA","category":"arrival","route":"UNEHE..IRERO..LPMA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.87,"airlines":[["ezy/a319",1],["tap/a319",1],["tap/a320",1],["tap/a321",1],["tap/a332",1],["tap/f100",1]]},
+        {"origin":"LPPR","destination":"LPMA","category":"arrival","route":"UNEHE..IRERO..LPMA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.58,"airlines":[["tap/a319",1],["tap/a320",1],["tap/f100",1],["tvf/b738",1]]},
+        {"origin":"EDDL","destination":"LPMA","category":"arrival","route":"UNEHE..IRERO..LPMA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["ber/a321",1],["ber/b738",1],["cfg/a320",1]]},
+        {"origin":"EGBB","destination":"LPMA","category":"arrival","route":"UNEHE..IRERO..LPMA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["mon/a320",1],["mon/a321",1],["tvf/b752",1]]},
+        {"origin":"EGCC","destination":"LPMA","category":"arrival","route":"UNEHE..IRERO..LPMA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["exs/b733",1],["exs/b752",1],["tvf/b752",1]]},
+        {"origin":"","destination":"LPMA","category":"arrival","route":"UNEHE..IRERO..LPMA","altitude":[6000,9000],"speed":250,"method":"random","rate":3.47,"airlines":[["hlx/b738",5],["cfg/a320",3],["ber/b738",2],["aaf/a320",1],["ber/a320",1],["ber/a321",1],["cfg/a321",1],["cfg/b752",1],["exs/b733",1],["exs/b738",1],["ezy/a320",1],["gmi/a319",1]]},
+        {"origin":"","destination":"LPMA","category":"arrival","route":"PELAK..GEGEJ..LPMA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.14,"airlines":[["ibb/dh8d",1]]},
+        {"origin":"","destination":"LPMA","category":"arrival","route":"UBAZA..TIDOJ..LPMA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.14,"airlines":[["tap/a332",1]]},
+        {"origin":"","destination":"LPMA","category":"arrival","route":"MOTOJ..EGOBU..LPMA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.14,"airlines":[["ibb/dh8d",1]]},
+        {"origin":"","destination":"LPMA","category":"arrival","route":"PELAK..GEGEJ..LPMA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["cs/c172",6],["cs/p28a",5],["cs/c182",3],["cs/be36",2],["cs/da42",1],["cs/tb20",1],["cs/c208",2],["cs/pc12",2],["cs/be20",1],["cs/b350",1],["cs/p180",1],["cs/c510",1],["cs/e50p",1],["cs/c550",2],["cs/e55p",1],["cs/cl30",1],["cs/c680",1],["cs/h25b",1],["cs/lj45",1],["cs/f2th",1],["cs/glf4",1],["cs/glex",1],["cs/glf5",1]]},
+        {"origin":"","destination":"LPMA","category":"arrival","route":"MOTOJ..EGOBU..LPMA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["cs/c172",6],["cs/p28a",5],["cs/c182",3],["cs/be36",2],["cs/da42",1],["cs/tb20",1],["cs/c208",2],["cs/pc12",2],["cs/be20",1],["cs/b350",1],["cs/p180",1],["cs/c510",1],["cs/e50p",1],["cs/c550",2],["cs/e55p",1],["cs/cl30",1],["cs/c680",1],["cs/h25b",1],["cs/lj45",1],["cs/f2th",1],["cs/glf4",1],["cs/glex",1],["cs/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [33.2718,-16.2858,32.9009,-16.6017],
+            [32.9009,-16.6017,32.6978,-16.7746],
+            [32.0141,-16.565,32.4559,-16.7004],
+            [32.4559,-16.7004,32.6978,-16.7746],
+            [32.5299,-17.5897,32.6384,-17.063],
+            [32.6384,-17.063,32.6978,-16.7746],
+            [33.1247,-17.4431,32.8488,-17.0111],
+            [32.8488,-17.0111,32.6978,-16.7746]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [32.6899,-16.7837,32.5711,-16.9223],
+            [32.6235,-16.8446,32.6375,-16.8615],
+            [32.5641,-16.9138,32.5781,-16.9307],
+            [32.7058,-16.7651,32.8245,-16.6262],
+            [32.7722,-16.7042,32.7582,-16.6872],
+            [32.8315,-16.6346,32.8175,-16.6177]
+        ]}
+    ]
+}

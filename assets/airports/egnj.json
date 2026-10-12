@@ -1,0 +1,73 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGNJ/",
+    "info": {"country":"GB","city":"Grimsby","type":"medium_airport","longestRunwayM":2200,"frequencies":{"atis":"124.130","twr":"124.905","app":"119.130"}},
+    "radio": {"twr":"Humberside Tower","app":"Humberside Approach","dep":"Humberside Radar"},
+    "icao": "EGNJ",
+    "iata": "HUY",
+    "magnetic_north": 0.8,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [53.576152,-0.34954,"121ft"],
+    "rangeRings": {"enabled":true,"center":[53.576152,-0.34954],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":210,"speed":11},
+    "arrivalRunway": "20",
+    "departureRunway": "20",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[53.9808,-0.34],[53.9656,-0.164],[53.9238,-0.0005],[53.8583,0.1391],[53.7736,0.2454],[53.6754,0.3112],[53.5705,0.332],[53.466,0.3063],[53.3689,0.2359],[53.286,0.1256],[53.2229,-0.017],[53.1838,-0.1823],[53.1715,-0.3591],[53.1867,-0.5351],[53.2285,-0.6985],[53.294,-0.8382],[53.3787,-0.9445],[53.4769,-1.0103],[53.5818,-1.0311],[53.6863,-1.0054],[53.7834,-0.935],[53.8663,-0.8247],[53.9294,-0.6821],[53.9685,-0.5167]]}
+    ],
+    "fixes": {
+        "EGNJ": [53.57615,-0.34954],
+        "ZAVDO": [53.21666,0.32444],
+        "BEMIV": [53.44259,-0.09913],
+        "CWL": [53.0263,-0.48898,"cranwell"],
+        "ZUBIH": [53.37851,-0.39966],
+        "KUWSU": [54.0948,-0.58999],
+        "ELIKA": [53.76885,-0.43888],
+        "_RWY0204DME": [53.50363,-0.39948],
+        "_RWY2004DME": [53.6432,-0.30329],
+        "_RWY0804DME": [53.56661,-0.46459],
+        "_RWY2604DME": [53.58595,-0.22948]
+    },
+    "runways": [
+        {"name":["02","20"],"end":[[53.5653,-0.35706,"121ft"],[53.58155,-0.34585,"74ft"]],"ils":[true,true]},
+        {"name":["08","26"],"end":[[53.5758,-0.35347,"87ft"],[53.57686,-0.34065,"85ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "ZAVDO2C": {"icao":"ZAVDO2C","name":"Zavdo Two Charlie","rwy":{"EGNJ02":["_RWY2004DME"],"EGNJ20":["_RWY0204DME"],"EGNJ08":["_RWY2604DME"],"EGNJ26":["_RWY0804DME"]},"body":[],"exitPoints":{"ZAVDO":["ZAVDO"]},"draw":[["EGNJ","ZAVDO*"]]},
+        "CWL2E": {"icao":"CWL2E","name":"Cranwell Two Echo","rwy":{"EGNJ02":["_RWY2004DME"],"EGNJ20":["_RWY0204DME"],"EGNJ08":["_RWY2604DME"],"EGNJ26":["_RWY0804DME"]},"body":[],"exitPoints":{"CWL":["CWL"]},"draw":[["EGNJ","CWL*"]]},
+        "KUWSU3B": {"icao":"KUWSU3B","name":"Kuwsu Three Bravo","rwy":{"EGNJ02":["_RWY2004DME"],"EGNJ20":["_RWY0204DME"],"EGNJ08":["_RWY2604DME"],"EGNJ26":["_RWY0804DME"]},"body":[],"exitPoints":{"KUWSU":["KUWSU"]},"draw":[["EGNJ","KUWSU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGNJ","destination":"EGPD","category":"departure","route":"EGNJ20.KUWSU3B.KUWSU","altitude":"","speed":"","method":"random","rate":1.48,"airlines":[["eze/js41",1],["eze/sb20",1]]},
+        {"origin":"EGNJ","destination":"EGJJ","category":"departure","route":"EGNJ20.CWL2E.CWL","altitude":"","speed":"","method":"random","rate":0.74,"airlines":[["bee/e75l",1]]},
+        {"origin":"EGNJ","destination":"EGSH","category":"departure","route":"EGNJ20.ZAVDO2C.ZAVDO","altitude":"","speed":"","method":"random","rate":0.74,"airlines":[["eze/sb20",1]]},
+        {"origin":"EGNJ","destination":"","category":"departure","route":"EGNJ20.KUWSU3B.KUWSU","altitude":"","speed":"","method":"random","rate":0.99,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]},
+        {"origin":"EGPD","destination":"EGNJ","category":"arrival","route":"KUWSU..ELIKA..EGNJ","altitude":[4000,7000],"speed":250,"method":"random","rate":1.48,"airlines":[["eze/js41",1],["eze/sb20",1]]},
+        {"origin":"EGJJ","destination":"EGNJ","category":"arrival","route":"CWL..ZUBIH..EGNJ","altitude":[4000,7000],"speed":250,"method":"random","rate":0.74,"airlines":[["bee/e75l",1]]},
+        {"origin":"EGSH","destination":"EGNJ","category":"arrival","route":"ZAVDO..BEMIV..EGNJ","altitude":[4000,7000],"speed":250,"method":"random","rate":0.74,"airlines":[["eze/sb20",1]]},
+        {"origin":"","destination":"EGNJ","category":"arrival","route":"KUWSU..ELIKA..EGNJ","altitude":[4000,7000],"speed":250,"method":"random","rate":0.99,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [53.2167,0.3244,53.4426,-0.0991],
+            [53.4426,-0.0991,53.5762,-0.3495],
+            [53.0263,-0.489,53.3785,-0.3997],
+            [53.3785,-0.3997,53.5762,-0.3495],
+            [54.0948,-0.59,53.7688,-0.4389],
+            [53.7688,-0.4389,53.5762,-0.3495]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [53.5653,-0.3571,53.4111,-0.4629],
+            [53.4844,-0.3945,53.492,-0.4256],
+            [53.4073,-0.4474,53.4149,-0.4784],
+            [53.5816,-0.3459,53.7357,-0.2392],
+            [53.6624,-0.3082,53.6548,-0.277],
+            [53.7394,-0.2548,53.7319,-0.2236]
+        ]}
+    ]
+}

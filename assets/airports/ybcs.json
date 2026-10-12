@@ -1,0 +1,94 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/YBCS/",
+    "info": {"country":"AU","city":"Cairns","type":"large_airport","longestRunwayM":3211,"frequencies":{"atis":"113.000","twr":"124.900","gnd":"121.700"}},
+    "radio": {"twr":"Cairns Tower","app":"Cairns Approach","dep":"Cairns Departure"},
+    "icao": "YBCS",
+    "iata": "CNS",
+    "magnetic_north": 6.5,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [-16.878921,145.74948,"10ft"],
+    "rangeRings": {"enabled":true,"center":[-16.878921,145.74948],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":140,"speed":9},
+    "arrivalRunway": "15",
+    "departureRunway": "15",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[-16.3428,145.8133],[-16.3769,145.9561],[-16.4452,146.0849],[-16.543,146.1908],[-16.6638,146.2666],[-16.7992,146.3072],[-16.94,146.3097],[-17.0767,146.2741],[-17.1999,146.2028],[-17.3012,146.1005],[-17.3738,145.9743],[-17.4126,145.8328],[-17.415,145.6856],[-17.381,145.5428],[-17.3127,145.4141],[-17.2148,145.3082],[-17.0941,145.2324],[-16.9587,145.1918],[-16.8178,145.1892],[-16.6812,145.2248],[-16.558,145.2962],[-16.4566,145.3985],[-16.3841,145.5246],[-16.3453,145.6661]]}
+    ],
+    "fixes": {
+        "YBCS": [-16.87892,145.74948],
+        "WETSO": [-16.71881,146.4682],
+        "NUMKI": [-16.82227,146.00376],
+        "IFL": [-17.5617,146.015,"innisfail"],
+        "AZOSO": [-17.11307,145.84053],
+        "JOMEF": [-17.54951,145.51825],
+        "DORIW": [-17.11617,145.66767],
+        "AVIBU": [-16.68454,145.04005],
+        "HITIN": [-16.81015,145.49849],
+        "ATOPE": [-16.17313,145.72618],
+        "KEJIC": [-16.62921,145.74124],
+        "_RWY1504DME": [-16.80466,145.71635],
+        "_RWY3304DME": [-16.95343,145.78368]
+    },
+    "runways": [
+        {"name":["15","33"],"end":[[-16.8658,145.744,"9ft"],[-16.8923,145.756,"7ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "WETSO1A": {"icao":"WETSO1A","name":"Wetso One Alpha","rwy":{"YBCS15":["_RWY3304DME"],"YBCS33":["_RWY1504DME"]},"body":[],"exitPoints":{"WETSO":["WETSO"]},"draw":[["YBCS","WETSO*"]]},
+        "IFL2B": {"icao":"IFL2B","name":"Innisfail Two Bravo","rwy":{"YBCS15":["_RWY3304DME"],"YBCS33":["_RWY1504DME"]},"body":[],"exitPoints":{"IFL":["IFL"]},"draw":[["YBCS","IFL*"]]},
+        "JOMEF2C": {"icao":"JOMEF2C","name":"Jomef Two Charlie","rwy":{"YBCS15":["_RWY3304DME"],"YBCS33":["_RWY1504DME"]},"body":[],"exitPoints":{"JOMEF":["JOMEF"]},"draw":[["YBCS","JOMEF*"]]},
+        "AVIBU1D": {"icao":"AVIBU1D","name":"Avibu One Delta","rwy":{"YBCS15":["_RWY3304DME"],"YBCS33":["_RWY1504DME"]},"body":[],"exitPoints":{"AVIBU":["AVIBU"]},"draw":[["YBCS","AVIBU*"]]},
+        "ATOPE1C": {"icao":"ATOPE1C","name":"Atope One Charlie","rwy":{"YBCS15":["_RWY3304DME"],"YBCS33":["_RWY1504DME"]},"body":[],"exitPoints":{"ATOPE":["ATOPE"]},"draw":[["YBCS","ATOPE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"YBCS","destination":"YMML","category":"departure","route":"YBCS15.JOMEF2C.JOMEF","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["jst/a320",1],["jst/a321",1],["jst/a332",1],["qfa/b738",1],["tgw/a320",1]]},
+        {"origin":"YBCS","destination":"YSSY","category":"departure","route":"YBCS15.IFL2B.IFL","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["jst/a320",1],["jst/a321",1],["qfa/b738",1],["qfa/b763",1],["tgw/a320",1]]},
+        {"origin":"YBCS","destination":"YBBN","category":"departure","route":"YBCS15.IFL2B.IFL","altitude":"","speed":"","method":"random","rate":0.94,"airlines":[["cpa/a333",1],["jst/a320",1],["qfa/b738",1],["tgw/a320",1]]},
+        {"origin":"YBCS","destination":"AYPY","category":"departure","route":"YBCS15.ATOPE1C.ATOPE","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["ang/dh8d",1]]},
+        {"origin":"YBCS","destination":"AYTK","category":"departure","route":"YBCS15.ATOPE1C.ATOPE","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["ang/dh8d",1]]},
+        {"origin":"YBCS","destination":"","category":"departure","route":"YBCS15.IFL2B.IFL","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["anz/a320",1],["jst/a320",1]]},
+        {"origin":"YBCS","destination":"","category":"departure","route":"YBCS15.JOMEF2C.JOMEF","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["jst/a320",2]]},
+        {"origin":"YBCS","destination":"","category":"departure","route":"YBCS15.AVIBU1D.AVIBU","altitude":"","speed":"","method":"random","rate":0.7,"airlines":[["cpa/a333",1],["jst/a320",1],["rsr/b190",1]]},
+        {"origin":"YBCS","destination":"","category":"departure","route":"YBCS15.ATOPE1C.ATOPE","altitude":"","speed":"","method":"random","rate":0.7,"airlines":[["jst/a332",2],["ual/b738",1]]},
+        {"origin":"YBCS","destination":"","category":"departure","route":"YBCS15.ATOPE1C.ATOPE","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["vh/c172",6],["vh/p28a",5],["vh/c182",3],["vh/be36",2],["vh/da42",1],["vh/tb20",1],["vh/c208",2],["vh/pc12",2],["vh/be20",1],["vh/b350",1],["vh/p180",1],["vh/c510",1],["vh/e50p",1],["vh/c550",2],["vh/e55p",1],["vh/cl30",1],["vh/c680",1],["vh/h25b",1],["vh/lj45",1],["vh/f2th",1],["vh/glf4",1],["vh/glex",1],["vh/glf5",1]]},
+        {"origin":"YBCS","destination":"","category":"departure","route":"YBCS15.AVIBU1D.AVIBU","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["vh/c172",6],["vh/p28a",5],["vh/c182",3],["vh/be36",2],["vh/da42",1],["vh/tb20",1],["vh/c208",2],["vh/pc12",2],["vh/be20",1],["vh/b350",1],["vh/p180",1],["vh/c510",1],["vh/e50p",1],["vh/c550",2],["vh/e55p",1],["vh/cl30",1],["vh/c680",1],["vh/h25b",1],["vh/lj45",1],["vh/f2th",1],["vh/glf4",1],["vh/glex",1],["vh/glf5",1]]},
+        {"origin":"YMML","destination":"YBCS","category":"arrival","route":"JOMEF..DORIW..YBCS","altitude":[6000,9000],"speed":250,"method":"random","rate":1.17,"airlines":[["jst/a320",1],["jst/a321",1],["jst/a332",1],["qfa/b738",1],["tgw/a320",1]]},
+        {"origin":"YSSY","destination":"YBCS","category":"arrival","route":"IFL..AZOSO..YBCS","altitude":[6000,9000],"speed":250,"method":"random","rate":1.17,"airlines":[["jst/a320",1],["jst/a321",1],["qfa/b738",1],["qfa/b763",1],["tgw/a320",1]]},
+        {"origin":"YBBN","destination":"YBCS","category":"arrival","route":"IFL..AZOSO..YBCS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.94,"airlines":[["cpa/a333",1],["jst/a320",1],["qfa/b738",1],["tgw/a320",1]]},
+        {"origin":"AYPY","destination":"YBCS","category":"arrival","route":"ATOPE..KEJIC..YBCS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.23,"airlines":[["ang/dh8d",1]]},
+        {"origin":"AYTK","destination":"YBCS","category":"arrival","route":"ATOPE..KEJIC..YBCS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.23,"airlines":[["ang/dh8d",1]]},
+        {"origin":"","destination":"YBCS","category":"arrival","route":"IFL..AZOSO..YBCS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["anz/a320",1],["jst/a320",1]]},
+        {"origin":"","destination":"YBCS","category":"arrival","route":"JOMEF..DORIW..YBCS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["jst/a320",2]]},
+        {"origin":"","destination":"YBCS","category":"arrival","route":"AVIBU..HITIN..YBCS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.7,"airlines":[["cpa/a333",1],["jst/a320",1],["rsr/b190",1]]},
+        {"origin":"","destination":"YBCS","category":"arrival","route":"ATOPE..KEJIC..YBCS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.7,"airlines":[["jst/a332",2],["ual/b738",1]]},
+        {"origin":"","destination":"YBCS","category":"arrival","route":"ATOPE..KEJIC..YBCS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["vh/c172",6],["vh/p28a",5],["vh/c182",3],["vh/be36",2],["vh/da42",1],["vh/tb20",1],["vh/c208",2],["vh/pc12",2],["vh/be20",1],["vh/b350",1],["vh/p180",1],["vh/c510",1],["vh/e50p",1],["vh/c550",2],["vh/e55p",1],["vh/cl30",1],["vh/c680",1],["vh/h25b",1],["vh/lj45",1],["vh/f2th",1],["vh/glf4",1],["vh/glex",1],["vh/glf5",1]]},
+        {"origin":"","destination":"YBCS","category":"arrival","route":"AVIBU..HITIN..YBCS","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["vh/c172",6],["vh/p28a",5],["vh/c182",3],["vh/be36",2],["vh/da42",1],["vh/tb20",1],["vh/c208",2],["vh/pc12",2],["vh/be20",1],["vh/b350",1],["vh/p180",1],["vh/c510",1],["vh/e50p",1],["vh/c550",2],["vh/e55p",1],["vh/cl30",1],["vh/c680",1],["vh/h25b",1],["vh/lj45",1],["vh/f2th",1],["vh/glf4",1],["vh/glex",1],["vh/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-16.7188,146.4682,-16.8223,146.0038],
+            [-16.8223,146.0038,-16.8789,145.7495],
+            [-17.5617,146.015,-17.1131,145.8405],
+            [-17.1131,145.8405,-16.8789,145.7495],
+            [-17.5495,145.5183,-17.1162,145.6677],
+            [-17.1162,145.6677,-16.8789,145.7495],
+            [-16.6845,145.0401,-16.8101,145.4985],
+            [-16.8101,145.4985,-16.8789,145.7495],
+            [-16.1731,145.7262,-16.6292,145.7412],
+            [-16.6292,145.7412,-16.8789,145.7495]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-16.8658,145.744,-16.713,145.6749],
+            [-16.7934,145.6999,-16.7854,145.719],
+            [-16.7169,145.6653,-16.709,145.6845],
+            [-16.8923,145.756,-17.0451,145.8252],
+            [-16.9647,145.8002,-16.9727,145.781],
+            [-17.0412,145.8348,-17.0491,145.8156]
+        ]}
+    ]
+}

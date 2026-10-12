@@ -1,0 +1,66 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGEN/",
+    "info": {"country":"GB","city":"North Ronaldsay","type":"small_airport","longestRunwayM":527,"approximateRunways":true},
+    "radio": {"twr":"North Ronaldsay Tower","app":"North Ronaldsay Approach","dep":"North Ronaldsay Radar"},
+    "icao": "EGEN",
+    "iata": "NRL",
+    "magnetic_north": -0.6,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [59.3675,-2.43444,"40ft"],
+    "rangeRings": {"enabled":true,"center":[59.3675,-2.43444],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":260,"speed":5},
+    "arrivalRunway": "28",
+    "departureRunway": "28",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[59.7722,-2.4428],[59.7595,-2.2369],[59.7201,-2.0445],[59.6566,-1.8787],[59.5735,-1.7508],[59.4763,-1.6694],[59.3717,-1.6402],[59.2669,-1.6651],[59.1688,-1.7425],[59.0844,-1.867],[59.0192,-2.0301],[58.9777,-2.2208],[58.9628,-2.4261],[58.9755,-2.632],[59.0149,-2.8243],[59.0784,-2.9901],[59.1615,-3.1181],[59.2587,-3.1994],[59.3633,-3.2286],[59.4681,-3.2037],[59.5662,-3.1264],[59.6507,-3.0019],[59.7158,-2.8387],[59.7573,-2.648]]}
+    ],
+    "fixes": {
+        "EGEN": [59.3675,-2.43444],
+        "SUM": [59.8789,-1.28667,"sumburgh"],
+        "PUMNE": [59.49907,-2.13916],
+        "IKOBO": [58.93235,-1.81375],
+        "AGOLI": [59.20582,-2.20383],
+        "IOF": [58.8299,-3.14506,"flotta"],
+        "TESLE": [59.20173,-2.65356],
+        "CUNAN": [59.80265,-3.05513],
+        "DOZUD": [59.52918,-2.66505],
+        "_RWY1003DME": [59.37564,-2.53591],
+        "_RWY2803DME": [59.35929,-2.33301]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[59.36787,-2.43903,"42ft"],[59.36713,-2.42985,"55ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "SUM3A": {"icao":"SUM3A","name":"Sumburgh Three Alpha","rwy":{"EGEN10":["_RWY2803DME"],"EGEN28":["_RWY1003DME"]},"body":[],"exitPoints":{"SUM":["SUM"]},"draw":[["EGEN","SUM*"]]},
+        "IKOBO3B": {"icao":"IKOBO3B","name":"Ikobo Three Bravo","rwy":{"EGEN10":["_RWY2803DME"],"EGEN28":["_RWY1003DME"]},"body":[],"exitPoints":{"IKOBO":["IKOBO"]},"draw":[["EGEN","IKOBO*"]]},
+        "IOF3E": {"icao":"IOF3E","name":"Flotta Three Echo","rwy":{"EGEN10":["_RWY2803DME"],"EGEN28":["_RWY1003DME"]},"body":[],"exitPoints":{"IOF":["IOF"]},"draw":[["EGEN","IOF*"]]},
+        "CUNAN3A": {"icao":"CUNAN3A","name":"Cunan Three Alpha","rwy":{"EGEN10":["_RWY2803DME"],"EGEN28":["_RWY1003DME"]},"body":[],"exitPoints":{"CUNAN":["CUNAN"]},"draw":[["EGEN","CUNAN*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGEN","destination":"","category":"departure","route":"EGEN28.IKOBO3B.IKOBO","altitude":"","speed":"","method":"random","rate":3,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/pc12",2],["g/be20",1]]},
+        {"origin":"","destination":"EGEN","category":"arrival","route":"IKOBO..AGOLI..EGEN","altitude":[4000,7000],"speed":250,"method":"random","rate":3,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/pc12",2],["g/be20",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [59.8789,-1.2867,59.4991,-2.1392],
+            [59.4991,-2.1392,59.3675,-2.4344],
+            [58.9323,-1.8138,59.2058,-2.2038],
+            [59.2058,-2.2038,59.3675,-2.4344],
+            [58.8299,-3.1451,59.2017,-2.6536],
+            [59.2017,-2.6536,59.3675,-2.4344],
+            [59.8027,-3.0551,59.5292,-2.665],
+            [59.5292,-2.665,59.3675,-2.4344]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [59.3671,-2.4298,59.3407,-2.1072],
+            [59.3639,-2.2654,59.3441,-2.2715],
+            [59.3506,-2.1042,59.3308,-2.1103]
+        ]}
+    ]
+}

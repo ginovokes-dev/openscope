@@ -1,0 +1,90 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/DFFD/",
+    "info": {"country":"BF","city":"Ouagadougou","type":"large_airport","longestRunwayM":3019,"frequencies":{"twr":"118.100","app":"118.100"}},
+    "radio": {"twr":"Ouagadougou Tower","app":"Ouagadougou Approach","dep":"Ouagadougou Departure"},
+    "icao": "DFFD",
+    "iata": "OUA",
+    "magnetic_north": -1.3,
+    "ctr_radius": 60,
+    "ctr_ceiling": 11000,
+    "initial_alt": 6000,
+    "position": [12.3532,-1.51242,"1037ft"],
+    "rangeRings": {"enabled":true,"center":[12.3532,-1.51242],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":50,"speed":11},
+    "arrivalRunway": "04",
+    "departureRunway": "04",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":110,"airspace_class":"C","poly":[[12.8927,-1.525],[12.8774,-1.3816],[12.8265,-1.2472],[12.7433,-1.1308],[12.6335,-1.0404],[12.5046,-0.9822],[12.3654,-0.9602],[12.2254,-0.9758],[12.0941,-1.0279],[11.9804,-1.1131],[11.8921,-1.2254],[11.8353,-1.3574],[11.8137,-1.4999],[11.829,-1.6432],[11.8799,-1.7777],[11.9631,-1.8941],[12.0729,-1.9844],[12.2018,-2.0426],[12.341,-2.0647],[12.481,-2.0491],[12.6123,-1.9969],[12.726,-1.9118],[12.8143,-1.7994],[12.8711,-1.6675]]}
+    ],
+    "fixes": {
+        "DFFD": [12.3532,-1.51242],
+        "KUKEN": [13.05931,-1.50536],
+        "AMOKU": [12.60302,-1.50992],
+        "AKOLI": [12.50103,-0.80555],
+        "FEKEC": [12.4055,-1.26233],
+        "HISAP": [11.70288,-1.23072],
+        "MOTIP": [12.12312,-1.41275],
+        "AZUKI": [11.68469,-1.74526],
+        "TACDO": [12.11668,-1.5948],
+        "TEVOK": [12.25296,-2.22798],
+        "PATAF": [12.31774,-1.76558],
+        "_RWY0404DME": [12.28589,-1.55721],
+        "_RWY2204DME": [12.42024,-1.46753]
+    },
+    "runways": [
+        {"name":["04","22"],"end":[[12.3417,-1.51997,"1034ft"],[12.36444,-1.50479,"982ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "KUKEN2A": {"icao":"KUKEN2A","name":"Kuken Two Alpha","rwy":{"DFFD04":["_RWY2204DME"],"DFFD22":["_RWY0404DME"]},"body":[],"exitPoints":{"KUKEN":["KUKEN"]},"draw":[["DFFD","KUKEN*"]]},
+        "AKOLI2F": {"icao":"AKOLI2F","name":"Akoli Two Foxtrot","rwy":{"DFFD04":["_RWY2204DME"],"DFFD22":["_RWY0404DME"]},"body":[],"exitPoints":{"AKOLI":["AKOLI"]},"draw":[["DFFD","AKOLI*"]]},
+        "HISAP1B": {"icao":"HISAP1B","name":"Hisap One Bravo","rwy":{"DFFD04":["_RWY2204DME"],"DFFD22":["_RWY0404DME"]},"body":[],"exitPoints":{"HISAP":["HISAP"]},"draw":[["DFFD","HISAP*"]]},
+        "AZUKI3B": {"icao":"AZUKI3B","name":"Azuki Three Bravo","rwy":{"DFFD04":["_RWY2204DME"],"DFFD22":["_RWY0404DME"]},"body":[],"exitPoints":{"AZUKI":["AZUKI"]},"draw":[["DFFD","AZUKI*"]]},
+        "TEVOK1C": {"icao":"TEVOK1C","name":"Tevok One Charlie","rwy":{"DFFD04":["_RWY2204DME"],"DFFD22":["_RWY0404DME"]},"body":[],"exitPoints":{"TEVOK":["TEVOK"]},"draw":[["DFFD","TEVOK*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"DFFD","destination":"DIAP","category":"departure","route":"DFFD04.AZUKI3B.AZUKI","altitude":"","speed":"","method":"random","rate":1.24,"airlines":[["dat/a333",1],["eth/b752",1],["vbw/e170",1],["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"DFFD","destination":"DRRN","category":"departure","route":"DFFD04.AKOLI2F.AKOLI","altitude":"","speed":"","method":"random","rate":1.24,"airlines":[["afr/a332",1],["eth/b752",1],["ram/b738",1],["thy/b739",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"DFFD","destination":"DXXX","category":"departure","route":"DFFD04.HISAP1B.HISAP","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"DFFD","destination":"EBBR","category":"departure","route":"DFFD04.KUKEN2A.KUKEN","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["dat/a332",1],["dat/a333",1]]},
+        {"origin":"DFFD","destination":"GABS","category":"departure","route":"DFFD04.TEVOK1C.TEVOK","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"DFFD","destination":"","category":"departure","route":"DFFD04.KUKEN2A.KUKEN","altitude":"","speed":"","method":"random","rate":1.73,"airlines":[["afr/a343",1],["dah/b736",1],["ram/b737",1],["ram/b738",1],["tar/a320",1],["thy/b738",1],["thy/b739",1]]},
+        {"origin":"DFFD","destination":"","category":"departure","route":"DFFD04.AKOLI2F.AKOLI","altitude":"","speed":"","method":"random","rate":0.25,"airlines":[["eth/b752",1]]},
+        {"origin":"DFFD","destination":"","category":"departure","route":"DFFD04.HISAP1B.HISAP","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"DFFD","destination":"","category":"departure","route":"DFFD04.TEVOK1C.TEVOK","altitude":"","speed":"","method":"random","rate":0.49,"airlines":[["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"DIAP","destination":"DFFD","category":"arrival","route":"AZUKI..TACDO..DFFD","altitude":[7000,10000],"speed":250,"method":"random","rate":1.24,"airlines":[["dat/a333",1],["eth/b752",1],["vbw/e170",1],["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"DRRN","destination":"DFFD","category":"arrival","route":"AKOLI..FEKEC..DFFD","altitude":[7000,10000],"speed":250,"method":"random","rate":1.24,"airlines":[["afr/a332",1],["eth/b752",1],["ram/b738",1],["thy/b739",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"DXXX","destination":"DFFD","category":"arrival","route":"HISAP..MOTIP..DFFD","altitude":[7000,10000],"speed":250,"method":"random","rate":0.49,"airlines":[["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"EBBR","destination":"DFFD","category":"arrival","route":"KUKEN..AMOKU..DFFD","altitude":[7000,10000],"speed":250,"method":"random","rate":0.49,"airlines":[["dat/a332",1],["dat/a333",1]]},
+        {"origin":"GABS","destination":"DFFD","category":"arrival","route":"TEVOK..PATAF..DFFD","altitude":[7000,10000],"speed":250,"method":"random","rate":0.49,"airlines":[["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"","destination":"DFFD","category":"arrival","route":"KUKEN..AMOKU..DFFD","altitude":[7000,10000],"speed":250,"method":"random","rate":1.73,"airlines":[["afr/a343",1],["dah/b736",1],["ram/b737",1],["ram/b738",1],["tar/a320",1],["thy/b738",1],["thy/b739",1]]},
+        {"origin":"","destination":"DFFD","category":"arrival","route":"AKOLI..FEKEC..DFFD","altitude":[7000,10000],"speed":250,"method":"random","rate":0.25,"airlines":[["eth/b752",1]]},
+        {"origin":"","destination":"DFFD","category":"arrival","route":"HISAP..MOTIP..DFFD","altitude":[7000,10000],"speed":250,"method":"random","rate":0.49,"airlines":[["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]},
+        {"origin":"","destination":"DFFD","category":"arrival","route":"TEVOK..PATAF..DFFD","altitude":[7000,10000],"speed":250,"method":"random","rate":0.49,"airlines":[["vbw/md87",1],["vbw/crj7",1],["vbw/crj9",1],["vbw/crj2",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [13.0593,-1.5054,12.603,-1.5099],
+            [12.603,-1.5099,12.3532,-1.5124],
+            [12.501,-0.8056,12.4055,-1.2623],
+            [12.4055,-1.2623,12.3532,-1.5124],
+            [11.7029,-1.2307,12.1231,-1.4128],
+            [12.1231,-1.4128,12.3532,-1.5124],
+            [11.6847,-1.7453,12.1167,-1.5948],
+            [12.1167,-1.5948,12.3532,-1.5124],
+            [12.253,-2.228,12.3177,-1.7656],
+            [12.3177,-1.7656,12.3532,-1.5124]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [12.3417,-1.52,12.2022,-1.613],
+            [12.2665,-1.558,12.2774,-1.5751],
+            [12.1967,-1.6045,12.2076,-1.6216],
+            [12.3644,-1.5048,12.5039,-1.4116],
+            [12.4397,-1.4668,12.4287,-1.4496],
+            [12.5094,-1.4202,12.4985,-1.403]
+        ]}
+    ]
+}

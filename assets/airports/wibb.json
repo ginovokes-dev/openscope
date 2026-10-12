@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/WIBB/",
+    "info": {"country":"ID","city":"Pekanbaru","type":"medium_airport","longestRunwayM":2249,"frequencies":{"twr":"118.100","app":"120.800"}},
+    "radio": {"twr":"Pekanbaru Tower","app":"Pekanbaru Approach","dep":"Pekanbaru Departure"},
+    "icao": "WIBB",
+    "iata": "PKU",
+    "magnetic_north": 0.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [0.458647,101.444321,"102ft"],
+    "rangeRings": {"enabled":true,"center":[0.458647,101.444321],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":190,"speed":10},
+    "arrivalRunway": "18",
+    "departureRunway": "18",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[0.8633,101.445],[0.8494,101.5497],[0.8088,101.6473],[0.7443,101.731],[0.6604,101.7952],[0.5627,101.8354],[0.4579,101.849],[0.3532,101.8351],[0.2557,101.7945],[0.172,101.73],[0.1078,101.6461],[0.0676,101.5484],[0.054,101.4436],[0.0679,101.3389],[0.1085,101.2414],[0.173,101.1577],[0.2569,101.0935],[0.3546,101.0532],[0.4594,101.0396],[0.5641,101.0536],[0.6616,101.0942],[0.7453,101.1586],[0.8095,101.2426],[0.8497,101.3403]]}
+    ],
+    "fixes": {
+        "WIBB": [0.45865,101.44432],
+        "HIGIM": [0.99498,101.48588],
+        "ZIWIM": [0.65791,101.45976],
+        "DEBRA": [0.61241,101.95983],
+        "TUHPO": [0.51578,101.63585],
+        "OHIBI": [0.05691,101.80208],
+        "VEFFE": [0.30939,101.57724],
+        "RUVIB": [0.28682,100.93455],
+        "ZABOR": [0.39481,101.25492],
+        "_RWY1804DME": [0.53742,101.44829],
+        "_RWY3604DME": [0.38415,101.44071]
+    },
+    "runways": [
+        {"name":["18","36"],"end":[[0.47088,101.445,"90ft"],[0.45069,101.444,"87ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "HIGIM2D": {"icao":"HIGIM2D","name":"Higim Two Delta","rwy":{"WIBB18":["_RWY3604DME"],"WIBB36":["_RWY1804DME"]},"body":[],"exitPoints":{"HIGIM":["HIGIM"]},"draw":[["WIBB","HIGIM*"]]},
+        "DEBRA3D": {"icao":"DEBRA3D","name":"Debra Three Delta","rwy":{"WIBB18":["_RWY3604DME"],"WIBB36":["_RWY1804DME"]},"body":[],"exitPoints":{"DEBRA":["DEBRA"]},"draw":[["WIBB","DEBRA*"]]},
+        "OHIBI1A": {"icao":"OHIBI1A","name":"Ohibi One Alpha","rwy":{"WIBB18":["_RWY3604DME"],"WIBB36":["_RWY1804DME"]},"body":[],"exitPoints":{"OHIBI":["OHIBI"]},"draw":[["WIBB","OHIBI*"]]},
+        "RUVIB1F": {"icao":"RUVIB1F","name":"Ruvib One Foxtrot","rwy":{"WIBB18":["_RWY3604DME"],"WIBB36":["_RWY1804DME"]},"body":[],"exitPoints":{"RUVIB":["RUVIB"]},"draw":[["WIBB","RUVIB*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"WIBB","destination":"WAHH","category":"departure","route":"WIBB18.OHIBI1A.OHIBI","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["lni/b738",1],["mdl/a320",1]]},
+        {"origin":"WIBB","destination":"WICC","category":"departure","route":"WIBB18.OHIBI1A.OHIBI","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["awq/a320",1],["lni/b738",1]]},
+        {"origin":"WIBB","destination":"WIII","category":"departure","route":"WIBB18.OHIBI1A.OHIBI","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["gia/b738",1],["mdl/a320",1]]},
+        {"origin":"WIBB","destination":"WIDD","category":"departure","route":"WIBB18.DEBRA3D.DEBRA","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["lni/b738",1]]},
+        {"origin":"WIBB","destination":"WMKK","category":"departure","route":"WIBB18.HIGIM2D.HIGIM","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["axm/a320",1]]},
+        {"origin":"WIBB","destination":"","category":"departure","route":"WIBB18.HIGIM2D.HIGIM","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["ffm/at72",1]]},
+        {"origin":"WIBB","destination":"","category":"departure","route":"WIBB18.DEBRA3D.DEBRA","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["slk/a319",1]]},
+        {"origin":"WIBB","destination":"","category":"departure","route":"WIBB18.DEBRA3D.DEBRA","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",1],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]},
+        {"origin":"WAHH","destination":"WIBB","category":"arrival","route":"OHIBI..VEFFE..WIBB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.79,"airlines":[["lni/b738",1],["mdl/a320",1]]},
+        {"origin":"WICC","destination":"WIBB","category":"arrival","route":"OHIBI..VEFFE..WIBB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.79,"airlines":[["awq/a320",1],["lni/b738",1]]},
+        {"origin":"WIII","destination":"WIBB","category":"arrival","route":"OHIBI..VEFFE..WIBB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.79,"airlines":[["gia/b738",1],["mdl/a320",1]]},
+        {"origin":"WIDD","destination":"WIBB","category":"arrival","route":"DEBRA..TUHPO..WIBB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["lni/b738",1]]},
+        {"origin":"WMKK","destination":"WIBB","category":"arrival","route":"HIGIM..ZIWIM..WIBB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["axm/a320",1]]},
+        {"origin":"","destination":"WIBB","category":"arrival","route":"HIGIM..ZIWIM..WIBB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["ffm/at72",1]]},
+        {"origin":"","destination":"WIBB","category":"arrival","route":"DEBRA..TUHPO..WIBB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["slk/a319",1]]},
+        {"origin":"","destination":"WIBB","category":"arrival","route":"DEBRA..TUHPO..WIBB","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["pk/c172",6],["pk/p28a",5],["pk/c182",3],["pk/be36",2],["pk/da42",1],["pk/tb20",1],["pk/c208",2],["pk/pc12",2],["pk/be20",1],["pk/b350",1],["pk/p180",1],["pk/c510",1],["pk/e50p",1],["pk/c550",1],["pk/e55p",1],["pk/cl30",1],["pk/c680",1],["pk/h25b",1],["pk/lj45",1],["pk/f2th",1],["pk/glf4",1],["pk/glex",1],["pk/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [0.995,101.4859,0.6579,101.4598],
+            [0.6579,101.4598,0.4586,101.4443],
+            [0.6124,101.9598,0.5158,101.6359],
+            [0.5158,101.6359,0.4586,101.4443],
+            [0.0569,101.8021,0.3094,101.5772],
+            [0.3094,101.5772,0.4586,101.4443],
+            [0.2868,100.9345,0.3948,101.2549],
+            [0.3948,101.2549,0.4586,101.4443]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [0.4709,101.445,0.6372,101.4532],
+            [0.5546,101.4391,0.5536,101.4591],
+            [0.6377,101.4433,0.6367,101.4632],
+            [0.4507,101.444,0.2843,101.4358],
+            [0.367,101.4499,0.368,101.4299],
+            [0.2838,101.4457,0.2848,101.4258]
+        ]}
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/CYYT/",
+    "info": {"country":"CA","city":"St. John's","type":"large_airport","longestRunwayM":2591,"frequencies":{"atis":"128.000","twr":"120.600","gnd":"121.900"}},
+    "radio": {"twr":"St John's Tower","app":"St John's Approach","dep":"St John's Departure"},
+    "icao": "CYYT",
+    "iata": "YYT",
+    "magnetic_north": -16.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [47.618599,-52.7519,"461ft"],
+    "rangeRings": {"enabled":true,"center":[47.618599,-52.7519],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":290,"speed":5},
+    "arrivalRunway": "28",
+    "departureRunway": "28",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[48.0066,-52.9224],[48.0232,-52.7676],[48.0121,-52.6117],[47.9743,-52.4654],[47.9122,-52.3386],[47.8301,-52.24],[47.7335,-52.1762],[47.6292,-52.1517],[47.5241,-52.1681],[47.4255,-52.2243],[47.34,-52.3164],[47.2735,-52.4382],[47.2306,-52.5814],[47.214,-52.7362],[47.2251,-52.8921],[47.2629,-53.0384],[47.325,-53.1652],[47.4071,-53.2638],[47.5037,-53.3276],[47.608,-53.3521],[47.7131,-53.3357],[47.8117,-53.2795],[47.8972,-53.1874],[47.9637,-53.0656]]}
+    ],
+    "fixes": {
+        "CYYT": [47.6186,-52.7519],
+        "JAKUF": [47.85876,-52.03779],
+        "LEFVE": [47.70783,-52.48658],
+        "EVUKI": [47.10281,-52.52523],
+        "AHOVE": [47.42696,-52.66768],
+        "LOHOS": [47.55784,-53.54485],
+        "EJOLA": [47.59603,-53.04651],
+        "RAPUK": [48.13438,-52.97857],
+        "JOTIV": [47.81023,-52.83612],
+        "_RWY1004DME": [47.61837,-52.87187],
+        "_RWY2804DME": [47.62985,-52.64031],
+        "_RWY1604DME": [47.67841,-52.81208],
+        "_RWY3404DME": [47.55796,-52.67336]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[47.6233,-52.7733,"458ft"],[47.625,-52.7389,"437ft"]],"ils":[true,true]},
+        {"name":["16","34"],"end":[[47.6258,-52.7514,"444ft"],[47.6106,-52.7339,"431ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "JAKUF1D": {"icao":"JAKUF1D","name":"Jakuf One Delta","rwy":{"CYYT10":["_RWY2804DME"],"CYYT28":["_RWY1004DME"],"CYYT16":["_RWY3404DME"],"CYYT34":["_RWY1604DME"]},"body":[],"exitPoints":{"JAKUF":["JAKUF"]},"draw":[["CYYT","JAKUF*"]]},
+        "EVUKI2C": {"icao":"EVUKI2C","name":"Evuki Two Charlie","rwy":{"CYYT10":["_RWY2804DME"],"CYYT28":["_RWY1004DME"],"CYYT16":["_RWY3404DME"],"CYYT34":["_RWY1604DME"]},"body":[],"exitPoints":{"EVUKI":["EVUKI"]},"draw":[["CYYT","EVUKI*"]]},
+        "LOHOS2A": {"icao":"LOHOS2A","name":"Lohos Two Alpha","rwy":{"CYYT10":["_RWY2804DME"],"CYYT28":["_RWY1004DME"],"CYYT16":["_RWY3404DME"],"CYYT34":["_RWY1604DME"]},"body":[],"exitPoints":{"LOHOS":["LOHOS"]},"draw":[["CYYT","LOHOS*"]]},
+        "RAPUK3A": {"icao":"RAPUK3A","name":"Rapuk Three Alpha","rwy":{"CYYT10":["_RWY2804DME"],"CYYT28":["_RWY1004DME"],"CYYT16":["_RWY3404DME"],"CYYT34":["_RWY1604DME"]},"body":[],"exitPoints":{"RAPUK":["RAPUK"]},"draw":[["CYYT","RAPUK*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"CYYT","destination":"CYYZ","category":"departure","route":"CYYT28.LOHOS2A.LOHOS","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["aca/a319",1],["aca/a320",1],["aca/e190",1],["wja/b737",1],["wja/b738",1]]},
+        {"origin":"CYYT","destination":"CYHZ","category":"departure","route":"CYYT28.LOHOS2A.LOHOS","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["aca/e190",1],["poe/dh8d",1],["wja/b737",1]]},
+        {"origin":"CYYT","destination":"CYUL","category":"departure","route":"CYYT28.LOHOS2A.LOHOS","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["aca/a319",1],["aca/a320",1],["aca/e190",1]]},
+        {"origin":"CYYT","destination":"CYOW","category":"departure","route":"CYYT28.LOHOS2A.LOHOS","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["wja/b737",1]]},
+        {"origin":"CYYT","destination":"EGLL","category":"departure","route":"CYYT28.JAKUF1D.JAKUF","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["aca/a319",1]]},
+        {"origin":"CYYT","destination":"","category":"departure","route":"CYYT28.LOHOS2A.LOHOS","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["ual/a319",1],["wja/b737",1]]},
+        {"origin":"CYYT","destination":"","category":"departure","route":"CYYT28.RAPUK3A.RAPUK","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["c/c172",6],["c/p28a",5],["c/c182",3],["c/be36",2],["c/da42",1],["c/tb20",1],["c/c208",2],["c/pc12",2],["c/be20",1],["c/b350",1],["c/p180",1],["c/c510",1],["c/e50p",1],["c/c550",1],["c/e55p",1],["c/cl30",1],["c/c680",1],["c/h25b",1],["c/lj45",1],["c/f2th",1],["c/glf4",1],["c/glex",1],["c/glf5",1]]},
+        {"origin":"CYYZ","destination":"CYYT","category":"arrival","route":"LOHOS..EJOLA..CYYT","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["aca/a319",1],["aca/a320",1],["aca/e190",1],["wja/b737",1],["wja/b738",1]]},
+        {"origin":"CYHZ","destination":"CYYT","category":"arrival","route":"LOHOS..EJOLA..CYYT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.79,"airlines":[["aca/e190",1],["poe/dh8d",1],["wja/b737",1]]},
+        {"origin":"CYUL","destination":"CYYT","category":"arrival","route":"LOHOS..EJOLA..CYYT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.79,"airlines":[["aca/a319",1],["aca/a320",1],["aca/e190",1]]},
+        {"origin":"CYOW","destination":"CYYT","category":"arrival","route":"LOHOS..EJOLA..CYYT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.26,"airlines":[["wja/b737",1]]},
+        {"origin":"EGLL","destination":"CYYT","category":"arrival","route":"JAKUF..LEFVE..CYYT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.26,"airlines":[["aca/a319",1]]},
+        {"origin":"","destination":"CYYT","category":"arrival","route":"LOHOS..EJOLA..CYYT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.53,"airlines":[["ual/a319",1],["wja/b737",1]]},
+        {"origin":"","destination":"CYYT","category":"arrival","route":"RAPUK..JOTIV..CYYT","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["c/c172",6],["c/p28a",5],["c/c182",3],["c/be36",2],["c/da42",1],["c/tb20",1],["c/c208",2],["c/pc12",2],["c/be20",1],["c/b350",1],["c/p180",1],["c/c510",1],["c/e50p",1],["c/c550",1],["c/e55p",1],["c/cl30",1],["c/c680",1],["c/h25b",1],["c/lj45",1],["c/f2th",1],["c/glf4",1],["c/glex",1],["c/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [47.8588,-52.0378,47.7078,-52.4866],
+            [47.7078,-52.4866,47.6186,-52.7519],
+            [47.1028,-52.5252,47.427,-52.6677],
+            [47.427,-52.6677,47.6186,-52.7519],
+            [47.5578,-53.5448,47.596,-53.0465],
+            [47.596,-53.0465,47.6186,-52.7519],
+            [48.1344,-52.9786,47.8102,-52.8361],
+            [47.8102,-52.8361,47.6186,-52.7519]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [47.6233,-52.7733,47.6108,-53.0197],
+            [47.6072,-52.8954,47.6271,-52.8976],
+            [47.6008,-53.0186,47.6208,-53.0208],
+            [47.625,-52.7389,47.637,-52.4924],
+            [47.641,-52.6167,47.6211,-52.6146],
+            [47.6469,-52.4935,47.627,-52.4913],
+            [47.6258,-52.7514,47.7573,-52.9033],
+            [47.6854,-52.839,47.6977,-52.8155],
+            [47.7511,-52.9151,47.7634,-52.8916],
+            [47.6106,-52.7339,47.4789,-52.5828],
+            [47.5509,-52.6466,47.5387,-52.6699],
+            [47.4851,-52.5711,47.4728,-52.5945]
+        ]}
+    ]
+}

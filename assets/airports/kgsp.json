@@ -1,0 +1,87 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KGSP/",
+    "info": {"country":"US","city":"Greenville","type":"medium_airport","longestRunwayM":3357,"frequencies":{"atis":"134.250","twr":"120.100","gnd":"121.900"}},
+    "radio": {"twr":"Greenville Tower","app":"Greenville Approach","dep":"Greenville Departure"},
+    "icao": "KGSP",
+    "iata": "GSP",
+    "magnetic_north": -7.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [34.895699,-82.218903,"964ft"],
+    "rangeRings": {"enabled":true,"center":[34.895699,-82.218903],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":210,"speed":9},
+    "arrivalRunway": "22",
+    "departureRunway": "22",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[35.2973,-82.2799],[35.2966,-82.1511],[35.2685,-82.0269],[35.215,-81.9158],[35.1398,-81.8254],[35.048,-81.7617],[34.9457,-81.7293],[34.8401,-81.7302],[34.7382,-81.7644],[34.6471,-81.8296],[34.5729,-81.9213],[34.5207,-82.0333],[34.4941,-82.1579],[34.4948,-82.2867],[34.5229,-82.4109],[34.5764,-82.522],[34.6516,-82.6124],[34.7434,-82.6761],[34.8457,-82.7085],[34.9513,-82.7076],[35.0532,-82.6734],[35.1443,-82.6082],[35.2185,-82.5165],[35.2707,-82.4045]]}
+    ],
+    "fixes": {
+        "KGSP": [34.8957,-82.2189],
+        "SLP": [35.2527,-81.5988,"first river"],
+        "ITEMI": [35.01053,-82.01945],
+        "GRD": [34.2516,-82.1542,"greenwood"],
+        "KOJUV": [34.69651,-82.19889],
+        "CEU": [34.6738,-82.8868,"clemson"],
+        "EDANU": [34.82066,-82.44476],
+        "TEWIG": [35.07958,-82.83526],
+        "ORIWA": [34.96402,-82.4479],
+        "_RWY0404DME": [34.82639,-82.2716],
+        "_RWY2204DME": [34.965,-82.16603]
+    },
+    "runways": [
+        {"name":["04","22"],"end":[[34.8829,-82.2286,"964ft"],[34.9085,-82.2091,"964ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "SLP3F": {"icao":"SLP3F","name":"First River Three Foxtrot","rwy":{"KGSP04":["_RWY2204DME"],"KGSP22":["_RWY0404DME"]},"body":[],"exitPoints":{"SLP":["SLP"]},"draw":[["KGSP","SLP*"]]},
+        "GRD3A": {"icao":"GRD3A","name":"Greenwood Three Alpha","rwy":{"KGSP04":["_RWY2204DME"],"KGSP22":["_RWY0404DME"]},"body":[],"exitPoints":{"GRD":["GRD"]},"draw":[["KGSP","GRD*"]]},
+        "CEU2B": {"icao":"CEU2B","name":"Clemson Two Bravo","rwy":{"KGSP04":["_RWY2204DME"],"KGSP22":["_RWY0404DME"]},"body":[],"exitPoints":{"CEU":["CEU"]},"draw":[["KGSP","CEU*"]]},
+        "TEWIG2D": {"icao":"TEWIG2D","name":"Tewig Two Delta","rwy":{"KGSP04":["_RWY2204DME"],"KGSP22":["_RWY0404DME"]},"body":[],"exitPoints":{"TEWIG":["TEWIG"]},"draw":[["KGSP","TEWIG*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KGSP","destination":"KATL","category":"departure","route":"KGSP22.CEU2B.CEU","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["dal/a319",1],["dal/b712",1],["dal/md88",1],["flg/crj7",1],["flg/crj9",1],["flg/crj2",1]]},
+        {"origin":"KGSP","destination":"KCLT","category":"departure","route":"KGSP22.SLP3F.SLP","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["aal/crj7",1],["aal/dh8c",1],["aal/dh8d",1],["aal/crj9",1],["aal/crj2",1],["aal/dh8b",1]]},
+        {"origin":"KGSP","destination":"KBNA","category":"departure","route":"KGSP22.TEWIG2D.TEWIG","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["swa/b733",1],["swa/b737",1]]},
+        {"origin":"KGSP","destination":"KBWI","category":"departure","route":"KGSP22.SLP3F.SLP","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["swa/b733",1],["swa/b737",1]]},
+        {"origin":"KGSP","destination":"KHOU","category":"departure","route":"KGSP22.CEU2B.CEU","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["swa/b733",1],["swa/b737",1]]},
+        {"origin":"KGSP","destination":"","category":"departure","route":"KGSP22.SLP3F.SLP","altitude":"","speed":"","method":"random","rate":0.22,"airlines":[["aal/crj7",1],["aal/crj9",1],["aal/crj2",1]]},
+        {"origin":"KGSP","destination":"","category":"departure","route":"KGSP22.GRD3A.GRD","altitude":"","speed":"","method":"random","rate":1.09,"airlines":[["aay/md82",3],["aay/a320",2]]},
+        {"origin":"KGSP","destination":"","category":"departure","route":"KGSP22.CEU2B.CEU","altitude":"","speed":"","method":"random","rate":0.22,"airlines":[["aal/e145",1]]},
+        {"origin":"KGSP","destination":"","category":"departure","route":"KGSP22.TEWIG2D.TEWIG","altitude":"","speed":"","method":"random","rate":0.22,"airlines":[["swa/b737",1]]},
+        {"origin":"KGSP","destination":"","category":"departure","route":"KGSP22.GRD3A.GRD","altitude":"","speed":"","method":"random","rate":1.6,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KATL","destination":"KGSP","category":"arrival","route":"CEU..EDANU..KGSP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.87,"airlines":[["dal/a319",1],["dal/b712",1],["dal/md88",1],["flg/crj7",1],["flg/crj9",1],["flg/crj2",1]]},
+        {"origin":"KCLT","destination":"KGSP","category":"arrival","route":"SLP..ITEMI..KGSP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.87,"airlines":[["aal/crj7",1],["aal/dh8c",1],["aal/dh8d",1],["aal/crj9",1],["aal/crj2",1],["aal/dh8b",1]]},
+        {"origin":"KBNA","destination":"KGSP","category":"arrival","route":"TEWIG..ORIWA..KGSP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["swa/b733",1],["swa/b737",1]]},
+        {"origin":"KBWI","destination":"KGSP","category":"arrival","route":"SLP..ITEMI..KGSP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["swa/b733",1],["swa/b737",1]]},
+        {"origin":"KHOU","destination":"KGSP","category":"arrival","route":"CEU..EDANU..KGSP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["swa/b733",1],["swa/b737",1]]},
+        {"origin":"","destination":"KGSP","category":"arrival","route":"SLP..ITEMI..KGSP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.22,"airlines":[["aal/crj7",1],["aal/crj9",1],["aal/crj2",1]]},
+        {"origin":"","destination":"KGSP","category":"arrival","route":"GRD..KOJUV..KGSP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.09,"airlines":[["aay/md82",3],["aay/a320",2]]},
+        {"origin":"","destination":"KGSP","category":"arrival","route":"CEU..EDANU..KGSP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.22,"airlines":[["aal/e145",1]]},
+        {"origin":"","destination":"KGSP","category":"arrival","route":"TEWIG..ORIWA..KGSP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.22,"airlines":[["swa/b737",1]]},
+        {"origin":"","destination":"KGSP","category":"arrival","route":"GRD..KOJUV..KGSP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.6,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [35.2527,-81.5988,35.0105,-82.0195],
+            [35.0105,-82.0195,34.8957,-82.2189],
+            [34.2516,-82.1542,34.6965,-82.1989],
+            [34.6965,-82.1989,34.8957,-82.2189],
+            [34.6738,-82.8868,34.8207,-82.4448],
+            [34.8207,-82.4448,34.8957,-82.2189],
+            [35.0796,-82.8353,34.964,-82.4479],
+            [34.964,-82.4479,34.8957,-82.2189]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [34.8829,-82.2286,34.7416,-82.336],
+            [34.807,-82.272,34.8176,-82.2927],
+            [34.7363,-82.3257,34.7469,-82.3463],
+            [34.9085,-82.2091,35.0497,-82.1013],
+            [34.9844,-82.1656,34.9738,-82.1449],
+            [35.055,-82.1117,35.0444,-82.091]
+        ]}
+    ]
+}

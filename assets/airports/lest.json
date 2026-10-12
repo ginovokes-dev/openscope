@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LEST/",
+    "info": {"country":"ES","city":"Santiago de Compostela","type":"large_airport","longestRunwayM":3208,"frequencies":{"twr":"118.750","app":"118.200","gnd":"121.700"}},
+    "radio": {"twr":"Santiago Tower","app":"Santiago Approach","dep":"Santiago Departure"},
+    "icao": "LEST",
+    "iata": "SCQ",
+    "magnetic_north": -0.9,
+    "ctr_radius": 60,
+    "ctr_ceiling": 11000,
+    "initial_alt": 6000,
+    "position": [42.896301,-8.41514,"1213ft"],
+    "rangeRings": {"enabled":true,"center":[42.896301,-8.41514],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":170,"speed":10},
+    "arrivalRunway": "17",
+    "departureRunway": "17",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":110,"airspace_class":"C","poly":[[43.4358,-8.4267],[43.4196,-8.2357],[43.3678,-8.0569],[43.2838,-7.9026],[43.1734,-7.7831],[43.0441,-7.7068],[42.9048,-7.6787],[42.7648,-7.7008],[42.6339,-7.7716],[42.5208,-7.8862],[42.4333,-8.0369],[42.3774,-8.2134],[42.3568,-8.4036],[42.373,-8.5946],[42.4248,-8.7734],[42.5088,-8.9277],[42.6192,-9.0472],[42.7485,-9.1235],[42.8878,-9.1516],[43.0278,-9.1295],[43.1587,-9.0587],[43.2718,-8.9441],[43.3593,-8.7934],[43.4152,-8.6169]]}
+    ],
+    "fixes": {
+        "LEST": [42.8963,-8.41514],
+        "WUGWE": [43.59723,-8.29816],
+        "ZEBIL": [43.14429,-8.37375],
+        "UMAZU": [43.30358,-7.62772],
+        "HUTFI": [43.0404,-8.13655],
+        "ESEBU": [42.6216,-7.52715],
+        "DAVFI": [42.79911,-8.10097],
+        "PAKEH": [42.25242,-8.01937],
+        "OLIZA": [42.6685,-8.27512],
+        "VON": [42.186,-8.639,"vigo"],
+        "UWIMI": [42.65287,-8.49186],
+        "_RWY1704DME": [42.97541,-8.442],
+        "_RWY3504DME": [42.81914,-8.38908]
+    },
+    "runways": [
+        {"name":["17","35"],"end":[[42.91075,-8.42008,"1170ft"],[42.8838,-8.41095,"1196ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "WUGWE1D": {"icao":"WUGWE1D","name":"Wugwe One Delta","rwy":{"LEST17":["_RWY3504DME"],"LEST35":["_RWY1704DME"]},"body":[],"exitPoints":{"WUGWE":["WUGWE"]},"draw":[["LEST","WUGWE*"]]},
+        "UMAZU2C": {"icao":"UMAZU2C","name":"Umazu Two Charlie","rwy":{"LEST17":["_RWY3504DME"],"LEST35":["_RWY1704DME"]},"body":[],"exitPoints":{"UMAZU":["UMAZU"]},"draw":[["LEST","UMAZU*"]]},
+        "ESEBU1D": {"icao":"ESEBU1D","name":"Esebu One Delta","rwy":{"LEST17":["_RWY3504DME"],"LEST35":["_RWY1704DME"]},"body":[],"exitPoints":{"ESEBU":["ESEBU"]},"draw":[["LEST","ESEBU*"]]},
+        "PAKEH2A": {"icao":"PAKEH2A","name":"Pakeh Two Alpha","rwy":{"LEST17":["_RWY3504DME"],"LEST35":["_RWY1704DME"]},"body":[],"exitPoints":{"PAKEH":["PAKEH"]},"draw":[["LEST","PAKEH*"]]},
+        "VON3E": {"icao":"VON3E","name":"Vigo Three Echo","rwy":{"LEST17":["_RWY3504DME"],"LEST35":["_RWY1704DME"]},"body":[],"exitPoints":{"VON":["VON"]},"draw":[["LEST","VON*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LEST","destination":"EBBR","category":"departure","route":"LEST17.UMAZU2C.UMAZU","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["ibe/a320",1],["vlg/a320",1]]},
+        {"origin":"LEST","destination":"GCLP","category":"departure","route":"LEST17.VON3E.VON","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["aea/b738",1],["ryr/b738",1]]},
+        {"origin":"LEST","destination":"GCRR","category":"departure","route":"LEST17.VON3E.VON","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["aea/b738",1],["ryr/b738",1]]},
+        {"origin":"LEST","destination":"GCTS","category":"departure","route":"LEST17.VON3E.VON","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["aea/b738",1],["ryr/b738",1]]},
+        {"origin":"LEST","destination":"LEBL","category":"departure","route":"LEST17.ESEBU1D.ESEBU","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["ryr/b738",1],["vlg/a320",1]]},
+        {"origin":"LEST","destination":"LEMG","category":"departure","route":"LEST17.PAKEH2A.PAKEH","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["ryr/b738",1],["vlg/a320",1]]},
+        {"origin":"LEST","destination":"","category":"departure","route":"LEST17.WUGWE1D.WUGWE","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["ein/a320",1],["ryr/b738",1]]},
+        {"origin":"LEST","destination":"","category":"departure","route":"LEST17.UMAZU2C.UMAZU","altitude":"","speed":"","method":"random","rate":2.05,"airlines":[["ezy/a319",3],["ezy/a320",2],["ryr/b738",2],["thy/a320",1],["vlg/a320",1]]},
+        {"origin":"LEST","destination":"","category":"departure","route":"LEST17.ESEBU1D.ESEBU","altitude":"","speed":"","method":"random","rate":1.37,"airlines":[["ryr/b738",4],["aea/b738",2]]},
+        {"origin":"LEST","destination":"","category":"departure","route":"LEST17.PAKEH2A.PAKEH","altitude":"","speed":"","method":"random","rate":0.23,"airlines":[["ryr/b738",1]]},
+        {"origin":"LEST","destination":"","category":"departure","route":"LEST17.VON3E.VON","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"LEST","destination":"","category":"departure","route":"LEST17.ESEBU1D.ESEBU","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"EBBR","destination":"LEST","category":"arrival","route":"UMAZU..HUTFI..LEST","altitude":[7000,10000],"speed":250,"method":"random","rate":0.46,"airlines":[["ibe/a320",1],["vlg/a320",1]]},
+        {"origin":"GCLP","destination":"LEST","category":"arrival","route":"VON..UWIMI..LEST","altitude":[7000,10000],"speed":250,"method":"random","rate":0.46,"airlines":[["aea/b738",1],["ryr/b738",1]]},
+        {"origin":"GCRR","destination":"LEST","category":"arrival","route":"VON..UWIMI..LEST","altitude":[7000,10000],"speed":250,"method":"random","rate":0.46,"airlines":[["aea/b738",1],["ryr/b738",1]]},
+        {"origin":"GCTS","destination":"LEST","category":"arrival","route":"VON..UWIMI..LEST","altitude":[7000,10000],"speed":250,"method":"random","rate":0.46,"airlines":[["aea/b738",1],["ryr/b738",1]]},
+        {"origin":"LEBL","destination":"LEST","category":"arrival","route":"ESEBU..DAVFI..LEST","altitude":[7000,10000],"speed":250,"method":"random","rate":0.46,"airlines":[["ryr/b738",1],["vlg/a320",1]]},
+        {"origin":"LEMG","destination":"LEST","category":"arrival","route":"PAKEH..OLIZA..LEST","altitude":[7000,10000],"speed":250,"method":"random","rate":0.46,"airlines":[["ryr/b738",1],["vlg/a320",1]]},
+        {"origin":"","destination":"LEST","category":"arrival","route":"WUGWE..ZEBIL..LEST","altitude":[7000,10000],"speed":250,"method":"random","rate":0.46,"airlines":[["ein/a320",1],["ryr/b738",1]]},
+        {"origin":"","destination":"LEST","category":"arrival","route":"UMAZU..HUTFI..LEST","altitude":[7000,10000],"speed":250,"method":"random","rate":2.05,"airlines":[["ezy/a319",3],["ezy/a320",2],["ryr/b738",2],["thy/a320",1],["vlg/a320",1]]},
+        {"origin":"","destination":"LEST","category":"arrival","route":"ESEBU..DAVFI..LEST","altitude":[7000,10000],"speed":250,"method":"random","rate":1.37,"airlines":[["ryr/b738",4],["aea/b738",2]]},
+        {"origin":"","destination":"LEST","category":"arrival","route":"PAKEH..OLIZA..LEST","altitude":[7000,10000],"speed":250,"method":"random","rate":0.23,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LEST","category":"arrival","route":"VON..UWIMI..LEST","altitude":[7000,10000],"speed":250,"method":"random","rate":0.47,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"","destination":"LEST","category":"arrival","route":"ESEBU..DAVFI..LEST","altitude":[7000,10000],"speed":250,"method":"random","rate":0.47,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [43.5972,-8.2982,43.1443,-8.3738],
+            [43.1443,-8.3738,42.8963,-8.4151],
+            [43.3036,-7.6277,43.0404,-8.1366],
+            [43.0404,-8.1366,42.8963,-8.4151],
+            [42.6216,-7.5272,42.7991,-8.101],
+            [42.7991,-8.101,42.8963,-8.4151],
+            [42.2524,-8.0194,42.6685,-8.2751],
+            [42.6685,-8.2751,42.8963,-8.4151],
+            [42.186,-8.639,42.6529,-8.4919],
+            [42.6529,-8.4919,42.8963,-8.4151]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [42.9108,-8.4201,43.0724,-8.475],
+            [42.9892,-8.4607,42.994,-8.4342],
+            [43.07,-8.4883,43.0748,-8.4617],
+            [42.8838,-8.4109,42.7221,-8.3564],
+            [42.8054,-8.3704,42.8006,-8.3968],
+            [42.7245,-8.3432,42.7197,-8.3696]
+        ]}
+    ]
+}

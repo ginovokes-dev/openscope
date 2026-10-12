@@ -1,0 +1,89 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/MMSD/",
+    "info": {"country":"MX","city":"San Jose del Cabo","type":"large_airport","longestRunwayM":3019,"frequencies":{"atis":"127.600","twr":"118.900","app":"120.900"}},
+    "radio": {"twr":"Los Cabos Tower","app":"Los Cabos Approach","dep":"Los Cabos Departure"},
+    "icao": "MMSD",
+    "iata": "SJD",
+    "magnetic_north": 7.7,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [23.151919,-109.720731,"374ft"],
+    "rangeRings": {"enabled":true,"center":[23.151919,-109.720731],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":180,"speed":10},
+    "arrivalRunway": "16",
+    "departureRunway": "16",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[23.6866,-109.6421],[23.6497,-109.4943],[23.5789,-109.3619],[23.4789,-109.2539],[23.3567,-109.1778],[23.2205,-109.1386],[23.0796,-109.1392],[22.9437,-109.1793],[22.8219,-109.2564],[22.7227,-109.3651],[22.6527,-109.498],[22.6167,-109.6462],[22.6172,-109.7994],[22.6541,-109.9472],[22.725,-110.0796],[22.8249,-110.1876],[22.9472,-110.2637],[23.0834,-110.3028],[23.2242,-110.3023],[23.3602,-110.2621],[23.4819,-110.1851],[23.5812,-110.0764],[23.6512,-109.9434],[23.6871,-109.7953]]}
+    ],
+    "fixes": {
+        "MMSD": [23.15192,-109.72073],
+        "DUZIM": [23.60509,-109.13174],
+        "MUJEH": [23.31225,-109.51235],
+        "GIWEV": [22.91279,-108.99811],
+        "DUTLI": [23.06732,-109.46507],
+        "BAWIC": [22.63042,-110.23854],
+        "JEVDO": [22.96741,-109.90393],
+        "LAP": [24.0856,-110.359,"la paz"],
+        "FAJEV": [23.36344,-109.86533],
+        "_RWY1604DME": [23.23131,-109.73282],
+        "_RWY3404DME": [23.07239,-109.7092]
+    },
+    "runways": [
+        {"name":["16","34"],"end":[[23.1653,-109.723,"374ft"],[23.1384,-109.719,"348ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "DUZIM3D": {"icao":"DUZIM3D","name":"Duzim Three Delta","rwy":{"MMSD16":["_RWY3404DME"],"MMSD34":["_RWY1604DME"]},"body":[],"exitPoints":{"DUZIM":["DUZIM"]},"draw":[["MMSD","DUZIM*"]]},
+        "GIWEV3B": {"icao":"GIWEV3B","name":"Giwev Three Bravo","rwy":{"MMSD16":["_RWY3404DME"],"MMSD34":["_RWY1604DME"]},"body":[],"exitPoints":{"GIWEV":["GIWEV"]},"draw":[["MMSD","GIWEV*"]]},
+        "BAWIC3F": {"icao":"BAWIC3F","name":"Bawic Three Foxtrot","rwy":{"MMSD16":["_RWY3404DME"],"MMSD34":["_RWY1604DME"]},"body":[],"exitPoints":{"BAWIC":["BAWIC"]},"draw":[["MMSD","BAWIC*"]]},
+        "LAP3D": {"icao":"LAP3D","name":"La Paz Three Delta","rwy":{"MMSD16":["_RWY3404DME"],"MMSD34":["_RWY1604DME"]},"body":[],"exitPoints":{"LAP":["LAP"]},"draw":[["MMSD","LAP*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"MMSD","destination":"KLAX","category":"departure","route":"MMSD16.LAP3D.LAP","altitude":"","speed":"","method":"random","rate":0.94,"airlines":[["aal/b738",2],["aal/md83",2],["amx/b734",1],["asa/b734",1],["asa/b739",1],["ual/a320",1],["ual/b739",1]]},
+        {"origin":"MMSD","destination":"KPHX","category":"departure","route":"MMSD16.LAP3D.LAP","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["aal/a319",2],["aal/a320",2],["aal/a321",2],["aal/b752",2]]},
+        {"origin":"MMSD","destination":"KDFW","category":"departure","route":"MMSD16.DUZIM3D.DUZIM","altitude":"","speed":"","method":"random","rate":0.63,"airlines":[["aal/md82",2],["aal/md83",2],["nks/a319",1],["nks/a320",1]]},
+        {"origin":"MMSD","destination":"KORD","category":"departure","route":"MMSD16.DUZIM3D.DUZIM","altitude":"","speed":"","method":"random","rate":0.63,"airlines":[["aal/b738",2],["aal/md83",2],["fft/a320",1],["ual/a320",1]]},
+        {"origin":"MMSD","destination":"KDEN","category":"departure","route":"MMSD16.DUZIM3D.DUZIM","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["fft/a320",1],["swa/b737",1],["ual/a320",1],["ual/b738",1],["ual/b739",1]]},
+        {"origin":"MMSD","destination":"KSFO","category":"departure","route":"MMSD16.LAP3D.LAP","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["asa/a320",1],["asa/b734",1],["ual/a320",1],["ual/b738",1],["ual/b739",1]]},
+        {"origin":"MMSD","destination":"","category":"departure","route":"MMSD16.DUZIM3D.DUZIM","altitude":"","speed":"","method":"random","rate":0.94,"airlines":[["aal/a320",2],["ual/b739",2],["dal/b737",1],["dal/b738",1],["ual/a320",1],["ual/b738",1],["voi/a320",1]]},
+        {"origin":"MMSD","destination":"","category":"departure","route":"MMSD16.GIWEV3B.GIWEV","altitude":"","speed":"","method":"random","rate":0.63,"airlines":[["amx/b737",1],["amx/b738",1],["voi/a319",1],["voi/a320",1],["amx/e145",1],["amx/e190",1],["amx/e170",1],["amx/e135",1]]},
+        {"origin":"MMSD","destination":"","category":"departure","route":"MMSD16.LAP3D.LAP","altitude":"","speed":"","method":"random","rate":0.94,"airlines":[["wja/b737",2],["aca/a319",1],["asa/b734",1],["asa/b738",1],["nks/a319",1],["swa/b737",1],["voi/a320",1],["wja/b738",1]]},
+        {"origin":"MMSD","destination":"","category":"departure","route":"MMSD16.LAP3D.LAP","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["xa/c172",6],["xa/p28a",5],["xa/c182",3],["xa/be36",2],["xa/da42",1],["xa/tb20",1],["xa/c208",2],["xa/pc12",2],["xa/be20",1],["xa/b350",1],["xa/p180",1],["xa/c510",1],["xa/e50p",1],["xa/c550",2],["xa/e55p",1],["xa/cl30",1],["xa/c680",1],["xa/h25b",1],["xa/lj45",1],["xa/f2th",1],["xa/glf4",1],["xa/glex",1],["xa/glf5",1]]},
+        {"origin":"MMSD","destination":"","category":"departure","route":"MMSD16.GIWEV3B.GIWEV","altitude":"","speed":"","method":"random","rate":0.45,"airlines":[["xa/c172",6],["xa/p28a",5],["xa/c182",3],["xa/be36",2],["xa/da42",1],["xa/tb20",1],["xa/c208",2],["xa/pc12",2],["xa/be20",1],["xa/b350",1],["xa/p180",1],["xa/c510",1],["xa/e50p",1],["xa/c550",2],["xa/e55p",1],["xa/cl30",1],["xa/c680",1],["xa/h25b",1],["xa/lj45",1],["xa/f2th",1],["xa/glf4",1],["xa/glex",1],["xa/glf5",1]]},
+        {"origin":"KLAX","destination":"MMSD","category":"arrival","route":"LAP..FAJEV..MMSD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.94,"airlines":[["aal/b738",2],["aal/md83",2],["amx/b734",1],["asa/b734",1],["asa/b739",1],["ual/a320",1],["ual/b739",1]]},
+        {"origin":"KPHX","destination":"MMSD","category":"arrival","route":"LAP..FAJEV..MMSD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.84,"airlines":[["aal/a319",2],["aal/a320",2],["aal/a321",2],["aal/b752",2]]},
+        {"origin":"KDFW","destination":"MMSD","category":"arrival","route":"DUZIM..MUJEH..MMSD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.63,"airlines":[["aal/md82",2],["aal/md83",2],["nks/a319",1],["nks/a320",1]]},
+        {"origin":"KORD","destination":"MMSD","category":"arrival","route":"DUZIM..MUJEH..MMSD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.63,"airlines":[["aal/b738",2],["aal/md83",2],["fft/a320",1],["ual/a320",1]]},
+        {"origin":"KDEN","destination":"MMSD","category":"arrival","route":"DUZIM..MUJEH..MMSD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["fft/a320",1],["swa/b737",1],["ual/a320",1],["ual/b738",1],["ual/b739",1]]},
+        {"origin":"KSFO","destination":"MMSD","category":"arrival","route":"LAP..FAJEV..MMSD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["asa/a320",1],["asa/b734",1],["ual/a320",1],["ual/b738",1],["ual/b739",1]]},
+        {"origin":"","destination":"MMSD","category":"arrival","route":"DUZIM..MUJEH..MMSD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.94,"airlines":[["aal/a320",2],["ual/b739",2],["dal/b737",1],["dal/b738",1],["ual/a320",1],["ual/b738",1],["voi/a320",1]]},
+        {"origin":"","destination":"MMSD","category":"arrival","route":"GIWEV..DUTLI..MMSD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.63,"airlines":[["amx/b737",1],["amx/b738",1],["voi/a319",1],["voi/a320",1],["amx/e145",1],["amx/e190",1],["amx/e170",1],["amx/e135",1]]},
+        {"origin":"","destination":"MMSD","category":"arrival","route":"LAP..FAJEV..MMSD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.94,"airlines":[["wja/b737",2],["aca/a319",1],["asa/b734",1],["asa/b738",1],["nks/a319",1],["swa/b737",1],["voi/a320",1],["wja/b738",1]]},
+        {"origin":"","destination":"MMSD","category":"arrival","route":"LAP..FAJEV..MMSD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["xa/c172",6],["xa/p28a",5],["xa/c182",3],["xa/be36",2],["xa/da42",1],["xa/tb20",1],["xa/c208",2],["xa/pc12",2],["xa/be20",1],["xa/b350",1],["xa/p180",1],["xa/c510",1],["xa/e50p",1],["xa/c550",2],["xa/e55p",1],["xa/cl30",1],["xa/c680",1],["xa/h25b",1],["xa/lj45",1],["xa/f2th",1],["xa/glf4",1],["xa/glex",1],["xa/glf5",1]]},
+        {"origin":"","destination":"MMSD","category":"arrival","route":"GIWEV..DUTLI..MMSD","altitude":[6000,9000],"speed":250,"method":"random","rate":0.45,"airlines":[["xa/c172",6],["xa/p28a",5],["xa/c182",3],["xa/be36",2],["xa/da42",1],["xa/tb20",1],["xa/c208",2],["xa/pc12",2],["xa/be20",1],["xa/b350",1],["xa/p180",1],["xa/c510",1],["xa/e50p",1],["xa/c550",2],["xa/e55p",1],["xa/cl30",1],["xa/c680",1],["xa/h25b",1],["xa/lj45",1],["xa/f2th",1],["xa/glf4",1],["xa/glex",1],["xa/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [23.6051,-109.1317,23.3122,-109.5123],
+            [23.3122,-109.5123,23.1519,-109.7207],
+            [22.9128,-108.9981,23.0673,-109.4651],
+            [23.0673,-109.4651,23.1519,-109.7207],
+            [22.6304,-110.2385,22.9674,-109.9039],
+            [22.9674,-109.9039,23.1519,-109.7207],
+            [24.0856,-110.359,23.3634,-109.8653],
+            [23.3634,-109.8653,23.1519,-109.7207]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [23.1653,-109.723,23.3303,-109.7476],
+            [23.2465,-109.746,23.2492,-109.7245],
+            [23.329,-109.7583,23.3317,-109.7368],
+            [23.1384,-109.719,22.9734,-109.6945],
+            [23.0572,-109.696,23.0545,-109.7175],
+            [22.9747,-109.6838,22.972,-109.7053]
+        ]}
+    ]
+}

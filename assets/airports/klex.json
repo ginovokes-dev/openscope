@@ -1,0 +1,86 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KLEX/",
+    "info": {"country":"US","city":"Lexington","type":"medium_airport","longestRunwayM":2135,"frequencies":{"atis":"126.300","twr":"119.100","gnd":"121.900"}},
+    "radio": {"twr":"Blue Grass Tower","app":"Blue Grass Approach","dep":"Blue Grass Departure"},
+    "icao": "KLEX",
+    "iata": "LEX",
+    "magnetic_north": -5.9,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [38.035066,-84.606738,"979ft"],
+    "rangeRings": {"enabled":true,"center":[38.035066,-84.606738],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":210,"speed":10},
+    "arrivalRunway": "22",
+    "departureRunway": "22",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[38.4376,-84.6596],[38.4347,-84.5255],[38.4045,-84.3969],[38.3491,-84.2827],[38.2724,-84.1905],[38.1794,-84.1267],[38.0767,-84.0956],[37.9711,-84.0994],[37.8698,-84.1377],[37.7798,-84.208],[37.7072,-84.3055],[37.657,-84.4234],[37.6325,-84.5539],[37.6355,-84.688],[37.6656,-84.8165],[37.721,-84.9308],[37.7978,-85.0229],[37.8907,-85.0867],[37.9935,-85.1178],[38.0991,-85.1141],[38.2003,-85.0758],[38.2903,-85.0055],[38.3629,-84.908],[38.4131,-84.79]]}
+    ],
+    "fixes": {
+        "KLEX": [38.03507,-84.60674],
+        "FLM": [38.6495,-84.3106,"falmouth"],
+        "JEJOH": [38.22192,-84.51668],
+        "IOB": [38.06,-83.9815,"mount sterling"],
+        "DIKDI": [38.04517,-84.35331],
+        "DVK": [37.5764,-84.764,"goodall"],
+        "FOLUW": [37.84211,-84.6729],
+        "EWO": [37.6318,-85.6759,"new hope"],
+        "SEWGI": [37.94874,-84.8356],
+        "_RWY0404DME": [37.97768,-84.67095],
+        "_RWY2204DME": [38.09209,-84.54306],
+        "_RWY0904DME": [38.03109,-84.70221],
+        "_RWY2704DME": [38.04885,-84.52055]
+    },
+    "runways": [
+        {"name":["04","22"],"end":[[38.0277,-84.6151,"944ft"],[38.0421,-84.599,"972ft"]],"ils":[true,true]},
+        {"name":["09","27"],"end":[[38.03933,-84.61828,"967ft"],[38.04067,-84.60451,"974ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "FLM1A": {"icao":"FLM1A","name":"Falmouth One Alpha","rwy":{"KLEX04":["_RWY2204DME"],"KLEX22":["_RWY0404DME"],"KLEX09":["_RWY2704DME"],"KLEX27":["_RWY0904DME"]},"body":[],"exitPoints":{"FLM":["FLM"]},"draw":[["KLEX","FLM*"]]},
+        "IOB2E": {"icao":"IOB2E","name":"Mount Sterling Two Echo","rwy":{"KLEX04":["_RWY2204DME"],"KLEX22":["_RWY0404DME"],"KLEX09":["_RWY2704DME"],"KLEX27":["_RWY0904DME"]},"body":[],"exitPoints":{"IOB":["IOB"]},"draw":[["KLEX","IOB*"]]},
+        "DVK3F": {"icao":"DVK3F","name":"Goodall Three Foxtrot","rwy":{"KLEX04":["_RWY2204DME"],"KLEX22":["_RWY0404DME"],"KLEX09":["_RWY2704DME"],"KLEX27":["_RWY0904DME"]},"body":[],"exitPoints":{"DVK":["DVK"]},"draw":[["KLEX","DVK*"]]},
+        "EWO3B": {"icao":"EWO3B","name":"New Hope Three Bravo","rwy":{"KLEX04":["_RWY2204DME"],"KLEX22":["_RWY0404DME"],"KLEX09":["_RWY2704DME"],"KLEX27":["_RWY0904DME"]},"body":[],"exitPoints":{"EWO":["EWO"]},"draw":[["KLEX","EWO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KLEX","destination":"KATL","category":"departure","route":"KLEX22.DVK3F.DVK","altitude":"","speed":"","method":"random","rate":1,"airlines":[["dal/b712",1],["dal/md88",1],["flg/crj7",1],["flg/crj9",1],["flg/crj2",1]]},
+        {"origin":"KLEX","destination":"KCLT","category":"departure","route":"KLEX22.IOB2E.IOB","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["aal/crj7",2]]},
+        {"origin":"KLEX","destination":"KSFB","category":"departure","route":"KLEX22.DVK3F.DVK","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["aay/a320",1],["aay/md82",1]]},
+        {"origin":"KLEX","destination":"KDFW","category":"departure","route":"KLEX22.EWO3B.EWO","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["aal/e145",1]]},
+        {"origin":"KLEX","destination":"KDTW","category":"departure","route":"KLEX22.FLM1A.FLM","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["dal/b712",1]]},
+        {"origin":"KLEX","destination":"","category":"departure","route":"KLEX22.IOB2E.IOB","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["dal/e145",1],["dal/e135",1]]},
+        {"origin":"KLEX","destination":"","category":"departure","route":"KLEX22.DVK3F.DVK","altitude":"","speed":"","method":"random","rate":1,"airlines":[["aay/md82",2],["aay/a320",1]]},
+        {"origin":"KLEX","destination":"","category":"departure","route":"KLEX22.EWO3B.EWO","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KATL","destination":"KLEX","category":"arrival","route":"DVK..FOLUW..KLEX","altitude":[4000,7000],"speed":250,"method":"random","rate":1,"airlines":[["dal/b712",1],["dal/md88",1],["flg/crj7",1],["flg/crj9",1],["flg/crj2",1]]},
+        {"origin":"KCLT","destination":"KLEX","category":"arrival","route":"IOB..DIKDI..KLEX","altitude":[4000,7000],"speed":250,"method":"random","rate":0.67,"airlines":[["aal/crj7",2]]},
+        {"origin":"KSFB","destination":"KLEX","category":"arrival","route":"DVK..FOLUW..KLEX","altitude":[4000,7000],"speed":250,"method":"random","rate":0.67,"airlines":[["aay/a320",1],["aay/md82",1]]},
+        {"origin":"KDFW","destination":"KLEX","category":"arrival","route":"EWO..SEWGI..KLEX","altitude":[4000,7000],"speed":250,"method":"random","rate":0.33,"airlines":[["aal/e145",1]]},
+        {"origin":"KDTW","destination":"KLEX","category":"arrival","route":"FLM..JEJOH..KLEX","altitude":[4000,7000],"speed":250,"method":"random","rate":0.33,"airlines":[["dal/b712",1]]},
+        {"origin":"","destination":"KLEX","category":"arrival","route":"IOB..DIKDI..KLEX","altitude":[4000,7000],"speed":250,"method":"random","rate":0.33,"airlines":[["dal/e145",1],["dal/e135",1]]},
+        {"origin":"","destination":"KLEX","category":"arrival","route":"DVK..FOLUW..KLEX","altitude":[4000,7000],"speed":250,"method":"random","rate":1,"airlines":[["aay/md82",2],["aay/a320",1]]},
+        {"origin":"","destination":"KLEX","category":"arrival","route":"EWO..SEWGI..KLEX","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [38.6495,-84.3106,38.2219,-84.5167],
+            [38.2219,-84.5167,38.0351,-84.6067],
+            [38.06,-83.9815,38.0452,-84.3533],
+            [38.0452,-84.3533,38.0351,-84.6067],
+            [37.5764,-84.764,37.8421,-84.6729],
+            [37.8421,-84.6729,38.0351,-84.6067],
+            [37.6318,-85.6759,37.9487,-84.8356],
+            [37.9487,-84.8356,38.0351,-84.6067]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [38.0277,-84.6151,37.9026,-84.7546],
+            [37.9586,-84.6754,37.9718,-84.6944],
+            [37.896,-84.7451,37.9092,-84.7641],
+            [38.0421,-84.599,38.167,-84.459],
+            [38.1112,-84.5386,38.098,-84.5195],
+            [38.1736,-84.4686,38.1604,-84.4495]
+        ]}
+    ]
+}

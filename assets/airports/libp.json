@@ -1,0 +1,78 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LIBP/",
+    "info": {"country":"IT","city":"Pescara","type":"large_airport","longestRunwayM":2418,"frequencies":{"twr":"118.450","app":"120.050"}},
+    "radio": {"twr":"Abruzzo Tower","app":"Abruzzo Approach","dep":"Abruzzo Departure"},
+    "icao": "LIBP",
+    "iata": "PSR",
+    "magnetic_north": 4.3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [42.431079,14.182981,"48ft"],
+    "rangeRings": {"enabled":true,"center":[42.431079,14.182981],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":190,"speed":12},
+    "arrivalRunway": "22",
+    "departureRunway": "22",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[42.8346,14.2241],[42.813,14.3642],[42.7654,14.492],[42.695,14.5987],[42.6066,14.677],[42.5062,14.7217],[42.4007,14.7297],[42.2973,14.7005],[42.203,14.6359],[42.1243,14.5405],[42.0664,14.4208],[42.0334,14.2848],[42.0275,14.1419],[42.0491,14.0018],[42.0968,13.874],[42.1672,13.7673],[42.2556,13.6889],[42.3559,13.6442],[42.4614,13.6362],[42.5648,13.6655],[42.6591,13.73],[42.7379,13.8254],[42.7957,13.9452],[42.8287,14.0812]]}
+    ],
+    "fixes": {
+        "LIBP": [42.43108,14.18298],
+        "APUDO": [42.36989,14.90708],
+        "IVEGA": [42.40834,14.45201],
+        "FRS": [41.6422,13.295,"frosinone"],
+        "BASES": [42.27735,14.00994],
+        "IMERO": [42.84734,13.72133],
+        "AMOZI": [42.58574,14.01146],
+        "_RWY0404DME": [42.3707,14.11785],
+        "_RWY2204DME": [42.49148,14.24354]
+    },
+    "runways": [
+        {"name":["04","22"],"end":[[42.42355,14.17278,"46ft"],[42.43866,14.18851,"27ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "APUDO3B": {"icao":"APUDO3B","name":"Apudo Three Bravo","rwy":{"LIBP04":["_RWY2204DME"],"LIBP22":["_RWY0404DME"]},"body":[],"exitPoints":{"APUDO":["APUDO"]},"draw":[["LIBP","APUDO*"]]},
+        "FRS2A": {"icao":"FRS2A","name":"Frosinone Two Alpha","rwy":{"LIBP04":["_RWY2204DME"],"LIBP22":["_RWY0404DME"]},"body":[],"exitPoints":{"FRS":["FRS"]},"draw":[["LIBP","FRS*"]]},
+        "IMERO1D": {"icao":"IMERO1D","name":"Imero One Delta","rwy":{"LIBP04":["_RWY2204DME"],"LIBP22":["_RWY0404DME"]},"body":[],"exitPoints":{"IMERO":["IMERO"]},"draw":[["LIBP","IMERO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LIBP","destination":"LIML","category":"departure","route":"LIBP22.IMERO1D.IMERO","altitude":"","speed":"","method":"random","rate":0.87,"airlines":[["aza/a319",1],["aza/a320",1]]},
+        {"origin":"LIBP","destination":"EBCI","category":"departure","route":"LIBP22.IMERO1D.IMERO","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["ryr/b738",1]]},
+        {"origin":"LIBP","destination":"EDFH","category":"departure","route":"LIBP22.IMERO1D.IMERO","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["ryr/b738",1]]},
+        {"origin":"LIBP","destination":"EDLV","category":"departure","route":"LIBP22.IMERO1D.IMERO","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["ryr/b738",1]]},
+        {"origin":"LIBP","destination":"EGSS","category":"departure","route":"LIBP22.IMERO1D.IMERO","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["ryr/b738",1]]},
+        {"origin":"LIBP","destination":"","category":"departure","route":"LIBP22.FRS2A.FRS","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["ryr/b738",1]]},
+        {"origin":"LIBP","destination":"","category":"departure","route":"LIBP22.IMERO1D.IMERO","altitude":"","speed":"","method":"random","rate":1.3,"airlines":[["ryr/b738",3]]},
+        {"origin":"LIBP","destination":"","category":"departure","route":"LIBP22.IMERO1D.IMERO","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",1],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]},
+        {"origin":"LIML","destination":"LIBP","category":"arrival","route":"IMERO..AMOZI..LIBP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.87,"airlines":[["aza/a319",1],["aza/a320",1]]},
+        {"origin":"EBCI","destination":"LIBP","category":"arrival","route":"IMERO..AMOZI..LIBP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.43,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDFH","destination":"LIBP","category":"arrival","route":"IMERO..AMOZI..LIBP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.43,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDLV","destination":"LIBP","category":"arrival","route":"IMERO..AMOZI..LIBP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.43,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGSS","destination":"LIBP","category":"arrival","route":"IMERO..AMOZI..LIBP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.43,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LIBP","category":"arrival","route":"FRS..BASES..LIBP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.43,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LIBP","category":"arrival","route":"IMERO..AMOZI..LIBP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.3,"airlines":[["ryr/b738",3]]},
+        {"origin":"","destination":"LIBP","category":"arrival","route":"IMERO..AMOZI..LIBP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["i/c172",6],["i/p28a",5],["i/c182",3],["i/be36",2],["i/da42",1],["i/tb20",1],["i/c208",2],["i/pc12",2],["i/be20",1],["i/b350",1],["i/p180",1],["i/c510",1],["i/e50p",1],["i/c550",1],["i/e55p",1],["i/cl30",1],["i/c680",1],["i/h25b",1],["i/lj45",1],["i/f2th",1],["i/glf4",1],["i/glex",1],["i/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [42.3699,14.9071,42.4083,14.452],
+            [42.4083,14.452,42.4311,14.183],
+            [41.6422,13.295,42.2773,14.0099],
+            [42.2773,14.0099,42.4311,14.183],
+            [42.8473,13.7213,42.5857,14.0115],
+            [42.5857,14.0115,42.4311,14.183]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [42.4235,14.1728,42.2914,14.0356],
+            [42.3514,14.1149,42.3636,14.0934],
+            [42.2853,14.0463,42.2975,14.0249],
+            [42.4387,14.1885,42.5707,14.3263],
+            [42.5108,14.2466,42.4986,14.2681],
+            [42.5768,14.3155,42.5646,14.337]
+        ]}
+    ]
+}

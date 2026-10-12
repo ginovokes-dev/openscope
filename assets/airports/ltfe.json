@@ -1,0 +1,101 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LTFE/",
+    "info": {"country":"TR","city":"Bodrum","type":"large_airport","longestRunwayM":3000,"frequencies":{"atis":"128.500","twr":"120.500","app":"119.500","gnd":"121.950"}},
+    "radio": {"twr":"Bodrum Tower","app":"Bodrum Approach","dep":"Bodrum Departure"},
+    "icao": "LTFE",
+    "iata": "BJV",
+    "magnetic_north": 5.4,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [37.249314,27.66401,"21ft"],
+    "rangeRings": {"enabled":true,"center":[37.249314,27.66401],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":260,"speed":7},
+    "arrivalRunway": "28R",
+    "departureRunway": "28R",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[37.7865,27.7278],[37.7551,27.9003],[37.6892,28.0567],[37.5933,28.1863],[37.4739,28.2804],[37.3393,28.3324],[37.1985,28.3389],[37.0612,28.2994],[36.9367,28.2166],[36.8336,28.0961],[36.7587,27.9462],[36.7173,27.7771],[36.7121,27.6002],[36.7436,27.4277],[36.8095,27.2713],[36.9054,27.1417],[37.0247,27.0477],[37.1593,26.9956],[37.3001,26.9891],[37.4374,27.0287],[37.5619,27.1115],[37.6651,27.2319],[37.7399,27.3818],[37.7814,27.551]]}
+    ],
+    "fixes": {
+        "LTFE": [37.24931,27.66401],
+        "GIVLA": [37.93282,27.88683],
+        "ULURU": [37.49114,27.74284],
+        "DIDRU": [37.24621,28.55111],
+        "TAMOP": [37.24822,27.97786],
+        "PAR": [36.4001,28.0653,"paradisi"],
+        "ZIKBI": [37.01548,27.77451],
+        "KOS": [36.7906,27.0911,"kos"],
+        "GIHEP": [37.07214,27.44273],
+        "SAM": [37.6866,26.9071,"samos"],
+        "JIJEH": [37.39606,27.41],
+        "_RWY10L04DME": [37.27408,27.569],
+        "_RWY28R04DME": [37.22816,27.76165],
+        "_RWY10R04DME": [37.27265,27.56846],
+        "_RWY28L04DME": [37.22759,27.75569]
+    },
+    "runways": [
+        {"name":["10L","28R"],"end":[[37.255,27.6492,"9ft"],[37.2473,27.6815,"21ft"]],"ils":[true,true]},
+        {"name":["10R","28L"],"end":[[37.2534,27.6486,"14ft"],[37.2469,27.6756,"14ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "GIVLA2C": {"icao":"GIVLA2C","name":"Givla Two Charlie","rwy":{"LTFE10L":["_RWY28R04DME"],"LTFE28R":["_RWY10L04DME"],"LTFE10R":["_RWY28L04DME"],"LTFE28L":["_RWY10R04DME"]},"body":[],"exitPoints":{"GIVLA":["GIVLA"]},"draw":[["LTFE","GIVLA*"]]},
+        "DIDRU2B": {"icao":"DIDRU2B","name":"Didru Two Bravo","rwy":{"LTFE10L":["_RWY28R04DME"],"LTFE28R":["_RWY10L04DME"],"LTFE10R":["_RWY28L04DME"],"LTFE28L":["_RWY10R04DME"]},"body":[],"exitPoints":{"DIDRU":["DIDRU"]},"draw":[["LTFE","DIDRU*"]]},
+        "PAR2E": {"icao":"PAR2E","name":"Paradisi Two Echo","rwy":{"LTFE10L":["_RWY28R04DME"],"LTFE28R":["_RWY10L04DME"],"LTFE10R":["_RWY28L04DME"],"LTFE28L":["_RWY10R04DME"]},"body":[],"exitPoints":{"PAR":["PAR"]},"draw":[["LTFE","PAR*"]]},
+        "KOS2D": {"icao":"KOS2D","name":"Kos Two Delta","rwy":{"LTFE10L":["_RWY28R04DME"],"LTFE28R":["_RWY10L04DME"],"LTFE10R":["_RWY28L04DME"],"LTFE28L":["_RWY10R04DME"]},"body":[],"exitPoints":{"KOS":["KOS"]},"draw":[["LTFE","KOS*"]]},
+        "SAM2C": {"icao":"SAM2C","name":"Samos Two Charlie","rwy":{"LTFE10L":["_RWY28R04DME"],"LTFE28R":["_RWY10L04DME"],"LTFE10R":["_RWY28L04DME"],"LTFE28L":["_RWY10R04DME"]},"body":[],"exitPoints":{"SAM":["SAM"]},"draw":[["LTFE","SAM*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LTFE","destination":"EGCC","category":"departure","route":"LTFE28R.SAM2C.SAM","altitude":"","speed":"","method":"random","rate":1.08,"airlines":[["exs/b738",2],["mon/a321",1],["tcx/a321",1],["tvf/b738",1],["tvf/b763",1]]},
+        {"origin":"LTFE","destination":"LTFM","category":"departure","route":"LTFE28R.GIVLA2C.GIVLA","altitude":"","speed":"","method":"random","rate":0.9,"airlines":[["kkk/a320",1],["ohy/a320",1],["thy/a320",1],["thy/a321",1],["thy/b738",1]]},
+        {"origin":"LTFE","destination":"EGKK","category":"departure","route":"LTFE28R.SAM2C.SAM","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["ezy/a320",1],["mon/a321",1],["tvf/b738",1]]},
+        {"origin":"LTFE","destination":"LTFJ","category":"departure","route":"LTFE28R.GIVLA2C.GIVLA","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["pgt/a320",1],["pgt/b738",1],["thy/b738",1]]},
+        {"origin":"LTFE","destination":"EGBB","category":"departure","route":"LTFE28R.SAM2C.SAM","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["mon/a321",1],["tvf/b752",1]]},
+        {"origin":"LTFE","destination":"EGGW","category":"departure","route":"LTFE28R.SAM2C.SAM","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["mon/a320",1],["mon/a321",1]]},
+        {"origin":"LTFE","destination":"","category":"departure","route":"LTFE28R.DIDRU2B.DIDRU","altitude":"","speed":"","method":"random","rate":0.18,"airlines":[["pgt/b738",1]]},
+        {"origin":"LTFE","destination":"","category":"departure","route":"LTFE28R.SAM2C.SAM","altitude":"","speed":"","method":"random","rate":2.88,"airlines":[["tra/b738",4],["exs/b738",2],["exs/b752",2],["ezy/a319",2],["ezy/a320",2],["mon/a320",1],["pgt/b738",1],["tvf/b738",1],["tvf/b752",1]]},
+        {"origin":"LTFE","destination":"","category":"departure","route":"LTFE28R.KOS2D.KOS","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["tc/c172",6],["tc/p28a",5],["tc/c182",3],["tc/be36",2],["tc/da42",1],["tc/tb20",1],["tc/c208",2],["tc/pc12",2],["tc/be20",1],["tc/b350",1],["tc/p180",1],["tc/c510",1],["tc/e50p",1],["tc/c550",2],["tc/e55p",1],["tc/cl30",1],["tc/c680",1],["tc/h25b",1],["tc/lj45",1],["tc/f2th",1],["tc/glf4",1],["tc/glex",1],["tc/glf5",1]]},
+        {"origin":"LTFE","destination":"","category":"departure","route":"LTFE28R.DIDRU2B.DIDRU","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["tc/c172",6],["tc/p28a",5],["tc/c182",3],["tc/be36",2],["tc/da42",1],["tc/tb20",1],["tc/c208",2],["tc/pc12",2],["tc/be20",1],["tc/b350",1],["tc/p180",1],["tc/c510",1],["tc/e50p",1],["tc/c550",2],["tc/e55p",1],["tc/cl30",1],["tc/c680",1],["tc/h25b",1],["tc/lj45",1],["tc/f2th",1],["tc/glf4",1],["tc/glex",1],["tc/glf5",1]]},
+        {"origin":"EGCC","destination":"LTFE","category":"arrival","route":"SAM..JIJEH..LTFE","altitude":[6000,9000],"speed":250,"method":"random","rate":1.08,"airlines":[["exs/b738",2],["mon/a321",1],["tcx/a321",1],["tvf/b738",1],["tvf/b763",1]]},
+        {"origin":"LTFM","destination":"LTFE","category":"arrival","route":"GIVLA..ULURU..LTFE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.9,"airlines":[["kkk/a320",1],["ohy/a320",1],["thy/a320",1],["thy/a321",1],["thy/b738",1]]},
+        {"origin":"EGKK","destination":"LTFE","category":"arrival","route":"SAM..JIJEH..LTFE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.54,"airlines":[["ezy/a320",1],["mon/a321",1],["tvf/b738",1]]},
+        {"origin":"LTFJ","destination":"LTFE","category":"arrival","route":"GIVLA..ULURU..LTFE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.54,"airlines":[["pgt/a320",1],["pgt/b738",1],["thy/b738",1]]},
+        {"origin":"EGBB","destination":"LTFE","category":"arrival","route":"SAM..JIJEH..LTFE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.36,"airlines":[["mon/a321",1],["tvf/b752",1]]},
+        {"origin":"EGGW","destination":"LTFE","category":"arrival","route":"SAM..JIJEH..LTFE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.36,"airlines":[["mon/a320",1],["mon/a321",1]]},
+        {"origin":"","destination":"LTFE","category":"arrival","route":"DIDRU..TAMOP..LTFE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.18,"airlines":[["pgt/b738",1]]},
+        {"origin":"","destination":"LTFE","category":"arrival","route":"SAM..JIJEH..LTFE","altitude":[6000,9000],"speed":250,"method":"random","rate":2.88,"airlines":[["tra/b738",4],["exs/b738",2],["exs/b752",2],["ezy/a319",2],["ezy/a320",2],["mon/a320",1],["pgt/b738",1],["tvf/b738",1],["tvf/b752",1]]},
+        {"origin":"","destination":"LTFE","category":"arrival","route":"KOS..GIHEP..LTFE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["tc/c172",6],["tc/p28a",5],["tc/c182",3],["tc/be36",2],["tc/da42",1],["tc/tb20",1],["tc/c208",2],["tc/pc12",2],["tc/be20",1],["tc/b350",1],["tc/p180",1],["tc/c510",1],["tc/e50p",1],["tc/c550",2],["tc/e55p",1],["tc/cl30",1],["tc/c680",1],["tc/h25b",1],["tc/lj45",1],["tc/f2th",1],["tc/glf4",1],["tc/glex",1],["tc/glf5",1]]},
+        {"origin":"","destination":"LTFE","category":"arrival","route":"DIDRU..TAMOP..LTFE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.47,"airlines":[["tc/c172",6],["tc/p28a",5],["tc/c182",3],["tc/be36",2],["tc/da42",1],["tc/tb20",1],["tc/c208",2],["tc/pc12",2],["tc/be20",1],["tc/b350",1],["tc/p180",1],["tc/c510",1],["tc/e50p",1],["tc/c550",2],["tc/e55p",1],["tc/cl30",1],["tc/c680",1],["tc/h25b",1],["tc/lj45",1],["tc/f2th",1],["tc/glf4",1],["tc/glex",1],["tc/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [37.9328,27.8868,37.4911,27.7428],
+            [37.4911,27.7428,37.2493,27.664],
+            [37.2462,28.5511,37.2482,27.9779],
+            [37.2482,27.9779,37.2493,27.664],
+            [36.4001,28.0653,37.0155,27.7745],
+            [37.0155,27.7745,37.2493,27.664],
+            [36.7906,27.0911,37.0721,27.4427],
+            [37.0721,27.4427,37.2493,27.664],
+            [37.6866,26.9071,37.3961,27.41],
+            [37.3961,27.41,37.2493,27.664]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [37.255,27.6492,37.3026,27.4486],
+            [37.2693,27.5453,37.2884,27.5525],
+            [37.293,27.445,37.3122,27.4522],
+            [37.2473,27.6815,37.1994,27.8818],
+            [37.2329,27.7853,37.2138,27.7781],
+            [37.2089,27.8854,37.1898,27.8782],
+            [37.2534,27.6486,37.3014,27.4482],
+            [37.2679,27.5448,37.287,27.5521],
+            [37.2919,27.4445,37.311,27.4518],
+            [37.2469,27.6756,37.1985,27.8758],
+            [37.2323,27.7793,37.2132,27.7721],
+            [37.2081,27.8794,37.189,27.8721]
+        ]}
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGTE/",
+    "info": {"country":"GB","city":"Exeter","type":"medium_airport","longestRunwayM":2076,"frequencies":{"atis":"119.325","twr":"119.800","app":"128.975"}},
+    "radio": {"twr":"Exeter Tower","app":"Exeter Approach","dep":"Exeter Radar"},
+    "icao": "EGTE",
+    "iata": "EXT",
+    "magnetic_north": 0,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [50.734261,-3.413984,"102ft"],
+    "rangeRings": {"enabled":true,"center":[50.734261,-3.413984],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":240,"speed":11},
+    "arrivalRunway": "26",
+    "departureRunway": "26",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[51.2739,-3.414],[51.2555,-3.1933],[51.2016,-2.9877],[51.1158,-2.8111],[51.0041,-2.6757],[50.8739,-2.5905],[50.7343,-2.5614],[50.5946,-2.5905],[50.4645,-2.6757],[50.3527,-2.8111],[50.267,-2.9877],[50.2131,-3.1933],[50.1947,-3.414],[50.2131,-3.6346],[50.267,-3.8403],[50.3527,-4.0168],[50.4645,-4.1523],[50.5946,-4.2375],[50.7343,-4.2665],[50.8739,-4.2375],[51.0041,-4.1523],[51.1158,-4.0168],[51.2016,-3.8403],[51.2555,-3.6346]]}
+    ],
+    "fixes": {
+        "EGTE": [50.73426,-3.41398],
+        "BCN": [51.7256,-3.26306,"brecon"],
+        "TIRAC": [50.98294,-3.37612],
+        "COM": [50.9662,-2.15517,"compt n abbas"],
+        "GEMVI": [50.80409,-3.03499],
+        "IJASA": [50.08038,-2.99275],
+        "NICZU": [50.50292,-3.26495],
+        "SM": [50.4481,-4.99455,"st mawgan"],
+        "ZEPJA": [50.66555,-3.79349],
+        "_RWY0804DME": [50.71601,-3.53016],
+        "_RWY2604DME": [50.75244,-3.29772]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[50.73207,-3.42802,"99ft"],[50.73647,-3.39994,"102ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "BCN1A": {"icao":"BCN1A","name":"Brecon One Alpha","rwy":{"EGTE08":["_RWY2604DME"],"EGTE26":["_RWY0804DME"]},"body":[],"exitPoints":{"BCN":["BCN"]},"draw":[["EGTE","BCN*"]]},
+        "COM3E": {"icao":"COM3E","name":"Compt N Abbas Three Echo","rwy":{"EGTE08":["_RWY2604DME"],"EGTE26":["_RWY0804DME"]},"body":[],"exitPoints":{"COM":["COM"]},"draw":[["EGTE","COM*"]]},
+        "IJASA2A": {"icao":"IJASA2A","name":"Ijasa Two Alpha","rwy":{"EGTE08":["_RWY2604DME"],"EGTE26":["_RWY0804DME"]},"body":[],"exitPoints":{"IJASA":["IJASA"]},"draw":[["EGTE","IJASA*"]]},
+        "SM2A": {"icao":"SM2A","name":"St Mawgan Two Alpha","rwy":{"EGTE08":["_RWY2604DME"],"EGTE26":["_RWY0804DME"]},"body":[],"exitPoints":{"SM":["SM"]},"draw":[["EGTE","SM*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGTE","destination":"LEPA","category":"departure","route":"EGTE26.IJASA2A.IJASA","altitude":"","speed":"","method":"random","rate":0.95,"airlines":[["bee/e190",1],["tom/b738",1],["tvf/b738",1]]},
+        {"origin":"EGTE","destination":"LPFR","category":"departure","route":"EGTE26.IJASA2A.IJASA","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["bee/e190",1],["tvf/b738",1]]},
+        {"origin":"EGTE","destination":"EDDL","category":"departure","route":"EGTE26.COM3E.COM","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["bee/dh8d",1]]},
+        {"origin":"EGTE","destination":"EGAC","category":"departure","route":"EGTE26.BCN1A.BCN","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["bee/dh8d",1]]},
+        {"origin":"EGTE","destination":"EGCC","category":"departure","route":"EGTE26.BCN1A.BCN","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["bee/dh8d",1]]},
+        {"origin":"EGTE","destination":"EGJB","category":"departure","route":"EGTE26.IJASA2A.IJASA","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["bee/dh8d",1]]},
+        {"origin":"EGTE","destination":"","category":"departure","route":"EGTE26.BCN1A.BCN","altitude":"","speed":"","method":"random","rate":0.95,"airlines":[["bee/dh8d",2],["bee/e190",1]]},
+        {"origin":"EGTE","destination":"","category":"departure","route":"EGTE26.COM3E.COM","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["bee/dh8d",2]]},
+        {"origin":"EGTE","destination":"","category":"departure","route":"EGTE26.IJASA2A.IJASA","altitude":"","speed":"","method":"random","rate":1.91,"airlines":[["bee/dh8d",3],["bee/e190",2],["amc/a320",1]]},
+        {"origin":"EGTE","destination":"","category":"departure","route":"EGTE26.IJASA2A.IJASA","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",2],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]},
+        {"origin":"EGTE","destination":"","category":"departure","route":"EGTE26.SM2A.SM","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",2],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]},
+        {"origin":"LEPA","destination":"EGTE","category":"arrival","route":"IJASA..NICZU..EGTE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.95,"airlines":[["bee/e190",1],["tom/b738",1],["tvf/b738",1]]},
+        {"origin":"LPFR","destination":"EGTE","category":"arrival","route":"IJASA..NICZU..EGTE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.64,"airlines":[["bee/e190",1],["tvf/b738",1]]},
+        {"origin":"EDDL","destination":"EGTE","category":"arrival","route":"COM..GEMVI..EGTE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.32,"airlines":[["bee/dh8d",1]]},
+        {"origin":"EGAC","destination":"EGTE","category":"arrival","route":"BCN..TIRAC..EGTE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.32,"airlines":[["bee/dh8d",1]]},
+        {"origin":"EGCC","destination":"EGTE","category":"arrival","route":"BCN..TIRAC..EGTE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.32,"airlines":[["bee/dh8d",1]]},
+        {"origin":"EGJB","destination":"EGTE","category":"arrival","route":"IJASA..NICZU..EGTE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.32,"airlines":[["bee/dh8d",1]]},
+        {"origin":"","destination":"EGTE","category":"arrival","route":"BCN..TIRAC..EGTE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.95,"airlines":[["bee/dh8d",2],["bee/e190",1]]},
+        {"origin":"","destination":"EGTE","category":"arrival","route":"COM..GEMVI..EGTE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.64,"airlines":[["bee/dh8d",2]]},
+        {"origin":"","destination":"EGTE","category":"arrival","route":"IJASA..NICZU..EGTE","altitude":[6000,9000],"speed":250,"method":"random","rate":1.91,"airlines":[["bee/dh8d",3],["bee/e190",2],["amc/a320",1]]},
+        {"origin":"","destination":"EGTE","category":"arrival","route":"IJASA..NICZU..EGTE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",2],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]},
+        {"origin":"","destination":"EGTE","category":"arrival","route":"SM..ZEPJA..EGTE","altitude":[6000,9000],"speed":250,"method":"random","rate":0.43,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",2],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [51.7256,-3.2631,50.9829,-3.3761],
+            [50.9829,-3.3761,50.7343,-3.414],
+            [50.9662,-2.1552,50.8041,-3.035],
+            [50.8041,-3.035,50.7343,-3.414],
+            [50.0804,-2.9928,50.5029,-3.265],
+            [50.5029,-3.265,50.7343,-3.414],
+            [50.4481,-4.9946,50.6656,-3.7935],
+            [50.6656,-3.7935,50.7343,-3.414]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [50.7321,-3.428,50.6918,-3.6832],
+            [50.7023,-3.5519,50.7217,-3.5595],
+            [50.6821,-3.6794,50.7015,-3.687],
+            [50.7365,-3.3999,50.7762,-3.1443],
+            [50.7661,-3.276,50.7467,-3.2684],
+            [50.7859,-3.1481,50.7665,-3.1405]
+        ]}
+    ]
+}

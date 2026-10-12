@@ -1,0 +1,66 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGEP/",
+    "info": {"country":"GB","city":"Papa Westray","type":"small_airport","longestRunwayM":527,"approximateRunways":true},
+    "radio": {"twr":"Papa Westray Tower","app":"Papa Westray Approach","dep":"Papa Westray Radar"},
+    "icao": "EGEP",
+    "iata": "PPW",
+    "magnetic_north": -0.8,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [59.351012,-2.900353,"91ft"],
+    "rangeRings": {"enabled":true,"center":[59.351012,-2.900353],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":200,"speed":8},
+    "arrivalRunway": "22",
+    "departureRunway": "22",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[59.7557,-2.9114],[59.7433,-2.7056],[59.7043,-2.5131],[59.6411,-2.3469],[59.5582,-2.2185],[59.4612,-2.1365],[59.3567,-2.1066],[59.2517,-2.1307],[59.1536,-2.2074],[59.0689,-2.3312],[59.0034,-2.4939],[58.9616,-2.6842],[58.9464,-2.8893],[58.9587,-3.0951],[58.9977,-3.2876],[59.0609,-3.4538],[59.1438,-3.5823],[59.2408,-3.6642],[59.3454,-3.6941],[59.4503,-3.67],[59.5484,-3.5933],[59.6332,-3.4695],[59.6986,-3.3068],[59.7404,-3.1165]]}
+    ],
+    "fixes": {
+        "EGEP": [59.35101,-2.90035],
+        "SUM": [59.8789,-1.28667,"sumburgh"],
+        "CIWOV": [59.45896,-2.57039],
+        "WIK": [58.4589,-3.10028,"wick"],
+        "BAFUB": [59.15244,-2.94485],
+        "IHEWO": [59.22991,-3.92851],
+        "CUZIW": [59.30602,-3.28235],
+        "CUGCE": [59.87514,-3.13792],
+        "ZADOK": [59.54575,-2.98862],
+        "_RWY0403DME": [59.30661,-2.95467],
+        "_RWY2203DME": [59.39539,-2.8459]
+    },
+    "runways": [
+        {"name":["04","22"],"end":[[59.349,-2.90282,"87ft"],[59.35302,-2.89789,"89ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "SUM3B": {"icao":"SUM3B","name":"Sumburgh Three Bravo","rwy":{"EGEP04":["_RWY2203DME"],"EGEP22":["_RWY0403DME"]},"body":[],"exitPoints":{"SUM":["SUM"]},"draw":[["EGEP","SUM*"]]},
+        "WIK2D": {"icao":"WIK2D","name":"Wick Two Delta","rwy":{"EGEP04":["_RWY2203DME"],"EGEP22":["_RWY0403DME"]},"body":[],"exitPoints":{"WIK":["WIK"]},"draw":[["EGEP","WIK*"]]},
+        "IHEWO1B": {"icao":"IHEWO1B","name":"Ihewo One Bravo","rwy":{"EGEP04":["_RWY2203DME"],"EGEP22":["_RWY0403DME"]},"body":[],"exitPoints":{"IHEWO":["IHEWO"]},"draw":[["EGEP","IHEWO*"]]},
+        "CUGCE3C": {"icao":"CUGCE3C","name":"Cugce Three Charlie","rwy":{"EGEP04":["_RWY2203DME"],"EGEP22":["_RWY0403DME"]},"body":[],"exitPoints":{"CUGCE":["CUGCE"]},"draw":[["EGEP","CUGCE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGEP","destination":"","category":"departure","route":"EGEP22.WIK2D.WIK","altitude":"","speed":"","method":"random","rate":3,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/pc12",2],["g/be20",1]]},
+        {"origin":"","destination":"EGEP","category":"arrival","route":"WIK..BAFUB..EGEP","altitude":[4000,7000],"speed":250,"method":"random","rate":3,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/pc12",2],["g/be20",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [59.8789,-1.2867,59.459,-2.5704],
+            [59.459,-2.5704,59.351,-2.9004],
+            [58.4589,-3.1003,59.1524,-2.9449],
+            [59.1524,-2.9449,59.351,-2.9004],
+            [59.2299,-3.9285,59.306,-3.2824],
+            [59.306,-3.2824,59.351,-2.9004],
+            [59.8751,-3.1379,59.5457,-2.9886],
+            [59.5457,-2.9886,59.351,-2.9004]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [59.353,-2.8979,59.4942,-2.7241],
+            [59.4289,-2.8278,59.4183,-2.7945],
+            [59.4995,-2.7408,59.4889,-2.7074]
+        ]}
+    ]
+}

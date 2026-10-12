@@ -1,0 +1,94 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KBUR/",
+    "info": {"country":"US","city":"Burbank","type":"large_airport","longestRunwayM":2102,"frequencies":{"atis":"134.500","twr":"118.700","gnd":"123.900"}},
+    "radio": {"twr":"Burbank Tower","app":"Burbank Approach","dep":"Burbank Departure"},
+    "icao": "KBUR",
+    "iata": "BUR",
+    "magnetic_north": 11.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [34.202834,-118.35805,"778ft"],
+    "rangeRings": {"enabled":true,"center":[34.202834,-118.35805],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":330,"speed":12},
+    "arrivalRunway": "33",
+    "departureRunway": "33",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[34.5994,-118.2605],[34.565,-118.1397],[34.5059,-118.0338],[34.4262,-117.95],[34.3312,-117.894],[34.2275,-117.8696],[34.1222,-117.8786],[34.0223,-117.9201],[33.9347,-117.9916],[33.8654,-118.088],[33.8191,-118.2028],[33.7989,-118.3282],[33.8063,-118.4556],[33.8407,-118.5764],[33.8997,-118.6823],[33.9795,-118.7661],[34.0744,-118.8221],[34.1781,-118.8465],[34.2835,-118.8375],[34.3834,-118.796],[34.471,-118.7245],[34.5403,-118.6281],[34.5866,-118.5133],[34.6068,-118.3879]]}
+    ],
+    "fixes": {
+        "KBUR": [34.20283,-118.35805],
+        "VCV": [34.5942,-117.39,"victorville"],
+        "ATIVE": [34.29061,-118.14094],
+        "PDZ": [33.9183,-117.53,"paradise"],
+        "FIHNU": [34.12615,-118.13489],
+        "JOLES": [33.83222,-118.82949],
+        "VAVUG": [34.06514,-118.53321],
+        "LHS": [34.683,-118.577,"lake hughes"],
+        "DOCPA": [34.38984,-118.44333],
+        "_RWY1504DME": [34.27486,-118.37775],
+        "_RWY3304DME": [34.12989,-118.33774],
+        "_RWY0804DME": [34.19899,-118.4497],
+        "_RWY2604DME": [34.19653,-118.26945]
+    },
+    "runways": [
+        {"name":["15","33"],"end":[[34.20991,-118.35981,"768ft"],[34.19484,-118.35565,"698ft"]],"ils":[true,true]},
+        {"name":["08","26"],"end":[[34.19792,-118.36916,"727ft"],[34.19765,-118.34998,"697ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "VCV2D": {"icao":"VCV2D","name":"Victorville Two Delta","rwy":{"KBUR15":["_RWY3304DME"],"KBUR33":["_RWY1504DME"],"KBUR08":["_RWY2604DME"],"KBUR26":["_RWY0804DME"]},"body":[],"exitPoints":{"VCV":["VCV"]},"draw":[["KBUR","VCV*"]]},
+        "PDZ2B": {"icao":"PDZ2B","name":"Paradise Two Bravo","rwy":{"KBUR15":["_RWY3304DME"],"KBUR33":["_RWY1504DME"],"KBUR08":["_RWY2604DME"],"KBUR26":["_RWY0804DME"]},"body":[],"exitPoints":{"PDZ":["PDZ"]},"draw":[["KBUR","PDZ*"]]},
+        "JOLES3F": {"icao":"JOLES3F","name":"Joles Three Foxtrot","rwy":{"KBUR15":["_RWY3304DME"],"KBUR33":["_RWY1504DME"],"KBUR08":["_RWY2604DME"],"KBUR26":["_RWY0804DME"]},"body":[],"exitPoints":{"JOLES":["JOLES"]},"draw":[["KBUR","JOLES*"]]},
+        "LHS2E": {"icao":"LHS2E","name":"Lake Hughes Two Echo","rwy":{"KBUR15":["_RWY3304DME"],"KBUR33":["_RWY1504DME"],"KBUR08":["_RWY2604DME"],"KBUR26":["_RWY0804DME"]},"body":[],"exitPoints":{"LHS":["LHS"]},"draw":[["KBUR","LHS*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KBUR","destination":"KLAS","category":"departure","route":"KBUR33.VCV2D.VCV","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["swa/b737",1],["swa/b738",1]]},
+        {"origin":"KBUR","destination":"KOAK","category":"departure","route":"KBUR33.LHS2E.LHS","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["swa/b737",1],["swa/b738",1]]},
+        {"origin":"KBUR","destination":"KSEA","category":"departure","route":"KBUR33.LHS2E.LHS","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["asa/b737",1],["asa/b738",1]]},
+        {"origin":"KBUR","destination":"KDEN","category":"departure","route":"KBUR33.VCV2D.VCV","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["swa/b737",1]]},
+        {"origin":"KBUR","destination":"KIPL","category":"departure","route":"KBUR33.PDZ2B.PDZ","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["sqh/c208",1]]},
+        {"origin":"KBUR","destination":"","category":"departure","route":"KBUR33.VCV2D.VCV","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["jbu/a320",1]]},
+        {"origin":"KBUR","destination":"","category":"departure","route":"KBUR33.PDZ2B.PDZ","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["swa/b737",1]]},
+        {"origin":"KBUR","destination":"","category":"departure","route":"KBUR33.LHS2E.LHS","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["swa/b737",2]]},
+        {"origin":"KBUR","destination":"","category":"departure","route":"KBUR33.JOLES3F.JOLES","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KLAS","destination":"KBUR","category":"arrival","route":"VCV..ATIVE..KBUR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["swa/b737",1],["swa/b738",1]]},
+        {"origin":"KOAK","destination":"KBUR","category":"arrival","route":"LHS..DOCPA..KBUR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["swa/b737",1],["swa/b738",1]]},
+        {"origin":"KSEA","destination":"KBUR","category":"arrival","route":"LHS..DOCPA..KBUR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["asa/b737",1],["asa/b738",1]]},
+        {"origin":"KDEN","destination":"KBUR","category":"arrival","route":"VCV..ATIVE..KBUR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["swa/b737",1]]},
+        {"origin":"KIPL","destination":"KBUR","category":"arrival","route":"PDZ..FIHNU..KBUR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["sqh/c208",1]]},
+        {"origin":"","destination":"KBUR","category":"arrival","route":"VCV..ATIVE..KBUR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["jbu/a320",1]]},
+        {"origin":"","destination":"KBUR","category":"arrival","route":"PDZ..FIHNU..KBUR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["swa/b737",1]]},
+        {"origin":"","destination":"KBUR","category":"arrival","route":"LHS..DOCPA..KBUR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["swa/b737",2]]},
+        {"origin":"","destination":"KBUR","category":"arrival","route":"JOLES..VAVUG..KBUR","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [34.5942,-117.39,34.2906,-118.1409],
+            [34.2906,-118.1409,34.2028,-118.358],
+            [33.9183,-117.53,34.1262,-118.1349],
+            [34.1262,-118.1349,34.2028,-118.358],
+            [33.8322,-118.8295,34.0651,-118.5332],
+            [34.0651,-118.5332,34.2028,-118.358],
+            [34.683,-118.577,34.3898,-118.4433],
+            [34.3898,-118.4433,34.2028,-118.358]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [34.2099,-118.3598,34.3723,-118.4047],
+            [34.2889,-118.394,34.2933,-118.3704],
+            [34.3701,-118.4165,34.3745,-118.3929],
+            [34.1948,-118.3556,34.0325,-118.3109],
+            [34.1159,-118.3215,34.1114,-118.345],
+            [34.0347,-118.2992,34.0302,-118.3227],
+            [34.1979,-118.3692,34.2005,-118.5705],
+            [34.1893,-118.47,34.2092,-118.4696],
+            [34.1905,-118.5707,34.2105,-118.5703],
+            [34.1977,-118.35,34.1947,-118.1486],
+            [34.2062,-118.2491,34.1862,-118.2495],
+            [34.2047,-118.1484,34.1847,-118.1488]
+        ]}
+    ]
+}

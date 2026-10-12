@@ -1,0 +1,102 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KDAY/",
+    "info": {"country":"US","city":"Dayton","type":"medium_airport","longestRunwayM":3323,"frequencies":{"atis":"125.800","twr":"119.900","gnd":"121.900"}},
+    "radio": {"twr":"Dayton Tower","app":"Dayton Approach","dep":"Dayton Departure"},
+    "icao": "KDAY",
+    "iata": "DAY",
+    "magnetic_north": -6.4,
+    "ctr_radius": 60,
+    "ctr_ceiling": 11000,
+    "initial_alt": 6000,
+    "position": [39.902401,-84.219398,"1009ft"],
+    "rangeRings": {"enabled":true,"center":[39.902401,-84.219398],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":240,"speed":7},
+    "arrivalRunway": "24R",
+    "departureRunway": "24R",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":110,"airspace_class":"C","poly":[[40.4386,-84.2978],[40.4359,-84.1142],[40.3969,-83.9378],[40.3241,-83.7806],[40.2226,-83.6532],[40.0993,-83.5645],[39.9625,-83.5204],[39.8217,-83.5239],[39.6864,-83.5748],[39.5658,-83.6697],[39.4681,-83.802],[39.4,-83.9627],[39.3662,-84.141],[39.3689,-84.3246],[39.4079,-84.501],[39.4807,-84.6582],[39.5822,-84.7855],[39.7055,-84.8743],[39.8423,-84.9184],[39.9831,-84.9149],[40.1184,-84.864],[40.239,-84.7691],[40.3367,-84.6368],[40.4048,-84.476]]}
+    ],
+    "fixes": {
+        "KDAY": [39.9024,-84.2194],
+        "AOH": [40.7071,-83.9682,"allen co"],
+        "LOHLI": [40.14536,-84.14355],
+        "CHC": [40.0101,-83.029,"grens"],
+        "VABEW": [39.93166,-83.89597],
+        "GEO": [38.882,-83.8852,"georgetown"],
+        "KODGA": [39.6601,-84.14004],
+        "CEV": [39.6976,-85.1344,"connersville"],
+        "GELDA": [39.83243,-84.53203],
+        "PLD": [40.4537,-84.9836,"portland"],
+        "UKEBU": [40.07355,-84.45664],
+        "_RWY06L04DME": [39.85705,-84.31727],
+        "_RWY24R04DME": [39.9501,-84.14274],
+        "_RWY1804DME": [39.9839,-84.21437],
+        "_RWY3604DME": [39.8274,-84.20904],
+        "_RWY06R04DME": [39.85302,-84.29371],
+        "_RWY24L04DME": [39.93984,-84.13049]
+    },
+    "runways": [
+        {"name":["06L","24R"],"end":[[39.8951,-84.246,"998ft"],[39.9121,-84.2141,"996ft"]],"ils":[true,true]},
+        {"name":["18","36"],"end":[[39.9173,-84.2121,"991ft"],[39.894,-84.2113,"1007ft"]],"ils":[false,false]},
+        {"name":["06R","24L"],"end":[[39.891,-84.2224,"1006ft"],[39.9019,-84.2019,"1001ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "AOH3F": {"icao":"AOH3F","name":"Allen Co Three Foxtrot","rwy":{"KDAY06L":["_RWY24R04DME"],"KDAY24R":["_RWY06L04DME"],"KDAY18":["_RWY3604DME"],"KDAY36":["_RWY1804DME"],"KDAY06R":["_RWY24L04DME"],"KDAY24L":["_RWY06R04DME"]},"body":[],"exitPoints":{"AOH":["AOH"]},"draw":[["KDAY","AOH*"]]},
+        "CHC3F": {"icao":"CHC3F","name":"Grens Three Foxtrot","rwy":{"KDAY06L":["_RWY24R04DME"],"KDAY24R":["_RWY06L04DME"],"KDAY18":["_RWY3604DME"],"KDAY36":["_RWY1804DME"],"KDAY06R":["_RWY24L04DME"],"KDAY24L":["_RWY06R04DME"]},"body":[],"exitPoints":{"CHC":["CHC"]},"draw":[["KDAY","CHC*"]]},
+        "GEO1B": {"icao":"GEO1B","name":"Georgetown One Bravo","rwy":{"KDAY06L":["_RWY24R04DME"],"KDAY24R":["_RWY06L04DME"],"KDAY18":["_RWY3604DME"],"KDAY36":["_RWY1804DME"],"KDAY06R":["_RWY24L04DME"],"KDAY24L":["_RWY06R04DME"]},"body":[],"exitPoints":{"GEO":["GEO"]},"draw":[["KDAY","GEO*"]]},
+        "CEV2C": {"icao":"CEV2C","name":"Connersville Two Charlie","rwy":{"KDAY06L":["_RWY24R04DME"],"KDAY24R":["_RWY06L04DME"],"KDAY18":["_RWY3604DME"],"KDAY36":["_RWY1804DME"],"KDAY06R":["_RWY24L04DME"],"KDAY24L":["_RWY06R04DME"]},"body":[],"exitPoints":{"CEV":["CEV"]},"draw":[["KDAY","CEV*"]]},
+        "PLD1F": {"icao":"PLD1F","name":"Portland One Foxtrot","rwy":{"KDAY06L":["_RWY24R04DME"],"KDAY24R":["_RWY06L04DME"],"KDAY18":["_RWY3604DME"],"KDAY36":["_RWY1804DME"],"KDAY06R":["_RWY24L04DME"],"KDAY24L":["_RWY06R04DME"]},"body":[],"exitPoints":{"PLD":["PLD"]},"draw":[["KDAY","PLD*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KDAY","destination":"KDFW","category":"departure","route":"KDAY24R.CEV2C.CEV","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["aal/a319",2],["aal/md82",2],["aal/md83",2]]},
+        {"origin":"KDAY","destination":"KCLT","category":"departure","route":"KDAY24R.GEO1B.GEO","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["aal/crj7",2],["aal/crj9",1],["aal/crj2",1]]},
+        {"origin":"KDAY","destination":"KATL","category":"departure","route":"KDAY24R.GEO1B.GEO","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["dal/md88",1],["swa/b712",1]]},
+        {"origin":"KDAY","destination":"KBWI","category":"departure","route":"KDAY24R.CHC3F.CHC","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["swa/b733",1],["swa/b737",1]]},
+        {"origin":"KDAY","destination":"KDCA","category":"departure","route":"KDAY24R.CHC3F.CHC","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["aal/crj7",1],["aal/crj9",1],["aal/crj2",1]]},
+        {"origin":"KDAY","destination":"","category":"departure","route":"KDAY24R.AOH3F.AOH","altitude":"","speed":"","method":"random","rate":0.24,"airlines":[["dal/e145",1],["dal/e135",1]]},
+        {"origin":"KDAY","destination":"","category":"departure","route":"KDAY24R.CHC3F.CHC","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["aal/e145",1],["aal/crj7",1],["aal/crj9",1],["aal/crj2",1]]},
+        {"origin":"KDAY","destination":"","category":"departure","route":"KDAY24R.GEO1B.GEO","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["swa/b712",1],["swa/b737",1]]},
+        {"origin":"KDAY","destination":"","category":"departure","route":"KDAY24R.CEV2C.CEV","altitude":"","speed":"","method":"random","rate":0.24,"airlines":[["swa/b737",1]]},
+        {"origin":"KDAY","destination":"","category":"departure","route":"KDAY24R.PLD1F.PLD","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["aal/e145",1],["dal/e145",1],["dal/e135",1]]},
+        {"origin":"KDAY","destination":"","category":"departure","route":"KDAY24R.PLD1F.PLD","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KDAY","destination":"","category":"departure","route":"KDAY24R.CEV2C.CEV","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KDFW","destination":"KDAY","category":"arrival","route":"CEV..GELDA..KDAY","altitude":[7000,10000],"speed":250,"method":"random","rate":1.45,"airlines":[["aal/a319",2],["aal/md82",2],["aal/md83",2]]},
+        {"origin":"KCLT","destination":"KDAY","category":"arrival","route":"GEO..KODGA..KDAY","altitude":[7000,10000],"speed":250,"method":"random","rate":0.72,"airlines":[["aal/crj7",2],["aal/crj9",1],["aal/crj2",1]]},
+        {"origin":"KATL","destination":"KDAY","category":"arrival","route":"GEO..KODGA..KDAY","altitude":[7000,10000],"speed":250,"method":"random","rate":0.48,"airlines":[["dal/md88",1],["swa/b712",1]]},
+        {"origin":"KBWI","destination":"KDAY","category":"arrival","route":"CHC..VABEW..KDAY","altitude":[7000,10000],"speed":250,"method":"random","rate":0.48,"airlines":[["swa/b733",1],["swa/b737",1]]},
+        {"origin":"KDCA","destination":"KDAY","category":"arrival","route":"CHC..VABEW..KDAY","altitude":[7000,10000],"speed":250,"method":"random","rate":0.48,"airlines":[["aal/crj7",1],["aal/crj9",1],["aal/crj2",1]]},
+        {"origin":"","destination":"KDAY","category":"arrival","route":"AOH..LOHLI..KDAY","altitude":[7000,10000],"speed":250,"method":"random","rate":0.24,"airlines":[["dal/e145",1],["dal/e135",1]]},
+        {"origin":"","destination":"KDAY","category":"arrival","route":"CHC..VABEW..KDAY","altitude":[7000,10000],"speed":250,"method":"random","rate":0.72,"airlines":[["aal/e145",1],["aal/crj7",1],["aal/crj9",1],["aal/crj2",1]]},
+        {"origin":"","destination":"KDAY","category":"arrival","route":"GEO..KODGA..KDAY","altitude":[7000,10000],"speed":250,"method":"random","rate":0.48,"airlines":[["swa/b712",1],["swa/b737",1]]},
+        {"origin":"","destination":"KDAY","category":"arrival","route":"CEV..GELDA..KDAY","altitude":[7000,10000],"speed":250,"method":"random","rate":0.24,"airlines":[["swa/b737",1]]},
+        {"origin":"","destination":"KDAY","category":"arrival","route":"PLD..UKEBU..KDAY","altitude":[7000,10000],"speed":250,"method":"random","rate":0.48,"airlines":[["aal/e145",1],["dal/e145",1],["dal/e135",1]]},
+        {"origin":"","destination":"KDAY","category":"arrival","route":"PLD..UKEBU..KDAY","altitude":[7000,10000],"speed":250,"method":"random","rate":0.4,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"","destination":"KDAY","category":"arrival","route":"CEV..GELDA..KDAY","altitude":[7000,10000],"speed":250,"method":"random","rate":0.4,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",2],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [40.7071,-83.9682,40.1454,-84.1436],
+            [40.1454,-84.1436,39.9024,-84.2194],
+            [40.0101,-83.029,39.9317,-83.896],
+            [39.9317,-83.896,39.9024,-84.2194],
+            [38.882,-83.8852,39.6601,-84.14],
+            [39.6601,-84.14,39.9024,-84.2194],
+            [39.6976,-85.1344,39.8324,-84.532],
+            [39.8324,-84.532,39.9024,-84.2194],
+            [40.4537,-84.9836,40.0736,-84.4566],
+            [40.0736,-84.4566,39.9024,-84.2194]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [39.8951,-84.246,39.7999,-84.424],
+            [39.8393,-84.3276,39.8557,-84.3425],
+            [39.7917,-84.4166,39.8081,-84.4314],
+            [39.9121,-84.2141,40.007,-84.0356],
+            [39.9678,-84.1323,39.9514,-84.1175],
+            [40.0152,-84.043,39.9988,-84.0281]
+        ]}
+    ]
+}

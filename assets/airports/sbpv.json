@@ -1,0 +1,72 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SBPV/",
+    "info": {"country":"BR","city":"Porto Velho","type":"large_airport","longestRunwayM":2400,"frequencies":{"twr":"118.700","app":"119.100"},"approximateRunways":true},
+    "radio": {"twr":"Porto Velho Tower","app":"Porto Velho Approach","dep":"Porto Velho Departure"},
+    "icao": "SBPV",
+    "iata": "PVH",
+    "magnetic_north": -14.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-8.708491,-63.902338,"295ft"],
+    "rangeRings": {"enabled":true,"center":[-8.708491,-63.902338],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":20,"speed":9},
+    "arrivalRunway": "01",
+    "departureRunway": "01",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-8.3165,-64.0042],[-8.3038,-63.8981],[-8.3187,-63.7922],[-8.3602,-63.6939],[-8.4253,-63.6098],[-8.5098,-63.5457],[-8.6078,-63.5058],[-8.7127,-63.4929],[-8.8173,-63.508],[-8.9145,-63.5499],[-8.9976,-63.6159],[-9.0611,-63.7014],[-9.1005,-63.8005],[-9.1132,-63.9066],[-9.0983,-64.0124],[-9.0568,-64.1107],[-8.9916,-64.1949],[-8.9072,-64.259],[-8.8091,-64.2989],[-8.7043,-64.3117],[-8.5997,-64.2967],[-8.5025,-64.2547],[-8.4193,-64.1888],[-8.3559,-64.1033]]}
+    ],
+    "fixes": {
+        "SBPV": [-8.70849,-63.90234],
+        "JIGBI": [-8.26396,-63.59586],
+        "OSICU": [-8.54333,-63.78847],
+        "OGOJA": [-9.02915,-63.46538],
+        "VUDPA": [-8.82763,-63.73999],
+        "WAZEZ": [-8.86335,-64.42351],
+        "ALEZI": [-8.76603,-64.09597],
+        "_RWY0104DME": [-8.78568,-63.89633],
+        "_RWY1904DME": [-8.63131,-63.90835]
+    },
+    "runways": [
+        {"name":["01","19"],"end":[[-8.71925,-63.9015,"295ft"],[-8.69773,-63.90318,"295ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "JIGBI3C": {"icao":"JIGBI3C","name":"Jigbi Three Charlie","rwy":{"SBPV01":["_RWY1904DME"],"SBPV19":["_RWY0104DME"]},"body":[],"exitPoints":{"JIGBI":["JIGBI"]},"draw":[["SBPV","JIGBI*"]]},
+        "OGOJA1E": {"icao":"OGOJA1E","name":"Ogoja One Echo","rwy":{"SBPV01":["_RWY1904DME"],"SBPV19":["_RWY0104DME"]},"body":[],"exitPoints":{"OGOJA":["OGOJA"]},"draw":[["SBPV","OGOJA*"]]},
+        "WAZEZ2F": {"icao":"WAZEZ2F","name":"Wazez Two Foxtrot","rwy":{"SBPV01":["_RWY1904DME"],"SBPV19":["_RWY0104DME"]},"body":[],"exitPoints":{"WAZEZ":["WAZEZ"]},"draw":[["SBPV","WAZEZ*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SBPV","destination":"SBCY","category":"departure","route":"SBPV01.OGOJA1E.OGOJA","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["azu/e190",2],["glo/b737",1],["glo/b738",1],["one/f100",1]]},
+        {"origin":"SBPV","destination":"SBEG","category":"departure","route":"SBPV01.JIGBI3C.JIGBI","altitude":"","speed":"","method":"random","rate":0.93,"airlines":[["azu/at72",1],["azu/e190",1],["glo/b737",1],["glo/b738",1]]},
+        {"origin":"SBPV","destination":"SBRB","category":"departure","route":"SBPV01.WAZEZ2F.WAZEZ","altitude":"","speed":"","method":"random","rate":0.7,"airlines":[["azu/e190",2],["glo/b737",1]]},
+        {"origin":"SBPV","destination":"SBBR","category":"departure","route":"SBPV01.OGOJA1E.OGOJA","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["glo/b738",1],["tam/a320",1]]},
+        {"origin":"SBPV","destination":"","category":"departure","route":"SBPV01.OGOJA1E.OGOJA","altitude":"","speed":"","method":"random","rate":1.09,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]},
+        {"origin":"SBCY","destination":"SBPV","category":"arrival","route":"OGOJA..VUDPA..SBPV","altitude":[4000,7000],"speed":250,"method":"random","rate":1.17,"airlines":[["azu/e190",2],["glo/b737",1],["glo/b738",1],["one/f100",1]]},
+        {"origin":"SBEG","destination":"SBPV","category":"arrival","route":"JIGBI..OSICU..SBPV","altitude":[4000,7000],"speed":250,"method":"random","rate":0.93,"airlines":[["azu/at72",1],["azu/e190",1],["glo/b737",1],["glo/b738",1]]},
+        {"origin":"SBRB","destination":"SBPV","category":"arrival","route":"WAZEZ..ALEZI..SBPV","altitude":[4000,7000],"speed":250,"method":"random","rate":0.7,"airlines":[["azu/e190",2],["glo/b737",1]]},
+        {"origin":"SBBR","destination":"SBPV","category":"arrival","route":"OGOJA..VUDPA..SBPV","altitude":[4000,7000],"speed":250,"method":"random","rate":0.47,"airlines":[["glo/b738",1],["tam/a320",1]]},
+        {"origin":"","destination":"SBPV","category":"arrival","route":"OGOJA..VUDPA..SBPV","altitude":[4000,7000],"speed":250,"method":"random","rate":1.09,"airlines":[["pp/c172",6],["pp/p28a",5],["pp/c182",3],["pp/be36",2],["pp/da42",1],["pp/tb20",1],["pp/c208",2],["pp/pc12",2],["pp/be20",1],["pp/b350",1],["pp/p180",1],["pp/c510",1],["pp/e50p",1],["pp/c550",1],["pp/e55p",1],["pp/cl30",1],["pp/c680",1],["pp/h25b",1],["pp/lj45",1],["pp/f2th",1],["pp/glf4",1],["pp/glex",1],["pp/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-8.264,-63.5959,-8.5433,-63.7885],
+            [-8.5433,-63.7885,-8.7085,-63.9023],
+            [-9.0291,-63.4654,-8.8276,-63.74],
+            [-8.8276,-63.74,-8.7085,-63.9023],
+            [-8.8634,-64.4235,-8.766,-64.096],
+            [-8.766,-64.096,-8.7085,-63.9023]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-8.7193,-63.9015,-8.8853,-63.8886],
+            [-8.8015,-63.8849,-8.803,-63.9051],
+            [-8.8845,-63.8785,-8.8861,-63.8986],
+            [-8.6977,-63.9032,-8.5317,-63.9161],
+            [-8.6155,-63.9197,-8.6139,-63.8996],
+            [-8.5324,-63.9262,-8.5309,-63.906]
+        ]}
+    ]
+}

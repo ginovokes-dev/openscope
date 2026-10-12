@@ -1,0 +1,92 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/HDAM/",
+    "info": {"country":"DJ","city":"Djibouti City","type":"large_airport","longestRunwayM":3150,"frequencies":{"atis":"126.400","twr":"122.100","gnd":"118.100"}},
+    "radio": {"twr":"Djibouti-Ambouli Tower","app":"Djibouti-Ambouli Approach","dep":"Djibouti-Ambouli Departure"},
+    "icao": "HDAM",
+    "iata": "JIB",
+    "magnetic_north": 1.8,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [11.5473,43.1595,"49ft"],
+    "rangeRings": {"enabled":true,"center":[11.5473,43.1595],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":80,"speed":9},
+    "arrivalRunway": "09",
+    "departureRunway": "09",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[11.9518,43.1725],[11.9347,43.2789],[11.8912,43.3772],[11.8243,43.4606],[11.7385,43.5235],[11.6397,43.5616],[11.5346,43.5724],[11.4303,43.5549],[11.334,43.5106],[11.2523,43.4423],[11.1906,43.3547],[11.1533,43.2538],[11.1428,43.1465],[11.1599,43.0401],[11.2034,42.9418],[11.2703,42.8584],[11.3561,42.7955],[11.4549,42.7574],[11.56,42.7466],[11.6643,42.7641],[11.7606,42.8084],[11.8423,42.8767],[11.904,42.9643],[11.9413,43.0652]]}
+    ],
+    "fixes": {
+        "HDAM": [11.5473,43.1595],
+        "IMOWA": [12.02343,43.41503],
+        "SEFIR": [11.7242,43.25444],
+        "FOSIF": [11.25041,43.61736],
+        "UHAKA": [11.43699,43.32961],
+        "LEMOT": [11.02195,43.27759],
+        "FILEF": [11.35211,43.20337],
+        "AGALU": [11.27417,42.68649],
+        "NAKCA": [11.44582,42.98376],
+        "CUPNI": [12.02614,42.9093],
+        "OZIVO": [11.72521,43.06654],
+        "_RWY0904DME": [11.54843,43.07711],
+        "_RWY2704DME": [11.54618,43.23985]
+    },
+    "runways": [
+        {"name":["09","27"],"end":[[11.5475,43.1451,"49ft"],[11.54713,43.17186,"20ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "IMOWA2D": {"icao":"IMOWA2D","name":"Imowa Two Delta","rwy":{"HDAM09":["_RWY2704DME"],"HDAM27":["_RWY0904DME"]},"body":[],"exitPoints":{"IMOWA":["IMOWA"]},"draw":[["HDAM","IMOWA*"]]},
+        "FOSIF1A": {"icao":"FOSIF1A","name":"Fosif One Alpha","rwy":{"HDAM09":["_RWY2704DME"],"HDAM27":["_RWY0904DME"]},"body":[],"exitPoints":{"FOSIF":["FOSIF"]},"draw":[["HDAM","FOSIF*"]]},
+        "LEMOT3E": {"icao":"LEMOT3E","name":"Lemot Three Echo","rwy":{"HDAM09":["_RWY2704DME"],"HDAM27":["_RWY0904DME"]},"body":[],"exitPoints":{"LEMOT":["LEMOT"]},"draw":[["HDAM","LEMOT*"]]},
+        "AGALU3D": {"icao":"AGALU3D","name":"Agalu Three Delta","rwy":{"HDAM09":["_RWY2704DME"],"HDAM27":["_RWY0904DME"]},"body":[],"exitPoints":{"AGALU":["AGALU"]},"draw":[["HDAM","AGALU*"]]},
+        "CUPNI2B": {"icao":"CUPNI2B","name":"Cupni Two Bravo","rwy":{"HDAM09":["_RWY2704DME"],"HDAM27":["_RWY0904DME"]},"body":[],"exitPoints":{"CUPNI":["CUPNI"]},"draw":[["HDAM","CUPNI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"HDAM","destination":"HAAB","category":"departure","route":"HDAM09.AGALU3D.AGALU","altitude":"","speed":"","method":"random","rate":1.35,"airlines":[["eth/b737",1],["kqa/e190",1],["msr/b737",1],["eth/dh8d",1],["msr/dh8d",1],["eth/dh8b",1],["eth/dh8c",1],["msr/dh8b",1],["msr/dh8c",1]]},
+        {"origin":"HDAM","destination":"HCMM","category":"departure","route":"HDAM09.LEMOT3E.LEMOT","altitude":"","speed":"","method":"random","rate":0.81,"airlines":[["asl/b737",1],["dao/a321",1],["thy/a320",1]]},
+        {"origin":"HDAM","destination":"OMDB","category":"departure","route":"HDAM09.IMOWA2D.IMOWA","altitude":"","speed":"","method":"random","rate":0.81,"airlines":[["asl/b737",1],["dao/a321",1],["fdb/b738",1]]},
+        {"origin":"HDAM","destination":"FMCH","category":"departure","route":"HDAM09.LEMOT3E.LEMOT","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["iye/a310",1],["iye/a333",1],["iye/a332",1]]},
+        {"origin":"HDAM","destination":"HADR","category":"departure","route":"HDAM09.AGALU3D.AGALU","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["eth/b737",1],["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]},
+        {"origin":"HDAM","destination":"","category":"departure","route":"HDAM09.IMOWA2D.IMOWA","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["iye/a310",1],["iye/a333",1],["iye/a332",1]]},
+        {"origin":"HDAM","destination":"","category":"departure","route":"HDAM09.FOSIF1A.FOSIF","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["asl/b737",1]]},
+        {"origin":"HDAM","destination":"","category":"departure","route":"HDAM09.LEMOT3E.LEMOT","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["asl/b737",1],["dao/a321",1]]},
+        {"origin":"HDAM","destination":"","category":"departure","route":"HDAM09.AGALU3D.AGALU","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["kqa/e190",1]]},
+        {"origin":"HDAM","destination":"","category":"departure","route":"HDAM09.CUPNI2B.CUPNI","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["afr/a343",1],["thy/a320",1]]},
+        {"origin":"HAAB","destination":"HDAM","category":"arrival","route":"AGALU..NAKCA..HDAM","altitude":[4000,7000],"speed":250,"method":"random","rate":1.35,"airlines":[["eth/b737",1],["kqa/e190",1],["msr/b737",1],["eth/dh8d",1],["msr/dh8d",1],["eth/dh8b",1],["eth/dh8c",1],["msr/dh8b",1],["msr/dh8c",1]]},
+        {"origin":"HCMM","destination":"HDAM","category":"arrival","route":"LEMOT..FILEF..HDAM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.81,"airlines":[["asl/b737",1],["dao/a321",1],["thy/a320",1]]},
+        {"origin":"OMDB","destination":"HDAM","category":"arrival","route":"IMOWA..SEFIR..HDAM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.81,"airlines":[["asl/b737",1],["dao/a321",1],["fdb/b738",1]]},
+        {"origin":"FMCH","destination":"HDAM","category":"arrival","route":"LEMOT..FILEF..HDAM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.54,"airlines":[["iye/a310",1],["iye/a333",1],["iye/a332",1]]},
+        {"origin":"HADR","destination":"HDAM","category":"arrival","route":"AGALU..NAKCA..HDAM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.54,"airlines":[["eth/b737",1],["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]},
+        {"origin":"","destination":"HDAM","category":"arrival","route":"IMOWA..SEFIR..HDAM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.54,"airlines":[["iye/a310",1],["iye/a333",1],["iye/a332",1]]},
+        {"origin":"","destination":"HDAM","category":"arrival","route":"FOSIF..UHAKA..HDAM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.27,"airlines":[["asl/b737",1]]},
+        {"origin":"","destination":"HDAM","category":"arrival","route":"LEMOT..FILEF..HDAM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.54,"airlines":[["asl/b737",1],["dao/a321",1]]},
+        {"origin":"","destination":"HDAM","category":"arrival","route":"AGALU..NAKCA..HDAM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.27,"airlines":[["kqa/e190",1]]},
+        {"origin":"","destination":"HDAM","category":"arrival","route":"CUPNI..OZIVO..HDAM","altitude":[4000,7000],"speed":250,"method":"random","rate":0.54,"airlines":[["afr/a343",1],["thy/a320",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [12.0234,43.415,11.7242,43.2544],
+            [11.7242,43.2544,11.5473,43.1595],
+            [11.2504,43.6174,11.437,43.3296],
+            [11.437,43.3296,11.5473,43.1595],
+            [11.022,43.2776,11.3521,43.2034],
+            [11.3521,43.2034,11.5473,43.1595],
+            [11.2742,42.6865,11.4458,42.9838],
+            [11.4458,42.9838,11.5473,43.1595],
+            [12.0261,42.9093,11.7252,43.0665],
+            [11.7252,43.0665,11.5473,43.1595]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [11.5475,43.1451,11.5498,42.9751],
+            [11.5387,43.06,11.5587,43.0603],
+            [11.5398,42.975,11.5598,42.9753],
+            [11.5471,43.1719,11.5447,43.3418],
+            [11.5559,43.257,11.5359,43.2567],
+            [11.5547,43.342,11.5347,43.3417]
+        ]}
+    ]
+}

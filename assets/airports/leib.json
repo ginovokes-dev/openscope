@@ -1,0 +1,98 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LEIB/",
+    "info": {"country":"ES","city":"Ibiza","type":"large_airport","longestRunwayM":2800,"frequencies":{"atis":"117.800","twr":"118.500","app":"118.125","gnd":"121.800"}},
+    "radio": {"twr":"Ibiza Tower","app":"Ibiza Approach","dep":"Ibiza Departure"},
+    "icao": "LEIB",
+    "iata": "IBZ",
+    "magnetic_north": 1.8,
+    "ctr_radius": 75,
+    "ctr_ceiling": 12000,
+    "initial_alt": 6000,
+    "position": [38.872898,1.37312,"24ft"],
+    "rangeRings": {"enabled":true,"center":[38.872898,1.37312],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":260,"speed":10},
+    "arrivalRunway": "24",
+    "departureRunway": "24",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":120,"airspace_class":"C","poly":[[39.5471,1.4003],[39.5186,1.6235],[39.4461,1.8297],[39.3346,2.0047],[39.1916,2.1366],[39.0269,2.2166],[38.8517,2.239],[38.6779,2.2025],[38.5175,2.1094],[38.3812,1.9662],[38.2785,1.7825],[38.2162,1.571],[38.1987,1.3459],[38.2272,1.1227],[38.2997,0.9166],[38.4112,0.7416],[38.5542,0.6096],[38.7189,0.5297],[38.8941,0.5072],[39.0678,0.5437],[39.2283,0.6368],[39.3646,0.7801],[39.4673,0.9637],[39.5296,1.1753]]}
+    ],
+    "fixes": {
+        "LEIB": [38.8729,1.37312],
+        "UMABE": [39.74485,1.45632],
+        "APOGO": [39.15526,1.40006],
+        "JOA": [39.5647,2.74663,"palma de mallorca"],
+        "EGENI": [39.0267,1.67847],
+        "LATEC": [38.11213,1.92669],
+        "TEHMO": [38.62654,1.55238],
+        "LADHI": [38.54033,0.33446],
+        "LOMRI": [38.7652,1.03677],
+        "EWIRI": [39.2556,0.36334],
+        "MOJIG": [38.99683,1.04612],
+        "_RWY0604DME": [38.8356,1.28336],
+        "_RWY2404DME": [38.90996,1.46297]
+    },
+    "runways": [
+        {"name":["06","24"],"end":[[38.8669,1.35887,"13ft"],[38.8787,1.38738,"16ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "UMABE3B": {"icao":"UMABE3B","name":"Umabe Three Bravo","rwy":{"LEIB06":["_RWY2404DME"],"LEIB24":["_RWY0604DME"]},"body":[],"exitPoints":{"UMABE":["UMABE"]},"draw":[["LEIB","UMABE*"]]},
+        "JOA2F": {"icao":"JOA2F","name":"Palma De Mallorca Two Foxtrot","rwy":{"LEIB06":["_RWY2404DME"],"LEIB24":["_RWY0604DME"]},"body":[],"exitPoints":{"JOA":["JOA"]},"draw":[["LEIB","JOA*"]]},
+        "LATEC2D": {"icao":"LATEC2D","name":"Latec Two Delta","rwy":{"LEIB06":["_RWY2404DME"],"LEIB24":["_RWY0604DME"]},"body":[],"exitPoints":{"LATEC":["LATEC"]},"draw":[["LEIB","LATEC*"]]},
+        "LADHI1C": {"icao":"LADHI1C","name":"Ladhi One Charlie","rwy":{"LEIB06":["_RWY2404DME"],"LEIB24":["_RWY0604DME"]},"body":[],"exitPoints":{"LADHI":["LADHI"]},"draw":[["LEIB","LADHI*"]]},
+        "EWIRI3E": {"icao":"EWIRI3E","name":"Ewiri Three Echo","rwy":{"LEIB06":["_RWY2404DME"],"LEIB24":["_RWY0604DME"]},"body":[],"exitPoints":{"EWIRI":["EWIRI"]},"draw":[["LEIB","EWIRI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LEIB","destination":"EGCC","category":"departure","route":"LEIB24.UMABE3B.UMABE","altitude":"","speed":"","method":"random","rate":0.77,"airlines":[["exs/b738",2],["cfg/b752",1],["exs/b733",1],["exs/b752",1],["ryr/b738",1],["tvf/b738",1],["tvf/b752",1],["tvf/b763",1]]},
+        {"origin":"LEIB","destination":"EDDL","category":"departure","route":"LEIB24.UMABE3B.UMABE","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ber/a321",1],["ber/a332",1],["ber/b738",1],["cfg/a320",1],["cfg/b752",1],["gwi/a320",1]]},
+        {"origin":"LEIB","destination":"EDDF","category":"departure","route":"LEIB24.UMABE3B.UMABE","altitude":"","speed":"","method":"random","rate":0.43,"airlines":[["ber/a320",1],["cfg/a320",1],["cfg/b752",1],["dlh/a319",1],["dlh/a321",1]]},
+        {"origin":"LEIB","destination":"EGKK","category":"departure","route":"LEIB24.UMABE3B.UMABE","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["ezy/a319",1],["ezy/a320",1],["nax/b738",1],["tvf/b738",1]]},
+        {"origin":"LEIB","destination":"EGLL","category":"departure","route":"LEIB24.UMABE3B.UMABE","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["baw/a319",1],["baw/a320",1],["ibe/a319",1],["ibe/a320",1]]},
+        {"origin":"LEIB","destination":"EGNM","category":"departure","route":"LEIB24.UMABE3B.UMABE","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["exs/b733",1],["exs/b738",1],["ryr/b738",1],["tvf/b738",1]]},
+        {"origin":"LEIB","destination":"EGSS","category":"departure","route":"LEIB24.UMABE3B.UMABE","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["ezy/a319",1],["ezy/a320",1],["ryr/b738",1],["tvf/b738",1]]},
+        {"origin":"LEIB","destination":"","category":"departure","route":"LEIB24.UMABE3B.UMABE","altitude":"","speed":"","method":"random","rate":4.64,"airlines":[["ryr/b738",13],["ber/b738",7],["ber/a320",4],["tvf/b738",4],["vlg/a320",4],["ezy/a319",3],["tra/b737",3],["tra/b738",3],["exs/b733",2],["exs/b738",2],["gwi/a319",2],["ein/a320",1]]},
+        {"origin":"LEIB","destination":"","category":"departure","route":"LEIB24.JOA2F.JOA","altitude":"","speed":"","method":"random","rate":1.03,"airlines":[["ryr/b738",5],["ber/a320",3],["ber/b738",2],["cfg/a320",1],["ezy/a319",1]]},
+        {"origin":"LEIB","destination":"","category":"departure","route":"LEIB24.LADHI1C.LADHI","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["aea/b738",1],["ryr/b738",1],["vlg/a320",1]]},
+        {"origin":"LEIB","destination":"","category":"departure","route":"LEIB24.EWIRI3E.EWIRI","altitude":"","speed":"","method":"random","rate":0.77,"airlines":[["aea/b738",3],["vlg/a320",3],["ryr/b738",2],["aea/e190",1]]},
+        {"origin":"LEIB","destination":"","category":"departure","route":"LEIB24.LADHI1C.LADHI","altitude":"","speed":"","method":"random","rate":0.37,"airlines":[["ec/c172",3],["ec/p28a",3],["ec/c182",2],["ec/be36",1],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",3],["ec/e50p",2],["ec/c550",3],["ec/e55p",2],["ec/cl30",2],["ec/c680",2],["ec/h25b",2],["ec/lj45",2],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"LEIB","destination":"","category":"departure","route":"LEIB24.LATEC2D.LATEC","altitude":"","speed":"","method":"random","rate":0.37,"airlines":[["ec/c172",3],["ec/p28a",3],["ec/c182",2],["ec/be36",1],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",3],["ec/e50p",2],["ec/c550",3],["ec/e55p",2],["ec/cl30",2],["ec/c680",2],["ec/h25b",2],["ec/lj45",2],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"EGCC","destination":"LEIB","category":"arrival","route":"UMABE..APOGO..LEIB","altitude":[8000,11000],"speed":250,"method":"random","rate":0.77,"airlines":[["exs/b738",2],["cfg/b752",1],["exs/b733",1],["exs/b752",1],["ryr/b738",1],["tvf/b738",1],["tvf/b752",1],["tvf/b763",1]]},
+        {"origin":"EDDL","destination":"LEIB","category":"arrival","route":"UMABE..APOGO..LEIB","altitude":[8000,11000],"speed":250,"method":"random","rate":0.52,"airlines":[["ber/a321",1],["ber/a332",1],["ber/b738",1],["cfg/a320",1],["cfg/b752",1],["gwi/a320",1]]},
+        {"origin":"EDDF","destination":"LEIB","category":"arrival","route":"UMABE..APOGO..LEIB","altitude":[8000,11000],"speed":250,"method":"random","rate":0.43,"airlines":[["ber/a320",1],["cfg/a320",1],["cfg/b752",1],["dlh/a319",1],["dlh/a321",1]]},
+        {"origin":"EGKK","destination":"LEIB","category":"arrival","route":"UMABE..APOGO..LEIB","altitude":[8000,11000],"speed":250,"method":"random","rate":0.34,"airlines":[["ezy/a319",1],["ezy/a320",1],["nax/b738",1],["tvf/b738",1]]},
+        {"origin":"EGLL","destination":"LEIB","category":"arrival","route":"UMABE..APOGO..LEIB","altitude":[8000,11000],"speed":250,"method":"random","rate":0.34,"airlines":[["baw/a319",1],["baw/a320",1],["ibe/a319",1],["ibe/a320",1]]},
+        {"origin":"EGNM","destination":"LEIB","category":"arrival","route":"UMABE..APOGO..LEIB","altitude":[8000,11000],"speed":250,"method":"random","rate":0.34,"airlines":[["exs/b733",1],["exs/b738",1],["ryr/b738",1],["tvf/b738",1]]},
+        {"origin":"EGSS","destination":"LEIB","category":"arrival","route":"UMABE..APOGO..LEIB","altitude":[8000,11000],"speed":250,"method":"random","rate":0.34,"airlines":[["ezy/a319",1],["ezy/a320",1],["ryr/b738",1],["tvf/b738",1]]},
+        {"origin":"","destination":"LEIB","category":"arrival","route":"UMABE..APOGO..LEIB","altitude":[8000,11000],"speed":250,"method":"random","rate":4.64,"airlines":[["ryr/b738",13],["ber/b738",7],["ber/a320",4],["tvf/b738",4],["vlg/a320",4],["ezy/a319",3],["tra/b737",3],["tra/b738",3],["exs/b733",2],["exs/b738",2],["gwi/a319",2],["ein/a320",1]]},
+        {"origin":"","destination":"LEIB","category":"arrival","route":"JOA..EGENI..LEIB","altitude":[8000,11000],"speed":250,"method":"random","rate":1.03,"airlines":[["ryr/b738",5],["ber/a320",3],["ber/b738",2],["cfg/a320",1],["ezy/a319",1]]},
+        {"origin":"","destination":"LEIB","category":"arrival","route":"LADHI..LOMRI..LEIB","altitude":[8000,11000],"speed":250,"method":"random","rate":0.26,"airlines":[["aea/b738",1],["ryr/b738",1],["vlg/a320",1]]},
+        {"origin":"","destination":"LEIB","category":"arrival","route":"EWIRI..MOJIG..LEIB","altitude":[8000,11000],"speed":250,"method":"random","rate":0.77,"airlines":[["aea/b738",3],["vlg/a320",3],["ryr/b738",2],["aea/e190",1]]},
+        {"origin":"","destination":"LEIB","category":"arrival","route":"LADHI..LOMRI..LEIB","altitude":[8000,11000],"speed":250,"method":"random","rate":0.37,"airlines":[["ec/c172",3],["ec/p28a",3],["ec/c182",2],["ec/be36",1],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",3],["ec/e50p",2],["ec/c550",3],["ec/e55p",2],["ec/cl30",2],["ec/c680",2],["ec/h25b",2],["ec/lj45",2],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"","destination":"LEIB","category":"arrival","route":"LATEC..TEHMO..LEIB","altitude":[8000,11000],"speed":250,"method":"random","rate":0.37,"airlines":[["ec/c172",3],["ec/p28a",3],["ec/c182",2],["ec/be36",1],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",3],["ec/e50p",2],["ec/c550",3],["ec/e55p",2],["ec/cl30",2],["ec/c680",2],["ec/h25b",2],["ec/lj45",2],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [39.7449,1.4563,39.1553,1.4001],
+            [39.1553,1.4001,38.8729,1.3731],
+            [39.5647,2.7466,39.0267,1.6785],
+            [39.0267,1.6785,38.8729,1.3731],
+            [38.1121,1.9267,38.6265,1.5524],
+            [38.6265,1.5524,38.8729,1.3731],
+            [38.5403,0.3345,38.7652,1.0368],
+            [38.7652,1.0368,38.8729,1.3731],
+            [39.2556,0.3633,38.9968,1.0461],
+            [38.9968,1.0461,38.8729,1.3731]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [38.8669,1.3589,38.7885,1.1702],
+            [38.8189,1.2705,38.8366,1.2585],
+            [38.7797,1.1762,38.7974,1.1642],
+            [38.8787,1.3874,38.9567,1.5765],
+            [38.9266,1.4759,38.9089,1.4879],
+            [38.9656,1.5705,38.9479,1.5825]
+        ]}
+    ]
+}

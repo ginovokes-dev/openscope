@@ -1,0 +1,72 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGJA/",
+    "info": {"country":"GG","city":"Saint Anne","type":"medium_airport","longestRunwayM":878,"frequencies":{"twr":"125.350","app":"128.650","gnd":"130.500"}},
+    "radio": {"twr":"Alderney Tower","app":"Alderney Approach","dep":"Alderney Departure"},
+    "icao": "EGJA",
+    "iata": "ACI",
+    "magnetic_north": 0.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [49.706104,-2.21472,"290ft"],
+    "rangeRings": {"enabled":true,"center":[49.706104,-2.21472],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":240,"speed":9},
+    "arrivalRunway": "26",
+    "departureRunway": "26",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[50.1108,-2.2093],[50.0961,-2.0475],[50.0548,-1.8971],[49.9898,-1.7684],[49.9054,-1.6701],[49.8074,-1.6089],[49.7026,-1.589],[49.598,-1.6117],[49.5007,-1.6755],[49.4175,-1.7761],[49.3539,-1.9066],[49.3143,-2.058],[49.3014,-2.2202],[49.3161,-2.382],[49.3574,-2.5323],[49.4224,-2.6611],[49.5068,-2.7594],[49.6048,-2.8206],[49.7096,-2.8405],[49.8143,-2.8177],[49.9115,-2.7539],[49.9948,-2.6533],[50.0583,-2.5229],[50.0979,-2.3714]]}
+    ],
+    "fixes": {
+        "EGJA": [49.7061,-2.21472],
+        "BULUK": [50.14795,-1.74026],
+        "IDIRO": [49.87027,-2.03844],
+        "UKUWU": [49.39927,-1.53149],
+        "NUKBE": [49.5921,-1.96087],
+        "BETUV": [49.26426,-2.68918],
+        "EVUVU": [49.54194,-2.391],
+        "EDOGU": [50.01294,-2.89795],
+        "NECRI": [49.82011,-2.46857],
+        "_RWY0803DME": [49.69711,-2.29687],
+        "_RWY2603DME": [49.71624,-2.13279],
+        "_RWY1303DME": [49.74312,-2.27767],
+        "_RWY3103DME": [49.67015,-2.1577],
+        "_RWY0303DME": [49.65904,-2.24868],
+        "_RWY2103DME": [49.75295,-2.17825]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[49.706,-2.22085,"284ft"],[49.7074,-2.20884,"290ft"]],"ils":[false,false]},
+        {"name":["13","31"],"end":[[49.7089,-2.22134,"268ft"],[49.7044,-2.21394,"277ft"]],"ils":[false,false]},
+        {"name":["03","21"],"end":[[49.704,-2.215,"277ft"],[49.708,-2.212,"285ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "BULUK1C": {"icao":"BULUK1C","name":"Buluk One Charlie","rwy":{"EGJA08":["_RWY2603DME"],"EGJA26":["_RWY0803DME"],"EGJA13":["_RWY3103DME"],"EGJA31":["_RWY1303DME"],"EGJA03":["_RWY2103DME"],"EGJA21":["_RWY0303DME"]},"body":[],"exitPoints":{"BULUK":["BULUK"]},"draw":[["EGJA","BULUK*"]]},
+        "UKUWU2A": {"icao":"UKUWU2A","name":"Ukuwu Two Alpha","rwy":{"EGJA08":["_RWY2603DME"],"EGJA26":["_RWY0803DME"],"EGJA13":["_RWY3103DME"],"EGJA31":["_RWY1303DME"],"EGJA03":["_RWY2103DME"],"EGJA21":["_RWY0303DME"]},"body":[],"exitPoints":{"UKUWU":["UKUWU"]},"draw":[["EGJA","UKUWU*"]]},
+        "BETUV1E": {"icao":"BETUV1E","name":"Betuv One Echo","rwy":{"EGJA08":["_RWY2603DME"],"EGJA26":["_RWY0803DME"],"EGJA13":["_RWY3103DME"],"EGJA31":["_RWY1303DME"],"EGJA03":["_RWY2103DME"],"EGJA21":["_RWY0303DME"]},"body":[],"exitPoints":{"BETUV":["BETUV"]},"draw":[["EGJA","BETUV*"]]},
+        "EDOGU1E": {"icao":"EDOGU1E","name":"Edogu One Echo","rwy":{"EGJA08":["_RWY2603DME"],"EGJA26":["_RWY0803DME"],"EGJA13":["_RWY3103DME"],"EGJA31":["_RWY1303DME"],"EGJA03":["_RWY2103DME"],"EGJA21":["_RWY0303DME"]},"body":[],"exitPoints":{"EDOGU":["EDOGU"]},"draw":[["EGJA","EDOGU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGJA","destination":"","category":"departure","route":"EGJA26.BETUV1E.BETUV","altitude":"","speed":"","method":"random","rate":4.5,"airlines":[["2/c172",6],["2/p28a",5],["2/c182",3],["2/be36",2],["2/da42",1],["2/tb20",1],["2/c208",2],["2/pc12",2],["2/be20",1],["2/b350",1],["2/p180",1],["2/c510",1],["2/c550",1]]},
+        {"origin":"","destination":"EGJA","category":"arrival","route":"BETUV..EVUVU..EGJA","altitude":[4000,7000],"speed":250,"method":"random","rate":4.5,"airlines":[["2/c172",6],["2/p28a",5],["2/c182",3],["2/be36",2],["2/da42",1],["2/tb20",1],["2/c208",2],["2/pc12",2],["2/be20",1],["2/b350",1],["2/p180",1],["2/c510",1],["2/c550",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [50.148,-1.7403,49.8703,-2.0384],
+            [49.8703,-2.0384,49.7061,-2.2147],
+            [49.3993,-1.5315,49.5921,-1.9609],
+            [49.5921,-1.9609,49.7061,-2.2147],
+            [49.2643,-2.6892,49.5419,-2.391],
+            [49.5419,-2.391,49.7061,-2.2147],
+            [50.0129,-2.8979,49.8201,-2.4686],
+            [49.8201,-2.4686,49.7061,-2.2147]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [49.7074,-2.2088,49.7367,-1.9552],
+            [49.7319,-2.0848,49.7123,-2.0793],
+            [49.7465,-1.958,49.7268,-1.9525]
+        ]}
+    ]
+}

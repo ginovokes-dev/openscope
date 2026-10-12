@@ -1,0 +1,85 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/NVVV/",
+    "info": {"country":"VU","city":"Port Vila","type":"large_airport","longestRunwayM":2600,"frequencies":{"twr":"120.700"}},
+    "radio": {"twr":"Bauerfield Tower","app":"Bauerfield Approach","dep":"Bauerfield Departure"},
+    "icao": "NVVV",
+    "iata": "VLI",
+    "magnetic_north": 11.8,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [-17.699301,168.320007,"70ft"],
+    "rangeRings": {"enabled":true,"center":[-17.699301,168.320007],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":80,"speed":8},
+    "arrivalRunway": "11",
+    "departureRunway": "11",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[-17.1711,168.4358],[-17.2177,168.5754],[-17.297,168.6975],[-17.4038,168.794],[-17.5308,168.8581],[-17.6692,168.8855],[-17.8096,168.8744],[-17.9426,168.8256],[-18.059,168.7422],[-18.1508,168.6301],[-18.2119,168.4969],[-18.2381,168.3516],[-18.2275,168.2042],[-18.1809,168.0646],[-18.1016,167.9425],[-17.9948,167.8461],[-17.8678,167.7819],[-17.7294,167.7545],[-17.589,167.7656],[-17.456,167.8144],[-17.3396,167.8978],[-17.2478,168.0099],[-17.1867,168.1431],[-17.1605,168.2884]]}
+    ],
+    "fixes": {
+        "NVVV": [-17.6993,168.32001],
+        "FUSKI": [-17.72151,169.06087],
+        "ODOKA": [-17.70716,168.58212],
+        "FANEN": [-18.35832,168.58626],
+        "EDOVI": [-17.93246,168.41421],
+        "KUSZO": [-18.26168,167.87173],
+        "UKARE": [-17.89827,168.16141],
+        "AKIHU": [-17.01743,168.12733],
+        "GEZIK": [-17.45806,168.25184],
+        "_RWY1104DME": [-17.66058,168.24574],
+        "_RWY2904DME": [-17.7358,168.38929]
+    },
+    "runways": [
+        {"name":["11","29"],"end":[[-17.6927,168.30701,"51ft"],[-17.7037,168.328,"70ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "FUSKI3C": {"icao":"FUSKI3C","name":"Fuski Three Charlie","rwy":{"NVVV11":["_RWY2904DME"],"NVVV29":["_RWY1104DME"]},"body":[],"exitPoints":{"FUSKI":["FUSKI"]},"draw":[["NVVV","FUSKI*"]]},
+        "FANEN3A": {"icao":"FANEN3A","name":"Fanen Three Alpha","rwy":{"NVVV11":["_RWY2904DME"],"NVVV29":["_RWY1104DME"]},"body":[],"exitPoints":{"FANEN":["FANEN"]},"draw":[["NVVV","FANEN*"]]},
+        "KUSZO1E": {"icao":"KUSZO1E","name":"Kuszo One Echo","rwy":{"NVVV11":["_RWY2904DME"],"NVVV29":["_RWY1104DME"]},"body":[],"exitPoints":{"KUSZO":["KUSZO"]},"draw":[["NVVV","KUSZO*"]]},
+        "AKIHU3A": {"icao":"AKIHU3A","name":"Akihu Three Alpha","rwy":{"NVVV11":["_RWY2904DME"],"NVVV29":["_RWY1104DME"]},"body":[],"exitPoints":{"AKIHU":["AKIHU"]},"draw":[["NVVV","AKIHU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"NVVV","destination":"NFFN","category":"departure","route":"NVVV11.FUSKI3C.FUSKI","altitude":"","speed":"","method":"random","rate":0.8,"airlines":[["fji/at45",1],["fji/b737",1],["sol/a320",1]]},
+        {"origin":"NVVV","destination":"NVVW","category":"departure","route":"NVVV11.FANEN3A.FANEN","altitude":"","speed":"","method":"random","rate":0.8,"airlines":[["avn/bn2p",1],["avn/dhc6",1],["avn/at72",1],["avn/at45",1],["avn/at75",1]]},
+        {"origin":"NVVV","destination":"AGGH","category":"departure","route":"NVVV11.AKIHU3A.AKIHU","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["fji/b737",1],["sol/a320",1]]},
+        {"origin":"NVVV","destination":"NVSO","category":"departure","route":"NVVV11.AKIHU3A.AKIHU","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["avn/bn2p",1],["avn/dhc6",1]]},
+        {"origin":"NVVV","destination":"NVSP","category":"departure","route":"NVVV11.AKIHU3A.AKIHU","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["avn/bn2p",1],["avn/dhc6",1]]},
+        {"origin":"NVVV","destination":"NVSS","category":"departure","route":"NVVV11.AKIHU3A.AKIHU","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["avn/dhc6",1],["avn/at72",1],["avn/at45",1],["avn/at75",1]]},
+        {"origin":"NVVV","destination":"","category":"departure","route":"NVVV11.FANEN3A.FANEN","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["anz/a320",1],["avn/b738",1]]},
+        {"origin":"NVVV","destination":"","category":"departure","route":"NVVV11.KUSZO1E.KUSZO","altitude":"","speed":"","method":"random","rate":1.07,"airlines":[["avn/b738",2],["aci/a320",1],["avn/at72",1],["avn/at45",1],["avn/at75",1]]},
+        {"origin":"NVVV","destination":"","category":"departure","route":"NVVV11.AKIHU3A.AKIHU","altitude":"","speed":"","method":"random","rate":1.87,"airlines":[["avn/dhc6",4],["avn/bn2p",3]]},
+        {"origin":"NFFN","destination":"NVVV","category":"arrival","route":"FUSKI..ODOKA..NVVV","altitude":[6000,9000],"speed":250,"method":"random","rate":0.8,"airlines":[["fji/at45",1],["fji/b737",1],["sol/a320",1]]},
+        {"origin":"NVVW","destination":"NVVV","category":"arrival","route":"FANEN..EDOVI..NVVV","altitude":[6000,9000],"speed":250,"method":"random","rate":0.8,"airlines":[["avn/bn2p",1],["avn/dhc6",1],["avn/at72",1],["avn/at45",1],["avn/at75",1]]},
+        {"origin":"AGGH","destination":"NVVV","category":"arrival","route":"AKIHU..GEZIK..NVVV","altitude":[6000,9000],"speed":250,"method":"random","rate":0.54,"airlines":[["fji/b737",1],["sol/a320",1]]},
+        {"origin":"NVSO","destination":"NVVV","category":"arrival","route":"AKIHU..GEZIK..NVVV","altitude":[6000,9000],"speed":250,"method":"random","rate":0.54,"airlines":[["avn/bn2p",1],["avn/dhc6",1]]},
+        {"origin":"NVSP","destination":"NVVV","category":"arrival","route":"AKIHU..GEZIK..NVVV","altitude":[6000,9000],"speed":250,"method":"random","rate":0.54,"airlines":[["avn/bn2p",1],["avn/dhc6",1]]},
+        {"origin":"NVSS","destination":"NVVV","category":"arrival","route":"AKIHU..GEZIK..NVVV","altitude":[6000,9000],"speed":250,"method":"random","rate":0.54,"airlines":[["avn/dhc6",1],["avn/at72",1],["avn/at45",1],["avn/at75",1]]},
+        {"origin":"","destination":"NVVV","category":"arrival","route":"FANEN..EDOVI..NVVV","altitude":[6000,9000],"speed":250,"method":"random","rate":0.54,"airlines":[["anz/a320",1],["avn/b738",1]]},
+        {"origin":"","destination":"NVVV","category":"arrival","route":"KUSZO..UKARE..NVVV","altitude":[6000,9000],"speed":250,"method":"random","rate":1.07,"airlines":[["avn/b738",2],["aci/a320",1],["avn/at72",1],["avn/at45",1],["avn/at75",1]]},
+        {"origin":"","destination":"NVVV","category":"arrival","route":"AKIHU..GEZIK..NVVV","altitude":[6000,9000],"speed":250,"method":"random","rate":1.87,"airlines":[["avn/dhc6",4],["avn/bn2p",3]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-17.7215,169.0609,-17.7072,168.5821],
+            [-17.7072,168.5821,-17.6993,168.32],
+            [-18.3583,168.5863,-17.9325,168.4142],
+            [-17.9325,168.4142,-17.6993,168.32],
+            [-18.2617,167.8717,-17.8983,168.1614],
+            [-17.8983,168.1614,-17.6993,168.32],
+            [-17.0174,168.1273,-17.4581,168.2518],
+            [-17.4581,168.2518,-17.6993,168.32]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-17.6927,168.307,-17.6124,168.1539],
+            [-17.6613,168.2254,-17.6438,168.2355],
+            [-17.6211,168.1488,-17.6036,168.1589],
+            [-17.7037,168.328,-17.7839,168.4813],
+            [-17.7351,168.4097,-17.7526,168.3996],
+            [-17.7752,168.4863,-17.7927,168.4762]
+        ]}
+    ]
+}

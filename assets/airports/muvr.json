@@ -1,0 +1,85 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/MUVR/",
+    "info": {"country":"CU","city":"Matanzas","type":"large_airport","longestRunwayM":3505,"frequencies":{"twr":"118.400","app":"119.600"}},
+    "radio": {"twr":"Varadero Tower","app":"Varadero Approach","dep":"Varadero Departure"},
+    "icao": "MUVR",
+    "iata": "VRA",
+    "magnetic_north": -6.3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [23.034401,-81.435303,"210ft"],
+    "rangeRings": {"enabled":true,"center":[23.034401,-81.435303],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":80,"speed":5},
+    "arrivalRunway": "06",
+    "departureRunway": "06",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[23.4367,-81.4836],[23.4344,-81.3688],[23.405,-81.2585],[23.3502,-81.1603],[23.274,-81.0809],[23.1814,-81.0256],[23.0788,-80.9982],[22.9732,-81.0006],[22.8717,-81.0326],[22.7814,-81.0921],[22.7082,-81.175],[22.6574,-81.2756],[22.6322,-81.387],[22.6344,-81.5018],[22.6638,-81.6121],[22.7186,-81.7103],[22.7948,-81.7897],[22.8874,-81.845],[22.99,-81.8724],[23.0956,-81.87],[23.1971,-81.838],[23.2874,-81.7785],[23.3606,-81.6956],[23.4115,-81.595]]}
+    ],
+    "fixes": {
+        "MUVR": [23.0344,-81.4353],
+        "UKITO": [23.5509,-81.27192],
+        "IZASU": [23.2263,-81.3746],
+        "WOBIH": [22.9344,-80.86095],
+        "KUZIC": [22.99725,-81.22191],
+        "UZG": [22.935,-82.0386,"zarago"],
+        "RISCO": [22.99918,-81.64908],
+        "ZUVGI": [23.48266,-81.75846],
+        "TAGWU": [23.20095,-81.55537],
+        "_RWY0604DME": [22.98765,-81.50897],
+        "_RWY2404DME": [23.08122,-81.3616]
+    },
+    "runways": [
+        {"name":["06","24"],"end":[[23.0255,-81.4494,"210ft"],[23.0434,-81.4212,"210ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "UKITO1A": {"icao":"UKITO1A","name":"Ukito One Alpha","rwy":{"MUVR06":["_RWY2404DME"],"MUVR24":["_RWY0604DME"]},"body":[],"exitPoints":{"UKITO":["UKITO"]},"draw":[["MUVR","UKITO*"]]},
+        "WOBIH2B": {"icao":"WOBIH2B","name":"Wobih Two Bravo","rwy":{"MUVR06":["_RWY2404DME"],"MUVR24":["_RWY0604DME"]},"body":[],"exitPoints":{"WOBIH":["WOBIH"]},"draw":[["MUVR","WOBIH*"]]},
+        "UZG3A": {"icao":"UZG3A","name":"Zarago Three Alpha","rwy":{"MUVR06":["_RWY2404DME"],"MUVR24":["_RWY0604DME"]},"body":[],"exitPoints":{"UZG":["UZG"]},"draw":[["MUVR","UZG*"]]},
+        "ZUVGI2B": {"icao":"ZUVGI2B","name":"Zuvgi Two Bravo","rwy":{"MUVR06":["_RWY2404DME"],"MUVR24":["_RWY0604DME"]},"body":[],"exitPoints":{"ZUVGI":["ZUVGI"]},"draw":[["MUVR","ZUVGI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"MUVR","destination":"CYUL","category":"departure","route":"MUVR06.UKITO1A.UKITO","altitude":"","speed":"","method":"random","rate":1.2,"airlines":[["aca/a320",1],["cub/a320",1],["tsc/a310",1],["tsc/b738",1]]},
+        {"origin":"MUVR","destination":"CYYZ","category":"departure","route":"MUVR06.UKITO1A.UKITO","altitude":"","speed":"","method":"random","rate":0.9,"airlines":[["aca/a319",1],["wja/b737",1],["wja/b738",1]]},
+        {"origin":"MUVR","destination":"CYHZ","category":"departure","route":"MUVR06.UKITO1A.UKITO","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["tsc/a310",1]]},
+        {"origin":"MUVR","destination":"CYYC","category":"departure","route":"MUVR06.ZUVGI2B.ZUVGI","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["aca/a319",1]]},
+        {"origin":"MUVR","destination":"EDDF","category":"departure","route":"MUVR06.UKITO1A.UKITO","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["cfg/b763",1]]},
+        {"origin":"MUVR","destination":"","category":"departure","route":"MUVR06.UKITO1A.UKITO","altitude":"","speed":"","method":"random","rate":0.9,"airlines":[["ber/a332",1],["tfl/b763",1],["tso/b763",1]]},
+        {"origin":"MUVR","destination":"","category":"departure","route":"MUVR06.WOBIH2B.WOBIH","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["cub/a320",1]]},
+        {"origin":"MUVR","destination":"","category":"departure","route":"MUVR06.UZG3A.UZG","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["tfl/b763",1]]},
+        {"origin":"MUVR","destination":"","category":"departure","route":"MUVR06.ZUVGI2B.ZUVGI","altitude":"","speed":"","method":"random","rate":1.5,"airlines":[["cu/c172",6],["cu/p28a",5],["cu/c182",3],["cu/be36",2],["cu/da42",1],["cu/tb20",1],["cu/c208",2],["cu/pc12",2],["cu/be20",1],["cu/b350",1],["cu/p180",1],["cu/c510",1],["cu/e50p",1],["cu/c550",1],["cu/e55p",1],["cu/cl30",1],["cu/c680",1],["cu/h25b",1],["cu/lj45",1],["cu/f2th",1],["cu/glf4",1],["cu/glex",1],["cu/glf5",1]]},
+        {"origin":"CYUL","destination":"MUVR","category":"arrival","route":"UKITO..IZASU..MUVR","altitude":[4000,7000],"speed":250,"method":"random","rate":1.2,"airlines":[["aca/a320",1],["cub/a320",1],["tsc/a310",1],["tsc/b738",1]]},
+        {"origin":"CYYZ","destination":"MUVR","category":"arrival","route":"UKITO..IZASU..MUVR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.9,"airlines":[["aca/a319",1],["wja/b737",1],["wja/b738",1]]},
+        {"origin":"CYHZ","destination":"MUVR","category":"arrival","route":"UKITO..IZASU..MUVR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.3,"airlines":[["tsc/a310",1]]},
+        {"origin":"CYYC","destination":"MUVR","category":"arrival","route":"ZUVGI..TAGWU..MUVR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.3,"airlines":[["aca/a319",1]]},
+        {"origin":"EDDF","destination":"MUVR","category":"arrival","route":"UKITO..IZASU..MUVR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.3,"airlines":[["cfg/b763",1]]},
+        {"origin":"","destination":"MUVR","category":"arrival","route":"UKITO..IZASU..MUVR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.9,"airlines":[["ber/a332",1],["tfl/b763",1],["tso/b763",1]]},
+        {"origin":"","destination":"MUVR","category":"arrival","route":"WOBIH..KUZIC..MUVR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.3,"airlines":[["cub/a320",1]]},
+        {"origin":"","destination":"MUVR","category":"arrival","route":"UZG..RISCO..MUVR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.3,"airlines":[["tfl/b763",1]]},
+        {"origin":"","destination":"MUVR","category":"arrival","route":"ZUVGI..TAGWU..MUVR","altitude":[4000,7000],"speed":250,"method":"random","rate":1.5,"airlines":[["cu/c172",6],["cu/p28a",5],["cu/c182",3],["cu/be36",2],["cu/da42",1],["cu/tb20",1],["cu/c208",2],["cu/pc12",2],["cu/be20",1],["cu/b350",1],["cu/p180",1],["cu/c510",1],["cu/e50p",1],["cu/c550",1],["cu/e55p",1],["cu/cl30",1],["cu/c680",1],["cu/h25b",1],["cu/lj45",1],["cu/f2th",1],["cu/glf4",1],["cu/glex",1],["cu/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [23.5509,-81.2719,23.2263,-81.3746],
+            [23.2263,-81.3746,23.0344,-81.4353],
+            [22.9344,-80.8609,22.9972,-81.2219],
+            [22.9972,-81.2219,23.0344,-81.4353],
+            [22.935,-82.0386,22.9992,-81.6491],
+            [22.9992,-81.6491,23.0344,-81.4353],
+            [23.4827,-81.7585,23.2009,-81.5554],
+            [23.2009,-81.5554,23.0344,-81.4353]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [23.0255,-81.4494,22.9308,-81.5983],
+            [22.97,-81.5177,22.9864,-81.53],
+            [22.9226,-81.5921,22.9391,-81.6044],
+            [23.0434,-81.4212,23.1379,-81.2721],
+            [23.0989,-81.3529,23.0825,-81.3405],
+            [23.1461,-81.2783,23.1297,-81.266]
+        ]}
+    ]
+}

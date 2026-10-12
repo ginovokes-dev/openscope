@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/WBSB/",
+    "info": {"country":"BN","city":"Bandar Seri Begawan","type":"large_airport","longestRunwayM":3675,"frequencies":{"atis":"126.800","twr":"118.700","app":"121.300","gnd":"121.900"}},
+    "radio": {"twr":"Brunei Tower","app":"Brunei Approach","dep":"Brunei Departure"},
+    "icao": "WBSB",
+    "iata": "BWN",
+    "magnetic_north": -0.5,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [4.9442,114.928001,"73ft"],
+    "rangeRings": {"enabled":true,"center":[4.9442,114.928001],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":50,"speed":10},
+    "arrivalRunway": "03",
+    "departureRunway": "03",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[5.4838,114.9233],[5.4666,115.0636],[5.4138,115.1947],[5.3291,115.3076],[5.2181,115.3947],[5.0884,115.4499],[4.9489,115.4696],[4.8091,115.4524],[4.6785,115.3994],[4.566,115.3143],[4.4793,115.2029],[4.4242,115.0727],[4.4046,114.9327],[4.4218,114.7924],[4.4746,114.6613],[4.5593,114.5484],[4.6703,114.4613],[4.8,114.4061],[4.9395,114.3864],[5.0793,114.4036],[5.2099,114.4566],[5.3224,114.5417],[5.4091,114.6531],[5.4642,114.7833]]}
+    ],
+    "fixes": {
+        "WBSB": [4.9442,114.928],
+        "SULDO": [5.48483,115.38397],
+        "GOSUM": [5.13547,115.08932],
+        "VZU": [4.03292,114.795,"mulu"],
+        "ALACO": [4.69697,114.89192],
+        "AKI": [4.63028,114.372,"anduki"],
+        "ADUFI": [4.82102,114.70983],
+        "UDUZU": [5.2667,114.29745],
+        "ZOBEV": [5.0583,114.70492],
+        "EDEZI": [5.64929,114.88922],
+        "DIRZI": [5.19366,114.91428],
+        "_RWY0304DME": [4.8728,114.88574],
+        "_RWY2104DME": [5.0156,114.97126]
+    },
+    "runways": [
+        {"name":["03","21"],"end":[[4.93001,114.92,"20ft"],[4.95839,114.937,"72ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "SULDO3D": {"icao":"SULDO3D","name":"Suldo Three Delta","rwy":{"WBSB03":["_RWY2104DME"],"WBSB21":["_RWY0304DME"]},"body":[],"exitPoints":{"SULDO":["SULDO"]},"draw":[["WBSB","SULDO*"]]},
+        "VZU1E": {"icao":"VZU1E","name":"Mulu One Echo","rwy":{"WBSB03":["_RWY2104DME"],"WBSB21":["_RWY0304DME"]},"body":[],"exitPoints":{"VZU":["VZU"]},"draw":[["WBSB","VZU*"]]},
+        "AKI2C": {"icao":"AKI2C","name":"Anduki Two Charlie","rwy":{"WBSB03":["_RWY2104DME"],"WBSB21":["_RWY0304DME"]},"body":[],"exitPoints":{"AKI":["AKI"]},"draw":[["WBSB","AKI*"]]},
+        "UDUZU1D": {"icao":"UDUZU1D","name":"Uduzu One Delta","rwy":{"WBSB03":["_RWY2104DME"],"WBSB21":["_RWY0304DME"]},"body":[],"exitPoints":{"UDUZU":["UDUZU"]},"draw":[["WBSB","UDUZU*"]]},
+        "EDEZI1D": {"icao":"EDEZI1D","name":"Edezi One Delta","rwy":{"WBSB03":["_RWY2104DME"],"WBSB21":["_RWY0304DME"]},"body":[],"exitPoints":{"EDEZI":["EDEZI"]},"draw":[["WBSB","EDEZI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"WBSB","destination":"WMKK","category":"departure","route":"WBSB03.AKI2C.AKI","altitude":"","speed":"","method":"random","rate":1.03,"airlines":[["axm/a320",1],["mas/b738",1],["rba/a319",1],["rba/a320",1]]},
+        {"origin":"WBSB","destination":"WSSS","category":"departure","route":"WBSB03.AKI2C.AKI","altitude":"","speed":"","method":"random","rate":0.78,"airlines":[["rba/a320",1],["sia/a320",1],["sia/b773",1]]},
+        {"origin":"WBSB","destination":"RPLL","category":"departure","route":"WBSB03.SULDO3D.SULDO","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ceb/a320",1],["rba/a320",1]]},
+        {"origin":"WBSB","destination":"VTBS","category":"departure","route":"WBSB03.UDUZU1D.UDUZU","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["rba/a319",1],["rba/a320",1]]},
+        {"origin":"WBSB","destination":"WARR","category":"departure","route":"WBSB03.VZU1E.VZU","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["rba/a319",1],["rba/a320",1]]},
+        {"origin":"WBSB","destination":"","category":"departure","route":"WBSB03.SULDO3D.SULDO","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["mas/a320",1],["rba/a320",1]]},
+        {"origin":"WBSB","destination":"","category":"departure","route":"WBSB03.VZU1E.VZU","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["rba/at72",1],["rba/b788",1]]},
+        {"origin":"WBSB","destination":"","category":"departure","route":"WBSB03.AKI2C.AKI","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["rba/a319",1]]},
+        {"origin":"WBSB","destination":"","category":"departure","route":"WBSB03.UDUZU1D.UDUZU","altitude":"","speed":"","method":"random","rate":0.78,"airlines":[["rba/b788",3]]},
+        {"origin":"WBSB","destination":"","category":"departure","route":"WBSB03.EDEZI1D.EDEZI","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["rba/a320",2]]},
+        {"origin":"WBSB","destination":"","category":"departure","route":"WBSB03.SULDO3D.SULDO","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["v8/c172",6],["v8/p28a",5],["v8/c182",3],["v8/be36",2],["v8/da42",1],["v8/tb20",1],["v8/c208",2],["v8/pc12",2],["v8/be20",1],["v8/b350",1],["v8/p180",1],["v8/c510",1],["v8/e50p",1],["v8/c550",2],["v8/e55p",1],["v8/cl30",1],["v8/c680",1],["v8/h25b",1],["v8/lj45",1],["v8/f2th",1],["v8/glf4",1],["v8/glex",1],["v8/glf5",1]]},
+        {"origin":"WBSB","destination":"","category":"departure","route":"WBSB03.EDEZI1D.EDEZI","altitude":"","speed":"","method":"random","rate":0.41,"airlines":[["v8/c172",6],["v8/p28a",5],["v8/c182",3],["v8/be36",2],["v8/da42",1],["v8/tb20",1],["v8/c208",2],["v8/pc12",2],["v8/be20",1],["v8/b350",1],["v8/p180",1],["v8/c510",1],["v8/e50p",1],["v8/c550",2],["v8/e55p",1],["v8/cl30",1],["v8/c680",1],["v8/h25b",1],["v8/lj45",1],["v8/f2th",1],["v8/glf4",1],["v8/glex",1],["v8/glf5",1]]},
+        {"origin":"WMKK","destination":"WBSB","category":"arrival","route":"AKI..ADUFI..WBSB","altitude":[6000,9000],"speed":250,"method":"random","rate":1.03,"airlines":[["axm/a320",1],["mas/b738",1],["rba/a319",1],["rba/a320",1]]},
+        {"origin":"WSSS","destination":"WBSB","category":"arrival","route":"AKI..ADUFI..WBSB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.78,"airlines":[["rba/a320",1],["sia/a320",1],["sia/b773",1]]},
+        {"origin":"RPLL","destination":"WBSB","category":"arrival","route":"SULDO..GOSUM..WBSB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["ceb/a320",1],["rba/a320",1]]},
+        {"origin":"VTBS","destination":"WBSB","category":"arrival","route":"UDUZU..ZOBEV..WBSB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["rba/a319",1],["rba/a320",1]]},
+        {"origin":"WARR","destination":"WBSB","category":"arrival","route":"VZU..ALACO..WBSB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["rba/a319",1],["rba/a320",1]]},
+        {"origin":"","destination":"WBSB","category":"arrival","route":"SULDO..GOSUM..WBSB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["mas/a320",1],["rba/a320",1]]},
+        {"origin":"","destination":"WBSB","category":"arrival","route":"VZU..ALACO..WBSB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["rba/at72",1],["rba/b788",1]]},
+        {"origin":"","destination":"WBSB","category":"arrival","route":"AKI..ADUFI..WBSB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.26,"airlines":[["rba/a319",1]]},
+        {"origin":"","destination":"WBSB","category":"arrival","route":"UDUZU..ZOBEV..WBSB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.78,"airlines":[["rba/b788",3]]},
+        {"origin":"","destination":"WBSB","category":"arrival","route":"EDEZI..DIRZI..WBSB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["rba/a320",2]]},
+        {"origin":"","destination":"WBSB","category":"arrival","route":"SULDO..GOSUM..WBSB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.41,"airlines":[["v8/c172",6],["v8/p28a",5],["v8/c182",3],["v8/be36",2],["v8/da42",1],["v8/tb20",1],["v8/c208",2],["v8/pc12",2],["v8/be20",1],["v8/b350",1],["v8/p180",1],["v8/c510",1],["v8/e50p",1],["v8/c550",2],["v8/e55p",1],["v8/cl30",1],["v8/c680",1],["v8/h25b",1],["v8/lj45",1],["v8/f2th",1],["v8/glf4",1],["v8/glex",1],["v8/glf5",1]]},
+        {"origin":"","destination":"WBSB","category":"arrival","route":"EDEZI..DIRZI..WBSB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.41,"airlines":[["v8/c172",6],["v8/p28a",5],["v8/c182",3],["v8/be36",2],["v8/da42",1],["v8/tb20",1],["v8/c208",2],["v8/pc12",2],["v8/be20",1],["v8/b350",1],["v8/p180",1],["v8/c510",1],["v8/e50p",1],["v8/c550",2],["v8/e55p",1],["v8/cl30",1],["v8/c680",1],["v8/h25b",1],["v8/lj45",1],["v8/f2th",1],["v8/glf4",1],["v8/glex",1],["v8/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [5.4848,115.384,5.1355,115.0893],
+            [5.1355,115.0893,4.9442,114.928],
+            [4.0329,114.795,4.697,114.8919],
+            [4.697,114.8919,4.9442,114.928],
+            [4.6303,114.372,4.821,114.7098],
+            [4.821,114.7098,4.9442,114.928],
+            [5.2667,114.2975,5.0583,114.7049],
+            [5.0583,114.7049,4.9442,114.928],
+            [5.6493,114.8892,5.1937,114.9143],
+            [5.1937,114.9143,4.9442,114.928]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [4.93,114.92,4.787,114.8344],
+            [4.8534,114.8858,4.8636,114.8686],
+            [4.7819,114.843,4.7921,114.8257],
+            [4.9584,114.937,5.1014,115.0227],
+            [5.035,114.9712,5.0248,114.9884],
+            [5.1065,115.0141,5.0963,115.0313]
+        ]}
+    ]
+}

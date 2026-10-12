@@ -1,0 +1,96 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EDDN/",
+    "info": {"country":"DE","city":"Nuremberg","type":"large_airport","longestRunwayM":2700,"frequencies":{"atis":"123.080","twr":"118.305","app":"119.475","gnd":"121.760"}},
+    "radio": {"twr":"Nuremberg Tower","app":"Nuremberg Approach","dep":"Nuremberg Departure"},
+    "icao": "EDDN",
+    "iata": "NUE",
+    "magnetic_north": 4.2,
+    "ctr_radius": 60,
+    "ctr_ceiling": 11000,
+    "initial_alt": 6000,
+    "position": [49.498699,11.078056,"1046ft"],
+    "rangeRings": {"enabled":true,"center":[49.498699,11.078056],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":280,"speed":12},
+    "arrivalRunway": "28",
+    "departureRunway": "28",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":110,"airspace_class":"C","poly":[[50.0368,11.1389],[50.0083,11.3513],[49.945,11.545],[49.8513,11.707],[49.7335,11.8261],[49.5998,11.8942],[49.4592,11.9067],[49.3212,11.8627],[49.1954,11.7652],[49.0902,11.6209],[49.0129,11.4397],[48.9687,11.2337],[48.9606,11.0172],[48.9891,10.8048],[49.0524,10.6111],[49.1461,10.4491],[49.2639,10.33],[49.3976,10.2619],[49.5382,10.2495],[49.6762,10.2934],[49.802,10.3909],[49.9072,10.5352],[49.9845,10.7165],[50.0287,10.9224]]}
+    ],
+    "fixes": {
+        "EDDN": [49.4987,11.07806],
+        "RDG": [49.0403,12.5265,"roding"],
+        "LUDAH": [49.38926,11.42386],
+        "WLD": [48.5794,11.1294,"walda"],
+        "FEDSA": [49.24903,11.092],
+        "DKB": [49.1428,10.2383,"dinkelsbuhl"],
+        "ZUZVO": [49.36217,10.75591],
+        "KTG": [49.7459,10.2136,"kitzingen"],
+        "OHOBE": [49.59937,10.726],
+        "CEKDI": [50.19637,10.91009],
+        "AZICI": [49.74553,11.01863],
+        "_RWY1004DME": [49.51037,10.95774],
+        "_RWY2804DME": [49.48695,11.19741]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[49.5005,11.0592,"1022ft"],[49.4969,11.096,"1046ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "RDG2C": {"icao":"RDG2C","name":"Roding Two Charlie","rwy":{"EDDN10":["_RWY2804DME"],"EDDN28":["_RWY1004DME"]},"body":[],"exitPoints":{"RDG":["RDG"]},"draw":[["EDDN","RDG*"]]},
+        "WLD3C": {"icao":"WLD3C","name":"Walda Three Charlie","rwy":{"EDDN10":["_RWY2804DME"],"EDDN28":["_RWY1004DME"]},"body":[],"exitPoints":{"WLD":["WLD"]},"draw":[["EDDN","WLD*"]]},
+        "DKB2A": {"icao":"DKB2A","name":"Dinkelsbuhl Two Alpha","rwy":{"EDDN10":["_RWY2804DME"],"EDDN28":["_RWY1004DME"]},"body":[],"exitPoints":{"DKB":["DKB"]},"draw":[["EDDN","DKB*"]]},
+        "KTG1D": {"icao":"KTG1D","name":"Kitzingen One Delta","rwy":{"EDDN10":["_RWY2804DME"],"EDDN28":["_RWY1004DME"]},"body":[],"exitPoints":{"KTG":["KTG"]},"draw":[["EDDN","KTG*"]]},
+        "CEKDI1D": {"icao":"CEKDI1D","name":"Cekdi One Delta","rwy":{"EDDN10":["_RWY2804DME"],"EDDN28":["_RWY1004DME"]},"body":[],"exitPoints":{"CEKDI":["CEKDI"]},"draw":[["EDDN","CEKDI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EDDN","destination":"EDDF","category":"departure","route":"EDDN28.KTG1D.KTG","altitude":"","speed":"","method":"random","rate":1.22,"airlines":[["dlh/a320",2],["dlh/a319",1],["dlh/a321",1],["dlh/b733",1],["dlh/b735",1],["dlh/crj7",1],["dlh/e190",1]]},
+        {"origin":"EDDN","destination":"LTAI","category":"departure","route":"EDDN28.RDG2C.RDG","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["ber/b738",1],["hlx/b738",1],["sxs/b738",1]]},
+        {"origin":"EDDN","destination":"LTFJ","category":"departure","route":"EDDN28.RDG2C.RDG","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["ber/b738",1],["pgt/a320",1],["pgt/b738",1]]},
+        {"origin":"EDDN","destination":"EDDH","category":"departure","route":"EDDN28.CEKDI1D.CEKDI","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["ber/dh8d",1],["gwi/crj7",1],["gwi/crj9",1],["gwi/crj2",1]]},
+        {"origin":"EDDN","destination":"EDDL","category":"departure","route":"EDDN28.KTG1D.KTG","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["ber/dh8d",1],["gwi/crj7",1],["gwi/crj9",1],["gwi/crj2",1]]},
+        {"origin":"EDDN","destination":"GCLP","category":"departure","route":"EDDN28.DKB2A.DKB","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["ber/b738",1],["hlx/b738",1]]},
+        {"origin":"EDDN","destination":"","category":"departure","route":"EDDN28.RDG2C.RDG","altitude":"","speed":"","method":"random","rate":1.82,"airlines":[["ber/b738",6],["hlx/b738",2],["aee/a320",1],["ber/dh8d",1],["thy/a320",1],["thy/b738",1]]},
+        {"origin":"EDDN","destination":"","category":"departure","route":"EDDN28.WLD3C.WLD","altitude":"","speed":"","method":"random","rate":0.61,"airlines":[["ber/b738",3],["ber/dh8d",1]]},
+        {"origin":"EDDN","destination":"","category":"departure","route":"EDDN28.DKB2A.DKB","altitude":"","speed":"","method":"random","rate":1.82,"airlines":[["ber/b738",4],["hlx/b738",3],["ryr/b738",2],["swr/f100",1],["swr/rj1h",1],["vlg/a320",1]]},
+        {"origin":"EDDN","destination":"","category":"departure","route":"EDDN28.KTG1D.KTG","altitude":"","speed":"","method":"random","rate":0.3,"airlines":[["afr/e170",1],["ryr/b738",1]]},
+        {"origin":"EDDN","destination":"","category":"departure","route":"EDDN28.CEKDI1D.CEKDI","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["d/c172",6],["d/p28a",5],["d/c182",3],["d/be36",2],["d/da42",1],["d/tb20",1],["d/c208",2],["d/pc12",2],["d/be20",1],["d/b350",1],["d/p180",1],["d/c510",1],["d/e50p",1],["d/c550",2],["d/e55p",1],["d/cl30",1],["d/c680",1],["d/h25b",1],["d/lj45",1],["d/f2th",1],["d/glf4",1],["d/glex",1],["d/glf5",1]]},
+        {"origin":"EDDN","destination":"","category":"departure","route":"EDDN28.DKB2A.DKB","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["d/c172",6],["d/p28a",5],["d/c182",3],["d/be36",2],["d/da42",1],["d/tb20",1],["d/c208",2],["d/pc12",2],["d/be20",1],["d/b350",1],["d/p180",1],["d/c510",1],["d/e50p",1],["d/c550",2],["d/e55p",1],["d/cl30",1],["d/c680",1],["d/h25b",1],["d/lj45",1],["d/f2th",1],["d/glf4",1],["d/glex",1],["d/glf5",1]]},
+        {"origin":"EDDF","destination":"EDDN","category":"arrival","route":"KTG..OHOBE..EDDN","altitude":[7000,10000],"speed":250,"method":"random","rate":1.22,"airlines":[["dlh/a320",2],["dlh/a319",1],["dlh/a321",1],["dlh/b733",1],["dlh/b735",1],["dlh/crj7",1],["dlh/e190",1]]},
+        {"origin":"LTAI","destination":"EDDN","category":"arrival","route":"RDG..LUDAH..EDDN","altitude":[7000,10000],"speed":250,"method":"random","rate":0.46,"airlines":[["ber/b738",1],["hlx/b738",1],["sxs/b738",1]]},
+        {"origin":"LTFJ","destination":"EDDN","category":"arrival","route":"RDG..LUDAH..EDDN","altitude":[7000,10000],"speed":250,"method":"random","rate":0.46,"airlines":[["ber/b738",1],["pgt/a320",1],["pgt/b738",1]]},
+        {"origin":"EDDH","destination":"EDDN","category":"arrival","route":"CEKDI..AZICI..EDDN","altitude":[7000,10000],"speed":250,"method":"random","rate":0.3,"airlines":[["ber/dh8d",1],["gwi/crj7",1],["gwi/crj9",1],["gwi/crj2",1]]},
+        {"origin":"EDDL","destination":"EDDN","category":"arrival","route":"KTG..OHOBE..EDDN","altitude":[7000,10000],"speed":250,"method":"random","rate":0.3,"airlines":[["ber/dh8d",1],["gwi/crj7",1],["gwi/crj9",1],["gwi/crj2",1]]},
+        {"origin":"GCLP","destination":"EDDN","category":"arrival","route":"DKB..ZUZVO..EDDN","altitude":[7000,10000],"speed":250,"method":"random","rate":0.3,"airlines":[["ber/b738",1],["hlx/b738",1]]},
+        {"origin":"","destination":"EDDN","category":"arrival","route":"RDG..LUDAH..EDDN","altitude":[7000,10000],"speed":250,"method":"random","rate":1.82,"airlines":[["ber/b738",6],["hlx/b738",2],["aee/a320",1],["ber/dh8d",1],["thy/a320",1],["thy/b738",1]]},
+        {"origin":"","destination":"EDDN","category":"arrival","route":"WLD..FEDSA..EDDN","altitude":[7000,10000],"speed":250,"method":"random","rate":0.61,"airlines":[["ber/b738",3],["ber/dh8d",1]]},
+        {"origin":"","destination":"EDDN","category":"arrival","route":"DKB..ZUZVO..EDDN","altitude":[7000,10000],"speed":250,"method":"random","rate":1.82,"airlines":[["ber/b738",4],["hlx/b738",3],["ryr/b738",2],["swr/f100",1],["swr/rj1h",1],["vlg/a320",1]]},
+        {"origin":"","destination":"EDDN","category":"arrival","route":"KTG..OHOBE..EDDN","altitude":[7000,10000],"speed":250,"method":"random","rate":0.3,"airlines":[["afr/e170",1],["ryr/b738",1]]},
+        {"origin":"","destination":"EDDN","category":"arrival","route":"CEKDI..AZICI..EDDN","altitude":[7000,10000],"speed":250,"method":"random","rate":0.52,"airlines":[["d/c172",6],["d/p28a",5],["d/c182",3],["d/be36",2],["d/da42",1],["d/tb20",1],["d/c208",2],["d/pc12",2],["d/be20",1],["d/b350",1],["d/p180",1],["d/c510",1],["d/e50p",1],["d/c550",2],["d/e55p",1],["d/cl30",1],["d/c680",1],["d/h25b",1],["d/lj45",1],["d/f2th",1],["d/glf4",1],["d/glex",1],["d/glf5",1]]},
+        {"origin":"","destination":"EDDN","category":"arrival","route":"DKB..ZUZVO..EDDN","altitude":[7000,10000],"speed":250,"method":"random","rate":0.52,"airlines":[["d/c172",6],["d/p28a",5],["d/c182",3],["d/be36",2],["d/da42",1],["d/tb20",1],["d/c208",2],["d/pc12",2],["d/be20",1],["d/b350",1],["d/p180",1],["d/c510",1],["d/e50p",1],["d/c550",2],["d/e55p",1],["d/cl30",1],["d/c680",1],["d/h25b",1],["d/lj45",1],["d/f2th",1],["d/glf4",1],["d/glex",1],["d/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [49.0403,12.5265,49.3893,11.4239],
+            [49.3893,11.4239,49.4987,11.0781],
+            [48.5794,11.1294,49.249,11.092],
+            [49.249,11.092,49.4987,11.0781],
+            [49.1428,10.2383,49.3622,10.7559],
+            [49.3622,10.7559,49.4987,11.0781],
+            [49.7459,10.2136,49.5994,10.726],
+            [49.5994,10.726,49.4987,11.0781],
+            [50.1964,10.9101,49.7455,11.0186],
+            [49.7455,11.0186,49.4987,11.0781]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [49.5005,11.0592,49.525,10.8055],
+            [49.5029,10.9301,49.5227,10.9347],
+            [49.5151,10.8032,49.5349,10.8078],
+            [49.4969,11.096,49.4718,11.3495],
+            [49.4943,11.225,49.4746,11.2205],
+            [49.4817,11.3517,49.462,11.3472]
+        ]}
+    ]
+}

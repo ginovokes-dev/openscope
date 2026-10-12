@@ -1,0 +1,94 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/FVRG/",
+    "info": {"country":"ZW","city":"Harare","type":"large_airport","longestRunwayM":4725,"frequencies":{"atis":"113.100","twr":"118.100","app":"119.100","gnd":"127.300"}},
+    "radio": {"twr":"Harare Tower","app":"Harare Approach","dep":"Harare Departure"},
+    "icao": "FVRG",
+    "iata": "HRE",
+    "magnetic_north": -9.7,
+    "ctr_radius": 60,
+    "ctr_ceiling": 14000,
+    "initial_alt": 9000,
+    "position": [-17.931801,31.0928,"4887ft"],
+    "rangeRings": {"enabled":true,"center":[-17.931801,31.0928],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":80,"speed":8},
+    "arrivalRunway": "05",
+    "departureRunway": "05",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":140,"airspace_class":"C","poly":[[-17.3999,30.9972],[-17.3945,31.1452],[-17.4257,31.2896],[-17.4914,31.4205],[-17.5871,31.5292],[-17.7063,31.6081],[-17.8409,31.6518],[-17.9816,31.6575],[-18.119,31.6247],[-18.2436,31.5557],[-18.347,31.4551],[-18.422,31.3298],[-18.4637,31.1884],[-18.4691,31.0404],[-18.4379,30.896],[-18.3722,30.7651],[-18.2765,30.6564],[-18.1573,30.5775],[-18.0227,30.5338],[-17.882,30.5281],[-17.7446,30.5609],[-17.62,30.6299],[-17.5166,30.7305],[-17.4416,30.8558]]}
+    ],
+    "fixes": {
+        "FVRG": [-17.9318,31.0928],
+        "VAROV": [-17.29301,31.40915],
+        "BADIJ": [-17.7058,31.20472],
+        "ZUMGU": [-18.2216,31.76962],
+        "BZ": [-18.0673,31.3393,"harare"],
+        "FAZSU": [-18.5807,30.80006],
+        "CUVCU": [-18.16138,30.98923],
+        "OHEKE": [-18.08204,30.36759],
+        "MEJKE": [-17.98496,30.83623],
+        "NESEL": [-17.47862,30.5236],
+        "CP": [-17.7514,30.9266,"charles prince"],
+        "_RWY0504DME": [-17.98717,31.03499],
+        "_RWY2304DME": [-17.86944,31.15795]
+    },
+    "runways": [
+        {"name":["05","23"],"end":[[-17.93992,31.08437,"4793ft"],[-17.9167,31.10861,"4887ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "VAROV2E": {"icao":"VAROV2E","name":"Varov Two Echo","rwy":{"FVRG05":["_RWY2304DME"],"FVRG23":["_RWY0504DME"]},"body":[],"exitPoints":{"VAROV":["VAROV"]},"draw":[["FVRG","VAROV*"]]},
+        "ZUMGU1E": {"icao":"ZUMGU1E","name":"Zumgu One Echo","rwy":{"FVRG05":["_RWY2304DME"],"FVRG23":["_RWY0504DME"]},"body":[],"exitPoints":{"ZUMGU":["ZUMGU"]},"draw":[["FVRG","ZUMGU*"]]},
+        "FAZSU2C": {"icao":"FAZSU2C","name":"Fazsu Two Charlie","rwy":{"FVRG05":["_RWY2304DME"],"FVRG23":["_RWY0504DME"]},"body":[],"exitPoints":{"FAZSU":["FAZSU"]},"draw":[["FVRG","FAZSU*"]]},
+        "OHEKE3A": {"icao":"OHEKE3A","name":"Oheke Three Alpha","rwy":{"FVRG05":["_RWY2304DME"],"FVRG23":["_RWY0504DME"]},"body":[],"exitPoints":{"OHEKE":["OHEKE"]},"draw":[["FVRG","OHEKE*"]]},
+        "NESEL3F": {"icao":"NESEL3F","name":"Nesel Three Foxtrot","rwy":{"FVRG05":["_RWY2304DME"],"FVRG23":["_RWY0504DME"]},"body":[],"exitPoints":{"NESEL":["NESEL"]},"draw":[["FVRG","NESEL*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"FVRG","destination":"FLKK","category":"departure","route":"FVRG05.NESEL3F.NESEL","altitude":"","speed":"","method":"random","rate":1.69,"airlines":[["dta/b737",1],["eth/b788",1],["kqa/b763",1],["kqa/e190",1],["nmb/e135",1],["uae/a343",1],["klm/a333",1],["klm/a332",1]]},
+        {"origin":"FVRG","destination":"FAOR","category":"departure","route":"FVRG05.FAZSU2C.FAZSU","altitude":"","speed":"","method":"random","rate":0.97,"airlines":[["azw/b762",1],["saa/a319",1],["saa/a320",1],["saa/b738",1]]},
+        {"origin":"FVRG","destination":"HKJK","category":"departure","route":"FVRG05.VAROV2E.VAROV","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["kqa/b763",1],["kqa/e170",1],["kqa/e190",1]]},
+        {"origin":"FVRG","destination":"EHAM","category":"departure","route":"FVRG05.NESEL3F.NESEL","altitude":"","speed":"","method":"random","rate":0.24,"airlines":[["klm/a333",1],["klm/a332",1]]},
+        {"origin":"FVRG","destination":"FBSK","category":"departure","route":"FVRG05.FAZSU2C.FAZSU","altitude":"","speed":"","method":"random","rate":0.24,"airlines":[["bot/at45",1]]},
+        {"origin":"FVRG","destination":"","category":"departure","route":"FVRG05.VAROV2E.VAROV","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["eth/b788",1],["msr/b738",1],["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]},
+        {"origin":"FVRG","destination":"","category":"departure","route":"FVRG05.FAZSU2C.FAZSU","altitude":"","speed":"","method":"random","rate":0.24,"airlines":[["azw/b732",1]]},
+        {"origin":"FVRG","destination":"","category":"departure","route":"FVRG05.OHEKE3A.OHEKE","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["azw/b732",1],["kqa/e190",1],["nmb/e135",1]]},
+        {"origin":"FVRG","destination":"","category":"departure","route":"FVRG05.NESEL3F.NESEL","altitude":"","speed":"","method":"random","rate":0.24,"airlines":[["dta/b737",1]]},
+        {"origin":"FVRG","destination":"","category":"departure","route":"FVRG05.NESEL3F.NESEL","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["z/c172",6],["z/p28a",5],["z/c182",3],["z/be36",2],["z/da42",1],["z/tb20",1],["z/c208",2],["z/pc12",2],["z/be20",1],["z/b350",1],["z/p180",1],["z/c510",1],["z/e50p",1],["z/c550",2],["z/e55p",1],["z/cl30",1],["z/c680",1],["z/h25b",1],["z/lj45",1],["z/f2th",1],["z/glf4",1],["z/glex",1],["z/glf5",1]]},
+        {"origin":"FVRG","destination":"","category":"departure","route":"FVRG05.FAZSU2C.FAZSU","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["z/c172",6],["z/p28a",5],["z/c182",3],["z/be36",2],["z/da42",1],["z/tb20",1],["z/c208",2],["z/pc12",2],["z/be20",1],["z/b350",1],["z/p180",1],["z/c510",1],["z/e50p",1],["z/c550",2],["z/e55p",1],["z/cl30",1],["z/c680",1],["z/h25b",1],["z/lj45",1],["z/f2th",1],["z/glf4",1],["z/glex",1],["z/glf5",1]]},
+        {"origin":"FLKK","destination":"FVRG","category":"arrival","route":"NESEL..CP..FVRG","altitude":[10000,13000],"speed":250,"method":"random","rate":1.69,"airlines":[["dta/b737",1],["eth/b788",1],["kqa/b763",1],["kqa/e190",1],["nmb/e135",1],["uae/a343",1],["klm/a333",1],["klm/a332",1]]},
+        {"origin":"FAOR","destination":"FVRG","category":"arrival","route":"FAZSU..CUVCU..FVRG","altitude":[10000,13000],"speed":250,"method":"random","rate":0.97,"airlines":[["azw/b762",1],["saa/a319",1],["saa/a320",1],["saa/b738",1]]},
+        {"origin":"HKJK","destination":"FVRG","category":"arrival","route":"VAROV..BADIJ..FVRG","altitude":[10000,13000],"speed":250,"method":"random","rate":0.72,"airlines":[["kqa/b763",1],["kqa/e170",1],["kqa/e190",1]]},
+        {"origin":"EHAM","destination":"FVRG","category":"arrival","route":"NESEL..CP..FVRG","altitude":[10000,13000],"speed":250,"method":"random","rate":0.24,"airlines":[["klm/a333",1],["klm/a332",1]]},
+        {"origin":"FBSK","destination":"FVRG","category":"arrival","route":"FAZSU..CUVCU..FVRG","altitude":[10000,13000],"speed":250,"method":"random","rate":0.24,"airlines":[["bot/at45",1]]},
+        {"origin":"","destination":"FVRG","category":"arrival","route":"VAROV..BADIJ..FVRG","altitude":[10000,13000],"speed":250,"method":"random","rate":0.72,"airlines":[["eth/b788",1],["msr/b738",1],["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]},
+        {"origin":"","destination":"FVRG","category":"arrival","route":"FAZSU..CUVCU..FVRG","altitude":[10000,13000],"speed":250,"method":"random","rate":0.24,"airlines":[["azw/b732",1]]},
+        {"origin":"","destination":"FVRG","category":"arrival","route":"OHEKE..MEJKE..FVRG","altitude":[10000,13000],"speed":250,"method":"random","rate":0.72,"airlines":[["azw/b732",1],["kqa/e190",1],["nmb/e135",1]]},
+        {"origin":"","destination":"FVRG","category":"arrival","route":"NESEL..CP..FVRG","altitude":[10000,13000],"speed":250,"method":"random","rate":0.24,"airlines":[["dta/b737",1]]},
+        {"origin":"","destination":"FVRG","category":"arrival","route":"NESEL..CP..FVRG","altitude":[10000,13000],"speed":250,"method":"random","rate":0.4,"airlines":[["z/c172",6],["z/p28a",5],["z/c182",3],["z/be36",2],["z/da42",1],["z/tb20",1],["z/c208",2],["z/pc12",2],["z/be20",1],["z/b350",1],["z/p180",1],["z/c510",1],["z/e50p",1],["z/c550",2],["z/e55p",1],["z/cl30",1],["z/c680",1],["z/h25b",1],["z/lj45",1],["z/f2th",1],["z/glf4",1],["z/glex",1],["z/glf5",1]]},
+        {"origin":"","destination":"FVRG","category":"arrival","route":"FAZSU..CUVCU..FVRG","altitude":[10000,13000],"speed":250,"method":"random","rate":0.4,"airlines":[["z/c172",6],["z/p28a",5],["z/c182",3],["z/be36",2],["z/da42",1],["z/tb20",1],["z/c208",2],["z/pc12",2],["z/be20",1],["z/b350",1],["z/p180",1],["z/c510",1],["z/e50p",1],["z/c550",2],["z/e55p",1],["z/cl30",1],["z/c680",1],["z/h25b",1],["z/lj45",1],["z/f2th",1],["z/glf4",1],["z/glex",1],["z/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-17.293,31.4091,-17.7058,31.2047],
+            [-17.7058,31.2047,-17.9318,31.0928],
+            [-18.2216,31.7696,-18.0673,31.3393],
+            [-18.0673,31.3393,-17.9318,31.0928],
+            [-18.5807,30.8001,-18.1614,30.9892],
+            [-18.1614,30.9892,-17.9318,31.0928],
+            [-18.082,30.3676,-17.985,30.8362],
+            [-17.985,30.8362,-17.9318,31.0928],
+            [-17.4786,30.5236,-17.7514,30.9266],
+            [-17.7514,30.9266,-17.9318,31.0928]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-17.9399,31.0844,-18.058,30.9609],
+            [-18.006,31.0301,-17.9919,31.0152],
+            [-18.0651,30.9683,-18.051,30.9534],
+            [-17.9167,31.1086,-17.7985,31.2319],
+            [-17.8506,31.1628,-17.8647,31.1777],
+            [-17.7915,31.2245,-17.8056,31.2394]
+        ]}
+    ]
+}

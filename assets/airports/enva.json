@@ -1,0 +1,91 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ENVA/",
+    "info": {"country":"NO","city":"Trondheim","type":"large_airport","longestRunwayM":2837,"frequencies":{"atis":"127.550","twr":"119.400","app":"118.600","gnd":"121.600"}},
+    "radio": {"twr":"Trondheim Tower","app":"Trondheim Approach","dep":"Trondheim Departure"},
+    "icao": "ENVA",
+    "iata": "TRD",
+    "magnetic_north": 5.4,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [63.457802,10.924,"56ft"],
+    "rangeRings": {"enabled":true,"center":[63.457802,10.924],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":250,"speed":5},
+    "arrivalRunway": "27",
+    "departureRunway": "27",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[63.995,11.0376],[63.9636,11.3449],[63.8976,11.6235],[63.8018,11.8544],[63.6824,12.0219],[63.5478,12.1146],[63.407,12.1262],[63.2697,12.0558],[63.1452,11.9083],[63.042,11.6937],[62.9672,11.4267],[62.9258,11.1254],[62.9206,10.8104],[62.9521,10.5031],[63.018,10.2245],[63.1139,9.9936],[63.2332,9.8261],[63.3678,9.7334],[63.5086,9.7218],[63.6459,9.7922],[63.7704,9.9397],[63.8736,10.1543],[63.9484,10.4213],[63.9898,10.7226]]}
+    ],
+    "fixes": {
+        "ENVA": [63.4578,10.924],
+        "NMS": [64.495,11.8087,"namsos"],
+        "ASEHU": [63.69125,11.12312],
+        "RBU": [62.5061,11.5569,"rambu"],
+        "KEJOF": [63.21832,11.08326],
+        "FIMLE": [62.79376,10.3865],
+        "ENENU": [63.22287,10.73383],
+        "MEBIZ": [63.26657,9.40279],
+        "GRK": [63.419,10.2689,"grakallen"],
+        "_RWY0904DME": [63.45785,10.7454],
+        "_RWY2704DME": [63.45729,11.09277]
+    },
+    "runways": [
+        {"name":["09","27"],"end":[[63.45769,10.89449,"17ft"],[63.4576,10.94368,"56ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "NMS2B": {"icao":"NMS2B","name":"Namsos Two Bravo","rwy":{"ENVA09":["_RWY2704DME"],"ENVA27":["_RWY0904DME"]},"body":[],"exitPoints":{"NMS":["NMS"]},"draw":[["ENVA","NMS*"]]},
+        "RBU2D": {"icao":"RBU2D","name":"Rambu Two Delta","rwy":{"ENVA09":["_RWY2704DME"],"ENVA27":["_RWY0904DME"]},"body":[],"exitPoints":{"RBU":["RBU"]},"draw":[["ENVA","RBU*"]]},
+        "FIMLE2A": {"icao":"FIMLE2A","name":"Fimle Two Alpha","rwy":{"ENVA09":["_RWY2704DME"],"ENVA27":["_RWY0904DME"]},"body":[],"exitPoints":{"FIMLE":["FIMLE"]},"draw":[["ENVA","FIMLE*"]]},
+        "MEBIZ1B": {"icao":"MEBIZ1B","name":"Mebiz One Bravo","rwy":{"ENVA09":["_RWY2704DME"],"ENVA27":["_RWY0904DME"]},"body":[],"exitPoints":{"MEBIZ":["MEBIZ"]},"draw":[["ENVA","MEBIZ*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ENVA","destination":"ENGM","category":"departure","route":"ENVA27.RBU2D.RBU","altitude":"","speed":"","method":"random","rate":0.94,"airlines":[["sas/b737",2],["sas/b738",2],["nax/b733",1],["nax/b738",1],["sas/b736",1]]},
+        {"origin":"ENVA","destination":"ENBR","category":"departure","route":"ENVA27.FIMLE2A.FIMLE","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["ice/b752",1],["nax/b738",1],["sas/b736",1],["sas/b737",1]]},
+        {"origin":"ENVA","destination":"ENBO","category":"departure","route":"ENVA27.NMS2B.NMS","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["sas/b736",1],["sas/b737",1],["wif/dh8c",1]]},
+        {"origin":"ENVA","destination":"ENZV","category":"departure","route":"ENVA27.FIMLE2A.FIMLE","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["sas/b736",1],["sas/b737",1],["sas/b738",1]]},
+        {"origin":"ENVA","destination":"EETN","category":"departure","route":"ENVA27.RBU2D.RBU","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["ell/crj9",1],["ell/e170",1]]},
+        {"origin":"ENVA","destination":"EKCH","category":"departure","route":"ENVA27.RBU2D.RBU","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["nax/b738",1],["sas/crj9",1]]},
+        {"origin":"ENVA","destination":"","category":"departure","route":"ENVA27.NMS2B.NMS","altitude":"","speed":"","method":"random","rate":2.02,"airlines":[["wif/dh8a",6],["wif/dh8b",5],["nax/b738",2],["wif/dh8c",1],["wif/dh8d",1]]},
+        {"origin":"ENVA","destination":"","category":"departure","route":"ENVA27.RBU2D.RBU","altitude":"","speed":"","method":"random","rate":1.08,"airlines":[["nax/b738",5],["sas/b712",1],["sas/b737",1],["wzz/a320",1]]},
+        {"origin":"ENVA","destination":"","category":"departure","route":"ENVA27.FIMLE2A.FIMLE","altitude":"","speed":"","method":"random","rate":1.21,"airlines":[["nax/b738",5],["wif/dh8d",2],["sas/b738",1],["wif/dh8c",1]]},
+        {"origin":"ENVA","destination":"","category":"departure","route":"ENVA27.MEBIZ1B.MEBIZ","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["ice/b752",1],["sas/b736",1],["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENVA","destination":"","category":"departure","route":"ENVA27.NMS2B.NMS","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ln/c172",6],["ln/p28a",5],["ln/c182",3],["ln/be36",2],["ln/da42",1],["ln/tb20",1],["ln/c208",2],["ln/pc12",2],["ln/be20",1],["ln/b350",1],["ln/p180",1],["ln/c510",1],["ln/e50p",1],["ln/c550",2],["ln/e55p",1],["ln/cl30",1],["ln/c680",1],["ln/h25b",1],["ln/lj45",1],["ln/f2th",1],["ln/glf4",1],["ln/glex",1],["ln/glf5",1]]},
+        {"origin":"ENVA","destination":"","category":"departure","route":"ENVA27.FIMLE2A.FIMLE","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ln/c172",6],["ln/p28a",5],["ln/c182",3],["ln/be36",2],["ln/da42",1],["ln/tb20",1],["ln/c208",2],["ln/pc12",2],["ln/be20",1],["ln/b350",1],["ln/p180",1],["ln/c510",1],["ln/e50p",1],["ln/c550",2],["ln/e55p",1],["ln/cl30",1],["ln/c680",1],["ln/h25b",1],["ln/lj45",1],["ln/f2th",1],["ln/glf4",1],["ln/glex",1],["ln/glf5",1]]},
+        {"origin":"ENGM","destination":"ENVA","category":"arrival","route":"RBU..KEJOF..ENVA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.94,"airlines":[["sas/b737",2],["sas/b738",2],["nax/b733",1],["nax/b738",1],["sas/b736",1]]},
+        {"origin":"ENBR","destination":"ENVA","category":"arrival","route":"FIMLE..ENENU..ENVA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.54,"airlines":[["ice/b752",1],["nax/b738",1],["sas/b736",1],["sas/b737",1]]},
+        {"origin":"ENBO","destination":"ENVA","category":"arrival","route":"NMS..ASEHU..ENVA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["sas/b736",1],["sas/b737",1],["wif/dh8c",1]]},
+        {"origin":"ENZV","destination":"ENVA","category":"arrival","route":"FIMLE..ENENU..ENVA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.4,"airlines":[["sas/b736",1],["sas/b737",1],["sas/b738",1]]},
+        {"origin":"EETN","destination":"ENVA","category":"arrival","route":"RBU..KEJOF..ENVA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.27,"airlines":[["ell/crj9",1],["ell/e170",1]]},
+        {"origin":"EKCH","destination":"ENVA","category":"arrival","route":"RBU..KEJOF..ENVA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.27,"airlines":[["nax/b738",1],["sas/crj9",1]]},
+        {"origin":"","destination":"ENVA","category":"arrival","route":"NMS..ASEHU..ENVA","altitude":[6000,9000],"speed":250,"method":"random","rate":2.02,"airlines":[["wif/dh8a",6],["wif/dh8b",5],["nax/b738",2],["wif/dh8c",1],["wif/dh8d",1]]},
+        {"origin":"","destination":"ENVA","category":"arrival","route":"RBU..KEJOF..ENVA","altitude":[6000,9000],"speed":250,"method":"random","rate":1.08,"airlines":[["nax/b738",5],["sas/b712",1],["sas/b737",1],["wzz/a320",1]]},
+        {"origin":"","destination":"ENVA","category":"arrival","route":"FIMLE..ENENU..ENVA","altitude":[6000,9000],"speed":250,"method":"random","rate":1.21,"airlines":[["nax/b738",5],["wif/dh8d",2],["sas/b738",1],["wif/dh8c",1]]},
+        {"origin":"","destination":"ENVA","category":"arrival","route":"MEBIZ..GRK..ENVA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.54,"airlines":[["ice/b752",1],["sas/b736",1],["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"","destination":"ENVA","category":"arrival","route":"NMS..ASEHU..ENVA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["ln/c172",6],["ln/p28a",5],["ln/c182",3],["ln/be36",2],["ln/da42",1],["ln/tb20",1],["ln/c208",2],["ln/pc12",2],["ln/be20",1],["ln/b350",1],["ln/p180",1],["ln/c510",1],["ln/e50p",1],["ln/c550",2],["ln/e55p",1],["ln/cl30",1],["ln/c680",1],["ln/h25b",1],["ln/lj45",1],["ln/f2th",1],["ln/glf4",1],["ln/glex",1],["ln/glf5",1]]},
+        {"origin":"","destination":"ENVA","category":"arrival","route":"FIMLE..ENENU..ENVA","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["ln/c172",6],["ln/p28a",5],["ln/c182",3],["ln/be36",2],["ln/da42",1],["ln/tb20",1],["ln/c208",2],["ln/pc12",2],["ln/be20",1],["ln/b350",1],["ln/p180",1],["ln/c510",1],["ln/e50p",1],["ln/c550",2],["ln/e55p",1],["ln/cl30",1],["ln/c680",1],["ln/h25b",1],["ln/lj45",1],["ln/f2th",1],["ln/glf4",1],["ln/glex",1],["ln/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [64.495,11.8087,63.6913,11.1231],
+            [63.6913,11.1231,63.4578,10.924],
+            [62.5061,11.5569,63.2183,11.0833],
+            [63.2183,11.0833,63.4578,10.924],
+            [62.7938,10.3865,63.2229,10.7338],
+            [63.2229,10.7338,63.4578,10.924],
+            [63.2666,9.4028,63.419,10.2689],
+            [63.419,10.2689,63.4578,10.924]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [63.4577,10.8945,63.4578,10.5218],
+            [63.4479,10.708,63.4679,10.7082],
+            [63.4478,10.5217,63.4678,10.5218],
+            [63.4576,10.9437,63.4565,11.3164],
+            [63.4672,11.1301,63.4472,11.13],
+            [63.4665,11.3165,63.4465,11.3163]
+        ]}
+    ]
+}

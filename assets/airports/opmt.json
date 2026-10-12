@@ -1,0 +1,88 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/OPMT/",
+    "info": {"country":"PK","city":"Multan","type":"large_airport","longestRunwayM":3765,"frequencies":{"twr":"119.100","app":"119.100","gnd":"121.800"}},
+    "radio": {"twr":"Multan Tower","app":"Multan Approach","dep":"Multan Departure"},
+    "icao": "OPMT",
+    "iata": "MUX",
+    "magnetic_north": 2.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [30.203199,71.419098,"403ft"],
+    "rangeRings": {"enabled":true,"center":[30.203199,71.419098],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":190,"speed":6},
+    "arrivalRunway": "18",
+    "departureRunway": "18",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[30.6076,71.4363],[30.59,71.5568],[30.546,71.6679],[30.4787,71.7621],[30.3926,71.8329],[30.2935,71.8755],[30.1884,71.887],[30.0842,71.8667],[29.9881,71.8158],[29.9067,71.7379],[29.8455,71.6382],[29.8087,71.5236],[29.7988,71.4019],[29.8164,71.2814],[29.8604,71.1703],[29.9277,71.0761],[30.0138,71.0053],[30.1129,70.9627],[30.218,70.9511],[30.3222,70.9715],[30.4183,71.0224],[30.4997,71.1003],[30.5609,71.2],[30.5977,71.3146]]}
+    ],
+    "fixes": {
+        "OPMT": [30.2032,71.4191],
+        "CUWEC": [30.71097,71.6246],
+        "JEWPE": [30.39186,71.49545],
+        "MUSID": [30.45567,71.96872],
+        "NAGMI": [30.297,71.6233],
+        "BW": [29.3499,71.7191,"bahawalpur"],
+        "EHIRE": [30.01197,71.48633],
+        "BI": [29.68,71.0311,"bindo"],
+        "UNOCO": [30.03493,71.29431],
+        "DG": [29.9622,70.4903,"dera ghazi khan"],
+        "VUTID": [30.14573,71.19761],
+        "_RWY1804DME": [30.2838,71.42442],
+        "_RWY3604DME": [30.12705,71.41409]
+    },
+    "runways": [
+        {"name":["18","36"],"end":[[30.21729,71.42003,"358ft"],[30.19356,71.41847,"402ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "CUWEC2A": {"icao":"CUWEC2A","name":"Cuwec Two Alpha","rwy":{"OPMT18":["_RWY3604DME"],"OPMT36":["_RWY1804DME"]},"body":[],"exitPoints":{"CUWEC":["CUWEC"]},"draw":[["OPMT","CUWEC*"]]},
+        "MUSID3A": {"icao":"MUSID3A","name":"Musid Three Alpha","rwy":{"OPMT18":["_RWY3604DME"],"OPMT36":["_RWY1804DME"]},"body":[],"exitPoints":{"MUSID":["MUSID"]},"draw":[["OPMT","MUSID*"]]},
+        "BW3E": {"icao":"BW3E","name":"Bahawalpur Three Echo","rwy":{"OPMT18":["_RWY3604DME"],"OPMT36":["_RWY1804DME"]},"body":[],"exitPoints":{"BW":["BW"]},"draw":[["OPMT","BW*"]]},
+        "BI2E": {"icao":"BI2E","name":"Bindo Two Echo","rwy":{"OPMT18":["_RWY3604DME"],"OPMT36":["_RWY1804DME"]},"body":[],"exitPoints":{"BI":["BI"]},"draw":[["OPMT","BI*"]]},
+        "DG1A": {"icao":"DG1A","name":"Dera Ghazi Khan One Alpha","rwy":{"OPMT18":["_RWY3604DME"],"OPMT36":["_RWY1804DME"]},"body":[],"exitPoints":{"DG":["DG"]},"draw":[["OPMT","DG*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"OPMT","destination":"OPKC","category":"departure","route":"OPMT18.BI2E.BI","altitude":"","speed":"","method":"random","rate":1.46,"airlines":[["pia/a310",1],["pia/a320",1],["pia/b737",1],["pia/b738",1],["sai/a320",1],["sai/b734",1],["pia/at72",1],["pia/at45",1],["pia/at75",1]]},
+        {"origin":"OPMT","destination":"OPLA","category":"departure","route":"OPMT18.MUSID3A.MUSID","altitude":"","speed":"","method":"random","rate":0.83,"airlines":[["pia/a320",1],["pia/b737",1],["pia/b738",1],["pia/at72",1],["pia/at45",1],["pia/at75",1]]},
+        {"origin":"OPMT","destination":"OEMA","category":"departure","route":"OPMT18.DG1A.DG","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["pia/a310",1],["sai/a320",1]]},
+        {"origin":"OPMT","destination":"OMDB","category":"departure","route":"OPMT18.DG1A.DG","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["fdb/b738",1],["sai/b734",1]]},
+        {"origin":"OPMT","destination":"OMSJ","category":"departure","route":"OPMT18.DG1A.DG","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["pia/b737",1],["pia/b738",1]]},
+        {"origin":"OPMT","destination":"","category":"departure","route":"OPMT18.CUWEC2A.CUWEC","altitude":"","speed":"","method":"random","rate":0.21,"airlines":[["pia/at72",1],["pia/at45",1],["pia/at75",1]]},
+        {"origin":"OPMT","destination":"","category":"departure","route":"OPMT18.DG1A.DG","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["pia/a310",1],["pia/at72",1],["pia/at45",1],["pia/at75",1]]},
+        {"origin":"OPMT","destination":"","category":"departure","route":"OPMT18.CUWEC2A.CUWEC","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["ap/c172",6],["ap/p28a",5],["ap/c182",3],["ap/be36",2],["ap/da42",1],["ap/tb20",1],["ap/c208",2],["ap/pc12",2],["ap/be20",1],["ap/b350",1],["ap/p180",1],["ap/c510",1],["ap/e50p",1],["ap/c550",1],["ap/e55p",1],["ap/cl30",1],["ap/c680",1],["ap/h25b",1],["ap/lj45",1],["ap/f2th",1],["ap/glf4",1],["ap/glex",1],["ap/glf5",1]]},
+        {"origin":"OPKC","destination":"OPMT","category":"arrival","route":"BI..UNOCO..OPMT","altitude":[4000,7000],"speed":250,"method":"random","rate":1.46,"airlines":[["pia/a310",1],["pia/a320",1],["pia/b737",1],["pia/b738",1],["sai/a320",1],["sai/b734",1],["pia/at72",1],["pia/at45",1],["pia/at75",1]]},
+        {"origin":"OPLA","destination":"OPMT","category":"arrival","route":"MUSID..NAGMI..OPMT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.83,"airlines":[["pia/a320",1],["pia/b737",1],["pia/b738",1],["pia/at72",1],["pia/at45",1],["pia/at75",1]]},
+        {"origin":"OEMA","destination":"OPMT","category":"arrival","route":"DG..VUTID..OPMT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["pia/a310",1],["sai/a320",1]]},
+        {"origin":"OMDB","destination":"OPMT","category":"arrival","route":"DG..VUTID..OPMT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["fdb/b738",1],["sai/b734",1]]},
+        {"origin":"OMSJ","destination":"OPMT","category":"arrival","route":"DG..VUTID..OPMT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["pia/b737",1],["pia/b738",1]]},
+        {"origin":"","destination":"OPMT","category":"arrival","route":"CUWEC..JEWPE..OPMT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.21,"airlines":[["pia/at72",1],["pia/at45",1],["pia/at75",1]]},
+        {"origin":"","destination":"OPMT","category":"arrival","route":"DG..VUTID..OPMT","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["pia/a310",1],["pia/at72",1],["pia/at45",1],["pia/at75",1]]},
+        {"origin":"","destination":"OPMT","category":"arrival","route":"CUWEC..JEWPE..OPMT","altitude":[4000,7000],"speed":250,"method":"random","rate":1.39,"airlines":[["ap/c172",6],["ap/p28a",5],["ap/c182",3],["ap/be36",2],["ap/da42",1],["ap/tb20",1],["ap/c208",2],["ap/pc12",2],["ap/be20",1],["ap/b350",1],["ap/p180",1],["ap/c510",1],["ap/e50p",1],["ap/c550",1],["ap/e55p",1],["ap/cl30",1],["ap/c680",1],["ap/h25b",1],["ap/lj45",1],["ap/f2th",1],["ap/glf4",1],["ap/glex",1],["ap/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [30.711,71.6246,30.3919,71.4955],
+            [30.3919,71.4955,30.2032,71.4191],
+            [30.4557,71.9687,30.297,71.6233],
+            [30.297,71.6233,30.2032,71.4191],
+            [29.3499,71.7191,30.012,71.4863],
+            [30.012,71.4863,30.2032,71.4191],
+            [29.68,71.0311,30.0349,71.2943],
+            [30.0349,71.2943,30.2032,71.4191],
+            [29.9622,70.4903,30.1457,71.1976],
+            [30.1457,71.1976,30.2032,71.4191]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [30.2173,71.42,30.3836,71.431],
+            [30.301,71.414,30.2999,71.4371],
+            [30.3841,71.4195,30.383,71.4426],
+            [30.1936,71.4185,30.0273,71.4075],
+            [30.1098,71.4245,30.111,71.4015],
+            [30.0267,71.419,30.0278,71.396]
+        ]}
+    ]
+}

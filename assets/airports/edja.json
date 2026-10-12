@@ -1,0 +1,94 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EDJA/",
+    "info": {"country":"DE","city":"Memmingen","type":"large_airport","longestRunwayM":2630,"frequencies":{"atis":"118.855","twr":"126.855","gnd":"121.680"}},
+    "radio": {"twr":"Memmingen Tower","app":"Memmingen Approach","dep":"Memmingen Departure"},
+    "icao": "EDJA",
+    "iata": "FMM",
+    "magnetic_north": 4,
+    "ctr_radius": 60,
+    "ctr_ceiling": 12000,
+    "initial_alt": 7000,
+    "position": [47.988092,10.238248,"2077ft"],
+    "rangeRings": {"enabled":true,"center":[47.988092,10.238248],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":250,"speed":8},
+    "arrivalRunway": "24",
+    "departureRunway": "24",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":120,"airspace_class":"C","poly":[[48.5264,10.2945],[48.4983,10.5007],[48.4354,10.6891],[48.3421,10.8467],[48.2246,10.9629],[48.0911,11.0297],[47.9505,11.0425],[47.8124,11.0005],[47.6864,10.9066],[47.5809,10.7672],[47.5031,10.5917],[47.4584,10.3921],[47.4498,10.182],[47.4779,9.9758],[47.5407,9.7874],[47.6341,9.6298],[47.7516,9.5136],[47.8851,9.4468],[48.0257,9.434],[48.1638,9.4759],[48.2898,9.5699],[48.3953,9.7093],[48.4731,9.8848],[48.5178,10.0844]]}
+    ],
+    "fixes": {
+        "EDJA": [47.98809,10.23825],
+        "EUR": [47.735,11.2494,"eurach"],
+        "UGUKE": [47.90058,10.58788],
+        "KTI": [47.2155,11.0278,"kuhtai"],
+        "MULEF": [47.78188,10.44898],
+        "ZUE": [47.5922,8.81767,"zurich east"],
+        "RANIM": [47.89206,9.89365],
+        "TGO": [48.6184,9.25921,"tango"],
+        "KOKWA": [48.16129,9.96923],
+        "DKB": [49.1428,10.2383,"dinkelsbuhl"],
+        "DEBCE": [48.23792,10.23826],
+        "_RWY0604DME": [47.95061,10.14345],
+        "_RWY2404DME": [48.02799,10.33831]
+    },
+    "runways": [
+        {"name":["06","24"],"end":[[47.98464,10.229,"2077ft"],[47.99402,10.25263,"2077ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "EUR1F": {"icao":"EUR1F","name":"Eurach One Foxtrot","rwy":{"EDJA06":["_RWY2404DME"],"EDJA24":["_RWY0604DME"]},"body":[],"exitPoints":{"EUR":["EUR"]},"draw":[["EDJA","EUR*"]]},
+        "KTI2D": {"icao":"KTI2D","name":"Kuhtai Two Delta","rwy":{"EDJA06":["_RWY2404DME"],"EDJA24":["_RWY0604DME"]},"body":[],"exitPoints":{"KTI":["KTI"]},"draw":[["EDJA","KTI*"]]},
+        "ZUE1E": {"icao":"ZUE1E","name":"Zurich East One Echo","rwy":{"EDJA06":["_RWY2404DME"],"EDJA24":["_RWY0604DME"]},"body":[],"exitPoints":{"ZUE":["ZUE"]},"draw":[["EDJA","ZUE*"]]},
+        "TGO2F": {"icao":"TGO2F","name":"Tango Two Foxtrot","rwy":{"EDJA06":["_RWY2404DME"],"EDJA24":["_RWY0604DME"]},"body":[],"exitPoints":{"TGO":["TGO"]},"draw":[["EDJA","TGO*"]]},
+        "DKB2E": {"icao":"DKB2E","name":"Dinkelsbuhl Two Echo","rwy":{"EDJA06":["_RWY2404DME"],"EDJA24":["_RWY0604DME"]},"body":[],"exitPoints":{"DKB":["DKB"]},"draw":[["EDJA","DKB*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EDJA","destination":"LEPA","category":"departure","route":"EDJA24.ZUE1E.ZUE","altitude":"","speed":"","method":"random","rate":0.61,"airlines":[["hlx/b738",1],["ryr/b738",1]]},
+        {"origin":"EDJA","destination":"LFKC","category":"departure","route":"EDJA24.KTI2D.KTI","altitude":"","speed":"","method":"random","rate":0.61,"airlines":[["ber/a320",1],["nly/a320",1]]},
+        {"origin":"EDJA","destination":"EDDH","category":"departure","route":"EDJA24.DKB2E.DKB","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["gwi/crj7",1],["gwi/crj9",1],["gwi/crj2",1]]},
+        {"origin":"EDJA","destination":"EGSS","category":"departure","route":"EDJA24.TGO2F.TGO","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDJA","destination":"EIDW","category":"departure","route":"EDJA24.TGO2F.TGO","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDJA","destination":"EINN","category":"departure","route":"EDJA24.TGO2F.TGO","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["ryr/b738",1]]},
+        {"origin":"EDJA","destination":"","category":"departure","route":"EDJA24.EUR1F.EUR","altitude":"","speed":"","method":"random","rate":0.92,"airlines":[["wzz/a320",2],["wau/a320",1]]},
+        {"origin":"EDJA","destination":"","category":"departure","route":"EDJA24.KTI2D.KTI","altitude":"","speed":"","method":"random","rate":1.53,"airlines":[["ryr/b738",4],["isk/at72",1]]},
+        {"origin":"EDJA","destination":"","category":"departure","route":"EDJA24.ZUE1E.ZUE","altitude":"","speed":"","method":"random","rate":1.83,"airlines":[["ryr/b738",6]]},
+        {"origin":"EDJA","destination":"","category":"departure","route":"EDJA24.ZUE1E.ZUE","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["d/c172",6],["d/p28a",5],["d/c182",3],["d/be36",2],["d/da42",1],["d/tb20",1],["d/c208",2],["d/pc12",2],["d/be20",1],["d/b350",1],["d/p180",1],["d/c510",1],["d/e50p",1],["d/c550",2],["d/e55p",1],["d/cl30",1],["d/c680",1],["d/h25b",1],["d/lj45",1],["d/f2th",1],["d/glf4",1],["d/glex",1],["d/glf5",1]]},
+        {"origin":"EDJA","destination":"","category":"departure","route":"EDJA24.TGO2F.TGO","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["d/c172",6],["d/p28a",5],["d/c182",3],["d/be36",2],["d/da42",1],["d/tb20",1],["d/c208",2],["d/pc12",2],["d/be20",1],["d/b350",1],["d/p180",1],["d/c510",1],["d/e50p",1],["d/c550",2],["d/e55p",1],["d/cl30",1],["d/c680",1],["d/h25b",1],["d/lj45",1],["d/f2th",1],["d/glf4",1],["d/glex",1],["d/glf5",1]]},
+        {"origin":"LEPA","destination":"EDJA","category":"arrival","route":"ZUE..RANIM..EDJA","altitude":[8000,11000],"speed":250,"method":"random","rate":0.61,"airlines":[["hlx/b738",1],["ryr/b738",1]]},
+        {"origin":"LFKC","destination":"EDJA","category":"arrival","route":"KTI..MULEF..EDJA","altitude":[8000,11000],"speed":250,"method":"random","rate":0.61,"airlines":[["ber/a320",1],["nly/a320",1]]},
+        {"origin":"EDDH","destination":"EDJA","category":"arrival","route":"DKB..DEBCE..EDJA","altitude":[8000,11000],"speed":250,"method":"random","rate":0.31,"airlines":[["gwi/crj7",1],["gwi/crj9",1],["gwi/crj2",1]]},
+        {"origin":"EGSS","destination":"EDJA","category":"arrival","route":"TGO..KOKWA..EDJA","altitude":[8000,11000],"speed":250,"method":"random","rate":0.31,"airlines":[["ryr/b738",1]]},
+        {"origin":"EIDW","destination":"EDJA","category":"arrival","route":"TGO..KOKWA..EDJA","altitude":[8000,11000],"speed":250,"method":"random","rate":0.31,"airlines":[["ryr/b738",1]]},
+        {"origin":"EINN","destination":"EDJA","category":"arrival","route":"TGO..KOKWA..EDJA","altitude":[8000,11000],"speed":250,"method":"random","rate":0.31,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"EDJA","category":"arrival","route":"EUR..UGUKE..EDJA","altitude":[8000,11000],"speed":250,"method":"random","rate":0.92,"airlines":[["wzz/a320",2],["wau/a320",1]]},
+        {"origin":"","destination":"EDJA","category":"arrival","route":"KTI..MULEF..EDJA","altitude":[8000,11000],"speed":250,"method":"random","rate":1.53,"airlines":[["ryr/b738",4],["isk/at72",1]]},
+        {"origin":"","destination":"EDJA","category":"arrival","route":"ZUE..RANIM..EDJA","altitude":[8000,11000],"speed":250,"method":"random","rate":1.83,"airlines":[["ryr/b738",6]]},
+        {"origin":"","destination":"EDJA","category":"arrival","route":"ZUE..RANIM..EDJA","altitude":[8000,11000],"speed":250,"method":"random","rate":0.46,"airlines":[["d/c172",6],["d/p28a",5],["d/c182",3],["d/be36",2],["d/da42",1],["d/tb20",1],["d/c208",2],["d/pc12",2],["d/be20",1],["d/b350",1],["d/p180",1],["d/c510",1],["d/e50p",1],["d/c550",2],["d/e55p",1],["d/cl30",1],["d/c680",1],["d/h25b",1],["d/lj45",1],["d/f2th",1],["d/glf4",1],["d/glex",1],["d/glf5",1]]},
+        {"origin":"","destination":"EDJA","category":"arrival","route":"TGO..KOKWA..EDJA","altitude":[8000,11000],"speed":250,"method":"random","rate":0.46,"airlines":[["d/c172",6],["d/p28a",5],["d/c182",3],["d/be36",2],["d/da42",1],["d/tb20",1],["d/c208",2],["d/pc12",2],["d/be20",1],["d/b350",1],["d/p180",1],["d/c510",1],["d/e50p",1],["d/c550",2],["d/e55p",1],["d/cl30",1],["d/c680",1],["d/h25b",1],["d/lj45",1],["d/f2th",1],["d/glf4",1],["d/glex",1],["d/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [47.735,11.2494,47.9006,10.5879],
+            [47.9006,10.5879,47.9881,10.2382],
+            [47.2155,11.0278,47.7819,10.449],
+            [47.7819,10.449,47.9881,10.2382],
+            [47.5922,8.8177,47.8921,9.8936],
+            [47.8921,9.8936,47.9881,10.2382],
+            [48.6184,9.2592,48.1613,9.9692],
+            [48.1613,9.9692,47.9881,10.2382],
+            [49.1428,10.2383,48.2379,10.2383],
+            [48.2379,10.2383,47.9881,10.2382]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [47.9846,10.229,47.8995,10.0153],
+            [47.9335,10.1297,47.9507,10.1145],
+            [47.8909,10.023,47.908,10.0077],
+            [47.994,10.2526,48.0788,10.467],
+            [48.0451,10.3521,48.0279,10.3674],
+            [48.0874,10.4594,48.0702,10.4747]
+        ]}
+    ]
+}

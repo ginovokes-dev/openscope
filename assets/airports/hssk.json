@@ -1,0 +1,87 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/HSSK/",
+    "info": {"country":"SD","city":"Khartoum","type":"large_airport","longestRunwayM":3002,"frequencies":{"twr":"119.200","app":"124.700"}},
+    "radio": {"twr":"Khartoum Tower","app":"Khartoum Approach","dep":"Khartoum Departure"},
+    "icao": "HSSK",
+    "iata": "KRT",
+    "magnetic_north": 3.6,
+    "ctr_radius": 60,
+    "ctr_ceiling": 11000,
+    "initial_alt": 6000,
+    "position": [15.5895,32.5532,"1265ft"],
+    "rangeRings": {"enabled":true,"center":[15.5895,32.5532],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":0,"speed":10},
+    "arrivalRunway": "36",
+    "departureRunway": "36",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":110,"airspace_class":"C","poly":[[16.128,32.5884],[16.1009,32.7319],[16.0389,32.8632],[15.9463,32.9734],[15.8294,33.055],[15.6962,33.1023],[15.5556,33.1123],[15.4174,33.0841],[15.2909,33.0198],[15.1847,32.9237],[15.1062,32.8023],[15.0606,32.6639],[15.051,32.518],[15.0781,32.3745],[15.1401,32.2432],[15.2327,32.133],[15.3496,32.0514],[15.4828,32.0041],[15.6234,31.9941],[15.7616,32.0223],[15.8881,32.0866],[15.9943,32.1827],[16.0728,32.3041],[16.1184,32.4425]]}
+    ],
+    "fixes": {
+        "HSSK": [15.5895,32.5532],
+        "MOCIB": [15.98097,33.16335],
+        "MORER": [15.728,32.76907],
+        "UZEWE": [14.98141,32.9259],
+        "DONON": [15.37436,32.68506],
+        "NAVRO": [15.42869,31.83935],
+        "VOGBO": [15.53261,32.30064],
+        "BETEZ": [16.29565,32.55346],
+        "OPITU": [15.83933,32.55329],
+        "_RWY1804DME": [15.66962,32.55227],
+        "_RWY3604DME": [15.50938,32.55403]
+    },
+    "runways": [
+        {"name":["18","36"],"end":[[15.603,32.553,"1265ft"],[15.576,32.5533,"1260ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "MOCIB3F": {"icao":"MOCIB3F","name":"Mocib Three Foxtrot","rwy":{"HSSK18":["_RWY3604DME"],"HSSK36":["_RWY1804DME"]},"body":[],"exitPoints":{"MOCIB":["MOCIB"]},"draw":[["HSSK","MOCIB*"]]},
+        "UZEWE2C": {"icao":"UZEWE2C","name":"Uzewe Two Charlie","rwy":{"HSSK18":["_RWY3604DME"],"HSSK36":["_RWY1804DME"]},"body":[],"exitPoints":{"UZEWE":["UZEWE"]},"draw":[["HSSK","UZEWE*"]]},
+        "NAVRO3A": {"icao":"NAVRO3A","name":"Navro Three Alpha","rwy":{"HSSK18":["_RWY3604DME"],"HSSK36":["_RWY1804DME"]},"body":[],"exitPoints":{"NAVRO":["NAVRO"]},"draw":[["HSSK","NAVRO*"]]},
+        "BETEZ2F": {"icao":"BETEZ2F","name":"Betez Two Foxtrot","rwy":{"HSSK18":["_RWY3604DME"],"HSSK36":["_RWY1804DME"]},"body":[],"exitPoints":{"BETEZ":["BETEZ"]},"draw":[["HSSK","BETEZ*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"HSSK","destination":"HECA","category":"departure","route":"HSSK36.BETEZ2F.BETEZ","altitude":"","speed":"","method":"random","rate":0.78,"airlines":[["msr/a320",1],["msr/a321",1],["sud/a306",1],["sud/a320",1]]},
+        {"origin":"HSSK","destination":"OTHH","category":"departure","route":"HSSK36.MOCIB3F.MOCIB","altitude":"","speed":"","method":"random","rate":0.78,"airlines":[["qtr/a320",1],["qtr/a321",1],["sud/a306",1],["sud/a320",1]]},
+        {"origin":"HSSK","destination":"HAAB","category":"departure","route":"HSSK36.UZEWE2C.UZEWE","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["eth/b738",1],["sud/a320",1],["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]},
+        {"origin":"HSSK","destination":"OEJN","category":"departure","route":"HSSK36.MOCIB3F.MOCIB","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["kne/a320",1],["sud/a306",1],["sud/a320",1]]},
+        {"origin":"HSSK","destination":"OMDB","category":"departure","route":"HSSK36.MOCIB3F.MOCIB","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["fdb/b738",1],["sud/a306",1],["uae/a332",1]]},
+        {"origin":"HSSK","destination":"HJJJ","category":"departure","route":"HSSK36.UZEWE2C.UZEWE","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["nas/b733",1],["sud/a320",1]]},
+        {"origin":"HSSK","destination":"","category":"departure","route":"HSSK36.MOCIB3F.MOCIB","altitude":"","speed":"","method":"random","rate":2.52,"airlines":[["sud/a306",3],["fdb/b738",2],["kne/a320",2],["aby/a320",1],["etd/a320",1],["gba/a320",1],["iye/a320",1],["nas/b733",1],["sud/a320",1]]},
+        {"origin":"HSSK","destination":"","category":"departure","route":"HSSK36.UZEWE2C.UZEWE","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["kqa/e170",1],["kqa/e190",1]]},
+        {"origin":"HSSK","destination":"","category":"departure","route":"HSSK36.NAVRO3A.NAVRO","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["sud/a306",2],["sud/a320",1]]},
+        {"origin":"HSSK","destination":"","category":"departure","route":"HSSK36.BETEZ2F.BETEZ","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["rja/a320",1],["sud/a320",1],["thy/b738",1]]},
+        {"origin":"HECA","destination":"HSSK","category":"arrival","route":"BETEZ..OPITU..HSSK","altitude":[7000,10000],"speed":250,"method":"random","rate":0.78,"airlines":[["msr/a320",1],["msr/a321",1],["sud/a306",1],["sud/a320",1]]},
+        {"origin":"OTHH","destination":"HSSK","category":"arrival","route":"MOCIB..MORER..HSSK","altitude":[7000,10000],"speed":250,"method":"random","rate":0.78,"airlines":[["qtr/a320",1],["qtr/a321",1],["sud/a306",1],["sud/a320",1]]},
+        {"origin":"HAAB","destination":"HSSK","category":"arrival","route":"UZEWE..DONON..HSSK","altitude":[7000,10000],"speed":250,"method":"random","rate":0.58,"airlines":[["eth/b738",1],["sud/a320",1],["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]},
+        {"origin":"OEJN","destination":"HSSK","category":"arrival","route":"MOCIB..MORER..HSSK","altitude":[7000,10000],"speed":250,"method":"random","rate":0.58,"airlines":[["kne/a320",1],["sud/a306",1],["sud/a320",1]]},
+        {"origin":"OMDB","destination":"HSSK","category":"arrival","route":"MOCIB..MORER..HSSK","altitude":[7000,10000],"speed":250,"method":"random","rate":0.58,"airlines":[["fdb/b738",1],["sud/a306",1],["uae/a332",1]]},
+        {"origin":"HJJJ","destination":"HSSK","category":"arrival","route":"UZEWE..DONON..HSSK","altitude":[7000,10000],"speed":250,"method":"random","rate":0.39,"airlines":[["nas/b733",1],["sud/a320",1]]},
+        {"origin":"","destination":"HSSK","category":"arrival","route":"MOCIB..MORER..HSSK","altitude":[7000,10000],"speed":250,"method":"random","rate":2.52,"airlines":[["sud/a306",3],["fdb/b738",2],["kne/a320",2],["aby/a320",1],["etd/a320",1],["gba/a320",1],["iye/a320",1],["nas/b733",1],["sud/a320",1]]},
+        {"origin":"","destination":"HSSK","category":"arrival","route":"UZEWE..DONON..HSSK","altitude":[7000,10000],"speed":250,"method":"random","rate":0.39,"airlines":[["kqa/e170",1],["kqa/e190",1]]},
+        {"origin":"","destination":"HSSK","category":"arrival","route":"NAVRO..VOGBO..HSSK","altitude":[7000,10000],"speed":250,"method":"random","rate":0.58,"airlines":[["sud/a306",2],["sud/a320",1]]},
+        {"origin":"","destination":"HSSK","category":"arrival","route":"BETEZ..OPITU..HSSK","altitude":[7000,10000],"speed":250,"method":"random","rate":0.58,"airlines":[["rja/a320",1],["sud/a320",1],["thy/b738",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [15.981,33.1633,15.728,32.7691],
+            [15.728,32.7691,15.5895,32.5532],
+            [14.9814,32.9259,15.3744,32.6851],
+            [15.3744,32.6851,15.5895,32.5532],
+            [15.4287,31.8393,15.5326,32.3006],
+            [15.5326,32.3006,15.5895,32.5532],
+            [16.2956,32.5535,15.8393,32.5533],
+            [15.8393,32.5533,15.5895,32.5532]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [15.603,32.553,15.7695,32.5512],
+            [15.6862,32.5417,15.6864,32.5625],
+            [15.7694,32.5408,15.7697,32.5615],
+            [15.576,32.5533,15.4095,32.5551],
+            [15.4928,32.5646,15.4926,32.5438],
+            [15.4096,32.5655,15.4093,32.5448]
+        ]}
+    ]
+}

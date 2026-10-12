@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LELC/",
+    "info": {"country":"ES","city":"San Javier","type":"medium_airport","longestRunwayM":2320,"frequencies":{"twr":"130.300","app":"130.300","gnd":"121.600"}},
+    "radio": {"twr":"San Javier Tower","app":"San Javier Approach","dep":"San Javier Departure"},
+    "icao": "LELC",
+    "iata": "",
+    "magnetic_north": 1.3,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [37.775002,-0.812389,"11ft"],
+    "rangeRings": {"enabled":true,"center":[37.775002,-0.812389],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":230,"speed":10},
+    "arrivalRunway": "23L",
+    "departureRunway": "23L",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[38.3145,-0.7969],[38.2929,-0.6208],[38.2361,-0.4577],[38.1478,-0.3188],[38.0341,-0.2136],[37.9028,-0.1491],[37.7628,-0.1299],[37.6236,-0.1572],[37.4947,-0.2291],[37.3849,-0.3407],[37.3017,-0.4846],[37.2508,-0.6507],[37.2355,-0.8279],[37.2571,-1.004],[37.3139,-1.167],[37.4022,-1.3059],[37.5159,-1.4112],[37.6472,-1.4756],[37.7872,-1.4949],[37.9264,-1.4676],[38.0553,-1.3957],[38.1651,-1.284],[38.2483,-1.1402],[38.2992,-0.9741]]}
+    ],
+    "fixes": {
+        "LELC": [37.775,-0.81239],
+        "BEBJE": [37.78258,0.08094],
+        "HOCZI": [37.77768,-0.49633],
+        "GOZOV": [37.0689,-0.8028],
+        "BIBNE": [37.52518,-0.80899],
+        "IHACE": [37.76742,-1.70572],
+        "REMIM": [37.77232,-1.12844],
+        "KOGMU": [38.48111,-0.82198],
+        "AFOZI": [38.02482,-0.81578],
+        "_RWY05R04DME": [37.72105,-0.88171],
+        "_RWY23L04DME": [37.82881,-0.74259],
+        "_RWY05L04DME": [37.7318,-0.88004],
+        "_RWY23R04DME": [37.83466,-0.74641]
+    },
+    "runways": [
+        {"name":["05R","23L"],"end":[[37.7677,-0.82156,"11ft"],[37.7822,-0.80283,"5ft"]],"ils":[false,false]},
+        {"name":["05L","23R"],"end":[[37.7783,-0.81969,"11ft"],[37.7882,-0.80684,"11ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "BEBJE3B": {"icao":"BEBJE3B","name":"Bebje Three Bravo","rwy":{"LELC05R":["_RWY23L04DME"],"LELC23L":["_RWY05R04DME"],"LELC05L":["_RWY23R04DME"],"LELC23R":["_RWY05L04DME"]},"body":[],"exitPoints":{"BEBJE":["BEBJE"]},"draw":[["LELC","BEBJE*"]]},
+        "GOZOV1D": {"icao":"GOZOV1D","name":"Gozov One Delta","rwy":{"LELC05R":["_RWY23L04DME"],"LELC23L":["_RWY05R04DME"],"LELC05L":["_RWY23R04DME"],"LELC23R":["_RWY05L04DME"]},"body":[],"exitPoints":{"GOZOV":["GOZOV"]},"draw":[["LELC","GOZOV*"]]},
+        "IHACE3A": {"icao":"IHACE3A","name":"Ihace Three Alpha","rwy":{"LELC05R":["_RWY23L04DME"],"LELC23L":["_RWY05R04DME"],"LELC05L":["_RWY23R04DME"],"LELC23R":["_RWY05L04DME"]},"body":[],"exitPoints":{"IHACE":["IHACE"]},"draw":[["LELC","IHACE*"]]},
+        "KOGMU3B": {"icao":"KOGMU3B","name":"Kogmu Three Bravo","rwy":{"LELC05R":["_RWY23L04DME"],"LELC23L":["_RWY05R04DME"],"LELC05L":["_RWY23R04DME"],"LELC23R":["_RWY05L04DME"]},"body":[],"exitPoints":{"KOGMU":["KOGMU"]},"draw":[["LELC","KOGMU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LELC","destination":"EGCC","category":"departure","route":"LELC23L.KOGMU3B.KOGMU","altitude":"","speed":"","method":"random","rate":1.04,"airlines":[["exs/b738",2],["exs/b733",1],["ryr/b738",1]]},
+        {"origin":"LELC","destination":"EGGD","category":"departure","route":"LELC23L.KOGMU3B.KOGMU","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ezy/a319",1],["ezy/a320",1]]},
+        {"origin":"LELC","destination":"EGKK","category":"departure","route":"LELC23L.KOGMU3B.KOGMU","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ezy/a319",1],["ezy/a320",1]]},
+        {"origin":"LELC","destination":"EGNM","category":"departure","route":"LELC23L.KOGMU3B.KOGMU","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["exs/b733",1],["ryr/b738",1]]},
+        {"origin":"LELC","destination":"EGNT","category":"departure","route":"LELC23L.KOGMU3B.KOGMU","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["exs/b733",2]]},
+        {"origin":"LELC","destination":"","category":"departure","route":"LELC23L.KOGMU3B.KOGMU","altitude":"","speed":"","method":"random","rate":3.11,"airlines":[["ryr/b738",8],["exs/b733",3],["nax/b733",1]]},
+        {"origin":"LELC","destination":"","category":"departure","route":"LELC23L.KOGMU3B.KOGMU","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"LELC","destination":"","category":"departure","route":"LELC23L.GOZOV1D.GOZOV","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"EGCC","destination":"LELC","category":"arrival","route":"KOGMU..AFOZI..LELC","altitude":[6000,9000],"speed":250,"method":"random","rate":1.04,"airlines":[["exs/b738",2],["exs/b733",1],["ryr/b738",1]]},
+        {"origin":"EGGD","destination":"LELC","category":"arrival","route":"KOGMU..AFOZI..LELC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["ezy/a319",1],["ezy/a320",1]]},
+        {"origin":"EGKK","destination":"LELC","category":"arrival","route":"KOGMU..AFOZI..LELC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["ezy/a319",1],["ezy/a320",1]]},
+        {"origin":"EGNM","destination":"LELC","category":"arrival","route":"KOGMU..AFOZI..LELC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["exs/b733",1],["ryr/b738",1]]},
+        {"origin":"EGNT","destination":"LELC","category":"arrival","route":"KOGMU..AFOZI..LELC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["exs/b733",2]]},
+        {"origin":"","destination":"LELC","category":"arrival","route":"KOGMU..AFOZI..LELC","altitude":[6000,9000],"speed":250,"method":"random","rate":3.11,"airlines":[["ryr/b738",8],["exs/b733",3],["nax/b733",1]]},
+        {"origin":"","destination":"LELC","category":"arrival","route":"KOGMU..AFOZI..LELC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"","destination":"LELC","category":"arrival","route":"GOZOV..BIBNE..LELC","altitude":[6000,9000],"speed":250,"method":"random","rate":0.42,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",2],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [37.7826,0.0809,37.7777,-0.4963],
+            [37.7777,-0.4963,37.775,-0.8124],
+            [37.0689,-0.8028,37.5252,-0.809],
+            [37.5252,-0.809,37.775,-0.8124],
+            [37.7674,-1.7057,37.7723,-1.1284],
+            [37.7723,-1.1284,37.775,-0.8124],
+            [38.4811,-0.822,38.0248,-0.8158],
+            [38.0248,-0.8158,37.775,-0.8124]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [37.7822,-0.8028,37.8987,-0.6521],
+            [37.8476,-0.7364,37.8333,-0.7187],
+            [37.9058,-0.6609,37.8915,-0.6432]
+        ]}
+    ]
+}

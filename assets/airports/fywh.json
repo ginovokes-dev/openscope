@@ -1,0 +1,103 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/FYWH/",
+    "info": {"country":"NA","city":"Windhoek","type":"large_airport","longestRunwayM":4582,"frequencies":{"atis":"114.100","twr":"118.100","app":"120.500"}},
+    "radio": {"twr":"Hosea Kutako Tower","app":"Hosea Kutako Approach","dep":"Hosea Kutako Departure"},
+    "icao": "FYWH",
+    "iata": "WDH",
+    "magnetic_north": -12.5,
+    "ctr_radius": 60,
+    "ctr_ceiling": 15000,
+    "initial_alt": 10000,
+    "position": [-22.4799,17.4709,"5640ft"],
+    "rangeRings": {"enabled":true,"center":[-22.4799,17.4709],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":60,"speed":9},
+    "arrivalRunway": "08",
+    "departureRunway": "08",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":150,"airspace_class":"C","poly":[[-21.9531,17.3445],[-21.9408,17.4964],[-21.9653,17.6465],[-22.0248,17.7847],[-22.1154,17.9014],[-22.2307,17.9889],[-22.3631,18.041],[-22.5034,18.0543],[-22.6422,18.0278],[-22.7698,17.9634],[-22.8777,17.8654],[-22.9585,17.7405],[-23.0067,17.5973],[-23.019,17.4454],[-22.9945,17.2953],[-22.935,17.1571],[-22.8444,17.0404],[-22.7291,16.9529],[-22.5967,16.9008],[-22.4564,16.8875],[-22.3176,16.914],[-22.19,16.9784],[-22.0821,17.0764],[-22.0013,17.2013]]}
+    ],
+    "fixes": {
+        "FYWH": [-22.4799,17.4709],
+        "KUDGO": [-22.17179,18.15853],
+        "UTAPI": [-22.37089,17.71418],
+        "HAJUV": [-22.75135,18.1764],
+        "UPACU": [-22.57594,17.7205],
+        "TEGSE": [-23.18568,17.4463],
+        "EGICO": [-22.7296,17.4622],
+        "ADIPE": [-22.61946,16.72176],
+        "NOVBI": [-22.52927,17.20586],
+        "ILULA": [-21.81879,17.20236],
+        "URESU": [-22.246,17.37589],
+        "_RWY0804DME": [-22.51953,17.38496],
+        "_RWY2604DME": [-22.44165,17.5539],
+        "_RWY1604DME": [-22.42575,17.42388],
+        "_RWY3404DME": [-22.54034,17.52346]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[-22.4898,17.4495,"5640ft"],[-22.4714,17.4894,"5500ft"]],"ils":[true,true]},
+        {"name":["16","34"],"end":[[-22.4777,17.469,"5574ft"],[-22.4884,17.4783,"5564ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "KUDGO1C": {"icao":"KUDGO1C","name":"Kudgo One Charlie","rwy":{"FYWH08":["_RWY2604DME"],"FYWH26":["_RWY0804DME"],"FYWH16":["_RWY3404DME"],"FYWH34":["_RWY1604DME"]},"body":[],"exitPoints":{"KUDGO":["KUDGO"]},"draw":[["FYWH","KUDGO*"]]},
+        "HAJUV2D": {"icao":"HAJUV2D","name":"Hajuv Two Delta","rwy":{"FYWH08":["_RWY2604DME"],"FYWH26":["_RWY0804DME"],"FYWH16":["_RWY3404DME"],"FYWH34":["_RWY1604DME"]},"body":[],"exitPoints":{"HAJUV":["HAJUV"]},"draw":[["FYWH","HAJUV*"]]},
+        "TEGSE1A": {"icao":"TEGSE1A","name":"Tegse One Alpha","rwy":{"FYWH08":["_RWY2604DME"],"FYWH26":["_RWY0804DME"],"FYWH16":["_RWY3404DME"],"FYWH34":["_RWY1604DME"]},"body":[],"exitPoints":{"TEGSE":["TEGSE"]},"draw":[["FYWH","TEGSE*"]]},
+        "ADIPE1C": {"icao":"ADIPE1C","name":"Adipe One Charlie","rwy":{"FYWH08":["_RWY2604DME"],"FYWH26":["_RWY0804DME"],"FYWH16":["_RWY3404DME"],"FYWH34":["_RWY1604DME"]},"body":[],"exitPoints":{"ADIPE":["ADIPE"]},"draw":[["FYWH","ADIPE*"]]},
+        "ILULA1E": {"icao":"ILULA1E","name":"Ilula One Echo","rwy":{"FYWH08":["_RWY2604DME"],"FYWH26":["_RWY0804DME"],"FYWH16":["_RWY3404DME"],"FYWH34":["_RWY1604DME"]},"body":[],"exitPoints":{"ILULA":["ILULA"]},"draw":[["FYWH","ILULA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"FYWH","destination":"FAOR","category":"departure","route":"FYWH08.HAJUV2D.HAJUV","altitude":"","speed":"","method":"random","rate":2.11,"airlines":[["kqa/a319",1],["nmb/a319",1],["nmb/e135",1],["saa/a319",1],["saa/a320",1],["saa/a332",1],["saa/a343",1],["saa/b738",1]]},
+        {"origin":"FYWH","destination":"FLKK","category":"departure","route":"FYWH08.KUDGO1C.KUDGO","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["kqa/e135",1],["nmb/e135",1]]},
+        {"origin":"FYWH","destination":"FNLU","category":"departure","route":"FYWH08.ILULA1E.ILULA","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["dta/b737",1],["nmb/a319",1]]},
+        {"origin":"FYWH","destination":"DGAA","category":"departure","route":"FYWH08.ILULA1E.ILULA","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["nmb/a319",1]]},
+        {"origin":"FYWH","destination":"EDDF","category":"departure","route":"FYWH08.ILULA1E.ILULA","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["nmb/a332",1]]},
+        {"origin":"FYWH","destination":"","category":"departure","route":"FYWH08.KUDGO1C.KUDGO","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["nmb/e135",3]]},
+        {"origin":"FYWH","destination":"","category":"departure","route":"FYWH08.TEGSE1A.TEGSE","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["nmb/e135",2],["nmb/a319",1]]},
+        {"origin":"FYWH","destination":"","category":"departure","route":"FYWH08.ADIPE1C.ADIPE","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["nmb/e135",1]]},
+        {"origin":"FYWH","destination":"","category":"departure","route":"FYWH08.ILULA1E.ILULA","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["dta/b737",1]]},
+        {"origin":"FYWH","destination":"","category":"departure","route":"FYWH08.ILULA1E.ILULA","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["v5/c172",6],["v5/p28a",5],["v5/c182",3],["v5/be36",2],["v5/da42",1],["v5/tb20",1],["v5/c208",2],["v5/pc12",2],["v5/be20",1],["v5/b350",1],["v5/p180",1],["v5/c510",1],["v5/e50p",1],["v5/c550",2],["v5/e55p",1],["v5/cl30",1],["v5/c680",1],["v5/h25b",1],["v5/lj45",1],["v5/f2th",1],["v5/glf4",1],["v5/glex",1],["v5/glf5",1]]},
+        {"origin":"FYWH","destination":"","category":"departure","route":"FYWH08.HAJUV2D.HAJUV","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["v5/c172",6],["v5/p28a",5],["v5/c182",3],["v5/be36",2],["v5/da42",1],["v5/tb20",1],["v5/c208",2],["v5/pc12",2],["v5/be20",1],["v5/b350",1],["v5/p180",1],["v5/c510",1],["v5/e50p",1],["v5/c550",2],["v5/e55p",1],["v5/cl30",1],["v5/c680",1],["v5/h25b",1],["v5/lj45",1],["v5/f2th",1],["v5/glf4",1],["v5/glex",1],["v5/glf5",1]]},
+        {"origin":"FAOR","destination":"FYWH","category":"arrival","route":"HAJUV..UPACU..FYWH","altitude":[11000,14000],"speed":250,"method":"random","rate":2.11,"airlines":[["kqa/a319",1],["nmb/a319",1],["nmb/e135",1],["saa/a319",1],["saa/a320",1],["saa/a332",1],["saa/a343",1],["saa/b738",1]]},
+        {"origin":"FLKK","destination":"FYWH","category":"arrival","route":"KUDGO..UTAPI..FYWH","altitude":[11000,14000],"speed":250,"method":"random","rate":0.53,"airlines":[["kqa/e135",1],["nmb/e135",1]]},
+        {"origin":"FNLU","destination":"FYWH","category":"arrival","route":"ILULA..URESU..FYWH","altitude":[11000,14000],"speed":250,"method":"random","rate":0.53,"airlines":[["dta/b737",1],["nmb/a319",1]]},
+        {"origin":"DGAA","destination":"FYWH","category":"arrival","route":"ILULA..URESU..FYWH","altitude":[11000,14000],"speed":250,"method":"random","rate":0.26,"airlines":[["nmb/a319",1]]},
+        {"origin":"EDDF","destination":"FYWH","category":"arrival","route":"ILULA..URESU..FYWH","altitude":[11000,14000],"speed":250,"method":"random","rate":0.26,"airlines":[["nmb/a332",1]]},
+        {"origin":"","destination":"FYWH","category":"arrival","route":"KUDGO..UTAPI..FYWH","altitude":[11000,14000],"speed":250,"method":"random","rate":0.79,"airlines":[["nmb/e135",3]]},
+        {"origin":"","destination":"FYWH","category":"arrival","route":"TEGSE..EGICO..FYWH","altitude":[11000,14000],"speed":250,"method":"random","rate":0.79,"airlines":[["nmb/e135",2],["nmb/a319",1]]},
+        {"origin":"","destination":"FYWH","category":"arrival","route":"ADIPE..NOVBI..FYWH","altitude":[11000,14000],"speed":250,"method":"random","rate":0.26,"airlines":[["nmb/e135",1]]},
+        {"origin":"","destination":"FYWH","category":"arrival","route":"ILULA..URESU..FYWH","altitude":[11000,14000],"speed":250,"method":"random","rate":0.26,"airlines":[["dta/b737",1]]},
+        {"origin":"","destination":"FYWH","category":"arrival","route":"ILULA..URESU..FYWH","altitude":[11000,14000],"speed":250,"method":"random","rate":0.4,"airlines":[["v5/c172",6],["v5/p28a",5],["v5/c182",3],["v5/be36",2],["v5/da42",1],["v5/tb20",1],["v5/c208",2],["v5/pc12",2],["v5/be20",1],["v5/b350",1],["v5/p180",1],["v5/c510",1],["v5/e50p",1],["v5/c550",2],["v5/e55p",1],["v5/cl30",1],["v5/c680",1],["v5/h25b",1],["v5/lj45",1],["v5/f2th",1],["v5/glf4",1],["v5/glex",1],["v5/glf5",1]]},
+        {"origin":"","destination":"FYWH","category":"arrival","route":"HAJUV..UPACU..FYWH","altitude":[11000,14000],"speed":250,"method":"random","rate":0.4,"airlines":[["v5/c172",6],["v5/p28a",5],["v5/c182",3],["v5/be36",2],["v5/da42",1],["v5/tb20",1],["v5/c208",2],["v5/pc12",2],["v5/be20",1],["v5/b350",1],["v5/p180",1],["v5/c510",1],["v5/e50p",1],["v5/c550",2],["v5/e55p",1],["v5/cl30",1],["v5/c680",1],["v5/h25b",1],["v5/lj45",1],["v5/f2th",1],["v5/glf4",1],["v5/glex",1],["v5/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-22.1718,18.1585,-22.3709,17.7142],
+            [-22.3709,17.7142,-22.4799,17.4709],
+            [-22.7514,18.1764,-22.5759,17.7205],
+            [-22.5759,17.7205,-22.4799,17.4709],
+            [-23.1857,17.4463,-22.7296,17.4622],
+            [-22.7296,17.4622,-22.4799,17.4709],
+            [-22.6195,16.7218,-22.5293,17.2059],
+            [-22.5293,17.2059,-22.4799,17.4709],
+            [-21.8188,17.2024,-22.246,17.3759],
+            [-22.246,17.3759,-22.4799,17.4709]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-22.4898,17.4495,-22.5641,17.2881],
+            [-22.5359,17.3737,-22.518,17.364],
+            [-22.573,17.2929,-22.5551,17.2833],
+            [-22.4714,17.4894,-22.397,17.6506],
+            [-22.4253,17.5652,-22.4431,17.5748],
+            [-22.388,17.6458,-22.4059,17.6554],
+            [-22.4777,17.469,-22.3478,17.3563],
+            [-22.419,17.4042,-22.4065,17.421],
+            [-22.354,17.3478,-22.3415,17.3647],
+            [-22.4884,17.4783,-22.6182,17.5913],
+            [-22.5471,17.5432,-22.5596,17.5263],
+            [-22.612,17.5997,-22.6245,17.5828]
+        ]}
+    ]
+}

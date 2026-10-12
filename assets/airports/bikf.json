@@ -1,0 +1,100 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/BIKF/",
+    "info": {"country":"IS","city":"Reykjavik","type":"large_airport","longestRunwayM":3065,"frequencies":{"atis":"128.300","twr":"118.300","app":"119.300","gnd":"121.900","dep":"119.300"}},
+    "radio": {"twr":"Keflavik Tower","app":"Keflavik Approach","dep":"Keflavik Departure"},
+    "icao": "BIKF",
+    "iata": "KEF",
+    "magnetic_north": -11.6,
+    "ctr_radius": 60,
+    "ctr_ceiling": 10000,
+    "initial_alt": 5000,
+    "position": [63.985001,-22.6056,"171ft"],
+    "rangeRings": {"enabled":true,"center":[63.985001,-22.6056],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":300,"speed":11},
+    "arrivalRunway": "28",
+    "departureRunway": "28",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"C","poly":[[64.5136,-22.853],[64.5236,-22.5326],[64.497,-22.2173],[64.4355,-21.9284],[64.3433,-21.6856],[64.2266,-21.5056],[64.0935,-21.4005],[63.953,-21.3775],[63.8147,-21.4383],[63.688,-21.5785],[63.5815,-21.7888],[63.5025,-22.0547],[63.4564,-22.3582],[63.4464,-22.6786],[63.473,-22.9939],[63.5345,-23.2828],[63.6268,-23.5256],[63.7434,-23.7056],[63.8765,-23.8107],[64.017,-23.8337],[64.1553,-23.7729],[64.282,-23.6327],[64.3885,-23.4224],[64.4675,-23.1565]]}
+    ],
+    "fixes": {
+        "BIKF": [63.985,-22.6056],
+        "SE": [63.9289,-21.0342,"selfoss"],
+        "DEBKI": [63.96473,-22.03787],
+        "HL": [63.4242,-20.2819,"helgafell"],
+        "PUTVU": [63.86456,-22.10656],
+        "HASMO": [63.8377,-24.18016],
+        "KATAF": [63.93289,-23.16267],
+        "MUZKO": [64.35757,-23.97326],
+        "MUGAJ": [64.11681,-23.08947],
+        "_RWY1004DME": [63.9849,-22.80687],
+        "_RWY2804DME": [63.985,-22.44047],
+        "_RWY0104DME": [63.89787,-22.60548],
+        "_RWY1904DME": [64.05848,-22.60536]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[63.98503,-22.65498,"109ft"],[63.98503,-22.59236,"168ft"]],"ils":[true,true]},
+        {"name":["01","19"],"end":[[63.96449,-22.60543,"135ft"],[63.99186,-22.60541,"161ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "SE3D": {"icao":"SE3D","name":"Selfoss Three Delta","rwy":{"BIKF10":["_RWY2804DME"],"BIKF28":["_RWY1004DME"],"BIKF01":["_RWY1904DME"],"BIKF19":["_RWY0104DME"]},"body":[],"exitPoints":{"SE":["SE"]},"draw":[["BIKF","SE*"]]},
+        "HL3C": {"icao":"HL3C","name":"Helgafell Three Charlie","rwy":{"BIKF10":["_RWY2804DME"],"BIKF28":["_RWY1004DME"],"BIKF01":["_RWY1904DME"],"BIKF19":["_RWY0104DME"]},"body":[],"exitPoints":{"HL":["HL"]},"draw":[["BIKF","HL*"]]},
+        "HASMO2D": {"icao":"HASMO2D","name":"Hasmo Two Delta","rwy":{"BIKF10":["_RWY2804DME"],"BIKF28":["_RWY1004DME"],"BIKF01":["_RWY1904DME"],"BIKF19":["_RWY0104DME"]},"body":[],"exitPoints":{"HASMO":["HASMO"]},"draw":[["BIKF","HASMO*"]]},
+        "MUZKO3B": {"icao":"MUZKO3B","name":"Muzko Three Bravo","rwy":{"BIKF10":["_RWY2804DME"],"BIKF28":["_RWY1004DME"],"BIKF01":["_RWY1904DME"],"BIKF19":["_RWY0104DME"]},"body":[],"exitPoints":{"MUZKO":["MUZKO"]},"draw":[["BIKF","MUZKO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"BIKF","destination":"ENGM","category":"departure","route":"BIKF28.SE3D.SE","altitude":"","speed":"","method":"random","rate":0.85,"airlines":[["ice/b752",2],["nax/b733",1],["sas/b737",1],["sas/b738",1]]},
+        {"origin":"BIKF","destination":"EGCC","category":"departure","route":"BIKF28.HL3C.HL","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["ezy/a319",1],["ezy/a320",1],["ice/b752",1]]},
+        {"origin":"BIKF","destination":"EKCH","category":"departure","route":"BIKF28.SE3D.SE","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["ice/b752",2],["bmi/a320",1]]},
+        {"origin":"BIKF","destination":"EGGD","category":"departure","route":"BIKF28.HL3C.HL","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["ezy/a319",1],["ezy/a320",1]]},
+        {"origin":"BIKF","destination":"EGKK","category":"departure","route":"BIKF28.HL3C.HL","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["bmi/a320",1],["ice/b752",1]]},
+        {"origin":"BIKF","destination":"EHAM","category":"departure","route":"BIKF28.HL3C.HL","altitude":"","speed":"","method":"random","rate":0.34,"airlines":[["ice/b752",2]]},
+        {"origin":"BIKF","destination":"","category":"departure","route":"BIKF28.SE3D.SE","altitude":"","speed":"","method":"random","rate":1.36,"airlines":[["ice/b752",6],["bmi/a320",1],["nax/b738",1]]},
+        {"origin":"BIKF","destination":"","category":"departure","route":"BIKF28.HL3C.HL","altitude":"","speed":"","method":"random","rate":2.04,"airlines":[["ice/b752",7],["bmi/a320",2],["ezy/a319",2],["ezy/a320",1]]},
+        {"origin":"BIKF","destination":"","category":"departure","route":"BIKF28.HASMO2D.HASMO","altitude":"","speed":"","method":"random","rate":1.02,"airlines":[["ice/b752",6]]},
+        {"origin":"BIKF","destination":"","category":"departure","route":"BIKF28.MUZKO3B.MUZKO","altitude":"","speed":"","method":"random","rate":0.68,"airlines":[["ice/b752",3],["grl/dh8d",1],["grl/dh8b",1],["grl/dh8c",1]]},
+        {"origin":"BIKF","destination":"","category":"departure","route":"BIKF28.MUZKO3B.MUZKO","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["tf/c172",6],["tf/p28a",5],["tf/c182",3],["tf/be36",2],["tf/da42",1],["tf/tb20",1],["tf/c208",2],["tf/pc12",2],["tf/be20",1],["tf/b350",1],["tf/p180",1],["tf/c510",1],["tf/e50p",1],["tf/c550",2],["tf/e55p",1],["tf/cl30",1],["tf/c680",1],["tf/h25b",1],["tf/lj45",1],["tf/f2th",1],["tf/glf4",1],["tf/glex",1],["tf/glf5",1]]},
+        {"origin":"BIKF","destination":"","category":"departure","route":"BIKF28.HASMO2D.HASMO","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["tf/c172",6],["tf/p28a",5],["tf/c182",3],["tf/be36",2],["tf/da42",1],["tf/tb20",1],["tf/c208",2],["tf/pc12",2],["tf/be20",1],["tf/b350",1],["tf/p180",1],["tf/c510",1],["tf/e50p",1],["tf/c550",2],["tf/e55p",1],["tf/cl30",1],["tf/c680",1],["tf/h25b",1],["tf/lj45",1],["tf/f2th",1],["tf/glf4",1],["tf/glex",1],["tf/glf5",1]]},
+        {"origin":"ENGM","destination":"BIKF","category":"arrival","route":"SE..DEBKI..BIKF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.85,"airlines":[["ice/b752",2],["nax/b733",1],["sas/b737",1],["sas/b738",1]]},
+        {"origin":"EGCC","destination":"BIKF","category":"arrival","route":"HL..PUTVU..BIKF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["ezy/a319",1],["ezy/a320",1],["ice/b752",1]]},
+        {"origin":"EKCH","destination":"BIKF","category":"arrival","route":"SE..DEBKI..BIKF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.51,"airlines":[["ice/b752",2],["bmi/a320",1]]},
+        {"origin":"EGGD","destination":"BIKF","category":"arrival","route":"HL..PUTVU..BIKF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["ezy/a319",1],["ezy/a320",1]]},
+        {"origin":"EGKK","destination":"BIKF","category":"arrival","route":"HL..PUTVU..BIKF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["bmi/a320",1],["ice/b752",1]]},
+        {"origin":"EHAM","destination":"BIKF","category":"arrival","route":"HL..PUTVU..BIKF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.34,"airlines":[["ice/b752",2]]},
+        {"origin":"","destination":"BIKF","category":"arrival","route":"SE..DEBKI..BIKF","altitude":[6000,9000],"speed":250,"method":"random","rate":1.36,"airlines":[["ice/b752",6],["bmi/a320",1],["nax/b738",1]]},
+        {"origin":"","destination":"BIKF","category":"arrival","route":"HL..PUTVU..BIKF","altitude":[6000,9000],"speed":250,"method":"random","rate":2.04,"airlines":[["ice/b752",7],["bmi/a320",2],["ezy/a319",2],["ezy/a320",1]]},
+        {"origin":"","destination":"BIKF","category":"arrival","route":"HASMO..KATAF..BIKF","altitude":[6000,9000],"speed":250,"method":"random","rate":1.02,"airlines":[["ice/b752",6]]},
+        {"origin":"","destination":"BIKF","category":"arrival","route":"MUZKO..MUGAJ..BIKF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.68,"airlines":[["ice/b752",3],["grl/dh8d",1],["grl/dh8b",1],["grl/dh8c",1]]},
+        {"origin":"","destination":"BIKF","category":"arrival","route":"MUZKO..MUGAJ..BIKF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.54,"airlines":[["tf/c172",6],["tf/p28a",5],["tf/c182",3],["tf/be36",2],["tf/da42",1],["tf/tb20",1],["tf/c208",2],["tf/pc12",2],["tf/be20",1],["tf/b350",1],["tf/p180",1],["tf/c510",1],["tf/e50p",1],["tf/c550",2],["tf/e55p",1],["tf/cl30",1],["tf/c680",1],["tf/h25b",1],["tf/lj45",1],["tf/f2th",1],["tf/glf4",1],["tf/glex",1],["tf/glf5",1]]},
+        {"origin":"","destination":"BIKF","category":"arrival","route":"HASMO..KATAF..BIKF","altitude":[6000,9000],"speed":250,"method":"random","rate":0.54,"airlines":[["tf/c172",6],["tf/p28a",5],["tf/c182",3],["tf/be36",2],["tf/da42",1],["tf/tb20",1],["tf/c208",2],["tf/pc12",2],["tf/be20",1],["tf/b350",1],["tf/p180",1],["tf/c510",1],["tf/e50p",1],["tf/c550",2],["tf/e55p",1],["tf/cl30",1],["tf/c680",1],["tf/h25b",1],["tf/lj45",1],["tf/f2th",1],["tf/glf4",1],["tf/glex",1],["tf/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [63.9289,-21.0342,63.9647,-22.0379],
+            [63.9647,-22.0379,63.985,-22.6056],
+            [63.4242,-20.2819,63.8646,-22.1066],
+            [63.8646,-22.1066,63.985,-22.6056],
+            [63.8377,-24.1802,63.9329,-23.1627],
+            [63.9329,-23.1627,63.985,-22.6056],
+            [64.3576,-23.9733,64.1168,-23.0895],
+            [64.1168,-23.0895,63.985,-22.6056]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [63.985,-22.655,63.9844,-23.0347],
+            [63.9749,-22.8448,63.9948,-22.8449],
+            [63.9744,-23.0347,63.9944,-23.0347],
+            [63.985,-22.5924,63.9846,-22.2126],
+            [63.995,-22.4025,63.975,-22.4025],
+            [63.9946,-22.2126,63.9747,-22.2126],
+            [63.9645,-22.6054,63.7979,-22.6056],
+            [63.8812,-22.5828,63.8812,-22.6282],
+            [63.7979,-22.5829,63.7979,-22.6282],
+            [63.9919,-22.6054,64.1584,-22.6053],
+            [64.0751,-22.6282,64.0751,-22.5825],
+            [64.1584,-22.6282,64.1584,-22.5824]
+        ]}
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SVMG/",
+    "info": {"country":"VE","city":"Isla Margarita","type":"large_airport","longestRunwayM":3191,"frequencies":{"atis":"114.100","twr":"118.600","app":"119.900","gnd":"121.900"}},
+    "radio": {"twr":"Porlamar Tower","app":"Porlamar Approach","dep":"Porlamar Departure"},
+    "icao": "SVMG",
+    "iata": "PMV",
+    "magnetic_north": -14.6,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [10.912603,-63.966599,"74ft"],
+    "rangeRings": {"enabled":true,"center":[10.912603,-63.966599],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":90,"speed":11},
+    "arrivalRunway": "09",
+    "departureRunway": "09",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[11.3042,-64.0705],[11.3173,-63.9637],[11.3028,-63.8572],[11.2617,-63.758],[11.1968,-63.6731],[11.1125,-63.6082],[11.0146,-63.5678],[10.9098,-63.5545],[10.8051,-63.5692],[10.7078,-63.6111],[10.6244,-63.6772],[10.5607,-63.763],[10.521,-63.8627],[10.5079,-63.9695],[10.5224,-64.076],[10.5635,-64.1752],[10.6284,-64.2601],[10.7127,-64.325],[10.8106,-64.3654],[10.9154,-64.3787],[11.0201,-64.3639],[11.1174,-64.3221],[11.2008,-64.256],[11.2645,-64.1702]]}
+    ],
+    "fixes": {
+        "SVMG": [10.9126,-63.9666],
+        "NACOP": [11.15898,-63.47959],
+        "AGURE": [11.00414,-63.78566],
+        "OPAZA": [10.42469,-63.7359],
+        "ILUWO": [10.73132,-63.88088],
+        "ECIKA": [10.82315,-64.50682],
+        "IBAMU": [10.87937,-64.16731],
+        "AFABU": [11.42299,-64.13967],
+        "ONOLO": [11.10223,-64.0309],
+        "_RWY0904DME": [10.89559,-64.04729],
+        "_RWY2704DME": [10.92862,-63.88725],
+        "_RWY09L04DME": [10.89745,-64.04845],
+        "_RWY27R04DME": [10.92983,-63.88834]
+    },
+    "runways": [
+        {"name":["09","27"],"end":[[10.9093,-63.9809,"74ft"],[10.91492,-63.95365,"33ft"]],"ils":[true,true]},
+        {"name":["09L","27R"],"end":[[10.9109,-63.982,"74ft"],[10.9164,-63.9548,"74ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "NACOP1B": {"icao":"NACOP1B","name":"Nacop One Bravo","rwy":{"SVMG09":["_RWY2704DME"],"SVMG27":["_RWY0904DME"],"SVMG09L":["_RWY27R04DME"],"SVMG27R":["_RWY09L04DME"]},"body":[],"exitPoints":{"NACOP":["NACOP"]},"draw":[["SVMG","NACOP*"]]},
+        "OPAZA3E": {"icao":"OPAZA3E","name":"Opaza Three Echo","rwy":{"SVMG09":["_RWY2704DME"],"SVMG27":["_RWY0904DME"],"SVMG09L":["_RWY27R04DME"],"SVMG27R":["_RWY09L04DME"]},"body":[],"exitPoints":{"OPAZA":["OPAZA"]},"draw":[["SVMG","OPAZA*"]]},
+        "ECIKA1E": {"icao":"ECIKA1E","name":"Ecika One Echo","rwy":{"SVMG09":["_RWY2704DME"],"SVMG27":["_RWY0904DME"],"SVMG09L":["_RWY27R04DME"],"SVMG27R":["_RWY09L04DME"]},"body":[],"exitPoints":{"ECIKA":["ECIKA"]},"draw":[["SVMG","ECIKA*"]]},
+        "AFABU1C": {"icao":"AFABU1C","name":"Afabu One Charlie","rwy":{"SVMG09":["_RWY2704DME"],"SVMG27":["_RWY0904DME"],"SVMG09L":["_RWY27R04DME"],"SVMG27R":["_RWY09L04DME"]},"body":[],"exitPoints":{"AFABU":["AFABU"]},"draw":[["SVMG","AFABU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SVMG","destination":"SVMI","category":"departure","route":"SVMG09.ECIKA1E.ECIKA","altitude":"","speed":"","method":"random","rate":1,"airlines":[["oca/dc93",1],["oca/md82",1],["vcv/e190",1]]},
+        {"origin":"SVMG","destination":"SVPR","category":"departure","route":"SVMG09.OPAZA3E.OPAZA","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["oca/md82",1],["vcv/e190",1]]},
+        {"origin":"SVMG","destination":"SBEG","category":"departure","route":"SVMG09.OPAZA3E.OPAZA","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["vcv/e190",1]]},
+        {"origin":"SVMG","destination":"SVBM","category":"departure","route":"SVMG09.ECIKA1E.ECIKA","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["vcv/e190",1]]},
+        {"origin":"SVMG","destination":"SVMC","category":"departure","route":"SVMG09.ECIKA1E.ECIKA","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["vcv/e190",1]]},
+        {"origin":"SVMG","destination":"","category":"departure","route":"SVMG09.NACOP1B.NACOP","altitude":"","speed":"","method":"random","rate":0.67,"airlines":[["vcv/e190",2]]},
+        {"origin":"SVMG","destination":"","category":"departure","route":"SVMG09.OPAZA3E.OPAZA","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["vcv/e190",1]]},
+        {"origin":"SVMG","destination":"","category":"departure","route":"SVMG09.ECIKA1E.ECIKA","altitude":"","speed":"","method":"random","rate":1,"airlines":[["vcv/e190",3]]},
+        {"origin":"SVMG","destination":"","category":"departure","route":"SVMG09.ECIKA1E.ECIKA","altitude":"","speed":"","method":"random","rate":1.55,"airlines":[["yv/c172",6],["yv/p28a",5],["yv/c182",3],["yv/be36",2],["yv/da42",1],["yv/tb20",1],["yv/c208",2],["yv/pc12",2],["yv/be20",1],["yv/b350",1],["yv/p180",1],["yv/c510",1],["yv/e50p",1],["yv/c550",1],["yv/e55p",1],["yv/cl30",1],["yv/c680",1],["yv/h25b",1],["yv/lj45",1],["yv/f2th",1],["yv/glf4",1],["yv/glex",1],["yv/glf5",1]]},
+        {"origin":"SVMI","destination":"SVMG","category":"arrival","route":"ECIKA..IBAMU..SVMG","altitude":[4000,7000],"speed":250,"method":"random","rate":1,"airlines":[["oca/dc93",1],["oca/md82",1],["vcv/e190",1]]},
+        {"origin":"SVPR","destination":"SVMG","category":"arrival","route":"OPAZA..ILUWO..SVMG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.67,"airlines":[["oca/md82",1],["vcv/e190",1]]},
+        {"origin":"SBEG","destination":"SVMG","category":"arrival","route":"OPAZA..ILUWO..SVMG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.33,"airlines":[["vcv/e190",1]]},
+        {"origin":"SVBM","destination":"SVMG","category":"arrival","route":"ECIKA..IBAMU..SVMG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.33,"airlines":[["vcv/e190",1]]},
+        {"origin":"SVMC","destination":"SVMG","category":"arrival","route":"ECIKA..IBAMU..SVMG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.33,"airlines":[["vcv/e190",1]]},
+        {"origin":"","destination":"SVMG","category":"arrival","route":"NACOP..AGURE..SVMG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.67,"airlines":[["vcv/e190",2]]},
+        {"origin":"","destination":"SVMG","category":"arrival","route":"OPAZA..ILUWO..SVMG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.33,"airlines":[["vcv/e190",1]]},
+        {"origin":"","destination":"SVMG","category":"arrival","route":"ECIKA..IBAMU..SVMG","altitude":[4000,7000],"speed":250,"method":"random","rate":1,"airlines":[["vcv/e190",3]]},
+        {"origin":"","destination":"SVMG","category":"arrival","route":"ECIKA..IBAMU..SVMG","altitude":[4000,7000],"speed":250,"method":"random","rate":1.55,"airlines":[["yv/c172",6],["yv/p28a",5],["yv/c182",3],["yv/be36",2],["yv/da42",1],["yv/tb20",1],["yv/c208",2],["yv/pc12",2],["yv/be20",1],["yv/b350",1],["yv/p180",1],["yv/c510",1],["yv/e50p",1],["yv/c550",1],["yv/e55p",1],["yv/cl30",1],["yv/c680",1],["yv/h25b",1],["yv/lj45",1],["yv/f2th",1],["yv/glf4",1],["yv/glex",1],["yv/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [11.159,-63.4796,11.0041,-63.7857],
+            [11.0041,-63.7857,10.9126,-63.9666],
+            [10.4247,-63.7359,10.7313,-63.8809],
+            [10.7313,-63.8809,10.9126,-63.9666],
+            [10.8231,-64.5068,10.8794,-64.1673],
+            [10.8794,-64.1673,10.9126,-63.9666],
+            [11.423,-64.1397,11.1022,-64.0309],
+            [11.1022,-64.0309,10.9126,-63.9666]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [10.9093,-63.9809,10.875,-64.1469],
+            [10.8824,-64.0618,10.9019,-64.066],
+            [10.8652,-64.1448,10.8848,-64.149],
+            [10.9149,-63.9536,10.9491,-63.7876],
+            [10.9418,-63.8727,10.9223,-63.8686],
+            [10.9589,-63.7897,10.9393,-63.7855],
+            [10.9109,-63.982,10.8773,-64.1481],
+            [10.8843,-64.063,10.9039,-64.0671],
+            [10.8675,-64.1461,10.887,-64.1502],
+            [10.9164,-63.9548,10.95,-63.7886],
+            [10.943,-63.8738,10.9234,-63.8697],
+            [10.9597,-63.7907,10.9402,-63.7866]
+        ]}
+    ]
+}

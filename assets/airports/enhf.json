@@ -1,0 +1,80 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ENHF/",
+    "info": {"country":"NO","city":"Hammerfest","type":"medium_airport","longestRunwayM":933},
+    "radio": {"twr":"Hammerfest Tower","app":"Hammerfest Approach","dep":"Hammerfest Departure"},
+    "icao": "ENHF",
+    "iata": "HFT",
+    "magnetic_north": 14.2,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [70.679703,23.6686,"266ft"],
+    "rangeRings": {"enabled":true,"center":[70.679703,23.6686],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":240,"speed":11},
+    "arrivalRunway": "22",
+    "departureRunway": "22",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[71.072,23.9687],[71.033,24.2654],[70.9698,24.5214],[70.8869,24.7193],[70.7899,24.8456],[70.6854,24.8917],[70.5804,24.8544],[70.4823,24.7364],[70.3976,24.5455],[70.3321,24.2949],[70.2903,24.0017],[70.275,23.6857],[70.2874,23.3685],[70.3264,23.0718],[70.3896,22.8158],[70.4725,22.6179],[70.5695,22.4916],[70.6741,22.4455],[70.779,22.4828],[70.8771,22.6008],[70.9618,22.7917],[71.0273,23.0423],[71.0691,23.3355],[71.0844,23.6515]]}
+    ],
+    "fixes": {
+        "ENHF": [70.6797,23.6686],
+        "HLN": [71.0074,25.9959,"helnes"],
+        "WETUW": [70.75797,24.22445],
+        "ATA": [69.9776,23.3718,"alta"],
+        "TALMO": [70.48176,23.58493],
+        "HK": [70.4898,22.1325,"hasvik"],
+        "AMOSE": [70.60974,23.10272],
+        "MANEB": [71.17786,23.05497],
+        "BICLA": [70.86479,23.44061],
+        "_RWY0403DME": [70.64934,23.53358],
+        "_RWY2203DME": [70.70959,23.80286]
+    },
+    "runways": [
+        {"name":["04","22"],"end":[[70.67738,23.6585,"259ft"],[70.68164,23.67757,"260ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "HLN3A": {"icao":"HLN3A","name":"Helnes Three Alpha","rwy":{"ENHF04":["_RWY2203DME"],"ENHF22":["_RWY0403DME"]},"body":[],"exitPoints":{"HLN":["HLN"]},"draw":[["ENHF","HLN*"]]},
+        "ATA2E": {"icao":"ATA2E","name":"Alta Two Echo","rwy":{"ENHF04":["_RWY2203DME"],"ENHF22":["_RWY0403DME"]},"body":[],"exitPoints":{"ATA":["ATA"]},"draw":[["ENHF","ATA*"]]},
+        "HK3E": {"icao":"HK3E","name":"Hasvik Three Echo","rwy":{"ENHF04":["_RWY2203DME"],"ENHF22":["_RWY0403DME"]},"body":[],"exitPoints":{"HK":["HK"]},"draw":[["ENHF","HK*"]]},
+        "MANEB1D": {"icao":"MANEB1D","name":"Maneb One Delta","rwy":{"ENHF04":["_RWY2203DME"],"ENHF22":["_RWY0403DME"]},"body":[],"exitPoints":{"MANEB":["MANEB"]},"draw":[["ENHF","MANEB*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ENHF","destination":"ENAT","category":"departure","route":"ENHF22.ATA2E.ATA","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENHF","destination":"ENBV","category":"departure","route":"ENHF22.HLN3A.HLN","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENHF","destination":"ENHK","category":"departure","route":"ENHF22.HK3E.HK","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENHF","destination":"ENHV","category":"departure","route":"ENHF22.HLN3A.HLN","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENHF","destination":"ENMH","category":"departure","route":"ENHF22.HLN3A.HLN","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENHF","destination":"","category":"departure","route":"ENHF22.HLN3A.HLN","altitude":"","speed":"","method":"random","rate":0.77,"airlines":[["wif/dh8b",2],["wif/dh8a",1]]},
+        {"origin":"ENHF","destination":"","category":"departure","route":"ENHF22.HK3E.HK","altitude":"","speed":"","method":"random","rate":1.02,"airlines":[["wif/dh8a",2],["wif/dh8b",2]]},
+        {"origin":"ENHF","destination":"","category":"departure","route":"ENHF22.HK3E.HK","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["ln/c172",6],["ln/p28a",5],["ln/c182",3],["ln/be36",2],["ln/da42",1],["ln/tb20",1],["ln/c208",2],["ln/pc12",2],["ln/be20",1],["ln/b350",1],["ln/p180",1],["ln/c510",1],["ln/c550",1]]},
+        {"origin":"ENAT","destination":"ENHF","category":"arrival","route":"ATA..TALMO..ENHF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.51,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENBV","destination":"ENHF","category":"arrival","route":"HLN..WETUW..ENHF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.51,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENHK","destination":"ENHF","category":"arrival","route":"HK..AMOSE..ENHF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.51,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENHV","destination":"ENHF","category":"arrival","route":"HLN..WETUW..ENHF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.51,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENMH","destination":"ENHF","category":"arrival","route":"HLN..WETUW..ENHF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.51,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"","destination":"ENHF","category":"arrival","route":"HLN..WETUW..ENHF","altitude":[4000,7000],"speed":250,"method":"random","rate":0.77,"airlines":[["wif/dh8b",2],["wif/dh8a",1]]},
+        {"origin":"","destination":"ENHF","category":"arrival","route":"HK..AMOSE..ENHF","altitude":[4000,7000],"speed":250,"method":"random","rate":1.02,"airlines":[["wif/dh8a",2],["wif/dh8b",2]]},
+        {"origin":"","destination":"ENHF","category":"arrival","route":"HK..AMOSE..ENHF","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["ln/c172",6],["ln/p28a",5],["ln/c182",3],["ln/be36",2],["ln/da42",1],["ln/tb20",1],["ln/c208",2],["ln/pc12",2],["ln/be20",1],["ln/b350",1],["ln/p180",1],["ln/c510",1],["ln/c550",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [71.0074,25.9959,70.758,24.2244],
+            [70.758,24.2244,70.6797,23.6686],
+            [69.9776,23.3718,70.4818,23.5849],
+            [70.4818,23.5849,70.6797,23.6686],
+            [70.4898,22.1325,70.6097,23.1027],
+            [70.6097,23.1027,70.6797,23.6686],
+            [71.1779,23.055,70.8648,23.4406],
+            [70.8648,23.4406,70.6797,23.6686]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [70.6816,23.6776,70.7745,24.0966],
+            [70.7364,23.8696,70.7199,23.9035],
+            [70.7827,24.0796,70.7662,24.1136]
+        ]}
+    ]
+}

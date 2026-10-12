@@ -1,0 +1,81 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/DTMB/",
+    "info": {"country":"TN","city":"Monastir","type":"medium_airport","longestRunwayM":2950,"frequencies":{"atis":"113.100","twr":"118.300","app":"119.300"}},
+    "radio": {"twr":"Monastir Tower","app":"Monastir Approach","dep":"Monastir Departure"},
+    "icao": "DTMB",
+    "iata": "MIR",
+    "magnetic_north": 3.3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [35.758099,10.7547,"9ft"],
+    "rangeRings": {"enabled":true,"center":[35.758099,10.7547],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":260,"speed":12},
+    "arrivalRunway": "25",
+    "departureRunway": "25",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[36.1621,10.7834],[36.1423,10.9113],[36.0963,11.0285],[36.0273,11.1271],[35.9399,11.2002],[35.8402,11.243],[35.7348,11.2526],[35.631,11.2282],[35.5359,11.1715],[35.4559,11.0865],[35.3966,10.9788],[35.3618,10.8558],[35.3541,10.726],[35.3739,10.5981],[35.4199,10.4809],[35.4889,10.3823],[35.5763,10.3092],[35.676,10.2664],[35.7814,10.2568],[35.8852,10.2812],[35.9803,10.3379],[36.0603,10.4229],[36.1196,10.5306],[36.1544,10.6536]]}
+    ],
+    "fixes": {
+        "DTMB": [35.7581,10.7547],
+        "OLICU": [35.9607,11.36879],
+        "MODTA": [35.83337,10.98286],
+        "JEJAZ": [35.25977,11.00437],
+        "UTECA": [35.57295,10.84746],
+        "LANLO": [35.55549,10.14061],
+        "VAJUP": [35.68282,10.52654],
+        "WAJIS": [36.25643,10.50503],
+        "VICIN": [35.94325,10.66194],
+        "_RWY0704DME": [35.73515,10.65971],
+        "_RWY2504DME": [35.7805,10.84834]
+    },
+    "runways": [
+        {"name":["07","25"],"end":[[35.7541,10.7384,"8ft"],[35.7616,10.7696,"8ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "OLICU3B": {"icao":"OLICU3B","name":"Olicu Three Bravo","rwy":{"DTMB07":["_RWY2504DME"],"DTMB25":["_RWY0704DME"]},"body":[],"exitPoints":{"OLICU":["OLICU"]},"draw":[["DTMB","OLICU*"]]},
+        "JEJAZ2B": {"icao":"JEJAZ2B","name":"Jejaz Two Bravo","rwy":{"DTMB07":["_RWY2504DME"],"DTMB25":["_RWY0704DME"]},"body":[],"exitPoints":{"JEJAZ":["JEJAZ"]},"draw":[["DTMB","JEJAZ*"]]},
+        "LANLO2C": {"icao":"LANLO2C","name":"Lanlo Two Charlie","rwy":{"DTMB07":["_RWY2504DME"],"DTMB25":["_RWY0704DME"]},"body":[],"exitPoints":{"LANLO":["LANLO"]},"draw":[["DTMB","LANLO*"]]},
+        "WAJIS3F": {"icao":"WAJIS3F","name":"Wajis Three Foxtrot","rwy":{"DTMB07":["_RWY2504DME"],"DTMB25":["_RWY0704DME"]},"body":[],"exitPoints":{"WAJIS":["WAJIS"]},"draw":[["DTMB","WAJIS*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"DTMB","destination":"LFLL","category":"departure","route":"DTMB25.WAJIS3F.WAJIS","altitude":"","speed":"","method":"random","rate":1.02,"airlines":[["lbt/a320",1],["tar/a320",1],["tar/b736",1],["tvf/b738",1]]},
+        {"origin":"DTMB","destination":"LFPO","category":"departure","route":"DTMB25.WAJIS3F.WAJIS","altitude":"","speed":"","method":"random","rate":0.77,"airlines":[["tar/a320",1],["tar/b736",1],["tvf/b738",1]]},
+        {"origin":"DTMB","destination":"DTTA","category":"departure","route":"DTMB25.WAJIS3F.WAJIS","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["lbt/a320",1],["tui/crj9",1]]},
+        {"origin":"DTMB","destination":"LFML","category":"departure","route":"DTMB25.WAJIS3F.WAJIS","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["tar/a320",1],["tar/b736",1]]},
+        {"origin":"DTMB","destination":"LFMN","category":"departure","route":"DTMB25.WAJIS3F.WAJIS","altitude":"","speed":"","method":"random","rate":0.51,"airlines":[["tar/a320",1],["tar/b736",1]]},
+        {"origin":"DTMB","destination":"","category":"departure","route":"DTMB25.WAJIS3F.WAJIS","altitude":"","speed":"","method":"random","rate":1.02,"airlines":[["tar/a320",2],["lbt/a320",1],["tvf/b738",1]]},
+        {"origin":"DTMB","destination":"","category":"departure","route":"DTMB25.JEJAZ2B.JEJAZ","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["ts/c172",6],["ts/p28a",5],["ts/c182",3],["ts/be36",2],["ts/da42",1],["ts/tb20",1],["ts/c208",2],["ts/pc12",2],["ts/be20",1],["ts/b350",1],["ts/p180",1],["ts/c510",1],["ts/e50p",1],["ts/c550",1],["ts/e55p",1],["ts/cl30",1],["ts/c680",1],["ts/h25b",1],["ts/lj45",1],["ts/f2th",1],["ts/glf4",1],["ts/glex",1],["ts/glf5",1]]},
+        {"origin":"LFLL","destination":"DTMB","category":"arrival","route":"WAJIS..VICIN..DTMB","altitude":[4000,7000],"speed":250,"method":"random","rate":1.02,"airlines":[["lbt/a320",1],["tar/a320",1],["tar/b736",1],["tvf/b738",1]]},
+        {"origin":"LFPO","destination":"DTMB","category":"arrival","route":"WAJIS..VICIN..DTMB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.77,"airlines":[["tar/a320",1],["tar/b736",1],["tvf/b738",1]]},
+        {"origin":"DTTA","destination":"DTMB","category":"arrival","route":"WAJIS..VICIN..DTMB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.51,"airlines":[["lbt/a320",1],["tui/crj9",1]]},
+        {"origin":"LFML","destination":"DTMB","category":"arrival","route":"WAJIS..VICIN..DTMB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.51,"airlines":[["tar/a320",1],["tar/b736",1]]},
+        {"origin":"LFMN","destination":"DTMB","category":"arrival","route":"WAJIS..VICIN..DTMB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.51,"airlines":[["tar/a320",1],["tar/b736",1]]},
+        {"origin":"","destination":"DTMB","category":"arrival","route":"WAJIS..VICIN..DTMB","altitude":[4000,7000],"speed":250,"method":"random","rate":1.02,"airlines":[["tar/a320",2],["lbt/a320",1],["tvf/b738",1]]},
+        {"origin":"","destination":"DTMB","category":"arrival","route":"JEJAZ..UTECA..DTMB","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["ts/c172",6],["ts/p28a",5],["ts/c182",3],["ts/be36",2],["ts/da42",1],["ts/tb20",1],["ts/c208",2],["ts/pc12",2],["ts/be20",1],["ts/b350",1],["ts/p180",1],["ts/c510",1],["ts/e50p",1],["ts/c550",1],["ts/e55p",1],["ts/cl30",1],["ts/c680",1],["ts/h25b",1],["ts/lj45",1],["ts/f2th",1],["ts/glf4",1],["ts/glex",1],["ts/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [35.9607,11.3688,35.8334,10.9829],
+            [35.8334,10.9829,35.7581,10.7547],
+            [35.2598,11.0044,35.573,10.8475],
+            [35.573,10.8475,35.7581,10.7547],
+            [35.5555,10.1406,35.6828,10.5265],
+            [35.6828,10.5265,35.7581,10.7547],
+            [36.2564,10.505,35.9432,10.6619],
+            [35.9432,10.6619,35.7581,10.7547]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [35.7541,10.7384,35.7066,10.5417],
+            [35.7208,10.6435,35.74,10.6365],
+            [35.697,10.5452,35.7162,10.5382],
+            [35.7616,10.7696,35.8088,10.9665],
+            [35.7948,10.8645,35.7756,10.8715],
+            [35.8183,10.963,35.7992,10.97]
+        ]}
+    ]
+}
