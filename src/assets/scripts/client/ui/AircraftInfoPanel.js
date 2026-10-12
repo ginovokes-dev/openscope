@@ -49,6 +49,15 @@ const PANEL_TEMPLATE = `
             <div class="aircraft-info-bar"><div class="aircraft-info-bar-fill js-ai-fuel-bar"></div></div>
         </div>
 
+        <div class="aircraft-info-actions js-ai-departure-actions" hidden>
+            <button type="button" class="aircraft-info-button" data-step="clearance" data-command="caf" title="IFR clearance as filed (caf)">Clearance</button>
+            <button type="button" class="aircraft-info-button" data-step="push" data-command="push" title="Pushback and start up (push)">Push</button>
+            <button type="button" class="aircraft-info-button js-ai-taxi" data-step="taxi" data-command="taxi" title="Taxi to the holding point (taxi RWY)">Taxi</button>
+            <button type="button" class="aircraft-info-button" data-step="hold" data-command="hp" title="Hold position (hp)">Hold</button>
+            <button type="button" class="aircraft-info-button" data-step="lineup" data-command="lineup" title="Line up and wait (lineup)">Line up</button>
+            <button type="button" class="aircraft-info-button" data-step="takeoff" data-command="cto" title="Cleared for takeoff (cto)">Take off</button>
+        </div>
+
         <div class="aircraft-info-actions">
             <button type="button" class="aircraft-info-button" data-command="sf" title="Say fuel remaining">Fuel?</button>
             <button type="button" class="aircraft-info-button" data-command="sob" title="Say souls on board">Souls?</button>
@@ -135,9 +144,53 @@ export default class AircraftInfoPanel {
                 return;
             }
 
-            const command = $(event.currentTarget).data('command');
+            const command = $(event.currentTarget).attr('data-command');
 
             this._eventBus.trigger(EVENT.SUBMIT_COMMAND, `${this._aircraft.callsign} ${command}`);
+        });
+    }
+
+    /**
+     * Departure buttons: one per step of the ground sequence, the sensible next step highlighted
+     *
+     * @for AircraftInfoPanel
+     * @method _renderDepartureActions
+     * @param info {object}
+     * @private
+     */
+    _renderDepartureActions(info) {
+        const $actions = this._find('.js-ai-departure-actions');
+        const onGround = info.isDeparture && !info.isAirborne && info.phase !== 'TAKEOFF';
+
+        $actions.prop('hidden', !onGround);
+
+        if (!onGround) {
+            return;
+        }
+
+        const runway = info.runway || '';
+        const status = info.groundStatus;
+        let next = 'clearance';
+
+        if (info.hasDepartureClearance) {
+            next = {
+                'at the stand, cleared': 'push',
+                'pushing back': '',
+                'ready to taxi': 'taxi',
+                taxiing: '',
+                'holding position': 'taxi',
+                'holding short': 'lineup',
+                'lined up on the runway': 'takeoff'
+            }[status] || 'taxi';
+        } else if (status === 'taxiing' || status === 'holding short' || status === 'lined up on the runway') {
+            next = 'clearance';
+        }
+
+        this._find('.js-ai-taxi').attr('data-command', `taxi ${runway}`.trim());
+        $actions.find('.aircraft-info-button').each((index, element) => {
+            const $button = $(element);
+
+            $button.toggleClass('is-next', $button.data('step') === next);
         });
     }
 
@@ -206,7 +259,8 @@ export default class AircraftInfoPanel {
         find('.js-ai-spoken').text(info.spokenCallsign);
         find('.js-ai-type').text(`${info.typeName} (${info.type}/${info.wakeCategory})  ${info.airlineCallsign ? `- ${info.airlineCallsign}` : ''}`);
         find('.js-ai-squawk').text(info.squawk);
-        find('.js-ai-phase').text(`${info.category}, ${info.phaseText}${info.isControllable ? '' : ' (not yet on your frequency)'}`);
+        find('.js-ai-phase').text(`${info.category}, ${info.groundStatus || info.phaseText}${info.isControllable ? '' : ' (not yet on your frequency)'}`);
+        this._renderDepartureActions(info);
         find('.js-ai-origin').text(this._formatAirport(info.origin));
         find('.js-ai-destination').text(this._formatAirport(info.destination));
         find('.js-ai-alternate').text(this._formatAirport(info.alternate));

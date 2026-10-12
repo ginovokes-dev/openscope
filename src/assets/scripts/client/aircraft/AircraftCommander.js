@@ -20,6 +20,7 @@ import { speech_say } from '../speech';
 import airportIndex from '../geo/AirportIndex';
 import AtisController from '../atis/AtisController';
 import { goAround, divertAircraft, findDiversionAirport } from './aircraftActions';
+import { buildClearancePhrases, formatSquawk } from './departureFlow';
 import {
     groupNumbers,
     radio_runway,
@@ -248,7 +249,99 @@ export default class AircraftCommander {
      * @return {array} [success of operation, readback]
      */
     runClearedAsFiled(aircraft) {
-        return aircraft.pilot.clearedAsFiled();
+        const result = aircraft.pilot.clearedAsFiled();
+
+        if (!aircraft.isTaxiing()) {
+            return result;
+        }
+
+        return this._departureClearanceReadback(aircraft, result[0]);
+    }
+
+    /**
+     * Readback of an IFR clearance: destination, route/SID, runway, initial climb and squawk
+     *
+     * @for AircraftCommander
+     * @method _departureClearanceReadback
+     * @param aircraft {AircraftModel}
+     * @param success {boolean}
+     * @return {array} [success of operation, readback]
+     * @private
+     */
+    _departureClearanceReadback(aircraft, success) {
+        if (!success) {
+            return [false, 'unable to accept that clearance'];
+        }
+
+        aircraft.acknowledgeDepartureClearance();
+        aircraft.ensureDestination();
+
+        const entry = aircraft.destination ? airportIndex.lookup(aircraft.destination) : null;
+        const destinationName = entry ? (entry.city || entry.name) : String(aircraft.destination || '').toUpperCase();
+        const sidName = aircraft.fms.getSidName();
+        const sidIcao = aircraft.fms.getSidIcao();
+        const runway = aircraft.fms.departureRunwayModel;
+        const initialAltitude = aircraft.fms.getInitialClimbClearance();
+        const written = buildClearancePhrases({
+            destination: destinationName,
+            sidName: sidIcao ? String(sidIcao).toUpperCase() : '',
+            runwayName: runway ? runway.name : '',
+            initialAltitude,
+            squawk: aircraft.transponderCode
+        });
+        const spoken = buildClearancePhrases({
+            destination: destinationName,
+            sidName: sidName ? String(sidName).toUpperCase() : '',
+            runwayName: runway ? radio_runway(runway.name) : '',
+            initialAltitude: initialAltitude ? radio_altitude(initialAltitude) : '',
+            squawk: radio_spellOut(formatSquawk(aircraft.transponderCode))
+        });
+        const join = (parts) => parts.filter(Boolean).join(', ');
+
+        return [true, {
+            log: join([`cleared to ${written.destination} ${written.route}`, written.runway, written.climb, written.squawk]),
+            say: join([`cleared to ${spoken.destination} ${spoken.route}`, spoken.runway, spoken.climb, spoken.squawk])
+        }];
+    }
+
+    /**
+     * Pushback and engine start
+     *
+     * @for AircraftCommander
+     * @method runPushback
+     * @param aircraft {AircraftModel}
+     * @return {array} [success of operation, readback]
+     */
+    runPushback(aircraft) {
+        if (aircraft.ground.isManaged && !aircraft.pilot.hasDepartureClearance && aircraft.flightPhase === FLIGHT_PHASE.APRON) {
+            return [false, 'unable to push yet, we are still waiting for our IFR clearance'];
+        }
+
+        return aircraft.pushback();
+    }
+
+    /**
+     * Line up and wait
+     *
+     * @for AircraftCommander
+     * @method runLineUp
+     * @param aircraft {AircraftModel}
+     * @return {array} [success of operation, readback]
+     */
+    runLineUp(aircraft) {
+        return aircraft.lineUpAndWait();
+    }
+
+    /**
+     * Hold position
+     *
+     * @for AircraftCommander
+     * @method runHoldPosition
+     * @param aircraft {AircraftModel}
+     * @return {array} [success of operation, readback]
+     */
+    runHoldPosition(aircraft) {
+        return aircraft.holdPosition();
     }
 
     /**
@@ -460,7 +553,13 @@ export default class AircraftCommander {
         const routeString = data[0];
         const airportModel = AirportController.airport_get();
 
-        return aircraft.pilot.applyDepartureProcedure(routeString, airportModel.icao);
+        const result = aircraft.pilot.applyDepartureProcedure(routeString, airportModel.icao);
+
+        if (result[0] && aircraft.isTaxiing()) {
+            return this._departureClearanceReadback(aircraft, true);
+        }
+
+        return result;
     }
 
     /**

@@ -15,7 +15,16 @@ import ModeController from './ModeControl/ModeController';
 import Pilot from './Pilot/Pilot';
 import OnboardState from './OnboardState';
 import { handleFuelStateReached } from './aircraftEmergency';
+import {
+    DEPARTURE_CALL,
+    DEPARTURE_TIMING,
+    pickDepartureDestination,
+    randomBetween,
+    taxiSecondsForRunwayLength
+} from './departureFlow';
 import airportIndex from '../geo/AirportIndex';
+import { initialBearingDegrees } from '../geo/geoMath';
+import AtisController from '../atis/AtisController';
 import TimeKeeper from '../engine/TimeKeeper';
 import UiController from '../ui/UiController';
 import EventBus from '../lib/EventBus';
@@ -525,6 +534,30 @@ export default class AircraftModel {
          * @default null
          */
         this.pendingRequest = null;
+
+        /**
+         * Everything about the ground phase of a departure that is not already a flight phase: what the pilot has
+         * asked for, whether pushback is under way, whether the aircraft is lined up or has been told to hold position
+         *
+         * @for AircraftModel
+         * @property ground
+         * @type {object}
+         */
+        this.ground = {
+            isManaged: false,
+            clearanceRequestAt: null,
+            clearanceRequested: false,
+            readyForPushAt: null,
+            readyForPushCalled: false,
+            isPushingBack: false,
+            pushbackUntil: 0,
+            hasPushedBack: false,
+            holdingPointCallAt: null,
+            readyForDepartureCalled: false,
+            isLinedUp: false,
+            isHoldingPosition: false,
+            taxiSeconds: 0
+        };
 
         /**
          * Planned alternate airport (ICAO), reported in the aircraft information panel
@@ -1387,6 +1420,293 @@ export default class AircraftModel {
     }
 
     /**
+     * Start the ground phase of a departure the controller has to handle: the pilot will ask for the IFR clearance
+     * after a short while
+     *
+     * @for AircraftModel
+     * @method beginGroundOperations
+     * @param random {function}
+     */
+    beginGroundOperations(random = Math.random) {
+        const runway = this.fms.departureRunwayModel;
+        const lengthMeters = runway && runway.length ? runway.length * 1000 : 2500;
+
+        this.ground.isManaged = true;
+        this.ensureDestination(random);
+        this.ground.taxiSeconds = taxiSecondsForRunwayLength(lengthMeters, random);
+        this.taxi_time = this.ground.taxiSeconds;
+        this.ground.clearanceRequestAt = TimeKeeper.accumulatedDeltaTime +
+            randomBetween(DEPARTURE_TIMING.CLEARANCE_REQUEST_MIN, DEPARTURE_TIMING.CLEARANCE_REQUEST_MAX, random);
+    }
+
+    /**
+     * Departures from hand-made airports have no filed destination: choose a plausible one in the direction the
+     * flight plan leaves the airspace
+     *
+     * @for AircraftModel
+     * @method ensureDestination
+     * @param random {function}
+     */
+    ensureDestination(random = Math.random) {
+        const airport = AirportController.airport_get();
+
+        if (this.destination || !airport || !airport.positionModel) {
+            return;
+        }
+
+        const { waypoints } = this.fms;
+        const exit = waypoints.length > 0 ? waypoints[waypoints.length - 1] : null;
+        const exitPosition = exit && exit.positionModel;
+        let bearing = null;
+
+        if (exitPosition && Number.isFinite(exitPosition.latitude)) {
+            bearing = initialBearingDegrees(airport.positionModel.latitude, airport.positionModel.longitude, exitPosition.latitude, exitPosition.longitude);
+        }
+
+        this.destination = pickDepartureDestination(
+            airportIndex,
+            { icao: airport.icao, latitude: airport.positionModel.latitude, longitude: airport.positionModel.longitude },
+            bearing,
+            random
+        );
+    }
+
+    /**
+     * A short description of where the aircraft is in the departure sequence, for the information panel and strips
+     *
+     * @for AircraftModel
+     * @method getGroundStatus
+     * @return {string}
+     */
+    getGroundStatus() {
+        const { ground } = this;
+
+        switch (this.flightPhase) {
+            case FLIGHT_PHASE.APRON:
+                if (ground.isPushingBack) {
+                    return 'pushing back';
+                }
+
+                if (!this.pilot.hasDepartureClearance) {
+                    return ground.clearanceRequested ? 'waiting for IFR clearance' : 'at the stand';
+                }
+
+                return ground.hasPushedBack ? 'ready to taxi' : 'at the stand, cleared';
+
+            case FLIGHT_PHASE.TAXI:
+                return ground.isHoldingPosition ? 'holding position' : 'taxiing';
+
+            case FLIGHT_PHASE.WAITING:
+                return ground.isLinedUp ? 'lined up on the runway' : 'holding short';
+
+            default:
+                return '';
+        }
+    }
+
+    /**
+     * Departure clearance has been given (by `caf`/`sid`/route amendment): the pilot's request is answered
+     *
+     * @for AircraftModel
+     * @method acknowledgeDepartureClearance
+     * @param random {function}
+     */
+    acknowledgeDepartureClearance(random = Math.random) {
+        if (this.pendingRequest && this.pendingRequest.type === DEPARTURE_CALL.CLEARANCE) {
+            this.pendingRequest = null;
+        }
+
+        this.ground.clearanceRequested = true;
+
+        if (this.flightPhase === FLIGHT_PHASE.APRON && this.ground.isManaged && !this.ground.readyForPushCalled) {
+            this.ground.readyForPushAt = TimeKeeper.accumulatedDeltaTime +
+                randomBetween(DEPARTURE_TIMING.READY_FOR_PUSH_MIN, DEPARTURE_TIMING.READY_FOR_PUSH_MAX, random);
+        }
+    }
+
+    /**
+     * Pilot-initiated calls and timers of the ground phase. Called every update.
+     *
+     * @for AircraftModel
+     * @method updateGroundOperations
+     */
+    updateGroundOperations() {
+        const { ground } = this;
+        const now = TimeKeeper.accumulatedDeltaTime;
+
+        if (!ground.isManaged || this.projected || this.isNordo) {
+            return;
+        }
+
+        if (this.flightPhase === FLIGHT_PHASE.APRON) {
+            if (ground.isPushingBack && now >= ground.pushbackUntil) {
+                ground.isPushingBack = false;
+                ground.hasPushedBack = true;
+                this.radioCall('pushback complete, engines running, ready to taxi', AIRPORT_CONTROL_POSITION_NAME.GROUND, false);
+            }
+
+            if (!ground.clearanceRequested && ground.clearanceRequestAt !== null && now >= ground.clearanceRequestAt) {
+                this._requestIfrClearance();
+            }
+
+            if (this.pilot.hasDepartureClearance && !ground.readyForPushCalled && ground.readyForPushAt !== null &&
+                now >= ground.readyForPushAt) {
+                ground.readyForPushCalled = true;
+                this.radioCall('ready for pushback and start', AIRPORT_CONTROL_POSITION_NAME.GROUND, false);
+            }
+
+            return;
+        }
+
+        if (this.flightPhase === FLIGHT_PHASE.WAITING && !ground.readyForDepartureCalled && ground.holdingPointCallAt !== null &&
+            now >= ground.holdingPointCallAt && !this.shouldTakeOffWhenRunwayIsClear) {
+            ground.readyForDepartureCalled = true;
+
+            const runway = this.fms.departureRunwayModel;
+            const clearanceNote = this.pilot.hasDepartureClearance ? '' : ', we still need our IFR clearance';
+
+            this.radioCall(
+                `holding short of runway ${runway.name}, ready for departure${clearanceNote}`,
+                AIRPORT_CONTROL_POSITION_NAME.TOWER,
+                false
+            );
+        }
+    }
+
+    /**
+     * @for AircraftModel
+     * @method _requestIfrClearance
+     * @private
+     */
+    _requestIfrClearance() {
+        const airport = AirportController.airport_get();
+
+        this.ensureDestination();
+        const entry = this.destination ? airportIndex.lookup(this.destination) : null;
+        const destination = entry ? (entry.city || entry.name) : this.destination.toUpperCase();
+        const atis = AtisController.getCurrent();
+        const information = atis ? `, information ${atis.letter.toLowerCase()}` : '';
+        const runway = this.fms.departureRunwayModel;
+        const runwayText = runway ? `, expecting runway ${runway.name}` : '';
+
+        this.ground.clearanceRequested = true;
+        this.pendingRequest = {
+            type: DEPARTURE_CALL.CLEARANCE,
+            text: `IFR clearance to ${destination}`,
+            issuedAt: TimeKeeper.accumulatedDeltaTime,
+            expiresAt: Infinity
+        };
+        this.radioCall(
+            `at the stand, request IFR clearance to ${destination}${information}${runwayText}`,
+            airport.radio ? AIRPORT_CONTROL_POSITION_NAME.DELIVERY : AIRPORT_CONTROL_POSITION_NAME.TOWER,
+            false
+        );
+    }
+
+    /**
+     * Pushback and engine start
+     *
+     * @for AircraftModel
+     * @method pushback
+     * @param random {function}
+     * @return {array} [success of operation, readback]
+     */
+    pushback(random = Math.random) {
+        if (this.flightPhase !== FLIGHT_PHASE.APRON) {
+            return [false, this.isAirborne() ? 'we are already airborne' : 'we are already away from the stand'];
+        }
+
+        if (this.ground.isPushingBack) {
+            return [false, 'we are already pushing back'];
+        }
+
+        if (this.ground.hasPushedBack) {
+            return [false, 'we have already pushed back, ready to taxi'];
+        }
+
+        this.ground.isPushingBack = true;
+        this.ground.readyForPushCalled = true;
+        this.ground.pushbackUntil = TimeKeeper.accumulatedDeltaTime +
+            randomBetween(DEPARTURE_TIMING.PUSHBACK_MIN, DEPARTURE_TIMING.PUSHBACK_MAX, random);
+
+        return [true, 'pushback and start approved'];
+    }
+
+    /**
+     * Stop where the aircraft is (taxiing), or stay where it is (holding short, lined up)
+     *
+     * @for AircraftModel
+     * @method holdPosition
+     * @return {array} [success of operation, readback]
+     */
+    holdPosition() {
+        if (this.isAirborne()) {
+            return [false, 'we are airborne'];
+        }
+
+        if (this.flightPhase === FLIGHT_PHASE.TAKEOFF) {
+            return [false, 'we are already rolling'];
+        }
+
+        if (this.flightPhase === FLIGHT_PHASE.TAXI) {
+            this.ground.isHoldingPosition = true;
+
+            return [true, 'holding position'];
+        }
+
+        if (this.flightPhase === FLIGHT_PHASE.WAITING) {
+            return [true, this.ground.isLinedUp ? 'holding position on the runway' : 'holding position'];
+        }
+
+        return [true, 'holding position at the stand'];
+    }
+
+    /**
+     * Line up and wait on the departure runway
+     *
+     * @for AircraftModel
+     * @method lineUpAndWait
+     * @return {array} [success of operation, readback]
+     */
+    lineUpAndWait() {
+        const runway = this.fms.departureRunwayModel;
+
+        if (this.isAirborne() || this.flightPhase === FLIGHT_PHASE.TAKEOFF) {
+            return [false, 'unable to line up, we are already departing'];
+        }
+
+        if (this.flightPhase === FLIGHT_PHASE.APRON) {
+            return [false, 'unable to line up, we are still at the stand'];
+        }
+
+        if (this.flightPhase === FLIGHT_PHASE.TAXI) {
+            return [false, {
+                log: `unable to line up, we are still taxiing to runway ${runway.name}`,
+                say: `unable to line up, we are still taxiing to runway ${runway.getRadioName()}`
+            }];
+        }
+
+        if (this.ground.isLinedUp) {
+            return [true, {
+                log: `we are already lined up on runway ${runway.name}`,
+                say: `we are already lined up on runway ${runway.getRadioName()}`
+            }];
+        }
+
+        if (!runway.isAircraftNextInQueue(this.id)) {
+            return [false, `unable to line up, we are number ${Math.max(1, runway.getAircraftQueuePosition(this.id)) + 1} for the runway`];
+        }
+
+        this.ground.isLinedUp = true;
+        this.ground.isHoldingPosition = false;
+
+        return [true, {
+            log: `line up and wait runway ${runway.name}`,
+            say: `line up and wait runway ${runway.getRadioName()}`
+        }];
+    }
+
+    /**
      * @for AircraftModel
      * @method callUp
      */
@@ -1455,6 +1775,15 @@ export default class AircraftModel {
         }
 
         if (this.fms.departureRunwayModel === runwayModel) {
+            if (this.flightPhase === FLIGHT_PHASE.TAXI && this.ground.isHoldingPosition) {
+                this.ground.isHoldingPosition = false;
+
+                return [true, {
+                    log: `continuing to taxi to and hold short of Runway ${runwayModel.name}`,
+                    say: `continuing to taxi to and hold short of Runway ${runwayModel.getRadioName()}`
+                }];
+            }
+
             if (this.flightPhase === FLIGHT_PHASE.WAITING) {
                 const readback = {
                     log: `we're already holding short of Runway ${runwayModel.name}`,
@@ -1474,6 +1803,14 @@ export default class AircraftModel {
             }
         }
 
+        if (this.ground.isPushingBack) {
+            return [false, 'we are still pushing back, we will call ready to taxi'];
+        }
+
+        this.ground.isHoldingPosition = false;
+        this.ground.isLinedUp = false;
+        this.ground.readyForDepartureCalled = false;
+        this.ground.holdingPointCallAt = null;
         this.setFlightPhase(FLIGHT_PHASE.TAXI);
         // remove aircraft from previous runway's queue
         this.fms.departureRunwayModel.removeAircraftFromQueue(this.id);
@@ -1482,9 +1819,11 @@ export default class AircraftModel {
 
         this.taxi_start = TimeKeeper.accumulatedDeltaTime;
 
+        const needsClearance = this.ground.isManaged && !this.pilot.hasDepartureClearance;
+        const clearanceNote = needsClearance ? ', we still need our IFR clearance' : '';
         const readback = {};
-        readback.log = `taxi to and hold short of Runway ${runwayModel.name}`;
-        readback.say = `taxi to and hold short of Runway ${radio_runway(runwayModel.name)}`;
+        readback.log = `taxi to and hold short of Runway ${runwayModel.name}${clearanceNote}`;
+        readback.say = `taxi to and hold short of Runway ${radio_runway(runwayModel.name)}${clearanceNote}`;
 
         return [true, readback];
     }
@@ -1506,6 +1845,8 @@ export default class AircraftModel {
 
         this.takeoffTime = TimeKeeper.accumulatedDeltaTime;
         runway.lastDepartedAircraftModel = this;
+        this.ground.isLinedUp = false;
+        this.ground.isHoldingPosition = false;
     }
 
     /**
@@ -1678,11 +2019,19 @@ export default class AircraftModel {
 
         switch (this.flightPhase) {
             case FLIGHT_PHASE.TAXI: {
+                if (this.ground.isHoldingPosition) {
+                    // the clock stands still while the aircraft is told to hold position
+                    this.taxi_start += TimeKeeper.getDeltaTimeForGameStateAndTimewarp();
+
+                    break;
+                }
+
                 const elapsed = TimeKeeper.accumulatedDeltaTime - this.taxi_start;
 
                 if (elapsed > this.taxi_time) {
                     this.setFlightPhase(FLIGHT_PHASE.WAITING);
                     this.moveToRunway(runwayModel);
+                    this.ground.holdingPointCallAt = TimeKeeper.accumulatedDeltaTime + DEPARTURE_TIMING.HOLDING_POINT_CALL_DELAY;
                 }
 
                 break;
@@ -2858,6 +3207,7 @@ export default class AircraftModel {
      * @method update
      */
     update() {
+        this.updateGroundOperations();
         this.updateFlightPhase();
         this.updateTarget();
         this.updatePhysics();

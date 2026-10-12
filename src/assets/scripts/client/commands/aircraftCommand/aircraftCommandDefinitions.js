@@ -105,6 +105,18 @@ const ZERO_ARG_AIRCRAFT_COMMANDS = {
         validate: zeroArgumentsValidator,
         parse: noop
     },
+    pushback: {
+        validate: zeroArgumentsValidator,
+        parse: noop
+    },
+    lineUp: {
+        validate: zeroArgumentsValidator,
+        parse: noop
+    },
+    holdPosition: {
+        validate: zeroArgumentsValidator,
+        parse: noop
+    },
     sayAltitude: {
         validate: zeroArgumentsValidator,
         parse: noop

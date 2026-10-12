@@ -94,6 +94,14 @@ ava('direct and hold only accept fixes that exist at the airport', (t) => {
     t.deepEqual(commandsFor('Speedbird one two three hold at BNN left'), [['hold BNN l']]);
 });
 
+ava('departure ground sequence: clearance, pushback, line up, hold position', (t) => {
+    t.deepEqual(commandsFor('Speedbird one two three cleared to Dublin via the Daventry two departure squawk four seven two one'), [['caf', 'sq 4721']]);
+    t.deepEqual(commandsFor('Speedbird one two three pushback and start up approved'), [['push']]);
+    t.deepEqual(commandsFor('Speedbird one two three line up and wait runway two seven right'), [['lineup']]);
+    t.deepEqual(commandsFor('Speedbird one two three hold position'), [['hp']]);
+    t.false(commandsFor('Speedbird one two three cleared to land runway two seven right').some((list) => list.includes('caf')));
+});
+
 ava('go around, takeoff, taxi, squawk and divert', (t) => {
     t.deepEqual(commandsFor('Speedbird one two three go around'), [['ga']]);
     t.deepEqual(commandsFor('Speedbird one two three runway two seven right cleared for takeoff'), [['cto']]);

@@ -208,6 +208,45 @@ export class AirportIndex {
             .slice(0, limit);
     }
 
+    /**
+     * Airports roughly in one direction from a point, at a distance a scheduled flight would cover; the largest first
+     *
+     * Used to give a departure a believable destination: flights leave on the SID that points the way they are going
+     *
+     * @for AirportIndex
+     * @method findInDirection
+     * @param latitude {number}
+     * @param longitude {number}
+     * @param bearingDegrees {number} true bearing
+     * @param options {object} `{ minimumDistanceNm, maximumDistanceNm, toleranceDegrees, minimumRunwayMeters, excludeIcao, limit }`
+     * @return {array<object>} index entries with added `distanceNm` and `bearing`
+     */
+    findInDirection(latitude, longitude, bearingDegrees, {
+        minimumDistanceNm = 120,
+        maximumDistanceNm = 1800,
+        toleranceDegrees = 50,
+        minimumRunwayMeters = 2200,
+        excludeIcao = [],
+        limit = 10
+    } = {}) {
+        const excluded = new Set([].concat(excludeIcao).map((code) => String(code).toUpperCase()));
+
+        return this._list
+            .filter((airport) => airport.iata && !excluded.has(airport.icao) && airport.rwy_m >= minimumRunwayMeters)
+            .map((airport) => ({
+                ...airport,
+                distanceNm: greatCircleDistanceNm(latitude, longitude, airport.lat, airport.lon),
+                bearing: initialBearingDegrees(latitude, longitude, airport.lat, airport.lon)
+            }))
+            .filter((airport) => {
+                const difference = Math.abs(((airport.bearing - bearingDegrees + 540) % 360) - 180);
+
+                return airport.distanceNm >= minimumDistanceNm && airport.distanceNm <= maximumDistanceNm && difference <= toleranceDegrees;
+            })
+            .sort((a, b) => (b.rwy_m + (b.type === 'large_airport' ? 5000 : 0)) - (a.rwy_m + (a.type === 'large_airport' ? 5000 : 0)))
+            .slice(0, limit);
+    }
+
     get size() {
         return this._list.length;
     }

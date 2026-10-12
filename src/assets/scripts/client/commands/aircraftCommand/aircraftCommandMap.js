@@ -239,6 +239,21 @@ export const AIRCRAFT_COMMAND_MAP = {
         functionName: 'runTakeoff',
         isSystemCommand: false
     },
+    pushback: {
+        aliases: ['push', 'pushback', 'pb'],
+        functionName: 'runPushback',
+        isSystemCommand: false
+    },
+    lineUp: {
+        aliases: ['lineup', 'lu', 'luaw', 'lineupandwait'],
+        functionName: 'runLineUp',
+        isSystemCommand: false
+    },
+    holdPosition: {
+        aliases: ['hp', 'holdposition', 'stop'],
+        functionName: 'runHoldPosition',
+        isSystemCommand: false
+    },
     taxi: {
         aliases: ['taxi', 'w', 'wait'],
         functionName: 'runTaxi',

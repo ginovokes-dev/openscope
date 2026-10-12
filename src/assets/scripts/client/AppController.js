@@ -217,6 +217,7 @@ export default class AppController {
         this.inputController = new InputController(this.$element, this.aircraftController, this.scopeModel);
         zlsa.atc.debug.input = this.inputController;
         zlsa.atc.debug.canvas = this.canvasController;
+        zlsa.atc.debug.airportIndex = airportIndex;
         this.airportInfoController = new AirportInfoController(this.$element);
         this.aircraftInfoPanel = new AircraftInfoPanel(this.$element, this.aircraftController);
         this.atisPanel = new AtisPanel(this.$element);

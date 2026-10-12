@@ -266,6 +266,10 @@ export const buildAircraftInfo = (aircraft) => {
     const hasAssignedAltitude = aircraft.mcp.altitude !== INVALID_NUMBER;
     const hasAssignedHeading = aircraft.mcp.headingMode === MCP_MODE.HEADING.HOLD;
     const runway = aircraft.isDeparture() ? aircraft.fms.departureRunwayModel : aircraft.fms.arrivalRunwayModel;
+    if (aircraft.isDeparture()) {
+        aircraft.ensureDestination();
+    }
+
     const alternateIcao = ensureAlternate(aircraft);
     let qnh = null;
 
@@ -296,6 +300,8 @@ export const buildAircraftInfo = (aircraft) => {
         runway: runway ? runway.name : '',
         phase: aircraft.flightPhase,
         phaseText: PHASE_TEXT[aircraft.flightPhase] || aircraft.flightPhase,
+        groundStatus: aircraft.getGroundStatus(),
+        isLinedUp: aircraft.ground.isLinedUp,
         isControllable: aircraft.isControllable,
         isAirborne: aircraft.isAirborne(),
         altitude: Math.round(aircraft.altitude),

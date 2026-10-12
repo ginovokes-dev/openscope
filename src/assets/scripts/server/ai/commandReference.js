@@ -64,6 +64,15 @@ const COMMANDS = [
         name: 'taxi / hold short', aliases: ['taxi', 'w'], syntax: 'taxi [runway]', say: 'taxi to and hold short of runway 27', example: 'taxi 27'
     },
     {
+        name: 'pushback', aliases: ['push', 'pb'], syntax: 'push', say: 'pushback and start up approved', example: 'push'
+    },
+    {
+        name: 'line up and wait', aliases: ['lineup', 'lu'], syntax: 'lineup', say: 'line up and wait runway 27', example: 'lineup'
+    },
+    {
+        name: 'hold position', aliases: ['hp'], syntax: 'hp', say: 'hold position', example: 'hp'
+    },
+    {
         name: 'takeoff', aliases: ['to', 'cto'], syntax: 'cto', say: 'cleared for takeoff', example: 'cto'
     },
     {

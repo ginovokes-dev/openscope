@@ -99,7 +99,27 @@ export const AIRPORT_CONTROL_POSITION_NAME = {
     * @type {string}
     * @final
     */
-    TOWER: 'twr'
+    TOWER: 'twr',
+
+    /**
+    * Provides IFR clearances before pushback
+    *
+    * @memberof AIRPORT_CONTROL_POSITION_NAME
+    * @property DELIVERY
+    * @type {string}
+    * @final
+    */
+    DELIVERY: 'del',
+
+    /**
+    * Provides pushback and taxi instructions on the surface
+    *
+    * @memberof AIRPORT_CONTROL_POSITION_NAME
+    * @property GROUND
+    * @type {string}
+    * @final
+    */
+    GROUND: 'gnd'
 };
 
 /**

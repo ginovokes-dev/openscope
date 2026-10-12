@@ -32,6 +32,7 @@ import {
     FLIGHT_CATEGORY,
     PERFORMANCE
 } from '../constants/aircraftConstants';
+import { addGroundControlPositions } from '../aircraft/departureFlow';
 import { ENVIRONMENT } from '../constants/environmentConstants';
 import { EVENT } from '../constants/eventNames';
 import { STORAGE_KEY } from '../constants/storageKeys';
@@ -367,7 +368,7 @@ export default class AirportModel {
         this.setCurrentPosition(data.position, degreesToRadians(data.magnetic_north));
 
         this.airac = _get(data, 'airac', this.airac);
-        this.radio = _get(data, 'radio', this.radio);
+        this.radio = addGroundControlPositions(_get(data, 'radio', this.radio), data.name);
         this.has_terrain = _get(data, 'has_terrain', false);
         this.ctr_radius = _get(data, 'ctr_radius', DEFAULT_CTR_RADIUS_KM);
         this.ctr_ceiling = _get(data, 'ctr_ceiling', DEFAULT_CTR_CEILING_FT);

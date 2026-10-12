@@ -157,11 +157,14 @@ export const extractCommands = (rawText, aircraft, context = {}) => {
 
     scan(/\b(?:go around|going around|missed approach|execute (?:the )?missed)\b/, () => 'ga');
     scan(/\bcleared (?:for )?(?:the )?take ?off\b|\bcleared to take ?off\b|\bcleared take ?off\b/, () => 'cto');
+    scan(/\b(?:push ?back|push and start|start ?up)(?: and start)?(?: approved)?\b(?! clearance)|\bpush ?back approved\b/, () => 'push');
+    scan(/\bline ?up(?: and wait| and hold)?\b|\bluaw\b/, () => 'lineup');
+    scan(/\bhold (?:your )?position\b|\bstop (?:there|here|where you are)\b/, () => 'hp');
     scan(new RegExp(`\\b(?:taxi|hold short)\\b[^.]*?\\brunway ${RUNWAY}\\b`), (m) => `taxi ${resolveRunway(m[1], runways)}`);
     scan(new RegExp(`\\bcleared (?:for |to )?(?:the )?(?:ils|localiser|localizer|approach)\\b[^.]*?\\brunway ${RUNWAY}\\b`), (m) => `i ${resolveRunway(m[1], runways)}`);
     scan(new RegExp(`\\b(?:ils|approach) runway ${RUNWAY}\\b`), (m) => (/\b(?:expect|vectors)\b/.test(text.slice(Math.max(0, m.index - 20), m.index)) ? null : `i ${resolveRunway(m[1], runways)}`));
     scan(new RegExp(`\\bexpect (?:the )?(?:ils )?(?:approach )?(?:to )?(?:for )?runway ${RUNWAY}\\b`), (m) => `e ${resolveRunway(m[1], runways)}`);
-    scan(/\bcleared as filed\b|\b(?:ifr|atc|departure|start ?up) clearance\b/, () => 'caf');
+    scan(/\bcleared as filed\b|\b(?:ifr|atc|departure|start ?up) clearance\b|\bcleared to (?!land\b|take ?off\b|the\b|ils\b|localiser\b|localizer\b|approach\b|cross\b|enter\b|leave\b)[a-z' ]{2,30}? (?:via|as filed)\b/, () => 'caf');
     scan(/\bclimb via (?:the )?sid\b/, () => 'cvs');
     scan(/\bdescend via (?:the )?star\b/, () => 'dvs');
     scan(/\bsquawk (\d{4})\b/, (m) => `sq ${m[1]}`);

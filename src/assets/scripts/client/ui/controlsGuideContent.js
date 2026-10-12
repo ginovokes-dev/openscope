@@ -25,12 +25,14 @@ export const CONTROLS_GUIDE_SECTIONS = [
     {
         id: 'departures',
         title: 'Departures',
-        intro: 'A departure starts on the ground with a strip showing its filed SID. Clear it and send it on its way, in this order:',
+        intro: 'A departure starts at its stand. The pilot calls for the IFR clearance, and then nothing moves until you say so. In order:',
         rows: [
-            { say: 'cleared as filed (IFR clearance)', type: 'BAW123 caf', note: 'Accepts the filed flight plan and SID. Use <code>sid NAME</code> to give a different SID.' },
-            { say: 'taxi to holding point runway two seven right', type: 'BAW123 taxi 27R', note: 'Taxi to and hold short of the runway. Check the wind in the ATIS first.' },
-            { say: 'climb via the SID', type: 'BAW123 cvs', note: 'Climb as the SID says. Without it the pilot asks for an initial altitude (<code>BAW123 c 50</code>).' },
-            { say: 'cleared for takeoff', type: 'BAW123 cto', note: 'Also numpad <kbd>/</kbd>. The aircraft rolls, departs and climbs.' },
+            { say: 'cleared to destination via the SID, squawk ...', type: 'BAW123 caf', note: 'Accepts the filed flight plan and SID; the pilot reads back destination, SID, runway, initial climb and squawk. Use <code>sid NAME</code> to give a different SID.' },
+            { say: 'pushback and start up approved', type: 'BAW123 push', note: 'Optional: the pilot pushes back and calls ready to taxi. <code>taxi</code> from the stand also pushes back.' },
+            { say: 'taxi to holding point runway two seven right', type: 'BAW123 taxi 27R', note: 'Taxi to and hold short of the runway; larger airports take longer. <code>hp</code> (hold position) stops it, <code>taxi</code> sets it going again.' },
+            { say: 'line up and wait runway two seven right', type: 'BAW123 lineup', note: 'Optional (alias <code>lu</code>): moves the aircraft onto the runway, visible on the radar, and holds there.' },
+            { say: 'cleared for takeoff', type: 'BAW123 cto', note: 'Also numpad <kbd>/</kbd>. Nothing departs without it, and nothing departs without an IFR clearance. Check the wind in the ATIS first.' },
+            { say: 'climb via the SID', type: 'BAW123 cvs', note: 'Climb as the SID says. Without it the aircraft climbs to the initial altitude it was cleared to (<code>BAW123 c 50</code> to change).' },
             { say: 'proceed direct to FIX', type: 'BAW123 pd FIX', note: 'After departure: vector (<code>fh 270</code>), climb (<code>c 100</code>) or route direct. It leaves your airspace at its exit fix.' }
         ]
     },

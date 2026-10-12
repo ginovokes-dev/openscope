@@ -743,6 +743,76 @@ ava('.taxiToRunway() returns a success message when finished', (t) => {
     t.deepEqual(model.fms.departureRunwayModel, runwayModelMock);
 });
 
+ava('.getGroundStatus() follows a departure from the stand to the runway', (t) => {
+    const model = new AircraftModel(DEPARTURE_AIRCRAFT_INIT_PROPS_MOCK);
+
+    t.is(model.getGroundStatus(), 'at the stand');
+
+    model.ground.clearanceRequested = true;
+    t.is(model.getGroundStatus(), 'waiting for IFR clearance');
+
+    model.pilot.hasDepartureClearance = true;
+    t.is(model.getGroundStatus(), 'at the stand, cleared');
+
+    t.deepEqual(model.pushback()[0], true);
+    t.is(model.getGroundStatus(), 'pushing back');
+    t.deepEqual(model.pushback(), [false, 'we are already pushing back']);
+
+    model.ground.isPushingBack = false;
+    model.ground.hasPushedBack = true;
+    t.is(model.getGroundStatus(), 'ready to taxi');
+
+    model.taxiToRunway(runwayModelMock);
+    t.is(model.getGroundStatus(), 'taxiing');
+
+    model.holdPosition();
+    t.is(model.getGroundStatus(), 'holding position');
+});
+
+ava('.holdPosition() stops the taxi clock and .taxiToRunway() sets it going again', (t) => {
+    const model = new AircraftModel(DEPARTURE_AIRCRAFT_INIT_PROPS_MOCK);
+
+    sinon.stub(TimeKeeper, 'accumulatedDeltaTime').get(() => 100);
+    sinon.stub(TimeKeeper, 'getDeltaTimeForGameStateAndTimewarp').returns(2);
+    model.taxi_time = 50;
+    model.taxiToRunway(runwayModelMock);
+
+    const start = model.taxi_start;
+
+    model.holdPosition();
+    model.updateFlightPhase();
+    model.updateFlightPhase();
+
+    t.is(model.taxi_start, start + 4);
+    t.is(model.flightPhase, FLIGHT_PHASE.TAXI);
+
+    const [success, readback] = model.taxiToRunway(runwayModelMock);
+
+    t.true(success);
+    t.is(readback.log, 'continuing to taxi to and hold short of Runway 19L');
+    t.false(model.ground.isHoldingPosition);
+    sinon.restore();
+});
+
+ava('.lineUpAndWait() needs the aircraft to be at the holding point and first in the queue', (t) => {
+    const model = new AircraftModel(DEPARTURE_AIRCRAFT_INIT_PROPS_MOCK);
+
+    runwayModelMock.queue = [];
+
+    t.false(model.lineUpAndWait()[0]);
+
+    model.taxiToRunway(runwayModelMock);
+    t.false(model.lineUpAndWait()[0]);
+
+    model.setFlightPhase(FLIGHT_PHASE.WAITING);
+
+    const [success, readback] = model.lineUpAndWait();
+
+    t.true(success);
+    t.is(readback.log, 'line up and wait runway 19L');
+    t.is(model.getGroundStatus(), 'lined up on the runway');
+});
+
 ava('._calculateCrabHeadingForGroundTrack() returns the heading to face in order for the aircraft to achieve the specified ground track angle', (t) => {
     const model = new AircraftModel(ARRIVAL_AIRCRAFT_INIT_PROPS_MOCK);
     const groundTrackMock = Math.PI / 2; // 090 heading

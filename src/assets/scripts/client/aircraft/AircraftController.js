@@ -663,6 +663,8 @@ export default class AircraftController {
             aircraftModel.shouldTakeOffWhenRunwayIsClear = true;
 
             this._runCommandOnPreSpawnAircraft(aircraftModel, runwayCommands, aircraftModel.fms.departureRunwayModel.name);
+        } else if (isDeparture) {
+            aircraftModel.beginGroundOperations();
         }
     }
 

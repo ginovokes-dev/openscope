@@ -290,7 +290,22 @@ ava('no alias is shared between two commands', t => {
     });
 });
 
-ava('make sure we test all 40 aircraft commands', t => {
+ava('aliases, noop parser and zeroArgumentsValidator used by the departure ground commands', t => {
+    const expected = {
+        pushback: ['push', 'pushback', 'pb'],
+        lineUp: ['lineup', 'lu', 'luaw', 'lineupandwait'],
+        holdPosition: ['hp', 'holdposition', 'stop']
+    };
+
+    Object.keys(expected).forEach((name) => {
+        const [parse, validate] = extractParseAndValidate(t, name);
+
+        t.true(parse === noopParse() && validate === zeroArgVal());
+        test_aliases(t, AIRCRAFT_COMMAND_MAP, name, expected[name]);
+    });
+});
+
+ava('make sure we test all 43 aircraft commands', t => {
     t.true(Object.values(AIRCRAFT_COMMAND_MAP)
-        .filter(val => !val.isSystemCommand).length === 40);
+        .filter(val => !val.isSystemCommand).length === 43);
 });
