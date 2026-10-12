@@ -2,6 +2,9 @@ import $ from 'jquery';
 import { greatCircleDistanceNm, initialBearingDegrees } from './geoMath';
 
 const INDEX_URL = 'assets/airports/airportIndex.json';
+// how much a larger airport type counts as extra runway when ranking where a flight is likely going
+const AIRPORT_TYPE_BONUS_METERS = { large_airport: 8000, medium_airport: 3000 };
+const rankAirport = (airport) => (airport.rwy_m || 0) + (AIRPORT_TYPE_BONUS_METERS[airport.type] || 0);
 const DEFAULT_FIELDS = ['icao', 'iata', 'name', 'city', 'country', 'lat', 'lon', 'elev_ft', 'rwy_m', 'type'];
 
 /**
@@ -243,7 +246,7 @@ export class AirportIndex {
 
                 return airport.distanceNm >= minimumDistanceNm && airport.distanceNm <= maximumDistanceNm && difference <= toleranceDegrees;
             })
-            .sort((a, b) => (b.rwy_m + (b.type === 'large_airport' ? 5000 : 0)) - (a.rwy_m + (a.type === 'large_airport' ? 5000 : 0)))
+            .sort((a, b) => rankAirport(b) - rankAirport(a))
             .slice(0, limit);
     }
 

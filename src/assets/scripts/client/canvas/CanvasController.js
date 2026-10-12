@@ -42,12 +42,23 @@ import {
 import { GAME_OPTION_NAMES } from '../constants/gameOptionConstants';
 import { PROCEDURE_TYPE } from '../constants/routeConstants';
 import { leftPad } from '../utilities/generalUtilities';
+import AirportLayoutController from '../ground/AirportLayoutController';
+import { groundChartState } from '../ground/groundChartState';
+import {
+    drawGroundLayout,
+    drawGroundLegend,
+    drawGroundTraffic,
+    drawTaxiRoute
+} from './groundChartDrawing';
 import {
     DECIMAL_RADIX,
     degreesToRadians,
     km,
     nm
 } from '../utilities/unitConverters';
+
+// zoom (px per km) from which the ground chart appears by itself
+const GROUND_CHART_AUTO_SCALE = 70;
 
 /**
  * @class CanvasController
@@ -124,6 +135,15 @@ export default class CanvasController {
          * @default true
          */
         this._shouldShallowRender = true;
+
+        /**
+         * 'auto' shows the ground chart when zoomed in on the airfield, 'on' forces it, 'off' hides it
+         *
+         * @for CanvasController
+         * @property _groundChartMode
+         * @type {string}
+         */
+        this._groundChartMode = 'auto';
 
         /**
          * Flag used to determine if _all_ canvases should be updated
@@ -259,6 +279,8 @@ export default class CanvasController {
         this._onDrawProceduresChangeHandler = this._onDrawProceduresChange.bind(this);
         this._onHighlightProcedureHandler = this._onHighlightProcedure.bind(this);
         this._onToggleStarMapHandler = this._onToggleStarMap.bind(this);
+        this._onToggleGroundChartHandler = this._onToggleGroundChart.bind(this);
+        this._onGroundLayoutChangeHandler = this._markDeepRender.bind(this);
         this._onAirportChangeHandler = this._onAirportChange.bind(this);
         this._onToggleTerrainHandler = this._onToggleTerrain.bind(this);
         this._onToggleVideoMapHandler = this._onToggleVideoMap.bind(this);
@@ -290,6 +312,9 @@ export default class CanvasController {
         this._eventBus.on(EVENT.HIGHLIGHT_PROCEDURE, this._onHighlightProcedureHandler);
         this._eventBus.on(EVENT.ATIS_UPDATED, this._onDrawProceduresChangeHandler);
         this._eventBus.on(EVENT.TOGGLE_STAR_MAP, this._onToggleStarMapHandler);
+        this._eventBus.on(EVENT.TOGGLE_GROUND_CHART, this._onToggleGroundChartHandler);
+        $('.js-toggle-ground').on('click', () => this._eventBus.trigger(EVENT.TOGGLE_GROUND_CHART));
+        this._eventBus.on(EVENT.GROUND_LAYOUT_CHANGE, this._onGroundLayoutChangeHandler);
         this._eventBus.on(EVENT.TOGGLE_TERRAIN, this._onToggleTerrainHandler);
         this._eventBus.on(EVENT.TOGGLE_VIDEO_MAP, this._onToggleVideoMapHandler);
         this._eventBus.on(EVENT.RANGE_RINGS_CHANGE, this._onRangeRingsChangeHandler);
@@ -318,6 +343,8 @@ export default class CanvasController {
         this._eventBus.off(EVENT.TOGGLE_RESTRICTED_AREAS, this._onToggleRestrictedAreas);
         this._eventBus.off(EVENT.TOGGLE_SID_MAP, this._onToggleSidMap);
         this._eventBus.off(EVENT.TOGGLE_STAR_MAP, this._onToggleStarMap);
+        this._eventBus.off(EVENT.TOGGLE_GROUND_CHART, this._onToggleGroundChartHandler);
+        this._eventBus.off(EVENT.GROUND_LAYOUT_CHANGE, this._onGroundLayoutChangeHandler);
         this._eventBus.off(EVENT.TOGGLE_TERRAIN, this._onToggleTerrain);
         this._eventBus.off(EVENT.TOGGLE_VIDEO_MAP, this._onToggleVideoMapHandler);
         this._eventBus.off(EVENT.RANGE_RINGS_CHANGE, this._onRangeRingsChangeHandler);
@@ -416,6 +443,8 @@ export default class CanvasController {
      * @method canvasUpdatePost
      */
     canvasUpdatePost() {
+        this._updateGroundChartVisibility();
+
         if (!this._shouldShallowRender && !TimeKeeper.shouldUpdate()) {
             return;
         }
@@ -431,6 +460,7 @@ export default class CanvasController {
             this._drawTerrain(staticCanvasCtx);
             this._drawRestrictedAirspace(staticCanvasCtx);
             this._drawNearbyAirports(staticCanvasCtx);
+            this._drawGroundChart(staticCanvasCtx);
             this._drawRunways(staticCanvasCtx);
             this._drawAirportFixesAndLabels(staticCanvasCtx);
             this._drawSids(staticCanvasCtx);
@@ -447,6 +477,7 @@ export default class CanvasController {
         this._drawSelectedAircraftCompass(dynamicCanvasCtx);
         this._drawRadarTargetList(dynamicCanvasCtx);
         this._drawAircraftDataBlocks(dynamicCanvasCtx);
+        this._drawGroundTraffic(dynamicCanvasCtx);
         this._drawMeasureTool(dynamicCanvasCtx);
 
         this._shouldShallowRender = false;
@@ -2793,6 +2824,140 @@ export default class CanvasController {
         this._shouldDrawStarMap = !this._shouldDrawStarMap;
 
         this._markDeepRender();
+    }
+
+
+    /**
+     * Is the ground chart showing? Automatic when zoomed in on the airfield, unless hidden with the toggle
+     *
+     * @for CanvasController
+     * @method isGroundChartVisible
+     * @return {boolean}
+     */
+    isGroundChartVisible() {
+        if (!AirportLayoutController.layout || this._groundChartMode === 'off') {
+            return false;
+        }
+
+        return this._groundChartMode === 'on' || CanvasStageModel.scale >= GROUND_CHART_AUTO_SCALE;
+    }
+
+    _updateGroundChartVisibility() {
+        // zooming back out ends a manual "off", so zooming in again brings the chart back
+        if (this._groundChartMode === 'off' && CanvasStageModel.scale < GROUND_CHART_AUTO_SCALE) {
+            this._groundChartMode = 'auto';
+        }
+
+        const visible = this.isGroundChartVisible();
+
+        if (visible !== groundChartState.visible) {
+            groundChartState.visible = visible;
+            $('.js-toggle-ground').toggleClass('active', visible);
+            this._markDeepRender();
+        }
+    }
+
+    /**
+     * Show or hide the ground chart. Showing it fits the whole airfield in the window.
+     *
+     * @for CanvasController
+     * @method _onToggleGroundChart
+     * @param force {boolean|undefined}
+     * @private
+     */
+    _onToggleGroundChart(force) {
+        const shouldShow = typeof force === 'boolean' ? force : !this.isGroundChartVisible();
+
+        if (shouldShow) {
+            this._groundChartMode = 'on';
+            this._focusOnAirfield();
+        } else {
+            this._groundChartMode = 'off';
+            CanvasStageModel.zoomReset();
+            CanvasStageModel.updatePan(0, 0);
+        }
+
+        this._markDeepRender();
+    }
+
+    _focusOnAirfield() {
+        const bounds = AirportLayoutController.getBounds();
+
+        if (!bounds) {
+            return;
+        }
+
+        const spanX = Math.max(0.5, bounds.maxX - bounds.minX);
+        const spanY = Math.max(0.5, bounds.maxY - bounds.minY);
+        const scale = Math.min(CanvasStageModel.width / (spanX * 1.2), CanvasStageModel.height / (spanY * 1.2));
+
+        CanvasStageModel.focusOnKilometres((bounds.minX + bounds.maxX) / 2, (bounds.minY + bounds.maxY) / 2, scale);
+    }
+
+    /**
+     * Taxiways, aprons, stands and runway surfaces of the current airport
+     *
+     * @for CanvasController
+     * @method _drawGroundChart
+     * @param cc {HTMLCanvasContext}
+     * @private
+     */
+    _drawGroundChart(cc) {
+        if (!groundChartState.visible || !AirportLayoutController.layout) {
+            return;
+        }
+
+        const toPx = (point) => CanvasStageModel.calculatePreciseCanvasPositionFromRelativePosition(point);
+        const { layout, graph, runways } = AirportLayoutController;
+
+        cc.save();
+        this._ccTranslateFromCanvasOriginToAirportCenter(cc);
+        drawGroundLayout(cc, {
+            layout,
+            runways,
+            holds: Array.from(AirportLayoutController.holdNodes.values()).map((id) => ({ point: graph.nodes[id] })),
+            standsInUse: AirportLayoutController.standsInUse,
+            scale: CanvasStageModel.scale,
+            toPx
+        });
+        cc.restore();
+        drawGroundLegend(cc, {
+            icao: AirportController.airport_get().icao,
+            source: AirportLayoutController.describeSource(),
+            height: CanvasStageModel.height
+        });
+    }
+
+    /**
+     * Aircraft on the ground, and the route the selected one has been given
+     *
+     * @for CanvasController
+     * @method _drawGroundTraffic
+     * @param cc {HTMLCanvasContext}
+     * @private
+     */
+    _drawGroundTraffic(cc) {
+        if (!groundChartState.visible) {
+            return;
+        }
+
+        const toPx = (point) => CanvasStageModel.calculatePreciseCanvasPositionFromRelativePosition(point);
+        const aircraft = this._aircraftController.aircraft.list.filter((plane) => plane.isTaxiing() &&
+            (plane.ground.isManaged || plane.flightPhase === FLIGHT_PHASE.WAITING));
+        const callsign = prop.input.callsign.toUpperCase();
+        const selected = callsign.length > 0 ? aircraft.find((plane) => plane.matchCallsign(callsign)) : null;
+
+        cc.save();
+        this._ccTranslateFromCanvasOriginToAirportCenter(cc);
+
+        if (selected && selected.ground.route) {
+            drawTaxiRoute(cc, selected.ground.route, toPx);
+        }
+
+        drawGroundTraffic(cc, {
+            aircraft, scale: CanvasStageModel.scale, toPx, selected
+        });
+        cc.restore();
     }
 
     /**

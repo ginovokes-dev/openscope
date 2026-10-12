@@ -20,7 +20,8 @@ import {
     holdValidator,
     squawkValidator,
     optionalAltitudeValidator,
-    crossingValidator
+    crossingValidator,
+    taxiValidator
 } from '../parsers/argumentValidators';
 import {
     altitudeParser,
@@ -29,7 +30,8 @@ import {
     timewarpParser,
     optionalAltitudeParser,
     crossingParser,
-    ilsParser
+    ilsParser,
+    taxiParser
 } from '../parsers/argumentParsers';
 
 /**
@@ -255,8 +257,8 @@ const SINGLE_ARG_AIRCRAFT_COMMANDS = {
  */
 const CUSTOM_ARG_AIRCRAFT_COMMANDS = {
     taxi: {
-        validate: zeroOrOneArgumentValidator,
-        parse: noop
+        validate: taxiValidator,
+        parse: taxiParser
     },
     cancelHold: {
         validate: zeroOrOneArgumentValidator,

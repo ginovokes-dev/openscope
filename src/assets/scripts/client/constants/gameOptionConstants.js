@@ -34,7 +34,8 @@ export const GAME_OPTION_NAMES = {
     FUEL_UNITS: 'fuelUnits',
     TRAFFIC_LEVEL: 'trafficLevel',
     DRAW_SIDS: 'drawSids',
-    DRAW_STARS: 'drawStars'
+    DRAW_STARS: 'drawStars',
+    GROUND_LAYOUT_SOURCE: 'groundLayoutSource'
 };
 
 /**
@@ -101,6 +102,19 @@ export const GAME_OPTION_VALUES = [
             { displayLabel: 'Medium', value: 'medium' },
             { displayLabel: 'Busy', value: 'busy' },
             { displayLabel: 'Rush hour', value: 'rush' }
+        ]
+    },
+    {
+        name: GAME_OPTION_NAMES.GROUND_LAYOUT_SOURCE,
+        group: 'Ground',
+        defaultValue: 'auto',
+        description: 'Airport ground layout',
+        help: 'Taxiways, aprons and stands. Real layouts come from OpenStreetMap when the browser is online (and are remembered); ' +
+            'otherwise, or when set to generated, a schematic layout is drawn from the runways.',
+        type: 'select',
+        optionList: [
+            { displayLabel: 'Real (OpenStreetMap), else generated', value: 'auto' },
+            { displayLabel: 'Generated schematic only', value: 'schematic' }
         ]
     },
     {

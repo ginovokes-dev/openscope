@@ -137,5 +137,9 @@ export const pickDepartureDestination = (index, origin, exitBearingDegrees, rand
         return '';
     }
 
-    return candidates[Math.floor(random() * candidates.length)].icao;
+    // airline flights go to the big airports: draw from those when there are some
+    const large = candidates.filter((airport) => airport.type === 'large_airport');
+    const pool = large.length >= 2 ? large : candidates;
+
+    return pool[Math.floor(random() * pool.length)].icao;
 };

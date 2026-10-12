@@ -771,7 +771,7 @@ export default class AircraftCommander {
             return [false, readback];
         }
 
-        return aircraftModel.taxiToRunway(runwayModel);
+        return aircraftModel.taxiToRunway(runwayModel, data.slice(1).map((ref) => String(ref).toUpperCase()));
     }
 
     /**

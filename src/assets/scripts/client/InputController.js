@@ -601,6 +601,12 @@ export default class InputController {
                 this._eventBus.trigger(EVENT.TOGGLE_PROCEDURES);
 
                 break;
+            case KEY_CODES.F9:
+            case LEGACY_KEY_CODES.F9:
+                event.preventDefault();
+                this._eventBus.trigger(EVENT.TOGGLE_GROUND_CHART);
+
+                break;
             case KEY_CODES.F8:
             case LEGACY_KEY_CODES.F8:
                 event.preventDefault();

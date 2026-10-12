@@ -256,3 +256,12 @@ export const crossingParser = (args = []) => {
 
     return [fix, altitude, speed];
 };
+
+/**
+ * `taxi 27R via A B` -> `['27R', 'A', 'B']`
+ *
+ * @function taxiParser
+ * @param args {array<string>}
+ * @return {array<string>}
+ */
+export const taxiParser = (args = []) => args.filter((arg, index) => !(index > 0 && String(arg).toLowerCase() === 'via'));

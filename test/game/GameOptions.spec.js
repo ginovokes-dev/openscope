@@ -14,6 +14,7 @@ ava('sets #_options on instantiation', (t) => {
         'theme',
         'towerController',
         'trafficLevel',
+        'groundLayoutSource',
         'drawSids',
         'drawStars',
         'controlMethod',

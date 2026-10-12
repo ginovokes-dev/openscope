@@ -106,6 +106,7 @@ ava('go around, takeoff, taxi, squawk and divert', (t) => {
     t.deepEqual(commandsFor('Speedbird one two three go around'), [['ga']]);
     t.deepEqual(commandsFor('Speedbird one two three runway two seven right cleared for takeoff'), [['cto']]);
     t.deepEqual(commandsFor('Speedbird one two three taxi to holding point runway two seven right'), [['taxi 27R']]);
+    t.deepEqual(commandsFor('Speedbird one two three taxi to holding point runway two seven right via alpha bravo'), [['taxi 27R via A B']]);
     t.deepEqual(commandsFor('Speedbird one two three squawk four five two one'), [['sq 4521']]);
     t.deepEqual(commandsFor('Speedbird one two three divert to Manchester EGCC'), [['divert EGCC']]);
 });

@@ -9,7 +9,8 @@ import {
     headingValidator,
     holdValidator,
     squawkValidator,
-    optionalAltitudeValidator
+    optionalAltitudeValidator,
+    taxiValidator
 } from '../../../src/assets/scripts/client/commands/parsers/argumentValidators';
 import {
     altitudeParser,
@@ -17,7 +18,8 @@ import {
     crossingParser,
     headingParser,
     holdParser,
-    optionalAltitudeParser
+    optionalAltitudeParser,
+    taxiParser
 } from '../../../src/assets/scripts/client/commands/parsers/argumentParsers';
 import { AIRCRAFT_COMMAND_MAP } from '../../../src/assets/scripts/client/commands/aircraftCommand/aircraftCommandMap';
 
@@ -178,10 +180,20 @@ ava('aliases, noop parser and singleArgumentValidator used by star', t => {
     self_alias(t, AIRCRAFT_COMMAND_MAP, 'star');
 });
 
-ava('aliases, noop parser and zeroOrOneArgumentValidator used by taxi', t => {
-    const [parse, validate] = extractParseAndValidate(t, 'taxi');
-    t.true(parse === noopParse() && validate === zeroOrOneArgumentVal());
+ava('aliases, taxiParser and taxiValidator used by taxi', t => {
+    const model = new AircraftCommandModel('taxi');
+
+    t.is(model._commandDefinition.parse, taxiParser);
+    t.is(model._commandDefinition.validate, taxiValidator);
     test_aliases(t, AIRCRAFT_COMMAND_MAP, 'taxi', ['taxi', 'w', 'wait']);
+});
+
+ava('taxi accepts a runway with or without taxiways and drops the word via', t => {
+    t.deepEqual(taxiParser(['27R', 'via', 'A', 'B']), ['27R', 'A', 'B']);
+    t.deepEqual(taxiParser(['27R']), ['27R']);
+    t.deepEqual(taxiParser([]), []);
+    t.is(taxiValidator(['27R', 'via', 'A']), undefined);
+    t.is(typeof taxiValidator(new Array(13).fill('A')), 'string');
 });
 
 ava('aliases, noop parser and zeroOrOneArgumentValidator used by cancelHold', t => {

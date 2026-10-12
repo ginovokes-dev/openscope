@@ -30,6 +30,7 @@ import SpawnScheduler from './trafficGenerator/SpawnScheduler';
 import UiController from './ui/UiController';
 import ScoreController from './game/ScoreController';
 import airportIndex from './geo/AirportIndex';
+import AirportLayoutController from './ground/AirportLayoutController';
 import { activateTrafficLevels } from './trafficGenerator/trafficLevel';
 import { speech_init } from './speech';
 import { EVENT } from './constants/eventNames';
@@ -186,6 +187,7 @@ export default class AppController {
         SpawnPatternCollection.init(initialAirportData);
         WeatherController.init();
         AtisController.init();
+        AirportLayoutController.init();
 
         this.airlineController = new AirlineController(airlineList);
         this.scopeModel = new ScopeModel();
@@ -218,6 +220,7 @@ export default class AppController {
         zlsa.atc.debug.input = this.inputController;
         zlsa.atc.debug.canvas = this.canvasController;
         zlsa.atc.debug.airportIndex = airportIndex;
+        zlsa.atc.debug.ground = AirportLayoutController;
         this.airportInfoController = new AirportInfoController(this.$element);
         this.aircraftInfoPanel = new AircraftInfoPanel(this.$element, this.aircraftController);
         this.atisPanel = new AtisPanel(this.$element);
@@ -254,6 +257,10 @@ export default class AppController {
                 airports: {
                     isOpen: () => UiController.isAirportSelectionDialogOpen(),
                     toggle: () => UiController.onToggleAirportList()
+                },
+                ground: {
+                    isOpen: () => this.canvasController.isGroundChartVisible(),
+                    toggle: () => this._eventBus.trigger(EVENT.TOGGLE_GROUND_CHART)
                 }
             }
         });

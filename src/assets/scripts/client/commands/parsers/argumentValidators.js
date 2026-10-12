@@ -380,3 +380,16 @@ export const crossingValidator = (args = []) => {
         }
     }
 };
+
+/**
+ * `taxi [runway] [via TWY ...]`: a runway, optionally followed by taxiways
+ *
+ * @function taxiValidator
+ * @param args {array<string>}
+ * @return {string|undefined} error message, or undefined when valid
+ */
+export const taxiValidator = (args = []) => {
+    if (args.length > 12) {
+        return 'Invalid argument length. Expected a runway and up to ten taxiways';
+    }
+};

@@ -61,7 +61,7 @@ const COMMANDS = [
         name: 'cross', aliases: ['x'], syntax: 'x [fix] a[alt] s[speed]', say: 'cross FIX at 5000 feet and 210 knots', example: 'x DET a50 s210'
     },
     {
-        name: 'taxi / hold short', aliases: ['taxi', 'w'], syntax: 'taxi [runway]', say: 'taxi to and hold short of runway 27', example: 'taxi 27'
+        name: 'taxi / hold short', aliases: ['taxi', 'w'], syntax: 'taxi [runway] [via TWY ...]', say: 'taxi to and hold short of runway 27 via alpha bravo', example: 'taxi 27 via A B'
     },
     {
         name: 'pushback', aliases: ['push', 'pb'], syntax: 'push', say: 'pushback and start up approved', example: 'push'

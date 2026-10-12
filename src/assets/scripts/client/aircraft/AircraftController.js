@@ -6,6 +6,8 @@ import _without from 'lodash/without';
 import AirlineController from '../airline/AirlineController';
 import AtisController from '../atis/AtisController';
 import { resolveEmergency } from './aircraftEmergency';
+import { groundChartState } from '../ground/groundChartState';
+import AirportLayoutController from '../ground/AirportLayoutController';
 import AirportController from '../airport/AirportController';
 import ScopeModel from '../scope/ScopeModel';
 import UiController from '../ui/UiController';
@@ -216,6 +218,7 @@ export default class AircraftController {
         this._eventBus.on(EVENT.SCROLL_TO_AIRCRAFT, this._onScrollToAircraft);
         this._eventBus.on(EVENT.REMOVE_AIRCRAFT, this._onRemoveAircraftHandler);
         this._eventBus.on(EVENT.REMOVE_AIRCRAFT_CONFLICT, this.removeConflict);
+        this._eventBus.on(EVENT.GROUND_LAYOUT_CHANGE, this._onGroundLayoutChange);
 
         return this;
     }
@@ -233,6 +236,7 @@ export default class AircraftController {
         this._eventBus.off(EVENT.SCROLL_TO_AIRCRAFT, this._onScrollToAircraft);
         this._eventBus.off(EVENT.REMOVE_AIRCRAFT, this._onRemoveAircraftHandler);
         this._eventBus.off(EVENT.REMOVE_AIRCRAFT_CONFLICT, this.removeConflict);
+        this._eventBus.off(EVENT.GROUND_LAYOUT_CHANGE, this._onGroundLayoutChange);
 
         return this;
     }
@@ -245,6 +249,15 @@ export default class AircraftController {
      * @param item {AircraftModel}
      */
     addItem = (item) => this.aircraft.list.push(item);
+
+    /**
+     * The ground layout was replaced: aircraft on the ground are re-seated on the new one
+     *
+     * @for AircraftController
+     * @method _onGroundLayoutChange
+     * @private
+     */
+    _onGroundLayoutChange = () => this.aircraft.list.forEach((aircraft) => aircraft.reseatOnGroundLayout());
 
     /**
      * Callback method fired by an interval defined in the `SpawnScheduler`.
@@ -367,7 +380,9 @@ export default class AircraftController {
             const aircraft = this.aircraft.list[i];
             const d = distance2d(aircraft.relativePosition, position);
 
-            if (d < distance && aircraft.isVisible() && !aircraft.hit) {
+            const canBeClicked = aircraft.isVisible() || (groundChartState.visible && aircraft.isTaxiing() && aircraft.ground.isManaged);
+
+            if (d < distance && canBeClicked && !aircraft.hit) {
                 distance = d;
                 nearest = i;
             }
@@ -410,6 +425,7 @@ export default class AircraftController {
      */
     aircraft_remove(aircraftModel) {
         AirportController.removeAircraftFromAllRunwayQueues(aircraftModel);
+        AirportLayoutController.releaseStand(aircraftModel.id);
         this.removeFlightNumberFromList(aircraftModel);
         this.removeAircraftModelFromList(aircraftModel);
         this._removeTransponderCodeFromUse(aircraftModel);

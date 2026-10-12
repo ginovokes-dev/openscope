@@ -353,7 +353,27 @@ export const EVENT = {
      * @property ZOOM_VIEWPORT
      * @type {string}
      */
-    ZOOM_VIEWPORT: 'zoom-viewport'
+    ZOOM_VIEWPORT: 'zoom-viewport',
+
+    /**
+     * Fired when the ground layout of the current airport changed (generated, fetched from OpenStreetMap, or loaded from cache)
+     *
+     * @memberof EVENT
+     * @property GROUND_LAYOUT_CHANGE
+     * @type {string}
+     * @final
+     */
+    GROUND_LAYOUT_CHANGE: 'ground-layout-change',
+
+    /**
+     * Fired to show or hide the ground chart
+     *
+     * @memberof EVENT
+     * @property TOGGLE_GROUND_CHART
+     * @type {string}
+     * @final
+     */
+    TOGGLE_GROUND_CHART: 'toggle-ground-chart'
 };
 
 export const AIRCRAFT_EVENT = {

@@ -29,7 +29,7 @@ export const CONTROLS_GUIDE_SECTIONS = [
         rows: [
             { say: 'cleared to destination via the SID, squawk ...', type: 'BAW123 caf', note: 'Accepts the filed flight plan and SID; the pilot reads back destination, SID, runway, initial climb and squawk. Use <code>sid NAME</code> to give a different SID.' },
             { say: 'pushback and start up approved', type: 'BAW123 push', note: 'Optional: the pilot pushes back and calls ready to taxi. <code>taxi</code> from the stand also pushes back.' },
-            { say: 'taxi to holding point runway two seven right', type: 'BAW123 taxi 27R', note: 'Taxi to and hold short of the runway; larger airports take longer. <code>hp</code> (hold position) stops it, <code>taxi</code> sets it going again.' },
+            { say: 'taxi to holding point runway two seven right', type: 'BAW123 taxi 27R', note: 'Taxi to and hold short of the runway along the taxiways (the route is drawn on the ground chart, <kbd>F9</kbd>); larger airports take longer. Name the taxiways to prefer with <code>BAW123 taxi 27R via A B</code>. <code>hp</code> (hold position) stops it, <code>taxi</code> sets it going again.' },
             { say: 'line up and wait runway two seven right', type: 'BAW123 lineup', note: 'Optional (alias <code>lu</code>): moves the aircraft onto the runway, visible on the radar, and holds there.' },
             { say: 'cleared for takeoff', type: 'BAW123 cto', note: 'Also numpad <kbd>/</kbd>. Nothing departs without it, and nothing departs without an IFR clearance. Check the wind in the ATIS first.' },
             { say: 'climb via the SID', type: 'BAW123 cvs', note: 'Climb as the SID says. Without it the aircraft climbs to the initial altitude it was cleared to (<code>BAW123 c 50</code> to change).' },
@@ -120,6 +120,8 @@ export const CONTROLS_GUIDE_SECTIONS = [
             { say: 'F3', type: '', note: 'ATIS: read, update and edit.' },
             { say: 'F4', type: '', note: 'Radio panel: type or speak to pilots.' },
             { say: 'Right Shift (hold)', type: '', note: 'Push to talk from anywhere.' },
+            { say: 'F6', type: '', note: 'SIDs and STARs: list, highlight, assign.' },
+            { say: 'F9', type: '', note: 'Ground chart: taxiways, stands and holding points. It also appears by itself when you zoom in on the airfield; zoom with the wheel, click a taxiing aircraft to select it.' },
             { say: 'F8', type: '', note: 'This guide.' },
             { say: 'Numpad / * + -', type: '', note: 'Insert takeoff, ILS, speed up and speed down.' },
             { say: '` (backquote)', type: '', note: 'Switch between aircraft commands and scope commands.' }

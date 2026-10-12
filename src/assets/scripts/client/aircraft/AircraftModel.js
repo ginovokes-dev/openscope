@@ -24,6 +24,8 @@ import {
 } from './departureFlow';
 import airportIndex from '../geo/AirportIndex';
 import { initialBearingDegrees } from '../geo/geoMath';
+import AirportLayoutController from '../ground/AirportLayoutController';
+import { pointAlongRoute } from '../ground/groundGraph';
 import AtisController from '../atis/AtisController';
 import TimeKeeper from '../engine/TimeKeeper';
 import UiController from '../ui/UiController';
@@ -556,7 +558,11 @@ export default class AircraftModel {
             readyForDepartureCalled: false,
             isLinedUp: false,
             isHoldingPosition: false,
-            taxiSeconds: 0
+            taxiSeconds: 0,
+            stand: null,
+            route: null,
+            routeDistance: 0,
+            routeSpeed: 0
         };
 
         /**
@@ -1433,10 +1439,145 @@ export default class AircraftModel {
 
         this.ground.isManaged = true;
         this.ensureDestination(random);
+        this.seatAtStand(random);
         this.ground.taxiSeconds = taxiSecondsForRunwayLength(lengthMeters, random);
         this.taxi_time = this.ground.taxiSeconds;
         this.ground.clearanceRequestAt = TimeKeeper.accumulatedDeltaTime +
             randomBetween(DEPARTURE_TIMING.CLEARANCE_REQUEST_MIN, DEPARTURE_TIMING.CLEARANCE_REQUEST_MAX, random);
+    }
+
+    /**
+     * Put the aircraft on the ground chart at a free stand
+     *
+     * @for AircraftModel
+     * @method seatAtStand
+     * @param random {function}
+     */
+    seatAtStand(random = Math.random) {
+        const stand = AirportLayoutController.assignStand(this.id, random);
+
+        this.ground.stand = stand;
+        this.ground.route = null;
+
+        if (stand) {
+            this._placeOnGround(stand.point, null);
+        }
+    }
+
+    /**
+     * @for AircraftModel
+     * @method _placeOnGround
+     * @param point {array} `[x, y]` km relative to the airport
+     * @param bearing {number|null} radians
+     * @private
+     */
+    _placeOnGround(point, bearing) {
+        const airport = AirportController.airport_get();
+
+        this.positionModel.setCoordinates(AirportLayoutController.toGps(point));
+        this.altitude = airport.elevation;
+
+        if (Number.isFinite(bearing)) {
+            this.heading = bearing;
+        }
+    }
+
+    /**
+     * The ground layout was replaced (the real one arrived): re-seat the aircraft on it
+     *
+     * @for AircraftModel
+     * @method reseatOnGroundLayout
+     */
+    reseatOnGroundLayout() {
+        if (!this.ground.isManaged) {
+            return;
+        }
+
+        const runway = this.fms.departureRunwayModel;
+
+        if (this.flightPhase === FLIGHT_PHASE.APRON) {
+            this.seatAtStand();
+
+            return;
+        }
+
+        if (this.flightPhase === FLIGHT_PHASE.TAXI && runway) {
+            this._startTaxiRoute(runway, []);
+
+            return;
+        }
+
+        if (this.flightPhase === FLIGHT_PHASE.WAITING && runway && !this.ground.isLinedUp) {
+            const hold = AirportLayoutController.getHoldPoint(runway.name);
+
+            if (hold) {
+                this._placeOnGround(hold, runway.angle);
+            }
+        }
+    }
+
+    /**
+     * Plan the taxi from where the aircraft is to the holding point, if the ground layout has one
+     *
+     * @for AircraftModel
+     * @method _startTaxiRoute
+     * @param runwayModel {RunwayModel}
+     * @param via {array<string>} taxiways to prefer
+     * @return {object|null} the route
+     * @private
+     */
+    _startTaxiRoute(runwayModel, via) {
+        const { ground } = this;
+        const atStand = this.flightPhase === FLIGHT_PHASE.APRON && ground.stand;
+        const route = AirportLayoutController.planTaxi({
+            fromPoint: this.positionModel.relativePosition,
+            fromNodeId: atStand ? ground.stand.nodeId : null,
+            runwayName: runwayModel.name,
+            preferredRefs: via
+        });
+
+        ground.route = route;
+        ground.routeDistance = 0;
+
+        if (route) {
+            const base = 0.0103; // 20 knots
+            const seconds = Math.min(420, Math.max(40, route.length / base));
+
+            ground.routeSpeed = route.length > 0 ? route.length / seconds : base;
+            this.taxi_time = Number.POSITIVE_INFINITY;
+        }
+
+        return route;
+    }
+
+    /**
+     * Move along the planned taxi route
+     *
+     * @for AircraftModel
+     * @method _advanceAlongTaxiRoute
+     * @private
+     */
+    _advanceAlongTaxiRoute() {
+        const { ground } = this;
+
+        if (ground.isHoldingPosition) {
+            return;
+        }
+
+        ground.routeDistance += ground.routeSpeed * TimeKeeper.getDeltaTimeForGameStateAndTimewarp();
+
+        const { point, bearing, finished } = pointAlongRoute(ground.route, ground.routeDistance);
+
+        this._placeOnGround(point, bearing);
+
+        if (finished) {
+            const runway = this.fms.departureRunwayModel;
+
+            ground.route = null;
+            this.setFlightPhase(FLIGHT_PHASE.WAITING);
+            this._placeOnGround(point, runway.angle);
+            ground.holdingPointCallAt = TimeKeeper.accumulatedDeltaTime + DEPARTURE_TIMING.HOLDING_POINT_CALL_DELAY;
+        }
     }
 
     /**
@@ -1699,6 +1840,7 @@ export default class AircraftModel {
 
         this.ground.isLinedUp = true;
         this.ground.isHoldingPosition = false;
+        this.moveToRunway(runway);
 
         return [true, {
             log: `line up and wait runway ${runway.name}`,
@@ -1761,7 +1903,7 @@ export default class AircraftModel {
      * @param runwayModel {RunwayModel}
      * @return {array} [success of operation, readback]
      */
-    taxiToRunway(runwayModel) {
+    taxiToRunway(runwayModel, via = []) {
         if (this.isAirborne()) {
             return [false, 'unable to taxi, we\'re already airborne'];
         }
@@ -1819,11 +1961,19 @@ export default class AircraftModel {
 
         this.taxi_start = TimeKeeper.accumulatedDeltaTime;
 
+        const route = this._startTaxiRoute(runwayModel, via);
+
+        if (route) {
+            AirportLayoutController.releaseStand(this.id);
+        }
+
+        const viaText = route && route.refs.length > 0 ? ` via ${route.refs.slice(0, 6).join(', ')}` : '';
+        const viaSpoken = route && route.refs.length > 0 ? ` via ${route.refs.slice(0, 6).map((ref) => radio_spellOut(ref)).join(', ')}` : '';
         const needsClearance = this.ground.isManaged && !this.pilot.hasDepartureClearance;
         const clearanceNote = needsClearance ? ', we still need our IFR clearance' : '';
         const readback = {};
-        readback.log = `taxi to and hold short of Runway ${runwayModel.name}${clearanceNote}`;
-        readback.say = `taxi to and hold short of Runway ${radio_runway(runwayModel.name)}${clearanceNote}`;
+        readback.log = `taxi to and hold short of Runway ${runwayModel.name}${viaText}${clearanceNote}`;
+        readback.say = `taxi to and hold short of Runway ${radio_runway(runwayModel.name)}${viaSpoken}${clearanceNote}`;
 
         return [true, readback];
     }
@@ -1836,6 +1986,10 @@ export default class AircraftModel {
      * @param runway {RunwayModel} the runway taking off on
      */
     takeoff(runway) {
+        if (this.ground.isManaged) {
+            this.moveToRunway(runway);
+        }
+
         const cruiseSpeed = this.model.speed.cruise;
         const initialAltitude = this.fms.getInitialClimbClearance();
 
@@ -2019,6 +2173,12 @@ export default class AircraftModel {
 
         switch (this.flightPhase) {
             case FLIGHT_PHASE.TAXI: {
+                if (this.ground.route) {
+                    this._advanceAlongTaxiRoute();
+
+                    break;
+                }
+
                 if (this.ground.isHoldingPosition) {
                     // the clock stands still while the aircraft is told to hold position
                     this.taxi_start += TimeKeeper.getDeltaTimeForGameStateAndTimewarp();

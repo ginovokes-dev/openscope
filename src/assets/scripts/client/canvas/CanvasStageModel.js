@@ -327,6 +327,25 @@ class CanvasStageModel {
     }
 
     /**
+     * Zoom to `scale` (px per km) with the point `[xKm, yKm]` (relative to the airport) in the middle of the view
+     *
+     * @for CanvasStageModel
+     * @method focusOnKilometres
+     * @param xKm {number}
+     * @param yKm {number}
+     * @param scale {number}
+     */
+    focusOnKilometres(xKm, yKm, scale) {
+        this._scale = Math.max(this._scaleMin, Math.min(this._scaleMax, scale));
+        this._storeZoomLevel();
+        this._panX = round(-xKm * this._scale);
+        this._panY = round(yKm * this._scale);
+
+        this._eventBus.trigger(EVENT.ZOOM_VIEWPORT);
+        this._eventBus.trigger(EVENT.PAN_VIEWPORT);
+    }
+
+    /**
      * @for CanvasStageModel
      * @method zoomIn
      */

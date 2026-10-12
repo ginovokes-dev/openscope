@@ -53,7 +53,7 @@ export const SCALE = {
     CHANGE_FACTOR: 0.9,
     DEFAULT: 8,
     MIN: 1,
-    MAX: 120
+    MAX: 3000
 };
 
 /**

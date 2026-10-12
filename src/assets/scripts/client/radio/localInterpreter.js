@@ -1,3 +1,4 @@
+import { parseTaxiwayRefs } from './taxiwayRefs';
 import { normalizeTranscript } from './spokenNumbers';
 import { parseAppActions } from './appActions';
 import { repairTranscript } from './transcriptRepair';
@@ -160,7 +161,13 @@ export const extractCommands = (rawText, aircraft, context = {}) => {
     scan(/\b(?:push ?back|push and start|start ?up)(?: and start)?(?: approved)?\b(?! clearance)|\bpush ?back approved\b/, () => 'push');
     scan(/\bline ?up(?: and wait| and hold)?\b|\bluaw\b/, () => 'lineup');
     scan(/\bhold (?:your )?position\b|\bstop (?:there|here|where you are)\b/, () => 'hp');
-    scan(new RegExp(`\\b(?:taxi|hold short)\\b[^.]*?\\brunway ${RUNWAY}\\b`), (m) => `taxi ${resolveRunway(m[1], runways)}`);
+    scan(new RegExp(`\\b(?:taxi|hold short)\\b[^.]*?\\brunway ${RUNWAY}\\b`), (m) => {
+        const after = text.slice(m.index + m[0].length);
+        const viaMatch = /^\s*,?\s*(?:via|along|using)\s+(.+)$/.exec(after);
+        const refs = viaMatch ? parseTaxiwayRefs(viaMatch[1]) : [];
+
+        return [`taxi ${resolveRunway(m[1], runways)}`, ...(refs.length > 0 ? ['via', ...refs] : [])].join(' ');
+    });
     scan(new RegExp(`\\bcleared (?:for |to )?(?:the )?(?:ils|localiser|localizer|approach)\\b[^.]*?\\brunway ${RUNWAY}\\b`), (m) => `i ${resolveRunway(m[1], runways)}`);
     scan(new RegExp(`\\b(?:ils|approach) runway ${RUNWAY}\\b`), (m) => (/\b(?:expect|vectors)\b/.test(text.slice(Math.max(0, m.index - 20), m.index)) ? null : `i ${resolveRunway(m[1], runways)}`));
     scan(new RegExp(`\\bexpect (?:the )?(?:ils )?(?:approach )?(?:to )?(?:for )?runway ${RUNWAY}\\b`), (m) => `e ${resolveRunway(m[1], runways)}`);
