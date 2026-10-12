@@ -1,0 +1,90 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ZSLG/",
+    "info": {"country":"CN","city":"Lianyungang","type":"large_airport","longestRunwayM":2800,"approximateRunways":true},
+    "radio": {"twr":"Lianyungang Tower","app":"Lianyungang Approach","dep":"Lianyungang Departure"},
+    "icao": "ZSLG",
+    "iata": "LYG",
+    "magnetic_north": -6.9,
+    "ctr_radius": 45,
+    "ctr_ceiling": 7000,
+    "initial_alt": 3000,
+    "position": [34.41406,119.17899,"0ft"],
+    "rangeRings": {"enabled":true,"center":[34.41406,119.17899],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":220,"speed":7},
+    "arrivalRunway": "21",
+    "departureRunway": "21",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":70,"airspace_class":"D","poly":[[34.8158,119.1201],[34.8147,119.2481],[34.7863,119.3715],[34.7325,119.4817],[34.657,119.5713],[34.565,119.6341],[34.4627,119.666],[34.357,119.6647],[34.2553,119.6302],[34.1643,119.565],[34.0904,119.4735],[34.0386,119.362],[34.0123,119.2379],[34.0134,119.1099],[34.0418,118.9865],[34.0956,118.8763],[34.1711,118.7867],[34.2631,118.7238],[34.3654,118.692],[34.4711,118.6933],[34.5728,118.7278],[34.6638,118.793],[34.7377,118.8845],[34.7896,118.996]]}
+    ],
+    "fixes": {
+        "ZSLG": [34.41406,119.17899],
+        "SOCIL": [34.91327,119.42193],
+        "ALOHE": [34.59954,119.26925],
+        "NENOT": [33.93069,119.46515],
+        "KINER": [34.23447,119.28531],
+        "NICUF": [33.95873,118.83177],
+        "NECHI": [34.24489,119.04998],
+        "PIX": [34.315,117.98,"pixian"],
+        "APEZI": [34.39414,118.93793],
+        "PIWOP": [34.92215,118.96479],
+        "MEBIR": [34.60283,119.09941],
+        "_RWY0304DME": [34.34119,119.14135],
+        "_RWY2104DME": [34.48692,119.21669]
+    },
+    "runways": [
+        {"name":["03","21"],"end":[[34.40248,119.173,"0ft"],[34.42564,119.18498,"0ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "SOCIL1D": {"icao":"SOCIL1D","name":"Socil One Delta","rwy":{"ZSLG03":["_RWY2104DME"],"ZSLG21":["_RWY0304DME"]},"body":[],"exitPoints":{"SOCIL":["SOCIL"]},"draw":[["ZSLG","SOCIL*"]]},
+        "NENOT2A": {"icao":"NENOT2A","name":"Nenot Two Alpha","rwy":{"ZSLG03":["_RWY2104DME"],"ZSLG21":["_RWY0304DME"]},"body":[],"exitPoints":{"NENOT":["NENOT"]},"draw":[["ZSLG","NENOT*"]]},
+        "NICUF3A": {"icao":"NICUF3A","name":"Nicuf Three Alpha","rwy":{"ZSLG03":["_RWY2104DME"],"ZSLG21":["_RWY0304DME"]},"body":[],"exitPoints":{"NICUF":["NICUF"]},"draw":[["ZSLG","NICUF*"]]},
+        "PIX3F": {"icao":"PIX3F","name":"Pixian Three Foxtrot","rwy":{"ZSLG03":["_RWY2104DME"],"ZSLG21":["_RWY0304DME"]},"body":[],"exitPoints":{"PIX":["PIX"]},"draw":[["ZSLG","PIX*"]]},
+        "PIWOP3A": {"icao":"PIWOP3A","name":"Piwop Three Alpha","rwy":{"ZSLG03":["_RWY2104DME"],"ZSLG21":["_RWY0304DME"]},"body":[],"exitPoints":{"PIWOP":["PIWOP"]},"draw":[["ZSLG","PIWOP*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ZSLG","destination":"ZGGG","category":"departure","route":"ZSLG21.NICUF3A.NICUF","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["csn/a320",1],["csn/b738",1]]},
+        {"origin":"ZSLG","destination":"ZSSS","category":"departure","route":"ZSLG21.NENOT2A.NENOT","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["csh/b737",1],["csh/b738",1]]},
+        {"origin":"ZSLG","destination":"ZSXZ","category":"departure","route":"ZSLG21.PIX3F.PIX","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["csn/a320",1],["csn/b738",1]]},
+        {"origin":"ZSLG","destination":"VHHH","category":"departure","route":"ZSLG21.NICUF3A.NICUF","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["ces/a320",1]]},
+        {"origin":"ZSLG","destination":"ZBAA","category":"departure","route":"ZSLG21.PIWOP3A.PIWOP","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["ces/a319",1]]},
+        {"origin":"ZSLG","destination":"","category":"departure","route":"ZSLG21.SOCIL1D.SOCIL","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["ces/e120",1]]},
+        {"origin":"ZSLG","destination":"","category":"departure","route":"ZSLG21.NENOT2A.NENOT","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["ces/e120",1],["csn/a320",1]]},
+        {"origin":"ZSLG","destination":"","category":"departure","route":"ZSLG21.NICUF3A.NICUF","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["ces/e120",1]]},
+        {"origin":"ZSLG","destination":"","category":"departure","route":"ZSLG21.NENOT2A.NENOT","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",1],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
+        {"origin":"ZGGG","destination":"ZSLG","category":"arrival","route":"NICUF..NECHI..ZSLG","altitude":[3000,6000],"speed":250,"method":"random","rate":0.72,"airlines":[["csn/a320",1],["csn/b738",1]]},
+        {"origin":"ZSSS","destination":"ZSLG","category":"arrival","route":"NENOT..KINER..ZSLG","altitude":[3000,6000],"speed":250,"method":"random","rate":0.72,"airlines":[["csh/b737",1],["csh/b738",1]]},
+        {"origin":"ZSXZ","destination":"ZSLG","category":"arrival","route":"PIX..APEZI..ZSLG","altitude":[3000,6000],"speed":250,"method":"random","rate":0.72,"airlines":[["csn/a320",1],["csn/b738",1]]},
+        {"origin":"VHHH","destination":"ZSLG","category":"arrival","route":"NICUF..NECHI..ZSLG","altitude":[3000,6000],"speed":250,"method":"random","rate":0.36,"airlines":[["ces/a320",1]]},
+        {"origin":"ZBAA","destination":"ZSLG","category":"arrival","route":"PIWOP..MEBIR..ZSLG","altitude":[3000,6000],"speed":250,"method":"random","rate":0.36,"airlines":[["ces/a319",1]]},
+        {"origin":"","destination":"ZSLG","category":"arrival","route":"SOCIL..ALOHE..ZSLG","altitude":[3000,6000],"speed":250,"method":"random","rate":0.36,"airlines":[["ces/e120",1]]},
+        {"origin":"","destination":"ZSLG","category":"arrival","route":"NENOT..KINER..ZSLG","altitude":[3000,6000],"speed":250,"method":"random","rate":0.72,"airlines":[["ces/e120",1],["csn/a320",1]]},
+        {"origin":"","destination":"ZSLG","category":"arrival","route":"NICUF..NECHI..ZSLG","altitude":[3000,6000],"speed":250,"method":"random","rate":0.36,"airlines":[["ces/e120",1]]},
+        {"origin":"","destination":"ZSLG","category":"arrival","route":"NENOT..KINER..ZSLG","altitude":[3000,6000],"speed":250,"method":"random","rate":1.45,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",1],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [34.9133,119.4219,34.5995,119.2693],
+            [34.5995,119.2693,34.4141,119.179],
+            [33.9307,119.4651,34.2345,119.2853],
+            [34.2345,119.2853,34.4141,119.179],
+            [33.9587,118.8318,34.2449,119.05],
+            [34.2449,119.05,34.4141,119.179],
+            [34.315,117.98,34.3941,118.9379],
+            [34.3941,118.9379,34.4141,119.179],
+            [34.9221,118.9648,34.6028,119.0994],
+            [34.6028,119.0994,34.4141,119.179]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [34.4025,119.173,34.2492,119.094],
+            [34.3219,119.1446,34.3298,119.1223],
+            [34.2453,119.1051,34.2532,119.0828],
+            [34.4256,119.185,34.5788,119.2643],
+            [34.5062,119.2135,34.4983,119.2358],
+            [34.5827,119.2532,34.5749,119.2755]
+        ]}
+    ]
+}

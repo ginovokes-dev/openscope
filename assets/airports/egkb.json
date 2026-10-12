@@ -1,0 +1,74 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGKB/",
+    "info": {"country":"GB","city":"London","type":"medium_airport","longestRunwayM":1806,"frequencies":{"atis":"135.680","twr":"134.805","app":"129.405","gnd":"121.630"}},
+    "radio": {"twr":"Biggin Hill Tower","app":"Biggin Hill Approach","dep":"Biggin Hill Radar"},
+    "icao": "EGKB",
+    "iata": "BQH",
+    "magnetic_north": 1.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [51.330799,0.0325,"598ft"],
+    "rangeRings": {"enabled":true,"center":[51.330799,0.0325],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":220,"speed":12},
+    "arrivalRunway": "21",
+    "departureRunway": "21",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[51.7354,0.0449],[51.7196,0.2121],[51.6773,0.3671],[51.6114,0.4992],[51.5264,0.5995],[51.428,0.6612],[51.323,0.6801],[51.2186,0.6548],[51.1218,0.5871],[51.0392,0.4816],[50.9765,0.3455],[50.938,0.1881],[50.9262,0.0201],[50.942,-0.1471],[50.9843,-0.3021],[51.0502,-0.4342],[51.1352,-0.5345],[51.2336,-0.5962],[51.3386,-0.6151],[51.443,-0.5898],[51.5398,-0.5221],[51.6224,-0.4166],[51.6851,-0.2805],[51.7236,-0.1231]]}
+    ],
+    "fixes": {
+        "EGKB": [51.3308,0.0325],
+        "CLN": [51.8484,1.14761,"clacton"],
+        "HUFNU": [51.44999,0.28927],
+        "SFD": [50.7606,0.12194,"seaford"],
+        "MEWAP": [51.13189,0.0637],
+        "MID": [51.0539,-0.625,"midhurst"],
+        "DOGIC": [51.21909,-0.23275],
+        "CFD": [52.0742,-0.61079,"cranfield"],
+        "NOFID": [51.50661,-0.11964],
+        "_RWY0304DME": [51.2652,-0.01655],
+        "_RWY2104DME": [51.39865,0.08325]
+    },
+    "runways": [
+        {"name":["03","21"],"end":[[51.32556,0.02852,"577ft"],[51.3383,0.03805,"517ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "CLN1A": {"icao":"CLN1A","name":"Clacton One Alpha","rwy":{"EGKB03":["_RWY2104DME"],"EGKB21":["_RWY0304DME"]},"body":[],"exitPoints":{"CLN":["CLN"]},"draw":[["EGKB","CLN*"]]},
+        "SFD3F": {"icao":"SFD3F","name":"Seaford Three Foxtrot","rwy":{"EGKB03":["_RWY2104DME"],"EGKB21":["_RWY0304DME"]},"body":[],"exitPoints":{"SFD":["SFD"]},"draw":[["EGKB","SFD*"]]},
+        "MID3A": {"icao":"MID3A","name":"Midhurst Three Alpha","rwy":{"EGKB03":["_RWY2104DME"],"EGKB21":["_RWY0304DME"]},"body":[],"exitPoints":{"MID":["MID"]},"draw":[["EGKB","MID*"]]},
+        "CFD3E": {"icao":"CFD3E","name":"Cranfield Three Echo","rwy":{"EGKB03":["_RWY2104DME"],"EGKB21":["_RWY0304DME"]},"body":[],"exitPoints":{"CFD":["CFD"]},"draw":[["EGKB","CFD*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGKB","destination":"","category":"departure","route":"EGKB21.CLN1A.CLN","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
+        {"origin":"EGKB","destination":"","category":"departure","route":"EGKB21.SFD3F.SFD","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
+        {"origin":"EGKB","destination":"","category":"departure","route":"EGKB21.MID3A.MID","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
+        {"origin":"EGKB","destination":"","category":"departure","route":"EGKB21.CFD3E.CFD","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
+        {"origin":"EGKB","destination":"","category":"departure","route":"EGKB21.MID3A.MID","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]},
+        {"origin":"","destination":"EGKB","category":"arrival","route":"CLN..HUFNU..EGKB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
+        {"origin":"","destination":"EGKB","category":"arrival","route":"SFD..MEWAP..EGKB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
+        {"origin":"","destination":"EGKB","category":"arrival","route":"MID..DOGIC..EGKB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
+        {"origin":"","destination":"EGKB","category":"arrival","route":"CFD..NOFID..EGKB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
+        {"origin":"","destination":"EGKB","category":"arrival","route":"MID..DOGIC..EGKB","altitude":[4000,7000],"speed":250,"method":"random","rate":1.13,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [51.8484,1.1476,51.45,0.2893],
+            [51.45,0.2893,51.3308,0.0325],
+            [50.7606,0.1219,51.1319,0.0637],
+            [51.1319,0.0637,51.3308,0.0325],
+            [51.0539,-0.625,51.2191,-0.2327],
+            [51.2191,-0.2327,51.3308,0.0325],
+            [52.0742,-0.6108,51.5066,-0.1196],
+            [51.5066,-0.1196,51.3308,0.0325]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [51.3383,0.0381,51.4891,0.1513],
+            [51.418,0.0801,51.4095,0.1091],
+            [51.4934,0.1367,51.4849,0.1658]
+        ]}
+    ]
+}

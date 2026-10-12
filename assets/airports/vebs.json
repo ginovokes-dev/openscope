@@ -1,0 +1,92 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VEBS/",
+    "info": {"country":"IN","city":"Bhubaneswar","type":"large_airport","longestRunwayM":2744,"frequencies":{"atis":"126.800","twr":"125.150","app":"123.500"}},
+    "radio": {"twr":"Biju Patnaik Tower","app":"Biju Patnaik Approach","dep":"Biju Patnaik Departure"},
+    "icao": "VEBS",
+    "iata": "BBI",
+    "magnetic_north": -0.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [20.251021,85.814747,"138ft"],
+    "rangeRings": {"enabled":true,"center":[20.251021,85.814747],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":130,"speed":11},
+    "arrivalRunway": "14",
+    "departureRunway": "14",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[20.6557,85.8117],[20.6426,85.9235],[20.6029,86.0278],[20.5392,86.1176],[20.4558,86.1868],[20.3585,86.2306],[20.2538,86.2461],[20.149,86.2322],[20.0511,86.1898],[19.9669,86.1219],[19.902,86.033],[19.8609,85.9293],[19.8463,85.8178],[19.8594,85.706],[19.8991,85.6017],[19.9629,85.5119],[20.0462,85.4427],[20.1436,85.3989],[20.2482,85.3834],[20.353,85.3973],[20.4509,85.4397],[20.5352,85.5076],[20.6001,85.5965],[20.6412,85.7002]]}
+    ],
+    "fixes": {
+        "VEBS": [20.25102,85.81475],
+        "ADATA": [20.63083,86.2208],
+        "TUHAG": [20.39213,85.96561],
+        "OKAMU": [19.83111,86.17313],
+        "URUJO": [20.09501,85.9479],
+        "EBOLA": [19.93208,85.35302],
+        "UPECE": [20.13252,85.6432],
+        "APEGE": [20.65086,85.43117],
+        "ONORI": [20.39958,85.67223],
+        "_RWY1404DME": [20.31097,85.76587],
+        "_RWY3204DME": [20.18712,85.8624],
+        "_RWY0504DME": [20.19885,85.75738],
+        "_RWY2304DME": [20.28974,85.87815]
+    },
+    "runways": [
+        {"name":["14","32"],"end":[[20.2572,85.8078,"115ft"],[20.2409,85.8205,"122ft"]],"ils":[true,true]},
+        {"name":["05","23"],"end":[[20.24054,85.81276,"113ft"],[20.24806,85.82274,"139ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ADATA3A": {"icao":"ADATA3A","name":"Adata Three Alpha","rwy":{"VEBS14":["_RWY3204DME"],"VEBS32":["_RWY1404DME"],"VEBS05":["_RWY2304DME"],"VEBS23":["_RWY0504DME"]},"body":[],"exitPoints":{"ADATA":["ADATA"]},"draw":[["VEBS","ADATA*"]]},
+        "OKAMU1A": {"icao":"OKAMU1A","name":"Okamu One Alpha","rwy":{"VEBS14":["_RWY3204DME"],"VEBS32":["_RWY1404DME"],"VEBS05":["_RWY2304DME"],"VEBS23":["_RWY0504DME"]},"body":[],"exitPoints":{"OKAMU":["OKAMU"]},"draw":[["VEBS","OKAMU*"]]},
+        "EBOLA3E": {"icao":"EBOLA3E","name":"Ebola Three Echo","rwy":{"VEBS14":["_RWY3204DME"],"VEBS32":["_RWY1404DME"],"VEBS05":["_RWY2304DME"],"VEBS23":["_RWY0504DME"]},"body":[],"exitPoints":{"EBOLA":["EBOLA"]},"draw":[["VEBS","EBOLA*"]]},
+        "APEGE3D": {"icao":"APEGE3D","name":"Apege Three Delta","rwy":{"VEBS14":["_RWY3204DME"],"VEBS32":["_RWY1404DME"],"VEBS05":["_RWY2304DME"],"VEBS23":["_RWY0504DME"]},"body":[],"exitPoints":{"APEGE":["APEGE"]},"draw":[["VEBS","APEGE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"VEBS","destination":"VIDP","category":"departure","route":"VEBS14.APEGE3D.APEGE","altitude":"","speed":"","method":"random","rate":1.44,"airlines":[["aic/a319",1],["aic/a320",1],["aic/crj7",1],["igo/a320",1]]},
+        {"origin":"VEBS","destination":"VABB","category":"departure","route":"VEBS14.EBOLA3E.EBOLA","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["aic/a319",1],["igo/a320",1]]},
+        {"origin":"VEBS","destination":"VECC","category":"departure","route":"VEBS14.ADATA3A.ADATA","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["igo/a320",1]]},
+        {"origin":"VEBS","destination":"VOBL","category":"departure","route":"VEBS14.EBOLA3E.EBOLA","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["igo/a320",1]]},
+        {"origin":"VEBS","destination":"VOHS","category":"departure","route":"VEBS14.EBOLA3E.EBOLA","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["igo/a320",1]]},
+        {"origin":"VEBS","destination":"","category":"departure","route":"VEBS14.OKAMU1A.OKAMU","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["aic/crj7",1]]},
+        {"origin":"VEBS","destination":"","category":"departure","route":"VEBS14.EBOLA3E.EBOLA","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["igo/a320",1]]},
+        {"origin":"VEBS","destination":"","category":"departure","route":"VEBS14.APEGE3D.APEGE","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"VIDP","destination":"VEBS","category":"arrival","route":"APEGE..ONORI..VEBS","altitude":[4000,7000],"speed":250,"method":"random","rate":1.44,"airlines":[["aic/a319",1],["aic/a320",1],["aic/crj7",1],["igo/a320",1]]},
+        {"origin":"VABB","destination":"VEBS","category":"arrival","route":"EBOLA..UPECE..VEBS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["aic/a319",1],["igo/a320",1]]},
+        {"origin":"VECC","destination":"VEBS","category":"arrival","route":"ADATA..TUHAG..VEBS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["igo/a320",1]]},
+        {"origin":"VOBL","destination":"VEBS","category":"arrival","route":"EBOLA..UPECE..VEBS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["igo/a320",1]]},
+        {"origin":"VOHS","destination":"VEBS","category":"arrival","route":"EBOLA..UPECE..VEBS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["igo/a320",1]]},
+        {"origin":"","destination":"VEBS","category":"arrival","route":"OKAMU..URUJO..VEBS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["aic/crj7",1]]},
+        {"origin":"","destination":"VEBS","category":"arrival","route":"EBOLA..UPECE..VEBS","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["igo/a320",1]]},
+        {"origin":"","destination":"VEBS","category":"arrival","route":"APEGE..ONORI..VEBS","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [20.6308,86.2208,20.3921,85.9656],
+            [20.3921,85.9656,20.251,85.8147],
+            [19.8311,86.1731,20.095,85.9479],
+            [20.095,85.9479,20.251,85.8147],
+            [19.9321,85.353,20.1325,85.6432],
+            [20.1325,85.6432,20.251,85.8147],
+            [20.6509,85.4312,20.3996,85.6722],
+            [20.3996,85.6722,20.251,85.8147]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [20.2572,85.8078,20.3916,85.7029],
+            [20.3185,85.7468,20.3303,85.764],
+            [20.3857,85.6943,20.3975,85.7115],
+            [20.2409,85.8205,20.1064,85.9252],
+            [20.1796,85.8815,20.1678,85.8643],
+            [20.1123,85.9338,20.1005,85.9166],
+            [20.2405,85.8128,20.1363,85.6744],
+            [20.1806,85.7502,20.1962,85.7369],
+            [20.1285,85.681,20.1441,85.6677],
+            [20.2481,85.8227,20.3522,85.9613],
+            [20.3079,85.8853,20.2924,85.8987],
+            [20.36,85.9546,20.3444,85.968]
+        ]}
+    ]
+}

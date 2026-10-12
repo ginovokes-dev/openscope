@@ -1,0 +1,87 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KISP/",
+    "info": {"country":"US","city":"Islip","type":"medium_airport","longestRunwayM":2135,"frequencies":{"atis":"120.725","twr":"119.300","gnd":"135.300"}},
+    "radio": {"twr":"Islip Tower","app":"Islip Approach","dep":"Islip Departure"},
+    "icao": "KISP",
+    "iata": "ISP",
+    "magnetic_north": -12.9,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [40.796324,-73.101703,"99ft"],
+    "rangeRings": {"enabled":true,"center":[40.796324,-73.101703],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":250,"speed":12},
+    "arrivalRunway": "24",
+    "departureRunway": "24",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[41.1908,-73.221],[41.2007,-73.0821],[41.1831,-72.9445],[41.1391,-72.8176],[41.0718,-72.7101],[40.9857,-72.6293],[40.8867,-72.5806],[40.7815,-72.5675],[40.6773,-72.5908],[40.5813,-72.6489],[40.4999,-72.7378],[40.4387,-72.8516],[40.4018,-72.9824],[40.3919,-73.1213],[40.4095,-73.2589],[40.4535,-73.3858],[40.5208,-73.4933],[40.607,-73.5741],[40.706,-73.6228],[40.8112,-73.6359],[40.9153,-73.6126],[41.0114,-73.5546],[41.0928,-73.4656],[41.154,-73.3518]]}
+    ],
+    "fixes": {
+        "KISP": [40.79632,-73.1017],
+        "MAD": [41.3138,-72.6922,"madison"],
+        "BIJZO": [40.96778,-72.96602],
+        "JADUK": [40.47178,-72.53501],
+        "CUZJA": [40.67574,-72.89115],
+        "SIKUF": [40.32996,-73.45587],
+        "NIZRU": [40.62305,-73.23329],
+        "CMK": [41.2801,-73.5814,"carmel"],
+        "BUNHE": [40.95617,-73.2602],
+        "_RWY0604DME": [40.74126,-73.17428],
+        "_RWY2404DME": [40.84951,-73.03261],
+        "_RWY15R04DME": [40.84931,-73.16955],
+        "_RWY33L04DME": [40.74505,-73.03195],
+        "_RWY15L04DME": [40.84598,-73.16081],
+        "_RWY33R04DME": [40.74588,-73.02798]
+    },
+    "runways": [
+        {"name":["06","24"],"end":[[40.7886,-73.1124,"92ft"],[40.8022,-73.0946,"99ft"]],"ils":[true,true]},
+        {"name":["15R","33L"],"end":[[40.8022,-73.1073,"99ft"],[40.7922,-73.0941,"79ft"]],"ils":[false,false]},
+        {"name":["15L","33R"],"end":[[40.799,-73.0984,"91ft"],[40.7929,-73.0903,"81ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "MAD2D": {"icao":"MAD2D","name":"Madison Two Delta","rwy":{"KISP06":["_RWY2404DME"],"KISP24":["_RWY0604DME"],"KISP15R":["_RWY33L04DME"],"KISP33L":["_RWY15R04DME"],"KISP15L":["_RWY33R04DME"],"KISP33R":["_RWY15L04DME"]},"body":[],"exitPoints":{"MAD":["MAD"]},"draw":[["KISP","MAD*"]]},
+        "JADUK1C": {"icao":"JADUK1C","name":"Jaduk One Charlie","rwy":{"KISP06":["_RWY2404DME"],"KISP24":["_RWY0604DME"],"KISP15R":["_RWY33L04DME"],"KISP33L":["_RWY15R04DME"],"KISP15L":["_RWY33R04DME"],"KISP33R":["_RWY15L04DME"]},"body":[],"exitPoints":{"JADUK":["JADUK"]},"draw":[["KISP","JADUK*"]]},
+        "SIKUF3E": {"icao":"SIKUF3E","name":"Sikuf Three Echo","rwy":{"KISP06":["_RWY2404DME"],"KISP24":["_RWY0604DME"],"KISP15R":["_RWY33L04DME"],"KISP33L":["_RWY15R04DME"],"KISP15L":["_RWY33R04DME"],"KISP33R":["_RWY15L04DME"]},"body":[],"exitPoints":{"SIKUF":["SIKUF"]},"draw":[["KISP","SIKUF*"]]},
+        "CMK3F": {"icao":"CMK3F","name":"Carmel Three Foxtrot","rwy":{"KISP06":["_RWY2404DME"],"KISP24":["_RWY0604DME"],"KISP15R":["_RWY33L04DME"],"KISP33L":["_RWY15R04DME"],"KISP15L":["_RWY33R04DME"],"KISP33R":["_RWY15L04DME"]},"body":[],"exitPoints":{"CMK":["CMK"]},"draw":[["KISP","CMK*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KISP","destination":"KBOS","category":"departure","route":"KISP24.MAD2D.MAD","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["asa/sf34",1]]},
+        {"origin":"KISP","destination":"KBWI","category":"departure","route":"KISP24.SIKUF3E.SIKUF","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["swa/b737",1]]},
+        {"origin":"KISP","destination":"KFLL","category":"departure","route":"KISP24.SIKUF3E.SIKUF","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["swa/b737",1]]},
+        {"origin":"KISP","destination":"KMCO","category":"departure","route":"KISP24.SIKUF3E.SIKUF","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["swa/b737",1]]},
+        {"origin":"KISP","destination":"KPGD","category":"departure","route":"KISP24.SIKUF3E.SIKUF","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["aay/md82",1]]},
+        {"origin":"KISP","destination":"","category":"departure","route":"KISP24.SIKUF3E.SIKUF","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["aal/dh8c",1],["swa/b737",1]]},
+        {"origin":"KISP","destination":"","category":"departure","route":"KISP24.CMK3F.CMK","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KBOS","destination":"KISP","category":"arrival","route":"MAD..BIJZO..KISP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.57,"airlines":[["asa/sf34",1]]},
+        {"origin":"KBWI","destination":"KISP","category":"arrival","route":"SIKUF..NIZRU..KISP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.57,"airlines":[["swa/b737",1]]},
+        {"origin":"KFLL","destination":"KISP","category":"arrival","route":"SIKUF..NIZRU..KISP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.57,"airlines":[["swa/b737",1]]},
+        {"origin":"KMCO","destination":"KISP","category":"arrival","route":"SIKUF..NIZRU..KISP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.57,"airlines":[["swa/b737",1]]},
+        {"origin":"KPGD","destination":"KISP","category":"arrival","route":"SIKUF..NIZRU..KISP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.57,"airlines":[["aay/md82",1]]},
+        {"origin":"","destination":"KISP","category":"arrival","route":"SIKUF..NIZRU..KISP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.13,"airlines":[["aal/dh8c",1],["swa/b737",1]]},
+        {"origin":"","destination":"KISP","category":"arrival","route":"CMK..BUNHE..KISP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [41.3138,-72.6922,40.9678,-72.966],
+            [40.9678,-72.966,40.7963,-73.1017],
+            [40.4718,-72.535,40.6757,-72.8912],
+            [40.6757,-72.8912,40.7963,-73.1017],
+            [40.33,-73.4559,40.6231,-73.2333],
+            [40.6231,-73.2333,40.7963,-73.1017],
+            [41.2801,-73.5814,40.9562,-73.2602],
+            [40.9562,-73.2602,40.7963,-73.1017]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [40.7886,-73.1124,40.6702,-73.2669],
+            [40.7224,-73.1804,40.7364,-73.1991],
+            [40.6631,-73.2576,40.6772,-73.2763],
+            [40.8022,-73.0946,40.9204,-72.9395],
+            [40.8684,-73.0265,40.8543,-73.0077],
+            [40.9275,-72.9489,40.9134,-72.9301]
+        ]}
+    ]
+}

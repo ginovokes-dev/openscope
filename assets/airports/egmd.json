@@ -1,0 +1,74 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGMD/",
+    "info": {"country":"GB","city":"Romney Marsh","type":"medium_airport","longestRunwayM":1505,"frequencies":{"atis":"129.225","twr":"128.525","app":"120.700"}},
+    "radio": {"twr":"Lydd Tower","app":"Lydd Approach","dep":"Lydd Radar"},
+    "icao": "EGMD",
+    "iata": "LYX",
+    "magnetic_north": 1.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [50.956246,0.939074,"13ft"],
+    "rangeRings": {"enabled":true,"center":[50.956246,0.939074],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":190,"speed":6},
+    "arrivalRunway": "21",
+    "departureRunway": "21",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[51.3608,0.9559],[51.3443,1.1215],[51.3013,1.2748],[51.2348,1.4051],[51.1493,1.5037],[51.0507,1.5638],[50.9457,1.5813],[50.8413,1.5551],[50.7448,1.4869],[50.6627,1.3813],[50.6006,1.2456],[50.5627,1.0891],[50.5517,0.9223],[50.5682,0.7566],[50.6112,0.6034],[50.6777,0.473],[50.7631,0.3745],[50.8618,0.3144],[50.9668,0.2968],[51.0712,0.3231],[51.1677,0.3913],[51.2498,0.4968],[51.3119,0.6325],[51.3498,0.7891]]}
+    ],
+    "fixes": {
+        "EGMD": [50.95625,0.93907],
+        "ING": [50.8832,1.74181,"saint-inglevert"],
+        "AGICU": [50.92767,1.2531],
+        "ABB": [50.1351,1.85469,"abbeville"],
+        "MUHEM": [50.79269,1.12144],
+        "SFD": [50.7606,0.12194,"seaford"],
+        "ZUSUP": [50.88523,0.64249],
+        "RCH": [51.3538,0.50367,"rochester"],
+        "REHVI": [51.12076,0.7589],
+        "_RWY0303DME": [50.90843,0.89058],
+        "_RWY2103DME": [51.00339,0.98727]
+    },
+    "runways": [
+        {"name":["03","21"],"end":[[50.9505,0.93336,"10ft"],[50.96134,0.9444,"12ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "ING3D": {"icao":"ING3D","name":"Saint-inglevert Three Delta","rwy":{"EGMD03":["_RWY2103DME"],"EGMD21":["_RWY0303DME"]},"body":[],"exitPoints":{"ING":["ING"]},"draw":[["EGMD","ING*"]]},
+        "ABB1F": {"icao":"ABB1F","name":"Abbeville One Foxtrot","rwy":{"EGMD03":["_RWY2103DME"],"EGMD21":["_RWY0303DME"]},"body":[],"exitPoints":{"ABB":["ABB"]},"draw":[["EGMD","ABB*"]]},
+        "SFD3D": {"icao":"SFD3D","name":"Seaford Three Delta","rwy":{"EGMD03":["_RWY2103DME"],"EGMD21":["_RWY0303DME"]},"body":[],"exitPoints":{"SFD":["SFD"]},"draw":[["EGMD","SFD*"]]},
+        "RCH2A": {"icao":"RCH2A","name":"Rochester Two Alpha","rwy":{"EGMD03":["_RWY2103DME"],"EGMD21":["_RWY0303DME"]},"body":[],"exitPoints":{"RCH":["RCH"]},"draw":[["EGMD","RCH*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGMD","destination":"","category":"departure","route":"EGMD21.ING3D.ING","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["bcy/f50",2],["bee/d328",2],["eze/e145",1],["eze/js32",1],["gmi/e145",1]]},
+        {"origin":"EGMD","destination":"","category":"departure","route":"EGMD21.ABB1F.ABB","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["bcy/f50",2],["bee/d328",2],["eze/e145",1],["eze/js32",1],["gmi/e145",1]]},
+        {"origin":"EGMD","destination":"","category":"departure","route":"EGMD21.SFD3D.SFD","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["bcy/f50",2],["bee/d328",2],["eze/e145",1],["eze/js32",1],["gmi/e145",1]]},
+        {"origin":"EGMD","destination":"","category":"departure","route":"EGMD21.RCH2A.RCH","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["bcy/f50",2],["bee/d328",2],["eze/e145",1],["eze/js32",1],["gmi/e145",1]]},
+        {"origin":"EGMD","destination":"","category":"departure","route":"EGMD21.SFD3D.SFD","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]},
+        {"origin":"","destination":"EGMD","category":"arrival","route":"ING..AGICU..EGMD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["bcy/f50",2],["bee/d328",2],["eze/e145",1],["eze/js32",1],["gmi/e145",1]]},
+        {"origin":"","destination":"EGMD","category":"arrival","route":"ABB..MUHEM..EGMD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["bcy/f50",2],["bee/d328",2],["eze/e145",1],["eze/js32",1],["gmi/e145",1]]},
+        {"origin":"","destination":"EGMD","category":"arrival","route":"SFD..ZUSUP..EGMD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["bcy/f50",2],["bee/d328",2],["eze/e145",1],["eze/js32",1],["gmi/e145",1]]},
+        {"origin":"","destination":"EGMD","category":"arrival","route":"RCH..REHVI..EGMD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["bcy/f50",2],["bee/d328",2],["eze/e145",1],["eze/js32",1],["gmi/e145",1]]},
+        {"origin":"","destination":"EGMD","category":"arrival","route":"SFD..ZUSUP..EGMD","altitude":[4000,7000],"speed":250,"method":"random","rate":1.13,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [50.8832,1.7418,50.9277,1.2531],
+            [50.9277,1.2531,50.9562,0.9391],
+            [50.1351,1.8547,50.7927,1.1214],
+            [50.7927,1.1214,50.9562,0.9391],
+            [50.7606,0.1219,50.8852,0.6425],
+            [50.8852,0.6425,50.9562,0.9391],
+            [51.3538,0.5037,51.1208,0.7589],
+            [51.1208,0.7589,50.9562,0.9391]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [50.9613,0.9444,51.1014,1.0876],
+            [51.0368,1.0025,51.026,1.0293],
+            [51.1068,1.0742,51.096,1.101]
+        ]}
+    ]
+}

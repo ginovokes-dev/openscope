@@ -1,0 +1,80 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ENVD/",
+    "info": {"country":"NO","city":"Vadso","type":"medium_airport","longestRunwayM":999},
+    "radio": {"twr":"Vadso Tower","app":"Vadso Approach","dep":"Vadso Departure"},
+    "icao": "ENVD",
+    "iata": "VDS",
+    "magnetic_north": 17.2,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [70.0653,29.8447,"127ft"],
+    "rangeRings": {"enabled":true,"center":[70.0653,29.8447],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":250,"speed":8},
+    "arrivalRunway": "25",
+    "departureRunway": "25",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[70.4519,30.1957],[70.4077,30.4772],[70.3403,30.7156],[70.254,30.8947],[70.155,31.0022],[70.0498,31.0308],[69.9456,30.9786],[69.8496,30.8491],[69.7684,30.6512],[69.7073,30.3983],[69.6707,30.1077],[69.6609,29.7991],[69.6787,29.4937],[69.7229,29.2122],[69.7903,28.9738],[69.8766,28.7947],[69.9756,28.6872],[70.0808,28.6586],[70.185,28.7108],[70.281,28.8403],[70.3622,29.0382],[70.4233,29.2911],[70.4599,29.5817],[70.4697,29.8903]]}
+    ],
+    "fixes": {
+        "ENVD": [70.0653,29.8447],
+        "VRD": [70.3576,31.0472,"vardo"],
+        "CISUC": [70.18133,30.32201],
+        "NUZVE": [69.52797,29.91966],
+        "VUSEH": [69.86566,29.87255],
+        "SDA": [70.2343,28.0702,"seida"],
+        "CEHRO": [70.11907,29.28011],
+        "BV": [70.8735,29.0561,"berlevag"],
+        "WEFWI": [70.25495,29.65965],
+        "_RWY0703DME": [70.06191,29.68744],
+        "_RWY2503DME": [70.06847,30.004]
+    },
+    "runways": [
+        {"name":["07","25"],"end":[[70.065,29.8337,"127ft"],[70.0655,29.8577,"87ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "VRD1A": {"icao":"VRD1A","name":"Vardo One Alpha","rwy":{"ENVD07":["_RWY2503DME"],"ENVD25":["_RWY0703DME"]},"body":[],"exitPoints":{"VRD":["VRD"]},"draw":[["ENVD","VRD*"]]},
+        "NUZVE3E": {"icao":"NUZVE3E","name":"Nuzve Three Echo","rwy":{"ENVD07":["_RWY2503DME"],"ENVD25":["_RWY0703DME"]},"body":[],"exitPoints":{"NUZVE":["NUZVE"]},"draw":[["ENVD","NUZVE*"]]},
+        "SDA1B": {"icao":"SDA1B","name":"Seida One Bravo","rwy":{"ENVD07":["_RWY2503DME"],"ENVD25":["_RWY0703DME"]},"body":[],"exitPoints":{"SDA":["SDA"]},"draw":[["ENVD","SDA*"]]},
+        "BV3D": {"icao":"BV3D","name":"Berlevag Three Delta","rwy":{"ENVD07":["_RWY2503DME"],"ENVD25":["_RWY0703DME"]},"body":[],"exitPoints":{"BV":["BV"]},"draw":[["ENVD","BV*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ENVD","destination":"ENAT","category":"departure","route":"ENVD25.SDA1B.SDA","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENVD","destination":"ENHF","category":"departure","route":"ENVD25.SDA1B.SDA","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENVD","destination":"ENKR","category":"departure","route":"ENVD25.NUZVE3E.NUZVE","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENVD","destination":"ENMH","category":"departure","route":"ENVD25.BV3D.BV","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENVD","destination":"ENSS","category":"departure","route":"ENVD25.VRD1A.VRD","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENVD","destination":"","category":"departure","route":"ENVD25.SDA1B.SDA","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENVD","destination":"","category":"departure","route":"ENVD25.BV3D.BV","altitude":"","speed":"","method":"random","rate":0.59,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENVD","destination":"","category":"departure","route":"ENVD25.VRD1A.VRD","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["ln/c172",6],["ln/p28a",5],["ln/c182",3],["ln/be36",2],["ln/da42",1],["ln/tb20",1],["ln/c208",2],["ln/pc12",2],["ln/be20",1],["ln/b350",1],["ln/p180",1],["ln/c510",1],["ln/c550",1]]},
+        {"origin":"ENAT","destination":"ENVD","category":"arrival","route":"SDA..CEHRO..ENVD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.59,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENHF","destination":"ENVD","category":"arrival","route":"SDA..CEHRO..ENVD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.59,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENKR","destination":"ENVD","category":"arrival","route":"NUZVE..VUSEH..ENVD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.59,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENMH","destination":"ENVD","category":"arrival","route":"BV..WEFWI..ENVD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.59,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"ENSS","destination":"ENVD","category":"arrival","route":"VRD..CISUC..ENVD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.59,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"","destination":"ENVD","category":"arrival","route":"SDA..CEHRO..ENVD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.59,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"","destination":"ENVD","category":"arrival","route":"BV..WEFWI..ENVD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.59,"airlines":[["wif/dh8a",1],["wif/dh8b",1]]},
+        {"origin":"","destination":"ENVD","category":"arrival","route":"VRD..CISUC..ENVD","altitude":[4000,7000],"speed":250,"method":"random","rate":1.39,"airlines":[["ln/c172",6],["ln/p28a",5],["ln/c182",3],["ln/be36",2],["ln/da42",1],["ln/tb20",1],["ln/c208",2],["ln/pc12",2],["ln/be20",1],["ln/b350",1],["ln/p180",1],["ln/c510",1],["ln/c550",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [70.3576,31.0472,70.1813,30.322],
+            [70.1813,30.322,70.0653,29.8447],
+            [69.528,29.9197,69.8657,29.8726],
+            [69.8657,29.8726,70.0653,29.8447],
+            [70.2343,28.0702,70.1191,29.2801],
+            [70.1191,29.2801,70.0653,29.8447],
+            [70.8735,29.0561,70.2549,29.6597],
+            [70.2549,29.6597,70.0653,29.8447]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [70.0655,29.8577,70.0749,30.3455],
+            [70.0804,30.0998,70.0604,30.1033],
+            [70.0849,30.3438,70.065,30.3473]
+        ]}
+    ]
+}

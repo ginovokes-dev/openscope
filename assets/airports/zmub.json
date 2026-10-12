@@ -1,0 +1,76 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ZMUB/",
+    "info": {"country":"MN","city":"Ulaanbaatar","type":"large_airport","longestRunwayM":3117,"frequencies":{"atis":"125.000","twr":"120.000","app":"120.000"}},
+    "radio": {"twr":"Buyant-Ukhaa Tower","app":"Buyant-Ukhaa Approach","dep":"Buyant-Ukhaa Departure"},
+    "icao": "ZMUB",
+    "iata": "ULN",
+    "magnetic_north": -5.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 12000,
+    "initial_alt": 8000,
+    "position": [47.843102,106.766998,"4364ft"],
+    "rangeRings": {"enabled":true,"center":[47.843102,106.766998],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":340,"speed":10},
+    "arrivalRunway": "32",
+    "departureRunway": "32",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":120,"airspace_class":"D","poly":[[48.2459,106.7092],[48.2422,106.8665],[48.2114,107.017],[48.1554,107.1505],[48.0781,107.2579],[47.9848,107.3318],[47.8819,107.3672],[47.7763,107.3617],[47.6753,107.3157],[47.5857,107.2323],[47.5136,107.1171],[47.464,106.9782],[47.4403,106.8248],[47.444,106.6675],[47.4748,106.5169],[47.5308,106.3835],[47.6081,106.2761],[47.7014,106.2022],[47.8043,106.1668],[47.9099,106.1723],[48.0109,106.2183],[48.1005,106.3017],[48.1726,106.4168],[48.2222,106.5558]]}
+    ],
+    "fixes": {
+        "ZMUB": [47.8431,106.767],
+        "TOPVU": [48.27147,107.25181],
+        "UMITI": [48.00226,106.94712],
+        "ATIVO": [47.52412,107.41239],
+        "CEWAG": [47.72459,107.00679],
+        "AHUPO": [47.41473,106.28219],
+        "RESUC": [47.68395,106.58687],
+        "VIPFE": [48.17482,106.13603],
+        "LUBOD": [47.96635,106.53257],
+        "_RWY1404DME": [47.90241,106.68637],
+        "_RWY3204DME": [47.78275,106.84748]
+    },
+    "runways": [
+        {"name":["14","32"],"end":[[47.853,106.753,"4147ft"],[47.8322,106.781,"4363ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "TOPVU1B": {"icao":"TOPVU1B","name":"Topvu One Bravo","rwy":{"ZMUB14":["_RWY3204DME"],"ZMUB32":["_RWY1404DME"]},"body":[],"exitPoints":{"TOPVU":["TOPVU"]},"draw":[["ZMUB","TOPVU*"]]},
+        "ATIVO3B": {"icao":"ATIVO3B","name":"Ativo Three Bravo","rwy":{"ZMUB14":["_RWY3204DME"],"ZMUB32":["_RWY1404DME"]},"body":[],"exitPoints":{"ATIVO":["ATIVO"]},"draw":[["ZMUB","ATIVO*"]]},
+        "AHUPO3E": {"icao":"AHUPO3E","name":"Ahupo Three Echo","rwy":{"ZMUB14":["_RWY3204DME"],"ZMUB32":["_RWY1404DME"]},"body":[],"exitPoints":{"AHUPO":["AHUPO"]},"draw":[["ZMUB","AHUPO*"]]},
+        "VIPFE3F": {"icao":"VIPFE3F","name":"Vipfe Three Foxtrot","rwy":{"ZMUB14":["_RWY3204DME"],"ZMUB32":["_RWY1404DME"]},"body":[],"exitPoints":{"VIPFE":["VIPFE"]},"draw":[["ZMUB","VIPFE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ZMUB","destination":"UUEE","category":"departure","route":"ZMUB32.VIPFE3F.VIPFE","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["afl/a320",1],["mgl/b737",1],["mgl/b763",1]]},
+        {"origin":"ZMUB","destination":"RKSI","category":"departure","route":"ZMUB32.ATIVO3B.ATIVO","altitude":"","speed":"","method":"random","rate":0.78,"airlines":[["kal/a333",1],["mgl/b763",1]]},
+        {"origin":"ZMUB","destination":"ZBAA","category":"departure","route":"ZMUB32.ATIVO3B.ATIVO","altitude":"","speed":"","method":"random","rate":0.78,"airlines":[["cca/b738",1],["mgl/b737",1]]},
+        {"origin":"ZMUB","destination":"RJAA","category":"departure","route":"ZMUB32.ATIVO3B.ATIVO","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["mgl/b737",1]]},
+        {"origin":"ZMUB","destination":"","category":"departure","route":"ZMUB32.ATIVO3B.ATIVO","altitude":"","speed":"","method":"random","rate":0.39,"airlines":[["mgl/b737",1]]},
+        {"origin":"ZMUB","destination":"","category":"departure","route":"ZMUB32.AHUPO3E.AHUPO","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["ju/c172",6],["ju/p28a",5],["ju/c182",3],["ju/be36",2],["ju/da42",1],["ju/tb20",1],["ju/c208",2],["ju/pc12",2],["ju/be20",1],["ju/b350",1],["ju/p180",1],["ju/c510",1],["ju/e50p",1],["ju/c550",1],["ju/e55p",1],["ju/cl30",1],["ju/c680",1],["ju/h25b",1],["ju/lj45",1],["ju/f2th",1],["ju/glf4",1],["ju/glex",1],["ju/glf5",1]]},
+        {"origin":"UUEE","destination":"ZMUB","category":"arrival","route":"VIPFE..LUBOD..ZMUB","altitude":[8000,11000],"speed":250,"method":"random","rate":1.17,"airlines":[["afl/a320",1],["mgl/b737",1],["mgl/b763",1]]},
+        {"origin":"RKSI","destination":"ZMUB","category":"arrival","route":"ATIVO..CEWAG..ZMUB","altitude":[8000,11000],"speed":250,"method":"random","rate":0.78,"airlines":[["kal/a333",1],["mgl/b763",1]]},
+        {"origin":"ZBAA","destination":"ZMUB","category":"arrival","route":"ATIVO..CEWAG..ZMUB","altitude":[8000,11000],"speed":250,"method":"random","rate":0.78,"airlines":[["cca/b738",1],["mgl/b737",1]]},
+        {"origin":"RJAA","destination":"ZMUB","category":"arrival","route":"ATIVO..CEWAG..ZMUB","altitude":[8000,11000],"speed":250,"method":"random","rate":0.39,"airlines":[["mgl/b737",1]]},
+        {"origin":"","destination":"ZMUB","category":"arrival","route":"ATIVO..CEWAG..ZMUB","altitude":[8000,11000],"speed":250,"method":"random","rate":0.39,"airlines":[["mgl/b737",1]]},
+        {"origin":"","destination":"ZMUB","category":"arrival","route":"AHUPO..RESUC..ZMUB","altitude":[8000,11000],"speed":250,"method":"random","rate":1.17,"airlines":[["ju/c172",6],["ju/p28a",5],["ju/c182",3],["ju/be36",2],["ju/da42",1],["ju/tb20",1],["ju/c208",2],["ju/pc12",2],["ju/be20",1],["ju/b350",1],["ju/p180",1],["ju/c510",1],["ju/e50p",1],["ju/c550",1],["ju/e55p",1],["ju/cl30",1],["ju/c680",1],["ju/h25b",1],["ju/lj45",1],["ju/f2th",1],["ju/glf4",1],["ju/glex",1],["ju/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [48.2715,107.2518,48.0023,106.9471],
+            [48.0023,106.9471,47.8431,106.767],
+            [47.5241,107.4124,47.7246,107.0068],
+            [47.7246,107.0068,47.8431,106.767],
+            [47.4147,106.2822,47.6839,106.5869],
+            [47.6839,106.5869,47.8431,106.767],
+            [48.1748,106.136,47.9663,106.5326],
+            [47.9663,106.5326,47.8431,106.767]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [47.8322,106.781,47.7085,106.947],
+            [47.7771,106.8751,47.7637,106.853],
+            [47.7152,106.958,47.7018,106.9359]
+        ]}
+    ]
+}

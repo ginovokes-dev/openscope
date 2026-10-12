@@ -1,0 +1,78 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KBLI/",
+    "info": {"country":"US","city":"Bellingham","type":"medium_airport","longestRunwayM":2047,"frequencies":{"atis":"134.450","twr":"124.900","gnd":"127.400"}},
+    "radio": {"twr":"Bellingham Tower","app":"Bellingham Approach","dep":"Bellingham Departure"},
+    "icao": "KBLI",
+    "iata": "BLI",
+    "magnetic_north": 15.3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [48.792801,-122.538002,"170ft"],
+    "rangeRings": {"enabled":true,"center":[48.792801,-122.538002],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":330,"speed":7},
+    "arrivalRunway": "34",
+    "departureRunway": "34",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[49.1832,-122.3759],[49.1422,-122.2281],[49.0775,-122.1014],[48.9933,-122.0044],[48.8955,-121.9438],[48.7907,-121.9237],[48.686,-121.9455],[48.5886,-122.0076],[48.5051,-122.1059],[48.4413,-122.2336],[48.4014,-122.3821],[48.3881,-122.5412],[48.4024,-122.7001],[48.4434,-122.8479],[48.5081,-122.9747],[48.5923,-123.0716],[48.6901,-123.1322],[48.7949,-123.1523],[48.8996,-123.1305],[48.997,-123.0684],[49.0805,-122.9701],[49.1443,-122.8424],[49.1842,-122.6939],[49.1975,-122.5348]]}
+    ],
+    "fixes": {
+        "KBLI": [48.7928,-122.538],
+        "HEWTI": [49.3034,-122.28098],
+        "ZAHLE": [48.98251,-122.44251],
+        "PAE": [47.9198,-122.278,"paine"],
+        "OGOKU": [48.59668,-122.47959],
+        "YYJ": [48.7269,-123.484,"victoria"],
+        "ROMIH": [48.77178,-122.8397],
+        "_RWY1604DME": [48.86848,-122.54162],
+        "_RWY3404DME": [48.71692,-122.53339]
+    },
+    "runways": [
+        {"name":["16","34"],"end":[[48.8019,-122.538,"162ft"],[48.7835,-122.537,"170ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "HEWTI3B": {"icao":"HEWTI3B","name":"Hewti Three Bravo","rwy":{"KBLI16":["_RWY3404DME"],"KBLI34":["_RWY1604DME"]},"body":[],"exitPoints":{"HEWTI":["HEWTI"]},"draw":[["KBLI","HEWTI*"]]},
+        "PAE3E": {"icao":"PAE3E","name":"Paine Three Echo","rwy":{"KBLI16":["_RWY3404DME"],"KBLI34":["_RWY1604DME"]},"body":[],"exitPoints":{"PAE":["PAE"]},"draw":[["KBLI","PAE*"]]},
+        "YYJ3C": {"icao":"YYJ3C","name":"Victoria Three Charlie","rwy":{"KBLI16":["_RWY3404DME"],"KBLI34":["_RWY1604DME"]},"body":[],"exitPoints":{"YYJ":["YYJ"]},"draw":[["KBLI","YYJ*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KBLI","destination":"KLAS","category":"departure","route":"KBLI34.PAE3E.PAE","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["aay/b752",1],["aay/md82",1],["asa/b738",1]]},
+        {"origin":"KBLI","destination":"KIWA","category":"departure","route":"KBLI34.PAE3E.PAE","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["aay/md82",1]]},
+        {"origin":"KBLI","destination":"KLAX","category":"departure","route":"KBLI34.PAE3E.PAE","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["aay/md82",1]]},
+        {"origin":"KBLI","destination":"KOAK","category":"departure","route":"KBLI34.PAE3E.PAE","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["aay/md82",1]]},
+        {"origin":"KBLI","destination":"KPSP","category":"departure","route":"KBLI34.PAE3E.PAE","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["aay/md82",1]]},
+        {"origin":"KBLI","destination":"","category":"departure","route":"KBLI34.PAE3E.PAE","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["aay/md82",1]]},
+        {"origin":"KBLI","destination":"","category":"departure","route":"KBLI34.YYJ3C.YYJ","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["asa/b738",1]]},
+        {"origin":"KBLI","destination":"","category":"departure","route":"KBLI34.YYJ3C.YYJ","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KLAS","destination":"KBLI","category":"arrival","route":"PAE..OGOKU..KBLI","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["aay/b752",1],["aay/md82",1],["asa/b738",1]]},
+        {"origin":"KIWA","destination":"KBLI","category":"arrival","route":"PAE..OGOKU..KBLI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["aay/md82",1]]},
+        {"origin":"KLAX","destination":"KBLI","category":"arrival","route":"PAE..OGOKU..KBLI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["aay/md82",1]]},
+        {"origin":"KOAK","destination":"KBLI","category":"arrival","route":"PAE..OGOKU..KBLI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["aay/md82",1]]},
+        {"origin":"KPSP","destination":"KBLI","category":"arrival","route":"PAE..OGOKU..KBLI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["aay/md82",1]]},
+        {"origin":"","destination":"KBLI","category":"arrival","route":"PAE..OGOKU..KBLI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["aay/md82",1]]},
+        {"origin":"","destination":"KBLI","category":"arrival","route":"YYJ..ROMIH..KBLI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["asa/b738",1]]},
+        {"origin":"","destination":"KBLI","category":"arrival","route":"YYJ..ROMIH..KBLI","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [49.3034,-122.281,48.9825,-122.4425],
+            [48.9825,-122.4425,48.7928,-122.538],
+            [47.9198,-122.278,48.5967,-122.4796],
+            [48.5967,-122.4796,48.7928,-122.538],
+            [48.7269,-123.484,48.7718,-122.8397],
+            [48.7718,-122.8397,48.7928,-122.538]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [48.8019,-122.538,48.9683,-122.5471],
+            [48.8848,-122.5577,48.8855,-122.5273],
+            [48.968,-122.5623,48.9687,-122.5319],
+            [48.7835,-122.537,48.6171,-122.528],
+            [48.7006,-122.5174,48.6999,-122.5476],
+            [48.6174,-122.5129,48.6167,-122.5431]
+        ]}
+    ]
+}

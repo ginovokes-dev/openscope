@@ -1,0 +1,79 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/MMCL/",
+    "info": {"country":"MX","city":"Culiacan","type":"large_airport","longestRunwayM":2248,"frequencies":{"atis":"127.800","twr":"118.500","app":"119.750"}},
+    "radio": {"twr":"Bachigualato Federal Tower","app":"Bachigualato Federal Approach","dep":"Bachigualato Federal Departure"},
+    "icao": "MMCL",
+    "iata": "CUL",
+    "magnetic_north": 7.2,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [24.76504,-107.475228,"108ft"],
+    "rangeRings": {"enabled":true,"center":[24.76504,-107.475228],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":30,"speed":11},
+    "arrivalRunway": "03",
+    "departureRunway": "03",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[25.1665,-107.4194],[25.1397,-107.3068],[25.0874,-107.2058],[25.0131,-107.1231],[24.9219,-107.0644],[24.82,-107.0337],[24.7143,-107.0331],[24.6121,-107.0626],[24.5204,-107.1202],[24.4453,-107.2021],[24.392,-107.3025],[24.3641,-107.4147],[24.3635,-107.5311],[24.3903,-107.6436],[24.4427,-107.7447],[24.517,-107.8274],[24.6082,-107.8861],[24.7101,-107.9168],[24.8158,-107.9174],[24.918,-107.8879],[25.0097,-107.8302],[25.0848,-107.7484],[25.1381,-107.6479],[25.166,-107.5357]]}
+    ],
+    "fixes": {
+        "MMCL": [24.76504,-107.47523],
+        "JEMAT": [24.86041,-106.89219],
+        "TUVPE": [24.80047,-107.25861],
+        "FEPOT": [24.4377,-107.00512],
+        "AMACA": [24.64342,-107.30056],
+        "EMICE": [24.37181,-107.87949],
+        "HAPAN": [24.61894,-107.62543],
+        "UDEPI": [25.16843,-107.86716],
+        "ZENZI": [24.91491,-107.62085],
+        "_RWY0304DME": [24.70047,-107.52127],
+        "_RWY2104DME": [24.82718,-107.43075]
+    },
+    "runways": [
+        {"name":["03","21"],"end":[[24.75637,-107.48136,"102ft"],[24.77129,-107.4707,"109ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "JEMAT2B": {"icao":"JEMAT2B","name":"Jemat Two Bravo","rwy":{"MMCL03":["_RWY2104DME"],"MMCL21":["_RWY0304DME"]},"body":[],"exitPoints":{"JEMAT":["JEMAT"]},"draw":[["MMCL","JEMAT*"]]},
+        "FEPOT2F": {"icao":"FEPOT2F","name":"Fepot Two Foxtrot","rwy":{"MMCL03":["_RWY2104DME"],"MMCL21":["_RWY0304DME"]},"body":[],"exitPoints":{"FEPOT":["FEPOT"]},"draw":[["MMCL","FEPOT*"]]},
+        "EMICE2D": {"icao":"EMICE2D","name":"Emice Two Delta","rwy":{"MMCL03":["_RWY2104DME"],"MMCL21":["_RWY0304DME"]},"body":[],"exitPoints":{"EMICE":["EMICE"]},"draw":[["MMCL","EMICE*"]]},
+        "UDEPI3E": {"icao":"UDEPI3E","name":"Udepi Three Echo","rwy":{"MMCL03":["_RWY2104DME"],"MMCL21":["_RWY0304DME"]},"body":[],"exitPoints":{"UDEPI":["UDEPI"]},"draw":[["MMCL","UDEPI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"MMCL","destination":"MMMX","category":"departure","route":"MMCL03.FEPOT2F.FEPOT","altitude":"","speed":"","method":"random","rate":1.28,"airlines":[["amx/b737",1],["voi/a319",1],["voi/a320",1],["amx/e190",1],["amx/e170",1]]},
+        {"origin":"MMCL","destination":"MMTJ","category":"departure","route":"MMCL03.UDEPI3E.UDEPI","altitude":"","speed":"","method":"random","rate":0.96,"airlines":[["amx/b738",1],["voi/a319",1],["voi/a320",1]]},
+        {"origin":"MMCL","destination":"MMMY","category":"departure","route":"MMCL03.JEMAT2B.JEMAT","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["dal/e145",1],["voi/a320",1]]},
+        {"origin":"MMCL","destination":"MMGL","category":"departure","route":"MMCL03.FEPOT2F.FEPOT","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["voi/a319",1]]},
+        {"origin":"MMCL","destination":"","category":"departure","route":"MMCL03.UDEPI3E.UDEPI","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["dal/e145",1]]},
+        {"origin":"MMCL","destination":"","category":"departure","route":"MMCL03.JEMAT2B.JEMAT","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["xa/c172",6],["xa/p28a",5],["xa/c182",3],["xa/be36",2],["xa/da42",1],["xa/tb20",1],["xa/c208",2],["xa/pc12",2],["xa/be20",1],["xa/b350",1],["xa/p180",1],["xa/c510",1],["xa/e50p",1],["xa/c550",1],["xa/e55p",1],["xa/cl30",1],["xa/c680",1],["xa/h25b",1],["xa/lj45",1],["xa/f2th",1],["xa/glf4",1],["xa/glex",1],["xa/glf5",1]]},
+        {"origin":"MMMX","destination":"MMCL","category":"arrival","route":"FEPOT..AMACA..MMCL","altitude":[4000,7000],"speed":250,"method":"random","rate":1.28,"airlines":[["amx/b737",1],["voi/a319",1],["voi/a320",1],["amx/e190",1],["amx/e170",1]]},
+        {"origin":"MMTJ","destination":"MMCL","category":"arrival","route":"UDEPI..ZENZI..MMCL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.96,"airlines":[["amx/b738",1],["voi/a319",1],["voi/a320",1]]},
+        {"origin":"MMMY","destination":"MMCL","category":"arrival","route":"JEMAT..TUVPE..MMCL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.64,"airlines":[["dal/e145",1],["voi/a320",1]]},
+        {"origin":"MMGL","destination":"MMCL","category":"arrival","route":"FEPOT..AMACA..MMCL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.32,"airlines":[["voi/a319",1]]},
+        {"origin":"","destination":"MMCL","category":"arrival","route":"UDEPI..ZENZI..MMCL","altitude":[4000,7000],"speed":250,"method":"random","rate":0.32,"airlines":[["dal/e145",1]]},
+        {"origin":"","destination":"MMCL","category":"arrival","route":"JEMAT..TUVPE..MMCL","altitude":[4000,7000],"speed":250,"method":"random","rate":1.17,"airlines":[["xa/c172",6],["xa/p28a",5],["xa/c182",3],["xa/be36",2],["xa/da42",1],["xa/tb20",1],["xa/c208",2],["xa/pc12",2],["xa/be20",1],["xa/b350",1],["xa/p180",1],["xa/c510",1],["xa/e50p",1],["xa/c550",1],["xa/e55p",1],["xa/cl30",1],["xa/c680",1],["xa/h25b",1],["xa/lj45",1],["xa/f2th",1],["xa/glf4",1],["xa/glex",1],["xa/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [24.8604,-106.8922,24.8005,-107.2586],
+            [24.8005,-107.2586,24.765,-107.4752],
+            [24.4377,-107.0051,24.6434,-107.3006],
+            [24.6434,-107.3006,24.765,-107.4752],
+            [24.3718,-107.8795,24.6189,-107.6254],
+            [24.6189,-107.6254,24.765,-107.4752],
+            [25.1684,-107.8672,24.9149,-107.6208],
+            [24.9149,-107.6208,24.765,-107.4752]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [24.7564,-107.4814,24.6166,-107.5811],
+            [24.6811,-107.522,24.6919,-107.5405],
+            [24.6112,-107.5718,24.622,-107.5903],
+            [24.7713,-107.4707,24.911,-107.3708],
+            [24.8466,-107.43,24.8357,-107.4115],
+            [24.9164,-107.38,24.9056,-107.3615]
+        ]}
+    ]
+}

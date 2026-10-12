@@ -1,0 +1,72 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ZWSH/",
+    "info": {"country":"CN","city":"Kashgar","type":"large_airport","longestRunwayM":3200,"frequencies":{"twr":"118.500"}},
+    "radio": {"twr":"Kashgar Tower","app":"Kashgar Approach","dep":"Kashgar Departure"},
+    "icao": "ZWSH",
+    "iata": "KHG",
+    "magnetic_north": 4.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 12000,
+    "initial_alt": 8000,
+    "position": [39.542273,76.02023,"4529ft"],
+    "rangeRings": {"enabled":true,"center":[39.542273,76.02023],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":270,"speed":5},
+    "arrivalRunway": "26",
+    "departureRunway": "26",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":120,"airspace_class":"D","poly":[[39.9459,76.0578],[39.9247,76.192],[39.8774,76.3144],[39.8072,76.4169],[39.719,76.4923],[39.6188,76.5356],[39.5133,76.5437],[39.4098,76.5161],[39.3154,76.4548],[39.2364,76.3638],[39.1782,76.2495],[39.1449,76.1195],[39.1386,75.9827],[39.1599,75.8485],[39.2072,75.726],[39.2773,75.6236],[39.3655,75.5482],[39.4657,75.5049],[39.5712,75.4968],[39.6747,75.5243],[39.7692,75.5857],[39.8482,75.6766],[39.9063,75.791],[39.9397,75.921]]}
+    ],
+    "fixes": {
+        "ZWSH": [39.54227,76.02023],
+        "AMOKA": [39.81783,76.61933],
+        "UGOTA": [39.64465,76.24282],
+        "WOHEK": [39.05444,76.31422],
+        "GARER": [39.36102,76.12946],
+        "BAJAD": [39.70072,75.3536],
+        "MEHOP": [39.60114,75.77255],
+        "_RWY0804DME": [39.53721,75.91523],
+        "_RWY2604DME": [39.54853,76.12469]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[39.5419,76.0014,"4524ft"],[39.5439,76.0385,"4498ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "AMOKA2A": {"icao":"AMOKA2A","name":"Amoka Two Alpha","rwy":{"ZWSH08":["_RWY2604DME"],"ZWSH26":["_RWY0804DME"]},"body":[],"exitPoints":{"AMOKA":["AMOKA"]},"draw":[["ZWSH","AMOKA*"]]},
+        "WOHEK3C": {"icao":"WOHEK3C","name":"Wohek Three Charlie","rwy":{"ZWSH08":["_RWY2604DME"],"ZWSH26":["_RWY0804DME"]},"body":[],"exitPoints":{"WOHEK":["WOHEK"]},"draw":[["ZWSH","WOHEK*"]]},
+        "BAJAD2A": {"icao":"BAJAD2A","name":"Bajad Two Alpha","rwy":{"ZWSH08":["_RWY2604DME"],"ZWSH26":["_RWY0804DME"]},"body":[],"exitPoints":{"BAJAD":["BAJAD"]},"draw":[["ZWSH","BAJAD*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ZWSH","destination":"ZWWW","category":"departure","route":"ZWSH26.AMOKA2A.AMOKA","altitude":"","speed":"","method":"random","rate":2.45,"airlines":[["cca/b738",1],["cdg/b738",1],["ces/a320",1],["ces/b737",1],["ces/e190",1],["chh/b738",1],["csc/a319",1],["csn/b737",1],["csn/e190",1]]},
+        {"origin":"ZWSH","destination":"ZLXY","category":"departure","route":"ZWSH26.AMOKA2A.AMOKA","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["ces/a319",1]]},
+        {"origin":"ZWSH","destination":"ZUAL","category":"departure","route":"ZWSH26.WOHEK3C.WOHEK","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["ces/a319",1]]},
+        {"origin":"ZWSH","destination":"ZUUU","category":"departure","route":"ZWSH26.AMOKA2A.AMOKA","altitude":"","speed":"","method":"random","rate":0.27,"airlines":[["cca/a319",1]]},
+        {"origin":"ZWSH","destination":"","category":"departure","route":"ZWSH26.AMOKA2A.AMOKA","altitude":"","speed":"","method":"random","rate":1.09,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",1],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]},
+        {"origin":"ZWWW","destination":"ZWSH","category":"arrival","route":"AMOKA..UGOTA..ZWSH","altitude":[8000,11000],"speed":250,"method":"random","rate":2.45,"airlines":[["cca/b738",1],["cdg/b738",1],["ces/a320",1],["ces/b737",1],["ces/e190",1],["chh/b738",1],["csc/a319",1],["csn/b737",1],["csn/e190",1]]},
+        {"origin":"ZLXY","destination":"ZWSH","category":"arrival","route":"AMOKA..UGOTA..ZWSH","altitude":[8000,11000],"speed":250,"method":"random","rate":0.27,"airlines":[["ces/a319",1]]},
+        {"origin":"ZUAL","destination":"ZWSH","category":"arrival","route":"WOHEK..GARER..ZWSH","altitude":[8000,11000],"speed":250,"method":"random","rate":0.27,"airlines":[["ces/a319",1]]},
+        {"origin":"ZUUU","destination":"ZWSH","category":"arrival","route":"AMOKA..UGOTA..ZWSH","altitude":[8000,11000],"speed":250,"method":"random","rate":0.27,"airlines":[["cca/a319",1]]},
+        {"origin":"","destination":"ZWSH","category":"arrival","route":"AMOKA..UGOTA..ZWSH","altitude":[8000,11000],"speed":250,"method":"random","rate":1.09,"airlines":[["b/c172",6],["b/p28a",5],["b/c182",3],["b/be36",2],["b/da42",1],["b/tb20",1],["b/c208",2],["b/pc12",2],["b/be20",1],["b/b350",1],["b/p180",1],["b/c510",1],["b/e50p",1],["b/c550",1],["b/e55p",1],["b/cl30",1],["b/c680",1],["b/h25b",1],["b/lj45",1],["b/f2th",1],["b/glf4",1],["b/glex",1],["b/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [39.8178,76.6193,39.6447,76.2428],
+            [39.6447,76.2428,39.5423,76.0202],
+            [39.0544,76.3142,39.361,76.1295],
+            [39.361,76.1295,39.5423,76.0202],
+            [39.7007,75.3536,39.6011,75.7726],
+            [39.6011,75.7726,39.5423,76.0202]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [39.5419,76.0014,39.5301,75.786],
+            [39.5261,75.8946,39.546,75.8928],
+            [39.5201,75.7869,39.54,75.7851],
+            [39.5439,76.0385,39.5553,76.254],
+            [39.5596,76.1453,39.5397,76.1471],
+            [39.5653,76.2531,39.5454,76.2549]
+        ]}
+    ]
+}

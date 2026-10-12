@@ -1,0 +1,79 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SCTE/",
+    "info": {"country":"CL","city":"Puerto Montt","type":"large_airport","longestRunwayM":2650,"frequencies":{"twr":"118.100","app":"123.700","gnd":"121.900"}},
+    "radio": {"twr":"El Tepual Tower","app":"El Tepual Approach","dep":"El Tepual Departure"},
+    "icao": "SCTE",
+    "iata": "PMC",
+    "magnetic_north": 7.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-41.443093,-73.094065,"294ft"],
+    "rangeRings": {"enabled":true,"center":[-41.443093,-73.094065],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":350,"speed":6},
+    "arrivalRunway": "35",
+    "departureRunway": "35",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-41.0418,-73.0245],[-41.0689,-72.8883],[-41.1216,-72.7662],[-41.1962,-72.6663],[-41.2876,-72.5957],[-41.3896,-72.5589],[-41.4952,-72.5587],[-41.5973,-72.5949],[-41.6889,-72.6652],[-41.7637,-72.7647],[-41.8167,-72.8866],[-41.8442,-73.0227],[-41.8444,-73.1636],[-41.8173,-73.2998],[-41.7646,-73.422],[-41.69,-73.5218],[-41.5986,-73.5925],[-41.4966,-73.6292],[-41.391,-73.6294],[-41.2889,-73.5932],[-41.1973,-73.5229],[-41.1225,-73.4235],[-41.0695,-73.3015],[-41.042,-73.1655]]}
+    ],
+    "fixes": {
+        "SCTE": [-41.44309,-73.09406],
+        "OSO": [-40.6158,-73.0561,"osorno"],
+        "GUCIL": [-41.24335,-73.0849],
+        "IFUVO": [-41.43283,-72.37657],
+        "SUKSE": [-41.43928,-72.82749],
+        "GOLIJ": [-41.97321,-72.97213],
+        "HIBFA": [-41.64005,-73.04876],
+        "OPULI": [-41.45335,-73.81156],
+        "WALNE": [-41.4469,-73.36064],
+        "_RWY1704DME": [-41.3604,-73.09098],
+        "_RWY3504DME": [-41.5174,-73.09692]
+    },
+    "runways": [
+        {"name":["17","35"],"end":[[-41.427,-73.0935,"264ft"],[-41.4508,-73.0944,"294ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "OSO1A": {"icao":"OSO1A","name":"Osorno One Alpha","rwy":{"SCTE17":["_RWY3504DME"],"SCTE35":["_RWY1704DME"]},"body":[],"exitPoints":{"OSO":["OSO"]},"draw":[["SCTE","OSO*"]]},
+        "IFUVO2A": {"icao":"IFUVO2A","name":"Ifuvo Two Alpha","rwy":{"SCTE17":["_RWY3504DME"],"SCTE35":["_RWY1704DME"]},"body":[],"exitPoints":{"IFUVO":["IFUVO"]},"draw":[["SCTE","IFUVO*"]]},
+        "GOLIJ2F": {"icao":"GOLIJ2F","name":"Golij Two Foxtrot","rwy":{"SCTE17":["_RWY3504DME"],"SCTE35":["_RWY1704DME"]},"body":[],"exitPoints":{"GOLIJ":["GOLIJ"]},"draw":[["SCTE","GOLIJ*"]]},
+        "OPULI2A": {"icao":"OPULI2A","name":"Opuli Two Alpha","rwy":{"SCTE17":["_RWY3504DME"],"SCTE35":["_RWY1704DME"]},"body":[],"exitPoints":{"OPULI":["OPULI"]},"draw":[["SCTE","OPULI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SCTE","destination":"SCBA","category":"departure","route":"SCTE35.GOLIJ2F.GOLIJ","altitude":"","speed":"","method":"random","rate":0.96,"airlines":[["lan/a320",1],["sku/a319",1],["sku/a320",1]]},
+        {"origin":"SCTE","destination":"SCEL","category":"departure","route":"SCTE35.OSO1A.OSO","altitude":"","speed":"","method":"random","rate":0.96,"airlines":[["lan/a320",1],["sku/a319",1],["sku/a320",1]]},
+        {"origin":"SCTE","destination":"SCCI","category":"departure","route":"SCTE35.GOLIJ2F.GOLIJ","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["lan/a320",1],["sku/a319",1]]},
+        {"origin":"SCTE","destination":"SCIE","category":"departure","route":"SCTE35.OSO1A.OSO","altitude":"","speed":"","method":"random","rate":0.64,"airlines":[["sku/a319",1],["sku/a320",1]]},
+        {"origin":"SCTE","destination":"","category":"departure","route":"SCTE35.GOLIJ2F.GOLIJ","altitude":"","speed":"","method":"random","rate":0.32,"airlines":[["lan/a320",1]]},
+        {"origin":"SCTE","destination":"","category":"departure","route":"SCTE35.IFUVO2A.IFUVO","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["cc/c172",6],["cc/p28a",5],["cc/c182",3],["cc/be36",2],["cc/da42",1],["cc/tb20",1],["cc/c208",2],["cc/pc12",2],["cc/be20",1],["cc/b350",1],["cc/p180",1],["cc/c510",1],["cc/e50p",1],["cc/c550",1],["cc/e55p",1],["cc/cl30",1],["cc/c680",1],["cc/h25b",1],["cc/lj45",1],["cc/f2th",1],["cc/glf4",1],["cc/glex",1],["cc/glf5",1]]},
+        {"origin":"SCBA","destination":"SCTE","category":"arrival","route":"GOLIJ..HIBFA..SCTE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.96,"airlines":[["lan/a320",1],["sku/a319",1],["sku/a320",1]]},
+        {"origin":"SCEL","destination":"SCTE","category":"arrival","route":"OSO..GUCIL..SCTE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.96,"airlines":[["lan/a320",1],["sku/a319",1],["sku/a320",1]]},
+        {"origin":"SCCI","destination":"SCTE","category":"arrival","route":"GOLIJ..HIBFA..SCTE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.64,"airlines":[["lan/a320",1],["sku/a319",1]]},
+        {"origin":"SCIE","destination":"SCTE","category":"arrival","route":"OSO..GUCIL..SCTE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.64,"airlines":[["sku/a319",1],["sku/a320",1]]},
+        {"origin":"","destination":"SCTE","category":"arrival","route":"GOLIJ..HIBFA..SCTE","altitude":[4000,7000],"speed":250,"method":"random","rate":0.32,"airlines":[["lan/a320",1]]},
+        {"origin":"","destination":"SCTE","category":"arrival","route":"IFUVO..SUKSE..SCTE","altitude":[4000,7000],"speed":250,"method":"random","rate":1.17,"airlines":[["cc/c172",6],["cc/p28a",5],["cc/c182",3],["cc/be36",2],["cc/da42",1],["cc/tb20",1],["cc/c208",2],["cc/pc12",2],["cc/be20",1],["cc/b350",1],["cc/p180",1],["cc/c510",1],["cc/e50p",1],["cc/c550",1],["cc/e55p",1],["cc/cl30",1],["cc/c680",1],["cc/h25b",1],["cc/lj45",1],["cc/f2th",1],["cc/glf4",1],["cc/glex",1],["cc/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-40.6158,-73.0561,-41.2433,-73.0849],
+            [-41.2433,-73.0849,-41.4431,-73.0941],
+            [-41.4328,-72.3766,-41.4393,-72.8275],
+            [-41.4393,-72.8275,-41.4431,-73.0941],
+            [-41.9732,-72.9721,-41.6401,-73.0488],
+            [-41.6401,-73.0488,-41.4431,-73.0941],
+            [-41.4534,-73.8116,-41.4469,-73.3606],
+            [-41.4469,-73.3606,-41.4431,-73.0941]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-41.427,-73.0935,-41.2605,-73.0872],
+            [-41.3435,-73.1037,-41.344,-73.0771],
+            [-41.2602,-73.1005,-41.2608,-73.0739],
+            [-41.4508,-73.0944,-41.6173,-73.1007],
+            [-41.5343,-73.0842,-41.5338,-73.1109],
+            [-41.6176,-73.0873,-41.617,-73.1141]
+        ]}
+    ]
+}

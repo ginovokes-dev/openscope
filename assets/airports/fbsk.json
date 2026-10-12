@@ -1,0 +1,81 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/FBSK/",
+    "info": {"country":"BW","city":"Gaborone","type":"large_airport","longestRunwayM":4000,"frequencies":{"twr":"118.300","app":"128.200","gnd":"121.900"}},
+    "radio": {"twr":"Gaberone Tower","app":"Gaberone Approach","dep":"Gaberone Departure"},
+    "icao": "FBSK",
+    "iata": "GBE",
+    "magnetic_north": -17.3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 11000,
+    "initial_alt": 7000,
+    "position": [-24.555201,25.9182,"3299ft"],
+    "rangeRings": {"enabled":true,"center":[-24.555201,25.9182],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":100,"speed":5},
+    "arrivalRunway": "08",
+    "departureRunway": "08",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":110,"airspace_class":"D","poly":[[-24.1688,25.7859],[-24.1508,25.9003],[-24.1604,26.016],[-24.1969,26.125],[-24.2578,26.2199],[-24.339,26.2943],[-24.4349,26.343],[-24.539,26.3628],[-24.6442,26.3522],[-24.7433,26.3121],[-24.8296,26.2452],[-24.8973,26.156],[-24.9416,26.0505],[-24.9596,25.9361],[-24.95,25.8204],[-24.9135,25.7114],[-24.8526,25.6165],[-24.7715,25.5421],[-24.6755,25.4934],[-24.5714,25.4736],[-24.4662,25.4842],[-24.3671,25.5243],[-24.2808,25.5912],[-24.2131,25.6804]]}
+    ],
+    "fixes": {
+        "FBSK": [-24.5552,25.9182],
+        "FAPUC": [-24.06816,26.16931],
+        "OWENU": [-24.37425,26.0115],
+        "DOREP": [-24.88251,26.38755],
+        "WOJGI": [-24.67681,26.09258],
+        "PORCA": [-25.00947,25.60143],
+        "UFUNU": [-24.72398,25.80051],
+        "NERLA": [-24.07648,25.64844],
+        "OSESO": [-24.37734,25.81797],
+        "_RWY0804DME": [-24.59359,25.84088],
+        "_RWY2604DME": [-24.51689,25.99548]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[-24.5617,25.9052,"3292ft"],[-24.5488,25.9312,"3291ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "FAPUC1F": {"icao":"FAPUC1F","name":"Fapuc One Foxtrot","rwy":{"FBSK08":["_RWY2604DME"],"FBSK26":["_RWY0804DME"]},"body":[],"exitPoints":{"FAPUC":["FAPUC"]},"draw":[["FBSK","FAPUC*"]]},
+        "DOREP2A": {"icao":"DOREP2A","name":"Dorep Two Alpha","rwy":{"FBSK08":["_RWY2604DME"],"FBSK26":["_RWY0804DME"]},"body":[],"exitPoints":{"DOREP":["DOREP"]},"draw":[["FBSK","DOREP*"]]},
+        "PORCA2E": {"icao":"PORCA2E","name":"Porca Two Echo","rwy":{"FBSK08":["_RWY2604DME"],"FBSK26":["_RWY0804DME"]},"body":[],"exitPoints":{"PORCA":["PORCA"]},"draw":[["FBSK","PORCA*"]]},
+        "NERLA1E": {"icao":"NERLA1E","name":"Nerla One Echo","rwy":{"FBSK08":["_RWY2604DME"],"FBSK26":["_RWY0804DME"]},"body":[],"exitPoints":{"NERLA":["NERLA"]},"draw":[["FBSK","NERLA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"FBSK","destination":"FAOR","category":"departure","route":"FBSK08.DOREP2A.DOREP","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["bot/at45",1],["bot/at72",1]]},
+        {"origin":"FBSK","destination":"FBKE","category":"departure","route":"FBSK08.NERLA1E.NERLA","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["bot/at45",1],["bot/at72",1]]},
+        {"origin":"FBSK","destination":"FBMN","category":"departure","route":"FBSK08.NERLA1E.NERLA","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["bot/at45",1],["bot/at72",1]]},
+        {"origin":"FBSK","destination":"FBPM","category":"departure","route":"FBSK08.FAPUC1F.FAPUC","altitude":"","speed":"","method":"random","rate":0.69,"airlines":[["bot/at45",1],["bot/at72",1]]},
+        {"origin":"FBSK","destination":"FACT","category":"departure","route":"FBSK08.PORCA2E.PORCA","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["bot/rj85",1]]},
+        {"origin":"FBSK","destination":"","category":"departure","route":"FBSK08.FAPUC1F.FAPUC","altitude":"","speed":"","method":"random","rate":1.04,"airlines":[["bot/at45",2],["kqa/e190",1]]},
+        {"origin":"FBSK","destination":"","category":"departure","route":"FBSK08.DOREP2A.DOREP","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["a2/c172",6],["a2/p28a",5],["a2/c182",3],["a2/be36",2],["a2/da42",1],["a2/tb20",1],["a2/c208",2],["a2/pc12",2],["a2/be20",1],["a2/b350",1],["a2/p180",1],["a2/c510",1],["a2/e50p",1],["a2/c550",1],["a2/e55p",1],["a2/cl30",1],["a2/c680",1],["a2/h25b",1],["a2/lj45",1],["a2/f2th",1],["a2/glf4",1],["a2/glex",1],["a2/glf5",1]]},
+        {"origin":"FAOR","destination":"FBSK","category":"arrival","route":"DOREP..WOJGI..FBSK","altitude":[7000,10000],"speed":250,"method":"random","rate":0.69,"airlines":[["bot/at45",1],["bot/at72",1]]},
+        {"origin":"FBKE","destination":"FBSK","category":"arrival","route":"NERLA..OSESO..FBSK","altitude":[7000,10000],"speed":250,"method":"random","rate":0.69,"airlines":[["bot/at45",1],["bot/at72",1]]},
+        {"origin":"FBMN","destination":"FBSK","category":"arrival","route":"NERLA..OSESO..FBSK","altitude":[7000,10000],"speed":250,"method":"random","rate":0.69,"airlines":[["bot/at45",1],["bot/at72",1]]},
+        {"origin":"FBPM","destination":"FBSK","category":"arrival","route":"FAPUC..OWENU..FBSK","altitude":[7000,10000],"speed":250,"method":"random","rate":0.69,"airlines":[["bot/at45",1],["bot/at72",1]]},
+        {"origin":"FACT","destination":"FBSK","category":"arrival","route":"PORCA..UFUNU..FBSK","altitude":[7000,10000],"speed":250,"method":"random","rate":0.35,"airlines":[["bot/rj85",1]]},
+        {"origin":"","destination":"FBSK","category":"arrival","route":"FAPUC..OWENU..FBSK","altitude":[7000,10000],"speed":250,"method":"random","rate":1.04,"airlines":[["bot/at45",2],["kqa/e190",1]]},
+        {"origin":"","destination":"FBSK","category":"arrival","route":"DOREP..WOJGI..FBSK","altitude":[7000,10000],"speed":250,"method":"random","rate":1.39,"airlines":[["a2/c172",6],["a2/p28a",5],["a2/c182",3],["a2/be36",2],["a2/da42",1],["a2/tb20",1],["a2/c208",2],["a2/pc12",2],["a2/be20",1],["a2/b350",1],["a2/p180",1],["a2/c510",1],["a2/e50p",1],["a2/c550",1],["a2/e55p",1],["a2/cl30",1],["a2/c680",1],["a2/h25b",1],["a2/lj45",1],["a2/f2th",1],["a2/glf4",1],["a2/glex",1],["a2/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-24.0682,26.1693,-24.3742,26.0115],
+            [-24.3742,26.0115,-24.5552,25.9182],
+            [-24.8825,26.3875,-24.6768,26.0926],
+            [-24.6768,26.0926,-24.5552,25.9182],
+            [-25.0095,25.6014,-24.724,25.8005],
+            [-24.724,25.8005,-24.5552,25.9182],
+            [-24.0765,25.6484,-24.3773,25.818],
+            [-24.3773,25.818,-24.5552,25.9182]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-24.5617,25.9052,-24.6414,25.7443],
+            [-24.6103,25.8301,-24.5928,25.8195],
+            [-24.6501,25.7496,-24.6326,25.7391],
+            [-24.5488,25.9312,-24.469,26.0919],
+            [-24.5001,26.0063,-24.5177,26.0168],
+            [-24.4602,26.0866,-24.4777,26.0971]
+        ]}
+    ]
+}

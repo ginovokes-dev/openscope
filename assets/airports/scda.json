@@ -1,0 +1,79 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SCDA/",
+    "info": {"country":"CL","city":"Iquique","type":"large_airport","longestRunwayM":3358,"frequencies":{"twr":"118.900","app":"122.700","gnd":"121.700"}},
+    "radio": {"twr":"Diego Aracena Tower","app":"Diego Aracena Approach","dep":"Diego Aracena Departure"},
+    "icao": "SCDA",
+    "iata": "IQQ",
+    "magnetic_north": -6.7,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-20.536273,-70.181373,"155ft"],
+    "rangeRings": {"enabled":true,"center":[-20.536273,-70.181373],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":30,"speed":6},
+    "arrivalRunway": "01",
+    "departureRunway": "01",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-20.1343,-70.2318],[-20.1358,-70.119],[-20.1646,-70.0104],[-20.2187,-69.9135],[-20.2944,-69.8349],[-20.3866,-69.7798],[-20.4891,-69.7522],[-20.5947,-69.7537],[-20.6963,-69.7845],[-20.7871,-69.8422],[-20.8607,-69.9231],[-20.9123,-70.0216],[-20.9382,-70.131],[-20.9367,-70.2438],[-20.908,-70.3523],[-20.8539,-70.4492],[-20.7781,-70.5279],[-20.6859,-70.5829],[-20.5835,-70.6106],[-20.4779,-70.609],[-20.3762,-70.5783],[-20.2855,-70.5205],[-20.2118,-70.4396],[-20.1603,-70.3412]]}
+    ],
+    "fixes": {
+        "SCDA": [-20.53627,-70.18137],
+        "ZORGE": [-20.00207,-70.11376],
+        "IQQ": [-20.3747,-70.1725,"iquique"],
+        "CIWIK": [-20.33223,-69.64986],
+        "JANOK": [-20.46046,-69.98389],
+        "AKAZA": [-21.07325,-70.21567],
+        "BOMTE": [-20.73578,-70.19412],
+        "DEKPU": [-20.48853,-70.75355],
+        "AJAMU": [-20.51854,-70.39396],
+        "_RWY0104DME": [-20.61686,-70.18586],
+        "_RWY1904DME": [-20.45364,-70.17681]
+    },
+    "runways": [
+        {"name":["01","19"],"end":[[-20.55033,-70.18217,"97ft"],[-20.52017,-70.1805,"156ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ZORGE1A": {"icao":"ZORGE1A","name":"Zorge One Alpha","rwy":{"SCDA01":["_RWY1904DME"],"SCDA19":["_RWY0104DME"]},"body":[],"exitPoints":{"ZORGE":["ZORGE"]},"draw":[["SCDA","ZORGE*"]]},
+        "CIWIK3F": {"icao":"CIWIK3F","name":"Ciwik Three Foxtrot","rwy":{"SCDA01":["_RWY1904DME"],"SCDA19":["_RWY0104DME"]},"body":[],"exitPoints":{"CIWIK":["CIWIK"]},"draw":[["SCDA","CIWIK*"]]},
+        "AKAZA3D": {"icao":"AKAZA3D","name":"Akaza Three Delta","rwy":{"SCDA01":["_RWY1904DME"],"SCDA19":["_RWY0104DME"]},"body":[],"exitPoints":{"AKAZA":["AKAZA"]},"draw":[["SCDA","AKAZA*"]]},
+        "DEKPU1D": {"icao":"DEKPU1D","name":"Dekpu One Delta","rwy":{"SCDA01":["_RWY1904DME"],"SCDA19":["_RWY0104DME"]},"body":[],"exitPoints":{"DEKPU":["DEKPU"]},"draw":[["SCDA","DEKPU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SCDA","destination":"SCEL","category":"departure","route":"SCDA01.AKAZA3D.AKAZA","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["lan/a319",1],["lan/a320",1],["sku/a319",1],["sku/a320",1]]},
+        {"origin":"SCDA","destination":"SCAR","category":"departure","route":"SCDA01.ZORGE1A.ZORGE","altitude":"","speed":"","method":"random","rate":0.88,"airlines":[["lan/a320",1],["sku/a319",1],["sku/a320",1]]},
+        {"origin":"SCDA","destination":"SCFA","category":"departure","route":"SCDA01.AKAZA3D.AKAZA","altitude":"","speed":"","method":"random","rate":0.88,"airlines":[["lan/a320",1],["sku/a319",1],["sku/a320",1]]},
+        {"origin":"SCDA","destination":"SLLP","category":"departure","route":"SCDA01.ZORGE1A.ZORGE","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["lan/a320",1]]},
+        {"origin":"SCDA","destination":"","category":"departure","route":"SCDA01.CIWIK3F.CIWIK","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["lan/a320",1]]},
+        {"origin":"SCDA","destination":"","category":"departure","route":"SCDA01.ZORGE1A.ZORGE","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["cc/c172",6],["cc/p28a",5],["cc/c182",3],["cc/be36",2],["cc/da42",1],["cc/tb20",1],["cc/c208",2],["cc/pc12",2],["cc/be20",1],["cc/b350",1],["cc/p180",1],["cc/c510",1],["cc/e50p",1],["cc/c550",1],["cc/e55p",1],["cc/cl30",1],["cc/c680",1],["cc/h25b",1],["cc/lj45",1],["cc/f2th",1],["cc/glf4",1],["cc/glex",1],["cc/glf5",1]]},
+        {"origin":"SCEL","destination":"SCDA","category":"arrival","route":"AKAZA..BOMTE..SCDA","altitude":[4000,7000],"speed":250,"method":"random","rate":1.17,"airlines":[["lan/a319",1],["lan/a320",1],["sku/a319",1],["sku/a320",1]]},
+        {"origin":"SCAR","destination":"SCDA","category":"arrival","route":"ZORGE..IQQ..SCDA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.88,"airlines":[["lan/a320",1],["sku/a319",1],["sku/a320",1]]},
+        {"origin":"SCFA","destination":"SCDA","category":"arrival","route":"AKAZA..BOMTE..SCDA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.88,"airlines":[["lan/a320",1],["sku/a319",1],["sku/a320",1]]},
+        {"origin":"SLLP","destination":"SCDA","category":"arrival","route":"ZORGE..IQQ..SCDA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.29,"airlines":[["lan/a320",1]]},
+        {"origin":"","destination":"SCDA","category":"arrival","route":"CIWIK..JANOK..SCDA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.29,"airlines":[["lan/a320",1]]},
+        {"origin":"","destination":"SCDA","category":"arrival","route":"ZORGE..IQQ..SCDA","altitude":[4000,7000],"speed":250,"method":"random","rate":1.17,"airlines":[["cc/c172",6],["cc/p28a",5],["cc/c182",3],["cc/be36",2],["cc/da42",1],["cc/tb20",1],["cc/c208",2],["cc/pc12",2],["cc/be20",1],["cc/b350",1],["cc/p180",1],["cc/c510",1],["cc/e50p",1],["cc/c550",1],["cc/e55p",1],["cc/cl30",1],["cc/c680",1],["cc/h25b",1],["cc/lj45",1],["cc/f2th",1],["cc/glf4",1],["cc/glex",1],["cc/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-20.0021,-70.1138,-20.3747,-70.1725],
+            [-20.3747,-70.1725,-20.5363,-70.1814],
+            [-20.3322,-69.6499,-20.4605,-69.9839],
+            [-20.4605,-69.9839,-20.5363,-70.1814],
+            [-21.0733,-70.2157,-20.7358,-70.1941],
+            [-20.7358,-70.1941,-20.5363,-70.1814],
+            [-20.4885,-70.7536,-20.5185,-70.394],
+            [-20.5185,-70.394,-20.5363,-70.1814]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-20.5503,-70.1822,-20.7167,-70.1914],
+            [-20.634,-70.1761,-20.633,-70.1974],
+            [-20.7172,-70.1807,-20.7161,-70.2021],
+            [-20.5202,-70.1805,-20.3538,-70.1713],
+            [-20.4365,-70.1865,-20.4375,-70.1652],
+            [-20.3533,-70.1819,-20.3544,-70.1606]
+        ]}
+    ]
+}

@@ -1,0 +1,74 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGHN/",
+    "info": {"country":"GB","city":"Sandown","type":"small_airport","longestRunwayM":884,"approximateRunways":true},
+    "radio": {"twr":"Sandown Tower","app":"Sandown Approach","dep":"Sandown Radar"},
+    "icao": "EGHN",
+    "iata": "",
+    "magnetic_north": 0.8,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [50.653099,-1.18222,"55ft"],
+    "rangeRings": {"enabled":true,"center":[50.653099,-1.18222],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":230,"speed":8},
+    "arrivalRunway": "23",
+    "departureRunway": "23",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[51.0578,-1.1733],[51.0425,-1.0084],[51.0007,-0.8554],[50.9352,-0.7246],[50.8505,-0.625],[50.7524,-0.5634],[50.6474,-0.544],[50.5429,-0.568],[50.4459,-0.6339],[50.363,-0.7372],[50.2998,-0.8708],[50.2608,-1.0256],[50.2484,-1.1911],[50.2637,-1.356],[50.3055,-1.5091],[50.371,-1.6398],[50.4557,-1.7394],[50.5538,-1.801],[50.6587,-1.8205],[50.7633,-1.7964],[50.8603,-1.7305],[50.9432,-1.6272],[51.0064,-1.4936],[51.0454,-1.3388]]}
+    ],
+    "fixes": {
+        "EGHN": [50.6531,-1.18222],
+        "CPT": [51.4917,-1.21972,"compton"],
+        "DUFMU": [50.85288,-1.19115],
+        "SFD": [50.7606,0.12194,"seaford"],
+        "UTUZO": [50.67887,-0.86961],
+        "SIWEV": [50.11791,-1.26793],
+        "BUVGU": [50.45426,-1.21407],
+        "COM": [50.9662,-2.15517,"compt n abbas"],
+        "OGALU": [50.74356,-1.46332],
+        "_RWY0503DME": [50.61953,-1.24706],
+        "_RWY2303DME": [50.68718,-1.11625]
+    },
+    "runways": [
+        {"name":["05","23"],"end":[[50.65113,-1.18604,"49ft"],[50.65561,-1.17736,"24ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "CPT2D": {"icao":"CPT2D","name":"Compton Two Delta","rwy":{"EGHN05":["_RWY2303DME"],"EGHN23":["_RWY0503DME"]},"body":[],"exitPoints":{"CPT":["CPT"]},"draw":[["EGHN","CPT*"]]},
+        "SFD1C": {"icao":"SFD1C","name":"Seaford One Charlie","rwy":{"EGHN05":["_RWY2303DME"],"EGHN23":["_RWY0503DME"]},"body":[],"exitPoints":{"SFD":["SFD"]},"draw":[["EGHN","SFD*"]]},
+        "SIWEV1B": {"icao":"SIWEV1B","name":"Siwev One Bravo","rwy":{"EGHN05":["_RWY2303DME"],"EGHN23":["_RWY0503DME"]},"body":[],"exitPoints":{"SIWEV":["SIWEV"]},"draw":[["EGHN","SIWEV*"]]},
+        "COM1E": {"icao":"COM1E","name":"Compt N Abbas One Echo","rwy":{"EGHN05":["_RWY2303DME"],"EGHN23":["_RWY0503DME"]},"body":[],"exitPoints":{"COM":["COM"]},"draw":[["EGHN","COM*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGHN","destination":"","category":"departure","route":"EGHN23.CPT2D.CPT","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["bcy/f50",2]]},
+        {"origin":"EGHN","destination":"","category":"departure","route":"EGHN23.SFD1C.SFD","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["bcy/f50",2]]},
+        {"origin":"EGHN","destination":"","category":"departure","route":"EGHN23.SIWEV1B.SIWEV","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["bcy/f50",2]]},
+        {"origin":"EGHN","destination":"","category":"departure","route":"EGHN23.COM1E.COM","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["bcy/f50",2]]},
+        {"origin":"EGHN","destination":"","category":"departure","route":"EGHN23.SIWEV1B.SIWEV","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/c550",1]]},
+        {"origin":"","destination":"EGHN","category":"arrival","route":"CPT..DUFMU..EGHN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.56,"airlines":[["bcy/f50",2]]},
+        {"origin":"","destination":"EGHN","category":"arrival","route":"SFD..UTUZO..EGHN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.56,"airlines":[["bcy/f50",2]]},
+        {"origin":"","destination":"EGHN","category":"arrival","route":"SIWEV..BUVGU..EGHN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.56,"airlines":[["bcy/f50",2]]},
+        {"origin":"","destination":"EGHN","category":"arrival","route":"COM..OGALU..EGHN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.56,"airlines":[["bcy/f50",2]]},
+        {"origin":"","destination":"EGHN","category":"arrival","route":"SIWEV..BUVGU..EGHN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.75,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/c550",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [51.4917,-1.2197,50.8529,-1.1912],
+            [50.8529,-1.1912,50.6531,-1.1822],
+            [50.7606,0.1219,50.6789,-0.8696],
+            [50.6789,-0.8696,50.6531,-1.1822],
+            [50.1179,-1.2679,50.4543,-1.2141],
+            [50.4543,-1.2141,50.6531,-1.1822],
+            [50.9662,-2.1552,50.7436,-1.4633],
+            [50.7436,-1.4633,50.6531,-1.1822]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [50.6556,-1.1774,50.7607,-0.9733],
+            [50.7159,-1.0854,50.7005,-1.0655],
+            [50.7684,-0.9833,50.753,-0.9633]
+        ]}
+    ]
+}

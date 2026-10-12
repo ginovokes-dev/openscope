@@ -1,0 +1,84 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KXNA/",
+    "info": {"country":"US","city":"Fayetteville","type":"medium_airport","longestRunwayM":2691,"frequencies":{"twr":"127.100","gnd":"121.900"},"approximateRunways":true},
+    "radio": {"twr":"Northwest Arkansas Tower","app":"Northwest Arkansas Approach","dep":"Northwest Arkansas Departure"},
+    "icao": "KXNA",
+    "iata": "XNA",
+    "magnetic_north": 1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 9000,
+    "initial_alt": 5000,
+    "position": [36.281898,-94.306801,"1287ft"],
+    "rangeRings": {"enabled":true,"center":[36.281898,-94.306801],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":160,"speed":10},
+    "arrivalRunway": "16L",
+    "departureRunway": "16L",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":90,"airspace_class":"D","poly":[[36.6865,-94.298],[36.6709,-94.1684],[36.6288,-94.0482],[36.563,-93.9457],[36.4781,-93.8677],[36.3798,-93.8197],[36.2748,-93.8048],[36.1703,-93.8242],[36.0735,-93.8765],[35.9908,-93.9581],[35.9279,-94.0634],[35.8892,-94.1853],[35.8773,-94.3156],[35.8929,-94.4452],[35.935,-94.5654],[36.0008,-94.6679],[36.0857,-94.7459],[36.184,-94.7939],[36.289,-94.8088],[36.3934,-94.7894],[36.4903,-94.7371],[36.573,-94.6555],[36.6359,-94.5502],[36.6746,-94.4283]]}
+    ],
+    "fixes": {
+        "KXNA": [36.2819,-94.3068],
+        "SUTOC": [36.69938,-93.88596],
+        "RO": [36.4612,-94.0695,"rogrs"],
+        "HRO": [36.3183,-93.2133,"harrison"],
+        "MATBU": [36.29014,-94.05908],
+        "IQS": [35.3986,-94.7944,"sallisaw"],
+        "KUMWE": [36.0993,-94.4076],
+        "GULZE": [36.33373,-94.97102],
+        "SOPNA": [36.30115,-94.55358],
+        "_RWY16L04DME": [36.35569,-94.34065],
+        "_RWY34R04DME": [36.208,-94.27299],
+        "_RWY16R04DME": [36.35583,-94.34022],
+        "_RWY34L04DME": [36.20796,-94.27344]
+    },
+    "runways": [
+        {"name":["16L","34R"],"end":[[36.2932,-94.312,"1287ft"],[36.2705,-94.3016,"1265ft"]],"ils":[true,true]},
+        {"name":["16R","34L"],"end":[[36.29323,-94.31192,"1288ft"],[36.27056,-94.30168,"1265ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "SUTOC2D": {"icao":"SUTOC2D","name":"Sutoc Two Delta","rwy":{"KXNA16L":["_RWY34R04DME"],"KXNA34R":["_RWY16L04DME"],"KXNA16R":["_RWY34L04DME"],"KXNA34L":["_RWY16R04DME"]},"body":[],"exitPoints":{"SUTOC":["SUTOC"]},"draw":[["KXNA","SUTOC*"]]},
+        "HRO2D": {"icao":"HRO2D","name":"Harrison Two Delta","rwy":{"KXNA16L":["_RWY34R04DME"],"KXNA34R":["_RWY16L04DME"],"KXNA16R":["_RWY34L04DME"],"KXNA34L":["_RWY16R04DME"]},"body":[],"exitPoints":{"HRO":["HRO"]},"draw":[["KXNA","HRO*"]]},
+        "IQS1D": {"icao":"IQS1D","name":"Sallisaw One Delta","rwy":{"KXNA16L":["_RWY34R04DME"],"KXNA34R":["_RWY16L04DME"],"KXNA16R":["_RWY34L04DME"],"KXNA34L":["_RWY16R04DME"]},"body":[],"exitPoints":{"IQS":["IQS"]},"draw":[["KXNA","IQS*"]]},
+        "GULZE2E": {"icao":"GULZE2E","name":"Gulze Two Echo","rwy":{"KXNA16L":["_RWY34R04DME"],"KXNA34R":["_RWY16L04DME"],"KXNA16R":["_RWY34L04DME"],"KXNA34L":["_RWY16R04DME"]},"body":[],"exitPoints":{"GULZE":["GULZE"]},"draw":[["KXNA","GULZE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KXNA","destination":"KCLT","category":"departure","route":"KXNA16L.HRO2D.HRO","altitude":"","speed":"","method":"random","rate":0.92,"airlines":[["aal/crj7",2],["aal/crj9",1],["aal/crj2",1]]},
+        {"origin":"KXNA","destination":"KDFW","category":"departure","route":"KXNA16L.IQS1D.IQS","altitude":"","speed":"","method":"random","rate":0.92,"airlines":[["aal/md82",2],["aal/e145",1]]},
+        {"origin":"KXNA","destination":"KATL","category":"departure","route":"KXNA16L.HRO2D.HRO","altitude":"","speed":"","method":"random","rate":0.61,"airlines":[["dal/b712",1],["flg/crj7",1],["flg/crj9",1],["flg/crj2",1]]},
+        {"origin":"KXNA","destination":"KORD","category":"departure","route":"KXNA16L.SUTOC2D.SUTOC","altitude":"","speed":"","method":"random","rate":0.61,"airlines":[["aal/crj7",1],["aal/e145",1]]},
+        {"origin":"KXNA","destination":"KLAS","category":"departure","route":"KXNA16L.GULZE2E.GULZE","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["aay/md82",1]]},
+        {"origin":"KXNA","destination":"","category":"departure","route":"KXNA16L.HRO2D.HRO","altitude":"","speed":"","method":"random","rate":0.61,"airlines":[["aal/crj7",1],["aay/a320",1]]},
+        {"origin":"KXNA","destination":"","category":"departure","route":"KXNA16L.IQS1D.IQS","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KCLT","destination":"KXNA","category":"arrival","route":"HRO..MATBU..KXNA","altitude":[5000,8000],"speed":250,"method":"random","rate":0.92,"airlines":[["aal/crj7",2],["aal/crj9",1],["aal/crj2",1]]},
+        {"origin":"KDFW","destination":"KXNA","category":"arrival","route":"IQS..KUMWE..KXNA","altitude":[5000,8000],"speed":250,"method":"random","rate":0.92,"airlines":[["aal/md82",2],["aal/e145",1]]},
+        {"origin":"KATL","destination":"KXNA","category":"arrival","route":"HRO..MATBU..KXNA","altitude":[5000,8000],"speed":250,"method":"random","rate":0.61,"airlines":[["dal/b712",1],["flg/crj7",1],["flg/crj9",1],["flg/crj2",1]]},
+        {"origin":"KORD","destination":"KXNA","category":"arrival","route":"SUTOC..RO..KXNA","altitude":[5000,8000],"speed":250,"method":"random","rate":0.61,"airlines":[["aal/crj7",1],["aal/e145",1]]},
+        {"origin":"KLAS","destination":"KXNA","category":"arrival","route":"GULZE..SOPNA..KXNA","altitude":[5000,8000],"speed":250,"method":"random","rate":0.31,"airlines":[["aay/md82",1]]},
+        {"origin":"","destination":"KXNA","category":"arrival","route":"HRO..MATBU..KXNA","altitude":[5000,8000],"speed":250,"method":"random","rate":0.61,"airlines":[["aal/crj7",1],["aay/a320",1]]},
+        {"origin":"","destination":"KXNA","category":"arrival","route":"IQS..KUMWE..KXNA","altitude":[5000,8000],"speed":250,"method":"random","rate":1.32,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [36.6994,-93.886,36.4612,-94.0695],
+            [36.4612,-94.0695,36.2819,-94.3068],
+            [36.3183,-93.2133,36.2901,-94.0591],
+            [36.2901,-94.0591,36.2819,-94.3068],
+            [35.3986,-94.7944,36.0993,-94.4076],
+            [36.0993,-94.4076,36.2819,-94.3068],
+            [36.3337,-94.971,36.3012,-94.5536],
+            [36.3012,-94.5536,36.2819,-94.3068]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [36.2932,-94.312,36.4494,-94.3837],
+            [36.3679,-94.3595,36.3748,-94.3362],
+            [36.446,-94.3954,36.4529,-94.3721],
+            [36.2705,-94.3016,36.1142,-94.2302],
+            [36.1958,-94.2542,36.1889,-94.2775],
+            [36.1177,-94.2186,36.1108,-94.2418]
+        ]}
+    ]
+}

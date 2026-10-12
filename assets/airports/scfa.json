@@ -1,0 +1,79 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SCFA/",
+    "info": {"country":"CL","city":"Antofagasta","type":"large_airport","longestRunwayM":2814,"frequencies":{"twr":"118.100","app":"119.300","gnd":"121.900"}},
+    "radio": {"twr":"Antofagasta Tower","app":"Antofagasta Approach","dep":"Antofagasta Departure"},
+    "icao": "SCFA",
+    "iata": "ANF",
+    "magnetic_north": -5.2,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-23.445274,-70.445232,"455ft"],
+    "rangeRings": {"enabled":true,"center":[-23.445274,-70.445232],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":0,"speed":10},
+    "arrivalRunway": "01",
+    "departureRunway": "01",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-23.0422,-70.4852],[-23.0465,-70.3702],[-23.0779,-70.2602],[-23.1344,-70.1629],[-23.212,-70.0848],[-23.3055,-70.0313],[-23.4086,-70.0059],[-23.5142,-70.0106],[-23.615,-70.0448],[-23.7043,-70.1063],[-23.776,-70.191],[-23.8251,-70.2929],[-23.8483,-70.4053],[-23.8441,-70.5203],[-23.8126,-70.6303],[-23.7562,-70.7276],[-23.6786,-70.8057],[-23.585,-70.8592],[-23.482,-70.8845],[-23.3764,-70.8799],[-23.2755,-70.8457],[-23.1862,-70.7841],[-23.1146,-70.6995],[-23.0655,-70.5975]]}
+    ],
+    "fixes": {
+        "SCFA": [-23.44527,-70.44523],
+        "FOGIR": [-22.90817,-70.41265],
+        "JUCAD": [-23.24572,-70.43313],
+        "PISUD": [-23.14907,-69.95578],
+        "WEGUC": [-23.33522,-70.26338],
+        "FAMFU": [-23.98229,-70.47957],
+        "SOGBI": [-23.6448,-70.45799],
+        "POBAL": [-23.41457,-71.03062],
+        "KARDO": [-23.43387,-70.66273],
+        "_RWY0104DME": [-23.52407,-70.45479],
+        "_RWY1904DME": [-23.36651,-70.43552]
+    },
+    "runways": [
+        {"name":["01","19"],"end":[[-23.45786,-70.44669,"352ft"],[-23.43272,-70.44361,"455ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "FOGIR2C": {"icao":"FOGIR2C","name":"Fogir Two Charlie","rwy":{"SCFA01":["_RWY1904DME"],"SCFA19":["_RWY0104DME"]},"body":[],"exitPoints":{"FOGIR":["FOGIR"]},"draw":[["SCFA","FOGIR*"]]},
+        "PISUD2C": {"icao":"PISUD2C","name":"Pisud Two Charlie","rwy":{"SCFA01":["_RWY1904DME"],"SCFA19":["_RWY0104DME"]},"body":[],"exitPoints":{"PISUD":["PISUD"]},"draw":[["SCFA","PISUD*"]]},
+        "FAMFU2E": {"icao":"FAMFU2E","name":"Famfu Two Echo","rwy":{"SCFA01":["_RWY1904DME"],"SCFA19":["_RWY0104DME"]},"body":[],"exitPoints":{"FAMFU":["FAMFU"]},"draw":[["SCFA","FAMFU*"]]},
+        "POBAL2C": {"icao":"POBAL2C","name":"Pobal Two Charlie","rwy":{"SCFA01":["_RWY1904DME"],"SCFA19":["_RWY0104DME"]},"body":[],"exitPoints":{"POBAL":["POBAL"]},"draw":[["SCFA","POBAL*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SCFA","destination":"SCEL","category":"departure","route":"SCFA01.FAMFU2E.FAMFU","altitude":"","speed":"","method":"random","rate":1.01,"airlines":[["lan/a319",1],["lan/a320",1],["sku/a319",1],["sku/a320",1]]},
+        {"origin":"SCFA","destination":"SCCF","category":"departure","route":"SCFA01.PISUD2C.PISUD","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["lan/a320",1],["sku/a319",1],["sku/a320",1]]},
+        {"origin":"SCFA","destination":"SCDA","category":"departure","route":"SCFA01.FOGIR2C.FOGIR","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["lan/a320",1],["sku/a319",1],["sku/a320",1]]},
+        {"origin":"SCFA","destination":"SCAR","category":"departure","route":"SCFA01.FOGIR2C.FOGIR","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["sku/a319",1],["sku/a320",1]]},
+        {"origin":"SCFA","destination":"","category":"departure","route":"SCFA01.FAMFU2E.FAMFU","altitude":"","speed":"","method":"random","rate":0.5,"airlines":[["sku/a319",1],["sku/a320",1]]},
+        {"origin":"SCFA","destination":"","category":"departure","route":"SCFA01.FOGIR2C.FOGIR","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["cc/c172",6],["cc/p28a",5],["cc/c182",3],["cc/be36",2],["cc/da42",1],["cc/tb20",1],["cc/c208",2],["cc/pc12",2],["cc/be20",1],["cc/b350",1],["cc/p180",1],["cc/c510",1],["cc/e50p",1],["cc/c550",1],["cc/e55p",1],["cc/cl30",1],["cc/c680",1],["cc/h25b",1],["cc/lj45",1],["cc/f2th",1],["cc/glf4",1],["cc/glex",1],["cc/glf5",1]]},
+        {"origin":"SCEL","destination":"SCFA","category":"arrival","route":"FAMFU..SOGBI..SCFA","altitude":[4000,7000],"speed":250,"method":"random","rate":1.01,"airlines":[["lan/a319",1],["lan/a320",1],["sku/a319",1],["sku/a320",1]]},
+        {"origin":"SCCF","destination":"SCFA","category":"arrival","route":"PISUD..WEGUC..SCFA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.76,"airlines":[["lan/a320",1],["sku/a319",1],["sku/a320",1]]},
+        {"origin":"SCDA","destination":"SCFA","category":"arrival","route":"FOGIR..JUCAD..SCFA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.76,"airlines":[["lan/a320",1],["sku/a319",1],["sku/a320",1]]},
+        {"origin":"SCAR","destination":"SCFA","category":"arrival","route":"FOGIR..JUCAD..SCFA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.5,"airlines":[["sku/a319",1],["sku/a320",1]]},
+        {"origin":"","destination":"SCFA","category":"arrival","route":"FAMFU..SOGBI..SCFA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.5,"airlines":[["sku/a319",1],["sku/a320",1]]},
+        {"origin":"","destination":"SCFA","category":"arrival","route":"FOGIR..JUCAD..SCFA","altitude":[4000,7000],"speed":250,"method":"random","rate":1.17,"airlines":[["cc/c172",6],["cc/p28a",5],["cc/c182",3],["cc/be36",2],["cc/da42",1],["cc/tb20",1],["cc/c208",2],["cc/pc12",2],["cc/be20",1],["cc/b350",1],["cc/p180",1],["cc/c510",1],["cc/e50p",1],["cc/c550",1],["cc/e55p",1],["cc/cl30",1],["cc/c680",1],["cc/h25b",1],["cc/lj45",1],["cc/f2th",1],["cc/glf4",1],["cc/glex",1],["cc/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-22.9082,-70.4126,-23.2457,-70.4331],
+            [-23.2457,-70.4331,-23.4453,-70.4452],
+            [-23.1491,-69.9558,-23.3352,-70.2634],
+            [-23.3352,-70.2634,-23.4453,-70.4452],
+            [-23.9823,-70.4796,-23.6448,-70.458],
+            [-23.6448,-70.458,-23.4453,-70.4452],
+            [-23.4146,-71.0306,-23.4339,-70.6627],
+            [-23.4339,-70.6627,-23.4453,-70.4452]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-23.4579,-70.4467,-23.6234,-70.467],
+            [-23.5417,-70.446,-23.5395,-70.4676],
+            [-23.6245,-70.4561,-23.6223,-70.4778],
+            [-23.4327,-70.4436,-23.2672,-70.4234],
+            [-23.3488,-70.4443,-23.3511,-70.4227],
+            [-23.2661,-70.4342,-23.2683,-70.4126]
+        ]}
+    ]
+}

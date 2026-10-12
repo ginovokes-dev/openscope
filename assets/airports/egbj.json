@@ -1,0 +1,77 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGBJ/",
+    "info": {"country":"GB","city":"Staverton","type":"medium_airport","longestRunwayM":1431,"frequencies":{"atis":"127.475","twr":"122.900","app":"128.550"}},
+    "radio": {"twr":"Gloucestershire Tower","app":"Gloucestershire Approach","dep":"Gloucestershire Radar"},
+    "icao": "EGBJ",
+    "iata": "GLO",
+    "magnetic_north": 0.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [51.894199,-2.16722,"101ft"],
+    "rangeRings": {"enabled":true,"center":[51.894199,-2.16722],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":270,"speed":9},
+    "arrivalRunway": "26",
+    "departureRunway": "26",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[52.2989,-2.1626],[52.2844,-1.9931],[52.2433,-1.8354],[52.1784,-1.7003],[52.0941,-1.597],[51.9962,-1.5326],[51.8914,-1.5115],[51.7867,-1.535],[51.6894,-1.6016],[51.606,-1.7068],[51.5423,-1.8433],[51.5026,-2.0019],[51.4895,-2.1718],[51.504,-2.3414],[51.5451,-2.4991],[51.61,-2.6342],[51.6943,-2.7374],[51.7922,-2.8018],[51.897,-2.823],[52.0017,-2.7995],[52.099,-2.7328],[52.1824,-2.6277],[52.2461,-2.4911],[52.2858,-2.3325]]}
+    ],
+    "fixes": {
+        "EGBJ": [51.8942,-2.16722],
+        "HON": [52.3567,-1.66361,"honiley"],
+        "ENIKE": [52.06009,-1.98658],
+        "CPT": [51.4917,-1.21972,"compton"],
+        "MUNAJ": [51.78087,-1.90045],
+        "BRI": [51.3814,-2.71754,"bristol"],
+        "VOTHO": [51.72756,-2.34605],
+        "WPL": [52.63,-3.15389,"welshpool"],
+        "INIBI": [52.04818,-2.3737],
+        "_RWY0803DME": [51.88935,-2.25616],
+        "_RWY2603DME": [51.89875,-2.08055],
+        "_RWY0303DME": [51.84728,-2.21363],
+        "_RWY2103DME": [51.93655,-2.11522]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[51.89369,-2.17551,"74ft"],[51.89446,-2.16122,"87ft"]],"ils":[false,false]},
+        {"name":["03","21"],"end":[[51.8886,-2.16813,"83ft"],[51.89525,-2.1608,"86ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "HON3D": {"icao":"HON3D","name":"Honiley Three Delta","rwy":{"EGBJ08":["_RWY2603DME"],"EGBJ26":["_RWY0803DME"],"EGBJ03":["_RWY2103DME"],"EGBJ21":["_RWY0303DME"]},"body":[],"exitPoints":{"HON":["HON"]},"draw":[["EGBJ","HON*"]]},
+        "CPT3A": {"icao":"CPT3A","name":"Compton Three Alpha","rwy":{"EGBJ08":["_RWY2603DME"],"EGBJ26":["_RWY0803DME"],"EGBJ03":["_RWY2103DME"],"EGBJ21":["_RWY0303DME"]},"body":[],"exitPoints":{"CPT":["CPT"]},"draw":[["EGBJ","CPT*"]]},
+        "BRI3B": {"icao":"BRI3B","name":"Bristol Three Bravo","rwy":{"EGBJ08":["_RWY2603DME"],"EGBJ26":["_RWY0803DME"],"EGBJ03":["_RWY2103DME"],"EGBJ21":["_RWY0303DME"]},"body":[],"exitPoints":{"BRI":["BRI"]},"draw":[["EGBJ","BRI*"]]},
+        "WPL1B": {"icao":"WPL1B","name":"Welshpool One Bravo","rwy":{"EGBJ08":["_RWY2603DME"],"EGBJ26":["_RWY0803DME"],"EGBJ03":["_RWY2103DME"],"EGBJ21":["_RWY0303DME"]},"body":[],"exitPoints":{"WPL":["WPL"]},"draw":[["EGBJ","WPL*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGBJ","destination":"","category":"departure","route":"EGBJ26.HON3D.HON","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["eze/js41",9],["eze/sb20",6],["bcy/f50",2],["bee/d328",2],["eze/e145",1],["eze/js32",1],["gmi/e145",1]]},
+        {"origin":"EGBJ","destination":"","category":"departure","route":"EGBJ26.CPT3A.CPT","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["eze/js41",9],["eze/sb20",6],["bcy/f50",2],["bee/d328",2],["eze/e145",1],["eze/js32",1],["gmi/e145",1]]},
+        {"origin":"EGBJ","destination":"","category":"departure","route":"EGBJ26.BRI3B.BRI","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["eze/js41",9],["eze/sb20",6],["bcy/f50",2],["bee/d328",2],["eze/e145",1],["eze/js32",1],["gmi/e145",1]]},
+        {"origin":"EGBJ","destination":"","category":"departure","route":"EGBJ26.WPL1B.WPL","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["eze/js41",9],["eze/sb20",6],["bcy/f50",2],["bee/d328",2],["eze/e145",1],["eze/js32",1],["gmi/e145",1]]},
+        {"origin":"EGBJ","destination":"","category":"departure","route":"EGBJ26.WPL1B.WPL","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/c680",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glf5",1]]},
+        {"origin":"","destination":"EGBJ","category":"arrival","route":"HON..ENIKE..EGBJ","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["eze/js41",9],["eze/sb20",6],["bcy/f50",2],["bee/d328",2],["eze/e145",1],["eze/js32",1],["gmi/e145",1]]},
+        {"origin":"","destination":"EGBJ","category":"arrival","route":"CPT..MUNAJ..EGBJ","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["eze/js41",9],["eze/sb20",6],["bcy/f50",2],["bee/d328",2],["eze/e145",1],["eze/js32",1],["gmi/e145",1]]},
+        {"origin":"","destination":"EGBJ","category":"arrival","route":"BRI..VOTHO..EGBJ","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["eze/js41",9],["eze/sb20",6],["bcy/f50",2],["bee/d328",2],["eze/e145",1],["eze/js32",1],["gmi/e145",1]]},
+        {"origin":"","destination":"EGBJ","category":"arrival","route":"WPL..INIBI..EGBJ","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["eze/js41",9],["eze/sb20",6],["bcy/f50",2],["bee/d328",2],["eze/e145",1],["eze/js32",1],["gmi/e145",1]]},
+        {"origin":"","destination":"EGBJ","category":"arrival","route":"WPL..INIBI..EGBJ","altitude":[4000,7000],"speed":250,"method":"random","rate":1.13,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/c680",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [52.3567,-1.6636,52.0601,-1.9866],
+            [52.0601,-1.9866,51.8942,-2.1672],
+            [51.4917,-1.2197,51.7809,-1.9004],
+            [51.7809,-1.9004,51.8942,-2.1672],
+            [51.3814,-2.7175,51.7276,-2.346],
+            [51.7276,-2.346,51.8942,-2.1672],
+            [52.63,-3.1539,52.0482,-2.3737],
+            [52.0482,-2.3737,51.8942,-2.1672]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [51.8945,-2.1612,51.9085,-1.8923],
+            [51.9115,-2.0282,51.8916,-2.0254],
+            [51.9185,-1.8937,51.8986,-1.8909]
+        ]}
+    ]
+}

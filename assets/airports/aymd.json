@@ -1,0 +1,88 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/AYMD/",
+    "info": {"country":"PG","city":"Madang","type":"medium_airport","longestRunwayM":1604,"frequencies":{"atis":"127.800","twr":"118.100"}},
+    "radio": {"twr":"Madang Tower","app":"Madang Approach","dep":"Madang Departure"},
+    "icao": "AYMD",
+    "iata": "MAG",
+    "magnetic_north": 4.6,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [-5.20708,145.789001,"20ft"],
+    "rangeRings": {"enabled":true,"center":[-5.20708,145.789001],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":60,"speed":10},
+    "arrivalRunway": "07",
+    "departureRunway": "07",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[-4.8037,145.8216],[-4.8258,145.9253],[-4.874,146.0198],[-4.9448,146.0985],[-5.0335,146.1561],[-5.134,146.1887],[-5.2395,146.1941],[-5.3428,146.1718],[-5.4369,146.1235],[-5.5153,146.0524],[-5.5727,145.9633],[-5.6051,145.8624],[-5.6105,145.7564],[-5.5883,145.6527],[-5.5402,145.5582],[-5.4694,145.4795],[-5.3807,145.4219],[-5.2801,145.3893],[-5.1746,145.3839],[-5.0713,145.4062],[-4.9773,145.4545],[-4.8989,145.5256],[-4.8415,145.6147],[-4.809,145.7156]]}
+    ],
+    "fixes": {
+        "AYMD": [-5.20708,145.789],
+        "JOTJU": [-4.72982,146.03823],
+        "TEJIP": [-5.02976,145.8816],
+        "RISON": [-5.6945,146.01754],
+        "AFIDU": [-5.38818,145.87391],
+        "GA": [-6.07782,145.39,"goroka"],
+        "SEMEJ": [-5.38891,145.70568],
+        "GUZJA": [-5.41554,145.29104],
+        "GOZAB": [-5.28453,145.60399],
+        "WURCA": [-4.90309,145.34335],
+        "ZUZKU": [-5.09414,145.62342],
+        "_RWY0703DME": [-5.22156,145.73404],
+        "_RWY2503DME": [-5.19246,145.84451]
+    },
+    "runways": [
+        {"name":["07","25"],"end":[[-5.20879,145.78254,"20ft"],[-5.20524,145.79601,"7ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "JOTJU3A": {"icao":"JOTJU3A","name":"Jotju Three Alpha","rwy":{"AYMD07":["_RWY2503DME"],"AYMD25":["_RWY0703DME"]},"body":[],"exitPoints":{"JOTJU":["JOTJU"]},"draw":[["AYMD","JOTJU*"]]},
+        "RISON1C": {"icao":"RISON1C","name":"Rison One Charlie","rwy":{"AYMD07":["_RWY2503DME"],"AYMD25":["_RWY0703DME"]},"body":[],"exitPoints":{"RISON":["RISON"]},"draw":[["AYMD","RISON*"]]},
+        "GA2C": {"icao":"GA2C","name":"Goroka Two Charlie","rwy":{"AYMD07":["_RWY2503DME"],"AYMD25":["_RWY0703DME"]},"body":[],"exitPoints":{"GA":["GA"]},"draw":[["AYMD","GA*"]]},
+        "GUZJA2C": {"icao":"GUZJA2C","name":"Guzja Two Charlie","rwy":{"AYMD07":["_RWY2503DME"],"AYMD25":["_RWY0703DME"]},"body":[],"exitPoints":{"GUZJA":["GUZJA"]},"draw":[["AYMD","GUZJA*"]]},
+        "WURCA2A": {"icao":"WURCA2A","name":"Wurca Two Alpha","rwy":{"AYMD07":["_RWY2503DME"],"AYMD25":["_RWY0703DME"]},"body":[],"exitPoints":{"WURCA":["WURCA"]},"draw":[["AYMD","WURCA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"AYMD","destination":"AYWK","category":"departure","route":"AYMD07.WURCA2A.WURCA","altitude":"","speed":"","method":"random","rate":1.19,"airlines":[["ang/dh8d",1],["ang/f100",1],["tok/dh8d",1],["tok/dh8b",1],["tok/dh8c",1]]},
+        {"origin":"AYMD","destination":"AYPY","category":"departure","route":"AYMD07.RISON1C.RISON","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["ang/dh8d",1],["ang/f100",1]]},
+        {"origin":"AYMD","destination":"AYMO","category":"departure","route":"AYMD07.JOTJU3A.JOTJU","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["ang/f100",1]]},
+        {"origin":"AYMD","destination":"AYVN","category":"departure","route":"AYMD07.WURCA2A.WURCA","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["ang/dh8d",1]]},
+        {"origin":"AYMD","destination":"AYGA","category":"departure","route":"AYMD07.GA2C.GA","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["tok/dh8d",1],["tok/dh8b",1],["tok/dh8c",1]]},
+        {"origin":"AYMD","destination":"","category":"departure","route":"AYMD07.RISON1C.RISON","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["tok/dh8d",1],["tok/dh8b",1],["tok/dh8c",1]]},
+        {"origin":"AYMD","destination":"","category":"departure","route":"AYMD07.GUZJA2C.GUZJA","altitude":"","speed":"","method":"random","rate":0.4,"airlines":[["tok/dh8d",1],["tok/dh8b",1],["tok/dh8c",1]]},
+        {"origin":"AYMD","destination":"","category":"departure","route":"AYMD07.GA2C.GA","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["p2/c172",6],["p2/p28a",5],["p2/c182",3],["p2/be36",2],["p2/da42",1],["p2/tb20",1],["p2/c208",2],["p2/pc12",2],["p2/be20",1],["p2/b350",1],["p2/p180",1],["p2/c510",1],["p2/e50p",1],["p2/c550",1],["p2/e55p",1],["p2/cl30",1],["p2/c680",1],["p2/h25b",1],["p2/lj45",1],["p2/f2th",1],["p2/glf4",1],["p2/glex",1],["p2/glf5",1]]},
+        {"origin":"AYWK","destination":"AYMD","category":"arrival","route":"WURCA..ZUZKU..AYMD","altitude":[4000,7000],"speed":250,"method":"random","rate":1.19,"airlines":[["ang/dh8d",1],["ang/f100",1],["tok/dh8d",1],["tok/dh8b",1],["tok/dh8c",1]]},
+        {"origin":"AYPY","destination":"AYMD","category":"arrival","route":"RISON..AFIDU..AYMD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.79,"airlines":[["ang/dh8d",1],["ang/f100",1]]},
+        {"origin":"AYMO","destination":"AYMD","category":"arrival","route":"JOTJU..TEJIP..AYMD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["ang/f100",1]]},
+        {"origin":"AYVN","destination":"AYMD","category":"arrival","route":"WURCA..ZUZKU..AYMD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["ang/dh8d",1]]},
+        {"origin":"AYGA","destination":"AYMD","category":"arrival","route":"GA..SEMEJ..AYMD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["tok/dh8d",1],["tok/dh8b",1],["tok/dh8c",1]]},
+        {"origin":"","destination":"AYMD","category":"arrival","route":"RISON..AFIDU..AYMD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["tok/dh8d",1],["tok/dh8b",1],["tok/dh8c",1]]},
+        {"origin":"","destination":"AYMD","category":"arrival","route":"GUZJA..GOZAB..AYMD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.4,"airlines":[["tok/dh8d",1],["tok/dh8b",1],["tok/dh8c",1]]},
+        {"origin":"","destination":"AYMD","category":"arrival","route":"GA..SEMEJ..AYMD","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["p2/c172",6],["p2/p28a",5],["p2/c182",3],["p2/be36",2],["p2/da42",1],["p2/tb20",1],["p2/c208",2],["p2/pc12",2],["p2/be20",1],["p2/b350",1],["p2/p180",1],["p2/c510",1],["p2/e50p",1],["p2/c550",1],["p2/e55p",1],["p2/cl30",1],["p2/c680",1],["p2/h25b",1],["p2/lj45",1],["p2/f2th",1],["p2/glf4",1],["p2/glex",1],["p2/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-4.7298,146.0382,-5.0298,145.8816],
+            [-5.0298,145.8816,-5.2071,145.789],
+            [-5.6945,146.0175,-5.3882,145.8739],
+            [-5.3882,145.8739,-5.2071,145.789],
+            [-6.0778,145.39,-5.3889,145.7057],
+            [-5.3889,145.7057,-5.2071,145.789],
+            [-5.4155,145.291,-5.2845,145.604],
+            [-5.2845,145.604,-5.2071,145.789],
+            [-4.9031,145.3433,-5.0941,145.6234],
+            [-5.0941,145.6234,-5.2071,145.789]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-5.2088,145.7825,-5.2514,145.6208],
+            [-5.2397,145.7043,-5.2204,145.6991],
+            [-5.261,145.6234,-5.2417,145.6183],
+            [-5.2052,145.796,-5.1626,145.9577],
+            [-5.1743,145.8743,-5.1936,145.8794],
+            [-5.153,145.9551,-5.1723,145.9602]
+        ]}
+    ]
+}

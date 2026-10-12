@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/UCFO/",
+    "info": {"country":"KG","city":"Osh","type":"large_airport","longestRunwayM":3212,"frequencies":{"twr":"118.300","app":"124.200","gnd":"121.800"}},
+    "radio": {"twr":"Osh Tower","app":"Osh Approach","dep":"Osh Departure"},
+    "icao": "UCFO",
+    "iata": "OSS",
+    "magnetic_north": 5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 10000,
+    "initial_alt": 6000,
+    "position": [40.609001,72.793297,"2927ft"],
+    "rangeRings": {"enabled":true,"center":[40.609001,72.793297],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":290,"speed":11},
+    "arrivalRunway": "30",
+    "departureRunway": "30",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"D","poly":[[41.0122,72.8398],[40.9893,72.9756],[40.9405,73.0991],[40.8691,73.2017],[40.78,73.2764],[40.6793,73.3183],[40.5737,73.3243],[40.4706,73.2942],[40.3769,73.23],[40.299,73.136],[40.2422,73.0186],[40.2105,72.8859],[40.2058,72.7468],[40.2287,72.611],[40.2775,72.4875],[40.3489,72.3849],[40.438,72.3102],[40.5387,72.2683],[40.6443,72.2622],[40.7474,72.2924],[40.8411,72.3566],[40.919,72.4506],[40.9758,72.568],[41.0075,72.7007]]}
+    ],
+    "fixes": {
+        "UCFO": [40.609,72.7933],
+        "BUHIS": [41.11108,73.04768],
+        "CAMWO": [40.79554,72.88781],
+        "IR": [40.9667,73.3667,"irisu"],
+        "RIBUZ": [40.73589,72.9967],
+        "LIBJI": [40.09441,72.58679],
+        "EGIZI": [40.41781,72.71657],
+        "NS": [41.1667,72.1667,"naryn-ges"],
+        "TEFON": [40.76106,72.62245],
+        "_RWY1204DME": [40.65365,72.71128],
+        "_RWY3004DME": [40.56116,72.8808]
+    },
+    "runways": [
+        {"name":["12","30"],"end":[[40.61479,72.78259,"2851ft"],[40.60006,72.80959,"2928ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "BUHIS1A": {"icao":"BUHIS1A","name":"Buhis One Alpha","rwy":{"UCFO12":["_RWY3004DME"],"UCFO30":["_RWY1204DME"]},"body":[],"exitPoints":{"BUHIS":["BUHIS"]},"draw":[["UCFO","BUHIS*"]]},
+        "IR2E": {"icao":"IR2E","name":"Irisu Two Echo","rwy":{"UCFO12":["_RWY3004DME"],"UCFO30":["_RWY1204DME"]},"body":[],"exitPoints":{"IR":["IR"]},"draw":[["UCFO","IR*"]]},
+        "LIBJI2D": {"icao":"LIBJI2D","name":"Libji Two Delta","rwy":{"UCFO12":["_RWY3004DME"],"UCFO30":["_RWY1204DME"]},"body":[],"exitPoints":{"LIBJI":["LIBJI"]},"draw":[["UCFO","LIBJI*"]]},
+        "NS2A": {"icao":"NS2A","name":"Naryn-ges Two Alpha","rwy":{"UCFO12":["_RWY3004DME"],"UCFO30":["_RWY1204DME"]},"body":[],"exitPoints":{"NS":["NS"]},"draw":[["UCFO","NS*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"UCFO","destination":"LTFM","category":"departure","route":"UCFO30.NS2A.NS","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["thy/a319",1]]},
+        {"origin":"UCFO","destination":"ULLI","category":"departure","route":"UCFO30.NS2A.NS","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["afl/a320",1]]},
+        {"origin":"UCFO","destination":"UNNT","category":"departure","route":"UCFO30.BUHIS1A.BUHIS","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["sbi/a320",1]]},
+        {"origin":"UCFO","destination":"USCC","category":"departure","route":"UCFO30.NS2A.NS","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["svr/a320",1]]},
+        {"origin":"UCFO","destination":"USSS","category":"departure","route":"UCFO30.NS2A.NS","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["svr/a320",1]]},
+        {"origin":"UCFO","destination":"","category":"departure","route":"UCFO30.IR2E.IR","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["csn/b737",1]]},
+        {"origin":"UCFO","destination":"","category":"departure","route":"UCFO30.NS2A.NS","altitude":"","speed":"","method":"random","rate":1.04,"airlines":[["svr/a320",2]]},
+        {"origin":"UCFO","destination":"","category":"departure","route":"UCFO30.BUHIS1A.BUHIS","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["ex/c172",6],["ex/p28a",5],["ex/c182",3],["ex/be36",2],["ex/da42",1],["ex/tb20",1],["ex/c208",2],["ex/pc12",2],["ex/be20",1],["ex/b350",1],["ex/p180",1],["ex/c510",1],["ex/e50p",1],["ex/c550",1],["ex/e55p",1],["ex/cl30",1],["ex/c680",1],["ex/h25b",1],["ex/lj45",1],["ex/f2th",1],["ex/glf4",1],["ex/glex",1],["ex/glf5",1]]},
+        {"origin":"LTFM","destination":"UCFO","category":"arrival","route":"NS..TEFON..UCFO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["thy/a319",1]]},
+        {"origin":"ULLI","destination":"UCFO","category":"arrival","route":"NS..TEFON..UCFO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["afl/a320",1]]},
+        {"origin":"UNNT","destination":"UCFO","category":"arrival","route":"BUHIS..CAMWO..UCFO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["sbi/a320",1]]},
+        {"origin":"USCC","destination":"UCFO","category":"arrival","route":"NS..TEFON..UCFO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["svr/a320",1]]},
+        {"origin":"USSS","destination":"UCFO","category":"arrival","route":"NS..TEFON..UCFO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["svr/a320",1]]},
+        {"origin":"","destination":"UCFO","category":"arrival","route":"IR..RIBUZ..UCFO","altitude":[6000,9000],"speed":250,"method":"random","rate":0.52,"airlines":[["csn/b737",1]]},
+        {"origin":"","destination":"UCFO","category":"arrival","route":"NS..TEFON..UCFO","altitude":[6000,9000],"speed":250,"method":"random","rate":1.04,"airlines":[["svr/a320",2]]},
+        {"origin":"","destination":"UCFO","category":"arrival","route":"BUHIS..CAMWO..UCFO","altitude":[6000,9000],"speed":250,"method":"random","rate":1.39,"airlines":[["ex/c172",6],["ex/p28a",5],["ex/c182",3],["ex/be36",2],["ex/da42",1],["ex/tb20",1],["ex/c208",2],["ex/pc12",2],["ex/be20",1],["ex/b350",1],["ex/p180",1],["ex/c510",1],["ex/e50p",1],["ex/c550",1],["ex/e55p",1],["ex/cl30",1],["ex/c680",1],["ex/h25b",1],["ex/lj45",1],["ex/f2th",1],["ex/glf4",1],["ex/glex",1],["ex/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [41.1111,73.0477,40.7955,72.8878],
+            [40.7955,72.8878,40.609,72.7933],
+            [40.9667,73.3667,40.7359,72.9967],
+            [40.7359,72.9967,40.609,72.7933],
+            [40.0944,72.5868,40.4178,72.7166],
+            [40.4178,72.7166,40.609,72.7933],
+            [41.1667,72.1667,40.7611,72.6224],
+            [40.7611,72.6224,40.609,72.7933]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [40.6148,72.7826,40.7118,72.6042],
+            [40.6552,72.6858,40.6715,72.7011],
+            [40.7037,72.5965,40.72,72.6119],
+            [40.6001,72.8096,40.5027,72.9875],
+            [40.5595,72.9063,40.5433,72.8909],
+            [40.5108,72.9951,40.4946,72.9798]
+        ]}
+    ]
+}

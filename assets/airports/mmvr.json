@@ -1,0 +1,81 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/MMVR/",
+    "info": {"country":"MX","city":"Veracruz","type":"large_airport","longestRunwayM":2424,"frequencies":{"atis":"127.800","twr":"118.500","app":"120.400"}},
+    "radio": {"twr":"Heriberto Jara Tower","app":"Heriberto Jara Approach","dep":"Heriberto Jara Departure"},
+    "icao": "MMVR",
+    "iata": "VER",
+    "magnetic_north": 2.6,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [19.139589,-96.188602,"90ft"],
+    "rangeRings": {"enabled":true,"center":[19.139589,-96.188602],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":20,"speed":6},
+    "arrivalRunway": "01",
+    "departureRunway": "01",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[19.5439,-96.1692],[19.5253,-96.0591],[19.4805,-95.9578],[19.4125,-95.8723],[19.3258,-95.8083],[19.2265,-95.7702],[19.1212,-95.7607],[19.0172,-95.7803],[18.9216,-95.8277],[18.8407,-95.8997],[18.7803,-95.9915],[18.7443,-96.0966],[18.7353,-96.208],[18.7538,-96.3181],[18.7987,-96.4194],[18.8667,-96.5049],[18.9533,-96.5689],[19.0527,-96.607],[19.1579,-96.6165],[19.262,-96.5969],[19.3576,-96.5495],[19.4384,-96.4775],[19.4989,-96.3857],[19.5348,-96.2806]]}
+    ],
+    "fixes": {
+        "MMVR": [19.13959,-96.1886],
+        "ACOHE": [19.26825,-95.63571],
+        "NOPOS": [19.18739,-95.98318],
+        "BEGUK": [18.60214,-96.16432],
+        "CELIG": [18.93991,-96.17958],
+        "EWEWU": [19.22327,-96.75108],
+        "LITAZ": [19.17068,-96.39759],
+        "MESOL": [19.58193,-96.51264],
+        "OSERU": [19.30393,-96.309],
+        "_RWY1904DME": [19.2149,-96.17286],
+        "_RWY0104DME": [19.0627,-96.20412]
+    },
+    "runways": [
+        {"name":["19","01"],"end":[[19.1495,-96.1863,"89ft"],[19.1281,-96.1907,"111ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ACOHE3A": {"icao":"ACOHE3A","name":"Acohe Three Alpha","rwy":{"MMVR19":["_RWY0104DME"],"MMVR01":["_RWY1904DME"]},"body":[],"exitPoints":{"ACOHE":["ACOHE"]},"draw":[["MMVR","ACOHE*"]]},
+        "BEGUK3D": {"icao":"BEGUK3D","name":"Beguk Three Delta","rwy":{"MMVR19":["_RWY0104DME"],"MMVR01":["_RWY1904DME"]},"body":[],"exitPoints":{"BEGUK":["BEGUK"]},"draw":[["MMVR","BEGUK*"]]},
+        "EWEWU2C": {"icao":"EWEWU2C","name":"Ewewu Two Charlie","rwy":{"MMVR19":["_RWY0104DME"],"MMVR01":["_RWY1904DME"]},"body":[],"exitPoints":{"EWEWU":["EWEWU"]},"draw":[["MMVR","EWEWU*"]]},
+        "MESOL3D": {"icao":"MESOL3D","name":"Mesol Three Delta","rwy":{"MMVR19":["_RWY0104DME"],"MMVR01":["_RWY1904DME"]},"body":[],"exitPoints":{"MESOL":["MESOL"]},"draw":[["MMVR","MESOL*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"MMVR","destination":"MMMX","category":"departure","route":"MMVR01.EWEWU2C.EWEWU","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["amx/at72",1],["amx/e75l",1],["tao/at72",1],["tao/at45",1],["tao/at75",1]]},
+        {"origin":"MMVR","destination":"MMGL","category":"departure","route":"MMVR01.EWEWU2C.EWEWU","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["voi/a319",1]]},
+        {"origin":"MMVR","destination":"MMMY","category":"departure","route":"MMVR01.MESOL3D.MESOL","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["voi/a320",1]]},
+        {"origin":"MMVR","destination":"MMTJ","category":"departure","route":"MMVR01.MESOL3D.MESOL","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["voi/a320",1]]},
+        {"origin":"MMVR","destination":"MMTM","category":"departure","route":"MMVR01.MESOL3D.MESOL","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["amx/at72",1]]},
+        {"origin":"MMVR","destination":"","category":"departure","route":"MMVR01.ACOHE3A.ACOHE","altitude":"","speed":"","method":"random","rate":0.88,"airlines":[["amx/at72",1],["voi/a320",1]]},
+        {"origin":"MMVR","destination":"","category":"departure","route":"MMVR01.BEGUK3D.BEGUK","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["xa/c172",6],["xa/p28a",5],["xa/c182",3],["xa/be36",2],["xa/da42",1],["xa/tb20",1],["xa/c208",2],["xa/pc12",2],["xa/be20",1],["xa/b350",1],["xa/p180",1],["xa/c510",1],["xa/e50p",1],["xa/c550",1],["xa/e55p",1],["xa/cl30",1],["xa/c680",1],["xa/h25b",1],["xa/lj45",1],["xa/f2th",1],["xa/glf4",1],["xa/glex",1],["xa/glf5",1]]},
+        {"origin":"MMMX","destination":"MMVR","category":"arrival","route":"EWEWU..LITAZ..MMVR","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["amx/at72",1],["amx/e75l",1],["tao/at72",1],["tao/at45",1],["tao/at75",1]]},
+        {"origin":"MMGL","destination":"MMVR","category":"arrival","route":"EWEWU..LITAZ..MMVR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["voi/a319",1]]},
+        {"origin":"MMMY","destination":"MMVR","category":"arrival","route":"MESOL..OSERU..MMVR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["voi/a320",1]]},
+        {"origin":"MMTJ","destination":"MMVR","category":"arrival","route":"MESOL..OSERU..MMVR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["voi/a320",1]]},
+        {"origin":"MMTM","destination":"MMVR","category":"arrival","route":"MESOL..OSERU..MMVR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["amx/at72",1]]},
+        {"origin":"","destination":"MMVR","category":"arrival","route":"ACOHE..NOPOS..MMVR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.88,"airlines":[["amx/at72",1],["voi/a320",1]]},
+        {"origin":"","destination":"MMVR","category":"arrival","route":"BEGUK..CELIG..MMVR","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["xa/c172",6],["xa/p28a",5],["xa/c182",3],["xa/be36",2],["xa/da42",1],["xa/tb20",1],["xa/c208",2],["xa/pc12",2],["xa/be20",1],["xa/b350",1],["xa/p180",1],["xa/c510",1],["xa/e50p",1],["xa/c550",1],["xa/e55p",1],["xa/cl30",1],["xa/c680",1],["xa/h25b",1],["xa/lj45",1],["xa/f2th",1],["xa/glf4",1],["xa/glex",1],["xa/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [19.2682,-95.6357,19.1874,-95.9832],
+            [19.1874,-95.9832,19.1396,-96.1886],
+            [18.6021,-96.1643,18.9399,-96.1796],
+            [18.9399,-96.1796,19.1396,-96.1886],
+            [19.2233,-96.7511,19.1707,-96.3976],
+            [19.1707,-96.3976,19.1396,-96.1886],
+            [19.5819,-96.5126,19.3039,-96.309],
+            [19.3039,-96.309,19.1396,-96.1886]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [19.1495,-96.1863,19.313,-96.1527],
+            [19.2332,-96.1799,19.2293,-96.1591],
+            [19.3149,-96.1631,19.3111,-96.1423],
+            [19.1281,-96.1907,18.9646,-96.2242],
+            [19.0444,-96.1971,19.0482,-96.2179],
+            [18.9627,-96.2139,18.9665,-96.2346]
+        ]}
+    ]
+}

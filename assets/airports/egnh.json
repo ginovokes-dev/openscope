@@ -1,0 +1,77 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGNH/",
+    "info": {"country":"GB","city":"Blackpool","type":"medium_airport","longestRunwayM":1868,"frequencies":{"atis":"121.750","twr":"118.400","app":"119.950"}},
+    "radio": {"twr":"Blackpool Tower","app":"Blackpool Approach","dep":"Blackpool Radar"},
+    "icao": "EGNH",
+    "iata": "BLK",
+    "magnetic_north": -0.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [53.771702,-3.02861,"34ft"],
+    "rangeRings": {"enabled":true,"center":[53.771702,-3.02861],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":270,"speed":12},
+    "arrivalRunway": "28",
+    "departureRunway": "28",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[54.1764,-3.0298],[54.1628,-2.8525],[54.1225,-2.6873],[54.0584,-2.5453],[53.9747,-2.4362],[53.8771,-2.3675],[53.7724,-2.3439],[53.6676,-2.3669],[53.57,-2.435],[53.486,-2.5436],[53.4216,-2.6852],[53.381,-2.8502],[53.367,-3.0274],[53.3806,-3.2047],[53.4209,-3.37],[53.485,-3.512],[53.5687,-3.621],[53.6663,-3.6897],[53.771,-3.7134],[53.8758,-3.6903],[53.9734,-3.6222],[54.0574,-3.5137],[54.1218,-3.372],[54.1624,-3.207]]}
+    ],
+    "fixes": {
+        "EGNH": [53.7717,-3.02861],
+        "EMEGU": [54.12146,-2.33706],
+        "WUGOS": [53.90165,-2.77167],
+        "MCT": [53.3569,-2.26222,"manchester"],
+        "BEDPI": [53.63672,-2.77921],
+        "CAE": [53.1001,-4.33952,"caernarfon"],
+        "KEKVU": [53.64079,-3.28414],
+        "CAR": [54.1411,-4.49167,"carnane"],
+        "KESOT": [53.85022,-3.3396],
+        "_RWY1004DME": [53.77731,-3.15509],
+        "_RWY2804DME": [53.76569,-2.90207],
+        "_RWY1304DME": [53.81427,-3.13143],
+        "_RWY3104DME": [53.72796,-2.94146]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[53.7722,-3.04269,"32ft"],[53.7709,-3.01444,"28ft"]],"ils":[false,false]},
+        {"name":["13","31"],"end":[[53.7737,-3.04197,"32ft"],[53.7686,-3.03074,"30ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "EMEGU3B": {"icao":"EMEGU3B","name":"Emegu Three Bravo","rwy":{"EGNH10":["_RWY2804DME"],"EGNH28":["_RWY1004DME"],"EGNH13":["_RWY3104DME"],"EGNH31":["_RWY1304DME"]},"body":[],"exitPoints":{"EMEGU":["EMEGU"]},"draw":[["EGNH","EMEGU*"]]},
+        "MCT2A": {"icao":"MCT2A","name":"Manchester Two Alpha","rwy":{"EGNH10":["_RWY2804DME"],"EGNH28":["_RWY1004DME"],"EGNH13":["_RWY3104DME"],"EGNH31":["_RWY1304DME"]},"body":[],"exitPoints":{"MCT":["MCT"]},"draw":[["EGNH","MCT*"]]},
+        "CAE3C": {"icao":"CAE3C","name":"Caernarfon Three Charlie","rwy":{"EGNH10":["_RWY2804DME"],"EGNH28":["_RWY1004DME"],"EGNH13":["_RWY3104DME"],"EGNH31":["_RWY1304DME"]},"body":[],"exitPoints":{"CAE":["CAE"]},"draw":[["EGNH","CAE*"]]},
+        "CAR3D": {"icao":"CAR3D","name":"Carnane Three Delta","rwy":{"EGNH10":["_RWY2804DME"],"EGNH28":["_RWY1004DME"],"EGNH13":["_RWY3104DME"],"EGNH31":["_RWY1304DME"]},"body":[],"exitPoints":{"CAR":["CAR"]},"draw":[["EGNH","CAR*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGNH","destination":"","category":"departure","route":"EGNH28.EMEGU3B.EMEGU","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
+        {"origin":"EGNH","destination":"","category":"departure","route":"EGNH28.MCT2A.MCT","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
+        {"origin":"EGNH","destination":"","category":"departure","route":"EGNH28.CAE3C.CAE","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
+        {"origin":"EGNH","destination":"","category":"departure","route":"EGNH28.CAR3D.CAR","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
+        {"origin":"EGNH","destination":"","category":"departure","route":"EGNH28.CAR3D.CAR","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]},
+        {"origin":"","destination":"EGNH","category":"arrival","route":"EMEGU..WUGOS..EGNH","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
+        {"origin":"","destination":"EGNH","category":"arrival","route":"MCT..BEDPI..EGNH","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
+        {"origin":"","destination":"EGNH","category":"arrival","route":"CAE..KEKVU..EGNH","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
+        {"origin":"","destination":"EGNH","category":"arrival","route":"CAR..KESOT..EGNH","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["bcy/f50",2],["bee/d328",2],["ein/a319",2],["ein/a320",1]]},
+        {"origin":"","destination":"EGNH","category":"arrival","route":"CAR..KESOT..EGNH","altitude":[4000,7000],"speed":250,"method":"random","rate":1.13,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [54.1215,-2.3371,53.9017,-2.7717],
+            [53.9017,-2.7717,53.7717,-3.0286],
+            [53.3569,-2.2622,53.6367,-2.7792],
+            [53.6367,-2.7792,53.7717,-3.0286],
+            [53.1001,-4.3395,53.6408,-3.2841],
+            [53.6408,-3.2841,53.7717,-3.0286],
+            [54.1411,-4.4917,53.8502,-3.3396],
+            [53.8502,-3.3396,53.7717,-3.0286]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [53.7709,-3.0144,53.7577,-2.7336],
+            [53.7743,-2.8727,53.7544,-2.8753],
+            [53.7676,-2.7323,53.7477,-2.7349]
+        ]}
+    ]
+}

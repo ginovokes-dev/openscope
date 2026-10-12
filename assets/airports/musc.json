@@ -1,0 +1,79 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/MUSC/",
+    "info": {"country":"CU","city":"Santa Clara","type":"large_airport","longestRunwayM":3017,"frequencies":{"twr":"118.100"}},
+    "radio": {"twr":"Abel Santamaria Tower","app":"Abel Santamaria Approach","dep":"Abel Santamaria Departure"},
+    "icao": "MUSC",
+    "iata": "SNU",
+    "magnetic_north": -7.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [22.492215,-79.943119,"338ft"],
+    "rangeRings": {"enabled":true,"center":[22.492215,-79.943119],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":60,"speed":7},
+    "arrivalRunway": "08",
+    "departureRunway": "08",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[22.8938,-79.9973],[22.8931,-79.8829],[22.865,-79.7727],[22.8116,-79.6741],[22.7363,-79.5938],[22.6445,-79.5373],[22.5422,-79.5085],[22.4366,-79.5093],[22.3347,-79.5396],[22.2436,-79.5975],[22.1694,-79.6789],[22.1173,-79.7783],[22.0906,-79.889],[22.0914,-80.0033],[22.1194,-80.1136],[22.1729,-80.2122],[22.2481,-80.2925],[22.34,-80.349],[22.4422,-80.3778],[22.5478,-80.377],[22.6497,-80.3466],[22.7408,-80.2887],[22.815,-80.2073],[22.8672,-80.1079]]}
+    ],
+    "fixes": {
+        "MUSC": [22.49222,-79.94312],
+        "TEDWE": [23.02116,-79.8371],
+        "VAMAC": [22.68874,-79.90373],
+        "UMAGE": [22.48386,-79.36096],
+        "AFIZO": [22.48911,-79.72682],
+        "UTD": [21.7906,-79.9912,"trinidad"],
+        "SODOW": [22.29275,-79.95679],
+        "VUVFE": [22.61141,-80.51087],
+        "KEFTE": [22.5365,-80.15406],
+        "_RWY0804DME": [22.47262,-80.02772],
+        "_RWY2604DME": [22.51175,-79.85946]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[22.4889,-79.9578,"338ft"],[22.4955,-79.9294,"318ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "TEDWE3F": {"icao":"TEDWE3F","name":"Tedwe Three Foxtrot","rwy":{"MUSC08":["_RWY2604DME"],"MUSC26":["_RWY0804DME"]},"body":[],"exitPoints":{"TEDWE":["TEDWE"]},"draw":[["MUSC","TEDWE*"]]},
+        "UMAGE2B": {"icao":"UMAGE2B","name":"Umage Two Bravo","rwy":{"MUSC08":["_RWY2604DME"],"MUSC26":["_RWY0804DME"]},"body":[],"exitPoints":{"UMAGE":["UMAGE"]},"draw":[["MUSC","UMAGE*"]]},
+        "UTD3D": {"icao":"UTD3D","name":"Trinidad Three Delta","rwy":{"MUSC08":["_RWY2604DME"],"MUSC26":["_RWY0804DME"]},"body":[],"exitPoints":{"UTD":["UTD"]},"draw":[["MUSC","UTD*"]]},
+        "VUVFE2A": {"icao":"VUVFE2A","name":"Vuvfe Two Alpha","rwy":{"MUSC08":["_RWY2604DME"],"MUSC26":["_RWY0804DME"]},"body":[],"exitPoints":{"VUVFE":["VUVFE"]},"draw":[["MUSC","VUVFE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"MUSC","destination":"CYYZ","category":"departure","route":"MUSC08.TEDWE3F.TEDWE","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["aca/a319",1],["cub/a320",1],["wja/b737",1]]},
+        {"origin":"MUSC","destination":"CYUL","category":"departure","route":"MUSC08.TEDWE3F.TEDWE","altitude":"","speed":"","method":"random","rate":0.88,"airlines":[["aca/a319",1],["cub/a320",1]]},
+        {"origin":"MUSC","destination":"CYHZ","category":"departure","route":"MUSC08.TEDWE3F.TEDWE","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["aca/a320",1]]},
+        {"origin":"MUSC","destination":"MUCC","category":"departure","route":"MUSC08.UMAGE2B.UMAGE","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["tsc/a310",1]]},
+        {"origin":"MUSC","destination":"","category":"departure","route":"MUSC08.VUVFE2A.VUVFE","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["cub/a320",1]]},
+        {"origin":"MUSC","destination":"","category":"departure","route":"MUSC08.UMAGE2B.UMAGE","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["cu/c172",6],["cu/p28a",5],["cu/c182",3],["cu/be36",2],["cu/da42",1],["cu/tb20",1],["cu/c208",2],["cu/pc12",2],["cu/be20",1],["cu/b350",1],["cu/p180",1],["cu/c510",1],["cu/e50p",1],["cu/c550",1],["cu/e55p",1],["cu/cl30",1],["cu/c680",1],["cu/h25b",1],["cu/lj45",1],["cu/f2th",1],["cu/glf4",1],["cu/glex",1],["cu/glf5",1]]},
+        {"origin":"CYYZ","destination":"MUSC","category":"arrival","route":"TEDWE..VAMAC..MUSC","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["aca/a319",1],["cub/a320",1],["wja/b737",1]]},
+        {"origin":"CYUL","destination":"MUSC","category":"arrival","route":"TEDWE..VAMAC..MUSC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.88,"airlines":[["aca/a319",1],["cub/a320",1]]},
+        {"origin":"CYHZ","destination":"MUSC","category":"arrival","route":"TEDWE..VAMAC..MUSC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["aca/a320",1]]},
+        {"origin":"MUCC","destination":"MUSC","category":"arrival","route":"UMAGE..AFIZO..MUSC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["tsc/a310",1]]},
+        {"origin":"","destination":"MUSC","category":"arrival","route":"VUVFE..KEFTE..MUSC","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["cub/a320",1]]},
+        {"origin":"","destination":"MUSC","category":"arrival","route":"UMAGE..AFIZO..MUSC","altitude":[4000,7000],"speed":250,"method":"random","rate":1.17,"airlines":[["cu/c172",6],["cu/p28a",5],["cu/c182",3],["cu/be36",2],["cu/da42",1],["cu/tb20",1],["cu/c208",2],["cu/pc12",2],["cu/be20",1],["cu/b350",1],["cu/p180",1],["cu/c510",1],["cu/e50p",1],["cu/c550",1],["cu/e55p",1],["cu/cl30",1],["cu/c680",1],["cu/h25b",1],["cu/lj45",1],["cu/f2th",1],["cu/glf4",1],["cu/glex",1],["cu/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [23.0212,-79.8371,22.6887,-79.9037],
+            [22.6887,-79.9037,22.4922,-79.9431],
+            [22.4839,-79.361,22.4891,-79.7268],
+            [22.4891,-79.7268,22.4922,-79.9431],
+            [21.7906,-79.9912,22.2927,-79.9568],
+            [22.2927,-79.9568,22.4922,-79.9431],
+            [22.6114,-80.5109,22.5365,-80.1541],
+            [22.5365,-80.1541,22.4922,-79.9431]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [22.4889,-79.9578,22.4482,-80.1326],
+            [22.4589,-80.0426,22.4782,-80.0478],
+            [22.4385,-80.1299,22.4578,-80.1352],
+            [22.4955,-79.9294,22.5361,-79.7545],
+            [22.5255,-79.8446,22.5061,-79.8393],
+            [22.5457,-79.7572,22.5264,-79.7519]
+        ]}
+    ]
+}

@@ -1,0 +1,77 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LGPZ/",
+    "info": {"country":"GR","city":"Preveza","type":"medium_airport","longestRunwayM":2871,"frequencies":{"twr":"120.450","app":"120.450"}},
+    "radio": {"twr":"Aktion Tower","app":"Aktion Approach","dep":"Aktion Departure"},
+    "icao": "LGPZ",
+    "iata": "PVK",
+    "magnetic_north": 4.9,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [38.925499,20.765301,"11ft"],
+    "rangeRings": {"enabled":true,"center":[38.925499,20.765301],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":230,"speed":6},
+    "arrivalRunway": "24",
+    "departureRunway": "24",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[39.3287,20.8097],[39.306,20.9424],[39.2574,21.0629],[39.1862,21.1632],[39.0972,21.2364],[38.9965,21.2774],[38.8909,21.2836],[38.7877,21.2544],[38.694,21.1919],[38.6159,21.1004],[38.559,20.986],[38.5271,20.8565],[38.5223,20.7209],[38.545,20.5882],[38.5936,20.4677],[38.6648,20.3674],[38.7538,20.2942],[38.8545,20.2532],[38.9601,20.247],[39.0632,20.2762],[39.157,20.3387],[39.2351,20.4302],[39.292,20.5446],[39.3239,20.6741]]}
+    ],
+    "fixes": {
+        "LGPZ": [38.9255,20.7653],
+        "GETIP": [39.2527,21.31415],
+        "FIDIK": [39.04707,20.96922],
+        "ARA": [38.1097,21.4253,"araxos"],
+        "VADEL": [38.75635,20.90215],
+        "KOMIH": [38.5983,20.21645],
+        "WUBPI": [38.80393,20.56138],
+        "KRK": [39.4439,20.0728,"kerkira"],
+        "OZETI": [39.06408,20.58018],
+        "_RWY0604DME": [38.89542,20.67073],
+        "_RWY2404DME": [38.95492,20.85833]
+    },
+    "runways": [
+        {"name":["06","24"],"end":[[38.9206,20.75,"9ft"],[38.92979,20.77899,"11ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "GETIP1F": {"icao":"GETIP1F","name":"Getip One Foxtrot","rwy":{"LGPZ06":["_RWY2404DME"],"LGPZ24":["_RWY0604DME"]},"body":[],"exitPoints":{"GETIP":["GETIP"]},"draw":[["LGPZ","GETIP*"]]},
+        "ARA1C": {"icao":"ARA1C","name":"Araxos One Charlie","rwy":{"LGPZ06":["_RWY2404DME"],"LGPZ24":["_RWY0604DME"]},"body":[],"exitPoints":{"ARA":["ARA"]},"draw":[["LGPZ","ARA*"]]},
+        "KOMIH2D": {"icao":"KOMIH2D","name":"Komih Two Delta","rwy":{"LGPZ06":["_RWY2404DME"],"LGPZ24":["_RWY0604DME"]},"body":[],"exitPoints":{"KOMIH":["KOMIH"]},"draw":[["LGPZ","KOMIH*"]]},
+        "KRK2B": {"icao":"KRK2B","name":"Kerkira Two Bravo","rwy":{"LGPZ06":["_RWY2404DME"],"LGPZ24":["_RWY0604DME"]},"body":[],"exitPoints":{"KRK":["KRK"]},"draw":[["LGPZ","KRK*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LGPZ","destination":"EGKK","category":"departure","route":"LGPZ24.KRK2B.KRK","altitude":"","speed":"","method":"random","rate":1.67,"airlines":[["tom/b738",1],["tvf/b738",1],["tvf/b752",1]]},
+        {"origin":"LGPZ","destination":"LOWW","category":"departure","route":"LGPZ24.KRK2B.KRK","altitude":"","speed":"","method":"random","rate":1.11,"airlines":[["ber/e190",1],["nly/e190",1]]},
+        {"origin":"LGPZ","destination":"EDDL","category":"departure","route":"LGPZ24.KRK2B.KRK","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["ber/a321",1]]},
+        {"origin":"LGPZ","destination":"EDDM","category":"departure","route":"LGPZ24.KRK2B.KRK","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["ber/a320",1]]},
+        {"origin":"LGPZ","destination":"","category":"departure","route":"LGPZ24.KRK2B.KRK","altitude":"","speed":"","method":"random","rate":1.11,"airlines":[["tra/b738",1],["tvf/b738",1]]},
+        {"origin":"EGKK","destination":"LGPZ","category":"arrival","route":"KRK..OZETI..LGPZ","altitude":[4000,7000],"speed":250,"method":"random","rate":1.67,"airlines":[["tom/b738",1],["tvf/b738",1],["tvf/b752",1]]},
+        {"origin":"LOWW","destination":"LGPZ","category":"arrival","route":"KRK..OZETI..LGPZ","altitude":[4000,7000],"speed":250,"method":"random","rate":1.11,"airlines":[["ber/e190",1],["nly/e190",1]]},
+        {"origin":"EDDL","destination":"LGPZ","category":"arrival","route":"KRK..OZETI..LGPZ","altitude":[4000,7000],"speed":250,"method":"random","rate":0.56,"airlines":[["ber/a321",1]]},
+        {"origin":"EDDM","destination":"LGPZ","category":"arrival","route":"KRK..OZETI..LGPZ","altitude":[4000,7000],"speed":250,"method":"random","rate":0.56,"airlines":[["ber/a320",1]]},
+        {"origin":"","destination":"LGPZ","category":"arrival","route":"KRK..OZETI..LGPZ","altitude":[4000,7000],"speed":250,"method":"random","rate":1.11,"airlines":[["tra/b738",1],["tvf/b738",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [39.2527,21.3142,39.0471,20.9692],
+            [39.0471,20.9692,38.9255,20.7653],
+            [38.1097,21.4253,38.7563,20.9021],
+            [38.7563,20.9021,38.9255,20.7653],
+            [38.5983,20.2164,38.8039,20.5614],
+            [38.8039,20.5614,38.9255,20.7653],
+            [39.4439,20.0728,39.0641,20.5802],
+            [39.0641,20.5802,38.9255,20.7653]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [38.9206,20.75,38.8576,20.5519],
+            [38.8799,20.6558,38.8984,20.6461],
+            [38.8483,20.5568,38.8668,20.5471],
+            [38.9298,20.779,38.9925,20.9774],
+            [38.9704,20.8733,38.9519,20.883],
+            [39.0018,20.9726,38.9832,20.9823]
+        ]}
+    ]
+}

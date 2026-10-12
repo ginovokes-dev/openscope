@@ -1,0 +1,66 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGTB/",
+    "info": {"country":"GB","city":"Marlow","type":"small_airport","longestRunwayM":735,"frequencies":{"twr":"126.550","gnd":"121.770"}},
+    "radio": {"twr":"Wycombe Park Tower","app":"Wycombe Park Approach","dep":"Wycombe Park Radar"},
+    "icao": "EGTB",
+    "iata": "HYC",
+    "magnetic_north": 0.8,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [51.61177,-0.808316,"515ft"],
+    "rangeRings": {"enabled":true,"center":[51.61177,-0.808316],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":250,"speed":10},
+    "arrivalRunway": "24",
+    "departureRunway": "24",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[52.0164,-0.7992],[52.0012,-0.6309],[51.9594,-0.4746],[51.8939,-0.3411],[51.8092,-0.2394],[51.711,-0.1765],[51.6061,-0.1567],[51.5016,-0.1812],[51.4045,-0.2485],[51.3216,-0.354],[51.2585,-0.4904],[51.2194,-0.6485],[51.2071,-0.8174],[51.2224,-0.9858],[51.2642,-1.142],[51.3296,-1.2755],[51.4143,-1.3772],[51.5125,-1.4401],[51.6174,-1.4599],[51.722,-1.4354],[51.819,-1.3681],[51.9019,-1.2627],[51.965,-1.1263],[52.0041,-0.9682]]}
+    ],
+    "fixes": {
+        "EGTB": [51.61177,-0.80832],
+        "CFD": [52.0742,-0.61079,"cranfield"],
+        "SUZBU": [51.80495,-0.7258],
+        "BIG": [51.3309,0.03481,"biggin"],
+        "LON": [51.4872,-0.46667,"london"],
+        "SAM": [50.9553,-1.345,"southampton"],
+        "UHEKI": [51.43356,-0.95401],
+        "GST": [51.892,-2.1679,"gloucestershire"],
+        "DAHMO": [51.67473,-1.11378],
+        "_RWY0603DME": [51.58703,-0.88412],
+        "_RWY2403DME": [51.63643,-0.73222]
+    },
+    "runways": [
+        {"name":["06","24"],"end":[[51.61023,-0.81288,"513ft"],[51.61327,-0.80353,"513ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "CFD1C": {"icao":"CFD1C","name":"Cranfield One Charlie","rwy":{"EGTB06":["_RWY2403DME"],"EGTB24":["_RWY0603DME"]},"body":[],"exitPoints":{"CFD":["CFD"]},"draw":[["EGTB","CFD*"]]},
+        "BIG1B": {"icao":"BIG1B","name":"Biggin One Bravo","rwy":{"EGTB06":["_RWY2403DME"],"EGTB24":["_RWY0603DME"]},"body":[],"exitPoints":{"BIG":["BIG"]},"draw":[["EGTB","BIG*"]]},
+        "SAM3C": {"icao":"SAM3C","name":"Southampton Three Charlie","rwy":{"EGTB06":["_RWY2403DME"],"EGTB24":["_RWY0603DME"]},"body":[],"exitPoints":{"SAM":["SAM"]},"draw":[["EGTB","SAM*"]]},
+        "GST1D": {"icao":"GST1D","name":"Gloucestershire One Delta","rwy":{"EGTB06":["_RWY2403DME"],"EGTB24":["_RWY0603DME"]},"body":[],"exitPoints":{"GST":["GST"]},"draw":[["EGTB","GST*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGTB","destination":"","category":"departure","route":"EGTB24.SAM3C.SAM","altitude":"","speed":"","method":"random","rate":3,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1]]},
+        {"origin":"","destination":"EGTB","category":"arrival","route":"SAM..UHEKI..EGTB","altitude":[4000,7000],"speed":250,"method":"random","rate":3,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [52.0742,-0.6108,51.805,-0.7258],
+            [51.805,-0.7258,51.6118,-0.8083],
+            [51.3309,0.0348,51.4872,-0.4667],
+            [51.4872,-0.4667,51.6118,-0.8083],
+            [50.9553,-1.345,51.4336,-0.954],
+            [51.4336,-0.954,51.6118,-0.8083],
+            [51.892,-2.1679,51.6747,-1.1138],
+            [51.6747,-1.1138,51.6118,-0.8083]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [51.6133,-0.8035,51.6903,-0.5655],
+            [51.6607,-0.6921,51.643,-0.6772],
+            [51.6992,-0.573,51.6815,-0.5581]
+        ]}
+    ]
+}

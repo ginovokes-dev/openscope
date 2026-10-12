@@ -13,6 +13,8 @@
  *   --must-include GB,IE,.. countries whose airports with scheduled service are ALWAYS generated,
  *                           even with short/unpaved runways (default GB,IE,IM,JE,GG: the UK, Ireland
  *                           and the Crown Dependencies)
+ *   --include ICAO,ICAO     airports that are ALWAYS generated (default: UK business and general aviation
+ *                           airports with hard runways that have no scheduled service, eg. Biggin Hill)
  *   --only ICAO,ICAO        generate only these airports (debugging; disables pruning)
  *   --dry-run               compute everything but write nothing
  *   --no-prune              keep previously generated files that are no longer selected
@@ -33,6 +35,13 @@ const repo = require('./lib/repo');
 const { buildAirport, indexNavaids } = require('./lib/airport');
 const { serializeFile } = require('./lib/format');
 const { mergeLoadList } = require('./lib/loadlist');
+
+/** UK/IE airports without scheduled airline service that a UK controller would still expect to find */
+const DEFAULT_INCLUDE = [
+    'EGLF', 'EGKB', 'EGWU', 'EGBJ', 'EGBE', 'EGHD', 'EGMD', 'EGKA', 'EGTK', 'EGLK', 'EGTC', 'EGNR', 'EGMH', 'EGHC',
+    'EGNH', 'EGBP', 'EGHL', 'EGLM', 'EGHA', 'EGKR', 'EGMC', 'EGTB', 'EGSC', 'EGSX', 'EGHN', 'EGPM', 'EGBW', 'EGBK',
+    'EGUW', 'EGOV', 'EGXW', 'EGVN', 'EGUN'
+].join(',');
 const magvar = require('./lib/magvar');
 
 function run(argv) {
@@ -44,6 +53,7 @@ function run(argv) {
     const budgetBytes = getNumber(args, 'size-budget-mb', 8) * 1024 * 1024;
     const minRoutes = getNumber(args, 'min-routes', 3);
     const mustCountries = new Set(String(args['must-include'] === undefined ? 'GB,IE,IM,JE,GG' : args['must-include']).split(',').filter(Boolean));
+    const include = new Set(String(args.include === undefined ? DEFAULT_INCLUDE : args.include).toUpperCase().split(',').filter(Boolean));
     const only = args.only ? new Set(String(args.only).toUpperCase().split(',')) : null;
     const dataDir = getDataDir(args);
     const ctx = loadContext(dataDir, {
@@ -67,7 +77,7 @@ function run(argv) {
         .filter((s) => ctx.airlineIds.has(s.airline) && s.types.size > 0).length;
     const all = Array.from(ctx.airports.values()).filter((rec) => !hand.has(rec.icao.toLowerCase()));
     const mandatory = all
-        .filter((rec) => mustCountries.has(rec.country) && rec.scheduled)
+        .filter((rec) => (mustCountries.has(rec.country) && rec.scheduled) || include.has(rec.icao))
         .sort((a, b) => (a.icao < b.icao ? -1 : 1));
     const mandatorySet = new Set(mandatory.map((r) => r.icao));
     const ranked = all

@@ -1,0 +1,86 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LFRN/",
+    "info": {"country":"FR","city":"Saint-Jacques-de-la-Lande","type":"medium_airport","longestRunwayM":2100,"frequencies":{"atis":"136.400","twr":"120.500","app":"124.900","gnd":"121.725"}},
+    "radio": {"twr":"Rennes-Saint-Jacques Tower","app":"Rennes-Saint-Jacques Approach","dep":"Rennes-Saint-Jacques Departure"},
+    "icao": "LFRN",
+    "iata": "RNS",
+    "magnetic_north": 0.8,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [48.0695,-1.73479,"124ft"],
+    "rangeRings": {"enabled":true,"center":[48.0695,-1.73479],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":270,"speed":7},
+    "arrivalRunway": "28",
+    "departureRunway": "28",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[48.4742,-1.7263],[48.4589,-1.5699],[48.4171,-1.4247],[48.3516,-1.3006],[48.2669,-1.2061],[48.1688,-1.1477],[48.0638,-1.1292],[47.9593,-1.152],[47.8623,-1.2146],[47.7794,-1.3126],[47.7162,-1.4393],[47.6772,-1.5862],[47.6648,-1.7432],[47.6801,-1.8997],[47.7219,-2.0449],[47.7874,-2.169],[47.8721,-2.2635],[47.9702,-2.3219],[48.0752,-2.3404],[48.1797,-2.3175],[48.2767,-2.255],[48.3596,-2.157],[48.4228,-2.0302],[48.4618,-1.8834]]}
+    ],
+    "fixes": {
+        "LFRN": [48.0695,-1.73479],
+        "HOZUS": [48.25265,-0.97786],
+        "INOVE": [48.13755,-1.45356],
+        "ANG": [47.5369,-0.85183,"angers"],
+        "EVIVA": [47.93558,-1.51277],
+        "LESIV": [47.77269,-2.40619],
+        "ZIZBI": [47.95923,-1.98424],
+        "DIN": [48.5861,-2.08233,"dinard"],
+        "ITESU": [48.25179,-1.85743],
+        "_RWY1004DME": [48.0859,-1.84317],
+        "_RWY2804DME": [48.0578,-1.62044],
+        "_RWY1404DME": [48.12251,-1.8017],
+        "_RWY3204DME": [48.01126,-1.67247]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[48.07358,-1.74517,"80ft"],[48.0702,-1.71839,"120ft"]],"ils":[true,true]},
+        {"name":["14","32"],"end":[[48.0699,-1.7405,"110ft"],[48.0639,-1.73353,"109ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "HOZUS1E": {"icao":"HOZUS1E","name":"Hozus One Echo","rwy":{"LFRN10":["_RWY2804DME"],"LFRN28":["_RWY1004DME"],"LFRN14":["_RWY3204DME"],"LFRN32":["_RWY1404DME"]},"body":[],"exitPoints":{"HOZUS":["HOZUS"]},"draw":[["LFRN","HOZUS*"]]},
+        "ANG2E": {"icao":"ANG2E","name":"Angers Two Echo","rwy":{"LFRN10":["_RWY2804DME"],"LFRN28":["_RWY1004DME"],"LFRN14":["_RWY3204DME"],"LFRN32":["_RWY1404DME"]},"body":[],"exitPoints":{"ANG":["ANG"]},"draw":[["LFRN","ANG*"]]},
+        "LESIV3B": {"icao":"LESIV3B","name":"Lesiv Three Bravo","rwy":{"LFRN10":["_RWY2804DME"],"LFRN28":["_RWY1004DME"],"LFRN14":["_RWY3204DME"],"LFRN32":["_RWY1404DME"]},"body":[],"exitPoints":{"LESIV":["LESIV"]},"draw":[["LFRN","LESIV*"]]},
+        "DIN2E": {"icao":"DIN2E","name":"Dinard Two Echo","rwy":{"LFRN10":["_RWY2804DME"],"LFRN28":["_RWY1004DME"],"LFRN14":["_RWY3204DME"],"LFRN32":["_RWY1404DME"]},"body":[],"exitPoints":{"DIN":["DIN"]},"draw":[["LFRN","DIN*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LFRN","destination":"LFBO","category":"departure","route":"LFRN28.ANG2E.ANG","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["hop/crj7",1],["hop/crj9",1],["hop/crj2",1]]},
+        {"origin":"LFRN","destination":"LFLL","category":"departure","route":"LFRN28.ANG2E.ANG","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["hop/crj7",1],["hop/crjx",1]]},
+        {"origin":"LFRN","destination":"LFMN","category":"departure","route":"LFRN28.ANG2E.ANG","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["hop/crj7",1],["hop/crjx",1]]},
+        {"origin":"LFRN","destination":"EGHI","category":"departure","route":"LFRN28.DIN2E.DIN","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["bee/dh8d",1]]},
+        {"origin":"LFRN","destination":"EGTE","category":"departure","route":"LFRN28.DIN2E.DIN","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["bee/dh8d",1]]},
+        {"origin":"LFRN","destination":"","category":"departure","route":"LFRN28.HOZUS1E.HOZUS","altitude":"","speed":"","method":"random","rate":0.38,"airlines":[["afr/at72",1]]},
+        {"origin":"LFRN","destination":"","category":"departure","route":"LFRN28.ANG2E.ANG","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["afr/a319",1],["vlg/a320",1]]},
+        {"origin":"LFRN","destination":"","category":"departure","route":"LFRN28.DIN2E.DIN","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["f/c172",6],["f/p28a",5],["f/c182",3],["f/be36",2],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",1],["f/e50p",1],["f/c550",1],["f/e55p",1],["f/cl30",1],["f/c680",1],["f/h25b",1],["f/lj45",1],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]},
+        {"origin":"LFBO","destination":"LFRN","category":"arrival","route":"ANG..EVIVA..LFRN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.76,"airlines":[["hop/crj7",1],["hop/crj9",1],["hop/crj2",1]]},
+        {"origin":"LFLL","destination":"LFRN","category":"arrival","route":"ANG..EVIVA..LFRN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.76,"airlines":[["hop/crj7",1],["hop/crjx",1]]},
+        {"origin":"LFMN","destination":"LFRN","category":"arrival","route":"ANG..EVIVA..LFRN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.76,"airlines":[["hop/crj7",1],["hop/crjx",1]]},
+        {"origin":"EGHI","destination":"LFRN","category":"arrival","route":"DIN..ITESU..LFRN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.38,"airlines":[["bee/dh8d",1]]},
+        {"origin":"EGTE","destination":"LFRN","category":"arrival","route":"DIN..ITESU..LFRN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.38,"airlines":[["bee/dh8d",1]]},
+        {"origin":"","destination":"LFRN","category":"arrival","route":"HOZUS..INOVE..LFRN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.38,"airlines":[["afr/at72",1]]},
+        {"origin":"","destination":"LFRN","category":"arrival","route":"ANG..EVIVA..LFRN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.76,"airlines":[["afr/a319",1],["vlg/a320",1]]},
+        {"origin":"","destination":"LFRN","category":"arrival","route":"DIN..ITESU..LFRN","altitude":[4000,7000],"speed":250,"method":"random","rate":1.39,"airlines":[["f/c172",6],["f/p28a",5],["f/c182",3],["f/be36",2],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",1],["f/e50p",1],["f/c550",1],["f/e55p",1],["f/cl30",1],["f/c680",1],["f/h25b",1],["f/lj45",1],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [48.2526,-0.9779,48.1375,-1.4536],
+            [48.1375,-1.4536,48.0695,-1.7348],
+            [47.5369,-0.8518,47.9356,-1.5128],
+            [47.9356,-1.5128,48.0695,-1.7348],
+            [47.7727,-2.4062,47.9592,-1.9842],
+            [47.9592,-1.9842,48.0695,-1.7348],
+            [48.5861,-2.0823,48.2518,-1.8574],
+            [48.2518,-1.8574,48.0695,-1.7348]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [48.0736,-1.7452,48.1042,-1.9903],
+            [48.0791,-1.8705,48.0988,-1.8649],
+            [48.0944,-1.993,48.114,-1.9875],
+            [48.0702,-1.7184,48.0391,-1.4736],
+            [48.0645,-1.5932,48.0449,-1.5987],
+            [48.0489,-1.4708,48.0292,-1.4764]
+        ]}
+    ]
+}

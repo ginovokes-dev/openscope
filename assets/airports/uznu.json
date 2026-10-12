@@ -1,0 +1,78 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/UZNU/",
+    "info": {"country":"UZ","city":"Urgench","type":"large_airport","longestRunwayM":3373,"frequencies":{"twr":"118.300","app":"126.000"}},
+    "radio": {"twr":"Urgench Tower","app":"Urgench Approach","dep":"Urgench Departure"},
+    "icao": "UZNU",
+    "iata": "UGC",
+    "magnetic_north": 6.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [41.58274,60.64338,"320ft"],
+    "rangeRings": {"enabled":true,"center":[41.58274,60.64338],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":310,"speed":5},
+    "arrivalRunway": "31",
+    "departureRunway": "31",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[41.9848,60.7046],[41.9593,60.8417],[41.9081,60.9652],[41.8347,61.0668],[41.7441,61.1395],[41.6426,61.1785],[41.5369,61.1809],[41.4344,61.1468],[41.342,61.0783],[41.266,60.9802],[41.2116,60.8591],[41.1825,60.7234],[41.1806,60.5821],[41.2062,60.4451],[41.2574,60.3216],[41.3308,60.22],[41.4214,60.1472],[41.5229,60.1083],[41.6286,60.1058],[41.7311,60.14],[41.8235,60.2085],[41.8995,60.3066],[41.9539,60.4276],[41.983,60.5634]]}
+    ],
+    "fixes": {
+        "UZNU": [41.58274,60.64338],
+        "BASZI": [41.58269,61.36255],
+        "KAGUM": [41.58272,60.91058],
+        "UTICU": [41.08657,60.36552],
+        "COLBE": [41.39839,60.54015],
+        "VH": [41.76,59.8917,"dashoguz"],
+        "JIKFU": [41.64283,60.38854],
+        "_RWY1304DME": [41.64459,60.57125],
+        "_RWY3104DME": [41.52158,60.71534]
+    },
+    "runways": [
+        {"name":["13","31"],"end":[[41.5945,60.63,"319ft"],[41.5717,60.6567,"318ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "BASZI3D": {"icao":"BASZI3D","name":"Baszi Three Delta","rwy":{"UZNU13":["_RWY3104DME"],"UZNU31":["_RWY1304DME"]},"body":[],"exitPoints":{"BASZI":["BASZI"]},"draw":[["UZNU","BASZI*"]]},
+        "UTICU2C": {"icao":"UTICU2C","name":"Uticu Two Charlie","rwy":{"UZNU13":["_RWY3104DME"],"UZNU31":["_RWY1304DME"]},"body":[],"exitPoints":{"UTICU":["UTICU"]},"draw":[["UZNU","UTICU*"]]},
+        "VH1A": {"icao":"VH1A","name":"Dashoguz One Alpha","rwy":{"UZNU13":["_RWY3104DME"],"UZNU31":["_RWY1304DME"]},"body":[],"exitPoints":{"VH":["VH"]},"draw":[["UZNU","VH*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"UZNU","destination":"UUDD","category":"departure","route":"UZNU31.VH1A.VH","altitude":"","speed":"","method":"random","rate":0.99,"airlines":[["sbi/b763",1],["uzb/a320",1],["uzb/b763",1]]},
+        {"origin":"UZNU","destination":"UZTT","category":"departure","route":"UZNU31.BASZI3D.BASZI","altitude":"","speed":"","method":"random","rate":0.99,"airlines":[["uzb/a320",1],["uzb/b763",1],["uzb/b764",1]]},
+        {"origin":"UZNU","destination":"ULLI","category":"departure","route":"UZNU31.VH1A.VH","altitude":"","speed":"","method":"random","rate":0.66,"airlines":[["afl/a319",1],["uzb/a320",1]]},
+        {"origin":"UZNU","destination":"LFPG","category":"departure","route":"UZNU31.VH1A.VH","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["uzb/b764",1]]},
+        {"origin":"UZNU","destination":"LIMC","category":"departure","route":"UZNU31.VH1A.VH","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["uzb/b764",1]]},
+        {"origin":"UZNU","destination":"","category":"departure","route":"UZNU31.BASZI3D.BASZI","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["uzb/a320",1]]},
+        {"origin":"UZNU","destination":"","category":"departure","route":"UZNU31.VH1A.VH","altitude":"","speed":"","method":"random","rate":0.33,"airlines":[["uzb/a320",1]]},
+        {"origin":"UZNU","destination":"","category":"departure","route":"UZNU31.VH1A.VH","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["uk/c172",6],["uk/p28a",5],["uk/c182",3],["uk/be36",2],["uk/da42",1],["uk/tb20",1],["uk/c208",2],["uk/pc12",2],["uk/be20",1],["uk/b350",1],["uk/p180",1],["uk/c510",1],["uk/e50p",1],["uk/c550",1],["uk/e55p",1],["uk/cl30",1],["uk/c680",1],["uk/h25b",1],["uk/lj45",1],["uk/f2th",1],["uk/glf4",1],["uk/glex",1],["uk/glf5",1]]},
+        {"origin":"UUDD","destination":"UZNU","category":"arrival","route":"VH..JIKFU..UZNU","altitude":[4000,7000],"speed":250,"method":"random","rate":0.99,"airlines":[["sbi/b763",1],["uzb/a320",1],["uzb/b763",1]]},
+        {"origin":"UZTT","destination":"UZNU","category":"arrival","route":"BASZI..KAGUM..UZNU","altitude":[4000,7000],"speed":250,"method":"random","rate":0.99,"airlines":[["uzb/a320",1],["uzb/b763",1],["uzb/b764",1]]},
+        {"origin":"ULLI","destination":"UZNU","category":"arrival","route":"VH..JIKFU..UZNU","altitude":[4000,7000],"speed":250,"method":"random","rate":0.66,"airlines":[["afl/a319",1],["uzb/a320",1]]},
+        {"origin":"LFPG","destination":"UZNU","category":"arrival","route":"VH..JIKFU..UZNU","altitude":[4000,7000],"speed":250,"method":"random","rate":0.33,"airlines":[["uzb/b764",1]]},
+        {"origin":"LIMC","destination":"UZNU","category":"arrival","route":"VH..JIKFU..UZNU","altitude":[4000,7000],"speed":250,"method":"random","rate":0.33,"airlines":[["uzb/b764",1]]},
+        {"origin":"","destination":"UZNU","category":"arrival","route":"BASZI..KAGUM..UZNU","altitude":[4000,7000],"speed":250,"method":"random","rate":0.33,"airlines":[["uzb/a320",1]]},
+        {"origin":"","destination":"UZNU","category":"arrival","route":"VH..JIKFU..UZNU","altitude":[4000,7000],"speed":250,"method":"random","rate":0.33,"airlines":[["uzb/a320",1]]},
+        {"origin":"","destination":"UZNU","category":"arrival","route":"VH..JIKFU..UZNU","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["uk/c172",6],["uk/p28a",5],["uk/c182",3],["uk/be36",2],["uk/da42",1],["uk/tb20",1],["uk/c208",2],["uk/pc12",2],["uk/be20",1],["uk/b350",1],["uk/p180",1],["uk/c510",1],["uk/e50p",1],["uk/c550",1],["uk/e55p",1],["uk/cl30",1],["uk/c680",1],["uk/h25b",1],["uk/lj45",1],["uk/f2th",1],["uk/glf4",1],["uk/glex",1],["uk/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [41.5827,61.3626,41.5827,60.9106],
+            [41.5827,60.9106,41.5827,60.6434],
+            [41.0866,60.3655,41.3984,60.5401],
+            [41.3984,60.5401,41.5827,60.6434],
+            [41.76,59.8917,41.6428,60.3885],
+            [41.6428,60.3885,41.5827,60.6434]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [41.5945,60.63,41.7197,60.4829],
+            [41.6505,60.5465,41.6637,60.5666],
+            [41.7131,60.4729,41.7263,60.493],
+            [41.5717,60.6567,41.4463,60.8031],
+            [41.5156,60.74,41.5025,60.7199],
+            [41.4529,60.8132,41.4398,60.7931]
+        ]}
+    ]
+}

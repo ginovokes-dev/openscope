@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/RJFU/",
+    "info": {"country":"JP","city":"Nagasaki","type":"large_airport","longestRunwayM":2999,"frequencies":{"atis":"126.850","twr":"118.500","app":"119.175","gnd":"121.600","dep":"121.000"}},
+    "radio": {"twr":"Nagasaki Tower","app":"Nagasaki Approach","dep":"Nagasaki Departure"},
+    "icao": "RJFU",
+    "iata": "NGS",
+    "magnetic_north": -7.8,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [32.916901,129.914001,"15ft"],
+    "rangeRings": {"enabled":true,"center":[32.916901,129.914001],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":320,"speed":10},
+    "arrivalRunway": "32",
+    "departureRunway": "32",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[33.3179,129.8486],[33.3184,129.9744],[33.2916,130.0962],[33.2393,130.2055],[33.1649,130.2949],[33.0737,130.3584],[32.9718,130.3916],[32.8662,130.3923],[32.764,130.3604],[32.6722,130.298],[32.5971,130.2095],[32.5438,130.1008],[32.516,129.9794],[32.5154,129.8536],[32.5422,129.7318],[32.5945,129.6225],[32.6689,129.5331],[32.7601,129.4696],[32.862,129.4364],[32.9676,129.4357],[33.0698,129.4676],[33.1616,129.53],[33.2367,129.6185],[33.29,129.7272]]}
+    ],
+    "fixes": {
+        "RJFU": [32.9169,129.914],
+        "WAHFO": [33.11878,130.50798],
+        "UBASU": [32.99191,130.13469],
+        "BISJU": [32.40238,129.727],
+        "LICHI": [32.72573,129.84452],
+        "FUE": [32.6686,128.827,"fukue"],
+        "KULKO": [32.86442,129.68427],
+        "IKE": [33.7475,129.77699,"iki"],
+        "PARMO": [33.11488,129.88134],
+        "_RWY1404DME": [32.97707,129.85063],
+        "_RWY3204DME": [32.8568,129.97629]
+    },
+    "runways": [
+        {"name":["14","32"],"end":[[32.927,129.903,"14ft"],[32.9069,129.924,"15ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "WAHFO2F": {"icao":"WAHFO2F","name":"Wahfo Two Foxtrot","rwy":{"RJFU14":["_RWY3204DME"],"RJFU32":["_RWY1404DME"]},"body":[],"exitPoints":{"WAHFO":["WAHFO"]},"draw":[["RJFU","WAHFO*"]]},
+        "BISJU2A": {"icao":"BISJU2A","name":"Bisju Two Alpha","rwy":{"RJFU14":["_RWY3204DME"],"RJFU32":["_RWY1404DME"]},"body":[],"exitPoints":{"BISJU":["BISJU"]},"draw":[["RJFU","BISJU*"]]},
+        "FUE1A": {"icao":"FUE1A","name":"Fukue One Alpha","rwy":{"RJFU14":["_RWY3204DME"],"RJFU32":["_RWY1404DME"]},"body":[],"exitPoints":{"FUE":["FUE"]},"draw":[["RJFU","FUE*"]]},
+        "IKE2F": {"icao":"IKE2F","name":"Iki Two Foxtrot","rwy":{"RJFU14":["_RWY3204DME"],"RJFU32":["_RWY1404DME"]},"body":[],"exitPoints":{"IKE":["IKE"]},"draw":[["RJFU","IKE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"RJFU","destination":"RJOO","category":"departure","route":"RJFU32.WAHFO2F.WAHFO","altitude":"","speed":"","method":"random","rate":1.08,"airlines":[["ana/a320",1],["ana/b735",1],["ana/b737",1]]},
+        {"origin":"RJFU","destination":"RJTT","category":"departure","route":"RJFU32.WAHFO2F.WAHFO","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["ana/b772",1],["jal/b738",1]]},
+        {"origin":"RJFU","destination":"ROAH","category":"departure","route":"RJFU32.BISJU2A.BISJU","altitude":"","speed":"","method":"random","rate":0.72,"airlines":[["ana/a320",1],["ana/b737",1]]},
+        {"origin":"RJFU","destination":"RJBE","category":"departure","route":"RJFU32.WAHFO2F.WAHFO","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["sky/b737",1]]},
+        {"origin":"RJFU","destination":"RJGG","category":"departure","route":"RJFU32.WAHFO2F.WAHFO","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["ana/b737",1]]},
+        {"origin":"RJFU","destination":"","category":"departure","route":"RJFU32.FUE1A.FUE","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["ces/a319",1]]},
+        {"origin":"RJFU","destination":"","category":"departure","route":"RJFU32.IKE2F.IKE","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["jna/b738",1]]},
+        {"origin":"RJFU","destination":"","category":"departure","route":"RJFU32.WAHFO2F.WAHFO","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["ja/c172",6],["ja/p28a",5],["ja/c182",3],["ja/be36",2],["ja/da42",1],["ja/tb20",1],["ja/c208",2],["ja/pc12",2],["ja/be20",1],["ja/b350",1],["ja/p180",1],["ja/c510",1],["ja/e50p",1],["ja/c550",1],["ja/e55p",1],["ja/cl30",1],["ja/c680",1],["ja/h25b",1],["ja/lj45",1],["ja/f2th",1],["ja/glf4",1],["ja/glex",1],["ja/glf5",1]]},
+        {"origin":"RJOO","destination":"RJFU","category":"arrival","route":"WAHFO..UBASU..RJFU","altitude":[4000,7000],"speed":250,"method":"random","rate":1.08,"airlines":[["ana/a320",1],["ana/b735",1],["ana/b737",1]]},
+        {"origin":"RJTT","destination":"RJFU","category":"arrival","route":"WAHFO..UBASU..RJFU","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["ana/b772",1],["jal/b738",1]]},
+        {"origin":"ROAH","destination":"RJFU","category":"arrival","route":"BISJU..LICHI..RJFU","altitude":[4000,7000],"speed":250,"method":"random","rate":0.72,"airlines":[["ana/a320",1],["ana/b737",1]]},
+        {"origin":"RJBE","destination":"RJFU","category":"arrival","route":"WAHFO..UBASU..RJFU","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["sky/b737",1]]},
+        {"origin":"RJGG","destination":"RJFU","category":"arrival","route":"WAHFO..UBASU..RJFU","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["ana/b737",1]]},
+        {"origin":"","destination":"RJFU","category":"arrival","route":"FUE..KULKO..RJFU","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["ces/a319",1]]},
+        {"origin":"","destination":"RJFU","category":"arrival","route":"IKE..PARMO..RJFU","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["jna/b738",1]]},
+        {"origin":"","destination":"RJFU","category":"arrival","route":"WAHFO..UBASU..RJFU","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["ja/c172",6],["ja/p28a",5],["ja/c182",3],["ja/be36",2],["ja/da42",1],["ja/tb20",1],["ja/c208",2],["ja/pc12",2],["ja/be20",1],["ja/b350",1],["ja/p180",1],["ja/c510",1],["ja/e50p",1],["ja/c550",1],["ja/e55p",1],["ja/cl30",1],["ja/c680",1],["ja/h25b",1],["ja/lj45",1],["ja/f2th",1],["ja/glf4",1],["ja/glex",1],["ja/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [33.1188,130.508,32.9919,130.1347],
+            [32.9919,130.1347,32.9169,129.914],
+            [32.4024,129.727,32.7257,129.8445],
+            [32.7257,129.8445,32.9169,129.914],
+            [32.6686,128.827,32.8644,129.6843],
+            [32.8644,129.6843,32.9169,129.914],
+            [33.7475,129.777,33.1149,129.8813],
+            [33.1149,129.8813,32.9169,129.914]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [32.927,129.903,33.0521,129.772],
+            [32.983,129.8286,32.9962,129.8465],
+            [33.0456,129.763,33.0587,129.7809],
+            [32.9069,129.924,32.7816,130.0546],
+            [32.8509,129.9983,32.8377,129.9804],
+            [32.7882,130.0636,32.775,130.0457]
+        ]}
+    ]
+}

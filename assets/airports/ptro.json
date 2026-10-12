@@ -1,0 +1,77 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/PTRO/",
+    "info": {"country":"PW","city":"Babelthuap Island","type":"large_airport","longestRunwayM":2207},
+    "radio": {"twr":"Roman Tmetuchl Tower","app":"Roman Tmetuchl Approach","dep":"Roman Tmetuchl Departure"},
+    "icao": "PTRO",
+    "iata": "ROR",
+    "magnetic_north": -0.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [7.366965,134.544085,"176ft"],
+    "rangeRings": {"enabled":true,"center":[7.366965,134.544085],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":100,"speed":10},
+    "arrivalRunway": "09",
+    "departureRunway": "09",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[7.7716,134.5405],[7.7588,134.6463],[7.7192,134.745],[7.6556,134.8301],[7.5724,134.8957],[7.4751,134.9373],[7.3705,134.9521],[7.2656,134.9392],[7.1677,134.8992],[7.0833,134.8351],[7.0183,134.7512],[6.977,134.6531],[6.9623,134.5476],[6.9752,134.4419],[7.0147,134.3431],[7.0783,134.2581],[7.1616,134.1925],[7.2588,134.1509],[7.3634,134.136],[7.4683,134.149],[7.5662,134.1889],[7.6506,134.253],[7.7157,134.337],[7.7569,134.435]]}
+    ],
+    "fixes": {
+        "PTRO": [7.36697,134.54409],
+        "ZOFIR": [7.65114,135.00464],
+        "GIMEB": [7.47255,134.7152],
+        "HUVGI": [6.9984,134.93918],
+        "PIVSA": [7.23003,134.69088],
+        "TAJTO": [6.89369,134.28624],
+        "ESIGO": [7.19113,134.44829],
+        "HEZUT": [7.90475,134.53135],
+        "MOMZE": [7.56678,134.53935],
+        "_RWY0904DME": [7.36949,134.46684],
+        "_RWY2704DME": [7.3658,134.62116]
+    },
+    "runways": [
+        {"name":["09","27"],"end":[[7.36789,134.534,"176ft"],[7.36741,134.554,"171ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ZOFIR3F": {"icao":"ZOFIR3F","name":"Zofir Three Foxtrot","rwy":{"PTRO09":["_RWY2704DME"],"PTRO27":["_RWY0904DME"]},"body":[],"exitPoints":{"ZOFIR":["ZOFIR"]},"draw":[["PTRO","ZOFIR*"]]},
+        "HUVGI1A": {"icao":"HUVGI1A","name":"Huvgi One Alpha","rwy":{"PTRO09":["_RWY2704DME"],"PTRO27":["_RWY0904DME"]},"body":[],"exitPoints":{"HUVGI":["HUVGI"]},"draw":[["PTRO","HUVGI*"]]},
+        "TAJTO3B": {"icao":"TAJTO3B","name":"Tajto Three Bravo","rwy":{"PTRO09":["_RWY2704DME"],"PTRO27":["_RWY0904DME"]},"body":[],"exitPoints":{"TAJTO":["TAJTO"]},"draw":[["PTRO","TAJTO*"]]},
+        "HEZUT1A": {"icao":"HEZUT1A","name":"Hezut One Alpha","rwy":{"PTRO09":["_RWY2704DME"],"PTRO27":["_RWY0904DME"]},"body":[],"exitPoints":{"HEZUT":["HEZUT"]},"draw":[["PTRO","HEZUT*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"PTRO","destination":"PGUM","category":"departure","route":"PTRO09.ZOFIR3F.ZOFIR","altitude":"","speed":"","method":"random","rate":1.04,"airlines":[["ual/b737",1],["ual/b738",1]]},
+        {"origin":"PTRO","destination":"RCTP","category":"departure","route":"PTRO09.HEZUT1A.HEZUT","altitude":"","speed":"","method":"random","rate":1.04,"airlines":[["cal/b738",1],["tna/a320",1]]},
+        {"origin":"PTRO","destination":"RJAA","category":"departure","route":"PTRO09.HEZUT1A.HEZUT","altitude":"","speed":"","method":"random","rate":1.04,"airlines":[["dal/b752",1],["jal/b763",1]]},
+        {"origin":"PTRO","destination":"RKSI","category":"departure","route":"PTRO09.HEZUT1A.HEZUT","altitude":"","speed":"","method":"random","rate":1.04,"airlines":[["aar/a321",1],["kal/b738",1]]},
+        {"origin":"PTRO","destination":"","category":"departure","route":"PTRO09.ZOFIR3F.ZOFIR","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ual/b738",1]]},
+        {"origin":"PGUM","destination":"PTRO","category":"arrival","route":"ZOFIR..GIMEB..PTRO","altitude":[4000,7000],"speed":250,"method":"random","rate":1.04,"airlines":[["ual/b737",1],["ual/b738",1]]},
+        {"origin":"RCTP","destination":"PTRO","category":"arrival","route":"HEZUT..MOMZE..PTRO","altitude":[4000,7000],"speed":250,"method":"random","rate":1.04,"airlines":[["cal/b738",1],["tna/a320",1]]},
+        {"origin":"RJAA","destination":"PTRO","category":"arrival","route":"HEZUT..MOMZE..PTRO","altitude":[4000,7000],"speed":250,"method":"random","rate":1.04,"airlines":[["dal/b752",1],["jal/b763",1]]},
+        {"origin":"RKSI","destination":"PTRO","category":"arrival","route":"HEZUT..MOMZE..PTRO","altitude":[4000,7000],"speed":250,"method":"random","rate":1.04,"airlines":[["aar/a321",1],["kal/b738",1]]},
+        {"origin":"","destination":"PTRO","category":"arrival","route":"ZOFIR..GIMEB..PTRO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.52,"airlines":[["ual/b738",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [7.6511,135.0046,7.4725,134.7152],
+            [7.4725,134.7152,7.367,134.5441],
+            [6.9984,134.9392,7.23,134.6909],
+            [7.23,134.6909,7.367,134.5441],
+            [6.8937,134.2862,7.1911,134.4483],
+            [7.1911,134.4483,7.367,134.5441],
+            [7.9048,134.5313,7.5668,134.5394],
+            [7.5668,134.5394,7.367,134.5441]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [7.3679,134.534,7.3719,134.3661],
+            [7.3599,134.4498,7.3799,134.4503],
+            [7.3619,134.3659,7.3819,134.3663],
+            [7.3674,134.554,7.3634,134.7219],
+            [7.3754,134.6382,7.3554,134.6377],
+            [7.3733,134.7221,7.3534,134.7216]
+        ]}
+    ]
+}

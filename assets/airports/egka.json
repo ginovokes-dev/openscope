@@ -1,0 +1,80 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGKA/",
+    "info": {"country":"GB","city":"Brighton","type":"medium_airport","longestRunwayM":1032,"frequencies":{"atis":"130.975","twr":"125.405","app":"123.155"}},
+    "radio": {"twr":"Brighton Tower","app":"Brighton Approach","dep":"Brighton Radar"},
+    "icao": "EGKA",
+    "iata": "ESH",
+    "magnetic_north": 1.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [50.835602,-0.297222,"7ft"],
+    "rangeRings": {"enabled":true,"center":[50.835602,-0.297222],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":190,"speed":5},
+    "arrivalRunway": "20",
+    "departureRunway": "20",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[51.2402,-0.2849],[51.2244,-0.1195],[51.1821,0.0338],[51.1162,0.1645],[51.0312,0.2638],[50.9328,0.3248],[50.8278,0.3435],[50.7234,0.3184],[50.6266,0.2515],[50.544,0.1471],[50.4813,0.0125],[50.4428,-0.1433],[50.431,-0.3095],[50.4468,-0.4749],[50.4891,-0.6282],[50.555,-0.7589],[50.64,-0.8582],[50.7384,-0.9193],[50.8434,-0.9379],[50.9478,-0.9129],[51.0446,-0.8459],[51.1272,-0.7416],[51.1899,-0.6069],[51.2284,-0.4512]]}
+    ],
+    "fixes": {
+        "EGKA": [50.8356,-0.29722],
+        "LYD": [50.9997,0.87861,"lydd"],
+        "DUKVE": [50.87873,0.01179],
+        "CAZPE": [50.34217,0.04201],
+        "UBIGO": [50.65227,-0.17118],
+        "IW": [50.6808,-1.10603,"bembridge"],
+        "GOPKE": [50.77764,-0.60009],
+        "OCK": [51.305,-0.44722,"ockham"],
+        "ODIMA": [51.03152,-0.35983],
+        "_RWY0203DME": [50.78669,-0.32781],
+        "_RWY2003DME": [50.88558,-0.26603],
+        "_RWY0603DME": [50.81016,-0.37096],
+        "_RWY2403DME": [50.8586,-0.21819],
+        "_RWY1303DME": [50.8668,-0.35953],
+        "_RWY3103DME": [50.80767,-0.22481]
+    },
+    "runways": [
+        {"name":["02","20"],"end":[[50.83317,-0.2988,"7ft"],[50.8391,-0.29509,"7ft"]],"ils":[false,false]},
+        {"name":["06","24"],"end":[[50.8326,-0.30029,"6ft"],[50.8362,-0.28893,"6ft"]],"ils":[false,false]},
+        {"name":["13","31"],"end":[[50.8383,-0.29452,"7ft"],[50.8362,-0.28974,"6ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "LYD2F": {"icao":"LYD2F","name":"Lydd Two Foxtrot","rwy":{"EGKA02":["_RWY2003DME"],"EGKA20":["_RWY0203DME"],"EGKA06":["_RWY2403DME"],"EGKA24":["_RWY0603DME"],"EGKA13":["_RWY3103DME"],"EGKA31":["_RWY1303DME"]},"body":[],"exitPoints":{"LYD":["LYD"]},"draw":[["EGKA","LYD*"]]},
+        "CAZPE1D": {"icao":"CAZPE1D","name":"Cazpe One Delta","rwy":{"EGKA02":["_RWY2003DME"],"EGKA20":["_RWY0203DME"],"EGKA06":["_RWY2403DME"],"EGKA24":["_RWY0603DME"],"EGKA13":["_RWY3103DME"],"EGKA31":["_RWY1303DME"]},"body":[],"exitPoints":{"CAZPE":["CAZPE"]},"draw":[["EGKA","CAZPE*"]]},
+        "IW3F": {"icao":"IW3F","name":"Bembridge Three Foxtrot","rwy":{"EGKA02":["_RWY2003DME"],"EGKA20":["_RWY0203DME"],"EGKA06":["_RWY2403DME"],"EGKA24":["_RWY0603DME"],"EGKA13":["_RWY3103DME"],"EGKA31":["_RWY1303DME"]},"body":[],"exitPoints":{"IW":["IW"]},"draw":[["EGKA","IW*"]]},
+        "OCK3F": {"icao":"OCK3F","name":"Ockham Three Foxtrot","rwy":{"EGKA02":["_RWY2003DME"],"EGKA20":["_RWY0203DME"],"EGKA06":["_RWY2403DME"],"EGKA24":["_RWY0603DME"],"EGKA13":["_RWY3103DME"],"EGKA31":["_RWY1303DME"]},"body":[],"exitPoints":{"OCK":["OCK"]},"draw":[["EGKA","OCK*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGKA","destination":"","category":"departure","route":"EGKA20.LYD2F.LYD","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bcy/f50",2],["bee/d328",2]]},
+        {"origin":"EGKA","destination":"","category":"departure","route":"EGKA20.CAZPE1D.CAZPE","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bcy/f50",2],["bee/d328",2]]},
+        {"origin":"EGKA","destination":"","category":"departure","route":"EGKA20.IW3F.IW","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bcy/f50",2],["bee/d328",2]]},
+        {"origin":"EGKA","destination":"","category":"departure","route":"EGKA20.OCK3F.OCK","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bcy/f50",2],["bee/d328",2]]},
+        {"origin":"EGKA","destination":"","category":"departure","route":"EGKA20.LYD2F.LYD","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/c680",1]]},
+        {"origin":"","destination":"EGKA","category":"arrival","route":"LYD..DUKVE..EGKA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bcy/f50",2],["bee/d328",2]]},
+        {"origin":"","destination":"EGKA","category":"arrival","route":"CAZPE..UBIGO..EGKA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bcy/f50",2],["bee/d328",2]]},
+        {"origin":"","destination":"EGKA","category":"arrival","route":"IW..GOPKE..EGKA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bcy/f50",2],["bee/d328",2]]},
+        {"origin":"","destination":"EGKA","category":"arrival","route":"OCK..ODIMA..EGKA","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bcy/f50",2],["bee/d328",2]]},
+        {"origin":"","destination":"EGKA","category":"arrival","route":"LYD..DUKVE..EGKA","altitude":[4000,7000],"speed":250,"method":"random","rate":1.13,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/c680",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [50.9997,0.8786,50.8787,0.0118],
+            [50.8787,0.0118,50.8356,-0.2972],
+            [50.3422,0.042,50.6523,-0.1712],
+            [50.6523,-0.1712,50.8356,-0.2972],
+            [50.6808,-1.106,50.7776,-0.6001],
+            [50.7776,-0.6001,50.8356,-0.2972],
+            [51.305,-0.4472,51.0315,-0.3598],
+            [51.0315,-0.3598,50.8356,-0.2972]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [50.8391,-0.2951,50.994,-0.198],
+            [50.9202,-0.2614,50.9129,-0.2319],
+            [50.9977,-0.2127,50.9903,-0.1832]
+        ]}
+    ]
+}

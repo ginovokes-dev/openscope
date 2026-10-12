@@ -1,0 +1,77 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGBW/",
+    "info": {"country":"GB","city":"Warwick","type":"small_airport","longestRunwayM":926},
+    "radio": {"twr":"Wellesbourne Mountford Tower","app":"Wellesbourne Mountford Approach","dep":"Wellesbourne Mountford Radar"},
+    "icao": "EGBW",
+    "iata": "",
+    "magnetic_north": 0.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [52.189353,-1.614089,"159ft"],
+    "rangeRings": {"enabled":true,"center":[52.189353,-1.614089],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":160,"speed":8},
+    "arrivalRunway": "18",
+    "departureRunway": "18",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[52.594,-1.6083],[52.5793,-1.4377],[52.538,-1.279],[52.473,-1.1433],[52.3886,-1.0395],[52.2907,-0.975],[52.1858,-0.954],[52.0812,-0.978],[51.984,-1.0453],[51.9007,-1.1514],[51.8371,-1.289],[51.7975,-1.4488],[51.7847,-1.6198],[51.7994,-1.7905],[51.8407,-1.9491],[51.9057,-2.0849],[51.9901,-2.1886],[52.088,-2.2532],[52.1929,-2.2742],[52.2975,-2.2502],[52.3948,-2.1829],[52.478,-2.0768],[52.5416,-1.9392],[52.5812,-1.7794]]}
+    ],
+    "fixes": {
+        "EGBW": [52.18935,-1.61409],
+        "LE": [52.6064,-1.035,"leicester"],
+        "NUJOJ": [52.34154,-1.40276],
+        "WCO": [51.8531,-0.9625,"westcott"],
+        "TUFIP": [52.06064,-1.36468],
+        "KMB": [51.66917,-2.06889,"kemble"],
+        "JOHFE": [52.0132,-1.7681],
+        "WBA": [52.5159,-2.26176,"wolverhampton"],
+        "UBESO": [52.31631,-1.86589],
+        "_RWY1803DME": [52.2462,-1.62167],
+        "_RWY3603DME": [52.1383,-1.60724],
+        "_RWY0503DME": [52.15238,-1.67621],
+        "_RWY2303DME": [52.22579,-1.55286]
+    },
+    "runways": [
+        {"name":["18","36"],"end":[[52.1964,-1.615,"152ft"],[52.1881,-1.61389,"157ft"]],"ils":[false,false]},
+        {"name":["05","23"],"end":[[52.1872,-1.61778,"159ft"],[52.191,-1.61139,"156ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "LE3C": {"icao":"LE3C","name":"Leicester Three Charlie","rwy":{"EGBW18":["_RWY3603DME"],"EGBW36":["_RWY1803DME"],"EGBW05":["_RWY2303DME"],"EGBW23":["_RWY0503DME"]},"body":[],"exitPoints":{"LE":["LE"]},"draw":[["EGBW","LE*"]]},
+        "WCO2D": {"icao":"WCO2D","name":"Westcott Two Delta","rwy":{"EGBW18":["_RWY3603DME"],"EGBW36":["_RWY1803DME"],"EGBW05":["_RWY2303DME"],"EGBW23":["_RWY0503DME"]},"body":[],"exitPoints":{"WCO":["WCO"]},"draw":[["EGBW","WCO*"]]},
+        "KMB2A": {"icao":"KMB2A","name":"Kemble Two Alpha","rwy":{"EGBW18":["_RWY3603DME"],"EGBW36":["_RWY1803DME"],"EGBW05":["_RWY2303DME"],"EGBW23":["_RWY0503DME"]},"body":[],"exitPoints":{"KMB":["KMB"]},"draw":[["EGBW","KMB*"]]},
+        "WBA3B": {"icao":"WBA3B","name":"Wolverhampton Three Bravo","rwy":{"EGBW18":["_RWY3603DME"],"EGBW36":["_RWY1803DME"],"EGBW05":["_RWY2303DME"],"EGBW23":["_RWY0503DME"]},"body":[],"exitPoints":{"WBA":["WBA"]},"draw":[["EGBW","WBA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGBW","destination":"","category":"departure","route":"EGBW18.LE3C.LE","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["bcy/f50",2]]},
+        {"origin":"EGBW","destination":"","category":"departure","route":"EGBW18.WCO2D.WCO","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["bcy/f50",2]]},
+        {"origin":"EGBW","destination":"","category":"departure","route":"EGBW18.KMB2A.KMB","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["bcy/f50",2]]},
+        {"origin":"EGBW","destination":"","category":"departure","route":"EGBW18.WBA3B.WBA","altitude":"","speed":"","method":"random","rate":0.56,"airlines":[["bcy/f50",2]]},
+        {"origin":"EGBW","destination":"","category":"departure","route":"EGBW18.KMB2A.KMB","altitude":"","speed":"","method":"random","rate":0.75,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/c550",1]]},
+        {"origin":"","destination":"EGBW","category":"arrival","route":"LE..NUJOJ..EGBW","altitude":[4000,7000],"speed":250,"method":"random","rate":0.56,"airlines":[["bcy/f50",2]]},
+        {"origin":"","destination":"EGBW","category":"arrival","route":"WCO..TUFIP..EGBW","altitude":[4000,7000],"speed":250,"method":"random","rate":0.56,"airlines":[["bcy/f50",2]]},
+        {"origin":"","destination":"EGBW","category":"arrival","route":"KMB..JOHFE..EGBW","altitude":[4000,7000],"speed":250,"method":"random","rate":0.56,"airlines":[["bcy/f50",2]]},
+        {"origin":"","destination":"EGBW","category":"arrival","route":"WBA..UBESO..EGBW","altitude":[4000,7000],"speed":250,"method":"random","rate":0.56,"airlines":[["bcy/f50",2]]},
+        {"origin":"","destination":"EGBW","category":"arrival","route":"KMB..JOHFE..EGBW","altitude":[4000,7000],"speed":250,"method":"random","rate":0.75,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/c550",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [52.6064,-1.035,52.3415,-1.4028],
+            [52.3415,-1.4028,52.1894,-1.6141],
+            [51.8531,-0.9625,52.0606,-1.3647],
+            [52.0606,-1.3647,52.1894,-1.6141],
+            [51.6692,-2.0689,52.0132,-1.7681],
+            [52.0132,-1.7681,52.1894,-1.6141],
+            [52.5159,-2.2618,52.3163,-1.8659],
+            [52.3163,-1.8659,52.1894,-1.6141]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [52.1964,-1.615,52.3624,-1.6373],
+            [52.2786,-1.6424,52.2802,-1.6098],
+            [52.3616,-1.6536,52.3632,-1.621]
+        ]}
+    ]
+}

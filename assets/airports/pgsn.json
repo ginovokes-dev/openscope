@@ -1,0 +1,84 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/PGSN/",
+    "info": {"country":"MP","city":"I Fadang","type":"medium_airport","longestRunwayM":2664,"frequencies":{"atis":"127.200","twr":"125.700","gnd":"121.800"}},
+    "radio": {"twr":"Saipan Tower","app":"Saipan Approach","dep":"Saipan Departure"},
+    "icao": "PGSN",
+    "iata": "SPN",
+    "magnetic_north": 0.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [15.119384,145.728848,"215ft"],
+    "rangeRings": {"enabled":true,"center":[15.119384,145.728848],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":50,"speed":7},
+    "arrivalRunway": "07",
+    "departureRunway": "07",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[15.5241,145.7296],[15.5101,145.8381],[15.4695,145.9391],[15.405,146.0258],[15.3211,146.0923],[15.2234,146.134],[15.1187,146.1481],[15.014,146.1336],[14.9164,146.0915],[14.8327,146.0248],[14.7686,145.9378],[14.7283,145.8366],[14.7147,145.7281],[14.7287,145.6196],[14.7693,145.5186],[14.8337,145.4319],[14.9176,145.3654],[15.0153,145.3237],[15.1201,145.3096],[15.2248,145.3241],[15.3223,145.3662],[15.406,145.4329],[15.4702,145.5199],[15.5105,145.6211]]}
+    ],
+    "fixes": {
+        "PGSN": [15.11938,145.72885],
+        "BIDNI": [15.43639,146.17904],
+        "RIFIR": [15.23716,145.89611],
+        "IPOHO": [14.75481,146.13858],
+        "ROBIW": [14.98393,145.88108],
+        "ZUJUB": [14.66042,145.43819],
+        "WODRA": [14.94886,145.62086],
+        "NUHMU": [15.30525,145.20594],
+        "KASCE": [15.18844,145.53457],
+        "UCIGU": [15.6074,145.49441],
+        "NEFAS": [15.3007,145.64174],
+        "_RWY0704DME": [15.08946,145.65406],
+        "_RWY2504DME": [15.14853,145.80496]
+    },
+    "runways": [
+        {"name":["07","25"],"end":[[15.1145,145.718,"215ft"],[15.1235,145.741,"210ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "BIDNI2D": {"icao":"BIDNI2D","name":"Bidni Two Delta","rwy":{"PGSN07":["_RWY2504DME"],"PGSN25":["_RWY0704DME"]},"body":[],"exitPoints":{"BIDNI":["BIDNI"]},"draw":[["PGSN","BIDNI*"]]},
+        "IPOHO2D": {"icao":"IPOHO2D","name":"Ipoho Two Delta","rwy":{"PGSN07":["_RWY2504DME"],"PGSN25":["_RWY0704DME"]},"body":[],"exitPoints":{"IPOHO":["IPOHO"]},"draw":[["PGSN","IPOHO*"]]},
+        "ZUJUB1C": {"icao":"ZUJUB1C","name":"Zujub One Charlie","rwy":{"PGSN07":["_RWY2504DME"],"PGSN25":["_RWY0704DME"]},"body":[],"exitPoints":{"ZUJUB":["ZUJUB"]},"draw":[["PGSN","ZUJUB*"]]},
+        "NUHMU2E": {"icao":"NUHMU2E","name":"Nuhmu Two Echo","rwy":{"PGSN07":["_RWY2504DME"],"PGSN25":["_RWY0704DME"]},"body":[],"exitPoints":{"NUHMU":["NUHMU"]},"draw":[["PGSN","NUHMU*"]]},
+        "UCIGU2D": {"icao":"UCIGU2D","name":"Ucigu Two Delta","rwy":{"PGSN07":["_RWY2504DME"],"PGSN25":["_RWY0704DME"]},"body":[],"exitPoints":{"UCIGU":["UCIGU"]},"draw":[["PGSN","UCIGU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"PGSN","destination":"RJAA","category":"departure","route":"PGSN07.UCIGU2D.UCIGU","altitude":"","speed":"","method":"random","rate":0.91,"airlines":[["dal/b752",1]]},
+        {"origin":"PGSN","destination":"RJBB","category":"departure","route":"PGSN07.UCIGU2D.UCIGU","altitude":"","speed":"","method":"random","rate":0.91,"airlines":[["aar/b763",1]]},
+        {"origin":"PGSN","destination":"RJGG","category":"departure","route":"PGSN07.UCIGU2D.UCIGU","altitude":"","speed":"","method":"random","rate":0.91,"airlines":[["dal/b752",1]]},
+        {"origin":"PGSN","destination":"RKPK","category":"departure","route":"PGSN07.UCIGU2D.UCIGU","altitude":"","speed":"","method":"random","rate":0.91,"airlines":[["aar/a320",1]]},
+        {"origin":"PGSN","destination":"RKSI","category":"departure","route":"PGSN07.UCIGU2D.UCIGU","altitude":"","speed":"","method":"random","rate":0.91,"airlines":[["aar/b763",1]]},
+        {"origin":"PGSN","destination":"","category":"departure","route":"PGSN07.NUHMU2E.NUHMU","altitude":"","speed":"","method":"random","rate":0.73,"airlines":[["csc/a332",1]]},
+        {"origin":"RJAA","destination":"PGSN","category":"arrival","route":"UCIGU..NEFAS..PGSN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.91,"airlines":[["dal/b752",1]]},
+        {"origin":"RJBB","destination":"PGSN","category":"arrival","route":"UCIGU..NEFAS..PGSN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.91,"airlines":[["aar/b763",1]]},
+        {"origin":"RJGG","destination":"PGSN","category":"arrival","route":"UCIGU..NEFAS..PGSN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.91,"airlines":[["dal/b752",1]]},
+        {"origin":"RKPK","destination":"PGSN","category":"arrival","route":"UCIGU..NEFAS..PGSN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.91,"airlines":[["aar/a320",1]]},
+        {"origin":"RKSI","destination":"PGSN","category":"arrival","route":"UCIGU..NEFAS..PGSN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.91,"airlines":[["aar/b763",1]]},
+        {"origin":"","destination":"PGSN","category":"arrival","route":"NUHMU..KASCE..PGSN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.73,"airlines":[["csc/a332",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [15.4364,146.179,15.2372,145.8961],
+            [15.2372,145.8961,15.1194,145.7288],
+            [14.7548,146.1386,14.9839,145.8811],
+            [14.9839,145.8811,15.1194,145.7288],
+            [14.6604,145.4382,14.9489,145.6209],
+            [14.9489,145.6209,15.1194,145.7288],
+            [15.3053,145.2059,15.1884,145.5346],
+            [15.1884,145.5346,15.1194,145.7288],
+            [15.6074,145.4944,15.3007,145.6417],
+            [15.3007,145.6417,15.1194,145.7288]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [15.1145,145.718,15.0519,145.5582],
+            [15.0739,145.642,15.0925,145.6342],
+            [15.0426,145.5621,15.0611,145.5543],
+            [15.1235,145.741,15.186,145.9009],
+            [15.164,145.8171,15.1455,145.8248],
+            [15.1953,145.897,15.1768,145.9048]
+        ]}
+    ]
+}

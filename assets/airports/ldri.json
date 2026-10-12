@@ -1,0 +1,88 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LDRI/",
+    "info": {"country":"HR","city":"Rijeka","type":"large_airport","longestRunwayM":2494,"frequencies":{"twr":"119.000","app":"119.000"}},
+    "radio": {"twr":"Rijeka Tower","app":"Rijeka Approach","dep":"Rijeka Departure"},
+    "icao": "LDRI",
+    "iata": "RJK",
+    "magnetic_north": 4.6,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [45.216376,14.57085,"278ft"],
+    "rangeRings": {"enabled":true,"center":[45.216376,14.57085],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":310,"speed":9},
+    "arrivalRunway": "32",
+    "departureRunway": "32",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[45.6198,14.6169],[45.5976,14.7636],[45.5495,14.8971],[45.4787,15.0084],[45.39,15.0898],[45.2894,15.1359],[45.1839,15.1435],[45.0806,15.1121],[44.9866,15.0437],[44.9082,14.9432],[44.8508,14.8173],[44.8183,14.6746],[44.813,14.5248],[44.8351,14.3781],[44.8833,14.2446],[44.9541,14.1333],[45.0428,14.0519],[45.1433,14.0058],[45.2488,13.9982],[45.3521,14.0296],[45.4462,14.098],[45.5246,14.1985],[45.582,14.3244],[45.6144,14.4671]]}
+    ],
+    "fixes": {
+        "LDRI": [45.21638,14.57085],
+        "DOL": [46.0841,14.7786,"dolsko"],
+        "NEDIJ": [45.41346,14.61804],
+        "MEL": [45.6546,15.3182,"metlika"],
+        "HUFDU": [45.34424,14.78891],
+        "WALEK": [44.81455,15.07857],
+        "EGETO": [45.06708,14.75949],
+        "PUL": [44.8924,13.9181,"pula"],
+        "HUWOL": [45.10126,14.33891],
+        "RCH": [45.8298,13.4803,"ronchi"],
+        "LEPVA": [45.34109,14.34914],
+        "_RWY1404DME": [45.27945,14.50548],
+        "_RWY3204DME": [45.15382,14.63599]
+    },
+    "runways": [
+        {"name":["14","32"],"end":[[45.2257,14.5614,"264ft"],[45.2076,14.5802,"246ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "DOL1E": {"icao":"DOL1E","name":"Dolsko One Echo","rwy":{"LDRI14":["_RWY3204DME"],"LDRI32":["_RWY1404DME"]},"body":[],"exitPoints":{"DOL":["DOL"]},"draw":[["LDRI","DOL*"]]},
+        "MEL3F": {"icao":"MEL3F","name":"Metlika Three Foxtrot","rwy":{"LDRI14":["_RWY3204DME"],"LDRI32":["_RWY1404DME"]},"body":[],"exitPoints":{"MEL":["MEL"]},"draw":[["LDRI","MEL*"]]},
+        "WALEK2A": {"icao":"WALEK2A","name":"Walek Two Alpha","rwy":{"LDRI14":["_RWY3204DME"],"LDRI32":["_RWY1404DME"]},"body":[],"exitPoints":{"WALEK":["WALEK"]},"draw":[["LDRI","WALEK*"]]},
+        "PUL3B": {"icao":"PUL3B","name":"Pula Three Bravo","rwy":{"LDRI14":["_RWY3204DME"],"LDRI32":["_RWY1404DME"]},"body":[],"exitPoints":{"PUL":["PUL"]},"draw":[["LDRI","PUL*"]]},
+        "RCH1A": {"icao":"RCH1A","name":"Ronchi One Alpha","rwy":{"LDRI14":["_RWY3204DME"],"LDRI32":["_RWY1404DME"]},"body":[],"exitPoints":{"RCH":["RCH"]},"draw":[["LDRI","RCH*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LDRI","destination":"EDDH","category":"departure","route":"LDRI32.DOL1E.DOL","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["gwi/a319",1]]},
+        {"origin":"LDRI","destination":"EDDK","category":"departure","route":"LDRI32.RCH1A.RCH","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["gwi/a319",1]]},
+        {"origin":"LDRI","destination":"EDDS","category":"departure","route":"LDRI32.RCH1A.RCH","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["gwi/a319",1]]},
+        {"origin":"LDRI","destination":"EGLL","category":"departure","route":"LDRI32.RCH1A.RCH","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ctn/a320",1]]},
+        {"origin":"LDRI","destination":"ESKN","category":"departure","route":"LDRI32.DOL1E.DOL","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ryr/b738",1]]},
+        {"origin":"LDRI","destination":"","category":"departure","route":"LDRI32.MEL3F.MEL","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ctn/e120",1]]},
+        {"origin":"LDRI","destination":"","category":"departure","route":"LDRI32.WALEK2A.WALEK","altitude":"","speed":"","method":"random","rate":1.04,"airlines":[["ctn/e120",2]]},
+        {"origin":"LDRI","destination":"","category":"departure","route":"LDRI32.PUL3B.PUL","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["9a/c172",6],["9a/p28a",5],["9a/c182",3],["9a/be36",2],["9a/da42",1],["9a/tb20",1],["9a/c208",2],["9a/pc12",2],["9a/be20",1],["9a/b350",1],["9a/p180",1],["9a/c510",1],["9a/e50p",1],["9a/c550",1],["9a/e55p",1],["9a/cl30",1],["9a/c680",1],["9a/h25b",1],["9a/lj45",1],["9a/f2th",1],["9a/glf4",1],["9a/glex",1],["9a/glf5",1]]},
+        {"origin":"EDDH","destination":"LDRI","category":"arrival","route":"DOL..NEDIJ..LDRI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.52,"airlines":[["gwi/a319",1]]},
+        {"origin":"EDDK","destination":"LDRI","category":"arrival","route":"RCH..LEPVA..LDRI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.52,"airlines":[["gwi/a319",1]]},
+        {"origin":"EDDS","destination":"LDRI","category":"arrival","route":"RCH..LEPVA..LDRI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.52,"airlines":[["gwi/a319",1]]},
+        {"origin":"EGLL","destination":"LDRI","category":"arrival","route":"RCH..LEPVA..LDRI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.52,"airlines":[["ctn/a320",1]]},
+        {"origin":"ESKN","destination":"LDRI","category":"arrival","route":"DOL..NEDIJ..LDRI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.52,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LDRI","category":"arrival","route":"MEL..HUFDU..LDRI","altitude":[4000,7000],"speed":250,"method":"random","rate":0.52,"airlines":[["ctn/e120",1]]},
+        {"origin":"","destination":"LDRI","category":"arrival","route":"WALEK..EGETO..LDRI","altitude":[4000,7000],"speed":250,"method":"random","rate":1.04,"airlines":[["ctn/e120",2]]},
+        {"origin":"","destination":"LDRI","category":"arrival","route":"PUL..HUWOL..LDRI","altitude":[4000,7000],"speed":250,"method":"random","rate":1.39,"airlines":[["9a/c172",6],["9a/p28a",5],["9a/c182",3],["9a/be36",2],["9a/da42",1],["9a/tb20",1],["9a/c208",2],["9a/pc12",2],["9a/be20",1],["9a/b350",1],["9a/p180",1],["9a/c510",1],["9a/e50p",1],["9a/c550",1],["9a/e55p",1],["9a/cl30",1],["9a/c680",1],["9a/h25b",1],["9a/lj45",1],["9a/f2th",1],["9a/glf4",1],["9a/glex",1],["9a/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [46.0841,14.7786,45.4135,14.618],
+            [45.4135,14.618,45.2164,14.5709],
+            [45.6546,15.3182,45.3442,14.7889],
+            [45.3442,14.7889,45.2164,14.5709],
+            [44.8146,15.0786,45.0671,14.7595],
+            [45.0671,14.7595,45.2164,14.5709],
+            [44.8924,13.9181,45.1013,14.3389],
+            [45.1013,14.3389,45.2164,14.5709],
+            [45.8298,13.4803,45.3411,14.3491],
+            [45.3411,14.3491,45.2164,14.5709]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [45.2257,14.5614,45.36,14.4214],
+            [45.287,14.48,45.2988,14.503],
+            [45.3541,14.4099,45.3659,14.4329],
+            [45.2076,14.5802,45.0731,14.7195],
+            [45.1463,14.6614,45.1345,14.6385],
+            [45.079,14.7309,45.0672,14.7081]
+        ]}
+    ]
+}

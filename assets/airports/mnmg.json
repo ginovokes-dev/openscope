@@ -1,0 +1,81 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/MNMG/",
+    "info": {"country":"NI","city":"Managua","type":"large_airport","longestRunwayM":2442,"frequencies":{"twr":"118.100","app":"119.400","gnd":"121.900"}},
+    "radio": {"twr":"Managua Tower","app":"Managua Approach","dep":"Managua Departure"},
+    "icao": "MNMG",
+    "iata": "MGA",
+    "magnetic_north": -2,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [12.1415,-86.168198,"194ft"],
+    "rangeRings": {"enabled":true,"center":[12.1415,-86.168198],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":80,"speed":10},
+    "arrivalRunway": "10",
+    "departureRunway": "10",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[12.5459,-86.1826],[12.5358,-86.0751],[12.4988,-85.9739],[12.4375,-85.8859],[12.356,-85.8171],[12.2598,-85.7723],[12.1556,-85.7545],[12.0505,-85.7649],[11.9515,-85.8027],[11.8655,-85.8655],[11.7983,-85.9488],[11.7545,-86.0472],[11.7371,-86.1538],[11.7472,-86.2613],[11.7842,-86.3625],[11.8455,-86.4505],[11.927,-86.5193],[12.0232,-86.5641],[12.1274,-86.5819],[12.2325,-86.5715],[12.3315,-86.5337],[12.4175,-86.4709],[12.4847,-86.3876],[12.5285,-86.2892]]}
+    ],
+    "fixes": {
+        "MNMG": [12.1415,-86.1682],
+        "TOZNU": [12.65856,-86.01638],
+        "ENEWO": [12.33361,-86.11179],
+        "LABTU": [11.83455,-85.71632],
+        "KUSEG": [12.02746,-86.00031],
+        "OKATI": [11.68833,-86.46469],
+        "LIHBA": [11.97313,-86.27836],
+        "COCPE": [12.41384,-86.64272],
+        "OTUNI": [12.24269,-86.3445],
+        "_RWY1004DME": [12.15028,-86.247],
+        "_RWY2804DME": [12.1326,-86.0893]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[12.1427,-86.1793,"194ft"],[12.1402,-86.157,"192ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "TOZNU2A": {"icao":"TOZNU2A","name":"Toznu Two Alpha","rwy":{"MNMG10":["_RWY2804DME"],"MNMG28":["_RWY1004DME"]},"body":[],"exitPoints":{"TOZNU":["TOZNU"]},"draw":[["MNMG","TOZNU*"]]},
+        "LABTU2A": {"icao":"LABTU2A","name":"Labtu Two Alpha","rwy":{"MNMG10":["_RWY2804DME"],"MNMG28":["_RWY1004DME"]},"body":[],"exitPoints":{"LABTU":["LABTU"]},"draw":[["MNMG","LABTU*"]]},
+        "OKATI1B": {"icao":"OKATI1B","name":"Okati One Bravo","rwy":{"MNMG10":["_RWY2804DME"],"MNMG28":["_RWY1004DME"]},"body":[],"exitPoints":{"OKATI":["OKATI"]},"draw":[["MNMG","OKATI*"]]},
+        "COCPE3A": {"icao":"COCPE3A","name":"Cocpe Three Alpha","rwy":{"MNMG10":["_RWY2804DME"],"MNMG28":["_RWY1004DME"]},"body":[],"exitPoints":{"COCPE":["COCPE"]},"draw":[["MNMG","COCPE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"MNMG","destination":"KMIA","category":"departure","route":"MNMG10.TOZNU2A.TOZNU","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["aal/b738",2],["aal/a319",1],["aal/a320",1],["aal/e190",1]]},
+        {"origin":"MNMG","destination":"MPTO","category":"departure","route":"MNMG10.LABTU2A.LABTU","altitude":"","speed":"","method":"random","rate":0.79,"airlines":[["cmp/b737",1],["cmp/e190",1],["vcv/crj7",1],["vcv/crj9",1],["vcv/crj2",1]]},
+        {"origin":"MNMG","destination":"KATL","category":"departure","route":"MNMG10.TOZNU2A.TOZNU","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["dal/a319",1],["dal/a320",1]]},
+        {"origin":"MNMG","destination":"MROC","category":"departure","route":"MNMG10.LABTU2A.LABTU","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["cmp/b737",1],["cmp/e190",1]]},
+        {"origin":"MNMG","destination":"KFLL","category":"departure","route":"MNMG10.TOZNU2A.TOZNU","altitude":"","speed":"","method":"random","rate":0.26,"airlines":[["nks/a320",1]]},
+        {"origin":"MNMG","destination":"","category":"departure","route":"MNMG10.COCPE3A.COCPE","altitude":"","speed":"","method":"random","rate":0.53,"airlines":[["cmp/e190",1],["ual/b738",1]]},
+        {"origin":"MNMG","destination":"","category":"departure","route":"MNMG10.TOZNU2A.TOZNU","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["yn/c172",6],["yn/p28a",5],["yn/c182",3],["yn/be36",2],["yn/da42",1],["yn/tb20",1],["yn/c208",2],["yn/pc12",2],["yn/be20",1],["yn/b350",1],["yn/p180",1],["yn/c510",1],["yn/e50p",1],["yn/c550",1],["yn/e55p",1],["yn/cl30",1],["yn/c680",1],["yn/h25b",1],["yn/lj45",1],["yn/f2th",1],["yn/glf4",1],["yn/glex",1],["yn/glf5",1]]},
+        {"origin":"KMIA","destination":"MNMG","category":"arrival","route":"TOZNU..ENEWO..MNMG","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["aal/b738",2],["aal/a319",1],["aal/a320",1],["aal/e190",1]]},
+        {"origin":"MPTO","destination":"MNMG","category":"arrival","route":"LABTU..KUSEG..MNMG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.79,"airlines":[["cmp/b737",1],["cmp/e190",1],["vcv/crj7",1],["vcv/crj9",1],["vcv/crj2",1]]},
+        {"origin":"KATL","destination":"MNMG","category":"arrival","route":"TOZNU..ENEWO..MNMG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.53,"airlines":[["dal/a319",1],["dal/a320",1]]},
+        {"origin":"MROC","destination":"MNMG","category":"arrival","route":"LABTU..KUSEG..MNMG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.53,"airlines":[["cmp/b737",1],["cmp/e190",1]]},
+        {"origin":"KFLL","destination":"MNMG","category":"arrival","route":"TOZNU..ENEWO..MNMG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.26,"airlines":[["nks/a320",1]]},
+        {"origin":"","destination":"MNMG","category":"arrival","route":"COCPE..OTUNI..MNMG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.53,"airlines":[["cmp/e190",1],["ual/b738",1]]},
+        {"origin":"","destination":"MNMG","category":"arrival","route":"TOZNU..ENEWO..MNMG","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["yn/c172",6],["yn/p28a",5],["yn/c182",3],["yn/be36",2],["yn/da42",1],["yn/tb20",1],["yn/c208",2],["yn/pc12",2],["yn/be20",1],["yn/b350",1],["yn/p180",1],["yn/c510",1],["yn/e50p",1],["yn/c550",1],["yn/e55p",1],["yn/cl30",1],["yn/c680",1],["yn/h25b",1],["yn/lj45",1],["yn/f2th",1],["yn/glf4",1],["yn/glex",1],["yn/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [12.6586,-86.0164,12.3336,-86.1118],
+            [12.3336,-86.1118,12.1415,-86.1682],
+            [11.8346,-85.7163,12.0275,-86.0003],
+            [12.0275,-86.0003,12.1415,-86.1682],
+            [11.6883,-86.4647,11.9731,-86.2784],
+            [11.9731,-86.2784,12.1415,-86.1682],
+            [12.4138,-86.6427,12.2427,-86.3445],
+            [12.2427,-86.3445,12.1415,-86.1682]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [12.1427,-86.1793,12.1616,-86.3486],
+            [12.1422,-86.2651,12.1621,-86.2628],
+            [12.1517,-86.3497,12.1715,-86.3474],
+            [12.1402,-86.157,12.1212,-85.9878],
+            [12.1406,-86.0712,12.1208,-86.0735],
+            [12.1311,-85.9866,12.1113,-85.9889]
+        ]}
+    ]
+}

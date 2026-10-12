@@ -1,0 +1,78 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LFBL/",
+    "info": {"country":"FR","city":"Limoges","type":"medium_airport","longestRunwayM":2500,"frequencies":{"atis":"128.075","twr":"118.700","app":"119.200"}},
+    "radio": {"twr":"Limoges Tower","app":"Limoges Approach","dep":"Limoges Departure"},
+    "icao": "LFBL",
+    "iata": "LIG",
+    "magnetic_north": 1.7,
+    "ctr_radius": 45,
+    "ctr_ceiling": 9000,
+    "initial_alt": 5000,
+    "position": [45.862801,1.17944,"1300ft"],
+    "rangeRings": {"enabled":true,"center":[45.862801,1.17944],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":190,"speed":7},
+    "arrivalRunway": "21",
+    "departureRunway": "21",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":90,"airspace_class":"D","poly":[[46.2673,1.1967],[46.2504,1.3464],[46.2071,1.4848],[46.1403,1.6024],[46.0547,1.6911],[45.9559,1.745],[45.8508,1.7603],[45.7465,1.7361],[45.6501,1.6739],[45.5683,1.578],[45.5065,1.455],[45.469,1.3131],[45.4583,1.1622],[45.4752,1.0124],[45.5185,0.8741],[45.5853,0.7565],[45.6709,0.6678],[45.7697,0.6139],[45.8748,0.5986],[45.9791,0.6228],[46.0755,0.685],[46.1573,0.7809],[46.2191,0.9039],[46.2566,1.0457]]}
+    ],
+    "fixes": {
+        "LFBL": [45.8628,1.17944],
+        "ANAVA": [45.63489,1.87916],
+        "MIWUN": [45.77812,1.43941],
+        "UNUWO": [45.51829,0.58616],
+        "GUWGA": [45.7348,0.95901],
+        "POI": [46.581,0.29819,"poitiers"],
+        "DALPE": [46.01475,0.993],
+        "_RWY0304DME": [45.79673,1.12023],
+        "_RWY2104DME": [45.92659,1.24221]
+    },
+    "runways": [
+        {"name":["03","21"],"end":[[45.8525,1.17254,"1273ft"],[45.87085,1.18978,"1275ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ANAVA3F": {"icao":"ANAVA3F","name":"Anava Three Foxtrot","rwy":{"LFBL03":["_RWY2104DME"],"LFBL21":["_RWY0304DME"]},"body":[],"exitPoints":{"ANAVA":["ANAVA"]},"draw":[["LFBL","ANAVA*"]]},
+        "UNUWO1B": {"icao":"UNUWO1B","name":"Unuwo One Bravo","rwy":{"LFBL03":["_RWY2104DME"],"LFBL21":["_RWY0304DME"]},"body":[],"exitPoints":{"UNUWO":["UNUWO"]},"draw":[["LFBL","UNUWO*"]]},
+        "POI2F": {"icao":"POI2F","name":"Poitiers Two Foxtrot","rwy":{"LFBL03":["_RWY2104DME"],"LFBL21":["_RWY0304DME"]},"body":[],"exitPoints":{"POI":["POI"]},"draw":[["LFBL","POI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LFBL","destination":"EGGD","category":"departure","route":"LFBL21.POI2F.POI","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ryr/b738",1]]},
+        {"origin":"LFBL","destination":"EGGP","category":"departure","route":"LFBL21.POI2F.POI","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ryr/b738",1]]},
+        {"origin":"LFBL","destination":"EGHI","category":"departure","route":"LFBL21.POI2F.POI","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["bee/dh8d",1]]},
+        {"origin":"LFBL","destination":"EGNM","category":"departure","route":"LFBL21.POI2F.POI","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ryr/b738",1]]},
+        {"origin":"LFBL","destination":"EGNX","category":"departure","route":"LFBL21.POI2F.POI","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ryr/b738",1]]},
+        {"origin":"LFBL","destination":"","category":"departure","route":"LFBL21.ANAVA3F.ANAVA","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["tjt/b190",1]]},
+        {"origin":"LFBL","destination":"","category":"departure","route":"LFBL21.POI2F.POI","altitude":"","speed":"","method":"random","rate":1.04,"airlines":[["ryr/b738",1],["tjt/b190",1]]},
+        {"origin":"LFBL","destination":"","category":"departure","route":"LFBL21.ANAVA3F.ANAVA","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["f/c172",6],["f/p28a",5],["f/c182",3],["f/be36",2],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",1],["f/e50p",1],["f/c550",1],["f/e55p",1],["f/cl30",1],["f/c680",1],["f/h25b",1],["f/lj45",1],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]},
+        {"origin":"EGGD","destination":"LFBL","category":"arrival","route":"POI..DALPE..LFBL","altitude":[5000,8000],"speed":250,"method":"random","rate":0.52,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGGP","destination":"LFBL","category":"arrival","route":"POI..DALPE..LFBL","altitude":[5000,8000],"speed":250,"method":"random","rate":0.52,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGHI","destination":"LFBL","category":"arrival","route":"POI..DALPE..LFBL","altitude":[5000,8000],"speed":250,"method":"random","rate":0.52,"airlines":[["bee/dh8d",1]]},
+        {"origin":"EGNM","destination":"LFBL","category":"arrival","route":"POI..DALPE..LFBL","altitude":[5000,8000],"speed":250,"method":"random","rate":0.52,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGNX","destination":"LFBL","category":"arrival","route":"POI..DALPE..LFBL","altitude":[5000,8000],"speed":250,"method":"random","rate":0.52,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LFBL","category":"arrival","route":"ANAVA..MIWUN..LFBL","altitude":[5000,8000],"speed":250,"method":"random","rate":0.52,"airlines":[["tjt/b190",1]]},
+        {"origin":"","destination":"LFBL","category":"arrival","route":"POI..DALPE..LFBL","altitude":[5000,8000],"speed":250,"method":"random","rate":1.04,"airlines":[["ryr/b738",1],["tjt/b190",1]]},
+        {"origin":"","destination":"LFBL","category":"arrival","route":"ANAVA..MIWUN..LFBL","altitude":[5000,8000],"speed":250,"method":"random","rate":1.39,"airlines":[["f/c172",6],["f/p28a",5],["f/c182",3],["f/be36",2],["f/da42",1],["f/tb20",1],["f/c208",2],["f/pc12",2],["f/be20",1],["f/b350",1],["f/p180",1],["f/c510",1],["f/e50p",1],["f/c550",1],["f/e55p",1],["f/cl30",1],["f/c680",1],["f/h25b",1],["f/lj45",1],["f/f2th",1],["f/glf4",1],["f/glex",1],["f/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [45.6349,1.8792,45.7781,1.4394],
+            [45.7781,1.4394,45.8628,1.1794],
+            [45.5183,0.5862,45.7348,0.959],
+            [45.7348,0.959,45.8628,1.1794],
+            [46.581,0.2982,46.0148,0.993],
+            [46.0148,0.993,45.8628,1.1794]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [45.8525,1.1725,45.713,1.042],
+            [45.7773,1.1192,45.7883,1.0952],
+            [45.7076,1.0539,45.7185,1.03],
+            [45.8709,1.1898,46.0102,1.321],
+            [45.946,1.2433,45.9351,1.2674],
+            [46.0156,1.309,46.0047,1.3331]
+        ]}
+    ]
+}

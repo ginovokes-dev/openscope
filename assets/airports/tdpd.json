@@ -1,0 +1,81 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/TDPD/",
+    "info": {"country":"DM","city":"Marigot","type":"medium_airport","longestRunwayM":1936,"frequencies":{"twr":"118.900"}},
+    "radio": {"twr":"Douglas-Charles Tower","app":"Douglas-Charles Approach","dep":"Douglas-Charles Departure"},
+    "icao": "TDPD",
+    "iata": "DOM",
+    "magnetic_north": -15.3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [15.546673,-61.301082,"73ft"],
+    "rangeRings": {"enabled":true,"center":[15.546673,-61.301082],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":90,"speed":12},
+    "arrivalRunway": "09",
+    "departureRunway": "09",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[15.937,-61.4119],[15.9514,-61.3033],[15.9381,-61.1945],[15.8982,-61.093],[15.8343,-61.0056],[15.7509,-60.9384],[15.6535,-60.8959],[15.5488,-60.881],[15.444,-60.8948],[15.3462,-60.9362],[15.262,-61.0025],[15.1973,-61.0891],[15.1563,-61.1902],[15.142,-61.2989],[15.1552,-61.4077],[15.1951,-61.5092],[15.259,-61.5966],[15.3425,-61.6638],[15.4399,-61.7063],[15.5446,-61.7211],[15.6494,-61.7074],[15.7472,-61.666],[15.8313,-61.5997],[15.8961,-61.513]]}
+    ],
+    "fixes": {
+        "TDPD": [15.54667,-61.30108],
+        "AKILE": [15.76289,-60.7898],
+        "IDEHA": [15.62701,-61.11112],
+        "FOF": [14.5907,-61.0228,"fort de france"],
+        "ROTRA": [15.35423,-61.24506],
+        "NOFAL": [15.33045,-61.81236],
+        "LEKUJ": [15.46634,-61.49104],
+        "PPR": [16.2652,-61.5401,"pointe a pitre"],
+        "ECIWA": [15.737,-61.3644],
+        "_RWY0904DME": [15.52211,-61.37089],
+        "_RWY2704DME": [15.57213,-61.22863]
+    },
+    "runways": [
+        {"name":["09","27"],"end":[[15.54496,-61.30593,"71ft"],[15.5493,-61.2936,"14ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "AKILE2A": {"icao":"AKILE2A","name":"Akile Two Alpha","rwy":{"TDPD09":["_RWY2704DME"],"TDPD27":["_RWY0904DME"]},"body":[],"exitPoints":{"AKILE":["AKILE"]},"draw":[["TDPD","AKILE*"]]},
+        "FOF3B": {"icao":"FOF3B","name":"Fort De France Three Bravo","rwy":{"TDPD09":["_RWY2704DME"],"TDPD27":["_RWY0904DME"]},"body":[],"exitPoints":{"FOF":["FOF"]},"draw":[["TDPD","FOF*"]]},
+        "NOFAL1A": {"icao":"NOFAL1A","name":"Nofal One Alpha","rwy":{"TDPD09":["_RWY2704DME"],"TDPD27":["_RWY0904DME"]},"body":[],"exitPoints":{"NOFAL":["NOFAL"]},"draw":[["TDPD","NOFAL*"]]},
+        "PPR1E": {"icao":"PPR1E","name":"Pointe A Pitre One Echo","rwy":{"TDPD09":["_RWY2704DME"],"TDPD27":["_RWY0904DME"]},"body":[],"exitPoints":{"PPR":["PPR"]},"draw":[["TDPD","PPR*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"TDPD","destination":"TJSJ","category":"departure","route":"TDPD09.PPR1E.PPR","altitude":"","speed":"","method":"random","rate":1.44,"airlines":[["aal/sf34",1],["lia/dh8c",1],["sbs/sf34",1]]},
+        {"origin":"TDPD","destination":"TAPA","category":"departure","route":"TDPD09.PPR1E.PPR","altitude":"","speed":"","method":"random","rate":0.96,"airlines":[["lia/at72",1],["lia/dh8c",1]]},
+        {"origin":"TDPD","destination":"TBPB","category":"departure","route":"TDPD09.FOF3B.FOF","altitude":"","speed":"","method":"random","rate":0.96,"airlines":[["lia/at72",1],["lia/dh8c",1]]},
+        {"origin":"TDPD","destination":"TFFR","category":"departure","route":"TDPD09.PPR1E.PPR","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["lia/dh8c",1]]},
+        {"origin":"TDPD","destination":"TLPC","category":"departure","route":"TDPD09.FOF3B.FOF","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["lia/at72",1]]},
+        {"origin":"TDPD","destination":"","category":"departure","route":"TDPD09.FOF3B.FOF","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["lia/dh8c",1]]},
+        {"origin":"TDPD","destination":"","category":"departure","route":"TDPD09.PPR1E.PPR","altitude":"","speed":"","method":"random","rate":0.48,"airlines":[["lia/dh8c",1]]},
+        {"origin":"TJSJ","destination":"TDPD","category":"arrival","route":"PPR..ECIWA..TDPD","altitude":[4000,7000],"speed":250,"method":"random","rate":1.44,"airlines":[["aal/sf34",1],["lia/dh8c",1],["sbs/sf34",1]]},
+        {"origin":"TAPA","destination":"TDPD","category":"arrival","route":"PPR..ECIWA..TDPD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.96,"airlines":[["lia/at72",1],["lia/dh8c",1]]},
+        {"origin":"TBPB","destination":"TDPD","category":"arrival","route":"FOF..ROTRA..TDPD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.96,"airlines":[["lia/at72",1],["lia/dh8c",1]]},
+        {"origin":"TFFR","destination":"TDPD","category":"arrival","route":"PPR..ECIWA..TDPD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["lia/dh8c",1]]},
+        {"origin":"TLPC","destination":"TDPD","category":"arrival","route":"FOF..ROTRA..TDPD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["lia/at72",1]]},
+        {"origin":"","destination":"TDPD","category":"arrival","route":"FOF..ROTRA..TDPD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["lia/dh8c",1]]},
+        {"origin":"","destination":"TDPD","category":"arrival","route":"PPR..ECIWA..TDPD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.48,"airlines":[["lia/dh8c",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [15.7629,-60.7898,15.627,-61.1111],
+            [15.627,-61.1111,15.5467,-61.3011],
+            [14.5907,-61.0228,15.3542,-61.2451],
+            [15.3542,-61.2451,15.5467,-61.3011],
+            [15.3305,-61.8124,15.4663,-61.491],
+            [15.4663,-61.491,15.5467,-61.3011],
+            [16.2652,-61.5401,15.737,-61.3644],
+            [15.737,-61.3644,15.5467,-61.3011]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [15.545,-61.3059,15.4878,-61.4683],
+            [15.507,-61.3836,15.5258,-61.3907],
+            [15.4784,-61.4647,15.4972,-61.4718],
+            [15.5493,-61.2936,15.6063,-61.1311],
+            [15.5872,-61.2159,15.5684,-61.2088],
+            [15.6157,-61.1347,15.597,-61.1276]
+        ]}
+    ]
+}

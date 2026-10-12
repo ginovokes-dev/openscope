@@ -1,0 +1,72 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/MHTG/",
+    "info": {"country":"HN","city":"Tegucigalpa","type":"medium_airport","longestRunwayM":1868,"frequencies":{"atis":"112.300","twr":"118.700","app":"119.100","gnd":"121.900"}},
+    "radio": {"twr":"Toncontin Tower","app":"Toncontin Approach","dep":"Toncontin Departure"},
+    "icao": "MHTG",
+    "iata": "TGU",
+    "magnetic_north": -1.6,
+    "ctr_radius": 45,
+    "ctr_ceiling": 11000,
+    "initial_alt": 7000,
+    "position": [14.0609,-87.217201,"3294ft"],
+    "rangeRings": {"enabled":true,"center":[14.0609,-87.217201],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":10,"speed":9},
+    "arrivalRunway": "02",
+    "departureRunway": "02",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":110,"airspace_class":"D","poly":[[14.4654,-87.2288],[14.4546,-87.1205],[14.4169,-87.0188],[14.3549,-86.9306],[14.273,-86.8619],[14.1765,-86.8174],[14.0722,-86.8002],[13.9671,-86.8114],[13.8684,-86.8502],[13.7828,-86.9141],[13.7162,-86.9986],[13.6731,-87.098],[13.6564,-87.2056],[13.6672,-87.3139],[13.7049,-87.4156],[13.7669,-87.5039],[13.8488,-87.5725],[13.9453,-87.617],[14.0496,-87.6342],[14.1547,-87.623],[14.2534,-87.5842],[14.339,-87.5203],[14.4056,-87.4358],[14.4487,-87.3364]]}
+    ],
+    "fixes": {
+        "MHTG": [14.0609,-87.2172],
+        "ASEPI": [14.56986,-87.03763],
+        "WASUP": [14.25,-87.15048],
+        "KAPBU": [13.68141,-86.82415],
+        "OBEFI": [13.91991,-87.07117],
+        "TUWIV": [13.99461,-87.76753],
+        "EVADO": [14.03627,-87.42167],
+        "_RWY0204DME": [13.99159,-87.24159],
+        "_RWY2004DME": [14.13184,-87.19219]
+    },
+    "runways": [
+        {"name":["02","20"],"end":[[14.05464,-87.21939,"3337ft"],[14.0688,-87.2144,"3268ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "ASEPI2A": {"icao":"ASEPI2A","name":"Asepi Two Alpha","rwy":{"MHTG02":["_RWY2004DME"],"MHTG20":["_RWY0204DME"]},"body":[],"exitPoints":{"ASEPI":["ASEPI"]},"draw":[["MHTG","ASEPI*"]]},
+        "KAPBU3D": {"icao":"KAPBU3D","name":"Kapbu Three Delta","rwy":{"MHTG02":["_RWY2004DME"],"MHTG20":["_RWY0204DME"]},"body":[],"exitPoints":{"KAPBU":["KAPBU"]},"draw":[["MHTG","KAPBU*"]]},
+        "TUWIV2F": {"icao":"TUWIV2F","name":"Tuwiv Two Foxtrot","rwy":{"MHTG02":["_RWY2004DME"],"MHTG20":["_RWY0204DME"]},"body":[],"exitPoints":{"TUWIV":["TUWIV"]},"draw":[["MHTG","TUWIV*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"MHTG","destination":"MROC","category":"departure","route":"MHTG02.KAPBU3D.KAPBU","altitude":"","speed":"","method":"random","rate":1.09,"airlines":[["cmp/e190",1],["ava/at72",1],["ava/at45",1],["ava/at75",1]]},
+        {"origin":"MHTG","destination":"MSLP","category":"departure","route":"MHTG02.TUWIV2F.TUWIV","altitude":"","speed":"","method":"random","rate":1.09,"airlines":[["ava/e190",1],["ava/at72",1],["ava/at45",1],["ava/at75",1]]},
+        {"origin":"MHTG","destination":"MGGT","category":"departure","route":"MHTG02.TUWIV2F.TUWIV","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["ava/at72",1],["ava/at45",1],["ava/at75",1]]},
+        {"origin":"MHTG","destination":"MPTO","category":"departure","route":"MHTG02.KAPBU3D.KAPBU","altitude":"","speed":"","method":"random","rate":0.54,"airlines":[["cmp/e190",1]]},
+        {"origin":"MHTG","destination":"","category":"departure","route":"MHTG02.KAPBU3D.KAPBU","altitude":"","speed":"","method":"random","rate":1.09,"airlines":[["hr/c172",6],["hr/p28a",5],["hr/c182",3],["hr/be36",2],["hr/da42",1],["hr/tb20",1],["hr/c208",2],["hr/pc12",2],["hr/be20",1],["hr/b350",1],["hr/p180",1],["hr/c510",1],["hr/e50p",1],["hr/c550",1],["hr/e55p",1],["hr/cl30",1],["hr/c680",1],["hr/h25b",1],["hr/lj45",1],["hr/f2th",1],["hr/glf4",1],["hr/glex",1],["hr/glf5",1]]},
+        {"origin":"MROC","destination":"MHTG","category":"arrival","route":"KAPBU..OBEFI..MHTG","altitude":[7000,10000],"speed":250,"method":"random","rate":1.09,"airlines":[["cmp/e190",1],["ava/at72",1],["ava/at45",1],["ava/at75",1]]},
+        {"origin":"MSLP","destination":"MHTG","category":"arrival","route":"TUWIV..EVADO..MHTG","altitude":[7000,10000],"speed":250,"method":"random","rate":1.09,"airlines":[["ava/e190",1],["ava/at72",1],["ava/at45",1],["ava/at75",1]]},
+        {"origin":"MGGT","destination":"MHTG","category":"arrival","route":"TUWIV..EVADO..MHTG","altitude":[7000,10000],"speed":250,"method":"random","rate":0.54,"airlines":[["ava/at72",1],["ava/at45",1],["ava/at75",1]]},
+        {"origin":"MPTO","destination":"MHTG","category":"arrival","route":"KAPBU..OBEFI..MHTG","altitude":[7000,10000],"speed":250,"method":"random","rate":0.54,"airlines":[["cmp/e190",1]]},
+        {"origin":"","destination":"MHTG","category":"arrival","route":"KAPBU..OBEFI..MHTG","altitude":[7000,10000],"speed":250,"method":"random","rate":1.09,"airlines":[["hr/c172",6],["hr/p28a",5],["hr/c182",3],["hr/be36",2],["hr/da42",1],["hr/tb20",1],["hr/c208",2],["hr/pc12",2],["hr/be20",1],["hr/b350",1],["hr/p180",1],["hr/c510",1],["hr/e50p",1],["hr/c550",1],["hr/e55p",1],["hr/cl30",1],["hr/c680",1],["hr/h25b",1],["hr/lj45",1],["hr/f2th",1],["hr/glf4",1],["hr/glex",1],["hr/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [14.5699,-87.0376,14.25,-87.1505],
+            [14.25,-87.1505,14.0609,-87.2172],
+            [13.6814,-86.8242,13.9199,-87.0712],
+            [13.9199,-87.0712,14.0609,-87.2172],
+            [13.9946,-87.7675,14.0363,-87.4217],
+            [14.0363,-87.4217,14.0609,-87.2172]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [14.0546,-87.2194,13.897,-87.2749],
+            [13.9726,-87.2374,13.9791,-87.2569],
+            [13.8938,-87.2651,13.9003,-87.2846],
+            [14.0688,-87.2144,14.2264,-87.1589],
+            [14.1508,-87.1964,14.1444,-87.1769],
+            [14.2296,-87.1686,14.2232,-87.1491]
+        ]}
+    ]
+}

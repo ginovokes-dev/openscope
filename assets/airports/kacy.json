@@ -1,0 +1,86 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KACY/",
+    "info": {"country":"US","city":"Atlantic City","type":"medium_airport","longestRunwayM":3048,"frequencies":{"atis":"108.600","twr":"120.300","gnd":"121.900"}},
+    "radio": {"twr":"Atlantic City Tower","app":"Atlantic City Approach","dep":"Atlantic City Departure"},
+    "icao": "KACY",
+    "iata": "ACY",
+    "magnetic_north": -12,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [39.456201,-74.577511,"75ft"],
+    "rangeRings": {"enabled":true,"center":[39.456201,-74.577511],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":290,"speed":6},
+    "arrivalRunway": "31",
+    "departureRunway": "31",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[39.8521,-74.6865],[39.8603,-74.5501],[39.8411,-74.4155],[39.7956,-74.292],[39.727,-74.188],[39.6399,-74.1105],[39.5403,-74.0648],[39.435,-74.0541],[39.3311,-74.079],[39.2358,-74.1379],[39.1555,-74.2268],[39.0956,-74.3396],[39.0603,-74.4685],[39.0521,-74.6049],[39.0713,-74.7395],[39.1168,-74.863],[39.1854,-74.967],[39.2725,-75.0445],[39.3721,-75.0902],[39.4774,-75.1009],[39.5813,-75.076],[39.6766,-75.0171],[39.7569,-74.9282],[39.8168,-74.8155]]}
+    ],
+    "fixes": {
+        "KACY": [39.4562,-74.57751],
+        "COL": [40.3117,-74.1598,"colts neck"],
+        "JAHED": [39.64322,-74.4862],
+        "RAWHO": [39.14979,-74.00487],
+        "TOTES": [39.34236,-74.36475],
+        "ATR": [38.8098,-75.2113,"waterloo"],
+        "NOPEZ": [39.29685,-74.73375],
+        "OOD": [39.636,-75.303,"woodstown"],
+        "JEBBI": [39.51728,-74.82398],
+        "_RWY1304DME": [39.49563,-74.66718],
+        "_RWY3104DME": [39.42002,-74.48361],
+        "_RWY0404DME": [39.39091,-74.62578],
+        "_RWY2204DME": [39.52337,-74.53424]
+    },
+    "runways": [
+        {"name":["13","31"],"end":[[39.4643,-74.591,"75ft"],[39.4514,-74.5597,"63ft"]],"ils":[true,true]},
+        {"name":["04","22"],"end":[[39.4497,-74.5852,"61ft"],[39.4646,-74.5749,"67ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "COL3D": {"icao":"COL3D","name":"Colts Neck Three Delta","rwy":{"KACY13":["_RWY3104DME"],"KACY31":["_RWY1304DME"],"KACY04":["_RWY2204DME"],"KACY22":["_RWY0404DME"]},"body":[],"exitPoints":{"COL":["COL"]},"draw":[["KACY","COL*"]]},
+        "RAWHO1A": {"icao":"RAWHO1A","name":"Rawho One Alpha","rwy":{"KACY13":["_RWY3104DME"],"KACY31":["_RWY1304DME"],"KACY04":["_RWY2204DME"],"KACY22":["_RWY0404DME"]},"body":[],"exitPoints":{"RAWHO":["RAWHO"]},"draw":[["KACY","RAWHO*"]]},
+        "ATR1C": {"icao":"ATR1C","name":"Waterloo One Charlie","rwy":{"KACY13":["_RWY3104DME"],"KACY31":["_RWY1304DME"],"KACY04":["_RWY2204DME"],"KACY22":["_RWY0404DME"]},"body":[],"exitPoints":{"ATR":["ATR"]},"draw":[["KACY","ATR*"]]},
+        "OOD2C": {"icao":"OOD2C","name":"Woodstown Two Charlie","rwy":{"KACY13":["_RWY3104DME"],"KACY31":["_RWY1304DME"],"KACY04":["_RWY2204DME"],"KACY22":["_RWY0404DME"]},"body":[],"exitPoints":{"OOD":["OOD"]},"draw":[["KACY","OOD*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KACY","destination":"KFLL","category":"departure","route":"KACY31.ATR1C.ATR","altitude":"","speed":"","method":"random","rate":0.92,"airlines":[["nks/a319",1],["nks/a320",1]]},
+        {"origin":"KACY","destination":"KBOS","category":"departure","route":"KACY31.COL3D.COL","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["nks/a319",1]]},
+        {"origin":"KACY","destination":"KDTW","category":"departure","route":"KACY31.OOD2C.OOD","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["nks/a319",1]]},
+        {"origin":"KACY","destination":"KMCO","category":"departure","route":"KACY31.ATR1C.ATR","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["nks/a320",1]]},
+        {"origin":"KACY","destination":"KMYR","category":"departure","route":"KACY31.ATR1C.ATR","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["nks/a320",1]]},
+        {"origin":"KACY","destination":"","category":"departure","route":"KACY31.ATR1C.ATR","altitude":"","speed":"","method":"random","rate":0.92,"airlines":[["nks/a319",2]]},
+        {"origin":"KACY","destination":"","category":"departure","route":"KACY31.OOD2C.OOD","altitude":"","speed":"","method":"random","rate":0.46,"airlines":[["nks/a319",1]]},
+        {"origin":"KACY","destination":"","category":"departure","route":"KACY31.COL3D.COL","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KFLL","destination":"KACY","category":"arrival","route":"ATR..NOPEZ..KACY","altitude":[4000,7000],"speed":250,"method":"random","rate":0.92,"airlines":[["nks/a319",1],["nks/a320",1]]},
+        {"origin":"KBOS","destination":"KACY","category":"arrival","route":"COL..JAHED..KACY","altitude":[4000,7000],"speed":250,"method":"random","rate":0.46,"airlines":[["nks/a319",1]]},
+        {"origin":"KDTW","destination":"KACY","category":"arrival","route":"OOD..JEBBI..KACY","altitude":[4000,7000],"speed":250,"method":"random","rate":0.46,"airlines":[["nks/a319",1]]},
+        {"origin":"KMCO","destination":"KACY","category":"arrival","route":"ATR..NOPEZ..KACY","altitude":[4000,7000],"speed":250,"method":"random","rate":0.46,"airlines":[["nks/a320",1]]},
+        {"origin":"KMYR","destination":"KACY","category":"arrival","route":"ATR..NOPEZ..KACY","altitude":[4000,7000],"speed":250,"method":"random","rate":0.46,"airlines":[["nks/a320",1]]},
+        {"origin":"","destination":"KACY","category":"arrival","route":"ATR..NOPEZ..KACY","altitude":[4000,7000],"speed":250,"method":"random","rate":0.92,"airlines":[["nks/a319",2]]},
+        {"origin":"","destination":"KACY","category":"arrival","route":"OOD..JEBBI..KACY","altitude":[4000,7000],"speed":250,"method":"random","rate":0.46,"airlines":[["nks/a319",1]]},
+        {"origin":"","destination":"KACY","category":"arrival","route":"COL..JAHED..KACY","altitude":[4000,7000],"speed":250,"method":"random","rate":1.39,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [40.3117,-74.1598,39.6432,-74.4862],
+            [39.6432,-74.4862,39.4562,-74.5775],
+            [39.1498,-74.0049,39.3424,-74.3648],
+            [39.3424,-74.3648,39.4562,-74.5775],
+            [38.8098,-75.2113,39.2968,-74.7338],
+            [39.2968,-74.7338,39.4562,-74.5775],
+            [39.636,-75.303,39.5173,-74.824],
+            [39.5173,-74.824,39.4562,-74.5775]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [39.4643,-74.591,39.5425,-74.7816],
+            [39.4946,-74.6923,39.5123,-74.6801],
+            [39.5337,-74.7877,39.5513,-74.7755],
+            [39.4514,-74.5597,39.3729,-74.3696],
+            [39.421,-74.4585,39.4034,-74.4707],
+            [39.3817,-74.3635,39.364,-74.3757]
+        ]}
+    ]
+}

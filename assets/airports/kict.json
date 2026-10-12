@@ -1,0 +1,89 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/KICT/",
+    "info": {"country":"US","city":"Wichita","type":"medium_airport","longestRunwayM":3147,"frequencies":{"atis":"125.150","twr":"118.200","app":"125.500","gnd":"121.900","dep":"126.700"}},
+    "radio": {"twr":"Wichita Tower","app":"Wichita Approach","dep":"Wichita Departure"},
+    "icao": "KICT",
+    "iata": "ICT",
+    "magnetic_north": 3,
+    "ctr_radius": 45,
+    "ctr_ceiling": 9000,
+    "initial_alt": 5000,
+    "position": [37.650314,-97.428583,"1333ft"],
+    "rangeRings": {"enabled":true,"center":[37.650314,-97.428583],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":220,"speed":9},
+    "arrivalRunway": "19R",
+    "departureRunway": "19R",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":90,"airspace_class":"D","poly":[[38.0545,-97.4018],[38.0352,-97.2706],[37.9897,-97.1502],[37.9211,-97.0487],[37.834,-96.9732],[37.7345,-96.9286],[37.6291,-96.9181],[37.5253,-96.9425],[37.4299,-96.9999],[37.3496,-97.0866],[37.2897,-97.1965],[37.2545,-97.3223],[37.2462,-97.4553],[37.2654,-97.5865],[37.3109,-97.707],[37.3795,-97.8084],[37.4666,-97.884],[37.5662,-97.9286],[37.6715,-97.939],[37.7754,-97.9147],[37.8707,-97.8573],[37.9511,-97.7706],[38.0109,-97.6606],[38.0462,-97.5349]]}
+    ],
+    "fixes": {
+        "KICT": [37.65031,-97.42858],
+        "EQA": [37.7795,-96.8164,"el dorado"],
+        "KUKIF": [37.70179,-97.18466],
+        "RANVE": [37.4938,-96.77855],
+        "CINJU": [37.59216,-97.18707],
+        "PER": [36.7465,-97.1601,"pioneer"],
+        "ITAFU": [37.45576,-97.37079],
+        "LOJHO": [37.75614,-98.09473],
+        "BUDRI": [37.68963,-97.67608],
+        "_RWY01L04DME": [37.57237,-97.47468],
+        "_RWY19R04DME": [37.72422,-97.40506],
+        "_RWY01R04DME": [37.58015,-97.45492],
+        "_RWY19L04DME": [37.72424,-97.38903],
+        "_RWY1404DME": [37.71514,-97.48233],
+        "_RWY3204DME": [37.58495,-97.38705]
+    },
+    "runways": [
+        {"name":["01L","19R"],"end":[[37.635,-97.446,"1313ft"],[37.6616,-97.4338,"1330ft"]],"ils":[true,true]},
+        {"name":["01R","19L"],"end":[[37.6428,-97.4263,"1321ft"],[37.6616,-97.4177,"1320ft"]],"ils":[false,false]},
+        {"name":["14","32"],"end":[[37.6575,-97.4401,"1332ft"],[37.6426,-97.4292,"1322ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "EQA1B": {"icao":"EQA1B","name":"El Dorado One Bravo","rwy":{"KICT01L":["_RWY19R04DME"],"KICT19R":["_RWY01L04DME"],"KICT01R":["_RWY19L04DME"],"KICT19L":["_RWY01R04DME"],"KICT14":["_RWY3204DME"],"KICT32":["_RWY1404DME"]},"body":[],"exitPoints":{"EQA":["EQA"]},"draw":[["KICT","EQA*"]]},
+        "RANVE2B": {"icao":"RANVE2B","name":"Ranve Two Bravo","rwy":{"KICT01L":["_RWY19R04DME"],"KICT19R":["_RWY01L04DME"],"KICT01R":["_RWY19L04DME"],"KICT19L":["_RWY01R04DME"],"KICT14":["_RWY3204DME"],"KICT32":["_RWY1404DME"]},"body":[],"exitPoints":{"RANVE":["RANVE"]},"draw":[["KICT","RANVE*"]]},
+        "PER2A": {"icao":"PER2A","name":"Pioneer Two Alpha","rwy":{"KICT01L":["_RWY19R04DME"],"KICT19R":["_RWY01L04DME"],"KICT01R":["_RWY19L04DME"],"KICT19L":["_RWY01R04DME"],"KICT14":["_RWY3204DME"],"KICT32":["_RWY1404DME"]},"body":[],"exitPoints":{"PER":["PER"]},"draw":[["KICT","PER*"]]},
+        "LOJHO3C": {"icao":"LOJHO3C","name":"Lojho Three Charlie","rwy":{"KICT01L":["_RWY19R04DME"],"KICT19R":["_RWY01L04DME"],"KICT01R":["_RWY19L04DME"],"KICT19L":["_RWY01R04DME"],"KICT14":["_RWY3204DME"],"KICT32":["_RWY1404DME"]},"body":[],"exitPoints":{"LOJHO":["LOJHO"]},"draw":[["KICT","LOJHO*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"KICT","destination":"KDEN","category":"departure","route":"KICT19R.LOJHO3C.LOJHO","altitude":"","speed":"","method":"random","rate":0.92,"airlines":[["ual/a319",1],["ual/b738",1],["ual/dh8d",1]]},
+        {"origin":"KICT","destination":"KLAS","category":"departure","route":"KICT19R.LOJHO3C.LOJHO","altitude":"","speed":"","method":"random","rate":0.92,"airlines":[["aay/md82",1],["swa/b733",1],["swa/b737",1]]},
+        {"origin":"KICT","destination":"KDAL","category":"departure","route":"KICT19R.PER2A.PER","altitude":"","speed":"","method":"random","rate":0.61,"airlines":[["swa/b733",1],["swa/b737",1]]},
+        {"origin":"KICT","destination":"KDFW","category":"departure","route":"KICT19R.PER2A.PER","altitude":"","speed":"","method":"random","rate":0.61,"airlines":[["aal/a319",2]]},
+        {"origin":"KICT","destination":"KATL","category":"departure","route":"KICT19R.RANVE2B.RANVE","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["dal/md88",1]]},
+        {"origin":"KICT","destination":"","category":"departure","route":"KICT19R.EQA1B.EQA","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["swa/b737",1]]},
+        {"origin":"KICT","destination":"","category":"departure","route":"KICT19R.LOJHO3C.LOJHO","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["aay/md82",1]]},
+        {"origin":"KICT","destination":"","category":"departure","route":"KICT19R.EQA1B.EQA","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]},
+        {"origin":"KDEN","destination":"KICT","category":"arrival","route":"LOJHO..BUDRI..KICT","altitude":[5000,8000],"speed":250,"method":"random","rate":0.92,"airlines":[["ual/a319",1],["ual/b738",1],["ual/dh8d",1]]},
+        {"origin":"KLAS","destination":"KICT","category":"arrival","route":"LOJHO..BUDRI..KICT","altitude":[5000,8000],"speed":250,"method":"random","rate":0.92,"airlines":[["aay/md82",1],["swa/b733",1],["swa/b737",1]]},
+        {"origin":"KDAL","destination":"KICT","category":"arrival","route":"PER..ITAFU..KICT","altitude":[5000,8000],"speed":250,"method":"random","rate":0.61,"airlines":[["swa/b733",1],["swa/b737",1]]},
+        {"origin":"KDFW","destination":"KICT","category":"arrival","route":"PER..ITAFU..KICT","altitude":[5000,8000],"speed":250,"method":"random","rate":0.61,"airlines":[["aal/a319",2]]},
+        {"origin":"KATL","destination":"KICT","category":"arrival","route":"RANVE..CINJU..KICT","altitude":[5000,8000],"speed":250,"method":"random","rate":0.31,"airlines":[["dal/md88",1]]},
+        {"origin":"","destination":"KICT","category":"arrival","route":"EQA..KUKIF..KICT","altitude":[5000,8000],"speed":250,"method":"random","rate":0.31,"airlines":[["swa/b737",1]]},
+        {"origin":"","destination":"KICT","category":"arrival","route":"LOJHO..BUDRI..KICT","altitude":[5000,8000],"speed":250,"method":"random","rate":0.31,"airlines":[["aay/md82",1]]},
+        {"origin":"","destination":"KICT","category":"arrival","route":"EQA..KUKIF..KICT","altitude":[5000,8000],"speed":250,"method":"random","rate":1.32,"airlines":[["n/c172",6],["n/p28a",5],["n/c182",3],["n/be36",2],["n/da42",1],["n/tb20",1],["n/c208",2],["n/pc12",2],["n/be20",1],["n/b350",1],["n/p180",1],["n/c510",1],["n/e50p",1],["n/c550",1],["n/e55p",1],["n/cl30",1],["n/c680",1],["n/h25b",1],["n/lj45",1],["n/f2th",1],["n/glf4",1],["n/glex",1],["n/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [37.7795,-96.8164,37.7018,-97.1847],
+            [37.7018,-97.1847,37.6503,-97.4286],
+            [37.4938,-96.7786,37.5922,-97.1871],
+            [37.5922,-97.1871,37.6503,-97.4286],
+            [36.7465,-97.1601,37.4558,-97.3708],
+            [37.4558,-97.3708,37.6503,-97.4286],
+            [37.7561,-98.0947,37.6896,-97.6761],
+            [37.6896,-97.6761,37.6503,-97.4286]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [37.635,-97.446,37.4784,-97.5176],
+            [37.5533,-97.47,37.5601,-97.4937],
+            [37.475,-97.5058,37.4818,-97.5295],
+            [37.6616,-97.4338,37.8181,-97.3619],
+            [37.7433,-97.4097,37.7365,-97.386],
+            [37.8215,-97.3737,37.8147,-97.35]
+        ]}
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/FWKI/",
+    "info": {"country":"MW","city":"Lumbadzi","type":"large_airport","longestRunwayM":3550,"frequencies":{"twr":"118.700","app":"128.000"}},
+    "radio": {"twr":"Kamuzu Tower","app":"Kamuzu Approach","dep":"Kamuzu Departure"},
+    "icao": "FWKI",
+    "iata": "LLW",
+    "magnetic_north": -6.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 12000,
+    "initial_alt": 8000,
+    "position": [-13.7894,33.780998,"4035ft"],
+    "rangeRings": {"enabled":true,"center":[-13.7894,33.780998],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":150,"speed":11},
+    "arrivalRunway": "14",
+    "departureRunway": "14",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":120,"airspace_class":"D","poly":[[-13.387,33.7367],[-13.3896,33.8455],[-13.4194,33.9498],[-13.4744,34.0427],[-13.551,34.1177],[-13.6437,34.1698],[-13.7464,34.1953],[-13.852,34.1927],[-13.9534,34.162],[-14.0435,34.1053],[-14.1164,34.0265],[-14.167,33.931],[-14.1918,33.8253],[-14.1892,33.7165],[-14.1594,33.6122],[-14.1044,33.5193],[-14.0278,33.4443],[-13.9351,33.3922],[-13.8324,33.3667],[-13.7268,33.3693],[-13.6254,33.4],[-13.5353,33.4567],[-13.4624,33.5355],[-13.4118,33.631]]}
+    ],
+    "fixes": {
+        "FWKI": [-13.7894,33.781],
+        "RELAV": [-13.28318,33.96838],
+        "MEDUJ": [-13.60132,33.85062],
+        "UKIVA": [-14.2493,34.06832],
+        "OHOJU": [-13.96027,33.88775],
+        "LELOC": [-14.27501,33.5427],
+        "EDOPO": [-13.96982,33.69246],
+        "HIFNA": [-13.94936,33.25215],
+        "MUJEK": [-13.84883,33.58451],
+        "_RWY1404DME": [-13.73631,33.71582],
+        "_RWY3204DME": [-13.84238,33.8462]
+    },
+    "runways": [
+        {"name":["14","32"],"end":[[-13.7791,33.7684,"4028ft"],[-13.7996,33.7936,"4022ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "RELAV2E": {"icao":"RELAV2E","name":"Relav Two Echo","rwy":{"FWKI14":["_RWY3204DME"],"FWKI32":["_RWY1404DME"]},"body":[],"exitPoints":{"RELAV":["RELAV"]},"draw":[["FWKI","RELAV*"]]},
+        "UKIVA1F": {"icao":"UKIVA1F","name":"Ukiva One Foxtrot","rwy":{"FWKI14":["_RWY3204DME"],"FWKI32":["_RWY1404DME"]},"body":[],"exitPoints":{"UKIVA":["UKIVA"]},"draw":[["FWKI","UKIVA*"]]},
+        "LELOC1F": {"icao":"LELOC1F","name":"Leloc One Foxtrot","rwy":{"FWKI14":["_RWY3204DME"],"FWKI32":["_RWY1404DME"]},"body":[],"exitPoints":{"LELOC":["LELOC"]},"draw":[["FWKI","LELOC*"]]},
+        "HIFNA3A": {"icao":"HIFNA3A","name":"Hifna Three Alpha","rwy":{"FWKI14":["_RWY3204DME"],"FWKI32":["_RWY1404DME"]},"body":[],"exitPoints":{"HIFNA":["HIFNA"]},"draw":[["FWKI","HIFNA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"FWKI","destination":"FLKK","category":"departure","route":"FWKI14.HIFNA3A.HIFNA","altitude":"","speed":"","method":"random","rate":1.56,"airlines":[["kqa/b738",1],["kqa/b763",1],["kqa/e170",1],["kqa/e190",1],["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]},
+        {"origin":"FWKI","destination":"HKJK","category":"departure","route":"FWKI14.RELAV2E.RELAV","altitude":"","speed":"","method":"random","rate":1.24,"airlines":[["kqa/b738",1],["kqa/b763",1],["kqa/e170",1],["kqa/e190",1]]},
+        {"origin":"FWKI","destination":"FAOR","category":"departure","route":"FWKI14.LELOC1F.LELOC","altitude":"","speed":"","method":"random","rate":0.93,"airlines":[["saa/a332",1],["saa/a343",1],["saa/b738",1]]},
+        {"origin":"FWKI","destination":"FWCL","category":"departure","route":"FWKI14.UKIVA1F.UKIVA","altitude":"","speed":"","method":"random","rate":0.62,"airlines":[["eth/b738",1],["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]},
+        {"origin":"FWKI","destination":"HAAB","category":"departure","route":"FWKI14.RELAV2E.RELAV","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["eth/b738",1]]},
+        {"origin":"FWKI","destination":"","category":"departure","route":"FWKI14.RELAV2E.RELAV","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]},
+        {"origin":"FWKI","destination":"","category":"departure","route":"FWKI14.LELOC1F.LELOC","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]},
+        {"origin":"FLKK","destination":"FWKI","category":"arrival","route":"HIFNA..MUJEK..FWKI","altitude":[8000,11000],"speed":250,"method":"random","rate":1.56,"airlines":[["kqa/b738",1],["kqa/b763",1],["kqa/e170",1],["kqa/e190",1],["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]},
+        {"origin":"HKJK","destination":"FWKI","category":"arrival","route":"RELAV..MEDUJ..FWKI","altitude":[8000,11000],"speed":250,"method":"random","rate":1.24,"airlines":[["kqa/b738",1],["kqa/b763",1],["kqa/e170",1],["kqa/e190",1]]},
+        {"origin":"FAOR","destination":"FWKI","category":"arrival","route":"LELOC..EDOPO..FWKI","altitude":[8000,11000],"speed":250,"method":"random","rate":0.93,"airlines":[["saa/a332",1],["saa/a343",1],["saa/b738",1]]},
+        {"origin":"FWCL","destination":"FWKI","category":"arrival","route":"UKIVA..OHOJU..FWKI","altitude":[8000,11000],"speed":250,"method":"random","rate":0.62,"airlines":[["eth/b738",1],["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]},
+        {"origin":"HAAB","destination":"FWKI","category":"arrival","route":"RELAV..MEDUJ..FWKI","altitude":[8000,11000],"speed":250,"method":"random","rate":0.31,"airlines":[["eth/b738",1]]},
+        {"origin":"","destination":"FWKI","category":"arrival","route":"RELAV..MEDUJ..FWKI","altitude":[8000,11000],"speed":250,"method":"random","rate":0.31,"airlines":[["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]},
+        {"origin":"","destination":"FWKI","category":"arrival","route":"LELOC..EDOPO..FWKI","altitude":[8000,11000],"speed":250,"method":"random","rate":0.31,"airlines":[["eth/dh8d",1],["eth/dh8b",1],["eth/dh8c",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [-13.2832,33.9684,-13.6013,33.8506],
+            [-13.6013,33.8506,-13.7894,33.781],
+            [-14.2493,34.0683,-13.9603,33.8878],
+            [-13.9603,33.8878,-13.7894,33.781],
+            [-14.275,33.5427,-13.9698,33.6925],
+            [-13.9698,33.6925,-13.7894,33.781],
+            [-13.9494,33.2522,-13.8488,33.5845],
+            [-13.8488,33.5845,-13.7894,33.781]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [-13.7791,33.7684,-13.6721,33.637],
+            [-13.7333,33.6961,-13.718,33.7093],
+            [-13.6798,33.6304,-13.6644,33.6436],
+            [-13.7996,33.7936,-13.9065,33.9251],
+            [-13.8454,33.866,-13.8607,33.8527],
+            [-13.8989,33.9317,-13.9142,33.9185]
+        ]}
+    ]
+}

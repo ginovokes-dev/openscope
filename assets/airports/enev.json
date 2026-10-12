@@ -1,0 +1,79 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ENEV/",
+    "info": {"country":"NO","city":"Evenes","type":"large_airport","longestRunwayM":2815,"frequencies":{"atis":"126.025","twr":"118.000"}},
+    "radio": {"twr":"HarstadNarvik Tower","app":"HarstadNarvik Approach","dep":"HarstadNarvik Departure"},
+    "icao": "ENEV",
+    "iata": "EVE",
+    "magnetic_north": 9.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [68.491302,16.678101,"84ft"],
+    "rangeRings": {"enabled":true,"center":[68.491302,16.678101],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":0,"speed":8},
+    "arrivalRunway": "35",
+    "departureRunway": "35",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[68.8906,16.8584],[68.8599,17.1341],[68.804,17.3787],[68.7269,17.5756],[68.6337,17.7113],[68.5308,17.7766],[68.4252,17.7671],[68.3241,17.6833],[68.2344,17.531],[68.1622,17.3206],[68.1125,17.0665],[68.0885,16.7858],[68.092,16.4978],[68.1228,16.2221],[68.1786,15.9775],[68.2557,15.7806],[68.3489,15.6449],[68.4518,15.5796],[68.5574,15.5891],[68.6585,15.6729],[68.7482,15.8252],[68.8204,16.0356],[68.8701,16.2897],[68.8941,16.5704]]}
+    ],
+    "fixes": {
+        "ENEV": [68.4913,16.6781],
+        "SJA": [69.1614,17.8159,"senja"],
+        "ODABA": [68.66098,16.9662],
+        "VANAD": [68.22819,17.95782],
+        "KUBIW": [68.39354,17.15357],
+        "ZIGUN": [68.00676,16.04078],
+        "TAGAK": [68.31128,16.44131],
+        "AND": [69.2878,16.1414,"andoya"],
+        "HOTEV": [68.68533,16.54736],
+        "_RWY1704DME": [68.56963,16.66911],
+        "_RWY3504DME": [68.41272,16.68717]
+    },
+    "runways": [
+        {"name":["17","35"],"end":[[68.50307,16.6768,"81ft"],[68.47929,16.67953,"80ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "SJA2E": {"icao":"SJA2E","name":"Senja Two Echo","rwy":{"ENEV17":["_RWY3504DME"],"ENEV35":["_RWY1704DME"]},"body":[],"exitPoints":{"SJA":["SJA"]},"draw":[["ENEV","SJA*"]]},
+        "VANAD2D": {"icao":"VANAD2D","name":"Vanad Two Delta","rwy":{"ENEV17":["_RWY3504DME"],"ENEV35":["_RWY1704DME"]},"body":[],"exitPoints":{"VANAD":["VANAD"]},"draw":[["ENEV","VANAD*"]]},
+        "ZIGUN3B": {"icao":"ZIGUN3B","name":"Zigun Three Bravo","rwy":{"ENEV17":["_RWY3504DME"],"ENEV35":["_RWY1704DME"]},"body":[],"exitPoints":{"ZIGUN":["ZIGUN"]},"draw":[["ENEV","ZIGUN*"]]},
+        "AND1F": {"icao":"AND1F","name":"Andoya One Foxtrot","rwy":{"ENEV17":["_RWY3504DME"],"ENEV35":["_RWY1704DME"]},"body":[],"exitPoints":{"AND":["AND"]},"draw":[["ENEV","AND*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ENEV","destination":"ENGM","category":"departure","route":"ENEV35.ZIGUN3B.ZIGUN","altitude":"","speed":"","method":"random","rate":1.55,"airlines":[["sas/b737",2],["sas/b738",2],["nax/b733",1],["nax/b738",1],["sas/b736",1]]},
+        {"origin":"ENEV","destination":"ENTC","category":"departure","route":"ENEV35.SJA2E.SJA","altitude":"","speed":"","method":"random","rate":0.66,"airlines":[["wif/dh8a",1],["wif/dh8b",1],["wif/dh8c",1]]},
+        {"origin":"ENEV","destination":"ENAN","category":"departure","route":"ENEV35.AND1F.AND","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["wif/dh8a",1],["wif/dh8c",1]]},
+        {"origin":"ENEV","destination":"ENBO","category":"departure","route":"ENEV35.ZIGUN3B.ZIGUN","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["wif/dh8a",1],["wif/dh8c",1]]},
+        {"origin":"ENEV","destination":"","category":"departure","route":"ENEV35.ZIGUN3B.ZIGUN","altitude":"","speed":"","method":"random","rate":0.66,"airlines":[["nax/b738",2],["wif/dh8c",1]]},
+        {"origin":"ENEV","destination":"","category":"departure","route":"ENEV35.ZIGUN3B.ZIGUN","altitude":"","speed":"","method":"random","rate":1.25,"airlines":[["ln/c172",6],["ln/p28a",5],["ln/c182",3],["ln/be36",2],["ln/da42",1],["ln/tb20",1],["ln/c208",2],["ln/pc12",2],["ln/be20",1],["ln/b350",1],["ln/p180",1],["ln/c510",1],["ln/e50p",1],["ln/c550",1],["ln/e55p",1],["ln/cl30",1],["ln/c680",1],["ln/h25b",1],["ln/lj45",1],["ln/f2th",1],["ln/glf4",1],["ln/glex",1],["ln/glf5",1]]},
+        {"origin":"ENGM","destination":"ENEV","category":"arrival","route":"ZIGUN..TAGAK..ENEV","altitude":[4000,7000],"speed":250,"method":"random","rate":1.55,"airlines":[["sas/b737",2],["sas/b738",2],["nax/b733",1],["nax/b738",1],["sas/b736",1]]},
+        {"origin":"ENTC","destination":"ENEV","category":"arrival","route":"SJA..ODABA..ENEV","altitude":[4000,7000],"speed":250,"method":"random","rate":0.66,"airlines":[["wif/dh8a",1],["wif/dh8b",1],["wif/dh8c",1]]},
+        {"origin":"ENAN","destination":"ENEV","category":"arrival","route":"AND..HOTEV..ENEV","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["wif/dh8a",1],["wif/dh8c",1]]},
+        {"origin":"ENBO","destination":"ENEV","category":"arrival","route":"ZIGUN..TAGAK..ENEV","altitude":[4000,7000],"speed":250,"method":"random","rate":0.44,"airlines":[["wif/dh8a",1],["wif/dh8c",1]]},
+        {"origin":"","destination":"ENEV","category":"arrival","route":"ZIGUN..TAGAK..ENEV","altitude":[4000,7000],"speed":250,"method":"random","rate":0.66,"airlines":[["nax/b738",2],["wif/dh8c",1]]},
+        {"origin":"","destination":"ENEV","category":"arrival","route":"ZIGUN..TAGAK..ENEV","altitude":[4000,7000],"speed":250,"method":"random","rate":1.25,"airlines":[["ln/c172",6],["ln/p28a",5],["ln/c182",3],["ln/be36",2],["ln/da42",1],["ln/tb20",1],["ln/c208",2],["ln/pc12",2],["ln/be20",1],["ln/b350",1],["ln/p180",1],["ln/c510",1],["ln/e50p",1],["ln/c550",1],["ln/e55p",1],["ln/cl30",1],["ln/c680",1],["ln/h25b",1],["ln/lj45",1],["ln/f2th",1],["ln/glf4",1],["ln/glex",1],["ln/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [69.1614,17.8159,68.661,16.9662],
+            [68.661,16.9662,68.4913,16.6781],
+            [68.2282,17.9578,68.3935,17.1536],
+            [68.3935,17.1536,68.4913,16.6781],
+            [68.0068,16.0408,68.3113,16.4413],
+            [68.3113,16.4413,68.4913,16.6781],
+            [69.2878,16.1414,68.6853,16.5474],
+            [68.6853,16.5474,68.4913,16.6781]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [68.5031,16.6768,68.6695,16.6575],
+            [68.5859,16.6398,68.5867,16.6945],
+            [68.6691,16.63,68.6699,16.6849],
+            [68.4793,16.6795,68.3129,16.6985],
+            [68.3965,16.7162,68.3957,16.6619],
+            [68.3133,16.7256,68.3125,16.6715]
+        ]}
+    ]
+}

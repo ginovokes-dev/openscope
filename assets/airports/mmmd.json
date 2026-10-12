@@ -1,0 +1,90 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/MMMD/",
+    "info": {"country":"MX","city":"Merida","type":"large_airport","longestRunwayM":3200,"frequencies":{"atis":"127.900","twr":"118.300","app":"121.200"}},
+    "radio": {"twr":"Merida Tower","app":"Merida Approach","dep":"Merida Departure"},
+    "icao": "MMMD",
+    "iata": "MID",
+    "magnetic_north": -1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [20.930485,-89.645462,"38ft"],
+    "rangeRings": {"enabled":true,"center":[20.930485,-89.645462],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":130,"speed":6},
+    "arrivalRunway": "10",
+    "departureRunway": "10",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[21.3351,-89.653],[21.3232,-89.5406],[21.2844,-89.4354],[21.2216,-89.3445],[21.1389,-89.2741],[21.042,-89.229],[20.9375,-89.2122],[20.8326,-89.225],[20.7343,-89.2665],[20.6494,-89.3338],[20.5836,-89.4223],[20.5415,-89.526],[20.5259,-89.6379],[20.5378,-89.7503],[20.5765,-89.8555],[20.6394,-89.9464],[20.7221,-90.0169],[20.8189,-90.062],[20.9234,-90.0787],[21.0284,-90.0659],[21.1267,-90.0244],[21.2116,-89.9571],[21.2774,-89.8686],[21.3195,-89.7649]]}
+    ],
+    "fixes": {
+        "MMMD": [20.93049,-89.64546],
+        "NOHIZ": [21.2102,-89.1535],
+        "WUPIG": [21.03441,-89.46268],
+        "ERAWI": [20.42024,-89.46306],
+        "ROMZO": [20.74091,-89.57769],
+        "SORIC": [20.87802,-90.21866],
+        "GEPDU": [20.91099,-89.85843],
+        "KIPDE": [21.40361,-89.91953],
+        "IDEFU": [21.10627,-89.74729],
+        "_RWY1004DME": [20.95447,-89.72632],
+        "_RWY2804DME": [20.91239,-89.56181],
+        "_RWY1804DME": [21.00731,-89.65633],
+        "_RWY3604DME": [20.85319,-89.65926]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[20.93689,-89.65752,"38ft"],[20.93,-89.6306,"38ft"]],"ils":[true,true]},
+        {"name":["18","36"],"end":[[20.9407,-89.6576,"38ft"],[20.9198,-89.658,"38ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "NOHIZ2F": {"icao":"NOHIZ2F","name":"Nohiz Two Foxtrot","rwy":{"MMMD10":["_RWY2804DME"],"MMMD28":["_RWY1004DME"],"MMMD18":["_RWY3604DME"],"MMMD36":["_RWY1804DME"]},"body":[],"exitPoints":{"NOHIZ":["NOHIZ"]},"draw":[["MMMD","NOHIZ*"]]},
+        "ERAWI2C": {"icao":"ERAWI2C","name":"Erawi Two Charlie","rwy":{"MMMD10":["_RWY2804DME"],"MMMD28":["_RWY1004DME"],"MMMD18":["_RWY3604DME"],"MMMD36":["_RWY1804DME"]},"body":[],"exitPoints":{"ERAWI":["ERAWI"]},"draw":[["MMMD","ERAWI*"]]},
+        "SORIC1D": {"icao":"SORIC1D","name":"Soric One Delta","rwy":{"MMMD10":["_RWY2804DME"],"MMMD28":["_RWY1004DME"],"MMMD18":["_RWY3604DME"],"MMMD36":["_RWY1804DME"]},"body":[],"exitPoints":{"SORIC":["SORIC"]},"draw":[["MMMD","SORIC*"]]},
+        "KIPDE1B": {"icao":"KIPDE1B","name":"Kipde One Bravo","rwy":{"MMMD10":["_RWY2804DME"],"MMMD28":["_RWY1004DME"],"MMMD18":["_RWY3604DME"],"MMMD36":["_RWY1804DME"]},"body":[],"exitPoints":{"KIPDE":["KIPDE"]},"draw":[["MMMD","KIPDE*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"MMMD","destination":"MMMX","category":"departure","route":"MMMD10.SORIC1D.SORIC","altitude":"","speed":"","method":"random","rate":2.02,"airlines":[["amx/e170",1],["amx/b737",1],["dal/b737",1],["voi/a320",1],["amx/e145",1],["amx/e190",1],["dal/e190",1],["dal/e170",1],["amx/e135",1]]},
+        {"origin":"MMMD","destination":"KIAH","category":"departure","route":"MMMD10.KIPDE1B.KIPDE","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["ual/b737",1],["ual/b738",1]]},
+        {"origin":"MMMD","destination":"KMIA","category":"departure","route":"MMMD10.NOHIZ2F.NOHIZ","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["dal/e190",1],["dal/e170",1]]},
+        {"origin":"MMMD","destination":"MMGL","category":"departure","route":"MMMD10.SORIC1D.SORIC","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["voi/a319",1]]},
+        {"origin":"MMMD","destination":"","category":"departure","route":"MMMD10.SORIC1D.SORIC","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["amx/at72",1]]},
+        {"origin":"MMMD","destination":"","category":"departure","route":"MMMD10.KIPDE1B.KIPDE","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["voi/a320",1]]},
+        {"origin":"MMMD","destination":"","category":"departure","route":"MMMD10.NOHIZ2F.NOHIZ","altitude":"","speed":"","method":"random","rate":1.25,"airlines":[["xa/c172",6],["xa/p28a",5],["xa/c182",3],["xa/be36",2],["xa/da42",1],["xa/tb20",1],["xa/c208",2],["xa/pc12",2],["xa/be20",1],["xa/b350",1],["xa/p180",1],["xa/c510",1],["xa/e50p",1],["xa/c550",1],["xa/e55p",1],["xa/cl30",1],["xa/c680",1],["xa/h25b",1],["xa/lj45",1],["xa/f2th",1],["xa/glf4",1],["xa/glex",1],["xa/glf5",1]]},
+        {"origin":"MMMX","destination":"MMMD","category":"arrival","route":"SORIC..GEPDU..MMMD","altitude":[4000,7000],"speed":250,"method":"random","rate":2.02,"airlines":[["amx/e170",1],["amx/b737",1],["dal/b737",1],["voi/a320",1],["amx/e145",1],["amx/e190",1],["dal/e190",1],["dal/e170",1],["amx/e135",1]]},
+        {"origin":"KIAH","destination":"MMMD","category":"arrival","route":"KIPDE..IDEFU..MMMD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.58,"airlines":[["ual/b737",1],["ual/b738",1]]},
+        {"origin":"KMIA","destination":"MMMD","category":"arrival","route":"NOHIZ..WUPIG..MMMD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.29,"airlines":[["dal/e190",1],["dal/e170",1]]},
+        {"origin":"MMGL","destination":"MMMD","category":"arrival","route":"SORIC..GEPDU..MMMD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.29,"airlines":[["voi/a319",1]]},
+        {"origin":"","destination":"MMMD","category":"arrival","route":"SORIC..GEPDU..MMMD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.29,"airlines":[["amx/at72",1]]},
+        {"origin":"","destination":"MMMD","category":"arrival","route":"KIPDE..IDEFU..MMMD","altitude":[4000,7000],"speed":250,"method":"random","rate":0.29,"airlines":[["voi/a320",1]]},
+        {"origin":"","destination":"MMMD","category":"arrival","route":"NOHIZ..WUPIG..MMMD","altitude":[4000,7000],"speed":250,"method":"random","rate":1.25,"airlines":[["xa/c172",6],["xa/p28a",5],["xa/c182",3],["xa/be36",2],["xa/da42",1],["xa/tb20",1],["xa/c208",2],["xa/pc12",2],["xa/be20",1],["xa/b350",1],["xa/p180",1],["xa/c510",1],["xa/e50p",1],["xa/c550",1],["xa/e55p",1],["xa/cl30",1],["xa/c680",1],["xa/h25b",1],["xa/lj45",1],["xa/f2th",1],["xa/glf4",1],["xa/glex",1],["xa/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [21.2102,-89.1535,21.0344,-89.4627],
+            [21.0344,-89.4627,20.9305,-89.6455],
+            [20.4202,-89.4631,20.7409,-89.5777],
+            [20.7409,-89.5777,20.9305,-89.6455],
+            [20.878,-90.2187,20.911,-89.8584],
+            [20.911,-89.8584,20.9305,-89.6455],
+            [21.4036,-89.9195,21.1063,-89.7473],
+            [21.1063,-89.7473,20.9305,-89.6455]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [20.9369,-89.6575,20.9808,-89.8296],
+            [20.9492,-89.7464,20.9685,-89.7407],
+            [20.9712,-89.8324,20.9904,-89.8267],
+            [20.93,-89.6306,20.8859,-89.4587],
+            [20.9176,-89.5418,20.8983,-89.5474],
+            [20.8956,-89.4558,20.8763,-89.4615],
+            [20.9407,-89.6576,21.1072,-89.6544],
+            [21.0241,-89.6667,21.0238,-89.6453],
+            [21.1074,-89.6651,21.1071,-89.6437],
+            [20.9198,-89.658,20.7533,-89.6612],
+            [20.8364,-89.6489,20.8367,-89.6703],
+            [20.7531,-89.6505,20.7534,-89.6718]
+        ]}
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SVPR/",
+    "info": {"country":"VE","city":"Guyana City","type":"large_airport","longestRunwayM":2050,"frequencies":{"twr":"118.000","gnd":"121.900"}},
+    "radio": {"twr":"Guayana Tower","app":"Guayana Approach","dep":"Guayana Departure"},
+    "icao": "SVPR",
+    "iata": "PZO",
+    "magnetic_north": -15.2,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [8.28853,-62.760399,"472ft"],
+    "rangeRings": {"enabled":true,"center":[8.28853,-62.760399],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":80,"speed":6},
+    "arrivalRunway": "07",
+    "departureRunway": "07",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[8.6791,-62.8676],[8.6932,-62.7618],[8.6798,-62.6559],[8.6397,-62.5572],[8.5757,-62.4722],[8.4921,-62.4069],[8.3946,-62.3657],[8.2899,-62.3514],[8.1852,-62.365],[8.0874,-62.4055],[8.0034,-62.4702],[7.9388,-62.5547],[7.898,-62.6532],[7.8838,-62.759],[7.8973,-62.8649],[7.9373,-62.9636],[8.0014,-63.0486],[8.085,-63.1139],[8.1824,-63.1551],[8.2871,-63.1694],[8.3919,-63.1558],[8.4897,-63.1153],[8.5737,-63.0506],[8.6383,-62.9661]]}
+    ],
+    "fixes": {
+        "SVPR": [8.28853,-62.7604],
+        "TUC": [9.08586,-62.0984,"tucupita"],
+        "ZIWNO": [8.44296,-62.63218],
+        "COTUN": [8.09114,-62.2547],
+        "KASBO": [8.21519,-62.57251],
+        "IKISE": [7.79467,-62.54488],
+        "IVESE": [8.10504,-62.68033],
+        "MOI": [8.82142,-63.092,"morichal"],
+        "PEWOS": [8.45872,-62.8663],
+        "_RWY0704DME": [8.25529,-62.82921],
+        "_RWY2504DME": [8.32176,-62.69148]
+    },
+    "runways": [
+        {"name":["07","25"],"end":[[8.2845,-62.7687,"472ft"],[8.29256,-62.752,"472ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "TUC3C": {"icao":"TUC3C","name":"Tucupita Three Charlie","rwy":{"SVPR07":["_RWY2504DME"],"SVPR25":["_RWY0704DME"]},"body":[],"exitPoints":{"TUC":["TUC"]},"draw":[["SVPR","TUC*"]]},
+        "COTUN1A": {"icao":"COTUN1A","name":"Cotun One Alpha","rwy":{"SVPR07":["_RWY2504DME"],"SVPR25":["_RWY0704DME"]},"body":[],"exitPoints":{"COTUN":["COTUN"]},"draw":[["SVPR","COTUN*"]]},
+        "IKISE3F": {"icao":"IKISE3F","name":"Ikise Three Foxtrot","rwy":{"SVPR07":["_RWY2504DME"],"SVPR25":["_RWY0704DME"]},"body":[],"exitPoints":{"IKISE":["IKISE"]},"draw":[["SVPR","IKISE*"]]},
+        "MOI1B": {"icao":"MOI1B","name":"Morichal One Bravo","rwy":{"SVPR07":["_RWY2504DME"],"SVPR25":["_RWY0704DME"]},"body":[],"exitPoints":{"MOI":["MOI"]},"draw":[["SVPR","MOI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SVPR","destination":"SVMI","category":"departure","route":"SVPR07.MOI1B.MOI","altitude":"","speed":"","method":"random","rate":1.25,"airlines":[["oca/dc93",1],["oca/md82",1],["vcv/e190",1]]},
+        {"origin":"SVPR","destination":"SVMG","category":"departure","route":"SVPR07.MOI1B.MOI","altitude":"","speed":"","method":"random","rate":0.83,"airlines":[["oca/md82",1],["vcv/e190",1]]},
+        {"origin":"SVPR","destination":"SVBC","category":"departure","route":"SVPR07.MOI1B.MOI","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["oca/md82",1]]},
+        {"origin":"SVPR","destination":"SVCN","category":"departure","route":"SVPR07.IKISE3F.IKISE","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["vcv/a320",1]]},
+        {"origin":"SVPR","destination":"","category":"departure","route":"SVPR07.COTUN1A.COTUN","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["vcv/e190",1]]},
+        {"origin":"SVPR","destination":"","category":"departure","route":"SVPR07.IKISE3F.IKISE","altitude":"","speed":"","method":"random","rate":0.42,"airlines":[["vcv/crj7",1],["vcv/crj9",1],["vcv/crj2",1]]},
+        {"origin":"SVPR","destination":"","category":"departure","route":"SVPR07.COTUN1A.COTUN","altitude":"","speed":"","method":"random","rate":1.25,"airlines":[["yv/c172",6],["yv/p28a",5],["yv/c182",3],["yv/be36",2],["yv/da42",1],["yv/tb20",1],["yv/c208",2],["yv/pc12",2],["yv/be20",1],["yv/b350",1],["yv/p180",1],["yv/c510",1],["yv/e50p",1],["yv/c550",1],["yv/e55p",1],["yv/cl30",1],["yv/c680",1],["yv/h25b",1],["yv/lj45",1],["yv/f2th",1],["yv/glf4",1],["yv/glex",1],["yv/glf5",1]]},
+        {"origin":"SVMI","destination":"SVPR","category":"arrival","route":"MOI..PEWOS..SVPR","altitude":[4000,7000],"speed":250,"method":"random","rate":1.25,"airlines":[["oca/dc93",1],["oca/md82",1],["vcv/e190",1]]},
+        {"origin":"SVMG","destination":"SVPR","category":"arrival","route":"MOI..PEWOS..SVPR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.83,"airlines":[["oca/md82",1],["vcv/e190",1]]},
+        {"origin":"SVBC","destination":"SVPR","category":"arrival","route":"MOI..PEWOS..SVPR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["oca/md82",1]]},
+        {"origin":"SVCN","destination":"SVPR","category":"arrival","route":"IKISE..IVESE..SVPR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["vcv/a320",1]]},
+        {"origin":"","destination":"SVPR","category":"arrival","route":"COTUN..KASBO..SVPR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["vcv/e190",1]]},
+        {"origin":"","destination":"SVPR","category":"arrival","route":"IKISE..IVESE..SVPR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.42,"airlines":[["vcv/crj7",1],["vcv/crj9",1],["vcv/crj2",1]]},
+        {"origin":"","destination":"SVPR","category":"arrival","route":"COTUN..KASBO..SVPR","altitude":[4000,7000],"speed":250,"method":"random","rate":1.25,"airlines":[["yv/c172",6],["yv/p28a",5],["yv/c182",3],["yv/be36",2],["yv/da42",1],["yv/tb20",1],["yv/c208",2],["yv/pc12",2],["yv/be20",1],["yv/b350",1],["yv/p180",1],["yv/c510",1],["yv/e50p",1],["yv/c550",1],["yv/e55p",1],["yv/cl30",1],["yv/c680",1],["yv/h25b",1],["yv/lj45",1],["yv/f2th",1],["yv/glf4",1],["yv/glex",1],["yv/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [9.0859,-62.0984,8.443,-62.6322],
+            [8.443,-62.6322,8.2885,-62.7604],
+            [8.0911,-62.2547,8.2152,-62.5725],
+            [8.2152,-62.5725,8.2885,-62.7604],
+            [7.7947,-62.5449,8.105,-62.6803],
+            [8.105,-62.6803,8.2885,-62.7604],
+            [8.8214,-63.092,8.4587,-62.8663],
+            [8.4587,-62.8663,8.2885,-62.7604]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [8.2845,-62.7687,8.2115,-62.9199],
+            [8.239,-62.8399,8.257,-62.8488],
+            [8.2025,-62.9155,8.2204,-62.9244],
+            [8.2926,-62.752,8.3655,-62.6007],
+            [8.338,-62.6808,8.3201,-62.6719],
+            [8.3745,-62.6051,8.3566,-62.5963]
+        ]}
+    ]
+}

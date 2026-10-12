@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/UAII/",
+    "info": {"country":"KZ","city":"Shymkent","type":"large_airport","longestRunwayM":2800,"frequencies":{"twr":"118.700"}},
+    "radio": {"twr":"Shymkent Tower","app":"Shymkent Approach","dep":"Shymkent Departure"},
+    "icao": "UAII",
+    "iata": "CIT",
+    "magnetic_north": 6.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 9000,
+    "initial_alt": 5000,
+    "position": [42.365021,69.47564,"1385ft"],
+    "rangeRings": {"enabled":true,"center":[42.365021,69.47564],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":300,"speed":8},
+    "arrivalRunway": "28",
+    "departureRunway": "28",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":90,"airspace_class":"D","poly":[[42.7674,69.5338],[42.7426,69.6728],[42.692,69.7984],[42.6192,69.9019],[42.529,69.9764],[42.4276,70.0168],[42.322,70.0203],[42.2193,69.9866],[42.1266,69.9182],[42.0501,69.8196],[41.995,69.6975],[41.9652,69.5604],[41.9626,69.4174],[41.9875,69.2785],[42.038,69.1529],[42.1109,69.0494],[42.2011,68.9749],[42.3024,68.9345],[42.408,68.931],[42.5107,68.9646],[42.6035,69.0331],[42.68,69.1317],[42.735,69.2537],[42.7648,69.3909]]}
+    ],
+    "fixes": {
+        "UAII": [42.36502,69.47564],
+        "KEMPE": [42.87923,69.68949],
+        "GITVE": [42.55607,69.55509],
+        "JOCUG": [42.48304,70.18596],
+        "BUKET": [42.40887,69.73955],
+        "VANVE": [41.9435,69.02332],
+        "PACAM": [42.20841,69.30758],
+        "HEDSI": [42.73601,68.94842],
+        "HOGOP": [42.50286,69.27976],
+        "_RWY1004DME": [42.3866,69.37628],
+        "_RWY2804DME": [42.34184,69.58186]
+    },
+    "runways": [
+        {"name":["10","28"],"end":[[42.3678,69.4628,"1319ft"],[42.3607,69.4954,"1385ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "KEMPE2B": {"icao":"KEMPE2B","name":"Kempe Two Bravo","rwy":{"UAII10":["_RWY2804DME"],"UAII28":["_RWY1004DME"]},"body":[],"exitPoints":{"KEMPE":["KEMPE"]},"draw":[["UAII","KEMPE*"]]},
+        "JOCUG2E": {"icao":"JOCUG2E","name":"Jocug Two Echo","rwy":{"UAII10":["_RWY2804DME"],"UAII28":["_RWY1004DME"]},"body":[],"exitPoints":{"JOCUG":["JOCUG"]},"draw":[["UAII","JOCUG*"]]},
+        "VANVE3E": {"icao":"VANVE3E","name":"Vanve Three Echo","rwy":{"UAII10":["_RWY2804DME"],"UAII28":["_RWY1004DME"]},"body":[],"exitPoints":{"VANVE":["VANVE"]},"draw":[["UAII","VANVE*"]]},
+        "HEDSI1A": {"icao":"HEDSI1A","name":"Hedsi One Alpha","rwy":{"UAII10":["_RWY2804DME"],"UAII28":["_RWY1004DME"]},"body":[],"exitPoints":{"HEDSI":["HEDSI"]},"draw":[["UAII","HEDSI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"UAII","destination":"UAAA","category":"departure","route":"UAII28.JOCUG2E.JOCUG","altitude":"","speed":"","method":"random","rate":1.53,"airlines":[["kzr/a319",1],["kzr/a320",1],["kzr/b752",1],["kzr/e190",1],["vsv/b735",1]]},
+        {"origin":"UAII","destination":"UACC","category":"departure","route":"UAII28.KEMPE2B.KEMPE","altitude":"","speed":"","method":"random","rate":0.61,"airlines":[["kzr/e190",1],["vsv/b735",1]]},
+        {"origin":"UAII","destination":"UUWW","category":"departure","route":"UAII28.HEDSI1A.HEDSI","altitude":"","speed":"","method":"random","rate":0.61,"airlines":[["tso/b737",1],["tso/b738",1]]},
+        {"origin":"UAII","destination":"OMSJ","category":"departure","route":"UAII28.VANVE3E.VANVE","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["aby/a320",1]]},
+        {"origin":"UAII","destination":"UATE","category":"departure","route":"UAII28.HEDSI1A.HEDSI","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["vsv/b735",1]]},
+        {"origin":"UAII","destination":"","category":"departure","route":"UAII28.KEMPE2B.KEMPE","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["sbi/a320",1]]},
+        {"origin":"UAII","destination":"","category":"departure","route":"UAII28.HEDSI1A.HEDSI","altitude":"","speed":"","method":"random","rate":0.31,"airlines":[["vsv/b735",1]]},
+        {"origin":"UAII","destination":"","category":"departure","route":"UAII28.HEDSI1A.HEDSI","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["up/c172",6],["up/p28a",5],["up/c182",3],["up/be36",2],["up/da42",1],["up/tb20",1],["up/c208",2],["up/pc12",2],["up/be20",1],["up/b350",1],["up/p180",1],["up/c510",1],["up/e50p",1],["up/c550",1],["up/e55p",1],["up/cl30",1],["up/c680",1],["up/h25b",1],["up/lj45",1],["up/f2th",1],["up/glf4",1],["up/glex",1],["up/glf5",1]]},
+        {"origin":"UAAA","destination":"UAII","category":"arrival","route":"JOCUG..BUKET..UAII","altitude":[5000,8000],"speed":250,"method":"random","rate":1.53,"airlines":[["kzr/a319",1],["kzr/a320",1],["kzr/b752",1],["kzr/e190",1],["vsv/b735",1]]},
+        {"origin":"UACC","destination":"UAII","category":"arrival","route":"KEMPE..GITVE..UAII","altitude":[5000,8000],"speed":250,"method":"random","rate":0.61,"airlines":[["kzr/e190",1],["vsv/b735",1]]},
+        {"origin":"UUWW","destination":"UAII","category":"arrival","route":"HEDSI..HOGOP..UAII","altitude":[5000,8000],"speed":250,"method":"random","rate":0.61,"airlines":[["tso/b737",1],["tso/b738",1]]},
+        {"origin":"OMSJ","destination":"UAII","category":"arrival","route":"VANVE..PACAM..UAII","altitude":[5000,8000],"speed":250,"method":"random","rate":0.31,"airlines":[["aby/a320",1]]},
+        {"origin":"UATE","destination":"UAII","category":"arrival","route":"HEDSI..HOGOP..UAII","altitude":[5000,8000],"speed":250,"method":"random","rate":0.31,"airlines":[["vsv/b735",1]]},
+        {"origin":"","destination":"UAII","category":"arrival","route":"KEMPE..GITVE..UAII","altitude":[5000,8000],"speed":250,"method":"random","rate":0.31,"airlines":[["sbi/a320",1]]},
+        {"origin":"","destination":"UAII","category":"arrival","route":"HEDSI..HOGOP..UAII","altitude":[5000,8000],"speed":250,"method":"random","rate":0.31,"airlines":[["vsv/b735",1]]},
+        {"origin":"","destination":"UAII","category":"arrival","route":"HEDSI..HOGOP..UAII","altitude":[5000,8000],"speed":250,"method":"random","rate":1.32,"airlines":[["up/c172",6],["up/p28a",5],["up/c182",3],["up/be36",2],["up/da42",1],["up/tb20",1],["up/c208",2],["up/pc12",2],["up/be20",1],["up/b350",1],["up/p180",1],["up/c510",1],["up/e50p",1],["up/c550",1],["up/e55p",1],["up/cl30",1],["up/c680",1],["up/h25b",1],["up/lj45",1],["up/f2th",1],["up/glf4",1],["up/glex",1],["up/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [42.8792,69.6895,42.5561,69.5551],
+            [42.5561,69.5551,42.365,69.4756],
+            [42.483,70.186,42.4089,69.7396],
+            [42.4089,69.7396,42.365,69.4756],
+            [41.9435,69.0233,42.2084,69.3076],
+            [42.2084,69.3076,42.365,69.4756],
+            [42.736,68.9484,42.5029,69.2798],
+            [42.5029,69.2798,42.365,69.4756]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [42.3678,69.4628,42.4147,69.2464],
+            [42.3817,69.3508,42.4009,69.3585],
+            [42.4051,69.2426,42.4243,69.2502],
+            [42.3607,69.4954,42.3134,69.7114],
+            [42.3467,69.6073,42.3275,69.5996],
+            [42.323,69.7153,42.3038,69.7076]
+        ]}
+    ]
+}

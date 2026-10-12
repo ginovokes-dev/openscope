@@ -1,0 +1,74 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGUW/",
+    "info": {"country":"GB","city":"Ipswich","type":"medium_airport","longestRunwayM":2424,"frequencies":{"twr":"122.100","app":"123.300"}},
+    "radio": {"twr":"Wattisham Tower","app":"Wattisham Approach","dep":"Wattisham Radar"},
+    "icao": "EGUW",
+    "iata": "",
+    "magnetic_north": 1.4,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [52.127451,0.956189,"284ft"],
+    "rangeRings": {"enabled":true,"center":[52.127451,0.956189],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":230,"speed":7},
+    "arrivalRunway": "23",
+    "departureRunway": "23",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[52.532,0.9723],[52.5157,1.1423],[52.4729,1.2996],[52.4065,1.4336],[52.3212,1.535],[52.2226,1.5969],[52.1176,1.6152],[52.0132,1.5886],[51.9166,1.5189],[51.8344,1.4108],[51.7721,1.2717],[51.7341,1.1112],[51.7229,0.9401],[51.7392,0.7701],[51.782,0.6127],[51.8484,0.4788],[51.9337,0.3774],[52.0323,0.3155],[52.1373,0.2972],[52.2417,0.3238],[52.3383,0.3935],[52.4205,0.5016],[52.4828,0.6406],[52.5208,0.8012]]}
+    ],
+    "fixes": {
+        "EGUW": [52.12745,0.95619],
+        "NL": [52.6764,1.38471,"norwich"],
+        "OLECO": [52.30769,1.09689],
+        "AREVU": [52.09991,1.83129],
+        "ZAVUP": [52.11722,1.28132],
+        "DET": [51.3039,0.59722,"detling"],
+        "CACBU": [51.93438,0.87203],
+        "BOU": [52.2111,-0.04494,"bourn"],
+        "OBEPA": [52.15441,0.6336],
+        "_RWY0504DME": [52.07678,0.86485],
+        "_RWY2304DME": [52.17891,1.04919]
+    },
+    "runways": [
+        {"name":["05","23"],"end":[[52.12145,0.94532,"282ft"],[52.1343,0.96853,"278ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "NL3A": {"icao":"NL3A","name":"Norwich Three Alpha","rwy":{"EGUW05":["_RWY2304DME"],"EGUW23":["_RWY0504DME"]},"body":[],"exitPoints":{"NL":["NL"]},"draw":[["EGUW","NL*"]]},
+        "AREVU1E": {"icao":"AREVU1E","name":"Arevu One Echo","rwy":{"EGUW05":["_RWY2304DME"],"EGUW23":["_RWY0504DME"]},"body":[],"exitPoints":{"AREVU":["AREVU"]},"draw":[["EGUW","AREVU*"]]},
+        "DET2B": {"icao":"DET2B","name":"Detling Two Bravo","rwy":{"EGUW05":["_RWY2304DME"],"EGUW23":["_RWY0504DME"]},"body":[],"exitPoints":{"DET":["DET"]},"draw":[["EGUW","DET*"]]},
+        "BOU3D": {"icao":"BOU3D","name":"Bourn Three Delta","rwy":{"EGUW05":["_RWY2304DME"],"EGUW23":["_RWY0504DME"]},"body":[],"exitPoints":{"BOU":["BOU"]},"draw":[["EGUW","BOU*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGUW","destination":"","category":"departure","route":"EGUW23.NL3A.NL","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["baw/a321",5],["ryr/b738",4],["bcy/f50",2],["bee/d328",2]]},
+        {"origin":"EGUW","destination":"","category":"departure","route":"EGUW23.AREVU1E.AREVU","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["baw/a321",5],["ryr/b738",4],["bcy/f50",2],["bee/d328",2]]},
+        {"origin":"EGUW","destination":"","category":"departure","route":"EGUW23.DET2B.DET","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["baw/a321",5],["ryr/b738",4],["bcy/f50",2],["bee/d328",2]]},
+        {"origin":"EGUW","destination":"","category":"departure","route":"EGUW23.BOU3D.BOU","altitude":"","speed":"","method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["baw/a321",5],["ryr/b738",4],["bcy/f50",2],["bee/d328",2]]},
+        {"origin":"EGUW","destination":"","category":"departure","route":"EGUW23.NL3A.NL","altitude":"","speed":"","method":"random","rate":1.13,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]},
+        {"origin":"","destination":"EGUW","category":"arrival","route":"NL..OLECO..EGUW","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["baw/a321",5],["ryr/b738",4],["bcy/f50",2],["bee/d328",2]]},
+        {"origin":"","destination":"EGUW","category":"arrival","route":"AREVU..ZAVUP..EGUW","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["baw/a321",5],["ryr/b738",4],["bcy/f50",2],["bee/d328",2]]},
+        {"origin":"","destination":"EGUW","category":"arrival","route":"DET..CACBU..EGUW","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["baw/a321",5],["ryr/b738",4],["bcy/f50",2],["bee/d328",2]]},
+        {"origin":"","destination":"EGUW","category":"arrival","route":"BOU..OBEPA..EGUW","altitude":[4000,7000],"speed":250,"method":"random","rate":0.84,"airlines":[["bee/dh8d",31],["ezy/a319",26],["ezy/a320",16],["baw/a319",9],["eze/js41",9],["bee/e75l",8],["eze/sb20",6],["baw/a320",5],["baw/a321",5],["ryr/b738",4],["bcy/f50",2],["bee/d328",2]]},
+        {"origin":"","destination":"EGUW","category":"arrival","route":"NL..OLECO..EGUW","altitude":[4000,7000],"speed":250,"method":"random","rate":1.13,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [52.6764,1.3847,52.3077,1.0969],
+            [52.3077,1.0969,52.1275,0.9562],
+            [52.0999,1.8313,52.1172,1.2813],
+            [52.1172,1.2813,52.1275,0.9562],
+            [51.3039,0.5972,51.9344,0.872],
+            [51.9344,0.872,52.1275,0.9562],
+            [52.2111,-0.0449,52.1544,0.6336],
+            [52.1544,0.6336,52.1275,0.9562]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [52.1343,0.9685,52.2457,1.1705],
+            [52.1975,1.0585,52.1826,1.0803],
+            [52.2531,1.1595,52.2383,1.1814]
+        ]}
+    ]
+}

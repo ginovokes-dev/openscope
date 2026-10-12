@@ -1,0 +1,83 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/ENCN/",
+    "info": {"country":"NO","city":"Kristiansand","type":"large_airport","longestRunwayM":2035,"frequencies":{"atis":"124.475","twr":"118.100"}},
+    "radio": {"twr":"Kristiansand Tower","app":"Kristiansand Approach","dep":"Kristiansand Departure"},
+    "icao": "ENCN",
+    "iata": "KRS",
+    "magnetic_north": 3.8,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [58.204201,8.08537,"57ft"],
+    "rangeRings": {"enabled":true,"center":[58.204201,8.08537],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":220,"speed":7},
+    "arrivalRunway": "21",
+    "departureRunway": "21",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[58.608,8.1363],[58.5873,8.3329],[58.5405,8.5126],[58.4708,8.6633],[58.3829,8.7745],[58.2828,8.8388],[58.1774,8.8518],[58.0738,8.8125],[57.9791,8.7236],[57.8997,8.5913],[57.8411,8.4245],[57.8072,8.2346],[57.8004,8.0345],[57.8211,7.8378],[57.8679,7.6581],[57.9376,7.5075],[58.0255,7.3962],[58.1256,7.3319],[58.231,7.319],[58.3346,7.3583],[58.4293,7.4471],[58.5087,7.5794],[58.5673,7.7463],[58.6012,7.9362]]}
+    ],
+    "fixes": {
+        "ENCN": [58.2042,8.08537],
+        "HACIT": [58.67855,8.56691],
+        "VILWA": [58.38044,8.26428],
+        "ZOPAL": [57.88315,8.90457],
+        "RACAV": [58.08492,8.38973],
+        "USETI": [57.69711,7.74459],
+        "FASLE": [58.0158,7.95876],
+        "CIVOD": [58.58377,7.3619],
+        "HUHAL": [58.34522,7.81657],
+        "_RWY0304DME": [58.14293,8.00437],
+        "_RWY2104DME": [58.26492,8.16588]
+    },
+    "runways": [
+        {"name":["03","21"],"end":[[58.19759,8.07658,"41ft"],[58.2103,8.09342,"52ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "HACIT1D": {"icao":"HACIT1D","name":"Hacit One Delta","rwy":{"ENCN03":["_RWY2104DME"],"ENCN21":["_RWY0304DME"]},"body":[],"exitPoints":{"HACIT":["HACIT"]},"draw":[["ENCN","HACIT*"]]},
+        "ZOPAL3F": {"icao":"ZOPAL3F","name":"Zopal Three Foxtrot","rwy":{"ENCN03":["_RWY2104DME"],"ENCN21":["_RWY0304DME"]},"body":[],"exitPoints":{"ZOPAL":["ZOPAL"]},"draw":[["ENCN","ZOPAL*"]]},
+        "USETI2F": {"icao":"USETI2F","name":"Useti Two Foxtrot","rwy":{"ENCN03":["_RWY2104DME"],"ENCN21":["_RWY0304DME"]},"body":[],"exitPoints":{"USETI":["USETI"]},"draw":[["ENCN","USETI*"]]},
+        "CIVOD2C": {"icao":"CIVOD2C","name":"Civod Two Charlie","rwy":{"ENCN03":["_RWY2104DME"],"ENCN21":["_RWY0304DME"]},"body":[],"exitPoints":{"CIVOD":["CIVOD"]},"draw":[["ENCN","CIVOD*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"ENCN","destination":"ENGM","category":"departure","route":"ENCN21.HACIT1D.HACIT","altitude":"","speed":"","method":"random","rate":1.7,"airlines":[["sas/b737",2],["sas/b738",2],["nax/b738",1],["sas/b736",1]]},
+        {"origin":"ENCN","destination":"ENBR","category":"departure","route":"ENCN21.CIVOD2C.CIVOD","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["wif/dh8c",1],["wif/dh8d",1]]},
+        {"origin":"ENCN","destination":"ENVA","category":"departure","route":"ENCN21.HACIT1D.HACIT","altitude":"","speed":"","method":"random","rate":0.57,"airlines":[["wif/dh8c",1],["wif/dh8d",1]]},
+        {"origin":"ENCN","destination":"EKCH","category":"departure","route":"ENCN21.ZOPAL3F.ZOPAL","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["wif/dh8d",1]]},
+        {"origin":"ENCN","destination":"ENZV","category":"departure","route":"ENCN21.CIVOD2C.CIVOD","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["wif/dh8c",1]]},
+        {"origin":"ENCN","destination":"","category":"departure","route":"ENCN21.ZOPAL3F.ZOPAL","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["wzz/a320",1]]},
+        {"origin":"ENCN","destination":"","category":"departure","route":"ENCN21.USETI2F.USETI","altitude":"","speed":"","method":"random","rate":0.28,"airlines":[["sas/b738",1]]},
+        {"origin":"ENCN","destination":"","category":"departure","route":"ENCN21.USETI2F.USETI","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["ln/c172",6],["ln/p28a",5],["ln/c182",3],["ln/be36",2],["ln/da42",1],["ln/tb20",1],["ln/c208",2],["ln/pc12",2],["ln/be20",1],["ln/b350",1],["ln/p180",1],["ln/c510",1],["ln/e50p",1],["ln/c550",1],["ln/e55p",1],["ln/cl30",1],["ln/c680",1],["ln/h25b",1],["ln/lj45",1],["ln/f2th",1],["ln/glf4",1],["ln/glex",1],["ln/glf5",1]]},
+        {"origin":"ENGM","destination":"ENCN","category":"arrival","route":"HACIT..VILWA..ENCN","altitude":[4000,7000],"speed":250,"method":"random","rate":1.7,"airlines":[["sas/b737",2],["sas/b738",2],["nax/b738",1],["sas/b736",1]]},
+        {"origin":"ENBR","destination":"ENCN","category":"arrival","route":"CIVOD..HUHAL..ENCN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.57,"airlines":[["wif/dh8c",1],["wif/dh8d",1]]},
+        {"origin":"ENVA","destination":"ENCN","category":"arrival","route":"HACIT..VILWA..ENCN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.57,"airlines":[["wif/dh8c",1],["wif/dh8d",1]]},
+        {"origin":"EKCH","destination":"ENCN","category":"arrival","route":"ZOPAL..RACAV..ENCN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["wif/dh8d",1]]},
+        {"origin":"ENZV","destination":"ENCN","category":"arrival","route":"CIVOD..HUHAL..ENCN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["wif/dh8c",1]]},
+        {"origin":"","destination":"ENCN","category":"arrival","route":"ZOPAL..RACAV..ENCN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["wzz/a320",1]]},
+        {"origin":"","destination":"ENCN","category":"arrival","route":"USETI..FASLE..ENCN","altitude":[4000,7000],"speed":250,"method":"random","rate":0.28,"airlines":[["sas/b738",1]]},
+        {"origin":"","destination":"ENCN","category":"arrival","route":"USETI..FASLE..ENCN","altitude":[4000,7000],"speed":250,"method":"random","rate":1.32,"airlines":[["ln/c172",6],["ln/p28a",5],["ln/c182",3],["ln/be36",2],["ln/da42",1],["ln/tb20",1],["ln/c208",2],["ln/pc12",2],["ln/be20",1],["ln/b350",1],["ln/p180",1],["ln/c510",1],["ln/e50p",1],["ln/c550",1],["ln/e55p",1],["ln/cl30",1],["ln/c680",1],["ln/h25b",1],["ln/lj45",1],["ln/f2th",1],["ln/glf4",1],["ln/glex",1],["ln/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [58.6785,8.5669,58.3804,8.2643],
+            [58.3804,8.2643,58.2042,8.0854],
+            [57.8832,8.9046,58.0849,8.3897],
+            [58.0849,8.3897,58.2042,8.0854],
+            [57.6971,7.7446,58.0158,7.9588],
+            [58.0158,7.9588,58.2042,8.0854],
+            [58.5838,7.3619,58.3452,7.8166],
+            [58.3452,7.8166,58.2042,8.0854]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [58.1976,8.0766,58.0609,7.8965],
+            [58.1235,8.0019,58.135,7.9708],
+            [58.0551,7.9119,58.0666,7.881],
+            [58.2103,8.0934,58.3468,8.275],
+            [58.2843,8.1684,58.2729,8.1996],
+            [58.3525,8.2594,58.3411,8.2906]
+        ]}
+    ]
+}

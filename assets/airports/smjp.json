@@ -1,0 +1,79 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/SMJP/",
+    "info": {"country":"SR","city":"Paramaribo","type":"large_airport","longestRunwayM":3480,"frequencies":{"twr":"118.500","app":"129.200","gnd":"121.900"}},
+    "radio": {"twr":"Zandery Tower","app":"Zandery Approach","dep":"Zandery Departure"},
+    "icao": "SMJP",
+    "iata": "PBM",
+    "magnetic_north": -18,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [5.45283,-55.187801,"59ft"],
+    "rangeRings": {"enabled":true,"center":[5.45283,-55.187801],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":130,"speed":7},
+    "arrivalRunway": "11",
+    "departureRunway": "11",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[5.8377,-55.3134],[5.857,-55.2091],[5.8487,-55.1033],[5.8134,-55.0032],[5.7536,-54.9158],[5.6732,-54.8469],[5.5779,-54.8012],[5.474,-54.7818],[5.3687,-54.7902],[5.2691,-54.8256],[5.182,-54.8857],[5.1134,-54.9664],[5.0679,-55.0622],[5.0487,-55.1665],[5.057,-55.2723],[5.0922,-55.3724],[5.1521,-55.4598],[5.2324,-55.5287],[5.3278,-55.5744],[5.4316,-55.5938],[5.537,-55.5855],[5.6366,-55.55],[5.7236,-55.4899],[5.7922,-55.4092]]}
+    ],
+    "fixes": {
+        "SMJP": [5.45283,-55.1878],
+        "HEGJU": [5.89402,-54.87862],
+        "MAJEB": [5.61675,-55.07293],
+        "OJEKO": [5.33602,-54.66031],
+        "JIFOM": [5.40943,-54.99182],
+        "IBODO": [4.95191,-55.38481],
+        "INOBA": [5.26672,-55.261],
+        "AWOVI": [5.72359,-55.65474],
+        "BUSAF": [5.55343,-55.36129],
+        "_RWY1104DME": [5.45235,-55.27042],
+        "_RWY2904DME": [5.4533,-55.10518]
+    },
+    "runways": [
+        {"name":["11","29"],"end":[[5.45274,-55.2035,"56ft"],[5.45292,-55.1721,"57ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "HEGJU3A": {"icao":"HEGJU3A","name":"Hegju Three Alpha","rwy":{"SMJP11":["_RWY2904DME"],"SMJP29":["_RWY1104DME"]},"body":[],"exitPoints":{"HEGJU":["HEGJU"]},"draw":[["SMJP","HEGJU*"]]},
+        "OJEKO3C": {"icao":"OJEKO3C","name":"Ojeko Three Charlie","rwy":{"SMJP11":["_RWY2904DME"],"SMJP29":["_RWY1104DME"]},"body":[],"exitPoints":{"OJEKO":["OJEKO"]},"draw":[["SMJP","OJEKO*"]]},
+        "IBODO2F": {"icao":"IBODO2F","name":"Ibodo Two Foxtrot","rwy":{"SMJP11":["_RWY2904DME"],"SMJP29":["_RWY1104DME"]},"body":[],"exitPoints":{"IBODO":["IBODO"]},"draw":[["SMJP","IBODO*"]]},
+        "AWOVI1C": {"icao":"AWOVI1C","name":"Awovi One Charlie","rwy":{"SMJP11":["_RWY2904DME"],"SMJP29":["_RWY1104DME"]},"body":[],"exitPoints":{"AWOVI":["AWOVI"]},"draw":[["SMJP","AWOVI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"SMJP","destination":"EHAM","category":"departure","route":"SMJP11.HEGJU3A.HEGJU","altitude":"","speed":"","method":"random","rate":0.94,"airlines":[["klm/b744",1],["slm/a343",1]]},
+        {"origin":"SMJP","destination":"TTPP","category":"departure","route":"SMJP11.AWOVI1C.AWOVI","altitude":"","speed":"","method":"random","rate":0.94,"airlines":[["bwa/b738",1],["slm/b733",1]]},
+        {"origin":"SMJP","destination":"SBBE","category":"departure","route":"SMJP11.OJEKO3C.OJEKO","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["slm/b733",1]]},
+        {"origin":"SMJP","destination":"SOCA","category":"departure","route":"SMJP11.OJEKO3C.OJEKO","altitude":"","speed":"","method":"random","rate":0.47,"airlines":[["slm/b733",1]]},
+        {"origin":"SMJP","destination":"","category":"departure","route":"SMJP11.AWOVI1C.AWOVI","altitude":"","speed":"","method":"random","rate":0.94,"airlines":[["slm/b733",2]]},
+        {"origin":"SMJP","destination":"","category":"departure","route":"SMJP11.IBODO2F.IBODO","altitude":"","speed":"","method":"random","rate":1.25,"airlines":[["pz/c172",6],["pz/p28a",5],["pz/c182",3],["pz/be36",2],["pz/da42",1],["pz/tb20",1],["pz/c208",2],["pz/pc12",2],["pz/be20",1],["pz/b350",1],["pz/p180",1],["pz/c510",1],["pz/e50p",1],["pz/c550",1],["pz/e55p",1],["pz/cl30",1],["pz/c680",1],["pz/h25b",1],["pz/lj45",1],["pz/f2th",1],["pz/glf4",1],["pz/glex",1],["pz/glf5",1]]},
+        {"origin":"EHAM","destination":"SMJP","category":"arrival","route":"HEGJU..MAJEB..SMJP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.94,"airlines":[["klm/b744",1],["slm/a343",1]]},
+        {"origin":"TTPP","destination":"SMJP","category":"arrival","route":"AWOVI..BUSAF..SMJP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.94,"airlines":[["bwa/b738",1],["slm/b733",1]]},
+        {"origin":"SBBE","destination":"SMJP","category":"arrival","route":"OJEKO..JIFOM..SMJP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.47,"airlines":[["slm/b733",1]]},
+        {"origin":"SOCA","destination":"SMJP","category":"arrival","route":"OJEKO..JIFOM..SMJP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.47,"airlines":[["slm/b733",1]]},
+        {"origin":"","destination":"SMJP","category":"arrival","route":"AWOVI..BUSAF..SMJP","altitude":[4000,7000],"speed":250,"method":"random","rate":0.94,"airlines":[["slm/b733",2]]},
+        {"origin":"","destination":"SMJP","category":"arrival","route":"IBODO..INOBA..SMJP","altitude":[4000,7000],"speed":250,"method":"random","rate":1.25,"airlines":[["pz/c172",6],["pz/p28a",5],["pz/c182",3],["pz/be36",2],["pz/da42",1],["pz/tb20",1],["pz/c208",2],["pz/pc12",2],["pz/be20",1],["pz/b350",1],["pz/p180",1],["pz/c510",1],["pz/e50p",1],["pz/c550",1],["pz/e55p",1],["pz/cl30",1],["pz/c680",1],["pz/h25b",1],["pz/lj45",1],["pz/f2th",1],["pz/glf4",1],["pz/glex",1],["pz/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [5.894,-54.8786,5.6167,-55.0729],
+            [5.6167,-55.0729,5.4528,-55.1878],
+            [5.336,-54.6603,5.4094,-54.9918],
+            [5.4094,-54.9918,5.4528,-55.1878],
+            [4.9519,-55.3848,5.2667,-55.261],
+            [5.2667,-55.261,5.4528,-55.1878],
+            [5.7236,-55.6547,5.5534,-55.3613],
+            [5.5534,-55.3613,5.4528,-55.1878]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [5.4527,-55.2035,5.4518,-55.3708],
+            [5.4423,-55.2871,5.4622,-55.2872],
+            [5.4418,-55.3707,5.4617,-55.3709],
+            [5.4529,-55.1721,5.4539,-55.0048],
+            [5.4634,-55.0885,5.4434,-55.0884],
+            [5.4639,-55.0048,5.4439,-55.0047]
+        ]}
+    ]
+}

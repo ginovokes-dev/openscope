@@ -1,0 +1,92 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/OETB/",
+    "info": {"country":"SA","city":"Tabuk","type":"large_airport","longestRunwayM":3350,"frequencies":{"atis":"115.700","twr":"125.900","app":"119.700","gnd":"126.300"}},
+    "radio": {"twr":"Tabuk Tower","app":"Tabuk Approach","dep":"Tabuk Departure"},
+    "icao": "OETB",
+    "iata": "TUU",
+    "magnetic_north": 4.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 10000,
+    "initial_alt": 6000,
+    "position": [28.3711,36.624865,"2551ft"],
+    "rangeRings": {"enabled":true,"center":[28.3711,36.624865],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":80,"speed":7},
+    "arrivalRunway": "06",
+    "departureRunway": "06",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":100,"airspace_class":"D","poly":[[28.7745,36.661],[28.7526,36.7784],[28.7046,36.8854],[28.6339,36.9746],[28.5453,37.04],[28.4448,37.0771],[28.3393,37.0834],[28.236,37.0584],[28.1419,37.0039],[28.0634,36.9236],[28.0058,36.8229],[27.9732,36.7087],[27.9677,36.5888],[27.9896,36.4713],[28.0376,36.3644],[28.1083,36.2751],[28.1969,36.2097],[28.2974,36.1726],[28.4029,36.1663],[28.5062,36.1913],[28.6003,36.2458],[28.6788,36.3262],[28.7364,36.4269],[28.769,36.541]]}
+    ],
+    "fixes": {
+        "OETB": [28.3711,36.62487],
+        "DUVEH": [28.88634,36.80058],
+        "ERIWO": [28.56253,36.69015],
+        "VATID": [28.26606,37.22447],
+        "ATIMO": [28.33207,36.84764],
+        "EJUNU": [27.89903,36.91801],
+        "UFAMI": [28.19571,36.73378],
+        "LOJIK": [28.57389,36.0586],
+        "FUWNA": [28.44644,36.41447],
+        "_RWY0604DME": [28.34087,36.55138],
+        "_RWY2404DME": [28.41029,36.71947],
+        "_RWY1304DME": [28.42668,36.53866],
+        "_RWY3104DME": [28.31669,36.67239]
+    },
+    "runways": [
+        {"name":["06","24"],"end":[[28.3692,36.6199,"2545ft"],[28.382,36.6509,"2551ft"]],"ils":[true,true]},
+        {"name":["13","31"],"end":[[28.3812,36.594,"2530ft"],[28.3622,36.6171,"2539ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "DUVEH3B": {"icao":"DUVEH3B","name":"Duveh Three Bravo","rwy":{"OETB06":["_RWY2404DME"],"OETB24":["_RWY0604DME"],"OETB13":["_RWY3104DME"],"OETB31":["_RWY1304DME"]},"body":[],"exitPoints":{"DUVEH":["DUVEH"]},"draw":[["OETB","DUVEH*"]]},
+        "VATID1A": {"icao":"VATID1A","name":"Vatid One Alpha","rwy":{"OETB06":["_RWY2404DME"],"OETB24":["_RWY0604DME"],"OETB13":["_RWY3104DME"],"OETB31":["_RWY1304DME"]},"body":[],"exitPoints":{"VATID":["VATID"]},"draw":[["OETB","VATID*"]]},
+        "EJUNU1C": {"icao":"EJUNU1C","name":"Ejunu One Charlie","rwy":{"OETB06":["_RWY2404DME"],"OETB24":["_RWY0604DME"],"OETB13":["_RWY3104DME"],"OETB31":["_RWY1304DME"]},"body":[],"exitPoints":{"EJUNU":["EJUNU"]},"draw":[["OETB","EJUNU*"]]},
+        "LOJIK1A": {"icao":"LOJIK1A","name":"Lojik One Alpha","rwy":{"OETB06":["_RWY2404DME"],"OETB24":["_RWY0604DME"],"OETB13":["_RWY3104DME"],"OETB31":["_RWY1304DME"]},"body":[],"exitPoints":{"LOJIK":["LOJIK"]},"draw":[["OETB","LOJIK*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"OETB","destination":"HECA","category":"departure","route":"OETB06.LOJIK1A.LOJIK","altitude":"","speed":"","method":"random","rate":0.88,"airlines":[["lmu/a320",1],["nia/a320",1]]},
+        {"origin":"OETB","destination":"OERK","category":"departure","route":"OETB06.VATID1A.VATID","altitude":"","speed":"","method":"random","rate":0.88,"airlines":[["sva/a320",1],["sva/a321",1]]},
+        {"origin":"OETB","destination":"OEAB","category":"departure","route":"OETB06.EJUNU1C.EJUNU","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["sva/a320",1]]},
+        {"origin":"OETB","destination":"OEDF","category":"departure","route":"OETB06.VATID1A.VATID","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["sva/e170",1]]},
+        {"origin":"OETB","destination":"OEJN","category":"departure","route":"OETB06.EJUNU1C.EJUNU","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["sva/a321",1]]},
+        {"origin":"OETB","destination":"","category":"departure","route":"OETB06.VATID1A.VATID","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["fdb/b738",1]]},
+        {"origin":"OETB","destination":"","category":"departure","route":"OETB06.EJUNU1C.EJUNU","altitude":"","speed":"","method":"random","rate":0.44,"airlines":[["sva/e170",1]]},
+        {"origin":"OETB","destination":"","category":"departure","route":"OETB06.VATID1A.VATID","altitude":"","speed":"","method":"random","rate":1.32,"airlines":[["hz/c172",6],["hz/p28a",5],["hz/c182",3],["hz/be36",2],["hz/da42",1],["hz/tb20",1],["hz/c208",2],["hz/pc12",2],["hz/be20",1],["hz/b350",1],["hz/p180",1],["hz/c510",1],["hz/e50p",1],["hz/c550",1],["hz/e55p",1],["hz/cl30",1],["hz/c680",1],["hz/h25b",1],["hz/lj45",1],["hz/f2th",1],["hz/glf4",1],["hz/glex",1],["hz/glf5",1]]},
+        {"origin":"HECA","destination":"OETB","category":"arrival","route":"LOJIK..FUWNA..OETB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.88,"airlines":[["lmu/a320",1],["nia/a320",1]]},
+        {"origin":"OERK","destination":"OETB","category":"arrival","route":"VATID..ATIMO..OETB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.88,"airlines":[["sva/a320",1],["sva/a321",1]]},
+        {"origin":"OEAB","destination":"OETB","category":"arrival","route":"EJUNU..UFAMI..OETB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.44,"airlines":[["sva/a320",1]]},
+        {"origin":"OEDF","destination":"OETB","category":"arrival","route":"VATID..ATIMO..OETB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.44,"airlines":[["sva/e170",1]]},
+        {"origin":"OEJN","destination":"OETB","category":"arrival","route":"EJUNU..UFAMI..OETB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.44,"airlines":[["sva/a321",1]]},
+        {"origin":"","destination":"OETB","category":"arrival","route":"VATID..ATIMO..OETB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.44,"airlines":[["fdb/b738",1]]},
+        {"origin":"","destination":"OETB","category":"arrival","route":"EJUNU..UFAMI..OETB","altitude":[6000,9000],"speed":250,"method":"random","rate":0.44,"airlines":[["sva/e170",1]]},
+        {"origin":"","destination":"OETB","category":"arrival","route":"VATID..ATIMO..OETB","altitude":[6000,9000],"speed":250,"method":"random","rate":1.32,"airlines":[["hz/c172",6],["hz/p28a",5],["hz/c182",3],["hz/be36",2],["hz/da42",1],["hz/tb20",1],["hz/c208",2],["hz/pc12",2],["hz/be20",1],["hz/b350",1],["hz/p180",1],["hz/c510",1],["hz/e50p",1],["hz/c550",1],["hz/e55p",1],["hz/cl30",1],["hz/c680",1],["hz/h25b",1],["hz/lj45",1],["hz/f2th",1],["hz/glf4",1],["hz/glex",1],["hz/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [28.8863,36.8006,28.5625,36.6901],
+            [28.5625,36.6901,28.3711,36.6249],
+            [28.2661,37.2245,28.3321,36.8476],
+            [28.3321,36.8476,28.3711,36.6249],
+            [27.899,36.918,28.1957,36.7338],
+            [28.1957,36.7338,28.3711,36.6249],
+            [28.5739,36.0586,28.4464,36.4145],
+            [28.4464,36.4145,28.3711,36.6249]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [28.3692,36.6199,28.2983,36.4487],
+            [28.3247,36.5391,28.3428,36.5294],
+            [28.2893,36.4535,28.3074,36.4438],
+            [28.382,36.6509,28.4527,36.8224],
+            [28.4264,36.7318,28.4083,36.7414],
+            [28.4617,36.8176,28.4436,36.8272],
+            [28.3812,36.594,28.4949,36.4556],
+            [28.4308,36.5171,28.4454,36.5326],
+            [28.4876,36.4478,28.5022,36.4633],
+            [28.3622,36.6171,28.2484,36.7552],
+            [28.3126,36.694,28.298,36.6784],
+            [28.2557,36.763,28.2411,36.7475]
+        ]}
+    ]
+}

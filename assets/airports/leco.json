@@ -1,0 +1,79 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LECO/",
+    "info": {"country":"ES","city":"Culleredo","type":"medium_airport","longestRunwayM":2188,"frequencies":{"twr":"118.300","app":"120.200","gnd":"121.700"}},
+    "radio": {"twr":"A Coruna Tower","app":"A Coruna Approach","dep":"A Coruna Departure"},
+    "icao": "LECO",
+    "iata": "LCG",
+    "magnetic_north": -1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [43.302101,-8.37726,"326ft"],
+    "rangeRings": {"enabled":true,"center":[43.302101,-8.37726],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":200,"speed":9},
+    "arrivalRunway": "21",
+    "departureRunway": "21",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[43.7067,-8.387],[43.6948,-8.2427],[43.6561,-8.1077],[43.5932,-7.991],[43.5105,-7.9006],[43.4136,-7.8427],[43.3092,-7.8213],[43.2042,-7.8377],[43.1059,-7.8909],[43.021,-7.9772],[42.9552,-8.0909],[42.9131,-8.224],[42.8975,-8.3676],[42.9094,-8.5118],[42.9481,-8.6469],[43.011,-8.7636],[43.0937,-8.8539],[43.1906,-8.9118],[43.295,-8.9333],[43.4,-8.9168],[43.4983,-8.8636],[43.5832,-8.7773],[43.649,-8.6637],[43.6911,-8.5305]]}
+    ],
+    "fixes": {
+        "LECO": [43.3021,-8.37726],
+        "UHUGA": [43.76601,-8.00304],
+        "LENAD": [43.47446,-8.23822],
+        "VINOL": [43.24904,-7.64168],
+        "UNIHU": [43.28239,-8.10396],
+        "FOGUC": [42.7924,-8.1409],
+        "KAPEM": [43.11273,-8.28944],
+        "NADEN": [43.35724,-9.11255],
+        "VITPU": [43.32259,-8.65045],
+        "_RWY0304DME": [43.23449,-8.43265],
+        "_RWY2104DME": [43.36577,-8.32491]
+    },
+    "runways": [
+        {"name":["03","21"],"end":[[43.2917,-8.38576,"327ft"],[43.30859,-8.3719,"286ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "UHUGA1F": {"icao":"UHUGA1F","name":"Uhuga One Foxtrot","rwy":{"LECO03":["_RWY2104DME"],"LECO21":["_RWY0304DME"]},"body":[],"exitPoints":{"UHUGA":["UHUGA"]},"draw":[["LECO","UHUGA*"]]},
+        "VINOL2C": {"icao":"VINOL2C","name":"Vinol Two Charlie","rwy":{"LECO03":["_RWY2104DME"],"LECO21":["_RWY0304DME"]},"body":[],"exitPoints":{"VINOL":["VINOL"]},"draw":[["LECO","VINOL*"]]},
+        "FOGUC3C": {"icao":"FOGUC3C","name":"Foguc Three Charlie","rwy":{"LECO03":["_RWY2104DME"],"LECO21":["_RWY0304DME"]},"body":[],"exitPoints":{"FOGUC":["FOGUC"]},"draw":[["LECO","FOGUC*"]]},
+        "NADEN2A": {"icao":"NADEN2A","name":"Naden Two Alpha","rwy":{"LECO03":["_RWY2104DME"],"LECO21":["_RWY0304DME"]},"body":[],"exitPoints":{"NADEN":["NADEN"]},"draw":[["LECO","NADEN*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LECO","destination":"LEMD","category":"departure","route":"LECO21.VINOL2C.VINOL","altitude":"","speed":"","method":"random","rate":1.41,"airlines":[["aea/e190",1],["ibe/a319",1],["ibe/a320",1],["ibe/a321",1]]},
+        {"origin":"LECO","destination":"EGLL","category":"departure","route":"LECO21.UHUGA1F.UHUGA","altitude":"","speed":"","method":"random","rate":0.7,"airlines":[["ibe/a320",1],["vlg/a320",1]]},
+        {"origin":"LECO","destination":"LEBL","category":"departure","route":"LECO21.VINOL2C.VINOL","altitude":"","speed":"","method":"random","rate":0.7,"airlines":[["ibe/a320",1],["vlg/a320",1]]},
+        {"origin":"LECO","destination":"LEBB","category":"departure","route":"LECO21.VINOL2C.VINOL","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["vlg/a320",1]]},
+        {"origin":"LECO","destination":"","category":"departure","route":"LECO21.FOGUC3C.FOGUC","altitude":"","speed":"","method":"random","rate":0.35,"airlines":[["vlg/a320",1]]},
+        {"origin":"LECO","destination":"","category":"departure","route":"LECO21.FOGUC3C.FOGUC","altitude":"","speed":"","method":"random","rate":1.17,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",1],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"LEMD","destination":"LECO","category":"arrival","route":"VINOL..UNIHU..LECO","altitude":[4000,7000],"speed":250,"method":"random","rate":1.41,"airlines":[["aea/e190",1],["ibe/a319",1],["ibe/a320",1],["ibe/a321",1]]},
+        {"origin":"EGLL","destination":"LECO","category":"arrival","route":"UHUGA..LENAD..LECO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.7,"airlines":[["ibe/a320",1],["vlg/a320",1]]},
+        {"origin":"LEBL","destination":"LECO","category":"arrival","route":"VINOL..UNIHU..LECO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.7,"airlines":[["ibe/a320",1],["vlg/a320",1]]},
+        {"origin":"LEBB","destination":"LECO","category":"arrival","route":"VINOL..UNIHU..LECO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.35,"airlines":[["vlg/a320",1]]},
+        {"origin":"","destination":"LECO","category":"arrival","route":"FOGUC..KAPEM..LECO","altitude":[4000,7000],"speed":250,"method":"random","rate":0.35,"airlines":[["vlg/a320",1]]},
+        {"origin":"","destination":"LECO","category":"arrival","route":"FOGUC..KAPEM..LECO","altitude":[4000,7000],"speed":250,"method":"random","rate":1.17,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",1],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [43.766,-8.003,43.4745,-8.2382],
+            [43.4745,-8.2382,43.3021,-8.3773],
+            [43.249,-7.6417,43.2824,-8.104],
+            [43.2824,-8.104,43.3021,-8.3773],
+            [42.7924,-8.1409,43.1127,-8.2894],
+            [43.1127,-8.2894,43.3021,-8.3773],
+            [43.3572,-9.1125,43.3226,-8.6504],
+            [43.3226,-8.6504,43.3021,-8.3773]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [43.2917,-8.3858,43.1486,-8.5028],
+            [43.2151,-8.4326,43.2253,-8.4561],
+            [43.1435,-8.4911,43.1538,-8.5146],
+            [43.3086,-8.3719,43.4515,-8.2543],
+            [43.3852,-8.325,43.3749,-8.3013],
+            [43.4566,-8.2661,43.4464,-8.2424]
+        ]}
+    ]
+}

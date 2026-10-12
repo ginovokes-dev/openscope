@@ -1,0 +1,79 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/BGGH/",
+    "info": {"country":"GL","city":"Nuuk","type":"large_airport","longestRunwayM":2200},
+    "radio": {"twr":"Nuuk Tower","app":"Nuuk Approach","dep":"Nuuk Departure"},
+    "icao": "BGGH",
+    "iata": "GOH",
+    "magnetic_north": -24,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [64.191066,-51.67914,"283ft"],
+    "rangeRings": {"enabled":true,"center":[64.191066,-51.67914],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":220,"speed":11},
+    "arrivalRunway": "22",
+    "departureRunway": "22",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[64.5608,-52.0572],[64.5908,-51.8246],[64.5935,-51.582],[64.5689,-51.346],[64.5185,-51.1328],[64.4457,-50.9568],[64.3557,-50.83],[64.2544,-50.761],[64.1488,-50.7547],[64.046,-50.8113],[63.9532,-50.9271],[63.8766,-51.0942],[63.8214,-51.3011],[63.7914,-51.5337],[63.7886,-51.7763],[63.8133,-52.0123],[63.8637,-52.2255],[63.9364,-52.4015],[64.0265,-52.5283],[64.1278,-52.5972],[64.2334,-52.6036],[64.3361,-52.5469],[64.4289,-52.4312],[64.5056,-52.2641]]}
+    ],
+    "fixes": {
+        "BGGH": [64.19107,-51.67914],
+        "NK": [64.6786,-51.3739,"godthab nuuk"],
+        "QT": [64.3444,-51.5819,"godthab nuuk"],
+        "SEZUH": [64.32888,-50.48479],
+        "PORIS": [64.24227,-51.23539],
+        "ULIBU": [63.69796,-51.18533],
+        "NUPUV": [64.00786,-51.49567],
+        "COFET": [64.07216,-52.88416],
+        "WUPOD": [64.14689,-52.12685],
+        "_RWY0404DME": [64.11795,-51.73252],
+        "_RWY2204DME": [64.26373,-51.62596]
+    },
+    "runways": [
+        {"name":["04","22"],"end":[[64.18144,-51.68623,"275ft"],[64.20025,-51.67248,"275ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "NK3D": {"icao":"NK3D","name":"Godthab Nuuk Three Delta","rwy":{"BGGH04":["_RWY2204DME"],"BGGH22":["_RWY0404DME"]},"body":[],"exitPoints":{"NK":["NK"]},"draw":[["BGGH","NK*"]]},
+        "SEZUH3E": {"icao":"SEZUH3E","name":"Sezuh Three Echo","rwy":{"BGGH04":["_RWY2204DME"],"BGGH22":["_RWY0404DME"]},"body":[],"exitPoints":{"SEZUH":["SEZUH"]},"draw":[["BGGH","SEZUH*"]]},
+        "ULIBU3D": {"icao":"ULIBU3D","name":"Ulibu Three Delta","rwy":{"BGGH04":["_RWY2204DME"],"BGGH22":["_RWY0404DME"]},"body":[],"exitPoints":{"ULIBU":["ULIBU"]},"draw":[["BGGH","ULIBU*"]]},
+        "COFET3E": {"icao":"COFET3E","name":"Cofet Three Echo","rwy":{"BGGH04":["_RWY2204DME"],"BGGH22":["_RWY0404DME"]},"body":[],"exitPoints":{"COFET":["COFET"]},"draw":[["BGGH","COFET*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"BGGH","destination":"BGJN","category":"departure","route":"BGGH22.NK3D.NK","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["grl/dh8d",1],["grl/dh8b",1],["grl/dh8c",1]]},
+        {"origin":"BGGH","destination":"BGKK","category":"departure","route":"BGGH22.SEZUH3E.SEZUH","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["grl/dh8d",1],["grl/dh8b",1],["grl/dh8c",1]]},
+        {"origin":"BGGH","destination":"BGPT","category":"departure","route":"BGGH22.ULIBU3D.ULIBU","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["grl/dh8d",1],["grl/dh8b",1],["grl/dh8c",1]]},
+        {"origin":"BGGH","destination":"BGSF","category":"departure","route":"BGGH22.NK3D.NK","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["grl/dh8d",1],["grl/dh8b",1],["grl/dh8c",1]]},
+        {"origin":"BGGH","destination":"BGSS","category":"departure","route":"BGGH22.NK3D.NK","altitude":"","speed":"","method":"random","rate":0.76,"airlines":[["grl/dh8d",1],["grl/dh8b",1],["grl/dh8c",1]]},
+        {"origin":"BGGH","destination":"","category":"departure","route":"BGGH22.SEZUH3E.SEZUH","altitude":"","speed":"","method":"random","rate":1.51,"airlines":[["fxi/dh8d",1],["grl/dh8d",1],["fxi/dh8b",1],["fxi/dh8c",1],["grl/dh8b",1],["grl/dh8c",1]]},
+        {"origin":"BGJN","destination":"BGGH","category":"arrival","route":"NK..QT..BGGH","altitude":[4000,7000],"speed":250,"method":"random","rate":0.76,"airlines":[["grl/dh8d",1],["grl/dh8b",1],["grl/dh8c",1]]},
+        {"origin":"BGKK","destination":"BGGH","category":"arrival","route":"SEZUH..PORIS..BGGH","altitude":[4000,7000],"speed":250,"method":"random","rate":0.76,"airlines":[["grl/dh8d",1],["grl/dh8b",1],["grl/dh8c",1]]},
+        {"origin":"BGPT","destination":"BGGH","category":"arrival","route":"ULIBU..NUPUV..BGGH","altitude":[4000,7000],"speed":250,"method":"random","rate":0.76,"airlines":[["grl/dh8d",1],["grl/dh8b",1],["grl/dh8c",1]]},
+        {"origin":"BGSF","destination":"BGGH","category":"arrival","route":"NK..QT..BGGH","altitude":[4000,7000],"speed":250,"method":"random","rate":0.76,"airlines":[["grl/dh8d",1],["grl/dh8b",1],["grl/dh8c",1]]},
+        {"origin":"BGSS","destination":"BGGH","category":"arrival","route":"NK..QT..BGGH","altitude":[4000,7000],"speed":250,"method":"random","rate":0.76,"airlines":[["grl/dh8d",1],["grl/dh8b",1],["grl/dh8c",1]]},
+        {"origin":"","destination":"BGGH","category":"arrival","route":"SEZUH..PORIS..BGGH","altitude":[4000,7000],"speed":250,"method":"random","rate":1.51,"airlines":[["fxi/dh8d",1],["grl/dh8d",1],["fxi/dh8b",1],["fxi/dh8c",1],["grl/dh8b",1],["grl/dh8c",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [64.6786,-51.3739,64.3444,-51.5819],
+            [64.3444,-51.5819,64.1911,-51.6791],
+            [64.3289,-50.4848,64.2423,-51.2354],
+            [64.2423,-51.2354,64.1911,-51.6791],
+            [63.698,-51.1853,64.0079,-51.4957],
+            [64.0079,-51.4957,64.1911,-51.6791],
+            [64.0722,-52.8842,64.1469,-52.1269],
+            [64.1469,-52.1269,64.1911,-51.6791]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [64.1814,-51.6862,64.0227,-51.8015],
+            [64.099,-51.7223,64.1051,-51.7659],
+            [64.0197,-51.7798,64.0257,-51.8233],
+            [64.2002,-51.6725,64.3589,-51.5558],
+            [64.2826,-51.6362,64.2766,-51.5924],
+            [64.3619,-51.5778,64.3559,-51.5338]
+        ]}
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LEZG/",
+    "info": {"country":"ES","city":"Zaragoza","type":"large_airport","longestRunwayM":3718,"frequencies":{"twr":"118.100","app":"119.300","gnd":"118.100"}},
+    "radio": {"twr":"Zaragoza Tower","app":"Zaragoza Approach","dep":"Zaragoza Departure"},
+    "icao": "LEZG",
+    "iata": "ZAZ",
+    "magnetic_north": 1.2,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [41.666199,-1.04155,"863ft"],
+    "rangeRings": {"enabled":true,"center":[41.666199,-1.04155],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":290,"speed":9},
+    "arrivalRunway": "30L",
+    "departureRunway": "30L",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[42.0708,-1.0302],[42.0548,-0.8904],[42.0124,-0.7609],[41.9463,-0.6505],[41.8612,-0.5668],[41.7627,-0.5154],[41.6577,-0.4999],[41.5533,-0.5213],[41.4566,-0.5782],[41.3741,-0.6666],[41.3116,-0.7806],[41.2732,-0.9123],[41.2616,-1.0529],[41.2776,-1.1927],[41.32,-1.3222],[41.3861,-1.4326],[41.4712,-1.5163],[41.5697,-1.5677],[41.6747,-1.5832],[41.7791,-1.5618],[41.8758,-1.5049],[41.9583,-1.4165],[42.0208,-1.3025],[42.0592,-1.1708]]}
+    ],
+    "fixes": {
+        "LEZG": [41.6662,-1.04155],
+        "NAZSO": [42.18915,-0.87276],
+        "IPAPU": [41.8605,-0.97884],
+        "TON": [41.9279,-0.51384,"torralba de aragon"],
+        "JALKU": [41.77674,-0.81865],
+        "EWUNE": [41.35658,-0.45269],
+        "ZZA": [41.5989,-0.87796,"zaragoza"],
+        "RONLE": [41.27087,-1.52991],
+        "OMEBO": [41.51932,-1.223],
+        "WUDIL": [41.91982,-1.6766],
+        "IVAHE": [41.76043,-1.2775],
+        "_RWY12R04DME": [41.71351,-1.15964],
+        "_RWY30L04DME": [41.63014,-0.96654],
+        "_RWY12L04DME": [41.70258,-1.11696],
+        "_RWY30R04DME": [41.62187,-0.93129]
+    },
+    "runways": [
+        {"name":["12R","30L"],"end":[[41.6802,-1.08237,"834ft"],[41.6635,-1.04371,"863ft"]],"ils":[true,true]},
+        {"name":["12L","30R"],"end":[[41.6691,-1.03983,"823ft"],[41.6554,-1.00832,"834ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "NAZSO2B": {"icao":"NAZSO2B","name":"Nazso Two Bravo","rwy":{"LEZG12R":["_RWY30L04DME"],"LEZG30L":["_RWY12R04DME"],"LEZG12L":["_RWY30R04DME"],"LEZG30R":["_RWY12L04DME"]},"body":[],"exitPoints":{"NAZSO":["NAZSO"]},"draw":[["LEZG","NAZSO*"]]},
+        "TON2A": {"icao":"TON2A","name":"Torralba De Aragon Two Alpha","rwy":{"LEZG12R":["_RWY30L04DME"],"LEZG30L":["_RWY12R04DME"],"LEZG12L":["_RWY30R04DME"],"LEZG30R":["_RWY12L04DME"]},"body":[],"exitPoints":{"TON":["TON"]},"draw":[["LEZG","TON*"]]},
+        "EWUNE3C": {"icao":"EWUNE3C","name":"Ewune Three Charlie","rwy":{"LEZG12R":["_RWY30L04DME"],"LEZG30L":["_RWY12R04DME"],"LEZG12L":["_RWY30R04DME"],"LEZG30R":["_RWY12L04DME"]},"body":[],"exitPoints":{"EWUNE":["EWUNE"]},"draw":[["LEZG","EWUNE*"]]},
+        "RONLE3C": {"icao":"RONLE3C","name":"Ronle Three Charlie","rwy":{"LEZG12R":["_RWY30L04DME"],"LEZG30L":["_RWY12R04DME"],"LEZG12L":["_RWY30R04DME"],"LEZG30R":["_RWY12L04DME"]},"body":[],"exitPoints":{"RONLE":["RONLE"]},"draw":[["LEZG","RONLE*"]]},
+        "WUDIL1A": {"icao":"WUDIL1A","name":"Wudil One Alpha","rwy":{"LEZG12R":["_RWY30L04DME"],"LEZG30L":["_RWY12R04DME"],"LEZG12L":["_RWY30R04DME"],"LEZG30R":["_RWY12L04DME"]},"body":[],"exitPoints":{"WUDIL":["WUDIL"]},"draw":[["LEZG","WUDIL*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LEZG","destination":"EBCI","category":"departure","route":"LEZG30L.NAZSO2B.NAZSO","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ryr/b738",1]]},
+        {"origin":"LEZG","destination":"EGSS","category":"departure","route":"LEZG30L.NAZSO2B.NAZSO","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ryr/b738",1]]},
+        {"origin":"LEZG","destination":"GCRR","category":"departure","route":"LEZG30L.RONLE3C.RONLE","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ryr/b738",1]]},
+        {"origin":"LEZG","destination":"LEPA","category":"departure","route":"LEZG30L.EWUNE3C.EWUNE","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["aea/e190",1]]},
+        {"origin":"LEZG","destination":"LFOB","category":"departure","route":"LEZG30L.NAZSO2B.NAZSO","altitude":"","speed":"","method":"random","rate":0.52,"airlines":[["ryr/b738",1]]},
+        {"origin":"LEZG","destination":"","category":"departure","route":"LEZG30L.TON2A.TON","altitude":"","speed":"","method":"random","rate":1.56,"airlines":[["wzz/a320",2],["ryr/b738",1]]},
+        {"origin":"LEZG","destination":"","category":"departure","route":"LEZG30L.NAZSO2B.NAZSO","altitude":"","speed":"","method":"random","rate":1.39,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",1],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]},
+        {"origin":"EBCI","destination":"LEZG","category":"arrival","route":"NAZSO..IPAPU..LEZG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.52,"airlines":[["ryr/b738",1]]},
+        {"origin":"EGSS","destination":"LEZG","category":"arrival","route":"NAZSO..IPAPU..LEZG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.52,"airlines":[["ryr/b738",1]]},
+        {"origin":"GCRR","destination":"LEZG","category":"arrival","route":"RONLE..OMEBO..LEZG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.52,"airlines":[["ryr/b738",1]]},
+        {"origin":"LEPA","destination":"LEZG","category":"arrival","route":"EWUNE..ZZA..LEZG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.52,"airlines":[["aea/e190",1]]},
+        {"origin":"LFOB","destination":"LEZG","category":"arrival","route":"NAZSO..IPAPU..LEZG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.52,"airlines":[["ryr/b738",1]]},
+        {"origin":"","destination":"LEZG","category":"arrival","route":"TON..JALKU..LEZG","altitude":[4000,7000],"speed":250,"method":"random","rate":1.56,"airlines":[["wzz/a320",2],["ryr/b738",1]]},
+        {"origin":"","destination":"LEZG","category":"arrival","route":"NAZSO..IPAPU..LEZG","altitude":[4000,7000],"speed":250,"method":"random","rate":1.39,"airlines":[["ec/c172",6],["ec/p28a",5],["ec/c182",3],["ec/be36",2],["ec/da42",1],["ec/tb20",1],["ec/c208",2],["ec/pc12",2],["ec/be20",1],["ec/b350",1],["ec/p180",1],["ec/c510",1],["ec/e50p",1],["ec/c550",1],["ec/e55p",1],["ec/cl30",1],["ec/c680",1],["ec/h25b",1],["ec/lj45",1],["ec/f2th",1],["ec/glf4",1],["ec/glex",1],["ec/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [42.1892,-0.8728,41.8605,-0.9788],
+            [41.8605,-0.9788,41.6662,-1.0415],
+            [41.9279,-0.5138,41.7767,-0.8186],
+            [41.7767,-0.8186,41.6662,-1.0415],
+            [41.3566,-0.4527,41.5989,-0.878],
+            [41.5989,-0.878,41.6662,-1.0415],
+            [41.2709,-1.5299,41.5193,-1.223],
+            [41.5193,-1.223,41.6662,-1.0415],
+            [41.9198,-1.6766,41.7604,-1.2775],
+            [41.7604,-1.2775,41.6662,-1.0415]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [41.6802,-1.0824,41.7634,-1.2757],
+            [41.7132,-1.1857,41.7305,-1.1723],
+            [41.7547,-1.2824,41.772,-1.269],
+            [41.6635,-1.0437,41.58,-0.8509],
+            [41.6304,-0.9406,41.6131,-0.9539],
+            [41.5887,-0.8442,41.5714,-0.8576],
+            [41.6691,-1.0398,41.7527,-1.2328],
+            [41.7023,-1.143,41.7196,-1.1295],
+            [41.7441,-1.2395,41.7613,-1.2261],
+            [41.6554,-1.0083,41.5715,-0.8159],
+            [41.6221,-0.9053,41.6048,-0.9188],
+            [41.5801,-0.8092,41.5628,-0.8226]
+        ]}
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGHA/",
+    "info": {"country":"GB","city":"Shaftesbury","type":"small_airport","longestRunwayM":799,"approximateRunways":true},
+    "radio": {"twr":"Compton Abbas Tower","app":"Compton Abbas Approach","dep":"Compton Abbas Radar"},
+    "icao": "EGHA",
+    "iata": "",
+    "magnetic_north": 0.5,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [50.967201,-2.15361,"811ft"],
+    "rangeRings": {"enabled":true,"center":[50.967201,-2.15361],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":260,"speed":9},
+    "arrivalRunway": "26",
+    "departureRunway": "26",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[51.3719,-2.148],[51.3572,-1.9819],[51.3159,-1.8275],[51.2509,-1.6953],[51.1665,-1.5943],[51.0685,-1.5315],[50.9637,-1.511],[50.8591,-1.5344],[50.7618,-1.5999],[50.6786,-1.7032],[50.615,-1.8372],[50.5754,-1.9927],[50.5625,-2.1592],[50.5772,-2.3253],[50.6185,-2.4798],[50.6835,-2.612],[50.7679,-2.7129],[50.8659,-2.7758],[50.9707,-2.7962],[51.0754,-2.7729],[51.1726,-2.7073],[51.2558,-2.604],[51.3194,-2.47],[51.359,-2.3145]]}
+    ],
+    "fixes": {
+        "EGHA": [50.9672,-2.15361],
+        "CPT": [51.4917,-1.21972,"compton"],
+        "NEVPI": [51.10023,-1.91675],
+        "GWC": [50.8553,-0.75667,"goodwood"],
+        "ILIGA": [50.94198,-1.83878],
+        "BHD": [50.3986,-3.49361,"berry head"],
+        "MOGOZ": [50.85552,-2.4168],
+        "BRI": [51.3814,-2.71754,"bristol"],
+        "MOLEZ": [51.11893,-2.36019],
+        "_RWY0803DME": [50.95695,-2.23707],
+        "_RWY2603DME": [50.9774,-2.07011]
+    },
+    "runways": [
+        {"name":["08","26"],"end":[[50.96652,-2.15921,"797ft"],[50.96789,-2.14801,"811ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "CPT2B": {"icao":"CPT2B","name":"Compton Two Bravo","rwy":{"EGHA08":["_RWY2603DME"],"EGHA26":["_RWY0803DME"]},"body":[],"exitPoints":{"CPT":["CPT"]},"draw":[["EGHA","CPT*"]]},
+        "GWC3F": {"icao":"GWC3F","name":"Goodwood Three Foxtrot","rwy":{"EGHA08":["_RWY2603DME"],"EGHA26":["_RWY0803DME"]},"body":[],"exitPoints":{"GWC":["GWC"]},"draw":[["EGHA","GWC*"]]},
+        "BHD2B": {"icao":"BHD2B","name":"Berry Head Two Bravo","rwy":{"EGHA08":["_RWY2603DME"],"EGHA26":["_RWY0803DME"]},"body":[],"exitPoints":{"BHD":["BHD"]},"draw":[["EGHA","BHD*"]]},
+        "BRI1E": {"icao":"BRI1E","name":"Bristol One Echo","rwy":{"EGHA08":["_RWY2603DME"],"EGHA26":["_RWY0803DME"]},"body":[],"exitPoints":{"BRI":["BRI"]},"draw":[["EGHA","BRI*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGHA","destination":"","category":"departure","route":"EGHA26.GWC3F.GWC","altitude":"","speed":"","method":"random","rate":3,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/p180",1]]},
+        {"origin":"","destination":"EGHA","category":"arrival","route":"GWC..ILIGA..EGHA","altitude":[4000,7000],"speed":250,"method":"random","rate":3,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/p180",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [51.4917,-1.2197,51.1002,-1.9168],
+            [51.1002,-1.9168,50.9672,-2.1536],
+            [50.8553,-0.7567,50.942,-1.8388],
+            [50.942,-1.8388,50.9672,-2.1536],
+            [50.3986,-3.4936,50.8555,-2.4168],
+            [50.8555,-2.4168,50.9672,-2.1536],
+            [51.3814,-2.7175,51.1189,-2.3602],
+            [51.1189,-2.3602,50.9672,-2.1536]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [50.9679,-2.148,50.9994,-1.8882],
+            [50.9935,-2.0212,50.9739,-2.0151],
+            [51.0092,-1.8913,50.9896,-1.8852]
+        ]}
+    ]
+}

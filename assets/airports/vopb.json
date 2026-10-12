@@ -1,0 +1,77 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/VOPB/",
+    "info": {"country":"IN","city":"Port Blair","type":"large_airport","longestRunwayM":3296,"frequencies":{"atis":"126.400","twr":"123.500","app":"118.100"}},
+    "radio": {"twr":"Port Blair Tower","app":"Port Blair Approach","dep":"Port Blair Departure"},
+    "icao": "VOPB",
+    "iata": "IXZ",
+    "magnetic_north": -0.8,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [11.640194,92.72902,"13ft"],
+    "rangeRings": {"enabled":true,"center":[11.640194,92.72902],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":20,"speed":10},
+    "arrivalRunway": "04",
+    "departureRunway": "04",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[12.0448,92.7233],[12.0325,92.8304],[11.9935,92.9306],[11.9303,93.0171],[11.8474,93.0839],[11.7504,93.1266],[11.6458,93.1422],[11.5409,93.1296],[11.4428,93.0897],[11.3581,93.0252],[11.2926,92.9406],[11.2508,92.8415],[11.2355,92.7348],[11.2479,92.6277],[11.2869,92.5274],[11.3501,92.441],[11.433,92.3741],[11.53,92.3314],[11.6345,92.3159],[11.7395,92.3285],[11.8376,92.3683],[11.9223,92.4328],[11.9878,92.5174],[12.0296,92.6165]]}
+    ],
+    "fixes": {
+        "VOPB": [11.64019,92.72902],
+        "JEPEV": [11.33845,93.18371],
+        "ETETU": [11.52808,92.89796],
+        "EZIGI": [11.13751,92.53346],
+        "IGAFU": [11.45343,92.65636],
+        "KUZAZ": [11.71131,92.18461],
+        "OKOBA": [11.66662,92.52675],
+        "ZEWJA": [12.10905,92.45976],
+        "UFEFI": [11.81439,92.62898],
+        "_RWY0404DME": [11.57981,92.68382],
+        "_RWY2204DME": [11.70682,92.77894]
+    },
+    "runways": [
+        {"name":["04","22"],"end":[[11.63353,92.72405,"11ft"],[11.6531,92.7387,"58ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "JEPEV3F": {"icao":"JEPEV3F","name":"Jepev Three Foxtrot","rwy":{"VOPB04":["_RWY2204DME"],"VOPB22":["_RWY0404DME"]},"body":[],"exitPoints":{"JEPEV":["JEPEV"]},"draw":[["VOPB","JEPEV*"]]},
+        "EZIGI2A": {"icao":"EZIGI2A","name":"Ezigi Two Alpha","rwy":{"VOPB04":["_RWY2204DME"],"VOPB22":["_RWY0404DME"]},"body":[],"exitPoints":{"EZIGI":["EZIGI"]},"draw":[["VOPB","EZIGI*"]]},
+        "KUZAZ1F": {"icao":"KUZAZ1F","name":"Kuzaz One Foxtrot","rwy":{"VOPB04":["_RWY2204DME"],"VOPB22":["_RWY0404DME"]},"body":[],"exitPoints":{"KUZAZ":["KUZAZ"]},"draw":[["VOPB","KUZAZ*"]]},
+        "ZEWJA1C": {"icao":"ZEWJA1C","name":"Zewja One Charlie","rwy":{"VOPB04":["_RWY2204DME"],"VOPB22":["_RWY0404DME"]},"body":[],"exitPoints":{"ZEWJA":["ZEWJA"]},"draw":[["VOPB","ZEWJA*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"VOPB","destination":"VOMM","category":"departure","route":"VOPB04.KUZAZ1F.KUZAZ","altitude":"","speed":"","method":"random","rate":1.45,"airlines":[["aic/a321",1],["gow/a320",1],["jai/b738",1],["sej/b737",1]]},
+        {"origin":"VOPB","destination":"VECC","category":"departure","route":"VOPB04.ZEWJA1C.ZEWJA","altitude":"","speed":"","method":"random","rate":1.09,"airlines":[["aic/a319",1],["gow/a320",1],["sej/b737",1]]},
+        {"origin":"VOPB","destination":"VEBS","category":"departure","route":"VOPB04.ZEWJA1C.ZEWJA","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["aic/crj7",1]]},
+        {"origin":"VOPB","destination":"VIDP","category":"departure","route":"VOPB04.ZEWJA1C.ZEWJA","altitude":"","speed":"","method":"random","rate":0.36,"airlines":[["aic/crj7",1]]},
+        {"origin":"VOPB","destination":"","category":"departure","route":"VOPB04.ZEWJA1C.ZEWJA","altitude":"","speed":"","method":"random","rate":1.09,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]},
+        {"origin":"VOMM","destination":"VOPB","category":"arrival","route":"KUZAZ..OKOBA..VOPB","altitude":[4000,7000],"speed":250,"method":"random","rate":1.45,"airlines":[["aic/a321",1],["gow/a320",1],["jai/b738",1],["sej/b737",1]]},
+        {"origin":"VECC","destination":"VOPB","category":"arrival","route":"ZEWJA..UFEFI..VOPB","altitude":[4000,7000],"speed":250,"method":"random","rate":1.09,"airlines":[["aic/a319",1],["gow/a320",1],["sej/b737",1]]},
+        {"origin":"VEBS","destination":"VOPB","category":"arrival","route":"ZEWJA..UFEFI..VOPB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["aic/crj7",1]]},
+        {"origin":"VIDP","destination":"VOPB","category":"arrival","route":"ZEWJA..UFEFI..VOPB","altitude":[4000,7000],"speed":250,"method":"random","rate":0.36,"airlines":[["aic/crj7",1]]},
+        {"origin":"","destination":"VOPB","category":"arrival","route":"ZEWJA..UFEFI..VOPB","altitude":[4000,7000],"speed":250,"method":"random","rate":1.09,"airlines":[["vt/c172",6],["vt/p28a",5],["vt/c182",3],["vt/be36",2],["vt/da42",1],["vt/tb20",1],["vt/c208",2],["vt/pc12",2],["vt/be20",1],["vt/b350",1],["vt/p180",1],["vt/c510",1],["vt/e50p",1],["vt/c550",1],["vt/e55p",1],["vt/cl30",1],["vt/c680",1],["vt/h25b",1],["vt/lj45",1],["vt/f2th",1],["vt/glf4",1],["vt/glex",1],["vt/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [11.3384,93.1837,11.5281,92.898],
+            [11.5281,92.898,11.6402,92.729],
+            [11.1375,92.5335,11.4534,92.6564],
+            [11.4534,92.6564,11.6402,92.729],
+            [11.7113,92.1846,11.6666,92.5267],
+            [11.6666,92.5267,11.6402,92.729],
+            [12.1091,92.4598,11.8144,92.629],
+            [11.8144,92.629,11.6402,92.729]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [11.6335,92.724,11.4992,92.6235],
+            [11.5605,92.682,11.5723,92.6655],
+            [11.4933,92.6317,11.5051,92.6153],
+            [11.6531,92.7387,11.7874,92.8393],
+            [11.7262,92.7808,11.7143,92.7972],
+            [11.7933,92.8311,11.7815,92.8476]
+        ]}
+    ]
+}

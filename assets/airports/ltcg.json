@@ -1,0 +1,81 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/LTCG/",
+    "info": {"country":"TR","city":"Trabzon","type":"medium_airport","longestRunwayM":2640,"frequencies":{"twr":"120.100","app":"120.100","gnd":"121.900"}},
+    "radio": {"twr":"Trabzon Tower","app":"Trabzon Approach","dep":"Trabzon Departure"},
+    "icao": "LTCG",
+    "iata": "TZX",
+    "magnetic_north": 6.7,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [40.995098,39.7897,"104ft"],
+    "rangeRings": {"enabled":true,"center":[40.995098,39.7897],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":290,"speed":12},
+    "arrivalRunway": "29",
+    "departureRunway": "29",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[41.397,39.8523],[41.3711,39.988],[41.3196,40.1101],[41.2459,40.2105],[41.1552,40.2822],[41.0535,40.3203],[40.9479,40.3222],[40.8455,40.2879],[40.7532,40.2196],[40.6775,40.122],[40.6234,40.0018],[40.5946,39.8671],[40.5932,39.7271],[40.6191,39.5914],[40.6706,39.4693],[40.7443,39.3689],[40.835,39.2972],[40.9367,39.2591],[41.0423,39.2572],[41.1447,39.2915],[41.237,39.3598],[41.3127,39.4574],[41.3668,39.5776],[41.3956,39.7123]]}
+    ],
+    "fixes": {
+        "LTCG": [40.9951,39.7897],
+        "UPULU": [40.7875,40.44721],
+        "TECME": [40.91797,40.03399],
+        "ZOCGU": [40.59896,39.3075],
+        "UMAFO": [40.84792,39.61055],
+        "NORAW": [40.99766,39.07699],
+        "WESKO": [40.99605,39.5249],
+        "TAMIM": [41.53238,39.82485],
+        "AMUDO": [41.19472,39.80276],
+        "_RWY1104DME": [41.02455,39.69339],
+        "_RWY2904DME": [40.96549,39.88594]
+    },
+    "runways": [
+        {"name":["11","29"],"end":[[40.9995,39.7752,"104ft"],[40.9906,39.8042,"95ft"]],"ils":[true,true]}
+    ],
+    "sids": {
+        "UPULU1C": {"icao":"UPULU1C","name":"Upulu One Charlie","rwy":{"LTCG11":["_RWY2904DME"],"LTCG29":["_RWY1104DME"]},"body":[],"exitPoints":{"UPULU":["UPULU"]},"draw":[["LTCG","UPULU*"]]},
+        "ZOCGU2F": {"icao":"ZOCGU2F","name":"Zocgu Two Foxtrot","rwy":{"LTCG11":["_RWY2904DME"],"LTCG29":["_RWY1104DME"]},"body":[],"exitPoints":{"ZOCGU":["ZOCGU"]},"draw":[["LTCG","ZOCGU*"]]},
+        "NORAW2E": {"icao":"NORAW2E","name":"Noraw Two Echo","rwy":{"LTCG11":["_RWY2904DME"],"LTCG29":["_RWY1104DME"]},"body":[],"exitPoints":{"NORAW":["NORAW"]},"draw":[["LTCG","NORAW*"]]},
+        "TAMIM3E": {"icao":"TAMIM3E","name":"Tamim Three Echo","rwy":{"LTCG11":["_RWY2904DME"],"LTCG29":["_RWY1104DME"]},"body":[],"exitPoints":{"TAMIM":["TAMIM"]},"draw":[["LTCG","TAMIM*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"LTCG","destination":"LTFM","category":"departure","route":"LTCG29.NORAW2E.NORAW","altitude":"","speed":"","method":"random","rate":1.73,"airlines":[["ohy/a320",1],["thy/a319",1],["thy/a320",1],["thy/a321",1],["thy/b737",1],["thy/b738",1]]},
+        {"origin":"LTCG","destination":"LTBJ","category":"departure","route":"LTCG29.NORAW2E.NORAW","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["pgt/b738",1],["sxs/b738",1]]},
+        {"origin":"LTCG","destination":"LTFJ","category":"departure","route":"LTCG29.NORAW2E.NORAW","altitude":"","speed":"","method":"random","rate":0.58,"airlines":[["pgt/a320",1],["pgt/b738",1]]},
+        {"origin":"LTCG","destination":"LTAF","category":"departure","route":"LTCG29.ZOCGU2F.ZOCGU","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["pgt/b738",1]]},
+        {"origin":"LTCG","destination":"","category":"departure","route":"LTCG29.ZOCGU2F.ZOCGU","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["pgt/b738",1]]},
+        {"origin":"LTCG","destination":"","category":"departure","route":"LTCG29.TAMIM3E.TAMIM","altitude":"","speed":"","method":"random","rate":0.29,"airlines":[["pgt/b738",1]]},
+        {"origin":"LTCG","destination":"","category":"departure","route":"LTCG29.TAMIM3E.TAMIM","altitude":"","speed":"","method":"random","rate":1.25,"airlines":[["tc/c172",6],["tc/p28a",5],["tc/c182",3],["tc/be36",2],["tc/da42",1],["tc/tb20",1],["tc/c208",2],["tc/pc12",2],["tc/be20",1],["tc/b350",1],["tc/p180",1],["tc/c510",1],["tc/e50p",1],["tc/c550",1],["tc/e55p",1],["tc/cl30",1],["tc/c680",1],["tc/h25b",1],["tc/lj45",1],["tc/f2th",1],["tc/glf4",1],["tc/glex",1],["tc/glf5",1]]},
+        {"origin":"LTFM","destination":"LTCG","category":"arrival","route":"NORAW..WESKO..LTCG","altitude":[4000,7000],"speed":250,"method":"random","rate":1.73,"airlines":[["ohy/a320",1],["thy/a319",1],["thy/a320",1],["thy/a321",1],["thy/b737",1],["thy/b738",1]]},
+        {"origin":"LTBJ","destination":"LTCG","category":"arrival","route":"NORAW..WESKO..LTCG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.58,"airlines":[["pgt/b738",1],["sxs/b738",1]]},
+        {"origin":"LTFJ","destination":"LTCG","category":"arrival","route":"NORAW..WESKO..LTCG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.58,"airlines":[["pgt/a320",1],["pgt/b738",1]]},
+        {"origin":"LTAF","destination":"LTCG","category":"arrival","route":"ZOCGU..UMAFO..LTCG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.29,"airlines":[["pgt/b738",1]]},
+        {"origin":"","destination":"LTCG","category":"arrival","route":"ZOCGU..UMAFO..LTCG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.29,"airlines":[["pgt/b738",1]]},
+        {"origin":"","destination":"LTCG","category":"arrival","route":"TAMIM..AMUDO..LTCG","altitude":[4000,7000],"speed":250,"method":"random","rate":0.29,"airlines":[["pgt/b738",1]]},
+        {"origin":"","destination":"LTCG","category":"arrival","route":"TAMIM..AMUDO..LTCG","altitude":[4000,7000],"speed":250,"method":"random","rate":1.25,"airlines":[["tc/c172",6],["tc/p28a",5],["tc/c182",3],["tc/be36",2],["tc/da42",1],["tc/tb20",1],["tc/c208",2],["tc/pc12",2],["tc/be20",1],["tc/b350",1],["tc/p180",1],["tc/c510",1],["tc/e50p",1],["tc/c550",1],["tc/e55p",1],["tc/cl30",1],["tc/c680",1],["tc/h25b",1],["tc/lj45",1],["tc/f2th",1],["tc/glf4",1],["tc/glex",1],["tc/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [40.7875,40.4472,40.918,40.034],
+            [40.918,40.034,40.9951,39.7897],
+            [40.599,39.3075,40.8479,39.6105],
+            [40.8479,39.6105,40.9951,39.7897],
+            [40.9977,39.077,40.996,39.5249],
+            [40.996,39.5249,40.9951,39.7897],
+            [41.5324,39.8248,41.1947,39.8028],
+            [41.1947,39.8028,40.9951,39.7897]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [40.9995,39.7752,41.062,39.5706],
+            [41.0215,39.6679,41.0401,39.6779],
+            [41.0528,39.5656,41.0713,39.5755],
+            [40.9906,39.8042,40.9277,40.0084],
+            [40.9685,39.9113,40.9499,39.9014],
+            [40.937,40.0134,40.9185,40.0034]
+        ]}
+    ]
+}

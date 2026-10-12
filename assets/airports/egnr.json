@@ -1,0 +1,70 @@
+{
+    "_generated": true,
+    "reference": "https://ourairports.com/airports/EGNR/",
+    "info": {"country":"GB","city":"Broughton","type":"medium_airport","longestRunwayM":2093,"frequencies":{"atis":"125.430","twr":"124.955","app":"120.055"}},
+    "radio": {"twr":"Hawarden Tower","app":"Hawarden Approach","dep":"Hawarden Radar"},
+    "icao": "EGNR",
+    "iata": "CEG",
+    "magnetic_north": -0.1,
+    "ctr_radius": 45,
+    "ctr_ceiling": 8000,
+    "initial_alt": 4000,
+    "position": [53.178101,-2.97778,"45ft"],
+    "rangeRings": {"enabled":true,"center":[53.178101,-2.97778],"radius_nm":5},
+    "has_terrain": false,
+    "wind": {"angle":230,"speed":7},
+    "arrivalRunway": "22",
+    "departureRunway": "22",
+    "defaultMaps": ["Base Map","Extended Runway Centrelines"],
+    "airspace": [
+        {"floor":0,"ceiling":80,"airspace_class":"D","poly":[[53.5828,-2.979],[53.5692,-2.8042],[53.5289,-2.6412],[53.4648,-2.5011],[53.3811,-2.3936],[53.2835,-2.3258],[53.1788,-2.3025],[53.074,-2.3252],[52.9764,-2.3924],[52.8924,-2.4995],[52.828,-2.6391],[52.7874,-2.8019],[52.7734,-2.9766],[52.787,-3.1514],[52.8273,-3.3144],[52.8914,-3.4544],[52.9751,-3.562],[53.0727,-3.6297],[53.1774,-3.653],[53.2822,-3.6303],[53.3798,-3.5631],[53.4638,-3.4561],[53.5282,-3.3164],[53.5688,-3.1537]]}
+    ],
+    "fixes": {
+        "EGNR": [53.1781,-2.97778],
+        "WFD": [53.3377,-2.15836,"manchester woodford"],
+        "EVONE": [53.23987,-2.66063],
+        "WPL": [52.63,-3.15389,"welshpool"],
+        "CABZU": [52.98184,-3.04084],
+        "CAE": [53.1001,-4.33952,"caernarfon"],
+        "VUVCU": [53.15909,-3.30975],
+        "WTN": [53.7517,-2.85224,"warton"],
+        "UWUBE": [53.37627,-2.93441],
+        "_RWY0404DME": [53.12292,-3.0575],
+        "_RWY2204DME": [53.23323,-2.89758]
+    },
+    "runways": [
+        {"name":["04","22"],"end":[[53.17324,-2.98469,"31ft"],[53.18297,-2.97058,"17ft"]],"ils":[false,false]}
+    ],
+    "sids": {
+        "WFD3C": {"icao":"WFD3C","name":"Manchester Woodford Three Charlie","rwy":{"EGNR04":["_RWY2204DME"],"EGNR22":["_RWY0404DME"]},"body":[],"exitPoints":{"WFD":["WFD"]},"draw":[["EGNR","WFD*"]]},
+        "WPL2B": {"icao":"WPL2B","name":"Welshpool Two Bravo","rwy":{"EGNR04":["_RWY2204DME"],"EGNR22":["_RWY0404DME"]},"body":[],"exitPoints":{"WPL":["WPL"]},"draw":[["EGNR","WPL*"]]},
+        "CAE1A": {"icao":"CAE1A","name":"Caernarfon One Alpha","rwy":{"EGNR04":["_RWY2204DME"],"EGNR22":["_RWY0404DME"]},"body":[],"exitPoints":{"CAE":["CAE"]},"draw":[["EGNR","CAE*"]]},
+        "WTN3C": {"icao":"WTN3C","name":"Warton Three Charlie","rwy":{"EGNR04":["_RWY2204DME"],"EGNR22":["_RWY0404DME"]},"body":[],"exitPoints":{"WTN":["WTN"]},"draw":[["EGNR","WTN*"]]}
+    },
+    "stars": {},
+    "spawnPatterns": [
+        {"origin":"EGNR","destination":"EGGD","category":"departure","route":"EGNR22.WPL2B.WPL","altitude":"","speed":"","method":"random","rate":1.31,"airlines":[["gmi/e145",1]]},
+        {"origin":"EGNR","destination":"LFBO","category":"departure","route":"EGNR22.WPL2B.WPL","altitude":"","speed":"","method":"random","rate":1.31,"airlines":[["gmi/e145",1]]},
+        {"origin":"EGNR","destination":"","category":"departure","route":"EGNR22.CAE1A.CAE","altitude":"","speed":"","method":"random","rate":0.88,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]},
+        {"origin":"EGGD","destination":"EGNR","category":"arrival","route":"WPL..CABZU..EGNR","altitude":[4000,7000],"speed":250,"method":"random","rate":1.31,"airlines":[["gmi/e145",1]]},
+        {"origin":"LFBO","destination":"EGNR","category":"arrival","route":"WPL..CABZU..EGNR","altitude":[4000,7000],"speed":250,"method":"random","rate":1.31,"airlines":[["gmi/e145",1]]},
+        {"origin":"","destination":"EGNR","category":"arrival","route":"CAE..VUVCU..EGNR","altitude":[4000,7000],"speed":250,"method":"random","rate":0.88,"airlines":[["g/c172",6],["g/p28a",5],["g/c182",3],["g/be36",2],["g/da42",1],["g/tb20",1],["g/c208",2],["g/pc12",2],["g/be20",1],["g/b350",1],["g/p180",1],["g/c510",1],["g/e50p",1],["g/c550",1],["g/e55p",1],["g/cl30",1],["g/c680",1],["g/h25b",1],["g/lj45",1],["g/f2th",1],["g/glf4",1],["g/glex",1],["g/glf5",1]]}
+    ],
+    "maps": [
+        {"name":"Base Map","lines": [
+            [53.3377,-2.1584,53.2399,-2.6606],
+            [53.2399,-2.6606,53.1781,-2.9778],
+            [52.63,-3.1539,52.9818,-3.0408],
+            [52.9818,-3.0408,53.1781,-2.9778],
+            [53.1001,-4.3395,53.1591,-3.3097],
+            [53.1591,-3.3097,53.1781,-2.9778],
+            [53.7517,-2.8522,53.3763,-2.9344],
+            [53.3763,-2.9344,53.1781,-2.9778]
+        ]},
+        {"name":"Extended Runway Centrelines","lines": [
+            [53.183,-2.9706,53.3086,-2.7878],
+            [53.2523,-2.8919,53.2392,-2.8667],
+            [53.3151,-2.8004,53.302,-2.7751]
+        ]}
+    ]
+}
