@@ -21,6 +21,48 @@ import ParsedCommand from '../ParsedCommand';
 const COMMAND_ARGS_SEPARATOR = ' ';
 
 /**
+ * One-letter shorthand typed or dictated without a space: `d20`, `c30`, `h270`, `s210`, `sq4521`, `fh250`
+ * maps the letters to the command alias and the digits to its argument. Only commands that take a number.
+ *
+ * @property SHORTHAND_PREFIXES
+ * @type {object}
+ * @final
+ */
+const SHORTHAND_PREFIXES = {
+    d: 'd', c: 'c', a: 'a', h: 'h', fh: 'fh', s: 'sp', sp: 'sp', sq: 'sq'
+};
+const SHORTHAND_PATTERN = /^([a-z]+?)-?(\d{1,5})$/;
+
+/**
+ * Split `d20` into `d` and `20` where it starts a new command: right after the callsign or after a number
+ * (so `fix` names and runways that happen to look like shorthand are left alone)
+ *
+ * @function expandGluedShorthand
+ * @param segments {array<string>} callsign first, then commands and arguments
+ * @return {array<string>}
+ */
+export const expandGluedShorthand = (segments) => {
+    const expanded = [];
+
+    segments.forEach((segment, index) => {
+        const previous = expanded[expanded.length - 1];
+        const startsCommand = index === 1 || /^\d+$/.test(previous || '');
+        const match = SHORTHAND_PATTERN.exec(segment);
+
+        if (index >= 1 && startsCommand && match && SHORTHAND_PREFIXES[match[1]] &&
+            typeof findCommandNameWithAlias(segment) === 'undefined') {
+            expanded.push(SHORTHAND_PREFIXES[match[1]], match[2]);
+
+            return;
+        }
+
+        expanded.push(segment);
+    });
+
+    return expanded;
+};
+
+/**
  * This class is responsible for taking the content of the `$commandInput` and parsing it
  * out into commands and arguments.
  *
@@ -128,7 +170,7 @@ export default class CommandParser {
      */
     _extractCommandsAndArgs(rawCommandWithArgs) {
         const commandOrCallsignIndex = 0;
-        const commandArgSegmentsWithCallsign = rawCommandWithArgs.split(COMMAND_ARGS_SEPARATOR).filter((t) => t);
+        const commandArgSegmentsWithCallsign = expandGluedShorthand(rawCommandWithArgs.split(COMMAND_ARGS_SEPARATOR).filter((t) => t));
         const callsignOrSystemCommandName = commandArgSegmentsWithCallsign[commandOrCallsignIndex];
         // effectively a slice of the array that returns everything but the first item
         const commandArgSegments = _tail(commandArgSegmentsWithCallsign);

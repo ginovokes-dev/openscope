@@ -132,6 +132,7 @@ The chart legend credits OpenStreetMap contributors (ODbL) whenever its data is 
 
 You can type in the command bar or the radio panel, or speak, instead of learning the commands. The command bar sends anything that is not a command to the radio.
 
+- Shorthand: after the callsign, the one-letter commands need no space and can be chained: `d20` (descend 2,000 ft), `c30`, `h270` (fly heading 270), `s210` (speed 210), `d20 s210 h270`. Say "Speedbird one two three, d twenty" or "dee twenty" - it works spoken too.
 - Aircraft: "Speedbird one two three, descend flight level eight zero", "the center flight level zero five zero" (a typical mis-hearing of "descend flight level 050" - it is repaired),
   "cleared to Dublin via the Daventry departure, squawk four seven two one", "line up and wait", "hold position".
 - The application: "open the ATIS", "give me the latest information", "update the ATIS", "what is the wind", "which runway is in use", "hide the SIDs", "show the stars",

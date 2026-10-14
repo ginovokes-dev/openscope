@@ -83,3 +83,11 @@ ava('alternatives that read like ATC phraseology score higher', (t) => {
     t.true(good > bad);
     t.true(good > chatter);
 });
+
+ava('shorthand alternatives beat look-alike chatter: "d 20" over "the 20"', (t) => {
+    const context = { telephonyWords: ['speedbird'], fixNames: [] };
+
+    t.true(scoreTranscript('speedbird one two three d 20', context) > scoreTranscript('speedbird one two three the 20', context));
+    t.true(scoreTranscript('speedbird one two three d20', context) > scoreTranscript('speedbird one two three the twenty', context));
+    t.true(scoreTranscript('speedbird one two three dee 20', context) > scoreTranscript('speedbird one two three bee 20', context));
+});

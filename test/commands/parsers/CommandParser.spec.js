@@ -159,3 +159,25 @@ ava('._isSystemCommand() returns identical outcome for alias of a system command
         timewarpModel._isSystemCommand(TIMEWARP_50_MOCK.split(COMMAND_ARGS_SEPARATOR)[0])
     );
 });
+
+ava('glued shorthand is split into a command and its argument: d20, c30, h270, s210, sq4521, fh250', (t) => {
+    const parse = (text) => new CommandParser(text).parse();
+    const summary = (text) => parse(text).commandList.map((command) => [command.name, command.args]);
+
+    t.deepEqual(summary('baw123 d20'), summary('baw123 d 20'));
+    t.deepEqual(summary('baw123 c30'), summary('baw123 c 30'));
+    t.deepEqual(summary('baw123 h270'), summary('baw123 h 270'));
+    t.deepEqual(summary('baw123 fh250'), summary('baw123 fh 250'));
+    t.deepEqual(summary('baw123 s210'), summary('baw123 sp 210'));
+    t.deepEqual(summary('baw123 sq4521'), summary('baw123 sq 4521'));
+    t.deepEqual(summary('baw123 d20 s210 h270'), summary('baw123 d 20 sp 210 h 270'));
+    t.is(parse('baw123 d20').commandList.length, 1);
+});
+
+ava('glued shorthand is left alone where it is a fix name, and system commands are untouched', (t) => {
+    const parse = (text) => new CommandParser(text).parse();
+
+    // after "pd" a token like d20 is a fix, not a descent
+    t.deepEqual(parse('baw123 pd d20').commandList[0].args, ['d20']);
+    t.is(parse('tw 50').commandList[0].args[0], 50);
+});

@@ -241,6 +241,9 @@ const FUNCTION_WORDS = new Set([
     'thousand', 'hundred', 'feet', 'foot', 'point', 'degrees', 'ils', 'fl', 'if', 'do', 'have', 'can', 'what', 'which', 'how', 'much'
 ]);
 
+// the controller's one-letter shorthand ("d 20", "c 30", "h 270", "s 210", "t l 270") and its usual mis-hearings
+const SHORTHAND_WORDS = new Set(['d', 'dee', 'c', 'h', 's', 't', 'l', 'r', 'sp', 'fh', 'cto', 'caf', 'lu', 'hp', 'ga', 'ils']);
+
 const NATO_WORDS = new Set([
     'alpha', 'alfa', 'bravo', 'charlie', 'delta', 'echo', 'foxtrot', 'golf', 'hotel', 'india', 'juliet', 'kilo', 'lima', 'mike',
     'november', 'oscar', 'papa', 'quebec', 'romeo', 'sierra', 'tango', 'uniform', 'victor', 'whiskey', 'xray', 'yankee', 'zulu'
@@ -269,9 +272,9 @@ export const scoreTranscript = (text, context = {}) => {
     let hasTelephony = false;
     let hasVerb = false;
 
-    tokens.forEach((token) => {
-        const isKnown = VOCABULARY.indexOf(token) !== -1 || FUNCTION_WORDS.has(token) || NATO_WORDS.has(token) ||
-            NUMBER_WORD.test(token) || telephony.has(token) || fixes.has(token) || /^(?:fl)?\d+[a-z]?$/.test(token);
+    tokens.forEach((token, index) => {
+        const isKnown = VOCABULARY.indexOf(token) !== -1 || FUNCTION_WORDS.has(token) || NATO_WORDS.has(token) || SHORTHAND_WORDS.has(token) ||
+            NUMBER_WORD.test(token) || telephony.has(token) || fixes.has(token) || /^(?:fl)?\d+[a-z]?$/.test(token) || /^[dchs]-?\d{1,5}$/.test(token);
 
         if (isKnown) {
             known += 1;
@@ -281,7 +284,8 @@ export const scoreTranscript = (text, context = {}) => {
             hasTelephony = true;
         }
 
-        if (/^(?:climb|descend|maintain|turn|heading|speed|reduce|increase|cleared|taxi|hold|squawk|direct|proceed|expect|contact|say|report|divert|fuel)$/.test(token)) {
+        if (/^(?:climb|descend|maintain|turn|heading|speed|reduce|increase|cleared|taxi|hold|squawk|direct|proceed|expect|contact|say|report|divert|fuel)$/.test(token) ||
+            /^[dchs]-?\d{1,5}$/.test(token) || (/^(?:d|dee|c|h|s)$/.test(token) && NUMBER_WORD.test(tokens[index + 1] || ''))) {
             hasVerb = true;
         }
     });

@@ -43,7 +43,7 @@ export const CONTROLS_GUIDE_SECTIONS = [
         rows: [
             { say: 'descend via the STAR', type: 'BAW123 dvs', note: 'Follow the STAR\'s altitude and speed restrictions.' },
             { say: 'expect runway two seven right', type: 'BAW123 e 27R', note: 'Tells the pilot which runway to plan for (and which branch of the STAR to fly).' },
-            { say: 'descend altitude three thousand feet', type: 'BAW123 d 30', note: 'Altitudes are in hundreds of feet. Flight levels above the transition altitude: <code>d 100</code> = FL100. Add <code>ex</code> to expedite.' },
+            { say: 'descend altitude three thousand feet', type: 'BAW123 d 30', note: 'Altitudes are in hundreds of feet. Flight levels above the transition altitude: <code>d 100</code> = FL100. Add <code>ex</code> to expedite. The space is optional: <code>BAW123 d20</code> = descend 2,000 ft, and <code>c30</code>, <code>h270</code>, <code>s210</code> work the same (climb 3,000 ft, heading 270, 210 knots).' },
             { say: 'reduce speed one eight zero', type: 'BAW123 sp 180', note: 'Speed in knots. Numpad <kbd>+</kbd>/<kbd>-</kbd> also work.' },
             { say: 'turn left heading two seven zero', type: 'BAW123 t l 270', note: 'Vector onto the extended centreline. Intercept at 30&deg; or less and below the glidepath.' },
             { say: 'cleared ILS runway two seven right', type: 'BAW123 i 27R', note: 'Also numpad <kbd>*</kbd>. The aircraft intercepts the localizer and glideslope and lands. It leaves frequency by itself.' },

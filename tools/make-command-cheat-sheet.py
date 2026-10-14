@@ -160,7 +160,9 @@ s.append(kt)
 s.append(Paragraph('Hundreds of feet: <font name="Mono">d 30</font> = descend to 3,000 ft; above the transition altitude the same number is a flight level '
                    '(<font name="Mono">c 120</font> = FL120). Headings are three digits (<font name="Mono">090</font>); one or two digits after a direction mean degrees to turn '
                    '(<font name="Mono">t l 20</font> = turn left 20 degrees). Runways are written like <font name="Mono">27R</font> or <font name="Mono">09L</font>. '
-                   'Commands can be chained: <font name="Mono">BAW123 t l 270 d 40 sp 210</font>.', small))
+                   'Commands can be chained: <font name="Mono">BAW123 t l 270 d 40 sp 210</font>. The space is optional, typed or spoken: '
+                   '<font name="Mono">BAW123 d20</font> (descend 2,000 ft), <font name="Mono">c30</font>, <font name="Mono">h270</font>, <font name="Mono">s210</font>, '
+                   '<font name="Mono">d20 s210 h270</font>.', small))
 
 s.append(Paragraph('Aircraft commands', ParagraphStyle('t2', parent=title, fontSize=15, leading=19, spaceBefore=14)))
 s.append(Paragraph('Every command starts with the aircraft: <font name="Mono">AAL123 &lt;command&gt;</font>. Several commands can follow one callsign. '

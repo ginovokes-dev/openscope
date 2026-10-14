@@ -216,6 +216,21 @@ export const extractCommands = (rawText, aircraft, context = {}) => {
     scan(/\b(?:fly |turn |head |continue |maintain )?(?:to )?heading (\d{1,3})\b/, (m) => `fh ${m[1].padStart(3, '0')}`);
     scan(/\b(?:fly|maintain|continue) (?:the )?(?:present|current|runway) heading\b|\bcontinue straight ahead\b/, () => 'fph');
 
+    // the controller's own shorthand, typed or dictated: "d20", "d 20", "dee 20", "c30", "h270", "s210", "t l 270"
+    scan(/\b(?:d|dee|delta)[-\s]?(\d{1,5})\b(?!\s*(?:knots?|kt|degrees?|nm|miles))/, (m) => {
+        const hundreds = toHundreds(m[1], false, false);
+
+        return hundreds >= 1 && hundreds <= 500 ? `d ${hundreds}` : null;
+    });
+    scan(/\bc[-\s]?(\d{1,5})\b(?!\s*(?:knots?|kt|degrees?|nm|miles))/, (m) => {
+        const hundreds = toHundreds(m[1], false, false);
+
+        return hundreds >= 1 && hundreds <= 500 ? `c ${hundreds}` : null;
+    });
+    scan(/\bh[-\s]?(\d{3})\b/, (m) => (Number(m[1]) <= 360 ? `fh ${m[1]}` : null));
+    scan(/\bs[-\s]?(\d{2,3})\b/, (m) => (Number(m[1]) >= 60 && Number(m[1]) <= 400 ? `sp ${Number(m[1])}` : null));
+    scan(/\bt[-\s]?(l|r)[-\s]?(\d{1,3})\b/, (m) => (Number(m[2]) <= 360 ? `t ${m[1]} ${m[2].length === 3 ? m[2] : Number(m[2])}` : null));
+
     // altitude: "descend flight level 100", "climb and maintain 3000 feet", "maintain 5000"
     scan(new RegExp(`\\b(climb|descend|maintain|altitude|level at|level off at)\\s+(?:and maintain\\s+|to\\s+)?(?:altitude\\s+)?(flight level\\s+|fl\\s*)?(\\d{1,5})(?:\\s*${FEET_UNITS})?\\b`), (m) => {
         const word = m[1];
@@ -298,6 +313,21 @@ const telephonyWordsOf = (aircraft) => {
 };
 
 /**
+ * "Speedbird one two three delta twenty" is normalised to flight "123d" followed by "20". When no aircraft has that flight number
+ * the letter is the controller's shorthand ("d 20") and goes back to being a separate word.
+ *
+ * @function separateGluedCommandLetter
+ * @param text {string} normalised text
+ * @param aircraft {array<object>}
+ * @return {string}
+ */
+const separateGluedCommandLetter = (text, aircraft) => text.replace(/\b(\d{1,4})([dchst])(?= ?[lr]? ?\d)/g, (all, digits, letter) => {
+    const isFlightNumber = aircraft.some((candidate) => String(candidate.flightNumber || '').toLowerCase() === `${digits}${letter}`);
+
+    return isFlightNumber ? all : `${digits} ${letter}`;
+});
+
+/**
  * Interpret a transmission without a language model
  *
  * @function interpretLocally
@@ -313,7 +343,7 @@ const telephonyWordsOf = (aircraft) => {
 export const interpretLocally = (text, context = {}) => {
     const aircraft = context.aircraft || [];
     const repairedText = repairTranscript(text, { telephonyWords: telephonyWordsOf(aircraft), fixNames: context.fixes || [] });
-    const normalized = normalizeTranscript(repairedText);
+    const normalized = separateGluedCommandLetter(normalizeTranscript(repairedText), aircraft);
     const fixes = context.fixes && context.fixes.length > 0 ? new Set(context.fixes.map((fix) => fix.toUpperCase())) : null;
     const runways = context.runways && context.runways.length > 0 ? new Set(context.runways.map((name) => name.toUpperCase())) : null;
 

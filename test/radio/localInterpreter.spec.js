@@ -171,3 +171,39 @@ ava('extractCommands works on a bare segment', (t) => {
     t.deepEqual(extractCommands('climb via sid', BAW), ['cvs']);
     t.deepEqual(extractCommands('descend via star', BAW), ['dvs']);
 });
+
+ava('the controller\'s shorthand works typed or dictated: d20, d 20, dee 20, c30, h270, s210, t l 270', (t) => {
+    t.deepEqual(commandsFor('BAW123 d20'), [['d 20']]);
+    t.deepEqual(commandsFor('BAW123 d 20'), [['d 20']]);
+    t.deepEqual(commandsFor('Speedbird one two three d20'), [['d 20']]);
+    t.deepEqual(commandsFor('Speedbird one two three dee twenty'), [['d 20']]);
+    t.deepEqual(commandsFor('Speedbird one two three d two zero'), [['d 20']]);
+    t.deepEqual(commandsFor('Speedbird one two three d 2000'), [['d 20']]);
+    t.deepEqual(commandsFor('Speedbird one two three c30'), [['c 30']]);
+    t.deepEqual(commandsFor('Speedbird one two three h270'), [['fh 270']]);
+    t.deepEqual(commandsFor('Speedbird one two three s210'), [['sp 210']]);
+    t.deepEqual(commandsFor('Speedbird one two three t l 270'), [['t l 270']]);
+    t.deepEqual(commandsFor('Speedbird one two three t r 20'), [['t r 20']]);
+});
+
+ava('shorthand chains: "d20 s210 h270"', (t) => {
+    t.deepEqual(commandsFor('Speedbird one two three d20 s210 h270'), [['d 20', 'sp 210', 'fh 270']]);
+});
+
+ava('"delta" after a flight number is the letter D, not part of the flight number', (t) => {
+    t.deepEqual(commandsFor('Speedbird one two three delta twenty'), [['d 20']]);
+    // but a real flight number ending in D still addresses that aircraft
+    const withD = {
+        callsign: 'BAW123D', airlineId: 'baw', airlineCallsign: 'Speedbird', flightNumber: '123D', altitude: 3000
+    };
+    const result = interpretLocally('Speedbird one two three delta descend flight level eight zero', { ...CONTEXT, aircraft: [withD, EZY] });
+
+    t.deepEqual(result.transmissions.map((entry) => [entry.callsign, entry.commands]), [['BAW123D', ['d 80']]]);
+});
+
+ava('shorthand does not hijack ordinary sentences', (t) => {
+    t.deepEqual(commandsFor('Speedbird one two three turn left heading two seven zero'), [['t l 270']]);
+    t.deepEqual(commandsFor('Speedbird one two three reduce speed two one zero knots'), [['sp 210']]);
+    t.deepEqual(commandsFor('Speedbird one two three descend flight level eight zero'), [['d 80']]);
+    t.deepEqual(commandsFor('Speedbird one two three cleared ILS runway two seven right'), [['i 27R']]);
+});
